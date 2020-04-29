@@ -94,7 +94,7 @@
                   href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: devtools-guide-chromium/console/index.md
             - name: Mensagens de log
               href: devtools-guide-chromium/console/log.md
@@ -136,7 +136,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Simulação móvel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: devtools-guide-chromium/device-mode/index.md
             - name: Emular e testar outros navegadores
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -182,7 +182,7 @@
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Otimizar a velocidade do site
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Visão geral
+            - name: Visão Geral
               href: devtools-guide-chromium/rendering-tools/index.md
             - name: Referência de análise de desempenho
               href: devtools-guide-chromium/evaluate-performance/reference.md
@@ -210,7 +210,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memória
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Entender a terminologia da memória
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -230,12 +230,14 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Personalizar
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: devtools-guide-chromium/customize/index.md
             - name: Tema escuro
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Alterar posicionamento
               href: devtools-guide-chromium/customize/placement.md
+            - name: Idioma do navegador correspondente
+              href: devtools-guide-chromium/customize/localization.md
     - name: DevTools (EdgeHTML)
       href: devtools-guide.md
       items:
