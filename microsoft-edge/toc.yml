@@ -206,6 +206,8 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: Acessar servidores locais
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Emuladores de Surface Duo
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Dispositivos Windows 10
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memória
@@ -464,7 +466,7 @@
       href: puppeteer.md
     - name: Visual Studio
       href: visual-studio/index.md
-    - name: Código do Visual Studio
+    - name: Visual Studio Code
       href: visual-studio-code/index.md
       items:
         - name: Depurador para borda
