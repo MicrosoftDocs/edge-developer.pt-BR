@@ -450,6 +450,9 @@
       href: privacy-whitepaper.md
     - name: Aplicativos Web progressivos (Chromium)
       href: progressive-web-apps-chromium/index.md
+      items:
+        - name: Introdução ao PWAs (Chromium)
+          href: progressive-web-apps-chromium/get-started.md
     - name: Aplicativos Web progressivos (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items:
