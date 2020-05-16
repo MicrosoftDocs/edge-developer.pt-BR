@@ -94,7 +94,7 @@
                   href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: devtools-guide-chromium/console/index.md
             - name: Mensagens de log
               href: devtools-guide-chromium/console/log.md
@@ -136,7 +136,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Simulação móvel
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: devtools-guide-chromium/device-mode/index.md
             - name: Emular e testar outros navegadores
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -182,7 +182,7 @@
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Otimizar a velocidade do site
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Visão Geral
+            - name: Visão geral
               href: devtools-guide-chromium/rendering-tools/index.md
             - name: Referência de análise de desempenho
               href: devtools-guide-chromium/evaluate-performance/reference.md
@@ -212,7 +212,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memória
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Entender a terminologia da memória
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -232,7 +232,7 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Personalizar
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: devtools-guide-chromium/customize/index.md
             - name: Tema escuro
               href: devtools-guide-chromium/customize/dark-theme.md
@@ -453,6 +453,12 @@
       items:
         - name: Introdução ao PWAs (Chromium)
           href: progressive-web-apps-chromium/get-started.md
+        - name: Cenários offline
+          href: progressive-web-apps-chromium/offline.md
+        - name: Trabalhadores de serviço
+          href: progressive-web-apps-chromium/serviceworker.md
+        - name: Manifestos do aplicativo Web
+          href: progressive-web-apps-chromium/webappmanifests.md
     - name: Aplicativos Web progressivos (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items:
