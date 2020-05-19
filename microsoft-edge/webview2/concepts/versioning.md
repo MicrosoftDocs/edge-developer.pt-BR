@@ -3,17 +3,17 @@ description: Modelos de controle de versão usados para o Microsoft Edge WebView
 title: Controle de versão do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/18/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 8463ce403af069cf25dbf7b08bb49d44c1e54501
-ms.sourcegitcommit: f1aa8925f7985a2bbfd951f188a8c19c97e4ff6f
+ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "10659562"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659668"
 ---
 # Noções básicas sobre versões do navegador e WebView2  
 
@@ -22,9 +22,7 @@ O WebView2 depende do Microsoft Edge para funcionar.  Cada SDK do WebView2 reque
 > [!NOTE]
 > O WebView2 está atualmente em visualização.  Enquanto a equipe do Microsoft Edge WebView se empenha para garantir a compatibilidade com versões anteriores entre as versões e os SDKs do navegador, não é garantido que algumas versões mais recentes do navegador possam não dar suporte a versões mais antigas do SDK.  Se houver alterações significativas entre versões e SDKs do navegador, a equipe do Microsoft Edge WebView indicará as alterações nas [notas de versão][Webview2Releasenotes].  
 
-No futuro, a equipe do Microsoft Edge WebView planeja alterar o modelo de distribuição.  A equipe do Microsoft Edge WebView planeja remover a dependência direta do navegador Microsoft Edge da WebView2.  <!--To learn more, see [WebView2 Runtime][Webview2IndexEdgeRuntime] in the [Distribution][Webview2Distibution] section.  -->  
-
-<!--todo: dd link to distribution.md after publication  -->  
+No futuro, a equipe do Microsoft Edge WebView planeja alterar o modelo de distribuição.  A equipe do Microsoft Edge WebView planeja remover a dependência direta do navegador Microsoft Edge da WebView2.  Para saber mais, consulte [tempo de execução do WebView2][Webview2IndexEdgeRuntime] na seção [distribuição][Webview2Distibution] .  
 
 ## APIs experimentais  
 
@@ -36,8 +34,8 @@ Depois que o WebView2 atinge um estado de general General estável e lançamos o
 
 <!--links -->
 
-[Webview2Distibution]: ./distribution.md "Não existe | Documentos da Microsoft"  
-[Webview2IndexEdgeRuntime]: ../index.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime-Microsoft Edge WebView2 (prévia do desenvolvedor) | Documentos da Microsoft"  
+[Webview2Distibution]: ./distribution.md "Distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
+[Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
 [Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Experimental-Reference (WebView2) | Documentos da Microsoft"  
 [Webview2Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 

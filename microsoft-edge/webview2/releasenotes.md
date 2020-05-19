@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Mi
 title: Notas de versão do Microsoft Edge WebView2 para Win32, WPF e WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 14030d3dde8c4e68c0790073dc38e5c856e2a091
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 255f8d56ae1a4b77a87697b9cd3814380dd06994
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652746"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659661"
 ---
 # Notas de versão do SDK do WebView2  
 
@@ -39,8 +39,8 @@ Notas de versão do [SDK do WebView2][WebView2NuGetGallery].
 
 **Compile novamente o aplicativo após atualizar o pacote NuGet.**
 
-* **Lançamento:** A partir da próxima versão do Microsoft Edge 83, o WebView sempre não direcionará mais o canal de navegador estável. Em vez disso, ele direcionará outro conjunto de binários, com a marca [Microsoft Edge WebView2 Runtime](./index.md#microsoft-edge-webview2-runtime), que pode ser instalada em cadeia por meio de um instalador que estamos desenvolvendo no momento. Mais detalhes na [distribuição de aplicativo](./index.md#app-distribution).
-* **Lançamento:** Em frente, lançaremos dois pacotes: um pacote de pré-lançamento com APIs experimentais (para experimentar) e um pacote de lançamento estável com APIs estáveis (você pode depender delas). Desfaça checkout do [SDK do Microsoft Edge WebView2](./index.md#microsoft-edge-webview2-sdk) para saber mais sobre as diferenças.
+* **Lançamento:** A partir da próxima versão do Microsoft Edge 83, o WebView sempre não direcionará mais o canal de navegador estável. Em vez disso, ele direcionará outro conjunto de binários, com a marca [Microsoft Edge WebView2 Runtime](./concepts/distribution.md#microsoft-edge-webview2-runtime), que pode ser instalada em cadeia por meio de um instalador que estamos desenvolvendo no momento. Mais detalhes na [distribuição de aplicativo](./concepts/distribution.md).
+* **Lançamento:** Em frente, lançaremos dois pacotes: um pacote de pré-lançamento com APIs experimentais (para experimentar) e um pacote de lançamento estável com APIs estáveis (você pode depender delas). Desfaça checkout do [SDK do Microsoft Edge WebView2](./concepts/versioning.md) para saber mais sobre as diferenças.
 * **Alteração de quebra:** Para garantir que nossa API se alinhe com as convenções de nomenclatura da API do Windows, atualizamos os nomes das seguintes interfaces:
   * CORE_WEBVIEW2_ * prefixo agora está COREWEBVIEW2_ *.
   * [GetCoreWebView2BrowserVersionInfo](reference/win32/0-9-430/webview2-idl.md#getcorewebview2browserversioninfo) agora é [GetAvailableCoreWebView2BrowserVersionString](reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring)
