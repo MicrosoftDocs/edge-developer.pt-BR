@@ -3,18 +3,18 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidade, White Paper, confiança
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658813"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673777"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -70,9 +70,7 @@ A cada 24 horas, o Microsoft Edge baixa uma lista de sites com suporte para os q
 
 Os modelos armazenados no dispositivo podem ser excluídos limpando os dados do cache na configuração **limpar dados de navegação** em `edge://settings/privacy` .
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+Se você ativar a opção **Mostrar sugestões do Pinterest em coleções**, as coleções executarão uma pesquisa do Microsoft Bing usando o título da sua coleção para localizar páginas de tópicos relevantes do Pinterest.  O Microsoft Edge não envia dados sobre suas coleções para o Pinterest.  Você pode remover as sugestões e interromper pesquisas para páginas de tópico do Pinterest, acessando `edge://settings/privacy` e desativando **Mostrar sugestões de Pinterest em coleções**.  
 
 As coleções não estão disponíveis ao usar a navegação InPrivate ou o modo convidado.  
 
@@ -187,9 +185,9 @@ O Microsoft Edge oferece suporte à [API geolocalização](https://w3.org/TR/geo
 
 No lado direito da barra de endereços, o Microsoft Edge indica quando o seu local está ou não está sendo compartilhado.  
 
-![Local](./media/whitepaper-media/geolocation2.png)  
+![Location](./media/whitepaper-media/geolocation2.png)  
 
-Se você permitir o compartilhamento de sua localização com um site, o Microsoft Edge enviará informações de rede local, como seu endereço IP e pontos de acesso Wi-Fi próximos ao serviço de localização da Microsoft.  O serviço da Microsoft usa as informações para estimar suas coordenadas de localização geográfica.  Essa estimativa de geolocalização é então compartilhada com o site com o qual você concordou em compartilhar sua localização.  No Windows 10, o Microsoft Edge usará somente o serviço de localização da Microsoft se você ativou a [configuração de localização do Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+Se você permitir o compartilhamento de sua localização com um site, o Microsoft Edge enviará informações de rede local, como seu endereço IP e pontos de acesso Wi-Fi próximos ao serviço de localização da Microsoft.  O serviço da Microsoft usa as informações para estimar suas coordenadas de localização geográfica.  A estimativa de localização geográfica é compartilhada com o site com o qual você concordou em compartilhar sua localização.  No Windows 10, se você ativar **permitir o acesso ao local neste dispositivo** e **permitir que os aplicativos acessem o local** nas configurações de **localização** nas configurações do **Windows** , o Microsoft Edge fornecerá sites com um local mais preciso.  Se você desativar **a opção permitir acesso ao local neste dispositivo** e **permitir que os aplicativos acessem sua localização**, um local aproximado será fornecido para os sites.  As informações são compartilhadas apenas com os sites que você anteriormente permitiu ver sua localização.  [Configuração de localização do Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 Um novo ID gerado aleatoriamente é usado ao fazer solicitações ao serviço de localização da Microsoft.  O serviço de localização do Microsoft Edge não armazena suas coordenadas de localização geográfica por qualquer período de tempo.  
 
@@ -219,7 +217,7 @@ O recurso atualizações automáticas está ativado por padrão para todos os us
 
 O Microsoft Edge oferece uma experiência simplificada com a integração do Internet Explorer \ (IE \).  O Microsoft Edge só dá suporte ao IE 11 e ao modo IE e só está disponível no Windows.  Esse recurso está disponível para organizações por meio de políticas de grupo.  O administrador decide abrir uma lista de sites no modo IE no Microsoft Edge.  
 
-![Local](./media/whitepaper-media/ie-mode.png)  
+![Location](./media/whitepaper-media/ie-mode.png)  
 
 O Microsoft Edge baixa a lista de sites de um local definido pelo administrador por meio de uma política e armazena em cache o arquivo para determinar quais sites devem ser abertos no modo IE.  Dependendo das configurações do Windows ou do IE 11, o Microsoft Edge coleta dados de diagnóstico sobre o uso do modo do IE, como a quais sites os usuários acessam, dados de desempenho, dados de confiabilidade e dados de uso de recursos.  No Windows 10, os dados de diagnóstico são coletados de acordo com a configuração dos dados de diagnóstico do Windows.  No Windows 8,1, as informações do site são coletadas se o usuário tiver optado pelo recurso de reversão antecipada ou sites sugeridos no IE.  O modo do IE não pode seguir a mesma coleta de dados alterna nas configurações de privacidade e serviços do Microsoft Edge.  
 
