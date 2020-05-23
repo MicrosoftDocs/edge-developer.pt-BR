@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WPF, WPF, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 01d92322a85e38dab3c502e8dd76729fef8400b1
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6e66d90c3b821ee3656466ccaf3c9a079dda5030
+ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652458"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "10673955"
 ---
 # Introdução ao WebView2 no WPF (visualização)  
 
@@ -23,7 +23,7 @@ Neste artigo, comece a criar seu primeiro aplicativo WebView2 e saiba mais sobre
 
 Verifique se você instalou a seguinte lista de pré-requisitos antes de continuar:  
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) instalado no Windows 10, no Windows 8,1 ou no Windows 7.  A equipe do Microsoft Edge WebView recomenda usar o canal Canárias.  
+* [Microsoft Edge (Chromium) Canárias Channel](https://www.microsoftedgeinsider.com/download/) instalado no Windows 10, no Windows 8,1 ou no Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 ou posterior.  
 
 ## Etapa 1-criar um único aplicativo de janela
