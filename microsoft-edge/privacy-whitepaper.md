@@ -3,18 +3,18 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidade, White Paper, confiança
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673777"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678222"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -86,7 +86,7 @@ Despejos de falha são enviados à Microsoft e armazenados em servidores seguros
 
 Os dados de diagnóstico de falha armazenados localmente no dispositivo podem ser removidos do sistema de arquivos no `edge://crashes` .  
 
-Para desativar a coleta de dados de diagnóstico de falha no Windows 10, vá para **Diagnóstico \ & comentários** no Windows diagnóstico \ & configurações de comentários.  Para as versões do Microsoft Edge em todas as outras plataformas `edge://settings/privacy` , acesse e desative os **melhores produtos da Microsoft enviando relatórios de falha e dados sobre como usar a configuração do navegador** .  Esta coleta de dados de diagnóstico também pode ser desativada para empresas por meio [das políticas de grupo gerenciadas pela sua organização](/deployedge/microsoft-edge-privacy-policy).  
+Para desativar a coleta de dados de diagnóstico de falha no Windows 10, vá para **Diagnóstico \ & comentários** no Windows diagnóstico \ & configurações de comentários.  Para as versões do Microsoft Edge em todas as outras plataformas `edge://settings/privacy` , acesse e desative os **melhores produtos da Microsoft enviando relatórios de falha e dados sobre como usar a configuração do navegador** .  Esta coleta de dados de diagnóstico também pode ser desativada para empresas por meio [das políticas de grupo gerenciadas pela sua organização](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 ## Dados de diagnóstico sobre como usar o navegador  
 
