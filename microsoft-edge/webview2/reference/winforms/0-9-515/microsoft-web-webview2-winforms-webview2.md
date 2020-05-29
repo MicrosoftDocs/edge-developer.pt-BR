@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: Microsoft Edge WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 25ea8367aa9d64d0a1066cf8c1564f4d9c9f05ed
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652352"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687801"
 ---
 # Classe Microsoft. Web. WebView2. WinForms. WebView2 
 
@@ -50,9 +50,6 @@ Controle para inserir WebView2 em WinForms.
 [Recarregar](#reload) | Recarregue o documento de nível superior da WebView2.
 [Parar](#stop) | Parar a navegação em andamento no WebView2.
 [WebView2](#webview2) | Crie um novo controle WinForms do WebView2.
-[OnEnter](#onenter) | Manipulador de foco protegido.
-[OnSizeChanged](#onsizechanged) | Manipulador SizeChanged protegido.
-[OnVisibleChanged](#onvisiblechanged) | Manipulador de Visibilidadechanged protegido.
 
 ## Parte
 
@@ -216,22 +213,4 @@ Crie um novo controle WinForms do WebView2.
 > [WebView2](#webview2)público ()
 
 Após a construção, a propriedade CoreWebView2 é NULL. Chame [EnsureCoreWebView2Async](#ensurecorewebview2async) para inicializar o CoreWebView2 subjacente.
-
-#### OnEnter 
-
-Manipulador de foco protegido.
-
-> Protected override void [OnEnter](#onenter)(EventArgs e)
-
-#### OnSizeChanged 
-
-Manipulador SizeChanged protegido.
-
-> proteção contra substituição void [OnSizeChanged](#onsizechanged)(EventArgs e)
-
-#### OnVisibleChanged 
-
-Manipulador de Visibilidadechanged protegido.
-
-> proteção contra substituição nula [OnVisibleChanged](#onvisiblechanged)(EventArgs e)
 

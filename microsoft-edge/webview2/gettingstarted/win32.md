@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: f62fa25dab7ee1e89f268e4b77a9c0612cac665f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 0ab152e52b5e5d89cf493ff525ce53d9ab174e6d
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652765"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685677"
 ---
 # Introdução ao WebView2 (Developer Preview)
 
@@ -219,9 +219,9 @@ Há muitas funcionalidades WebView2s que não são abordadas neste guia passo a 
 
 Para saber mais:
 
-* WebView2-out [API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) para obter um exemplo abrangente de nossos recursos de SDKs.
+* WebView2-out [API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) para obter um exemplo abrangente de recursos do WebView2's.
 * Fazer check-out [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) um aplicativo criado usando o WebView2.
-* Explore a [referência de API](../reference/win32/0-9-488-reference-webview2.md) para obter informações detalhadas sobre a API de out.  
+* Explore a [referência de API](../reference/win32/0-9-488-reference-webview2.md) para obter informações detalhadas sobre nossa API.  
 
 ## Entrar em contato com a equipe do WebView2  
 

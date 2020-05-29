@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WinForms, WinForms, Edge, CoreWebView2, controle do navegador, HTML Edge, introdução, introdução, .NET, formulários do Windows
-ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673945"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685684"
 ---
 # Introdução ao WebView2 em aplicativos do Windows Forms (visualização)  
 
@@ -24,7 +24,7 @@ Neste artigo, comece a criar seu primeiro aplicativo WebView2 e saiba mais sobre
 Verifique se você instalou a seguinte lista de pré-requisitos antes de continuar:  
 
 * [Microsoft Edge (Chromium) Canárias Channel](https://www.microsoftedgeinsider.com/download/) instalado no Windows 10, no Windows 8,1 ou no Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 ou posterior.
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 ou posterior.
 
 > [!NOTE]
 > Se estiver desenvolvendo com o **Windows Forms .NET Core 3,0 ou o .NET 5**, baixe o [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
@@ -290,9 +290,12 @@ Selecione `F5` para compilar e executar o aplicativo.  Confirme se a barra de en
 
 Parabéns, você criou seu primeiro aplicativo WebView2!  
 
-## Próximas etapas  
+## Próximas etapas 
 
-Para obter mais informações sobre os recursos do WebView2 não incluídos neste guia passo a passo, consulte a [referência de API](../reference/dotnet/0-9-515-reference-webview2.md).
+* Fazer check-out do [repositório WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obter um exemplo abrangente de recursos do WebView2's
+* [Referência de API](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) de check-out para obter informações mais detalhadas sobre nossas APIs
+* Fazer check-out de uma lista de [recursos do WebView2](../index.md#next-steps) para saber mais sobre o WebView2
+
 
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
