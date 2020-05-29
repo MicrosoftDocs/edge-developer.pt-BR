@@ -54,11 +54,11 @@ Continue enviando seus [comentários e solicitações de recursos](#feedback)!
 
 ## Aplicativo da Microsoft Store  
 
-O **devtools Microsoft Edge \ (EdgeHTML \)** [agora está disponível][DevtoolsGuideEdgehtmlWhatsnew] como um [aplicativo autônomo do Windows 10 da Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], além da experiência de ferramenta no navegador \ (`F12`\).  Com a versão da loja vem um painel do **seletor** para anexar a abertura de destinos de página locais e remotos e um layout com guias para facilitar a alternância entre instâncias de devtools.  
+O **devtools Microsoft Edge \ (EdgeHTML \)** [agora está disponível][DevtoolsGuideEdgehtmlWhatsnew] como um [aplicativo autônomo do Windows 10 da Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], além da experiência de ferramenta no navegador \ ( `F12` \).  Com a versão da loja vem um painel do **seletor** para anexar a abertura de destinos de página locais e remotos e um layout com guias para facilitar a alternância entre instâncias de devtools.  
 
 ### Depuração local  
 
-Para depurar uma página localmente, basta iniciar o aplicativo Microsoft Edge DevTools.  O painel **local** do seletor exibe todos os processos de conteúdo ativos do EdgeHTML, incluindo guias do navegador Edge aberto, executando [PWAs][PwasEdgehtmlIndex] \`WWAHost.exe` (processos \) e controles [WebView][HostingWebview] .  Selecione o destino desejado para anexar e abrir uma nova instância de guia do DevTools.  
+Para depurar uma página localmente, basta iniciar o aplicativo Microsoft Edge DevTools.  O painel **local** do seletor exibe todos os processos de conteúdo ativos do EdgeHTML, incluindo guias do navegador Edge aberto, executando [PWAs][PwasEdgehtmlIndex] \ ( `WWAHost.exe` processos \) e controles [WebView][HostingWebview] .  Selecione o destino desejado para anexar e abrir uma nova instância de guia do DevTools.  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Painel local do aplicativo DevTools":::
    Painel local do aplicativo DevTools
@@ -119,7 +119,7 @@ Esses atalhos controlam a janela principal do DevTools e devem funcionar em toda
 
 ## Privacidade Jurídica  
 
-Envie seus comentários para ajudar a melhorar o Microsoft Edge \ (EdgeHTML \) DevTools para você!  Basta abrir as ferramentas \ (`F12`\) e selecionar o botão [enviar comentários](#microsoft-edge-edgehtml-developer-tools) .  
+Envie seus comentários para ajudar a melhorar o Microsoft Edge \ (EdgeHTML \) DevTools para você!  Basta abrir as ferramentas \ ( `F12` \) e selecionar o botão [enviar comentários](#microsoft-edge-edgehtml-developer-tools) .  
 
 Torne-se um [Windows Insider][WindowsInsiderProgram] para visualizar os [recursos mais recentes que chegam ao devtools][DevtoolsGuideEdgehtmlWhatsnew].  Use o aplicativo Hub de feedback do Windows para postar, fazer uma votação, acompanhar e obter suporte para sugestões gerais do Windows e problemas.  
 
