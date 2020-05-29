@@ -54,7 +54,7 @@ Também estão incluídos detalhes sobre como alterar o local do ícone de exten
 ![extensão no painel de extensão](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> As extensões não assinadas são desativadas automaticamente em inicializações subsequentes do Microsoft Edge. Quando o navegador entra em um estado ocioso (após cerca de 10 segundos de inatividade), você verá a seguinte notificação na parte inferior da janela. ![notificação](./../media/riskynotification.png) arriscada para ativar as extensões não assinadas, clique em "ativar de qualquer maneira".
+> As extensões não assinadas são desativadas automaticamente em inicializações subsequentes do Microsoft Edge. Quando o navegador entra em um estado ocioso (após cerca de 10 segundos de inatividade), você verá a seguinte notificação na parte inferior da janela. ![notificação arriscada ](./../media/riskynotification.png) para ativar as extensões não assinadas, clique em "ativar de qualquer maneira".
 
 
 
