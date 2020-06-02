@@ -1,20 +1,20 @@
-- name: Usando o tempo de execução do Windows em JavaScript
+- name: Usando o Tempo de Execução do Windows no JavaScript
   href: using-the-windows-runtime-in-javascript.md
   items:
-    - name: Considerações ao usar a API de tempo de execução do Windows
+    - name: Considerações ao usar a API do Windows Runtime
       href: considerations-when-using-the-windows-runtime-api.md
-    - name: Usando métodos assíncronos do tempo de execução do Windows
+    - name: Usando Métodos Assíncronos do Windows Runtime
       href: using-windows-runtime-asynchronous-methods.md
       items:
-        - name: Propriedades de erro especiais dos métodos de tempo de execução do Windows assíncrono
+        - name: Propriedades de Erro Especiais de Métodos Assíncronos do Windows Runtime
           href: special-error-properties-from-asynchronous-windows-runtime-methods.md
-    - name: Manipular eventos de tempo de execução do Windows em JavaScript
+    - name: Lidando com de Eventos do Windows Runtime no JavaScript
       href: handling-windows-runtime-events-in-javascript.md
-    - name: Representação de JavaScript dos tipos de tempo de execução do Windows
+    - name: Representação JavaScript de Tipos de Windows Runtime
       href: javascript-representation-of-windows-runtime-types.md
-    - name: Representações DateTime e TimeSpan de tempo de execução do Windows
+    - name: Representações de DateTime e TimeSpan do Windows Runtime
       href: windows-runtime-datetime-and-timespan-representations.md
-    - name: Códigos de erro para aplicativos de tempo de execução do Windows usando JavaScript
+    - name: Códigos de Erro para Aplicativos do Windows Runtime usando JavaScript
       href: error-codes-for-windows-runtime-apps-using-javascript.md
 - name: Referência (WinRT)
   items:

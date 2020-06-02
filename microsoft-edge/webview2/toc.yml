@@ -2,27 +2,27 @@
   href: index.md
 - name: Introdução
   items:
-    - name: Win
+    - name: Win32
       href: gettingstarted/win32.md
-    - name: WFP
+    - name: WPF
       href: gettingstarted/wpf.md
-    - name: Formulários do Windows
+    - name: Windows Forms
       href: gettingstarted/winforms.md
 - name: Conceitos
   items:
-    - name: Distribuindo meu aplicativo
+    - name: Distribuindo Meu Aplicativo
       href: concepts/distribution.md
     - name: Controle de versão
       href: concepts/versioning.md
 - name: Notas de versão
   href: releasenotes.md
-- name: Roteiro
+- name: Mapa
   href: roadmap.md
-- name: Como fazer
+- name: 'Como:'
   items:
-    - name: Depurar WebView2
+    - name: Depurar o WebView2
       href: howto/Debug.md
-    - name: Automatizar com o driver de borda
+    - name: Automatizar com o Driver do Edge
       href: howto/webdriver.md
 - name: Referência
   href: webview2-api-reference.md
@@ -84,7 +84,7 @@
               href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventargs.md
             - name: ICoreWebView2WebResourceRequestedEventArgs
               href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventargs.md
-        - name: Representantes
+        - name: Delega
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventHandler
               href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventhandler.md
@@ -152,7 +152,7 @@
               href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
         - name: Arquivados
           items:
-            - name: 0.9.430-Reference (WebView2)
+            - name: 0.9.430 - Referência (WebView2)
               href: reference/win32/0-9-430-reference-webview2.md
               items:
                 - name: ICoreWebView2
@@ -209,7 +209,7 @@
                       href: reference/win32/0-9-430/icorewebview2webmessagereceivedeventargs.md
                     - name: ICoreWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-9-430/icorewebview2webresourcerequestedeventargs.md
-                - name: Representantes
+                - name: Delega
                   items:
                     - name: ICoreWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-9-430/icorewebview2acceleratorkeypressedeventhandler.md
@@ -263,7 +263,7 @@
                       href: reference/win32/0-9-430/icorewebview2windowcloserequestedeventhandler.md
                     - name: ICoreWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler.md
-            - name: 0.8.190-Reference (WebView2)
+            - name: 0.8.190 - Referência (WebView2)
               href: reference/win32/0-8-190-reference-webview2.md
               items:
                 - name: IWebView2Deferral
@@ -330,7 +330,7 @@
                       href: reference/win32/0-8-190/iwebview2webmessagereceivedeventargs.md
                     - name: IWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-8-190/iwebview2webresourcerequestedeventargs.md
-                - name: Representantes
+                - name: Delega
                   items:
                     - name: IWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-8-190/iwebview2acceleratorkeypressedeventhandler.md
@@ -380,10 +380,10 @@
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
       items:
-        - name: Serviços básicos
+        - name: Core
           href: reference/dotnet/0-9-515-reference-webview2.md
           items:
-            - name: Namespace Microsoft. Web. WebView2. Core
+            - name: Namespace Microsoft.Web.WebView2.Core
               href: reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md
@@ -431,14 +431,14 @@
                   href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
                 - name: CoreWebView2WebResourceRequestedEventArgs
                   href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
-        - name: WFP
+        - name: WPF
           href: reference/wpf/0-9-515-reference-webview2.md
           items:
             - name: Classe CoreWebView2CreationProperties
               href: reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md
             - name: Classe WebView2
               href: reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md
-        - name: Formulários do Windows
+        - name: Windows Forms
           href: reference/winforms/0-9-515-reference-webview2.md
           items:
             - name: Classe WebView2
