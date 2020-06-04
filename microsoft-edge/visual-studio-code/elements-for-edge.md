@@ -1,34 +1,38 @@
 ---
 description: Como usar os elementos do Microsoft Edge (Chromium) a partir do código VS
 title: Elementos do Microsoft Edge (Chromium) de código VS
-author: erdraud
-ms.author: erdraud
-ms.date: 08/08/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, código vs, código do Visual Studio, elementos
-ms.openlocfilehash: 4875a4665fe1561ecf587a050bbd44e116d9ce5e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: ef516d8364c68b550f889bcad0fe762a73ce5f99
+ms.sourcegitcommit: 652009c5cea9e75c22b077f0cbcdc0d96bd337ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562473"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10694859"
 ---
-# Elementos da extensão de código do Microsoft Edge VS
+# Elementos da extensão de código do Microsoft Edge VS  
 
-Ao adicionar os [elementos para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) vs extensão de código, você pode usar a ferramenta elementos do navegador dentro do [código do Visual Studio](https://code.visualstudio.com/). Ao iniciar ou anexar, a ferramenta elementos será conectada a uma instância do Microsoft Edge, exibirá a estrutura HTML do tempo de execução e permitirá que você altere o layout ou corrija os problemas de estilo.
+Com os [elementos para Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] vs extensão de código, use a ferramenta elementos do navegador Microsoft Edge de dentro do [código do Visual Studio][VisualstudioCode].  Ao iniciar ou anexar, a ferramenta elementos se conecta a uma instância do Microsoft Edge, exibe a estrutura HTML do tempo de execução e permite que você altere o layout ou corrija problemas de estilo.  
 
-![GIF dos elementos para Edge VS extensão de código no trabalho](./media/elements-for-edge.gif)
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elementos para Edge VS extensão de código no trabalho":::
+   Elementos para Edge VS extensão de código no trabalho  
+:::image-end:::
 
-## Iniciando o Microsoft Edge da extensão de elementos 
+<!--![Elements for Edge VS Code extension at work][ImageGifElementsEdge]  -->  
 
-Navegue até elementos na **barra de atividades**. Ao lado do local em que diz "elementos para Microsoft Edge: targets", há um sinal de adição que abrirá o navegador do seu aplicativo. Se você tiver selecionado a opção *about: Blank* , será preciso navegar até seu aplicativo Web no navegador para que ele seja exibido no painel de elementos em vs Code.
+## Iniciando o Microsoft Edge da extensão de elementos  
 
-## Iniciando o Microsoft Edge a partir do modo de exibição de depuração
+Navegue até elementos na **barra de atividades**.  Ao lado de onde ele diz **elementos para Microsoft Edge: targets,** há um sinal de adição que abre o navegador do seu aplicativo.  Se você tiver selecionado a opção **about: Blank** , você deve navegar para o seu aplicativo Web no navegador para que ele apareça no painel de elementos em vs Code.  
 
-Se você estiver acostumado a usar o modo de exibição de depuração no código do Visual Studio, poderá acessar os elementos dessa ferramenta. Navegue até o modo de exibição de depuração ( `Ctrl`  +  `Shift`  +  `D` no Windows ou `Command`  +  `Shift`  +  `D` no Mac). 
+## Iniciando o Microsoft Edge a partir do modo de exibição de depuração  
 
-Se você não tiver nenhuma configuração no código do VS, pressione `F5` no Windows ou Mac ou clique no botão de **reprodução** verde. Selecione "borda" na lista suspensa. Agora, você verá um arquivo **inicialização. JSON** com a seguinte configuração:
+Se você estiver acostumado a usar o modo de exibição de depuração no código do Visual Studio, acesse elementos dessa ferramenta.  Navegue até o modo de exibição de depuração \ ( `Ctrl` + `Shift` + `D` no Windows ou `Command` + `Shift` + `D` no MacOS \).  
+
+Se você não tiver configurações no código do VS, pressione `F5` no Windows ou no MacOS ou selecione o botão de **reprodução** verde. Selecione **borda** na lista suspensa. Você deve ver um `launch.json` arquivo com a configuração a seguir.  
 
 ```json
 {
@@ -44,16 +48,17 @@ Se você não tiver nenhuma configuração no código do VS, pressione `F5` no W
         }
     ]
 }
-```
+```  
 
-Agora que você carregou a configuração correta, pressione `F5` no Windows ou no Mac ou clique no botão verde **Play** . A ferramenta de elementos com a qual você está familiarizado com o navegador Microsoft Edge agora será iniciada no código VS, permitindo que você acesse o screencast do seu navegador e examine os componentes da página.
+Agora que você carregou a configuração correta, pressione `F5` no Windows ou no MacOS ou selecione o botão de **reprodução** verde. A ferramenta elementos, que é familiar para você, do navegador Microsoft Edge é iniciada no código VS, permitindo que você acesse o screencast do seu navegador e examine os componentes da página.  
 
-## Anexando ao Microsoft Edge
-Se quiser anexar o código VS a uma instância do Microsoft Edge (Chromium), você deve iniciar o navegador executando o seguinte comando em seu teminal:
+## Anexando ao Microsoft Edge  
 
-`start msedge --remote-debugging-port=9222`
+Para anexar o código VS a uma instância do Microsoft Edge \ (Chromium \), você deve iniciar o navegador executando o seguinte comando no seu terminal.  
 
-Depois que o aplicativo for iniciado, adicione a configuração abaixo ao arquivo **. JSON de inicialização** :
+`start msedge --remote-debugging-port=9222`  
+
+Depois que o aplicativo for iniciado, adicione a configuração abaixo ao arquivo **. JSON de inicialização** :  
 
 ```json
 {
@@ -64,11 +69,29 @@ Depois que o aplicativo for iniciado, adicione a configuração abaixo ao arquiv
     "webRoot": "${workspaceFolder}/out",
     "port": 9222
 }
-```
+```  
 
-Selecione "anexar ao Microsoft Edge e abra a ferramenta elementos" no menu suspenso depurador. Em seguida, pressione `F5` no Windows ou Mac ou clique no botão de **reprodução** verde. O código VS iniciará a ferramenta elementos, permitindo que você acesse o screencast do seu navegador, inspecione o DOM e o estilo dos componentes na página.
+Selecione **anexar ao Microsoft Edge e abra a ferramenta elementos** no menu suspenso depurador.  Em seguida, pressione `F5` no Windows ou no MacOS ou selecione o botão de **reprodução** verde.  VS o código inicia a ferramenta elementos, permitindo que você acesse o screencast do seu navegador, inspecione o DOM e o estilo dos componentes na página.  
 
-## Privacidade Jurídica
-Envie-nos seus comentários [arquivando um problema](https://github.com/microsoft/vscode-edge-devtools/issues/new) em relação ao [repositório GitHub](https://github.com/microsoft/vscode-edge-devtools)da extensão. 
+## Entre em contato com os elementos da equipe de extensão de código do Microsoft Edge versus  
 
-Se você quiser nos ajudar a aprimorar essa extensão, Agradecemos suas contribuições! Você pode encontrar tudo o que precisa para começar a usar o [repositório do GitHub](https://github.com/microsoft/vscode-edge-devtools).
+Envie seus comentários por meio do [arquivamento de um problema][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] no [repositório GitHub][GithubMicrosoftVscodeEdgeDevtools] da extensão.  
+
+Se você quiser ajudar a melhorar a extensão de código do Microsoft Edge VS, suas contribuições serão bem-vindos!  Encontre tudo o que você precisa para começar a usar o [repositório do GitHub][GithubMicrosoftVscodeEdgeDevtools] da extensão.  
+
+<!-- image links -->  
+
+<!--[ImageGifElementsEdge]: ./media/elements-for-edge.gif "Elements for Edge VS Code extension in action"  -->  
+Elementos [ImagePngElementsEdge]:./Media/Elements-for-Edge.png "para Edge VS extensão de código em ação"  
+
+<!--links -->  
+
+[VscodeElementsEdge]: ./elements-for-edge.md "Elementos para Microsoft Edge VS extensão de código | Documentos da Microsoft"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentação | Código do Visual Studio"   
+
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "Microsoft/vscode-Edge-devtools | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "Novo problema-Microsoft/vscode-Edge-devtools | GitHub"
+
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elementos do Microsoft Edge (Chromium) | Visual Studio Marketplace"  
