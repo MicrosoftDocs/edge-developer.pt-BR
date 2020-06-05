@@ -1,28 +1,32 @@
 ---
 description: Como depurar o Microsoft Edge (Chromium) e o Microsoft Edge (EdgeHTML) a partir de código VS
 title: Depurar o Microsoft Edge (Chromium) a partir de código VS
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/10/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, código vs, código do Visual Studio, depurador
-ms.openlocfilehash: 7d8d2f87500b3e81866b49de32db91c0a525baf2
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562469"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695863"
 ---
-# <span data-ttu-id="16294-104">Depurador para extensão de código do Microsoft Edge VS</span><span class="sxs-lookup"><span data-stu-id="16294-104">Debugger for Microsoft Edge VS Code extension</span></span>
+# <span data-ttu-id="6b5cf-104">Depurador para extensão de código do Microsoft Edge VS</span><span class="sxs-lookup"><span data-stu-id="6b5cf-104">Debugger For Microsoft Edge VS Code Extension</span></span>  
 
-<span data-ttu-id="16294-105">Com o [depurador para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs extensão de código, você pode depurar o código JavaScript front-end linha por linha e ver `console.log()` instruções diretamente do [código do Visual Studio](https://code.visualstudio.com/)!</span><span class="sxs-lookup"><span data-stu-id="16294-105">With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug your front-end JavaScript code line by line and see `console.log()` statements all directly from [Visual Studio Code](https://code.visualstudio.com/)!</span></span>
+<span data-ttu-id="6b5cf-105">Com o [depurador do Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] versus extensão de código, depure o código JavaScript front-end linha por linha e veja `console.log()` instruções diretamente do [código do Visual Studio][VisualstudioCode]!</span><span class="sxs-lookup"><span data-stu-id="6b5cf-105">With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!</span></span>  
 
-![GIF do depurador para Edge VS extensão de código no trabalho](./media/debugger-for-edge.gif)
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Depurador para Edge VS extensão de código no trabalho":::
+   <span data-ttu-id="6b5cf-107">Depurador para Edge VS extensão de código no trabalho</span><span class="sxs-lookup"><span data-stu-id="6b5cf-107">Debugger for Edge VS Code extension at work</span></span>  
+:::image-end:::
 
-## <span data-ttu-id="16294-107">Iniciando o Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="16294-107">Launching Microsoft Edge</span></span>
+<!--![Debugger for Edge VS Code extension at work][ImageGifDebuggerEdge]  -->  
 
-<span data-ttu-id="16294-108">Navegue até o modo de exibição de depuração ( `Ctrl`  +  `Shift`  +  `D` no Windows ou `Command`  +  `Shift`  +  `D` no Mac) na **barra de atividades**.</span><span class="sxs-lookup"><span data-stu-id="16294-108">Navigate to the Debug view (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac) in the **Activity Bar**.</span></span> <span data-ttu-id="16294-109">Se você não tiver nenhuma configuração no código do VS, pressione `F5` no Windows ou Mac ou clique no botão de **reprodução** verde.</span><span class="sxs-lookup"><span data-stu-id="16294-109">If you do not have any configurations in VS Code, press `F5` on Windows or Mac or click the green **Play** button.</span></span> <span data-ttu-id="16294-110">Selecione "borda" na lista suspensa.</span><span class="sxs-lookup"><span data-stu-id="16294-110">Select "Edge" in the dropdown.</span></span> <span data-ttu-id="16294-111">Agora, você verá um arquivo **inicialização. JSON** com a seguinte configuração:</span><span class="sxs-lookup"><span data-stu-id="16294-111">You will now see a **launch.json** file with the following configuration:</span></span>
+## <span data-ttu-id="6b5cf-108">Iniciando o Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="6b5cf-108">Launching Microsoft Edge</span></span>  
+
+<span data-ttu-id="6b5cf-109">Navegue até o modo de exibição de depuração \ ( `Ctrl` + `Shift` + `D` no Windows ou `Command` + `Shift` + `D` no MacOS \) na **barra de atividades**.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-109">Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+`D` on macOS\) in the **Activity Bar**.</span></span>  <span data-ttu-id="6b5cf-110">Se você não tiver configurações no código do VS, pressione `F5` no Windows ou no MacOS ou selecione o botão de **reprodução** verde.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-110">If you do not have any configurations in VS Code, press `F5` on Windows or macOS or select the green **Play** button.</span></span>  <span data-ttu-id="6b5cf-111">Selecione **borda** na lista suspensa.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-111">Select **Edge** in the dropdown.</span></span>  <span data-ttu-id="6b5cf-112">Você deve ver um `launch.json` arquivo com a configuração a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-112">You should see a `launch.json` file with the following configuration.</span></span>  
 
 ```json
 {
@@ -37,13 +41,13 @@ ms.locfileid: "10562469"
         }
     ]
 }
-```
+```  
 
-<span data-ttu-id="16294-112">Se você agora pressionar `F5` no Windows ou Mac ou clicar no botão verde de **reprodução** novamente, o código do vs iniciará o Microsoft Edge (EdgeHTML) e você poderá depurar qualquer projeto Web que você esteja executando na porta **8080** diretamente de um código vs!</span><span class="sxs-lookup"><span data-stu-id="16294-112">If you now press `F5` on Windows or Mac or click the green **Play** button again, VS Code will launch Microsoft Edge (EdgeHTML) and you will be able to debug any web project you have running on port **8080** directly from VS Code!</span></span>
+<span data-ttu-id="6b5cf-113">Se você pressionar `F5` o Windows ou o MacOS ou selecionar o botão de **reprodução** verde novamente, o código do vs Inicializa o Microsoft Edge \ (EdgeHTML \) e você poderá depurar qualquer projeto da Web que esteja executando na porta `8080` diretamente do vs Code!</span><span class="sxs-lookup"><span data-stu-id="6b5cf-113">If you press `F5` on Windows or macOS or select the green **Play** button again, VS Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from VS Code!</span></span>  
 
-### <span data-ttu-id="16294-113">Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="16294-113">Microsoft Edge (Chromium)</span></span>
+### <span data-ttu-id="6b5cf-114">Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="6b5cf-114">Microsoft Edge (Chromium)</span></span>  
 
-<span data-ttu-id="16294-114">Se você quiser iniciar o Microsoft Edge (Chromium), a próxima versão do Microsoft Edge, em vez do Microsoft Edge (EdgeHTML), basta adicionar um `version` atributo à sua configuração existente com a versão do Microsoft Edge (Chromium) que você deseja iniciar ( `dev` , `beta` ou ou `canary` ).</span><span class="sxs-lookup"><span data-stu-id="16294-114">If you want to launch Microsoft Edge (Chromium), the next version of Microsoft Edge, instead of Microsoft Edge (EdgeHTML), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge (Chromium) you want to launch (`dev`, `beta`, or `canary`).</span></span> <span data-ttu-id="16294-115">A configuração a seguir inicializará a versão Canárias do Microsoft Edge (Chromium):</span><span class="sxs-lookup"><span data-stu-id="16294-115">The configuration below will launch the Canary version of Microsoft Edge (Chromium):</span></span>
+<span data-ttu-id="6b5cf-115">Se você quiser iniciar o Microsoft Edge \ (Chromium \), a próxima versão do Microsoft Edge, em vez do Microsoft Edge \ (EdgeHTML \), basta adicionar um `version` atributo à sua configuração existente com a versão do Microsoft Edge \ (Chromium \) que você deseja iniciar \ ( `dev` , `beta` ou `canary` \).</span><span class="sxs-lookup"><span data-stu-id="6b5cf-115">If you want to launch Microsoft Edge \(Chromium\), the next version of Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`dev`, `beta`, or `canary`\).</span></span> <span data-ttu-id="6b5cf-116">A seguinte configuração a seguir inicia a versão Canárias do Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="6b5cf-116">The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).</span></span>  
 
 ```json
 {
@@ -54,15 +58,17 @@ ms.locfileid: "10562469"
     "url": "http://localhost:8080",
     "webRoot": "${workspaceFolder}"
 }
-```
+```  
 
-## <span data-ttu-id="16294-116">Anexando ao Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="16294-116">Attaching to Microsoft Edge</span></span>
+## <span data-ttu-id="6b5cf-117">Anexando ao Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="6b5cf-117">Attaching to Microsoft Edge</span></span>  
 
-<span data-ttu-id="16294-117">Você também pode anexar o código VS ao Microsoft Edge (Chromium).</span><span class="sxs-lookup"><span data-stu-id="16294-117">You can also attach VS Code to Microsoft Edge (Chromium).</span></span> <span data-ttu-id="16294-118">Em seu terminal, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="16294-118">From your terminal, run the following command:</span></span>
+<span data-ttu-id="6b5cf-118">Anexe o código VS ao Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="6b5cf-118">Attach VS Code to Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="6b5cf-119">Em seu terminal, execute o seguinte comando.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-119">From your terminal, run the following command.</span></span>  
 
-`start msedge --remote-debugging-port=9222`
+```console
+start msedge --remote-debugging-port=9222
+```  
 
-<span data-ttu-id="16294-119">Adicione a configuração abaixo ao arquivo **. JSON de inicialização** :</span><span class="sxs-lookup"><span data-stu-id="16294-119">Add the configuration below to your **launch.json** file:</span></span>
+<span data-ttu-id="6b5cf-120">Adicione a configuração abaixo ao seu `launch.json` arquivo.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-120">Add the configuration below to your `launch.json` file.</span></span>   
 
 ```json
 {
@@ -71,12 +77,28 @@ ms.locfileid: "10562469"
     "name": "Attach to Edge",
     "port": 9222
 }
-```
+```  
 
-<span data-ttu-id="16294-120">Se agora você executar essa configuração, o código do VS será anexado ao Microsoft Edge (Chromium) e você poderá iniciar a depuração!</span><span class="sxs-lookup"><span data-stu-id="16294-120">If you now run this configuration, VS Code will attach to Microsoft Edge (Chromium) and you can start debugging!</span></span>
+<span data-ttu-id="6b5cf-121">Se agora você executa essa configuração, o código VS é anexado ao Microsoft Edge \ (Chromium \) e inicia a depuração!</span><span class="sxs-lookup"><span data-stu-id="6b5cf-121">If you now run this configuration, VS Code attaches to Microsoft Edge \(Chromium\) and start debugging!</span></span>  
 
-## <span data-ttu-id="16294-121">Privacidade Jurídica</span><span class="sxs-lookup"><span data-stu-id="16294-121">Feedback</span></span>
+## <span data-ttu-id="6b5cf-122">Entre em contato com os elementos da equipe de extensão de código do Microsoft Edge versus</span><span class="sxs-lookup"><span data-stu-id="6b5cf-122">Getting in touch with the Elements for Microsoft Edge VS Code extension team</span></span>    
 
-<span data-ttu-id="16294-122">Envie-nos seus comentários [arquivando um problema](https://github.com/Microsoft/vscode-edge-debug2/issues/new) em relação ao [repositório GitHub](https://github.com/Microsoft/vscode-edge-debug2)da extensão.</span><span class="sxs-lookup"><span data-stu-id="16294-122">Send us your feedback by [filing an issue](https://github.com/Microsoft/vscode-edge-debug2/issues/new) against this extension's [GitHub repo](https://github.com/Microsoft/vscode-edge-debug2).</span></span> <span data-ttu-id="16294-123">Inclua o arquivo de log do adaptador de depuração, que é criado para cada execução no diretório% Temp% com o nome `vscode-edge-debug2.txt` .</span><span class="sxs-lookup"><span data-stu-id="16294-123">Please include the debug adapter log file, which is created for each run in the %temp% directory with the name `vscode-edge-debug2.txt`.</span></span> <span data-ttu-id="16294-124">Você pode arrastar esse arquivo para um comentário de questão para carregá-lo no GitHub.</span><span class="sxs-lookup"><span data-stu-id="16294-124">You can drag this file into an issue comment to upload it to GitHub.</span></span>
+<span data-ttu-id="6b5cf-123">Envie seus comentários por meio do [arquivamento de um problema][GithubMicrosoftVscodeEdgeDebug2NewIssue] no [repositório do GitHub][GithubMicrosoftVscodeEdgeDebug2] da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-123">Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDebug2NewIssue] against in the [GitHub repo][GithubMicrosoftVscodeEdgeDebug2] of the extension.</span></span>  <span data-ttu-id="6b5cf-124">Inclua o arquivo de log do adaptador de depuração, que é criado para cada execução no `%temp%` diretório com o nome `vscode-edge-debug2.txt` .</span><span class="sxs-lookup"><span data-stu-id="6b5cf-124">Please include the debug adapter log file, which is created for each run in the `%temp%` directory with the name `vscode-edge-debug2.txt`.</span></span>  <span data-ttu-id="6b5cf-125">Arraste este arquivo para um comentário de problema para carregá-lo no GitHub.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-125">Drag this file into an issue comment to upload it to GitHub.</span></span>  
 
-<span data-ttu-id="16294-125">Se você quiser nos ajudar a aprimorar essa extensão, Agradecemos suas contribuições!</span><span class="sxs-lookup"><span data-stu-id="16294-125">If you want to help us make this extension better, we welcome your contributions!</span></span> <span data-ttu-id="16294-126">Você pode encontrar tudo o que precisa para começar a usar o [repositório do GitHub](https://github.com/Microsoft/vscode-edge-debug2).</span><span class="sxs-lookup"><span data-stu-id="16294-126">You can find everything you need to get started in [our GitHub repo](https://github.com/Microsoft/vscode-edge-debug2).</span></span>
+<span data-ttu-id="6b5cf-126">Para ajudar a melhorar a extensão de código do Microsoft Edge versus o Microsoft Edge, suas contribuições são bem-vindos!</span><span class="sxs-lookup"><span data-stu-id="6b5cf-126">To help make the Elements for Microsoft Edge VS Code extension better, your contributions are welcome!</span></span>  <span data-ttu-id="6b5cf-127">Encontre tudo o que você precisa para começar a usar o [repositório do GitHub][GithubMicrosoftVscodeEdgeDebug2] da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b5cf-127">Find everything you need to get started in [GitHub repo][GithubMicrosoftVscodeEdgeDebug2] of the extension.</span></span>  
+
+
+<!-- image links -->  
+
+<!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
+[ImagePngDebuggerEdge]:./Media/Debugger-for-Edge.png "depurador para Edge VS extensão de código em ação"  
+
+<!--links -->  
+
+[VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentação | Código do Visual Studio"   
+
+[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "Microsoft/vscode-Edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Novo problema-Microsoft/vscode-Edge-debug2 | GitHub"  
+
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Visual Studio Marketplace"  

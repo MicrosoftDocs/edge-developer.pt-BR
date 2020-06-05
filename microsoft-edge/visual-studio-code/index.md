@@ -1,55 +1,87 @@
 ---
 description: Microsoft Edge (Chromium) e código do Visual Studio
 title: Visual Studio Code
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/12/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, código vs, código do Visual Studio, depurador, dica da Web
-ms.openlocfilehash: 94148864edbd43adbe2dc9f3d0c2fa0c1f7f0b43
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: e178612d9db8ce3223bb5158c4557675d3314e15
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562472"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695872"
 ---
-# <span data-ttu-id="320b5-104">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="320b5-104">Visual Studio Code</span></span>
+# <span data-ttu-id="98b4e-104">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="98b4e-104">Visual Studio Code</span></span>  
 
-<span data-ttu-id="320b5-105">O [código do Visual Studio](https://code.visualstudio.com/Docs) é um editor de código-fonte leve, mas potente, que é executado em sua área de trabalho e está disponível para Windows, MacOS e Linux.</span><span class="sxs-lookup"><span data-stu-id="320b5-105">[Visual Studio Code](https://code.visualstudio.com/Docs) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</span></span> <span data-ttu-id="320b5-106">Ele vem com suporte interno para JavaScript, TypeScript e node. js, portanto, é uma ótima ferramenta para desenvolvedores da Web imediatamente!</span><span class="sxs-lookup"><span data-stu-id="320b5-106">It comes with built-in support for JavaScript, TypeScript and Node.js so it's a great tool for web developers right out of the box!</span></span> <span data-ttu-id="320b5-107">Vá até [esta página](https://code.visualstudio.com/) para baixar o código do Visual Studio se você ainda não o estiver usando.</span><span class="sxs-lookup"><span data-stu-id="320b5-107">Head to [this page](https://code.visualstudio.com/) to download Visual Studio Code if you aren't using it yet.</span></span>
+<span data-ttu-id="98b4e-105">O [código do Visual Studio][VisualStudioCodeDocs] é um editor de código-fonte leve e leve, que é executado em sua área de trabalho e está disponível para Windows, MacOS e Linux.</span><span class="sxs-lookup"><span data-stu-id="98b4e-105">[Visual Studio Code][VisualStudioCodeDocs] is a lightweight, but powerful source code editor that runs on your desktop and is available for Windows, macOS, and Linux.</span></span>  <span data-ttu-id="98b4e-106">Ele vem com suporte interno para JavaScript, TypeScript e node. js, portanto, é uma ótima ferramenta para desenvolvedores da Web imediatamente!</span><span class="sxs-lookup"><span data-stu-id="98b4e-106">It comes with built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers right out of the box!</span></span>  <span data-ttu-id="98b4e-107">Se você ainda não o estiver usando, baixe o [código do Visual Studio][VisualstudioCode].</span><span class="sxs-lookup"><span data-stu-id="98b4e-107">If you are not using it yet, download [Visual Studio Code][VisualstudioCode].</span></span>  
 
-## <span data-ttu-id="320b5-108">Extensões</span><span class="sxs-lookup"><span data-stu-id="320b5-108">Extensions</span></span>
+## <span data-ttu-id="98b4e-108">Extensões</span><span class="sxs-lookup"><span data-stu-id="98b4e-108">Extensions</span></span>  
 
-<!-- We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page. I think it's a web page. I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->
+<!--Todo: We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-<span data-ttu-id="320b5-109">Para adquirir qualquer uma das extensões realçadas abaixo, navegue até extensões ( `Ctrl`  +  `Shift`  +  `X` no Windows ou `Command`  +  `Shift`  +  `X` no Mac) no código vs.</span><span class="sxs-lookup"><span data-stu-id="320b5-109">To acquire any of the extensions highlighted below, navigate to Extensions (`Ctrl` + `Shift` + `X` on Windows or `Command` + `Shift` + `X` on Mac) in VS Code.</span></span>
+<span data-ttu-id="98b4e-109">Para adquirir qualquer uma das extensões realçadas abaixo, navegue até Extensões \ ( `Ctrl` + `Shift` + `X` no Windows ou `Command` + `Shift` + `X` no MacOS \) em código vs.</span><span class="sxs-lookup"><span data-stu-id="98b4e-109">To acquire any of the extensions highlighted below, navigate to Extensions \(`Ctrl`+`Shift`+`X` on Windows or `Command`+`Shift`+`X` on macOS\) in VS Code.</span></span>  
 
-<span data-ttu-id="320b5-110">Pesquise o Marketplace para obter a extensão específica e selecione **instalar**.</span><span class="sxs-lookup"><span data-stu-id="320b5-110">Search the Marketplace for the specific extension and select **Install**.</span></span>
+<span data-ttu-id="98b4e-110">Pesquise o Marketplace para obter a extensão específica e selecione **instalar**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-110">Search the Marketplace for the specific extension and select **Install**.</span></span>  
 
-![Instalando o depurador para o Microsoft Edge VS extensão de código](./media/vscode-debugger-install.png)
+:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Instalando o depurador para o Microsoft Edge VS extensão de código":::
+   <span data-ttu-id="98b4e-112">Instalando o depurador para o Microsoft Edge VS extensão de código</span><span class="sxs-lookup"><span data-stu-id="98b4e-112">Installing the Debugger for Microsoft Edge VS Code extension</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="320b5-112">Depurador para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="320b5-112">Debugger for Microsoft Edge</span></span>
+:::row:::
+   :::column span="1":::
+      ### <span data-ttu-id="98b4e-113">Depurador para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="98b4e-113">Debugger for Microsoft Edge</span></span>  
 
-<span data-ttu-id="320b5-113">Depure o código JavaScript front-end linha por linha e exibir `console.log()` instruções diretamente no [código do Visual Studio](https://code.visualstudio.com/) usando a extensão de código do [depurador para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs!</span><span class="sxs-lookup"><span data-stu-id="320b5-113">Debug your front-end JavaScript code line by line and display `console.log()` statements directly in [Visual Studio Code](https://code.visualstudio.com/) using the the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension!</span></span>
+      <span data-ttu-id="98b4e-114">Com o [depurador do Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] versus extensão de código, depure o código JavaScript de front-end linha por linha e veja as `console.log()` instruções diretamente do [código do Visual Studio][VisualstudioCode]!</span><span class="sxs-lookup"><span data-stu-id="98b4e-114">With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!</span></span>  
+      
+      <span data-ttu-id="98b4e-115">Usando a ferramenta depurador, você pode iniciar ou anexar tanto ao Microsoft Edge \ (EdgeHTML \) quanto ao Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="98b4e-115">Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).</span></span>  <span data-ttu-id="98b4e-116">Para obter instruções passo a passo para depurar o Microsoft Edge a partir de código e exemplos de configurações do VS `launch.json` , consulte [depurador para extensão de código do Microsoft Edge vs][VscodeDebuggerEdge].</span><span class="sxs-lookup"><span data-stu-id="98b4e-116">For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].</span></span>  <span data-ttu-id="98b4e-117">Selecione a imagem a seguir para ver a extensão em ação.</span><span class="sxs-lookup"><span data-stu-id="98b4e-117">Select the following image to see the extension in action.</span></span>  
 
-<span data-ttu-id="320b5-114">Use o [depurador para o Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs extensão de código para iniciar ou anexar ao Microsoft Edge (EdgeHTML) e ao Microsoft Edge (Chromium).</span><span class="sxs-lookup"><span data-stu-id="320b5-114">Use the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension to launch or attach to both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium).</span></span> <span data-ttu-id="320b5-115">Confira [esta página](./debugger-for-edge.md) para obter um guia passo a passo de como depurar o Microsoft Edge de código vs e configurações de lançamento de exemplo **. JSON** .</span><span class="sxs-lookup"><span data-stu-id="320b5-115">Check out [this page](./debugger-for-edge.md) for a walkthrough of debugging Microsoft Edge from VS Code and sample **launch.json** configurations.</span></span>
+      :::image type="content" source="./media/debugger-for-edge.png" alt-text="Depurador para borda VS extensão de código em ação" lightbox="./media/debugger-for-edge.gif":::  
+   :::column-end:::
+   :::column span="1":::
+      ### <span data-ttu-id="98b4e-119">Elementos do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="98b4e-119">Elements for Microsoft Edge</span></span>  
+      
+      <span data-ttu-id="98b4e-120">Com os [elementos para Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] vs extensão de código, use a ferramenta elementos do navegador Microsoft Edge de dentro do código do Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="98b4e-120">With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.</span></span>  <span data-ttu-id="98b4e-121">Ao iniciar ou anexar, a ferramenta elementos se conecta a uma instância do Microsoft Edge, exibe a estrutura HTML do tempo de execução e permite que você altere o layout ou corrija problemas de estilo.</span><span class="sxs-lookup"><span data-stu-id="98b4e-121">By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.</span></span>  
+      
+      <span data-ttu-id="98b4e-122">Para obter mais informações, consulte [elementos para Microsoft Edge vs extensão de código][VscodeElementsEdge].</span><span class="sxs-lookup"><span data-stu-id="98b4e-122">For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].</span></span>  <span data-ttu-id="98b4e-123">Selecione a imagem a seguir para ver a extensão em ação.</span><span class="sxs-lookup"><span data-stu-id="98b4e-123">Select the following image to see the extension in action.</span></span>  
+      
+      :::image type="content" source="./media/elements-for-edge.png" alt-text="Elementos para Edge VS extensão de código em ação" lightbox="./media/elements-for-edge.gif":::  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### <span data-ttu-id="98b4e-125">Dica da web</span><span class="sxs-lookup"><span data-stu-id="98b4e-125">webhint</span></span>
+      
+      <span data-ttu-id="98b4e-126">Use [webhint][WebhintMain], uma ferramenta de redimensionamento personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade do PWA e a segurança do seu site.</span><span class="sxs-lookup"><span data-stu-id="98b4e-126">Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span>  <span data-ttu-id="98b4e-127">Ele verifica o código em busca de práticas recomendadas e erros comuns.</span><span class="sxs-lookup"><span data-stu-id="98b4e-127">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="98b4e-128">O projeto de código-fonte aberto da webdica, inicialmente desenvolvido pela equipe do Microsoft Edge, agora faz parte da [Fundação do OpenJS][OpenjsFoundation].</span><span class="sxs-lookup"><span data-stu-id="98b4e-128">The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].</span></span>  <span data-ttu-id="98b4e-129">A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores da Web na Comunidade.</span><span class="sxs-lookup"><span data-stu-id="98b4e-129">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>  <!--Select the following image to see the extension in action.  -->  
+      
+      :::image type="content" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão de código do webhint VS" lightbox="./media/webhint-extension.png":::  
+      
+      <span data-ttu-id="98b4e-131">Identifique e corrija problemas em HTML, CSS, JavaScript, TypeScript e muito mais adicionando a [extensão webhint para o código vs][VisualstudioMarketplaceWebhint].</span><span class="sxs-lookup"><span data-stu-id="98b4e-131">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code][VisualstudioMarketplaceWebhint].</span></span>  <span data-ttu-id="98b4e-132">As dicas aparecem como sublinhados embutidos e são resumidas no painel **problemas** .</span><span class="sxs-lookup"><span data-stu-id="98b4e-132">Hints appear as inline underlines and are summarized in the **Problems** pane.</span></span>  
+      
+      <span data-ttu-id="98b4e-133">Para obter mais informações, consulte [como usar o webhint no código do Visual Studio][VscodeWebhint].</span><span class="sxs-lookup"><span data-stu-id="98b4e-133">For more information, see [How to use webhint in Visual Studio Code][VscodeWebhint].</span></span>  
+   :::column-end:::
+   :::column span="1":::
+      <!--Empty to retain grid  -->  
+   :::column-end:::
+:::row-end:::
 
-![GIF do depurador para Edge VS extensão de código em Action!](./media/debugger-for-edge.gif)
+<!-- image links -->  
 
-## <span data-ttu-id="320b5-117">Elementos do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="320b5-117">Elements for Microsoft Edge</span></span>
+<!--links -->  
 
-<span data-ttu-id="320b5-118">Ao adicionar os [elementos para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) vs extensão de código, você pode usar a ferramenta elementos do navegador dentro do código do Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="320b5-118">By adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) VS Code extension, you can use the browser's Elements tool from within Visual Studio Code.</span></span> <span data-ttu-id="320b5-119">Ao iniciar ou anexar, a ferramenta elementos será conectada a uma instância do Microsoft Edge, exibirá a estrutura HTML do tempo de execução e permitirá que você altere o layout ou corrija os problemas de estilo.</span><span class="sxs-lookup"><span data-stu-id="320b5-119">By either launching or attaching, the Elements tool will connect to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.</span></span>
+[VscodeDebuggerEdge]: ./debugger-for-edge.md "Depurador para Microsoft Edge VS extensão de código | Documentos da Microsoft"  
+[VscodeElementsEdge]: ./elements-for-edge.md "Elementos para Microsoft Edge VS extensão de código | Documentos da Microsoft"  
+[VscodeWebhint]: ./webhint.md "Webhint VS extensão de código | Documentos da Microsoft"  
 
-<span data-ttu-id="320b5-120">Para obter mais informações, confira [esta página](./elements-for-edge.md).</span><span class="sxs-lookup"><span data-stu-id="320b5-120">For more information, check out [this page](./elements-for-edge.md).</span></span>
+[VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentação | Código do Visual Studio"   
 
-![GIF dos elementos para Edge VS extensão de código em Action!](./media/elements-for-edge.gif)
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Visual Studio Marketplace"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elementos do Microsoft Edge (Chromium) | Visual Studio Marketplace"  
 
-## <span data-ttu-id="320b5-122">webhint</span><span class="sxs-lookup"><span data-stu-id="320b5-122">webhint</span></span>
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 
-<span data-ttu-id="320b5-123">Use [webhint](https://webhint.io), uma ferramenta de redimensionamento personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade do PWA e a segurança do seu site.</span><span class="sxs-lookup"><span data-stu-id="320b5-123">Use [webhint](https://webhint.io), a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span> <span data-ttu-id="320b5-124">Ele verifica o código em busca de práticas recomendadas e erros comuns.</span><span class="sxs-lookup"><span data-stu-id="320b5-124">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="320b5-125">Este projeto de código aberto, inicialmente desenvolvido pela equipe Microsoft Edge, agora faz parte da [Fundação OpenJS](https://openjsf.org/).</span><span class="sxs-lookup"><span data-stu-id="320b5-125">This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org/).</span></span> <span data-ttu-id="320b5-126">A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores da Web na Comunidade.</span><span class="sxs-lookup"><span data-stu-id="320b5-126">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>
-
-![Captura de tela da extensão de código do webhint VS](./media/webhint-extension.png)
-
-<span data-ttu-id="320b5-128">Identifique e corrija problemas em HTML, CSS, JavaScript, TypeScript e muito mais adicionando a [extensão webhint para o código vs](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint).</span><span class="sxs-lookup"><span data-stu-id="320b5-128">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint).</span></span> <span data-ttu-id="320b5-129">As dicas aparecem como sublinhados embutidos e são resumidas no painel problemas.</span><span class="sxs-lookup"><span data-stu-id="320b5-129">Hints appear as inline underlines and are summarized in the Problems pane.</span></span>
-
-<span data-ttu-id="320b5-130">Para obter mais informações, consulte [como usar o webhint no código do Visual Studio](./webhint.md).</span><span class="sxs-lookup"><span data-stu-id="320b5-130">For more information, see [How to use webhint in Visual Studio Code](./webhint.md).</span></span>
+[WebhintMain]:  https://webhint.io "webhint"  
+[OpenjsFoundation]:  https://openjsf.org "Base do OpenJS"  
