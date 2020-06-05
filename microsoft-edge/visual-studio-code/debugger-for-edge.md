@@ -1,28 +1,32 @@
 ---
 description: Como depurar o Microsoft Edge (Chromium) e o Microsoft Edge (EdgeHTML) a partir de código VS
 title: Depurar o Microsoft Edge (Chromium) a partir de código VS
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/10/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, código vs, código do Visual Studio, depurador
-ms.openlocfilehash: 7d8d2f87500b3e81866b49de32db91c0a525baf2
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562469"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695863"
 ---
-# Depurador para extensão de código do Microsoft Edge VS
+# Depurador para extensão de código do Microsoft Edge VS  
 
-Com o [depurador para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs extensão de código, você pode depurar o código JavaScript front-end linha por linha e ver `console.log()` instruções diretamente do [código do Visual Studio](https://code.visualstudio.com/)!
+Com o [depurador do Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] versus extensão de código, depure o código JavaScript front-end linha por linha e veja `console.log()` instruções diretamente do [código do Visual Studio][VisualstudioCode]!  
 
-![GIF do depurador para Edge VS extensão de código no trabalho](./media/debugger-for-edge.gif)
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Depurador para Edge VS extensão de código no trabalho":::
+   Depurador para Edge VS extensão de código no trabalho  
+:::image-end:::
 
-## Iniciando o Microsoft Edge
+<!--![Debugger for Edge VS Code extension at work][ImageGifDebuggerEdge]  -->  
 
-Navegue até o modo de exibição de depuração ( `Ctrl`  +  `Shift`  +  `D` no Windows ou `Command`  +  `Shift`  +  `D` no Mac) na **barra de atividades**. Se você não tiver nenhuma configuração no código do VS, pressione `F5` no Windows ou Mac ou clique no botão de **reprodução** verde. Selecione "borda" na lista suspensa. Agora, você verá um arquivo **inicialização. JSON** com a seguinte configuração:
+## Iniciando o Microsoft Edge  
+
+Navegue até o modo de exibição de depuração \ ( `Ctrl` + `Shift` + `D` no Windows ou `Command` + `Shift` + `D` no MacOS \) na **barra de atividades**.  Se você não tiver configurações no código do VS, pressione `F5` no Windows ou no MacOS ou selecione o botão de **reprodução** verde.  Selecione **borda** na lista suspensa.  Você deve ver um `launch.json` arquivo com a configuração a seguir.  
 
 ```json
 {
@@ -37,13 +41,13 @@ Navegue até o modo de exibição de depuração ( `Ctrl`  +  `Shift`  +  `D` no
         }
     ]
 }
-```
+```  
 
-Se você agora pressionar `F5` no Windows ou Mac ou clicar no botão verde de **reprodução** novamente, o código do vs iniciará o Microsoft Edge (EdgeHTML) e você poderá depurar qualquer projeto Web que você esteja executando na porta **8080** diretamente de um código vs!
+Se você pressionar `F5` o Windows ou o MacOS ou selecionar o botão de **reprodução** verde novamente, o código do vs Inicializa o Microsoft Edge \ (EdgeHTML \) e você poderá depurar qualquer projeto da Web que esteja executando na porta `8080` diretamente do vs Code!  
 
-### Microsoft Edge (Chromium)
+### Microsoft Edge (Chromium)  
 
-Se você quiser iniciar o Microsoft Edge (Chromium), a próxima versão do Microsoft Edge, em vez do Microsoft Edge (EdgeHTML), basta adicionar um `version` atributo à sua configuração existente com a versão do Microsoft Edge (Chromium) que você deseja iniciar ( `dev` , `beta` ou ou `canary` ). A configuração a seguir inicializará a versão Canárias do Microsoft Edge (Chromium):
+Se você quiser iniciar o Microsoft Edge \ (Chromium \), a próxima versão do Microsoft Edge, em vez do Microsoft Edge \ (EdgeHTML \), basta adicionar um `version` atributo à sua configuração existente com a versão do Microsoft Edge \ (Chromium \) que você deseja iniciar \ ( `dev` , `beta` ou `canary` \). A seguinte configuração a seguir inicia a versão Canárias do Microsoft Edge \ (Chromium \).  
 
 ```json
 {
@@ -54,15 +58,17 @@ Se você quiser iniciar o Microsoft Edge (Chromium), a próxima versão do Micro
     "url": "http://localhost:8080",
     "webRoot": "${workspaceFolder}"
 }
-```
+```  
 
-## Anexando ao Microsoft Edge
+## Anexando ao Microsoft Edge  
 
-Você também pode anexar o código VS ao Microsoft Edge (Chromium). Em seu terminal, execute o seguinte comando:
+Anexe o código VS ao Microsoft Edge \ (Chromium \).  Em seu terminal, execute o seguinte comando.  
 
-`start msedge --remote-debugging-port=9222`
+```console
+start msedge --remote-debugging-port=9222
+```  
 
-Adicione a configuração abaixo ao arquivo **. JSON de inicialização** :
+Adicione a configuração abaixo ao seu `launch.json` arquivo.   
 
 ```json
 {
@@ -71,12 +77,28 @@ Adicione a configuração abaixo ao arquivo **. JSON de inicialização** :
     "name": "Attach to Edge",
     "port": 9222
 }
-```
+```  
 
-Se agora você executar essa configuração, o código do VS será anexado ao Microsoft Edge (Chromium) e você poderá iniciar a depuração!
+Se agora você executa essa configuração, o código VS é anexado ao Microsoft Edge \ (Chromium \) e inicia a depuração!  
 
-## Privacidade Jurídica
+## Entre em contato com os elementos da equipe de extensão de código do Microsoft Edge versus    
 
-Envie-nos seus comentários [arquivando um problema](https://github.com/Microsoft/vscode-edge-debug2/issues/new) em relação ao [repositório GitHub](https://github.com/Microsoft/vscode-edge-debug2)da extensão. Inclua o arquivo de log do adaptador de depuração, que é criado para cada execução no diretório% Temp% com o nome `vscode-edge-debug2.txt` . Você pode arrastar esse arquivo para um comentário de questão para carregá-lo no GitHub.
+Envie seus comentários por meio do [arquivamento de um problema][GithubMicrosoftVscodeEdgeDebug2NewIssue] no [repositório do GitHub][GithubMicrosoftVscodeEdgeDebug2] da extensão.  Inclua o arquivo de log do adaptador de depuração, que é criado para cada execução no `%temp%` diretório com o nome `vscode-edge-debug2.txt` .  Arraste este arquivo para um comentário de problema para carregá-lo no GitHub.  
 
-Se você quiser nos ajudar a aprimorar essa extensão, Agradecemos suas contribuições! Você pode encontrar tudo o que precisa para começar a usar o [repositório do GitHub](https://github.com/Microsoft/vscode-edge-debug2).
+Para ajudar a melhorar a extensão de código do Microsoft Edge versus o Microsoft Edge, suas contribuições são bem-vindos!  Encontre tudo o que você precisa para começar a usar o [repositório do GitHub][GithubMicrosoftVscodeEdgeDebug2] da extensão.  
+
+
+<!-- image links -->  
+
+<!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
+[ImagePngDebuggerEdge]:./Media/Debugger-for-Edge.png "depurador para Edge VS extensão de código em ação"  
+
+<!--links -->  
+
+[VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentação | Código do Visual Studio"   
+
+[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "Microsoft/vscode-Edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Novo problema-Microsoft/vscode-Edge-debug2 | GitHub"  
+
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Visual Studio Marketplace"  
