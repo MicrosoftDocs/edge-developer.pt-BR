@@ -3,21 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Mi
 title: Microsoft Edge WebView 2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 0ab152e52b5e5d89cf493ff525ce53d9ab174e6d
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: 460364b0c93e80c0e3868c3b69e20ea9dcf6c129
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685677"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697193"
 ---
 # Introdução ao WebView2 (Developer Preview)
 
-Este guia passo a passo passa pelas funcionalidades comumente usadas de [WebView2 (Developer Preview)](https://aka.ms/webview) e obtém você para começar a criar seu primeiro aplicativo WebView2. Acesse a [referência de API](../reference/win32/0-9-488-reference-webview2.md) para saber mais sobre APIs individuais.  
+Este guia passo a passo passa pelas funcionalidades comumente usadas de [WebView2 (Developer Preview)](https://aka.ms/webview) e obtém você para começar a criar seu primeiro aplicativo WebView2. Acesse a [referência de API](../reference/win32/0-9-538-reference-webview2.md) para saber mais sobre APIs individuais.  
 
 ## Pré-requisitos
 
@@ -124,7 +124,7 @@ Pressione F5 para compilar e executar o aplicativo. Agora você tem uma janela d
 
 ## Etapa 4-eventos de navegação
 
-Já abordamos navegar para a URL usando `ICoreWebView2::Navigate` na última etapa. Durante a navegação, o WebView aciona uma sequência de eventos que o host pode ouvir- `NavigationStarting` , `SourceChanged` ,, `ContentLoading` `HistoryChanged` e `NavigationCompleted` . Clique [aqui](../reference/win32/0-9-488/ICoreWebView2.md#navigation-events) para saber mais.
+Já abordamos navegar para a URL usando `ICoreWebView2::Navigate` na última etapa. Durante a navegação, o WebView aciona uma sequência de eventos que o host pode ouvir- `NavigationStarting` , `SourceChanged` ,, `ContentLoading` `HistoryChanged` e `NavigationCompleted` . Clique [aqui](../reference/win32/0-9-538/ICoreWebView2.md#navigation-events) para saber mais.
 
 ![navegação-eventos](../media/navigation-events.png)
 
@@ -221,7 +221,7 @@ Para saber mais:
 
 * WebView2-out [API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) para obter um exemplo abrangente de recursos do WebView2's.
 * Fazer check-out [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) um aplicativo criado usando o WebView2.
-* Explore a [referência de API](../reference/win32/0-9-488-reference-webview2.md) para obter informações detalhadas sobre nossa API.  
+* Explore a [referência de API](../reference/win32/0-9-538-reference-webview2.md) para obter informações detalhadas sobre nossa API.  
 
 ## Entrar em contato com a equipe do WebView2  
 

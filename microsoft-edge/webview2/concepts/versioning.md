@@ -3,17 +3,17 @@ description: Modelos de controle de versão usados para o Microsoft Edge WebView
 title: Controle de versão do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: cc924a146057a3c8c578ccea187e1dd63dedcbe6
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659668"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697214"
 ---
 # Noções básicas sobre versões do navegador e WebView2  
 
@@ -26,7 +26,7 @@ No futuro, a equipe do Microsoft Edge WebView planeja alterar o modelo de distri
 
 ## APIs experimentais  
 
-Embora o WebView2 seja uma visualização, espera-se que as APIs no SDK permaneçam as mesmas no GA.  Há [APIs experimentais][Webview2ReferenceWin3209488Experimental] incluídas no SDK.  Avalie as APIs experimentais e envie seus comentários usando o [repositório de comentários da WebView][GithubMicrosoftedgeWebviewfeedback].  
+Embora o WebView2 seja uma visualização, espera-se que as APIs no SDK permaneçam as mesmas no GA.  Há [APIs experimentais][Webview2ReferenceWin3209538Experimental] incluídas no SDK.  Avalie as APIs experimentais e envie seus comentários usando o [repositório de comentários da WebView][GithubMicrosoftedgeWebviewfeedback].  
 
 ### Mapa  
 
@@ -36,7 +36,7 @@ Depois que o WebView2 atinge um estado de general General estável e lançamos o
 
 [Webview2Distibution]: ./distribution.md "Distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
 [Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
-[Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Experimental-Reference (WebView2) | Documentos da Microsoft"  
+[Webview2ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "Experimental-Reference (WebView2) | Documentos da Microsoft"  
 [Webview2Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos canais Microsoft Edge | Documentos da Microsoft"  

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: f17de3bcb7459375617f00aec0cd2897f0859c1d
-ms.sourcegitcommit: c579181af051e2855b785263faa4001c672a929b
+ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673854"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697739"
 ---
 # Introdução ao Microsoft Edge WebView2 (visualização)  
 
@@ -83,7 +83,7 @@ Os aplicativos híbridos permitem que os desenvolvedores aproveitem o melhor dos
       **Adoção incremental**  
       Adicione componentes Web por parte do seu aplicativo.  
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
 ## Introdução  
 
@@ -95,7 +95,7 @@ Para compilar e testar seu aplicativo usando o controle WebView2, você precisa 
 
 O repositório de [exemplos WebView2](https://github.com/MicrosoftEdge/WebView2Samples) contém exemplos que demonstram todos os recursos de SDKs do WebView2 e padrões de uso de APIs. Conforme mais recursos forem adicionados ao SDK do WebView2, os aplicativos de exemplo serão atualizados.   
 
-## Plataformas com suporte  
+## Plataformas compatíveis  
 
 Uma visualização do desenvolvedor está disponível nos seguintes ambientes de programação:  
 

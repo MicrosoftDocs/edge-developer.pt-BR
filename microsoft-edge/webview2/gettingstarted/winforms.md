@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WinForms, WinForms, Edge, CoreWebView2, controle do navegador, HTML Edge, introdução, introdução, .NET, formulários do Windows
-ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: 20e3d152c8384e33551d75b5baa265fa7cb7f1ec
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695891"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698222"
 ---
 # Introdução ao WebView2 em aplicativos do Windows Forms (visualização)  
 

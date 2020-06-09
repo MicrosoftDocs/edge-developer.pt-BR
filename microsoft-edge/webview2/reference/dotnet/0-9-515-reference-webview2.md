@@ -3,19 +3,22 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Mi
 title: Microsoft Edge WebView 2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 0dc99911323cb4fe90231ae0b90e2e93fc678a16
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: b6131245a550da54545478c9c19e0e9e45d7f7d3
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652493"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697242"
 ---
-# Referência (WebView2)  
+# 0-9-515-Reference (WebView2)  
+
+> [!NOTE]
+> Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../webview2-api-reference.md) para obter a referência de API mais recente.
 
 O controle WebView2 do Microsoft Edge permite que você hospede conteúdo da Web em seu aplicativo usando o [Microsoft Edge \ (Chromium \)](https://www.microsoftedgeinsider.com) como mecanismo de renderização.  Para obter mais informações, consulte [visão geral do Microsoft Edge WebView2](../../index.md)) e [introdução ao WebView2](../../gettingstarted/win32.md).  [Microsoft. Web. WebView2. Core. CoreWebView2](0-9-515/microsoft-web-webview2-core-corewebview2.md) é um ótimo lugar para começar a aprender os detalhes da API.  
 
@@ -31,7 +34,7 @@ O controle WebView2 do Microsoft Edge permite que você hospede conteúdo da Web
 *   [CoreWebView2Settings](0-9-515/microsoft-web-webview2-core-corewebview2settings.md)
 *   [EdgeNotFoundException](0-9-515/microsoft-web-webview2-core-edgenotfoundexception.md)
 
-### Argumentos do evento
+### Argumentos de evento
 
 *   [CoreWebView2AcceleratorKeyPressedEventArgs](0-9-515/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md)
 *   [CoreWebView2ContentLoadingEventArgs](0-9-515/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md)
