@@ -3,19 +3,22 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: Microsoft Edge WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: be8f475d4c1a886a92b46144f2bffde2d49dc9d4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 986b1dc2870375243a0ee664262216105edd95a8
+ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652663"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10699497"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
+
+> [!NOTE]
+> Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft. Web. WebView2. Core. dll
@@ -58,7 +61,7 @@ Como uma pasta de dados do usuário só pode ser usada por um processo de navega
 
 Cria um ambiente WebView2 verde usando a versão de Borda instalada.
 
-> tarefas assíncronas públicas< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [createasync](#createasync)(cadeia de caracteres browserExecutableFolder, Cadeia de caracteres userDataFolder, opções de CoreWebView2EnvironmentOptions)
+> tarefa assíncrona estática pública< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [createasync](#createasync)(cadeia de caracteres browserExecutableFolder, String userDataFolder, CoreWebView2EnvironmentOptions opções)
 
 ##### Parâmetros
 * `browserExecutableFolder` O caminho relativo para a pasta que contém a borda incorporada. 
