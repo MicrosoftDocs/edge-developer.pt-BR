@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: d808f4b112d3688b4e50a2f6b69db38bbb4808c5
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 9135ba6bce6b5260413f47531062ea4c96d196cc
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652691"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698131"
 ---
-# <span data-ttu-id="66364-104">interface ICoreWebView2SourceChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="66364-104">interface ICoreWebView2SourceChangedEventHandler</span></span> 
+# <span data-ttu-id="dbce2-104">interface ICoreWebView2SourceChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="dbce2-104">interface ICoreWebView2SourceChangedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="dbce2-105">Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="dbce2-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="dbce2-106">Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.</span><span class="sxs-lookup"><span data-stu-id="dbce2-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2SourceChangedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="66364-105">O chamador implementa essa interface para receber o evento SourceChanged.</span><span class="sxs-lookup"><span data-stu-id="66364-105">The caller implements this interface to receive the SourceChanged event.</span></span>
+<span data-ttu-id="dbce2-107">O chamador implementa essa interface para receber o evento SourceChanged.</span><span class="sxs-lookup"><span data-stu-id="dbce2-107">The caller implements this interface to receive the SourceChanged event.</span></span>
 
-## <span data-ttu-id="66364-106">Resumo</span><span class="sxs-lookup"><span data-stu-id="66364-106">Summary</span></span>
+## <span data-ttu-id="dbce2-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="dbce2-108">Summary</span></span>
 
- <span data-ttu-id="66364-107">Parte</span><span class="sxs-lookup"><span data-stu-id="66364-107">Members</span></span>                        | <span data-ttu-id="66364-108">Descrições</span><span class="sxs-lookup"><span data-stu-id="66364-108">Descriptions</span></span>
+ <span data-ttu-id="dbce2-109">Parte</span><span class="sxs-lookup"><span data-stu-id="dbce2-109">Members</span></span>                        | <span data-ttu-id="dbce2-110">Descrições</span><span class="sxs-lookup"><span data-stu-id="dbce2-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="66364-109">Invocar</span><span class="sxs-lookup"><span data-stu-id="66364-109">Invoke</span></span>](#invoke) | <span data-ttu-id="66364-110">Chamado para fornecer o implementador com os argumentos do evento para o evento correspondente.</span><span class="sxs-lookup"><span data-stu-id="66364-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="dbce2-111">Invocar</span><span class="sxs-lookup"><span data-stu-id="dbce2-111">Invoke</span></span>](#invoke) | <span data-ttu-id="dbce2-112">Chamado para fornecer o implementador com os argumentos do evento para o evento correspondente.</span><span class="sxs-lookup"><span data-stu-id="dbce2-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="66364-111">Parte</span><span class="sxs-lookup"><span data-stu-id="66364-111">Members</span></span>
+## <span data-ttu-id="dbce2-113">Parte</span><span class="sxs-lookup"><span data-stu-id="dbce2-113">Members</span></span>
 
-#### <span data-ttu-id="66364-112">Invocar</span><span class="sxs-lookup"><span data-stu-id="66364-112">Invoke</span></span> 
+#### <span data-ttu-id="dbce2-114">Invocar</span><span class="sxs-lookup"><span data-stu-id="dbce2-114">Invoke</span></span> 
 
-<span data-ttu-id="66364-113">Chamado para fornecer o implementador com os argumentos do evento para o evento correspondente.</span><span class="sxs-lookup"><span data-stu-id="66364-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="dbce2-115">Chamado para fornecer o implementador com os argumentos do evento para o evento correspondente.</span><span class="sxs-lookup"><span data-stu-id="dbce2-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="66364-114">Public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* WebView, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="66364-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* webview, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="dbce2-116">Public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* WebView, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="dbce2-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* webview, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) \* args)</span></span>
 
