@@ -2,16 +2,16 @@
 title: Exibir, editar e Excluir cookies com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708912"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710368"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ A tabela **cookies** contém os campos a seguir.
 *   **Http**.  Se verdadeiro, esse campo indica que o cookie só deve ser usado por HTTP e modificação de JavaScript não é permitido.  Consulte [cookies HttpOnly][MDNHTTPCookiesSecure].  
 *   **Seguro**.  Se verdadeiro, este campo indica que o cookie deve ser enviado para o servidor somente por meio de uma conexão HTTPS segura.  Veja [proteger cookies][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Contém `strict` ou `lax` se o cookie está usando o atributo experimental [SameSite][MDNHTTPCookiesSamesite] .  
-*   **Prioridade**.  Contém `low` , `medium` \ (padrão \) ou `high` se o cookie estiver usando o atributo de [prioridade de cookie][ChromiumIssue232693] depreciado.
+*   **Prioridade**.  Contém `low` , `medium` \ (padrão \) ou `high` se o cookie estiver usando o atributo de [prioridade de cookie][ChromiumIssue232693] preterido.
 
 ## Filtrar cookies  
 

@@ -2,16 +2,16 @@
 title: Referência de análise de rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 7e7ac287e116e28773a42456c21ec4ba07647f04
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709140"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710396"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ Capture capturas de tela para analisar o que os usuários vêem enquanto esperam
 
 Para habilitar capturas de tela, selecione **configurações de rede** e escolha **capturar capturas de tela** no painel **rede** .  
 
-Recarregue a página enquanto o painel de **rede** estiver em foco para capturar capturas de tela.  
+Atualize a página enquanto o painel de **rede** estiver em foco para capturar capturas de tela.  
 
 Após a captura de uma captura de tela, você interage com ela das seguintes maneiras.  
 
@@ -470,7 +470,8 @@ Mais informações sobre cada uma das fases que você pode ver na guia **interva
 *   **Solicitação enviada**.  A solicitação está sendo enviada.  
 *   **Preparação do serviço**.  O navegador está iniciando o trabalhador do serviço.  
 *   **Solicitação ao serviço de serviço**.  A solicitação está sendo enviada para o trabalhador do serviço.  
-*   **Aguardando \ (TTFB \)**.  O navegador está aguardando o primeiro byte de uma resposta.  TTFB significa tempo até o primeiro byte.  Esse tempo inclui 1 viagem de ida e volta da latência e o tempo que o servidor levou para preparar a resposta.  
+*   **Aguardando \ (TTFB \)**.  O navegador está aguardando o primeiro byte de uma resposta.  
+  TTFB significa tempo até o primeiro byte.  Esse tempo inclui 1 viagem de ida e volta da latência e o tempo que o servidor levou para preparar a resposta.  
 *   **Download de conteúdo**.  O navegador está recebendo a resposta.  
 *   **Recebendo Push**.  O navegador está recebendo dados para esta resposta via Push HTTP/2 Server Push.  
 *   **Leitura por push**.  O navegador está lendo os dados locais anteriormente recebidos.  

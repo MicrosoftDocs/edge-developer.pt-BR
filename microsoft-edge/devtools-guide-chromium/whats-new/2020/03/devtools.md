@@ -2,16 +2,16 @@
 title: O que há de novo no DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708967"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710375"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ Emular localidades definindo um local no local dos **sensores**  >  **Location**
 *   O [`Accept-Language`][MDNAcceptLanguage] cabeçalho da solicitação http  
 
 > [!NOTE]
-> Atualizações `navigator.language` e `navigator.languages` não são visíveis imediatamente, mas somente após a próxima navegação ou página ser recarregadas.  As alterações feitas no `Accept-Language` cabeçalho http só se refletem nas solicitações subsequentes.  
+> Atualizações `navigator.language` e `navigator.languages` não são visíveis imediatamente, mas somente após a próxima atualização da navegação ou da página.  As alterações feitas no `Accept-Language` cabeçalho http só se refletem nas solicitações subsequentes.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulando uma localidade" lightbox="../../media/2020/03/locale.msft.png":::
    Figura 10: emulando uma localidade  
