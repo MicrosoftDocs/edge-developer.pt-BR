@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WPF, WPF, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 30736106906abe818ccec32e2935798d12ced0be
-ms.sourcegitcommit: 4f8613ed7a33e3cbf822b6315d427af14774cd68
+ms.openlocfilehash: fad5e7ce7be58ea9992dffee75da0d59aed471e7
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709891"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710389"
 ---
 # <span data-ttu-id="efb65-104">Introdução ao WebView2 no WPF (visualização)</span><span class="sxs-lookup"><span data-stu-id="efb65-104">Getting started with WebView2 in WPF (Preview)</span></span>  
 
@@ -103,7 +103,7 @@ ms.locfileid: "10709891"
             Title="MainWindow"
             Height="450"
             Width="800"
-    />
+    >
         <Grid>
         
         </Grid>
