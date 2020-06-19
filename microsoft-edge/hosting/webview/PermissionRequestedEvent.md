@@ -3,22 +3,24 @@ description: Fornece informações de evento sobre a solicitação de permissão
 title: Objeto PermissionRequestedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: 07fccebc9e061d4ee7a85e48271aaf9c0574e1ef
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 9bb6cfdbe3cc430f109ea3a258b6c1a176b05da3
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562392"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752017"
 ---
-# Objeto PermissionRequestedEvent
+# Objeto PermissionRequestedEvent  
 
-Fornece informações de evento sobre a solicitação de permissão atual.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Fornece informações de evento sobre a solicitação de permissão atual.  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -54,12 +56,12 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## Propriedades
+## Propriedades  
 
-### permissionRequest
+### permissionRequest  
 
-Retorna um objeto **[PermissionRequest](permissionrequest.md)** que representa a solicitação de permissão do usuário final feita pelo conteúdo da [WebView](../webview.md).
+Retorna um objeto **[PermissionRequest](permissionrequest.md)** que representa a solicitação de permissão do usuário final feita pelo conteúdo da [WebView](../webview.md).  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  

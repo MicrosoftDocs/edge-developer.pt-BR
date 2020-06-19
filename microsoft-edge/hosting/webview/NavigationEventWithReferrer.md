@@ -3,46 +3,49 @@ description: Contém informações de referenciais sobre a navegação
 title: Objeto NavigationEventWithReferrer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/22/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: b11f60724387d996d0a730965602b5ead6a84145
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 72c8a213f632e9e74145de9c34b949adf074cd22
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560959"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752113"
 ---
-# Objeto NavigationEventWithReferrer
+# Objeto NavigationEventWithReferrer  
 
-Um objeto que representa um evento acionado quando a navegação é iniciada e a navegação contém um referenciador.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriedades
+Um objeto que representa um evento acionado quando a navegação é iniciada e a navegação contém um referenciador.  
+
+## Propriedades  
 
 ### referência
 
-O URI (Uniform Resource Identifier) da página no [WebView](../webview.md) que solicita navegação.
+O URI (Uniform Resource Identifier) da página no [WebView](../webview.md) que solicita navegação.  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  
 
-#### Valor da propriedade
-Tipo: **DOMString**
+#### Valor da propriedade  
 
+Tipo: **DOMString**  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-### uri
+### uri  
 
-O URI (Uniform Resource Identifier) do destino da navegação.
+O URI (Uniform Resource Identifier) do destino da navegação.  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  
 
-```js
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **DOMString**
+#### Valor da propriedade  
+
+Tipo: **DOMString**  

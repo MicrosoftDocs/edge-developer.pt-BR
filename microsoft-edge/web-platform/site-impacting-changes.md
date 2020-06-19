@@ -1,20 +1,20 @@
 ---
 description: Esta página fornece um resumo das alterações de alto impacto que podem afetar a compatibilidade do site
-title: Compatibilidade de sites – alterações de impacto no Microsoft Edge
+title: Compatibilidade do site – alterações que afetam o Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidade, plataforma da Web
-ms.openlocfilehash: c35f38bd43255ab9a8c965c8fa9f3b1c8a95bff6
-ms.sourcegitcommit: 1760ea15e83045168aec6bf507bc4fe7dfb5568f
+ms.openlocfilehash: 6a57ffb4a2c36420d1abe4ec151342e5b77d4c7c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652297"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752189"
 ---
-# Compatibilidade de sites – alterações de impacto no Microsoft Edge  
+# Compatibilidade do site – alterações que afetam o Microsoft Edge  
 
 A Web está em constante evolução para melhorar a experiência do usuário, a segurança e a privacidade.  Em alguns casos, as alterações podem ser significativas o suficiente para afetar a funcionalidade de páginas existentes.  A tabela a seguir resume as mudanças de impacto especialmente altos que a equipe do Microsoft Edge está acompanhando no momento.  Verifique com frequência; a equipe do Microsoft Edge atualiza esta página conforme a evolução, as linhas do tempo solidificam e novas alterações são anunciadas.  
 
@@ -26,7 +26,7 @@ A Web está em constante evolução para melhorar a experiência do usuário, a 
 | Exibir prompt sutil para solicitações de permissões de notificação |  | Canárias v83, dev v83 | Agora os usuários podem optar por aceitar solicitações de notificação em silêncio `edge://settings/content/notifications` .  Com essa configuração habilitada, o Microsoft Edge exibe um ícone de solicitação sutil na barra de endereços para os sites que solicitam o envio de usuários futuras notificações usando a `Notifications` `Push` API ou.  Este ícone sutil substitui o prompt de permissão de submenu.  Um experimento em Canárias e dev ativa esse comportamento por padrão para alguns usuários, em todos os sites que solicitam permissões de notificações.  Os usuários podem recusar-se `edge://settings/content/notifications` .  No futuro, a equipe do Microsoft Edge pode explorar a exibição do prompt de submenu em situações específicas com base em comportamentos do usuário e outras entradas.  |  
 | Desabilitar TLS/1.0 e TLS/1.1 por padrão | Borda v84 |  | Para ajudar a descobrir os sites afetados, você pode definir o `edge://flags/#display-legacy-tls-warnings` sinalizador para fazer com que o Microsoft Edge exiba um aviso de "não seguro" não bloqueado ao carregar páginas que exijam protocolos TLS herdados.  A política de grupo [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] permite a reativação do TLS/1.0 e do TLS/1.1; a política permanecerá disponível até o Edge 88.  |  
 | Bloquear downloads de conteúdo misto | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, incluindo a linha do tempo planejada pela Google, consulte a [entrada no blog do Google Security][GoogleBlogSecurity20200206].  O cronograma de distribuição da Microsoft em tipos de arquivo para avisar ou bloquear está planejado para um lançamento após o Chrome.  |  
-
+| Remoção do Adobe Flash | Borda V88  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, consulte o [mapa do Adobe Flash Chromium](https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021-).  | 
 ##### Comentários de versão  
 
 :::row:::

@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: Microsoft Edge WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 1824c0f626f77e1fb566a361eac6f0358e6a754c
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: c69e9cb725bc96115d323770e3803599eee1de91
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698334"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751944"
 ---
 # interface ICoreWebView2 
 
@@ -101,7 +101,7 @@ O WebView2 permite que você hospede conteúdo da Web usando a tecnologia de nav
 
 A sequência normal de eventos de navegação é NavigationStarting, SourceChanged, ContentLoading e, em seguida, NavigationCompleted. Os eventos a seguir descrevem o estado do WebView durante cada navegação: NavigationStarting: WebView está começando a navegar e a navegação resulta em uma solicitação de rede. O host pode impedir a solicitação no momento. SourceChanged: a fonte do WebView é alterada para uma nova URL. Isso também pode ser devido a uma navegação que não cause uma solicitação de rede, como uma navegação de fragmento. Historychanged: o histórico da WebView foi atualizado como resultado da navegação. ContentLoading: o WebView começou a carregar novo conteúdo. NavigationCompleted: a WebView concluiu o carregamento do conteúdo na nova página. Os desenvolvedores podem controlar as navegações em cada novo documento pela identificação de navegação. A ID de navegação do WebView muda sempre que há uma navegação com êxito para um novo documento.
 
-![Dot-inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 Observe que isso se destina a eventos de navegação com o mesmo evento Navigationid ARG. Navegação eventos com diferentes args de eventos Navigationid podem sobrepor-se. Por exemplo, se você iniciar um evento de navegação e, em seguida, iniciar uma outra navegação, verá o NavigationStarting para a primeira navegação acompanhada pela NavigationStarting da segunda navegação, seguida da NavigationCompleted para a primeira navegação e, em seguida, todos os demais eventos de navegação apropriados para a segunda navegação. Em casos de erro, pode ou não ser um evento ContentLoading dependendo se a navegação é continuada para uma página de erro. No caso de um redirecionamento HTTP, haverá vários eventos NavigationStarting em uma linha, com as seguintes opções, mas a identificação de navegação será a mesma. As mesmas navegações de documento não resultam no evento NavigationStarting e também não aumentam a ID de navegação.
 
@@ -111,11 +111,11 @@ Para monitorar ou cancelar navegações dentro de subquadros no WebView, use Fra
 
 O WebView2 usa o mesmo modelo de processo que o navegador da Web Edge. Há um processo do navegador Edge por diretório de dados do usuário especificado em uma sessão do usuário que servirá qualquer processo de chamadas do WebView2 que especifique esse diretório de dados do usuário. Isso significa que um processo do navegador Edge pode estar servindo vários processos de chamadas e um processo de chamada pode estar usando vários processos do navegador do Edge.
 
-![Dot-inline-dotgraph-2. png](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 Fora de um processo de navegador, haverá alguns processos de processamento. Elas são criadas, conforme necessário, para atender a vários quadros potencialmente em diferentes modos de exibição. O número de processos de renderização varia de acordo com o recurso de navegador de isolamento de site e o número de origens discadas discadas renderizadas em webviews associadas.
 
-![Dot-inline-dotgraph-3. png](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 Você pode reagir a falhas e travamentos nesses processos do navegador e do renderizador usando o evento ProcessFailure.
 
@@ -974,7 +974,7 @@ Adicione o JavaScript fornecido a uma lista de scripts que devem ser executados 
 
 > Public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR JavaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * Handler)
 
-O script injetado se aplicará a todas as futuras navegações de documento de nível superior e quadro filho até que sejam removidas com o RemoveScriptToExecuteOnDocumentCreated. Isso é aplicado de forma assíncrona e você deve aguardar até que o manipulador de conclusão seja executado antes de poder ter certeza de que o script está pronto para ser executado em navegações futuras.
+Esse método injeta um script que é executado em todas as navegações de página de quadro filho e documento de nível superior. Esse método é executado de forma assíncrona, e você deve aguardar até que o manipulador de conclusão termine antes que o script injetado esteja pronto para ser executado. Quando esse método é concluído, o método do manipulador `Invoke` é chamado com o `id` do script injetado. `id` é uma cadeia de caracteres. Para remover o script injetado, use `RemoveScriptToExecuteOnDocumentCreated` .
 
 Observe que, se um documento HTML tiver uma área restrita de algum tipo via propriedades de [área restrita](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) ou o [cabeçalho HTTP de política de segurança de conteúdo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) , isso afetará o script ser executado aqui. Portanto, por exemplo, se a palavra-chave ' allow-janelarestritas ' não estiver definida, as chamadas para a `alert` função serão ignoradas.
 
@@ -1514,7 +1514,7 @@ Embora novas tentativas de acesso sejam negadas, se o objeto já for obtido por 
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-Remova o JavaScript correspondente adicionado via AddScriptToExecuteOnDocumentCreated.
+Remova o JavaScript correspondente adicionado usando `AddScriptToExecuteOnDocumentCreated` com a ID de script especificada.
 
 > Public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(ID LPCWSTR)
 
@@ -1682,4 +1682,3 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Trocas HTTP assin
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Solicitações de ping.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | Relatórios de violação de CSP.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Outros recursos.
-

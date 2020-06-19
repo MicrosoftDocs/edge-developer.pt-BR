@@ -3,45 +3,49 @@ description: Representa uma cadeia de caracteres de notificação passada do con
 title: Objeto ScriptNotifyEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: 22313f2d96ca2c5d4d3554ca40589b9a583c89cd
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 164bfa7228b1f4ccf9817e4b7231361d090f1394
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560492"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752007"
 ---
-# Objeto ScriptNotifyEvent
+# Objeto ScriptNotifyEvent  
 
-Um objeto que representa um evento disparado quando o conteúdo contido no [WebView](../webview.md) passa uma cadeia de caracteres para o aplicativo usando JavaScript.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriedades
-    
-### callingUri
+Um objeto que representa um evento disparado quando o conteúdo contido no [WebView](../webview.md) passa uma cadeia de caracteres para o aplicativo usando JavaScript.  
 
-Obtém o URI (Uniform Resource Identifier) da página que contém o script que disparou o **ScriptNotifyEvent**.
+## Propriedades  
 
-Essa propriedade é somente leitura.
+### callingUri  
 
-```js
+Obtém o URI (Uniform Resource Identifier) da página que contém o script que disparou o **ScriptNotifyEvent**.  
+
+Essa propriedade é somente leitura.  
+
+```javascript
 var callingUri = ScriptNotifyEvent.callingUri;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **DOMString**
+#### Valor da propriedade  
 
-### value
+Tipo: **DOMString**  
 
-O nome do método como passado para o aplicativo.
+### value  
 
-Essa propriedade é somente leitura.
+O nome do método como passado para o aplicativo.  
 
-```js
+Essa propriedade é somente leitura.  
+
+```javascript
 var value = ScriptNotifyEvent.value;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **DOMString**
+#### Valor da propriedade  
+
+Tipo: **DOMString**  

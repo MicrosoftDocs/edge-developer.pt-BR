@@ -3,99 +3,105 @@ description: O objeto despachado de um evento Focus que contém o motivo e a loc
 title: Objeto FocusNavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: b988bcd7ff252b9972bef9a31339a34b4b58d9ee
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 88f0a4ef8834c6e851f81ee10bf4202a0429f969
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560976"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752161"
 ---
-# Objeto FocusNavigationEvent
+# Objeto FocusNavigationEvent  
 
-O objeto despachado da [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) que contém o [**NavigationReason**](#navigationreason) e o local. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Métodos
+O objeto despachado da [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) que contém o [**NavigationReason**](#navigationreason) e o local.  
 
-### requestFocus
+## Métodos  
 
-Chamado para mover o foco do aplicativo para o WebView.
+### requestFocus  
 
-### Parâmetros
+Chamado para mover o foco do aplicativo para o WebView.  
 
-Esse método não tem parâmetros.
+### Parâmetros  
 
-### Valor de retorno
+Esse método não tem parâmetros.  
 
-Esse método não retorna um valor.
+### Valor de retorno  
 
-## Propriedades
-    
-### navigationReason
+Esse método não retorna um valor.  
 
-O tipo enumerado **NavigationReason**, "Left", "up", "Right" ou "Down". 
+## Propriedades  
 
-Essa propriedade é somente leitura.
+### navigationReason  
 
-```js
+O tipo enumerado **NavigationReason**, "Left", "up", "Right" ou "Down".  
+
+Essa propriedade é somente leitura.  
+
+```javascript
 var navigationReason = FocusNavigationEvent.navigationReason;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **NavigationReason**
+#### Valor da propriedade  
 
-### originHeight
+Tipo: **NavigationReason**  
 
-O local da altura da origem do elemento a receber o foco.
+### originHeight  
 
-Essa propriedade é somente leitura.
+O local da altura da origem do elemento a receber o foco.  
 
-```js
+Essa propriedade é somente leitura.  
+
+```javascript
 var originWoriginHeightidth = FocusNavigationEvent.originHeight;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **float**
+#### Valor da propriedade  
 
-### originLeft
+Tipo: **float**  
 
-O local de origem do elemento para receber o foco.
+### originLeft  
 
-Essa propriedade é somente leitura.
+O local de origem do elemento para receber o foco.  
 
-```js
+Essa propriedade é somente leitura.  
+
+```javascript
 var originLeft = FocusNavigationEvent.originLeft;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **float**
+#### Valor da propriedade  
 
-### originTop
+Tipo: **float**  
 
-O local de origem superior do elemento a receber o foco.
+### originTop  
 
-Essa propriedade é somente leitura.
+O local de origem superior do elemento a receber o foco.  
 
-```js
+Essa propriedade é somente leitura.  
+
+```javascript
 var originTop = FocusNavigationEvent.originTop;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **float**
+#### Valor da propriedade  
 
-### originWidth
+Tipo: **float**  
 
-O local da largura de origem do elemento a receber o foco.
+### originWidth  
 
-Essa propriedade é somente leitura.
+O local da largura de origem do elemento a receber o foco.  
 
-```js
+Essa propriedade é somente leitura.  
+
+```javascript
 var originWidth = FocusNavigationEvent.originWidth;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **float**
+#### Valor da propriedade  
 
+Tipo: **float**  

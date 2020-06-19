@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: Microsoft Edge WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 4f920b5faf79532e81728675bf56218549914e3d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 2fdd047068ec761e1fcd3d3031d4c6c911a5b1ef
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698396"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752252"
 ---
 # Globais 
 
@@ -50,7 +50,7 @@ Isso equivale a chamar CreateCoreWebView2EnvironmentWithOptions com nullptr para
 
 DLL Export para criar um ambiente WebView2 com uma versão personalizada do Edge, diretório de dados do usuário e/ou opções adicionais.
 
-browserExecutableFolder é o caminho relativo para a pasta que contém a borda incorporada. A borda incorporada pode ser obtida copiando a versão nomeada pasta de uma borda instalada, como 73.0.52.0 subpasta de uma borda 73.0.52.0 instalada. A pasta deve ter msedge. exe, msedge. dll e assim por diante. Use uma cadeia de caracteres nula ou vazia para browserExecutableFolder para criar WebView usando o Edge instalado no computador, caso em que a API tentará localizar uma versão compatível do Edge instalada no computador de acordo com a preferência de canal que tenta encontrar a instalação por usuário e, em seguida, por instalação por computador.
+Use `browserExecutableFolder` para especificar se os controles de WebView2 usam uma versão inserida de Edge ou a versão instalada do Edge que existe em um computador cliente. Para usar uma versão inserida do Edge, passe o caminho relativo da pasta que contém a versão incorporada do Edge `browserExecutableFolder` . Para obter a versão inserida do Edge, copie o nome da pasta versionada da sua versão instalada do Edge em um computador cliente. Por exemplo, copie a `73.0.52.0` pasta da pasta em que a versão Edge 73.0.52.0 foi instalada. Verifique se a pasta tem os arquivos **msedgewebview2.exe** e **msedge.dll** . Para criar controles WebView2 que usam a versão instalada do Edge que existe nas máquinas do cliente, passe uma cadeia de caracteres nula ou vazia para `browserExecutableFolder` . Nesse cenário, a API tenta encontrar uma versão compatível do Edge instalada no computador cliente (primeiro no nível do computador e, em seguida, por usuário) usando a preferência de canal selecionada. 
 
 A ordem padrão de pesquisa de canal é estável, beta, dev e Canárias. Quando houver uma variável de ambiente WEBVIEW2_RELEASE_CHANNEL_PREFERENCE ou valor de registro releaseChannelPreference aplicável com o valor 1, a ordem de pesquisa de canal será revertida.
 
@@ -87,7 +87,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Quando encontrado com um valor não vazio, isso indica que o WebView está sendo iniciado em um depurador de script que também dá suporte a aplicativos host que usam vários webviews. O valor é usado como o identificador de um pipe nomeado que será aberto e gravado quando um novo WebView for criado pelo aplicativo host. A carga corresponderá à do destino JSON da porta de depuração remota e pode ser usada pelo depurador externo para ser anexada a uma instância do WebView específica. O formato do pipe criado pelo depurador deve ser: `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` onde:
 
-* `{app_name}` é o nome de arquivo exe do aplicativo host, por exemplo, WebView2Example. exe
+* `{app_name}` é o nome de arquivo exe do aplicativo host, por exemplo, WebView2Example.exe
 
 * `{pipe_name}` é o valor definido para WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER.
 
@@ -138,4 +138,3 @@ Primeiro, verificamos com root como HKLM e depois HKCU. AppId é definido primei
 Obtenha as informações da versão do navegador, incluindo o nome do canal, se não for o canal estável ou a borda incorporada.
 
 Os nomes dos canais são beta, dev e Canárias. Se houver uma substituição para o browserExecutableFolder ou para a preferência de canal, a substituição será usada. Se não houver uma substituição, o parâmetro passado para GetAvailableCoreWebView2BrowserVersionString será usado.
-

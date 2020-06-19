@@ -3,22 +3,24 @@ description: Representa uma solicitação adiada para a permissão do usuário a
 title: Objeto DeferredPermissionRequest
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: 6013f20195fc0f5d4f33b871a9c1b01392bf023e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dc1f0753f879f511fdc380c806eb88b6be358016
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560978"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752134"
 ---
-# Objeto DeferredPermissionRequest
+# Objeto DeferredPermissionRequest  
 
-Representa uma solicitação adiada pelo conteúdo da [WebView](../webview.md) para permissão de usuário final para acessar funcionalidade de dispositivo especializada (como geolocalização ou bloqueio de ponteiro).
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Representa uma solicitação adiada pelo conteúdo da [WebView](../webview.md) para permissão de usuário final para acessar funcionalidade de dispositivo especializada (como geolocalização ou bloqueio de ponteiro).  
+
+```javascript
 // In this sample, when we receive a permission request we construct some basic UI to ask the
 // user if they want to give permission.
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
@@ -58,98 +60,98 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
     permissionRequest.defer();
 });
-```
+```  
 
-## Métodos
+## Métodos  
 
-### habilitar
+### habilitar  
 
-Permite a solicitação de permissão.
+Permite a solicitação de permissão.  
 
-```js
+```javascript
 deferredPermissionRequest.allow();
-```
+```  
 
-#### Parâmetros
+#### Parâmetros  
 
-Esse método não tem parâmetros.
+Esse método não tem parâmetros.  
 
-#### Valor de retorno
+#### Valor de retorno  
 
-Esse método não retorna um valor.
+Esse método não retorna um valor.  
 
-### negar
+### negar  
 
-Nega a solicitação de permissão.
+Nega a solicitação de permissão.  
 
-```js
+```javascript
 deferredPermissionRequest.deny();
-```
+```  
 
-#### Parâmetros
+#### Parâmetros  
 
-Esse método não tem parâmetros.
+Esse método não tem parâmetros.  
 
-#### Valor de retorno
+#### Valor de retorno  
 
-Esse método não retorna um valor.
+Esse método não retorna um valor.  
 
-## Propriedades
+## Propriedades  
 
-### id
+### id  
 
-Uma ID exclusiva que pode ser usada para correlacionar a DeferredPermissionRequest atual com um objeto PermissionRequest de um evento MSWebViewPermissionRequested anterior. Consulte o método **PermissionRequested. Defer** .
+Uma ID exclusiva que pode ser usada para correlacionar a DeferredPermissionRequest atual com um objeto PermissionRequest de um evento MSWebViewPermissionRequested anterior. Consulte o método **PermissionRequested. Defer** .  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  
 
-```js
+```javascript
 var id = deferredPermissionRequest.id;
-```
+```  
 
-##### Valor da propriedade
+##### Valor da propriedade  
 
-Tipo: **unsigned long**
+Tipo: **unsigned long**  
 
-### tipo
+### tipo  
 
-O tipo de permissão que está sendo solicitada. Pode ser um dos seguintes valores de cadeia de caracteres:
+O tipo de permissão que está sendo solicitada. Pode ser um dos seguintes valores de cadeia de caracteres:  
 
-- **geolocalização: acesso**a dados de localização via Navigator. geolocalização.
-- **unlimitedIndexedDBQuota**: permitir que as APIs do IndexedDB ignorem o limite de tamanho de dados armazenados usual.
-- **mídia**: acesso ao microfone e à câmera via Navigator. getUserMedia.
-- **pointerlock**: capacidade de bloquear e controlar o ponteiro do mouse via Element. requestPointerLock.
-- **webnotifications**: capacidade de mostrar notificações da área de trabalho via janela. Forma.
-- **tela**: capacidade de fazer capturas de tela por meio da API de captura de mídia.
-- **immersiveview**: capacidade de controlar uma exibição VR.
+*   **geolocalização: acesso**a dados de localização via Navigator. geolocalização.  
+*   **unlimitedIndexedDBQuota**: permitir que as APIs do IndexedDB ignorem o limite de tamanho de dados armazenados usual.  
+*   **mídia**: acesso ao microfone e à câmera via Navigator. getUserMedia.  
+*   **pointerlock**: capacidade de bloquear e controlar o ponteiro do mouse via Element. requestPointerLock.  
+*   **webnotifications**: capacidade de mostrar notificações da área de trabalho via janela. Forma.  
+*   **tela**: capacidade de fazer capturas de tela por meio da API de captura de mídia.  
+*   **immersiveview**: capacidade de controlar uma exibição VR.  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  
 
-```js
+```javascript
 var type = deferredPermissionRequest.type;
-```
+```  
 
-#### Valor da propriedade
+#### Valor da propriedade  
 
-Tipo: **cadeia de caracteres**
+Tipo: **cadeia de caracteres**  
 
-### uri
+### uri  
 
-O URI (Uniform Resource Identifier) do documento que solicita permissão.
+O URI (Uniform Resource Identifier) do documento que solicita permissão.  
 
-Essa propriedade é somente leitura.
+Essa propriedade é somente leitura.  
 
-```js
+```javascript
 var uri = deferredPermissionRequest.uri;
-```
+```  
 
-##### Valor da propriedade
+##### Valor da propriedade  
 
-Tipo: **cadeia de caracteres**
+Tipo: **cadeia de caracteres**  
 
-## Requisitos
+## Requisitos  
 
-|                                           |                                      |
-|-------------------------------------------|--------------------------------------|
-| <strong>Mínimo de cliente com suporte</strong> | Windows 10 [somente aplicativos da Windows Store] |
-| <strong>Servidor mínimo com suporte</strong> |            Sem suporte             |
-| <strong>Número mínimo com suporte</strong>  |            Sem suporte             |
+|  |  |  
+|:--- |:--- |  
+| **Mínimo de cliente com suporte** | Windows 10 [somente aplicativos da Windows Store] |  
+| **Servidor mínimo com suporte** | Sem suporte |  
+| **Número mínimo com suporte** | Sem suporte |  

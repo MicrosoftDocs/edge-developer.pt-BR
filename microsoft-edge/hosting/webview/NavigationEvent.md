@@ -3,32 +3,35 @@ description: Contém informações sobre a navegação do WebView
 title: Objeto NavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicativos do Windows 10, UWP, Edge
-ms.openlocfilehash: 1b3c9bd8f10c1f35a5ac518a54dd78ce96e201b5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 785e9646ff400e7ad229046c7030b51420b1d9ad
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560960"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752168"
 ---
-# Objeto NavigationEvent
+# Objeto NavigationEvent  
 
-Um objeto que representa um evento disparado quando a navegação é iniciada.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriedades
-    
-### uri
+Um objeto que representa um evento disparado quando a navegação é iniciada.  
 
-O URI (Uniform Resource Identifier) do destino.
+## Propriedades  
 
-Essa propriedade é somente leitura.
+### uri  
 
-```js
+O URI (Uniform Resource Identifier) do destino.  
+
+Essa propriedade é somente leitura.  
+
+```javascript
 var uri = NavigationEvent.uri;
-```
+```  
 
-#### Valor da propriedade
-Tipo: **DOMString**
+#### Valor da propriedade  
+
+Tipo: **DOMString**  
