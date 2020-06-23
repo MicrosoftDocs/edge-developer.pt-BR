@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 9356da17f2db9456a9a309bc9ef06c74fbb50779
+ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697739"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "10754542"
 ---
 # Introdução ao Microsoft Edge WebView2 (visualização)  
 
@@ -123,13 +123,13 @@ Para obter informações mais detalhadas sobre como criar e implantar aplicativo
 
 *   [WebView2 SDK e controle de versão do Microsoft Edge](./concepts/versioning.md)
 *   [Distribuir aplicativos do WebView2](./concepts/distribution.md)  
+*   [Práticas recomendadas de segurança para aplicativos WebView2](./concepts/security.md)
+*   [Gerenciar a pasta dados do usuário em aplicativos do WebView2](./concepts/userdatafolder.md)
  
 #### Guias de instruções  
 
 *   [Depuração de WebView2 com o DevTools e depuração de script do Visual Studio](./howto/debug.md)  
 *   [Automatizando e Depurando o WebView2 com o Microsoft EdgeDriver](./howto/webdriver.md)  
-
-<!--todo: add how-tos when available  -->  
 
 ## Entrar em contato com a equipe do WebView2  
 
