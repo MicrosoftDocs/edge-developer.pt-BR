@@ -3,18 +3,18 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidade, White Paper, confiança
 localization_priority: Priority
-ms.openlocfilehash: 2fee66a81309ee61d41959ae6992e2fe991ca649
-ms.sourcegitcommit: ffc0eb7bedf6e79326103a78c003f1cb2a2f70b2
+ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
+ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "10696733"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10758869"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -62,7 +62,9 @@ Quando você usa o modo convidado, o AutoPreenchimento não está disponível e 
 
 ## Cast  
 
-Cast in Microsoft Edge permite que você exiba sua mídia em outra tela usando o Google Cast.  Você pode acessar o recurso em **configurações e mais (...)**  >  **Mais ferramentas**  >  **Transmitir mídia para dispositivo**.  Cast não usa nenhum serviço da Microsoft ou Google. 
+Cast in Microsoft Edge permite que você exiba sua mídia em outra tela usando o Google Cast.  Você pode acessar o recurso em **configurações e mais (...)**  >  **Mais ferramentas**  >  **Transmitir mídia para dispositivo**.  Cast depende da extensão do roteador de mídia que não está incluída no Microsoft Edge por padrão.  Quando você usa o Cast pela primeira vez, o Microsoft Edge solicita permissão para instalar a extensão do roteador de mídia.  
+
+Selecione **reiniciar** para instalar as extensões do roteador de mídia da loja da Web Chrome.  Para manter a extensão do roteador de mídia atualizada, na inicialização do Microsoft Edge e em intervalos regulares, o Microsoft Edge envia solicitações de atualização para a loja da Web do Chrome que inclui dados básicos sobre a sua versão do Microsoft Edge.  O Google pode coletar alguns dados associados à extensão do roteador de mídia.  Para desinstalar a extensão do roteador de mídia, acesse `edge://flags` e desabilite o **roteador Edge-on-Demand-Media**.  Isso também interrompe as atualizações da loja da Web Chrome.  A extensão está oculta e não aparece na lista de **extensões instaladas** .  Para a lista **extensões instaladas** , vá para `edge://extensions` .  
 
 ## Coleções  
 
