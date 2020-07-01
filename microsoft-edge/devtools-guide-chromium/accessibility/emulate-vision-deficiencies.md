@@ -2,32 +2,32 @@
 title: Emular deficiências visuais no Microsoft Edge DevTools (cegueira para cores)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 0b608f5fe67724eee81aeb993577ee9b45cbca09
-ms.sourcegitcommit: d7fdb67df0fe73fa5ae96e5a69a847d07941d0a7
+ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10758048"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843918"
 ---
 # Emular deficiências de visão
 
-No mundo inteiro, aproximadamente 8% de homens e 0,5% das mulheres têm uma [deficiência de visão de cor][ColorblindawarenessMain] comumente chamada de "cegueira para cores".  O [Microsoft Edge devtools][MicrosoftEdgeDevTools] permite que você eMule várias deficiências conhecidas e forneça uma visualização do seu produto para revisão.  
+Para atender melhor às necessidades dos seus usuários com [deficiências visuais][ColorblindawarenessMain] \ (cegueira para cores \), [o Microsoft Edge devtools][MicrosoftEdgeDevTools] permite simular deficiências de visão de cor específicas.  A ferramenta de **deficiência de visão de emulação** simula as categorias a seguir.  
 
-| Deficiência de cor | Detalhes |  
+| Deficiência de visão colorida | Detalhes |  
 |:--- |:--- |  
-| Visão desfocada |  |   
-| Protanopia | A incapacidade de perceber qualquer luz vermelha. |  
-| Deuteranopia | A incapacidade de perceber qualquer luz verde. |  
-| Tritanopia | A incapacidade de perceber qualquer luz azul. |  
-| Achromatopsia | A incapacidade de perceber qualquer cor, com exceção do sombreamento de cinza. |  
+| Visão desfocada | O usuário tem dificuldades para se concentrar em detalhes. |   
+| Protanopia | O usuário não consegue perceber qualquer luz vermelha. |  
+| Deuteranopia | O usuário não consegue perceber qualquer luz verde. |  
+| Tritanopia | O usuário não consegue perceber qualquer luz azul. |  
+| Achromatopsia | O usuário não consegue perceber qualquer cor, o que reduz toda a cor para um tom de cinza. |  
 
 ## Navegar até as ferramentas de renderização  
 
-Para testar seu produto da Web atual em busca de deficiências de cores, abra as [ferramentas de renderização][RenderingTools].  
+Para simular uma deficiência visual sendo aplicada ao seu produto da Web, abra as [ferramentas de renderização][RenderingTools].  
 
 1.  Abrir as ferramentas de renderização selecionando o `...` item de menu na barra de ferramentas  
 1.  Selecionar `More tools`  
@@ -37,37 +37,37 @@ Para testar seu produto da Web atual em busca de deficiências de cores, abra as
        Abrindo as **ferramentas de renderização**  
     :::image-end:::  
 
-O menu **renderização** é exibido na metade inferior da devtools.  
+O menu **renderização** é exibido na gaveta.  
 
-1.  Role para baixo até o `Emulate Vision deficiencies` item de menu e selecione uma das opções.  
+1.  Role para baixo até o `Emulate vision deficiencies` item de menu e selecione o menu suspenso para exibir as opções.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="O menu de deficiências da visão de emulação das ferramentas de renderização" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       O menu de **deficiências da visão de emulação** das ferramentas de **renderização**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="O menu de deficiências da visão de emulação na gaveta de renderização" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       O menu de **deficiências da visão de emulação** na gaveta de **renderização**  
     :::image-end:::  
     
-1.  Escolha qualquer uma das opções  
+1.  Escolha uma opção.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Opções do menu de deficiências da visão de emulação" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Opções do menu de **deficiências da visão de emulação**  
     :::image-end:::  
     
-1.  A página atual é exibida em uma simulação de como ela pode aparecer para um usuário com a deficiência selecionada.  
-
+1.  O Windows principal exibe a simulação da opção selecionada aplicada à página atual.  
+    
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Documentação das ferramentas de desenvolvedor do Microsoft Edge na emulação de visão borrada" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Exibido usando a emulação de **visão desfocada**  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Vídeo com a simulação * * desfocada da revisão * *" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Exibição usando simulação de **visão borrada**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Documentação das ferramentas de desenvolvedor do Microsoft Edge na emulação do achromatopsia Vision" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Exibir usando a emulação de **visão achromatopsia** :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Vídeo usando a simulação * * achromatopsia * *" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Exibir usando a simulação **achromatopsia** :::image-end:::  
        :::column-end:::
     :::row-end:::
     
 ## Usar o menu de comandos  
 
-Você também pode alcançar diferentes emulações sem passar pelos vários menus usando o menu de **comandos**.  
+Você também pode usar o **menu de comando** para acessar as diferentes simulações.  
 
 1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comandos**.  
     
@@ -77,12 +77,12 @@ Você também pode alcançar diferentes emulações sem passar pelos vários men
     
 1.  Tipo `emulate` , escolha o que você deseja simular e pressione `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="As diferentes opções de emulação disponíveis no menu de comando" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       As diferentes opções de emulação disponíveis no **menu de comando**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="As diferentes opções de simulação disponíveis no menu de comando" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       As diferentes opções de simulação disponíveis no **menu de comando**  
     :::image-end:::  
     
 > [!IMPORTANT]
-> As ferramentas de emulação são as aproximações de como uma pessoa com cada deficiência pode ver seu produto.  Cada pessoa é diferente, portanto, as deficiências de visão variam de acordo com a pessoa com a pessoa.  Para atender melhor às necessidades dos seus usuários, evite qualquer combinação de cores que possa ser um problema.  As ferramentas de emulação não são uma avaliação completa da acessibilidade do seu produto, mas você deve ter uma boa primeira etapa em relação a evitar as principais deficiências.  
+> As ferramentas de **deficiência visual de emulação** simulam a forma como uma pessoa com cada deficiência pode ver seu produto.  Cada pessoa é diferente, portanto, as deficiências de visão variam de acordo com a pessoa com a pessoa.  Para atender melhor às necessidades dos seus usuários, evite qualquer combinação de cores que possa ser um problema.  As ferramentas de **deficiências de visão de emulação** não são uma avaliação completa de acessibilidade do seu produto.  Em vez disso, as ferramentas de **deficiência visual de emulação** devem fornecer uma boa primeira etapa para evitar problemas.  
 
 <!-- links -->  
 
