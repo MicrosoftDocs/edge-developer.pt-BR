@@ -3,37 +3,37 @@ description: Modelos de controle de versão usados para o Microsoft Edge WebView
 title: Controle de versão do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 06/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 3862576134d1179fb24b2ce865f705b2bf1db8a6
-ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
+ms.openlocfilehash: 059bbeb34f372af0cef944e484599c0b50543cc9
+ms.sourcegitcommit: 288bd2a1bec418a84d1f0bda013c1913886bd269
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10757603"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844422"
 ---
 # Entender as versões do SDK do WebView2  
 
-O WebView2 depende do Microsoft Edge para funcionar. Cada SDK do WebView2 requer a instalação de uma versão mínima do navegador.  A versão mínima é refletida na versão do pacote do SDK.  Por exemplo, se você usar o `SDK package version 0.9.488` , será necessário instalar o Microsoft Edge com um número de compilação de 488 ou posterior. A versão do navegador também é especificada nas [notas de versão][Webview2Releasenotes]do WebView2.  Para obter mais informações sobre as versões mais recentes do navegador, consulte [canais do navegador][DeployedgeChannels].  
+O WebView2 depende do Microsoft Edge para funcionar.  Cada SDK do WebView2 requer a instalação de uma versão mínima do navegador.  A versão mínima é refletida na versão do pacote do SDK.  Por exemplo, se você usar o `SDK package version 0.9.488` , será necessário instalar o Microsoft Edge com um número de compilação de 488 ou posterior.  A versão do navegador também é especificada nas [notas de versão][Releasenotes]do WebView2.  Para obter mais informações sobre as versões mais recentes do navegador, consulte [canais do navegador][DeployedgeChannels].  
 
 > [!NOTE]
-> O WebView2 está atualmente em visualização.  Enquanto a equipe do Microsoft Edge WebView se empenha para garantir a compatibilidade com versões anteriores entre as versões e os SDKs do navegador, não é garantido que algumas versões mais recentes do navegador possam não dar suporte a versões mais antigas do SDK.  Se houver alterações significativas entre versões e SDKs do navegador, a equipe do Microsoft Edge WebView especifica as alterações nas [notas de versão][Webview2Releasenotes].  
+> O WebView2 está atualmente em visualização.  Enquanto a equipe da WebView se empenha para garantir a compatibilidade com versões anteriores entre as versões e os SDKs do navegador, não é garantido porque as versões mais recentes do navegador podem não dar suporte a versões mais antigas do SDK.  Se houver alterações significativas entre versões e SDKs do navegador, a equipe da WebView especificará as alterações nas [notas de versão][Releasenotes].  
 
-No futuro, o modelo de distribuição para aplicativos do WebView2 será alterado. Para obter mais informações, consulte [tempo de execução do WebView2][Webview2IndexEdgeRuntime].  
+No futuro, a equipe da WebView planeja alterar o modelo de distribuição para aplicativos do WebView2.  Para obter mais informações, consulte ver o [modo de distribuição do verde][DistributionEvergreenMode].  
  
 ## Lançamento e pacote de pré-lançamento  
 
 Na visualização, o pacote de lançamento contém o seguinte.  
 
-*   [APIs C/C++ do Win32][Webview2ReferenceWin3209538]: APIs no SDK que devem permanecer iguais no ga. 
+*   [APIs C/C++ do Win32][ReferenceWin3209538]: APIs no SDK que devem permanecer iguais no ga. 
 
-Na visualização, o pacote de pré-lançamento contém o seguinte.  
+Na visualização, o pacote de pré-lançamento contém os componentes a seguir.  
 
-*   APIs .NET: [WPF][Webview2ReferenceWpf09515], [WinForms][Webview2ReferenceWinforms09515]e [núcleo][Webview2ReferenceDotnet09538]
-*   APIs experimentais.  Para obter mais informações, consulte a seção [APIs Experimantal](#experimental-apis) .  
+*   APIs .NET: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515]e [núcleo][ReferenceDotnet09538]
+*   APIs experimentais.  Para obter mais informações, consulte a seção [APIs experimentais](#experimental-apis) .  
 
 ### APIs experimentais  
 
@@ -48,12 +48,12 @@ Após o WebView2 atingir um estado de generally available, o pacote de lançamen
 
 <!--links -->
 
-[Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
-[Webview2ReferenceDotnet09538]: ../reference/dotnet/0-9-538-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[Webview2ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[Webview2ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[Webview2Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
+[DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Modo de distribuição em verde-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
+[ReferenceDotnet09538]: ../reference/dotnet/0-9-538-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
+[ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
+[ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
+[ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
+[Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos canais Microsoft Edge | Documentos da Microsoft"  
 

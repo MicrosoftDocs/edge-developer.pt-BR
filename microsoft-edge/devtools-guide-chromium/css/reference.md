@@ -1,17 +1,17 @@
 ---
-title: Referência CSS
+title: Referência BITS
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601842"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843961"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -33,7 +33,7 @@ ms.locfileid: "10601842"
 
 
 
-# Referência CSS   
+# Referência BITS   
 
 
 
@@ -155,7 +155,6 @@ Consulte [Adicionar um pseudo-estado a uma classe][DevToolsCSSGetStartedAddPseud
 ### Exibir uma página no modo de impressão   
 
 Para exibir uma página no modo de impressão:  
-
 1.  [Abrir o menu de comandos][DevToolsCommandMenu].  
 1.  Comece a digitar `Rendering` e selecione `Show Rendering` .  
 1.  Para a lista suspensa **emular mídia CSS** , selecione **Imprimir**.  

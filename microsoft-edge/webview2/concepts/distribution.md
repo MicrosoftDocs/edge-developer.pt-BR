@@ -3,34 +3,82 @@ description: Opções de distribuição ao liberar um aplicativo usando o Micros
 title: Distribuição do aplicativo Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: ec623da0181a4f21c3192652b0d098f922225b0d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 370b5da2d42412a08a5c7f8a7401496fa70e3065
+ms.sourcegitcommit: 288bd2a1bec418a84d1f0bda013c1913886bd269
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697921"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844401"
 ---
-# Distribuição de aplicativos usando o WebView2 
+# Distribuição de aplicativos usando o WebView2  
 
-O controle WebView2 utiliza o navegador Microsoft Edge \ (Chromium \). Ao distribuir seu aplicativo, verifique se o navegador de borda está instalado em todas as máquinas de usuário em que seu aplicativo é executado. O controle WebView2 usa a versão mais estável do navegador que está instalada em um computador. Por exemplo, você pode ter estáveis, beta, dev e Canárias instalados ao mesmo tempo e, nesta situação, os controles WebView2 são executados no canal estável. Verifique se você revisar as notas de versão para garantir que a versão do navegador instalada em suas máquinas que executam os controles de WebView2 atenda aos requisitos mínimos de versão.
+O controle WebView2 utiliza a plataforma Microsoft Edge \ (Chromium \).  Ao empacotar e distribuir seu aplicativo, certifique-se de que uma cópia da plataforma ou do tempo de execução do WebView2 está presente antes do início do aplicativo.  A página a seguir descreve como você \ (o desenvolvedor \) pode garantir que o tempo de execução do WebView2 está instalado e usar os dois modos de distribuição para seu aplicativo do [WebView2:](#evergreen-distribution-mode) versão do meio e [fixo](#fixed-version-distribution-mode).  
 
-## Mapa
+## Modo de distribuição do verde  
 
-Reconhecemos que o navegador Edge pode não estar disponível em todas as máquinas de usuário em que seu aplicativo será executado ou que a instalação do navegador do Edge em toda a organização possa ser difícil. Para garantir que seu aplicativo seja executado em todas as máquinas, independentemente do navegador Microsoft Edge instalado, liberaremos o tempo de execução do Microsoft Edge WebView2. Além disso, atualizaremos o WebView2 para pesquisar a versão estável do tempo de execução antes de Pesquisar versões de pré-lançamento do navegador instalado.
+O modo de distribuição do verde garante que seu aplicativo Tire proveito dos recursos e das atualizações de segurança mais recentes.  O modo de distribuição do verde tem as características a seguir.  
 
-Haverá suporte para duas opções de distribuição usando o tempo de execução do WebView2: a versão do baixo e a correção.
+*   A plataforma da Web é atualizada automaticamente sem esforço adicional.  
+*   Todos os aplicativos que aproveitam o modo de distribuição verde usam uma cópia compartilhada dos binários da plataforma, o que poupa espaço em disco.  
 
-O verde será o modelo de distribuição recomendado para a maioria dos desenvolvedores. Nesse modo, as atualizações são enviadas automaticamente para o tempo de execução do WebView2 sem esforço adicional do seu aplicativo. O modelo verde garante que seu aplicativo aproveite os recursos e atualizações de segurança mais recentes para conteúdo da Web hospedado.
+Há vários canais WebView2 que os aplicativos podem usar como a plataforma da Web.  Por padrão, o WebView2 direciona o canal mais estável disponível no dispositivo que atende ao requisito mínimo de versão do SDK do WebView2.  Os canais a seguir estão listados em ordem do canal mais para o menos estável.  
 
-Para ambientes restritos, haverá suporte para um modelo de distribuição de versão fixa. Nesse modelo, seu aplicativo seleciona e empacota uma versão específica do WebView2. As atualizações para a versão do WebView não ocorrem automaticamente e serão de responsabilidade do aplicativo. O modelo de versão fixa é benéfico quando você precisa controlar a versão do navegador e quando o aplicativo é atualizado. 
+1.  Tempo de execução do WebView2 \ (visualização \)  
+1.  Canal Microsoft Edge Beta  
+1.  Canal Microsoft Edge Dev  
+1.  Canal Microsoft Edge Canary    
 
-### Microsoft Edge WebView2 Runtime
+> [!NOTE]
+> O modelo de distribuição verde é recomendado para a maioria dos desenvolvedores.  
 
-O tempo de execução do Microsoft Edge WebView2 compacta os binários do navegador otimizados para uso por aplicativos do WebView2. Ele funcionará de forma autônoma ou lado a lado com um navegador cliente Edge instalado. Instalar o Runtime uma vez dará suporte a muitos aplicativos do WebView2 em execução no computador cliente. A instalação do tempo de execução não aparecerá como um navegador para usuários finais e não terá atalhos da área de trabalho, ponto de entrada do menu iniciar ou registro de protocolo.
+> [!IMPORTANT]
+> O canal estável do Microsoft Edge não é um destino válido para WebView2, e os motivos são descritos mais tarde.  
 
-Os aplicativos que usam o tempo de execução WebView2 precisarão garantir que a instalação do tempo de execução seja concluída. Para garantir que seu aplicativo instale o tempo de execução como uma dependência, você poderá adicionar o tempo de execução ao seu fluxo de instalação. 
+Para obter mais informações sobre controle de versão, consulte [versionamento][ConceptsVersioning] e [globais][ReferenceWin3209538WebviewIdl].  
+
+### Entender o tempo de execução do WebView2 e o instalador (visualização)  
+
+O canal estável do Microsoft Edge pode não ser instalado em todas as máquinas de usuário em que seu aplicativo é executado.  Em vez de exigir que os usuários instalem o Microsoft Edge, seu aplicativo pode usar o tempo de execução do WebView2 e o instalador do verde \ (Preview \).  O tempo de execução do WebView2 é uma cópia personalizada dos binários do Microsoft Edge que é usada para executar seus aplicativos do WebView2.  Quando o tempo de execução do WebView2 estiver instalado, os usuários não poderão usá-lo como um navegador normal.  Por exemplo, não há um atalho da área de trabalho, entrada do menu Iniciar, os usuários não podem abrir uma janela do navegador usando os binários do tempo de execução e assim por diante.  Todos os aplicativos de WebView2 em verde no dispositivo podem usar uma única instalação de tempo de execução do WebView2 verde.  
+
+Hoje durante a visualização, o ambiente de tempo de execução do Microsoft Edge e o tempo de execução do Microsoft Edge WebView2 são atualizados ao mesmo tempo e têm a mesma compilação.  No futuro, durante a visualização, a equipe do WebView2 planeja atualizar o tempo de execução do WebView2 e corresponder à mesma compilação que o canal do Microsoft Edge beta.  No futuro, quando o WebView2 atingir a disponibilidade geral \ (GA \), a equipe do WebView2 planeja atualizar o tempo de execução do WebView2 e corresponder à mesma compilação que o canal estável do Microsoft Edge.  Após o GA, os aplicativos devem usar o tempo de execução do WebView2 em produção.  
+
+> [!IMPORTANT]
+> Não envie aplicativos WebView2 em produção durante a visualização.  
+
+Use o fluxo de trabalho a seguir para garantir que o WebView2 de tempo de execução do verde esteja disponível.  
+
+1.  Baixe o instalador mais recente do [WebView2 tempo de execução do verde][Webview2Installer].  
+1.  Inclua o instalador no instalador do aplicativo ou no atualizador.  
+1.  Durante a instalação ou atualização do seu aplicativo, verifique se o tempo de execução do WebView2 do verde já está instalado no computador do usuário.  Caso contrário, o aplicativo invocará o instalador para instalar o tempo de execução.  
+
+Dependendo do cenário, talvez seja necessário alterar o fluxo de trabalho acima.  Por exemplo, o instalador do aplicativo pode baixar o instalador do tempo de execução do WebView2 em vez de incluí-lo em seu pacote de aplicativo.  
+
+> [!NOTE]
+> O instalador de tempo de execução do WebView2 e do WebView2 está em visualização.  A visualização tem um escopo inicial limitado e só está disponível como uma instalação autônoma para cada computador no Windows 10 em x64.  No futuro, o suporte para Windows 7, x86 e ARM64 é planejado.  
+
+### Práticas recomendadas para usar o tempo de execução do WebView2 e canais não estáveis do Microsoft Edge  
+
+Considere as seguintes recomendações durante a visualização.  
+
+*   Certifique-se de usar o [tempo de execução do WebView2 e o instalador do verde][Webview2Installer] para desenvolver ou testar o seu pipeline de distribuição e empacotamento.  No futuro, o aplicativo de produção deve incluir o instalador.  
+*   Para desenvolver seu aplicativo, você pode usar o tempo de execução do WebView2 em verde.  No entanto, como o tempo de execução muda do canal de desenvolvimento para o canal beta ou canal estável, o número da compilação do tempo de execução pode não atender aos requisitos de versão mínima do SDK do SDK da visualização mais recentes.  Se você quiser usar o SDK mais recente, instale o Microsoft Edge Canárias Channel para garantir que uma compilação compatível esteja disponível no dispositivo.  Para obter mais informações sobre controle de versão, consulte [controle de versão][ConceptsVersioning].  
+*   Para testar o conteúdo da Web quanto à compatibilidade com as alterações na plataforma não disponíveis no canal estável, use o canal não estável adequado, conforme necessário.  
+
+## Modo de distribuição de versão corrigido  
+
+> [!NOTE]
+> O modelo de distribuição de versão fixa não está disponível no momento.  
+
+Para ambientes restritos, há planos para dar suporte a um modo de distribuição \ versão corrigida \ (anteriormente denominado trazer anteriormente chamado \).  O modo de distribuição de versão fixa permite que você selecione e empacote uma versão específica do tempo de execução do WebView2.  O modo de distribuição de versão fixa permite que você controle qual versão do tempo de execução do WebView2 é usada pelo seu aplicativo e quando as máquinas do usuário são atualizadas.  O modo de distribuição de versão fixa não recebe atualizações automáticas e você deve planejar a aplicação manual de atualizações.  
+
+<!-- links -->  
+
+[ConceptsVersioning]: ./versioning.md "Noções básicas sobre versões do navegador e WebView2 | Documentos da Microsoft"  
+[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globais | Documentos da Microsoft"  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador do WebView2"  
