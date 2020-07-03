@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 370b5da2d42412a08a5c7f8a7401496fa70e3065
-ms.sourcegitcommit: 288bd2a1bec418a84d1f0bda013c1913886bd269
+ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
+ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844401"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "10846014"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
@@ -50,11 +50,11 @@ Hoje durante a visualização, o ambiente de tempo de execução do Microsoft Ed
 > [!IMPORTANT]
 > Não envie aplicativos WebView2 em produção durante a visualização.  
 
-Use o fluxo de trabalho a seguir para garantir que o WebView2 de tempo de execução do verde esteja disponível.  
+Os desenvolvedores são recomendados para garantir que o tempo de execução do WebView2 do verde seja instalado antes de iniciar o aplicativo. Veja a seguir um exemplo de fluxo de trabalho.  
 
 1.  Baixe o instalador mais recente do [WebView2 tempo de execução do verde][Webview2Installer].  
 1.  Inclua o instalador no instalador do aplicativo ou no atualizador.  
-1.  Durante a instalação ou atualização do seu aplicativo, verifique se o tempo de execução do WebView2 do verde já está instalado no computador do usuário.  Caso contrário, o aplicativo invocará o instalador para instalar o tempo de execução.  
+1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Dependendo do cenário, talvez seja necessário alterar o fluxo de trabalho acima.  Por exemplo, o instalador do aplicativo pode baixar o instalador do tempo de execução do WebView2 em vez de incluí-lo em seu pacote de aplicativo.  
 
