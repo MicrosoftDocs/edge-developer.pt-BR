@@ -3,16 +3,15 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 731a289f555870eeff9cdc160965b59925b70c4d
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
-ms.translationtype: MT
+ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
+ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843936"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858047"
 ---
 # Recursos experimentais  
 
@@ -26,7 +25,7 @@ Use as etapas a seguir para ativar \ (ou desligado \) recursos experimentais no 
 
 1.  [Abra o devtools][DevtoolsOpen].  
      *   Pressione `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
-1.  Abra o painel **configurações** .  
+1.  Abra o painel [configurações][DevToolsCustomizeSettings] .  
     *   Pressione `Shift` + `?` .  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  No lado esquerdo do painel **configurações** , selecione a seção **experimentos** .  
     
@@ -46,9 +45,22 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 
 | Recurso experimental | Microsoft Edge versão |  
 |:--- |:--- |  
+| [Habilitar a guia Configurações de atalhos de teclado personalizados](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou posterior |
 | [Habilitar novos recursos de depuração de grade CSS](#enable-new-css-grid-debugging-features) | 85 ou posterior |  
 | [Habilitar o suporte para mover as guias entre painéis](#enable-support-to-move-tabs-between-panels) | 85 ou posterior |  
 | [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
+
+### Habilitar a guia Configurações de atalhos de teclado personalizados
+
+Fornece uma nova página **atalhos** nas [configurações do devtools][DevToolsCustomizeSettings] que habilita os [atalhos de teclado][DevToolsShortcuts] correspondentes no [código][VisualstudioCode]do devtools para o vs.  
+
+Depois de habilitar este experimento, abra [as configurações do devtools][DevToolsCustomizeSettings] novamente pressionando `Shift` + `?` .  Navegue até a página novos **atalhos** .  Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código VS.  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Corresponder os atalhos de teclado no DevTools código do VS" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Corresponder os atalhos de teclado no DevTools código do VS
+:::image-end:::  
+
+Por exemplo, no Windows, o atalho de teclado para pausar ou continuar a execução de um script em um [código vs][VisualstudioCodeShortcutsKeyboardWindows] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools está, `F8` mas com a predefinição de **código do Visual Studio** , esse atalho também é `F5` .  
 
 ### Habilitar novos recursos de depuração de grade CSS  
 
@@ -82,11 +94,11 @@ Normalmente, ferramentas como **elementos** e **rede** só podem ser abertas no 
 
 ## Recursos experimentais anteriores  
 
-*   o [modo de exibição 3D][Devtools3DView] agora está disponível e ativado por padrão no Microsoft Edge versão 83 ou posterior.  
+*   o [modo de exibição 3D][Devtools3dViewIndex] agora está disponível e ativado por padrão no Microsoft Edge versão 83 ou posterior.  
 
 ## Fornecer comentários sobre os recursos experimentais  
 
-Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualquer outro item relacionado ao DevTools:  
+Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualquer outro item relacionado ao DevTools.  
 
 *   Envie seus comentários usando o ícone de comentários no DevTools  
 *   Tweet em [@EdgeDevTools][TwitterEdgedevtools]  
@@ -97,11 +109,15 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "Modo de exibição 3D | Documentos da Microsoft"  
+[Devtools3dViewIndex]: ./3d-view/index.md "Modo de exibição 3D | Documentos da Microsoft"  
 [DevtoolsIssues]: ./issues/index.md "Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge | Documentos da Microsoft"  
-[DevToolsShortcuts]: ./shortcuts.md "Atalhos de teclado do Microsoft Edge DevTools-documentos da Microsoft"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Configurações-personalizar o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevToolsShortcuts]: ./shortcuts.md "Atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsOpen]: ./open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Atalhos de teclado de código do Visual Studio para Windows | Código do Visual Studio"  
 
 [WebhintMain]: https://webhint.io "webhint" 
