@@ -3,18 +3,21 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidade, White Paper, confiança
 localization_priority: Priority
-ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
-ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
+no-loc:
+- Cast
+- Google Cast
+ms.openlocfilehash: 4dc6b21a885438e8ddc0b2164386ec8d819b14af
+ms.sourcegitcommit: ec1d73e3addc47ed28ac5f9d61e4e1ee26b9e40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10758869"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860427"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -62,7 +65,7 @@ Quando você usa o modo convidado, o AutoPreenchimento não está disponível e 
 
 ## Cast  
 
-Cast in Microsoft Edge permite que você exiba sua mídia em outra tela usando o Google Cast.  Você pode acessar o recurso em **configurações e mais (...)**  >  **Mais ferramentas**  >  **Transmitir mídia para dispositivo**.  Cast depende da extensão do roteador de mídia que não está incluída no Microsoft Edge por padrão.  Quando você usa o Cast pela primeira vez, o Microsoft Edge solicita permissão para instalar a extensão do roteador de mídia.  
+Cast no Microsoft Edge permite que você exiba sua mídia em outra tela usando Google Cast .  Você pode acessar o recurso em **configurações e mais (...)**  >  **Mais ferramentas**  >  ** Cast mídia para dispositivo**.  Cast depende da extensão do roteador de mídia que não está incluída no Microsoft Edge por padrão.  Quando você usa pela primeira vez Cast , o Microsoft Edge solicita permissão para instalar a extensão do roteador de mídia.  
 
 Selecione **reiniciar** para instalar as extensões do roteador de mídia da loja da Web Chrome.  Para manter a extensão do roteador de mídia atualizada, na inicialização do Microsoft Edge e em intervalos regulares, o Microsoft Edge envia solicitações de atualização para a loja da Web do Chrome que inclui dados básicos sobre a sua versão do Microsoft Edge.  O Google pode coletar alguns dados associados à extensão do roteador de mídia.  Para desinstalar a extensão do roteador de mídia, acesse `edge://flags` e desabilite o **roteador Edge-on-Demand-Media**.  Isso também interrompe as atualizações da loja da Web Chrome.  A extensão está oculta e não aparece na lista de **extensões instaladas** .  Para a lista **extensões instaladas** , vá para `edge://extensions` .  
 
@@ -193,8 +196,8 @@ O Microsoft Edge oferece suporte à [API geolocalização][W3cGeolocationApiMain
 
 No lado direito da barra de endereços, o Microsoft Edge indica quando o seu local está ou não está sendo compartilhado.  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Localização" lightbox="./media/whitepaper-media/geolocation2.png":::
-   Localização  
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Location" lightbox="./media/whitepaper-media/geolocation2.png":::
+   Location  
 :::image-end:::  
 
 Se você permitir o compartilhamento de sua localização com um site, o Microsoft Edge enviará informações de rede local, como seu endereço IP e pontos de acesso Wi-Fi próximos ao serviço de localização da Microsoft.  O serviço da Microsoft usa as informações para estimar suas coordenadas de localização geográfica.  A estimativa de localização geográfica é compartilhada com o site com o qual você concordou em compartilhar sua localização.  Para especificar que o Microsoft Edge forneça o site de solicitação com um local mais preciso no Windows 10, vá para **configurações**  >  **Privacy**  >  **local** de privacidade e ative o botão **permitir acesso ao local neste dispositivo** e **permitir que os aplicativos acessem suas configurações de localização** .  Se você desativar o recurso **permitir acesso ao local neste dispositivo** e **permitir que os aplicativos acessem suas** configurações de localização, o Microsoft Edge fornecerá um local aproximado ao site solicitante.  As informações são compartilhadas apenas com um site solicitante, se você anteriormente permitiu ver sua localização.  Para obter mais informações sobre as configurações de localização do Windows, consulte [serviço de localização e privacidade do Windows 10][MicrosoftSupport4468240].  
