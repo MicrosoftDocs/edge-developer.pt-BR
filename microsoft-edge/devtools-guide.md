@@ -1,127 +1,127 @@
 ---
-description: Conheça as ferramentas de desenvolvedor do Microsoft Edge (EdgeHTML)
-title: Ferramentas de desenvolvedor do Microsoft Edge (EdgeHTML)
+description: Conhecer as Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML)
+title: Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
-localization_priority: Priority
-ms.openlocfilehash: 56edfa3aa39fc20d37d95fb8fde029a702732336
-ms.sourcegitcommit: 985cfb79a64951afd5beb7981b26afbed30a8972
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: cba59764805c0be0e9d2c57c1a3d87ca4d14943e
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "10629501"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866068"
 ---
-# <span data-ttu-id="c1bb5-104">Ferramentas de desenvolvedor do Microsoft Edge (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-104">Microsoft Edge (EdgeHTML) Developer Tools</span></span>  
+# <span data-ttu-id="ada33-104">Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="ada33-104">Microsoft Edge (EdgeHTML) Developer Tools</span></span>  
 
 [!INCLUDE [new-devtools-version-note](includes/new-devtools-version-note.md)]  
 
-<span data-ttu-id="c1bb5-105">Os DevTools Microsoft Edge \ (EdgeHTML \) são criados com [TypeScript][|::ref1::|Index], habilitados por [fonte aberta][GithubMicrosoftChakracore], otimizados para fluxos de trabalho de front-end modernos e agora disponíveis como um [aplicativo autônomo do Windows 10][MicrosoftStoreEdgeDevtoolsPreview] na Microsoft Store!</span><span class="sxs-lookup"><span data-stu-id="c1bb5-105">The Microsoft Edge \(EdgeHTML\) DevTools are built with [TypeScript][|::ref1::|Index], powered by [open source][GithubMicrosoftChakracore], optimized for modern front-end workflows, and now available as a [standalone Windows 10 app][MicrosoftStoreEdgeDevtoolsPreview] in the Microsoft Store!</span></span>  
+<span data-ttu-id="ada33-105">As Ferramentas para Desenvolvedores do Microsoft Edge \(EdgeHTML\) são criadas com o TypeScript, da plataforma[software livre][GithubMicrosoftChakracore], otimizadas para fluxos de trabalho front-end modernos, e agora disponíveis como um[aplicativo autônomo Windows 10][MicrosoftStoreEdgeDevtoolsPreview] na Microsoft Store!</span><span class="sxs-lookup"><span data-stu-id="ada33-105">The Microsoft Edge \(EdgeHTML\) DevTools are built with [TypeScript][|::ref1::|Index], powered by [open source][GithubMicrosoftChakracore], optimized for modern front-end workflows, and now available as a [standalone Windows 10 app][MicrosoftStoreEdgeDevtoolsPreview] in the Microsoft Store!</span></span>  
 
-<span data-ttu-id="c1bb5-106">Para saber mais sobre os recursos mais recentes, confira [devtools na atualização mais recente do Windows 10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].</span><span class="sxs-lookup"><span data-stu-id="c1bb5-106">For more on the latest features, check out [DevTools in the latest update of Windows 10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].</span></span>  
+<span data-ttu-id="ada33-106">Para saber mais sobre os recursos mais recentes, confira [DevTools na atualização mais recente do Windows 10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].</span><span class="sxs-lookup"><span data-stu-id="ada33-106">For more on the latest features, check out [DevTools in the latest update of Windows 10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].</span></span>  
 
-## <span data-ttu-id="c1bb5-107">Ferramentas principais</span><span class="sxs-lookup"><span data-stu-id="c1bb5-107">Core tools</span></span>  
+## <span data-ttu-id="ada33-107">Ferramentas principais</span><span class="sxs-lookup"><span data-stu-id="ada33-107">Core tools</span></span>  
 
-:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
-   <span data-ttu-id="c1bb5-109">Microsoft Edge (EdgeHTML) DevTools</span><span class="sxs-lookup"><span data-stu-id="c1bb5-109">Microsoft Edge (EdgeHTML) DevTools</span></span>
+:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML)":::
+   <span data-ttu-id="ada33-109">Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="ada33-109">Microsoft Edge (EdgeHTML) DevTools</span></span>
 :::image-end:::
 
 <!--![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  -->  
 
-<span data-ttu-id="c1bb5-110">O DevTools Microsoft Edge \ (EdgeHTML \) inclui:</span><span class="sxs-lookup"><span data-stu-id="c1bb5-110">The Microsoft Edge \(EdgeHTML\) DevTools include:</span></span>  
+<span data-ttu-id="ada33-110">As Ferramentas para Desenvolvedores do Microsoft Edge (EdgeHTML) incluem:</span><span class="sxs-lookup"><span data-stu-id="ada33-110">The Microsoft Edge \(EdgeHTML\) DevTools include:</span></span>  
 
-*   <span data-ttu-id="c1bb5-111">Um painel de [elementos][DevtoolsGuideEdgehtml|::ref2::|] para editar HTML e CSS, inspecionar Propriedades de acessibilidade, exibir ouvintes de eventos e definir pontos de interrupção de MUTAção dom</span><span class="sxs-lookup"><span data-stu-id="c1bb5-111">An [Elements][DevtoolsGuideEdgehtml|::ref2::|] panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints</span></span>  
-*   <span data-ttu-id="c1bb5-112">Um [console][DevtoolsGuideEdgehtml|::ref3::|] para exibir e filtrar mensagens de log, inspecionar objetos JavaScript e nós dom e executar JavaScript no contexto da janela ou do quadro selecionado</span><span class="sxs-lookup"><span data-stu-id="c1bb5-112">A [Console][DevtoolsGuideEdgehtml|::ref3::|] to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame</span></span>  
-*   <span data-ttu-id="c1bb5-113">Um [depurador][DevtoolsGuideEdgehtml|::ref4::|] para depurar o código, definir inspeções e pontos de interrupção, editar seu código e inspecionar o armazenamento da Web e os caches de cookies</span><span class="sxs-lookup"><span data-stu-id="c1bb5-113">A [Debugger][DevtoolsGuideEdgehtml|::ref4::|] to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches</span></span>  
-*   <span data-ttu-id="c1bb5-114">Um painel de [rede][DevtoolsGuideEdgehtml|::ref5::|] para monitorar e inspecionar solicitações e respostas da rede e do cache do navegador</span><span class="sxs-lookup"><span data-stu-id="c1bb5-114">A [Network][DevtoolsGuideEdgehtml|::ref5::|] panel to monitor and inspect requests and responses from the network and browser cache</span></span>  
-*   <span data-ttu-id="c1bb5-115">Um painel de [desempenho][DevtoolsGuideEdgehtml|::ref6::|] para criar o perfil do tempo e dos recursos do sistema necessários para seu site</span><span class="sxs-lookup"><span data-stu-id="c1bb5-115">A [Performance][DevtoolsGuideEdgehtml|::ref6::|] panel to profile the time and system resources required by your site</span></span>  
-*   <span data-ttu-id="c1bb5-116">Um painel de [memória][DevtoolsGuideEdgehtml|::ref7::|] para medir o uso dos recursos de memória e comparar os instantâneos de heap em diferentes Estados do tempo de execução do código</span><span class="sxs-lookup"><span data-stu-id="c1bb5-116">A [Memory][DevtoolsGuideEdgehtml|::ref7::|] panel to measure your use of memory resources and compare heap snapshots at different states of code runtime</span></span>  
-*   <span data-ttu-id="c1bb5-117">Um painel de [armazenamento][DevtoolsGuideEdgehtml|::ref8::|] para inspecionar e gerenciar seu armazenamento da Web, IndexedDB, cookies e dados de cache</span><span class="sxs-lookup"><span data-stu-id="c1bb5-117">A [Storage][DevtoolsGuideEdgehtml|::ref8::|] panel for inspecting and managing your web storage, IndexedDB, cookies and cache data</span></span>  
-*   <span data-ttu-id="c1bb5-118">Um painel [funcionários de serviço][DevtoolsGuideEdgehtmlServiceworkers] para gerenciar e depurar seus trabalhadores de serviço</span><span class="sxs-lookup"><span data-stu-id="c1bb5-118">A [Service Workers][DevtoolsGuideEdgehtmlServiceworkers] panel for managing and debugging your service workers</span></span>  
-*   <span data-ttu-id="c1bb5-119">Um painel de [emulação][DevtoolsGuideEdgehtml|::ref9::|] para testar seu site com diferentes perfis de navegador, resoluções de tela e coordenadas de localização de GPS</span><span class="sxs-lookup"><span data-stu-id="c1bb5-119">An [Emulation][DevtoolsGuideEdgehtml|::ref9::|] panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates</span></span>  
+*   <span data-ttu-id="ada33-111">Um painel de [Elementos][DevtoolsGuideEdgehtml|::ref2::|] para editar HTML e CSS, inspecionar propriedades de acessibilidade, exibir ouvintes de eventos e definir pontos de interrupção de mutação do DOM.</span><span class="sxs-lookup"><span data-stu-id="ada33-111">An [Elements][DevtoolsGuideEdgehtml|::ref2::|] panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints</span></span>  
+*   <span data-ttu-id="ada33-112">Um [Console][DevtoolsGuideEdgehtml|::ref3::|] para exibir e filtrar mensagens de log, inspecionar objetos JavaScript e nós do DOM e executar o JavaScript no contexto da janela ou quadro selecionado.</span><span class="sxs-lookup"><span data-stu-id="ada33-112">A [Console][DevtoolsGuideEdgehtml|::ref3::|] to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame</span></span>  
+*   <span data-ttu-id="ada33-113">Um [Depurador][DevtoolsGuideEdgehtml|::ref4::|] para percorrer o código, definir inspeções e pontos de interrupção, editar seu código ao vivo e inspecionar o armazenamento da Web e os caches de cookies</span><span class="sxs-lookup"><span data-stu-id="ada33-113">A [Debugger][DevtoolsGuideEdgehtml|::ref4::|] to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches</span></span>  
+*   <span data-ttu-id="ada33-114">Um painel de[Rede][DevtoolsGuideEdgehtml|::ref5::|]para monitorar e inspecionar solicitações e respostas do cache da rede e do navegador</span><span class="sxs-lookup"><span data-stu-id="ada33-114">A [Network][DevtoolsGuideEdgehtml|::ref5::|] panel to monitor and inspect requests and responses from the network and browser cache</span></span>  
+*   <span data-ttu-id="ada33-115">Um painel de [Desempenho][DevtoolsGuideEdgehtml|::ref6::|] para criar um perfil de tempo e recursos do sistema necessários para o seu site</span><span class="sxs-lookup"><span data-stu-id="ada33-115">A [Performance][DevtoolsGuideEdgehtml|::ref6::|] panel to profile the time and system resources required by your site</span></span>  
+*   <span data-ttu-id="ada33-116">Um painel de [Memória][DevtoolsGuideEdgehtml|::ref7::|] para medir o uso dos recursos de memória e comparar os instantâneos da pilha em diferentes estados de tempo de execução do código</span><span class="sxs-lookup"><span data-stu-id="ada33-116">A [Memory][DevtoolsGuideEdgehtml|::ref7::|] panel to measure your use of memory resources and compare heap snapshots at different states of code runtime</span></span>  
+*   <span data-ttu-id="ada33-117">Um painel de[Armazenamento][DevtoolsGuideEdgehtml|::ref8::|] para inspecionar e gerenciar seu armazenamento na Web, IndexedDB, cookies e dados de cache</span><span class="sxs-lookup"><span data-stu-id="ada33-117">A [Storage][DevtoolsGuideEdgehtml|::ref8::|] panel for inspecting and managing your web storage, IndexedDB, cookies and cache data</span></span>  
+*   <span data-ttu-id="ada33-118">Um painel de [Profissionais de Serviço][DevtoolsGuideEdgehtmlServiceworkers] para gerenciar e depurar seus profissionais de serviço.</span><span class="sxs-lookup"><span data-stu-id="ada33-118">A [Service Workers][DevtoolsGuideEdgehtmlServiceworkers] panel for managing and debugging your service workers</span></span>  
+*   <span data-ttu-id="ada33-119">Um painel de [Emulação][DevtoolsGuideEdgehtml|::ref9::|] para testar o seu site com diferentes perfis de navegador, resoluções de tela e coordenadas de localização do GPS</span><span class="sxs-lookup"><span data-stu-id="ada33-119">An [Emulation][DevtoolsGuideEdgehtml|::ref9::|] panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates</span></span>  
 
-<span data-ttu-id="c1bb5-120">Continue enviando seus [comentários e solicitações de recursos](#feedback)!</span><span class="sxs-lookup"><span data-stu-id="c1bb5-120">Please keep sending your [feedback and feature requests](#feedback)!</span></span>  
+<span data-ttu-id="ada33-120">Continue enviando seus [comentários e solicitações de recursos](#feedback)!</span><span class="sxs-lookup"><span data-stu-id="ada33-120">Please keep sending your [feedback and feature requests](#feedback)!</span></span>  
 
 > [!TIP]
-> <span data-ttu-id="c1bb5-121">[Teste no Microsoft Edge \ (EdgeHTML \) grátis de qualquer navegador][BrowserstackEdgehtml].</span><span class="sxs-lookup"><span data-stu-id="c1bb5-121">[Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml].</span></span>  
-> <span data-ttu-id="c1bb5-122">A equipe do Microsoft Edge é parceira com o [BrowserStack][BrowserstackEdgehtml] para oferecer testes automatizados e ativos no Microsoft Edge \ (EdgeHTML \).</span><span class="sxs-lookup"><span data-stu-id="c1bb5-122">The Microsoft Edge team partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).</span></span>  
+> <span data-ttu-id="ada33-121">[Teste no Microsoft Edge \(EdgeHTML\) gratuitamente em qualquer navegador][BrowserstackEdgehtml].</span><span class="sxs-lookup"><span data-stu-id="ada33-121">[Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml].</span></span>  
+> <span data-ttu-id="ada33-122">A equipe do Microsoft Edge criou uma parceria com o [BrowserStack][BrowserstackEdgehtml] para fornecer testes gratuitos e automatizados no Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="ada33-122">The Microsoft Edge team partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).</span></span>  
 
-## <span data-ttu-id="c1bb5-123">Aplicativo da Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="c1bb5-123">Microsoft Store app</span></span>  
+## <span data-ttu-id="ada33-123">Aplicativo da Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="ada33-123">Microsoft Store app</span></span>  
 
-<span data-ttu-id="c1bb5-124">O **devtools Microsoft Edge \ (EdgeHTML \)** [agora está disponível][DevtoolsGuideEdgehtmlWhatsnew] como um [aplicativo autônomo do Windows 10 da Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], além da experiência de ferramenta no navegador \ ( `F12` \).</span><span class="sxs-lookup"><span data-stu-id="c1bb5-124">The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEdgehtmlWhatsnew] as a standalone [Windows 10 app from the Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], in addition to the in-browser \(`F12`\) tooling experience.</span></span>  <span data-ttu-id="c1bb5-125">Com a versão da loja vem um painel do **seletor** para anexar a abertura de destinos de página locais e remotos e um layout com guias para facilitar a alternância entre instâncias de devtools.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-125">With the store version comes a **chooser** panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.</span></span>  
+<span data-ttu-id="ada33-124">As **Ferramentas para Desenvolvedores do Microsoft Edge \(EdgeHTML\)** estão [disponíveis agora][DevtoolsGuideEdgehtmlWhatsnew] como um aplicativo autônomo [Windows 10 da Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], além da experiência de ferramentas do navegador \(`F12`\).</span><span class="sxs-lookup"><span data-stu-id="ada33-124">The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEdgehtmlWhatsnew] as a standalone [Windows 10 app from the Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], in addition to the in-browser \(`F12`\) tooling experience.</span></span>  <span data-ttu-id="ada33-125">Com a versão da loja, há um painel de **seletor** para anexar a abrir destinos de página locais e remotos e um layout com guias para alternar entre instâncias das DevTools.</span><span class="sxs-lookup"><span data-stu-id="ada33-125">With the store version comes a **chooser** panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.</span></span>  
 
-### <span data-ttu-id="c1bb5-126">Depuração local</span><span class="sxs-lookup"><span data-stu-id="c1bb5-126">Local debugging</span></span>  
+### <span data-ttu-id="ada33-126">Depuração local</span><span class="sxs-lookup"><span data-stu-id="ada33-126">Local debugging</span></span>  
 
-<span data-ttu-id="c1bb5-127">Para depurar uma página localmente, basta iniciar o aplicativo Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-127">To debug a page locally, simply launch the Microsoft Edge DevTools app.</span></span>  <span data-ttu-id="c1bb5-128">O painel **local** do seletor exibe todos os processos de conteúdo ativos do EdgeHTML, incluindo guias do navegador Edge aberto, executando [PWAs][PwasEdgehtmlIndex] \ ( `WWAHost.exe` processos \) e controles [WebView][HostingWebview] .</span><span class="sxs-lookup"><span data-stu-id="c1bb5-128">The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.</span></span>  <span data-ttu-id="c1bb5-129">Selecione o destino desejado para anexar e abrir uma nova instância de guia do DevTools.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-129">Select your desired target to attach and open a new tab instance of the DevTools.</span></span>  
+<span data-ttu-id="ada33-127">Para depurar uma página localmente, basta iniciar o aplicativo Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="ada33-127">To debug a page locally, simply launch the Microsoft Edge DevTools app.</span></span>  <span data-ttu-id="ada33-128">O painel **Local** do seletor exibirá todos os processos de conteúdo ativos do EdgeHTML, incluindo as guias de navegação abertas do Edge, [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processos\) em funcionamento e [controles][HostingWebview] do WebView.</span><span class="sxs-lookup"><span data-stu-id="ada33-128">The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.</span></span>  <span data-ttu-id="ada33-129">Selecione seu destino desejado para anexar e abrir uma nova instância da guia do DevTools.</span><span class="sxs-lookup"><span data-stu-id="ada33-129">Select your desired target to attach and open a new tab instance of the DevTools.</span></span>  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Painel local do aplicativo DevTools":::
-   <span data-ttu-id="c1bb5-131">Painel local do aplicativo DevTools</span><span class="sxs-lookup"><span data-stu-id="c1bb5-131">DevTools app Local panel</span></span>
+   <span data-ttu-id="ada33-131">Painel local do aplicativo DevTools</span><span class="sxs-lookup"><span data-stu-id="ada33-131">DevTools app Local panel</span></span>
 :::image-end:::
 
 <!--![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  -->  
 
-### <span data-ttu-id="c1bb5-132">Depuração remota</span><span class="sxs-lookup"><span data-stu-id="c1bb5-132">Remote debugging</span></span>  
+### <span data-ttu-id="ada33-132">Depuração remota</span><span class="sxs-lookup"><span data-stu-id="ada33-132">Remote debugging</span></span>  
 
-<span data-ttu-id="c1bb5-133">O aplicativo Microsoft Edge DevTools introduz suporte básico para depurar páginas em um computador remoto por meio do [protocolo devtools][DevtoolsProtocolEdgehtmlIndex]recém-lançado.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-133">The Microsoft Edge DevTools app introduces basic support for debugging pages on a remote machine via our newly released [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex].</span></span>  <span data-ttu-id="c1bb5-134">Com a versão mais recente vem o acesso remoto à funcionalidade central no [depurador][DevtoolsGuideEdgehtml|::ref10::|], [elementos][DevtoolsGuideEdgehtml|::ref11::|] \ (para operações somente leitura \) e painéis do [console][DevtoolsGuideEdgehtml|::ref12::|] .</span><span class="sxs-lookup"><span data-stu-id="c1bb5-134">With the latest release comes remote access to core functionality in the [Debugger][DevtoolsGuideEdgehtml|::ref10::|], [Elements][DevtoolsGuideEdgehtml|::ref11::|] \(for read-only operations\), and [Console][DevtoolsGuideEdgehtml|::ref12::|] panels.</span></span>  <span data-ttu-id="c1bb5-135">A depuração remota está limitada ao Microsoft Edge \ (EdgeHTML \) que executa hosts de área de trabalho, com suporte para outros hosts EdgeHTML e dispositivos Windows 10 chegando em versões futuras.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-135">Remote debugging is limited to Microsoft Edge \(EdgeHTML\) running desktop hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.</span></span>  
+<span data-ttu-id="ada33-133">O aplicativo Microsoft Edge DevTools introduz o suporte básico para depurar páginas em um computador remoto por meio do nosso novo [Protocolo DevTools][DevtoolsProtocolEdgehtmlIndex].</span><span class="sxs-lookup"><span data-stu-id="ada33-133">The Microsoft Edge DevTools app introduces basic support for debugging pages on a remote machine via our newly released [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex].</span></span>  <span data-ttu-id="ada33-134">A versão mais recente vem com o acesso remoto à funcionalidade central no [Depurador][DevtoolsGuideEdgehtml|::ref10::|], nos[Elementos][DevtoolsGuideEdgehtml|::ref11::|] \(para operações somente leitura\) e nos painéis do[Console][DevtoolsGuideEdgehtml|::ref12::|].</span><span class="sxs-lookup"><span data-stu-id="ada33-134">With the latest release comes remote access to core functionality in the [Debugger][DevtoolsGuideEdgehtml|::ref10::|], [Elements][DevtoolsGuideEdgehtml|::ref11::|] \(for read-only operations\), and [Console][DevtoolsGuideEdgehtml|::ref12::|] panels.</span></span>  <span data-ttu-id="ada33-135">O depurador remoto está limitado ao Microsoft Edge \(EdgeHTML\) executando hosts da área de trabalho, com suporte para outros hosts EdgeHTML e dispositivos com Windows 10 chegando nas versões futuras.</span><span class="sxs-lookup"><span data-stu-id="ada33-135">Remote debugging is limited to Microsoft Edge \(EdgeHTML\) running desktop hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.</span></span>  
 
-<span data-ttu-id="c1bb5-136">Para começar, confira a seção [*devtools do Microsoft Edge*][DevtoolsProtocolEdgehtmlClientsEdgePreview] dos documentos de [protocolo do devtools][DevtoolsProtocolEdgehtmlIndex] .</span><span class="sxs-lookup"><span data-stu-id="c1bb5-136">To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.</span></span>  
+<span data-ttu-id="ada33-136">Para começar, confira a seção de documentos [Protocolo DevTools][DevtoolsProtocolEdgehtmlIndex]do[*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview].</span><span class="sxs-lookup"><span data-stu-id="ada33-136">To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.</span></span>  
 
 :::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="Painel remoto do aplicativo DevTools":::
-   <span data-ttu-id="c1bb5-138">Painel remoto do aplicativo DevTools</span><span class="sxs-lookup"><span data-stu-id="c1bb5-138">DevTools app Remote panel</span></span>
+   <span data-ttu-id="ada33-138">Painel remoto do aplicativo DevTools</span><span class="sxs-lookup"><span data-stu-id="ada33-138">DevTools app Remote panel</span></span>
 :::image-end:::
 
 <!--![DevTools app Remote panel][ImageDevtoolsGuideEdgehtmlRemote]  -->  
 
-## <span data-ttu-id="c1bb5-139">Atalhos gerais</span><span class="sxs-lookup"><span data-stu-id="c1bb5-139">General Shortcuts</span></span>  
+## <span data-ttu-id="ada33-139">Atalhos gerais</span><span class="sxs-lookup"><span data-stu-id="ada33-139">General Shortcuts</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="c1bb5-140">Todos os atalhos foram verificados na versão mais recente do Windows.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-140">All shortcuts have been verified in the most recent version of Windows.</span></span>  
-> <span data-ttu-id="c1bb5-141">Se não for possível usar um atalho, atualize sua cópia do Windows.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-141">If you are unable to use a shortcut, please update your copy of Windows.</span></span>  
+> <span data-ttu-id="ada33-140">Todos os atalhos foram verificados na versão mais recente do Windows.</span><span class="sxs-lookup"><span data-stu-id="ada33-140">All shortcuts have been verified in the most recent version of Windows.</span></span>  
+> <span data-ttu-id="ada33-141">Se não for possível usar um atalho, atualize sua cópia do Windows.</span><span class="sxs-lookup"><span data-stu-id="ada33-141">If you are unable to use a shortcut, please update your copy of Windows.</span></span>  
 
-<span data-ttu-id="c1bb5-142">Esses atalhos controlam a janela principal do DevTools e devem funcionar em todas as ferramentas.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-142">These shortcuts control the main DevTools window and should work across all tools.</span></span>  
+<span data-ttu-id="ada33-142">Esses atalhos controlam a janela principal do DevTools e devem funcionar em todas as ferramentas.</span><span class="sxs-lookup"><span data-stu-id="ada33-142">These shortcuts control the main DevTools window and should work across all tools.</span></span>  
 
-| <span data-ttu-id="c1bb5-143">Ação</span><span class="sxs-lookup"><span data-stu-id="c1bb5-143">Action</span></span> | <span data-ttu-id="c1bb5-144">Atalho</span><span class="sxs-lookup"><span data-stu-id="c1bb5-144">Shortcut</span></span> |  
+| <span data-ttu-id="ada33-143">Ação</span><span class="sxs-lookup"><span data-stu-id="ada33-143">Action</span></span> | <span data-ttu-id="ada33-144">Atalho</span><span class="sxs-lookup"><span data-stu-id="ada33-144">Shortcut</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="c1bb5-145">Mostrar/ocultar DevTools \ (abre para o último painel exibido \)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-145">Show/Hide DevTools \(opens to last viewed panel\)</span></span> | `F12`<span data-ttu-id="c1bb5-146">, `Ctrl`+`Shift`+</span><span class="sxs-lookup"><span data-stu-id="c1bb5-146">, `Ctrl`+`Shift`+</span></span>`I` |  
-| <span data-ttu-id="c1bb5-147">Alternar encaixe \ (desencaixar/abaixo/direita \)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-147">Toggle docking \(Undock/Bottom/Right\)</span></span> | `Ctrl`+`Shift`+`D` |  
-| <span data-ttu-id="c1bb5-148">Abrir arquivo</span><span class="sxs-lookup"><span data-stu-id="c1bb5-148">Open file</span></span> | `Ctrl`<span data-ttu-id="c1bb5-149">+`P`, `Ctrl`+</span><span class="sxs-lookup"><span data-stu-id="c1bb5-149">+`P`, `Ctrl`+</span></span>`O` |  
-| <span data-ttu-id="c1bb5-150">Mostrar código-fonte HTML não editável no depurador</span><span class="sxs-lookup"><span data-stu-id="c1bb5-150">Show non-editable HTML source code in Debugger</span></span> | `Ctrl`+`U` |  
-| <span data-ttu-id="c1bb5-151">Mostrar/ocultar console na parte inferior de qualquer outra ferramenta</span><span class="sxs-lookup"><span data-stu-id="c1bb5-151">Show/hide Console at the bottom of any other tool</span></span>  | `Ctrl`+`` ` `` |  
-| <span data-ttu-id="c1bb5-152">Alternar para elementos \ (explorador do DOM \)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-152">Switch to Elements \(DOM Explorer\)</span></span> | `Ctrl`+`1` |  
-| <span data-ttu-id="c1bb5-153">Alternar para o console</span><span class="sxs-lookup"><span data-stu-id="c1bb5-153">Switch to Console</span></span> |  `Ctrl`+`2` |  
-| <span data-ttu-id="c1bb5-154">Alternar para o depurador</span><span class="sxs-lookup"><span data-stu-id="c1bb5-154">Switch to Debugger</span></span> | `Ctrl`+`3` |  
-| <span data-ttu-id="c1bb5-155">Alternar para a rede</span><span class="sxs-lookup"><span data-stu-id="c1bb5-155">Switch to Network</span></span> | `Ctrl`+`4` |  
-| <span data-ttu-id="c1bb5-156">Alternar para o desempenho</span><span class="sxs-lookup"><span data-stu-id="c1bb5-156">Switch to Performance</span></span> | `Ctrl`+`5` |  
-| <span data-ttu-id="c1bb5-157">Alternar para memória</span><span class="sxs-lookup"><span data-stu-id="c1bb5-157">Switch to Memory</span></span> | `Ctrl`+`6` |  
-| <span data-ttu-id="c1bb5-158">Alternar para emulação</span><span class="sxs-lookup"><span data-stu-id="c1bb5-158">Switch to Emulation</span></span> | `Ctrl`+`7` |  
-| <span data-ttu-id="c1bb5-159">Documento de ajuda</span><span class="sxs-lookup"><span data-stu-id="c1bb5-159">Help Document</span></span> | `F1` |  
-| <span data-ttu-id="c1bb5-160">Próxima ferramenta</span><span class="sxs-lookup"><span data-stu-id="c1bb5-160">Next tool</span></span> | `Ctrl`+`F6` |  
-| <span data-ttu-id="c1bb5-161">Ferramenta anterior</span><span class="sxs-lookup"><span data-stu-id="c1bb5-161">Previous tool</span></span> | `Ctrl`+`Shift`+`F6` |  
-| <span data-ttu-id="c1bb5-162">Ferramenta anterior \ (do histórico \)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-162">Previous tool \(from history\)</span></span> | `Ctrl`+`Shift`+`[` |  
-| <span data-ttu-id="c1bb5-163">Próxima ferramenta \ (do histórico \)</span><span class="sxs-lookup"><span data-stu-id="c1bb5-163">Next tool \(from history\)</span></span> | `Ctrl`+`Shift`+`]` |  
-| <span data-ttu-id="c1bb5-164">Subquadro seguinte</span><span class="sxs-lookup"><span data-stu-id="c1bb5-164">Next Subframe</span></span> | `F6` |  
-| <span data-ttu-id="c1bb5-165">Subquadro anterior</span><span class="sxs-lookup"><span data-stu-id="c1bb5-165">Previous Subframe</span></span> | `Shift`+`F6` |  
-| <span data-ttu-id="c1bb5-166">Próxima correspondência na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="c1bb5-166">Next match in Search box</span></span> | `F3` |  
-| <span data-ttu-id="c1bb5-167">Correspondência anterior na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="c1bb5-167">Previous match in Search box</span></span> | `Shift`+`F3` |  
-| <span data-ttu-id="c1bb5-168">Localizar na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="c1bb5-168">Find in search box</span></span> | `Ctrl`+`F` |  
-| <span data-ttu-id="c1bb5-169">Coloque o foco no console na parte inferior</span><span class="sxs-lookup"><span data-stu-id="c1bb5-169">Give focus to console at the bottom</span></span> | `Alt`+`Shift`+`I` |  
-| <span data-ttu-id="c1bb5-170">Iniciar o DevTools para o console</span><span class="sxs-lookup"><span data-stu-id="c1bb5-170">Launch DevTools to Console</span></span> | `Ctrl`+`Shift`+`J` |  
-| <span data-ttu-id="c1bb5-171">Atualizar a página</span><span class="sxs-lookup"><span data-stu-id="c1bb5-171">Refresh the page</span></span> | `Ctrl`<span data-ttu-id="c1bb5-172">+`Shift`+`F5`, `Ctrl`+</span><span class="sxs-lookup"><span data-stu-id="c1bb5-172">+`Shift`+`F5`, `Ctrl`+</span></span>`R` |  
+| <span data-ttu-id="ada33-145">Mostrar/Ocultar DevTools \(abre para o último painel exibido\)</span><span class="sxs-lookup"><span data-stu-id="ada33-145">Show/Hide DevTools \(opens to last viewed panel\)</span></span> | `F12`<span data-ttu-id="ada33-146">, `Ctrl`+`Shift`+</span><span class="sxs-lookup"><span data-stu-id="ada33-146">, `Ctrl`+`Shift`+</span></span>`I` |  
+| <span data-ttu-id="ada33-147">Alternar encaixe \(Desencaixar/Abaixo/Direita\)</span><span class="sxs-lookup"><span data-stu-id="ada33-147">Toggle docking \(Undock/Bottom/Right\)</span></span> | `Ctrl`+`Shift`+`D` |  
+| <span data-ttu-id="ada33-148">Abrir arquivo</span><span class="sxs-lookup"><span data-stu-id="ada33-148">Open file</span></span> | `Ctrl`<span data-ttu-id="ada33-149">+`P`, `Ctrl`+</span><span class="sxs-lookup"><span data-stu-id="ada33-149">+`P`, `Ctrl`+</span></span>`O` |  
+| <span data-ttu-id="ada33-150">Mostrar código-fonte HTML não editável no depurador</span><span class="sxs-lookup"><span data-stu-id="ada33-150">Show non-editable HTML source code in Debugger</span></span> | `Ctrl`+`U` |  
+| <span data-ttu-id="ada33-151">Mostrar/ocultar Console na parte inferior de qualquer outra ferramenta</span><span class="sxs-lookup"><span data-stu-id="ada33-151">Show/hide Console at the bottom of any other tool</span></span>  | `Ctrl`+`` ` `` |  
+| <span data-ttu-id="ada33-152">Alternar para Elementos \(explorador do DOM\)</span><span class="sxs-lookup"><span data-stu-id="ada33-152">Switch to Elements \(DOM Explorer\)</span></span> | `Ctrl`+`1` |  
+| <span data-ttu-id="ada33-153">Alternar para Console</span><span class="sxs-lookup"><span data-stu-id="ada33-153">Switch to Console</span></span> |  `Ctrl`+`2` |  
+| <span data-ttu-id="ada33-154">Alternar para Depurador</span><span class="sxs-lookup"><span data-stu-id="ada33-154">Switch to Debugger</span></span> | `Ctrl`+`3` |  
+| <span data-ttu-id="ada33-155">Alternar para Rede</span><span class="sxs-lookup"><span data-stu-id="ada33-155">Switch to Network</span></span> | `Ctrl`+`4` |  
+| <span data-ttu-id="ada33-156">Alternar para Desempenho</span><span class="sxs-lookup"><span data-stu-id="ada33-156">Switch to Performance</span></span> | `Ctrl`+`5` |  
+| <span data-ttu-id="ada33-157">Alternar para Memória</span><span class="sxs-lookup"><span data-stu-id="ada33-157">Switch to Memory</span></span> | `Ctrl`+`6` |  
+| <span data-ttu-id="ada33-158">Alternar para Emulação</span><span class="sxs-lookup"><span data-stu-id="ada33-158">Switch to Emulation</span></span> | `Ctrl`+`7` |  
+| <span data-ttu-id="ada33-159">Documento de Ajuda</span><span class="sxs-lookup"><span data-stu-id="ada33-159">Help Document</span></span> | `F1` |  
+| <span data-ttu-id="ada33-160">Próxima ferramenta</span><span class="sxs-lookup"><span data-stu-id="ada33-160">Next tool</span></span> | `Ctrl`+`F6` |  
+| <span data-ttu-id="ada33-161">Guia anterior</span><span class="sxs-lookup"><span data-stu-id="ada33-161">Previous tool</span></span> | `Ctrl`+`Shift`+`F6` |  
+| <span data-ttu-id="ada33-162">Ferramenta anterior \(do histórico\)</span><span class="sxs-lookup"><span data-stu-id="ada33-162">Previous tool \(from history\)</span></span> | `Ctrl`+`Shift`+`[` |  
+| <span data-ttu-id="ada33-163">Próxima ferramenta \(do histórico\)</span><span class="sxs-lookup"><span data-stu-id="ada33-163">Next tool \(from history\)</span></span> | `Ctrl`+`Shift`+`]` |  
+| <span data-ttu-id="ada33-164">Próximo subquadro</span><span class="sxs-lookup"><span data-stu-id="ada33-164">Next Subframe</span></span> | `F6` |  
+| <span data-ttu-id="ada33-165">Subquadro anterior</span><span class="sxs-lookup"><span data-stu-id="ada33-165">Previous Subframe</span></span> | `Shift`+`F6` |  
+| <span data-ttu-id="ada33-166">Próxima correspondência na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="ada33-166">Next match in Search box</span></span> | `F3` |  
+| <span data-ttu-id="ada33-167">Correspondência anterior na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="ada33-167">Previous match in Search box</span></span> | `Shift`+`F3` |  
+| <span data-ttu-id="ada33-168">Procurar na caixa de pesquisa</span><span class="sxs-lookup"><span data-stu-id="ada33-168">Find in search box</span></span> | `Ctrl`+`F` |  
+| <span data-ttu-id="ada33-169">Focalizar o console na parte inferior</span><span class="sxs-lookup"><span data-stu-id="ada33-169">Give focus to console at the bottom</span></span> | `Alt`+`Shift`+`I` |  
+| <span data-ttu-id="ada33-170">Iniciar o DevTools para o Console</span><span class="sxs-lookup"><span data-stu-id="ada33-170">Launch DevTools to Console</span></span> | `Ctrl`+`Shift`+`J` |  
+| <span data-ttu-id="ada33-171">Atualizar a página</span><span class="sxs-lookup"><span data-stu-id="ada33-171">Refresh the page</span></span> | `Ctrl`<span data-ttu-id="ada33-172">+`Shift`+`F5`, `Ctrl`+</span><span class="sxs-lookup"><span data-stu-id="ada33-172">+`Shift`+`F5`, `Ctrl`+</span></span>`R` |  
 
 > [!NOTE]
-> <span data-ttu-id="c1bb5-173">Se você estiver Depurando e pausado em um ponto de interrupção, a ação **atualizar a página** retomará o tempo de execução primeiro.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-173">If you are debugging and paused at a breakpoint, the **Refresh the page** action resumes the runtime first.</span></span>  
+> <span data-ttu-id="ada33-173">Se você estiver depurando e pausar em um ponto de interrupção, a ação **Atualizar a página** retoma o tempo de execução primeiro.</span><span class="sxs-lookup"><span data-stu-id="ada33-173">If you are debugging and paused at a breakpoint, the **Refresh the page** action resumes the runtime first.</span></span>  
 
-## <span data-ttu-id="c1bb5-174">Privacidade Jurídica</span><span class="sxs-lookup"><span data-stu-id="c1bb5-174">Feedback</span></span>  
+## <span data-ttu-id="ada33-174">Privacidade Jurídica</span><span class="sxs-lookup"><span data-stu-id="ada33-174">Feedback</span></span>  
 
-<span data-ttu-id="c1bb5-175">Envie seus comentários para ajudar a melhorar o Microsoft Edge \ (EdgeHTML \) DevTools para você!</span><span class="sxs-lookup"><span data-stu-id="c1bb5-175">Please send your feedback to help improve the Microsoft Edge \(EdgeHTML\) DevTools for you!</span></span>  <span data-ttu-id="c1bb5-176">Basta abrir as ferramentas \ ( `F12` \) e selecionar o botão [enviar comentários](#microsoft-edge-edgehtml-developer-tools) .</span><span class="sxs-lookup"><span data-stu-id="c1bb5-176">Simply open the tools \(`F12`\) and select the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.</span></span>  
+<span data-ttu-id="ada33-175">Envie seus comentários para ajudar a melhorar o Microsoft Edge \ (EdgeHTML\) DevTools para você!</span><span class="sxs-lookup"><span data-stu-id="ada33-175">Please send your feedback to help improve the Microsoft Edge \(EdgeHTML\) DevTools for you!</span></span>  <span data-ttu-id="ada33-176">Basta abrir as ferramentas \(`F12`\) e selecionar o botão [Enviar comentários](#microsoft-edge-edgehtml-developer-tools).</span><span class="sxs-lookup"><span data-stu-id="ada33-176">Simply open the tools \(`F12`\) and select the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.</span></span>  
 
-<span data-ttu-id="c1bb5-177">Torne-se um [Windows Insider][WindowsInsiderProgram] para visualizar os [recursos mais recentes que chegam ao devtools][DevtoolsGuideEdgehtmlWhatsnew].</span><span class="sxs-lookup"><span data-stu-id="c1bb5-177">Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].</span></span>  <span data-ttu-id="c1bb5-178">Use o aplicativo Hub de feedback do Windows para postar, fazer uma votação, acompanhar e obter suporte para sugestões gerais do Windows e problemas.</span><span class="sxs-lookup"><span data-stu-id="c1bb5-178">Use the Windows Feedback Hub app to post, up-vote, track and get support for general Windows suggestions and problems.</span></span>  
+<span data-ttu-id="ada33-177">Torne-se um Participante do Programa Windows Insider para visualizar os [recursos mais recentes que estão chegando à DevTools][DevtoolsGuideEdgehtmlWhatsnew].</span><span class="sxs-lookup"><span data-stu-id="ada33-177">Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].</span></span>  <span data-ttu-id="ada33-178">Use o aplicativo Hub do Windows Feedback para publicar, votar, acompanhar e obter suporte para sugestões gerais e problemas do Windows.</span><span class="sxs-lookup"><span data-stu-id="ada33-178">Use the Windows Feedback Hub app to post, up-vote, track and get support for general Windows suggestions and problems.</span></span>  
 
 <!-- image links  -->  
 
@@ -131,26 +131,26 @@ ms.locfileid: "10629501"
 
 <!-- links  -->  
 
-[DevtoolsGuideEdgehtmlConsole]: /microsoft-edge/devtools-guide/console "Consola"  
+[DevtoolsGuideEdgehtmlConsole]: /microsoft-edge/devtools-guide/console "Console"  
 [DevtoolsGuideEdgehtmlDebugger]: /microsoft-edge/devtools-guide/debugger "Depurador"  
 [DevtoolsGuideEdgehtmlElements]: /microsoft-edge/devtools-guide/elements "Elementos"  
 [DevtoolsGuideEdgehtmlEmulation]: /microsoft-edge/devtools-guide/emulation "Emulação"  
-[DevtoolsGuideEdgehtmlMemory]: /microsoft-edge/devtools-guide/memory "Rowset"  
-[DevtoolsGuideEdgehtmlNetwork]: /microsoft-edge/devtools-guide/network "Network"  
-[DevtoolsGuideEdgehtmlPerformance]: /microsoft-edge/devtools-guide/performance "Execução"  
-[DevtoolsGuideEdgehtmlServiceworkers]: /microsoft-edge/devtools-guide/service-workers "Trabalhadores do serviço"  
-[DevtoolsGuideEdgehtmlStorage]: /microsoft-edge/devtools-guide/storage "SPS"  
+[DevtoolsGuideEdgehtmlMemory]: /microsoft-edge/devtools-guide/memory "Memória"  
+[DevtoolsGuideEdgehtmlNetwork]: /microsoft-edge/devtools-guide/network "Rede"  
+[DevtoolsGuideEdgehtmlPerformance]: /microsoft-edge/devtools-guide/performance "Desempenho"  
+[DevtoolsGuideEdgehtmlServiceworkers]: /microsoft-edge/devtools-guide/service-workers "Profissionais de Serviço"  
+[DevtoolsGuideEdgehtmlStorage]: /microsoft-edge/devtools-guide/storage "Armazenamento"  
 [DevtoolsGuideEdgehtmlWhatsnew]: /microsoft-edge/devtools-guide/whats-new "DevTools na atualização mais recente do Windows 10 (EdgeHTML 18)"  
 [DevtoolsProtocolEdgehtmlIndex]: /microsoft-edge/devtools-protocol/index "Protocolo de DevTools Microsoft Edge (EdgeHTML)"  
-[DevtoolsProtocolEdgehtmlClientsEdgePreview]: /microsoft-edge/devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Clientes do protocolo DevTools preview do Microsoft Edge-DevTools"  
+[DevtoolsProtocolEdgehtmlClientsEdgePreview]: /microsoft-edge/devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Visualização do Microsoft Edge DevTools - Clientes do Protocolo DevTools"  
 [HostingWebview]: /microsoft-edge/hosting/webview "WebView (EdgeHTML) para aplicativos do Windows 10"  
-[PwasEdgehtmlIndex]: /microsoft-edge/progressive-web-apps-edgehtml/index "Aplicativos Web progressivos (EdgeHTML) no Windows"  
+[PwasEdgehtmlIndex]: /microsoft-edge/progressive-web-apps-edgehtml/index "Aplicativos de web progressivos (EdgeHTML) no Windows"  
 
-[MicrosoftStoreEdgeDevtoolsPreview]: https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj "Microsoft Edge DevTools Preview"  
+[MicrosoftStoreEdgeDevtoolsPreview]: https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj "Visualização do Microsoft Edge DevTools"  
 
 [WindowsInsiderProgram]: https://insider.windows.com "Programa Windows Insider"  
 
-[BrowserstackEdgehtml]: https://www.browserstack.com/test-on-microsoft-edge-browser "Teste do navegador Microsoft Edge gratuito | BrowserStack"  
+[BrowserstackEdgehtml]: https://www.browserstack.com/test-on-microsoft-edge-browser "Teste gratuito do navegador Microsoft Edge | BrowserStack"  
 
 [GithubMicrosoftChakracore]: https://github.com/Microsoft/ChakraCore "Microsoft/ChakraCore | GitHub"  
 
