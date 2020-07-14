@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858047"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866040"
 ---
 # <span data-ttu-id="4f66a-104">Recursos experimentais</span><span class="sxs-lookup"><span data-stu-id="4f66a-104">Experimental features</span></span>  
 
@@ -48,7 +49,7 @@ ms.locfileid: "10858047"
 | [<span data-ttu-id="4f66a-126">Habilitar a guia Configurações de atalhos de teclado personalizados</span><span class="sxs-lookup"><span data-stu-id="4f66a-126">Enable custom keyboard shortcuts settings tab</span></span>](#enable-custom-keyboard-shortcuts-settings-tab) | <span data-ttu-id="4f66a-127">84 ou posterior</span><span class="sxs-lookup"><span data-stu-id="4f66a-127">84 or later</span></span> |
 | [<span data-ttu-id="4f66a-128">Habilitar novos recursos de depuração de grade CSS</span><span class="sxs-lookup"><span data-stu-id="4f66a-128">Enable new CSS grid debugging features</span></span>](#enable-new-css-grid-debugging-features) | <span data-ttu-id="4f66a-129">85 ou posterior</span><span class="sxs-lookup"><span data-stu-id="4f66a-129">85 or later</span></span> |  
 | [<span data-ttu-id="4f66a-130">Habilitar o suporte para mover as guias entre painéis</span><span class="sxs-lookup"><span data-stu-id="4f66a-130">Enable support to move tabs between panels</span></span>](#enable-support-to-move-tabs-between-panels) | <span data-ttu-id="4f66a-131">85 ou posterior</span><span class="sxs-lookup"><span data-stu-id="4f66a-131">85 or later</span></span> |  
-| [<span data-ttu-id="4f66a-132">Habilitar webhint</span><span class="sxs-lookup"><span data-stu-id="4f66a-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="4f66a-133">85 ou posterior</span><span class="sxs-lookup"><span data-stu-id="4f66a-133">85 or later</span></span> |  
+| [<span data-ttu-id="4f66a-132">Habilitar webhint</span><span class="sxs-lookup"><span data-stu-id="4f66a-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="4f66a-133">85 ou posterior</span><span class="sxs-lookup"><span data-stu-id="4f66a-133">85 or later</span></span> | 
 
 ### <span data-ttu-id="4f66a-134">Habilitar a guia Configurações de atalhos de teclado personalizados</span><span class="sxs-lookup"><span data-stu-id="4f66a-134">Enable custom keyboard shortcuts settings tab</span></span>
 
