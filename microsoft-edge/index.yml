@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678215"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866054"
 highlightedContent:
   items:
   - title: Baixar o Microsoft Edge (canal estável oficial)
@@ -76,9 +76,9 @@ productDirectory:
     imageSrc: /media/common/i_extensions.svg
     links:
     - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
-      text: Padrões de correspondência
+      text: Padrões de Correspondência
     - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-      text: Hospedagem e atualização
+      text: Hospedagem e Atualização
 conceptualContent:
   title: Microsoft Edge para desenvolvedores
   summary: Aplicativos Web, extensões e DevTools de plataforma cruzada
@@ -93,10 +93,10 @@ conceptualContent:
       text: Novidades
     - url: /microsoft-edge/devtools-guide-chromium/open
       itemType: reference
-      text: Abrir o DevTools
+      text: Abrir DevTools
     - url: /microsoft-edge/devtools-guide-chromium/beginners/html
       itemType: reference
-      text: DevTools para iniciantes
+      text: DevTools para Iniciantes
     - url: /microsoft-edge/devtools-guide-chromium/css/index
       itemType: reference
       text: CSS
@@ -119,7 +119,7 @@ conceptualContent:
       text: Armazenamento
     - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
       itemType: reference
-      text: Menu de comando
+      text: Menu de Comando
     - url: /microsoft-edge/devtools-guide-chromium/javascript/index
       itemType: reference
       text: JavaScript
@@ -128,7 +128,7 @@ conceptualContent:
       text: Desempenho
     - url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
       itemType: reference
-      text: Depuração remota
+      text: Depuração Remota
     - url: /microsoft-edge/devtools-guide-chromium/security/index
       itemType: reference
       text: Segurança
@@ -139,13 +139,13 @@ conceptualContent:
       text: Visão geral
     - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
       itemType: reference
-      text: Tema escuro
+      text: Tema Escuro
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: Espaços
+      text: Espaços de Trabalho
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
-      text: Atalhos de teclado
+      text: Atalhos do teclado
   - title: Testar a automação &
     links:
     - text: Acessibilidade
@@ -163,10 +163,10 @@ conceptualContent:
     - text: Interoperabilidade (compatibilidade com sites)
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
-    - text: webhint
+    - text: Dica da web
       itemType: reference
       url: https://webhint.io/docs/user-guide
-    - text: Análise de desempenho
+    - text: Análise de Desempenho
       itemType: reference
       url: /microsoft-edge/performance-analysis
   - title: Visão geral das extensões
@@ -195,7 +195,7 @@ conceptualContent:
       text: Métodos alternativos de distribuição de extensões
     - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
       itemType: reference
-      text: Mensagens nativas
+      text: Sistema de mensagens nativo
   - title: 'Extensões: publicar na Microsoft Store'
     links:
     - url: /microsoft-edge/extensions-chromium/publish/publish-extension
@@ -206,10 +206,10 @@ conceptualContent:
       text: Abrir conta de desenvolvedor
     - url: /microsoft-edge/extensions-chromium/publish/upload-video
       itemType: reference
-      text: Carregar vídeo do YouTube
+      text: Carregar Vídeo do YouTube
     - url: /microsoft-edge/extensions-chromium/publish/update
       itemType: reference
-      text: Listagem de extensões de atualização
+      text: Atualizar Lista de Extensões
     - url: /microsoft-edge/extensions-chromium/publish/manage-settings
       itemType: reference
       text: Gerenciar configurações de conta
@@ -217,10 +217,10 @@ conceptualContent:
     links:
     - url: /microsoft-edge/extensions-chromium/store-policies/csp
       itemType: reference
-      text: Política de segurança de conteúdo
+      text: Política de Segurança de Conteúdo
     - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
       itemType: reference
-      text: Políticas de desenvolvedor de catálogo de Complementos do Microsoft Edge
+      text: Políticas de Desenvolvedor de Catálogo de Complementos do Microsoft Edge
   - title: Aplicativos Web progressivos
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
@@ -245,14 +245,14 @@ additionalContent:
   - items:
     - title: Referência
       links:
-      - text: Cadeia de caracteres do agente de usuário do Microsoft Edge
+      - text: Cadeia de Caracteres do agente de usuário do Microsoft Edge
         url: /microsoft-edge/web-platform/user-agent-string
       - text: Status da plataforma
         url: https://developer.microsoft.com/microsoft-edge/platform/status
       - text: Visual Studio Code
         url: /microsoft-edge/visual-studio-code/index
       - url: /microsoft-edge/privacy-whitepaper
-        text: White paper sobre privacidade
+        text: Whitepaper de Privacidade
     - title: Documentação herdada do Microsoft Edge
       links:
       - text: Guia de desenvolvimento (EdgeHTML)
@@ -265,11 +265,11 @@ additionalContent:
         url: /microsoft-edge/extensions/index
       - text: Introdução ao PWAs (EdgeHTML)
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-      - text: Hospedagem do tempo de execução JavaScript
+      - text: Hospedagem de Runtime no JavaScript
         url: /microsoft-edge/hosting/javascript-runtime-hosting
-      - text: Guia do desenvolvedor do WebVR
+      - text: Guia do Desenvolvedor do WebVR
         url: /microsoft-edge/webvr/index
-      - text: Tempo de execução do Windows (WinRT)
+      - text: Windows Runtime (WinRT)
         url: /microsoft-edge/windows-runtime
   - title: Ajuda & suporte
     items:

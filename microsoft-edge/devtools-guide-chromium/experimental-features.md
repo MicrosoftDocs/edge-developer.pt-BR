@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858047"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866040"
 ---
 # Recursos experimentais  
 
@@ -48,7 +49,7 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 | [Habilitar a guia Configurações de atalhos de teclado personalizados](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou posterior |
 | [Habilitar novos recursos de depuração de grade CSS](#enable-new-css-grid-debugging-features) | 85 ou posterior |  
 | [Habilitar o suporte para mover as guias entre painéis](#enable-support-to-move-tabs-between-panels) | 85 ou posterior |  
-| [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
+| [Habilitar webhint](#enable-webhint) | 85 ou posterior | 
 
 ### Habilitar a guia Configurações de atalhos de teclado personalizados
 

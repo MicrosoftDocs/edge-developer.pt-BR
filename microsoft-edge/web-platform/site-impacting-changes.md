@@ -7,12 +7,12 @@ ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidade, plataforma da Web
-ms.openlocfilehash: f6c19258c1e82e1ce90a21f6efc04496100c3401
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843974"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866047"
 ---
 # Compatibilidade do site – alterações que afetam o Microsoft Edge  
 
@@ -25,7 +25,7 @@ A Web está em constante evolução para melhorar a experiência do usuário, a 
 | Não permitir XMLHttpRequest síncrono na notação de página | [Chrome + 1](#release-comments) \ (Edge v83 \) |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Chrome compatível, o Microsoft Edge oferece uma política de grupo para desabilitar essa alteração até que o Edge 88.  Para obter mais informações, incluindo a linha do tempo planejada pela Google, consulte a [entrada de status da plataforma Chrome][ChromePlatformStatus4664843055398912].  |  
 | Exibir prompt sutil para solicitações de permissões de notificação |  | Canárias v83, dev v83 | Agora os usuários podem optar por aceitar solicitações de notificação em silêncio `edge://settings/content/notifications` .  Com essa configuração habilitada, o Microsoft Edge exibe um ícone de solicitação sutil na barra de endereços para os sites que solicitam o envio de usuários futuras notificações usando a `Notifications` `Push` API ou.  Este ícone sutil substitui o prompt de permissão de submenu.  Um experimento em Canárias e dev ativa esse comportamento por padrão para alguns usuários, em todos os sites que solicitam permissões de notificações.  Os usuários podem recusar-se `edge://settings/content/notifications` .  No futuro, a equipe do Microsoft Edge pode explorar a exibição do prompt de submenu em situações específicas com base em comportamentos do usuário e outras entradas.  |  
 | Desabilitar TLS/1.0 e TLS/1.1 por padrão | Borda v84 |  | Para ajudar a descobrir os sites afetados, você pode definir o `edge://flags/#display-legacy-tls-warnings` sinalizador para fazer com que o Microsoft Edge exiba um aviso de "não seguro" não bloqueado ao carregar páginas que exijam protocolos TLS herdados.  A política de grupo [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] permite a reativação do TLS/1.0 e do TLS/1.1; a política permanecerá disponível até o Edge 88.  |  
-| Bloquear downloads de conteúdo misto | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, incluindo a linha do tempo planejada pela Google, consulte a [entrada no blog do Google Security][GoogleBlogSecurity20200206].  O cronograma de distribuição da Microsoft em tipos de arquivo para avisar ou bloquear está planejado para um lançamento após o Chrome.  |  
+| Bloquear downloads de conteúdo misto | [Chrome + 1](#release-comments) \ (Edge v86 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, incluindo a linha do tempo planejada pela Google, consulte a [entrada no blog do Google Security][GoogleBlogSecurity20200206].  O cronograma de distribuição da Microsoft em tipos de arquivo para avisar ou bloquear está planejado para um lançamento após o Chrome.  |  
 | Substituir AppCache | [Chrome + 1](#release-comments) \ (Edge v86 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, consulte a [documentação do webdev][WebDevAppCacheRemoval].  O cronograma de distribuição da Microsoft para substituição está planejado para um lançamento após o Chrome.  Solicitar um [token AppCache OriginTrial][AppCacheOriginTrial] permite que os sites continuem a usar a API substituída até que o Edge V90. |  
 | Remoção do Adobe Flash | Borda V88  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, consulte o [mapa do Adobe Flash Chromium][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Comentários de versão  
