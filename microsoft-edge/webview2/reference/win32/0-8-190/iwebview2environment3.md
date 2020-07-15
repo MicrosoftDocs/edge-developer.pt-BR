@@ -1,52 +1,52 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+title: 0.8.355-WebView2 Win32 C++ IWebView2Environment3
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge
-ms.openlocfilehash: 43becb7f4ec9903557ccd558319e233266ac2ea1
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d16a12aae823c48b7dd4b0b5e8225cdd40c1dafc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652426"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878523"
 ---
-# <span data-ttu-id="39874-104">interface IWebView2Environment3</span><span class="sxs-lookup"><span data-stu-id="39874-104">interface IWebView2Environment3</span></span> 
+# <span data-ttu-id="345ec-104">0.8.355-IWebView2Environment3 de interface</span><span class="sxs-lookup"><span data-stu-id="345ec-104">0.8.355 - interface IWebView2Environment3</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="39874-105">Essa interface pode ser alterada ou indisponível para versões posteriores SDK da versão 0.8.355.</span><span class="sxs-lookup"><span data-stu-id="39874-105">This interface may be altered or unavailable for releases after SDK version 0.8.355.</span></span> <span data-ttu-id="39874-106">Consulte a [referência](../../../webview2-api-reference.md) para obter a referência da API mais recente.</span><span class="sxs-lookup"><span data-stu-id="39874-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+> <span data-ttu-id="345ec-105">Essa interface pode ser alterada ou indisponível para versões posteriores SDK da versão 0.8.355.</span><span class="sxs-lookup"><span data-stu-id="345ec-105">This interface may be altered or unavailable for releases after SDK version 0.8.355.</span></span> <span data-ttu-id="345ec-106">Consulte a [referência](../../../webview2-api-reference.md) para obter a referência da API mais recente.</span><span class="sxs-lookup"><span data-stu-id="345ec-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface IWebView2Environment3
   : public IWebView2Environment2
 ```
 
-<span data-ttu-id="39874-107">Funcionalidades adicionais implementadas pelo objeto Environment.</span><span class="sxs-lookup"><span data-stu-id="39874-107">Additional functionality implemented by the Environment object.</span></span>
+<span data-ttu-id="345ec-107">Funcionalidades adicionais implementadas pelo objeto Environment.</span><span class="sxs-lookup"><span data-stu-id="345ec-107">Additional functionality implemented by the Environment object.</span></span>
 
-## <span data-ttu-id="39874-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="39874-108">Summary</span></span>
+## <span data-ttu-id="345ec-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="345ec-108">Summary</span></span>
 
- <span data-ttu-id="39874-109">Parte</span><span class="sxs-lookup"><span data-stu-id="39874-109">Members</span></span>                        | <span data-ttu-id="39874-110">Descrições</span><span class="sxs-lookup"><span data-stu-id="39874-110">Descriptions</span></span>
+ <span data-ttu-id="345ec-109">Parte</span><span class="sxs-lookup"><span data-stu-id="345ec-109">Members</span></span>                        | <span data-ttu-id="345ec-110">Descrições</span><span class="sxs-lookup"><span data-stu-id="345ec-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="39874-111">add_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="39874-111">add_NewVersionAvailable</span></span>](#add_newversionavailable) | <span data-ttu-id="39874-112">O evento NewVersionAvailable é acionado quando uma versão mais recente do navegador do Edge é instalada e está disponível para uso pelo WebView2.</span><span class="sxs-lookup"><span data-stu-id="39874-112">The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.</span></span>
-[<span data-ttu-id="39874-113">remove_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="39874-113">remove_NewVersionAvailable</span></span>](#remove_newversionavailable) | <span data-ttu-id="39874-114">Remover um manipulador de eventos adicionado anteriormente com add_NewVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="39874-114">Remove an event handler previously added with add_NewVersionAvailable.</span></span>
+[<span data-ttu-id="345ec-111">add_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="345ec-111">add_NewVersionAvailable</span></span>](#add_newversionavailable) | <span data-ttu-id="345ec-112">O evento NewVersionAvailable é acionado quando uma versão mais recente do navegador do Edge é instalada e está disponível para uso pelo WebView2.</span><span class="sxs-lookup"><span data-stu-id="345ec-112">The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.</span></span>
+[<span data-ttu-id="345ec-113">remove_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="345ec-113">remove_NewVersionAvailable</span></span>](#remove_newversionavailable) | <span data-ttu-id="345ec-114">Remover um manipulador de eventos adicionado anteriormente com add_NewVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="345ec-114">Remove an event handler previously added with add_NewVersionAvailable.</span></span>
 
-<span data-ttu-id="39874-115">Consulte a interface [IWebView2Environment](IWebView2Environment.md) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="39874-115">See the [IWebView2Environment](IWebView2Environment.md) interface for more details.</span></span> <span data-ttu-id="39874-116">Você pode QueryInterface para essa interface do objeto que implementa [IWebView2Environment](IWebView2Environment.md).</span><span class="sxs-lookup"><span data-stu-id="39874-116">You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md).</span></span>
+<span data-ttu-id="345ec-115">Consulte a interface [IWebView2Environment](IWebView2Environment.md) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="345ec-115">See the [IWebView2Environment](IWebView2Environment.md) interface for more details.</span></span> <span data-ttu-id="345ec-116">Você pode QueryInterface para essa interface do objeto que implementa [IWebView2Environment](IWebView2Environment.md).</span><span class="sxs-lookup"><span data-stu-id="345ec-116">You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md).</span></span>
 
-## <span data-ttu-id="39874-117">Parte</span><span class="sxs-lookup"><span data-stu-id="39874-117">Members</span></span>
+## <span data-ttu-id="345ec-117">Parte</span><span class="sxs-lookup"><span data-stu-id="345ec-117">Members</span></span>
 
-#### <span data-ttu-id="39874-118">add_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="39874-118">add_NewVersionAvailable</span></span> 
+#### <span data-ttu-id="345ec-118">add_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="345ec-118">add_NewVersionAvailable</span></span> 
 
-<span data-ttu-id="39874-119">O evento NewVersionAvailable é acionado quando uma versão mais recente do navegador do Edge é instalada e está disponível para uso pelo WebView2.</span><span class="sxs-lookup"><span data-stu-id="39874-119">The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.</span></span>
+<span data-ttu-id="345ec-119">O evento NewVersionAvailable é acionado quando uma versão mais recente do navegador do Edge é instalada e está disponível para uso pelo WebView2.</span><span class="sxs-lookup"><span data-stu-id="345ec-119">The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.</span></span>
 
-> <span data-ttu-id="39874-120">Public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md) \* EventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="39874-120">public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md) \* eventHandler,EventRegistrationToken \* token)</span></span>
+> <span data-ttu-id="345ec-120">Public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md) \* EventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="345ec-120">public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md) \* eventHandler,EventRegistrationToken \* token)</span></span>
 
-<span data-ttu-id="39874-121">Para usar a versão mais recente do navegador, você deve criar um novo [IWebView2Environment](IWebView2Environment.md) e [IWebView2WebView](IWebView2WebView.md).</span><span class="sxs-lookup"><span data-stu-id="39874-121">To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md) and [IWebView2WebView](IWebView2WebView.md).</span></span> <span data-ttu-id="39874-122">O evento só será disparado para a nova versão do mesmo canal de borda em que o código está sendo executado.</span><span class="sxs-lookup"><span data-stu-id="39874-122">Event will only be fired for new version from the same Edge channel that the code is running from.</span></span> <span data-ttu-id="39874-123">Quando não estiver sendo executado com a borda instalada, nenhum evento será acionado.</span><span class="sxs-lookup"><span data-stu-id="39874-123">When not running with installed Edge, no event will be fired.</span></span>
+<span data-ttu-id="345ec-121">Para usar a versão mais recente do navegador, você deve criar um novo [IWebView2Environment](IWebView2Environment.md) e [IWebView2WebView](IWebView2WebView.md).</span><span class="sxs-lookup"><span data-stu-id="345ec-121">To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md) and [IWebView2WebView](IWebView2WebView.md).</span></span> <span data-ttu-id="345ec-122">O evento só será disparado para a nova versão do mesmo canal de borda em que o código está sendo executado.</span><span class="sxs-lookup"><span data-stu-id="345ec-122">Event will only be fired for new version from the same Edge channel that the code is running from.</span></span> <span data-ttu-id="345ec-123">Quando não estiver sendo executado com a borda instalada, nenhum evento será acionado.</span><span class="sxs-lookup"><span data-stu-id="345ec-123">When not running with installed Edge, no event will be fired.</span></span>
 
-<span data-ttu-id="39874-124">Como uma pasta de dados do usuário só pode ser usada por um processo de navegador por vez, se você quiser usar a mesma pasta de dados do usuário no webviews usando a nova versão do navegador, você deve fechar o [IWebView2Environment](IWebView2Environment.md) e o IWebView2WebViews que estão usando a versão mais antiga do navegador primeiro.</span><span class="sxs-lookup"><span data-stu-id="39874-124">Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md) and IWebView2WebViews that are using the older version of the browser first.</span></span> <span data-ttu-id="39874-125">Ou simplesmente solicitar que o usuário reinicie o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="39874-125">Or simply prompt the user to restart the app.</span></span>
+<span data-ttu-id="345ec-124">Como uma pasta de dados do usuário só pode ser usada por um processo de navegador por vez, se você quiser usar a mesma pasta de dados do usuário no webviews usando a nova versão do navegador, você deve fechar o [IWebView2Environment](IWebView2Environment.md) e o IWebView2WebViews que estão usando a versão mais antiga do navegador primeiro.</span><span class="sxs-lookup"><span data-stu-id="345ec-124">Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md) and IWebView2WebViews that are using the older version of the browser first.</span></span> <span data-ttu-id="345ec-125">Ou simplesmente solicitar que o usuário reinicie o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="345ec-125">Or simply prompt the user to restart the app.</span></span>
 
 ```cpp
     // After the environment is successfully created,
@@ -92,9 +92,9 @@ interface IWebView2Environment3
         nullptr));
 ```
 
-#### <span data-ttu-id="39874-126">remove_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="39874-126">remove_NewVersionAvailable</span></span> 
+#### <span data-ttu-id="345ec-126">remove_NewVersionAvailable</span><span class="sxs-lookup"><span data-stu-id="345ec-126">remove_NewVersionAvailable</span></span> 
 
-<span data-ttu-id="39874-127">Remover um manipulador de eventos adicionado anteriormente com add_NewVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="39874-127">Remove an event handler previously added with add_NewVersionAvailable.</span></span>
+<span data-ttu-id="345ec-127">Remover um manipulador de eventos adicionado anteriormente com add_NewVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="345ec-127">Remove an event handler previously added with add_NewVersionAvailable.</span></span>
 
-> <span data-ttu-id="39874-128">[remove_NewVersionAvailable](#remove_newversionavailable)público HRESULT (token EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="39874-128">public HRESULT [remove_NewVersionAvailable](#remove_newversionavailable)(EventRegistrationToken token)</span></span>
+> <span data-ttu-id="345ec-128">[remove_NewVersionAvailable](#remove_newversionavailable)público HRESULT (token EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="345ec-128">public HRESULT [remove_NewVersionAvailable](#remove_newversionavailable)(EventRegistrationToken token)</span></span>
 
