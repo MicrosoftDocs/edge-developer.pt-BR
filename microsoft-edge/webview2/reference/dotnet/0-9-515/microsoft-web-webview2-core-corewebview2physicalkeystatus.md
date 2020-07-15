@@ -1,27 +1,27 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: bd63bda6b7835ff5edb30b8b1b22f877f4c96e14
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: da7069fb4dad164720bb697a250a216a0bd452ad
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697592"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881197"
 ---
-# Struct Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus 
+# 0.9.515-estrutura Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus 
 
 > [!NOTE]
 > Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
 
 Namespace: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 Uma estrutura que representa as informações empacotadas no LPARAM fornecido a um evento de chave do Win32.
 

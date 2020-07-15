@@ -1,24 +1,24 @@
 ---
-description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
+title: Microsoft. Web. WebView2. WPF. CoreWebView2CreationProperties
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: d2c3b3ee179dec217418241031142549d170e440
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. WPF. CoreWebView2CreationProperties
+ms.openlocfilehash: 72c85df7d2d58d74cf27e04eb7128fdfa14ca2d9
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652341"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880252"
 ---
 # Classe Microsoft. Web. WebView2. WPF. CoreWebView2CreationProperties 
 
 Namespace: Microsoft. Web. WebView2. WPF \
-Assembly: Microsoft. Web. WebView2. WPF. dll
+Assembly: Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties

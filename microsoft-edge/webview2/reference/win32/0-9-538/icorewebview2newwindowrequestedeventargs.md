@@ -1,19 +1,19 @@
 ---
-description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
+title: WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2NewWindowRequestedEventArgs
+ms.openlocfilehash: bb18b6662fd5921406e19b3c333c97f8a1cd0dbc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751846"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879433"
 ---
 # interface ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,7 +52,7 @@ IsUserInitiated é verdadeiro quando a nova solicitação de janela foi iniciada
 
 > [get_IsUserInitiated](#get_isuserinitiated)público HRESULT (bool * IsUserInitiated)
 
-Os controles WebView2 podem exibir janelas pop-up porque o bloqueador de pop-ups está desativado. Para bloquear a exibição de janelas pop-up não iniciadas pelo usuário, use `get_IsUserInitiated` .
+O bloqueador de borda pop-up está desabilitado para WebView para que o aplicativo possa usar esse sinalizador para bloquear pop-ups que não sejam iniciados pelo usuário.
 
 #### get_NewWindow 
 
@@ -89,3 +89,4 @@ Define uma WebView como resultado da NewWindowRequest.
 > público HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * NewWindow)
 
 O WebView de destino não deve ser navegado. Se NewWindow estiver definido, sua janela de nível superior retornará como o WindowProxy aberto.
+

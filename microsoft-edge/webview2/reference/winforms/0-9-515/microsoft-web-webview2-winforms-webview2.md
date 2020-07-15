@@ -1,24 +1,24 @@
 ---
-description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
+title: Microsoft. Web. WebView2. WinForms. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. WinForms. WebView2
+ms.openlocfilehash: 7d707c2a6ecb8127074735f06ba6d4f1f28eea0c
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687801"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879447"
 ---
 # Classe Microsoft. Web. WebView2. WinForms. WebView2 
 
 Namespace: Microsoft. Web. WebView2. WinForms \
-Assembly: Microsoft. Web. WebView2. WinForms. dll
+Assembly: Microsoft.Web.WebView2.WinForms.dll
 
 ```
 class Microsoft.Web.WebView2.WinForms.WebView2
@@ -164,7 +164,7 @@ Executa o script fornecido no documento de nível superior do WebView2.
 
 > Cadeia de caracteres de< de tarefa assíncrona pública > [ExecuteScriptAsync](#executescriptasync)(script de cadeia de caracteres)
 
-Isso equivale ao método ExecuteScriptAsync no CoreWebView2. Se o CoreWebView2 subjacente ainda não tiver sido inicializado, esse método lançará um InvalidOperationException. Consulte a documentação do CoreWebView2. ExecuteScriptAsync para obter mais informações.
+Isso equivale ao método ExecuteScriptAsync no CoreWebView2. Se o CoreWebView2 subjacente ainda não tiver sido inicializado, esse método lançará um InvalidOperationException. Consulte CoreWebView2.Exedocumentação do cuteScriptAsync para obter mais informações.
 
 #### GoBack 
 

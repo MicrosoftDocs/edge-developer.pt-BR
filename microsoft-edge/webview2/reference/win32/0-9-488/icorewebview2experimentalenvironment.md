@@ -1,21 +1,21 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+title: 0.9.515-WebView2 Win32 C++ ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 4adfa6fa899ce5079f9a1dc2cad78673d2cc899d
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d5b41334ad3c46e1a3d2e8642479555f2062c1c2
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652651"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880616"
 ---
-# interface ICoreWebView2ExperimentalEnvironment 
+# 0.9.515-ICoreWebView2ExperimentalEnvironment de interface 
 
 > [!NOTE]
 > Esta é uma API experimental que é fornecida com a versão 0.9.488 do SDK de pré-lançamento.

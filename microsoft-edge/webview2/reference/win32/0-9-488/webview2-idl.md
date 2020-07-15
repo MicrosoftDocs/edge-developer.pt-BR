@@ -1,21 +1,21 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+title: 0.9.515-WebView2 globais Win32 C++
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 8a684d2a00aa1ae580a3b4391c9f6037dc8f9085
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 38ebe9bb98ecb58fb9ec52d11e6885ac0b06cdd2
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697067"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879727"
 ---
-# Globais 
+# 0.9.515-globais 
 
 > [!NOTE]
 > Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
@@ -62,7 +62,7 @@ Use CreateCoreWebView2EnvironmentWithOptions.
 
 DLL Export para criar um ambiente WebView2 com uma versão personalizada do Edge, diretório de dados do usuário e/ou opções adicionais.
 
-browserExecutableFolder é o caminho relativo para a pasta que contém a borda incorporada. A borda incorporada pode ser obtida copiando a versão nomeada pasta de uma borda instalada, como 73.0.52.0 subpasta de uma borda 73.0.52.0 instalada. A pasta deve ter msedge. exe, msedge. dll e assim por diante. Use uma cadeia de caracteres nula ou vazia para browserExecutableFolder para criar WebView usando o Edge instalado no computador, caso em que a API tentará localizar uma versão compatível do Edge instalada no computador de acordo com a preferência de canal que tenta encontrar a instalação por usuário e, em seguida, por instalação por computador.
+browserExecutableFolder é o caminho relativo para a pasta que contém a borda incorporada. A borda incorporada pode ser obtida copiando a versão nomeada pasta de uma borda instalada, como 73.0.52.0 subpasta de uma borda 73.0.52.0 instalada. A pasta deve ter msedge.exe, msedge.dll e assim por diante. Use uma cadeia de caracteres nula ou vazia para browserExecutableFolder para criar WebView usando o Edge instalado no computador, caso em que a API tentará localizar uma versão compatível do Edge instalada no computador de acordo com a preferência de canal que tenta encontrar a instalação por usuário e, em seguida, por instalação por computador.
 
 A ordem padrão de pesquisa de canal é estável, beta, dev e Canárias. Quando houver uma variável de ambiente WEBVIEW2_RELEASE_CHANNEL_PREFERENCE ou valor de registro releaseChannelPreference aplicável com o valor 1, a ordem de pesquisa de canal será revertida.
 
@@ -99,7 +99,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Quando encontrado com um valor não vazio, isso indica que o WebView está sendo iniciado em um depurador de script que também dá suporte a aplicativos host que usam vários webviews. O valor é usado como o identificador de um pipe nomeado que será aberto e gravado quando um novo WebView for criado pelo aplicativo host. A carga corresponderá à do destino JSON da porta de depuração remota e pode ser usada pelo depurador externo para ser anexada a uma instância do WebView específica. O formato do pipe criado pelo depurador deve ser: `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` onde:
 
-* `{app_name}` é o nome de arquivo exe do aplicativo host, por exemplo, WebView2Example. exe
+* `{app_name}` é o nome de arquivo exe do aplicativo host, por exemplo, WebView2Example.exe
 
 * `{pipe_name}` é o valor definido para WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER.
 

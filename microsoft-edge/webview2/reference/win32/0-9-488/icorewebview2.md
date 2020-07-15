@@ -1,21 +1,21 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle WebView2 do Microsoft Edge
-title: Microsoft Edge WebView2 para aplicativos Win32
+title: 0.9.515-WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: db102d065c91fa16778b27a73b047b8d72465d29
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: e01f0e56c2ec8486a666a72c7e5fb25fd49bd8d9
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698159"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880980"
 ---
-# interface ICoreWebView2 
+# 0.9.515-ICoreWebView2 de interface 
 
 > [!NOTE]
 > Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
@@ -104,7 +104,7 @@ O WebView2 permite que você hospede conteúdo da Web usando a tecnologia de nav
 
 A sequência normal de eventos de navegação é NavigationStarting, SourceChanged, ContentLoading e, em seguida, NavigationCompleted.
 
-![Dot-inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 Observe que isso se destina a eventos de navegação com o mesmo evento Navigationid ARG. Navegação eventos com diferentes args de eventos Navigationid podem sobrepor-se. Por exemplo, se você iniciar um evento de navegação e, em seguida, iniciar uma outra navegação, verá o NavigationStarting para a primeira navegação acompanhada pela NavigationStarting da segunda navegação, seguida da NavigationCompleted para a primeira navegação e, em seguida, todos os demais eventos de navegação apropriados para a segunda navegação. Em casos de erro, pode ou não ser um evento ContentLoading dependendo se a navegação é continuada para uma página de erro. No caso de um redirecionamento HTTP, haverá vários eventos NavigationStarting em uma linha, com os seguintes, o sinalizador isredirect definido.
 
@@ -114,11 +114,11 @@ Para monitorar ou cancelar navegações dentro de subquadros no WebView, use Fra
 
 O WebView2 usa o mesmo modelo de processo que o navegador da Web Edge. Há um processo do navegador Edge por diretório de dados do usuário especificado em uma sessão do usuário que servirá qualquer processo de chamadas do WebView2 que especifique esse diretório de dados do usuário. Isso significa que um processo do navegador Edge pode estar servindo vários processos de chamadas e um processo de chamada pode estar usando vários processos do navegador do Edge.
 
-![Dot-inline-dotgraph-2. png](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 Fora de um processo de navegador, haverá alguns processos de processamento. Elas são criadas, conforme necessário, para atender a vários quadros potencialmente em diferentes modos de exibição. O número de processos de renderização varia de acordo com o recurso de navegador de isolamento de site e o número de origens discadas discadas renderizadas em webviews associadas.
 
-![Dot-inline-dotgraph-3. png](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 Você pode reagir a falhas e travamentos nesses processos do navegador e do renderizador usando o evento ProcessFailure.
 

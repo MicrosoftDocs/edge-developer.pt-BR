@@ -1,21 +1,21 @@
 ---
 description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Microsoft Edge WebView 2
-title: Microsoft Edge WebView 2 para aplicativos Win32
+title: Referência do c 0.9.430-WebView2 Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 8baa7b1f571d62fad21a30441f47835bff3da96a
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a0095660af031cafa09e5223650d174f525ba3df
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652648"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880238"
 ---
-# 0.9.430-Reference (WebView2)  
+# 0.9.430 - Referência (WebView2)  
 
 > [!NOTE]
 > Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.430. Consulte a [referência](../../webview2-api-reference.md) para obter a referência da API mais recente.
