@@ -3,17 +3,17 @@ description: Opções de distribuição ao liberar um aplicativo usando o Micros
 title: Distribuição do aplicativo Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
-ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
+ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "10846014"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879174"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
@@ -54,7 +54,7 @@ Os desenvolvedores são recomendados para garantir que o tempo de execução do 
 
 1.  Baixe o instalador mais recente do [WebView2 tempo de execução do verde][Webview2Installer].  
 1.  Inclua o instalador no instalador do aplicativo ou no atualizador.  
-1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Dependendo do cenário, talvez seja necessário alterar o fluxo de trabalho acima.  Por exemplo, o instalador do aplicativo pode baixar o instalador do tempo de execução do WebView2 em vez de incluí-lo em seu pacote de aplicativo.  
 
