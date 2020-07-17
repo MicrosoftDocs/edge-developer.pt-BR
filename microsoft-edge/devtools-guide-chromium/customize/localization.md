@@ -1,19 +1,19 @@
 ---
-title: Personalizar o Microsoft Edge DevTools
+title: Alterar configurações de idioma do DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, localização, Loc, idioma
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604150"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882720"
 ---
-# Coincidir idioma do navegador  
+# Alterar configurações de idioma do DevTools  
 
 As ferramentas de desenvolvedor correspondem ao idioma do seu navegador por padrão, se for um dos dez idiomas com suporte no momento \ (além de inglês \).  
 
@@ -58,16 +58,12 @@ As ferramentas de desenvolvedor correspondem ao idioma do seu navegador por padr
    :::column-end:::
 :::row-end:::  
 
-> #### Figura 1  
-> DevTools em Japonês  
-> ![DevTools em Japonês][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools em Japonês" lightbox="./media/localization-jp.png":::
+   DevTools em Japonês  
+:::image-end:::  
 
 Se você quiser reverter o devtools para o inglês, vá para [configurações do devtools][DevtoolschromiumCustomizeIndexSettings] ou pressione `F1`  >  **preferências** e desmarque a caixa de seleção **coincidir idioma do navegador** .  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "Figura 1: DevTools em Japonês"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Configurações-personalizar o Microsoft Edge DevTools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Configurações-personalizar o Microsoft Edge DevTools | Documentos da Microsoft"  

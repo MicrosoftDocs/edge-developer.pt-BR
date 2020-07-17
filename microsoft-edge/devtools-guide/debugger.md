@@ -1,21 +1,21 @@
 ---
 description: Use o depurador para percorrer e solucionar problemas com o seu código.
-title: DevTools-depurador
+title: Depurador-DevTools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, depurador, depuração, pontos de interrupção, inspeções, trabalhadores do serviço, API do cache, armazenamento na Web, cookies
 ms.custom: seodec18
-ms.openlocfilehash: f82fbb057a3ad1027309d89db1a15dbcbea31292
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562240"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882916"
 ---
-# Depurador
+# Depurador-DevTools (EdgeHTML)
 
 Use o **depurador** para depurar o código, definir inspeções e pontos de interrupção, editar ao vivo seu código e inspecionar os caches. Teste e solucione o problema do seu código:
 
@@ -97,7 +97,7 @@ Para acompanhar bibliotecas em sessões de depuração, você pode editar esses 
 
 Você verá o botão **alternar mapas de origem** habilitado para o código escrito em uma linguagem que é compilada em JavaScript ou CSS, que fornece um *mapa de origem* (um mapeamento de arquivo intermediário para a fonte original). Essa opção direciona o depurador a apresentar a fonte original para usar para depuração (em vez do arquivo compilado que está *realmente* sendo executado no navegador).
 
-O DevTools verificará se o compilador que gerou o arquivo JavaScript incluía um comentário com o nome do arquivo de mapa. Por exemplo, se um compilador tiver compactado *MyFile. js* em *MyFile. min. min. js*, ele também pode gerar um arquivo de mapa, *MyFile. min. js. map* e incluir um comentário no arquivo compactado como este:
+O DevTools verificará se o compilador que gerou o arquivo JavaScript incluía um comentário com o nome do arquivo de mapa. Por exemplo, se um compilador tiver sido compactado *myfile.js* para *myfile.min.js*, ele também pode gerar um arquivo de mapa, *myfile.min.js. map* e incluir um comentário no arquivo compactado da seguinte forma:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
@@ -186,7 +186,7 @@ Tipo de ponto de interrupção | Descrição | Como configurá-lo
 
 Os pontos de interrupção condicionais e tracepoints têm acesso a todas as variáveis locais e globais no escopo quando elas falham no depurador.
 
-### Pontos de interrupção DOM
+### Pontos de Interrupção DOM
 
 Gerencie seus pontos de interrupção de mutação DOM na guia **pontos de interrupção dom** , incluindo desabilitar, excluir e revinculá-los.  Os [pontos de interrupção dom podem ser definidos](./elements/dom-breakpoints.md) a partir do *modo de exibição de árvore HTML* no painel de **elementos** .
 

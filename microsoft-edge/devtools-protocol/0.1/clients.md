@@ -1,20 +1,20 @@
 ---
 description: O protocolo Microsoft Edge DevTools versão 0,1 dá suporte aos seguintes clientes de ferramentas.
-title: DevTools Protocol versão 0,1 clientes
+title: DevTools Protocol versão 0,1 clients (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: a537102bab7b5d914fd721aeca8bed57817e9216
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 5fdf375634bb63c944b3fe09d1c0cbd5a935dcd7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561370"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882762"
 ---
-# Clientes do protocolo DevTools
+# DevTools Protocol versão 0,1 clients (EdgeHTML)  
 
 > [!NOTE]
 > O protocolo Microsoft Edge DevTools funciona apenas na [atualização de abril de 2018 do Windows 10](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) e em versões mais recentes do [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .
@@ -23,7 +23,7 @@ O **protocolo DevTools 0,1** dá suporte aos seguintes clientes de ferramentas.
 
 [ ![ Microsoft Edge devtools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [ ![ Microsoft Visual Studio 15,7 Preview 2](../media/visual-studio-2017.png)](#microsoft-visual-studio-preview)
 
-## Microsoft Edge DevTools Preview
+## Visualização do Microsoft Edge DevTools
 
 Você pode usar o aplicativo autônomo do [**Microsoft Edge devtools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) para Windows 10 da Microsoft Store para depurar remotamente um dispositivo host executando o Microsoft Edge ([EdgeHTML 17](../../dev-guide.md) ou posterior).
 

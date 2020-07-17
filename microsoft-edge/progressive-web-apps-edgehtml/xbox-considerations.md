@@ -1,20 +1,20 @@
 ---
 description: Verifique se o seu PWA oferece uma excelente experiência para o Xbox
-title: Personalizar o PWA para Windows
+title: Aplicativos Web progressivos para Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicativos Web progressivos, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
-ms.openlocfilehash: 8c2660c8821826660d2030f832ae449ff4a061ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dfa2b2d252bb788c0010017de57ab147d407c5f7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562496"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882846"
 ---
-# Aplicativos Web progressivos para Xbox One
+# Aplicativos Web progressivos para Xbox One  
 
 Você pode estender um aplicativo Web e disponibilizá-lo como um aplicativo Xbox One via Microsoft Store e continuar a usar as estruturas existentes, a CDN e o back-end do servidor.  E, assim como todos os aplicativos da plataforma universal do Windows (UWP), os aplicativos Web progressivos (PWAs) em execução no Xbox One também podem chamar APIs nativas do Windows 10.  Já existem vários PWAs disponíveis para o Xbox One, principalmente na categoria de aplicativos de reprodução de [mídia](#media-pwas-on-xbox).  
 
@@ -28,10 +28,10 @@ Agora, você está pronto para implantar seu aplicativo para testar usando o *PW
 
 ### Opção 1: criador do PWA
 
-O [construtor do PWA](https://www.pwabuilder.com/) é um aplicativo node. js que você pode instalar do Gerenciador de pacotes de nó (NPM). Ele usa os metadados do seu site para gerar aplicativos hospedados nativos em Android, iOS e Windows. Se seu site já tem um [manifesto do aplicativo Web](https://developer.mozilla.org/docs/Web/Manifest), o construtor do PWA o usará para gerar pacotes de instalação específicos da plataforma. Caso contrário, o construtor do PWA irá gerar um arquivo *manifest. JSON* básico com base nas características do seu site.
+O [construtor do PWA](https://www.pwabuilder.com/) é um aplicativo Node.js que você pode instalar do Gerenciador de pacotes de nó (NPM). Ele usa os metadados do seu site para gerar aplicativos hospedados nativos em Android, iOS e Windows. Se seu site já tem um [manifesto do aplicativo Web](https://developer.mozilla.org/docs/Web/Manifest), o construtor do PWA o usará para gerar pacotes de instalação específicos da plataforma. Caso contrário, o PWA Builder irá gerar um *manifest.jsbásico em* arquivos com base nas características do seu site.
 
 #### Requisitos
- - [Node. js](https://nodejs.org/en/), que inclui NPM.
+ - [Node.js](https://nodejs.org/en/), que inclui o NPM.
 
 #### Configuração
 
@@ -154,7 +154,7 @@ No momento da redação, a [ `cbcs` codificação do suporte é limitada](/playr
 
 
 ## Consulte também
-[Vídeo em sulcos do Sul](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): um exemplo de aplicativo de vídeo para Xbox criado com reajam. js e hospedado em um servidor Web.
+[Vídeo de saliência do Sul](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): um exemplo de aplicativo de vídeo para Xbox baseado em React.js e hospedado em um servidor Web.
 
 [Projetando para Xbox e TV](/windows/uwp/design/devices/designing-for-tv): projete seu aplicativo da plataforma universal do Windows (UWP) para que ele tenha uma aparência boa e funcione bem em telas do Xbox One e da televisão.
 

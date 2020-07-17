@@ -1,20 +1,21 @@
 ---
 description: Referência para o domínio do depurador. O domínio do depurador expõe recursos de depuração JavaScript. Ele permite definir e remover pontos de interrupção, percorrer a execução, explorar rastreamentos de pilha, etc.
-title: Domínio do depurador – versão do protocolo DevTools versão 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Debugger Domain-DevTools Protocol versão 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 6c5d668f943a731e5ba86ed5aa2294007a432ce6
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1e76d17e5dfbe39ba61c7cb45a4e88b9fd223068
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561360"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882951"
 ---
-# Depurador
+# Debugger Domain-DevTools Protocol versão 0,1 (EdgeHTML)  
+  
 O domínio do depurador expõe recursos de depuração JavaScript. Ele permite definir e remover pontos de interrupção, percorrer a execução, explorar rastreamentos de pilha, etc.
 
 | | |
@@ -22,7 +23,7 @@ O domínio do depurador expõe recursos de depuração JavaScript. Ele permite d
 | [**Métodos**](#methods) | [habilitar](#enable), [desabilitar](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [SetBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [StepOut](#stepout), [Pause](#pause), [resume](#resume), [getscriptname](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setvariablevalue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
 | [**Eventos**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [pausado](#paused), [retomado](#resumed) |
 | [**Tipos**](#types) | [Breakpointid](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Dependências**](#dependencies) | [Classpath](runtime.md) |
+| [**Dependências**](#dependencies) | [Tempo de Execução](runtime.md) |
 ## Métodos
 
 ### Habilitar
@@ -629,7 +630,7 @@ Identificador de quadro de chamada.
 
 ---
 
-### <a name="location"></a> Location `object`
+### <a name="location"></a> Localização `object`
 
 Local no código-fonte.
 
@@ -813,4 +814,4 @@ Descrição do escopo.
 
 ## Dependências
 
-[Classpath](runtime.md)
+[Tempo de Execução](runtime.md)

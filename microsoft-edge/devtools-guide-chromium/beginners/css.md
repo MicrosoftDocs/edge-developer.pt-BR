@@ -1,17 +1,17 @@
 ---
-title: DevTools para iniciantes
+title: 'DevTools para iniciantes: introdução ao CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 0064f0427b6bd5689e888cccfe2c650492898bb2
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: fba049a20a7b5f981130b4d9e60c37b07dc7e092
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581591"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882734"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -390,7 +390,7 @@ E se você quisesse estilizar `index.html` da mesma maneira?  E se você tiver *
     
     > ##### Figura 26  
     > `contact.html`  
-    > ![Contact. html][ImageCssExternal02]  
+    > ![contact.html][ImageCssExternal02]  
     
 1.  Exclua tudo entre `<style>` e `</style>` , incluindo `<style>` e `</style>` .  
     
@@ -458,7 +458,7 @@ E se você quisesse estilizar `index.html` da mesma maneira?  E se você tiver *
     
     > ##### Figura 33  
     > Vinculando a `style.css` em `contact.html`  
-    > ![Vinculando a Style. CSS em contact. html][ImageCssExternal09]  
+    > ![Vinculando a Style. CSS em contact.html][ImageCssExternal09]  
 
 1.  Ir para a **guia ao vivo**.  A Home Page agora tem a mesma fonte da última seção e uma seção azul de navegação.  
     
@@ -486,13 +486,13 @@ E se você quisesse estilizar `index.html` da mesma maneira?  E se você tiver *
     
     > ##### Figura 36  
     > Vinculando à estrutura em `contact.html`  
-    > ![Vinculando à estrutura em contact. html][ImageCssFramework1]  
+    > ![Vinculando à estrutura no contact.html][ImageCssFramework1]  
     
 1.  Cole o código em `index.html` , também.  
     
     > ##### Figura 37  
     > Vinculando à estrutura em `index.html`  
-    > ![Vinculando à estrutura em index. html][ImageCssFramework2]  
+    > ![Vinculando à estrutura no index.html][ImageCssFramework2]  
     
 1.  Volte para a guia ao vivo para ver suas alterações.  Enquanto a cor do plano de fundo da `<nav>` fonte e da fonte dos `li a` elementos são iguais, a fonte dos outros elementos mudava.  
     
@@ -514,13 +514,13 @@ Na última seção, você adicionou a inicialização às páginas da Web, o que
     
     > ##### Figura 39  
     > Adicionando classes em `index.html`  
-    > ![Adicionando classes em index. html][ImageCssJumbotron1]  
+    > ![Adicionando classes no index.html][ImageCssJumbotron1]  
     
 1.  Adicione também o código à sua `<header>` marca `contact.html` .  
     
     > ##### Figura 40  
     > Adicionando classes em `contact.html`  
-    > ![Adicionando classes em contact. html][ImageCssJumbotron2]  
+    > ![Adicionando classes no contact.html][ImageCssJumbotron2]  
     
 1.  Exiba suas alterações na guia ao vivo.  Há uma grande caixa cinza em torno do seu cabeçalho agora.  
     
@@ -611,7 +611,7 @@ Parabéns!  Concluído!
 [ImageCssSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup2.msft.png "Figura 4: o menu de opções do Project"  
 [ImageCssSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup3.msft.png "Figura 5: a guia ao vivo"  
 [ImageCssStyled]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-red_paragraph.msft.png "Figura 6: foi estilizado com CSS"  
-[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Figura 7: index. html"  
+[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Figura 7: index.html"  
 [ImageCssInline2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline2.msft.png "Figura 8: a cor da tela de fundo por trás dos links para casa e contatos agora está azul"  
 [ImageCssInternal1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal1.msft.png "Figura 9: página de contato"  
 [ImageCssInternal2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal2.msft.png "Figura 10: a fonte dos links de página inicial e de contato foi alterada"  
@@ -630,21 +630,21 @@ Parabéns!  Concluído!
 [ImageCssRule4]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule4.msft.png "Figura 23: digitando verde"  
 [ImageCssRule5]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule5.msft.png "Figura 24: passando o mouse sobre o link home para revelar o plano de fundo verde"  
 [ImageCssExternal01]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external1.msft.png "Figura 25: depois de recarregar a página, as alterações feitas no DevTools são perdidas"  
-[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Figura 26: contact. html"  
+[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Figura 26: contact.html"  
 [ImageCssExternal03]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external3.msft.png "Figura 27: a marca de estilo foi removida"  
 [ImageCssExternal04]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external4.msft.png "Figura 28: o estilo embutido foi removido do elemento NAV"  
 [ImageCssExternal05]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external5.msft.png "Figura 29: a caixa de diálogo novo arquivo"  
 [ImageCssExternal06]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external6.msft.png "Figura 30: digitando Style. css"  
 [ImageCssExternal07]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external7.msft.png "Figura 31: adicionando código ao estilo. css"  
 [ImageCssExternal08]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external8.msft.png "Figura 32: vinculando ao estilo. css"  
-[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Figura 33: vinculando ao estilo. CSS em contact. html"  
+[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Figura 33: vinculando ao estilo. CSS em contact.html"  
 [ImageCssExternal10]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external10.msft.png "Figura 34: a Home Page"  
 [ImageCssExternal11]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external11.msft.png "Figura 35: a página de contato"  
-[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Figura 36: vinculando à estrutura em contact. html"  
-[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Figura 37: vinculando à estrutura em index. html"  
+[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Figura 36: vinculando à estrutura no contact.html"  
+[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Figura 37: vinculando à estrutura no index.html"  
 [ImageCssFramework3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework3.msft.png "Figura 38: parte da fonte da página inicial foi alterada devido à estrutura"  
-[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Figura 39: adicionando classes em index. html"  
-[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Figura 40: adicionando classes em contact. html"  
+[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Figura 39: adicionando classes no index.html"  
+[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Figura 40: adicionando classes no contact.html"  
 [ImageCssJumbotron3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron3.msft.png "Figura 41: o cabeçalho agora tem uma grande caixa cinza ao seu lado"  
 [ImageCssAlign1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align1.msft.png "Figura 42: adicionando a classe container-fluido"  
 [ImageCssAlign2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align2.msft.png "Figura 43: adicionando uma linha"  
@@ -658,7 +658,7 @@ Parabéns!  Concluído!
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index. html-cozinhá-Amphibian | Problema"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-cozinhá-Amphibian | Problema"  
 
 [MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "Primeiras etapas da CSS | MDN"  
 

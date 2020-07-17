@@ -1,19 +1,20 @@
 ---
 description: Referência para o domínio de tempo de execução. O domínio do tempo de execução expõe o tempo de execução JavaScript por meio de objetos de avaliação e espelho remotos. Os resultados da avaliação são retornados como um objeto espelho que expõe o tipo de objeto, representação de cadeia de caracteres e identificador exclusivo que podem ser usados para referência de objeto posterior. Os objetos originais são mantidos na memória, a menos que eles sejam explicitamente liberados.
-title: Domínio de tempo de execução – versão 0,2 do protocolo DevTools
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Domínio de tempo de execução-DevTools protocolo versão 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 504f944f7a8389450685b40cdd010b54c3a7ba4e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 710b3b3e0383f1f6feb7947e0468730d2e0b0e66
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561328"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882848"
 ---
-# Classpath
+# Domínio de tempo de execução-DevTools protocolo versão 0,2 (EdgeHTML)  
+
 O domínio do tempo de execução expõe o tempo de execução JavaScript por meio de objetos de avaliação e espelho remotos. Os resultados da avaliação são retornados como um objeto espelho que expõe o tipo de objeto, representação de cadeia de caracteres e identificador exclusivo que podem ser usados para referência de objeto posterior. Os objetos originais são mantidos na memória, a menos que eles sejam explicitamente liberados.
 
 | | |

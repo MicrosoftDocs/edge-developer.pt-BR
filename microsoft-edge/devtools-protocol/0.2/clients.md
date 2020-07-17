@@ -1,20 +1,20 @@
 ---
 description: O protocolo Microsoft Edge DevTools versão 0,2 dá suporte aos seguintes clientes de ferramentas.
-title: Microsoft Edge DevTools Protocol versão 0,2 clientes
+title: Microsoft Edge DevTools Protocol versão 0,2 clientes (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 657d594b85c47cc1d5c80b8f2ac3ecc4bd4e4502
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 92976de257a73fd7206205622a4c79d1277b3950
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561347"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882888"
 ---
-# Clientes do protocolo DevTools
+# Microsoft Edge DevTools Protocol versão 0,2 clientes (EdgeHTML)  
 
 > [!NOTE]
 > A versão 0,2 do protocolo Microsoft Edge DevTools funciona apenas na [atualização de outubro de 2018 do Windows 10](/windows/uwp/whats-new/windows-10-build-17763) e em versões mais recentes do [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .  
@@ -23,7 +23,7 @@ O **protocolo DevTools 0,2** dá suporte aos seguintes clientes de ferramentas.
 
 [ ![ Código do Visual Studio](../media/visual-studio-code.png)](#visual-studio-code) Microsoft [ ![ Edge devtools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [ ![ do Microsoft Visual Studio 15,8](../media/visual-studio-2017.png)](#microsoft-visual-studio)
 
-## Microsoft Edge DevTools Preview
+## Visualização do Microsoft Edge DevTools
 
 Você pode usar o aplicativo autônomo do [**Microsoft Edge devtools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) para Windows 10 da Microsoft Store para depurar remotamente um dispositivo host executando o Microsoft Edge ([EdgeHTML 17](../../dev-guide.md) ou posterior).
 

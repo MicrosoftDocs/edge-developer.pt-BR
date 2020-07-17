@@ -1,19 +1,19 @@
 ---
 description: O protocolo Microsoft Edge DevTools versão 0,2 dá suporte aos seguintes pontos de extremidade HTTP.
-title: Pontos de extremidade HTTP do Microsoft Edge DevTools Protocol versão 0,2
+title: Microsoft Edge DevTools Protocol versão 0,2 pontos de extremidade HTTP (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: cc3d0156d92ab479168e0b588ae2b7c9faa7e58f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5b29e4d8149f511d8a7cbca3da72391a13e449
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561322"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882849"
 ---
-# Pontos de extremidade HTTP do protocolo DevTools
+# Microsoft Edge DevTools Protocol versão 0,2 pontos de extremidade HTTP (EdgeHTML)  
 
 > [!NOTE]
 > A versão 0,2 do protocolo Microsoft Edge DevTools funciona apenas na [atualização de outubro de 2018 do Windows 10]() e em versões mais recentes do [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .
