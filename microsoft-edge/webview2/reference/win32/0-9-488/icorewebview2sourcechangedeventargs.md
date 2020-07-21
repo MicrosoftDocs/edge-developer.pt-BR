@@ -3,41 +3,40 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2SourceChangedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 9ea8f860d637c5d9e49e68917d167380c0418b87
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 9a98e2afa5b15452d7521183abebc019d51e3a3c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877368"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885454"
 ---
-# <span data-ttu-id="8dd23-104">0.9.515-ICoreWebView2SourceChangedEventArgs de interface</span><span class="sxs-lookup"><span data-stu-id="8dd23-104">0.9.515 - interface ICoreWebView2SourceChangedEventArgs</span></span> 
+# <span data-ttu-id="10cfc-104">0.9.515-ICoreWebView2SourceChangedEventArgs de interface</span><span class="sxs-lookup"><span data-stu-id="10cfc-104">0.9.515 - interface ICoreWebView2SourceChangedEventArgs</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="8dd23-105">Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="8dd23-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="8dd23-106">Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.</span><span class="sxs-lookup"><span data-stu-id="8dd23-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2SourceChangedEventArgs
   : public IUnknown
 ```
 
-<span data-ttu-id="8dd23-107">Argumentos de evento para o evento SourceChanged.</span><span class="sxs-lookup"><span data-stu-id="8dd23-107">Event args for the SourceChanged event.</span></span>
+<span data-ttu-id="10cfc-105">Argumentos de evento para o evento SourceChanged.</span><span class="sxs-lookup"><span data-stu-id="10cfc-105">Event args for the SourceChanged event.</span></span>
 
-## <span data-ttu-id="8dd23-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="8dd23-108">Summary</span></span>
+## <span data-ttu-id="10cfc-106">Resumo</span><span class="sxs-lookup"><span data-stu-id="10cfc-106">Summary</span></span>
 
- <span data-ttu-id="8dd23-109">Parte</span><span class="sxs-lookup"><span data-stu-id="8dd23-109">Members</span></span>                        | <span data-ttu-id="8dd23-110">Descrições</span><span class="sxs-lookup"><span data-stu-id="8dd23-110">Descriptions</span></span>
+ <span data-ttu-id="10cfc-107">Parte</span><span class="sxs-lookup"><span data-stu-id="10cfc-107">Members</span></span>                        | <span data-ttu-id="10cfc-108">Descrições</span><span class="sxs-lookup"><span data-stu-id="10cfc-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="8dd23-111">get_IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="8dd23-111">get_IsNewDocument</span></span>](#get_isnewdocument) | <span data-ttu-id="8dd23-112">True se a página à qual está sendo acessada for um novo documento.</span><span class="sxs-lookup"><span data-stu-id="8dd23-112">True if the page being navigated to is a new document.</span></span>
+[<span data-ttu-id="10cfc-109">get_IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="10cfc-109">get_IsNewDocument</span></span>](#get_isnewdocument) | <span data-ttu-id="10cfc-110">True se a página à qual está sendo acessada for um novo documento.</span><span class="sxs-lookup"><span data-stu-id="10cfc-110">True if the page being navigated to is a new document.</span></span>
 
-## <span data-ttu-id="8dd23-113">Parte</span><span class="sxs-lookup"><span data-stu-id="8dd23-113">Members</span></span>
+## <span data-ttu-id="10cfc-111">Parte</span><span class="sxs-lookup"><span data-stu-id="10cfc-111">Members</span></span>
 
-#### <span data-ttu-id="8dd23-114">get_IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="8dd23-114">get_IsNewDocument</span></span> 
+#### <span data-ttu-id="10cfc-112">get_IsNewDocument</span><span class="sxs-lookup"><span data-stu-id="10cfc-112">get_IsNewDocument</span></span> 
 
-<span data-ttu-id="8dd23-115">True se a página à qual está sendo acessada for um novo documento.</span><span class="sxs-lookup"><span data-stu-id="8dd23-115">True if the page being navigated to is a new document.</span></span>
+<span data-ttu-id="10cfc-113">True se a página à qual está sendo acessada for um novo documento.</span><span class="sxs-lookup"><span data-stu-id="10cfc-113">True if the page being navigated to is a new document.</span></span>
 
-> <span data-ttu-id="8dd23-116">[get_IsNewDocument](#get_isnewdocument)público HRESULT (bool \* IsNewDocument)</span><span class="sxs-lookup"><span data-stu-id="8dd23-116">public HRESULT [get_IsNewDocument](#get_isnewdocument)(BOOL \* isNewDocument)</span></span>
+> <span data-ttu-id="10cfc-114">[get_IsNewDocument](#get_isnewdocument)público HRESULT (bool \* IsNewDocument)</span><span class="sxs-lookup"><span data-stu-id="10cfc-114">public HRESULT [get_IsNewDocument](#get_isnewdocument)(BOOL \* isNewDocument)</span></span>
 

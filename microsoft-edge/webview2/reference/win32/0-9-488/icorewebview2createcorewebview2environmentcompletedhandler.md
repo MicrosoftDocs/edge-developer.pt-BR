@@ -3,41 +3,40 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 0bbd1f79e4ecd9e0816ec144149f2e66f20fc5fe
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1082ea61b98b953277219d78a2944a2487b47a4d
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880812"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884432"
 ---
-# <span data-ttu-id="2a143-104">0.9.515-ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler de interface</span><span class="sxs-lookup"><span data-stu-id="2a143-104">0.9.515 - interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler</span></span> 
+# <span data-ttu-id="c4cb7-104">0.9.515-ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler de interface</span><span class="sxs-lookup"><span data-stu-id="c4cb7-104">0.9.515 - interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="2a143-105">Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="2a143-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="2a143-106">Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.</span><span class="sxs-lookup"><span data-stu-id="2a143-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="2a143-107">O chamador implementa essa interface para receber a WebView2Environment criada via CreateCoreWebView2Environment.</span><span class="sxs-lookup"><span data-stu-id="2a143-107">The caller implements this interface to receive the WebView2Environment created via CreateCoreWebView2Environment.</span></span>
+<span data-ttu-id="c4cb7-105">O chamador implementa essa interface para receber a WebView2Environment criada via CreateCoreWebView2Environment.</span><span class="sxs-lookup"><span data-stu-id="c4cb7-105">The caller implements this interface to receive the WebView2Environment created via CreateCoreWebView2Environment.</span></span>
 
-## <span data-ttu-id="2a143-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="2a143-108">Summary</span></span>
+## <span data-ttu-id="c4cb7-106">Resumo</span><span class="sxs-lookup"><span data-stu-id="c4cb7-106">Summary</span></span>
 
- <span data-ttu-id="2a143-109">Parte</span><span class="sxs-lookup"><span data-stu-id="2a143-109">Members</span></span>                        | <span data-ttu-id="2a143-110">Descrições</span><span class="sxs-lookup"><span data-stu-id="2a143-110">Descriptions</span></span>
+ <span data-ttu-id="c4cb7-107">Parte</span><span class="sxs-lookup"><span data-stu-id="c4cb7-107">Members</span></span>                        | <span data-ttu-id="c4cb7-108">Descrições</span><span class="sxs-lookup"><span data-stu-id="c4cb7-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="2a143-111">Invocar</span><span class="sxs-lookup"><span data-stu-id="2a143-111">Invoke</span></span>](#invoke) | <span data-ttu-id="2a143-112">Chamado para fornecer o implementador com o status de conclusão e o resultado da chamada de método assíncrono correspondente.</span><span class="sxs-lookup"><span data-stu-id="2a143-112">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+[<span data-ttu-id="c4cb7-109">Invocar</span><span class="sxs-lookup"><span data-stu-id="c4cb7-109">Invoke</span></span>](#invoke) | <span data-ttu-id="c4cb7-110">Chamado para fornecer o implementador com o status de conclusão e o resultado da chamada de método assíncrono correspondente.</span><span class="sxs-lookup"><span data-stu-id="c4cb7-110">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-## <span data-ttu-id="2a143-113">Parte</span><span class="sxs-lookup"><span data-stu-id="2a143-113">Members</span></span>
+## <span data-ttu-id="c4cb7-111">Parte</span><span class="sxs-lookup"><span data-stu-id="c4cb7-111">Members</span></span>
 
-#### <span data-ttu-id="2a143-114">Invocar</span><span class="sxs-lookup"><span data-stu-id="2a143-114">Invoke</span></span> 
+#### <span data-ttu-id="c4cb7-112">Invocar</span><span class="sxs-lookup"><span data-stu-id="c4cb7-112">Invoke</span></span> 
 
-<span data-ttu-id="2a143-115">Chamado para fornecer o implementador com o status de conclusão e o resultado da chamada de método assíncrono correspondente.</span><span class="sxs-lookup"><span data-stu-id="2a143-115">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+<span data-ttu-id="c4cb7-113">Chamado para fornecer o implementador com o status de conclusão e o resultado da chamada de método assíncrono correspondente.</span><span class="sxs-lookup"><span data-stu-id="c4cb7-113">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-> <span data-ttu-id="2a143-116">[chamada](#invoke)a Public HRESULT (resultado HRESULT, [ICoreWebView2Environment](icorewebview2environment.md) \* created_environment)</span><span class="sxs-lookup"><span data-stu-id="2a143-116">public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2Environment](icorewebview2environment.md) \* created_environment)</span></span>
+> <span data-ttu-id="c4cb7-114">[chamada](#invoke)a Public HRESULT (resultado HRESULT, [ICoreWebView2Environment](icorewebview2environment.md) \* created_environment)</span><span class="sxs-lookup"><span data-stu-id="c4cb7-114">public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2Environment](icorewebview2environment.md) \* created_environment)</span></span>
 
