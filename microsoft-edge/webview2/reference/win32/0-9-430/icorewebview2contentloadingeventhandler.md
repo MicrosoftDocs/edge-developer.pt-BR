@@ -3,22 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2ContentLoadingEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 7f227e3b2c45b1088b1ac678477cf1dac5ffed5f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 058e29833aa23248b34c7a1e5e5bbc2285a73fa3
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881127"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884327"
 ---
 # 0.9.430-ICoreWebView2ContentLoadingEventHandler de interface 
 
-> [!NOTE]
-> Essa interface pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.430. Consulte a [referência](../../../webview2-api-reference.md) para obter a referência da API mais recente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ContentLoadingEventHandler

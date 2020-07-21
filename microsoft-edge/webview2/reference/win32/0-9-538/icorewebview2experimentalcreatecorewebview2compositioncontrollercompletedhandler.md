@@ -3,22 +3,21 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
-ms.openlocfilehash: 898b76b1865cbda1909fa710707019582439db93
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: ab811f717c90ce77293c74a0e54bd3a66c896e72
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879993"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885265"
 ---
 # interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler 
 
-> [!NOTE]
-> Esta é uma API experimental que é fornecida com a versão 0.9.538 do SDK de pré-lançamento.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler

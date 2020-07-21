@@ -3,22 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2Deferral
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 3edc94e4e659e8b2bb1971c240ba95736a631938
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: bf6ce187168223b7e108aff7abf1bee5adea05a6
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877956"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884264"
 ---
 # 0.9.430-ICoreWebView2Deferral de interface 
 
-> [!NOTE]
-> Essa interface pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.430. Consulte a [referência](../../../webview2-api-reference.md) para obter a referência da API mais recente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2Deferral

@@ -3,17 +3,17 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2
-ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879006"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885272"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2 
 
@@ -48,6 +48,7 @@ O WebView2 permite que você hospede conteúdo da Web usando a tecnologia de nav
 [SourceChanged](#sourcechanged) | SourceChanged é acionado quando a propriedade Source muda.
 [WebMessageReceived](#webmessagereceived) | Esse evento é acionado quando a configuração IsWebMessageEnabled é definida e o documento de nível superior das chamadas WebView `window.chrome.webview.postMessage` .
 [WebResourceRequested](#webresourcerequested) | Acionado quando o WebView está executando uma solicitação HTTP para uma URL correspondente e um filtro de contexto de recurso que foi adicionado com o AddWebResourceRequestedFilter.
+[WebResourceResponseReceived](#webresourceresponsereceived) | O evento WebResourceResponseReceived é acionado depois que a WebView recebeu e processou a resposta de uma solicitação WebResource.
 [WindowCloseRequested](#windowcloserequested) | Dispara quando o conteúdo dentro do WebView solicitado para fechar a janela, como After Window. Close, é chamado.
 [AddHostObjectToScript](#addhostobjecttoscript) | Adicione o objeto de host fornecido ao script em execução no WebView com o nome especificado.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Adicione o JavaScript fornecido a uma lista de scripts que devem ser executados após a criação do objeto global, mas antes de o documento HTML ter sido analisado e antes de qualquer outro script incluído no documento HTML ser executado.
@@ -231,6 +232,16 @@ Acionado quando o WebView está executando uma solicitação HTTP para uma URL c
 
 Pelo menos um filtro deve ser adicionado para que o evento seja acionado.
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+O evento WebResourceResponseReceived é acionado depois que a WebView recebeu e processou a resposta de uma solicitação WebResource.
+
+> < do evento público EventHandler [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)  >  [WebResourceResponseReceived](#webresourceresponsereceived)
+
+Os args de evento incluem o WebResourceRequest como enviado pelo fio e WebResourceResponse recebidos, incluindo outros cabeçalhos adicionais adicionados pela pilha de rede que não foram incluídos como parte do evento WebResourceRequested associado, como cabeçalhos de autenticação.
+
 #### WindowCloseRequested 
 
 Dispara quando o conteúdo dentro do WebView solicitado para fechar a janela, como After Window. Close, é chamado.
@@ -307,7 +318,7 @@ Chame um método DevToolsProtocol assíncrono.
 > Tarefa assíncrona pública< cadeia de caracteres > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(cadeia de caracteres MethodName, Cadeia de caracteres parametersAsJson)
 
 ##### Devolver
-Uma cadeia de caracteres JSON que representa o objeto de retorno do método.
+Uma cadeia de caracteres JSON que representa o objeto de retorno do método. 
 
 Consulte o [Visualizador de protocolo devtools](https://aka.ms/DevToolsProtocolDocs) para obter uma lista e a descrição dos métodos disponíveis. O parâmetro methodName é o nome completo do método no formato `{domain}.{method}` . O parâmetro parametersAsJson é uma cadeia de caracteres JSON formatada que contém os parâmetros para o método correspondente. O método Invoke do manipulador será chamado quando o método for concluído de forma assíncrona. Invoke será chamado com o objeto Return do método como uma cadeia de caracteres JSON.
 
@@ -328,7 +339,7 @@ Execute o código JavaScript do parâmetro JavaScript no documento de nível sup
 ##### Devolver
 Retorna uma cadeia de caracteres codificada JSON que representa o resultado da execução do JavaScript fornecido. 
 
-Esse método executa o JavaScript fornecido de forma assíncrona e retornará o resultado do JavaScript fornecido. Se o resultado do JavaScript fornecido for `undefined` , contiver um ciclo de referência ou não puder ser codificado em JSON, a cadeia de caracteres ' NULL ' será retornada. Se uma função chamada no JavaScript fornecido não tiver valor de retorno explícito, `undefined` será retornada. Se o JavaScript fornecido lança uma exceção não tratada, ' NULL ' é retornado. Se esse método for chamado após um `NavigationStarting` evento, o JavaScript fornecido será executado no novo documento quando ele for carregado, ao mesmo tempo em que `ContentLoading` for disparado. `ExecuteScript` vai funcionar mesmo se `IsScriptEnabled` estiver definido como `FALSE` .
+Esse método executa o JavaScript fornecido de forma assíncrona e retornará o resultado do JavaScript fornecido. Se o resultado do JavaScript fornecido for `undefined` , contiver um ciclo de referência ou não puder ser codificado em JSON, a cadeia de caracteres ' NULL ' será retornada. Se uma função chamada no JavaScript fornecido não tiver valor de retorno explícito, `undefined` será retornada. Se o JavaScript fornecido lança uma exceção não tratada, ' NULL ' é retornado. Se esse método for chamado após um evento NavigationStarting, o JavaScript fornecido será executado no novo documento quando ele for carregado, ao mesmo tempo em que ContentLoading é disparado. O ExecuteScriptAsync funcionará mesmo se IsScriptEnabled estiver definido como `FALSE` .
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -434,3 +445,4 @@ Interrompa todas as navegações e buscas de recursos pendentes.
 > [Stop](#stop)void Public ()
 
 Não interrompe scripts.
+

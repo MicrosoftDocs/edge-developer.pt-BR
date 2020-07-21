@@ -3,22 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2ProcessFailedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 56e66d109b6ae39e1f3937c643dc90ef71c5ecb2
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b7d48fbec0c3bb0008f0f429bf6414ed855a09f
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880343"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884789"
 ---
 # 0.9.515-ICoreWebView2ProcessFailedEventHandler de interface 
 
-> [!NOTE]
-> Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ProcessFailedEventHandler

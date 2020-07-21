@@ -3,22 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2NavigationCompletedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 3a15232a7fe2ddf230d0463069052c55f7abc843
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e2e973e2ee1817decd24bbc1d0dc3daa9709795c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879132"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885076"
 ---
 # classe 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2NavigationCompletedEventArgs 
 
-> [!NOTE]
-> Esta referência pode ser alterada ou indisponível para versões posteriores SDK da versão 0.9.515. Consulte a [referência de API WebView2](../../../webview2-api-reference.md) para obter a referência de API mais recente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll

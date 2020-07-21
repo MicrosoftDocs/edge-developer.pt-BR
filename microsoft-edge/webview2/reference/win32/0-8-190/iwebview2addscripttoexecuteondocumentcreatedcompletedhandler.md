@@ -3,22 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle We
 title: 0.8.355-WebView2 Win32 C++ IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge
-ms.openlocfilehash: 903574f0372e9d077907b9e9d538007cb71f830f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 464192c119ddb7dd59ee7cb5981f172eb44dbb78
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878670"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885013"
 ---
 # 0.8.355-IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler de interface 
 
-> [!NOTE]
-> Essa interface pode ser alterada ou indisponível para versões posteriores SDK da versão 0.8.355. Consulte a [referência](../../../webview2-api-reference.md) para obter a referência da API mais recente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler

@@ -3,17 +3,17 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: WebView2 Win32 C++ ICoreWebView2WebResourceRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2WebResourceRequestedEventHandler
-ms.openlocfilehash: 9cd221ac1b528b0be52201daa0c15217534944a6
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3cdafae6480a3bf6e3a5bf96f7e7fba1ae8cc77c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879223"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884516"
 ---
 # interface ICoreWebView2WebResourceRequestedEventHandler 
 
@@ -22,7 +22,7 @@ interface ICoreWebView2WebResourceRequestedEventHandler
   : public IUnknown
 ```
 
-Acionado quando uma solicitação HTTP é feita no WebView.
+Acionado quando uma solicitação de URL (por meio de rede, arquivo etc.) é feita no WebView para um filtro de contexto de recurso de correspondência de recursos da Web e a URL especificada em AddWebResourceRequestedFilter.
 
 ## Resumo
 
@@ -30,7 +30,7 @@ Acionado quando uma solicitação HTTP é feita no WebView.
 --------------------------------|---------------------------------------------
 [Invocar](#invoke) | Chamado para fornecer o implementador com os argumentos do evento para o evento correspondente.
 
-O host pode substituir a solicitação, os cabeçalhos de resposta e o conteúdo da resposta.
+O host pode exibir e modificar a solicitação ou fornecer uma resposta em um padrão semelhante para HTTP, caso em que a solicitação foi completada imediatamente. Isso pode não conter os cabeçalhos de solicitação que são adicionados pela pilha de rede, como cabeçalhos de autorização.
 
 ## Parte
 

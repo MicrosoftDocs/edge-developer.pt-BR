@@ -3,17 +3,17 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Environment
-ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878915"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885286"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
 
@@ -32,7 +32,7 @@ Isso representa o ambiente WebView2.
 [CreateAsync](#createasync) | Cria um ambiente WebView2 verde usando a versão de Borda instalada.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Crie assincronamente um novo WebView para uso com hospedagem Visual.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Criar de forma assíncrona um novo WebView.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Crie uma CoreWebView2ExperimentalPointerInfo vazia.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Crie uma CoreWebView2PointerInfo vazia.
 [CreateWebResourceResponse](#createwebresourceresponse) | Crie um novo objeto de resposta de recurso da Web.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Obtenha as informações da versão do navegador, incluindo o nome do canal, se não for o canal estável ou a borda incorporada.
 [GetProviderForHwnd](#getproviderforhwnd) | Retorna o provedor de automação da interface do usuário para o CoreWebView2CompositionController que corresponde ao HWND fornecido.
@@ -87,8 +87,7 @@ Cria um ambiente WebView2 verde usando a versão de Borda instalada.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> Esta é uma [API experimental](../../../concepts/versioning.md#experimental-apis) fornecida com o SDK versão [0.9.538-pré-lançamento](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Crie assincronamente um novo WebView para uso com hospedagem Visual.
 
@@ -112,14 +111,13 @@ parentWindow é o HWND no qual a WebView deve ser exibida e da qual receber a en
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> Esta é uma [API experimental](../../../concepts/versioning.md#experimental-apis) fornecida com o SDK versão [0.9.538-pré-lançamento](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-Crie uma CoreWebView2ExperimentalPointerInfo vazia.
+Crie uma CoreWebView2PointerInfo vazia.
 
 > Public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
-O CoreWebView2ExperimentalPointerInfo retornado precisa ser preenchido com todas as informações relevantes antes de chamar SendPointerInput.
+O CoreWebView2PointerInfo retornado precisa ser preenchido com todas as informações relevantes antes de chamar SendPointerInput.
 
 #### CreateWebResourceResponse 
 
@@ -140,8 +138,7 @@ Obtenha as informações da versão do navegador, incluindo o nome do canal, se 
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> Esta é uma [API experimental](../../../concepts/versioning.md#experimental-apis) fornecida com o SDK versão [0.9.538-pré-lançamento](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Retorna o provedor de automação da interface do usuário para o CoreWebView2CompositionController que corresponde ao HWND fornecido.
 

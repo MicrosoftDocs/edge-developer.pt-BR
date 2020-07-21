@@ -3,22 +3,21 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4
-ms.openlocfilehash: bac470b29b08357d27ba77e986f19739acaaa05d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: b34dca29aca3d7f24e8f5fd99ab8b8515fcb4664
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878873"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885524"
 ---
 # Struct Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4 
 
-> [!NOTE]
-> Esta é uma [API experimental](../../../concepts/versioning.md#experimental-apis) fornecida com o SDK versão [0.9.538-pré-lançamento](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll

@@ -3,22 +3,21 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
-ms.openlocfilehash: 45ac5406cea804aa5b5db748cecaae7104dccb00
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1eb2498e05e2ec9fafa317f6108d022f7354c249
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878985"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885279"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2CompositionController 
 
-> [!NOTE]
-> Esta é uma [API experimental](../../../concepts/versioning.md#experimental-apis) fornecida com o SDK versão [0.9.538-pré-lançamento](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll
@@ -33,7 +32,7 @@ Essa classe é uma extensão da classe CoreWebView2Controller para dar suporte �
 [CursorChanged](#cursorchanged) | O evento é acionado quando o WebView pensa que o cursor deve ser alterado.
 [RootVisualTarget](#rootvisualtarget) | O RootVisualTarget é um Visual na árvore visual do aplicativo de hospedagem.
 [UIAProvider](#uiaprovider) | Retorna o provedor de automação da interface do usuário da WebView.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Uma função auxiliar para converter um ponteiroid recebido do sistema em um CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Uma função auxiliar para converter um ponteiroid recebido do sistema em um CoreWebView2PointerInfo.
 [SendMouseInput](#sendmouseinput) | Se eventKind for CoreWebView2MouseEventKind. HorizontalWheel ou CoreWebView2MouseEventKind. wheel, mouseData especificará a quantidade de movimento da roda.
 [SendPointerInput](#sendpointerinput) | SendPointerInput aceita entrada de ponteiro de toque ou caneta de tipos definidos em CoreWebView2PointerEventKind.
 
@@ -71,11 +70,11 @@ Retorna o provedor de automação da interface do usuário da WebView.
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-Uma função auxiliar para converter um ponteiroid recebido do sistema em um CoreWebView2ExperimentalPointerInfo.
+Uma função auxiliar para converter um ponteiroid recebido do sistema em um CoreWebView2PointerInfo.
 
 > Public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(Ponteiroid uint, IntPtr ParentWindow, Matrix4x4 Transform)
 
-parentWindow é o HWND que contém o WebView. Isso pode ser qualquer HWND na árvore HWND que contém o WebView. O CoreWebView2Matrix4x4 é a transformação desse HWND para o WebView. O CoreWebView2ExperimentalPointerInfo retornado é usado no SendPointerInfo. O tipo de ponteiro deve ser Pen ou touch, ou a função falhará.
+parentWindow é o HWND que contém o WebView. Isso pode ser qualquer HWND na árvore HWND que contém o WebView. O CoreWebView2Matrix4x4 é a transformação desse HWND para o WebView. O CoreWebView2PointerInfo retornado é usado no SendPointerInfo. O tipo de ponteiro deve ser Pen ou touch, ou a função falhará.
 
 #### SendMouseInput 
 
@@ -91,5 +90,5 @@ SendPointerInput aceita entrada de ponteiro de toque ou caneta de tipos definido
 
 > public void [SendPointerInput](#sendpointerinput)([CoreWebView2PointerEventKind](./namespace-microsoft-web-webview2-core.md) EventType, [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) pointerInfo)
 
-Qualquer entrada de ponteiro do sistema deve ser convertida em um CoreWebView2ExperimentalPointerInfo primeiro.
+Qualquer entrada de ponteiro do sistema deve ser convertida em um CoreWebView2PointerInfo primeiro.
 

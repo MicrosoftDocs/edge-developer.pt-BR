@@ -3,17 +3,17 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Referência do Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 59302f8a1c6f38f2e5688b05faa79d97d51b5409
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e6e921ca1cae586bef89962c5eb98668a655ad22
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879139"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883774"
 ---
 # Referência (WebView2 Win32 C++)  
 
@@ -84,10 +84,15 @@ O controle WebView2 do Microsoft Edge permite que você hospede conteúdo da Web
 
 ### Experimental
 
+*   [ICoreWebView2Experimental](0-9-538/icorewebview2experimental.md)
 *   [ICoreWebView2ExperimentalCompositionController](0-9-538/icorewebview2experimentalcompositioncontroller.md)
 *   [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](0-9-538/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md)
 *   [ICoreWebView2ExperimentalCursorChangedEventHandler](0-9-538/icorewebview2experimentalcursorchangedeventhandler.md)
 *   [ICoreWebView2ExperimentalEnvironment](0-9-538/icorewebview2experimentalenvironment.md)
+*   [ICoreWebView2ExperimentalEnvironmentOptions](0-9-538/icorewebview2experimentalenvironmentoptions.md)
 *   [ICoreWebView2ExperimentalNewWindowRequestedEventArgs](0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md)
 *   [ICoreWebView2ExperimentalPointerInfo](0-9-538/icorewebview2experimentalpointerinfo.md)
+*   [ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs](0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventargs.md)
+*   [ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgsPopulateResponseContentCompletedHandler](0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventargspopulateresponsecontentcompletedhandler.md)
+*   [ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventhandler.md)
 *   [ICoreWebView2ExperimentalWindowFeatures](0-9-538/icorewebview2experimentalwindowfeatures.md)
