@@ -3,29 +3,28 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2ExperimentalCompositionController
-ms.openlocfilehash: e2b16cfd9095d43eb01d7e6233da2857c12a04ad
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d651133162520e4a967d13de6f585fe3ac02e830
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880028"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886457"
 ---
 # interface ICoreWebView2ExperimentalCompositionController 
 
-> [!NOTE]
-> Esta é uma API experimental que é fornecida com a versão 0.9.538 do SDK de pré-lançamento.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalCompositionController
   : public IUnknown
 ```
 
-Essa interface é uma extensão da interface ICoreWebView2Controller para dar suporte à hospedagem Visual.
+Essa interface é uma extensão da interface [ICoreWebView2Controller](icorewebview2controller.md) para dar suporte à hospedagem Visual.
 
 ## Resumo
 
@@ -45,7 +44,7 @@ Essa interface é uma extensão da interface ICoreWebView2Controller para dar su
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | Teclas virtuais de evento de mouse associadas a um COREWEBVIEW2_MOUSE_EVENT_KIND para SendMouseInput.
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | Tipo de evento ponteiro usado pelo SendPointerInput para transmitir o tipo de evento ponteiro sendo enviado ao WebView.
 
-Um objeto que implementa a interface ICoreWebView2ExperimentalCompositionController também implementa ICoreWebView2Controller. Espera-se que os chamadores usem ICoreWebView2Controller para redimensionar, visibilidade, foco e assim por diante e, em seguida, usar o ICoreWebView2ExperimentalCompositionController para se conectar a uma árvore de composição e fornecer a entrada para o WebView.
+Um objeto que implementa a interface ICoreWebView2ExperimentalCompositionController também implementa [ICoreWebView2Controller](icorewebview2controller.md). Espera-se que os chamadores usem [ICoreWebView2Controller](icorewebview2controller.md) para redimensionar, visibilidade, foco e assim por diante e, em seguida, usar o ICoreWebView2ExperimentalCompositionController para se conectar a uma árvore de composição e fornecer a entrada para o WebView.
 
 ## Parte
 
@@ -57,19 +56,21 @@ Adicione um manipulador de eventos para o evento CursorChanged.
 
 O evento é acionado quando o WebView pensa que o cursor deve ser alterado. Por exemplo, quando o cursor do mouse é o cursor padrão no momento, mas é movido sobre o texto, ele pode tentar mudar para o cursor IBeam.
 
+Espera-se que o desenvolvedor envie mensagens COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE (além de COREWEBVIEW2_MOUSE_EVENT_KIND_MOVE mensagens) por meio da API SendMouseInput. Isso é para garantir que o mouse esteja realmente dentro do WebView que envia eventos CursorChanged.
+
 ```cpp
         // Register a handler for the CursorChanged event.
         CHECK_FAILURE(m_compositionController->add_CursorChanged(
             Callback<ICoreWebView2ExperimentalCursorChangedEventHandler>(
                 [this](ICoreWebView2ExperimentalCompositionController* sender,
-                       IUnknown* args) -> HRESULT {
-                    HCURSOR cursor;
-                    CHECK_FAILURE(sender->get_Cursor(&cursor));
-                    SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
-                    return S_OK;
+                    IUnknown* args) -> HRESULT {
+                        HCURSOR cursor;
+                        CHECK_FAILURE(sender->get_Cursor(&cursor));
+                        SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
+                        return S_OK;
                 })
-                .Get(),
-            &m_cursorChangedToken));
+            .Get(),
+                    &m_cursorChangedToken));
 ```
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
@@ -79,7 +80,6 @@ Uma função auxiliar para converter um ponteiroid recebido do sistema em um [IC
 > Public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(ponteiroid uint, HWND ParentWindow, struct COREWEBVIEW2_MATRIX_4X4 Transform, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo)
 
 parentWindow é o HWND que contém o WebView. Isso pode ser qualquer HWND na árvore HWND que contém o WebView. O COREWEBVIEW2_MATRIX_4X4 é a transformação daquele HWND para o WebView. O [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) retornado é usado no SendPointerInfo. O tipo de ponteiro deve ser Pen ou touch, ou a função falhará.
-
 
 
 #### get_Cursor 
@@ -151,7 +151,7 @@ Se eventKind for COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL ou COREWEBVIEW2_
 
 > Public HRESULT [SendMouseInput](#sendmouseinput)([COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind, [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys, UINT32 mouseData, Point Point)
 
-Um valor positivo indica que a roda foi girada para frente, longe do usuário; um valor negativo indica que a roda foi girada para trás, em direção ao usuário. Um clique em roda é definido como WHEEL_DELTA, que é 120. Se eventKind for COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN ou COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP, então mouseData especificará quais botões X foram pressionados ou liberados. Esse valor deve ser 1 se o primeiro botão X for pressionado/liberado e 2 se o segundo botão X for pressionado/liberado. Se eventKind for COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE, virtualKeys, mouseData e Point deverão ser zero. Se eventKind for qualquer outro valor, então mouseData deve ser zero. O ponto deve estar no espaço de coordenadas do cliente da WebView. Para acompanhar eventos do mouse que começam na WebView e podem ser movidos para fora do WebView e do aplicativo host, é recomendável chamar SetCapture e ReleaseCapture. Para descartar pop-ups de foco, também é recomendável enviar mensagens de WM_MOUSELEAVE. 
+Um valor positivo indica que a roda foi girada para frente, longe do usuário; um valor negativo indica que a roda foi girada para trás, em direção ao usuário. Um clique em roda é definido como WHEEL_DELTA, que é 120. Se eventKind for COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN ou COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP, então mouseData especificará quais botões X foram pressionados ou liberados. Esse valor deve ser 1 se o primeiro botão X for pressionado/liberado e 2 se o segundo botão X for pressionado/liberado. Se eventKind for COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE, virtualKeys, mouseData e Point deverão ser zero. Se eventKind for qualquer outro valor, então mouseData deve ser zero. O ponto deve estar no espaço de coordenadas do cliente da WebView. Para acompanhar eventos do mouse que começam na WebView e podem ser movidos para fora do WebView e do aplicativo host, é recomendável chamar SetCapture e ReleaseCapture. Para descartar pop-ups de foco, também é recomendável enviar mensagens de COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE. 
 ```cpp
 bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 {

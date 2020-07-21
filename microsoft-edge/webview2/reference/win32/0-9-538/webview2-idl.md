@@ -3,17 +3,17 @@ description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicat
 title: Globais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: d291a4973656d106f803382ee985f0006bf5d68d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877620"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885545"
 ---
 # Globais 
 
@@ -50,7 +50,7 @@ Isso equivale a chamar CreateCoreWebView2EnvironmentWithOptions com nullptr para
 
 DLL Export para criar um ambiente WebView2 com uma versão personalizada do Edge, diretório de dados do usuário e/ou opções adicionais.
 
-Use `browserExecutableFolder` para especificar se os controles de WebView2 usam uma versão inserida de Edge ou a versão instalada do Edge que existe em um computador cliente. Para usar uma versão inserida do Edge, passe o caminho relativo da pasta que contém a versão incorporada do Edge `browserExecutableFolder` . Para obter a versão inserida do Edge, copie o nome da pasta versionada da sua versão instalada do Edge em um computador cliente. Por exemplo, copie a `73.0.52.0` pasta da pasta em que a versão Edge 73.0.52.0 foi instalada. Verifique se a pasta tem os arquivos **msedgewebview2.exe** e **msedge.dll** . Para criar controles WebView2 que usam a versão instalada do Edge que existe nas máquinas do cliente, passe uma cadeia de caracteres nula ou vazia para `browserExecutableFolder` . Nesse cenário, a API tenta encontrar uma versão compatível do Edge instalada no computador cliente (primeiro no nível do computador e, em seguida, por usuário) usando a preferência de canal selecionada. 
+Use `browserExecutableFolder` para especificar se os controles de WebView2 usam uma versão inserida de Edge ou a versão instalada do Edge que existe em um computador cliente. Para usar uma versão inserida do Edge, passe o caminho relativo da pasta que contém a versão incorporada do Edge `browserExecutableFolder` . Para obter a versão inserida do Edge, copie o nome da pasta versionada da sua versão instalada do Edge em um computador cliente. Por exemplo, copie a `73.0.52.0` pasta da pasta em que a versão Edge 73.0.52.0 foi instalada. Verifique se a pasta tem os arquivos **msedgewebview2.exe** e **msedge.dll** . Para criar controles WebView2 que usam a versão instalada do Edge que existe nas máquinas do cliente, passe uma cadeia de caracteres nula ou vazia para `browserExecutableFolder` . Nesse cenário, a API tenta encontrar uma versão compatível do Edge instalada no computador cliente (primeiro no nível do computador e, em seguida, por usuário) usando a preferência de canal selecionada.
 
 A ordem padrão de pesquisa de canal é estável, beta, dev e Canárias. Quando houver uma variável de ambiente WEBVIEW2_RELEASE_CHANNEL_PREFERENCE ou valor de registro releaseChannelPreference aplicável com o valor 1, a ordem de pesquisa de canal será revertida.
 
@@ -138,3 +138,4 @@ Primeiro, verificamos com root como HKLM e depois HKCU. AppId é definido primei
 Obtenha as informações da versão do navegador, incluindo o nome do canal, se não for o canal estável ou a borda incorporada.
 
 Os nomes dos canais são beta, dev e Canárias. Se houver uma substituição para o browserExecutableFolder ou para a preferência de canal, a substituição será usada. Se não houver uma substituição, o parâmetro passado para GetAvailableCoreWebView2BrowserVersionString será usado.
+
