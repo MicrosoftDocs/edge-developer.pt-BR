@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2
-ms.openlocfilehash: 889924c996e030a0abe2a6a34036a881dcb26db5
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 81bc222324db9649439afa2a7c3c84f715fa2ae3
+ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884572"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894323"
 ---
 # interface ICoreWebView2 
 
@@ -127,14 +127,6 @@ O WebView2 deve ser criado em um thread de interface do usuário. Especificament
 
 Os retornos de chamada, incluindo manipuladores de eventos e manipuladores de conclusão, são executados em série. Ou seja, se você tiver um manipulador de eventos em execução e iniciar um loop de mensagem, nenhum outro manipulador de eventos ou chamadas de retorno de conclusão começarão a ser executados de forma reentrada.
 
-## Segurança
-
-Sempre verifique a propriedade Source da WebView antes de usar ExecuteScript, PostWebMessageAsJson, PostWebMessageAsString ou qualquer outro método para enviar informações para o WebView. A WebView pode ter navegado para outra página por meio do usuário final interagindo com a página ou o script na página que está causando a navegação. Da mesma forma, tenha muito cuidado com o AddScriptToExecuteOnDocumentCreated. Todas as navegações futuras executarão esse script e, se ele fornecer acesso às informações destinadas apenas a determinada origem, qualquer documento HTML poderá ter acesso.
-
-Ao examinar o resultado de uma chamada de método ExecuteScript, um evento WebMessageReceived, sempre verifique a fonte do remetente ou qualquer outro mecanismo de recebimento de informações de um documento HTML em uma WebView validar o URI do documento HTML é o que você espera.
-
-Ao construir uma mensagem para enviar para um WebView, prefira usar PostWebMessageAsJson e construir o parâmetro de cadeia de caracteres JSON usando uma biblioteca JSON. Isso evitará possíveis acidentes de codificar informações em uma cadeia de caracteres ou script JSON e garantir que nenhuma entrada controlada pelo invasor possa modificar o restante da mensagem JSON ou executar um script arbitrário.
-
 ## Tipos de cadeias de caracteres
 
 Parâmetros de cadeia de caracteres de saída são cadeias de caracteres de terminação NULL O chamado aloca a cadeia de caracteres usando CoTaskMemAlloc. A propriedade é transferida para o chamador e fica até o chamador liberar a memória usando o CoTaskMemFree.
@@ -148,20 +140,6 @@ Vários métodos fornecem ou aceitam URIs e JSON como cadeias de caracteres. Use
 Se o WinRT estiver disponível para seu aplicativo, você pode usar `RuntimeClass_Windows_Data_Json_JsonObject` e `IJsonObjectStatics` analisar ou produzir cadeias de caracteres JSON ou `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` analisar e produzir URIs. Ambos trabalham em aplicativos Win32.
 
 Se você usar o IUri e o CreateUri para analisar URIs, talvez queira usar os seguintes sinalizadores de criação de URI para que o comportamento de CreateUri corresponda melhor à análise de URI no WebView: `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
-
-## Depuração
-
-Abra o DevTools com os atalhos normais: `F12` ou `Ctrl+Shift+I` . Você pode usar o `--auto-open-devtools-for-tabs` argumento de comando switch para que a janela do devtools seja aberta imediatamente ao criar a primeira vez uma WebView. Consulte a documentação do CreateCoreWebView2Controller para saber como fornecer argumentos adicionais de linha de comando para o processo do navegador. Confira a chave do registro LoaderOverride para experimentar versões diferentes do WebView2 sem modificar seu aplicativo na documentação do CreateCoreWebView2Controller.
-
-## Controle de versão
-
-Depois de usar uma versão específica do SDK para criar seu aplicativo, seu aplicativo pode acabar sendo executado com uma versão mais antiga ou mais recente dos binários instalados do navegador. Até a versão 1.0.0.0 do WebView2, pode haver alterações significativas durante as atualizações que impedem que o SDK funcione com versões diferentes dos binários instalados do navegador. Após a versão 1.0.0.0 versões diferentes do SDK podem funcionar com versões diferentes do navegador instalado seguindo estas práticas recomendadas:
-
-Para fazer a conta de alterações significativas na API, verifique se há uma falha ao chamar a DLL de exportação CreateCoreWebView2Environment e ao chamar QueryInterface em qualquer objeto CoreWebView2. Um valor de retorno de E_NOINTERFACE pode indicar que o SDK não é compatível com os binários do navegador Edge.
-
-Verificar a falha de QueryInterface também contará em casos em que o SDK é mais recente do que a versão do navegador Edge e seu aplicativo tenta usar uma interface do qual o navegador Edge não reconhece.
-
-Quando uma interface não está disponível, você pode considerar a possibilidade de desabilitar o recurso associado, se possível, ou informar ao usuário final que ele precisa atualizar o navegador.
 
 ## Parte
 
