@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Mi
 title: Introdução ao WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: e184eaeb28a1e6e7aacf2917094149092d2fb6ee
-ms.sourcegitcommit: ae0257f8fb9832296ee6a196ded7bad2aacd3208
+ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "10846546"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895515"
 ---
 # Introdução ao WebView2 (Developer Preview)  
 
@@ -124,7 +124,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
                 }
                 
                 // Add a few settings for the webview
-                // this is a redundant demo step as the values are the default settings
+                // The demo step is redundant since the values are the default settings
                 ICoreWebView2Settings* Settings;
                 webviewWindow->get_Settings(&Settings);
                 Settings->put_IsScriptEnabled(TRUE);
@@ -170,7 +170,7 @@ A equipe da WebView já abordou navegar para a URL usando o `ICoreWebView2::Navi
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-Para obter mais informações, consulte [eventos de navegação][Webview2ReferenceWin3209538Icorewebview2NavigationEvents].  
+Para obter mais informações, consulte [eventos de navegação][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegação":::
    Eventos de navegação  
@@ -206,7 +206,7 @@ Agora o aplicativo não está navegando para sites não HTTPS.  Você pode usar 
 
 ## Etapa 5-scripting  
 
-O aplicativo de hospedagem também pode injetar JavaScript em WebView.  Você pode executar uma tarefa WebView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  Os scripts de inicialização adicionados se aplicam a todas as futuras opções de navegação de documentos de nível superior e de quadro filho até serem removidas e executadas após a criação do objeto global e antes de qualquer outro script incluído no documento HTML ser executado.  
+O aplicativo de hospedagem também pode injetar JavaScript em WebView.  Você pode executar uma tarefa de WebView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  Os scripts de inicialização adicionados se aplicam a todas as futuras opções de navegação de documentos de nível superior e de quadro filho até serem removidas e executadas após a criação do objeto global e antes de qualquer outro script incluído no documento HTML ser executado.  
 
 Copie o trecho de código a seguir e cole em `HelloWebView.cpp` .  
 
@@ -276,7 +276,7 @@ Parabéns, você acabou de criar seu primeiro aplicativo WebView2!
 
 Muitas das funcionalidades WebView2 que não estão incluídas nesta página, a seção a seguir forneceu recursos adicionais.  
 
-### Ver também  
+### Consulte também  
 
 *   Para obter um exemplo abrangente de recursos do WebView2, consulte [exemplo de API WebView2][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Para obter um aplicativo de exemplo criado usando o WebView2, consulte [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
@@ -290,7 +290,7 @@ Ajude a criar uma experiência de WebView2 mais rica compartilhando seus coment�
 
 [Webview2Index]: ../index.md "Introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
 [Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[Webview2ReferenceWin3209538Icorewebview2NavigationEvents]: ../reference/win32/0-9-538/ICoreWebView2.md#navigation-events "Eventos de navegação-interface do ICoreWebView2 | Documentos da Microsoft"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Documentos da Microsoft"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Biblioteca de modelos C++ do Windows Runtime (WRL) | Documentos da Microsoft"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Passo a passo: criar um aplicativo de área de trabalho tradicional do Windows (C++) | Documentos da Microsoft"  

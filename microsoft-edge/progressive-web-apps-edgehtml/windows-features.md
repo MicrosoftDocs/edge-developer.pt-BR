@@ -7,12 +7,12 @@ ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicativos Web progressivos, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882783"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894714"
 ---
 # Personalizar o PWA (EdgeHTML) para Windows  
 
@@ -23,9 +23,13 @@ O PWAs instalado no Windows 10 aproveita [todas as vantagens][PwaIndexWindows10]
 *   Iniciar/navegar pelo aplicativo por meio de comandos de voz da Cortana  
 *   Integração com o sistema operacional Windows \ (por meio da central de ações do Windows, da barra de tarefas da área de trabalho e dos menus de contexto \)  
 
-... e essas são apenas algumas das possibilidades adicionadas ao seu PWA \ (EdgeHTML \) no Windows!  
+Estas são apenas algumas das possibilidades adicionadas ao seu PWA \ (EdgeHTML \) no Windows.  
 
-Este guia mostra como instalar, executar e aprimorar o seu PWA \ (EdgeHTML \) como um aplicativo do Windows 10 e ainda garantir a compatibilidade entre navegadores e várias plataformas.  
+Este artigo mostra como instalar, executar e aprimorar o seu PWA \ (EdgeHTML \) como um aplicativo do Windows 10 e ainda garantir a compatibilidade entre navegadores e várias plataformas.  
+
+> [!IMPORTANT]
+> Os exemplos e etapas neste artigo exigem o Visual Studio 2017. O Visual Studio 2019 não inclui o modelo usado neste artigo. Para baixar o Visual Studio 2017, consulte [downloads do Visual Studio-2017, 2015 & versões anteriores][PreviousVSDownloads]  
+
 
 ## Pré-requisitos  
 
@@ -342,3 +346,4 @@ E quando estiver pronto, veja como \ (e por quê! \) [enviar seu PWA para a Micr
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "Permissões de aplicativo"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Fará"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visualização do Visual Studio"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Downloads do Visual Studio"
