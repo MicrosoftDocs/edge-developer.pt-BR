@@ -1,17 +1,17 @@
 ---
-title: Acessar servidores locais
+title: Acessar Servidores Locais
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: c038e8b7f612f4c2185ae1c62a08d32b72f8aa0d
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: daa96b604d5ad48a9de49dd24dc38eab79de9c9b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611823"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898211"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10611823"
 
 
 
-# Acessar servidores locais   
+# Acessar Servidores Locais   
 
 
 

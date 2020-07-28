@@ -7,13 +7,13 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684682"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898218"
 ---
 # Ferramentas de desenvolvedor do Microsoft Edge (Chromium)  
 
@@ -54,12 +54,12 @@ Se você quiser ver os logs do seu código JavaScript front-end ou executar um s
 :::image-end:::
 
 O DevTools Microsoft Edge \ (Chromium \) inclui os painéis a seguir.  
-*   Um painel de **elementos** para editar HTML e CSS, inspecionar Propriedades de acessibilidade, exibir ouvintes de eventos e definir pontos de interrupção de MUTAção dom  
-*   Um **console** para exibir e filtrar mensagens de log, inspecionar objetos JavaScript e nós dom e executar JavaScript no contexto da janela ou do quadro selecionado  
+*   Um painel de **Elementos** para editar HTML e CSS, inspecionar propriedades de acessibilidade, exibir ouvintes de eventos e definir pontos de interrupção de mutação do DOM.  
+*   Um **Console** para exibir e filtrar mensagens de log, inspecionar objetos JavaScript e nós do DOM e executar o JavaScript no contexto da janela ou quadro selecionado.  
 *   Um painel **fontes** para abrir e abrir o código, definir pontos de interrupção, depurar o código e ver o estado do seu website uma linha de JavaScript de cada vez  
-*   Um painel de **rede** para monitorar e inspecionar solicitações e respostas da rede e do cache do navegador   
-*   Um painel de **desempenho** para criar o perfil do tempo e dos recursos do sistema necessários para seu site  
-*   Um painel de **memória** para medir o uso dos recursos de memória e comparar os instantâneos de heap em diferentes Estados do tempo de execução do código  
+*   Um painel de**Rede**para monitorar e inspecionar solicitações e respostas do cache da rede e do navegador   
+*   Um painel de **Desempenho** para criar um perfil de tempo e recursos do sistema necessários para o seu site  
+*   Um painel de **Memória** para medir o uso dos recursos de memória e comparar os instantâneos da pilha em diferentes estados de tempo de execução do código  
 *   Um painel de **aplicativos** para inspecionar, modificar e depurar manifestos do aplicativo Web, trabalhos de serviço e caches de trabalho do serviço.  Você também pode inspecionar e gerenciar armazenamento, bancos de dados e caches no painel do **aplicativo** .  
 *   Um painel de **segurança** para depurar problemas de segurança e garantir que você implementou corretamente HTTPS em seu site.  O HTTPS fornece segurança crítica e integridade de dados para seu site e seus usuários que fornecem informações pessoais em seu site.  
 *   Um painel de **auditoria** \ (agora renomeou **Lighthouse**\) para executar uma auditoria de seu site.  Os resultados da auditoria ajudam você a melhorar a qualidade do seu site das seguintes maneiras.  
@@ -98,7 +98,7 @@ Esses atalhos controlam a janela principal do DevTools, funcionam em todas as fe
 
 | Ação | Windows | macOS |  
 |:--- |:--- | :--- |  
-| Mostrar/ocultar DevTools \ (abre para o último painel exibido \) | `F12` or`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Mostrar/Ocultar DevTools \(abre para o último painel exibido\) | `F12` or`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Mostrar o painel de console | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Mostrar o DevTools no **modo inspecionar elemento** que permite que você selecione um elemento no site e veja HTML e CSS no painel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Mostrar configurações | `?` or`Fn`+`F1` | `?` or`Fn`+`F1` |  
@@ -118,7 +118,7 @@ Esses atalhos controlam a janela principal do DevTools, funcionam em todas as fe
 | Reduzir | `Ctrl`+`-` | `Command`+`-` |  
 | Restaurar o nível de zoom padrão | `Ctrl`+`0` | `Command`+`0` |  
 | Executar trecho | `Ctrl`+`O`ou `Ctrl` + `P` , digite `!` seguido do nome do script e pressione `Enter` | Pressione `Command` + `O` ou `Command` + `P` , digite `!` seguido do nome do script e pressione `Enter` |  
-| Mostrar código-fonte HTML não editável em uma nova guia | `Ctrl`+`U` | N/A |  
+| Mostrar código-fonte HTML não editável em uma nova guia | `Ctrl`+`U` | N/D |  
 
 > [!NOTE]
 > Se você estiver Depurando e pausado em um ponto de interrupção, o atalho de **atualização**retomará o tempo de execução primeiro.  
@@ -143,7 +143,7 @@ Se você quiser visualizar os [recursos mais recentes que chegam ao devtools][De
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para iniciantes: introdução ao HTML e ao DOM | Documentos da Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "O que há de novo no Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "O que há de novo no Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos do Microsoft Edge"  
