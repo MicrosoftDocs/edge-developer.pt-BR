@@ -3,19 +3,22 @@ description: Saiba como a solicitação de pagamento APIenables o Microsoft Edge
 title: Guia de desenvolvimento-API de solicitação de pagamento
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Edge, desenvolvimento da Web, HTML, CSS, JavaScript, desenvolvedor
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10562544"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902861"
 ---
-# API de solicitação de pagamento
+# API de solicitação de pagamento (EdgeHTML)
+
+> [!NOTE]
+> Este artigo descreve o fluxo de trabalho com suporte na [versão herdada do Microsoft Edge][MicrosoftSupport44533505].  O Microsoft Edge \ (Chromium \) dá suporte à API de solicitação de pagamento com uma implementação diferente com base no projeto Chromium.  
 
 As vendas de comércio eletrônico continuam crescendo em um ritmo rápido. De acordo com o [eMarketer](https://www.emarketer.com/), por 2018, as vendas digitais são previstas para aumentar em 23% dos níveis medidos em 2013.  Embora os consumidores e as empresas aproveitem a praticidade das vendas de comércio eletrônico, ainda restam desafios.  Hoje, cada proprietário de site de comércio eletrônico precisa investir tempo para desenvolver fluxos de check-out e regras de validação de alta qualidade.  Os consumidores precisam navegar por fluxos de check-out diferentes e digitar novamente as informações de pagamento e remessa em todos os sites onde elas fazem compras.  Isso pode ser demorado e frustrante para os consumidores, que levam a uma taxa alta de abandono do carrinho de compras e das vendas reduzidas para comerciantes. Os comerciantes [estimarem](http://baymard.com/lists/cart-abandonment-rate) entre 60% e 70% dos carrinhos de compras são abandonados.      
 
@@ -205,7 +208,13 @@ var options = {
 ```
 
 ## Referência da API
-[API de solicitação de pagamento](https://msdn.microsoft.com/library/mt790447)
+[API da Solicitação de Pagamento](https://msdn.microsoft.com/library/mt790447)
 
 ## Especificada
-[API de solicitação de pagamento](https://w3.org/TR/payment-request/)
+[API da Solicitação de Pagamento](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "O que é o Microsoft Edge herdado?"  

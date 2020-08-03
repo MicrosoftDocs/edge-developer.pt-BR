@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 6b3e1c06d6b8ed79054c28df483fcca93e5751d6
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866040"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902848"
 ---
 # Recursos experimentais  
 
@@ -25,9 +25,9 @@ Embora os recursos experimentais estejam disponíveis em todos os canais do Micr
 Use as etapas a seguir para ativar \ (ou desligado \) recursos experimentais no Microsoft Edge.  
 
 1.  [Abra o devtools][DevtoolsOpen].  
-     *   Pressione `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+     *   Selecione `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Abra o painel [configurações][DevToolsCustomizeSettings] .  
-    *   Pressione `Shift` + `?` .  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+    *   Selecione `Shift` + `?` .  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  No lado esquerdo do painel **configurações** , selecione a seção **experimentos** .  
     
     :::image type="complex" source="./media/experiments-devtools.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-devtools.png":::
@@ -50,18 +50,19 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 | [Habilitar novos recursos de depuração de grade CSS](#enable-new-css-grid-debugging-features) | 85 ou posterior |  
 | [Habilitar o suporte para mover as guias entre painéis](#enable-support-to-move-tabs-between-panels) | 85 ou posterior |  
 | [Habilitar webhint](#enable-webhint) | 85 ou posterior | 
+| [Habilitar console de rede](#enable-network-console) | 85 ou posterior |
 
 ### Habilitar a guia Configurações de atalhos de teclado personalizados
 
 Fornece uma nova página **atalhos** nas [configurações do devtools][DevToolsCustomizeSettings] que habilita os [atalhos de teclado][DevToolsShortcuts] correspondentes no [código][VisualstudioCode]do devtools para o vs.  
 
-Depois de habilitar este experimento, abra [as configurações do devtools][DevToolsCustomizeSettings] novamente pressionando `Shift` + `?` .  Navegue até a página novos **atalhos** .  Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código VS.  
+Depois de habilitar o experimento, abra [as configurações do devtools][DevToolsCustomizeSettings] novamente usando selecionar `Shift` + `?` .  Navegue até a página novos **atalhos** .  Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código VS.  
 
 :::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Corresponder os atalhos de teclado no DevTools código do VS" lightbox="./media/experiments-keyboard-shortcut.png":::
    Corresponder os atalhos de teclado no DevTools código do VS
 :::image-end:::  
 
-Por exemplo, no Windows, o atalho de teclado para pausar ou continuar a execução de um script em um [código vs][VisualstudioCodeShortcutsKeyboardWindows] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools está, `F8` mas com a predefinição de **código do Visual Studio** , esse atalho também é `F5` .  
+Por exemplo, no Windows, o atalho de teclado para pausar ou continuar a execução de um script em um [código vs][VisualstudioCodeShortcutsKeyboardWindows] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools é `F8` .  Com a predefinição de **código do Visual Studio** , o atalho também é `F5` .  
 
 ### Habilitar novos recursos de depuração de grade CSS  
 
@@ -75,7 +76,7 @@ Aprimora as visualizações na página quando você depura sites que têm layout
 
 ### Habilitar o suporte para mover as guias entre painéis  
 
-Normalmente, ferramentas como **elementos** e **rede** só podem ser abertas no painel main \ (Top \) do devtools.  Da mesma forma, ferramentas como **modo de exibição 3D** e **problemas** só podem ser abertos no painel gaveta \ (inferior \) do devtools.  Quando este experimento estiver selecionado, você poderá mover ferramentas entre os painéis superior e inferior passando o mouse sobre a guia, abrindo o menu contextual \ (clique com o botão direito do mouse \) e selecionando **mover para o início** ou **mover para o fim**.   Este experimento permite que você personalize o layout do DevTools.  Para mostrar ou ocultar o painel inferior, pressione `Escape` .  
+Normalmente, ferramentas como **elementos** e **rede** só podem ser abertas no painel main \ (Top \) do devtools.  Da mesma forma, ferramentas como **modo de exibição 3D** e **problemas** só podem ser abertos no painel gaveta \ (inferior \) do devtools.  Ao escolher o experimento, você pode mover ferramentas entre os painéis superior e inferior passando o mouse sobre a guia, abrindo o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para o início** ou **mover para o fim**.   Este experimento permite que você personalize o layout do DevTools.  Para mostrar ou ocultar o painel inferior, selecione `Escape` .  
 
 :::image type="complex" source="./media/experiments-move-panels.png" alt-text="Mover guias entre painéis" lightbox="./media/experiments-move-panels.png":::
    Mover guias entre painéis  
@@ -85,13 +86,30 @@ Normalmente, ferramentas como **elementos** e **rede** só podem ser abertas no 
 
 ### Habilitar webhint  
 
-[webhint][WebhintMain] é uma ferramenta de código-fonte aberto que fornece comentários em tempo real sobre a acessibilidade, a compatibilidade entre navegadores, a segurança, o desempenho, a PWAs e outras questões de desenvolvimento da Web comuns dos sites.  Este experimento traz o comentário webhint para DevTools no painel [problemas][DevtoolsIssues] .  Você pode selecionar o problema para ver a documentação sobre como corrigir o problema e uma lista dos recursos afetados em seu site.  Selecione um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
+[webhint][WebhintMain] é uma ferramenta de código-fonte aberto que fornece comentários em tempo real sobre a acessibilidade, a compatibilidade entre navegadores, a segurança, o desempenho, a PWAs e outras questões de desenvolvimento da Web comuns dos sites.  O experimento da [webhint][WebhintMain] traz o comentário webhint para devtools no painel [problemas][DevtoolsIssues] .  Você pode selecionar o problema para ver a documentação sobre como corrigir o problema e uma lista dos recursos afetados em seu site.  Selecione um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="Comentários da webhint no painel problemas" lightbox="./media/experiments-webhint.png":::
    Comentários da webhint no painel problemas  
 :::image-end:::      
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
+
+### Habilitar console de rede
+
+**Console de rede** é o título de trabalho de um experimento para fazer solicitações de rede sintéticas por http.  Você pode usar o experimento do **console de rede** para enviar solicitações de API da Web.  
+
+Depois de habilitar o experimento, certifique-se de reiniciar o DevTools. Para usar o console de rede:
+1.  Abra o painel **rede** .
+1.  Localize a solicitação de rede que você deseja alterar e envie novamente.
+1.  Abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **Editar e reproduzir**. 
+1.  Quando o **console de rede** for aberto, edite as informações de solicitação de rede.
+1.  Selecione **Enviar**.  
+
+:::image type="complex" source="./media/network-network-console.png" alt-text="Console de rede na gaveta do console" lightbox="./media/network-network-console.png":::
+Console de rede na gaveta do console
+:::image-end::: 
+
+<!--Available in Microsoft Edge version 85 and later.  --> 
 
 ## Recursos experimentais anteriores  
 

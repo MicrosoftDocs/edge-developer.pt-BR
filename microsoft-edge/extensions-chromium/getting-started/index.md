@@ -3,22 +3,22 @@ description: Saiba o que é uma extensão Chromium e crie progressivamente uma e
 title: Introdução às extensões do Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: Edge-Chromium, desenvolvimento da Web, HTML, CSS, JavaScript, Developer, extensões
-ms.openlocfilehash: a271514f39ed8bbe379116c33e23c973d3eb6adb
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561308"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902833"
 ---
 # Introdução às extensões do Microsoft Edge \ (Chromium \)  
 
 Se quiser saltar diretamente para criar sua primeira extensão, vá para a parte 1 da construção de uma imagem da NASA da extensão do dia.  
 
-Se você não estiver familiarizado com os conceitos e a arquitetura da extensão, continue a ler e saiba tudo sobre quais extensões estão.  Essas informações ajudam você a criar extensões muito mais fáceis, pois você compreende as motivações e a arquitetura por trás delas.  
+Se você não estiver familiarizado com os conceitos e a arquitetura da extensão, continue a ler e saiba tudo sobre quais extensões estão.  Essas informações ajudam você a criar extensões muito mais facilmente, pois você compreende as motivações e a arquitetura por trás delas.  
 
 ## Criar uma imagem da NASA da extensão do dia  
 
@@ -51,7 +51,7 @@ Cada guia basicamente usa a URL \ (também conhecida como o localizador de recur
 
 ### Todas as comunicações de cada guia são para servidores remotos  
 
-Entender que cada guia é executada em um ambiente isolado significa que essas guias são isoladas uma da outra, mas não a Internet mais recente.  Geralmente, essas guias, que executam JavaScript, são uma linguagem de programação, comunicam-se de volta para o servidor, que deve ser pensada como o servidor de origem dessa primeira solicitação que foi inserida na barra de URL na parte superior da guia do navegador.  
+Entender que cada guia é executada em um ambiente isolado significa que essas guias são isoladas uma da outra, mas não a Internet mais recente.  Geralmente, essas guias, que executam JavaScript como a linguagem de programação definida, se comunicam novamente ao servidor, que deve ser pensada como o servidor de origem dessa primeira solicitação que foi inserida na barra de URL na parte superior da guia do navegador.  
 
 ## O modelo de extensão transforma tudo de cabeça para baixo  
 
@@ -71,7 +71,7 @@ Esse arquivo zip inclui HTML, CSS, JavaScript, imagens e todos os ativos necess�
 
 ### Iniciando o servidor de extensão  
 
-Quando você implanta em um servidor Web, esse servidor Web, seja o Apache, o IIS, o NGINX ou qualquer outro, contém seu pacote da Web.  Quando um navegador navega para uma URL em um servidor, o `index.html` arquivo no servidor Web é baixado.  O navegador navegou usando certificados, arquivos de configuração e muito mais.  O `index.html` arquivo armazenado em um local especial no servidor Web.   Como a extensão faz a mesma coisa?  Em especial, como as páginas da guia do seu navegador podem acessar este arquivo zip \ (sua extensão \)?  Isso é o que o tempo de execução de extensão faz para você.  
+Quando você implanta em um servidor Web, esse servidor Web, seja o Apache, o IIS, o NGINX ou qualquer outro, contém seu pacote da Web.  Quando um navegador navega para uma URL em um servidor, o `index.html` arquivo no servidor Web é baixado.  O navegador navegou usando certificados, arquivos de configuração e muito mais.  O `index.html` arquivo está armazenado em um local especial no servidor Web.   Como a extensão faz a mesma coisa?  Em particular, como a página da guia do seu navegador pode acessar este arquivo zip \ (sua extensão \)?  Isso é o que o tempo de execução de extensão faz para você.  
 
 A extensão serve para os arquivos a partir da URL \ (Uniform Resource Locator \) no nome `extension://{some-long-unique-identifier}/index.html` .  O nome que coloquei em colchetes `{some-long-unique-identifier}` é um identificador exclusivo atribuído à extensão instalada.  Isso significa que, se você tiver 10 ramais exclusivos instaladas em seu navegador, cada extensão tem um identificador exclusivo que aponta para o arquivo zip \ (ou pacote de extensão \) instalado dentro do seu navegador.  
 
@@ -81,7 +81,7 @@ A extensão serve para os arquivos a partir da URL \ (Uniform Resource Locator \
 
 ### Extensões gerenciar e se comunicar com guias e a barra de ferramentas do navegador  
 
-As extensões interagem com a barra de ferramentas navegadores, cada uma pode gerenciar todas as outras páginas da guia em execução de maneira segura, além de manipular o DOM de todas essas páginas da guia.  Integrado ao navegador Chromium é uma API de mensagens que permite comunicações entre as extensões e as páginas da guia para permitir que isso aconteça normalmente.  Essa API, também conhecida como a API de extensões fornece vários recursos, incluindo gerenciamento de notificações, gerenciamento de armazenamento e muito mais.  
+As extensões interagem com a barra de ferramentas do navegador, cada uma é capaz de gerenciar todas as outras páginas da guia em execução de maneira segura, além de manipular o DOM de todas essas páginas da guia.  Integrado ao navegador Chromium é uma API de mensagens que permite comunicações entre as extensões e as páginas da guia para permitir que isso aconteça normalmente.  Essa API, também conhecida como a API de extensões fornece vários recursos, incluindo gerenciamento de notificações, gerenciamento de armazenamento e muito mais.  
 
 Da mesma forma que os servidores Web, as extensões podem executar continuamente \ (ou aguardando notificações \) o tempo que o navegador está executando.  Você pode pensar em uma extensão como um orquestrador para o navegador.  Novamente, a extensão é executada completamente isolada das páginas da guia, mas por meio da API de extensões e as permissões de consentimento concedidas à extensão, cada extensão é capaz de controlar virtualmente todas as páginas da guia e de todas as páginas em execução no navegador.  
 
