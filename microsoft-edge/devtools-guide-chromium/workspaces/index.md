@@ -2,16 +2,16 @@
 title: Editar arquivos com espaços de trabalho
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 612e85b8b00a78a40e53ac5c33d187fdae174024
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601843"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926506"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10601843"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# Editar arquivos com espaços de trabalho   
-
-
+# Editar arquivos com espaços de trabalho  
 
 > [!NOTE]
 > O objetivo deste tutorial é fornecer uma prática prática para configurar e usar espaços de trabalho, para que você possa usar os espaços de trabalho em seus próprios projetos.  Você pode salvar as alterações no código-fonte em seu computador local, que você fez no DevTools depois de habilitar os espaços de trabalho.  
@@ -46,7 +38,7 @@ ms.locfileid: "10601843"
 > *   [Usar o DevTools para fazer alterações básicas em CSS][DevToolsCssIndex]  
 > *   [Executar um servidor Web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## Visão geral   
+## Visão geral  
 
 Os espaços de trabalho permitem salvar uma alteração feita no devtools em uma cópia local do mesmo arquivo em seu computador.  Por exemplo, suponha que:  
 
@@ -56,40 +48,41 @@ Os espaços de trabalho permitem salvar uma alteração feita no devtools em uma
 
 Com os espaços de trabalho habilitados, as alterações de CSS feitas em DevTools são salvas no código-fonte na área de trabalho.  
 
-## Limitações   
+## Limitações  
 
 Se você estiver usando uma estrutura moderna, ele provavelmente transforma o código-fonte de um formato fácil de manter em um formato otimizado para ser executado o mais rápido possível.  
-Em geral, os espaços de trabalho são capazes de mapear o código otimizado de volta ao código-fonte original com a ajuda dos [mapas de origem][TreehouseBlogSourceMaps].  Mas há uma grande quantidade de variações entre estruturas sobre como elas usam mapas de origem.  Devtools simplesmente dá suporte a todas as variações.  
+Em geral, os espaços de trabalho são capazes de mapear o código otimizado de volta ao código-fonte original com a ajuda dos [mapas de origem][TreehouseBlogSourceMaps].  Mas há uma grande quantidade de variações entre estruturas sobre como elas usam mapas de origem.  Devtools simplesmente não dá suporte a todas as variações.  
 
 Não se sabe que os espaços de trabalho não funcionam com esses frameworks:  
 
 *   Criar aplicativo reagir  
-
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
-
-## Recurso relacionado: substituições locais   
+    
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+    
+## Recurso relacionado: substituições locais  
 
 **Substituições locais** é outro recurso de devtools semelhante a espaços de trabalho.  Use substituições locais quando você deseja experimentar alterações em uma página, e você precisa ver essas alterações nas cargas da página, mas não importa o mapeamento das alterações para o código-fonte da página.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Etapa 1: configurar   
+## Etapa 1: configurar  
 
 Preencha este tutorial para obter experiência prática com espaços de trabalho.  
 
-### Configurar a demonstração   
+### Configurar a demonstração  
 
 1.  [Abra a demonstração][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    > ##### Figura 1  
-    > Um projeto de falha em ![ um projeto de falha][ImageGlitchProject]  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       Um projeto de falha  
+    :::image-end:::  
     
-    <!--1.  Click the project name.  -->
+    <!--1.  Choose the project name.  -->
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
-    > ##### Figure 2  
-    > The Download Project button  
-    > ![The Download Project button][ImageDownloadProjectButton]  
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+       The Download Project button  
+    :::image-end:::  
     -->
     <!--1.  Close the tab.  -->
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
@@ -97,92 +90,96 @@ Preencha este tutorial para obter experiência prática com espaços de trabalho
 1.  Crie um `app` diretório na área de trabalho.  Salvar cópias dos arquivos no `workspaces-demo` diretório.  Para o restante deste tutorial, este diretório é conhecido como `~/Desktop/app` .  
 1.  Inicie um servidor Web local `~/Desktop/app` .  Veja a seguir um exemplo de código para inicialização `SimpleHTTPServer` , mas você pode usar qualquer servidor de sua preferência.  
     
-    ```bash
-    cd ~/Desktop/app
-    python -m SimpleHTTPServer # Python 2
-    ```  
-    
-    ```bash
-    cd ~/Desktop/app
-    python -m http.server # Python 3
-    ```  
+    :::row:::
+       :::column span="":::
+          ```bash
+          cd ~/Desktop/app
+          python -m SimpleHTTPServer # Python 2
+          ```  
+       :::column-end:::
+       :::column span="":::
+          ```bash
+          cd ~/Desktop/app
+          python -m http.server # Python 3
+          ```  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Abra uma guia no Microsoft Edge e vá para a versão hospedada localmente do site.  Você deve ser capaz de acessá-lo usando uma URL como `localhost:8080` ou `http://0.0.0.0:8080` .  O [número de porta][WikiPortURLs] exato pode ser diferente.  
     
-    > ##### Figura 2  
-    > A demonstração  
-    > ! [A demonstração] [ImageDemo]  
-
-### Configurar o DevTools   
-
-1.  Pressione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \) para abrir o painel do **console** do devtools.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="A demonstração" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+       A demonstração  
+    :::image-end:::  
     
-    > ##### Figura 3  
-    > Painel do **console**  
-    > ! [O painel do console] [ImageConsolePanel]  
+### Configurar o DevTools  
 
-1.  Clique na guia **fontes** .  
-1.  Clique na guia **FileSystem** .  
+1.  Selecione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \) para abrir o painel do **console** do devtools.  
     
-    > ##### Figura 4  
-    > A guia **sistema de arquivos**  
-    > ! [Guia sistema de arquivos] [ImageFilesystem]  
-
-1.  Clique em **Adicionar pasta ao espaço de trabalho**.  
-1.  Selecione `~/Desktop/app` .  
-1.  Clique em **permitir** para conceder ao devtools permissão para ler e gravar no diretório.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Painel do console" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+       Painel do **console**  
+    :::image-end:::  
+    
+1.  Escolha a guia **fontes** .  
+1.  Escolha a guia **sistema de arquivos** .  
+    
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="A guia sistema de arquivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       A guia **sistema de arquivos**  
+    :::image-end:::  
+    
+1.  Escolha **Adicionar pasta ao espaço de trabalho**.  
+1.  Enter `~/Desktop/app` .  
+1.  Escolha **permitir para que** o devtools Conceda permissão para ler e gravar no diretório.  
     Na guia **sistema de sistema** , agora há um ponto verde ao lado de `index.html` , `script.js` e `styles.css` .  Esses pontos verdes significam que o DevTools estabeleceu um mapeamento entre os recursos de rede da página e os arquivos `~/Desktop/app` .  
     
-    > ##### Figura 5  
-    > A guia **sistema de arquivos** agora mostra um mapeamento entre os arquivos locais e os de rede  
-    > ! [A guia sistema de arquivos agora mostra um mapeamento entre os arquivos locais e os de rede] [ImageMapping]  
-
-## Etapa 2: salvar uma alteração de CSS em disco   
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="A guia sistema de arquivos agora mostra um mapeamento entre os arquivos locais e os de rede" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       A guia **sistema de arquivos** agora mostra um mapeamento entre os arquivos locais e os de rede  
+    :::image-end:::  
+    
+## Etapa 2: salvar uma alteração de CSS em disco  
 
 1.  Abrir `styles.css` .  
     
     > [!NOTE]
-    >A `color` propriedade dos `h1` elementos é definida como `fuchsia` .
+    > A `color` propriedade dos `h1` elementos é definida como `fuchsia` .  
     
-    > ##### Figura 6  
-    > Exibir `styles.css` em um editor de texto  
-    > ! [Exibindo estilos. CSS em um editor de texto] [ImageStylesFuchsia]  
-
-
-1.  Clique na guia **elementos** .  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Visualização de estilos. CSS em um editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+       Exibir `styles.css` em um editor de texto  
+    :::image-end:::  
+    
+1.  Escolha a guia **elementos** .  
 1.  Altere o valor da `color` Propriedade do `<h1>` elemento para sua cor favorita.  
-    Lembre-se de que você precisa clicar no `<h1>` elemento na **árvore DOM** para ver as regras CSS aplicadas a ele no painel **estilos** .  O ponto verde ao lado de `styles.css:1` significa que qualquer alteração feita está mapeada `~/Desktop/app/styles.css` .  
+    Lembre-se de que você precisa escolher o `<h1>` elemento na **árvore DOM** para ver as regras CSS aplicadas a ele no painel **estilos** .  O ponto verde ao lado de `styles.css:1` significa que qualquer alteração feita está mapeada `~/Desktop/app/styles.css` .  
     
-    > ##### Figura 7  
-    > O indicador verde para o qual o arquivo está vinculado  
-    > ! [O indicador verde no qual o arquivo está vinculado] [ImageStylesGreen]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="O indicador verde para o qual o arquivo está vinculado" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       O indicador verde para o qual o arquivo está vinculado  
+    :::image-end:::  
+    
 1.  Abra `styles.css` em um editor de texto novamente.  A `color` Propriedade agora está definida como sua cor favorita.  
 1.  Recarregar a página.  A cor do `<h1>` elemento ainda está definida para sua cor favorita.  Isso funciona porque quando você fez a alteração, o DevTools salvou a alteração em disco.  Depois, quando você recarregar a página, o servidor local atuou na cópia modificada do disco.  
-
-## Etapa 3: salvar uma alteração de HTML em disco   
+    
+## Etapa 3: salvar uma alteração de HTML em disco  
 
 ### Alterar o HTML do painel elementos  
 
 Você pode fazer alterações no HTML a partir do painel de elementos, mas as alterações na árvore DOM não são salvas em disco e só afetam a sessão atual do navegador.  
 A árvore DOM não é HTML.  
 
-<!--### Try changing HTML from the Elements panel   
+<!--### Try changing HTML from the Elements panel  
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
-1.  Click the **Elements** tab.  
-1.  Double click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose the **Elements** tab.  
+1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    > ##### Old Figure 9  
-    > Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
-    > ![Attempting to change HTML from the DOM Tree of the Elements panel][ImageElementsCake]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image-end:::  
+    
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
 1.  Reload the page.  The page reverts to its original title.  
-
-#### Optional: Why it is not working   
+    
+#### Optional: Why it is not working  
 
 > [!NOTE]
 > This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
@@ -195,96 +192,78 @@ A árvore DOM não é HTML.
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
--->
-### Alterar o HTML no painel fontes   
+-->  
+
+### Alterar o HTML no painel fontes  
 
 Se você quiser salvar uma alteração no HTML da página, use o painel **fontes** .  
 
-1.  Clique na guia **fontes** .  
-1.  Clique na guia **página** .  
-1.  Clique em **(índice)**.  O HTML da página é aberto.  
-1.  Substituir `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Veja a [Figura 8](#figure-8).  
-1.  Pressione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
+1.  Escolha a guia **fontes** .  
+1.  Escolha a guia **página** .  
+1.  Escolha **(índice)**.  O HTML da página é aberto.  
+1.  Substituir `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Veja a figura a seguir.  
+1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
 1.  Recarregar a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
     
-    > ##### Figura 8  
-    > A linha 12 foi definida como `I ❤️  Cake`  
-    > ! [Alterando HTML no painel fontes] [ImageSourcesCakeHTML]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterando o HTML no painel fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       A linha 12 foi definida como `I ❤️  Cake`  
+    :::image-end:::  
+    
 1.  Abrir `~/Desktop/app/index.html` .  O `<h1>` elemento contém o novo texto.  
-
-## Etapa 4: salvar uma alteração de JavaScript em disco   
+    
+## Etapa 4: salvar uma alteração de JavaScript em disco  
 
 O painel **fontes** também é o local para fazer alterações em JavaScript.  Mas, às vezes, você precisa acessar outros painéis, como o painel **elementos** ou o painel do **console** , ao fazer alterações em seu site.  Há uma maneira de ter o painel **fontes** aberto junto com outros painéis.  
 
-1.  Clique na guia **elementos** .  
-1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  O **menu de comando** é aberto.  
+1.  Escolha a guia **elementos** .  
+1.  Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  O **menu de comando** é aberto.  
 1.  Digite `QS` e selecione **Mostrar fonte rápida**.  Na parte inferior da janela do DevTools, agora há uma guia **fonte rápida** .  A guia exibe o conteúdo de `index.html` , que é o último arquivo editado no painel **fontes** .  A guia **fonte rápida** oferece o editor do painel **fontes** , para que você possa editar arquivos enquanto tiver outros painéis abertos.  
     
-    > ##### Figura 9  
-    > Abrir a guia **fonte rápida** usando o **menu de comandos**  
-    > ! [Abrindo a guia fonte rápida usando o menu de comando] [ImageCommandMenuQuickSource]  
-
-1.  Pressione `Control` + `P` \ (Windows \) ou `Command` + `P` \ (MacOS \) para abrir a caixa de diálogo **Abrir arquivo** .  Veja a [Figura 10](#figure-10).  
-1.  Digite `script` e, em seguida, selecione **app/script. js**.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrindo a guia fonte rápida usando o menu de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Abrir a guia **fonte rápida** usando o **menu de comandos**  
+    :::image-end:::  
     
-    > ##### Figura 10  
-    > Abrindo `script.js` usando a caixa de diálogo **Abrir arquivo**  
-    > ! [Abrindo script. js usando a caixa de diálogo abrir arquivo] [ImageOpenFileDialog]  
+1.  Selecione `Control` + `P` \ (Windows \) ou `Command` + `P` \ (MacOS \) para abrir a caixa de diálogo **Abrir arquivo** .  Veja a figura a seguir.  
+1.  Digite `script` e, em seguida, selecione **app/script.js**.  
+    
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abrir script.js usando a caixa de diálogo abrir arquivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       Abrindo `script.js` usando a caixa de diálogo **Abrir arquivo**  
+    :::image-end:::  
     
     > [!NOTE]
     > O `Save Changes To Disk With Workspaces` link na demonstração tem o estilo regular.  
     
-1.  Adicione o código a seguir na parte inferior do **script. js** usando a guia **fonte rápida** .  
+1.  Adicione o código a seguir na parte inferior de **script.js** usando a guia **fonte rápida** .  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Pressione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
+1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
 1.  Recarregar a página.  
     
     > [!NOTE]
-    > O link na página agora está em itálico.
+    > O link na página agora está em itálico.  
     
-    > ##### Figura 11  
-    > O link na página agora está em itálico  
-    > ! [O link na página agora está em itálico] [ImageScriptItalic]  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="O link na página agora está em itálico" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       O link na página agora está em itálico  
+    :::image-end:::  
+    
+## Próximas etapas  
 
-## Próximas etapas   
+Use o que você aprendeu neste tutorial para configurar espaços de trabalho em seu próprio projeto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
-Use o que você aprendeu neste tutorial para configurar espaços de trabalho em seu próprio projeto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+<!--  
+If you have more feedback on these topics or anything else, please use any of the channels below:  
 
- <!--  -->
-
-
-
-<!-- 
-If you have more feedback on these topics or anything else, please use any of the channels below:
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->
-
-<!-- image links -->  
-
-[ImageGlitchProject]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-workspaces-demo-source.msft.png "Figura 1: um projeto de falha com um nome gerado aleatoriamente"  
-<!--[ImageDownloadProjectButton]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
-[ImageDemo]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo.msft.png "Figura 2: a demonstração"  
-[ImageConsolePanel]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-console.msft.png "Figura 3: o painel do console"  
-[ImageFilesystem]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-sources-FileSystem.msft.png "Figura 4: a guia Filesystem"  
-[ImageMapping]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-sources-FileSystem-Folder.msft.png "Figura 5: a guia Filesystem agora mostra um mapeamento entre os arquivos locais e os de rede"  
-[ImageStylesFuchsia]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-sources-FileSystem-CSS.msft.png "Figura 6: exibindo estilos. CSS em um editor de texto"  
-[ImageStylesGreen]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-Elements-Styles-CSS.msft.png "Figura 7: o indicador verde no qual o arquivo está vinculado"  
-[ImageSourcesCakeHTML]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-sources-Page-H1.msft.png "Figura 8: alterando o HTML no painel fontes"  
-<!--[ImageElementsCake]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
-[ImageCommandMenuQuickSource]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-Search-show-Quick-Source.msft.png "Figura 9: abrindo a guia fonte rápida usando o menu de comando"  
-[ImageOpenFileDialog]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-Search-script.msft.png "Figura 10: abrindo script. js usando a caixa de diálogo abrir arquivo"  
-[ImageScriptItalic]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Workspaces-Workspaces-demo-Elements-Styles-Quick-Source-script.msft.png "Figura 11: o link na página agora está em itálico"  
+-->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Introdução à exibição e alteração de CSS"  
+[DevToolsCssIndex]: ../css/index.md# "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 

@@ -3,17 +3,17 @@ description: Saiba como depurar controles WebView2.
 title: Depurando WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: ad6f334e5796d2f22146f2853ae1ef1d854e329c
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 6b2cc65e5cb368c29efec2eb3638f0c1772000d9
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894316"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926474"
 ---
 # Como depurar com WebView2  
 
@@ -83,7 +83,7 @@ Você pode usar o código do Visual Studio para depurar scripts executados em co
 
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
-Ajude a criar uma experiência de WebView2 mais rica compartilhando seus comentários.  Acesse o [repositório de comentários][GithubMicrosoftedgeWebviewfeedbackMain] para enviar solicitações de recursos ou relatórios de erros.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!--## Debugging  
 

@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Mi
 title: Controle WebView2 do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888595"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926467"
 ---
 # Introdução ao Microsoft Edge WebView2 (visualização)  
 
@@ -103,7 +103,7 @@ Uma visualização do desenvolvedor está disponível nos seguintes ambientes de
 *   Win32 C/C++  
 *   .NET Framework 4.6.2 ou posterior  
 *   .NET Core 3,0 ou posterior  
-*   [WinUI 3,0][UwpToolkitsWinui3]  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
 
 Você poderá executar aplicativos do WebView2 nas seguintes versões do Windows.  
 
@@ -132,12 +132,12 @@ Para obter mais informações sobre como criar e implantar aplicativos do WebVie
 *   [Como depurar com WebView2][Webview2HowtoDebug]  
 *   [Automatizando e testando o WebView2 com o Microsoft Edge driver][Webview2HowtoWebdriver]  
 
-## Entrar em contato com a equipe do WebView2  
+## Entrar em contato com a equipe do Microsoft Edge WebView  
 
-Ajude a criar uma experiência de WebView2 mais rica compartilhando seus comentários.  Para enviar solicitações de recursos ou relatórios de erros, confira [repositório de feedback da WebView][GithubMicrosoftedgeWebviewfeddback] .  Também é um bom lugar para procurar problemas conhecidos.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> Durante a visualização, coletamos dados para ajudar a criar um melhor produto.  Para desativar a coleta de dados WebView2, acesse `edge://settings/privacy` e desative a coleta de dados do navegador.  
+> Durante a visualização, os dados coletados ajudam a criar um produto melhor.  Para desativar a coleta de dados WebView2, acesse `edge://settings/privacy` e desative a coleta de dados do navegador.  
 
 <!-- links -->  
 

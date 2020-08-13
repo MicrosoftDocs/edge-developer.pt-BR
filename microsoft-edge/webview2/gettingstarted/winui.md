@@ -3,17 +3,17 @@ description: Hospedar o conteúdo da Web em seu aplicativo do WinUI com o contro
 title: Microsoft Edge WebView2 para aplicativos do WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos do WinUI, WinUI, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895508"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926488"
 ---
 # Introdução ao WebView2 no WinUI3 (visualização)  
 
@@ -268,7 +268,7 @@ Para obter mais informações sobre os recursos do WebView2, consulte os [guias 
 
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
-Ajude a criar uma experiência de WebView2 mais rica compartilhando seus comentários.  Visite o [repositório de comentários][GithubMicrosoftedgeWebviewfeedback] da WebView da Microsoft Edge para enviar solicitações de recursos ou relatórios de erros ou para pesquisar problemas conhecidos.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
