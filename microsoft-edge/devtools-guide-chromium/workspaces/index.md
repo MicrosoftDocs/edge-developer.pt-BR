@@ -2,16 +2,16 @@
 title: Editar arquivos com espaços de trabalho
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926506"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931228"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,15 +32,16 @@ ms.locfileid: "10926506"
 > [!NOTE]
 > O objetivo deste tutorial é fornecer uma prática prática para configurar e usar espaços de trabalho, para que você possa usar os espaços de trabalho em seus próprios projetos.  Você pode salvar as alterações no código-fonte em seu computador local, que você fez no DevTools depois de habilitar os espaços de trabalho.  
 
-> [!CAUTION]
-> **Pré-requisitos**: antes de iniciar este tutorial, você deve saber como:  
+> [!IMPORTANT]
+> **Pré-requisitos**: antes de iniciar este tutorial, você deve saber como executar as seguintes ações.  
+> 
 > *   [Usar HTML, CSS e JavaScript para criar uma página da Web][MDNWebGettingStarted]  
 > *   [Usar o DevTools para fazer alterações básicas em CSS][DevToolsCssIndex]  
 > *   [Executar um servidor Web HTTP local][MDNSimpleLocalHTTPServer]  
 
 ## Visão geral  
 
-Os espaços de trabalho permitem salvar uma alteração feita no devtools em uma cópia local do mesmo arquivo em seu computador.  Por exemplo, suponha que:  
+Os espaços de trabalho permitem salvar uma alteração feita no devtools em uma cópia local do mesmo arquivo em seu computador.  Para este tutorial, você deve ter as seguintes configurações em seu computador.  
 
 *   Você tem o código-fonte do seu site na área de trabalho.  
 *   Você está executando um servidor Web local do diretório de código-fonte, para que o site possa ser acessado em `localhost:8080` .  
@@ -51,9 +52,10 @@ Com os espaços de trabalho habilitados, as alterações de CSS feitas em DevToo
 ## Limitações  
 
 Se você estiver usando uma estrutura moderna, ele provavelmente transforma o código-fonte de um formato fácil de manter em um formato otimizado para ser executado o mais rápido possível.  
-Em geral, os espaços de trabalho são capazes de mapear o código otimizado de volta ao código-fonte original com a ajuda dos [mapas de origem][TreehouseBlogSourceMaps].  Mas há uma grande quantidade de variações entre estruturas sobre como elas usam mapas de origem.  Devtools simplesmente não dá suporte a todas as variações.  
 
-Não se sabe que os espaços de trabalho não funcionam com esses frameworks:  
+Em geral, os espaços de trabalho são capazes de mapear o código otimizado de volta ao código-fonte original com a ajuda dos [mapas de origem][TreehouseBlogSourceMaps].  Mas há uma grande quantidade de variações entre estruturas sobre como cada uma usa mapas de origem.  Devtools simplesmente dá suporte a todas as variações.  
+
+Os espaços de trabalho são conhecidos por não trabalhar com a estrutura a seguir.  
 
 *   Criar aplicativo reagir  
     
@@ -61,13 +63,13 @@ Não se sabe que os espaços de trabalho não funcionam com esses frameworks:
     
 ## Recurso relacionado: substituições locais  
 
-**Substituições locais** é outro recurso de devtools semelhante a espaços de trabalho.  Use substituições locais quando você deseja experimentar alterações em uma página, e você precisa ver essas alterações nas cargas da página, mas não importa o mapeamento das alterações para o código-fonte da página.  
+**Substituições locais** é outro recurso de devtools semelhante a espaços de trabalho.  Use substituições locais quando você deseja experimentar alterações em uma página e precisa ver as alterações nas cargas da página, mas não importa como mapear as alterações no código-fonte da página.  
 
 <!--Todo: add section when content is ready  -->  
 
 ## Etapa 1: configurar  
 
-Preencha este tutorial para obter experiência prática com espaços de trabalho.  
+Conclua as ações a seguir para obter experiência prática com espaços de trabalho.  
 
 ### Configurar a demonstração  
 
@@ -77,17 +79,18 @@ Preencha este tutorial para obter experiência prática com espaços de trabalho
        Um projeto de falha  
     :::image-end:::  
     
-    <!--1.  Choose the project name.  -->
+    <!--1.  Choose the project name.  -->  
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+
+    -->  
+    <!--1.  Close the tab.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Crie um `app` diretório na área de trabalho.  Salvar cópias dos arquivos no `workspaces-demo` diretório.  Para o restante deste tutorial, este diretório é conhecido como `~/Desktop/app` .  
+1.  Crie um `app` diretório na área de trabalho.  Salve cópias dos arquivos do `workspaces-demo` diretório para o `app` diretório.  Para o restante do tutorial, o diretório é conhecido como `~/Desktop/app` .  
 1.  Inicie um servidor Web local `~/Desktop/app` .  Veja a seguir um exemplo de código para inicialização `SimpleHTTPServer` , mas você pode usar qualquer servidor de sua preferência.  
     
     :::row:::
@@ -142,7 +145,7 @@ Preencha este tutorial para obter experiência prática com espaços de trabalho
     > [!NOTE]
     > A `color` propriedade dos `h1` elementos é definida como `fuchsia` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Visualização de estilos. CSS em um editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Exibir estilos. CSS em um editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        Exibir `styles.css` em um editor de texto  
     :::image-end:::  
     
@@ -155,13 +158,14 @@ Preencha este tutorial para obter experiência prática com espaços de trabalho
     :::image-end:::  
     
 1.  Abra `styles.css` em um editor de texto novamente.  A `color` Propriedade agora está definida como sua cor favorita.  
-1.  Recarregar a página.  A cor do `<h1>` elemento ainda está definida para sua cor favorita.  Isso funciona porque quando você fez a alteração, o DevTools salvou a alteração em disco.  Depois, quando você recarregar a página, o servidor local atuou na cópia modificada do disco.  
+1.  Atualize a página.  A cor do `<h1>` elemento ainda está definida para sua cor favorita.  A alteração em uma atualização, porque quando você fez a alteração, o DevTools salvou a alteração em disco.  E, em seguida, ao atualizar a página, o servidor local atuou na cópia modificada do disco.  
     
 ## Etapa 3: salvar uma alteração de HTML em disco  
 
 ### Alterar o HTML do painel elementos  
 
 Você pode fazer alterações no HTML a partir do painel de elementos, mas as alterações na árvore DOM não são salvas em disco e só afetam a sessão atual do navegador.  
+
 A árvore DOM não é HTML.  
 
 <!--### Try changing HTML from the Elements panel  
@@ -170,25 +174,25 @@ A árvore DOM não é HTML.
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
 1.  Choose the **Elements** tab.  
-1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
-1.  Reload the page.  The page reverts to its original title.  
+1.  Refresh the page.  The page reverts to the original title.  
     
 #### Optional: Why it is not working  
 
 > [!NOTE]
-> This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
+> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
-*   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
+*   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
+*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
@@ -203,10 +207,10 @@ Se você quiser salvar uma alteração no HTML da página, use o painel **fontes
 1.  Escolha **(índice)**.  O HTML da página é aberto.  
 1.  Substituir `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Veja a figura a seguir.  
 1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
-1.  Recarregar a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
+1.  Atualize a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterando o HTML no painel fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       A linha 12 foi definida como `I ❤️  Cake`  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterar o HTML no painel fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       A linha 12 está definida como `I ❤️  Cake`  
     :::image-end:::  
     
 1.  Abrir `~/Desktop/app/index.html` .  O `<h1>` elemento contém o novo texto.  
@@ -219,7 +223,7 @@ O painel **fontes** também é o local para fazer alterações em JavaScript.  M
 1.  Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  O **menu de comando** é aberto.  
 1.  Digite `QS` e selecione **Mostrar fonte rápida**.  Na parte inferior da janela do DevTools, agora há uma guia **fonte rápida** .  A guia exibe o conteúdo de `index.html` , que é o último arquivo editado no painel **fontes** .  A guia **fonte rápida** oferece o editor do painel **fontes** , para que você possa editar arquivos enquanto tiver outros painéis abertos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrindo a guia fonte rápida usando o menu de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrir a guia fonte rápida usando o menu de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Abrir a guia **fonte rápida** usando o **menu de comandos**  
     :::image-end:::  
     
@@ -227,7 +231,7 @@ O painel **fontes** também é o local para fazer alterações em JavaScript.  M
 1.  Digite `script` e, em seguida, selecione **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abrir script.js usando a caixa de diálogo abrir arquivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Abrindo `script.js` usando a caixa de diálogo **Abrir arquivo**  
+       Abrir `script.js` usando a caixa de diálogo **Abrir arquivo**  
     :::image-end:::  
     
     > [!NOTE]
@@ -241,7 +245,7 @@ O painel **fontes** também é o local para fazer alterações em JavaScript.  M
     ```  
     
 1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
-1.  Recarregar a página.  
+1.  Atualize a página.  
     
     > [!NOTE]
     > O link na página agora está em itálico.  
@@ -255,15 +259,15 @@ O painel **fontes** também é o local para fazer alterações em JavaScript.  M
 Use o que você aprendeu neste tutorial para configurar espaços de trabalho em seu próprio projeto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:  
+If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->  
+    -->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md# "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
+[DevToolsCssIndex]: ../css/index.md "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
