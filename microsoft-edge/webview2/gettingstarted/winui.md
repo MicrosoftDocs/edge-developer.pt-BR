@@ -3,17 +3,17 @@ description: Hospedar o conteúdo da Web em seu aplicativo do WinUI com o contro
 title: Microsoft Edge WebView2 para aplicativos do WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos do WinUI, WinUI, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
+ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926488"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934895"
 ---
 # Introdução ao WebView2 no WinUI3 (visualização)  
 
@@ -26,7 +26,7 @@ Certifique-se de instalar a seguinte lista de pré-requisitos antes de prossegui
 *   Windows 10 versão 1803 \ (Build 17134 \) ou posterior.  Para obter mais informações, consulte [Windows Update: perguntas frequentes][MicrosoftSupport12373].  
 *   [Microsoft Edge (Chromium) Canárias Channel][MicrosoftedgeinsiderDownload] no Windows 10, no Windows 8,1 ou no Windows 7.  
 *   Visual Studio 2019, versão 16,7 Preview 1.  Para obter mais informações, consulte a [biblioteca de interface do usuário do Windows 3 Preview 2 (julho de 2020)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-*   As versões [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] e [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] do .NET 5 Preview 4.  
+*   As versões [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] e [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] do .NET 5 Preview 4.  
 *   Extensão de [modelos de projetos WinUI 3][VisualstudioMarketplaceWinUiprojecttemplates] para o Visual Studio 2019.  
 Assegure-se de [habilitar o modo de desenvolvedor][WindowsUwpGetStartedEnableYourDeviceForDevelopment] para garantir que você tenha acesso a todos os recursos do Visual Studio.  
 
@@ -190,8 +190,10 @@ Os aplicativos que hospedam controles WebView2 escutam os eventos a seguir que s
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > Os redirecionamentos de HTTP geram vários `NavigationStarting` eventos.  
+
 Para obter mais informações, consulte [eventos de navegação][Webviews2ConceptsNavigationEvents].  
 
 Quando ocorrem erros, os seguintes eventos são gerados e podem navegar para uma página de erro.  
@@ -199,10 +201,8 @@ Quando ocorrem erros, os seguintes eventos são gerados e podem navegar para uma
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 Como um exemplo de como usar os eventos, registre um manipulador para `NavigationStarting` que cancele todas as solicitações que não usam https. Em `MainWindow.xaml.cs` , modifique o construtor para se registrar `EnsureHttps` e adicione a `EnsureHttps` função para que ele corresponda ao trecho de código a seguir.  
-
 
 ```csharp
 public MainWindow()
@@ -296,6 +296,6 @@ Para obter mais informações sobre os recursos do WebView2, consulte os [guias 
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Baixar dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
-[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
+[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
 [VisualstudioMarketplaceWinUiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "Modelos de projeto do WinUI 3"  
