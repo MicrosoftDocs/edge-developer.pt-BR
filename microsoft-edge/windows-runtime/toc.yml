@@ -3,18 +3,18 @@
   items:
     - name: Considerações ao usar a API do Windows Runtime
       href: considerations-when-using-the-windows-runtime-api.md
-    - name: Usando Métodos Assíncronos do Windows Runtime
+    - name: Usando métodos assíncronos do Windows Runtime
       href: using-windows-runtime-asynchronous-methods.md
       items:
-        - name: Propriedades de Erro Especiais de Métodos Assíncronos do Windows Runtime
+        - name: Propriedades especiais de erro de métodos assíncronos do Windows Runtime
           href: special-error-properties-from-asynchronous-windows-runtime-methods.md
-    - name: Lidando com de Eventos do Windows Runtime no JavaScript
+    - name: Manipulação de eventos do Windows Runtime no JavaScript
       href: handling-windows-runtime-events-in-javascript.md
-    - name: Representação JavaScript de Tipos de Windows Runtime
+    - name: Representação em JavaScript dos tipos de Windows Runtime
       href: javascript-representation-of-windows-runtime-types.md
-    - name: Representações de DateTime e TimeSpan do Windows Runtime
+    - name: Representações Windows Runtime DateTime e TimeSpan
       href: windows-runtime-datetime-and-timespan-representations.md
-    - name: Códigos de Erro para Aplicativos do Windows Runtime usando JavaScript
+    - name: Códigos de erro para aplicativos do Windows Runtime usando JavaScript
       href: error-codes-for-windows-runtime-apps-using-javascript.md
 - name: Referência (WinRT)
   items:
