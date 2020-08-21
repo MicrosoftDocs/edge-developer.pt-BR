@@ -2,16 +2,16 @@
 title: O que há de novo no DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: aa39e5d7811d4a614e055a8e0479c74278efbefd
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688175"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942184"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -270,24 +270,13 @@ Os atalhos do aplicativo ajudam os usuários a iniciar rapidamente tarefas comun
   Atalhos do aplicativo no painel **manifesto**  
 :::image-end:::  
 
-## Baixar os canais de visualização do Microsoft Edge   
+## Baixar os canais de visualização do Microsoft Edge  
 
 Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
 ## Como entrar em contato com o Microsoft Edge devtools equipe  
 
-  
-
-Para discutir os novos recursos e alterações no post ou em qualquer outro item relacionado ao DevTools:  
-
-*   Envie seus comentários usando o ícone de **comentários** no devtools  
-*   Tweet em [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Enviar uma sugestão para [a Web que][TheWebWeWant] queremos  
-*   Erros de arquivo nesta página no repositório [Edge-Developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="O ícone de comentários no Microsoft Edge DevTools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  O ícone de **comentários** no Microsoft Edge devtools  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 

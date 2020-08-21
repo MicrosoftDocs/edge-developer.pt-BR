@@ -1,7 +1,7 @@
 ---
 title: Códigos de erro para aplicativos do Windows Runtime usando JavaScript
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -36,14 +36,16 @@ caps.latest.revision: 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 7aad8577d79bc5612f526e4e2bf1ceb0f2c2929a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7779da61da9f011e55eeb496c7332e5b7cd5a023
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562523"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942154"
 ---
 # Códigos de erro para aplicativos do Windows Runtime usando JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 Veja a seguir os códigos de erro exibidos pelo console do Microsoft Visual Studio ao desenvolver aplicativos do Windows Runtime usando JavaScript.  
 
@@ -62,7 +64,7 @@ Veja a seguir os códigos de erro exibidos pelo console do Microsoft Visual Stud
 |:--- |:--- |  
 | APPHOST9610: "o aplicativo encontrou um erro ao se preparar para navegar para uma página de erro personalizada: *ErrorCode*." |  |  
 | APPHOST9611: "o aplicativo não pôde navegar para uma página de erro personalizada devido a este erro: *ErrorCode*." |  |  
-| APPHOST9613: "o aplicativo não pôde navegar para *URI* devido a este erro: *ErrorCode*." |  |  
+| APPHOST9613: "o aplicativo não pôde navegar para *URI*  devido a este erro: *ErrorCode*." |  |  
 | APPHOST9614: "um documento dentro de um iframe solicitou o modo de documento *requestedDocMode* , mas o sistema impõe o modo de *currentDocMode* doc.  O iframe usará o modo de documento *currentDocMode* . " | Para obter mais informações sobre como exibir o conteúdo remoto da Web, consulte [como vincular a páginas externas da Web][PreviousVersionsWindowsAppsHh780594].  |  
 | APPHOST9615: "o aplicativo não pode baixar o arquivo em *URI* porque ele foi invocado de forma programática fora do contexto local." | Ocorre quando o conteúdo do contexto da Web tenta baixar um arquivo programaticamente.  |  
 | APPHOST9616: "esse URI não pode usar APIs de localização geográfica.  APIs de localização geográfica podem ser invocadas apenas de um URI que faz parte do pacote ou está incluída no elemento ApplicationContentUris do manifesto. " | Para obter mais informações sobre o que é permitido no contexto da Web, consulte [recursos e restrições por contexto][PreviousVersionsWindowsAppsHh465373].  |  
@@ -79,23 +81,21 @@ Veja a seguir os códigos de erro exibidos pelo console do Microsoft Visual Stud
 
 ## Consulte também  
 
-[Usar o tempo de execução do Windows em JavaScript][WindowsRuntimeJavascript]  
-
-<!-- image links -->  
+[Usando o Tempo de Execução do Windows no JavaScript][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Usar o tempo de execução do Windows em JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Usar o tempo de execução do Windows em JavaScript | Documentos da Microsoft"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe geolocator"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe geolocator | Documentos da Microsoft"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "método addPublicLocalApplicationUri"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "método addPublicLocalApplicationUri | Documentos da Microsoft"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Como exigir uma conexão HTTPS (HTML)"  
-[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contratos e extensões do aplicativo (aplicativos do Windows Runtime)"  
-[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizando seu aplicativo (HTML)"  
-[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Recursos e restrições por contexto (HTML)"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Recursos de HTML, CSS e JavaScript e diferenças (HTML)"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Como vincular a páginas da Web externas (HTML)"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Como exigir uma conexão HTTPS (HTML) | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contratos e extensões do aplicativo (aplicativos do Windows Runtime) | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizando seu aplicativo (HTML) | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Recursos e restrições por contexto (HTML) | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Recursos de HTML, CSS e JavaScript e diferenças (HTML) | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Como vincular a páginas da Web externas (HTML) | Documentos da Microsoft"  
 
 [MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "> de<iframe: o elemento frame embutido | MDN"  

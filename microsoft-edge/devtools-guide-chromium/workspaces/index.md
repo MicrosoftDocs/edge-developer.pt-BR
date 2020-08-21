@@ -2,16 +2,16 @@
 title: Editar arquivos com espaços de trabalho
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931228"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942181"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -58,7 +58,7 @@ Em geral, os espaços de trabalho são capazes de mapear o código otimizado de 
 Os espaços de trabalho são conhecidos por não trabalhar com a estrutura a seguir.  
 
 *   Criar aplicativo reagir  
-    
+
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
 ## Recurso relacionado: substituições locais  
@@ -88,7 +88,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
 
     -->  
     <!--1.  Close the tab.  -->  
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
 1.  Crie um `app` diretório na área de trabalho.  Salve cópias dos arquivos do `workspaces-demo` diretório para o `app` diretório.  Para o restante do tutorial, o diretório é conhecido como `~/Desktop/app` .  
 1.  Inicie um servidor Web local `~/Desktop/app` .  Veja a seguir um exemplo de código para inicialização `SimpleHTTPServer` , mas você pode usar qualquer servidor de sua preferência.  
@@ -99,7 +99,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
           cd ~/Desktop/app
           python -m SimpleHTTPServer # Python 2
           ```  
-       :::column-end:::
+       :::column-end:::  
        :::column span="":::
           ```bash
           cd ~/Desktop/app
@@ -130,7 +130,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
     :::image-end:::  
     
 1.  Escolha **Adicionar pasta ao espaço de trabalho**.  
-1.  Enter `~/Desktop/app` .  
+1.  Digite `~/Desktop/app`.  
 1.  Escolha **permitir para que** o devtools Conceda permissão para ler e gravar no diretório.  
     Na guia **sistema de sistema** , agora há um ponto verde ao lado de `index.html` , `script.js` e `styles.css` .  Esses pontos verdes significam que o DevTools estabeleceu um mapeamento entre os recursos de rede da página e os arquivos `~/Desktop/app` .  
     
@@ -158,7 +158,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
     :::image-end:::  
     
 1.  Abra `styles.css` em um editor de texto novamente.  A `color` Propriedade agora está definida como sua cor favorita.  
-1.  Atualize a página.  A cor do `<h1>` elemento ainda está definida para sua cor favorita.  A alteração em uma atualização, porque quando você fez a alteração, o DevTools salvou a alteração em disco.  E, em seguida, ao atualizar a página, o servidor local atuou na cópia modificada do disco.  
+1.  Atualize a página.  A cor do `<h1>` elemento ainda está definida para sua cor favorita.  A alteração permanece em uma atualização, porque quando você fez a alteração, o DevTools salvou a alteração em disco.  E, em seguida, ao atualizar a página, o servidor local atuou na cópia modificada do disco.  
     
 ## Etapa 3: salvar uma alteração de HTML em disco  
 
@@ -210,7 +210,7 @@ Se você quiser salvar uma alteração no HTML da página, use o painel **fontes
 1.  Atualize a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterar o HTML no painel fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       A linha 12 está definida como `I ❤️  Cake`  
+       Alterar o HTML no painel **fontes**  
     :::image-end:::  
     
 1.  Abrir `~/Desktop/app/index.html` .  O `<h1>` elemento contém o novo texto.  

@@ -1,7 +1,7 @@
 ---
-title: Usando métodos assíncronos do tempo de execução do Windows
+title: Usando Métodos Assíncronos do Windows Runtime
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -15,16 +15,18 @@ caps.latest.revision: 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 6d0f174d22d0d13571d78bc215356ad90a0ae7fa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d9d59fb8b97e34feb002de1477dbe38709bde713
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562508"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942074"
 ---
 # Usando métodos assíncronos do tempo de execução do Windows  
 
-Muitos métodos do tempo de execução do Windows, especialmente métodos que podem levar muito tempo para serem concluídos, são assíncronos.  Esses métodos geralmente retornam uma ação ou operação assíncrona (por exemplo,,,, `Windows.Foundation.IAsyncAction` `Windows.Foundation.IAsyncOperation` `Windows.Foundation.IAsyncActionWithProgress` ou `Windows.Foundation.IAsyncOperationWithProgress` ).  Esses métodos são representados em JavaScript pelo [padrão CommonJS/promete/A][CommonjsWikiPromises].  Ou seja, eles retornam um objeto Promise que tem uma [função function][PreviousVersionsWindowsAppsBr229728], para a qual você deve fornecer uma `completed` função que manipula o resultado se a operação for bem-sucedida.  Se você não quiser fornecer um identificador de erro, use a [função Done][PreviousVersionsWindowsAppsHr701079] em vez da `then` função.  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+Muitos métodos do tempo de execução do Windows, especialmente métodos que podem levar muito tempo para serem concluídos, são assíncronos.  Esses métodos geralmente retornam uma ação assíncrona ou operação \ (por exemplo,,,, `Windows.Foundation.IAsyncAction` `Windows.Foundation.IAsyncOperation` `Windows.Foundation.IAsyncActionWithProgress` ou `Windows.Foundation.IAsyncOperationWithProgress` \).  Esses métodos são representados em JavaScript pelo [padrão CommonJS/promete/A][CommonjsWikiPromises].  Ou seja, eles retornam um objeto Promise que tem uma [função function][PreviousVersionsWindowsAppsBr229728], para a qual você deve fornecer uma `completed` função que manipula o resultado se a operação for bem-sucedida.  Se você não quiser fornecer um identificador de erro, use a [função Done][PreviousVersionsWindowsAppsHr701079] em vez da `then` função.  
 
 > [!IMPORTANT]
 > Os recursos do tempo de execução do Windows não estão disponíveis para aplicativos que são executados no Internet Explorer.  
@@ -86,16 +88,14 @@ Para obter mais informações sobre programação assíncrona, consulte [program
 
 ## Consulte também  
 
-[Usar o tempo de execução do Windows em JavaScript][WindowsRuntimeJavascript]  
-
-<!-- image links -->  
+[Usando o Tempo de Execução do Windows no JavaScript][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Usar o tempo de execução do Windows em JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Usar o tempo de execução do Windows em JavaScript | Documentos da Microsoft"  
 
-[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promessa e método"  
-[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Programação assíncrona em JavaScript (HTML)"
-[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Método Promise. Done"  
+[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promessa. depois, método | Documentos da Microsoft"  
+[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Programação assíncrona em JavaScript (HTML) | Documentos da Microsoft"
+[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Método Promise. Done | Documentos da Microsoft"  
 
 [CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promessas | Wiki de especificações CommonJS"  

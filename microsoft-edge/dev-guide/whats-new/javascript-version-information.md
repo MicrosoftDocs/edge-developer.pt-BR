@@ -1,30 +1,32 @@
 ---
 title: Informações sobre a versão JavaScript
 description: Comparar o suporte JavaScript no Microsoft Edge, aplicativos da Microsoft Store e Internet Explorer
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: Edge, IE, Chakra, JScript, WWA, aplicativos da loja
 ms.custom: seodec18
-ms.openlocfilehash: 0edc5769cf80ae9a7ac741c0f478f9ca639d935f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6041cd538c55303e68cadf3f740716b3c3637898
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560936"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941887"
 ---
 # Informações sobre a versão JavaScript  
 
-O suporte a JavaScript varia de acordo com o Microsoft Edge, os aplicativos da Microsoft Store e os diferentes modos de documento do Internet Explorer. Para obter mais informações sobre o controle de versão do código de documento do IE, consulte [*definindo a compatibilidade do documento*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
+
+O suporte a JavaScript varia de acordo com o Microsoft Edge, os aplicativos da Microsoft Store e os diferentes modos de documento do Internet Explorer \ (IE \). Para obter mais informações sobre o controle de versão do código de documento do IE, consulte [definindo a compatibilidade do documento](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 A tabela a seguir resume o suporte a JavaScript nos aplicativos Internet Explorer, Microsoft Edge e Microsoft Store.  
   
 > [!IMPORTANT]
-> Os recursos experimentais \ (habilitados em *about: flags*\) são indicados por "exp". Em alguns casos, o suporte a *repositório de aplicativos* varia entre os aplicativos do Windows 8 \ (V8 \) e do Windows 10 \ (V10 \) e a área de trabalho do Windows \ (Win \) e o Windows Phone \ (telefone \), conforme indicado.  
+> Os recursos experimentais \ (habilitados de `about:flags` \) são indicados `Exp.` em alguns casos, o suporte a repositório de aplicativos varia entre os aplicativos do Windows 8 \ (V8 \) e do Windows 10 \ (V10 \) e a área de trabalho do Windows \ (Win \) e Windows Phone \ (telefone \), conforme indicado.  
   
- | Elemento de linguagem | Peculiaridades, padrões do Internet Explorer 6, padrões do Internet Explorer 7 | Padrões do Internet Explorer 8 | Padrões do Internet Explorer 9 | Padrões do Internet Explorer 10 | Padrões do Internet Explorer 11 | Microsoft Edge | Aplicativos da loja |  
+ | Elemento de linguagem | Peculiaridades, padrões do IE 6, padrões do IE 7 | Padrões do IE 8 | Padrões do IE 9 | Padrões do IE 10 | Padrões do IE 11 | Microsoft Edge | Aplicativos da loja |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
 | [Propriedade __proto \ _ \ _ (objeto)](/scripting/javascript/reference/proto-property-object-javascript) | N | N | N | N | Y | Y | V8 (Win): N <br /> v 8.1 (Win): Y <br /> v 8.1 (telefone): Y |  
 | [$1... $9 Propriedades (RegExp)](/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript) | Y | Y | Y | Y | Y | Y | Y |  

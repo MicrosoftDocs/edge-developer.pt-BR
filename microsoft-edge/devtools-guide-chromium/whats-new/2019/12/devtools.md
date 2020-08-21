@@ -2,16 +2,16 @@
 title: O que há de novo no DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: ac85f0d9f8a5f112e702968b9c0aeceb05312ac1
-ms.sourcegitcommit: 7e3a876ccb1f0ff3d50d4e32f03af98f780e2930
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 03fd78eddf54b68d072ba11401a897ad9f109058
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10591394"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942147"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,16 +27,7 @@ ms.locfileid: "10591394"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-
-# O que há de novo no DevTools (Microsoft Edge 80)   
-
-
+# O que há de novo no DevTools (Microsoft Edge 80)  
 
 ## Anúncios da equipe do Microsoft Edge DevTools  
 
@@ -52,7 +43,7 @@ A equipe do DevTools contribuiu com as mudanças do 170 para o Chromium para sol
 
 Deseja saber como tornar sua página da Web acessível a todos os seus usuários?  Baixe as [informações sobre acessibilidade][AccessibilityInsights] e as extensões [webhint][WebhintBrowserExtension] para o Microsoft Edge para começar.  
 
-Se você usar leitores de tela ou o teclado para navegar pelo DevTools, envie-nos seus comentários em [tweeting][PostTweetEdgeDevTools] ou clique no ícone de [comentários](#feedback) !  
+Se você usar leitores de tela ou o teclado para navegar pelo DevTools, envie-nos seus comentários em [tweeting][PostTweetEdgeDevTools] ou clique no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chromium problema [#963183][crbug963183]  
 
@@ -117,7 +108,7 @@ Navegue até `edge://flags` e defina o sinalizador **habilitar ferramentas para 
 > O DevTools em alemão  
 > ![O DevTools em alemão][ImageLocalizedGerman]  
 
-Se você quiser usar o DevTools em um idioma diferente daqueles que estão disponíveis, [tweet][PostTweetEdgeDevTools] conosco ou clique no ícone de [comentários](#feedback) .  
+Se você quiser usar o DevTools em um idioma diferente daqueles que estão disponíveis, [tweet][PostTweetEdgeDevTools] conosco ou clique no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 Chromium problema [#941561][crbug941561]  
 
@@ -141,7 +132,7 @@ Use o **modo de exibição 3D** para depurar seu aplicativo Web navegando por me
 
 Para acessar o modo de exibição 3D, navegue até `edge://flags` e assegure-se de que o sinalizador de **experimentos das ferramentas de desenvolvedor** esteja definido como **habilitado**.  Reinicie o Microsoft Edge e abra o DevTools.  Pressione `F1` na seção devtools ou vá para **configurações**, navegue até **experimentos** e marque a caixa de seleção **habilitar modo de exibição 3D** .  Agora, pressione `Ctrl`  +  `Shift`  +  `P` , digite o **modo de exibição 3D** e selecione **Mostrar modo de exibição 3D**.  
 
-Estamos trabalhando na interface do usuário e adicionando mais funcionalidade ao modo de exibição 3D para nos enviar seus [comentários](#feedback).  
+Estamos trabalhando na interface do usuário e adicionando mais funcionalidade ao modo de exibição 3D para nos enviar seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chromium problema [#987787][crbug987787]
 
@@ -169,7 +160,7 @@ Com o [depurador para Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] vs ex
 
 Para obter mais informações, confira [como depurar o Microsoft Edge a partir de código vs][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### webhint  
+#### Dica da web  
 
 A extensão de código do [webhint][VisualStudioMarketplaceWebhintExtension] vs usa `webhint` para melhorar sua página da Web enquanto você está escrevendo! Esta extensão executa e relata os diagnósticos nos arquivos do espaço de trabalho com base na `webhint` análise.  
 
@@ -202,7 +193,7 @@ A prevenção de rastreamento é um recurso exclusivo no Microsoft Edge que prot
 
 As seções a seguir anunciarão recursos adicionais disponíveis no Microsoft Edge 80 que contribuíram para o projeto de código-fonte aberto Chromium.  
 
-### Suporte a redeclaraçãos Let e Class no console   
+### Suporte a redeclaraçãos Let e Class no console  
 
 O console agora oferece suporte a redeclarações `let` e `class` instruções.  A incapacidade de redeclarar foi um aborrecimento comum para desenvolvedores da Web que usam o console para experimentar com o novo código JavaScript.  
 
@@ -223,7 +214,7 @@ Agora, o console permite a redeclaração:
 
 Chromium problema [#1004193][crbug1004193]  
 
-### Depuração de Webassembly aprimorada   
+### Depuração de Webassembly aprimorada  
 
 DevTools começou a dar suporte ao [padrão de depuração Dwarf][DwarfHome], o que significa maior suporte para a depuração de código, a definição de pontos de interrupção e a resolução de rastreamentos de pilha em seus idiomas de origem no devtools.  
 
@@ -237,9 +228,9 @@ DevTools começou a dar suporte ao [padrão de depuração Dwarf][DwarfHome], o 
 > ![The new DWARF-powered WebAssembly debugging][ImageDwarfPoweredWebAssemblyDebugging]  
 -->  
 
-### Atualizações do painel de rede   
+### Atualizações do painel de rede  
 
-#### Solicitar cadeias do iniciador na guia iniciador   
+#### Solicitar cadeias do iniciador na guia iniciador  
 
 Agora você pode ver os iniciadores e as dependências de uma solicitação de rede como uma lista aninhada.  Isso pode ajudá-lo a entender por que um recurso foi solicitado ou de qual atividade de rede um determinado recurso \ (por exemplo, um script \) causou.  
 
@@ -258,7 +249,7 @@ Depois de [registrar a atividade de rede no painel de rede][DevToolsNetworkIndex
 
 Chromium problema [#842488][crbug842488]  
 
-#### Realçar a solicitação de rede selecionada na visão geral   
+#### Realçar a solicitação de rede selecionada na visão geral  
 
 Depois de clicar em um recurso de rede para inspecioná-lo, o painel de rede agora coloca uma borda azul ao meio do recurso na **visão geral**.  Isso pode ajudá-lo a detectar se a solicitação de rede está acontecendo antes ou depois do esperado.  
 
@@ -268,7 +259,7 @@ Depois de clicar em um recurso de rede para inspecioná-lo, o painel de rede ago
 
 Chromium problema [#988253][crbug988253]  
 
-#### Colunas URL e caminho no painel rede   
+#### Colunas URL e caminho no painel rede  
 
 Use as colunas novo **caminho** e **URL** no painel **rede** para ver o caminho absoluto ou a URL completa de cada recurso de rede.  
 
@@ -280,7 +271,7 @@ Clique com o botão direito do mouse no cabeçalho da tabela de **cascata** e se
 
 Chromium problema [#993366][crbug993366]  
 
-#### Cadeias de agente do usuário atualizadas   
+#### Cadeias de agente do usuário atualizadas  
 
 O DevTools dá suporte à configuração de uma cadeia de caracteres de agente de usuário personalizada por meio da guia **condições de rede** .  A cadeia de caracteres do agente do usuário afeta o `User-Agent` cabeçalho http anexado aos recursos de rede e também o valor de `navigator.userAgent` .  
 
@@ -297,9 +288,9 @@ Para acessar as **condições da rede**, [abra o menu de comando][DevToolsComman
 
 Chromium problema [#1029031][crbug1029031]  
 
-### Atualizações do painel auditorias   
+### Atualizações do painel auditorias  
 
-#### Nova interface do usuário de configuração   
+#### Nova interface do usuário de configuração  
 
 A interface do usuário de configuração tem um design novo e responsivo, e as opções de configuração de limitação foram simplificadas.  Consulte [limitação do painel de auditoria][GitHubGoogleChromeDevToolsAuditsPanelThrottling] para obter mais informações sobre as alterações na interface do usuário de limitação.  
 
@@ -307,9 +298,9 @@ A interface do usuário de configuração tem um design novo e responsivo, e as 
 > A nova interface do usuário de configuração  
 > ![A nova interface do usuário de configuração][ImageConfigurationUI]  
 
-### Atualizações da guia cobertura   
+### Atualizações da guia cobertura  
 
-#### Modos de cobertura per-Function ou per-Block   
+#### Modos de cobertura per-Function ou per-Block  
 
 A [guia cobertura][DevToolsCoverageIndex] tem um novo menu suspenso que permite especificar se os dados da cobertura de código devem ser coletados **por função** ou **por bloco**.  A cobertura **por bloco** é mais detalhada, mas também muito mais cara para coletar.  O DevTools usa a cobertura **por função** por padrão agora.  
 
@@ -320,39 +311,25 @@ A [guia cobertura][DevToolsCoverageIndex] tem um novo menu suspenso que permite 
 > O menu suspenso modo de cobertura  
 > ![O menu suspenso modo de cobertura][ImageCoverageMode]  
 
-#### A cobertura agora deve ser iniciada por uma recarga de página   
+#### A cobertura agora deve ser iniciada por uma recarga de página  
 
 A alternância da cobertura de código sem um recarregamento de página foi removida porque os dados de cobertura não eram confiáveis.  Por exemplo, uma função pode ser reportada como não usada se o tempo de execução era muito demorado e o coletor de lixo V8 o limpou.  
 
 Chromium problema [#1004203][crbug1004203]  
 
-## Privacidade Jurídica   
-
-
-
-Para discutir os novos recursos e alterações nesta postagem, ou qualquer outro item relacionado ao DevTools:  
-
-*   Envie seus comentários usando o ícone de **comentários** no devtools  
-
-> ##### Figura 18
-> O ícone de **comentários** no Microsoft Edge devtools  
-> ![O ícone * * feedback * * na Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweet em [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Enviar uma sugestão para [a Web que][TheWebWeWant] queremos  
-*   Arquivos com erros neste documento no repositório [Edge-Developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-## Baixar os canais de visualização do Microsoft Edge   
+## Baixar os canais de visualização do Microsoft Edge  
 
 Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+
+## Como entrar em contato com o Microsoft Edge DevTools equipe  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!--<<../../_shared/devtools-feedback.md>> -->
 
 <!--<<../../_shared/canary.md>> -->
 
 <!--<<../../_shared/discover.md>> -->
-
-
 
 <!-- image links -->  
 
@@ -373,7 +350,6 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figura 15: o menu do agente do usuário na guia condições de rede"  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figura 16: a nova interface do usuário de configuração"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figura 17: menu suspenso modo de cobertura"  
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png "Figura 18: o ícone * * feedback * * na Microsoft Edge DevTools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 

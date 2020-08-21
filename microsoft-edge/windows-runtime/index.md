@@ -3,19 +3,21 @@ description: Use o Windows Runtime (WinRT) para chamar APIs nativas do Windows a
 title: Tempo de execução do Windows (WinRT) para JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Tempo de execução do Windows, WinRT, PWA, JavaScript
-ms.openlocfilehash: 4ca92323a85a1e90896b4de26778f7cf7dfc9a11
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: e4b6eab4ecfbd26ccda8ef1c6e51a7a30dfaecfc
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604015"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942209"
 ---
 # Tempo de execução do Windows (WinRT) para JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 O [tempo de execução do Windows](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) \ (ou simplesmente WinRT \) é a coleção de APIs nativas que reforçam os aplicativos da [plataforma universal do Windows](/windows/uwp/get-started/universal-application-platform-guide) \ (UWP \) que são executados em todas as famílias de dispositivos do [Windows 10](/uwp/extension-sdks/device-families-overview).  As APIs do WinRT são projetadas em vários idiomas diferentes, incluindo C#, C++, Visual Basic e JavaScript.  
 
@@ -34,13 +36,13 @@ Aqui estão as áreas de namespace do WinRT de nível superior disponíveis para
 | [Globalização](/uwp/api/windows.globalization) | Fornece suporte à globalização para perfis de idioma, regiões geográficas e calendários internacionais.  |  
 | [Elementos gráficos](/uwp/api/windows.graphics) | Fornece tipos de dados básicos que contêm informações sobre como desenhar elementos gráficos.  Essas estruturas de dados geralmente são usadas para definir como superfícies grandes são desenhadas ao usar a classe CompositionVirtualDrawingSurface.  |  
 | [Gerenciamento](/uwp/api/windows.management) | Fornece recursos para forçar uma sincronização de um dispositivo de gerenciamento de dispositivo móvel (MDM \) para o servidor.  Este protocolo de sincronização de MDM é baseado no padrão de gerenciamento de dispositivo móvel de aliança móvel.  |  
-| [Mídia](/uwp/api/windows.media) |Fornece classes para criar e trabalhar com mídia, como fotos, gravações de áudio e vídeos.  |  
-| [Rede](/uwp/api/windows.networking) |Fornece acesso a nomes de host e pontos de extremidade usados por aplicativos de rede.  |  
-| [Percepção](/uwp/api/windows.perception) |Contém classes para a movimentação dos arredores do usuário, permitindo que os aplicativos localizem e motivom sobre o dispositivo relativo às superfícies e hologramas ao redor do usuário.  |  
+| [Mídia](/uwp/api/windows.media) | Fornece classes para criar e trabalhar com mídia, como fotos, gravações de áudio e vídeos.  |  
+| [Rede](/uwp/api/windows.networking) | Fornece acesso a nomes de host e pontos de extremidade usados por aplicativos de rede.  |  
+| [Percepção](/uwp/api/windows.perception) | Contém classes para a movimentação dos arredores do usuário, permitindo que os aplicativos localizem e motivom sobre o dispositivo relativo às superfícies e hologramas ao redor do usuário.  |  
 | [Segurança](/uwp/api/windows.security.authentication.identity) | Fornece classes para autenticação de usuário, gerenciamento de credenciais, operações criptográficas e recursos de proteção de dados corporativos.  |  
-| [Serviços](/uwp/api/windows.services.cortana) |Fornece acesso aos serviços da Microsoft para a Cortana, mapas, à Microsoft Store e direcionado o conteúdo de \ (assinatura \).  |  
-| [Armazenamento](/uwp/api/windows.storage) |Fornece classes para gerenciar arquivos, pastas e configurações de aplicativo.  |  
-| [Sistema](/uwp/api/windows.system) |Habilita a funcionalidade do sistema, como iniciar aplicativos, obter informações sobre um usuário e a criação de perfil de memória.  |  
+| [Serviços](/uwp/api/windows.services.cortana) | Fornece acesso aos serviços da Microsoft para a Cortana, mapas, à Microsoft Store e direcionado o conteúdo de \ (assinatura \).  |  
+| [Armazenamento](/uwp/api/windows.storage) | Fornece classes para gerenciar arquivos, pastas e configurações de aplicativo.  |  
+| [System](/uwp/api/windows.system) | Habilita a funcionalidade do sistema, como iniciar aplicativos, obter informações sobre um usuário e a criação de perfil de memória.  |  
 | [Interface do Usuário](/uwp/api/windows.ui) | Fornece um aplicativo com acesso a funcionalidades principais do sistema e informações em tempo de execução sobre a interface do usuário.  **Observação**: as APIs no `Windows.UI.Xaml` namespace não estão disponíveis para aplicativos JavaScript \ (que podem usar as tecnologias baseadas em padrões da Web equivalentes \).  |  
 | [Web](/uwp/api/windows.web) | Fornece informações sobre erros resultantes de operações de serviço Web.  |  
 
