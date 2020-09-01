@@ -2,16 +2,16 @@
 title: Otimizar a velocidade do site com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 7efc76fbcb3d1ed6cbd0760f789c8c952030d70c
-ms.sourcegitcommit: 4c24edbd1c591914cb4109511534851570a614cb
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 42b742316ccaa64aa35fc1d21c5277e448b2d5b7
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611886"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984529"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,9 +48,9 @@ Este tutorial ensina a usar o Microsoft Edge DevTools para encontrar formas de f
 
 Isso é Tony.  Tony é muito famoso na sociedade da gato.  Ele criou um site para que seus fãs possam aprender sobre seus alimentos favoritos.  Seus fãs adoram o site, mas o Tony mantém reclamações auditivas que o site carrega lentamente.  Tony solicitou que você o ajude a acelerar o site.  
 
-> ##### Figura 1  
-> Tony o gato  
-> ![Tony o gato][ImageTony]  
+:::image type="complex" source="../media/speed-tony.msft.png" alt-text="Tony o gato" lightbox="../media/speed-tony.msft.png":::
+   Tony o gato  
+:::image-end:::  
 
 ## Etapa 1: auditar o site   
 
@@ -59,136 +59,136 @@ A auditoria tem duas funções importantes:
 
 *   Ele cria uma **linha de base** para você medir alterações subsequentes em relação a.  
 *   Ele oferece **dicas acionáveis** sobre quais alterações têm o maior impacto possível.  
-
+    
 ### Configurar   
 
 Primeiro, você deve configurar o site para que possa fazer alterações nele mais tarde.  
 
 1.  [Abra o código-fonte do site](https://glitch.com/edit/#!/tony).  Esta guia é referida como a **guia Editor**.  
     
-    > ##### Figura 2  
-    > A guia Editor  
-    > ![A guia Editor][ImageEditor]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="A guia Editor" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
+       A **guia Editor**  
+    :::image-end:::  
+    
 1.  Selecione **Tony**.  Um menu é exibido.  
     
-    > ##### Figura 3  
-    > O menu que aparece depois de clicar em **Tony**  
-    > ![O menu que aparece depois de clicar em Tony][ImageMenu]  
+    :::image type="complex" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="O menu que aparece depois de clicar em Tony" lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
+       O menu que aparece depois de clicar em **Tony**  
+    :::image-end:::  
     
 1.  Selecione **Remix Project**.  O nome do projeto muda de **Tony** para algum nome gerado aleatoriamente.  Agora você tem sua própria cópia editável do código.  Posteriormente, você pode fazer alterações nesse código.  
 1.  Selecione **Mostrar** e selecione **em uma nova janela**.  A demonstração é aberta em uma nova guia.  Esta guia é referida como a **guia demonstração**.  Pode levar alguns instantes para que o site seja carregado.  
     
-    > ##### Figura 4  
-    > A guia demonstração  
-    > ![A guia demonstração][ImageDemo]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="A guia demonstração" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
+       A guia demonstração  
+    :::image-end:::  
+    
 1.  Pressione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \).  O Microsoft Edge DevTools abre juntamente com a demonstração.  
     
-    > ##### Figura 5  
-    > DevTools e a demonstração  
-    > ![DevTools e a demonstração][ImageDevtools]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools e a demonstração" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
+       DevTools e a demonstração  
+    :::image-end:::  
+    
 Para o restante das capturas de tela neste tutorial, DevTools é exibido em uma janela separada.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, digitando `Undock` e, em seguida, selecione **desencaixar em uma janela separada**.  
 
-> ##### Figura 6  
-> DevTools desencaixado  
-> ![DevTools desencaixado][ImageUndocked]  
+:::image type="complex" source="../media/speed-console.msft.png" alt-text="DevTools desencaixado" lightbox="../media/speed-console.msft.png":::
+   DevTools desencaixado  
+:::image-end:::  
 
 ### Estabelecer uma linha de base   
 
 A linha de base é um registro de como o site foi executado antes de você fazer qualquer melhoria no desempenho.  
 
-1.  Selecione a guia **auditorias** .  Ele pode estar oculto atrás do botão **mais** painéis ![ mais painéis ][ImageMorePanelsIcon] .  Há um Lighthouse neste painel porque o projeto que energiza o painel auditorias é denominado **Lighthouse**.  
+1.  Selecione a guia **auditorias** .  Ele pode estar oculto atrás do botão **mais painéis** \ ( ![ mais painéis ][ImageMorePanelsIcon] \).  Há um Lighthouse neste painel porque o projeto que energiza o painel auditorias é denominado **Lighthouse**.  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
-    > ##### Figura 7  
-    > O painel auditorias  
-    > ![O painel auditorias][ImageAudits]  
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="O painel auditorias" lightbox="../media/speed-audits-performance.msft.png":::
+       O painel **auditorias**  
+    :::image-end:::  
     
     <!--todo: add link to Lighthouse when section is available  -->  
     <!-- /web/tools/lighthouse  -->  
     
-1.  Correspondam às suas configurações de auditoria para as da [Figura 7](#figure-7).  Aqui está uma explicação das diferentes opções:  
-
+1.  Correspondam às suas configurações de auditoria para as da figura anterior.  Aqui está uma explicação das diferentes opções:  
+    
     *   **Device**.  A configuração para **celular** altera a cadeia de caracteres do agente do usuário e simula um visor móvel.  A configuração para **área de trabalho** simplesmente desabilita as alterações de **celular** .  
     *   **Auditorias**.  A desativação de uma categoria impede que o painel auditorias execute essas auditorias e exclui essas auditorias do relatório.  Deixe as outras categorias habilitadas, se você quiser ver os tipos de recomendações que são fornecidos.  Desabilitar categorias ligeiramente acelera o processo de auditoria.  
     *   **Limitação**.  Configuração para **Simulated 4G lenta, a lentidão de CPU de 4** simula as condições típicas de navegação em um dispositivo móvel.  Ele é chamado de "simulado" porque o painel auditorias não é controlado na verdade durante o processo de auditoria.  Em vez disso, ele apenas extrapola o tempo que a página levaria para carregar em condições de celular.  A configuração **aplicada...** , por outro lado, efetivamente limita sua CPU e rede, com a compensação de um processo de auditoria mais longo.  
     *   **Limpar o armazenamento**.  Habilitar essa caixa de seleção limpa todo o armazenamento associado à página antes de cada auditoria.  Deixe essa configuração em caso de você desejar auditar como os visitantes da primeira vez que o visitante terão.  Desative essa configuração quando quiser a experiência de visita de repetição.  
-
+    
 1.  Selecione **executar auditorias**.  Após 10 a 30 segundos, o painel auditorias mostra um relatório do desempenho do site.  
     
-    > ##### Figura 8  
-    > O relatório para o painel auditorias do desempenho do site  
-    > ![O relatório para o painel auditorias do desempenho do site][ImageReport]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="O relatório para o painel auditorias do desempenho do site" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
+       O relatório para o painel auditorias do desempenho do site  
+    :::image-end:::  
+    
 #### Manipulando erros de relatório   
 
 Se você receber um erro no relatório do painel auditorias, tente executar a guia demonstração em uma janela **InPrivate** sem nenhuma outra guia aberta.  Isso garante que você esteja executando o Microsoft Edge a partir de um estado limpo.  As extensões do Microsoft Edge em particular geralmente interferem no processo de auditoria.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
-> ##### old Figure 9  
-> A report that errored  
-> ![A report that errored][ImageError]  
+:::image type="complex" source="../media/speed-.msft.png" alt-text="A report that errored" lightbox="../media/speed-.msft.png":::
+   A report that errored  
+:::image-end:::  
 -->  
 
 ### Entender o relatório   
 
 O número na parte superior do seu relatório é a pontuação de desempenho geral do site.  Posteriormente, ao fazer alterações no código, você verá esse número aumentará.  Uma pontuação mais alta significa melhor desempenho.  
 
-> ##### Figura 9  
-> A pontuação geral de desempenho  
-> ! [A pontuação geral de desempenho] [ImageOverall]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="A pontuação geral de desempenho" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
+   A pontuação geral de desempenho  
+:::image-end:::  
 
 A seção **métricas** fornece medidas quantitativas do desempenho do site.  Cada métrica fornece uma visão geral de um aspecto diferente do desempenho.  Por exemplo, a **primeira tinta de conteúdo** informa quando o conteúdo é pintado pela primeira vez na tela, que é uma etapa importante da percepção do usuário da carga da página, enquanto o **tempo para interativo** marca o ponto em que a página parece estar pronta o suficiente para lidar com interações do usuário.  
 
-> ##### Figura 10  
-> A seção métricas  
-> ! [A seção métricas] [ImageMetrics]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="A seção métricas" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
+   A seção **métricas**  
+:::image-end:::  
 
-Selecione o botão de alternância realçado na [Figura 11](#figure-11) para ver uma descrição para cada métrica e clique em **saiba mais** para ler a documentação sobre ela.  
+Selecione o botão de alternância realçado na figura a seguir para ver uma descrição para cada métrica e clique em **saiba mais** para ler a documentação sobre ela.  
 
-> ##### Figura 11  
-> Selecione o botão de alternância realçado para expandir os itens de **métricas**  
-> ! [Selecione o botão de alternância realçado para expandir os itens de métricas] [ImageFirstMeaningfulPaint]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Selecione o botão de alternância realçado para expandir os itens de métricas" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
+   Selecione o botão de alternância realçado para expandir os itens de métricas  
+:::image-end:::  
 
 As métricas a seguir são uma coleção de capturas de tela que mostram como a página parece ser carregada.  
 
-> ##### Figura 12  
-> Capturas de tela de como a página ficou ao carregar  
-> ! [Capturas de tela de como a página procurou durante o carregamento] [ImageScreenshots]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Capturas de tela de como a página ficou ao carregar" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+   Capturas de tela de como a página ficou ao carregar  
+:::image-end:::  
 
 A seção **oportunidades** fornece dicas específicas sobre como melhorar o desempenho de carga dessa página específica.  
 
-> ##### Figura 13  
-> A seção oportunidades  
-> ! [A seção oportunidades] [ImageOpportunities]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="A seção oportunidades" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+   A seção **oportunidades**  
+:::image-end:::  
 
 Selecione uma oportunidade para saber mais sobre isso.  
 
-> ##### Figura 14  
-> **Eliminar oportunidade de recursos de bloqueio de renderização**  
-> ! [Eliminar oportunidade de recursos de bloqueio de renderização] [ImageCompression]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Eliminar oportunidade de recursos de bloqueio de renderização" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
+   **Eliminar oportunidade de recursos de bloqueio de renderização**  
+:::image-end:::  
 
 Selecione **saiba mais** para ver a documentação sobre por que uma oportunidade é importante e recomendações específicas sobre como corrigi-lo.  
 
-> ##### Figura 15  
-> Documentação para a oportunidade de **eliminar recursos de bloqueio de renderização**  
-> ! [Documentação da oportunidade para eliminar recursos de bloqueio de renderização] [ImageReference]  
+:::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Documentação para a oportunidade de eliminar recursos de bloqueio de renderização" lightbox="../media/speed-web-dev-performance-audits.msft.png":::
+   Documentação para a oportunidade de **eliminar recursos de bloqueio de renderização**  
+:::image-end:::  
 
 A seção **diagnóstico** fornece mais informações sobre fatores que contribuem para o tempo de carregamento da página.  
 
-> ##### Figura 16  
-> A seção diagnóstico  
-> ! [A seção diagnóstico] [ImageDiagnostics]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="A seção diagnóstico" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
+   A seção **diagnóstico**  
+:::image-end:::  
 
 A seção de **auditorias passadas** mostra o que o site está fazendo corretamente.  Selecione para expandir a seção.  
 
-> ##### Figura 17  
-> A seção de auditorias passadas  
-> ! [A seção de auditorias passadas] [ImagePassed]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="A seção de auditorias passadas" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
+   A seção de **auditorias passadas**  
+:::image-end:::  
 
 ## Etapa 2: Experimente   
 
@@ -204,42 +204,42 @@ Antes de habilitar a compactação, aqui estão algumas maneiras de verificar ma
 
 1.  Selecione a guia **rede** .  
     
-    > ##### Figura 18  
-    > Painel de rede  
-    > ! [O painel rede] [ImageNetwork]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="Painel de rede" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
+       Painel de **rede**  
+    :::image-end:::  
     
 1.  Selecione o ícone de **configuração de rede** .  
 1.  Marque a caixa de seleção **usar linhas de solicitação grandes** .  A altura das linhas na tabela de solicitações de rede aumenta.  
     
-    > ##### Figura 19  
-    > Linhas grandes na tabela solicitações de rede  
-    > ! [Linhas grandes na tabela solicitações de rede] [ImageLargeRows]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Linhas grandes na tabela solicitações de rede" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
+       Linhas grandes na tabela solicitações de rede  
+    :::image-end:::  
     
 1.  Se você não vir a coluna **tamanho** na tabela de solicitações de rede, clique no cabeçalho da tabela e selecione **tamanho**.  
 
 Cada célula de **tamanho** mostra dois valores.  O valor principal é o tamanho do recurso baixado.  
-O valor secundário é o tamanho do recurso descompactado.  Se os dois valores forem iguais, o recurso não será compactado quando for enviado pela rede.  Por exemplo, na [Figura 19](#figure-19) os valores superiores e inferiores para `bundle.js` são `1.2 MB` e `1.2 MB` .  
+O valor secundário é o tamanho do recurso descompactado.  Se os dois valores forem iguais, o recurso não será compactado quando for enviado pela rede.  Por exemplo, na figura anterior, os valores superiores e inferiores para `bundle.js` são `1.2 MB` e `1.2 MB` .  
 
 Verifique a compactação inspecionando os cabeçalhos HTTP de um recurso:  
 
-1.  Selecione **Bundle. js**.  
+1.  Selecione **bundle.js**.  
 1.  Selecione a guia **cabeçalhos** .  
     
-    > ##### Figura 20  
-    > A guia cabeçalhos  
-    > ! [A guia cabeçalhos] [ImageHeaders]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="A guia cabeçalhos" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
+       A guia **cabeçalhos**  
+    :::image-end:::  
     
 1.  Pesquisar o cabeçalho na seção de **cabeçalhos de resposta** `content-encoding` .  Você não deve ver um, o que significa que `bundle.js` não foi compactado.  Quando um recurso é compactado, esse cabeçalho geralmente é definido como `gzip` , `deflate` ou `br` .  Consulte [diretrizes][MDNContentEncodingDirectives] para obter uma explicação desses valores.  
 
 Suficiente com as explicações.  É hora de fazer algumas mudanças!  Habilite a compactação de texto adicionando algumas linhas de código:  
 
-1.  Na guia Editor, clique em **Server. js**.  
+1.  Na guia Editor, clique em **server.js**.  
     
-    > ##### Figura 21  
-    > Editando Server. js  
-    > ! [Editing Server. js] [ImageServer]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Editar server.js" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
+       Editar `server.js`  
+    :::image-end:::  
     
-1.  Adicione o código a seguir ao **Server. js**.  Certifique-se de colocar `app.use(compression())` antes `app.use(express.static('build'))` .  
+1.  Adicione o código a seguir ao **server.js**.  Certifique-se de colocar `app.use(compression())` antes `app.use(express.static('build'))` .  
 
     ```javascript
     const express = require('express');
@@ -261,37 +261,37 @@ Suficiente com as explicações.  É hora de fazer algumas mudanças!  Habilite 
 1.  Aguarde até que a falha implante a nova compilação do site.  A animação sofisticada ao lado de **ferramentas** significa que o site está sendo recriado e reimplantado.  A alteração estará pronta quando a animação ao lado de **ferramentas** ficar ausente.  Selecione **Mostrar** e selecione novamente **em uma nova janela** .  
     
     <!--
-    > ##### Old Figure 22  
-    > The animation that indicates that the site is getting built  
-    > ![The animation that indicates that the site is getting built][ImageBuilding]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="The animation that indicates that the site is getting built" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
+       The animation that indicates that the site is getting built  
+    :::image-end:::  
     -->  
     
 Use os fluxos de trabalho que você aprendeu anteriormente para verificar manualmente se a compactação está funcionando:  
 
-1.  Volte para a guia demonstração e recarregue a página.  A coluna **tamanho** agora deve mostrar 2 valores diferentes para recursos de texto, como `bundle.js` .  Na [Figura 23](#figure-23) , o valor principal de for `256 KB` `bundle.js` é o tamanho do arquivo que foi enviado pela rede e o valor inferior de `1.2 MB` é o tamanho do arquivo descompactado.  
+1.  Volte para a guia demonstração e recarregue a página.  A coluna **tamanho** agora deve mostrar 2 valores diferentes para recursos de texto, como `bundle.js` .  Na figura após o seguinte, o valor principal de `256 KB` para `bundle.js` é o tamanho do arquivo que foi enviado pela rede e o valor inferior de `1.2 MB` é o tamanho de arquivo descompactado.  
     
-    > ##### Figura 22  
-    > A coluna tamanho agora mostra 2 valores diferentes para recursos de texto  
-    > ! [A coluna tamanho agora mostra 2 valores diferentes para recursos de texto] [ImageRequests]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-main.msft.png" alt-text="A coluna tamanho agora mostra 2 valores diferentes para recursos de texto" lightbox="../media/speed-glitch-tony-remix-network-main.msft.png":::
+       A coluna **tamanho** agora mostra 2 valores diferentes para recursos de texto  
+    :::image-end:::  
     
 1.  A seção de **cabeçalhos de resposta** para `bundle.js` agora deve incluir um `content-encoding: gzip` cabeçalho.
     
-    > ##### Figura 23  
-    > A seção de cabeçalhos de resposta agora contém um cabeçalho de codificação de conteúdo  
-    > ! [A seção de cabeçalhos de resposta agora contém um cabeçalho de codificação de conteúdo] [ImageGzip]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="A seção de cabeçalhos de resposta agora contém um cabeçalho de codificação de conteúdo" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
+       A seção de **cabeçalhos de resposta** agora contém um cabeçalho de codificação de conteúdo  
+    :::image-end:::  
     
 Faça a auditoria da página novamente para medir o tipo de compactação de texto de impacto no desempenho de carga da página:  
 
 1.  Selecione a guia **auditorias** .  
-1.  Selecione **executar uma auditoria** ![ executar uma auditoria ][ImagePerformIcon] .  
+1.  Selecione **executar uma auditoria** \ ( ![ realizar uma auditoria ][ImagePerformIcon] \).  
 1.  Deixe as configurações iguais às anteriores.  
 1.  Selecione **executar auditoria**.  
     
-    > ##### Figura 24  
-    > Um relatório de auditorias após a habilitação da compactação de texto  
-    > ! [Um relatório de auditorias após a habilitação da compactação de texto] [ImageReport2]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="Um relatório de auditorias após a habilitação da compactação de texto" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
+       Um relatório de auditorias após a habilitação da compactação de texto  
+    :::image-end:::  
     
-Woohoo!  Isso tem a aparência do progresso.  A pontuação geral do desempenho deve ter aumentado, o que significa que o site está ficando mais rápido.  
+<!--  Woohoo!  That looks like progress.  -->  A pontuação geral do desempenho deve ter aumentado, o que significa que o site está ficando mais rápido.  
 
 #### Compactação de texto no mundo real   
 
@@ -304,19 +304,19 @@ O relatório indica que evitar cargas de rede enormes é uma das principais opor
 1.  Em seu relatório, clique em **evitar enormes cargas de rede** para ver quais imagens devem ser redimensionadas.  Ele se parece com 2 dos arquivos jpg há mais de 2000 KB, o que é maior do que o necessário.  
     
     <!--
-    > ##### Old Figure 27  
-    > Details about the **Properly size images** opportunity  
-    > ![Details about the properly size images opportunity][ImageResize]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
+       Details about the properly size images opportunity  
+    :::image-end:::  
     -->
-
+    
 1.  De volta na guia Editor, abra `src/model.js` .  
 1.  Substituir `const dir = 'big'` por `const dir = 'small'` .  Esse diretório contém cópias das mesmas imagens que foram redimensionadas.  
 1.  Faça a auditoria da página novamente para ver como essa alteração afeta o desempenho da carga.  
     
-    > ##### Figura 25  
-    > Um relatório de auditorias após o redimensionamento de imagens  
-    > ! [Um relatório de auditorias após o redimensionamento de imagens] [ImageReport3]  
-
+    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="Um relatório de auditorias após o redimensionamento de imagens" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
+       Um relatório de auditorias após o redimensionamento de imagens  
+    :::image-end:::  
+    
 Parece que a alteração tem apenas um efeito secundário na pontuação de desempenho geral.  No entanto, uma coisa que a pontuação não mostra claramente é o número de dados de rede que você está salvando os usuários.  O tamanho total das fotos antigas era cerca de 5,3 megabytes, enquanto agora só há cerca de 0,18 megabytes.  
 
 #### Redimensionamento de imagens no mundo real   
@@ -326,13 +326,13 @@ Para um aplicativo pequeno, fazer um redimensionamento único como este pode ser
 *   Redimensione imagens durante o processo de compilação.  
 *   Crie vários tamanhos de cada imagem durante o processo de compilação e, em seguida, use `srcset` em seu código.  Em tempo de execução, o navegador cuida da escolha de qual tamanho é melhor para o dispositivo.  
     <!--See [Relative-sized images][relative].  -->
-
+    
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
 *   Use um CDN de imagem que permita redimensionar dinamicamente uma imagem quando você solicitá-la.  
 *   No mínimo, otimize cada imagem.  Isso pode criar uma grande economia.  
   A otimização é quando você executa uma imagem por meio de um programa especial que reduz o tamanho do arquivo de imagem.  Consulte [otimizações de imagem essenciais][EssentialImageOptimization] para obter mais dicas.  
-
+    
 ### Eliminar recursos de bloqueio de renderização   
 
 O relatório mais recente diz que eliminar recursos de bloqueio de renderização agora é a maior oportunidade.  
@@ -344,31 +344,31 @@ A primeira tarefa, então, é encontrar o código que você não precisa executa
 1.  Selecione **eliminar recursos de bloqueio de renderização** para ver os recursos que estão bloqueando:  
     `lodash.js` e `jquery.js` .  
     
-    > ##### Figura 26  
-    > Mais informações sobre a oportunidade de **eliminar recursos de bloqueio de renderização**  
-    > ! [Mais informações sobre a oportunidade de eliminar recursos de bloqueio de renderização] [ImageRender]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="Mais informações sobre a oportunidade de eliminar recursos de bloqueio de renderização" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
+       Mais informações sobre a oportunidade de **eliminar recursos de bloqueio de renderização**  
+    :::image-end:::  
     
 1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, comece a digitar `Coverage` e selecione **Mostrar cobertura**.  
     
-    > ##### Figura 27  
-    > Abrindo o menu de comando do painel auditorias  
-    > ! [Abrindo o menu de comando do painel auditorias] [ImageCommandMenu]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Abrir o menu de comandos do painel auditorias" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
+       Abrir o menu de comandos do painel **auditorias**  
+    :::image-end:::  
     
-    > ##### Figura 28  
-    > A guia cobertura  
-    > ! [A guia cobertura] [ImageCoverage]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="A guia cobertura" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+       A guia **cobertura**  
+    :::image-end:::  
     
-1.  Selecione **Atualizar** ![ atualização ][ImageRefreshIcon] .  A guia **cobertura** fornece uma visão geral da quantidade de código em `bundle.js` , `jquery.js` e `lodash.js` é executada enquanto a página é carregada.  A [Figura 30](#figure-30) diz que cerca de 76% e 30% dos arquivos jQuery e Lodash não são usados, respectivamente.  
+1.  Selecione **Atualizar** \ ( ![ Atualizar ][ImageRefreshIcon] \).  A guia **cobertura** fornece uma visão geral da quantidade de código em `bundle.js` , `jquery.js` e `lodash.js` é executada enquanto a página é carregada.  Na figura após o seguinte, cerca de 76% e 30% dos arquivos jQuery e Lodash não são usados, respectivamente.  
     
-    > ##### Figura 29  
-    > O relatório de cobertura  
-    > ! [O relatório de cobertura] [ImageCoverageReport]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="O relatório de cobertura" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
+       O relatório de cobertura  
+    :::image-end:::  
     
-1.  Selecione a linha **jQuery. js** .  DevTools abre o arquivo no painel fontes.  Uma linha de código foi executada se tiver uma barra azul ao lado dela.  Uma barra vermelha significa que ela não foi executada e não é necessária na carga da página.  
+1.  Selecione a linha **jquery.js** .  DevTools abre o arquivo no painel fontes.  Uma linha de código foi executada se tiver uma barra azul ao lado dela.  Uma barra vermelha significa que ela não foi executada e não é necessária na carga da página.  
     
-    > ##### Figura 30  
-    > Visualizar o arquivo jQuery no painel fontes  
-    > ! [Exibindo o arquivo jQuery no painel fontes] [ImageJQuery]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Visualizar o arquivo jQuery no painel fontes" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       Visualizar o arquivo jQuery no painel **fontes**  
+    :::image-end:::  
     
 1.  Role pelo código jQuery um pouco.  Na verdade, algumas das linhas que recebem "executar" são apenas comentários.  Executar esse código por meio de um Minifier que retira comentários é outra maneira de reduzir o tamanho do arquivo.  
 
@@ -380,24 +380,24 @@ Os `jquery.js` arquivos e os `lodash.js` arquivos ainda são necessários para c
 1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando novamente.  
 1.  Comece a digitar `blocking` e selecione **Mostrar bloqueio de solicitações**.  
     
-    > ##### Figura 31  
-    > A guia bloqueio de solicitação  
-    > ! [A guia bloqueio de solicitação] [ImageBlocking]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="A guia bloqueio de solicitação" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
+       A guia **bloqueio de solicitação**  
+    :::image-end:::  
     
-1.  Selecione **Adicionar padrão** ![ Adicionar padrão ][ImageAddPatternIcon] , tipo `/libs/*` e, em seguida, pressione `Enter` para confirmar.  
+1.  Selecione **Adicionar padrão** \ ( ![ Adicionar padrão ][ImageAddPatternIcon] \), tipo `/libs/*` e, em seguida, pressione `Enter` para confirmar.  
     
-    > ##### Figura 32  
-    > Adicionando um padrão para bloquear qualquer solicitação ao `libs` diretório  
-    > ! [Adicionar um padrão para bloquear qualquer solicitação para o diretório libs] [ImageLibs]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Adicionar um padrão para bloquear qualquer solicitação para o diretório libs" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
+       Adicionar um padrão para bloquear qualquer solicitação ao `libs` diretório  
+    :::image-end:::  
     
 1.  Atualize a página.  As solicitações jQuery e Lodash são vermelhas, o que significa que as solicitações foram bloqueadas.   A página ainda é carregada e é interativa, portanto, parece que esses recursos não são necessários!  
     
-    > ##### Figura 33  
-    > O painel Rede mostra que as solicitações foram bloqueadas  
-    > ! [O painel Rede mostra que as solicitações foram bloqueadas] [ImageBlockedLibs]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="O painel Rede mostra que as solicitações foram bloqueadas" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
+       O painel **rede** mostra que as solicitações foram bloqueadas  
+    :::image-end:::  
     
-1.  Selecione **remover todos os padrões** ![ remover todos os padrões ][ImageRemoveIcon] para excluir o `/libs/*` padrão de bloqueio.  
-
+1.  Selecione **remover todos os padrões** \ ( ![ remover todos os padrões ][ImageRemoveIcon] \) para excluir o `/libs/*` padrão de bloqueio.  
+    
 Em geral, a guia bloqueio de solicitação é útil para simular como a sua página se comporta quando um determinado recurso não está disponível.  
 
 Agora, remova as referências a esses arquivos do código e faça a auditoria da página novamente:  
@@ -407,10 +407,10 @@ Agora, remova as referências a esses arquivos do código e faça a auditoria da
 1.  Aguarde até que o site reconstrua e implante novamente.  
 1.  Faça a auditoria da página novamente no painel **auditorias** .  Sua pontuação geral deve ter sido aprimorada novamente.  
     
-    > ##### Figura 34  
-    > Um relatório de auditorias após a remoção dos recursos de bloqueio de renderização  
-    > ! [Um relatório de auditorias após a remoção dos recursos de bloqueio de renderização] [ImageReport4]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="Um relatório de auditorias após a remoção dos recursos de bloqueio de renderização" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
+       Um relatório de **auditorias** após a remoção dos recursos de bloqueio de renderização  
+    :::image-end:::  
+    
 #### Otimizando o caminho de renderização crítica no mundo real   
 
 O **caminho de renderização crítica** se refere ao código que você precisa para carregar uma página.  Em geral, acelere a carga da página, enviando apenas o código Critical durante o carregamento da página e, em seguida, carregando tudo o mais.  
@@ -419,7 +419,7 @@ O **caminho de renderização crítica** se refere ao código que você precisa 
 
 *   É improvável que você possa encontrar scripts que você pode remover, mas pode encontrar muitos scripts que você não precisa solicitar durante o carregamento da página e, em vez disso, pode ser solicitado de forma assíncrona.  <!--See [Using async or defer][async].  -->  
 *   Se você estiver usando uma estrutura, verifique se ela tem um modo de produção.  Esse modo pode usar um recurso como o de uma [árvore][WebpackTreeShaking] para eliminar o código desnecessário que está bloqueando o render crítico.  
-
+    
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
 
 ### Executar menos trabalho do thread principal   
@@ -431,51 +431,51 @@ O thread principal é onde o navegador faz a maior parte do trabalho necessário
 O objetivo é usar o painel desempenho para analisar qual trabalho o thread principal está fazendo enquanto a página é carregada e localizar maneiras de adiar ou remover o trabalho desnecessário.  
 
 1.  Selecione a guia **desempenho** .  
-1.  Selecione **capturar** configurações de captura de configurações ![ ][ImageCaptureIcon] .  
+1.  Selecione **configurações de captura** \ ( ![ configurações de captura ][ImageCaptureIcon] \).  
 1.  Defina a **rede** para 3G e **CPU** **lenta** para **6X de lentidão**.  Dispositivos móveis geralmente têm mais restrições de hardware do que laptops ou desktops, portanto, essas configurações permitem que você experimente a carga da página como se estivesse usando um dispositivo menos potente.  
-1.  Selecione **Atualizar** ![ atualização ][ImageRefreshIcon] .  O DevTools atualiza a página e, em seguida, produz uma visualização de todo o trabalho realizado para carregar a página.  Essa visualização é chamada de **rastreamento**.  
+1.  Selecione **Atualizar** \ ( ![ Atualizar ][ImageRefreshIcon] \).  O DevTools atualiza a página e, em seguida, produz uma visualização de todo o trabalho realizado para carregar a página.  Essa visualização é chamada de **rastreamento**.  
     
-    > ##### Figura 35  
-    > O rastreamento do painel desempenho do carregamento da página  
-    > ! [O rastreamento do painel desempenho do carregamento da página] [ImagePerformance]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="O rastreamento do painel desempenho do carregamento da página" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
+       O rastreamento do painel **desempenho** do carregamento da página  
+    :::image-end:::  
+    
+O rastreamento mostra a atividade cronologicamente, da esquerda para a direita.  Os gráficos de FPS, CPU e NET na parte superior fornecem uma visão geral de quadros por segundo, atividade de CPU e atividade de rede.  O bloco de amarelo selecionado que você vê na figura após o seguinte, a CPU estava completamente ocupada com a atividade de script.  Trata-se de uma pista de que você pode acelerar o carregamento da página fazendo menos trabalho em JavaScript.  
 
-O rastreamento mostra a atividade cronologicamente, da esquerda para a direita.  Os gráficos de FPS, CPU e NET na parte superior fornecem uma visão geral de quadros por segundo, atividade de CPU e atividade de rede.  O bloco de amarelo selecionado que você vê na [figura 37](#figure-37) significa que a CPU estava completamente ocupada com a atividade de script.  Trata-se de uma pista de que você pode acelerar o carregamento da página fazendo menos trabalho em JavaScript.  
-
-> ##### Figura 36  
-> A seção visão geral do rastreamento  
-> ! [A seção visão geral do rastreamento] [ImageOverview]  
+:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="A seção visão geral do rastreamento" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
+   A seção visão geral do rastreamento  
+:::image-end:::  
 
 Investigue o rastreamento para encontrar formas de fazer menos trabalho em JavaScript:  
 
 1.  Selecione a seção **intervalos** para expandi-la.  De acordo com o fato de que pode haver uma série de medidas de [tempo][MDNUserTimingApi] de reagir, parece que o aplicativo de Tony está usando o modo de desenvolvimento de reagir.  Alternar para o modo de produção de reagir pode produzir um pouco de desempenho simples.  
     
-    > ##### Figura 37  
-    > A seção intervalos  
-    > ! [A seção intervalos] [ImageUserTiming]  
-
-1.  Selecione **intervalos** novamente para recolher essa seção.  
-1.  Procure a seção **principal** .  Esta seção mostra um log cronológico da atividade de thread principal, da esquerda para a direita.  O eixo y (de cima para baixo) mostra o motivo pelo qual os eventos ocorreram.  Por exemplo, na [figura 39](#figure-39), o `Evaluate Script` evento causou a `(anonymous)` execução da função, que causou a execução, `(anonymous)` que causou `__webpack__require__` a execução e assim por diante.  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="A seção intervalos" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+       A seção **intervalos**  
+    :::image-end:::  
     
-    > ##### Figura 38  
-    > A seção principal  
-    > ! [A seção principal] [ImageMain]  
-
+1.  Selecione **intervalos** novamente para recolher essa seção.  
+1.  Procure a seção **principal** .  Esta seção mostra um log cronológico da atividade de thread principal, da esquerda para a direita.  O eixo y (de cima para baixo) mostra o motivo pelo qual os eventos ocorreram.  Por exemplo, no figyre após o seguinte, o `Evaluate Script` evento causou a `(anonymous)` execução da função, que causou a execução `(anonymous)` , que causou `__webpack__require__` a execução e assim por diante.  
+    
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="A seção principal" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
+       A seção **principal**  
+    :::image-end:::  
+    
 1.  Role a tela para baixo até a parte inferior da seção **principal** .  Quando você usa uma estrutura, a maior parte da atividade superior é causada pela estrutura, que normalmente está fora do seu controle.  A atividade causada pelo aplicativo geralmente está na parte inferior.  Nesse aplicativo, parece que uma função nomeada `App` está causando muitas solicitações para uma `mineBitcoin` função.  Parece que Tony pode estar usando os dispositivos de seus fãs para o meu cryptocurrency...  
     
-    > ##### Figura 39  
-    > Passando o mouse sobre a `mineBitcoin` atividade  
-    > ! [Passando o mouse sobre a atividade mineBitcoin] [ImageMine]  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Passe o mouse sobre a atividade mineBitcoin" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
+       Passe o mouse sobre a `mineBitcoin` atividade  
+    :::image-end:::  
     
     > [!NOTE]
     > Embora as solicitações que a sua estrutura fazer normalmente sejam de seu controle, às vezes você pode estruturar seu aplicativo de uma maneira que faz com que a estrutura seja executada ineficientemente.  Reestruturar seu aplicativo para usar a estrutura com eficiência é uma maneira de fazer menos trabalho do thread principal.  No entanto, isso exige uma compreensão profunda de como a estrutura funciona e o tipo de alterações feitas em seu próprio código para usar a estrutura com mais eficiência.  
-
+    
 1.  Expanda a seção de **baixo para cima** .  Esta guia quebra quais atividades levaram mais tempo.  Se você não vir nada na seção de baixo para cima, clique no rótulo da seção **principal** .  A seção de **baixo para cima** mostra apenas as informações sobre qualquer atividade ou grupo de atividades selecionado no momento.  Por exemplo, se você clicou em uma das `mineBitcoin` atividades, a seção de **baixo para cima** só irá mostrar as informações de uma atividade.  
     
-    > ##### Figura 40  
-    > A guia seta para baixo  
-    > ! [A guia superior] [ImageBottomUp]  
-
-A coluna **autotempo** mostra quanto tempo foi gasto diretamente em cada atividade.  Por exemplo, a [figura 41](#figure-41) mostra que cerca de 63% do tempo do thread principal foi gasto na `mineBitcoin` função.  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="A guia seta para baixo" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
+       A guia **seta para baixo**  
+    :::image-end:::  
+    
+A coluna **autotempo** mostra quanto tempo foi gasto diretamente em cada atividade.  Por exemplo, na figura a seguir, cerca de 63% do tempo do thread principal foi gasto na `mineBitcoin` função.  
 
 Tempo para ver se o uso do modo de produção e da redução da atividade JavaScript pode acelerar o carregamento da página.  Comece com o modo de produção:  
 
@@ -484,10 +484,10 @@ Tempo para ver se o uso do modo de produção e da redução da atividade JavaSc
 1.  Aguarde até que a nova compilação seja implementada.  
 1.  Faça a auditoria da página novamente.  
     
-    > ##### Figura 41  
-    > Um relatório de auditorias após a configuração do webpack para usar o modo de produção  
-    > ! [Um relatório de auditorias após a configuração do webpack para usar o modo de produção] [ImageReport5]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="Um relatório de auditorias após a configuração do webpack para usar o modo de produção" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
+       Um relatório de auditorias após a configuração do webpack para usar o modo de produção  
+    :::image-end:::  
+    
 Para reduzir a atividade do JavaScript, remova a solicitação para `mineBitcoin` :  
 
 1.  Na guia Editor, abra `src/App.jsx` .  
@@ -495,10 +495,10 @@ Para reduzir a atividade do JavaScript, remova a solicitação para `mineBitcoin
 1.  Aguarde até que a nova compilação seja implementada.  
 1.  Faça a auditoria da página novamente.  
     
-    > ##### Figura 42  
-    > Um relatório de auditorias após remover o trabalho em JavaScript desnecessário  
-    > ! [Um relatório de auditorias após remover o trabalho JavaScript desnecessário] [ImageReport6]  
-
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="Um relatório de auditorias após remover o trabalho em JavaScript desnecessário" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
+       Um relatório de auditorias após remover o trabalho em JavaScript desnecessário  
+    :::image-end:::  
+    
 Parece que essa última alteração causou um salto maciço no desempenho!  
 
 > [!NOTE]
@@ -524,69 +524,24 @@ Se você preferir uma abordagem que se pareça mais `console.log()` , a [API de 
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
-<!--    -->  
+<!--  
+  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageAddPatternIcon]: /microsoft-edge/devtools-guide-chromium/media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: /microsoft-edge/devtools-guide-chromium/media/more-panels-icon.msft.png  
-[ImagePerformIcon]: /microsoft-edge/devtools-guide-chromium/media/perform-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-[ImageRemoveIcon]: /microsoft-edge/devtools-guide-chromium/media/remove-icon.msft.png  
-
-[ImageTony]: /microsoft-edge/devtools-guide-chromium/media/speed-tony.msft.png "Figura 1: Tony o gato"  
-[ImageEditor]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-server-js.msft.png "Figura 2: a guia Editor"  
-[ImageMenu]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-server-js-remix-project.msft.png "Figura 3: o menu que aparece depois de clicar em Tony"  
-[ImageDemo]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-show-live.msft.png "Figura 4: a guia demonstração"  
-[ImageDevtools]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-show-live-console.msft.png "Figura 5: DevTools e a demonstração"  
-[ImageUndocked]: /microsoft-edge/devtools-guide-chromium/media/speed-console.msft.png "Figura 6: DevTools desencaixada"  
-[ImageAudits]: /microsoft-edge/devtools-guide-chromium/media/speed-audits-performance.msft.png "Figura 7: painel auditorias"  
-[ImageReport]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png "Figura 8: o relatório para o painel auditorias do desempenho do site"  
-<!--[ImageError]: /microsoft-edge/devtools-guide-chromium/media/speed-.msft.png "Old Figure 9: A report that errored"  -->  
-[ImageOverall]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Metrics-Collapsed-Metrics-highlighted.msft.png "Figura 9: a pontuação geral de desempenho"  
-[ImageMetrics]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Metrics-Collapsed-highlighted.msft.png "Figura 10: seção métricas"  
-[ImageFirstMeaningfulPaint]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Metrics-Expanded.msft.png "Figura 11: selecione o botão de alternância realçado para expandir os itens de métricas"  
-[ImageScreenshots]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-Performance-View-Trace.msft.png "Figura 12: capturas de tela de como a página procurou ao carregar"  
-[ImageOpportunities]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Opportunities.msft.png "Figura 13: a seção oportunidades"  
-[ImageCompression]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Opportunities-Expanded.msft.png "Figura 14: eliminar oportunidade de recursos de bloqueio de renderização"  
-[ImageReference]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-web-dev-performance-Audits.msft.png "Figura 15: documentação para a oportunidade de eliminar recursos de bloqueio de renderização"  
-[ImageDiagnostics]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Diagnostics.msft.png "Figura 16: a seção diagnóstico"  
-[ImagePassed]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Audits-performance-Passed-Audits.msft.png "figura 17: a seção de auditorias passadas"  
-[ImageNetwork]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Network.msft.png "Figura 18: painel de rede"  
-[ImageLargeRows]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Network-use-Large-Request-Rows.msft.png "Figura 19: linhas grandes na tabela de solicitações de rede"  
-[ImageHeaders]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Network-use-Large-Request-Rows-Bundle-js.msft.png "Figura 20: a guia cabeçalhos"  
-[ImageServer]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Server-js.msft.png "figura 21: editando Server. js"  
-<!--[ImageBuilding]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-remix-server-js-edited.msft.png "Old Figure 22: The animation that indicates that the site is getting built"  -->  
-[ImageRequests]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Network-Main.msft.png "Figura 22: a coluna tamanho agora mostra 2 valores diferentes para recursos de texto"  
-[ImageGzip]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-Network-Bundle-js-Headers-Response.msft.png "Figura 23: a seção de cabeçalhos de resposta agora contém um `content-encoding` cabeçalho"  
-[ImageReport2]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Audits-performance.msft.png "Figura 24: um relatório de auditoria após habilitar a compactação de texto"  
-<!--[ImageResize]: /microsoft-edge/devtools-guide-chromium/media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png "Old Figure 27: Details about the properly size images opportunity"  -->
-[ImageReport3]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Compression-Small-images-Audits-performance.msft.png "figura 25: um relatório de auditorias após o redimensionamento de imagens"  
-[ImageRender]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Audits-performance-oppportunities-Expanded.msft.png "Figura 26: mais informações sobre a oportunidade de eliminar recursos de bloqueio de renderização"  
-[ImageCommandMenu]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Audits-performance-oppportunities-Expanded-Command-Coverage.msft.png "Figura 27: abrindo o menu de comando do painel auditorias"  
-[ImageCoverage]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Audits-performance-oppportunities-Expanded-Drawer-Coverage.msft.png "Figura 28: a guia cobertura"  
-[ImageCoverageReport]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Audits-performance-oppportunities-Expanded-Drawer-Coverage-RELOADED.msft.png "figura 29: o relatório de cobertura"  
-[ImageJQuery]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-sources-Drawer-Coverage-Reloaded-jQuery-js.msft.png "figura 30: Visualizar o arquivo jQuery no painel fontes"  
-[ImageBlocking]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Network-Drawer-Request-blocking-Empty.msft.png "figura 31: a guia de bloqueio de solicitação"  
-[ImageLibs]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Network-Drawer-Request-blocking-added.msft.png "Figura 32: adicionando um padrão para bloquear qualquer solicitação para o diretório libs"  
-[ImageBlockedLibs]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-Network-Reloaded-Drawer-Request-blocking-added.msft.png "figura 33: o painel de rede mostra que as solicitações foram bloqueadas"  
-[ImageReport4]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-2-Audits-performance.msft.png "Figura 34: um relatório de auditorias após remover os recursos de bloqueio de renderização"  
-[ImagePerformance]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU.msft.png "Figura 35: o rastreamento do painel desempenho do carregamento da página"  
-[ImageOverview]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU-Main-Highlight.msft.png "Figura 36: a seção visão geral do rastreamento"  
-[ImageUserTiming]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU-timings.msft.png "figura 37: a seção intervalos"  
-[ImageMain]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU-Main.msft.png "figura 38: a seção principal"  
-[ImageMine]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU-timings-minebitcoin.msft.png "figura 39: passando o mouse sobre a atividade mineBitcoin"  
-[ImageBottomUp]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-performance-Slow-Network-Slow-CPU-timings-Summary-minebitcoin.msft.png "figura 40: a guia de baixo para cima"  
-[ImageReport5]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-3-Audits-performance.msft.png "Figura 41: um relatório de auditoria após a configuração do webpack para usar o modo de produção"  
-[ImageReport6]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Speed-Glitch-Tony-remix-updated-4-Audits-performance.msft.png "Figura 42: um relatório de auditorias após remover trabalho de JavaScript desnecessário"  
-
+[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
+[ImageCaptureIcon]: ../media/capture-icon.msft.png  
+[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
+[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
+[ImagePerformIcon]: ../media/perform-icon.msft.png  
+[ImageRefreshIcon]: ../media/reload-icon.msft.png  
+[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
-[DevtoolsEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Referência de análise de desempenho"  
+[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Referência de análise de desempenho | Documentos da Microsoft"  
 
 [CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introdução à classe de desenvolvimento da Web | Coursera"  
 

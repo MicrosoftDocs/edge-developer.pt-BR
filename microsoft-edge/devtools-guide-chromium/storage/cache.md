@@ -2,16 +2,16 @@
 title: Exibir dados de cache com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 82356777f209b86f88de1ee53b212947d969ff8a
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 7e7b4326204ce10732972c89b70c966e4bb665fb
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612065"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983820"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,111 +37,101 @@ ms.locfileid: "10612065"
 
 Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para inspecionar dados de [cache][MDNCache] .  
 
-Se você estiver tentando inspecionar dados de [cache http][MDNHTTPCaching] , este não é o guia desejado.  
-Procure as informações na coluna **tamanho** do **log de rede**.  Consulte [log de atividades de rede][DevtoolsNetworkLogActivity].  
+Se você estiver tentando inspecionar dados de [cache http][MDNHTTPCaching] , este não é o guia desejado.  Procure as informações na coluna **tamanho** do **log de rede**.  Consulte [log de atividades de rede][DevtoolsNetworkLogActivity].  
 
 ## Exibir dados do cache   
 
 1.  Selecione a guia **aplicativo** para abrir o painel do **aplicativo** .  O painel de **manifesto** geralmente abre por padrão.  
     
-    > ##### Figura 1  
-    > Painel de manifesto  
-    > ![Painel de manifesto][ImageManifestPane]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-manifest.msft.png":::
+       Painel de **manifesto**  
+    :::image-end:::  
+    
 1.  Expanda a seção **armazenamento do cache** para ver os caches disponíveis.  
     
-    > ##### Figura 2  
-    > Caches disponíveis  
-    > ![Caches disponíveis][ImageCache]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Caches disponíveis" lightbox="../media/storage-application-cache-storage.msft.png":::
+       Caches disponíveis  
+    :::image-end:::  
+    
 1.  Selecione um cache para exibir o conteúdo.  
     
-    > ##### Figura 3  
-    > Exibir o conteúdo de um cache  
-    > ![Exibir o conteúdo de um cache][ImageCacheView]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Exibir o conteúdo de um cache" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+       Exibir o conteúdo de um cache  
+    :::image-end:::  
+    
 1.  Selecione um recurso para exibir os cabeçalhos HTTP na seção abaixo da tabela.  
     
-    > ##### Figura 4  
-    > Visualizando os cabeçalhos HTTP de um recurso  
-    > ![Visualizando os cabeçalhos HTTP de um recurso][ImageViewCacheResource]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Exibir os cabeçalhos HTTP de um recurso" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       Exibir os cabeçalhos HTTP de um recurso  
+    :::image-end:::  
+    
 1.  Selecione **Visualizar** para exibir o conteúdo de um recurso.  
     
-    > ##### Figura 5  
-    > Exibindo o conteúdo de um recurso  
-    > ![Exibindo o conteúdo de um recurso][ImageCacheContent]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Exibir o conteúdo de um recurso" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+       Exibir o conteúdo de um recurso  
+    :::image-end:::  
+    
 ## Atualizar um recurso   
 
 1.  [Exibir os dados de um cache](#view-cache-data).  
 1.  Selecione o recurso que você deseja atualizar.  O DevTools a destaca para indicar que está selecionado.  
     
-    > ##### Figura 6  
-    > Selecionando um recurso  
-    > ![Selecionando um recurso][ImageCacheSelected]  
-
-1.  Selecione **Atualizar** ![ atualização ][ImageRefreshIcon] .  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Selecionar um recurso" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Selecionar um recurso  
+    :::image-end:::  
+    
+1.  Selecione **Atualizar** \ ( ![ Atualizar ][ImageRefreshIcon] \).  
+    
 ## Filtrar recursos   
 
 1.  [Exibir os dados de um cache](#view-cache-data).  
 1.  Use a caixa de texto **Filtrar por caminho** para filtrar os recursos que não correspondem ao caminho fornecido.  
     
-    > ##### Figura 7  
-    > Filtrar recursos que não correspondem ao caminho especificado  
-    > ![Filtrar recursos que não correspondem ao caminho especificado][ImageCacheFilter]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filtrar recursos que não correspondam ao caminho especificado" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       Filtrar recursos que não correspondam ao caminho especificado  
+    :::image-end:::  
+    
 ## Excluir um recurso   
 
 1.  [Exibir os dados de um cache](#view-cache-data).  
 1.  Selecione o recurso que você deseja excluir.  O DevTools a destaca para indicar que está selecionado.  
     
-    > ##### Figura 8  
-    > Selecionando um recurso  
-    > ![Selecionando um recurso][ImageCacheSelected2]  
-
-1.  Selecione **excluir** selecionado ![ excluir selecionado ][ImageDeleteIcon] .  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Selecionar um recurso" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Selecionar um recurso  
+    :::image-end:::  
+    
+1.  Selecione **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
+    
 ## Excluir todos os dados do cache   
 
 1.  Abrir **Application**  >  **armazenamento limpo**do aplicativo.  
 1.  Verifique se a caixa de seleção **armazenamento do cache** está habilitada.  
     
-    > ##### Figura 9  
-    > A caixa de seleção **armazenamento do cache**  
-    > ![A caixa de seleção armazenamento do cache][ImageCacheCheckbox]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="A caixa de seleção armazenamento do cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       A caixa de seleção **armazenamento do cache**  
+    :::image-end:::  
+    
 1.  Selecione **limpar dados do site**.  
     
-    > ##### Figura 10  
-    > O botão **limpar dados do site**  
-    > ![O botão limpar dados do site][ImageCacheClearSite]  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="O botão limpar dados do site" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       O botão **limpar dados do site**  
+    :::image-end:::  
+    
+<!--  
+  
 
-<!--  -->  
 
-
+-->  
 
 <!-- image links -->  
 
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figura 1: o painel manifestar"  
-[ImageCache]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage.msft.png "Figura 2: caches disponíveis"  
-[ImageCacheView]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-root-headers.msft.png "Figura 3: exibindo o conteúdo de um cache"  
-[ImageViewCacheResource]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-index-headers.msft.png "Figura 4: exibindo os cabeçalhos HTTP de um recurso"  
-[ImageCacheContent]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-js-preview.msft.png "Figura 5: exibindo o conteúdo de um recurso"  
-[ImageCacheSelected]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-refresh.msft.png "Figura 6: selecionando um recurso"  
-[ImageCacheFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-filter.msft.png "Figura 7: filtrando recursos que não correspondem ao caminho especificado"  
-[ImageCacheSelected2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-delete-selected.msft.png "Figura 8: selecionando um recurso"  
-[ImageCacheCheckbox]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-cache-storage-checkbox.msft.png "Figura 9: caixa de seleção armazenamento do cache"  
-[ImageCacheClearSite]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png "Figura 10: o botão limpar dados do site"  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium)"  
-[DevtoolsNetworkLogActivity]: /microsoft-edge/network/index#log-network-activity  "Registrar atividades de rede"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Registrar atividades da rede | Documentos da Microsoft"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
 [MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Cache HTTP | MDN"  

@@ -2,16 +2,16 @@
 title: Exibir e alterar dados do IndexedDB com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 4eca78dcd92048d75f8488fddc7b210da68690df
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 890e20f65c3b70193a38783f3c9ca5d879d5ac48
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612085"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983713"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,18 +41,18 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
 
 1.  Selecione a guia **aplicativo** para abrir o painel do **aplicativo** .  O painel de **manifesto** geralmente abre por padrão.  
     
-    > ##### Figura 1  
-    > Painel de manifesto  
-    > ![Painel de manifesto][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Painel de **manifesto**  
+    :::image-end:::  
+    
 1.  Expanda o menu **IndexedDB** para ver quais bancos de dados estão disponíveis.  
     
-    > ##### Figura 2  
-    > O menu **IndexedDB**  
-    > ![O menu IndexedDB][ImageIndexedDBMenu]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="O menu IndexedDB" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+       O menu **IndexedDB**  
+    :::image-end:::  
     
-    *   ![Ícone de banco de dados ][ImageDatabaseIcon] `notes - https://mdn.github.io` representa um banco de dados, onde `notes` é o nome do banco de dados e `https://mdn.github.io` é a origem que acessa o banco de dados.  
-    *   ![][ImageObjectStoreIcon] `notes` O ícone de repositório de objetos é um repositório de objetos.  
+    *   \ ( ![ Ícone de banco de dados ][ImageDatabaseIcon] \) `notes - https://mdn.github.io` representa um banco de dados, onde `notes` é o nome do banco de dados e `https://mdn.github.io` é a origem que acessa o banco de dados.  
+    *   \ ( ![ Ícone de repositório de objetos ][ImageObjectStoreIcon] \) `notes` é um repositório de objetos.  
     *   **título** e **corpo** são [índices][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -60,41 +60,41 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Selecione um banco de dados para ver a origem e o número da versão.  
     
-    > ##### Figura 3  
-    > O banco de dados **anotações**  
-    > ![O banco de dados anotações][ImageIndexedDBDatabase]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="O banco de dados anotações" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+       O banco de dados **anotações**  
+    :::image-end:::  
     
 1.  Selecione um repositório de objetos para ver os pares de valor chave.  
     
     > [!NOTE]
     > Os dados do IndexedDB não são atualizados em tempo real.  Consulte [atualizar dados do IndexedDB](#refresh-indexeddb-data).  
     
-    > ##### Figura 4  
-    > O repositório de objetos **anotações**  
-    > ![O repositório de objetos anotações][ImageIndexedDBObjectStore]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="O repositório de objetos anotações" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+       O repositório de objetos **anotações**  
+    :::image-end:::  
+    
     *   **Total de entradas** é o número total de pares de valores chave no repositório de objetos.  
     *   O **valor do gerador de chave** é a próxima chave disponível.  Este campo é mostrado apenas ao usar [geradores de chaves][MDNBasicConceptsKeyGenerator].  
-
+    
 1.  Selecione uma célula na coluna **valor** para expandir esse valor.  
     
-    > ##### Figura 5  
-    > Exibindo um valor de IndexedDB  
-    > ![Exibindo um valor de IndexedDB][ImageIndexedBDValue]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Exibir um valor de IndexedDB" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+       Exibir um valor de **IndexedDB**  
+    :::image-end:::  
     
-1.  Selecione um índice, como **título** ou **corpo** na [Figura 6](#figure-6), para classificar o repositório de objetos de acordo com os valores desse índice.  
+1.  Selecione um índice, como **título** ou **corpo** na figura a seguir, para classificar o repositório de objetos de acordo com os valores desse índice.  
    
-    > ##### Figura 6  
-    > Um repositório de objetos que é classificado em ordem alfabética de acordo com a chave de **título**  
-    > ![Classificando um repositório de objetos por um índice][ImageIndexedDBIndex]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Classificar um repositório de objetos por um índice" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+       Classificar um repositório de objetos por um índice  
+    :::image-end:::  
+    
 ## Atualizar dados do IndexedDB   
 
-Os valores de IndexedDB no painel do **aplicativo** não são atualizados em tempo real.  Selecione **Atualizar** ![ atualização ][ImageReloadIcon] ao exibir um repositório de objetos para atualizar os dados ou exibir um banco de dados e clique em **Atualizar banco** de dados para atualizar todos os dados.  
+Os valores de IndexedDB no painel do **aplicativo** não são atualizados em tempo real.  Selecione **Atualizar** \ ( ![ Atualizar ][ImageReloadIcon] \) ao exibir um repositório de objetos para atualizar os dados ou exibir um banco de dados e clique em **Atualizar banco** de dados para atualizar todos os dados.  
 
-> ##### Figura 7  
-> Exibir um banco de dados  
-> ![Exibir um banco de dados][ImageIndexedDBDatabase2]  
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Exibir um banco de dados" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+   Exibir um banco de dados  
+:::image-end:::  
 
 ## Editar dados do IndexedDB   
 
@@ -104,9 +104,9 @@ As chaves e os valores do IndexedDB não podem ser editados no painel do **aplic
 
 Os [trechos][DevtoolsJavascriptSnippets] de código são uma maneira de armazenar e executar blocos de código JavaScript dentro do devtools.  Quando você executa um snippet, o resultado é registrado no **console**.  Você pode usar um snippet para executar o código JavaScript para editar um banco de dados do IndexedDB.  
 
-> ##### Figura 8  
-> Usando um trecho para interagir com IndexedDB  
-> ![Usando um trecho para interagir com IndexedDB][ImageIndexedDBSnippet]  
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Usar um trecho para interagir com IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+   Usar um trecho para interagir com IndexedDB  
+:::image-end:::  
 
 ## Excluir dados do IndexedDB   
 
@@ -115,76 +115,63 @@ Os [trechos][DevtoolsJavascriptSnippets] de código são uma maneira de armazena
 1.  [Exibir um repositório de objetos IndexedDB](#view-indexeddb-data).  
 1.  Selecione o par chave-valor que você deseja excluir.  O DevTools a destaca para indicar que está selecionado.  
     
-    > ##### Figura 9  
-    > Selecionando um par de valores chave para excluí-lo  
-    > ![Selecionando um par de valores chave para excluí-lo][ImageIndexedDBKeyValuePair]  
-
-1.  Pressione a `Delete` tecla ou clique em **Excluir seleção selecionada** ![ selecionada ][ImageDeleteIcon] .  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Selecionar um par de valor chave para excluí-lo" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       Selecionar um par de valor chave para excluí-lo  
+    :::image-end:::  
     
-    > ##### Figura 10  
-    > Como a loja de objetos se parece após o par de valor chave ter sido excluído  
-    > ![Como a loja de objetos se parece após o par de valor chave ter sido excluído][ImageIndexedDBKeyValuePairDeleted]  
-
+1.  Pressione a `Delete` tecla ou clique em **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
+    
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Como a loja de objetos se parece após o par de valor chave ter sido excluído" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+       Como a loja de objetos se parece após o par de valor chave ter sido excluído  
+    :::image-end:::  
+    
 ### Excluir todos os pares de valores chave em um repositório de objetos   
 
 1.  [Exibir um repositório de objetos IndexedDB](#view-indexeddb-data).  
     
-    > ##### Figura 11  
-    > Exibir um repositório de objetos  
-    > ![Exibir um repositório de objetos][ImageIndexedDBObjectStore]  
-
-1.  Selecione **limpar repositório de objetos** ![ limpar repositório de objetos ][ImageClearIcon] .  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Exibir um repositório de objetos" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+       Exibir um repositório de objetos  
+    :::image-end:::  
+    
+1.  Selecione **limpar repositório de objetos** \ ( ![ limpar repositório de objetos ][ImageClearIcon] \).  
+    
 ### Excluir um banco de dados do IndexedDB   
 
 1.  [Exiba o banco de dados do IndexedDB](#view-indexeddb-data) que você deseja excluir.  
 1.  Selecione **excluir banco de dados**.  
     
-    > ##### Figura 12  
-    > O botão **excluir banco de dados**  
-    > ![O botão excluir banco de dados][ImageIndexedDBDatabase]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="O botão excluir banco de dados" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+       O botão **excluir banco de dados**  
+    :::image-end:::  
+    
 ### Excluir todo o armazenamento do IndexedDB   
 
 1.  Abrir o painel **limpar armazenamento** .  
-
 1.  Verifique se a caixa de seleção **IndexedDB** está habilitada.  
-
 1.  Selecione **limpar dados do site**.  
     
-    > ##### Figura 13  
-    > O painel **limpar armazenamento** ![ o painel limpar armazenamento][ImageIndexedDBClearStorage]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="O painel limpar armazenamento" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       O painel **limpar armazenamento**  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDatabaseIcon]: /microsoft-edge/devtools-guide-chromium/media/database-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: /microsoft-edge/devtools-guide-chromium/media/object-store-icon.msft.png  
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Figura 1: o painel manifestar"  
-[ImageIndexedDBMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb.msft.png "Figura 2: o menu IndexedDB"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db.msft.png "Figura 3: o banco de dados do notes_db"  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png "Figura 4: o repositório de objetos notes_os"  
-[ImageIndexedBDValue]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Figura 5: exibindo um valor de IndexedDB"  
-[ImageIndexedDBIndex]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png "Figura 6: classificando um repositório de objetos por um índice"  
-[ImageIndexedDBDatabase2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Figura 7: exibindo um banco de dados"  
-[ImageIndexedDBSnippet]: /microsoft-edge/devtools-guide-chromium/media/storage-sources-snippets-indexeddb-output.msft.png "Figura 8: usando um snippet para interagir com IndexedDB"  
-[ImageIndexedDBKeyValuePair]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png "Figura 9: selecionando um par de valor chave para excluí-lo"  
-[ImageIndexedDBKeyValuePairDeleted]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Figura 10: qual a aparência do repositório de objetos após o par de valor chave ter sido excluído"  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Figura 11: exibindo um repositório de objetos"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png "Figura 12: botão excluir banco de dados"  
-[ImageIndexedDBClearStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png "Figura 13: o painel limpar armazenamento"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDatabaseIcon]: ../media/database-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium)"  
-[DevtoolsJavascriptSnippets]: /microsoft-edge/devtools-guide-chromium/javascript/snippets "Executar trechos de JavaScript em qualquer página com o Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Executar trechos de JavaScript em qualquer página com o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770-DevTools: show iframe IndexedDB bancos de dados-Chromium-monorail"  
 

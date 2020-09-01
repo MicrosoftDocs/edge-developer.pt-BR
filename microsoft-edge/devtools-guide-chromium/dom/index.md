@@ -2,16 +2,16 @@
 title: Começar a exibir e alterar o DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 4dee8b4e3ea927e72c0f98517f264b2c1d453013
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: c1cf84a9b3f5ce2363372e405071c2dfe1a19519
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607444"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985044"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,21 +56,21 @@ Quando você está interessado em um nó DOM específico, **inspecionar** é uma
 1.  [Exemplos abertos do dom](#open-dom-examples).  
 1.  Em **inspecionar um nó**, clique com o botão direito do mouse em **Michelangelo** e selecione **inspecionar**.  
     
-    > ##### Figura 1  
-    > Inspecionar um nó  
-    > ![Inspecionar um nó][ImageInspectingNode]  
+    :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Inspecionar um nó" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
+       Inspecionar um nó  
+    :::image-end:::  
     
     1.  O painel **elementos** do devtools é aberto.  `<li>Michelangelo</li>` é realçado na **árvore DOM**.  
         
-        > ##### Figura 2  
-        > Realçando o nó Michelangelo  
-        > ![Realçando o nó Michelangelo][ImageHighlightingMichelangeloNode]  
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Realce o nó Michelangelo" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+           Realce o `Michelangelo` nó  
+        :::image-end:::  
         
-        1.  Clique no ícone **inspecionar** ![ inspeção ][ImageInspectIcon] no canto superior esquerdo do devtools.  
+        1.  Clique no ícone **inspecionar** \ ( ![ inspecionar ][ImageInspectIcon] \) no canto superior esquerdo do devtools.  
             
-            > ##### Figura 3  
-            > O ícone inspecionar  
-            > ![O ícone inspecionar][ImageInspect]  
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="O ícone inspecionar" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+               O ícone **inspecionar**  
+            :::image-end:::  
             
 1.  Em **inspecionar um nó**, clique no texto de **Tóquio** .  Agora `<li>Tokyo</li>` está realçado na árvore DOM.  
 
@@ -83,15 +83,15 @@ Depois de selecionar um nó na árvore DOM, você poderá navegar pela árvore D
 1.  [Exemplos abertos do dom](#open-dom-examples).  
 1.  Em **navegar pela árvore DOM com um teclado**, clique com o botão direito do mouse em **Ringo** e selecione **inspecionar**.  `<li>Ringo</li>` está selecionado na árvore DOM.  
     
-    > ##### Figura 4  
-    > Inspecionar o nó Ringo  
-    > ![Inspecionar o nó Ringo][ImageInspectingRingoNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Inspecione o nó Ringo" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
+       Inspecionar o `Ringo` nó  
+    :::image-end:::  
     
     1.  Pressione a `Up` tecla de direção 2 vezes.  `<ul>`  está selecionada.  
         
-        > ##### Figura 5  
-        > Inspecionar o nó UL  
-        > ![Inspecionar o nó UL][ImageInspectingUlNode]  
+        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Inspecionar o nó UL" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
+           Inspecionar o `ul` nó  
+        :::image-end:::  
         
     1.  Pressione a `Left` tecla de direção.  A `<ul>` lista é recolhida.  
     1.  Pressione a `Left` tecla de direção novamente.  O pai do `<ul>` nó está selecionado.  Nesse caso, é o `<div>` com ID `navigate-the-dom-tree-with-a-keyboard-1` .  
@@ -108,9 +108,9 @@ Ao exibir a árvore DOM, você pode estar interessado em um nó DOM que não est
 1.  O `<li>Magritte</li>` nó ainda deve ser selecionado na sua árvore DOM.  Caso contrário, volte para rolar para o [modo de exibição](#scroll-into-view) e recomeçar.  
 1.  Clique com o botão direito do mouse no `<li>Magritte</li>` nó e selecione **rolar para o modo de exibição**.  O visor rola novamente para que você possa ver o nó **Magritte** .  Consulte [Apêndice: opções ausentes](#appendix-missing-options) se você não conseguir ver a opção **rolar para a exibição** .
     
-    > ##### Figura 6  
-    > Rolar para o modo de exibição  
-    > ![Rolar para o modo de exibição][ImageScrollView]  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Rolar para o modo de exibição" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       **Rolar para o modo de exibição**  
+    :::image-end:::  
 
 ### Pesquisar nós   
 
@@ -120,9 +120,9 @@ Você pode pesquisar a árvore DOM por cadeia de caracteres, seletor de CSS ou s
 1.  Pressione `Control` + `F` \ (Windows \) ou `Command` + `F` \ (MacOS \).  A barra de pesquisa é aberta na parte inferior da árvore DOM.  
 1.  Digite `The Moon is a Harsh Mistress`.  A última sentença é realçada na árvore DOM.  
     
-    > ##### Figura 7  
-    > Realçando a consulta na barra de pesquisa  
-    > ![Realçando a consulta na barra de pesquisa][ImageHighlightingQuerySearchBar]  
+    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Realçar a consulta na barra de pesquisa" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+       Realçar a consulta na barra de pesquisa  
+    :::image-end:::  
     
 Conforme mencionado acima, a barra de pesquisa também oferece suporte a seletores CSS e XPath.  
 
@@ -138,9 +138,9 @@ Para editar o conteúdo de um nó, clique duas vezes no conteúdo na árvore DOM
 1.  Em **editar conteúdo**, clique com o botão direito do mouse em **Michelle** e selecione **inspecionar**.  
     1.  Na árvore DOM, clique duas vezes `Michelle` .  Em outras palavras, clique duas vezes no texto entre `<li>` e `</li>` .  O texto é realçado para indicar que está selecionado.  
         
-        > ##### Figura 8  
-        > Editando o texto  
-        > ![Editando o texto][ImageEditingText]  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Editar o texto" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
+           Editar o texto  
+        :::image-end:::  
         
     1.  Excluir `Michelle` , digite `Leela` e, em seguida, pressione `Enter` para confirmar a alteração.  O texto no DOM muda de **Michelle** para **Leela**.  
 
@@ -150,18 +150,17 @@ Para editar atributos, clique duas vezes no nome ou no valor do atributo.  Siga 
 
 1.  [Exemplos abertos do dom](#open-dom-examples).  
 1.  Em **Editar atributos**, clique com o botão direito do mouse em **Howard** e selecione **inspecionar**.  
-
 1.  Clique duas vezes `<li>` .  O texto é realçado para indicar que o nó está selecionado.  
     
-    > ##### Figura 9  
-    > Editando o nó  
-    > ![Editando o nó][ImageEditingNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Editar o nó" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
+       Editar o nó  
+    :::image-end:::  
     
 1.  Pressione a `Right` tecla de seta, adicione um espaço, digite `style="background-color:gold"` e pressione `Enter` .  A cor da tela de fundo do nó muda para ouro.  
     
-    > ##### Figura 10  
-    > Adicionando um atributo Style ao nó  
-    > ![Adicionando um atributo Style ao nó][ImageAddingStyleAttributeNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Adicionar um atributo Style ao nó" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
+       Adicionar um `style` atributo ao nó  
+    :::image-end:::  
     
 ### Editar tipo de nó   
 
@@ -172,9 +171,9 @@ Para editar o tipo de um nó, clique duas vezes no tipo e, em seguida, digite o 
     1.  Clique duas vezes `<li>` .  O texto `li` é realçado.  
     1.  Excluir `li` , digite `button` e, em seguida, pressione `Enter` .  O `<li>` nó muda para um `<button>` nó.  
         
-        > ##### Figura 11  
-        > Alterar o botão do tipo de nó  
-        > ![Alterar o botão do tipo de nó][ImageChangingNodeButton]  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Alterar o botão do tipo de nó" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
+           Alterar o tipo de nó para `button`  
+        :::image-end:::  
         
 ### Reordenar nós DOM   
 
@@ -188,9 +187,9 @@ Arraste os nós para reorganizá-los.
     
     1.  Na árvore DOM, arraste `<li>Elvis Presley</li>` para a parte superior da lista.  
         
-        > ##### Figura 12  
-        > Arrastando o nó para a parte superior da lista  
-        > ![Arrastando o nó para a parte superior da lista][ImageDraggingNodeTopList]  
+        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Arraste o nó para a parte superior da lista" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
+           Arraste o nó para a parte superior da lista  
+        :::image-end:::  
         
 ### Forçar estado   
 
@@ -209,9 +208,9 @@ Pressione `H` para ocultar um nó.
 1.  Em **ocultar um nó**, clique com o botão direito **do mouse no meu destino de estrelas** e selecione **inspecionar**.  
     1.  Pressione a `H` tecla.  O nó está oculto.  
         
-        > ##### Figura 13  
-        > Qual é a aparência do nó na árvore DOM após ele estar oculto  
-        > ![Qual é a aparência do nó na árvore DOM após ele estar oculto][ImageNodeDomTreeAfterHidden]  
+        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Qual é a aparência do nó na árvore DOM após ele estar oculto" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+           Qual é a aparência do nó na árvore DOM após ele estar oculto  
+        :::image-end:::  
         
     1.  Pressione a `H` tecla novamente.  O nó é mostrado novamente.  
 
@@ -237,15 +236,16 @@ Quando você inspeciona um nó, o `== $0` texto ao lado do nó significa que voc
     1.  Pressione a `Escape` tecla para abrir a gaveta do console.  
     1.  Digite `$0` e pressione a `Enter` tecla.  O resultado da expressão mostra que `$0` é avaliado como `<li>The Left Hand of Darkness</li>` .  
         
-        > ##### Figura 14  
-        > O resultado da primeira `$0` expressão no console  
-        > ![O resultado da primeira expressão $0 no console][ImageFirstConsole]  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="O resultado da primeira expressão $0 no console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
+            O resultado da primeira `$0` expressão no **console**  
+        :::image-end:::  
         
     1.  Passe o mouse sobre o resultado.  O nó é realçado no visor.  
     1.  Clique `<li>Dune</li>` na árvore DOM, digite `$0` novamente no console e pressione `Enter` novamente.  Agora, `$0` é avaliada como `<li>Dune</li>` .  
         
-        > ##### Figura 15  
-        > O resultado da segunda `$0` expressão no console ![ o resultado da segunda expressão $0 no console][ImageSecondConsole]  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="O resultado da segunda expressão $0 no console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
+           O resultado da segunda `$0` expressão no **console**  
+        :::image-end:::  
         
 ### Armazenar como variável global   
 
@@ -256,9 +256,9 @@ Se você precisar consultar novamente um nó muitas vezes, armazene-o como uma v
     1.  Clique com o botão direito do mouse `<li>The Big Sleep</li>` na árvore DOM e selecione **armazenar como variável global**.  Consulte [Apêndice: opções ausentes](#appendix-missing-options) se você não vir essa opção.  
     1.  Digite `temp1` o console e pressione `Enter` .  O resultado da expressão mostra que a variável é avaliada como o nó.  
         
-        > ##### Figura 16  
-        > O resultado da expressão temp1  
-        > ![O resultado da expressão temp1][ImageResultTemp1]  
+        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="O resultado da expressão temp1" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
+           O resultado da `temp1` expressão  
+        :::image-end:::  
         
 ### Copiar caminho do JS   
 
@@ -270,9 +270,9 @@ Copie o caminho JavaScript para um nó quando precisar referenciá-lo em um test
     1.  Pressione `Control` + `V` \ (Windows \) ou `Command` + `V` \ (MacOS \) para colar a expressão no console.  
     1.  Pressione `Enter` para avaliar a expressão.
         
-        > ##### Figura 17  
-        > O resultado da expressão de caminho do JS de cópia  
-        > ![O resultado da expressão de caminho do JS de cópia][ImageResultCopyJSPath]  
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="O resultado da expressão de caminho do JS de cópia" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+           O resultado da expressão de **caminho do js de cópia**  
+        :::image-end:::  
         
 ## Interromper alterações de DOM   
 
@@ -286,18 +286,18 @@ Use pontos de interrupção de modificação de atributo quando você quiser pau
 1.  Em **interromper as modificações de atributo**, clique com o botão direito do mouse em **sauerkraut** e selecione **inspecionar**.  
     1.  Na árvore DOM, clique com o botão direito do mouse `<li id="target">Sauerkraut</li>` e selecione **interromper nas**  >  **modificações de atributo**.  Consulte [Apêndice: opções ausentes](#appendix-missing-options) se você não conseguir ver esta opção.
         
-        > ##### Figura 18  
-        > Interromper alterações de atributo  
-        > ![Interromper alterações de atributo][ImageBreakAttributeModification]  
+        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Interromper alterações de atributo" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+           **Interromper alterações de atributo**  
+        :::image-end:::  
         
-    1.  Na próxima etapa, você será instruído a clicar em um botão que Pause o código da página.  Depois que a página for pausada, você não poderá mais rolar a página.  Você deve clicar em **retomar** ![ script retomar script ][ImageResumeScriptIcon] para fazer com que a página seja rolável novamente.
+    1.  Na próxima etapa, você será instruído a clicar em um botão que Pause o código da página.  Depois que a página for pausada, você não poderá mais rolar a página.  Você deve clicar em **retomar script** \ ( ![ continuar script ][ImageResumeScriptIcon] \) para que a página seja rolável novamente.
         
-        > ##### Figura 19  
-        > Onde continuar a execução do script  
-        > ![Onde continuar a execução do script][ImageResumeScript]  
+        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Onde continuar a execução do script" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
+           Onde continuar a execução do script  
+        :::image-end:::  
         
     1.  Clique no botão **definir plano de fundo** acima.  Isso define o `style` atributo do nó para `background-color:thistle` .  DevTools pausará a página e realçará o código que fez com que o atributo fosse alterado.  
-    1.  Clique em **retomar** ![ script da retomada de script ][ImageResumeScriptIcon] , conforme mencionado anteriormente.  
+    1.  Clique em **retomar script** \ ( ![ continuar script ][ImageResumeScriptIcon] \), conforme mencionado anteriormente.  
     
 ### Interromper a remoção do nó   
 
@@ -307,7 +307,7 @@ Se você quiser pausar quando um nó específico for removido, use pontos de int
 1.  Em **interromper a remoção do nó**, clique com o botão direito do mouse em **Neuromancer** e selecione **inspecionar**.  
     1.  Na árvore DOM, clique com o botão direito do mouse `<li id="target">Neuromancer</li>` e selecione **interromper na**  >  **remoção do nó**.  Consulte [Apêndice: opções ausentes](#appendix-missing-options) se você não conseguir ver esta opção.  
     1.  Clique no botão **excluir** acima.  DevTools pausará a página e realçará o código que fez com que o nó fosse removido.  
-    1.  Clique em **retomar** ![ script da retomada de script ][ImageResumeScriptIcon] .  
+    1.  Clique em **retomar script** \ ( ![ retomar script ][ImageResumeScriptIcon] \).  
     
 ### Interromper modificações de subárvore   
 
@@ -317,7 +317,7 @@ Depois que você colocar um ponto de interrupção de modificação de subárvor
 1.  Em **interromper modificações de subárvore**, clique com o botão direito do mouse em **um incêndio na profundidade** e selecione **inspecionar**.  
     1.  Na árvore DOM, clique com o botão direito do mouse `<ul id="target">` , que é o nó acima `<li>A Fire Upon the Deep</li>` e selecione **interromper**  >  **alterações de subárvore**.  Consulte [Apêndice: opções ausentes](#appendix-missing-options) se você não conseguir ver esta opção.  
     1.  Clique em **Adicionar filho**.  O código é pausado porque um `<li>` nó foi adicionado à lista.  
-    1.  Clique em **retomar** ![ script da retomada de script ][ImageResumeScriptIcon] .  
+    1.  Clique em **retomar script** \ ( ![ retomar script ][ImageResumeScriptIcon] \).  
     
 ## Próximas etapas   
 
@@ -331,57 +331,69 @@ Confira a [Home Page do Microsoft Edge devtools][MicrosoftEdgeDevTools] para des
 
 ## Apêndice: HTML versus DOM   
 
-Esta seção explica rapidamente a diferença entre HTML e DOM.  
+A seção a seguir explica rapidamente a diferença entre HTML e DOM.  
 
-Quando você usa um navegador da Web para solicitar uma página, o servidor retorna HTML da seguinte forma:  
+:::row:::
+   :::column span="":::
+      Quando você usa um navegador da Web para solicitar uma página, o servidor retorna HTML como o trecho de código a seguir  
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is a hypertext document on the World Wide Web.</p>
-    <script src="/script.js" async></script>
-  </body>
-</html>
-```  
+      ```html
+      <!doctype html>
+      <html>
+          <head>
+              <title>Hello, world!</title>
+          </head>
+          <body>
+              <h1>Hello, world!</h1>
+              <p>This is a hypertext document on the World Wide Web.</p>
+              <script src="/script.js" async></script>
+          </body>
+      </html>
+      ```  
+   :::column-end:::
+   :::column span="":::
+      O navegador analisa o HTML e cria uma árvore de objetos como a lista a seguir.  
+      
+      ```dom
+      html
+          head
+              title
+          body
+              h1
+              p
+              script
+      ```  
+   :::column-end:::
+:::row-end:::  
 
-O navegador analisa o HTML e cria uma árvore de objetos como esta:  
+Essa árvore de objetos, ou nós, que representa o conteúdo da página é chamada de DOM.  
 
-```dom
-html
-  head
-    title
-  body
-    h1
-    p
-    script
-```  
-
-Essa árvore de objetos, ou nós, que representa o conteúdo da página é chamada de DOM.  No momento, ele tem a mesma aparência do HTML, mas suponha que o script referenciado na parte inferior do HTML executa este código:  
-
-```javascript
-const h1 = document.querySelector('h1');
-h1.parentElement.removeChild(h1);
-const p = document.createElement('p');
-p.textContent = 'Wildcard!';
-document.body.appendChild(p);
-```  
-
-Esse código remove o `h1` nó e adiciona outro `p` nó ao dom.  Agora, o DOM completo tem a seguinte aparência:  
-
-```dom
-html
-  head
-    title
-  body
-    p
-    script
-    p
-```  
+:::row:::
+   :::column span="":::
+      No momento, ele tem a mesma aparência do HTML, mas suponha que o script referenciado na parte inferior do HTML executa o trecho de código a seguir.  
+      
+      ```javascript
+      const h1 = document.querySelector('h1');
+      h1.parentElement.removeChild(h1);
+      const p = document.createElement('p');
+      p.textContent = 'Wildcard!';
+      document.body.appendChild(p);
+      ```  
+   :::column-end:::
+   :::column span="":::
+      Esse código remove o `h1` nó e adiciona outro `p` nó ao dom.  O DOM completo agora exibe a lista a seguir.  
+      
+      ```dom
+      html
+          head
+              title
+          body
+              p
+              script
+              p
+      ```  
+   :::column-end:::
+:::row-end:::  
 
 O HTML da página agora é diferente do DOM.  Em outras palavras, HTML representa o conteúdo inicial da página, e o DOM representa o conteúdo da página atual.  Quando o JavaScript adiciona, remove ou edita nós, o DOM se torna diferente do HTML.  
 
@@ -397,48 +409,29 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
     
     > ##### Figure 19  
     > Scroll into view  
-    > ![Scroll into view][ImageScrollView]  
+    > :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+   Scroll into view  
+:::image-end:::  
     -->  
 
 ## Apêndice: opções ausentes   
 
 Muitas das instruções neste tutorial instruem você a clicar com o botão direito do mouse em um nó na árvore DOM e selecionar uma opção no menu de contexto exibido.  Se você não vir a opção especificado no menu de contexto, tente clicar com o botão direito do mouse sobre o texto do nó.  
 
-> ##### Figura 20  
-> Onde clicar se você não estiver vendo todas as opções  
-> ![Onde clicar se você não estiver vendo todas as opções][ImageNotSeeingAllOptions]  
+:::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Onde clicar se você não estiver vendo todas as opções" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
+   Onde clicar se você não estiver vendo todas as opções  
+:::image-end:::  
 
 <!-- image links -->  
 
-[ImageInspectIcon]: /microsoft-edge/devtools-guide-chromium/media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-icon.msft.png  
-
-[ImageInspectingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-inspect.msft.png "Figura 1: inspecionando um nó"  
-[ImageHighlightingMichelangeloNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png "Figura 2: realçando o nó Michelangelo"  
-[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-select-element-page-inspect.msft.png "Figura 3: o ícone inspecionar"  
-[ImageInspectingRingoNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png "Figura 4: inspeção do nó Ringo"  
-[ImageInspectingUlNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png "Figura 5: inspeção do nó UL"  
-[ImageScrollView]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png "Figura 6: rolar para o modo de exibição"  
-[ImageHighlightingQuerySearchBar]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-search-nodes-highlight.msft.png "Figura 7: realçando a consulta na barra de pesquisa"  
-[ImageEditingText]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-content.msft.png "Figura 8: editando o texto"  
-[ImageEditingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-highlighted.msft.png "Figura 9: editando o nó"  
-[ImageAddingStyleAttributeNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-inline-css.msft.png "Figura 10: adicionando um atributo Style ao nó"  
-[ImageChangingNodeButton]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-node-type-button.msft.png "Figura 11: alterando o tipo de nó para o botão"  
-[ImageDraggingNodeTopList]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-reorder-dom-nodes.msft.png "Figura 12: arrastando o nó para a parte superior da lista"  
-[ImageNodeDomTreeAfterHidden]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-hide-a-node.msft.png "Figura 13: Qual é a aparência do nó na árvore DOM após ele estar oculto"  
-[ImageFirstConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png "Figura 14: o resultado da primeira expressão $0 no console"  
-[ImageSecondConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png "Figura 15: o resultado da segunda expressão do $0 no console"  
-[ImageResultTemp1]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png "Figura 16: o resultado da expressão temp1"  
-[ImageResultCopyJSPath]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png "Figura 17: o resultado da expressão de caminho do JS de cópia"  
-[ImageBreakAttributeModification]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Figura 18: pausa nas modificações do atributo"  
-[ImageResumeScript]: /microsoft-edge/devtools-guide-chromium/media/dom-break-attribute-modifications-sources-paused-on.msft.png "Figura 19: onde retomar o script em execução"  
-[ImageNotSeeingAllOptions]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-right-click-right-side.msft.png "Figura 20: onde clicar se você não estiver vendo todas as opções"  
+[ImageInspectIcon]: ../media/inspect-icon.msft.png  
+[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge \ (Chromium \)"  
-[DevToolsCssGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Introdução à exibição e alteração de CSS"  
-[DevToolsShortcutsElements]: /microsoft-edge/devtools-guide-chromium/shortcuts#elements-panel-keyboard-shortcuts "Atalhos de teclado do painel elementos-atalhos de teclado do Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge \ (Chromium \) | Documentos da Microsoft"  
+[DevToolsCssGetStarted]: ../css/index.md "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
+[DevToolsShortcutsElements]: ../shortcuts.md#elements-panel-keyboard-shortcuts "Atalhos de teclado do painel elementos-atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemplo de DOM do Microsoft Edge (Chromium) DevTools | Problema"
 

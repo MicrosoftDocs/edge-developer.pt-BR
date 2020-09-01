@@ -2,16 +2,16 @@
 title: Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 10c1ee12777965778ebec2d257399dc231e2a01a
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 6973f28a0cb530e8928976adb1354fa7471ee343
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607423"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985208"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,43 +53,43 @@ Há alguns aspectos dos dispositivos móveis que o DevTools nunca poderá simula
 
 ## Simular um visor móvel   
 
-Clique na **barra de ferramentas Alternar** dispositivo ![ alternar barra ][ImageDeviceToolbarIcon] de ferramentas para abrir a interface do usuário que permite simular um visor móvel.  
+Clique em **alternar barra de ferramentas de dispositivo** \ ( ![ alternar barra ][ImageDeviceToolbarIcon] de ferramentas de dispositivo \) para abrir a interface do usuário que permite simular um visor móvel.  
 
-> ##### Figura 1  
-> A barra de ferramentas do dispositivo  
-> ![A barra de ferramentas do dispositivo][ImageDeviceToolbar]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   A barra de ferramentas do dispositivo  
+:::image-end:::  
 
 Por padrão, a barra de ferramentas do dispositivo é aberta no modo de visor responsivo.  
 
 ### Modo de visor responsivo   
 
-Arraste as alças para redimensionar o visor para qualquer dimensão necessária.  Ou insira valores específicos nas caixas largura e altura.  Na [Figura 2](#figure-2), a largura é definida como `626` e a altura é definida como `516` .  
+Arraste as alças para redimensionar o visor para qualquer dimensão necessária.  Ou insira valores específicos nas caixas largura e altura.  Na figura a seguir, a largura é definida como `626` e a altura é definida como `516` .  
 
-> ##### Figura 2  
-> As alças para alterar as dimensões do visor quando no modo de visor responsivo  
-> ![As alças para alterar as dimensões do visor quando no modo de visor responsivo][ImageResponsiveHandles]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="As alças para alterar as dimensões do visor quando no modo de visor responsivo" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+   As alças para alterar as dimensões do visor quando no modo de visor responsivo  
+:::image-end:::  
 
 #### Mostrar consultas de mídia   
 
 Para mostrar pontos de interrupção de consulta de mídia acima do visor, clique em **mais opções** e selecione **Mostrar consultas de mídia**.  
 
-> ##### Figura 3  
-> Mostrar consultas de mídia  
-> ![Mostrar consultas de mídia][ImageShowMediaQueries]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Mostrar consultas de mídia" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+   **Mostrar consultas de mídia**  
+:::image-end:::  
 
 Clique em um ponto de interrupção para alterar a largura do visor para que o ponto de interrupção seja disparado.  
 
-> ##### Figura 4  
-> Clique em um ponto de interrupção para alterar a largura do visor  
-> ![Clique em um ponto de interrupção para alterar a largura do visor][ImageBreakpoint]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Clique em um ponto de interrupção para alterar a largura do visor" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   Clique em um ponto de interrupção para alterar a largura do visor  
+:::image-end:::  
 
 #### Definir o tipo de dispositivo   
 
 Use a lista **tipo de dispositivo** para simular um dispositivo móvel ou um dispositivo de desktop.  
 
-> ##### Figura 5  
-> A lista **tipo de dispositivo**  
-> ![A lista tipo de dispositivo][ImageDeviceType]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="A lista tipo de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   A lista **tipo de dispositivo**  
+:::image-end:::  
 
 A tabela a seguir descreve as diferenças entre as opções.  **Método de renderização** refere-se ao Microsoft Edge renderiza a página como um visor móvel ou da área de trabalho.  **Ícone do cursor** refere-se ao tipo de cursor que você vê quando passa o mouse sobre a página.  Os **eventos acionados** referem-se à página `touch` ou `click` eventos quando você interage com a página.  
 
@@ -107,24 +107,24 @@ A tabela a seguir descreve as diferenças entre as opções.  **Método de rende
 
 Para simular as dimensões de um dispositivo móvel específico, selecione o dispositivo na lista de **dispositivos** .  
 
-> ##### Figura 6  
-> Lista de dispositivos  
-> ![Lista de dispositivos][ImageDeviceList]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Lista de dispositivos" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   Lista de **dispositivos**  
+:::image-end:::  
 
 #### Girar o visor para a orientação paisagem   
 
-Clique em **girar** ![ rotação ][ImageRotateIcon] para girar o visor para a orientação paisagem.  
+Clique em **girar** \ ( ![ girar ][ImageRotateIcon] \) para girar o visor para a orientação paisagem.  
 
-> ##### Figura 7  
-> Orientação paisagem  
-> ![Orientação paisagem][ImageLandscape]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Orientação paisagem" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+   Orientação paisagem  
+:::image-end:::  
 
 > [!NOTE]
 > O botão **girar** desaparecerá se a **barra de ferramentas** do seu dispositivo for estreita.  
 
-> ##### Figura 8  
-> A barra de ferramentas do dispositivo  
-> ![A barra de ferramentas do dispositivo][ImageDeviceToolbar2]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   A **barra de ferramentas do dispositivo**  
+:::image-end:::  
 
 Consulte também [definir orientação](#set-orientation).  
 
@@ -135,182 +135,169 @@ Ao simular as dimensões de um dispositivo móvel específico, como um iPhone 6,
 > [!NOTE]
 > Se você não vir um quadro de dispositivo para um dispositivo específico, provavelmente significa que o DevTools não tem arte para essa opção específica.  
 
-> ##### Figura 9  
-> Mostrar quadro de dispositivo  
-> ![Mostrar quadro de dispositivo][ImageShowDeviceFrame]  
-
-> ##### Figura 10  
-> O quadro do dispositivo para o iPhone 6  
-> ![O quadro do dispositivo para o iPhone 6][ImageIphoneFrame]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Mostrar quadro de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         Mostrar quadro de dispositivo  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="O quadro do dispositivo para o iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         O quadro do dispositivo para o iPhone 6  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 #### Adicionar um dispositivo móvel personalizado   
 
 Para adicionar um dispositivo personalizado:  
 
 1.  Clique na lista de **dispositivos** e, em seguida, selecione **Editar**.  
-
-> ##### Figura 11  
-> Selecionar **Editar** 
-> ![ selecionando editar][ImageEdit]  
-
+    
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Selecione Editar" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Selecione **Editar**  
+    :::image-end:::  
+    
 1.  Clique em **Adicionar dispositivo personalizado**.  
-
 1.  Insira um nome, uma largura e uma altura para o dispositivo.  A [taxa de pixels de dispositivo][MDNWindowDevicePixelRatio], a [cadeia de caracteres do agente do usuário][MDNUserAgent]e os campos do tipo de [dispositivo](#set-the-device-type) são opcionais.  O campo tipo de dispositivo é a lista definida como **celular** por padrão.  
-
-> ##### Figura 12  
-> Criando um dispositivo personalizado  
-> ![Criando um dispositivo personalizado][ImageAddCustomDevice]  
+    
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Criar um dispositivo personalizado" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+       Criar dispositivo personalizado  
+    :::image-end:::  
 
 ### Mostrar réguas   
 
 Clique em **mais opções** e selecione **Mostrar réguas** para ver as réguas acima e à esquerda do visor.  A unidade de dimensionamento das réguas é pixels.  
 
-> ##### Figura 13  
-> Mostrar réguas  
-> ![Mostrar réguas][ImageShowRulers]  
-
-> ##### Figura 14  
-> Réguas acima e à esquerda da viewport  
-> ![Réguas acima e à esquerda da viewport][ImageRulers]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Mostrar réguas" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         **Mostrar réguas**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Réguas acima e à esquerda da viewport" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         Réguas acima e à esquerda da viewport  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 ### Aplicar zoom ao visor   
 
 Use a lista **zoom** para ampliar ou reduzir.  
 
-> ##### Figura 15  
-> Zoom  
-> ![Zoom][ImageZoomViewport]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+   **Zoom**  
+:::image-end:::  
 
 ## Acelerar a rede e a CPU   
 
 Para acelerar a rede e a CPU, selecione celular de **nível intermediário** ou **móvel de baixo** nível na lista **acelerador** .  
 
-> ##### Figura 16  
-> Lista de aceleração  
-> ![Lista de aceleração][ImageThrottling]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Lista de aceleração" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   Lista de **aceleração**  
+:::image-end:::  
 
 O **Mobile de nível intermediário** simula a rede 3G rápida e acelera a CPU para que seja 4 vezes mais lento do que o normal.  O **celular low-end** simula a 3G lenta e acelera a CPU 6 vezes mais lenta do que o normal.  Lembre-se de que a limitação é relativa à funcionalidade normal do laptop ou da área de trabalho.  
 
 > [!NOTE]
-> A lista de **aceleração** ficará oculta se a **barra de ferramentas** do seu dispositivo for estreita.  
+> A lista de **aceleração** fica oculta se a **barra de ferramentas** do seu dispositivo for estreita.  
 
-> ##### Figura 17  
-> A barra de ferramentas do dispositivo  
-> ![A barra de ferramentas do dispositivo][ImageDeviceToolbar3]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   A **barra de ferramentas do dispositivo**  
+:::image-end:::  
 
 ### Acelerar apenas a CPU   
 
-Para controlar apenas a CPU e não a rede, vá para o **painel desempenho** , clique em capturar configurações de captura de **configurações** e ![ ][ImageCaptureIcon] selecione **4x** lentidão ou **lentidão 6x** na lista **CPU** .  
+Para controlar apenas a CPU e não a rede, vá para o painel **desempenho** , clique em **configurações de captura** \ (configurações de ![ captura ][ImageCaptureIcon] \) e selecione **4x** lentidão ou **lentidão 6x** na lista **CPU** .  
 
-> ##### Figura 18  
-> Lista da CPU  
-> ![Lista da CPU][ImageCPU]  
+:::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Lista da CPU" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+   Lista **da CPU**  
+:::image-end:::  
 
 ### Acelerar somente a rede   
 
 Para limitar apenas a rede e não a CPU, vá até **Network** o painel de rede **e selecione 3G** ou a **3G lento** na lista **aceleração** .  
 
-> ##### Figura 19  
-> Lista de aceleração  
-> ![Lista de aceleração][ImageNetwork]  
+:::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Lista de aceleração" lightbox="../media/device-mode-network-throttle.msft.png":::
+   Lista de **aceleração**  
+:::image-end:::  
 
-Ou pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, digite `3G` e selecione Habilitar a aceleração **3G rápida** ou **habilitar a limitação 3G lenta**.  
+Ou pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**, digite `3G` e selecione Habilitar a aceleração **3G rápida** ou **habilitar a limitação 3G lenta**.  
 
-> ##### Figura 20  
-> O menu de comando  
-> ![O menu de comando][ImageCommandMenu]  
+:::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+   O **menu de comando**  
+:::image-end:::  
 
-Você também pode definir a limitação de rede no painel **desempenho** .  Clique em **capturar** ![ configurações de captura ][ImageCaptureIcon] e, em seguida, selecione 3G **rápido** ou **3G lento** na lista **rede** .  
+Você também pode definir a limitação de rede no painel **desempenho** .  Clique em **configurações de captura** \ ( ![ capturar configurações ][ImageCaptureIcon] \) e, em seguida, selecione 3G **rápido** ou **3G lento** na lista **rede** .  
 
-> ##### Figura 21  
-> Definindo a limitação de rede no painel desempenho  
-> ![Definindo a limitação de rede no painel desempenho][ImageNetwork2]  
+:::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Definir a limitação de rede no painel desempenho" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   Definir a limitação de rede no painel **desempenho**  
+:::image-end:::  
 
 ## Substituir geolocalização   
 
-Para abrir a interface do usuário que substitui a localização geográfica, clique em **Personalizar e controle devtools** `...` e selecione **mais**  >  **sensores**de ferramentas.  
+Para abrir a interface do usuário que substitui a localização geográfica, clique em **Personalizar e controle devtools** \ ( `...` \) e selecione **mais**  >  **sensores**de ferramentas.  
 
-> ##### Figura 22  
-> Sensores  
-> ![Sensores][ImageSensors]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   **Sensores**  
+:::image-end:::  
 
 Ou pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, digite `Sensors` e selecione **Mostrar sensores**.  
 
-> ##### Figura 23  
-> Mostrar sensores  
-> ![Mostrar sensores][ImageShowSensors]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   **Mostrar sensores**  
+:::image-end:::  
 
 Selecione uma das predefinições **na lista geolocalização** ou selecione **local personalizado** para inserir suas próprias coordenadas ou selecione **localização indisponível** para testar como a sua página se comporta quando a localização geográfica está em um estado de erro.  
 
-> ##### Figura 24  
-> Geolocalização  
-> ![Geolocalização][ImageGeolocation]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Geolocalização" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+   **Geolocalização**  
+:::image-end:::  
 
 ## Definir orientação   
 
-Para abrir a interface do usuário de orientação, clique em **Personalizar e controle devtools** `...` e selecione **mais**  >  **sensores**de ferramentas.  
-
-> ##### Figura 25  
-> Sensores  
-> ![Sensores][ImageSensors2]  
-
-Ou pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, digite `Sensors` e selecione **Mostrar sensores**.  
-
-> ##### Figura 26  
-> Mostrar sensores  
-> ![Mostrar sensores][ImageShowSensors2]  
+:::row:::
+   :::column span="":::
+      Para abrir a interface do usuário de orientação, clique em **Personalizar e controle devtools** `...` e selecione **mais**  >  **sensores**de ferramentas.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensores**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      Ou pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando, digite `Sensors` e selecione **Mostrar sensores**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Mostrar sensores**  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 Selecione uma das predefinições na lista **orientação** ou selecione **orientação personalizada** para definir seus próprios valores Alfa, beta e gama.  
 
-> ##### Figura 27  
-> Orientação  
-> ![Orientação][ImageOrientation]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Orientação" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+   **Orientação**  
+:::image-end:::  
 
+<!--  
  
 
 
+-->  
 
 <!--See [Join the DevTools community][DevToolsCommunity] for other ways to leave feedback.  -->  
 
 <!-- image links -->  
 
-[ImageCaptureIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
-[ImageCustomizeIcon]: /microsoft-edge/devtools-guide-chromium/media/customize-and-control-devtools-icon.msft.png  
-[ImageDeviceToolbarIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: /microsoft-edge/devtools-guide-chromium/media/rotate-dark-icon.msft.png  
-
-[ImageDeviceToolbar]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figura 1: a barra de ferramentas do dispositivo"  
-[ImageResponsiveHandles]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png "Figura 2: identificadores para alterar as dimensões do visor quando no modo de visor responsivo"  
-[ImageShowMediaQueries]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png "Figura 3: mostrar consultas de mídia"  
-[ImageBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png "Figura 4: clique em um ponto de interrupção para alterar a largura do visor"  
-[ImageDeviceType]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-type-list.msft.png "Figura 5: lista do tipo de dispositivo"  
-[ImageDeviceList]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list.msft.png "Figura 6: lista de dispositivos"  
-[ImageLandscape]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-landscape.msft.png "Figura 7: orientação paisagem"  
-[ImageDeviceToolbar2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figura 8: a barra de ferramentas do dispositivo"  
-[ImageShowDeviceFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png "Figura 9: mostrar quadro de dispositivo"  
-[ImageIphoneFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png "Figura 10: o quadro do dispositivo para o iPhone 6"  
-[ImageEdit]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list-edit.msft.png "Figura 11: selecionando editar"  
-[ImageAddCustomDevice]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png "Figura 12: Criando um dispositivo personalizado"  
-[ImageShowRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png "Figura 13: Mostrar réguas"  
-[ImageRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-rulers.msft.png "Figura 14: réguas acima e à esquerda da viewport"  
-[ImageZoomViewport]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-zoom.msft.png "Figura 15: zoom"  
-[ImageThrottling]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-throttle.msft.png "Figura 16: a lista de aceleração"  
-[ImageDeviceToolbar3]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figura 17: a barra de ferramentas do dispositivo"  
-[ImageCPU]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-cpu-throttle.msft.png "Figura 18: lista da CPU"  
-[ImageNetwork]: /microsoft-edge/devtools-guide-chromium/media/device-mode-network-throttle.msft.png "Figura 19: a lista de aceleração"  
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-command-menu-throttle.msft.png "Figura 20: o menu de comando"  
-[ImageNetwork2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-network-throttle.msft.png "Figura 21: definindo a limitação de rede no painel desempenho"  
-[ImageSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Figura 22: sensores"  
-[ImageShowSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Figura 23: mostrar sensores"  
-[ImageGeolocation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png "Figura 24: geolocalização"  
-[ImageSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Figura 25: sensores"  
-[ImageShowSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Figura 26: mostrar sensores"  
-[ImageOrientation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png "Figura 27: orientação"  
+[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
+[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
+[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 
-<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community"  -->
-[DevToolsRemoteDebugging]:/Microsoft-Edge/devtools-Guide-Chromium/Remote-Debugging/index "introdução à depuração remota de dispositivos Android"  
+<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
+[DevToolsRemoteDebugging]: .. /Remote-Debugging/index.MD "comece a usar dispositivos Android de depuração remota | Documentos da Microsoft "  
 
 [MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window. devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Agente de usuário | MDN"  
