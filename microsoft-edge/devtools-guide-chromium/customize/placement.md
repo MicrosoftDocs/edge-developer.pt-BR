@@ -2,16 +2,16 @@
 title: Alterar o posicionamento do Microsoft Edge DevTools (desencaixar, encaixar na parte inferior, encaixar à esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: f0be6243d4780e4ed49428ebaf2b6b37d9da323e
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601343"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981895"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,59 +37,63 @@ ms.locfileid: "10601343"
 
 Por padrão, o DevTools está encaixado à direita do seu visor.  Você também pode encaixar na parte inferior, encaixar à esquerda ou desencaixar o DevTools em uma janela separada.  
 
-> ##### Figura 1  
-> Encaixar à esquerda  
-> ![Encaixar à esquerda][ImageDockLeft]  
-
-> ##### Figura 2  
-> Encaixar na parte inferior  
-> ![Encaixar na parte inferior][ImageDockBottom]  
-
-> ##### Figura 3  
-> Navegador em janela separada  
-> ![Navegador em janela separada][ImageUndockBrowser]  
-
-> ##### Figura 4  
-> DevTools desencaixada em janela separada  
-> ![DevTools desencaixada em janela separada][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Selecionar `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Selecionar encaixe na parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Selecionar `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navegador em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Navegador em janela separada  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools desencaixada em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         DevTools desencaixada em janela separada  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Alterar o posicionamento a partir do menu principal   
 
-1.  Clique em **Personalizar e controle devtools** `...` e selecione desencaixar em desencaixar de **janela separado** ![ ][ImageUndockIcon] , **encaixar na barra inferior** ![ para baixo ][ImageBottomIcon] ou **encaixar à esquerda** para a ![ esquerda ][ImageLeftIcon] .  
+1.  Clique em **Personalizar e controle devtools** \ ( `...` \) e selecione **desencaixar em janela separada** \ ( ![ desencaixar ][ImageUndockIcon] \), **encaixar na parte inferior** \ ( ![ encaixar a parte inferior ][ImageBottomIcon] \) ou **encaixar à esquerda** \ ( ![ encaixar à esquerda ][ImageLeftIcon] \).  
     
-    > ##### Figura 5  
-    > Selecionar **desencaixar em uma janela separada**  
-    > ![Selecionar desencaixar em uma janela separada][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecione desencaixar em uma janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Selecione **desencaixar em uma janela separada**  
+    :::image-end:::  
     
 ## Alterar o posicionamento no menu de comando   
 
 1.  [Abrir o menu de comandos][DevtoolsCommandMenu].  
 1.  Execute um dos seguintes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  No momento, não há um comando para encaixar à esquerda, mas você pode acessá-lo no [menu principal](#change-placement-from-the-main-menu).  
     
-    > ##### Figura 6  
-    > O comando desencaixar  
-    > ![O comando desencaixar][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando desencaixar" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       O comando desencaixar  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Figura 1: encaixar à esquerda"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Figura 2: encaixar na parte inferior"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Figura 3: navegador em uma janela separada"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Figura 4: DevTools desencaixada em janela separada"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Figura 5: selecionando desencaixar em uma janela separada"  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Figura 6: o comando desencaixar"  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Executar comandos com o menu de comando do Microsoft Edge DevTools"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  

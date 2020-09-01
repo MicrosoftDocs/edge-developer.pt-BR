@@ -2,16 +2,16 @@
 title: Habilitar tema escuro no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 46a6d1aab30689a0d4b1f3fb20bf3521abd2017a
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601336"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981785"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,47 +37,42 @@ ms.locfileid: "10601336"
 
 Você pode habilitar o tema escuro em [configurações](#set-up-dark-theme-from-settings) ou o [menu de comando](#set-up-dark-theme-from-the-command-menu).  
 
-> ##### Figura 1  
-> O tema escuro  
-> ![O tema escuro][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="O tema escuro" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   O tema escuro  
+:::image-end:::  
 
 ## Configurar tema escuro a partir de configurações   
 
 1.  Clique em **Personalizar e controlar devtools** `...` e, em seguida, selecione **configurações**.  Você também pode abrir **as configurações** pressionando `F1` .  
-
-> ##### Figura 2  
-> Configurações de abertura  
-> ![Configurações de abertura][ImageOpenSettings]  
+    
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Abra Configurações" lightbox="../media/customize-options-settings.msft.png":::
+       Abrir **configurações**  
+    :::image-end:::  
 
 1.  No painel **preferências** , em **aparência**, clique no menu suspenso **tema** e selecione **escuro**.  
-
-> ##### Figura 3  
-> Preferências  
-> ![Preferências][ImagePreferences]  
+    
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Preferências" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Preferências**  
+    :::image-end:::  
 
 ## Configurar tema escuro no menu comando   
 
-1.  [Abrir o menu de comandos][CommandMenu].  
+1.  [Abrir o menu de comandos][DevtoolsCommandMenu].  
 1.  Comece a digitar `dark` , selecione o comando **alternar para tema escuro** e pressione `Enter` para executar o comando.  
-
-> ##### Figura 4  
-> O comando tema escuro  
-> ![O comando tema escuro][ImageDarkThemeCommand]  
-
+    
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="O comando tema escuro" lightbox="../media/customize-command-menu-dark.msft.png":::
+       O comando tema escuro  
+    :::image-end:::  
+    
+<!--  
    
 
 
-
-<!-- image links -->  
-
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Figura 1: o tema escuro"  
-[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Figura 2: abrindo as configurações"  
-[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Figura 3: preferências"  
-[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Figura 4: o comando tema escuro"  
+-->  
 
 <!-- links -->  
 
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Menu de comando"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Menu de comando | Documentos da Microsoft"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  

@@ -1,17 +1,17 @@
 ---
-title: Mapear código pré-processado para código-fonte
+title: Mapear Código em Pré-processamento para Código-fonte
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: b48c67584b3f3253ada99e32c5dabfdccb2fa4de
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581793"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981762"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -41,9 +41,9 @@ Mantenha o código do lado do cliente legível e debuggable, mesmo depois de com
 ### Resumo  
 
 *   Use mapas de origem para mapear o código minified para o código-fonte. Em seguida, você pode ler e depurar o código compilado na fonte original.  
-*   Use pré-processadores que sejam capazes de produzir mapas de origem.  
+*   Use apenas processadores que sejam capazes de produzir mapas de origem.  
 *   Verifique se o servidor Web é capaz de servir mapas de origem.  
-
+    
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
@@ -66,7 +66,7 @@ Os seguintes tipos de pré-processadores geralmente são usados em combinação 
 *   Transcompilers \ ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
 *   Compiladores \ ([compilador de fechamento][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)  
 *   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
-
+    
 ## Mapas de origem no painel fontes do DevTools  
 
 Mapas de origem de pré-processadors fazem com que o DevTools carregue seus arquivos originais, além de seus minified.  Em seguida, use os originais para definir pontos de interrupção e percorrer o código.  Enquanto isso, o Microsoft Edge está realmente executando o código minified. Isso lhe dá a ilusão de executar um site de desenvolvimento em produção.  
@@ -75,11 +75,11 @@ Ao executar mapas de origem no DevTools, você deve observar que o JavaScript n�
 
 ### Habilitar mapas de origem em configurações  
 
-Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** `...` e selecione **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
+Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** \ ( `...` \) e selecione **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
 
-> ##### Figura 1  
-> Habilitar mapas de origem  
-> ![Habilitar mapas de origem][ImageSourceMaps]  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   Habilitar mapas de origem  
+:::image-end:::  
 
 ### Depuração com mapas de origem  
 
@@ -87,7 +87,7 @@ Ao depurar seus mapas de código e de origem habilitados, os mapas de origem sã
 
 1.  No console \ (o link para a origem deve ser o arquivo original, não o um \ gerado)  
 1.  Quando percorrendo o código \ (os links na pilha de chamadas devem abrir o arquivo de origem original \)  
-
+    
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
 
@@ -104,28 +104,25 @@ Ao incluir o seguinte comentário especial em seu código, que é proparado, voc
 Navegue até a página a seguir.  
 
 *   [demonstração][CssNinjaDemoSourceMapping]
-
+    
 Siga estas etapas.  
 
 1.  Abra o DevTools e vá para o painel **fontes** .  
-1.  Insira um nome de arquivo no campo **_nome do seu código:_** entrada.  
+1.  Insira um nome de arquivo no campo **nome do seu código:** entrada.  
 1.  Clique no botão **Compilar** .  
 1.  Um alerta é exibido com a soma avaliada da fonte CoffeeScript.  
+    
+Se você expandir o Subpainel **fontes** , agora verá um novo arquivo com o nome de arquivo personalizado que você digitou anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele contém o JavaScript compilado para a fonte original.  Na última linha, no entanto, é um `// @sourceURL` comentário que indica o arquivo de origem original.  Isso pode ajudá-lo com a depuração enquanto trabalha com abstrações de idioma.  
 
-Se você expandir o Subpainel **_fontes_** , agora verá um novo arquivo com o nome de arquivo personalizado que você digitou anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele contém o JavaScript compilado para a fonte original.  Na última linha, no entanto, é um `// @sourceURL` comentário que indica o arquivo de origem original.  Isso pode ajudá-lo com a depuração enquanto trabalha com abstrações de idioma.  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabalhando com sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Trabalhando com sourceURL  
+:::image-end:::  
 
-> ##### Figura 2
-> Trabalhando com sourceURL  
-> ![Trabalhando com sourceURL][ImageCoffeeScript]  
-
-<!--## Feedback   -->  
-
+<!--  
+## Feedback   
 
 
-<!-- image links -->  
-
-[ImageSourceMaps]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png "Figura 1: habilitar mapas de origem"  
-[ImageCoffeeScript]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-coffeeeeeeee.msft.png "Figura 2: trabalhando com sourceURL"  
+-->  
 
 <!-- links -->  
 

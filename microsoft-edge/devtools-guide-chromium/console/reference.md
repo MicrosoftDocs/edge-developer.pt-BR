@@ -2,16 +2,16 @@
 title: Referência do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: bd2a610b48905c6651663d490b9c9f1a0a8c7674
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 51a85c3dad121dcb42633390de9b4e817074546e
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601780"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982350"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10601780"
 
 Esta página é uma referência de recursos relacionados ao console DevTools do Microsoft Edge.  Ele pressupõe que você já esteja familiarizado com o uso do console para exibir mensagens registradas e executar JavaScript.  Se não estiver, consulte Introdução [à execução de JavaScript no console][DevToolsConsoleJavascript] e [introdução ao registro de mensagens no console][DevToolsConsoleLog].  
 
-Se você estiver procurando a referência de API em funções como `console.log()` consulte [referência de API do console][DevToolsConsoleApi].  Para a referência em funções como `monitorEvents()` consulte [referência da API de utilitários de console][DevToolsConsoleUtilities].  
+Se você estiver procurando a referência de API em funções como `console.log()` consulte [referência de API do console][DevToolsConsoleApi].  Para obter a referência sobre funções como `monitorEvents()` , consulte [referência da API de utilitários de console][DevToolsConsoleUtilities].  
 
 ## Abrir o console   
 
@@ -47,43 +47,43 @@ Você pode abrir o console como um [painel](#open-the-console-panel) ou uma [gui
 
 Pressione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \).  
 
-> ##### Figura 1  
-> Painel do console  
-> ![Painel do console][ImageConsolePanel]  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Painel do console" lightbox="../media/console-hello-console.msft.png":::
+   Painel do **console**  
+:::image-end:::  
 
 Para abrir o painel do console no [menu de comando][DevToolsCommandMenu], comece a digitar `Console` e execute o comando **show console** que tenha o selo do **painel** ao lado dele.  
 
-> ##### Figura 2  
-> O comando para mostrar o painel do console  
-> ![O comando para mostrar o painel do console][ImageCommandShowConsole]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="O comando para mostrar o painel do console" lightbox="../media/console-command-menu-show-console.msft.png":::
+   O comando para mostrar o painel do **console**  
+:::image-end:::  
 
 ### Abrir a guia Console na gaveta   
 
-Pressione `Escape` ou clique em **Personalizar e controle devtools** `...` e selecione **Mostrar gaveta do console**.  
+Pressione `Escape` ou clique em **Personalizar e controle devtools** \ ( `...` \) e selecione **Mostrar gaveta do console**.  
 
-> ##### Figura 3  
-> Mostrar gaveta do console  
-> ![Mostrar gaveta do console][ImageShowConsoleDrawer]  
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Mostrar gaveta do console" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+   **Mostrar gaveta do console**  
+:::image-end:::  
 
 A gaveta é exibida na parte inferior da janela do DevTools, com a guia **console** aberta.  
 
-> ##### Figura 4  
-> A guia Console na gaveta  
-> ![A guia Console na gaveta][ImageDrawerConsole]  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="A guia Console na gaveta" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   A guia **console** na **gaveta**  
+:::image-end:::  
 
 Para abrir a guia Console no [menu de comando][DevToolsCommandMenu], comece a digitar `Console` e, em seguida, execute o comando **show console** que tenha o selo de **gaveta** ao lado dele.  
 
-> ##### Figura 5  
-> O comando para mostrar a guia Console na gaveta  
-> ![O comando para mostrar a guia Console na gaveta][ImageShowDrawerCommand]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="O comando para mostrar a guia Console na gaveta" lightbox="../media/console-command-menu-show-console.msft.png":::
+   O comando para mostrar a guia **console** na **gaveta**  
+:::image-end:::  
 
 ### Abrir as configurações do console   
 
-Clique em configurações do console configurações **do console** ![ ][ImageSettingsButtonIcon] .  
+Clique em **configurações do console** \ (configurações do ![ console ][ImageSettingsButtonIcon] \).  
 
-> ##### Figura 6  
-> Configurações do console  
-> ![Configurações do console][ImageConsoleSettings]  
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Configurações do console" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+   **Configurações do console**  
+:::image-end:::  
 
 Os links a seguir explicam cada configuração:  
 
@@ -94,14 +94,14 @@ Os links a seguir explicam cada configuração:
 *   [**Registros XMLHttpRequests**](#log-xhr-and-fetch-requests)  
 *   [**Avaliação rápida**](#disable-eager-evaluation)  
 *   [**Preenchimento automático do histórico**](#disable-autocomplete-from-history)  
-
+    
 ### Abrir a barra lateral do console   
 
-Clique em **Mostrar barra lateral do console** ![ Mostrar barra lateral ][ImageShowConsoleSidebarIcon] do console para mostrar a barra lateral, que é útil para filtragem.  
+Clique em **Mostrar barra lateral do console** \ ( ![ Mostrar barra lateral ][ImageShowConsoleSidebarIcon] do console \) para mostrar a barra lateral, que é útil para filtragem.  
 
-> ##### Figura 7  
-> Barra lateral do console  
-> ![Barra lateral do console][ImageConsoleSidebar]  
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Barra lateral do console" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+   **Console** do Nota  
+:::image-end:::  
 
 ## Exibir mensagens   
 
@@ -115,19 +115,18 @@ Esta seção contém recursos que alteram o modo como as mensagens são apresent
 
 [Abra as configurações do console](#open-console-settings) e habilite **XMLHttpRequests de log** para registrar todas as `XMLHttpRequest` `Fetch` solicitações e solicitações ao console à medida que elas acontecem.  
 
-> ##### Figura 8  
-> Registro `XMLHttpRequest` em log e `Fetch` solicitações  
-> ![Registrando solicitações XMLHttpRequest e busca][ImageXhrGrouped]  
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log de solicitações XMLHttpRequest e FETCH" lightbox="../media/console-xhr-fetch.msft.png":::
+   Log `XMLHttpRequest` e `Fetch` solicitações  
+:::image-end:::  
+A mensagem superior na figura anterior exibe o comportamento padrão de agrupamento do **console**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
 
-A mensagem superior na [Figura 8](#figure-8) mostra o comportamento padrão de agrupamento do console.  <!--  [Figure 9](#figure-9) shows how the same log looks after [disabling message grouping](#disable-message-grouping).  -->  
-
-<!--
-
+<!--  
 > ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
-> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping][ImageXhrUngrouped]  
-
--->
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
+>    How the logged XMLHttpRequest and Fetch requests look after ungrouping  
+> :::image-end:::  
+-->  
 
 <!--todo: add example for ungrouping console items  -->  
 
@@ -137,17 +136,16 @@ Por padrão, o console é limpo sempre que você carrega uma nova página.  Para
 
 ### Ocultar mensagens de rede   
 
-Por padrão, o navegador registra as mensagens da rede no **console**.  Por exemplo, a mensagem selecionada na [Figura 9](#figure-9) representa um código de status de `429` .  
+Por padrão, o navegador registra as mensagens da rede no **console**.  Na figura a seguir, a mensagem selecionada representa um código de status HTTP de `429` .  
 
-> ##### Figura 9  
-> Uma mensagem do 429 no console  
-> ! [Uma mensagem do 429 no console] [Image429Message]  
-
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Uma mensagem do 429 no console" lightbox="../media/console-show-network.msft.png":::
+   Uma `429` mensagem no **console**  
+:::image-end:::  
 Para ocultar as mensagens de rede:  
 
 1.  [Abra as configurações do console](#open-console-settings).  
 1.  Habilitar a caixa de seleção **ocultar rede** .  
-
+    
 ## Filtrar mensagens   
 
 Há muitas maneiras de filtrar mensagens no console.  
@@ -156,9 +154,9 @@ Há muitas maneiras de filtrar mensagens no console.
 
 [Abra a barra lateral do console](#open-the-console-sidebar) e clique em **mensagens de usuário** para mostrar apenas as mensagens que vieram do JavaScript da página.  
 
-> ##### Figura 10  
-> Exibindo mensagens de usuário  
-> ! [Exibindo mensagens de usuário] [ImageUserMessages]  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Exibir mensagens de usuário" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   Exibir mensagens de usuário  
+:::image-end:::  
 
 ### Filtrar por nível de log   
 
@@ -166,35 +164,35 @@ O DevTools atribui `console.*` um nível de severidade a cada método.  Há 4 n�
 
 Clique na lista suspensa **níveis de log** para habilitar ou desabilitar `Verbose` , `Info` `Warning` ou `Error` mensagens.  
 
-> ##### Figura 11  
-> Lista suspensa **níveis de log**  
-> ! [A lista suspensa níveis de log] [ImageLogLevels]  
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Lista suspensa níveis de log" lightbox="../media/console-log-level-default-levels.msft.png":::
+   Lista suspensa **níveis de log**  
+:::image-end:::  
 
 Você também pode filtrar por nível de log [abrindo a barra lateral do console](#open-the-console-sidebar) e clicando em **erros**, **avisos**, **informações**ou **detalhados**.  
 
-> ##### Figura 12  
-> Usar a barra lateral para exibir avisos  
-> ! [Usando a barra lateral para exibir avisos] [ImageSidebarWarnings]  
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Usar a barra lateral para exibir avisos" lightbox="../media/console-sidebar-warnings.msft.png":::
+   Usar a barra lateral para exibir avisos  
+:::image-end:::  
 
 ### Filtrar mensagens por URL   
 
 Tipo `url:` seguido por uma URL para exibir apenas as mensagens que vieram dessa URL.  Depois que você digitar `url:` devtools, todas as URLs relevantes são exibidas.  Os domínios também funcionam.  Por exemplo, se `https://example.com/a.js` e `https://example.com/b.js` estiver registrando mensagens, o `url:https://example.com` permite que você se concentre nas mensagens desses 2 scripts.  
 
-> ##### Figura 13  
-> Um filtro de URL  
-> ! [Um filtro de URL] [ImageUrlFilter]  
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Um filtro de URL" lightbox="../media/console-filter-text.msft.png":::
+   Um filtro de URL  
+:::image-end:::  
 
 Digite `-url:` para ocultar as mensagens dessa URL.  Isso é chamado de filtro de URL negativo.  
 
-> ##### Figura 14  
-> Um filtro de URL negativo que oculta todas as mensagens que correspondem à URL `https://b.wal.co`  
-> ! [Um filtro de URL negativo que oculta todas as mensagens correspondentes à URL https://b.wal.co ] [ImageNegativeUrlFilter1]  
+:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Um filtro de URL negativo que oculta todas as mensagens correspondentes à https://b.wal.co URL" lightbox="../media/console-negative-filter-text.msft.png":::
+   Um filtro de URL negativo que oculta todas as mensagens correspondentes à `https://b.wal.co` URL
+:::image-end:::  
 
 Você também pode mostrar mensagens de uma única URL [abrindo a barra lateral do console](#open-the-console-sidebar), expandindo a seção **mensagens do usuário** e, em seguida, clicando na URL do script que contém as mensagens nas quais você deseja se concentrar.  
 
-> ##### Figura 15  
-> Exibindo as mensagens provenientes de `wp-ad.min.js`  
-> ! [Exibindo as mensagens que vieram do WP-AD. min. js] [ImageNegativeUrlFilter2]  
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Exibir as mensagens provenientes de wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   Exibir as mensagens provenientes de `wp-ad.min.js`  
+:::image-end:::  
 
 ### Filtrar mensagens de diferentes contextos   
 
@@ -204,9 +202,9 @@ Suponha que você tenha um anúncio \ (AD \) na sua página.  O anúncio está i
 
 Digite uma expressão regular como `/[gm][ta][mi]/` na caixa de texto **Filtrar** para filtrar todas as mensagens que não correspondam a esse padrão.  O DevTools verifica se o padrão é encontrado no texto da mensagem ou no script que fez com que a mensagem seja registrada.  
 
-> ##### Figura 16  
-> Filtragem de mensagens que não correspondem `/[gm][ta][mi]/`  
-> ! [Filtrar todas as mensagens que não correspondam à expressão Regex] [ImageRegExFilter]  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filtrar todas as mensagens que não correspondam à expressão Regex" lightbox="../media/console-filter-regex.msft.png":::
+   Filtrar todas as mensagens que não correspondam à `/[gm][ta][mi]/` expressão Regex  
+:::image-end:::  
 
 ## Executar JavaScript   
 
@@ -229,77 +227,58 @@ Se você estiver digitando a mesma expressão JavaScript no console repetidament
 À medida que você digita uma expressão, a janela pop-up de preenchimento automático do console mostra as expressões que você executou anteriormente.  Essas expressões são precedidas com o `>` caractere.  [Abra as configurações do console](#open-console-settings) e desabilite a caixa de seleção **AutoCompletar do histórico** para parar de mostrar as expressões do seu histórico.  
 
 > [!NOTE]
-> Na [Figura 17](#figure-17), `document.querySelector('a')` e `document.querySelector('img')` são expressões que foram avaliadas anteriormente.  
+> Na figura a seguir, `document.querySelector('a')` e `document.querySelector('img')` são expressões que foram avaliadas anteriormente.  
 
-> ##### Figura 17  
-> O pop-up de preenchimento automático mostrando expressões do histórico  
-> ! [O pop-up AutoCompletar mostrando expressões do histórico] [ImageHistoryAutocomplete]  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="O pop-up AutoCompletar exibe expressões do histórico" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   O pop-up AutoCompletar exibe expressões do histórico  
+:::image-end:::  
 
 ### Selecionar contexto JavaScript   
 
 Por padrão, a lista suspensa de **contexto JavaScript** é definida como **Top**, que representa o [contexto de navegação][MDNBrowsingContext] do documento principal.  
 
-> ##### Figura 18  
-> A lista suspensa de **contexto JavaScript**  
-> ! [A lista suspensa contexto JavaScript] [ImageJavascriptContext]  
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="A lista suspensa de contexto JavaScript" lightbox="../media/console-dom-level-top.msft.png":::
+   A lista suspensa de **contexto JavaScript**  
+:::image-end:::  
 
 Suponha que você tenha um anúncio na sua página incorporado em um `<iframe>` .  Você deseja executar o JavaScript para ajustar o DOM do anúncio.  Primeiro, você deve selecionar o contexto de navegação do anúncio na lista suspensa de **contexto JavaScript** .  
 
-> ##### Figura 19  
-> Selecionando um contexto JavaScript diferente  
-> ! [Selecionando um contexto JavaScript diferente] [ImageSelectContext]  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Selecionar um contexto JavaScript diferente" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Selecionar um contexto JavaScript diferente  
+:::image-end:::  
 
 ## Limpar o console   
 
 Você pode usar qualquer um dos fluxos de trabalho a seguir para limpar o console:  
 
-*   Clique em **limpar** console ![ limpar console ][ImageClearConsoleIcon] .  
+*   Clique em **limpar console** \ ( ![ limpar console ][ImageClearConsoleIcon] \).  
 *   Clique com o botão direito do mouse em uma mensagem e selecione **limpar console**.  
 *   Digite `clear()` o console e pressione `Enter` .  
 *   Ligue `console.clear()` do JavaScript para a sua página da Web.  
 *   Pressione `Control` + `L` enquanto o console estiver em foco.  
-
+    
+<!--
  
 
-
+  
+-->  
 
 <!-- image links -->  
 
-[ImageClearConsoleIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
-
-[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/console-hello-console.msft.png "Figura 1: painel do console"  
-[ImageCommandShowConsole]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figura 2: o comando para mostrar o painel do console"  
-[ImageShowConsoleDrawer]: /microsoft-edge/devtools-guide-chromium/media/console-elements-customize-control-devtools-show-console-drawer.msft.png "Figura 3: mostrar a gaveta do console"  
-[ImageDrawerConsole]: /microsoft-edge/devtools-guide-chromium/media/console-elements-console-drawer-hello-world.msft.png "Figura 4: guia Console na gaveta"  
-[ImageShowDrawerCommand]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figura 5: o comando para mostrar a guia Console na gaveta"  
-[ImageConsoleSettings]: /microsoft-edge/devtools-guide-chromium/media/console-settings-group-similar-empty.msft.png "Figura 6: configurações do console"  
-[ImageConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-empty.msft.png "Figura 7: barra lateral do console"  
-[ImageXhrGrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch.msft.png "Figura 8: registro em log de solicitações XMLHttpRequest e FETCH"  
-<!--[ImageXhrUngrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
-[Image429Message]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Show-Network.msft.png "Figura 9: uma mensagem do 429 no console"  
-[ImageUserMessages]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Sidebar-Drawer-User-messages.msft.png "Figura 10: exibindo mensagens de usuário"  
-[ImageLogLevels]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-Level-default-Levels.msft.png "Figura 11: a lista suspensa de níveis de log"  
-[ImageSidebarWarnings]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Sidebar-Warnings.msft.png "Figura 12: usar a barra lateral para exibir avisos"  
-[ImageUrlFilter]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Filter-Text.msft.png "Figura 13: um filtro de URL"  
-[ImageNegativeUrlFilter1]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Negative-Filter-Text.msft.png "Figura 14: um filtro de URL negativo que oculta todas as mensagens correspondentes à URL https://b.wal.co "  
-[ImageNegativeUrlFilter2]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Filter-Text-specified.msft.png "Figura 15: exibindo as mensagens provenientes de wp-AD. min. js"  
-[ImageRegExFilter]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Filter-Regex.msft.png "Figura 16: filtrar todas as mensagens que não correspondam à expressão Regex"  
-[ImageHistoryAutocomplete]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-Filter-Text-AutoFilter-History.msft.png "figura 17: pop-up de preenchimento automático mostrando expressões do histórico"  
-[ImageJavascriptContext]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-dom-Level-Top.msft.png "Figura 18: a lista suspensa de contexto JavaScript"  
-[ImageSelectContext]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-dom-Level-Multiple.msft.png "Figura 19: selecionando um contexto JavaScript diferente"  
+[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
+[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Executar comandos com o menu de comando do Microsoft Edge DevTools"  
-[DevToolsConsoleViewMessages]: /microsoft-edge/devtools-guide-chromium/console/index#viewing-logged-messages "Exibir mensagens registradas – visão geral do console"  
-[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Referência de API do console"  
-[DevToolsConsoleOverviewJavascript]: /microsoft-edge/devtools-guide-chromium/console/index#running-javascript "Visão geral do console em JavaScript"  
-[DevToolsConsoleJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Começar a executar o JavaScript no console"  
-[DevToolsConsoleLiveExpressions]: /microsoft-edge/devtools-guide-chromium/console/live-expressions "Assista aos valores de expressão JavaScript em tempo real com expressões dinâmicas"  
-[DevToolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Introdução ao registro de mensagens no console"  
-[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Referência de API de utilitários de console"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Exibir mensagens registradas – visão geral do console | Documentos da Microsoft"  
+[DevToolsConsoleApi]: ./api.md "Referência de API de console | Documentos da Microsoft"  
+[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Como executar JavaScript – visão geral do console | Documentos da Microsoft"  
+[DevToolsConsoleJavascript]: ./javascript.md "Comece a executar o JavaScript no console | Documentos da Microsoft"  
+[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Assista aos valores de expressão JavaScript em tempo real com expressões dinâmicas | Documentos da Microsoft"  
+[DevToolsConsoleLog]: ./log.md "Introdução ao registro de mensagens no console | Documentos da Microsoft"  
+[DevToolsConsoleUtilities]: ./utilities.md "Referência de API de utilitários de console | Documentos da Microsoft"  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Contexto de navegação | MDN"  
 

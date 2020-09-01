@@ -2,16 +2,16 @@
 title: Como pausar um código com pontos de interrupção no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 2afa4b7dbe96b65747ec17b147f0a82c16efa288
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 804e864ee3029a49ba1ef2ac1f2deb61c3ba5ec3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581800"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983163"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,7 +52,7 @@ O tipo mais conhecido de ponto de interrupção é linha de código.  Mas os pon
 
 ## Pontos de interrupção de linha do código   
 
-Use um ponto de interrupção de linha de código quando souber a região exata de código que você precisa investigar.  O DevTools **sempre** pausa antes da execução desta linha de código.  
+Use um ponto de interrupção de linha de código quando souber a região exata de código que você precisa investigar.  O DevTools sempre pausa antes da execução desta linha de código.  
 
 Para definir um ponto de interrupção de linha de código no DevTools:  
 
@@ -60,11 +60,11 @@ Para definir um ponto de interrupção de linha de código no DevTools:
 1.  Abra o arquivo que contém a linha de código que você deseja quebrar.  
 1.  Vá para a linha de código.  
 1.  À esquerda da linha de código está a coluna número da linha.  Clique nela.  Um ícone vermelho é exibido ao lado da coluna número da linha.  
-
-> ##### Figura 1  
-> Um ponto de interrupção de linha de código definido na linha 30  
-> ![Um ponto de interrupção de linha do código][ImageLocBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="Um ponto de interrupção de linha do código" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       Um ponto de interrupção de linha do código  
+    :::image-end:::  
+    
 ### Pontos de interrupção de linha de código no código   
 
 Execute o `debugger` método do seu código para pausar na linha.  Isso equivale a um [ponto de interrupção de linha de código](#line-of-code-breakpoints), exceto pelo fato de o ponto de interrupção ser definido no seu código, não na interface do usuário do devtools.  
@@ -89,27 +89,27 @@ Para definir um ponto de interrupção de linha de código condicional:
 1.  Selecione **Adicionar ponto de interrupção condicional**.  Uma caixa de diálogo é exibida abaixo da linha de código.  
 1.  Insira sua condição na caixa de diálogo.  
 1.  Pressione `Enter` para ativar o ponto de interrupção.  Um ícone próximo à coluna número da linha.  
-
-> ##### Figura 2  
-> Um ponto de interrupção de linha de código condicional definido na linha 34  
-> ![Um ponto de interrupção de linha de código condicional][ImageConditionalLocBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="Um ponto de interrupção de linha de código condicional" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
+       Um ponto de interrupção de linha de código condicional  
+    :::image-end:::  
+    
 ### Gerenciar pontos de interrupção de linha de código   
 
 Use o painel **pontos de interrupção** para desabilitar ou remover pontos de interrupção de linha de código de um único local.  
 
-> ##### Figura 3  
-> O painel **pontos de interrupção** mostrando dois pontos de interrupção de linha de código: um na linha `16` de `get-started.js` , outro na linha `33`  
-> ![O painel pontos de interrupção][ImageBreakpointsPanel]  
+:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="O painel pontos de interrupção" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
+   O painel **pontos de interrupção**  
+:::image-end:::  
 
 *   Marque a caixa de seleção ao lado de uma entrada para desabilitar esse ponto de interrupção.  
 *   Clique com o botão direito do mouse em uma entrada para remover esse ponto de interrupção.  
 *   Clique com o botão direito do mouse em qualquer lugar no painel **pontos de interrupção** para desativar todos os pontos de interrupção, desabilitar todos os pontos de interrupção ou remover todos os pontos de interrupção.  Desabilitar todos os pontos de interrupção é equivalente a desmarcar cada um deles.  A desativação de todos os pontos de interrupção instrui o DevTools a ignorar todos os pontos de interrupção de linha de código, mas também manter o estado habilitado para que cada um esteja no mesmo estado de antes da reativação de cada um.  
-
-> ##### Figura 4  
-> Pontos de interrupção desativados no painel **pontos de interrupção** são desativados e transparentes  
-> ![Pontos de interrupção desativados no painel pontos de interrupção][ImageDeactivatedBreakpoints]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Pontos de interrupção desativados no painel pontos de interrupção" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+       Pontos de interrupção desativados no painel **pontos de interrupção**  
+    :::image-end:::  
+    
 ## Alterar o DOM dos pontos de interrupção   
 
 Use um ponto de interrupção de alteração DOM quando desejar pausar no código que altera um nó DOM ou filhos.  
@@ -120,19 +120,17 @@ Para definir um ponto de interrupção de alteração DOM:
 1.  Vá para o elemento no qual você deseja definir o ponto de interrupção.  
 1.  Clique com o botão direito do mouse no elemento.  
 1.  Passe o mouse sobre a **pausa**e, em seguida, selecione **modificações de subárvore**, **modificações de atributo**ou remoção de **nó**.  
-
-> ##### Figura 5  
-> O menu de contexto para a criação de um ponto de interrupção de alteração DOM  
-> ![O menu de contexto para a criação de um ponto de interrupção de alteração DOM][ImageDomChangeBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="O menu de contexto para a criação de um ponto de interrupção de alteração DOM" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
+       O menu de contexto para a criação de um ponto de interrupção de alteração DOM  
+    :::image-end:::  
+    
 ### Tipos de pontos de interrupção de alteração DOM   
 
 *   **Modificações em subárvores**.  Disparado quando um filho do nó selecionado no momento é removido ou adicionado, ou o conteúdo de um filho é alterado.  Não disparado em alterações de atributo de nó filho ou em qualquer alteração do nó atualmente selecionado.  
-
 *   **Modificações de atributos**: disparadas quando um atributo é adicionado ou removido no nó selecionado atualmente ou quando um valor de atributo é alterado.  
-
 *   **Remoção de nó**: disparada quando o nó selecionado no momento é removido.  
-
+    
 ## Pontos de interrupção XHR/Fetch   
 
 Use um ponto de interrupção XHR quando você quiser interromper quando a URL de solicitação de um XHR contiver uma cadeia de caracteres especificada.  DevTools pausa na linha de código em que XHR executa o `send()` método.  
@@ -149,11 +147,11 @@ Para definir um ponto de interrupção XHR:
 1.  Clique em **Adicionar ponto de interrupção**.  
 1.  Digite a cadeia de caracteres na qual você deseja interromper.  DevTools pausa quando essa cadeia de caracteres está presente em qualquer lugar em uma URL de solicitação XHR.  
 1.  Pressione `Enter` para confirmar.  
-
-> ##### Figura 6  
-> Criando um ponto de interrupção XHR nos **pontos de interrupção XHR** para qualquer solicitação que contém `org` na URL  
-> ![Criando um ponto de interrupção XHR][ImageXhrBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Criar um ponto de interrupção XHR" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
+       Criar um ponto de interrupção XHR  
+    :::image-end:::  
+    
 ## Pontos de interrupção do ouvinte de eventos 
 
 Use pontos de interrupção de ouvinte de eventos quando desejar pausar no código de ouvinte de eventos que é executado após a disparação de um evento.  Você pode selecionar eventos específicos, como `click` , ou categorias de eventos, como todos os eventos do mouse.  
@@ -161,28 +159,28 @@ Use pontos de interrupção de ouvinte de eventos quando desejar pausar no códi
 1.  Clique na guia **fontes** .  
 1.  Expanda o painel **pontos de interrupção de ouvinte de eventos** .  DevTools mostra uma lista de categorias de eventos, como **animação**.  
 1.  Verifique uma dessas categorias para pausar sempre que qualquer evento dessa categoria for acionado ou expandir a categoria e verificar um evento específico.  
-
-> ##### Figura 7  
-> Criando um ponto de interrupção de ouvinte de eventos para `deviceorientation`  
-> ![Criando um ponto de interrupção de ouvinte de eventos][ImageEventListenerBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Criar um ponto de interrupção de ouvinte de eventos" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+       Criar um ponto de interrupção de ouvinte de eventos  
+    :::image-end:::  
+    
 ## Pontos de interrupção de exceção   
 
 Use pontos de interrupção de exceção quando desejar pausar na linha de código que está lançando uma exceção capturada ou não percebida.  
 
 1.  Clique na guia **fontes** .  
-1.  Clique em **Pausar nas exceções** ![ pausa nas exceções ][ImagePauseOnExceptionsIcon] .  O ícone fica azul quando habilitado.  
+1.  Clique em **Pausar nas exceções** \ ( ![ Pausar exceções ][ImagePauseOnExceptionsIcon] \).  O ícone fica azul quando habilitado.  
     
-    > ##### Figura 8  
-    > O botão **Pausar exceções**  
-    > ![O botão Pausar exceções][ImagePauseExceptionsHighlight]  
-
-1.  **Opcional**. Marque a caixa de seleção **Pausar exceções capturadas** se você também quiser pausar em exceções capturadas, além de não capturadas.  
-
-> ##### Figura 9  
-> Pausado em uma exceção não capturada  
-> ![Pausado em uma exceção não capturada][ImageUncaughtException]  
-
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="O botão Pausar exceções" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+       O botão **Pausar exceções**  
+    :::image-end:::  
+    
+1.  **Opcional**.  Marque a caixa de seleção **Pausar exceções capturadas** se você também quiser pausar em exceções capturadas, além de não capturadas.  
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Pausado em uma exceção não capturada" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+       Pausado em uma exceção não capturada  
+    :::image-end:::  
+    
 ## Pontos de interrupção de função   
 
 Execute o `debug(method)` método, onde `method` é o comando, a função ou o método que você deseja depurar, quando desejar pausar sempre que uma função específica for executada.  Você pode inserir `debug()` no seu código (como uma `console.log()` instrução) ou executar o método no console do devtools.  `debug()` equivale a definir um [ponto de interrupção de linha do código](#line-of-code-breakpoints) na primeira linha da função.  
@@ -219,34 +217,27 @@ Garantir que a função de destino está em escopo é difícil se você estiver 
 1.  Defina um [ponto de interrupção de linha do código](#line-of-code-breakpoints) em um local onde a função esteja no escopo.
 1.  Disparar o ponto de interrupção.  
 1.  Execute o `debug()` método no console devtools enquanto o código ainda está pausado no ponto de interrupção da linha de código.  
-
+    
+<!---  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImagePauseOnExceptionsIcon]: /microsoft-edge/devtools-guide-chromium/media/pause-on-exceptions-icon.msft.png  
-
-[ImageLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoint-30.msft.png "Figura 1: um ponto de interrupção de linha de código"  
-[ImageConditionalLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-conditional-breakpoint.msft.png "Figura 2: um ponto de interrupção de linha de código condicional"  
-[ImageBreakpointsPanel]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-16-33.msft.png "Figura 3: o painel pontos de interrupção"  
-[ImageDeactivatedBreakpoints]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png "Figura 4: pontos de interrupção desativados no painel pontos de interrupção"  
-[ImageDomChangeBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-elements-break-on-subtree-modifications.msft.png "Figura 5: o menu de contexto para a criação de um ponto de interrupção de alteração DOM"  
-[ImageXhrBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png "Figura 6: Criando um ponto de interrupção XHR"  
-[ImageEventListenerBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png "Figura 7: Criando um ponto de interrupção de ouvinte de eventos"  
-[ImagePauseExceptionsHighlight]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-pause-on-exceptions.msft.png "Figura 8: o botão Pausar exceções"  
-[ImageUncaughtException]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-paused-on-exception.msft.png "Figura 9: pausado em uma exceção não capturada"  
+[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsJavascriptIndex]: index.md "Introdução à depuração de JavaScript no Microsoft Edge DevTools"  
+[DevtoolsJavascriptIndex]: index.md "Introdução à depuração JavaScript no Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Buscar API | MDN"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools & Lighthouse \).  
+
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
 

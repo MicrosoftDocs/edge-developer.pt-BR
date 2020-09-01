@@ -2,16 +2,16 @@
 title: Assista aos valores de expressão JavaScript em tempo real com expressões dinâmicas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601737"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982230"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,11 +40,11 @@ Se você mesmo digitar a mesma expressão de JavaScript no console repetidamente
 ## Criar uma expressão ao vivo   
 
 1.  [Abra o console][DevToolsConsoleReferenceOpenConsole].  
-1.  Clique em **criar** expressão ao vivo ![ criar uma expressão ao vivo ][ImageCreateLiveExpressionIcon] .  A caixa de texto **expressão ao vivo** é exibida.  
+1.  Clique em **criar expressão ao vivo** \ ( ![ criar expressão ao vivo ][ImageCreateLiveExpressionIcon] \).  A caixa de texto **expressão ao vivo** é exibida.  
     
-    > ##### Figura 1  
-    > Digitando `document.activeElement` na caixa de texto **expressão dinâmica**  
-    > ![Digitando documento. ActiveElement na caixa de texto expressão dinâmica][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Digitando documento. ActiveElement na caixa de texto expressão dinâmica" lightbox="../media/console-create-live-expression.msft.png":::
+       Digitando `document.activeElement` na caixa de texto **expressão dinâmica**  
+    :::image-end:::  
     
 1.  Digite `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) para salvar a expressão ou clique fora da caixa de texto **expressão ao vivo** .  
 
@@ -56,13 +56,11 @@ Se você mesmo digitar a mesma expressão de JavaScript no console repetidamente
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "Figura 1: digitando documento. ActiveElement na caixa de texto expressão dinâmica"  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "Abrir o console-referência do console"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abrir o console-referência do console | Documentos da Microsoft"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  

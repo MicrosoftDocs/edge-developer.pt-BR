@@ -2,16 +2,16 @@
 title: Visão geral do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 6062afb929a5d763c095d4915a2960993bc5ab4c
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 45e2eb9d66fa284b1326e7554b6897a1e1747561
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601779"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982274"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,52 +39,52 @@ Esta página explica como o console do Microsoft Edge DevTools torna mais fácil
 
 ## Exibir mensagens registradas   
 
-Os desenvolvedores da Web geralmente registram mensagens no console para verificar se o JavaScript está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e vê uma expressão como essa, ele registra a mensagem no console.  Por exemplo, suponha que você esteja escrevendo o HTML e JavaScript para uma página:  
+Os desenvolvedores da Web geralmente registram mensagens no console para verificar se o JavaScript está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e vê uma expressão como essa, ele registra a mensagem no console.  
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Console Demo</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script>
-      console.log('Loading!');
-      const h1 = document.querySelector('h1');
-      console.log(h1.textContent);
-      console.assert(document.querySelector('h2'), 'h2 not found!');
-      const artists = [
-        {
-          first: 'René',
-          last: 'Magritte'
-        },
-        {
-          first: 'Chaim',
-          last: 'Soutine'
-        },
-        {
-          first: 'Henri',
-          last: 'Matisse'
-        }
-      ];
-      console.table(artists);
-      setTimeout(() => {
-        h1.textContent = 'Hello, Console!';
-        console.log(h1.textContent);
-      }, 3000);
-    </script>
-  </body>
-</html>
-```  
+:::row:::
+   :::column span="":::
+      O HTML e JavaScript da página.  
+      
+      ```html
+      <!doctype html>
+      <html>
+          <head>
+              <title>Console Demo</title>
+          </head>
+          <body>
+              <h1>Hello, World!</h1>
+              <script>
+                  console.log('Loading!');
+                  const h1 = document.querySelector('h1');
+                  console.log(h1.textContent);
+                  console.assert(document.querySelector('h2'), 'h2 not found!');
+                  const artists = [
+                      { first: 'René', last: 'Magritte' },
+                      { first: 'Chaim', last: 'Soutine' },
+                      { first: 'Henri', last: 'Matisse' }
+                  ];
+                  console.table(artists);
+                  setTimeout(() => {
+                      h1.textContent = 'Hello, Console!';
+                      console.log(h1.textContent);
+                  }, 3000);
+              </script>
+          </body>
+      </html>
+      ```  
+   :::column-end:::
+   :::column span="":::
+      Na figura a seguir, o **console** exibe os resultados de carregar a página e esperar 3 segundos.  
+      
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Painel do console" lightbox="../media/console-console-demo.msft.png":::
+         Painel do **console**  
+      :::image-end:::  
+      
+      Tente determinar quais linhas de código fizeram o navegador registrar as mensagens.  
+   :::column-end:::
+:::row-end:::  
 
-A [Figura 1](#figure-1) mostra como é a aparência do console depois de carregar a página e esperar 3 segundos.  Tente descobrir quais linhas de código fizeram o navegador registrar as mensagens.  
-
-> ##### Figura 1  
-> Painel do console  
-> ![Painel do console][ImageConsole]  
-
-Os desenvolvedores da Web registram mensagens por dois motivos gerais:  
+Os desenvolvedores da Web registram mensagens pelos seguintes dois motivos gerais.  
 
 *   Verificar se o código está em execução na ordem correta.  
 *   Inspecionar os valores de variáveis em um determinado momento no tempo.  
@@ -93,39 +93,42 @@ Consulte [introdução ao registro de mensagens][DevtoolsConsoleLoggingMessages]
 
 ## Executando JavaScript   
 
-O console também é um [repl][WikiREPLoop].  Você pode executar JavaScript no console para interagir com a página que está sendo inspecionada.  Por exemplo, a [Figura 2](#figure-2) mostra o console ao lado da home page do devtools, e a [Figura 3](#figure-3) mostra essa mesma página depois de usar o console para alterar o título superior da página.  
+O **console** também é um [repl][WikiREPLoop].  Você pode executar JavaScript no **console** para interagir com a página que está sendo inspecionada.   
 
-> ##### Figura 2  
-> O painel do console ao lado da home page do DevTools  
-> ![O painel do console ao lado da home page do DevTools][ImageConsoleOverview]  
+:::row:::
+   :::column span="":::
+      Na figura a seguir, o **console** é mostrado ao lado da home page do devtools.  
+      
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="O painel do console ao lado da home page do DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+         O painel do **console** ao lado da home page do devtools  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      Na figura a seguir, a mesma página é mostrada após usar o **console** para alterar o título superior da página.
+      
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Usar o console para alterar o título superior da página" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Usar o **console** para alterar o título superior da página  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
-> ##### Figura 3  
-> Usar o console para alterar o título superior da página  
-> ![Usar o console para alterar o título superior da página][ImageConsoleChangeTitle]  
+A modificação da página no **console** é possível porque o **console** tem acesso completo à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que o JavaScript contenha uma função chamada `hideModal` .  Executar `debug(hideModal)` pausa o código na primeira linha da `hideModal` próxima vez que você executá-lo.  Para obter mais informações sobre a lista completa de funções utilitárias, consulte [referência da API de utilitários de console][DevtoolsConsoleUtilitiesDebug].  
 
-A modificação da página no console é possível porque o console tem acesso completo à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que o JavaScript contenha uma função chamada `hideModal` .  Executar `debug(hideModal)` pausa o código na primeira linha da `hideModal` próxima vez que você executá-lo.  Consulte [referência da API de utilitários de console][DevtoolsConsoleUtilitiesDebug] para ver a lista completa de funções de utilitário.  
-
-Quando você executa JavaScript, você não precisa interagir com a página.  Você pode usar o console para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você tenha aprendido apenas sobre o método interno de mapas de matrizes JavaScript [()][MDNMap] e queira experimentá-lo.  
+Quando você executa JavaScript, você não precisa interagir com a página.  Você pode usar o **console** para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você tenha aprendido apenas sobre o método interno de mapas de matrizes JavaScript [()][MDNMap] e queira experimentá-lo.  
 O **console** é um bom lugar para experimentar a função.  
 
-Consulte [introdução à execução de JavaScript][ImageConsoleChangeTitle] para obter experiência prática com a execução de JavaScript no console.  
+Para obter mais experiência prática com a execução de JavaScript no **console**, consulte [introdução à execução de JavaScript][DevtoolsConsoleRunningJavascript].  
 
    
 
   
 
-<!-- image links -->  
-
-[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-console-demo.msft.png "Figura 1: painel do console"  
-[ImageConsoleChangeTitle]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-h1-changed.msft.png "Figura 3: usar o console para alterar o título superior da página"  
-[ImageConsoleOverview]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-empty.msft.png "Figura 2: painel do console ao lado da home page do DevTools"  
-
 <!-- links -->  
 
-[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api "Referência de API do console"  
-[DevtoolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Introdução ao registro de mensagens no console"  
-[DevtoolsConsoleRunningJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Começar a executar o JavaScript no console"  
-[DevtoolsConsoleUtilitiesDebug]: /microsoft-edge/devtools-guide-chromium/console/utilities#debug "Referência de API de utilitários de console de depuração"  
+[DevToolsConsoleAPI]: ./api.md "Referência de API de console | Documentos da Microsoft"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Introdução ao registro de mensagens no console | Documentos da Microsoft"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Comece a executar o JavaScript no console | Documentos da Microsoft"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Referência de API de utilitários de console de depuração | Documentos da Microsoft"  
 
 [MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. prototype. Map () | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Janela | MDN"  

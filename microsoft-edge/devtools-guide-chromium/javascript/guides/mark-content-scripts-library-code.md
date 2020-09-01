@@ -1,17 +1,17 @@
 ---
-title: Marcar scripts de conteúdo como código de biblioteca
+title: Marcar Scripts de Conteúdo como Código de Biblioteca
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: fe34d8f2fb656283b1821441162b93d47d51d24e
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 410a74b906e3b1ff7ff98b6d1791e057e4fa89c4
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581786"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982797"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,26 +37,24 @@ ms.locfileid: "10581786"
 
 Ao usar o painel **fontes** do Microsoft Edge devtools para percorrer o [código][DevToolsJavascriptStepThroughCode], às vezes, você pode pausar o código que não reconhece.  Você provavelmente pausou no código de uma das extensões do Microsoft Edge instaladas.  Conclua as etapas a seguir para não pausar no código de extensão.  
 
-1.  Abra o DevTools, selecione **Personalizar e controle devtools** `...` e clique em **configurações**.  Você também pode abrir **as configurações** pressionando `F1` .  
+1.  Abra o DevTools, selecione **Personalizar e controle devtools** \ ( `...` \) e clique em **configurações**.  Você também pode abrir **as configurações** pressionando `F1` .  
 
 1.  Selecione a guia **código de biblioteca** que abre a seção de código da biblioteca de **estrutura** de **configurações**.  
 1.  Habilite a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca** .  
     
-    > ##### Figura 1  
-    > Habilitar a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca**  
-    > ![Habilitar a caixa de seleção Marcar scripts de conteúdo como código de biblioteca][ImageMarkContentScriptsLibraryCode]  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar a caixa de seleção Marcar scripts de conteúdo como código de biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Habilitar a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca**  
+    :::image-end:::  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageMarkContentScriptsLibraryCode]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png "Figura 1: habilitar a caixa de seleção Marcar scripts de conteúdo como código de biblioteca"  
+-->  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Etapa 4: percorrer o código-introdução à depuração JavaScript no Microsoft Edge DevTools"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Etapa 4: percorrer o código-introdução à depuração JavaScript no Microsoft Edge DevTools | Documentos da Microsoft"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
