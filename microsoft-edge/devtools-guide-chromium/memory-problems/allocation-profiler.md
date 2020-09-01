@@ -2,16 +2,16 @@
 title: Como usar a instrumentação de alocação na linha do tempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: ab7a270e1d599e254aaaf4515b6898cb1d9782fc
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611731"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985733"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -46,9 +46,9 @@ A **Instrumentação de alocação na linha do tempo** combina as informações 
 
 A **Instrumentação de alocação na linha do tempo** tem instantâneos de pilha periodicamente em toda a gravação \ (com frequência a cada 50 ms! \) e um instantâneo final no final da gravação.  
 
-> ##### Figura 1  
-> **Instrumentação de alocação na linha do tempo**  
-> ![Instrumentação de alocação na linha do tempo][ImageObjectTracker]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentação de alocação na linha do tempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Instrumentação de alocação na linha do tempo**  
+:::image-end:::  
 
 > [!NOTE]
 > O número após o `@` é uma ID de objeto persiste nos vários instantâneos feitos durante a sessão de gravação.  A ID do objeto persistente permite uma comparação precisa entre os Estados de heap.  Os objetos são movidos durante coletas de lixo, portanto, a exibição do endereço de um objeto não faz sentido.  
@@ -60,29 +60,29 @@ Siga estas etapas para começar a usar a **Instrumentação de alocação na lin
 1.  [Abra o devtools][DevtoolsOpenIndex].  
 1.  Abrir o painel **memória** , selecione o botão de opção **Instrumentação de alocação no cronograma** .  
 1.  Start recording.  
-
-> ##### Figura 2  
-> Registrar alocações de atribuições de heap  
-> ![Registrar alocações de atribuições de heap][ImageRecordHeap]  
-
+    
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Registrar alocações de atribuições de heap" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Registrar alocações de atribuições de heap  
+    :::image-end:::  
+    
 ## Ler uma linha do tempo de alocação de heap  
 
-A linha do tempo de alocação de heap mostra onde os objetos estão sendo criados e identifica o caminho de retenção.  Na [Figura 3](#figure-3), as barras na parte superior indicam quando novos objetos são encontrados na pilha.  
+A linha do tempo de alocação de heap mostra onde os objetos estão sendo criados e identifica o caminho de retenção.  Na figura a seguir, as barras na parte superior indicam quando novos objetos são encontrados na pilha.  
 
 A altura de cada barra corresponde ao tamanho dos objetos alocados recentemente, e a cor das barras indica se esses objetos ainda estão ativos no instantâneo de heap final.  As barras azuis indicam objetos que ainda estão ao final da linha do tempo, as barras cinza indicam os objetos que foram atribuídos durante a linha do tempo, mas desde que foram coletadas pelo Garbage Collector.  
 
-> ##### Figura 3  
-> **Instrumentação de alocação no instantâneo da linha do tempo**  
-> ![Instrumentação de alocação no instantâneo da linha do tempo][ImageCollected]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentação de alocação no instantâneo da linha do tempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Instrumentação de alocação no instantâneo da linha do tempo**  
+:::image-end:::  
 
-<!--In [Figure 4](#figure-4), an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
+<!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
 Você pode usar os controles deslizantes na linha do tempo acima para ampliar o instantâneo em particular e ver os objetos que foram alocados recentemente nesse ponto:  
 
-> ##### Figura 4  
-> Ampliar o instantâneo  
-> ![Ampliar o instantâneo][ImageSliders]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Ampliar o instantâneo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Ampliar o instantâneo  
+:::image-end:::  
 
 Clicar em um objeto específico na heap mostra a árvore de retenção na parte inferior do instantâneo de heap.  Examinar o caminho de retenção para o objeto deve fornecer a você informações suficientes para entender por que o objeto não foi coletado, e você deve fazer as alterações de código necessárias para remover a referência desnecessária.  
 
@@ -90,23 +90,18 @@ Clicar em um objeto específico na heap mostra a árvore de retenção na parte 
 
 Você pode visualizar a alocação de memória por meio da função JavaScript.  Consulte [investigar a alocação de memória por função][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] para obter mais informações.  
 
-<!--## Feedback   -->  
+<!--
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageObjectTracker]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png "Figura 1: Instrumentação de distribuição na linha do tempo"  
-[ImageRecordHeap]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png "Figura 2: registrar o gerador de perfil de alocações de heap"  
-[ImageCollected]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timelines-snapshot.msft.png "Figura 3: Instrumentação de alocação no instantâneo da linha do tempo"  
-[ImageSliders]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figura 4: ampliar o instantâneo"  
+-->  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Abrir o Microsoft Edge (Chromium) DevTools"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: /microsoft-edge/devtools-guide-chromium/memory-problems/index#investigate-memory-allocation-by-function "Investigar a alocação de memória por função-corrigir problemas de memória"  
+[DevToolsOpenIndex]: ../open.md "Abrir o Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigar a alocação de memória por função-corrigir problemas de memória | Documentos da Microsoft"  
 
-<!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
+<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Baixar um canal do Microsoft Edge"  
