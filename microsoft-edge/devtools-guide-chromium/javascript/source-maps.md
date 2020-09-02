@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981762"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986140"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,14 +27,7 @@ ms.locfileid: "10981762"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Mapear código pré-processado para código-fonte   
-
-
-
+# Mapear código pré-processado para código-fonte  
 
 Mantenha o código do lado do cliente legível e debuggable, mesmo depois de combinar, Minify ou compilá-lo.  Use mapas de origem para mapear o código-fonte para o código compilado.  
 
@@ -78,7 +71,7 @@ Ao executar mapas de origem no DevTools, você deve observar que o JavaScript n�
 Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** \ ( `...` \) e selecione **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   Habilitar mapas de origem  
+   **Habilitar mapas de origem JavaScript**  
 :::image-end:::  
 
 ### Depuração com mapas de origem  
@@ -89,7 +82,7 @@ Ao depurar seus mapas de código e de origem habilitados, os mapas de origem sã
 1.  Quando percorrendo o código \ (os links na pilha de chamadas devem abrir o arquivo de origem original \)  
     
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
 ## @sourceURL e displayName  
 
@@ -104,8 +97,8 @@ Ao incluir o seguinte comentário especial em seu código, que é proparado, voc
 Navegue até a página a seguir.  
 
 *   [demonstração][CssNinjaDemoSourceMapping]
-    
-Siga estas etapas.  
+
+Conclua as ações a seguir.  
 
 1.  Abra o DevTools e vá para o painel **fontes** .  
 1.  Insira um nome de arquivo no campo **nome do seu código:** entrada.  
@@ -114,26 +107,32 @@ Siga estas etapas.
     
 Se você expandir o Subpainel **fontes** , agora verá um novo arquivo com o nome de arquivo personalizado que você digitou anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele contém o JavaScript compilado para a fonte original.  Na última linha, no entanto, é um `// @sourceURL` comentário que indica o arquivo de origem original.  Isso pode ajudá-lo com a depuração enquanto trabalha com abstrações de idioma.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabalhando com sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   Trabalhando com sourceURL  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabalhar com sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Trabalhar com `sourceURL`  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel é um compilador JavaScript"  
+
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+
 [CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Um exemplo simples de nomenclatura de eval//# sourceURL"  
+
 [DartMain]: https://www.dartlang.org "Linguagem de programação DART"  
+
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/fechamento-compilador | GitHub"  
+
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
+
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Mapas de origem: idiomas, ferramentas e outras informações | Wiki do GitHub"  
+
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Introdução-Google/Traceur-Compiler | Wiki do GitHub"  
+
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]

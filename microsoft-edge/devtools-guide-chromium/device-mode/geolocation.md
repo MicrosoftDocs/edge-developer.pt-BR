@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981818"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986098"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981818"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Substituir geolocalização com o Microsoft Edge DevTools   
-
-
+# Substituir geolocalização com o Microsoft Edge DevTools  
 
 Muitos websites aproveitam o local do usuário para fornecer uma experiência mais relevante para os usuários.  Por exemplo, um site de clima pode mostrar a previsão local na área de um usuário, após o usuário conceder a permissão de site para acessar a localização do usuário atual.  
 
@@ -54,11 +48,9 @@ Se você estiver criando uma interface do usuário que muda de acordo com o loca
        Selecionar `Tokyo` na lista de **geolocalização**  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

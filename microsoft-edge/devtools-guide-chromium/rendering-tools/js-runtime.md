@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984835"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986182"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,19 +27,12 @@ ms.locfileid: "10984835"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Acelerar o tempo de execução do JavaScript   
-
-
-
+# Acelerar o tempo de execução do JavaScript  
 
 Identifique funções caras usando o painel **memória** .  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfis de amostragem" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Perfis de amostragem  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfis de exemplo" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Perfis de exemplo  
 :::image-end:::  
 
 ### Resumo  
@@ -66,7 +59,7 @@ Quando terminar a gravação, o DevTools automaticamente preenche o painel **mem
 
 O modo de exibição padrão é **Heavy \ (baixo para cima \)**.  Este modo de exibição permite que você veja quais funções tiveram mais impacto no desempenho e examine os caminhos de chamadas para essas funções.  
 
-### Alterar a ordem de classificação   
+### Alterar a ordem de classificação  
 
 Para alterar a ordem de classificação, selecione o menu suspenso ao lado do ícone **função de foco selecionado** \ ( ![ foco selecionado função ][ImageFocusIcon] \) e escolha uma das opções a seguir.
 
@@ -88,13 +81,13 @@ Para alterar a ordem de classificação, selecione o menu suspenso ao lado do í
    Gráfico de árvore  
 :::image-end:::  
 
-### Funções Exclude   
+### Funções Exclude  
 
-Para excluir uma função do seu perfil de amostragem, selecione-a para selecioná-la e, em seguida, selecione o ícone **excluir função selecionada** \ ( ![ excluir função selecionada ][ImageExcludeIcon] \).  A função solicitante \ (pai \) da função excluída \ (filho \) é cobrada pela memória alocada atribuída à função excluída \ (filho \).  
+Para excluir uma função do seu perfil de amostragem, selecione-a e, em seguida, selecione o botão **excluir função selecionada** \ ( ![ excluir função selecionada ][ImageExcludeIcon] \).  A função solicitante \ (pai \) da função excluída \ (filho \) é cobrada pela memória alocada atribuída à função excluída \ (filho \).  
 
-Selecione o ícone **restaurar todas as funções** \ ( ![ restaurar todas as funções ][ImageRestoreIcon] \) para restaurar todas as funções excluídas de volta à gravação.  
+Selecione o botão **restaurar todas as funções** \ ( ![ restaurar todas as funções ][ImageRestoreIcon] \) para restaurar novamente todas as funções excluídas na gravação.  
 
-## Exibir Perfil de amostra como gráfico   
+## Exibir Perfil de amostra como gráfico  
 
 O modo de exibição de gráfico fornece uma representação visual do perfil de amostragem ao longo do tempo.  
 
@@ -106,7 +99,7 @@ Depois de [gravar um perfil de amostragem](#record-a-sampling-profile), exiba a 
 
 O gráfico de chama é dividido em duas partes.  
 
-| | Parte | Descrição |  
+| dedo | Parte | Descrição |  
 | --- |:--- |:--- |  
 | um | Visão geral | Uma exibição de olho de toda a gravação.  A altura das barras corresponde à profundidade da pilha de chamadas.  Portanto, quanto mais alta a barra, mais profunda a pilha de chamadas.  |  
 | 2 | Pilha de chamadas | Esta é uma exibição detalhada das funções que foram chamadas durante a gravação.  O eixo horizontal é tempo e eixo vertical é a pilha de chamadas.  As pilhas são organizadas de cima para baixo.  Portanto, a função na parte superior acima dela e assim por diante.  |  
@@ -119,7 +112,7 @@ As funções são coloridas aleatoriamente.  Não há nenhuma correlação entre
 
 Uma pilha de chamadas alta não é necessariamente importante, apenas significa que muitas funções foram chamadas.  Mas uma barra larga significa que uma função demorou muito tempo para ser concluída.  Estes são candidatos para otimização.  
 
-### Ampliar partes específicas da gravação   
+### Ampliar partes específicas da gravação  
 
 Selecione, segure e arraste o mouse para a esquerda e para a direita na visão geral para ampliar partes específicas da pilha de chamadas.  Depois de aplicar zoom, a pilha de chamadas exibirá automaticamente a parte da gravação selecionada.  
 
@@ -127,7 +120,7 @@ Selecione, segure e arraste o mouse para a esquerda e para a direita na visão g
    Gráfico ampliado  
 :::image-end:::  
 
-### Exibir detalhes da função   
+### Exibir detalhes da função  
 
 Selecione uma função para exibir a definição no painel **fontes** .  
 
@@ -147,11 +140,9 @@ Passe o mouse sobre uma função para exibir o nome e os dados de tempo.  As inf
    Exibir detalhes de funções no gráfico  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

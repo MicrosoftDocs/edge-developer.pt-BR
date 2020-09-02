@@ -2,16 +2,16 @@
 title: Navegar no Microsoft Edge DevTools com tecnologia assistencial
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4bd910fabaab02a632bdc51ade29c5ad6502432a
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 544d6a6ecb8dabe262e7c28aa7fc072610604be0
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931193"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986050"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -235,11 +235,14 @@ O relatório de auditoria é organizado em seções que correspondem a cada uma 
 
 Para executar uma nova auditoria, use `Shift` + `Tab` para sair do relatório e procure o botão **executar uma auditoria** .  
 
+## Entrar em contato com a equipe do Microsoft Edge DevTools
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Referência de acessibilidade | Documentos da Microsoft"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "O painel Acessibilidade-referência de acessibilidade | Documentos da Microsoft"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Visão geral do console | Documentos da Microsoft"  

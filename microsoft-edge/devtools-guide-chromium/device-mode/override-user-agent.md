@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984988"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991167"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10984988"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Substituir a cadeia de caracteres do agente do usuário do Microsoft Edge DevTools   
-
-
+# Substituir a cadeia de caracteres do agente do usuário do Microsoft Edge DevTools  
 
 Para substituir a cadeia de caracteres do [agente do usuário][MDNUserAgent] do Microsoft Edge devtools:  
 
@@ -51,12 +45,10 @@ Para substituir a cadeia de caracteres do [agente do usuário][MDNUserAgent] do 
     :::image-end:::  
     
 1.  Selecione uma cadeia de caracteres de agente do usuário na lista ou insira sua própria cadeia de caracteres personalizada.  
-    
-<!--  
-## Feedback   
 
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

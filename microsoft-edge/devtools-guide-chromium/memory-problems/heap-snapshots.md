@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985409"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986168"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985409"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Como gravar instantâneos de pilha   
-
-
+# Como gravar instantâneos de pilha  
 
 Saiba como registrar instantâneos de heap com o Microsoft Edge DevTools heap Profiler e localizar vazamentos de memória.  
 
@@ -97,7 +91,7 @@ Para alternar entre os modos de exibição, use o seletor na parte superior do m
 Inicialmente, um instantâneo é aberto no modo de exibição de resumo, exibindo totais de objetos, que podem ser expandidos para mostrar instâncias:  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Modo de exibição Resumo" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Modo de exibição Resumo  
+   Modo de exibição **Resumo**  
 :::image-end:::  
 
 As entradas de nível superior são linhas de "total".  
@@ -118,7 +112,7 @@ Lembre-se de que os objetos amarelos têm referências JavaScript e os objetos v
 **Quais são as várias entradas do Construtor \ (Grupo \) no perfil de heap que correspondem a?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Grupos de Construtor" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Grupos de Construtor  
+   Grupos de **Construtor**  
 :::image-end:::  
 
 | Entrada do Construtor \ (Grupo \) | Descrição |  
@@ -256,11 +250,9 @@ Para ler mais sobre vazamentos de DOM e fundamentos de análise de memória, des
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

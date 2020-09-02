@@ -2,16 +2,16 @@
 title: Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 394ea0e831e3b60a60a149d1281c5cca382a887d
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: d837723ed68c6d088e7b345ae86c7a0312b46496
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688126"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986126"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10688126"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge   
-
-
+# Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge  
 
 A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cansativo e resíduos do **console**.  Use-o para encontrar soluções para problemas detectados pelo navegador, como problemas com cookies e conteúdo misto.  
 
@@ -45,7 +39,7 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
 > 
 > O Microsoft Edge DevTools Team Plan para dar suporte a mais tipos de problemas em versões futuras do Microsoft Edge.  
 
-## Abrir a ferramenta problemas na gaveta do DevTools   
+## Abrir a ferramenta problemas na gaveta do DevTools  
 
 1.  Acesse uma página, como [SameSite-sandbox.Glitch.me][GlitchSamesiteSandbox], que contém problemas para corrigir.  
 1.  [Abra o devtools][DevtoolsOpen].  
@@ -54,14 +48,14 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
           Selecione o botão **ir para problemas** na barra de aviso amarela.  
           
           :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-open-issues-tab.msft.png":::
-             Figura 1.  O botão **ir para problemas** na barra de aviso amarela quando problemas são detectados.  
+             O botão **ir para problemas** na barra de aviso amarela quando problemas são detectados.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Ou, se preferir, selecione **problemas** no menu **mais ferramentas** .  
           
           :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Ferramenta problemas no menu mais ferramentas" lightbox="../media//issues-more-tools-menu.msft.png":::
-             Figura 2.  Ferramenta **problemas** no menu **mais ferramentas**  
+             Ferramenta **problemas** no menu **mais ferramentas**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -69,23 +63,23 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
 1.  Selecione o botão **recarregar página** , se necessário.  
     
     :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com o botão recarregar página" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       Figura 3.  Ferramenta **problemas** na gaveta devtools com o botão **recarregar página**  
+       Ferramenta **problemas** na gaveta devtools com o botão **recarregar página**  
     :::image-end:::  
 
     Os problemas relatados no **console** são muito difíceis de entender, como os avisos de cookies na imagem a seguir.  Com base nos problemas relatados, talvez não seja claro o que você deve fazer.  
     
     :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com três problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       Figura 4.  Ferramenta **problemas** na gaveta devtools com três problemas de cookies  
+       Ferramenta **problemas** na gaveta devtools com três problemas de cookies  
     :::image-end:::  
     
-## Exibir itens na ferramenta problemas   
+## Exibir itens na ferramenta problemas  
 
 A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira estruturada, agregada e acionável.  
 
 1.  Selecione um item na ferramenta **problemas** para obter orientação sobre como corrigir o problema e localizar os recursos afetados.  
     
     :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar cookies entre sites como um problema seguro aberto na ferramenta problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
-       Figura 5.  **Marcar cookies entre sites como** um problema seguro aberto na ferramenta **problemas**  
+       **Marcar cookies entre sites como** um problema seguro aberto na ferramenta **problemas**  
     :::image-end:::  
     
     Cada item tem quatro componentes:  
@@ -98,32 +92,30 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 1.  Selecione itens em **recursos afetados** para exibir detalhes.  No exemplo a seguir, a **marca cookies entre sites como** um problema seguro afeta um cookie e duas solicitações.  
     
     :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afetados abertos na guia gaveta de problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Figura 6.  Recursos afetados abertos na ferramenta **problemas** na gaveta do devtools  
+       Recursos afetados abertos na ferramenta **problemas** na gaveta do devtools  
     :::image-end:::  
     
-## Exibir problemas no contexto   
+## Exibir problemas no contexto  
 
 1.  Selecione um link de recurso para exibir o item no contexto apropriado no DevTools.  No exemplo a seguir, selecione `samesite-sandbox.glitch.me` em **solicitações** para mostrar os cookies anexados a essa solicitação.  
     
     :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Exibir o cookie afetado no painel de rede do DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
-       Figura 7.  Exibir o cookie afetado no painel de rede do DevTools  
+       Exibir o cookie afetado no painel de **rede** do devtools  
     :::image-end:::  
 
 1.  Role para ver o item com um problema: para o exemplo a seguir, o `ck02` Cookie.  Passe o mouse sobre a coluna **SameSite** para ver o `None` valor detectado pelo problema.  
     
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Nenhum valor na coluna SameSite para o cookie ck02 no painel de rede do DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
-       Figura 8.  `None` valor na coluna **SameSite** para o `ck02` cookie no painel de **rede** devtools  
+       `None` valor na coluna **SameSite** para o `ck02` cookie no painel de **rede** devtools  
     :::image-end:::  
 
-<!--## Feedback  -->  
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsOpen]: ../open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Testes de cookies SameSite | Problema"  
 

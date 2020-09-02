@@ -3,15 +3,16 @@ description: Tudo sobre o modo de exibição 3D e como usá-lo.
 title: Modo de exibição 3D
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2019
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: ce9f8a26ef991f141f1ee888e79bfbf3a93f2eca
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858061"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986077"
 ---
 # Modo de exibição 3D  
 
@@ -107,9 +108,9 @@ Um controle deslizante no painel de controle intitulado **nível de aninhamento 
 
 ### Tipo de cor DOM  
 
-Além do **mapa compromissos-roxo para branco**, **mapa compromissos-azul a amarelo**, **mapa compromissos-arco-íris**e **usar** os botões de opção cor da tela de fundo, há a opção **usar textura de tela**.  A textura de tela adiciona contexto à sua experiência de depuração exibindo o conteúdo da página da Web diretamente nos elementos.  No painel **dom 3D** , a configuração de **tipo de cor** ainda é um trabalho em andamento, pois alguns sites têm uma textura de tela de renderização de tempo mais difícil no modo de exibição 3D.  
+Além do **mapa compromissos-roxo para branco**, **mapa compromissos-azul a amarelo**, **mapa compromissos-arco-íris**e **usar** os botões de opção cor da tela de fundo, há a opção **usar textura de tela**.  A textura de tela adiciona contexto à sua experiência de depuração exibindo o conteúdo da página da Web diretamente nos elementos.  No painel **dom 3D** , a configuração de  **tipo de cor** ainda é um trabalho em andamento, pois alguns sites têm uma textura de tela de renderização de tempo mais difícil no modo de exibição 3D.  
 
-## Entrar em contato com a equipe do Microsoft Edge devtools  
+## Entrar em contato com a equipe do Microsoft Edge DevTools
 
 A equipe do Microsoft Edge devtools está trabalhando na interface do usuário e adiciona mais funcionalidade ao modo de exibição 3D com base em uma pergunta de usuários como você.  Envie seus comentários para ajudar a melhorar o Microsoft Edge DevTools.  Basta selecionar o ícone de comentários no devtools ou pressionar `Alt` + `Shift` + `I` \ (Windows \) ou pressionar `Option` + `Shift` + `I` \ (MacOS \) e inserir qualquer comentário ou solicitação de recurso que você tenha para o devtools.  
 

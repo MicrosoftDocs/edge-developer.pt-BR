@@ -2,16 +2,16 @@
 title: Terminologia da memória
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: e3373cf1475ec0eeaabcebf1a7f49505c7a3c1bb
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: cb258135b7b3c931116d84b1e9b7a548a2b58a6d
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611724"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986230"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10611724"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Terminologia da memória   
-
-
+# Terminologia da memória  
 
 Esta seção descreve os termos comuns usados na análise de memória e se aplica a uma variedade de ferramentas de criação de perfil de memória para diferentes idiomas.  
 
@@ -43,20 +37,20 @@ Os termos e noções aqui descritos referem-se ao [painel memória][DevtoolsMemo
 
 Pense na memória como um gráfico com tipos primitivos \ (como números e cadeias de caracteres \) e objetos \ (matrizes associativas \).  Ele pode ser representado visualmente como um gráfico com uma série de pontos interconectados da seguinte maneira:  
 
-> ##### Figura 1  
-> Representação visual da memória  
->![Representação visual da memória][ImageThinkGraph]  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Representação visual da memória" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Representação visual da memória  
+:::image-end:::  
 
 Um objeto pode conter memória de duas maneiras:  
 
 *   Diretamente pelo objeto.  
 *   Implicitamente, mantém referências a outros objetos e, portanto, impedindo que esses objetos sejam descartados automaticamente por um coletor de lixo \ (**GC** para short \).  
 
-Ao trabalhar com o [painel memória][DevtoolsMemoryProblemsHeapSnapshots] no devtools \ (uma ferramenta para investigar problemas de memória encontrados em "memória" \), você pode ver em algumas colunas de informação diferentes.  Dois que se destacam são o tamanho e o **tamanho retidos** **superficiais** , mas o que representam?  
+Ao trabalhar com o painel [memória][DevtoolsMemoryProblemsHeapSnapshots] no devtools \ (uma ferramenta para investigar problemas de memória encontrados em **Memory**\), você pode ver em algumas colunas de informação diferentes.  Dois que se destacam são o tamanho e o **tamanho retidos** **superficiais** , mas o que representam?  
 
-> ##### Figura 2  
-> Tamanho superficial e retido  
->![Tamanho superficial e retido][ImageShallowRetained]  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Tamanho superficial e retido" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Tamanho superficial e retido  
+:::image-end:::  
 
 ### Tamanho superficial  
 
@@ -81,11 +75,11 @@ Há muitas raízes internas de GC, a maioria delas não é interessante para os 
 >[!TIP]
 > Limpe o painel do **console** executando `clear()` e desative pontos de interrupção no painel **fontes** antes de colocar um instantâneo de heap no [painel memória][DevtoolsMemoryProblemsHeapSnapshots].
 
-O gráfico memória começa com uma raiz, que pode ser o `window` objeto do navegador ou o `Global` objeto de um módulo node. js.  Você não controla como esse objeto raiz é coletado como lixo (MDC).  
+O gráfico memória começa com uma raiz, que pode ser o `window` objeto do navegador ou o `Global` objeto de um módulo Node.js.  Você não controla como esse objeto raiz é coletado como lixo (MDC).  
 
-> ##### Figura 3  
-> Você não pode controlar como o objeto raiz é coletado como lixo \ (MDC \).  
->![Você não pode controlar como o objeto raiz é coletado como lixo (MDC).][ImageDontControl]  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Você não pode controlar como o objeto raiz é coletado como lixo." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   Você não pode controlar como o objeto raiz é coletado como lixo.  
+:::image-end:::  
 
 O que não for alcançável da raiz será obtido com o Garbage Collector \ (MDC \).  
 
@@ -99,17 +93,17 @@ O heap é uma rede de objetos interconectados.  No mundo matemático, essa estru
 *   Os **nós** \ (ou **objetos**\) são rotulados usando o nome da função do **Construtor** que foi usado para construí-los.  
 *   As **bordas** são rotuladas usando os nomes das **Propriedades**.  
 
-Saiba [como gravar um perfil usando o gerador de perfil de heap][DevtoolsMemoryProblemsHeapSnapshots].  Algumas das coisas que você pode ver na gravação do instantâneo de heap no [painel memória][DevtoolsMemoryProblemsHeapSnapshots] na [Figura 4](#figure-4) incluem distância: a distância da raiz do coletor de lixo \ (GC \).  Se praticamente todos os objetos do mesmo tipo estiverem na mesma distância, e alguns estiverem a uma distância maior, isso é algo digno de investigação.  
+Saiba [como gravar um perfil usando o gerador de perfil de heap][DevtoolsMemoryProblemsHeapSnapshots].  Na figura a seguir, algumas das coisas que você pode ver na gravação do instantâneo de heap no [painel memória][DevtoolsMemoryProblemsHeapSnapshots] incluem distância: a distância da raiz do coletor de lixo \ (GC \).  Se praticamente todos os objetos do mesmo tipo estiverem na mesma distância, e alguns estiverem a uma distância maior, isso é algo digno de investigação.  
 
-> ##### Figura 4  
-> Distância da raiz  
->![Distância da raiz][ImageRoot]  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distância da raiz" lightbox="../media/memory-problems-root.msft.png":::
+   Distância da raiz  
+:::image-end:::  
 
 ## Dominadores  
 
 Os objetos Dominator são compostos de uma estrutura de árvore porque cada objeto tem exatamente um Dominator.  Um Dominator de um objeto pode não ter referências diretas a um objeto que ele domina; ou seja, a árvore do Dominator não é uma árvore de abrangência do gráfico.  
 
-Na [Figura 5](#figure-5):  
+Na figura a seguir, a instrução a seguir é verdadeira.  
 
 *   O nó 1 domina o nó 2  
 *   O nó 2 domina os nós 3, 4 e 6  
@@ -117,15 +111,15 @@ Na [Figura 5](#figure-5):
 *   Nó 5 dominaos nó 8  
 *   O nó 6 domina o nó 7  
 
-> ##### Figura 5  
-> Estrutura de árvore Dominator  
->![Estrutura de árvore Dominator][ImageDominatorsSpanning]  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Estrutura de árvore Dominator" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Estrutura de árvore Dominator  
+:::image-end:::  
 
-Na [Figura 6](#figure-6), nó `#3` é o Dominator de `#10` , mas `#7` também existe em cada caminho simples do Garbage Collector \ (GC \) a `#10` .  Portanto, um objeto B é um Dominator de um objeto A se B existir em cada caminho simples da raiz para o objeto A.  
+Na figura a seguir, nó `#3` é o Dominator de `#10` , mas `#7` também existe em cada caminho simples do Garbage Collector \ (GC \) a `#10` .  Portanto, um objeto B é um Dominator de um objeto A se B existir em cada caminho simples da raiz para o objeto A.  
 
-> ##### Figura 6  
-> Ilustração Dominator animada  
->![Ilustração Dominator animada][ImageDominators]  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Ilustração Dominator animada" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Ilustração Dominator animada  
+:::image-end:::  
 
 ## Especificações do V8  
 
@@ -170,29 +164,22 @@ Quando há um pequeno número de propriedades, as propriedades são armazenadas 
 
 **Mapa** é um objeto que descreve o tipo de objeto e o layout. Por exemplo, os mapas são usados para descrever hierarquias de objetos implícitos para [acesso rápido a Propriedades][V8FastProperties].  
 
-
 ### Grupos de objetos  
 
-Cada grupo de **objetos nativos** é composto por objetos que mantêm referências mútuas entre si.  Considere, por exemplo, uma subárvore DOM em que cada nó tenha um link para o pai relativo e se vincule ao próximo filho e ao próximo irmão, criando um gráfico conectado.  Observe que os objetos nativos não são representados na pilha JavaScript – é por isso que os objetos nativos têm tamanho zero. Em vez disso, os objetos de conteúdo adicional são criados.  
+Cada grupo de **objetos nativos** é composto por objetos que mantêm referências mútuas entre si.  Considere, por exemplo, uma subárvore DOM em que cada nó tenha um link para o pai relativo e se vincule ao próximo filho e ao próximo irmão, portanto, criando um gráfico conectado.  
+
+> [!NOTE]
+> Objetos nativos não são representados na pilha JavaScript.  A falta de representação é por isso que os objetos nativos têm tamanho zero. Em vez disso, os objetos de conteúdo adicional são criados.  
 
 Cada objeto envoltório mantém uma referência ao objeto nativo correspondente, para redirecionar comandos para ele.  Por sua vez, um grupo de objetos contém objetos envoltório.  No entanto, isso não cria um ciclo não colecionável, pois o coletor de lixo \ (GC \) é inteligente o suficiente para liberar grupos de objetos cujos wrappers não são mais referenciados. Mas esquecer de liberar um único wrapper mantém o grupo inteiro e os wrappers associados.  
 
-<!--## Feedback   -->  
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
-
-[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Figura 1: representação visual da memória"  
-[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Figura 2: tamanho superficial e retido"  
-[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Figura 3: você não pode controlar como o objeto raiz é lixo coletado (MDC)."  
-[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Figura 4: distância da raiz"  
-[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Figura 5: estrutura de árvore Dominator"  
-[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Figura 6: ilustração Dominator animada"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Como gravar instantâneos de pilha | Documentos da Microsoft"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Propriedades rápidas no V8 | V8"  
 

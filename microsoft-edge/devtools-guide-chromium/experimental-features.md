@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
-ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
+ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10960720"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986119"
 ---
 # Recursos experimentais  
 
@@ -139,10 +139,10 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualquer outro item relacionado ao DevTools.  
 
 *   Envie seus comentários usando o ícone **enviar comentários** no devtools  
-*   Tweet em [@EdgeDevTools][TwitterEdgedevtools]  
+*   Tweet em [@EdgeDevTools][TwitterEdgedevtools]   
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Ícone enviar comentários no Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
-   Ícone **enviar comentários** no Microsoft Edge devtools  
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="O ícone enviar comentários no Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+   O ícone **enviar comentários** no Microsoft Edge devtools  
 :::image-end:::  
 
 <!-- links -->  

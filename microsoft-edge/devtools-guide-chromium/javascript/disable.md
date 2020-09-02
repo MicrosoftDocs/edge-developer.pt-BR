@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982904"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986112"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10982904"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Desabilitar JavaScript com o Microsoft Edge DevTools  
 
-
-
-
-# Desabilitar JavaScript com o Microsoft Edge DevTools   
-
-
-
-Para ver como uma página da Web tem uma aparência e se comporta quando o JavaScript está desabilitado.  
+Conclua as seguintes ações para ver como uma página da Web tem a aparência e se comporta quando o JavaScript está desabilitado.  
 
 1.  [Abra o Microsoft Edge devtools][DevToolsOpen].  
 1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comandos**.  
@@ -56,7 +50,7 @@ Para ver como uma página da Web tem uma aparência e se comporta quando o JavaS
        O ícone de aviso ao lado de **fontes**  
     :::image-end:::  
     
-O JavaScript permanece desabilitado nessa guia por quanto tempo você tiver o DevTools aberto.  
+O JavaScript permanece desabilitado na guia pelo tempo em que você tiver o DevTools aberto.  
 
 Você pode querer recarregar a página para ver se e como a página depende de JavaScript durante o carregamento.  
 
@@ -65,11 +59,9 @@ Para habilitar novamente o JavaScript, conclua as ações a seguir.
 *   Abra o **menu de comandos** novamente e execute o `Enable JavaScript` comando.  
 *   Feche o DevTools.  
 
-<!--  
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

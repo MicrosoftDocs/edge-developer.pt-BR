@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985733"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986161"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985733"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Como usar a instrumentação de alocação na linha do tempo  
-
-
 
 Use a **Instrumentação de alocação na linha do tempo** para localizar objetos que não estão sendo coletados corretamente e continue a reter a memória.  
 
@@ -44,7 +38,7 @@ A **Instrumentação de alocação na linha do tempo** combina as informações 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-A **Instrumentação de alocação na linha do tempo** tem instantâneos de pilha periodicamente em toda a gravação \ (com frequência a cada 50 ms! \) e um instantâneo final no final da gravação.  
+A **Instrumentação de alocação na linha do tempo** tem instantâneos de pilha periodicamente em toda a gravação \ (com frequência a cada 50 ms \) e um instantâneo final no final da gravação.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentação de alocação na linha do tempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Instrumentação de alocação na linha do tempo**  
@@ -55,7 +49,7 @@ A **Instrumentação de alocação na linha do tempo** tem instantâneos de pilh
 
 ## Habilitar a instrumentação de alocação na linha do tempo  
 
-Siga estas etapas para começar a usar a **Instrumentação de alocação na linha do tempo**.  
+Conclua as seguintes ações para começar a usar a **Instrumentação de alocação na linha do tempo**.  
 
 1.  [Abra o devtools][DevtoolsOpenIndex].  
 1.  Abrir o painel **memória** , selecione o botão de opção **Instrumentação de alocação no cronograma** .  
@@ -86,15 +80,13 @@ Você pode usar os controles deslizantes na linha do tempo acima para ampliar o 
 
 Clicar em um objeto específico na heap mostra a árvore de retenção na parte inferior do instantâneo de heap.  Examinar o caminho de retenção para o objeto deve fornecer a você informações suficientes para entender por que o objeto não foi coletado, e você deve fazer as alterações de código necessárias para remover a referência desnecessária.  
 
-## Exibir a alocação de memória por função   
+## Exibir a alocação de memória por função  
 
-Você pode visualizar a alocação de memória por meio da função JavaScript.  Consulte [investigar a alocação de memória por função][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] para obter mais informações.  
+Você pode visualizar a alocação de memória por meio da função JavaScript.  Para obter mais informações, consulte [investigar a alocação de memória por função][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Entrar em contato com a equipe do Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

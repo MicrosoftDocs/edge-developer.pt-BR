@@ -3,17 +3,17 @@ description: Saiba como testar seu site ou aplicativo no Microsoft Edge ou autom
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desenvolvimento na Web, HTML, CSS, JavaScript, desenvolvedor, WebDriver, Selenium, testes, ferramentas, automação, teste
-ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
-ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
+ms.openlocfilehash: 8170820d7809f7c4c07f21c815f17a9438016305
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10757577"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986210"
 ---
 # Usar o WebDriver (Chromium) para automação de teste  
 
@@ -325,8 +325,8 @@ Para obter mais informações, consulte [contêiner no Dock Hub][DockerHubMsedge
 A equipe do Microsoft Edge está ansiosos para ouvir seus comentários sobre como usar o WebDriver, o Selenium e o Microsoft Edge.  Use o ícone de **comentários** no Microsoft Edge devtools ou tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] para que a equipe saiba qual é a sua opinião.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="O ícone de comentários no Microsoft Edge DevTools":::
-   O ícone de **comentários** no Microsoft Edge devtools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="O ícone enviar comentários no Microsoft Edge DevTools":::
+   O ícone **enviar comentários** no Microsoft Edge devtools  
 :::image-end:::  
 
 <!-- image links -->  

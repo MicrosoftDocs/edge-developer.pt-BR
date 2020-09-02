@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 190890b43cff97ae0f379426b68a688534ebda95
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983607"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986084"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10983607"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Referência de acessibilidade   
-
-
+# Referência de acessibilidade  
 
 Esta página é uma referência abrangente dos recursos de acessibilidade no Microsoft Edge DevTools.  Destina-se a desenvolvedores da Web que:  
 
@@ -44,7 +38,7 @@ A finalidade dessa referência é ajudar você a descobrir todas as ferramentas 
 
 Consulte [navegando no Microsoft Edge devtools com tecnologia assistencial][DevtoolsAccessibilityNavigation] se você estiver procurando ajuda sobre como navegar no devtools com uma tecnologia assistencial como um leitor de tela.  
 
-## Visão geral dos recursos de acessibilidade no Microsoft Edge DevTools   
+## Visão geral dos recursos de acessibilidade no Microsoft Edge DevTools  
 
 Esta seção explica como o DevTools se encaixa no seu kit de ferramentas de acessibilidade geral.  
 
@@ -57,7 +51,7 @@ Em geral, o DevTools deve ajudá-lo a corrigir erros relacionados a perguntas #2
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Fazer auditoria da acessibilidade de uma página   
+## Fazer auditoria da acessibilidade de uma página  
 
 > [!NOTE]
 > O painel **auditorias** fornece links para conteúdo hospedado em sites de terceiros.  A Microsoft não é responsável e não tem controle sobre o conteúdo desses sites e todos os dados que possam ser coletados.  
@@ -65,8 +59,8 @@ Em geral, o DevTools deve ajudá-lo a corrigir erros relacionados a perguntas #2
 Em geral, use o painel auditorias para determinar se:  
 
 *   Uma página está marcada corretamente para leitores de tela.  
-*   Os elementos de texto em uma página têm taxas de contraste suficientes. Consulte também [exibir a taxa de contraste de um elemento de texto no seletor de cores](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-    
+*   Os elementos de texto em uma página têm taxas de contraste suficientes.  Consulte [exibir a taxa de contraste de um elemento de texto no seletor de cores](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+
 Para fazer auditoria em uma página:  
 
 1.  Vá para a URL que você deseja auditar.  
@@ -95,13 +89,13 @@ Para fazer auditoria em uma página:
        Mais informações sobre uma auditoria  
     :::image-end:::  
     
-1.  Clique em **saiba mais** para ver a documentação dessa auditoria.
+1.  Clique em **saiba mais** para ver a documentação dessa auditoria.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Exibir a documentação de uma auditoria" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Exibir a documentação de uma auditoria  
     :::image-end:::  
     
-### Consulte também: extensão aXe   
+### Consulte também: extensão aXe  
 
 Você pode preferir usar a [extensão Axe][ChromeWebStoreAxe] em vez do painel **auditorias** .  
 A extensão aXe geralmente fornece as mesmas informações, já que é o mecanismo subjacente que alimenta o painel auditorias.  A extensão aXe tem uma interface do usuário diferente e descreve as auditorias de forma ligeiramente diferente.  
@@ -111,7 +105,7 @@ Uma vantagem de que a extensão aXe tem sobre o painel **auditorias** é que ele
    A extensão aXe  
 :::image-end:::  
 
-## O painel Acessibilidade   
+## O painel Acessibilidade  
 
 O painel **acessibilidade** é onde você vê a árvore de acessibilidade, atributos do Aria e propriedades de acessibilidade calculadas dos nós dom.  
 
@@ -119,13 +113,13 @@ Para abrir o painel de **acessibilidade** :
 
 1.  Clique na guia **elementos** .  
 1.  Na **árvore DOM**, selecione o elemento que você deseja inspecionar.  
-1.  Clique na guia **acessibilidade** .  Esta guia pode estar oculta atrás do botão **mais** guias ![ mais guias ][ImageMoreTabsIcon] .  
+1.  Clique na guia **acessibilidade** .  Esta guia pode estar oculta atrás do botão **mais guias** \ ( ![ mais guias ][ImageMoreTabsIcon] \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecionar o elemento H1 da home page do DevTools no painel Acessibilidade" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspecionar o `h1` elemento da home page do devtools no painel **acessibilidade**  
 :::image-end:::  
 
-### Exibir a posição de um elemento na árvore de acessibilidade   
+### Exibir a posição de um elemento na árvore de acessibilidade  
 
 A [árvore de acessibilidade][MDNAccessibilityTree] é um subconjunto da árvore DOM.  Ele somente contém elementos da árvore DOM que são relevantes e úteis para exibir o conteúdo de uma página em um leitor de tela.  
 
@@ -135,7 +129,7 @@ Inspecione a posição de um elemento na árvore de acessibilidade no [painel Ac
    A seção de **árvore de acessibilidade**  
 :::image-end:::  
 
-### Exibir os atributos do ARIA de um elemento   
+### Exibir os atributos do ARIA de um elemento  
 
 Os atributos do ARIA garantem que os leitores de tela tenham todas as informações necessárias para representar adequadamente o conteúdo de uma página.  
 
@@ -145,7 +139,7 @@ Exiba os atributos do ARIA de um elemento no [painel Acessibilidade](#the-access
    A seção de **atributos do Aria**  
 :::image-end:::  
 
-### Exibir as propriedades de acessibilidade calculadas de um elemento   
+### Exibir as propriedades de acessibilidade calculadas de um elemento  
 
 > [!NOTE]
 > Se você estiver procurando propriedades CSS calculadas, consulte a [guia calculada][DevtoolsCssReferenceViewActuallyAppliedElements].  
@@ -158,9 +152,10 @@ Exiba as propriedades de acessibilidade calculadas de um elemento no [painel Ace
    A seção **Propriedades calculadas** do painel **acessibilidade**  
 :::image-end:::  
 
-## Exibir a taxa de contraste de um elemento de texto no seletor de cores   
+## Exibir a taxa de contraste de um elemento de texto no seletor de cores  
 
 Algumas pessoas com visão subnormal não veem áreas como muito brilhantes ou muito escuras.  Tudo tem a aparência da mesma forma de brilho, o que torna difícil distinguir estruturas de tópicos e bordas.  
+
 A taxa de contraste mede a diferença de brilho entre o primeiro e o plano de fundo do texto.  Se o texto tiver uma taxa de contraste baixa, esses usuários com deficiência visual poderão ter literalmente o seu site como uma tela em branco.  
 
 O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de contraste recomendados:  
@@ -169,7 +164,7 @@ O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de co
 1.  Na **árvore DOM**, selecione o elemento de texto que você deseja inspecionar.  
     
     :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecionar um parágrafo na árvore DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspecionar um parágrafo na árvore DOM  
+       Inspecionar um parágrafo na **árvore DOM**  
     :::image-end:::  
     
 1.  No painel **estilos** , clique no quadrado colorido ao lado do `color` valor do elemento.  
@@ -178,7 +173,7 @@ O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de co
        A `color` Propriedade do elemento  
     :::image-end:::  
     
-1.  Marque a seção **taxa de contraste** do seletor de cores.  Uma marca de opção significa que o elemento atende à [recomendação mínima][W3CContrastMinimum].  Duas marcas de opção significa que ela atende à [recomendação aprimorada][W3CContrastEnhanced].
+1.  Marque a seção **taxa de contraste** do seletor de cores.  Uma marca de opção significa que o elemento atende à [recomendação mínima][W3CContrastMinimum].  Duas marcas de opção significa que ela atende à [recomendação aprimorada][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="A seção taxa de contraste do seletor de cores mostra duas marcas de seleção e um valor de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        A seção **taxa de contraste** do seletor de cores mostra 2 marcas de seleção e um valor de `13.97`  
@@ -187,12 +182,12 @@ O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de co
 1.  Clique na seção **taxa de contraste** para ver mais informações.  Uma linha aparece no seletor Visual na parte superior do seletor de cores.  Se a cor atual atender às recomendações, qualquer coisa no mesmo lado da linha também atenderá às recomendações.  Se a cor atual não atender às recomendações, qualquer coisa no mesmo lado também não atende às recomendações.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="A linha de taxa de contraste no seletor Visual" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       A linha de taxa de contraste no seletor Visual  
+       A linha de **taxa de contraste** no seletor Visual  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -200,7 +195,7 @@ O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de co
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegar no Microsoft Edge DevTools com tecnologia assistencial | Documentos do Microsft"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegar no Microsoft Edge DevTools com tecnologia assistencial | Documentos da Microsoft"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Exiba somente a CSS que realmente é aplicada a um elemento-referência de elemento CSS | Documentos da Microsoft"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "Axe-teste de acessibilidade na Web-Web Chrome Web Store"  
