@@ -3,13 +3,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 08/17/2020
-ms.openlocfilehash: 8b3eb4db6ae55a063bf355b7342d57a41d739286
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.date: 09/01/2020
+ms.openlocfilehash: 5be994b091d0e4720fb091800f4fbdf2051c7a00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942104"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992880"
 ---
 <span data-ttu-id="dea59-101">Use as opções a seguir para discutir os novos recursos e alterações na postagem ou em qualquer outro item relacionado ao DevTools.</span><span class="sxs-lookup"><span data-stu-id="dea59-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
 
