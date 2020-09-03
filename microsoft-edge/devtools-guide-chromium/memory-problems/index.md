@@ -1,17 +1,18 @@
 ---
+description: Saiba como usar o Microsoft Edge e o DevTools para encontrar problemas de memória que afetam o desempenho da página, incluindo vazamentos de memória, excesso de memória e coletas de lixo frequentes.
 title: Corrigir problemas de memória
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751986"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -113,7 +114,7 @@ Toda vez que o botão referenciado no código for pressionado, os `div` nós do 
 
 Primeiro, uma explicação sobre a interface do usuário.  O gráfico de **heap** no painel de **visão geral** \ (abaixo de **net**\) representa o heap do js.  Abaixo do painel **visão geral** está o painel **contador** .  Aqui você pode ver o uso da memória dividido por JS do JS \ (mesmo que o gráfico de **heap** no painel de **visão geral** \), documentos, nós dom, ouvintes e memória GPU.  Desabilitar uma caixa de seleção oculta-a do gráfico.  
 
-Agora, uma análise do código em comparação com a imagem anterior.  Se você observar o contador de nós \ (o gráfico verde \), poderá ver que ele corresponderá perfeitamente com o código.  A contagem de nós aumenta em etapas discretas.  Você pode presumir que cada aumento na contagem de nós é uma chamada para `grow()` .  O gráfico de heap do JS \ (o gráfico azul \) não é tão simples.  Em manter as práticas recomendadas, o primeiro DIP é, na verdade, uma coleta de lixo forçada \ (obtida pressionando-se o botão coletar coleta de lixo da **coleta** de lixo ![ ][ImageForceGarbageCollectionIcon] \).  À medida que a gravação progride, você pode ver que o tamanho de heap do JS é pico.  Isso é natural e esperado: o código JavaScript está criando os nós DOM em cada botão pressione e fazendo muito trabalho quando cria a cadeia de caracteres de 1 milhão caracteres.  A chave importante aqui é o fato de que o recurso heap do JS termina mais alto do que começou \ (o "começo" aqui está a ponto após a coleta de lixo forçada \).  No mundo real, se você viu esse padrão de tamanho de pilha ou tamanho de nó aumentado, pode ser possível definir um vazamento de memória.  
+Agora, uma análise do código em comparação com a imagem anterior.  Se você observar o contador de nós \ (o gráfico verde \), poderá ver que ele corresponderá perfeitamente com o código.  A contagem de nós aumenta em etapas discretas.  Você pode presumir que cada aumento na contagem de nós é uma chamada para `grow()` .  O gráfico de heap do JS \ (o gráfico azul \) não é tão simples.  Em manter as práticas recomendadas, o primeiro DIP é, na verdade, uma coleta de lixo forçada \ (obtida pressionando-se o botão coletar coleta de lixo da  **coleta** de lixo ![ ][ImageForceGarbageCollectionIcon] \).  À medida que a gravação progride, você pode ver que o tamanho de heap do JS é pico.  Isso é natural e esperado: o código JavaScript está criando os nós DOM em cada botão pressione e fazendo muito trabalho quando cria a cadeia de caracteres de 1 milhão caracteres.  A chave importante aqui é o fato de que o recurso heap do JS termina mais alto do que começou \ (o "começo" aqui está a ponto após a coleta de lixo forçada \).  No mundo real, se você viu esse padrão de tamanho de pilha ou tamanho de nó aumentado, pode ser possível definir um vazamento de memória.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -163,7 +164,7 @@ Expanda o carats para investigar uma árvore desanexada.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Selecione um nó para investigar ainda mais.  No painel **objetos** , você pode ver mais informações sobre o código que o está fazendo referência a ele.  Por exemplo, na figura a seguir, você pode ver que a `detachedNodes` variável está fazendo referência ao nó.  Para corrigir esse vazamento de memória específico, você deve estudar o código que usa a `detachedNodes` variável e garantir que a referência ao nó seja removida quando não for mais necessária.  
+Selecione um nó para investigar ainda mais.  No painel **objetos** , você pode ver mais informações sobre o código que o está fazendo referência a ele.  Por exemplo, na figura a seguir, você pode ver que a `detachedNodes` variável está fazendo referência ao nó.  Para corrigir esse vazamento de memória específico, você deve estudar o código que usa a `detachedUNode` variável e garantir que a referência ao nó seja removida quando não for mais necessária.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigando um nó" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figura 7: investigando um nó  
@@ -175,7 +176,7 @@ Selecione um nó para investigar ainda mais.  No painel **objetos** , você pode
 
 A **Instrumentação de alocação na linha do tempo** é outra ferramenta que pode ajudá-lo a rastrear vazamentos de memória no heap do js.  
 
-Demonstre a **Instrumentação de distribuição na linha do tempo** usando o código a seguir.  
+Demonstre a **Instrumentação de distribuição na linha do tempo**  usando o código a seguir.  
 
 ```javascript
 var x = [];

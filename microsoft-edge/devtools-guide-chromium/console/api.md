@@ -1,17 +1,18 @@
 ---
+description: Use a API do console para escrever mensagens no console.
 title: Referência de API do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708448"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993251"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +73,7 @@ console.clear();
 
 Se a [preservação do log][DevtoolsConsoleReferenceLevel] estiver habilitada, o método [limpar](#clear) estará desabilitado.  
 
-### Consulte também  
+### Ver também  
 
 *   [Limpar o console][DevtoolsConsoleReferenceClear]  
 

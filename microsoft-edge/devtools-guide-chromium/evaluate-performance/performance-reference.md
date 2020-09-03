@@ -1,17 +1,18 @@
 ---
-title: Referência do evento Timeline
+description: O modo de eventos de linha do tempo exibe todos os eventos disparados ao criar uma gravação.  Use a referência de evento Timeline para saber mais sobre cada tipo de evento de linha do tempo.
+title: Referência de Evento de Linha do Tempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: e5f0807204877ce034fd52ea4535795ea80ba394
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611717"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992845"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -31,7 +32,7 @@ ms.locfileid: "10611717"
 
 
 
-# Referência do evento Timeline   
+# Referência de Evento de Linha do Tempo   
 
 
 

@@ -1,17 +1,18 @@
 ---
+description: Um guia sobre como abrir o menu de comando, executar comandos, ver outras ações e muito mais.
 title: Executar comandos com o menu de comando do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 09adaadd6f62710b219911f69fbe39ba8edfb61a
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982534"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993195"
 ---
 <!-- Copyright Kayce Basques 
 

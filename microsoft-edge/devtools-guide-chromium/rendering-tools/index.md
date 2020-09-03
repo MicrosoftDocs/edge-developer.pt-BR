@@ -1,17 +1,18 @@
 ---
+description: Os usuários esperam páginas interativas e suaves.  Cada estágio no pipeline de pixel representa uma oportunidade de introduzir o Jank.  Saiba mais sobre ferramentas e estratégias para identificar e corrigir problemas comuns que desaceleram o desempenho do tempo de execução.
 title: Analisar o desempenho do tempo de execução
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0fc576703a9760a3306e74da3521f93bf2d5d9cd
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986175"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992699"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

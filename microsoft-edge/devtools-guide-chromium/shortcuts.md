@@ -1,17 +1,18 @@
 ---
+description: A documentação canônica para os atalhos de teclado do Microsoft Edge DevTools.
 title: Atalhos de teclado do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: 031457d33bf3cf102380c01d9084619313612124
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 8900b58cfaaa6cdab18e0979867348434a213cd0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601891"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993566"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,9 +48,9 @@ Para abrir o DevTools, pressione os seguintes atalhos de teclado enquanto o curs
 
 | Ação | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Abrir o painel usado por último | `F12` or`Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Abrir o painel usado por último | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Abrir o painel de **console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Abrir o painel **elementos** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C`or`Command`+`Option`+`C` |  
+| Abrir o painel **elementos** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |  
 
 ## Atalhos de teclado global   
 
@@ -57,7 +58,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 | Ação | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Mostrar **configurações** | `?` ou `F1` | `?` or`Function`+`F1` |  
+| Mostrar **configurações** | `?` ou `F1` | `?` or `Function`+`F1` |  
 | Focalizar o próximo painel | `Control`+`]` | `Command`+`]` |  
 | Concentrar o painel anterior | `Control`+`[` | `Command`+`[` |  
 | Volte para qualquer [posição de encaixe][DevtoolsCustomizeIndexPlacement] usada por último.  Se DevTools estiver em sua posição padrão para toda a sessão, esse atalho desencaixará o DevTools em uma janela separada | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -65,11 +66,11 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 | Alternar o **modo de inspeção do elemento** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Abrir o [menu de comandos][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Alternar a [gaveta][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Recarregamento normal | `F5` or`Control`+`R` | `Command`+`R` |  
-| Recarregamento fixo | `Control`+`F5`or`Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Recarregamento normal | `F5` or `Control`+`R` | `Command`+`R` |  
+| Recarregamento fixo | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Pesquisar texto dentro do painel atual.  Não é compatível com os painéis **auditorias**, **aplicativo**e **segurança** | `Control`+`F` | `Command`+`F` |  
 | Abre a guia **Pesquisar** na [gaveta][DevtoolsCustomizeIndexDrawer], que permite Pesquisar texto em todos os recursos carregados | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir um arquivo no painel **fontes** | `Control`+`O`or`Control`+`P` | `Command`+`O`or`Command`+`P` |  
+| Abrir um arquivo no painel **fontes** | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
 | Ampliar | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Reduzir | `Control`+`-` | `Command`+`-` |  
 | Restaurar o nível de zoom padrão | `Control`+`0` | `Command`+`0` |  
@@ -99,20 +100,20 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 |:--- |:--- |:--- |  
 | Ir para a linha na qual um valor de propriedade é declarado | Segure `Control` e clique no valor da propriedade | Segure `Command` e clique no valor da propriedade |  
 | Percorrer as representações RBGA, HSLA e HexA de um valor de cor | Segure `Shift` e clique na caixa **visualização de cor** ao lado do valor | Segure `Shift` e clique na caixa **visualização de cor** ao lado do valor |  
-| Selecionar o valor ou a propriedade próximo/anterior | Clique no nome ou no valor de uma propriedade e pressione`Tab` / `Shift`+`Tab` | Clique no nome ou no valor de uma propriedade e pressione`Tab` / `Shift`+`Tab` |  
-| Incrementar/decrementar um valor de propriedade por 0,1 | Clique em um valor e pressione Alt + seta para cima/`Alt`+`Down Arrow` | Clique em um valor e pressione `Option` + `Up Arrow` /Option + seta para baixo |  
-| Incrementar/decrementar um valor de propriedade em 1 | Clique em um valor e pressione`Up Arrow` / `Down Arrow` | Clique em um valor e pressione`Up Arrow` / `Down Arrow` |  
-| Incrementar/decrementar um valor de propriedade em 10 | Clique em um valor e pressione`Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Clique em um valor e pressione`Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
-| Incrementar/decrementar um valor de propriedade por 100 | Clique em um valor e pressione`Control`+`Up Arrow` / `Control`+`Down Arrow` | Clique em um valor e pressione`Command`+`Up Arrow` / `Command`+`Down Arrow` |  
+| Selecionar o valor ou a propriedade próximo/anterior | Clique no nome ou no valor de uma propriedade e pressione `Tab` / `Shift`+`Tab` | Clique no nome ou no valor de uma propriedade e pressione `Tab` / `Shift`+`Tab` |  
+| Incrementar/decrementar um valor de propriedade por 0,1 | Clique em um valor e pressione Alt + seta para cima/ `Alt`+`Down Arrow` | Clique em um valor e pressione `Option` + `Up Arrow` /Option + seta para baixo |  
+| Incrementar/decrementar um valor de propriedade em 1 | Clique em um valor e pressione `Up Arrow` / `Down Arrow` | Clique em um valor e pressione `Up Arrow` / `Down Arrow` |  
+| Incrementar/decrementar um valor de propriedade em 10 | Clique em um valor e pressione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Clique em um valor e pressione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
+| Incrementar/decrementar um valor de propriedade por 100 | Clique em um valor e pressione `Control`+`Up Arrow` / `Control`+`Down Arrow` | Clique em um valor e pressione `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
 ## Atalhos de teclado do painel fontes   
 
 | Ação | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Pausar o tempo de execução do script \ (se estiver em execução \) ou continuar \ (se estiver em pausa \) | `F8` or`Control`+`\` | `F8` or`Command`+`\` |  
-| Etapa da próxima chamada de função | `F10` or`Control`+`'` | `F10` or`Command`+`'` |  
-| Passar para a próxima chamada de função | `F11` or`Control`+`;` | `F11` or`Command`+`;` |  
-| Etapa sair da função atual | `Shift`+`F11`or`Control`+`Shift`+`;` | `Shift`+`F11`or`Command`+`Shift`+`;` |  
+| Pausar o tempo de execução do script \ (se estiver em execução \) ou continuar \ (se estiver em pausa \) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |  
+| Etapa da próxima chamada de função | `F10` or `Control`+`'` | `F10` or `Command`+`'` |  
+| Passar para a próxima chamada de função | `F11` or `Control`+`;` | `F11` or `Command`+`;` |  
+| Etapa sair da função atual | `Shift`+`F11` or `Control`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |  
 | Continuar em uma [linha específica de código enquanto estiver em pausa][DevtoolsJavascriptBreakpointsLOC] | Segure `Control` e clique na linha de código | Segure `Command` e clique na linha de código |  
 | Selecione o quadro de chamada abaixo/acima do quadro selecionado no momento | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Salvar alterações em modificações locais | `Control`+`S` | `Command`+`S` |  
@@ -128,7 +129,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 | Ação | Windows | macOS |  
 |:--- |:--- |:--- |  
 | Excluir todos os caracteres na última palavra, até o cursor | `Control`+`Delete` | `Option`+`Delete` |  
-| Adicionar ou remover um [ponto de interrupção de linha de código][DevtoolsJavascriptBreakpointsLOC] | Focalize o cursor na linha e pressione`Control`+`B` | Focalize o cursor na linha e pressione`Command`+`B` |  
+| Adicionar ou remover um [ponto de interrupção de linha de código][DevtoolsJavascriptBreakpointsLOC] | Focalize o cursor na linha e pressione `Control`+`B` | Focalize o cursor na linha e pressione `Command`+`B` |  
 | Ir para o colchete correspondente | `Control`+`M` | `Control`+`M` |  
 | Alternar o comentário em linha única. Se houver várias linhas selecionadas, o DevTools adicionará um comentário ao início de cada linha | `Control`+`/` | `Command`+`/` |  
 | Selecionar/desmarcar a próxima ocorrência de qualquer palavra que o cursor esteja ativada. Cada ocorrência é realçada simultaneamente | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
@@ -156,7 +157,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 | Instrução Get Previous | `Up Arrow` | `Up Arrow` |  
 | Obter próxima instrução | `Down Arrow` | `Down Arrow` |  
 | Concentrar o **console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
-| Limpar o **console** | `Control`+`L` | `Command`+`K`or`Option`+`L` |  
+| Limpar o **console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force uma entrada de várias linhas. Observe que o DevTools deve detectar cenários de várias linhas por padrão, portanto, este atalho normalmente é desnecessário | `Shift`+`Enter` | `Command`+`Return` |  
 | Executar | `Enter` | `Return` |  
 | Expandir todas as subpropriedades de um objeto que são registrados no console | Segure `Alt` e clique em **expandir** ![ expandir][ImageExpandIcon] | Segure `Alt` e clique em **expandir** ![ expandir][ImageExpandIcon] |  

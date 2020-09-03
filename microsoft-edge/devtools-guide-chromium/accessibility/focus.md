@@ -1,4 +1,5 @@
 ---
+description: Abra o console, crie uma expressão ao vivo e defina a expressão como Document. ActiveElement.
 title: Acompanhar Qual Elemento Tem o Foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993202"
 ---
 <!-- Copyright Kayce Basques 
 

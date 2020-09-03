@@ -1,17 +1,18 @@
 ---
+description: Mantenha o código do lado do cliente legível e debuggable, mesmo depois de combinar, Minify ou compilá-lo.
 title: Mapear Código em Pré-processamento para Código-fonte
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986140"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993230"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 

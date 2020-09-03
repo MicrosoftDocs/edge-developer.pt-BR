@@ -1,17 +1,18 @@
 ---
+description: Como exibir e editar localStorage com o painel armazenamento local e o console.
 title: Exibir e editar armazenamento local com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 72aee823d3a3143ae7399c7057f3b606bd1078c3
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: aa5365d1764ea0db537ea24464f9c76441f05322
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983489"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993552"
 ---
 <!-- Copyright Kayce Basques 
 

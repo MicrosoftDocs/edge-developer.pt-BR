@@ -1,17 +1,18 @@
 ---
+description: Abra a guia "renderização" e selecione "emular mídia CSS" > "imprimir".
 title: Forçar o Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6bf9605fc8dc4e43db88668ac1f0af35bf9aba66
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 1b71135c5ed2d86903b76e659434ee2125985a24
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982300"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993048"
 ---
 <!-- Copyright Kayce Basques 
 

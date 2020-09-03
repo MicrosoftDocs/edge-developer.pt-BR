@@ -1,17 +1,18 @@
 ---
+description: Como exibir dados de cache do aplicativo no painel de aplicativos do Microsoft Edge DevTools.
 title: Exibir dados de cache do aplicativo com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: fc1800fc54e5fb0d7998c62ce163ece7a461dd82
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: ed742f24900786c3c5b31ec2a026ddbf9d16ccb6
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931202"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993321"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Como mover o Microsoft Edge DevTools para a parte inferior ou esquerda do seu visor ou para uma janela separada.
 title: Alterar o posicionamento do Microsoft Edge DevTools (desencaixar, encaixar na parte inferior, encaixar à esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981895"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993006"
 ---
 <!-- Copyright Kayce Basques 
 

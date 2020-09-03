@@ -1,17 +1,18 @@
 ---
+description: Use dispositivos virtuais no modo de dispositivo para Microsoft Edge para criar websites para os primeiros sites do celular.
 title: Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6973f28a0cb530e8928976adb1354fa7471ee343
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: eababe8112b5d888671a8955e16f0fe1c89564fb
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985208"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993013"
 ---
 <!-- Copyright Kayce Basques 
 

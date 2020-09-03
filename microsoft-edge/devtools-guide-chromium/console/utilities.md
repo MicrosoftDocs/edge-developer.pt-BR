@@ -1,17 +1,18 @@
 ---
+description: Uma referência aos comandos de conveniência disponíveis no console do DevTools Microsoft Edge.
 title: Referência de API de utilitários de console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: efa03e02813d718514f73445bc0dceb3a1a83f39
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708753"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993104"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,13 +48,13 @@ Retorna o valor da expressão avaliada mais recentemente.
 Na figura a seguir, uma expressão simples \ ( `2 + 2` \) é avaliada.  A `$_` propriedade é então avaliada, que contém o mesmo valor.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-arithmatic.msft.png":::
-   Figura 1: `$_` a expressão avaliada mais recentemente  
+   Figura 1:  `$_` a expressão avaliada mais recentemente  
 :::image-end:::  
 
 Na figura a seguir, a expressão avaliada inicialmente contém uma matriz de nomes.  Avaliando `$_.length` para localizar o comprimento da matriz, o valor armazenado em `$_` alterações para se tornar a expressão avaliada mais recente `4` .  
 
 :::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ muda quando novos comandos são avaliados" lightbox="../media/console-array-length.msft.png":::
-   Figura 2: `$_` alterações quando novos comandos são avaliados  
+   Figura 2:  `$_` alterações quando novos comandos são avaliados  
 :::image-end:::  
 
 ## Elemento ou objeto JavaScript selecionado recentemente  

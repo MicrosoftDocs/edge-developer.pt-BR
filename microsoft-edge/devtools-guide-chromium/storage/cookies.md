@@ -1,17 +1,18 @@
 ---
+description: Saiba como exibir, editar e excluir os cookies HTTP de uma página usando o Microsoft Edge DevTools.
 title: Exibir, editar e Excluir cookies com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710368"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993237"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,13 +81,13 @@ Clique duas vezes em um campo para editá-lo.
 
 ## Excluir cookies  
 
-Selecione um cookie e escolha **excluir selecionado** ![ excluir selecionado ][ImageDeleteIcon] para excluir o cookie específico.  
+Selecione um cookie e escolha **excluir selecionado** ![ excluir selecionado ][ImageDeleteIcon]  para excluir o cookie específico.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Excluindo um cookie específico" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figura 5: excluindo um cookie específico  
 :::image-end:::  
 
-Selecione **limpar** tudo ![ limpar tudo ][ImageClearIcon] para excluir todos os cookies.  
+Selecione **limpar** tudo ![ limpar tudo ][ImageClearIcon]  para excluir todos os cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Limpar todos os cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figura 6: limpeza de todos os cookies  

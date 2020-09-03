@@ -1,17 +1,18 @@
 ---
+description: Identifique funções caras usando o painel de memória do Microsoft Edge DevTools.
 title: Acelerar o Tempo de Execução do JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986182"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993580"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
