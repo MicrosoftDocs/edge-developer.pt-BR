@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: a5793b6f4b67add313958ad4b8cee01cb7b09dbf
+ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986119"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996156"
 ---
 # Recursos experimentais  
 
@@ -46,24 +46,11 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 
 | Recurso experimental | Microsoft Edge versão |  
 |:--- |:--- |  
-| [Habilitar a guia Configurações de atalhos de teclado personalizados](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou posterior |
 | [Habilitar novos recursos de depuração de grade CSS](#enable-new-css-grid-debugging-features) | 85 ou posterior |  
 | [Habilitar o suporte para mover as guias entre painéis](#enable-support-to-move-tabs-between-panels) | 85 ou posterior |  
 | [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
 | [Habilitar console de rede](#enable-network-console) | 85 ou posterior |  
 | [Habilitar o Visualizador de ordem de origem](#enable-source-order-viewer) | 86 ou posterior |  
-
-### Habilitar a guia Configurações de atalhos de teclado personalizados  
-
-Fornece uma nova página de **atalhos** nas [configurações do devtools][DevToolsCustomizeSettings] que habilita os [atalhos de teclado][DevToolsShortcuts] correspondentes no código do devtools para o [Microsoft Visual Studio][VisualstudioCode].  
-
-Depois de habilitar o experimento, abra [as configurações do devtools][DevToolsCustomizeSettings] novamente usando selecionar `Shift` + `?` .  Navegue até a página novos **atalhos** .  Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código do Visual Studio.  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Corresponder os atalhos de teclado no código do DevTools para o Visual Studio  
-:::image-end:::  
-
-Por exemplo, no Windows, o atalho de teclado para pausar ou continuar a execução de um script no [código do Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools é `F8` .  Com a predefinição de **código do Visual Studio** , o atalho também é `F5` .  
 
 ### Habilitar novos recursos de depuração de grade CSS  
 
@@ -133,7 +120,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 ## Recursos experimentais anteriores  
 
 *   o [modo de exibição 3D][Devtools3dViewIndex] agora está disponível e ativado por padrão no Microsoft Edge versão 83 ou posterior.  
-
+*   [Personalizar atalhos de teclado][DevtoolsCustomKeyboardShortcuts] agora está disponível e ativado por padrão no Microsoft Edge versão 86 ou posterior.
 ## Fornecer comentários sobre os recursos experimentais  
 
 Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualquer outro item relacionado ao DevTools.  
@@ -152,10 +139,8 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "Configurações-personalizar o Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsOpen]: ./open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Documentos da Microsoft"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Código do Microsoft Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Atalhos de teclado de código do Visual Studio para Windows | Código do Microsoft Visual Studio"  
 
 [WebhintMain]: https://webhint.io "webhint" 
