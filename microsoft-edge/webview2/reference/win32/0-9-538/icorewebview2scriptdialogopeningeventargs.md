@@ -1,101 +1,103 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2ScriptDialogOpeningEventArgs
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ScriptDialogOpeningEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2ScriptDialogOpeningEventArgs
-ms.openlocfilehash: 070e7799111113ab8b4f883df85e505894677a31
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e00d251635cde24c1a224141e56621264228d47c
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879041"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010359"
 ---
-# <span data-ttu-id="cdd04-104">interface ICoreWebView2ScriptDialogOpeningEventArgs</span><span class="sxs-lookup"><span data-stu-id="cdd04-104">interface ICoreWebView2ScriptDialogOpeningEventArgs</span></span> 
+# <span data-ttu-id="c5cfd-104">0.9.579-ICoreWebView2ScriptDialogOpeningEventArgs de interface</span><span class="sxs-lookup"><span data-stu-id="c5cfd-104">0.9.579 - interface ICoreWebView2ScriptDialogOpeningEventArgs</span></span> 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ScriptDialogOpeningEventArgs
   : public IUnknown
 ```
 
-<span data-ttu-id="cdd04-105">Args de evento para o evento ScriptDialogOpening.</span><span class="sxs-lookup"><span data-stu-id="cdd04-105">Event args for the ScriptDialogOpening event.</span></span>
+<span data-ttu-id="c5cfd-105">Args de evento para o evento ScriptDialogOpening.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-105">Event args for the ScriptDialogOpening event.</span></span>
 
-## <span data-ttu-id="cdd04-106">Resumo</span><span class="sxs-lookup"><span data-stu-id="cdd04-106">Summary</span></span>
+## <span data-ttu-id="c5cfd-106">Resumo</span><span class="sxs-lookup"><span data-stu-id="c5cfd-106">Summary</span></span>
 
- <span data-ttu-id="cdd04-107">Parte</span><span class="sxs-lookup"><span data-stu-id="cdd04-107">Members</span></span>                        | <span data-ttu-id="cdd04-108">Descrições</span><span class="sxs-lookup"><span data-stu-id="cdd04-108">Descriptions</span></span>
+ <span data-ttu-id="c5cfd-107">Parte</span><span class="sxs-lookup"><span data-stu-id="c5cfd-107">Members</span></span>                        | <span data-ttu-id="c5cfd-108">Descrições</span><span class="sxs-lookup"><span data-stu-id="c5cfd-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="cdd04-109">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cdd04-109">Accept</span></span>](#accept) | <span data-ttu-id="cdd04-110">O host pode chamá-lo para responder com as caixas de diálogo OK para confirmar, solicitar e beforeunload ou não chamar este método para indicar o cancelamento.</span><span class="sxs-lookup"><span data-stu-id="cdd04-110">The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.</span></span>
-[<span data-ttu-id="cdd04-111">get_DefaultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-111">get_DefaultText</span></span>](#get_defaulttext) | <span data-ttu-id="cdd04-112">O segundo parâmetro passado para a caixa de diálogo do prompt JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cdd04-112">The second parameter passed to the JavaScript prompt dialog.</span></span>
-[<span data-ttu-id="cdd04-113">get_Kind</span><span class="sxs-lookup"><span data-stu-id="cdd04-113">get_Kind</span></span>](#get_kind) | <span data-ttu-id="cdd04-114">O tipo de caixa de diálogo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cdd04-114">The kind of JavaScript dialog box.</span></span>
-[<span data-ttu-id="cdd04-115">get_Message</span><span class="sxs-lookup"><span data-stu-id="cdd04-115">get_Message</span></span>](#get_message) | <span data-ttu-id="cdd04-116">A mensagem da caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="cdd04-116">The message of the dialog box.</span></span>
-[<span data-ttu-id="cdd04-117">get_ResultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-117">get_ResultText</span></span>](#get_resulttext) | <span data-ttu-id="cdd04-118">O valor de retorno da função do prompt JavaScript se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="cdd04-118">The return value from the JavaScript prompt function if Accept is called.</span></span>
-[<span data-ttu-id="cdd04-119">get_Uri</span><span class="sxs-lookup"><span data-stu-id="cdd04-119">get_Uri</span></span>](#get_uri) | <span data-ttu-id="cdd04-120">O URI da página que solicitou a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="cdd04-120">The URI of the page that requested the dialog box.</span></span>
-[<span data-ttu-id="cdd04-121">GetDeferral</span><span class="sxs-lookup"><span data-stu-id="cdd04-121">GetDeferral</span></span>](#getdeferral) | <span data-ttu-id="cdd04-122">Getadiamento pode ser chamado para retornar um objeto [ICoreWebView2Deferral](icorewebview2deferral.md) .</span><span class="sxs-lookup"><span data-stu-id="cdd04-122">GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.</span></span>
-[<span data-ttu-id="cdd04-123">put_ResultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-123">put_ResultText</span></span>](#put_resulttext) | <span data-ttu-id="cdd04-124">Defina a propriedade ResultText.</span><span class="sxs-lookup"><span data-stu-id="cdd04-124">Set the ResultText property.</span></span>
+[<span data-ttu-id="c5cfd-109">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c5cfd-109">Accept</span></span>](#accept) | <span data-ttu-id="c5cfd-110">O host pode chamá-lo para responder com as caixas de diálogo OK para confirmar, solicitar e beforeunload ou não chamar este método para indicar o cancelamento.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-110">The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.</span></span>
+[<span data-ttu-id="c5cfd-111">get_DefaultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-111">get_DefaultText</span></span>](#get_defaulttext) | <span data-ttu-id="c5cfd-112">O segundo parâmetro passado para a caixa de diálogo do prompt JavaScript.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-112">The second parameter passed to the JavaScript prompt dialog.</span></span>
+[<span data-ttu-id="c5cfd-113">get_Kind</span><span class="sxs-lookup"><span data-stu-id="c5cfd-113">get_Kind</span></span>](#get_kind) | <span data-ttu-id="c5cfd-114">O tipo de caixa de diálogo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-114">The kind of JavaScript dialog box.</span></span>
+[<span data-ttu-id="c5cfd-115">get_Message</span><span class="sxs-lookup"><span data-stu-id="c5cfd-115">get_Message</span></span>](#get_message) | <span data-ttu-id="c5cfd-116">A mensagem da caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-116">The message of the dialog box.</span></span>
+[<span data-ttu-id="c5cfd-117">get_ResultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-117">get_ResultText</span></span>](#get_resulttext) | <span data-ttu-id="c5cfd-118">O valor de retorno da função do prompt JavaScript se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-118">The return value from the JavaScript prompt function if Accept is called.</span></span>
+[<span data-ttu-id="c5cfd-119">get_Uri</span><span class="sxs-lookup"><span data-stu-id="c5cfd-119">get_Uri</span></span>](#get_uri) | <span data-ttu-id="c5cfd-120">O URI da página que solicitou a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-120">The URI of the page that requested the dialog box.</span></span>
+[<span data-ttu-id="c5cfd-121">GetDeferral</span><span class="sxs-lookup"><span data-stu-id="c5cfd-121">GetDeferral</span></span>](#getdeferral) | <span data-ttu-id="c5cfd-122">Getadiamento pode ser chamado para retornar um objeto [ICoreWebView2Deferral](icorewebview2deferral.md) .</span><span class="sxs-lookup"><span data-stu-id="c5cfd-122">GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.</span></span>
+[<span data-ttu-id="c5cfd-123">put_ResultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-123">put_ResultText</span></span>](#put_resulttext) | <span data-ttu-id="c5cfd-124">Defina a propriedade ResultText.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-124">Set the ResultText property.</span></span>
 
-## <span data-ttu-id="cdd04-125">Parte</span><span class="sxs-lookup"><span data-stu-id="cdd04-125">Members</span></span>
+## <span data-ttu-id="c5cfd-125">Parte</span><span class="sxs-lookup"><span data-stu-id="c5cfd-125">Members</span></span>
 
-#### <span data-ttu-id="cdd04-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cdd04-126">Accept</span></span> 
+#### <span data-ttu-id="c5cfd-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c5cfd-126">Accept</span></span> 
 
-<span data-ttu-id="cdd04-127">O host pode chamá-lo para responder com as caixas de diálogo OK para confirmar, solicitar e beforeunload ou não chamar este método para indicar o cancelamento.</span><span class="sxs-lookup"><span data-stu-id="cdd04-127">The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.</span></span>
+<span data-ttu-id="c5cfd-127">O host pode chamá-lo para responder com as caixas de diálogo OK para confirmar, solicitar e beforeunload ou não chamar este método para indicar o cancelamento.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-127">The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.</span></span>
 
-> <span data-ttu-id="cdd04-128">público HRESULT [Accept](#accept)()</span><span class="sxs-lookup"><span data-stu-id="cdd04-128">public HRESULT [Accept](#accept)()</span></span>
+> <span data-ttu-id="c5cfd-128">público HRESULT [Accept](#accept)()</span><span class="sxs-lookup"><span data-stu-id="c5cfd-128">public HRESULT [Accept](#accept)()</span></span>
 
-<span data-ttu-id="cdd04-129">Em JavaScript, isso significa que a função Confirm e beforeunload retornará true se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="cdd04-129">From JavaScript, this means that the confirm and beforeunload function returns true if Accept is called.</span></span> <span data-ttu-id="cdd04-130">E para a função prompt, ele retornará o valor de ResultText se Accept for chamado e retornará false de outra forma.</span><span class="sxs-lookup"><span data-stu-id="cdd04-130">And for the prompt function it returns the value of ResultText if Accept is called and returns false otherwise.</span></span>
+<span data-ttu-id="c5cfd-129">Em JavaScript, isso significa que a função Confirm e beforeunload retornará true se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-129">From JavaScript, this means that the confirm and beforeunload function returns true if Accept is called.</span></span> <span data-ttu-id="c5cfd-130">E para a função prompt, ele retornará o valor de ResultText se Accept for chamado e retornará false de outra forma.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-130">And for the prompt function it returns the value of ResultText if Accept is called and returns false otherwise.</span></span>
 
-#### <span data-ttu-id="cdd04-131">get_DefaultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-131">get_DefaultText</span></span> 
+#### <span data-ttu-id="c5cfd-131">get_DefaultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-131">get_DefaultText</span></span> 
 
-<span data-ttu-id="cdd04-132">O segundo parâmetro passado para a caixa de diálogo do prompt JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cdd04-132">The second parameter passed to the JavaScript prompt dialog.</span></span>
+<span data-ttu-id="c5cfd-132">O segundo parâmetro passado para a caixa de diálogo do prompt JavaScript.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-132">The second parameter passed to the JavaScript prompt dialog.</span></span>
 
-> <span data-ttu-id="cdd04-133">público HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR \* DefaultText)</span><span class="sxs-lookup"><span data-stu-id="cdd04-133">public HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR \* defaultText)</span></span>
+> <span data-ttu-id="c5cfd-133">público HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR \* DefaultText)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-133">public HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR \* defaultText)</span></span>
 
-<span data-ttu-id="cdd04-134">Esse é o valor padrão a ser usado para o resultado da função JavaScript do prompt.</span><span class="sxs-lookup"><span data-stu-id="cdd04-134">This is the default value to use for the result of the prompt JavaScript function.</span></span>
+<span data-ttu-id="c5cfd-134">Esse é o valor padrão a ser usado para o resultado da função JavaScript do prompt.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-134">This is the default value to use for the result of the prompt JavaScript function.</span></span>
 
-#### <span data-ttu-id="cdd04-135">get_Kind</span><span class="sxs-lookup"><span data-stu-id="cdd04-135">get_Kind</span></span> 
+#### <span data-ttu-id="c5cfd-135">get_Kind</span><span class="sxs-lookup"><span data-stu-id="c5cfd-135">get_Kind</span></span> 
 
-<span data-ttu-id="cdd04-136">O tipo de caixa de diálogo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cdd04-136">The kind of JavaScript dialog box.</span></span>
+<span data-ttu-id="c5cfd-136">O tipo de caixa de diálogo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-136">The kind of JavaScript dialog box.</span></span>
 
-> <span data-ttu-id="cdd04-137">[get_Kind](#get_kind)público HRESULT (COREWEBVIEW2_SCRIPT_DIALOG_KIND \* Kind)</span><span class="sxs-lookup"><span data-stu-id="cdd04-137">public HRESULT [get_Kind](#get_kind)(COREWEBVIEW2_SCRIPT_DIALOG_KIND \* kind)</span></span>
+> <span data-ttu-id="c5cfd-137">[get_Kind](#get_kind)público HRESULT (COREWEBVIEW2_SCRIPT_DIALOG_KIND \* Kind)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-137">public HRESULT [get_Kind](#get_kind)(COREWEBVIEW2_SCRIPT_DIALOG_KIND \* kind)</span></span>
 
-<span data-ttu-id="cdd04-138">Aceite, confirme, avise ou beforeunload.</span><span class="sxs-lookup"><span data-stu-id="cdd04-138">Accept, confirm, prompt, or beforeunload.</span></span>
+<span data-ttu-id="c5cfd-138">Aceite, confirme, avise ou beforeunload.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-138">Accept, confirm, prompt, or beforeunload.</span></span>
 
-#### <span data-ttu-id="cdd04-139">get_Message</span><span class="sxs-lookup"><span data-stu-id="cdd04-139">get_Message</span></span> 
+#### <span data-ttu-id="c5cfd-139">get_Message</span><span class="sxs-lookup"><span data-stu-id="c5cfd-139">get_Message</span></span> 
 
-<span data-ttu-id="cdd04-140">A mensagem da caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="cdd04-140">The message of the dialog box.</span></span>
+<span data-ttu-id="c5cfd-140">A mensagem da caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-140">The message of the dialog box.</span></span>
 
-> <span data-ttu-id="cdd04-141">Public HRESULT [get_Message](#get_message)(mensagem LPWSTR \*)</span><span class="sxs-lookup"><span data-stu-id="cdd04-141">public HRESULT [get_Message](#get_message)(LPWSTR \* message)</span></span>
+> <span data-ttu-id="c5cfd-141">Public HRESULT [get_Message](#get_message)(mensagem LPWSTR \*)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-141">public HRESULT [get_Message](#get_message)(LPWSTR \* message)</span></span>
 
-<span data-ttu-id="cdd04-142">Em JavaScript, esse é o primeiro parâmetro passado para Alert, Confirm e prompt e está vazio para beforeunload.</span><span class="sxs-lookup"><span data-stu-id="cdd04-142">From JavaScript this is the first parameter passed to alert, confirm, and prompt and is empty for beforeunload.</span></span>
+<span data-ttu-id="c5cfd-142">Em JavaScript, esse é o primeiro parâmetro passado para Alert, Confirm e prompt e está vazio para beforeunload.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-142">From JavaScript this is the first parameter passed to alert, confirm, and prompt and is empty for beforeunload.</span></span>
 
-#### <span data-ttu-id="cdd04-143">get_ResultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-143">get_ResultText</span></span> 
+#### <span data-ttu-id="c5cfd-143">get_ResultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-143">get_ResultText</span></span> 
 
-<span data-ttu-id="cdd04-144">O valor de retorno da função do prompt JavaScript se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="cdd04-144">The return value from the JavaScript prompt function if Accept is called.</span></span>
+<span data-ttu-id="c5cfd-144">O valor de retorno da função do prompt JavaScript se Accept for chamado.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-144">The return value from the JavaScript prompt function if Accept is called.</span></span>
 
-> <span data-ttu-id="cdd04-145">público HRESULT [get_ResultText](#get_resulttext)(LPWSTR \* ResultText)</span><span class="sxs-lookup"><span data-stu-id="cdd04-145">public HRESULT [get_ResultText](#get_resulttext)(LPWSTR \* resultText)</span></span>
+> <span data-ttu-id="c5cfd-145">público HRESULT [get_ResultText](#get_resulttext)(LPWSTR \* ResultText)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-145">public HRESULT [get_ResultText](#get_resulttext)(LPWSTR \* resultText)</span></span>
 
-<span data-ttu-id="cdd04-146">Isso é ignorado para tipos de diálogo diferentes de prompt.</span><span class="sxs-lookup"><span data-stu-id="cdd04-146">This is ignored for dialog kinds other than prompt.</span></span> <span data-ttu-id="cdd04-147">Se aceito não for chamado, esse valor será ignorado e false será retornado do prompt.</span><span class="sxs-lookup"><span data-stu-id="cdd04-147">If Accept is not called this value is ignored and false is returned from prompt.</span></span>
+<span data-ttu-id="c5cfd-146">Isso é ignorado para tipos de diálogo diferentes de prompt.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-146">This is ignored for dialog kinds other than prompt.</span></span> <span data-ttu-id="c5cfd-147">Se aceito não for chamado, esse valor será ignorado e false será retornado do prompt.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-147">If Accept is not called this value is ignored and false is returned from prompt.</span></span>
 
-#### <span data-ttu-id="cdd04-148">get_Uri</span><span class="sxs-lookup"><span data-stu-id="cdd04-148">get_Uri</span></span> 
+#### <span data-ttu-id="c5cfd-148">get_Uri</span><span class="sxs-lookup"><span data-stu-id="c5cfd-148">get_Uri</span></span> 
 
-<span data-ttu-id="cdd04-149">O URI da página que solicitou a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="cdd04-149">The URI of the page that requested the dialog box.</span></span>
+<span data-ttu-id="c5cfd-149">O URI da página que solicitou a caixa de diálogo.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-149">The URI of the page that requested the dialog box.</span></span>
 
-> <span data-ttu-id="cdd04-150">[get_Uri](#get_uri)público HRESULT (URI LPWSTR \*)</span><span class="sxs-lookup"><span data-stu-id="cdd04-150">public HRESULT [get_Uri](#get_uri)(LPWSTR \* uri)</span></span>
+> <span data-ttu-id="c5cfd-150">[get_Uri](#get_uri)público HRESULT (URI LPWSTR \*)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-150">public HRESULT [get_Uri](#get_uri)(LPWSTR \* uri)</span></span>
 
-#### <span data-ttu-id="cdd04-151">GetDeferral</span><span class="sxs-lookup"><span data-stu-id="cdd04-151">GetDeferral</span></span> 
+#### <span data-ttu-id="c5cfd-151">GetDeferral</span><span class="sxs-lookup"><span data-stu-id="c5cfd-151">GetDeferral</span></span> 
 
-<span data-ttu-id="cdd04-152">Getadiamento pode ser chamado para retornar um objeto [ICoreWebView2Deferral](icorewebview2deferral.md) .</span><span class="sxs-lookup"><span data-stu-id="cdd04-152">GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.</span></span>
+<span data-ttu-id="c5cfd-152">Getadiamento pode ser chamado para retornar um objeto [ICoreWebView2Deferral](icorewebview2deferral.md) .</span><span class="sxs-lookup"><span data-stu-id="c5cfd-152">GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.</span></span>
 
-> <span data-ttu-id="cdd04-153">público HRESULT [getadiamento](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) \* \* adiamento)</span><span class="sxs-lookup"><span data-stu-id="cdd04-153">public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) \*\* deferral)</span></span>
+> <span data-ttu-id="c5cfd-153">público HRESULT [getadiamento](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) \* \* adiamento)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-153">public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) \*\* deferral)</span></span>
 
-<span data-ttu-id="cdd04-154">Você pode usá-lo para concluir o evento mais tarde.</span><span class="sxs-lookup"><span data-stu-id="cdd04-154">You can use this to complete the event at a later time.</span></span>
+<span data-ttu-id="c5cfd-154">Você pode usá-lo para concluir o evento mais tarde.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-154">You can use this to complete the event at a later time.</span></span>
 
-#### <span data-ttu-id="cdd04-155">put_ResultText</span><span class="sxs-lookup"><span data-stu-id="cdd04-155">put_ResultText</span></span> 
+#### <span data-ttu-id="c5cfd-155">put_ResultText</span><span class="sxs-lookup"><span data-stu-id="c5cfd-155">put_ResultText</span></span> 
 
-<span data-ttu-id="cdd04-156">Defina a propriedade ResultText.</span><span class="sxs-lookup"><span data-stu-id="cdd04-156">Set the ResultText property.</span></span>
+<span data-ttu-id="c5cfd-156">Defina a propriedade ResultText.</span><span class="sxs-lookup"><span data-stu-id="c5cfd-156">Set the ResultText property.</span></span>
 
-> <span data-ttu-id="cdd04-157">Public HRESULT [put_ResultText](#put_resulttext)(LPCWSTR ResultText)</span><span class="sxs-lookup"><span data-stu-id="cdd04-157">public HRESULT [put_ResultText](#put_resulttext)(LPCWSTR resultText)</span></span>
+> <span data-ttu-id="c5cfd-157">Public HRESULT [put_ResultText](#put_resulttext)(LPCWSTR ResultText)</span><span class="sxs-lookup"><span data-stu-id="c5cfd-157">public HRESULT [put_ResultText](#put_resulttext)(LPCWSTR resultText)</span></span>
 

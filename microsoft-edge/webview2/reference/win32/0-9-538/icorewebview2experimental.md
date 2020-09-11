@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2Experimental
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2Experimental
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2Experimental
-ms.openlocfilehash: 98f13193e73781f9f7371db05ed3ca99ca93c128
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 01bea6a6f89c61e34fe03af6007bee359770fb54
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886506"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011143"
 ---
-# <span data-ttu-id="8d7e4-104">interface ICoreWebView2Experimental</span><span class="sxs-lookup"><span data-stu-id="8d7e4-104">interface ICoreWebView2Experimental</span></span> 
+# <span data-ttu-id="37859-104">0.9.579-ICoreWebView2Experimental de interface</span><span class="sxs-lookup"><span data-stu-id="37859-104">0.9.579 - interface ICoreWebView2Experimental</span></span> 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -24,22 +26,22 @@ interface ICoreWebView2Experimental
   : public IUnknown
 ```
 
-## <span data-ttu-id="8d7e4-105">Resumo</span><span class="sxs-lookup"><span data-stu-id="8d7e4-105">Summary</span></span>
+## <span data-ttu-id="37859-105">Resumo</span><span class="sxs-lookup"><span data-stu-id="37859-105">Summary</span></span>
 
- <span data-ttu-id="8d7e4-106">Parte</span><span class="sxs-lookup"><span data-stu-id="8d7e4-106">Members</span></span>                        | <span data-ttu-id="8d7e4-107">Descrições</span><span class="sxs-lookup"><span data-stu-id="8d7e4-107">Descriptions</span></span>
+ <span data-ttu-id="37859-106">Parte</span><span class="sxs-lookup"><span data-stu-id="37859-106">Members</span></span>                        | <span data-ttu-id="37859-107">Descrições</span><span class="sxs-lookup"><span data-stu-id="37859-107">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="8d7e4-108">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="8d7e4-108">add_WebResourceResponseReceived</span></span>](#add_webresourceresponsereceived) | <span data-ttu-id="8d7e4-109">Adicione um manipulador de eventos para o evento WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-109">Add an event handler for the WebResourceResponseReceived event.</span></span>
-[<span data-ttu-id="8d7e4-110">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="8d7e4-110">remove_WebResourceResponseReceived</span></span>](#remove_webresourceresponsereceived) | <span data-ttu-id="8d7e4-111">Remove o manipulador de eventos WebResourceResponseReceived anteriormente adicionado com add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-111">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
+[<span data-ttu-id="37859-108">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="37859-108">add_WebResourceResponseReceived</span></span>](#add_webresourceresponsereceived) | <span data-ttu-id="37859-109">Adicione um manipulador de eventos para o evento WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="37859-109">Add an event handler for the WebResourceResponseReceived event.</span></span>
+[<span data-ttu-id="37859-110">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="37859-110">remove_WebResourceResponseReceived</span></span>](#remove_webresourceresponsereceived) | <span data-ttu-id="37859-111">Remove o manipulador de eventos WebResourceResponseReceived anteriormente adicionado com add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="37859-111">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
 
-## <span data-ttu-id="8d7e4-112">Parte</span><span class="sxs-lookup"><span data-stu-id="8d7e4-112">Members</span></span>
+## <span data-ttu-id="37859-112">Parte</span><span class="sxs-lookup"><span data-stu-id="37859-112">Members</span></span>
 
-#### <span data-ttu-id="8d7e4-113">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="8d7e4-113">add_WebResourceResponseReceived</span></span> 
+#### <span data-ttu-id="37859-113">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="37859-113">add_WebResourceResponseReceived</span></span> 
 
-<span data-ttu-id="8d7e4-114">Adicione um manipulador de eventos para o evento WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-114">Add an event handler for the WebResourceResponseReceived event.</span></span>
+<span data-ttu-id="37859-114">Adicione um manipulador de eventos para o evento WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="37859-114">Add an event handler for the WebResourceResponseReceived event.</span></span>
 
-> <span data-ttu-id="8d7e4-115">Public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* EventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="8d7e4-115">public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span></span>
+> <span data-ttu-id="37859-115">Public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* EventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="37859-115">public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span></span>
 
-<span data-ttu-id="8d7e4-116">O evento WebResourceResponseReceived é acionado depois que a WebView recebeu e processou a resposta de uma solicitação WebResource.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-116">WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.</span></span> <span data-ttu-id="8d7e4-117">Os args de evento incluem o WebResourceRequest como enviado pelo fio e WebResourceResponse recebidos, incluindo outros cabeçalhos adicionais adicionados pela pilha de rede que não foram incluídos como parte do evento WebResourceRequested associado, como cabeçalhos de autenticação.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-117">The event args include the WebResourceRequest as sent by the wire and WebResourceResponse received, including any additional headers added by the network stack that were not be included as part of the associated WebResourceRequested event, such as Authentication headers.</span></span> 
+<span data-ttu-id="37859-116">O evento WebResourceResponseReceived é acionado depois que a WebView recebeu e processou a resposta de uma solicitação WebResource.</span><span class="sxs-lookup"><span data-stu-id="37859-116">WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.</span></span> <span data-ttu-id="37859-117">Os args de evento incluem o WebResourceRequest como enviado pelo fio e WebResourceResponse recebidos, incluindo outros cabeçalhos adicionais adicionados pela pilha de rede que não foram incluídos como parte do evento WebResourceRequested associado, como cabeçalhos de autenticação.</span><span class="sxs-lookup"><span data-stu-id="37859-117">The event args include the WebResourceRequest as sent by the wire and WebResourceResponse received, including any additional headers added by the network stack that were not be included as part of the associated WebResourceRequested event, such as Authentication headers.</span></span> 
 ```cpp
     wil::com_ptr<ICoreWebView2Experimental> webviewExperimental;
     CHECK_FAILURE(m_appWindow->GetWebView()->QueryInterface(IID_PPV_ARGS(&webviewExperimental)));
@@ -73,9 +75,9 @@ interface ICoreWebView2Experimental
         &m_webResourceResponseReceivedToken));
 ```
 
-#### <span data-ttu-id="8d7e4-118">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="8d7e4-118">remove_WebResourceResponseReceived</span></span> 
+#### <span data-ttu-id="37859-118">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="37859-118">remove_WebResourceResponseReceived</span></span> 
 
-<span data-ttu-id="8d7e4-119">Remove o manipulador de eventos WebResourceResponseReceived anteriormente adicionado com add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="8d7e4-119">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
+<span data-ttu-id="37859-119">Remove o manipulador de eventos WebResourceResponseReceived anteriormente adicionado com add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="37859-119">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
 
-> <span data-ttu-id="8d7e4-120">[remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)público HRESULT (token EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="8d7e4-120">public HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(EventRegistrationToken token)</span></span>
+> <span data-ttu-id="37859-120">[remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)público HRESULT (token EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="37859-120">public HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(EventRegistrationToken token)</span></span>
 
