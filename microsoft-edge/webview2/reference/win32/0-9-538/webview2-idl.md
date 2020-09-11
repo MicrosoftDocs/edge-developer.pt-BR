@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: Globais
+title: 0.9.579-globais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 2c6a84a0fec68c0026fad61faa1c5ed8ed27ddd8
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885545"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010793"
 ---
-# Globais 
+# 0.9.579-globais 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## Resumo
 

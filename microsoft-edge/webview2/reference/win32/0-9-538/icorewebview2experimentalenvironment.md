@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2ExperimentalEnvironment
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2ExperimentalEnvironment
-ms.openlocfilehash: 70e2ceab124b60c355f94161d2d25e49953520ca
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: e7ccb108c137e54635c6e5b69f9bc615ff8ff018
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886455"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011129"
 ---
-# interface ICoreWebView2ExperimentalEnvironment 
+# 0.9.579-ICoreWebView2ExperimentalEnvironment de interface 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 

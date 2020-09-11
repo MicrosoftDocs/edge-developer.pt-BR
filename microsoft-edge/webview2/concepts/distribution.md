@@ -3,21 +3,21 @@ description: Opções de distribuição ao liberar um aplicativo usando o Micros
 title: Distribuição do aplicativo Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879174"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010765"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
-O controle WebView2 utiliza a plataforma Microsoft Edge \ (Chromium \).  Ao empacotar e distribuir seu aplicativo, certifique-se de que uma cópia da plataforma ou do tempo de execução do WebView2 está presente antes do início do aplicativo.  A página a seguir descreve como você \ (o desenvolvedor \) pode garantir que o tempo de execução do WebView2 está instalado e usar os dois modos de distribuição para seu aplicativo do [WebView2:](#evergreen-distribution-mode) versão do meio e [fixo](#fixed-version-distribution-mode).  
+O controle WebView2 utiliza a plataforma Microsoft Edge \ (Chromium \).  Ao empacotar e distribuir seu aplicativo, certifique-se de que uma cópia da plataforma ou do tempo de execução do WebView2 está presente antes do início do aplicativo.  A página a seguir descreve como você \ (o desenvolvedor \) pode garantir que o tempo de execução do WebView2 está instalado e usar os dois modos de distribuição para seu aplicativo do  [WebView2:](#evergreen-distribution-mode) versão do meio e [fixo](#fixed-version-distribution-mode).  
 
 ## Modo de distribuição do verde  
 
@@ -39,7 +39,7 @@ Há vários canais WebView2 que os aplicativos podem usar como a plataforma da W
 > [!IMPORTANT]
 > O canal estável do Microsoft Edge não é um destino válido para WebView2, e os motivos são descritos mais tarde.  
 
-Para obter mais informações sobre controle de versão, consulte [versionamento][ConceptsVersioning] e [globais][ReferenceWin3209538WebviewIdl].  
+Para obter mais informações sobre controle de versão, consulte [versionamento][ConceptsVersioning] e [globais][ReferenceWin3209622WebviewIdl].  
 
 ### Entender o tempo de execução do WebView2 e o instalador (visualização)  
 
@@ -54,7 +54,7 @@ Os desenvolvedores são recomendados para garantir que o tempo de execução do 
 
 1.  Baixe o instalador mais recente do [WebView2 tempo de execução do verde][Webview2Installer].  
 1.  Inclua o instalador no instalador do aplicativo ou no atualizador.  
-1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Dependendo do cenário, talvez seja necessário alterar o fluxo de trabalho acima.  Por exemplo, o instalador do aplicativo pode baixar o instalador do tempo de execução do WebView2 em vez de incluí-lo em seu pacote de aplicativo.  
 
@@ -79,6 +79,6 @@ Para ambientes restritos, há planos para dar suporte a um modo de distribuiçã
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Noções básicas sobre versões do navegador e WebView2 | Documentos da Microsoft"  
-[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globais | Documentos da Microsoft"  
+[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globais | Documentos da Microsoft"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador do WebView2"  

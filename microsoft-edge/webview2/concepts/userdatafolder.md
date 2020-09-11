@@ -3,17 +3,17 @@ description: Saiba como gerenciar pastas de dados do usuário em aplicativos do 
 title: Gerenciar a pasta dados do usuário em aplicativos do WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge, pasta dados do usuário
-ms.openlocfilehash: 4e10f589bc7866cd06e007d70c0dff941afc35cb
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5f341458a85bfab93bd2618b4d274ad6a1edefa2
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895501"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010737"
 ---
 # Gerenciando a pasta dados do usuário  
 
@@ -28,7 +28,7 @@ As pastas de dados do usuário são criadas automaticamente pelo WebView2.  Os d
 
 ## Criar pastas de dados do usuário  
 
-Para especificar o local da pasta de dados do usuário, inclua o `userDataFolder` parâmetro ao chamar [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.NET \).  Após a criação, os dados do navegador do seu controle WebView2 são armazenados em uma subpasta de `userDataFolder` .  Quando `userDataFolder` não é especificado, o WebView2 cria pastas de dados do usuário em locais padrão da seguinte maneira:  
+Para especificar o local da pasta de dados do usuário, inclua o `userDataFolder` parâmetro ao chamar [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.NET \).  Após a criação, os dados do navegador do seu controle WebView2 são armazenados em uma subpasta de `userDataFolder` .  Quando `userDataFolder` não é especificado, o WebView2 cria pastas de dados do usuário em locais padrão da seguinte maneira:  
 
 *   Para aplicativos da Windows Store em pacote, a pasta usuário padrão é a subpasta `ApplicationData\LocalFolder` na pasta do pacote.  
 *   Para aplicativos da área de trabalho existentes, a pasta dados do usuário padrão é o caminho exe do seu aplicativo + `.WebView2` .  Em vez de usar o padrão, recomendamos que você especifique uma pasta de dados do usuário e a crie na mesma pasta em que todos os outros dados do aplicativo são armazenados.  
@@ -54,9 +54,9 @@ Os controles WebView2 podem compartilhar as mesmas pastas de dados de usuário p
 
 Considere o seguinte ao compartilhar pastas de dados do usuário:  
 
-1.  Ao recriar controles WebView2 para atualizar versões do navegador usando os eventos [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) ou [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.NET \), garanta que o navegador processe e feche os controles de WebView2 que compartilham a mesma pasta de dados do usuário.  Para recuperar a ID do processo do navegador, use a `BrowserProcessId` Propriedade do controle WebView2.  
+1.  Ao recriar controles WebView2 para atualizar versões do navegador usando os eventos [add_NewBrowserVersionAvailable](../reference/win32/0-9-622/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) ou [NewBrowserVersionAvailable](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.NET \), garanta que o navegador processe e feche os controles de WebView2 que compartilham a mesma pasta de dados do usuário.  Para recuperar a ID do processo do navegador, use a `BrowserProcessId` Propriedade do controle WebView2.  
 
-2.  Os controles WebView2 que compartilham a mesma pasta de dados do usuário devem usar as mesmas opções para [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.NET \).  Caso contrário, haverá falha na criação do WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
+2.  Os controles WebView2 que compartilham a mesma pasta de dados do usuário devem usar as mesmas opções para [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.NET \).  Caso contrário, haverá falha na criação do WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
 
 Para isolar partes diferentes do seu aplicativo ou ao compartilhar dados entre os controles do WebView2 não forem necessários, você pode optar por usar pastas de dados de usuário diferentes.  Por exemplo, um aplicativo pode consistir em dois controles WebView2, um para exibir um anúncio e o outro para exibir o conteúdo do aplicativo.  Nesse cenário, os desenvolvedores podem optar por usar pastas de dados de usuário diferentes para cada controle WebView2.  
 

@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventHandler
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2PermissionRequestedEventHandler
-ms.openlocfilehash: 549c7bf780535a889529aa8f7e87a097cae88c3a
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 809524e55a610dcd157860cfa9ed88f86ee63dca
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879419"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010037"
 ---
-# interface ICoreWebView2PermissionRequestedEventHandler 
+# 0.9.579-ICoreWebView2PermissionRequestedEventHandler de interface 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2PermissionRequestedEventHandler

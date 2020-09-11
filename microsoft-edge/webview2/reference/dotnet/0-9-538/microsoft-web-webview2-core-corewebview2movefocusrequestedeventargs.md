@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, app, Edge, CoreWebView2, CoreWebView2Controller, controle do navegador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs
-ms.openlocfilehash: dd141e135275d815458ce66a93dfc9ef3e7b33a8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 098ca5199d6797510cdc0535a02a58c795b5ce54
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878859"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010954"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs 
+# classe 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll

@@ -3,21 +3,21 @@ description: Hospedar conteúdo da Web em seu aplicativo do Windows Forms com o 
 title: Microsoft Edge WebView 2 para aplicativos do Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WinForms, WinForms, Edge, CoreWebView2, controle do navegador, HTML Edge, introdução, introdução, .NET, formulários do Windows
-ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926453"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010730"
 ---
 # Introdução ao WebView2 em aplicativos do Windows Forms (visualização)  
 
-Neste artigo, comece a criar seu primeiro aplicativo WebView2 e saiba mais sobre os principais recursos do [WebView2 (visualização)](/microsoft-edge/hosting/webview2/index).  Para obter mais informações sobre APIs individuais, consulte [referência de API](../reference/dotnet/0-9-515-reference-webview2.md).  
+Neste artigo, comece a criar seu primeiro aplicativo WebView2 e saiba mais sobre os principais recursos do [WebView2 (visualização)](/microsoft-edge/hosting/webview2/index).  Para obter mais informações sobre APIs individuais, consulte [referência de API](../reference/dotnet/0-9-628-reference-webview2.md).  
 
 ## Pré-requisitos  
 
@@ -120,7 +120,7 @@ private void Form_Resize(object sender, EventArgs e)
 
 Selecione `F5` para compilar e executar o projeto.  Confirme se o aplicativo é exibido de forma semelhante à seguinte captura de tela.
 
-![app](./media/winforms-app.png)
+![aplicativo](./media/winforms-app.png)
 
 ## Etapa 5-navegação
 

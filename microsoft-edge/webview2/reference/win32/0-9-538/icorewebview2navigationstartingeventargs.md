@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2NavigationStartingEventArgs
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2NavigationStartingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2NavigationStartingEventArgs
-ms.openlocfilehash: 8f4f366d02280163141c9591d04d72c5f5d9d082
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 8bf2cf37ef76256987a52fd5491e5c995244dd65
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879755"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011297"
 ---
-# interface ICoreWebView2NavigationStartingEventArgs 
+# 0.9.579-ICoreWebView2NavigationStartingEventArgs de interface 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2NavigationStartingEventArgs

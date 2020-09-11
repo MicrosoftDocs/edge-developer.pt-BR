@@ -1,21 +1,23 @@
 ---
 description: Inserir tecnologias da Web (HTML, CSS e JavaScript) em seus aplicativos nativos com o controle WebView2 do Microsoft Edge
-title: WebView2 Win32 C++ ICoreWebView2EnvironmentOptions
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2EnvironmentOptions
-ms.openlocfilehash: 9560a2b092f60dc8f72f5ffd90d16b5744b719b6
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 825ecde664ddd43ec5a28721f6da12250a632f2e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886273"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010233"
 ---
-# interface ICoreWebView2EnvironmentOptions 
+# 0.9.579-ICoreWebView2EnvironmentOptions de interface 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2EnvironmentOptions
