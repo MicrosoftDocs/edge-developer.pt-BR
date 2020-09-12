@@ -1,5 +1,5 @@
 ---
-description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Microsoft Edge WebView 2
+description: Hospedar conteúdo da Web em seus aplicativos do Win32, .NET e UWP com o controle WebView2 do Microsoft Edge
 title: Controle WebView2 do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,13 +7,13 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET, WinUI, reunião do projeto
+ms.openlocfilehash: d3294ce72237a323113ed9f7c8f31e37af43f5e6
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926467"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013741"
 ---
 # Introdução ao Microsoft Edge WebView2 (visualização)  
 
@@ -111,6 +111,7 @@ Você poderá executar aplicativos do WebView2 nas seguintes versões do Windows
 *   Windows 8.1  
 *   Windows 8  
 *   Windows 7  
+*   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   2012R2 do Windows Server  

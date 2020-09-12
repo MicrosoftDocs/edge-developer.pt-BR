@@ -1,6 +1,6 @@
 ---
-description: Modelo de Threading
-title: Modelo de Threading
+description: Modelo de threading
+title: Modelo de threading
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/23/2020
@@ -8,14 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: ad51afee97d3cc3e913ecdd73c4f0c2a99c70564
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 61e3b7fc8d25e2a1ce9c60fb84f5f39ba43f281b
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895530"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013734"
 ---
-# Modelo de Threading  
+# Modelo de threading 
+
+O controle WebView2 é baseado no [modelo de objeto componente (com)](https://docs.microsoft.com/windows/win32/com/the-component-object-model) e deve ser executado em um [único thread de Apartments (STA) segmentado](https://docs.microsoft.com/windows/win32/com/single-threaded-apartments) .
 
 ## Segurança de thread  
 
