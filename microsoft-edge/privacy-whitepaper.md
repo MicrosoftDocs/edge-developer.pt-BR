@@ -3,21 +3,20 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: microsoft edge, privacidade, white paper, confiança
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ff4d2b9a10e225478aaacbe0b70604a730172187
-ms.sourcegitcommit: 01940d5708339b03debc14001596f560cc9ab75a
+ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
+ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903870"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009242"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -76,6 +75,8 @@ Você pode coletar sites, textos e imagens na Web, e organizar o conteúdo com C
 A cada 24 horas, o Microsoft Edge baixa uma lista de sites com suporte para os quais há modelos especiais de extração de entidade.  Os modelos são específicos para cada site.  Ao criar um novo item em sua coleção, o Microsoft Edge verifica se o site no qual você está criando o novo item de coleção está na lista de sites com suporte.  Se o site estiver na lista, o Microsoft Edge executará ping no serviço de extração de entidade para o modelo do site específico.  Nenhum identificador de usuário está associado à solicitação para o serviço.  O modelo tenta identificar o nome, o preço, as classificações, a imagem principal e outros dados sobre o item que está sendo coletado.  Se o site onde você está criando um novo item de coleção não estiver no site de lista com suporte, o Microsoft Edge não baixará um modelo.  Os modelos permitem a criação de todos os itens da coleção localmente no dispositivo.  Nenhum dado sobre os itens da coleção é enviado ao serviço para criar a coleção.  
 
 Para excluir os modelos armazenados no dispositivo e limpar os dados em cache, vá para `edge://settings/privacy` e em **Limpar dados de navegação** ao lado de **Limpar dados de navegação agora**, selecione o botão **Escolher o que limpar**, selecione o intervalo de tempo e o tipo de dados desejados e, em seguida, selecione o botão **Limpar agora**.  Outra maneira de excluir dados em cache, vá para `edge://settings/clearBrowserData`, selecione o intervalo de tempo e o tipo de dados desejados e, em seguida, selecione o botão **Limpar agora**.  
+
+Para ajudar você a obter a melhor negociação durante a compra e o uso de Coleções, se você adicionar produtos a suas Coleções, o Microsoft Edge oferecerá a capacidade de comparar o preço do produto com outros varejistas.  Se você selecionar a botão comparar preço com outros varejistas, o Microsoft Edge enviará o nome do produto, o domínio de compra, o preço e outros detalhes sobre o produto para o Bing para comparar preços com outros varejistas.  As informações sobre o produto em Coleções serão enviadas por HTTPS. Essas chamadas de HTTPS não contêm identificadores de usuário.  
 
 Ative a configuração **Mostrar sugestões do Pinterest em Coleções**, caso queira ver Coleções realizar uma pesquisa no Microsoft Bing usando o título da sua coleção para encontrar páginas relevantes de Tópicos do Pinterest.  O Microsoft Edge não envia dados sobre suas coleções ao Pinterest.  Para remover as sugestões e interromper as pesquisas nas páginas de Tópicos do Pinterest, vá para `edge://settings/privacy` e desative a configuração **Mostrar sugestões do Pinterest em Coleções**.  
 
@@ -257,7 +258,9 @@ O Microsoft Edge usa um serviço de horário de rede da Microsoft para rastrear 
 
 ## Página de nova guia  
 
-O Microsoft Edge proporciona uma experiência envolvente e centrada no usuário para a página de nova guia com a caixa de pesquisa da plataforma [Bing][|::ref2::|Main], com os blocos de links rápidos para os sites que você visita com mais frequência, além de conteúdo relevante do Microsoft News ou do Office 365.  Personalize a aparência da página de nova guia, selecionando o botão Personalizar.  Suas preferências para a página de nova guia são definidas para cada perfil e armazenadas localmente no seu dispositivo, e as preferências não são sincronizadas entre os dispositivos.  
+O Microsoft Edge proporciona uma experiência envolvente e centrada no usuário para a página de nova guia com a caixa de pesquisa da plataforma [Bing][|::ref2::|Main], com os blocos de links rápidos para os sites que você visita com mais frequência, além de conteúdo relevante do Microsoft News ou do Office 365.  Personalize a aparência da página de nova guia, selecionando o botão Personalizar.  Suas preferências para a página de nova guia são definidas para cada perfil e armazenadas localmente no seu dispositivo, e as preferências não são sincronizadas entre os dispositivos.
+
+Para melhorar os tempos de carregamento da página da nova guia, a página da nova guia da Microsoft pode ser carregada em segundo plano para acelerar o processo. O conteúdo carregado pode incluir cookies, caso você permita cookies. Para desabilitar o carregamento da página nova guia da Microsoft em segundo plano, vá para `edge://settings/newTabPage` e desabilite a configuração **Pré-carregar a nova guia para obter uma experiência mais rápida**. 
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Página de nova guia" lightbox="./media/whitepaper-media/n-t-p1.png":::
    Página de nova guia  
@@ -417,8 +420,8 @@ Para ajudar a resolver erros de digitação de URL na barra de endereços que re
 
 Conectar-se ao Microsoft Edge com uma conta Microsoft permite sincronizar seus dados de navegação em todas as versões conectadas do Microsoft Edge.  Você pode sincronizar seus favoritos, configurações, dados de preenchimento de formulário \(endereços e muito mais\), senhas, extensões e coleções.  Você deve dar permissão para ativar a sincronização no Microsoft Edge, e cada tipo de dados sincronizados pode ser ativado ou desativado individualmente.  Os favoritos incluem as guias reservadas anteriormente na versão herdada do Microsoft Edge, que são sincronizadas com os demais favoritos.  Os favoritos excluídos ou modificados, ou outros dados de uma versão conectada do Microsoft Edge, são sincronizados com todas as outras versões conectadas do Microsoft Edge em que a sincronização está ativada.  Para gerenciar as configurações de sincronização, vá para `edge://settings/profiles/sync`.  As configurações de sincronização podem ser gerenciadas pela sua organização.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
-   Sync  
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Imagem da configuração de sincronização sendo definida como ativado" lightbox="./media/whitepaper-media/sync.png":::
+   Configuração de sincronização ativada
 :::image-end:::  
 
 Para que a sincronização funcione, são enviados dados adicionais sobre a conectividade e a configuração do dispositivo necessários para fornecer a experiência de sincronização, como o nome do seu dispositivo, marca e modelo.  Os dados podem ser excluídos no [painel de privacidade da Microsoft][MicrosoftAccountDevices].  Para gerenciar seus favoritos sincronizados, vá para `edge://favorites`.  Para gerenciar todos os outros tipos de dados, vá para `edge://settings/profiles`.  
@@ -426,6 +429,12 @@ Para que a sincronização funcione, são enviados dados adicionais sobre a cone
 Todos os dados sincronizados são criptografados em trânsito por HTTPS quando transferidos entre o navegador e os servidores da Microsoft.  Os dados sincronizados também são armazenados em um estado criptografado nos servidores da Microsoft.  Os tipos de dados confidenciais, como endereços e senhas, são criptografados no dispositivo antes de serem sincronizados.  Se você estiver usando uma conta corporativa ou de estudante, todos os tipos de dados serão criptografados antes mesmo de serem sincronizados usando a Proteção de Informações da Microsoft.  Todos os outros tipos de dados sincronizados serão armazenados até você excluir os dados, a conta ser excluída ou a conta ficar inativa.  Uma ID da conta é anexada a todos os dados sincronizados, pois a ID é necessária para executar a sincronização em vários dispositivos. 
 
 Os dados de navegação InPrivate e no modo Convidado não são sincronizados com sua conta Microsoft.  No entanto, os favoritos criados durante as sessões InPrivate são sincronizados nas versões conectadas do Microsoft Edge, onde a sincronização está ativada.  
+
+## Dicas e recomendações
+
+O Microsoft Edge pretende fornecer a você dicas e recomendações relevantes para obter a melhor experiência com o navegador.  O Microsoft Edge usa dados de configuração e conectividade de dispositivos disponíveis para fornecer dicas e recomendações relevantes.  Esses dados consistirão no sistema operacional, local, configurações do navegador e outros dados de configuração e conectividade do dispositivo.  Esses dados são enviados por meio de uma conexão HTTPS segura com um identificador reconfigurável exclusivo para o seu navegador.  Para dispositivos Windows 10, enquanto o Microsoft Edge está sendo configurado, honramos experiências personalizadas no Windows.  [Saiba mais sobre experiências personalizadas no Windows][https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy].  
+
+Esses dados não são enviados durante a navegação InPrivate ou no Modo convidado.  
 
 ## Prevenção contra rastreamento  
 
