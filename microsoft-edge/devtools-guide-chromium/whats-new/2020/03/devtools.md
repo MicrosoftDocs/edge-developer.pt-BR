@@ -3,16 +3,16 @@ description: EMule deficiências de visão de cores, encaixe à esquerda no menu
 title: O que há de novo no DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 8ce8979a7128217b72aee42c05a0048b511f9cae
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: f9eb306ab7b30495c91ff4a70797898459d7e722
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004325"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015479"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,14 +36,14 @@ Estes são os novos recursos disponíveis no DevTools no Microsoft Edge 83.
 
 ## Anúncios da equipe do Microsoft Edge DevTools  
 
-As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools! Dê uma olhada neles para experimentar os novos recursos do DevTools, as extensões de código do VS e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
+As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools! Dê uma olhada neles para experimentar novos recursos no DevTools, extensões de código do Visual Studio e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Depurar remotamente o Microsoft Edge em dispositivos Windows 10  
 
 O aplicativo [ferramentas remotas para Microsoft Edge \ (beta \)][RemoteTools] agora está disponível na [Microsoft Store][MicrosoftStore].  Ao usar este aplicativo, que estende o [Windows Device portal][WindowsUwpDebugTestPerfDevicePortal], você pode se conectar da instância do Microsoft Edge em execução na sua máquina de desenvolvimento a um dispositivo Windows 10 remoto, ver uma lista de destinos \ (todas as guias no Microsoft Edge e [PWAs][PprgressiveWebAppsChromiumIndex] abertas no dispositivo Windows 10 \) e usar o devtools em seu computador de desenvolvimento em relação a um destino em execução no dispositivo Windows 10 remoto.  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="O aplicativo Remote Tools para Microsoft Edge (beta) disponível na Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
-   Figura 1: o aplicativo [ferramentas remotas para o Microsoft Edge (beta)][RemoteTools] disponível na [Microsoft Store][MicrosoftStore]  
+   O aplicativo [Remote Tools para Microsoft Edge (beta)][RemoteTools] disponível na [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
 [Leia nosso guia para configurar seu dispositivo Windows 10 e seu computador de desenvolvimento para depuração remota][DevtoolsRemoteDebuggingWindows].  Informe-nos sobre sua experiência de depuração remota em [tweet][PostTweetEdgeDevTools] ou clique no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
@@ -53,13 +53,13 @@ O aplicativo [ferramentas remotas para Microsoft Edge \ (beta \)][RemoteTools] a
 Há toneladas de configurações para o DevTools que você pode personalizar para fazer com que a aparência DevTools e funcione da maneira que você precisa. No Microsoft Edge 83, agora é muito mais fácil acessar [as configurações][DevtoolsCustomizeIndexSettings] no devtools. Abra configurações com o ícone de engrenagem ao lado de alertas do console e o menu principal.  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="O ícone de engrenagem abre as configurações na DevTools" lightbox="../../media/2020/03/settings.msft.png":::
-   Figura 2: o ícone de engrenagem abre **as configurações** na devtools  
+   O ícone de engrenagem abre **as configurações** na devtools  
 :::image-end:::  
 
 Você também pode abrir [as configurações][DevtoolsCustomizeIndexSettings] no **menu principal** em **mais ferramentas**.
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Menu principal > mais ferramentas > configurações" lightbox="../../media/2020/03/settings2.msft.png":::
-   Figura 3: **menu principal**  >  **mais**  >  **configurações** de ferramentas  
+   **Menu principal**  >  **Mais ferramentas**  >  **Configurações** de  
 :::image-end:::  
 
 Chromium problema [#1050855][CR1050855]
@@ -69,7 +69,7 @@ Chromium problema [#1050855][CR1050855]
 As barras de notificação informativas \ (infobars \) no DevTools agora têm uma aparência aprimorada e mais funcionalidades. No Microsoft Edge 83, o infobars é mais fácil de ler e oferecer botões para que você possa executar a ação relevante imediatamente.  
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Barra de formatação para imprimir um arquivo minified no Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
-   Figura 4: barra de formatação para imprimir um arquivo minified no Microsoft Edge versão 83  
+   Barra de formatação para imprimir um arquivo minified no Microsoft Edge versão 83  
 :::image-end:::  
 
 Chromium problema [#1056348][CR1056348]
@@ -79,7 +79,7 @@ Chromium problema [#1056348][CR1056348]
 O [seletor de cores][DevtoolsCssReferenceColorPicker] é uma GUI no [painel elementos][DevtoolsCssIndex] para alteração `color` e `background-color` declarações.  Em versões anteriores do Microsoft Edge, você não pôde navegar na seção **sombras** do [seletor de cores][DevtoolsCssReferenceColorPicker] com o teclado.  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Agora você pode usar o teclado para mover o seletor na seção sombras do seletor de cores" lightbox="../../media/2020/03/color-picker.msft.png":::
-   Figura 5: agora você pode usar o teclado para mover o seletor na seção **sombras** do [seletor de cores][DevtoolsCssReferenceColorPicker]  
+   Agora você pode usar o teclado para mover o seletor na seção **sombras** do [seletor de cores][DevtoolsCssReferenceColorPicker]  
 :::image-end:::  
 
 No Microsoft Edge 83, agora você pode usar o teclado para mover o seletor na seção **sombras** do seletor de cores.  
@@ -91,13 +91,13 @@ Chromium problema [#963183][CR963183]
 No Microsoft Edge 81 e versões anteriores, a **guia Propriedades** no [painel elementos][DevtoolsCssIndex] foi interrompida pelas atualizações de página.  Quando você atualiza a página, a **guia Propriedades** não preenche as propriedades do elemento atualmente selecionado.  
 
 :::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="No Microsoft Edge 81 e versões anteriores, a guia Propriedades estava em branco após uma atualização de página" lightbox="../../media/2020/03/properties-in-81.msft.png":::
-   Figura 6: no Microsoft Edge 81 e versões anteriores, a **guia Propriedades** estava em branco após uma atualização de página  
+   No Microsoft Edge 81 e versões anteriores, a **guia Propriedades** estava em branco após uma atualização de página  
 :::image-end:::  
 
 No Microsoft Edge 83, agora você pode ver as propriedades do elemento atualmente selecionado após uma atualização de página na **guia Propriedades**.  
 
 :::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="No Microsoft Edge 83, a guia Propriedades exibe as propriedades do elemento atualmente selecionado após uma atualização de página" lightbox="../../media/2020/03/properties-in-82.msft.png":::
-   Figura 7: no Microsoft Edge 83, a **guia Propriedades** exibe as propriedades do elemento atualmente selecionado após uma atualização de página  
+   No Microsoft Edge 83, a **guia Propriedades** exibe as propriedades do elemento atualmente selecionado após uma atualização de página  
 :::image-end:::  
 
 Chromium problema [#1050999][CR1050999]  
@@ -111,7 +111,7 @@ Para abrir a **ferramenta alterações** , pressione `Ctrl` + `Shift` + `P` a de
 Quando você faz uma alteração em um arquivo minified, a **ferramenta alterações** permite que você role horizontalmente para ver todo o código do minified.  A partir do Microsoft Edge 83, agora você pode rolar horizontalmente usando as teclas de direção do teclado.  
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="No Microsoft Edge 83, você pode rolar horizontalmente com as teclas de direção para ver o código minified na ferramenta alterações" lightbox="../../media/2020/03/changes.msft.png":::
-   Figura 8: no Microsoft Edge 83, você pode rolar horizontalmente com as teclas de direção para ver as alterações feitas em seu código minified na **ferramenta alterações**  
+   No Microsoft Edge 83, você pode rolar horizontalmente com as teclas de direção para ver as alterações feitas em seu código minified na **ferramenta alterações**  
 :::image-end:::  
 
 Se você usar leitores de tela ou o teclado para navegar pelo DevTools, envie-nos seus comentários em [tweeting][PostTweetEdgeDevTools] ou clique no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
@@ -127,7 +127,7 @@ As seções a seguir anunciarão recursos adicionais disponíveis no Microsoft E
 Abra a [guia renderização][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] e use o novo recurso de **deficiências de visão de emulação** para ter uma ideia melhor de como as pessoas com diferentes tipos de deficiência visual apresentam o seu site.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulando a visão desfocada" lightbox="../../media/2020/03/vision.msft.png":::
-   Figura 9: emulando a visão desfocada  
+   Emulando a visão desfocada  
 :::image-end:::  
 
 O DevTools é capaz de emular a visão borrada e os seguintes [tipos de deficiências de visão de cor][ColorBlindnessTypes].  
@@ -155,13 +155,13 @@ Emular localidades definindo um local no local dos **sensores**  >  **Location**
 *   `Intl.*` APIs, por exemplo: `new Intl.NumberFormat().resolvedOptions().locale`  
 *   Outras APIs JavaScript com reconhecimento de localidade, como `String.prototype.localeCompare` e `*.prototype.toLocaleString` , por exemplo: `123_456..toLocaleString()`  
 *   APIs DOM, como `navigator.language` e `navigator.languages`  
-*   O [`Accept-Language`][MDNAcceptLanguage] cabeçalho da solicitação http  
+*   O cabeçalho de solicitação HTTP [Accept-Language][MDNAcceptLanguage]  
 
 > [!NOTE]
 > Atualizações `navigator.language` e `navigator.languages` não são visíveis imediatamente, mas somente após a próxima atualização da navegação ou da página.  As alterações feitas no `Accept-Language` cabeçalho http só se refletem nas solicitações subsequentes.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulando uma localidade" lightbox="../../media/2020/03/locale.msft.png":::
-   Figura 10: emulando uma localidade  
+   Emulando uma localidade  
 :::image-end:::  
 
 Para experimentar uma demonstração, consulte [exemplo de código dependente de localidade][MathiasByensLocaleDemo].
@@ -175,13 +175,13 @@ O painel rede agora fornece informações de depuração da [política de incorp
 A coluna **status** agora fornece uma explicação rápida do motivo pelo qual uma solicitação foi bloqueada, bem como um link para exibir os cabeçalhos dessa solicitação para a depuração adicional:  
 
 :::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="Solicitações bloqueadas na coluna * * status * *" lightbox="../../media/2020/03/status.msft.png":::
-   Figura 11: solicitações bloqueadas na coluna status  
+   Solicitações bloqueadas na coluna **status**  
 :::image-end:::  
 
 A seção de **cabeçalhos de resposta** da guia **cabeçalhos** fornece mais orientações sobre como resolver os problemas:  
 
 :::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Mais diretrizes na seção cabeçalhos de resposta" lightbox="../../media/2020/03/guidance.msft.png":::
-   Figura 12: mais diretrizes na seção de cabeçalhos de resposta  
+   Mais diretrizes na seção **cabeçalhos de resposta**  
 :::image-end:::  
 
 Envie seus comentários aplicando um [tweet][PostTweetEdgeDevTools] ou clicando no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
@@ -211,11 +211,11 @@ Verifique as [solicitações de filtro por Propriedades][DevtoolsNetworkReferenc
 Abra o [menu de comando][DevToolsCommandMenuIndex] e execute o `Dock to left` comando para mover devtools para a esquerda do visor.  
 
 :::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools encaixado à esquerda da viewport" lightbox="../../media/2020/03/dock-to-left.msft.png":::
-   Figura 13: DevTools encaixado à esquerda da viewport  
+   DevTools encaixado à esquerda da viewport  
 :::image-end:::  
 
 > [!NOTE]
-> O recurso **Dock to Left** está disponível desde o Microsoft Edge 75, mas anteriormente era acessível apenas a partir do [**menu principal**][DevtoolsCustomizePlacementsChangeMainMenu].  O novo recurso no Microsoft Edge 83 é que agora você pode acessar esse recurso no menu de comando.  
+> O recurso **Dock to Left** está disponível desde o Microsoft Edge 75, mas anteriormente era acessível apenas a partir do [menu principal][DevtoolsCustomizePlacementsChangeMainMenu].  O novo recurso no Microsoft Edge 83 é que agora você pode acessar esse recurso no menu de comando.  
 
 Envie seus comentários aplicando um [tweet][PostTweetEdgeDevTools] ou clicando no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
@@ -226,7 +226,7 @@ Chromium problema [#1011679][CR1011679]
 A equipe do DevTools freqüentemente tem comentários dos desenvolvedores da Web que, enquanto era possível executar o [Lighthouse][GithubGoogleChromeLighthouse] do devtools, quando eles tentavam não puderam localizar o painel "Lighthouse", portanto, o painel **auditorias** agora é o painel **Lighthouse** .  
 
 :::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="O painel Lighthouse" lightbox="../../media/2020/03/lighthouse.msft.png":::
-   Figura 14: painel de Lighthouse  
+   O painel Lighthouse  
 :::image-end:::  
 
 > [!NOTE]
@@ -237,7 +237,7 @@ A equipe do DevTools freqüentemente tem comentários dos desenvolvedores da Web
 Depois de configurar **substituições locais** , você pode clicar com o botão direito do mouse em uma pasta e selecionar a opção novo **excluir tudo substitui** para excluir todas as substituições locais nessa pasta.  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Excluir todas as substituições" lightbox="../../media/2020/03/overrides.msft.png":::
-   Figura 15: excluir todas as substituições  
+   Excluir todas as substituições  
 :::image-end:::  
 
 Envie seus comentários aplicando um [tweet][PostTweetEdgeDevTools] ou clicando no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
@@ -251,7 +251,7 @@ Uma **tarefa longa** é o código JavaScript que monopolizes o thread principal 
 Você foi capaz de [Visualizar tarefas longas no painel de desempenho][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] durante um período de tempo, mas no Microsoft Edge 83 a interface do usuário de visualização de tarefa longa no painel desempenho foi atualizada.  A parte de tarefa longa de uma tarefa está agora colorida com um plano de fundo vermelho listrado.  
 
 :::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="A nova interface do usuário de tarefa longa" lightbox="../../media/2020/03/long-task.msft.png":::
-   Figura 16: a nova interface do usuário longa da tarefa  
+   A nova interface do usuário de tarefa longa  
 :::image-end:::  
 
 Envie seus comentários aplicando um [tweet][PostTweetEdgeDevTools] ou clicando no ícone [enviar comentários](#getting-in-touch-with-microsoft-edge-devtools-team) !  
@@ -266,8 +266,8 @@ Habilite a caixa de seleção **Mostrar apenas a área de segurança mínima par
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="A caixa de seleção Mostrar apenas a área de segurança mínima para ícones mascaráveis" lightbox="../../media/2020/03/maskable-icons.msft.png":::
-   Figura 17: a caixa de seleção **Mostrar apenas a área de segurança mínima para ícones mascaráveis**  
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Caixa de seleção Mostrar apenas a área de segurança mínima para ícones mascaráveis" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+   A caixa de seleção **Mostrar apenas a área de segurança mínima para ícones mascaráveis**  
 :::image-end:::  
 
 > [!NOTE]
@@ -282,12 +282,6 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
-
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Postar um tweet"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools conta do Twitter"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Novo problema-MicrosoftDocs/Edge-Developer-GitHub"  
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de visualização do Microsoft Edge"  
-[TheWebWeWant]: https://webwewant.fyi "A Web que queremos"  
 
 [WhatsNew81]: ../01/devtools.md "O que há de novo no DevTools (Microsoft Edge 81) | Documentos da Microsoft"  
 
@@ -308,16 +302,26 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Ferramentas remotas para Microsoft Edge (beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Atualização em lançamentos de canais estáveis para o Microsoft Edge"
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de visualização do Microsoft Edge"  
+
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Atualização em lançamentos de canais estáveis para o Microsoft Edge"  
+
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Novo problema-MicrosoftDocs/Edge-Developer-GitHub"  
 
 [MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
 
 [VisualstudioCode]: https://code.visualstudio.com "Código do Visual Studio"  
 
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Postar um tweet"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools conta do Twitter"  
+[TheWebWeWant]: https://webwewant.fyi "A Web que queremos"  
+
 [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Tipos de cegueira para cor"  
-[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
-[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Exemplo de código dependente de localidade"
-[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
+
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"  
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-cookie | MDN"  
+
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Exemplo de código dependente de localidade"  
 
 [CR963183]: https://crbug.com/963183 "Problema 963183: DevTools não são compatíveis com a WCAG"  
 [CR1003700]: https://crbug.com/1003700 "Problema 1003700: adicionar suporte a DevTools para simulação de deficiência visual de cor"  
@@ -334,7 +338,7 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP e COEP explicou-política do Opener entre origens"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP e COEP explicou-política de incorporação de várias origens"  
 
-[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Repositório do GitHub Lighthouse"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse | GitHub"  
 
 > [!NOTE]
 > Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  

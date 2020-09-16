@@ -3,22 +3,22 @@ description: Recursos de depuração de grade CSS, solicitações de edição e 
 title: O que há de novo no DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993608"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015458"
 ---
 # O que há de novo no DevTools (Microsoft Edge 85)  
 
 ## Anúncios da equipe do Microsoft Edge DevTools  
 
-As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools.  Veja os comunicados para experimentar novos recursos no DevTools, extensões de código VS e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga a equipe do Microsoft Edge devtools no Twitter][EdgeDevToolsTwitterAccount].  
+As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools.  Veja os comunicados para experimentar novos recursos no DevTools, extensões de código do Visual Studio e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga a equipe do Microsoft Edge devtools no Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Recursos de depuração de grade CSS  
 
@@ -245,8 +245,8 @@ Chromium problema [#1071432][CR1071432]
 
 Ao fazer a cópia ou recortar sem seleção no [Editor de painel fontes][DevtoolsSourcesEditCssJavascript], o devtools copia ou recorta a linha atual do conteúdo.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Com o cursor no final da linha 5, copiar a linha inteira de pen.js no DevTools e colar em um código VS" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Com o cursor no final da linha 5, copiar a linha inteira de **pen.js** no devtools e colar no [vs Code][VSCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Com o cursor no final da linha 5, copiar a linha inteira de pen.js no DevTools e colar no código do Visual Studio" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Com o cursor no final da linha 5, copiar a linha inteira de **pen.js** no devtools e colar no [código do Visual Studio][VSCode].
 :::image-end:::  
 
 Chromium problema [#800028][CR800028]
@@ -260,7 +260,7 @@ A opção de alternância **semelhante em grupo** nas configurações do console
 Por exemplo, anteriormente, o DevTools não desagrupau as `hello` mensagens, apesar de o **grupo semelhante** não estar desmarcado.  Agora, as `hello` mensagens são desagrupadas.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Quando o grupo semelhante está desmarcado, as mensagens de saudação são desagrupadas" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Quando o **grupo semelhante** está desmarcado, as `hello` mensagens são desagrupadas.
+   Quando o **grupo semelhante** está desmarcado, as `hello` mensagens são desagrupadas
 :::image-end:::  
 
 Dê esse recurso uma tentativa com um [exemplo que envia mensagens duplicadas ao console][CodepenZoherghadyaliZyrjgdJ].  
@@ -303,7 +303,7 @@ Chromium problema [#974550][CR974550]
 
 ### Novos ícones para pontos de interrupção, pontos de interrupção condicionais e logpoints  
 
-O painel **fontes** tem novos designs para pontos de interrupção, pontos de interrupção condicionais e logpoints.  Os pontos de interrupção são representados por um círculo vermelho, da mesma forma que o [código vs][VSCode] e o [Visual Studio][VS].  Ícones são adicionados para diferenciar pontos de interrupção condicionais e logpoints.  
+O painel **fontes** tem novos designs para pontos de interrupção, pontos de interrupção condicionais e logpoints.  Os pontos de interrupção são representados por um círculo vermelho, da mesma forma que o [código do Visual Studio][VSCode] e o [Visual Studio][VS].  Ícones são adicionados para diferenciar pontos de interrupção condicionais e logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Pontos de interrupção" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Pontos de interrupção  

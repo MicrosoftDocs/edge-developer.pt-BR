@@ -3,16 +3,16 @@ description: Processo de portabilidade da extensão Chrome para o Microsoft Edge
 title: Extensão do Chrome de porta para a Microsoft (Chromium) Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 794e8806a95ce0a70069c65c306c30131b01e24d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1852e267579f0fb790c6b8cac75a566298223933
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561312"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015685"
 ---
 # Extensão Chrome de porta para a Microsoft \ (Chromium \) Edge  
 

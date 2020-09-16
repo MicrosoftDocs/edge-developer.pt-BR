@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 81855e3caa899f777a0db7bf3789dfa66aa6f267
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 2e5676870ecfb4c02130d61e94e762625a8d903a
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010191"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016316"
 ---
 # Notas de versão do SDK do WebView2  
 
@@ -367,7 +367,7 @@ Lançamento inicial do desenvolvedor preview.
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge-políticas | Documentos da Microsoft"  
 
-[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named.md "Assemblies de nome forte | Documentos da Microsoft"  
+[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named "Assemblies de nome forte | Documentos da Microsoft"  
 
 [GithubMicrosoftedgeWebviewfeedbackIssue1]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/1 "Repositório de comentários para o MicrosoftEdge/WebViewFeedback Issue 1"  
 [GithubMicrosoftedgeWebviewfeedbackIssue12]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/12 "Repositório de comentários para o problema do MicrosoftEdge/WebViewFeedback 12"  

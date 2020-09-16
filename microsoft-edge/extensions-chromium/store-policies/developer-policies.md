@@ -1,20 +1,20 @@
 ---
 description: Políticas de desenvolvedor de catálogo de Complementos do Microsoft Edge.
-title: Políticas de desenvolvedor de catálogo de Complementos do Microsoft Edge
+title: Políticas de Desenvolvedor de Catálogo de Complementos do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: be159491d892c176a8439393573dc23680fac377
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: f71767cc4cd887ce9351202dd06732760299816d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607430"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015706"
 ---
-# Políticas de desenvolvedor de catálogo de Complementos do Microsoft Edge  
+# Políticas de Desenvolvedor de Catálogo de Complementos do Microsoft Edge  
 
 ## Introdução e objetivo deste documento  
 

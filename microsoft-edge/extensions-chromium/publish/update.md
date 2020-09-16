@@ -3,16 +3,16 @@ description: O processo de atualização da extensão na Microsoft Store.
 title: Atualizar uma listagem de extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 67b0eddfa7f8641a0db5a4f7b5693c876dd5e345
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 0d4512331b4f9542921d2063c908b5e9d4251074
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607367"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015672"
 ---
 # Atualizar uma listagem de extensão  
 

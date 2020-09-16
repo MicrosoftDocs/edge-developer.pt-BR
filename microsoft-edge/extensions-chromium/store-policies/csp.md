@@ -3,16 +3,16 @@ description: Política de segurança de conteúdo para extensões de Edge (Chrom
 title: Política de segurança de conteúdo (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 52d6d0afb38401250183788726013d521a269f06
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561272"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015713"
 ---
 # Política de segurança de conteúdo \ (CSP \)  
 
@@ -194,7 +194,7 @@ Baixe o arquivo, inclua-o no pacote e escreva:
 
 As of Chrome 46, -->  
 
-Scripts embutidos podem ser permitidos especificando o hash codificado em base64 do código-fonte na política.  Esse hash deve ser prefixado pelo algoritmo de hash usado \ (SHA256, Sha384 ou SHA512 \).  Consulte o [uso de hash para os elementos \ <script \ >][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] para obter um exemplo.  
+Scripts embutidos podem ser permitidos especificando o hash codificado em base64 do código-fonte na política.  Esse hash deve ser prefixado pelo algoritmo de hash usado \ (SHA256, Sha384 ou SHA512 \).  Consulte o [uso de hash para \<script\> elementos][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] para obter um exemplo.  
 
 **Script remoto**  
 

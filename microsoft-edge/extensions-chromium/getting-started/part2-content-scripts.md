@@ -1,22 +1,24 @@
 ---
-description: Extensões sendo iniciadas parte 1
+description: Introdução às extensões 2
 title: Inserir dinamicamente a imagem da NASA abaixo da marca de corpo da página usando scripts de conteúdo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento da Web, HTML, CSS, JavaScript, Developer, extensões
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683641"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015755"
 ---
 # Inserir dinamicamente a imagem da NASA abaixo da marca de corpo da página usando scripts de conteúdo  
-  
-[Origem do pacote de extensão concluída para esta parte][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Visão geral  
 
@@ -61,8 +63,8 @@ Primeiro, atualize o `popup.html` arquivo com uma marcação direta que exiba um
 
 Depois de atualizar a extensão e selecionar o ícone de inicialização da extensão, o seguinte pop-up inclui um botão de exibição.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="pop-up. html exibido após pressionar o ícone de extensão":::
-   pop-up. html exibido após pressionar o ícone de extensão
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmexibição de l após pressionar o ícone de extensão":::
+   popup.htmexibição de l após pressionar o ícone de extensão
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -139,7 +141,7 @@ Para fazer isso, você deve adicionar outra entrada no `manifest.json` arquivo. 
 
 Agora você escreveu o código em seu `popup.js` arquivo para enviar uma mensagem para a página de conteúdo que está inserida na página da guia ativa atual, mas você não criou e injetau essa página de conteúdo.  Faça isso agora.  
 
-## Atualizando o manifest. JSON para conteúdo e Web Access  
+## Como atualizar o seu manifest.jspara acesso ao conteúdo e à Web  
 
 A atualização `manifest.json` que inclui o `content-scripts` e `web_accessible_resources` é a seguinte.  
 
@@ -219,8 +221,8 @@ Quando um evento é processado pelo ouvinte, a função que é o primeiro parâm
 
 Agora, quando você navegar em qualquer página e selecionar o ícone da **extensão** , o menu pop-up será exibido da seguinte maneira.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="pop-up. html exibido após pressionar o ícone de extensão":::
-   pop-up. html exibido após pressionar o ícone de extensão
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmexibição de l após pressionar o ícone de extensão":::
+   popup.htmexibição de l após pressionar o ícone de extensão
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  

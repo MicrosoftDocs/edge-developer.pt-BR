@@ -1,20 +1,20 @@
 ---
 description: Documentação de política empresarial para extensões Edge (Chromium).
-title: Padrões de correspondência
+title: Padrões de Correspondência
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 16f54fcdc127822e89e050c367a681d886b0c8d0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561311"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015657"
 ---
-# Padrões de correspondência
+# Padrões de Correspondência
 
 As permissões de host e a correspondência de script de conteúdo se baseiam em um conjunto de URLs definidas por padrões de correspondência.  Um padrão de correspondência é essencialmente uma URL que começa com um esquema permitido (,,, `http` `https` `file` ou `ftp` , e que pode conter `*` caracteres ' '.  O padrão especial `<all_urls>` corresponde a qualquer URL que comece com um esquema permitido.  Cada padrão de correspondência tem 3 partes:  
 
@@ -37,7 +37,7 @@ A sintaxe básica:
 
 O significado de `*` depende se ele está no esquema, no host ou na parte do caminho.  Se o esquema estiver `*` , ele corresponderá a `http` ou `https` , e não `file` ou `ftp` .  Se o host for apenas `*` , ele corresponderá a qualquer host. Se o host estiver `*.hostname` , ele corresponderá ao host especificado ou a qualquer um dos subdomínios.  Na seção caminho, cada um `*` corresponde a 0 ou mais caracteres.  A tabela a seguir mostra alguns padrões válidos.  
 
-| Pattern | O que ele faz | Exemplos de URLs correspondentes |  
+| Pattern | Função | Exemplos de URLs correspondentes |  
 |:--- |:--- |:--- |  
 | `http://*/*` | Corresponde a qualquer URL que use o esquema http | `http://www.google.com` `http://example.org/foo/bar.html` |  
 | `http://*/foo*` | Corresponde a qualquer URL que use o esquema http, em qualquer host, desde que o caminho comece com `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  

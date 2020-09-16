@@ -1,18 +1,18 @@
 ---
-description: Use o DevTools no modo de alto contraste do Windows, corresponda aos atalhos de teclado do DevTools ao código VS e muito mais.
+description: Use o DevTools no modo de alto contraste do Windows, CORRESP os atalhos de teclado no código do DevTools para o Visual Studio e muito mais.
 title: O que há de novo no DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2752dec8bc7c4eec34ddde05a7dedff7bebef05f
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992881"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015486"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992881"
 
 ## Anúncios da equipe do Microsoft Edge DevTools  
 
-As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools! Dê uma olhada neles para experimentar os novos recursos do DevTools, as extensões de código do VS e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
+As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools! Dê uma olhada neles para experimentar novos recursos no DevTools, extensões de código do Visual Studio e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Usar o DevTools no modo de alto contraste do Windows
 
@@ -49,19 +49,19 @@ O Microsoft Edge DevTools agora é exibido no modo de alto contraste quando o Wi
 
 Chromium problema [#1048378][CR1048378]  
 
-### Corresponder os atalhos de teclado no DevTools código do VS  
+### Corresponder os atalhos de teclado no código do DevTools para o Visual Studio  
 
-Do seu [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) e do [controlador de problemas Chromium público][CRIssuesList], a equipe do Microsoft Edge devtools aprendeu que você queria a capacidade de personalizar atalhos de teclado no devtools.  No Microsoft Edge 84, agora é possível fazer a correspondência entre os atalhos de teclado no [código][VSCode]do devtools, que é apenas um dos recursos nos quais a equipe está trabalhando para a personalização de atalhos.  
+Do seu [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) e do [controlador de problemas Chromium público][CRIssuesList], a equipe do Microsoft Edge devtools aprendeu que você queria a capacidade de personalizar atalhos de teclado no devtools.  No Microsoft Edge 84, agora você pode fazer a correspondência entre os atalhos de teclado no código do DevTools para o [Visual Studio][VSCode], que é apenas um dos recursos nos quais a equipe está trabalhando para a personalização de atalhos.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Corresponder os atalhos de teclado no DevTools código do VS" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    O Microsoft Edge DevTools no modo de alto contraste  
 :::image-end:::  
 
 Para experimentar o experimento, abra as configurações do DevTools pressionando `?` ou selecionando o ícone de ![ configurações do devtools ][ImageSettingsIcon] no canto superior direito da devtools.  Navegue até a seção **experimentos** e marque **habilitar a guia Configurações de atalhos de teclado personalizados (requer recarregamento)**.  Agora, recarregue o DevTools, abra as configurações novamente e navegue até a seção **atalhos** .  
 
-Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código VS.  
+Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código do Visual Studio.  
 
-Por exemplo, o atalho de teclado para pausar ou continuar a execução de um script em um [código vs][VSCodeShortcuts] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools está, `F8` mas com a predefinição de **código do Visual Studio** , esse atalho também é `F5` .  
+Por exemplo, o atalho de teclado para pausar ou continuar a execução de um script no [código do Visual Studio][VSCodeShortcuts] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools está, `F8` mas com a predefinição de **código do Visual Studio** , esse atalho também é `F5` .  
 
 No momento, o recurso está disponível no Microsoft Edge 84 como um experimento, portanto Compartilhe seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team) com a equipe!  
 
@@ -281,10 +281,10 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Ícone de configurações do DevTools"
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "Ícone de DevTools de botão de alternância"
-[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "Ícone de página de atualização do painel desempenho do DevTools"
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "Ícone de registro do painel desempenho do DevTools"
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/settings-icon.msft.png  
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/toggle-screencast-icon.msft.png  
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/refresh-page-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/record-icon.msft.png  
 
 <!-- links -->  
 
