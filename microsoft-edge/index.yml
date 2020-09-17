@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 09/08/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 3d33b5a1e0e43269cd77b095f1516f5885fcf807
-  ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+  ms.openlocfilehash: 053bd46133e1e476bd30539ad09c74d17814a0d4
+  ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "11004318"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "11016733"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal estável oficial)
@@ -184,8 +184,6 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/publish-extension
       - text: Abrir conta de desenvolvedor
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-      - text: Carregar Vídeo do YouTube
-        url: /microsoft-edge/extensions-chromium/publish/upload-video
       - text: Atualizar Lista de Extensões
         url: /microsoft-edge/extensions-chromium/publish/update
       - text: Gerenciar configurações de conta
