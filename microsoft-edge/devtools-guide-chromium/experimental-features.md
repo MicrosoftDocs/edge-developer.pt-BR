@@ -7,12 +7,12 @@ ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: c78e9aa5e0b4d808dd67d607a954b185ddcf54e7
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: ce8388e8065055e6002bd8541101bef658c7a403
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003983"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016740"
 ---
 # Recursos experimentais  
 
@@ -46,25 +46,12 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 
 | Recurso experimental | Microsoft Edge versão |  
 |:--- |:--- |  
-| [Habilitar a guia Configurações de atalhos de teclado personalizados](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou posterior |
 | [Emulação: suporta o modo de tela dupla](#emulation-support-dual-screen-mode) | 84 ou posterior |  
 | [Habilitar novos recursos de depuração de grade CSS](#enable-new-css-grid-debugging-features) | 85 ou posterior |  
 | [Habilitar o suporte para mover as guias entre painéis](#enable-support-to-move-tabs-between-panels) | 85 ou posterior |  
 | [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
 | [Habilitar console de rede](#enable-network-console) | 85 ou posterior |  
 | [Habilitar o Visualizador de ordem de origem](#enable-source-order-viewer) | 86 ou posterior |  
-
-### Habilitar a guia Configurações de atalhos de teclado personalizados  
-
-Fornece uma nova página **atalhos** nas [configurações do devtools][DevToolsCustomizeSettings] para corresponder os atalhos de [teclado][DevToolsShortcuts] no código do devtools ao [Microsoft Visual Studio][VisualstudioCode].  
-
-Depois de habilitar o experimento, abra [as configurações do devtools][DevToolsCustomizeSettings] novamente usando selecionar `Shift` + `?` .  Navegue até a página novos **atalhos** .  Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código do Visual Studio.  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="./media/experiments-keyboard-shortcut.msft.png":::
-   Corresponder os atalhos de teclado no código do DevTools para o Visual Studio  
-:::image-end:::  
-
-Por exemplo, no Windows, o atalho de teclado para pausar ou continuar a execução de um script no [código do Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools é `F8` .  Com a predefinição de **código do Visual Studio** , o atalho também é `F5` .  
 
 ### Emulação: suporta o modo de tela dupla  
 
@@ -77,50 +64,35 @@ EMule os dispositivos e alterne entre as seguintes condições.
 
 *   postura de tela única ou dobrada  
 *   postura de tela dupla ou não dobrada  
+ 
+[Habilite APIs experimentais da Web Platform](#enable-experimental-apis) e use o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssMedia] e a [API JavaScript getWindowSegments][DualScreenDocsJSAPI] para aprimorar seu site \ (ou app \) para dispositivos de tela dupla e dobrável.
 
-Use o recurso [habilitar APIs experimentales](#enable-experimental-apis) para aprimorar seu site \ (ou app \) para um dispositivo.  Você também pode usar as [consultas de mídia CSS e a API de enumeração de segmento do Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
-
-<!-- This image was taken in Chromium Canary since we don't yet have an Edge Canary that has Stan's changes -->  
-
-:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emular superfície Duo no Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Emular superfície Duo no Microsoft Edge" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    Emular superfície Duo no Microsoft Edge  
 :::image-end:::  
 
 #### Habilitar APIs experimentais  
 
-Para [habilitar esse experimento](#turn-on-experimental-features) no Microsoft Edge devtools, siga as etapas a seguir.  
+Para usar o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssMedia] e a [API de getWindowSegments JavaScript][DualScreenDocsJSAPI], ative o `Experimental Web Platform features` sinalizador no Microsoft Edge.  Conclua as etapas a seguir.
 
 1.  Navegue até `edge://flags` .  
 1.  Na caixa de texto de **sinalizadores de pesquisa** , digite `Experimental Web Platform features` , escolha o sinalizador de **recursos da plataforma da Web experimental** e alterar **desabilitado** como **habilitado**.  
 1.  Reinicie o Microsoft Edge.  
-
-Para aprimorar seu site ou aplicativo para dispositivos com tela dupla e dobrável, navegue até [consultas de mídia CSS e a API de enumeração de segmento do Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].
-
-[Ative este experimento](#turn-on-experimental-features) no Microsoft Edge devtools.  
-
-1.  Abra uma nova guia no Microsoft Edge e navegue até `edge://flags` .  
-1.  Na caixa de texto de **sinalizadores de pesquisa** , insira `Experimental Web Platform features` , escolha **recursos da plataforma da Web experimental**e alterar **desabilitado** como **habilitado**.  
-1.  Reinicie o Microsoft Edge.  
-
-Para obter mais informações sobre como aprimorar seu site \ (ou app \) para dispositivos de tela dupla e dobrável, navegue até [consultas de mídia CSS e API de enumeração de segmento do Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Habilitar o sinalizador de recursos da plataforma da Web experimental" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Habilitar o sinalizador de recursos da plataforma da Web experimental  
 :::image-end:::  
 
 > [!NOTE]
-> Se você estiver usando [consultas de mídia CSS ou a API de enumeração de segmento do Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables] para aprimorar seu site ou aplicativo para o [Surface Duo][SurfaceDevicesDuo], também deverá habilitar o sinalizador de **recursos da plataforma da Web experimental** no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] em seu dispositivo [Surface Duo][SurfaceDevicesDuo] .
+> Se você estiver usando [consultas de mídia CSS][DualScreenDocsCssMedia] ou a [API de enumeração de segmento do Windows JavaScript][DualScreenDocsJSAPI] para aprimorar seu site ou aplicativo para o [Surface Duo][SurfaceDevicesDuo], também deverá habilitar o sinalizador de **recursos da plataforma da Web experimental** no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] em seu dispositivo [Surface Duo][SurfaceDevicesDuo] .
 > 
 > Se o sinalizador de **recursos da plataforma da Web experimental** estiver habilitado no [Microsoft Edge da área de trabalho][MicrosoftEdge] e desabilitado no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge], o comportamento do seu site ou aplicativo no emulador Surface Duo no Microsoft Edge da área de trabalho não será compatível com o [aplicativo Microsoft Edge do Android][GooglePlayMicrosoftEdge] no [Surface Duo][SurfaceDevicesDuo].  Certifique-se de que os sinalizadores sejam compatíveis com o Android e o Microsoft Edge da área de trabalho para usar com êxito o emulador Surface Duo no [Microsoft Edge da área de trabalho][MicrosoftEdge].  
 
 #### Testando em dispositivos dobrável e de tela dupla  
 
-Quando você emula o [Surface Duo][SurfaceDevicesDuo] em uma postura de tela dupla no Microsoft Edge, a **fenda** é desenhada sobre seu site ou aplicativo.  
+Quando você emula o [Surface Duo][SurfaceDevicesDuo] em uma postura de tela dupla no Microsoft Edge, a fenda \ (o espaço entre as duas telas \) é desenhada em seu site ou aplicativo.  
 
-> [!NOTE]
-> A **fenda** é o espaço entre as duas telas.  
-
-A exibição emulada do seu site \ (ou app \) é uma representação correta.  Ele corresponde à exibição no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] no [Surface Duo][SurfaceDevicesDuo].  Atualize o conteúdo para exibi-lo melhor ao longo da **fenda**.  Para obter mais informações sobre como adaptar seu site \ (ou app \) à **fenda**, navegue até [como trabalhar com a fenda][DualScreenIntroductionHowWorkSeam] na documentação do Surface Duo.  
+A exibição emulada corresponde à maneira como seu site \ (ou app \) renderizará no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] no [Surface Duo][SurfaceDevicesDuo].  Pode ser necessário atualizar seu website \ (ou app \) para ser exibido melhor ao longo da fenda.  Para obter mais informações sobre como adaptar seu site \ (ou app \) à fenda, navegue até [como trabalhar com a fenda][DualScreenIntroductionHowWorkSeam] na documentação do Surface Duo.  
 
 A [barra de ferramentas do dispositivo][DevtoolsDeviceModeIndexSimulateMobileViewport] tem recursos adicionais para ajudá-lo a testar seu site ou aplicativo em várias posturas e orientações.  Escolha **girar** \ ( ![ girar ][ImageRotateIcon] \) para girar o visor para a orientação paisagem. Combine o recurso com **span** \ ( ![ span ][ImageSpanIcon] \) para alternar entre as posturas de tela única ou dobrada e de tela dupla ou sem dobra.  Juntos, os recursos permitem testar o seu site ou aplicativo em todas as quatro posturas e orientações possíveis.  
 
@@ -128,11 +100,18 @@ A [barra de ferramentas do dispositivo][DevtoolsDeviceModeIndexSimulateMobileVie
    Matriz de posturas e orientações para dispositivos com tela dupla e dobrável  
 :::image-end:::  
 
-O ícone de **recursos da plataforma da Web experimental** \ ( ![ ExperimentalApis ][ImageExperimentalApisIcon] \) exibe o estado do sinalizador de **recursos da plataforma da Web experimental** .  Se o sinalizador estiver ativado, o ícone será realçado.  Se o sinalizador estiver desativado, o ícone não será realçado.  Para ativar \ (ou desligar \) o sinalizador, escolha o ícone ou navegue até `edge://flags` o sinalizador e alterne-o.  
+O ícone de **recursos da plataforma da Web experimental** \ ( ![ ExperimentalApis ][ImageExperimentalApisIcon] \) exibe o estado do sinalizador de **recursos da plataforma da Web experimental** .  Se o sinalizador estiver ativado, o ícone será realçado.  Se o sinalizador estiver desativado, o ícone não será realçado.  Para ativar \ (ou desligar \) o sinalizador, navegue até `edge://flags` e alterne o sinalizador.  
 
-#### Recursos adicionais  
-*   Para obter mais informações sobre o desenvolvimento, navegue até [experiências na Web de tela dupla][DualScreenWebIndex].  
-*   Instale o emulador Surface Duo].  Ele é diferente do emulador no Microsoft Edge.  Ele emula o Surface duo que executa o Android e integra-se ao [Android Studio][AndroidDeveloperStudio].  Para obter mais informações, navegue para [obter o SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
+<!-- Commenting out until the icon issue is fixed in Edge Canary
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->
+
+Aqui estão recursos adicionais que podem ajudá-lo a aprimorar seu website \ (ou app \) para dispositivos de tela dupla:
+*   Para obter mais informações sobre o desenvolvimento da Web em dispositivos de tela dupla, acesse [experiências na Web de tela dupla][DualScreenWebIndex].  
+*   Instale o [emulador Surface Duo][DualScreenAndroidUseEmulator].  Ele é diferente do emulador no Microsoft Edge, emula o Surface Duo executando Android e integra-se ao [Android Studio][AndroidDeveloperStudio].  Para obter mais informações, navegue para [obter o SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
+
+> [!NOTE]
+> Veja a seguir uma lista de problemas conhecidos atuais:
+> *   Ao usar um [cliente de área de trabalho remota da Microsoft][RemoteDesktopClientDocs] para se conectar a um computador remoto e emular o [Surface Duo][SurfaceDevicesDuo] ou a [dobra do Galaxy Galaxy][SamsungMobileGalaxyFold], o ponteiro pode se trave.  Se você tiver esse problema, [envie comentários](#providing-feedback-on-experimental-features).  
 
 ### Habilitar novos recursos de depuração de grade CSS  
 
@@ -215,6 +194,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 ## Recursos experimentais anteriores  
 
 *   o [modo de exibição 3D][Devtools3dViewIndex] agora está disponível e ativado por padrão no Microsoft Edge versão 83 ou posterior.  
+*   [Personalizar atalhos de teclado][DevtoolsCustomKeyboardShortcuts] agora está disponível e ativado por padrão no Microsoft Edge versão 86 ou posterior.  
 
 ## Fornecer comentários sobre os recursos experimentais  
 
@@ -247,19 +227,20 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 [DevtoolsIssues]: ./issues/index.md "Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge | Documentos da Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsOpen]: ./open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Documentos da Microsoft"
 
 [DualScreenWebIndex]: /dual-screen/web/index "Experiências na Web de tela dupla | Documentos da Microsoft"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obter o emulador Surface Duo | Documentos da Microsoft"  
 [DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Como trabalhar com a fenda-introdução a dispositivos de tela dupla | Documentos da Microsoft"  
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Use o emulador Surface Duo | Documentos da Microsoft"  
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "Tela de mídia CSS – recurso de abrangência para detecção de tela dupla | Documentos da Microsoft"  
+[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "A API JavaScript getWindowSegments para dispositivos de tela dupla | Documentos da Microsoft"  
+
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Clientes de área de trabalho remota | Documentos da Microsoft"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
 [SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface Duo | Microsoft Surface"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Código do Microsoft Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Atalhos de teclado de código do Visual Studio para Windows | Código do Microsoft Visual Studio"  
-
-[GitHubMicrosoftedgeMsedgeexplainerFoldables]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md "Primitivas de plataforma Web para experiências otimizadas em dispositivos dobrável | GitHub"  
 
 [AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"  
 

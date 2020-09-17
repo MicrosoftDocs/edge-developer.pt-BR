@@ -7,12 +7,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento da Web, HTML, CSS, JavaScript, Developer, extensões
-ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015755"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016726"
 ---
 # Inserir dinamicamente a imagem da NASA abaixo da marca de corpo da página usando scripts de conteúdo  
 
