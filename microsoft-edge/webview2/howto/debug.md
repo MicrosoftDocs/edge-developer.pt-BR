@@ -3,17 +3,17 @@ description: Saiba como depurar controles WebView2.
 title: Introdução à depuração de aplicativos WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/13/2020
+ms.date: 08/21/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 15171147b847b1d41cd603efed1b8ee42185dc29
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010695"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052130"
 ---
 # Introdução à depuração de aplicativos WebView2  
 
@@ -35,7 +35,7 @@ Para obter mais informações, consulte [visão geral de devtools][DevtoolsGuide
 
 ## [Visual Studio](#tab/visualstudio)  
 
-O Visual Studio fornece várias ferramentas de depuração para o código nativo e Web em aplicativos do WebView2.  Na seção do Visual Studio, o foco principalmente é a depuração de controles WebView, mas os outros métodos de depuração no Visual Studio estão disponíveis normalmente.  Use o processo a seguir para depurar o código nativo e Web somente em aplicativos Win32 ou em suplementos do Office.  
+O Visual Studio fornece várias ferramentas de depuração para o código nativo e Web em aplicativos do WebView2.  Na seção do Visual Studio, o foco principal é a depuração de controles WebView, mas os outros métodos de depuração no Visual Studio estão disponíveis normalmente.  Use o processo a seguir para depurar o código nativo e Web somente em aplicativos Win32 ou em suplementos do Office.  
 
 > [!IMPORTANT]
 > Quando você depura o aplicativo no Visual Studio com o depurador nativo anexado, a seleção `F12` pode disparar o depurador nativo em vez de ferramentas de desenvolvedor.  Selecione `Ctrl` + `Shift` + `I` ou use o menu de contexto \ (clique com o botão direito do mouse \) para evitar a situação.  
@@ -96,6 +96,151 @@ Conclua as seguintes ações para depurar seu aplicativo WebView2.
        Console de **depuração** do Visual Studio  
     :::image-end:::  
     
+## [Visual Studio Code](#tab/visualstudiocode)  
+
+Use o código do Microsoft Visual Studio para depurar scripts executados em controles WebView2.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
+
+No código do Visual Studio, conclua as seguintes ações para depurar seu código. 
+
+1.  Seu projeto precisa ter um `launch.json` arquivo.  Se o seu projeto não tiver um `launch.json` arquivo, copie o trecho de código a seguir e crie um novo `launch.json` arquivo.  
+        
+    ```json
+        "name": "Hello debug world",
+        "type": "pwa-msedge",
+        "port": 9222, // The port value is optional, and the default value is 9222.
+        "request": "launch",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "env": {
+            // Customize for your application location if needed
+            "Path": "%path%;e:/path/to/your/application/location; "
+        },
+        "useWebView": true,
+    ```  
+        
+1.  Para definir um ponto de interrupção no código-fonte, passe o mouse sobre a linha e selecione `F9`
+    
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="O ponto de interrupção é definido no código do Visual Studio" lightbox="./media/breakpointvs.png":::
+       O ponto de interrupção é definido no código do Visual Studio  
+    :::image-end:::
+    
+    > [!NOTE]
+    > Como o código do Visual Studio não executa o mapeamento de origem, certifique-se de definir pontos de interrupção no mesmo arquivo que o WebView2 usa.  Se os caminhos não corresponderem, o código do Visual Studio não pausará o código em execução no ponto de interrupção.  
+    
+1.  Executar o código.  
+    1.  Na guia **executar** , escolha a configuração iniciar no menu suspenso.  
+    1.  Para iniciar a depuração do aplicativo, escolha Iniciar Depuração, que é o triângulo verde ao lado do menu suspenso configuração de inicialização.  
+        
+        :::image type="complex" source="./media/runvs.png" alt-text=" Guia executar código do Visual Studio" lightbox="./media/runvs.png":::
+           Guia executar código do Visual Studio  
+        :::image-end:::  
+        
+1.  Abra o **console de depuração** para exibir a saída de depuração e os erros.  
+    
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Console de depuração de código do Visual Studio" lightbox="./media/resultsvs.png":::
+       Console de depuração de código do Visual Studio  
+    :::image-end:::  
+    
+**Configurações avançadas**:  
+
+*   Depuração WebView direcionada. 
+
+    Em alguns aplicativos do WebView2, você pode usar mais de um controle WebView2. Para escolher o controle WebView2 para depurar nesta situação, você pode usar a depuração de WebView2 direcionada 
+    
+    Abra `launch.json` e conclua as seguintes ações para usar a depuração WebView direcionada.  
+    
+    1.  Confirme se o `useWebview` parâmetro está definido como `true` .  
+    1.  Adicione o `urlFilter` parâmetro.  Quando o controle WebView2 navega para uma URL, o `urlFilter` valor do parâmetro é usado para comparar cadeias de caracteres que aparecem na URL.  
+    
+    ```json
+    "useWebview": "true",
+    "urlFilter": "*index.ts",
+    
+    // Other urlFilter options.
+    
+    urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters. 
+    urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.  
+    urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.  
+    ```  
+    
+    Ao depurar seu aplicativo, talvez você precise percorrer o código do início do processo de renderização. Se você estiver renderizando páginas da Web em sites e não tiver acesso ao código-fonte, poderá usar a `?=value`  opção porque as páginas da Web ignoram parâmetros não reconhecidos.   
+    
+    > [!IMPORTANT]
+    > Depois que a primeira correspondência for encontrada na URL, o depurador será interrompido.  Você não pode depurar dois controles WebView2 ao mesmo tempo porque a porta CDP é compartilhada por todos os controles WebView2 e usa um número de porta único.  
+    
+*   Depurar processos em execução  
+    
+    Talvez seja necessário anexar o depurador para executar os processos do WebView2. Para fazer isso, `launch.json` atualize o `request` parâmetro para `attach` .
+        
+    ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222, 
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "env": {
+            "Path": "%path%;e:/path/to/your/build/location; "  
+        },
+        "useWebView": true
+    ```  
+        
+    O controle WebView2 deve abrir a porta CDP para permitir a depuração do controle WebView2.  Seu código deve ser criado para garantir que apenas um controle WebView2 tenha uma porta CDP (protocolo de desenvolvedor Chrome) aberta antes de iniciar o depurador.  
+    
+*   Opções de rastreamento de depuração  
+    
+    Adicione o `trace` parâmetro a launch.jspara habilitar o rastreamento de depuração.  
+    
+    1.  Adicionar `trace` parâmetro.  
+        
+ 
+        
+        :::row:::
+           :::column span="":::
+              ```json
+                "name": "Hello debugging world",
+                "type": "pwa-msedge",
+                "port": 9222, 
+                "request": "attach",
+                "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+                "env": {
+                "Path": "%path%;e:/path/to/your/build/location; "  
+                },
+                "useWebView": true
+                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
+              ```  
+              
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Salvar a saída de depuração em um arquivo de log." lightbox="./media/tracelog.png":::
+                 Salvar a saída de depuração em um arquivo de log  
+              :::image-end:::  
+           :::column-end:::
+           :::column span="":::
+              ```json
+              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+              ```  
+              
+              :::image type="complex" source="./media/verbose.png" alt-text=" Saída detalhada" lightbox="./media/verbose.png":::
+                 Saída de depuração de código do Visual Studio com o rastreamento detalhado ativado  
+              :::image-end:::  
+           :::column-end:::
+        :::row-end:::  
+        
+*   Depurar suplementos do Office.
+    
+    Se você estiver Depurando suplementos do Office, abra o código-fonte do suplemento em uma instância separada do código do Visual Studio.  Abra o launch.jsem seu aplicativo do WebView2 e adicione o trecho de código a seguir para anexar o depurador ao suplemento do Office.
+    
+    ```json
+    ,"debugServer": 4711
+    ```  
+    
+*   Solucionando problemas com o depurador  
+    
+    Você pode encontrar os seguintes cenários ao usar o depurador.  
+
+    *   O depurador não pára no ponto de interrupção, e você tem saída de depuração.  Para resolver o problema, confirme se o arquivo com o ponto de interrupção é o mesmo arquivo que é usado pelo controle WebView2.  O depurador não executa o mapeamento de caminho de origem.  
+    *   Você não pode anexar a um processo em execução e Obtém um erro de tempo limite.  Para solucionar o problema, confirme se o controle WebView2 abriu a porta CDP.  Verifique se o  `additionalBrowserArguments`  valor no registro está correto ou as opções estão corretas.  Para obter mais informações, consulte [additionalBrowserArguments para dotnet] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] e [additionalBrowserArguments para Win32] [Webview2ReferenceWin3209538Webview2IdlParameters].  
+    
+* * *  
+
+
 * * *  
 
 ## Consulte também  

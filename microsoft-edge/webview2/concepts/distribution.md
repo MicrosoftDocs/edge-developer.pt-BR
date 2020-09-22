@@ -1,80 +1,90 @@
 ---
 description: Opções de distribuição ao liberar um aplicativo usando o Microsoft Edge WebView2
-title: Distribuição do aplicativo Microsoft Edge WebView2
+title: Distribuição de aplicativos do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010765"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052183"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
-O controle WebView2 utiliza a plataforma Microsoft Edge \ (Chromium \).  Ao empacotar e distribuir seu aplicativo, certifique-se de que uma cópia da plataforma ou do tempo de execução do WebView2 está presente antes do início do aplicativo.  A página a seguir descreve como você \ (o desenvolvedor \) pode garantir que o tempo de execução do WebView2 está instalado e usar os dois modos de distribuição para seu aplicativo do  [WebView2:](#evergreen-distribution-mode) versão do meio e [fixo](#fixed-version-distribution-mode).  
+Ao distribuir seu aplicativo do WebView2, certifique-se de que a plataforma da Web de backup – o [tempo de execução do WebView2](#understanding-the-webview2-runtime) está presente antes do início do aplicativo.  Este artigo descreve como os desenvolvedores podem instalar o tempo de execução do WebView2 e usar os dois modos de distribuição para o seu aplicativo do WebView2: a versão do mais  [verde](#evergreen-distribution-mode) e [fixo](#fixed-version-distribution-mode).  
 
 ## Modo de distribuição do verde  
 
-O modo de distribuição do verde garante que seu aplicativo Tire proveito dos recursos e das atualizações de segurança mais recentes.  O modo de distribuição do verde tem as características a seguir.  
-
-*   A plataforma da Web é atualizada automaticamente sem esforço adicional.  
-*   Todos os aplicativos que aproveitam o modo de distribuição verde usam uma cópia compartilhada dos binários da plataforma, o que poupa espaço em disco.  
-
-Há vários canais WebView2 que os aplicativos podem usar como a plataforma da Web.  Por padrão, o WebView2 direciona o canal mais estável disponível no dispositivo que atende ao requisito mínimo de versão do SDK do WebView2.  Os canais a seguir estão listados em ordem do canal mais para o menos estável.  
-
-1.  Tempo de execução do WebView2 \ (visualização \)  
-1.  Canal Microsoft Edge Beta  
-1.  Canal Microsoft Edge Dev  
-1.  Canal Microsoft Edge Canary    
-
 > [!NOTE]
-> O modelo de distribuição verde é recomendado para a maioria dos desenvolvedores.  
+> O modo de distribuição de verde é recomendado para a maioria dos desenvolvedores.  
 
-> [!IMPORTANT]
-> O canal estável do Microsoft Edge não é um destino válido para WebView2, e os motivos são descritos mais tarde.  
+O modo de distribuição do verde garante que seu aplicativo Tire proveito dos recursos e das atualizações de segurança mais recentes.  Ele tem as características a seguir.  
 
-Para obter mais informações sobre controle de versão, consulte [versionamento][ConceptsVersioning] e [globais][ReferenceWin3209622WebviewIdl].  
+*   A plataforma da Web subjacente \ (tempo de execução WebView2 \) é atualizada automaticamente sem esforço adicional dos desenvolvedores.  
+*   Todos os aplicativos que usam o modo de distribuição para o verde usam uma cópia compartilhada do tempo de execução do WebView2, que poupa espaço em disco.  
 
-### Entender o tempo de execução do WebView2 e o instalador (visualização)  
+### Compreendendo o tempo de execução do WebView2  
 
-O canal estável do Microsoft Edge pode não ser instalado em todas as máquinas de usuário em que seu aplicativo é executado.  Em vez de exigir que os usuários instalem o Microsoft Edge, seu aplicativo pode usar o tempo de execução do WebView2 e o instalador do verde \ (Preview \).  O tempo de execução do WebView2 é uma cópia personalizada dos binários do Microsoft Edge que é usada para executar seus aplicativos do WebView2.  Quando o tempo de execução do WebView2 estiver instalado, os usuários não poderão usá-lo como um navegador normal.  Por exemplo, não há um atalho da área de trabalho, entrada do menu Iniciar, os usuários não podem abrir uma janela do navegador usando os binários do tempo de execução e assim por diante.  Todos os aplicativos de WebView2 em verde no dispositivo podem usar uma única instalação de tempo de execução do WebView2 verde.  
+O tempo de execução do WebView2 é um tempo de execução redistribuível e funciona como a plataforma de backup para aplicativos do WebView2.  Esse conceito é semelhante ao VC + + ou ao .NET Runtime para aplicativos C++/.NET.  Nos bastidores, o tempo de execução é modificado para binários do Microsoft Edge \ (Chromium \) que são ajustados e testados para aplicativos.  O tempo de execução não aparecerá como um navegador visível ao usuário durante a instalação, por exemplo, os usuários não terão um atalho para a área de trabalho do navegador ou uma entrada do menu iniciar.  
 
-Hoje durante a visualização, o ambiente de tempo de execução do Microsoft Edge e o tempo de execução do Microsoft Edge WebView2 são atualizados ao mesmo tempo e têm a mesma compilação.  No futuro, durante a visualização, a equipe do WebView2 planeja atualizar o tempo de execução do WebView2 e corresponder à mesma compilação que o canal do Microsoft Edge beta.  No futuro, quando o WebView2 atingir a disponibilidade geral \ (GA \), a equipe do WebView2 planeja atualizar o tempo de execução do WebView2 e corresponder à mesma compilação que o canal estável do Microsoft Edge.  Após o GA, os aplicativos devem usar o tempo de execução do WebView2 em produção.  
+Para desenvolvimento e testes, os desenvolvedores podem usar o tempo de execução ou qualquer canal de navegador não estável do Microsoft Edge \ (Chromium \) para a plataforma de backup da Web.  Em ambientes de produção, os desenvolvedores devem garantir que o tempo de execução esteja presente em dispositivos de usuário antes de o aplicativo iniciar.  O canal estável do Microsoft Edge não está disponível para uso do WebView2 para impedir que os aplicativos tirem uma dependência do navegador na produção.  
 
-> [!IMPORTANT]
-> Não envie aplicativos WebView2 em produção durante a visualização.  
+Os desenvolvedores não devem ter dependência do navegador porque:  
 
-Os desenvolvedores são recomendados para garantir que o tempo de execução do WebView2 do verde seja instalado antes de iniciar o aplicativo. Veja a seguir um exemplo de fluxo de trabalho.  
+*   O Microsoft Edge \ (Chromium \) não está garantido para estar presente em todos os dispositivos do usuário.  Por exemplo, dispositivos desconectados do Windows Update ou não são gerenciados pela Microsoft diretamente \ (uma grande parte do mercado corporativo/EDU) pode não ter o navegador.  Permitir que os desenvolvedores distribuam o tempo de execução do WebView2 evita assumir uma dependência do navegador como pré-requisito para aplicativos.
+*   Navegadores e aplicativos têm casos de uso diferentes e, portanto, assumir uma dependência em um navegador pode ter efeitos colaterais indesejados nos seus aplicativos.  Por exemplo, os administradores de ti podem controlar a versão do navegador para compatibilidade de site interno.  O tempo de execução do WebView2 permite que os aplicativos permaneçam à frente enquanto as atualizações do navegador são gerenciadas ativamente.  
+*   Ao contrário do navegador, o tempo de execução é desenvolvido e testado para cenários de aplicativo e, em alguns casos, pode incluir correções de bugs ainda não disponíveis no navegador.  
 
-1.  Baixe o instalador mais recente do [WebView2 tempo de execução do verde][Webview2Installer].  
-1.  Inclua o instalador no instalador do aplicativo ou no atualizador.  
-1.  Durante a instalação ou atualização do aplicativo, verifique se o tempo de execução do WebView2 está instalado no computador do usuário usando a API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verificando se o VERSIONINFO é nulo. Se não estiver instalado, o instalador do aplicativo/atualizador pode invocar silenciosamente o instalador do tempo de execução de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+O tempo de execução do WebView2 está planejado para enviar a caixa de entrada em versões futuras do Windows.  Antes que o tempo de execução se torne mais universalmente disponível, recomendamos aos desenvolvedores implantar o tempo de execução juntamente com o aplicativo de produção.  
 
-Dependendo do cenário, talvez seja necessário alterar o fluxo de trabalho acima.  Por exemplo, o instalador do aplicativo pode baixar o instalador do tempo de execução do WebView2 em vez de incluí-lo em seu pacote de aplicativo.  
+### Implantando o tempo de execução do WebView2 verde  
 
-> [!NOTE]
-> O instalador de tempo de execução do WebView2 e do WebView2 está em visualização.  A visualização tem um escopo inicial limitado e só está disponível como uma instalação autônoma para cada computador no Windows 10 em x64.  No futuro, o suporte para Windows 7, x86 e ARM64 é planejado.  
+Apenas uma instalação do WebView2 do tempo de execução do verde é necessária para todos os aplicativos no dispositivo.  Há várias ferramentas disponíveis na página de download do [tempo de execução do WebView2][Webview2Installer] para ajudar os desenvolvedores a implantar o tempo de execução de verde, como:  
 
-### Práticas recomendadas para usar o tempo de execução do WebView2 e canais não estáveis do Microsoft Edge  
+*   WebView2 de tempo de execução de tempo de execução \ (a ser lançado em breve \) é um instalador pequeno \ (aproximadamente 2 MB \).  Este instalador baixa e instala o tempo de execução de verde dos servidores da Microsoft que corresponde à arquitetura de dispositivo do usuário.  
+*   Link para baixar o bootstrapper \ (a ser lançado em breve \) é um link para os desenvolvedores baixarem programaticamente o bootstrapper.
+*   O instalador autônomo do WebView2 Runtime é um instalador completo que pode instalar o tempo de execução do WebView2 verde em ambientes offline.  
 
-Considere as seguintes recomendações durante a visualização.  
+Atualmente, tanto o bootstrapper quanto o instalador autônomo dão suporte apenas à instalação por computador, o que requer elevação.  Quando executado sem elevação, um prompt de controle de conta de usuário do Windows é exibido para perguntar aos usuários sobre a elevação de permissões.  
 
-*   Certifique-se de usar o [tempo de execução do WebView2 e o instalador do verde][Webview2Installer] para desenvolver ou testar o seu pipeline de distribuição e empacotamento.  No futuro, o aplicativo de produção deve incluir o instalador.  
-*   Para desenvolver seu aplicativo, você pode usar o tempo de execução do WebView2 em verde.  No entanto, como o tempo de execução muda do canal de desenvolvimento para o canal beta ou canal estável, o número da compilação do tempo de execução pode não atender aos requisitos de versão mínima do SDK do SDK da visualização mais recentes.  Se você quiser usar o SDK mais recente, instale o Microsoft Edge Canárias Channel para garantir que uma compilação compatível esteja disponível no dispositivo.  Para obter mais informações sobre controle de versão, consulte [controle de versão][ConceptsVersioning].  
-*   Para testar o conteúdo da Web quanto à compatibilidade com as alterações na plataforma não disponíveis no canal estável, use o canal não estável adequado, conforme necessário.  
+Recomendamos os seguintes fluxos de trabalho para garantir que o tempo de execução já esteja instalado antes do aplicativo ser iniciado.  Você pode ajustar o fluxo de trabalho dependendo do cenário.  Também forneceremos um código de exemplo no futuro.  
+
+#### Implantação somente online  
+
+Se você tiver um cenário de implantação somente online em que os usuários finais presumiram ter acesso à Internet, execute as seguintes etapas:  
+
+*   Durante a configuração do seu aplicativo, verifique se o tempo de execução já está instalado por uma destas opções:  
+    *   Inspecionando se a regkey `pv (REG_SZ)` existe em `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ou  
+    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
+*   Se o tempo de execução não estiver instalado, use o link para baixar programaticamente o bootstrapper.  
+*   Invoque o bootstrapper de um processo elevado ou prompt de comando com `MicrosoftEdgeWebview2Setup.exe /silent /install` para a instalação silenciosa.  
+
+Esse fluxo de trabalho garante a instalação do tempo de execução somente quando for necessário, você não é obrigado a empacotar instaladores nem detectar a arquitetura de dispositivos do usuário e pode instalar o tempo de execução silenciosamente.  Você também pode optar por empacotar o bootstrapper com seu aplicativo em vez de baixá-lo programaticamente sob demanda.  
+
+#### Implantação offline  
+
+Se você tiver um cenário de implantação offline em que a implantação do aplicativo tem que funcionar completamente offline, execute as seguintes etapas:  
+
+*   Baixe o [instalador autônomo][Webview2Installer].  
+*   Inclua o instalador no instalador do aplicativo ou no atualizador.  
+*   Durante a configuração do seu aplicativo, verifique se o tempo de execução já está instalado por uma destas opções:  
+    *   Inspecionando se a regkey `pv (REG_SZ)` existe em `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ou  
+    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
+*   Se o tempo de execução não estiver instalado, chame o instalador autônomo de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` para a instalação silenciosa.  
 
 ## Modo de distribuição de versão corrigido  
 
 > [!NOTE]
-> O modelo de distribuição de versão fixa não está disponível no momento.  
+> O modo de distribuição de versão fixa ainda não está disponível.  
 
-Para ambientes restritos, há planos para dar suporte a um modo de distribuição \ versão corrigida \ (anteriormente denominado trazer anteriormente chamado \).  O modo de distribuição de versão fixa permite que você selecione e empacote uma versão específica do tempo de execução do WebView2.  O modo de distribuição de versão fixa permite que você controle qual versão do tempo de execução do WebView2 é usada pelo seu aplicativo e quando as máquinas do usuário são atualizadas.  O modo de distribuição de versão fixa não recebe atualizações automáticas e você deve planejar a aplicação manual de atualizações.  
+Para ambientes restritos, há planos para dar suporte a uma versão fixa, que anteriormente tinha o seu próprio modo de distribuição, que tinha sido chamado.  O modo de distribuição de versão fixa permite que os desenvolvedores selecionem e Empacotem uma versão específica do tempo de execução do WebView2.  O modo de distribuição de versão fixa permite que você controle qual versão do tempo de execução do WebView2 é usada pelo seu aplicativo e quando as máquinas do usuário são atualizadas.  O modo de distribuição de versão fixa não recebe atualizações automáticas, e os desenvolvedores devem planejar a aplicação de atualizações.  
+
 
 <!-- links -->  
 

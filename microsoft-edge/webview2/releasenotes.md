@@ -3,17 +3,17 @@ description: Notas de versão do SDK do Microsoft Edge WebView2
 title: Notas de versão do Microsoft Edge WebView2 para Win32, WPF e WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: 2e5676870ecfb4c02130d61e94e762625a8d903a
-ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
+ms.openlocfilehash: 33b8280347d425eb1a02c1703a845ca31d4b314a
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016316"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052118"
 ---
 # Notas de versão do SDK do WebView2  
 
@@ -272,7 +272,7 @@ Lançamento inicial do desenvolvedor preview.
 
 [ConceptsDistribution]: ./concepts/distribution.md "Distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Modo de distribuição em verde-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview "Compreenda o tempo de execução do WebView2 e o instalador (visualização)-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-runtime "Compreenda o tempo de execução do WebView2 e o instalador (visualização)-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
 [ConceptsVersioning]: ./concepts/versioning.md "Noções básicas sobre versões do navegador e WebView2 | Documentos da Microsoft"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "APIs experimentais-noções básicas sobre versões do navegador e WebView2 | Documentos da Microsoft"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Introdução ao WebView2 em aplicativos do Windows Forms | Documentos da Microsoft"  
