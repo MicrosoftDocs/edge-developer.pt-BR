@@ -36,7 +36,7 @@ Chromium problema [#174309][CR174309]
 
 ### Emular Surface Duo e dobra para Samsung Galaxy  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio":::
    Recurso experimental  
 :::image-end:::  
 
@@ -48,7 +48,7 @@ Para ajudar a aprimorar seu site ou aplicativo para os dispositivos de tela dupl
 *   [Renderizar a fenda][DualScreenIntroductionHowWorkSeam], que é o espaço entre as duas telas.
 *   [Habilitar APIs experimentais da Web Platform][DevtoolsExperimentalFeaturesEnableExperimentalApis] para acessar o novo [recurso de distribuição de tela de mídia CSS e a API de][DualScreenWebCssMediaSpanning] [getWindowSegments JavaScript][DualScreenWebJavascriptGetwindowsegments].  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Emulação de dispositivo para Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Emulação de dispositivo para Surface Duo  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ Problema do Chromium: [#1054281][CR1054281]
 
 Obrigado pelo feedback positivo sobre as sobreposições de grade de CSS aprimoradas.  As sobreposições de grade de CSS agora são habilitadas por padrão e não exigem que você ative um experimento.  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Sobreposição de grade CSS do elemento artigo" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
    Sobreposição de grade CSS para o `article` elemento  
 :::image-end:::  
 
@@ -83,12 +83,12 @@ No Microsoft Edge 85 ou anterior, a formatação de uma cópia `console.table` f
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="saída da API do console de tabela no Microsoft Edge 85 ou anterior" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/console-table-beta.msft.png":::
          `table` Saída da API do console no Microsoft Edge 85 ou anterior  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="saída da API do console de tabela do Microsoft Edge 85 ou anterior colada no código do Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
          `table` Saída da API do console do Microsoft Edge 85 ou anterior colada no código do Visual Studio  
       :::image-end:::  
    :::column-end:::
@@ -98,12 +98,12 @@ No Microsoft Edge 86 ou posterior, quando você copia uma tabela do **console**,
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="saída da API do console de tabela no Microsoft Edge 86 ou posterior" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/console-table-canary.msft.png":::
          `table` Saída da API do console no Microsoft Edge 86 ou posterior  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="saída da API do console de tabela do Microsoft Edge 86 ou posterior colada no código do Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
          `table` Saída da API do console do Microsoft Edge 86 ou posterior colada no código do Visual Studio  
       :::image-end:::  
    :::column-end:::
@@ -113,13 +113,13 @@ Problema do Chromium: [#1115011] [CR1115011]
 
 ### Visualizador de pedido de origem para facilitar o teste de acessibilidade  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio":::
    Recurso experimental  
 :::image-end:::  
 
 O novo auxiliar de acessibilidade exibe a ordem dos elementos na fonte.  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Ativar mostrar ordem de origem" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
    Ativar **Mostrar ordem de origem**  
 :::image-end:::  
 
@@ -138,12 +138,12 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
          Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
          Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
@@ -160,7 +160,7 @@ No Microsoft Edge 84 e no 85, o primeiro resultado da pesquisa no painel **eleme
 
 Obrigado por enviar seus comentários e ajudar a melhorar o Chromium.  Seu comentário sobre o problema não coberto [#1103316][CR1103316] no projeto Chromium de código-fonte aberto.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Primeiro resultado da pesquisa realçada no painel de elementos no Microsoft Edge 84 ou posterior" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    Primeiro resultado da pesquisa realçada no painel de **elementos** no Microsoft Edge 84 ou posterior  
 :::image-end:::  
 
@@ -180,7 +180,7 @@ Para abrir o novo painel **mídia** , conclua a etapa a seguir.
 
 1.  Escolha **Personalizar e controle devtools** \ ( `...` \) > **mais ferramentas**de  >  **mídia**.  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Novo painel de mídia" lightbox="../../media/2020/08/media-panel.msft.png":::
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/media-panel.msft.png":::
        Novo painel de **mídia**  
     :::image-end:::  
 
@@ -197,7 +197,7 @@ Agora você pode capturar capturas de tela do nó usando o menu de contexto no p
 
 Por exemplo, para fazer uma captura de tela do Sumário, passe o mouse sobre o elemento, abra o menu contextual \ (clique com o botão direito do mouse \) e selecione **capturar captura de tela do nó**.  
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Capturar capturas de tela do nó" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    Capturar capturas de tela do nó  
 :::image-end:::  
 
@@ -209,13 +209,13 @@ A barra de aviso de problemas no painel do **console** agora é substituída por
 
 <!--todo: this figure need to be updated  -->  
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Problemas na mensagem do console" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
    Problemas na mensagem do console  
 :::image-end:::  
 
 Problemas com cookies de terceiros agora estão ocultos por padrão na ferramenta **problemas** .  Habilite a caixa de seleção **incluir problemas de cookies** de terceiros para exibir os problemas.  
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="caixa de seleção problemas com cookies de terceiros" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
    caixa de seleção problemas com cookies de terceiros  
 :::image-end:::  
 
@@ -229,7 +229,7 @@ Por exemplo, quando a `Rubik` fonte é instalada em seu dispositivo e a `@font-f
 
 Quando **desativar fontes locais** estiver habilitado, o devtools ignorará as `local()` fontes e buscará cada uma da rede.  
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Emular fontes locais ausentes" lightbox="../../media/2020/08/disable-font.msft.png":::
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/disable-font.msft.png":::
    Emular fontes locais ausentes  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ Problema do Chromium: [#384968][CR384968]
 
 A [API de detecção ociosa][WebDevIdleDetection] permite que os desenvolvedores detectem usuários inativos e reajam a alterações de estado ocioso.  Agora você pode usar DevTools para emular alterações de estado ocioso na ferramenta **sensores** para o estado do usuário e o estado da tela em vez de aguardar o estado real de ociosidade mudar.  Você pode abrir a ferramenta de **sensores** da [gaveta][DevtoolsCustomizeIndexDrawer].  
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Emular usuários inativos" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    Emular usuários inativos  
 :::image-end:::  
 
@@ -265,7 +265,7 @@ A consulta [preferencial – mídia de dados reduzida][CsswgDraftsMediaqueries5D
 
 Agora você pode usar o DevTools para emular a `prefers-reduced-data` consulta de mídia.  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Emular preferência-dados reduzidos" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
    Emular preferência-dados reduzidos  
 :::image-end:::  
 
@@ -294,7 +294,7 @@ O DevTools agora fornece um link do painel **funcionários do serviço** \ (pain
 
 DevTools anteriormente exibir uma lista aninhada sob o painel do **aplicativo** > painel de **trabalhadores do serviço** .  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Link para outras origens" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    Link para outras origens  
 :::image-end:::  
 
@@ -308,12 +308,12 @@ No primeiro dos números a seguir, o resumo é exibido inicialmente `344 kB of 1
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Resumo da cobertura" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/coverage-compare.msft.png":::
          Resumo da cobertura  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Resumo da cobertura para itens filtrados" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
          Resumo da cobertura para itens filtrados  
       :::image-end:::  
    :::column-end:::
@@ -325,7 +325,7 @@ Problema do Chromium: [#1061385][CR1090802]
 
 O DevTools agora mostra um modo de exibição detalhado para cada quadro.  Para acessá-lo, escolha um quadro no menu **quadros** no painel do **aplicativo** .  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Novo modo de exibição detalhado para um quadro no painel de aplicativos" lightbox="../../media/2020/08/frame-details.msft.png":::
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/frame-details.msft.png":::
    Novo modo de exibição detalhado para um quadro no painel de **aplicativos**  
 :::image-end:::  
 
@@ -335,7 +335,7 @@ Problema do Chromium: [#1093247][CR1093247]
 
 Abrir janelas e janelas pop-up agora são exibidos na árvore de quadros também.  O modo de exibição detalhado do Windows aberto inclui informações de segurança adicionais.  
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Modo de exibição detalhado de novo quadro para janelas abertas" lightbox="../../media/2020/08/window-opener.msft.png":::
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/window-opener.msft.png":::
    Modo de exibição detalhado de novo quadro para janelas abertas  
 :::image-end:::  
 
@@ -345,7 +345,7 @@ Problema do Chromium: [#1107766] [CR1107766]
 
 Contexto seguro, [Cross-Origin-incorporáer-Policy (COEP)][WebDevCoopCoep]e [Cross-Origin-Opener-Policy (Coop)][WebDevCoopCoep] agora são exibidos nos detalhes do quadro.  
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Informações de segurança e isolamento" lightbox="../../media/2020/08/coep-coop.msft.png":::
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/coep-coop.msft.png":::
    Informações de segurança e isolamento  
 :::image-end:::  
 
@@ -361,7 +361,7 @@ O DevTools agora fornece sugestões de cor para texto de contraste de cor baixa.
 
 No exemplo abaixo, `h1` há texto de baixo contraste.  Para corrigi-lo, abra o seletor de cores da `color` propriedade no painel **estilos** .  Após expandir a seção de **taxa de contraste** , o devtools fornece sugestões de cores AA e AAA.  Selecione a cor sugerida para aplicar a cor.  
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="O seletor de cores sugere sugestões de cores AA e AAA" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
    O seletor de cores sugere sugestões de cores AA e AAA  
 :::image-end:::  
 
@@ -371,7 +371,7 @@ Problema do Chromium: [#1093227][CR1093227]
 
 O painel **Propriedades** está de volta.  Ele foi [preterido no Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  A equipe do Microsoft Edge DevTools e a equipe DevTools do Chrome são melhorias de planejamento para inspecionar Propriedades de elementos.  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Painel Propriedades no painel elementos" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/properties-pane.msft.png":::
    Painel **Propriedades** no painel **elementos**  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 
@@ -397,7 +397,7 @@ As faces de fonte importadas agora são adicionadas à lista de preenchimento au
 
 Por exemplo, se `monospace` for uma fonte personalizada instalada no computador local, ela será exibida na lista de conclusão da CSS. Em versões anteriores do Microsoft Edge, a fonte não era exibida.
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Autopreencher fontes personalizadas" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    Autopreencher fontes personalizadas  
 :::image-end:::  
 
@@ -409,7 +409,7 @@ O DevTools agora exibe o mesmo tipo de recurso que a solicitação de rede origi
 
 Anteriormente, DevTools alterou o tipo para `Other` às vezes.  
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Exibir tipo de recurso de redirecionamento" lightbox="../../media/2020/08/network-redirect.msft.png":::
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/network-redirect.msft.png":::
    Exibir tipo de recurso de redirecionamento  
 :::image-end:::  
 
@@ -426,12 +426,12 @@ Escolha o botão **limpar** para remover qualquer texto reemitido.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Botões limpar nos painéis de elementos" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          Botões limpar nos painéis de **elementos**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Limpar botões nos painéis de rede" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/08/clear-button-network.msft.png":::
          Limpar botões nos painéis de **rede**  
       :::image-end:::  
    :::column-end:::
