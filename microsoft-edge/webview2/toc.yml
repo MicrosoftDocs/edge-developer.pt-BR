@@ -36,8 +36,10 @@
   href: roadmap.md
 - name: Como
   items:
+    - name: Vincular carregador estaticamente
+      href: howto/static.md
     - name: Depurar o WebView2
-      href: howto/Debug.md
+      href: howto/debug.md
     - name: Automatizar com o Driver do Edge
       href: howto/webdriver.md
 - name: Referência
