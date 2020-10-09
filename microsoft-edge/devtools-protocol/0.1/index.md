@@ -7,12 +7,12 @@ ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 29dc8f1b0ba67cb2b3155cb2135d488609e9bff9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3c0648467c20572a525fe257788068966efd193c
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10561348"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104732"
 ---
 # Notas de versão do protocolo DevTools versão 0,1
 
@@ -25,7 +25,7 @@ As metas por trás do protocolo DevTools são de três dobras:
 
  - Fornecer uma API pública para o nosso aplicativo DevTools para anexar ao Microsoft Edge
  - Expandir o acesso da funcionalidade do DevTools a clientes de ferramentas externos
- - Habilitar a depuração remota na faixa de dispositivos Windows 10 que executam o Edge Micrsoft 
+ - Habilitar a depuração remota em todo o intervalo de dispositivos Windows 10 que executam o Microsoft Edge 
 
 Esta versão preliminar fornece a funcionalidade de depuração básica, como a configuração de pontos de interrupção, a depuração por meio do código e a exploração de rastreamentos de pilha. Na interface do usuário de borda DevTools, isso se traduz em funcionalidades disponíveis no painel do [**depurador**](../../devtools-guide/debugger.md) , subtração inspeção de cache (para armazenamento da Web, trabalho de serviço, API de cache e IndexedDB). 
 

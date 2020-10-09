@@ -3,16 +3,16 @@ description: Corresponder os atalhos de teclado ao código do Visual Studio, emu
 title: O que há de novo no DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 943eca7e73385513b264feb74ec37c450d5c5a2f
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
+ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004068"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104858"
 ---
 # O que há de novo no DevTools (Microsoft Edge 86)  
 
@@ -174,7 +174,7 @@ Problema do Chromium: [#1103316][CR1103316]
 
 ### Novo painel de mídia  
 
-O DevTools agora exibe as informações do media players no painel [mídia][DevtoolsMediaIndex] .  
+O DevTools agora exibe as informações do media players no painel [mídia][DevtoolsMediaPanelIndex] .  
 
 Para abrir o novo painel **mídia** , conclua a etapa a seguir.  
 
@@ -468,7 +468,7 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Localizar código JavaScript e CSS não usados com a guia cobertura no Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Gaveta-personalizar o Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analisar o desempenho de renderização com a guia renderização-referência de análise de desempenho | Documentos da Microsoft"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Exibir e depurar informações do media players | Documentos da Microsoft"  
+[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Exibir e depurar informações do media players | Documentos da Microsoft"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Como trabalhar com a fenda-introdução a dispositivos de tela dupla | Documentos da Microsoft"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Tela de mídia CSS – recurso de abrangência para detecção de tela dupla | Documentos da Microsoft"  
