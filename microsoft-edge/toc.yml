@@ -360,13 +360,16 @@
     - name: Extensões (Chromium)
       href: extensions-chromium/index.md
       items:
-        - name: Tutorial de Introdução
-          href: extensions-chromium/getting-started/index.md
+        - name: Introdução
           items:
-            - name: Criar uma Extensão Simples – Parte I
+            - name: Arquitetura de extensão
+              href: extensions-chromium/getting-started/index.md
+            - name: Criar um tutorial para extensão Parte 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Criar uma Extensão Simples — Parte II
+            - name: Criar um tutorial para extensão Parte 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Fazer sideload para uma extensão
+              href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guia do Desenvolvedor
           items:
             - name: Compatibilizar a Extensão Chromium para o Microsoft Edge
