@@ -144,7 +144,7 @@
           href: devtools-guide-chromium/issues/index.md
         - name: Menu de Comando
           href: devtools-guide-chromium/command-menu/index.md
-        - name: Habilitar Simulação.
+        - name: Emulação
           items:
             - name: Visão geral
               href: devtools-guide-chromium/device-mode/index.md
@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Usar a Instrumentação de Alocação na Linha do Tempo
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+        - name: Media
+          href: devtools-guide-chromium/media-panel/index.md
         - name: Espaços de Trabalho
           href: devtools-guide-chromium/workspaces/index.md
         - name: Aplicativos Web progressivos
