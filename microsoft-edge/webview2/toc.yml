@@ -36,6 +36,8 @@
   href: roadmap.md
 - name: Como
   items:
+    - name: Cenários estendidos de JavaScript no WebView2
+      href: howto/js.md
     - name: Vincular carregador estaticamente
       href: howto/static.md
     - name: Depurar o WebView2
