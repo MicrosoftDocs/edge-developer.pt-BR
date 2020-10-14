@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge, ICoreWebView2Environment
-ms.openlocfilehash: 3552de59b8b349c62d61ca165141d9adddd2a5a9
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: edf573bc7c4c83c7882005937db29a068ab7b015
+ms.sourcegitcommit: 2d57b515d6ccbbe24cb3a8c8f44f9c3a26fc17a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11011435"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "11115782"
 ---
 # interface ICoreWebView2Environment 
 
@@ -224,7 +224,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  Quando o aplicativo tenta novamente CreateCoreWebView2Controller após a falha, é recomendável que o aplicativo seja reiniciado a partir da criação de um novo ambiente WebView2. Se ocorrer uma atualização de borda, a versão associada a um ambiente de WebView2 pode ter sido removida e fazer com que o objeto não funcione mais. A criação de um novo ambiente de WebView2 funcionará, pois ele usa a versão mais recente.
 
-A criação do WebView falhará se já houver uma instância em execução usando a mesma pasta de dados do usuário, e os objetos de ambiente tiverem diferentesoptions de ambiente. Por exemplo, se já houver um WebView criado com um idioma, tentar criar uma WebView com um idioma diferente usando a mesma pasta de dados do usuário falhará.
+A criação do WebView falhará se já houver uma instância em execução usando a mesma pasta de dados do usuário, e os objetos de ambiente tiverem diferentesoptions de ambiente ou o HWND parentWindows ter reconhecimento de DPI diferente. Por exemplo, se já houver um WebView criado com um idioma, tentar criar uma WebView com um idioma diferente usando a mesma pasta de dados do usuário falhará.
 
 #### CreateWebResourceResponse 
 
