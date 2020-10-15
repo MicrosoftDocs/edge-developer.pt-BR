@@ -3,17 +3,17 @@ description: Convenções de API do Win32 C++ WebView2
 title: Convenções de API do Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 6c596b038e871caa5a364991351636f51ef7d685
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 42f0b5c9970b2e4a6424eb70458c58a98ec8dbc7
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010681"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118972"
 ---
 # Convenções de API do Win32 C++ WebView2  
 
@@ -21,7 +21,7 @@ ms.locfileid: "11010681"
 
 Métodos assíncronos na API Win32 C++ do WebView2 usam uma interface de representante para retornar ao retorno de chamada para indicar quando o método Async foi concluído, o código de êxito ou falha e para alguns, o resultado do método assíncrono.  O parâmetro final para todos os métodos assíncronos é um ponteiro para uma interface delegada da qual você fornece uma implementação.  
 
-A interface do representante tem um único `Invoke` método que assume como primeiro parâmetro um `HRESULT` dos códigos de sucesso ou falha.  Além disso, pode haver um segundo parâmetro que é o resultado do método se o método tiver um resultado.  Por exemplo, o método [ICoreWebView2:: CapturePreview] [Webview2ReferenceWin3209538Icorewebview2CapturePreview] usa como o parâmetro final de um `ICoreWebView2CapturePreviewCompletedHandler` ponteiro.  Para enviar uma `CapturePreview` solicitação de método, você fornece uma instância do `ICoreWebView2CapturePreviewCompletedHandler` ponteiro implementada.  O trecho de código a seguir usa um método para implementar.  
+A interface do representante tem um único `Invoke` método que assume como primeiro parâmetro um `HRESULT` dos códigos de sucesso ou falha.  Além disso, pode haver um segundo parâmetro que é o resultado do método se o método tiver um resultado.  Por exemplo, o método [ICoreWebView2:: CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] usa como o parâmetro final de um `ICoreWebView2CapturePreviewCompletedHandler` ponteiro.  Para enviar uma `CapturePreview` solicitação de método, você fornece uma instância do `ICoreWebView2CapturePreviewCompletedHandler` ponteiro implementada.  O trecho de código a seguir usa um método para implementar.  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -117,6 +117,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2ReferenceWin3209622Icorewebview2CapturePreview]: ../reference/win32/0-9-622/icorewebview2.md#capturepreview "CapturePreview-interface ICoreWebView2 | Documentos da Microsoft"  
+[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview-interface ICoreWebView2 | Documentos da Microsoft"  
 
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Função callback (WRL) | Documentos da Microsoft"  

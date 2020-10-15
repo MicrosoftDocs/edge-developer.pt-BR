@@ -3,17 +3,17 @@ description: Opções de distribuição ao liberar um aplicativo usando o Micros
 title: Distribuição de aplicativos do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: e96ca2b26feb3883b51ad468db1fabe68ed8ad1f
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052183"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118993"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
@@ -61,7 +61,7 @@ Se você tiver um cenário de implantação somente online em que os usuários f
 
 *   Durante a configuração do seu aplicativo, verifique se o tempo de execução já está instalado por uma destas opções:  
     *   Inspecionando se a regkey `pv (REG_SZ)` existe em `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ou  
-    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
+    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
 *   Se o tempo de execução não estiver instalado, use o link para baixar programaticamente o bootstrapper.  
 *   Invoque o bootstrapper de um processo elevado ou prompt de comando com `MicrosoftEdgeWebview2Setup.exe /silent /install` para a instalação silenciosa.  
 
@@ -75,7 +75,7 @@ Se você tiver um cenário de implantação offline em que a implantação do ap
 *   Inclua o instalador no instalador do aplicativo ou no atualizador.  
 *   Durante a configuração do seu aplicativo, verifique se o tempo de execução já está instalado por uma destas opções:  
     *   Inspecionando se a regkey `pv (REG_SZ)` existe em `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` ou  
-    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
+    *   Chamando WebView2 API [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) e verifique se o VERSIONINFO é nulo.  
 *   Se o tempo de execução não estiver instalado, chame o instalador autônomo de um processo elevado ou prompt de comando com `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` para a instalação silenciosa.  
 
 ## Modo de distribuição de versão corrigido  
@@ -89,6 +89,5 @@ Para ambientes restritos, há planos para dar suporte a uma versão fixa, que an
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Noções básicas sobre versões do navegador e WebView2 | Documentos da Microsoft"  
-[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globais | Documentos da Microsoft"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador do WebView2"  

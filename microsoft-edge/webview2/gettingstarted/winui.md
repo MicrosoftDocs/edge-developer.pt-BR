@@ -1,19 +1,19 @@
 ---
-description: Hospedar o conteúdo da Web em seu aplicativo do WinUI com o controle Microsoft Edge WebView 2
-title: Microsoft Edge WebView2 para aplicativos do WinUI
+description: Guia de introdução ao WebView2 para aplicativos do WinUI
+title: Introdução ao WebView2 para aplicativos do WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos do WinUI, WinUI, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
-ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
+ms.openlocfilehash: df6ee7a7391337635a63a961f62317e5b8a67334
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934895"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119091"
 ---
 # Introdução ao WebView2 no WinUI3 (visualização)  
 
@@ -47,7 +47,7 @@ Comece com um projeto de área de trabalho básico contendo uma única janela pr
     *   Versão de destino: **Windows 10, versão 1903 (build 18362)** ou posterior.  
     *   Versão mínima: **Windows 10, versão 1803 (build 17134)**.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="A nova caixa de diálogo do projeto da plataforma universal do Windows com os valores selecionados para a versão de destino e a versão mínima." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Caixa de diálogo criação de projetos do Visual Studio para WinUI" lightbox="./media/winui-gettingstarted-projecttype.png":::
        A nova caixa de diálogo do projeto da plataforma universal do Windows com os valores selecionados para a versão de destino e a versão mínima.
     :::image-end:::  
     
@@ -117,7 +117,7 @@ Em seguida, adicione um controle WebView2 ao seu projeto.
     
 1.  Selecione `F5` para compilar e executar o projeto.  Confirme se o controle WebView2 é exibido [https://www.microsoft.com][|::ref1::|Main] .  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Um controle WebView2 exibindo o site do microsoft.com" lightbox="./media/winui-gettingstarted-part3.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Caixa de diálogo criação de projetos do Visual Studio para WinUI" lightbox="./media/winui-gettingstarted-part3.png":::
        Um controle WebView2 exibindo o site do microsoft.com.  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ Permita que os usuários controlem a página da Web que é exibida no seu contro
     > [!NOTE]
     > Assegure-se de usar URLs completas na barra de endereços. `ArgumentException` exceções serão lançadas se a URL não iniciar com `http://` ou `https://` .  
     
-    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Bing.com" lightbox="./media/winui-gettingstarted-bing.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Caixa de diálogo criação de projetos do Visual Studio para WinUI" lightbox="./media/winui-gettingstarted-bing.png":::
        Bing.com  
     :::image-end:::  
     
@@ -231,7 +231,7 @@ Selecione `F5` para compilar e executar o projeto.  Confirme se a navegação es
 
 Aplicativos host podem injetar código JavaScript em controles WebView2 em tempo de execução.  O JavaScript injetado se aplica a todos os novos documentos de nível superior e a quaisquer quadros filho até que o JavaScript seja removido.  O JavaScript injetado é executado após a criação do objeto global e antes que qualquer outro script incluído no documento HTML seja executado.  
 
-Como exemplo, adicione scripts enviar um alerta quando um usuário navegar para sites que não são HTTPS.  Modifique a `EnsureHttps` função para injetar um script no conteúdo da Web usando o [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync].  
+Como exemplo, adicione scripts enviar um alerta quando um usuário navegar para sites que não são HTTPS.  Modifique a `EnsureHttps` função para injetar um script no conteúdo da Web usando o [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -251,7 +251,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 Selecione `F5` para compilar e executar o projeto.  Confirme se o seu aplicativo exibe um alerta ao navegar para um site que não usa HTTPS.  
 
-:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="Controle WebView2 mostrando uma caixa de diálogo de alerta" lightbox="./media/winui-gettingstarted-script.png":::
+:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="Caixa de diálogo criação de projetos do Visual Studio para WinUI" lightbox="./media/winui-gettingstarted-script.png":::
    Controle WebView2 mostrando uma caixa de diálogo de alerta
 :::image-end:::  
 
@@ -264,7 +264,7 @@ Atualmente, nossa equipe está desenvolvendo mais APIs do WebView2.  Para obter 
 > [!NOTE]
 > O objeto WinRT CoreWebView2 pode não estar disponível no momento em que as APIs do WebView2 são entregues. Para entender quais APIs estão disponíveis para os controles WebView2, consulte [spec WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2] para obter uma lista das APIs que estão disponíveis. 
 
-Para obter mais informações sobre os recursos do WebView2, consulte os [guias conceitos e instruções do WebView2][Webview2IndexNextSteps]e o [repositório de exemplos WebView2][GithubMicrosoftedgeWebview2samplesMain].  
+Para obter mais informações sobre os recursos do WebView2, consulte [guias WebView2 conceitos e How-To][Webview2IndexNextSteps]e o [repositório de exemplos WebView2][GithubMicrosoftedgeWebview2samplesMain].  
 
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
@@ -275,7 +275,7 @@ Para obter mais informações sobre os recursos do WebView2, consulte os [guias 
 [Webview2Index]: ../index.md "Introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas-introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Documentos da Microsoft"  
-[Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-classe Microsoft. Web. WebView2. WPF. WebView2 | Documentos da Microsoft"  
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.Exemétodo cuteScriptAsync (String) (Microsoft. Web. WebView2. WPF) | Documentos da Microsoft"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Referência do esquema do manifesto do pacote para Windows 10 | Documentos da Microsoft"  
 

@@ -3,17 +3,17 @@ description: Modelos de controle de versão usados para o Microsoft Edge WebView
 title: Controle de versão do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 3ce1f0653a14d92571f1365cbfebc8bb2215ecbe
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: b673a2b250e46959a2eabaeb88cd8535f9a271e4
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010674"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118979"
 ---
 # Entender as versões do SDK do WebView2  
 
@@ -28,11 +28,11 @@ No futuro, a equipe da WebView planeja alterar o modelo de distribuição para a
 
 Na visualização, o pacote de lançamento contém o seguinte.  
 
-*   [APIs C/C++ do Win32][ReferenceWin3209622]: APIs no SDK que devem permanecer iguais no ga.  
+*   [APIs C/C++ do Win32][ReferenceWin32]: APIs no SDK que devem permanecer iguais no ga.  
 
 Na visualização, o pacote de pré-lançamento contém os componentes a seguir.  
 
-*   APIs .NET: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515]e [núcleo][ReferenceDotnet09628]  
+*   APIs .NET: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace]e [núcleo][DotnetMicrosoftWebWebview2CoreNamespace]  
 *   APIs experimentais.  Para obter mais informações, consulte a seção [APIs experimentais](#experimental-apis) .  
 
 ## APIs experimentais  
@@ -69,10 +69,10 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->
 
 [DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Modo de distribuição em verde-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
-[ReferenceDotnet09628]: ../reference/dotnet/0-9-628-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
-[ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Referência (WebView2) | Documentos da Microsoft"  
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Namespace Microsoft. Web. WebView2. Core | Documentos da Microsoft"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft. Web. WebView2. WPF | Documentos da Microsoft"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Namespace Microsoft. Web. WebView2. WinForms | Documentos da Microsoft"
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "Referência de C++ do WebView2 Win32 | Documentos da Microsoft"  
 [Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos canais Microsoft Edge | Documentos da Microsoft"  

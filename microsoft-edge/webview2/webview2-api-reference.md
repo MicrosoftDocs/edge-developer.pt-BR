@@ -1,19 +1,19 @@
 ---
-description: Hospedar conteúdo da Web em seu aplicativo Win32 com o controle Microsoft Edge WebView 2
+description: Referência de API para o SDK do Microsoft Edge WebView2
 title: Referência de API do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador
-ms.openlocfilehash: f6417b543191c923c89af2e17a59f4505cc82a7d
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 36c951967675d1daed769e40e8eacbf668a5973c
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010135"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119049"
 ---
 # Referência de API do Microsoft Edge WebView2  
 
@@ -23,8 +23,12 @@ Selecione os idiomas e a estrutura do WebView2 que deseja usar na lista a seguir
 
 ## Idiomas e estruturas  
 
-*   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
+*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
 *   .NET  
-    *   [Core](reference/dotnet/0-9-628-reference-webview2.md)  
-    *   [Windows Forms](reference/winforms/0-9-515-reference-webview2.md)  
-    *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  
+    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
+    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
+    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Namespace Microsoft. Web. WebView2. Core | Documentos da Microsoft"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft. Web. WebView2. WPF | Documentos da Microsoft"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Namespace Microsoft. Web. WebView2. WinForms | Documentos da Microsoft"
