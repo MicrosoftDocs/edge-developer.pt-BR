@@ -33,7 +33,7 @@
             - name: EdgeHTML 12
               href: dev-guide/whats-new/edgeHTML-12.md
               items:
-                - name: Informações de Versão de JavaScript
+                - name: Informações de versão do JavaScript
                   href: dev-guide/whats-new/javascript-version-information.md
         - name: Recursos do navegador
           href: dev-guide/browser-features.md
@@ -80,7 +80,7 @@
           href: devtools-guide-chromium/ie-mode.md
         - name: Modo de exibição 3D
           href: devtools-guide-chromium/3d-view/index.md
-        - name: DevTools para Iniciantes
+        - name: DevTools para iniciantes
           items:
             - name: HTML e o DOM
               href: devtools-guide-chromium/beginners/html.md
@@ -88,18 +88,16 @@
               href: devtools-guide-chromium/beginners/css.md
         - name: CSS
           items:
-            - name: Introdução à Visualização e Mudança da CSS
+            - name: Introdução à visualização e mudança da CSS
               href: devtools-guide-chromium/css/index.md
-            - name: Referência BITS
+            - name: Referência CSS
               href: devtools-guide-chromium/css/reference.md
-            - name: Localizar CSS Não Utilizado
+            - name: Localizar CSS não utilizado
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspecionar animações
               href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Guias
-              items:
-                - name: Forçar DevTools no Modo de Visualização de Impressão
-                  href: devtools-guide-chromium/css/print-preview.md
+            - name: Forçar DevTools no modo de Visualização de Impressão
+              href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
             - name: Visão geral
@@ -110,17 +108,17 @@
               href: devtools-guide-chromium/console/javascript.md
             - name: Referência
               href: devtools-guide-chromium/console/reference.md
-            - name: Referência da API
+            - name: Referência de API
               href: devtools-guide-chromium/console/api.md
-            - name: Referência da API Utilitários
+            - name: Referência da API utilitários
               href: devtools-guide-chromium/console/utilities.md
-            - name: Expressões Dinâmicas
+            - name: Expressões dinâmicas
               href: devtools-guide-chromium/console/live-expressions.md
         - name: Rede
           items:
             - name: Introdução
               href: devtools-guide-chromium/network/index.md
-            - name: Guia de Problemas de Rede
+            - name: Guia de problemas de rede
               href: devtools-guide-chromium/network/issues.md
             - name: Referência
               href: devtools-guide-chromium/network/reference.md
@@ -128,13 +126,13 @@
           items:
             - name: Cookies
               href: devtools-guide-chromium/storage/cookies.md
-            - name: Armazenamento Local
+            - name: Armazenamento local
               href: devtools-guide-chromium/storage/localstorage.md
             - name: IndexedDB
               href: devtools-guide-chromium/storage/indexeddb.md
-            - name: Armazenamento de Sessão
+            - name: Armazenamento de sessão
               href: devtools-guide-chromium/storage/sessionstorage.md
-            - name: Cache de Aplicativo
+            - name: Cache de aplicativo
               href: devtools-guide-chromium/storage/applicationcache.md
             - name: WebSQL
               href: devtools-guide-chromium/storage/websql.md
@@ -142,21 +140,21 @@
               href: devtools-guide-chromium/storage/cache.md
         - name: Problemas
           href: devtools-guide-chromium/issues/index.md
-        - name: Menu de Comando
+        - name: Menu de comando
           href: devtools-guide-chromium/command-menu/index.md
         - name: Emulação
           items:
             - name: Visão geral
               href: devtools-guide-chromium/device-mode/index.md
-            - name: Emular e Testar Outros Navegadores
+            - name: Emular e testar outros navegadores
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guias
               items:
-                - name: Substituir a Cadeia de Caracteres do Agente de Usuário
+                - name: Substituir a cadeia de caracteres do agente de usuário
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
-                - name: Substituir Geolocalização
+                - name: Substituir geolocalização
                   href: devtools-guide-chromium/device-mode/geolocation.md
-                - name: Alterar a Orientação do Dispositivo
+                - name: Alterar a orientação do dispositivo
                   href: devtools-guide-chromium/device-mode/orientation.md
         - name: DOM
           items:
@@ -166,23 +164,23 @@
           items:
             - name: Introdução
               href: devtools-guide-chromium/javascript/index.md
-            - name: Pausar seu Código com Pontos de Interrupção
+            - name: Pausar seu código com pontos de interrupção
               href: devtools-guide-chromium/javascript/breakpoints.md
-            - name: Localizar o JavaScript Não Utilizado
+            - name: Localizar o JavaScript não utilizado
               href: devtools-guide-chromium/coverage/index.md
-            - name: Mapear Código em Pré-processamento para Código-fonte
+            - name: Mapear código em pré-processamento para código-fonte
               href: devtools-guide-chromium/javascript/source-maps.md
-            - name: Referências de Depuração de JavaScript
+            - name: Referências de depuração de JavaScript
               href: devtools-guide-chromium/javascript/reference.md
             - name: Trechos de código
               href: devtools-guide-chromium/javascript/snippets.md
-            - name: Visão geral do Painel Fontes
+            - name: Visão geral do painel fontes
               href: devtools-guide-chromium/sources.md
-            - name: Depurar Serviços de Segundo Plano
+            - name: Depurar serviços de segundo plano
               href: devtools-guide-chromium/javascript/background-services.md
             - name: Guias
               items:
-                - name: Marcar Scripts de Conteúdo como Código de Biblioteca
+                - name: Marcar scripts de conteúdo como código de biblioteca
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
                 - name: Desabilitar o JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
@@ -190,37 +188,37 @@
           items:
             - name: Introdução
               href: devtools-guide-chromium/evaluate-performance/index.md
-            - name: Otimizar a Velocidade do Site
+            - name: Otimizar a velocidade do site
               href: devtools-guide-chromium/speed/get-started.md
             - name: Visão geral
               href: devtools-guide-chromium/rendering-tools/index.md
-            - name: Referência de Análise de Desempenho
+            - name: Referência de análise de desempenho
               href: devtools-guide-chromium/evaluate-performance/reference.md
-            - name: Referência de Evento de Linha do Tempo
+            - name: Referência de evento de linha do tempo
               href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-            - name: Acelerar o Tempo de Execução do JavaScript
+            - name: Acelerar o tempo de execução do JavaScript
               href: devtools-guide-chromium/rendering-tools/js-runtime.md
         - name: Acessibilidade
           items:
             - name: Referência
               href: devtools-guide-chromium/accessibility/reference.md
-            - name: Navegue o DevTools com Tecnologia Adaptativa
+            - name: Navegar o DevTools com tecnologia adaptativa
               href: devtools-guide-chromium/accessibility/navigation.md
             - name: Guias
               items:
-                - name: Acompanhar Qual Elemento Tem o Foco
+                - name: Acompanhar qual elemento tem o foco
                   href: devtools-guide-chromium/accessibility/focus.md
-                - name: Simulação da cor escura/clara
+                - name: Simulação de esquema da cor escura/clara
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simular o movimento reduzido
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
                 - name: Emular deficiências visuais
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-        - name: Depuração Remota
+        - name: Depuração remota
           items:
             - name: Dispositivos Android
               href: devtools-guide-chromium/remote-debugging/index.md
-            - name: Acessar Servidores Locais
+            - name: Acessar servidores locais
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: Emuladores do Surface Duo
               href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
@@ -230,11 +228,11 @@
           items:
             - name: Visão geral
               href: devtools-guide-chromium/memory-problems/index.md
-            - name: Compreender a Terminologia da Memória
+            - name: Compreender a terminologia da memória
               href: devtools-guide-chromium/memory-problems/memory-101.md
-            - name: Instantâneos da Pilha de Registros
+            - name: Instantâneos da pilha de registros
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-            - name: Usar a Instrumentação de Alocação na Linha do Tempo
+            - name: Usar a instrumentação de alocação na linha do tempo
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
@@ -244,7 +242,7 @@
           href: devtools-guide-chromium/progressive-web-apps.md
         - name: Segurança
           href: devtools-guide-chromium/security/index.md
-        - name: Atalhos do teclado
+        - name: Atalhos de teclado
           href: devtools-guide-chromium/shortcuts.md
         - name: Recursos
           href: devtools-guide-chromium/resources/index.md
@@ -252,11 +250,11 @@
           items:
             - name: Visão geral
               href: devtools-guide-chromium/customize/index.md
-            - name: Tema Escuro
+            - name: Tema escuro
               href: devtools-guide-chromium/customize/dark-theme.md
-            - name: Alterar Posicionamento
+            - name: Alterar posicionamento
               href: devtools-guide-chromium/customize/placement.md
-            - name: Corresponder ao Idioma do Navegador
+            - name: Corresponder ao idioma do navegador
               href: devtools-guide-chromium/customize/localization.md
             - name: Atalhos
               href: devtools-guide-chromium/customize/shortcuts.md
@@ -306,7 +304,7 @@
           href: devtools-guide/memory.md
         - name: Armazenamento
           href: devtools-guide/storage.md
-        - name: Profissionais de Serviço
+        - name: Profissionais de serviço
           href: devtools-guide/service-workers.md
         - name: Emulação
           href: devtools-guide/emulation.md
@@ -366,17 +364,19 @@
           items:
             - name: Arquitetura de extensão
               href: extensions-chromium/getting-started/index.md
-            - name: Criar um tutorial para extensão Parte 1
+            - name: Criar um tutorial para extensão (parte 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Criar um tutorial para extensão Parte 2
+            - name: Criar um tutorial para extensão (parte 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Fazer sideload para uma extensão
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guia do Desenvolvedor
           items:
-            - name: Compatibilizar a Extensão Chromium para o Microsoft Edge
+            - name: Compatibilizar a extensão Chromium para o Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
-            - name: Métodos Alternativos de Distribuição de Extensões
+            - name: Migrar sua extensão do manifesto v2 para o v3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+            - name: Métodos alternativos de distribuição de extensões
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Sistema de mensagens nativo
               href: extensions-chromium/developer-guide/native-messaging.md
@@ -386,25 +386,25 @@
               href: extensions-chromium/publish/publish-extension.md
             - name: Registro do desenvolvedor
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Atualizar Lista de Extensões
+            - name: Atualizar lista de extensões
               href: extensions-chromium/publish/update.md
             - name: Estados de envio
               href: extensions-chromium/publish/submission-states.md
-            - name: Atualizar Configurações de Conta
+            - name: Atualizar configurações de conta
               href: extensions-chromium/publish/manage-settings.md
-        - name: Políticas de Complementos do Microsoft Edge
+        - name: Políticas de complementos do Microsoft Edge
           items:
-            - name: Política de Segurança de Conteúdo
+            - name: Política de segurança de conteúdo
               href: extensions-chromium/store-policies/csp.md
-            - name: Adendo de ADA para Desenvolvedores do Edge
+            - name: Adendo de ADA para desenvolvedores do Microsoft Edge
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Políticas de Desenvolvedor de Catálogo de Complementos do Microsoft Edge
+            - name: Políticas do desenvolvedor de catálogo de complementos do Microsoft Edge
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensões para empresas
           items:
-            - name: Padrões de Correspondência
+            - name: Padrões de correspondência
               href: extensions-chromium/enterprise/match-patterns.md
-            - name: Hospedagem e Atualização
+            - name: Hospedagem e atualização
               href: extensions-chromium/enterprise/hosting-and-updating.md
     - name: Extensions (EdgeHTML)
       href: extensions/index.md
@@ -469,7 +469,7 @@
       href: origin-trials/index.md
     - name: Análise de Desempenho
       href: performance-analysis.md
-    - name: Whitepaper de Privacidade
+    - name: Whitepaper de privacidade
       href: privacy-whitepaper.md
     - name: Aplicativos Web Progressivos (Chromium)
       href: progressive-web-apps-chromium/index.md
@@ -480,7 +480,7 @@
           href: progressive-web-apps-chromium/offline.md
         - name: Profissionais de Serviço
           href: progressive-web-apps-chromium/serviceworker.md
-        - name: Manifestos do Aplicativo Web
+        - name: Manifestos do aplicativo Web
           href: progressive-web-apps-chromium/webappmanifests.md
     - name: Aplicativos Web Progressivos (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
@@ -515,13 +515,13 @@
       items:
         - name: Compatibilidade do site – alterações que afetam o Microsoft Edge
           href: web-platform/site-impacting-changes.md
-        - name: Controle de Prevenção no Microsoft Edge
+        - name: Controle de prevenção no Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Cadeia de Caracteres do agente de usuário do Microsoft Edge
           href: web-platform/user-agent-string.md
     - name: WebView2 (Chromium) (visualização)
       href: webview2/toc.yml
-    - name: Guia do Desenvolvedor do WebVR
+    - name: Guia do desenvolvedor do WebVR
       href: /microsoft-edge/webvr/index
     - name: Windows Runtime (WinRT)
       href: windows-runtime/toc.yml
