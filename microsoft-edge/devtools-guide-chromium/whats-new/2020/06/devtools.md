@@ -28,7 +28,7 @@ As seções a seguir são uma lista de comunicados que você pode ter perdido da
 
 A equipe do Microsoft Edge DevTools está colaborando com o Chrome DevTools Team e na Comunidade Chromium para adicionar novos recursos de depuração de grade CSS ao DevTools.  Agora você pode exibir números de linha de grade, lacunas de grade e linhas de grade estendidas como uma sobreposição na página.  Além disso, mais melhorias nas ferramentas de grade serão disponibilizadas em breve.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Recursos de depuração de grade CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    Recursos de depuração de grade CSS
 :::image-end:::  
 
@@ -47,7 +47,7 @@ Chromium problema [#1047356][CR1047356]
 
 Agora você pode usar **Editar e reproduzir** em solicitações no [log de rede][DevtoolsNetworkIndexLogActivity] usando o **console de rede**.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Editar e reproduzir uma solicitação no NetworkLog com o console de rede" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    Editar e reproduzir uma solicitação no [NetworkLog][DevtoolsNetworkIndexLogActivity] com o console de **rede**  
 :::image-end:::  
 
@@ -55,7 +55,7 @@ Um novo painel, o **console de rede** abre na [gaveta devtools][DevtoolsCustomiz
 
 Você também pode usar o **console de rede** para criar e enviar solicitações HTTP diretamente do devtools.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Painel do console de rede" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    Painel do **console de rede**  
 :::image-end:::  
 
@@ -73,13 +73,13 @@ Chromium problema [#1093687][CR1093687]
 
 A guia **intervalo** do painel **rede** agora inclui `respondWith` eventos de trabalho do serviço.  O `respondWith` evento de trabalho do serviço mostra a duração do tempo imediatamente antes de o manipulador de eventos do trabalho do serviço `fetch` começar a ser executado até o momento em que a `respondWith` promessa do `fetch` manipulador é liquidada.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="O evento de trabalho do serviço respondWith na guia intervalo do painel de rede" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/timing-tab.msft.png":::
    O `respondWith` evento de trabalho do serviço na guia **intervalo** do painel de **rede**  
 :::image-end:::  
 
 Expanda a **resposta recebida** para ver informações adicionais da `fetch` resposta como `CacheStorageCacheName` , `serviceWorkerResponseSource` e `ResponseTime` .  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expandir a resposta recebida para ver informações adicionais da resposta de busca" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    Expandir a **resposta recebida** para ver informações adicionais da `fetch` resposta  
 :::image-end:::  
 
@@ -93,7 +93,7 @@ Chromium problema [#1066579][CR1066579]
 
 [webhint][WebhintMain] é uma ferramenta de código-fonte aberto que fornece comentários em tempo real sobre a acessibilidade, a compatibilidade entre navegadores, a segurança, o desempenho, a PWAs e outras questões de desenvolvimento da Web comuns dos sites.  Agora você pode ver comentários da webhint no painel [problemas][DevtoolsIssues] .  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Comentários da webhint no painel problemas" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    Comentários da webhint no painel problemas  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Chromium problema [#1070378][CR1070378]
 
 Normalmente, ferramentas como **elementos** e **rede** só podem ser abertas no painel main \ (Top \) do devtools.  Da mesma forma, ferramentas como **modo de exibição 3D** e **problemas** só podem ser abertos no painel gaveta \ (inferior \) do devtools.  Agora você pode personalizar o layout do DevTools movendo ferramentas entre os painéis superior e inferior.  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Mover guias entre painéis" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Mover guias entre painéis  
 :::image-end:::  
 
@@ -125,13 +125,13 @@ Chromium problema [#897944][CR897944]
 
 No Microsoft Edge 83 e no 84, as dicas de ferramenta para a coluna do iniciador, que mostra a causa da solicitação do recurso, no [log de rede][DevtoolsNetworkIndexLogActivity] exibido com uma barra de rolagem horizontal.  Você só pôde ver a pilha de chamadas que iniciou a solicitação rolando horizontalmente na dica de ferramenta.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="A dica de ferramenta do iniciador no Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    A dica de ferramenta do iniciador no Microsoft Edge 84  
 :::image-end:::  
 
 Começando com o Microsoft Edge 85, agora você pode ver a pilha de chamadas do iniciador na dica de ferramenta sem rolar horizontalmente.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="A dica de ferramenta do iniciador no Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    A dica de ferramenta do iniciador no Microsoft Edge 85
 :::image-end:::  
 
@@ -149,7 +149,7 @@ Agora você pode editar estilos adicionados em JavaScript usando folhas de [esti
 
 Por exemplo, os `h1` estilos adicionados com `CSSStyleSheet` \ (APIs CSSOM \) não eram editáveis anteriormente.  Os estilos são editáveis agora no painel **estilos** .  
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Alterar a propriedade Background dos estilos H1 adicionados com CSSStyleSheet de rosa a LightBlue" lightbox="../../media/2020/06/css-in-js.msft.png":::
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/css-in-js.msft.png":::
    Alterar a `background` propriedade dos `h1` estilos adicionados com `CSSStyleSheet` from `pink` to `lightblue` .
 :::image-end:::  
 
@@ -218,7 +218,7 @@ O painel **manifestar** agora mostra avisos para as seguintes condições.
 * Os ícones de atalho do aplicativo são menores do que 96x96 pixels  
 * Os ícones de atalho e os ícones de manifesto do aplicativo não são quadrados \ (já que os ícones são ignorados \)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avisos de atalho do aplicativo" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    Avisos de atalho do aplicativo  
 :::image-end:::  
 
@@ -228,7 +228,7 @@ Chromium problema [#955497][CR955497]
 
 O painel **calculado** no painel de **elementos** agora é exibido consistentemente em um painel em todos os tamanhos do visor.  Anteriormente, o painel **calculado** foi mesclado dentro do painel **estilos** quando a largura do visor devtools era estreita.  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="O painel calculado é exibido consistentemente como um painel separado, mesmo quando o DevTools é estreito" lightbox="../../media/2020/06/computed-pane.msft.png":::
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/computed-pane.msft.png":::
    O painel **calculado** é exibido consistentemente como um painel separado, mesmo quando os devtools são estreitos.
 :::image-end:::  
 
@@ -245,7 +245,7 @@ Chromium problema [#1071432][CR1071432]
 
 Ao fazer a cópia ou recortar sem seleção no [Editor de painel fontes][DevtoolsSourcesEditCssJavascript], o devtools copia ou recorta a linha atual do conteúdo.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Com o cursor no final da linha 5, copiar a linha inteira de pen.js no DevTools e colar no código do Visual Studio" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    Com o cursor no final da linha 5, copiar a linha inteira de **pen.js** no devtools e colar no [código do Visual Studio][VSCode].
 :::image-end:::  
 
@@ -259,7 +259,7 @@ A opção de alternância **semelhante em grupo** nas configurações do console
 
 Por exemplo, anteriormente, o DevTools não desagrupau as `hello` mensagens, apesar de o **grupo semelhante** não estar desmarcado.  Agora, as `hello` mensagens são desagrupadas.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Quando o grupo semelhante está desmarcado, as mensagens de saudação são desagrupadas" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Quando o **grupo semelhante** está desmarcado, as `hello` mensagens são desagrupadas
 :::image-end:::  
 
@@ -271,7 +271,7 @@ Chromium problema [#1082963][CR1082963]
 
 As configurações de **contexto selecionado somente** em configurações do console agora são mantidas.  Anteriormente, as configurações foram redefinidas toda vez que você fechou e reabriu o DevTools.  A alteração torna o comportamento de configuração consistente com outras opções de configurações do console.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Configuração somente contexto selecionada" lightbox="../../media/2020/06/selected-context.msft.png":::
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/selected-context.msft.png":::
    Configuração **somente contexto selecionada**  
 :::image-end:::  
 
@@ -283,7 +283,7 @@ Chromium problema [#1055875][CR1055875]
 
 [As informações do cache de compilação do JavaScript][V8DevCodeCaching] agora são sempre exibidas na guia Resumo do painel desempenho.  Anteriormente, o DevTools não mostraria nada relacionado ao cache de código se o cache de código não existisse.  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Informações do cache de compilação JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    Informações do cache de compilação JavaScript  
 :::image-end:::  
 
@@ -293,7 +293,7 @@ Chromium problema [#912581][CR912581]
 
 O painel de **desempenho** usado para mostrar horas nas réguas com base na hora de início da gravação.  O intervalo foi alterado para gravações nas quais o usuário navega, onde DevTools agora mostra as horas da régua em relação à navegação em vez disso.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Alinhar o intervalo de navegação no painel de desempenho" lightbox="../../media/2020/06/nav-timing.msft.png":::
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/nav-timing.msft.png":::
    Alinhar o intervalo de navegação no painel de **desempenho**  
 :::image-end:::  
 
@@ -305,7 +305,7 @@ Chromium problema [#974550][CR974550]
 
 O painel **fontes** tem novos designs para pontos de interrupção, pontos de interrupção condicionais e logpoints.  Os pontos de interrupção são representados por um círculo vermelho, da mesma forma que o [código do Visual Studio][VSCode] e o [Visual Studio][VS].  Ícones são adicionados para diferenciar pontos de interrupção condicionais e logpoints.  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Pontos de interrupção" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Recurso experimental" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Pontos de interrupção  
 :::image-end:::  
 
