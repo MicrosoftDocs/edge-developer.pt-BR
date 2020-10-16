@@ -3,17 +3,17 @@ description: Saiba como usar JavaScript em cenários complexos em aplicativos do
 title: Usar JavaScript em aplicativos do WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: f6e59acb0c4bf8ad5357aba87e0359d3b103ed63
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 0fd4e33b7cfc16dcd19a850147b6efbca8922a8e
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119063"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120064"
 ---
 # Usar JavaScript em WebView para cenários estendidos  
 
@@ -29,8 +29,8 @@ Use as funções a seguir para começar a inserir JavaScript em seu aplicativo W
 
 | API  | Descrição  |
 |:--- |:--- |  
-| [ExecuteScriptAsync][Webview2ReferenceWpf09515MicrosoftWebExecutescriptasync] | Executar JavaScript em um controle WebView. Para obter mais informações, navegue até o tutorial de introdução. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin3209538Icorewebview2Addscripttoexecuteondocumentcreated] | É executado quando o modelo de objeto do documento (DOM \) é criado. |
+| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Executar JavaScript em um controle WebView. Para obter mais informações, navegue até o tutorial de introdução. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | É executado quando o modelo de objeto do documento (DOM \) é criado. |
       
 ## Cenário: executando um arquivo de script dedicado  
 
@@ -130,7 +130,7 @@ Agora, adicione código para remover a funcionalidade do menu contextual do cont
 [Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Introdução ao WebView2 no WPF (visualização) | Documentos da Microsoft"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Ponto de partida-introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Próximas etapas-introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
-[Webview2ReferenceWin3209538Icorewebview2Addscripttoexecuteondocumentcreated]: ../reference/win32/0-9-538/icorewebview2.md#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated-0.9.579-interface ICoreWebView2 | Documentos da Microsoft"  
-[Webview2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-classe Microsoft. Web. WebView2. WPF. WebView2 | Documentos da Microsoft"  
+[Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated-0.9.579-interface ICoreWebView2 | Documentos da Microsoft"  
+[Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.Exemétodo cuteScriptAsync (String) (Microsoft. Web. WebView2. WPF) | Documentos da Microsoft"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Exemplos de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  

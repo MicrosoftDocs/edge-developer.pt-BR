@@ -3,17 +3,17 @@ description: Saiba como vincular estaticamente a biblioteca WebView2 Loader.
 title: Como vincular estaticamente a biblioteca WebView2 Loader
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 10/15/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: b7e0ec70cb00f318d4eb67254f37fcec79a5fcf6
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: a25bd85c8a6b17bdf8712c954eb7b7cc28738eb2
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100292"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120065"
 ---
 # Como vincular estaticamente a biblioteca WebView2 Loader  
 
@@ -82,8 +82,6 @@ Compile e implante seu aplicativo.  Cessões.
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-a classe Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions | Documentos da Microsoft"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-globais | Documentos da Microsoft"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Referência de API do Microsoft Edge WebView2 | Documentos da Microsoft"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Próximas etapas-introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Ponto de partida-introdução ao Microsoft Edge WebView2 (visualização) | Documentos da Microsoft"  

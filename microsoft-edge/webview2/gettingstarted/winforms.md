@@ -3,17 +3,17 @@ description: Guia de introdução com o WebView2 para aplicativos WinForms
 title: Introdução ao WebView2 para aplicativos WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WinForms, WinForms, Edge, CoreWebView2, controle do navegador, HTML Edge, introdução, introdução, .NET, formulários do Windows
-ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119077"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120085"
 ---
 # Introdução ao WebView2 no Windows Forms (visualização)  
 
@@ -299,7 +299,7 @@ Parabéns, você criou seu primeiro aplicativo WebView2!
 ## Próximas etapas 
 
 * Fazer check-out do [repositório WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obter um exemplo abrangente de recursos do WebView2's
-* [Referência de API](/dotnet/api/microsoft.web.webview2.winformswebview2) de check-out para obter informações mais detalhadas sobre nossas APIs
+* [Referência de API](/dotnet/api/microsoft.web.webview2.winforms.webview2) de check-out para obter informações mais detalhadas sobre nossas APIs
 * Fazer check-out de uma lista de [recursos do WebView2](../index.md#next-steps) para saber mais sobre o WebView2
 
 
