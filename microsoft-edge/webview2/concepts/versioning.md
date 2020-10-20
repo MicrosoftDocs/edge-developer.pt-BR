@@ -3,59 +3,59 @@ description: Modelos de controle de versão usados para o Microsoft Edge WebView
 title: Controle de versão do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: b673a2b250e46959a2eabaeb88cd8535f9a271e4
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: a47c7295e87cf4295f8cdf898b62aa3b550aa9a5
+ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11118979"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "11120336"
 ---
 # Entender as versões do SDK do WebView2  
 
-O WebView2 depende do Microsoft Edge para funcionar.  Cada SDK do WebView2 requer a instalação de uma versão mínima do navegador.  A versão mínima é refletida na versão do pacote do SDK.  Por exemplo, se você usar o `SDK package version 0.9.488` , será necessário instalar o Microsoft Edge com um número de compilação de 488 ou posterior.  A versão do navegador também é especificada nas [notas de versão][Releasenotes]do WebView2.  Para obter mais informações sobre a versão mais recente do navegador Microsoft Edge, navegue até [canais do navegador][DeployedgeChannels].  
+Para desenvolver um aplicativo do WebView2, você deve instalar o [tempo de execução do WebView2][MicrosoftDeveloperEdgeWebview2] ou um [canal do Microsoft Edge não estável][MicrosoftedgeinsiderDownload].  A versão mínima necessária está incluída na versão do pacote NuGet do SDK.  Por exemplo, se você usar o `SDK package version 0.9.488` , será necessário instalar o tempo de [execução do WebView2][MicrosoftDeveloperEdgeWebview2] ou um [canal do Microsoft Edge não estável][MicrosoftedgeinsiderDownload] com um número de versão de 488 ou posterior.  A versão mínima necessária também é especificada nas notas de [versão][Releasenotes]do WebView2.  As novas versões do SDK do WebView2 são fornecidas na mesma cadência geral do navegador Microsoft Edge \ (Chromium \), que é aproximadamente a cada seis semanas.  
 
-> [!NOTE]
-> O WebView2 está atualmente em visualização.  Enquanto a equipe da WebView se empenha para garantir a compatibilidade com versões anteriores entre as versões e os SDKs do navegador, não é garantido porque versões mais recentes do navegador podem não dar suporte a versões anteriores do SDK.  Se houver alterações significativas entre versões e SDKs do navegador, as alterações serão especificadas nas [notas de versão][Releasenotes].  
-
-No futuro, a equipe da WebView planeja alterar o modelo de distribuição para aplicativos do WebView2.  Para obter mais informações, navegue até o [modo de distribuição do verde][DistributionEvergreenMode].  
+> [!IMPORTANT]
+> Ao desenvolver aplicativos do WebView2 para o meio do tempo de execução, teste regularmente o aplicativo nas versões mais recentes do tempo de execução do WebView2 e dos navegadores não estáveis do Microsoft Edge.  Como a plataforma da Web está em constante evolução, o teste regular é a melhor maneira de garantir que seu aplicativo seja executado conforme o esperado.  
 
 ## Liberar e lançar pacote  
 
-Na visualização, o pacote de lançamento contém o seguinte.  
+O pacote NuGet WebView2 contém um pacote de pré-lançamento e de pré-lançamento.  
 
-*   [APIs C/C++ do Win32][ReferenceWin32]: APIs no SDK que devem permanecer iguais no ga.  
+O pacote de versão é compatível com o redirecionamento e contém as [APIs C/C++ do Win32][ReferenceWin32].  APIs neste SDK são totalmente suportadas.  
 
-Na visualização, o pacote de pré-lançamento contém os componentes a seguir.  
+O pacote de pré-lançamento é um superconjunto do pacote de versão com os componentes adicionais listados abaixo.  
 
 *   APIs .NET: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace]e [núcleo][DotnetMicrosoftWebWebview2CoreNamespace]  
-*   APIs experimentais.  Para obter mais informações, consulte a seção [APIs experimentais](#experimental-apis) .  
+*   APIs experimentais: para obter mais informações, navegue até a seção [APIs experimentais](#experimental-apis) .  
 
 ## APIs experimentais  
 
-A equipe da WebView está testando APIs experimentais que podem representar funcionalidades futuras.  As APIs experimentais são marcadas como `experimental` no SDK.  APIs experimentais podem ser entregues como APIs totalmente estáveis no pacote de lançamento.  Você deve esperar que todas as APIs experimentais sejam alteradas antes do lançamento.  Avalie as APIs experimentais e compartilhe comentários usando o [repositório de comentários da WebView][GithubMicrosoftedgeWebviewfeedback].  
+A equipe da WebView está testando APIs experimentais que podem estar incluídas em versões futuras.  As APIs experimentais são marcadas como `experimental` no SDK.  APIs experimentais podem ser entregues como APIs totalmente estáveis no pacote de lançamento.  Você pode avaliar as APIs experimentadas e compartilhar comentários usando o [repositório de comentários da WebView][GithubMicrosoftedgeWebviewfeedback].  
 
 > [!CAUTION]
 > Evite usar as APIs experimentais em aplicativos de produção.  
 
 ## Correspondentes às versões do tempo de execução do WebView2  
 
-Ao escrever um aplicativo do WebView2 usando uma versão específica do SDK, os usuários do seu aplicativo podem executá-lo com várias versões compatíveis do tempo de execução do WebView2.  No futuro, uma versão compatível mais recente do WebView2 Runtime contém todas as APIs não experimentais de uma versão de tempo de execução do WebView2 compatível mais antiga, além de novas APIs não experimentais adicionais.  
+Ao escrever um aplicativo do WebView2 usando uma versão específica do SDK, os usuários do aplicativo poderão executá-lo com várias versões compatíveis do tempo de execução do WebView2.  A equipe da WebView está trabalhando em uma versão compatível do WebView2 Runtime que contém APIs não experimentais de versões anteriores do tempo de execução e novas APIs não experimentais.  
 
-*   Os desenvolvedores de **C/C++ Win32** , ao usar `QueryInterface` para obter uma nova interface, devem verificar um valor de retorno de `E_NOINTERFACE` , o que pode indicar que o tempo de execução do WebView2 é mais antigo e não dá suporte a essa interface específica.  
-*   Os desenvolvedores **.net e WinUI** devem verificar uma `No such interface supported` exceção ao usar métodos, propriedades e eventos adicionados em SDKs posteriores, que podem ocorrer quando o tempo de execução do WebView2 é mais antigo e não dá suporte a essas APIs específicas.  
+Dependendo de qual SDK você usa, considere os seguintes itens: 
 
-Se uma API estiver indisponível, considere a possibilidade de desabilitar o recurso associado, se possível, ou informando ao usuário final que ele precisa atualizar a versão do WebView2 Runtime.  
+*   **Win32 C/C++**.  Ao usar `QueryInterface` para obter uma nova interface, verifique se há um valor de retorno `E_NOINTERFACE` .  Esse valor pode indicar que o tempo de execução do WebView2 é uma versão anterior e não dá suporte a essa interface.  
+*   **.Net e WinUI**.  Verifique se há uma `No such interface supported` exceção ao usar métodos, propriedades e eventos que foram adicionados a SDKs mais recentes.  Essa exceção pode ocorrer quando o tempo de execução do WebView2 é uma versão anterior e não é compatível com essas APIs.  
 
-APIs experimentais podem ser introduzidas, modificadas e removidas do SDK para o SDK.  Ao tentar usar uma API experimental que não está disponível no tempo de execução do WebView2, você pode observar o comportamento descrito anteriormente descrito.  
+Se uma API estiver indisponível, considere remover o recurso associado ou informar aos usuários que eles precisam atualizar a versão do tempo de execução do WebView2.  
+
+APIs experimentais podem ser introduzidas, modificadas e removidas do SDK para o SDK.  APIs experimentais podem não estar disponíveis na versão instalada do tempo de execução do WebView2.  
 
 ## Mapa  
 
-Após o WebView2 atingir um estado de generally available, o pacote de lançamento contém todas as APIs de C/C++ e .NET do Win32 com suporte estável.  O pacote de pré-lançamento contém APIs experimentais sujeitas a alterações com base nos seus comentários e ideias compartilhadas.  
+O pacote de lançamento contém todas as APIs C/C++ de Win32 compatíveis e estáveis.  No futuro, o pacote de lançamento conterá todas as APIs do .NET compatíveis e estáveis, quando elas forem disponibilizadas geralmente.  O pacote de pré-lançamento contém APIs experimentais sujeitas a alterações com base nos seus comentários e ideias compartilhadas.  
 
 <!--## Versioning  
 
@@ -66,15 +66,19 @@ After you have used a particular version of the SDK to build your app, your app 
 
 1.  When an interface is unavailable, you may consider disabling the associated feature if possible, or otherwise informing your users to update their browsers.  -->  
 
-<!--links -->
+<!--links -->  
 
-[DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Modo de distribuição em verde-distribuição de aplicativos usando o WebView2 | Documentos da Microsoft"  
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Namespace Microsoft. Web. WebView2. Core | Documentos da Microsoft"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft. Web. WebView2. WPF | Documentos da Microsoft"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Namespace Microsoft. Web. WebView2. WinForms | Documentos da Microsoft"
-[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "Referência de C++ do WebView2 Win32 | Documentos da Microsoft"  
 [Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos canais Microsoft Edge | Documentos da Microsoft"  
 
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Namespace Microsoft. Web. WebView2. Core | Documentos da Microsoft"  
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft. Web. WebView2. WPF | Documentos da Microsoft"  
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Namespace Microsoft. Web. WebView2. WinForms | Documentos da Microsoft"  
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "Referência de C++ do WebView2 Win32 | Documentos da Microsoft"  
+
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Desenvolvedor da Microsoft"  
+
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Feedback da WebView-MicrosoftEdge/WebViewFeedback | GitHub"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Baixar canais do Microsoft Edge Insider"  
