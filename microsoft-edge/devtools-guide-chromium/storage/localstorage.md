@@ -3,16 +3,16 @@ description: Como exibir e editar localStorage com o painel armazenamento local 
 title: Exibir e editar armazenamento local com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: aa5365d1764ea0db537ea24464f9c76441f05322
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 25404e454187db941dc12d356dfe5ae7437d833b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993552"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125416"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993552"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Exibir e editar armazenamento local com o Microsoft Edge DevTools   
-
-
+# Exibir e editar armazenamento local com o Microsoft Edge DevTools  
 
 Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de chave-valor de [localStorage][MDNWindowsLocalStorage] .  
 
-## Exibir chaves e valores de localStorage   
+## Exibir chaves e valores de localStorage  
 
 1.  Selecione a guia **aplicativo** para abrir o painel do **aplicativo** .  O painel **manifestar** é mostrado por padrão.  
     
@@ -48,72 +42,70 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Expanda o menu **armazenamento local** .  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="O menu armazenamento local" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-local-storage.msft.png":::
        O menu **armazenamento local**  
     :::image-end:::  
     
 1.  Selecione um domínio para ver os pares de valor chave.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Os pares de chave-valor de localStorage para o https://www.bing.com domínio" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
        Os `localStorage` pares de valor chave do `https://www.bing.com` domínio  
     :::image-end:::  
     
 1.  Selecione uma linha da tabela para exibir o valor no visualizador abaixo da tabela.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Exibir o valor da chave de eventLogQueue_Online" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
        Exibir o valor da `eventLogQueue_Online` chave  
     :::image-end:::  
     
-## Criar um novo par de chave-valor localStorage   
+## Criar um novo par de chave-valor localStorage  
 
 1.  [Exiba os `localStorage` pares de valores chave de um domínio](#view-localstorage-keys-and-values).  
 1.  Clique duas vezes na parte vazia da tabela.  O DevTools cria uma nova linha e enfoca o cursor na coluna **chave** .  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="A parte vazia da tabela para clicar duas vezes para criar um novo par de valores chave" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
        A parte vazia da tabela para clicar duas vezes para criar um novo par de valores chave  
     :::image-end:::  
     
-## Editar chaves ou valores de localStorage   
+## Editar chaves ou valores de localStorage  
 
 1.  [Exiba os `localStorage` pares de valores chave de um domínio](#view-localstorage-keys-and-values).  
 1.  Clique duas vezes em uma célula na coluna **chave** ou **valor** para editar essa chave ou valor.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Editar uma chave localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
        Editar uma `localStorage` chave  
     :::image-end:::  
     
-## Excluir pares de chave-valor de localStorage   
+## Excluir pares de chave-valor de localStorage  
 
 1.  [Exiba os `localStorage` pares de valores chave de um domínio](#view-localstorage-keys-and-values).  
 1.  Selecione o par chave-valor que você deseja excluir.  O DevTools realça tudo em azul para indicar que está selecionado.  
-1.  Pressione a `Delete` tecla ou clique em **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
+1.  Pressione a `Delete` tecla ou escolha **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
     
-## Excluir todos os `localStorage` pares de valores chave de um domínio   
+## Excluir todos os `localStorage` pares de valores chave de um domínio  
 
 1.  [Exiba os `localStorage` pares de valores chave de um domínio](#view-localstorage-keys-and-values).  
-1.  Selecione **limpar tudo** \ ( ![ limpar tudo ][ImageClearIcon] \).  
+1.  Escolha **limpar tudo** \ ( ![ limpar tudo ][ImageClearIcon] \).  
     
-## Interagir com o localStorage a partir do console   
+## Interagir com o localStorage a partir do console  
 
 Como você pode executar JavaScript no **console**e, como o **console** tem acesso aos contextos de JavaScript da página, é possível interagir com a `localStorage` partir do **console**.  
 
 1.  Use o menu de **contextos de JavaScript** para alterar o contexto de JavaScript do **console** se você quiser acessar os `localStorage` pares de valores chave de um domínio que não sejam a página exibida.  
     
-    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Alterar o contexto JavaScript do console" lightbox="../media/storage-console-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-console-local-storage.msft.png":::
        Alterar o contexto JavaScript do console  
     :::image-end:::  
     
 1.  Execute suas `localStorage` expressões no console, o mesmo que você faz em seu JavaScript.  
     
-    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interagir com o localStorage a partir do console" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
        Interagir com `localStorage` base no **console**  
     :::image-end:::  
     
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

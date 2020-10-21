@@ -3,16 +3,16 @@ description: Abra o console, crie uma expressão ao vivo e defina a expressão c
 title: Acompanhar Qual Elemento Tem o Foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993202"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125304"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Suponha que você esteja testando o acesso à navegação pelo teclado de uma p�
 Conclua as ações a seguir para acompanhar o elemento focalizado no DevTools.  
 
 1.  Abra o **console**.  
-1.  Clique em **criar expressão ao vivo** \ ( ![ criar expressão ao vivo ][ImageCreateIcon] \).  
+1.  Escolha **criar expressão ao vivo** \ ( ![ criar expressão ao vivo ][ImageCreateIcon] \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Criar uma expressão ao vivo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Criar uma expressão ao vivo  
@@ -49,10 +49,10 @@ O valor que você vê abaixo `document.activeElement` é o resultado da express�
 Como essa expressão sempre representa o elemento destaques, agora você tem uma maneira de sempre manter o controle de qual elemento está focalizado.  
 
 *   Passe o mouse sobre o resultado para realçar o elemento focalizado no visor.  
-*   Clique com o botão direito do mouse no resultado e selecione **revelar no painel de elementos** para mostrar o elemento na árvore DOM do painel **elementos** .  
-*   Clique com o botão direito do mouse no resultado e selecione **armazenar como variável global** para criar uma referência de variável para o nó que você pode usar no **console**.  
+*   Clique com o botão direito do mouse no resultado e escolha **revelar no painel de elementos** para mostrar o elemento na árvore DOM do painel **elementos** .  
+*   Clique com o botão direito do mouse no resultado e escolha **armazenar como variável global** para criar uma referência de variável para o nó que você pode usar no **console**.  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

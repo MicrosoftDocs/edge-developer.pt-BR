@@ -1,17 +1,18 @@
 ---
+description: Use a ferramenta problemas para localizar e corrigir problemas com o website.
 title: Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992817"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124723"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -52,9 +53,9 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Ou, se preferir, selecione **problemas** no menu **mais ferramentas** .  
+          Ou, se preferir, escolha **problemas** no menu **mais ferramentas** .  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Ferramenta problemas no menu mais ferramentas" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media//issues-more-tools-menu.msft.png":::
              Ferramenta **problemas** no menu **mais ferramentas**  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +63,13 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
     
 1.  Selecione o botão **recarregar página** , se necessário.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com o botão recarregar página" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Ferramenta **problemas** na gaveta devtools com o botão **recarregar página**  
     :::image-end:::  
 
     Os problemas relatados no **console** são muito difíceis de entender, como os avisos de cookies na imagem a seguir.  Com base nos problemas relatados, talvez não seja claro o que você deve fazer.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com três problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Ferramenta **problemas** na gaveta devtools com três problemas de cookies  
     :::image-end:::  
     
@@ -78,7 +79,7 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 
 1.  Selecione um item na ferramenta **problemas** para obter orientação sobre como corrigir o problema e localizar os recursos afetados.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar cookies entre sites como um problema seguro aberto na ferramenta problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Marcar cookies entre sites como** um problema seguro aberto na ferramenta **problemas**  
     :::image-end:::  
     
@@ -91,7 +92,7 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
     
 1.  Selecione itens em **recursos afetados** para exibir detalhes.  No exemplo a seguir, a **marca cookies entre sites como** um problema seguro afeta um cookie e duas solicitações.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afetados abertos na guia gaveta de problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Recursos afetados abertos na ferramenta **problemas** na gaveta do devtools  
     :::image-end:::  
     
@@ -99,17 +100,17 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 
 1.  Selecione um link de recurso para exibir o item no contexto apropriado no DevTools.  No exemplo a seguir, selecione `samesite-sandbox.glitch.me` em **solicitações** para mostrar os cookies anexados a essa solicitação.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Exibir o cookie afetado no painel de rede do DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-view-request.msft.png":::
        Exibir o cookie afetado no painel de **rede** do devtools  
     :::image-end:::  
 
 1.  Role para ver o item com um problema: para o exemplo a seguir, o `ck02` Cookie.  Passe o mouse sobre a coluna **SameSite** para ver o `None` valor detectado pelo problema.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Nenhum valor na coluna SameSite para o cookie ck02 no painel de rede do DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` valor na coluna **SameSite** para o `ck02` cookie no painel de **rede** devtools  
     :::image-end:::  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

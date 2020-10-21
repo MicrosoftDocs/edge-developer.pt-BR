@@ -3,16 +3,16 @@ description: Saiba como usar o Microsoft Edge e o DevTools para encontrar proble
 title: Corrigir problemas de memória
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1d8a24fc360dc307471be33544c9c707736be06d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992775"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125451"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,7 +63,7 @@ A chave aqui é usar o modelo de trilho e enfocar seus usuários.  Descubra quai
 
 Use o Gerenciador de tarefas do navegador Microsoft Edge como ponto de partida para a investigação do problema de memória.  O Gerenciador de tarefas do navegador Microsoft Edge é um monitor em tempo real que informa a quantidade de memória que uma página está usando no momento.  
 
-1.  Pressione `Shift` + `Esc` ou vá para o menu principal do Microsoft Edge e selecione **mais ferramentas**  >  **Gerenciador de tarefas do navegador** para abrir o Gerenciador de tarefas do navegador Microsoft Edge.  
+1.  Selecione `Shift` + `Esc` ou vá para o menu principal do Microsoft Edge e escolha **mais ferramentas**  >  **Gerenciador de tarefas do navegador** para abrir o Gerenciador de tarefas do navegador Microsoft Edge.  
     
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        Figura 1: abrindo o Gerenciador de tarefas do navegador Microsoft Edge  
@@ -71,7 +71,7 @@ Use o Gerenciador de tarefas do navegador Microsoft Edge como ponto de partida p
     
 1.  Passe o cursor do mouse sobre o cabeçalho da tabela do Gerenciador de tarefas do navegador Microsoft Edge, abra o menu contextual \ (clique com o botão direito do mouse \) e ative a **memória JavaScript**.  
     
-    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Habilitar a memória JavaScript" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
+    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        Figura 2: habilitar a memória JavaScript  
     :::image-end:::  
     
@@ -108,7 +108,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Toda vez que o botão referenciado no código for pressionado, os `div` nós do 10000 serão acrescentados ao corpo do documento, e uma cadeia de caracteres de 1 milhão `x` será colocada na `x` matriz.  Executar o exemplo de código anterior produz uma gravação no painel **desempenho** , como a figura a seguir.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Crescimento simples" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    Figura 3: crescimento simples  
 :::image-end:::  
 
@@ -144,7 +144,7 @@ Os instantâneos de pilha são uma maneira de identificar nós desanexados.  Com
 
 Para criar um instantâneo, abra o DevTools e vá para o painel **memória** , selecione o botão de opção **instantâneo de heap** e, em seguida, pressione o botão **criar instantâneo** .  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Criar instantâneo de heap" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
    Figura 4: criar um instantâneo de heap  
 :::image-end:::  
 
@@ -152,13 +152,13 @@ O instantâneo pode levar algum tempo para processar e carregar.  Após concluir
 
 Digite `Detached` a caixa de texto **filtro de classe** para pesquisar árvores dom desanexadas.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtragem de nós desconectados" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
    Figura 5: filtragem para nós desanexados  
 :::image-end:::  
 
 Expanda o carats para investigar uma árvore desanexada.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="Investigando a árvore desanexada" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
    Figura 6: investigando a árvore desanexada  
 :::image-end:::  
 
@@ -166,7 +166,7 @@ Expanda o carats para investigar uma árvore desanexada.
 
 Selecione um nó para investigar ainda mais.  No painel **objetos** , você pode ver mais informações sobre o código que o está fazendo referência a ele.  Por exemplo, na figura a seguir, você pode ver que a `detachedNodes` variável está fazendo referência ao nó.  Para corrigir esse vazamento de memória específico, você deve estudar o código que usa a `detachedUNode` variável e garantir que a referência ao nó seja removida quando não for mais necessária.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigando um nó" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figura 7: investigando um nó  
 :::image-end:::  
 
@@ -192,19 +192,19 @@ Para gravar uma instrumentação de alocação na linha do tempo, abra o DevTool
 
 Durante a gravação, observe se as barras azuis aparecem na instrumentação de alocação na linha do tempo, como na figura a seguir.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="Novas alocações" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
    Figura 8: novas atribuições  
 :::image-end:::  
 
 Essas barras azuis representam novas alocações de memória.  Essas novas atribuições de memória são seus candidatos para vazamentos de memória.  Você pode aplicar zoom em uma barra para filtrar o painel do **Construtor** para mostrar somente os objetos que foram atribuídos durante o período especificado.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="Linha do tempo de alocação ampliada" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
    Figura 9: linha do tempo de alocação ampliada  
 :::image-end:::  
 
 Expanda o objeto e selecione o valor para exibir mais detalhes no painel **objeto** .  Por exemplo, na figura a seguir, ao exibir os detalhes do objeto que foi recém atribuído, você deve ser capaz de ver que ele foi atribuído à `x` variável no `Window` escopo.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="Detalhes do objeto" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
    Figura 10: detalhes do objeto  
 :::image-end:::  
 
@@ -212,7 +212,7 @@ Expanda o objeto e selecione o valor para exibir mais detalhes no painel **objet
 
 Use o tipo de perfil de **amostragem de alocação** para exibir a alocação de memória por função de JavaScript.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="Amostragem de alocação de registros" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
    Figura 11: amostra de alocação de registros  
 :::image-end:::  
 
@@ -223,7 +223,7 @@ Use o tipo de perfil de **amostragem de alocação** para exibir a alocação de
 
 DevTools mostra uma divisão da alocação de memória por função.  O modo de exibição padrão é **pesado (abaixo)**, que exibe as funções que alocavam mais memória na parte superior.  
 
-:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="Amostragem de alocação" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="Abrir o Gerenciador de tarefas do navegador Microsoft Edge" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
    Figura 12: amostra de alocação  
 :::image-end:::  
 
@@ -234,6 +234,10 @@ Se a página parecer pausar com frequência, você poderá ter problemas com a c
 Você pode usar o Gerenciador de tarefas do navegador Microsoft Edge ou as gravações de memória de desempenho para identificar a coleta de lixo frequente.  No Gerenciador de tarefas do navegador Microsoft Edge, a **memória** em elevação e queda frequente ou valores de **memória JavaScript** representam coleta de lixo frequente.  Em gravações de desempenho, alterações frequentes \ (em elevação e queda \) na pilha do JS ou nos gráficos de contagem de nós indicam a coleta de lixo frequente.  
 
 Depois de identificar o problema, você poderá usar uma **Instrumentação de alocação na gravação da linha do tempo** para descobrir onde a memória está sendo alocada e quais funções estão causando as atribuições.  
+
+## Entrar em contato com a equipe Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

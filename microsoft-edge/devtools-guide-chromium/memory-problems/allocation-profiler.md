@@ -3,16 +3,16 @@ description: Use a instrumentação de alocação na linha do tempo para localiz
 title: Como usar a instrumentação de alocação na linha do tempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993503"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125444"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -56,7 +56,7 @@ Conclua as seguintes ações para começar a usar a **Instrumentação de aloca�
 1.  Abrir o painel **memória** , selecione o botão de opção **Instrumentação de alocação no cronograma** .  
 1.  Start recording.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Registrar alocações de atribuições de heap" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Instrumentação de alocação na linha do tempo" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Registrar alocações de atribuições de heap  
     :::image-end:::  
     
@@ -66,16 +66,16 @@ A linha do tempo de alocação de heap mostra onde os objetos estão sendo criad
 
 A altura de cada barra corresponde ao tamanho dos objetos alocados recentemente, e a cor das barras indica se esses objetos ainda estão ativos no instantâneo de heap final.  As barras azuis indicam objetos que ainda estão ao final da linha do tempo, as barras cinza indicam os objetos que foram atribuídos durante a linha do tempo, mas desde que foram coletadas pelo Garbage Collector.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentação de alocação no instantâneo da linha do tempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentação de alocação na linha do tempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
    **Instrumentação de alocação no instantâneo da linha do tempo**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-Você pode usar os controles deslizantes na linha do tempo acima para ampliar o instantâneo em particular e ver os objetos que foram alocados recentemente nesse ponto:  
+Você pode usar os controles deslizantes na linha do tempo acima para ampliar o instantâneo em particular e revisar os objetos que foram alocados recentemente nesse ponto:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Ampliar o instantâneo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Instrumentação de alocação na linha do tempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Ampliar o instantâneo  
 :::image-end:::  
 
@@ -83,9 +83,9 @@ Clicar em um objeto específico na heap mostra a árvore de retenção na parte 
 
 ## Exibir a alocação de memória por função  
 
-Você pode visualizar a alocação de memória por meio da função JavaScript.  Para obter mais informações, consulte [investigar a alocação de memória por função][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Você pode visualizar a alocação de memória por meio da função JavaScript.  Para obter mais informações, navegue até [investigar a alocação de memória por função][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

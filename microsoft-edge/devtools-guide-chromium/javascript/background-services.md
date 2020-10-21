@@ -3,16 +3,16 @@ description: Como depurar a busca em segundo plano, sincronização em segundo p
 title: Depurar serviços em segundo plano com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 1724bd3a5e45734555650c3d46e377161a3a7c65
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: fb5e408eb261ae3b2145780a1d7d5566c4501936
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992866"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124814"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,13 +27,7 @@ ms.locfileid: "10992866"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Depurar serviços em segundo plano com o Microsoft Edge DevTools   
-
-
+# Depurar serviços em segundo plano com o Microsoft Edge DevTools  
 
 A seção **serviços em segundo plano** do Microsoft Edge devtools é uma coleção de ferramentas para APIs JavaScript que permite que seu site envie e Receba atualizações mesmo quando um usuário não tem seu site aberto.  
 Um serviço em segundo plano é funcionalmente semelhante a um [processo em segundo plano] [WikiBackgroundProcess].  
@@ -47,13 +41,13 @@ O Microsoft Edge DevTools considera que cada uma das seguintes APIs seja um serv
 O Microsoft Edge DevTools pode registrar eventos de serviço em segundo plano por 3 dias, mesmo quando DevTools não está aberto.  
 Isso pode ajudá-lo a garantir que os eventos sejam enviados e recebidos como esperado.  Você também pode inspecionar os detalhes de cada evento.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Exibir os detalhes de um evento no painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   Exibir os detalhes de um evento no painel de **mensagens Push**  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   O painel de **mensagens Push**  
 :::image-end:::  
 
-## Busca em segundo plano   
+## Busca em segundo plano  
 
-A *API de busca em segundo plano** permite que um **trabalhador de serviço** Baixe recursos grandes, como filmes ou podcasts, como um serviço em segundo plano.  Para registrar o evento de busca em segundo plano por 3 dias, mesmo quando o DevTools não está aberto:  
+A **API de busca em segundo plano** permite que um **trabalhador de serviço** Baixe com confiança recursos grandes, como filmes ou podcasts, como um serviço em segundo plano.  Para registrar o evento de busca em segundo plano por 3 dias, mesmo quando o DevTools não está aberto:  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -61,24 +55,24 @@ A *API de busca em segundo plano** permite que um **trabalhador de serviço** Ba
 1.  Abrir o painel do **aplicativo** .  
 1.  Abrir o painel **busca em segundo plano** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="O painel busca em segundo plano" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        O painel **busca em segundo plano**  
     :::image-end:::  
     
-1.  Clique em **gravar** \ ( ![ registro ][ImageRecordIcon] \).  
+1.  Escolha **registro** \ ( ![ registro ][ImageRecordIcon] \).  
    Depois de disparar uma atividade de busca em segundo plano, o DevTools registra os eventos na tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Um log de eventos no painel de busca em segundo plano" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
        Um log de eventos no painel de **busca em segundo plano**  
     :::image-end:::  
     
 1.  Clique em um evento para ver os detalhes no espaço abaixo da tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Exibir os detalhes de um evento no painel de busca em segundo plano" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        Exibir os detalhes de um evento no painel de **busca em segundo plano**  
     :::image-end:::  
     
-## Sincronização em segundo plano   
+## Sincronização em segundo plano  
 
 A **API de sincronização em segundo plano** permite que um **trabalhador de serviço** offline envie dados para um servidor depois que ele restabeleceu uma conexão com a Internet confiável.  Para registrar eventos de sincronização em segundo plano por 3 dias, mesmo quando o DevTools não está aberto:  
 
@@ -88,24 +82,24 @@ A **API de sincronização em segundo plano** permite que um **trabalhador de se
 1.  Abrir o painel do **aplicativo** .  
 1.  Abrir o painel **sincronização em segundo plano** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="O painel sincronização em segundo plano" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        O painel **sincronização em segundo plano**  
     :::image-end:::  
     
-1.  Clique em **gravar** \ ( ![ registro ][ImageRecordIcon] \).  
+1.  Escolha **registro** \ ( ![ registro ][ImageRecordIcon] \).  
    Depois de disparar uma atividade de sincronização em segundo plano, o DevTools registra os eventos na tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Um log de eventos no painel sincronização em segundo plano" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
        Um log de eventos no painel **sincronização em segundo plano**  
     :::image-end:::  
     
 1.  Clique em um evento para ver os detalhes no espaço abaixo da tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Exibir os detalhes de um evento no painel sincronização em segundo plano" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        Exibir os detalhes de um evento no painel **sincronização em segundo plano**  
     :::image-end:::  
     
-## Notificações 
+## Notificações  
 
 Depois que um **trabalhador do serviço** recebeu uma mensagem de [envio][MDNPush] de um servidor, o trabalhador do serviço usa a API de [notificações][MDNNotifications] para exibir os dados para um usuário.  Para registrar notificações por três dias, mesmo quando o DevTools não estiver aberto:  
 
@@ -113,24 +107,24 @@ Depois que um **trabalhador do serviço** recebeu uma mensagem de [envio][MDNPus
 1.  Abrir o painel do **aplicativo** .  
 1.  Abrir o painel **notificações** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="O painel notificações" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        O painel **notificações**  
     :::image-end:::  
     
-1.  Clique em **gravar** \ ( ![ registro ][ImageRecordIcon] \).  
+1.  Escolha **registro** \ ( ![ registro ][ImageRecordIcon] \).  
    Depois de disparar algumas atividades de notificações, o DevTools registra os eventos na tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Um log de eventos no painel notificações" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        Um log de eventos no painel **notificações**  
     :::image-end:::  
     
 1.  Clique em um evento para ver os detalhes no espaço abaixo da tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Exibir os detalhes de um evento no painel notificações" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        Exibir os detalhes de um evento no painel **notificações**  
     :::image-end:::  
     
-## Enviar mensagens por push 
+## Enviar mensagens por push  
 
 Para exibir uma notificação por push para um usuário, um **trabalhador de serviço** deve primeiro usar a API de [mensagem Push][MDNPush] para receber dados de um servidor.  Quando o trabalhador do serviço está pronto para exibir a notificação, ele usa a [API de notificações][MDNNotifications].  Para registrar mensagens por Push por 3 dias, mesmo quando o DevTools não está aberto:  
 
@@ -139,27 +133,25 @@ Para exibir uma notificação por push para um usuário, um **trabalhador de ser
 1.  Abrir o painel de **mensagens Push** .  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       O painel de **mensagens Push**  
+       Abrir o painel de **mensagens Push**  
     :::image-end:::  
     
-1.  Clique em **gravar** \ ( ![ registro ][ImageRecordIcon] \).  
+1.  Escolha **registro** \ ( ![ registro ][ImageRecordIcon] \).  
     Depois de disparar uma atividade de mensagem por push, o DevTools registra os eventos na tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Um log de eventos no painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        Um log de eventos no painel de **mensagens Push**  
     :::image-end:::  
     
 1.  Clique em um evento para ver os detalhes no espaço abaixo da tabela.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Exibir os detalhes de um evento no painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="O painel de mensagens push" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        Exibir os detalhes de um evento no painel de **mensagens Push**  
     :::image-end:::  
     
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

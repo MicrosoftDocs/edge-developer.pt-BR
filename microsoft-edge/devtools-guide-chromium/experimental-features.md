@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
-ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
+ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094925"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124891"
 ---
 # Recursos experimentais  
 
@@ -25,7 +25,7 @@ Embora os recursos experimentais estejam disponíveis em todos os canais do Micr
 Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, use as etapas a seguir.  
 
 1.  [Abra o devtools][DevtoolsOpen].  
-     *   Selecione `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+     *   Selecione `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Abra o painel [configurações][DevToolsCustomizeSettings] .  
     *   Selecione `Shift` + `?` .  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  No lado esquerdo do painel **configurações** , escolha a seção **experimentos** .  
@@ -195,7 +195,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 1.  Localize a solicitação de rede que você deseja alterar e envie novamente.  
 1.  Abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **Editar e reproduzir**.  
 1.  Quando o **console de rede** for aberto, edite as informações de solicitação de rede.  
-1.  Selecione **Enviar**.  
+1.  Escolha **Enviar**.  
 
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/network-network-console.msft.png":::
    **Console de rede** na gaveta do **console**  

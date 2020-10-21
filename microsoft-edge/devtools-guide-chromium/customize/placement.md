@@ -3,16 +3,16 @@ description: Como mover o Microsoft Edge DevTools para a parte inferior ou esque
 title: Alterar o posicionamento do Microsoft Edge DevTools (desencaixar, encaixar na parte inferior, encaixar à esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993006"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125045"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993006"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Alterar o posicionamento do Microsoft Edge DevTools (desencaixar, encaixar na parte inferior, encaixar à esquerda)   
-
-
+# Alterar o posicionamento do Microsoft Edge DevTools (desencaixar, encaixar na parte inferior, encaixar à esquerda)  
 
 Por padrão, o DevTools está encaixado à direita do seu visor.  Você também pode encaixar na parte inferior, encaixar à esquerda ou desencaixar o DevTools em uma janela separada.  
 
@@ -45,46 +39,44 @@ Por padrão, o DevTools está encaixado à direita do seu visor.  Você também 
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Selecionar encaixe na parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
          Selecionar `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navegador em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
          Navegador em janela separada  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools desencaixada em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
          DevTools desencaixada em janela separada  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Alterar o posicionamento a partir do menu principal   
+## Alterar o posicionamento a partir do menu principal  
 
-1.  Clique em **Personalizar e controle devtools** \ ( `...` \) e selecione **desencaixar em janela separada** \ ( ![ desencaixar ][ImageUndockIcon] \), **encaixar na parte inferior** \ ( ![ encaixar a parte inferior ][ImageBottomIcon] \) ou **encaixar à esquerda** \ ( ![ encaixar à esquerda ][ImageLeftIcon] \).  
+1.  Escolha **Personalizar e controle devtools** \ ( `...` \) e escolha **desencaixar em janela separada** \ ( ![ desencaixar ][ImageUndockIcon] \), **encaixar na parte inferior** \ ( ![ encaixar a parte inferior ][ImageBottomIcon] \) ou **encaixar à esquerda** \ ( ![ encaixar à esquerda ][ImageLeftIcon] \).  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecione desencaixar em uma janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Selecione **desencaixar em uma janela separada**  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Escolha **desencaixar em uma janela separada**  
     :::image-end:::  
     
-## Alterar o posicionamento no menu de comando   
+## Alterar o posicionamento no menu de comando  
 
 1.  [Abrir o menu de comandos][DevtoolsCommandMenu].  
 1.  Execute um dos seguintes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  No momento, não há um comando para encaixar à esquerda, mas você pode acessá-lo no [menu principal](#change-placement-from-the-main-menu).  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando desencaixar" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Selecionar encaixe à esquerda" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        O comando desencaixar  
     :::image-end:::  
     
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -4,16 +4,16 @@ ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 09/01/2020
-ms.openlocfilehash: 52fab56b92ffd19d4db1968e337ab2c5f93f6ae7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: abd837417098aa6d665bb112f99085ff2473b4ca
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992698"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124674"
 ---
 Use as opções a seguir para discutir os novos recursos e alterações na postagem ou em qualquer outro item relacionado ao DevTools.  
 
-*   Envie seus comentários usando o ícone **enviar comentários** ou selecione `Alt` + `Shift` + `I` \ (Windows \) ou `Option` + `Shift` + `I` \ (MacOS \) no devtools.  
+*   Envie seus comentários usando o ícone **enviar comentários** ou selecione `Alt` + `Shift` + `I` \ (Windows, Linux \) ou `Option` + `Shift` + `I` \ (MacOS \) no devtools.  
 *   Tweet em [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Envie uma sugestão para [a Web que][TheWebWeWant]queremos.  
 *   Arquivo de erros neste artigo usando a seção de [comentários](#feedback) .  

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 50c4fa578ffa1738649496176cda2611625908b8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003933"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125318"
 ---
 # Ferramentas de desenvolvedor do Microsoft Edge (Chromium)  
 
@@ -43,15 +43,15 @@ diretamente no navegador.  Esses são apenas exemplos de alguns dos recursos que
 Para abrir o DevTools  
 
 *   pressionado `F12` 
-*   Pressione `Ctrl` + `Shift` + `I` no Windows \ ( `Command` + `Option` + `I` no MacOS \)  
+*   Pressione `Ctrl` + `Shift` + `I` no Windows/Linux \ ( `Command` + `Option` + `I` no MacOS \)  
 
-Se você quiser ver o HTML ou CSS de um elemento em seu site, clique com o botão direito do mouse no elemento e selecione **inspecionar** para saltar para o painel elementos.  Você também pode pressionar `Ctrl` + `Shift` + `C` o Windows \ ( `Command` + `Option` + `C` no MacOS \) para abrir o devtools no **modo inspecionar elemento** , que permite selecionar um elemento no site e ver o HTML e CSS no painel de **elementos** .  
+Se você quiser ver o HTML ou CSS de um elemento em seu site, clique com o botão direito do mouse no elemento e selecione **inspecionar** para saltar para o painel elementos.  Você também pode pressionar `Ctrl` + `Shift` + `C` Windows/Linux \ ( `Command` + `Option` + `C` no MacOS \) para abrir o devtools no **modo inspecionar elemento** , que permite selecionar um elemento no site e ver o HTML e CSS no painel de **elementos** .  
 
-Se você quiser ver os logs do seu código JavaScript front-end ou executar um script rapidamente, pressione `Ctrl` + `Shift` + `J` no Windows ou `Command` + `Option` + `J` no MacOS para iniciar o painel de console no devtools.  
+Se você quiser ver os logs do seu código JavaScript front-end ou executar um script rapidamente, pressione `Ctrl` + `Shift` + `J` no Windows/Linux ou `Command` + `Option` + `J` no MacOS para iniciar o painel do console no devtools.  
 
 ## Ferramentas principais  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Ferramentas principais do Microsoft Edge (Chromium) DevTools":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
    Ferramentas principais do Microsoft Edge (Chromium) DevTools  
 :::image-end::: 
 
@@ -80,7 +80,7 @@ Você pode ter usado extensões para o DevTools para ajudá-lo a diagnosticar e 
 
 Você também pode adicionar extensões da [loja da Web Chrome][GoogleChromeWebstoreExtensions].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Loja da Web do Chrome no Microsoft Edge":::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools":::
    Loja da Web do Chrome no Microsoft Edge  
 :::image-end:::  
 
@@ -91,60 +91,4 @@ Na parte superior, selecione **permitir extensões de outras lojas** e, em segui
 
 Selecione **Adicionar ao Chrome** para adicionar sua extensão devtools ao Microsoft Edge!  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Adicionando extensão do Chrome Web Store ao Microsoft Edge":::
-   Adicionando extensão do Chrome Web Store ao Microsoft Edge  
-:::image-end:::  
-
-## Teclado  
-
-Esses atalhos controlam a janela principal do DevTools, funcionam em todas as ferramentas ou em ambos.  
-
-| Ação | Windows | macOS |  
-|:--- |:--- | :--- |  
-| Mostrar/Ocultar DevTools \(abre para o último painel exibido\) | `F12` or `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Mostrar o painel de console | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Mostrar o DevTools no **modo inspecionar elemento** que permite que você selecione um elemento no site e veja HTML e CSS no painel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
-| Mostrar configurações | `?` or `Fn`+`F1` | `?` or `Fn`+`F1` |  
-| Mostrar o próximo painel | `Ctrl`+`]` | `Command`+`]` |  
-| Mostrar o painel anterior | `Ctrl`+`[` | `Command`+`[` |  
-| Encaixe o DevTools na última posição usada.  Se o DevTools permanecer na posição padrão para toda a sessão, esse atalho desencaixará o DevTools em uma janela separada | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Alternar o **modo de dispositivo** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Alternar o **modo inspecionar elemento** , que permite selecionar um elemento no site e ver o HTML e CSS no painel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
-| Mostrar o menu de comandos | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
-| Mostrar/ocultar a gaveta | `Esc` | `Esc` |  
-| Atualize.  Isso atualiza a página usando o cache.  | `F5` or `Ctrl`+`R` | `Command`+`R` |  
-| Atualização de hardware.  Isso obriga o Microsoft Edge a baixar recursos novamente e recarregar.  É possível que os recursos usados sejam provenientes de uma versão em cache | `Ctrl`+`F5` or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Pesquisar texto dentro do painel atual.  Não é compatível com os painéis auditorias, aplicativo e segurança | `Ctrl`+`F` | `Command`+`F` |  
-| Mostrar o painel de pesquisa na gaveta, o que permite Pesquisar texto em todos os recursos carregados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir um arquivo no painel fontes | `Ctrl`+`O` or `Ctrl`+`P` | `Command`+`O` or `Command`+`P` |  
-| Ampliar | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
-| Reduzir | `Ctrl`+`-` | `Command`+`-` |  
-| Restaurar o nível de zoom padrão | `Ctrl`+`0` | `Command`+`0` |  
-| Executar trecho | `Ctrl`+`O`ou `Ctrl` + `P` , digite `!` seguido do nome do script e pressione `Enter` | Pressione `Command` + `O` ou `Command` + `P` , digite `!` seguido do nome do script e pressione `Enter` |  
-| Mostrar código-fonte HTML não editável em uma nova guia | `Ctrl`+`U` | N/D |  
-
-> [!NOTE]
-> Se você estiver Depurando e pausado em um ponto de interrupção, o atalho de **atualização** retomará o tempo de execução primeiro.  
-
-## Consulte também  
-
-*   [DevTools para iniciantes: introdução ao HTML e ao DOM][DevtoolsGuideChromiumBeginnersHtml]  
-*   [Protocolo de DevTools Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
-
-## Entrar em contato com a equipe Microsoft Edge DevTools  
-
-[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
-
-Se você quiser visualizar os [recursos mais recentes que chegam ao devtools][DevtoolsGuideChromiumWhatsNewIndex], baixe o [Microsoft Edge Canárias][MicrosoftedgeinsiderDownload], que é criado à noite.  
-
-<!-- links -->  
-
-[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para iniciantes: introdução ao HTML e ao DOM | Documentos da Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools "O que há de novo no Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
-[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (Chromium) | Documentos da Microsoft"  
-
-[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos do Microsoft Edge"  
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Baixar canais do Microsoft Edge Insider"  
-
-[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensões | Loja da Web Chrome"  
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools"  

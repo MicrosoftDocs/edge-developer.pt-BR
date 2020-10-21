@@ -3,16 +3,16 @@ description: Use o painel de segurança para garantir que uma página seja total
 title: Entender problemas de segurança com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2538f80b08c8162d27f075775075a8b81c5f7725
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 09f7e641ddd8da74c361980b9ce61b212a8477fe
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993573"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125381"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993573"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Entender problemas de segurança com o Microsoft Edge DevTools   
+# Entender problemas de segurança com o Microsoft Edge DevTools  
 
   
 
@@ -40,24 +36,24 @@ ms.locfileid: "10993573"
 
 <!--todo: add section when why-https is available -->  
 
-## Abrir o painel de segurança   
+## Abrir o painel de segurança  
 
 O painel de **segurança** é o local principal no devtools para inspecionar a segurança de uma página.  
 
 1.  [Abra o devtools][DevToolsOpen].  
-1.  Clique na guia **segurança** para abrir o painel **segurança** .  
+1.  Escolha a guia **segurança** para abrir o painel de **segurança** .  
     
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-secure.msft.png":::
        O painel de **segurança**  
     :::image-end:::  
     
-## Problemas comuns   
+## Problemas comuns  
 
-### Origens principais não seguras   
+### Origens principais não seguras  
 
 Quando a origem principal de uma página não é segura, a **visão geral da segurança** diz que **esta página não é segura**.  
 
-:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Uma página não segura" lightbox="../media/security-security-overview-non-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-non-secure.msft.png":::
    Uma página não segura  
 :::image-end:::  
 
@@ -70,50 +66,46 @@ Se você não configurou HTTPS em seu servidor, [vamos criptografar][LetsEncrypt
 > [!TIP]
 > A dica [use HTTPS][WebhintUseHttps] na [webhint][Webhint] pode ajudar a automatizar o processo de verificar se todas as solicitações HTTP são direcionadas para https.  
 
-### Conteúdo misto   
+### Conteúdo misto  
 
 **Conteúdo misto** significa que a origem principal de uma página é segura, mas a página solicitou recursos de origens não seguras.  Páginas de conteúdo misto são apenas parcialmente protegidas porque o conteúdo HTTP está acessível a farejadores e vulneráveis a ataques de Man-in-the-Middle.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Conteúdo misto" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Conteúdo misto  
 :::image-end:::  
 
-Na figura anterior, clique em **Exibir 1 solicitação no painel de rede** para abrir o painel de **rede** e aplicar o `mixed-content:displayed` filtro para que o **log de rede** mostre apenas os recursos não seguros.  
+Na figura anterior, escolha **exibir uma solicitação no painel de rede** para abrir o painel de **rede** e aplicar o `mixed-content:displayed` filtro para que o **log de rede** mostre apenas os recursos não seguros.  
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Recursos mistos no log de rede" lightbox="../media/security-network-filter.msft.png":::
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="O painel de segurança" lightbox="../media/security-network-filter.msft.png":::
    Recursos mistos no **log de rede**  
 :::image-end:::  
 
-## Exibir detalhes   
+## Exibir detalhes  
 
-### Exibir certificado de origem principal   
+### Exibir certificado de origem principal  
 
-Na **visão geral de segurança**, clique em **Exibir certificado** para inspecionar rapidamente o certificado para a origem principal.  
+Na **visão geral de segurança**, escolha **Exibir certificado** para inspecionar rapidamente o certificado para a origem principal.  
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Um certificado de origem principal" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    Um certificado de origem principal  
 :::image-end:::  
 
-### Exibir detalhes da origem   
+### Exibir detalhes da origem  
 
 Clique em uma das entradas na barra de navegação à esquerda para exibir os detalhes da origem.  Na página detalhes, você pode exibir informações de conexão e certificado.  As informações sobre transparência do certificado também são mostradas quando disponíveis.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Detalhes da origem principal" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Detalhes da origem principal  
 :::image-end:::  
 
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 [DevToolsOpen]: ../open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
-
-
 [LetsEncrypt]: https://letsencrypt.org "Vamos criptografar certificados SSL/TLS grátis"  
 
 [Webhint]: https://webhint.io "webhint"  

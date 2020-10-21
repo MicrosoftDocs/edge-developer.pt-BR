@@ -3,16 +3,16 @@ description: Abra a guia sensores e vá para a seção orientação.
 title: Simular a orientação do dispositivo com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 42b58ef2d4b132eedad2663287894e25e72b2572
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992929"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124954"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,34 +34,34 @@ Conclua as seguintes ações para simular orientações de dispositivo diferente
 
 <!--todo: update device orientation section when available -->  
 
-1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comandos**.  
+1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
        O **menu de comando**  
     :::image-end:::  
     
-1.  Tipo `sensors` , selecione **Mostrar sensores**e pressione `Enter` .  A guia **sensores** é aberta na parte inferior da janela do devtools.  
-1.  Na lista **orientação** , selecione uma das orientações predefinidas, como `Portrait upside down` ou escolha **orientação personalizada** para fornecer sua orientação exata.  
+1.  Digite `sensors` , escolha **Mostrar sensores**e selecione `Enter` .  A guia **sensores** é aberta na parte inferior da janela do devtools.  
+1.  Na lista **orientação** , selecione uma das orientações predefinidas, por exemplo `Portrait upside down` , ou escolha **orientação personalizada** para fornecer sua orientação exata.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Selecionar retrato de cabeça para baixo na lista orientação" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
              Selecionar `Portrait upside down` na lista **orientação**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Depois de selecionar **orientação personalizada**, os `alpha` `beta` campos, e `gamma` são habilitados.  
+          Depois que você escolhe **orientação personalizada**, `alpha` os `beta` campos, e `gamma` são habilitados.  
           <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           Você também pode definir uma orientação personalizada arrastando o modelo de **orientação**.  Segure `Shift` antes de arrastar para girar ao longo do `alpha` eixo.  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="O modelo de orientação" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
              O **modelo de orientação**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

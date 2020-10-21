@@ -3,16 +3,16 @@ description: Saiba como registrar instantâneos de heap com o Microsoft Edge Dev
 title: Como gravar instantâneos de pilha
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 15692b0258de6db66c0b58a2659348a6e849aaca
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 9762cb1d4932ce1a5d0b1c3944aa0b85d78b1060
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993468"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125458"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -36,7 +36,7 @@ O gerador de perfil de heap do Microsoft Edge DevTools mostra a distribuição d
 
 ## Fazer um instantâneo  
 
-No painel **memória** , escolha **tirar instantâneo**e clique em **Iniciar**.  Você também pode pressionar `Ctrl` + `E` \ (Windows \) ou `Cmd` + `E` \ (MacOS \).  
+No painel **memória** , escolha **tirar instantâneo**e escolha **Iniciar**.  Você também pode selecionar `Ctrl` + `E` \ (Windows, Linux \) ou `Cmd` + `E` \ (MacOS \).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    Selecionar o tipo de perfil  
@@ -46,7 +46,7 @@ Os **instantâneos** são inicialmente armazenados na memória do processo de re
 
 Após o instantâneo ser carregado no DevTools e ter sido analisado, o número abaixo do título do instantâneo será exibido e mostrará o [Tamanho total dos objetos JavaScript acessíveis][DevtoolsMemoryProblems101ObjectSizes].  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Tamanho total dos objetos acessíveis" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
    Tamanho total dos objetos acessíveis  
 :::image-end:::  
 
@@ -55,9 +55,9 @@ Após o instantâneo ser carregado no DevTools e ter sido analisado, o número a
 
 ## Limpar instantâneos  
 
-Clique no ícone **limpar todos os perfis** para remover instantâneos \ (ambos do devtools e qualquer memória associada ao processo de renderizador \).  
+Escolha limpar o ícone de **todos os perfis** para remover instantâneos \ (ambos do devtools e qualquer memória associada ao processo de renderizador \).  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remover instantâneos" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    Remover instantâneos  
 :::image-end:::  
 
@@ -80,7 +80,7 @@ O **modo de exibição de resumo** mostra objetos agrupados pelo nome do constru
 
 Para alternar entre os modos de exibição, use o seletor na parte superior do modo de exibição.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Alternar seletor de modos de exibição" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
    Alternar seletor de modos de exibição  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Para alternar entre os modos de exibição, use o seletor na parte superior do m
 
 Inicialmente, um instantâneo é aberto no modo de exibição de resumo, exibindo totais de objetos, que podem ser expandidos para mostrar instâncias:  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Modo de exibição Resumo" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
    Modo de exibição **Resumo**  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Lembre-se de que os objetos amarelos têm referências JavaScript e os objetos v
 
 **Quais são as várias entradas do Construtor \ (Grupo \) no perfil de heap que correspondem a?**  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Grupos de Construtor" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    Grupos de **Construtor**  
 :::image-end:::  
 
@@ -138,7 +138,7 @@ Encontre objetos vazados comparando vários instantâneos.  Para verificar se um
     
 Na exibição **comparação** , a diferença entre dois instantâneos é exibida.  Ao expandir uma entrada de total, instâncias de objetos adicionadas e excluídas são mostradas.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Modo de exibição comparação" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
    Modo de exibição **comparação**  
 :::image-end:::  
 
@@ -154,7 +154,7 @@ O modo de exibição de **detenção** é essencialmente um "modo de exibição 
 | **Raízes GC** | As raízes GC reais usadas pelo lixo da VM.  As raízes de GC são compostas de mapas de objetos internos, tabelas de símbolos, pilhas de threads de VM, caches de compilação, escopos de manipulação e identificadores globais.  |  
 | **Objetos nativos** | Objetos do navegador "pressionados" dentro da máquina virtual JavaScript \ (JavaScript VM \) para permitir a automação, por exemplo, nós DOM, regras de CSS.  |  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Modo de exibição de contenção" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
    Modo de exibição de **contenção**  
 :::image-end:::  
 
@@ -186,7 +186,7 @@ O modo de exibição de **detenção** é essencialmente um "modo de exibição 
 > ```  
 > 
 > <!--  
-> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-domleaks.msft.png":::
 >    Name functions to distinguish between closures  
 > :::image-end:::  
 > -->  
@@ -235,7 +235,7 @@ leafRef = null;
 
 O `#leaf` mantém uma referência para o pai (ParentNode \) relevante e, recursivamente `#tree` , apenas quando leafRef é nullified é a árvore inteira em `#tree` um candidato para GC.  
 
-:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Subárvores DOM" lightbox="../media/memory-problems-tree-gc.msft.png":::
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Selecionar o tipo de perfil" lightbox="../media/memory-problems-tree-gc.msft.png":::
    Subárvores DOM  
 :::image-end:::  
 
@@ -251,7 +251,7 @@ Para ler mais sobre vazamentos de DOM e fundamentos de análise de memória, des
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

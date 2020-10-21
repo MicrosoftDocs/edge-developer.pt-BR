@@ -3,16 +3,16 @@ description: Como localizar e analisar o código JavaScript e CSS não utilizado
 title: Localizar código JavaScript e CSS não usados com a guia cobertura no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 19bc15578e00e5a9f3389529f589e9790280a0e4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993090"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125185"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993090"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Localizar código JavaScript e CSS não usados com a guia cobertura no Microsoft Edge DevTools   
-
-
+# Localizar código JavaScript e CSS não usados com a guia cobertura no Microsoft Edge DevTools  
 
 A guia cobertura no Microsoft Edge DevTools ajuda você a localizar código JavaScript e CSS não utilizados.  A remoção de um código não usado pode acelerar a carga da página e salvar os dados da rede celular dos seus usuários móveis.  
 
@@ -45,7 +39,7 @@ A guia cobertura no Microsoft Edge DevTools ajuda você a localizar código Java
 > [!WARNING]
 > Localizar código não usado é relativamente fácil.  Mas refatorar uma codebase para que cada página só entregue o JavaScript e o CSS necessários, pode ser difícil.  Este guia não aborda como refatorar uma codebase para evitar código não usado, pois esses refactores dependem muito do seu conjunto de tecnologias.  
 
-## Visão geral   
+## Visão geral  
 
 O envio de JavaScript ou CSS não usado é um problema comum no desenvolvimento na Web.  Por exemplo, suponha que você queira usar o [componente botão Bootstrap][BootstrapButtons] na página.  Para usar o componente Button, você precisa adicionar um link para a folha de estilo Bootstrap em seu HTML, assim:  
 
@@ -66,27 +60,27 @@ Essa folha de estilos não inclui apenas o código do componente Button.  Ele co
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Abrir a guia cobertura   
+## Abrir a guia cobertura  
 
 1.  [Abrir o menu de comandos][DevToolsCommandMenu].  
-1.  Comece `coverage` a digitar, selecione o comando **Mostrar cobertura** e pressione `Enter` para executar o comando.  A guia **cobertura** é aberta na **gaveta**.  
+1.  Comece `coverage` a digitar, selecione o comando **Mostrar cobertura** e, em seguida, selecione `Enter` para executar o comando.  A guia **cobertura** é aberta na **gaveta**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="A guia cobertura" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analisando cobertura de código" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        A guia **cobertura**  
     :::image-end:::  
     
-## Cobertura de código de registro   
+## Cobertura de código de registro  
 
 1.  Clique em um dos seguintes botões na guia **cobertura** :  
-    *   Clique em **Iniciar cobertura de instrumentação e recarregar página** \ ( ![ Iniciar cobertura de instrumentação e carregar página ][ImageReloadIcon] \) se você quiser ver qual código é necessário para carregar a página.  
-    *   Clique em **cobertura do instrumento** \ (cobertura do ![ instrumento ][ImageRecordIcon] \) se você quiser ver qual código será usado depois de interagir com a página.  
-1.  Clique em **interromper a cobertura de instrumentação e mostrar resultados** \ ( ![ interromper a cobertura de instrumentação e mostrar resultados ][ImageStopIcon] \) quando quiser parar de gravar a cobertura de código.  
+    *   Escolha **Iniciar cobertura de instrumentação e carregar página** \ ( ![ Iniciar cobertura de instrumentação e carregar página ][ImageReloadIcon] \) se você quiser ver qual código é necessário para carregar a página.  
+    *   Escolha **cobertura do instrumento** \ ( ![ cobertura do instrumento ][ImageRecordIcon] \) se você quiser ver qual código será usado depois de interagir com a página.  
+1.  Escolha **interromper a cobertura de instrumentação e mostrar resultados** \ ( ![ interromper a cobertura de instrumentação e mostrar resultados ][ImageStopIcon] \) quando quiser parar de gravar a cobertura de código.  
     
-## Analisar cobertura de código   
+## Analisar cobertura de código  
 
 A tabela na guia **cobertura** mostra quais recursos foram analisados e quanto de código é usado dentro de cada recurso.  Clique em uma linha para abrir esse recurso no painel **fontes** e ver uma divisão linha por linha de código usado e código não usado.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Um relatório de cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analisando cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Um relatório de cobertura de código  
 :::image-end:::  
 
@@ -96,11 +90,9 @@ A tabela na guia **cobertura** mostra quais recursos foram analisados e quanto d
 *   A coluna **bytes não utilizados** é o número de bytes que não foram usados.  
 *   A última coluna sem nome é uma visualização das colunas **total de bytes** e **bytes não utilizados** .  A seção vermelha da barra é bytes não utilizados.  A seção verde é usada bytes.  
     
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

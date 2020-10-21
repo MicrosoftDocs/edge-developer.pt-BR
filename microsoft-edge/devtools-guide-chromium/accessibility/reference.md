@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos de acessibilidade no Micros
 title: Referência de acessibilidade
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993265"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125311"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,25 +74,25 @@ Para fazer auditoria em uma página:
     > [!NOTE]
     > As capturas de tela desta seção foram tiradas com a versão 79 do Microsoft Edge.  Você pode verificar qual versão está executando em `edge://version` .  A interface do usuário do painel **auditoria** tem uma aparência diferente nas versões anteriores do Microsoft Edge, mas o fluxo de trabalho geral é o mesmo.  
     
-1.  Para **dispositivo**, selecione **móvel** se desejar simular um dispositivo móvel.  Essa opção muda a cadeia de caracteres do seu agente de usuário e redimensiona o visor.  Se a versão móvel da página for exibida de forma diferente da versão para área de trabalho, essa opção poderá ter um efeito significativo nos resultados da sua auditoria.  
+1.  Em **dispositivo**, escolha **celular** se desejar simular um dispositivo móvel.  Essa opção muda a cadeia de caracteres do seu agente de usuário e redimensiona o visor.  Se a versão móvel da página for exibida de forma diferente da versão para área de trabalho, essa opção poderá ter um efeito significativo nos resultados da sua auditoria.  
 1.  Na seção **auditorias** , certifique-se de que **acessibilidade** está ativada.  Desabilite as outras categorias se desejar excluí-las do relatório.  Deixe-os habilitados se você quiser descobrir outras maneiras de melhorar a qualidade da página.  
 1.  A seção **throttling** permite que você controle a rede e a CPU, o que é útil para analisar o desempenho da carga.  Essa opção deve ser irrelevante para a pontuação de acessibilidade, portanto, você pode usar o que preferir.  
 1.  A caixa de seleção **limpar armazenamento** permite limpar todo o armazenamento antes de carregar a página ou preservar o armazenamento entre as cargas da página.  Essa opção também é provavelmente irrelevante para a pontuação de acessibilidade, portanto, você pode usar o que preferir.  
-1.  Clique em **executar auditorias**. Após 10 a 30 segundos, o DevTools fornece um relatório.  Seu relatório oferece várias dicas sobre como melhorar a acessibilidade da página.  
+1.  Escolha **executar auditorias**. Após 10 a 30 segundos, o DevTools fornece um relatório.  Seu relatório oferece várias dicas sobre como melhorar a acessibilidade da página.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Um relatório" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        Um relatório  
     :::image-end:::  
     
 1.  Clique em uma auditoria para saber mais sobre isso.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Mais informações sobre uma auditoria" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
        Mais informações sobre uma auditoria  
     :::image-end:::  
     
-1.  Clique em **saiba mais** para ver a documentação dessa auditoria.  
+1.  Escolha **saiba mais** para ver a documentação da auditoria.  
     
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Exibir a documentação de uma auditoria" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Exibir a documentação de uma auditoria  
     :::image-end:::  
     
@@ -102,7 +102,7 @@ Você pode preferir usar a [extensão Axe][ChromeWebStoreAxe] em vez do painel *
 A extensão aXe geralmente fornece as mesmas informações, já que é o mecanismo subjacente que alimenta o painel auditorias.  A extensão aXe tem uma interface do usuário diferente e descreve as auditorias de forma ligeiramente diferente.  
 Uma vantagem de que a extensão aXe tem sobre o painel **auditorias** é que ele permite que você inspecione e destaque os nós com falha.  
 
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="A extensão aXe" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
+:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
    A extensão aXe  
 :::image-end:::  
 
@@ -116,7 +116,7 @@ Para abrir o painel de **acessibilidade** :
 1.  Na **árvore DOM**, selecione o elemento que você deseja inspecionar.  
 1.  Clique na guia **acessibilidade** .  Esta guia pode estar oculta atrás do botão **mais guias** \ ( ![ mais guias ][ImageMoreTabsIcon] \).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecionar o elemento H1 da home page do DevTools no painel Acessibilidade" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspecionar o `h1` elemento da home page do devtools no painel **acessibilidade**  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ A [árvore de acessibilidade][MDNAccessibilityTree] é um subconjunto da árvore
 
 Inspecione a posição de um elemento na árvore de acessibilidade no [painel Acessibilidade](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="A seção de árvore de acessibilidade" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    A seção de **árvore de acessibilidade**  
 :::image-end:::  
 
@@ -136,20 +136,20 @@ Os atributos do ARIA garantem que os leitores de tela tenham todas as informaç�
 
 Exiba os atributos do ARIA de um elemento no [painel Acessibilidade](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="A seção de atributos do ARIA" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    A seção de **atributos do Aria**  
 :::image-end:::  
 
 ### Exibir as propriedades de acessibilidade calculadas de um elemento  
 
 > [!NOTE]
-> Se você estiver procurando propriedades CSS calculadas, consulte a [guia calculada][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> Se você estiver procurando propriedades CSS calculadas, navegue até a [guia calculada][DevtoolsCssReferenceViewActuallyAppliedElements].  
 
 Algumas propriedades de acessibilidade são calculadas dinamicamente pelo navegador.  Essas propriedades são exibidas na seção **Propriedades calculadas** do painel **acessibilidade** .  
 
 Exiba as propriedades de acessibilidade calculadas de um elemento no [painel Acessibilidade](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="A seção Propriedades calculadas do painel Acessibilidade" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    A seção **Propriedades calculadas** do painel **acessibilidade**  
 :::image-end:::  
 
@@ -164,29 +164,29 @@ O seletor de cores ajuda a verificar se o texto atende aos níveis de taxa de co
 1.  Clique na guia **elementos** .  
 1.  Na **árvore DOM**, selecione o elemento de texto que você deseja inspecionar.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecionar um parágrafo na árvore DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
        Inspecionar um parágrafo na **árvore DOM**  
     :::image-end:::  
     
 1.  No painel **estilos** , clique no quadrado colorido ao lado do `color` valor do elemento.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="A Propriedade Color do elemento" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
        A `color` Propriedade do elemento  
     :::image-end:::  
     
 1.  Marque a seção **taxa de contraste** do seletor de cores.  Uma marca de opção significa que o elemento atende à [recomendação mínima][W3CContrastMinimum].  Duas marcas de opção significa que ela atende à [recomendação aprimorada][W3CContrastEnhanced].  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="A seção taxa de contraste do seletor de cores mostra duas marcas de seleção e um valor de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        A seção **taxa de contraste** do seletor de cores mostra 2 marcas de seleção e um valor de `13.97`  
     :::image-end:::  
     
 1.  Clique na seção **taxa de contraste** para ver mais informações.  Uma linha aparece no seletor Visual na parte superior do seletor de cores.  Se a cor atual atender às recomendações, qualquer coisa no mesmo lado da linha também atenderá às recomendações.  Se a cor atual não atender às recomendações, qualquer coisa no mesmo lado também não atende às recomendações.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="A linha de taxa de contraste no seletor Visual" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Configurar auditorias" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
        A linha de **taxa de contraste** no seletor Visual  
     :::image-end:::  
     
-<!--## Feedback   -->  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

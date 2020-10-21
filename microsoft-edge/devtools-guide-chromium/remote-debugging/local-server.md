@@ -3,16 +3,16 @@ description: Hospede um site em um servidor Web do computador de desenvolvimento
 title: Acessar Servidores Locais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 373cd7ce5cd262bad9fa5460bb2187241246cd75
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f994092460f090743119d7304bfe12aa28556b19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993482"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125409"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,14 +28,7 @@ ms.locfileid: "10993482"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Acessar servidores locais   
-
-
-
+# Acessar servidores locais  
 
 Hospede um site em um servidor Web do computador de desenvolvimento e acesse o conteúdo de um dispositivo Android.  
 
@@ -46,7 +39,7 @@ Com um cabo USB e o Microsoft Edge DevTools, execute um site a partir de um comp
 *   O encaminhamento de porta permite que você veja o conteúdo hospedado pelo servidor Web em execução em seu computador de desenvolvimento em seu dispositivo Android.  
 *   Se seu servidor Web estiver usando um domínio personalizado, configure seu dispositivo Android para acessar o conteúdo nesse domínio com mapeamento de domínio personalizado.  
 
-## Configurar o encaminhamento de porta   
+## Configurar o encaminhamento de porta  
 
 O encaminhamento de porta permite que seu dispositivo Android acesse o conteúdo que está sendo hospedado no servidor Web em execução na máquina de desenvolvimento.  O encaminhamento de porta funciona criando uma porta TCP de escuta em seu dispositivo Android que mapeia para uma porta TCP em seu computador de desenvolvimento.  O tráfego entre as portas trafegam pela conexão USB entre seu dispositivo Android e seu computador de desenvolvimento, portanto, a conexão não depende da configuração da sua rede.  
 
@@ -54,7 +47,7 @@ Para habilitar o encaminhamento de porta:
 
 1.  Configure a [depuração remota][RemoteDebuggingGettingStarted] entre sua máquina de desenvolvimento e seu dispositivo Android.  Quando terminar, você verá seu dispositivo Android no menu à esquerda da caixa de diálogo **inspecionar dispositivos** e um indicador de status **conectado** .  
 1.  Na caixa de diálogo **inspecionar dispositivos** no devtools, habilite o **encaminhamento de porta**.  
-1.  Selecione **Adicionar regra**.  
+1.  Escolha **Adicionar regra**.  
     
     :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Adicionando uma regra de encaminhamento de porta" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
        Adicionando uma regra de encaminhamento de porta  
@@ -62,17 +55,17 @@ Para habilitar o encaminhamento de porta:
     
 1.  Na caixa de texto **porta do dispositivo** à esquerda, insira o `localhost` número da porta da qual você deseja poder acessar o site no seu dispositivo Android.  Por exemplo, se você quisesse acessar o site de `localhost:5000` Enter `5000` .  
 1.  Na caixa de texto **local do endereço** à direita, digite o endereço IP ou o nome do host em que seu site está hospedado no servidor Web em execução na máquina de desenvolvimento, seguido do número da porta.  Por exemplo, se o seu site estiver sendo executado durante a `localhost:7331` entrada `localhost:7331` .  
-1.  Selecione **Adicionar**.  
+1.  Escolha **Adicionar**.  
     
 O encaminhamento de portas agora está configurado.  Consulte o indicador de status para que a porta encaminhe na guia do seu dispositivo na caixa de diálogo **inspecionar dispositivos** .  
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Status de encaminhamento de porta" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Adicionando uma regra de encaminhamento de porta" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
    Status de encaminhamento de porta  
 :::image-end:::  
 
 Para exibir o conteúdo, abra o Microsoft Edge no seu dispositivo Android e vá para a `localhost` porta que você especificou no campo **porta do dispositivo** .  Por exemplo, se você inseriu `5000` no campo, acesse `localhost:5000` .  
 
-## Mapear para domínios locais personalizados   
+## Mapear para domínios locais personalizados  
 
 O mapeamento de domínio personalizado permite exibir o conteúdo em um dispositivo Android de um servidor Web na máquina de desenvolvimento que está usando um domínio personalizado.  
 
@@ -89,7 +82,7 @@ Para configurar o encaminhamento de porta para um proxy:
     > [!NOTE]
     > O servidor proxy e o servidor Web devem ser executados em diferentes portas.  
     
-1.  Configure o [encaminhamento de porta](#set-up-port-forwarding) para seu dispositivo Android.  Para o campo **endereço local** , insira `localhost:` seguido pela porta em que o servidor proxy está em execução.  Por exemplo, se estiver em execução na porta `8000` , acesse `localhost:8000` .  No campo **porta do dispositivo** , digite o número que você deseja que seu dispositivo Android Ouça, como `3333` .  
+1.  Configure o [encaminhamento de porta](#set-up-port-forwarding) para seu dispositivo Android.  Para o campo **endereço local** , insira `localhost:` seguido pela porta em que o servidor proxy está em execução.  Por exemplo, se estiver em execução na porta `8000` , navegue até `localhost:8000` .  No campo **porta do dispositivo** , digite o número que você deseja que seu dispositivo Android Ouça, como `3333` .  
     
 ### Definir configurações de proxy em seu dispositivo  
 
@@ -101,12 +94,12 @@ Em seguida, você precisa configurar seu dispositivo Android para se comunicar c
     > [!NOTE]
     > As configurações de proxy se aplicam por rede.  
     
-1.  Selecione **Modificar rede**.  
-1.  Selecione **Opções avançadas**.  As configurações de proxy são exibidas.  
-1.  Selecione o menu **proxy** e selecione **manual**.  
+1.  Escolha **Modificar rede**.  
+1.  Escolha **Opções avançadas**.  As configurações de proxy são exibidas.  
+1.  Selecione o menu **proxy** e escolha **manual**.  
 1.  Para o campo **hostname do proxy** , insira `localhost` .  
 1.  Para o campo **porta de proxy** , insira o número da porta que você inseriu para a porta do **dispositivo** na seção anterior.  
-1.  Selecione **Salvar**.  
+1.  Escolha **salvar**.  
     
 Com essas configurações, seu dispositivo encaminha todas as suas solicitações para o proxy no seu computador de desenvolvimento.  O proxy faz solicitações em nome do seu dispositivo, portanto, as solicitações para o seu domínio local personalizado são corretamente resolvidas.  
 
@@ -117,11 +110,10 @@ Se seu servidor Web estiver fora de uma porta não padrão, lembre-se de especif
 > [!TIP]
 > Para retomar a navegação normal, lembre-se de reverter as configurações de proxy em seu dispositivo Android após desconectar-se da máquina de desenvolvimento.  
 
-<!--  
-  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
--->  
 <!-- links -->  
 
 [RemoteDebuggingGettingStarted]: ./index.md "Introdução à depuração remota de dispositivos Android | Documentos da Microsoft"  

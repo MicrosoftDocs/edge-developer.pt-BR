@@ -3,16 +3,16 @@ description: Use dispositivos virtuais no Microsoft Edge para criar sites do pri
 title: Emular dispositivos móveis no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, emulação, dispositivo, simulação, celular
-ms.openlocfilehash: c70b81eabb145461eac7d1b9a8f438d6a18fbc89
-ms.sourcegitcommit: cc96ada9679b23feb841e46f19d8077251c4a4df
+ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997005"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125101"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ Por padrão, a barra de ferramentas do dispositivo é aberta no modo de visor re
 
 Para testar rapidamente a aparência da sua página em vários tamanhos de tela, arraste as alças para redimensionar o visor para suas dimensões obrigatórias.  Você também pode inserir valores específicos nas caixas largura e altura.  Na figura a seguir, a largura é definida como `626` e a altura é definida como `516` .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="As alças para alterar as dimensões do visor quando no modo de visor responsivo" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
     As alças para alterar as dimensões do visor quando no modo de visor responsivo  
 :::image-end:::  
 
@@ -67,13 +67,13 @@ Para testar rapidamente a aparência da sua página em vários tamanhos de tela,
 
 Se você definiu consultas de mídia em sua página, vá para as dimensões do visor em que essas consultas de mídia entram em vigor mostrando pontos de interrupção de consulta de mídia acima do visor.  Escolha **mais opções**  >  **Mostrar consultas de mídia**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Mostrar consultas de mídia" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
    **Mostrar consultas de mídia**  
 :::image-end:::  
 
 Escolha um ponto de interrupção para alterar a largura do visor para que a consulta de mídia seja disparada.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Escolher um ponto de interrupção para alterar a largura do visor" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
    Escolher um ponto de interrupção para alterar a largura do visor  
 :::image-end:::  
 
@@ -81,7 +81,7 @@ Escolha um ponto de interrupção para alterar a largura do visor para que a con
 
 Use a lista **tipo de dispositivo** para simular um dispositivo móvel ou um dispositivo de desktop.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="A lista tipo de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    A lista **tipo de dispositivo**  
 :::image-end:::  
 
@@ -101,7 +101,7 @@ A tabela a seguir descreve as diferenças entre as opções de tipo de dispositi
 
 Para simular as dimensões de um dispositivo móvel específico, selecione o dispositivo na lista de **dispositivos** .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Lista de dispositivos" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
    Lista de **dispositivos**  
 :::image-end:::  
 
@@ -111,7 +111,7 @@ Teste sua página da Web na orientação paisagem.
 
 *   Para girar o visor para a orientação paisagem, escolha **girar** \ ( ![ girar ][ImageRotateIcon] \).  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Página exibida na orientação paisagem" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Página exibida na orientação paisagem  
     :::image-end:::  
     
@@ -136,12 +136,12 @@ Exiba o quadro do dispositivo físico ao lado do visor ao simular as dimensões 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Mostrar quadro de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
          Mostrar quadro de dispositivo  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="O quadro do dispositivo para o iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
          O quadro do dispositivo para o iPhone 6  
       :::image-end:::  
    :::column-end:::
@@ -153,14 +153,14 @@ Se a opção de dispositivo móvel necessária não estiver incluída na lista p
 
 1.  Escolha a lista de **dispositivos** > **Editar**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Selecione Editar" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       Selecione **Editar**  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Escolha **Editar**  
     :::image-end:::  
     
 1.  Escolha **Adicionar dispositivo personalizado**.  
 1.  Em **dispositivos emulados**, insira um nome de dispositivo, a largura da tela e a altura da tela do dispositivo personalizado.  A [taxa de pixels de dispositivo][MDNWindowDevicePixelRatio], a [cadeia de caracteres do agente do usuário][MDNUserAgent]e os campos do tipo de [dispositivo](#set-the-device-type) são opcionais.  O campo tipo de dispositivo é definido como padrão para **celular**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Criar um dispositivo personalizado" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        Criar um dispositivo personalizado  
     :::image-end:::  
     
@@ -170,12 +170,12 @@ Se precisar medir as dimensões da tela, você pode usar réguas para medir o ta
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Item de menu para exibir réguas" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
          Item de menu para exibir réguas  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Réguas acima e à esquerda da viewport" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
          Réguas acima e à esquerda da viewport  
       :::image-end:::  
    :::column-end:::
@@ -185,7 +185,7 @@ Se precisar medir as dimensões da tela, você pode usar réguas para medir o ta
 
 Para testar a aparência da sua página em vários níveis de zoom, use a lista de **zoom** para ampliar ou reduzir.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
    **Zoom**  
 :::image-end:::  
 
@@ -201,7 +201,7 @@ Acelera a rede e a CPU.
     
 Toda a limitação se baseia na funcionalidade normal do laptop ou da área de trabalho.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="A lista de aceleração na barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
    A lista de **aceleração** na barra de ferramentas do dispositivo  
 :::image-end:::  
 
@@ -219,7 +219,7 @@ Para acelerar apenas a CPU e não a rede, conclua as etapas a seguir.
 1.  Escolha o painel **desempenho** e escolha **configurações de captura** \ ( ![ configurações de captura ][ImageCaptureIcon] \).
 1.  Escolha a **CPU**  >  **4x lentidão** ou **lentidão 6x**.
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Lista CPU no painel desempenho" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        Lista **CPU** no painel **desempenho**  
     :::image-end:::  
     
@@ -230,13 +230,13 @@ Para controlar apenas a rede, conclua as etapas a seguir.
 1.  Escolha o painel **rede** .
 1.  Escolha **online**  >  **Fast 3G** ou **3G lento**.
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="A lista de aceleração no painel de rede" lightbox="../media/device-mode-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-network-throttle.msft.png":::
        A lista de **aceleração** no painel de rede  
     :::image-end:::  
     
-    Ou selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**, digite `3G` e escolha **habilitar a limitação de 3G rápido** ou **habilitar a limitação 3G lenta**.  
+    Ou selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**, digite `3G` e escolha **habilitar a limitação de 3G rápido** ou **habilitar a limitação 3G lenta**.  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        O **menu de comando**  
     :::image-end:::  
     
@@ -244,7 +244,7 @@ Você também pode definir a limitação de rede no painel **desempenho** .
 
 1.  Escolha **configurações de captura** \ ( ![ configurações de captura ][ImageCaptureIcon] \) e escolha a lista de **redes** e altere a predefinição para 3G **rápido** ou **3G lento**.  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Definir a limitação de rede no painel desempenho" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Definir a limitação de rede no painel **desempenho**  
     :::image-end:::  
     
@@ -256,16 +256,16 @@ Você também pode definir a limitação de rede no painel **desempenho** .
 
       1.  Escolha **Personalizar e controle devtools** \ ( `...` \) > **mais**  >  **sensores**de ferramentas.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores de localização geográfica" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensores** de localização geográfica  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Abrir o menu de comandos.  
-          *   Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Digite `Sensors` e escolha **Mostrar sensores**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores de localização geográfica" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Mostrar sensores** de localização geográfica  
       :::image-end:::  
    :::column-end:::
@@ -273,7 +273,7 @@ Você também pode definir a limitação de rede no painel **desempenho** .
 
 No painel **sensores** , você pode selecionar um dos locais predefinidos incluídos no devtools usando o menu suspenso **Location** .  Para inserir um local personalizado, escolha **outros...** e insira as coordenadas do seu local personalizado.  Para testar sua página em um estado de erro quando as informações de localização não estiverem disponíveis, escolha **local indisponível**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Painel de sensores com um local predefinido selecionado" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
     Painel de **sensores** com um local predefinido selecionado.  
 :::image-end:::
 
@@ -285,16 +285,16 @@ No painel **sensores** , você pode selecionar um dos locais predefinidos inclu�
 
       1.  Escolha **Personalizar e controle devtools** \ ( `...` \) > **mais**  >  **sensores**de ferramentas.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores para orientação" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensores** para orientação  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Abrir o menu de comandos.  
-          *   Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Digite `Sensors` e escolha **Mostrar sensores**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores para orientação" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Mostrar sensores** para orientação  
       :::image-end:::  
    :::column-end:::
@@ -302,7 +302,7 @@ No painel **sensores** , você pode selecionar um dos locais predefinidos inclu�
 
 No painel **sensores** , você pode selecionar uma orientação predefinida no menu suspenso **orientação** .  Para inserir sua própria orientação, escolha **orientação personalizada**e insira seus próprios valores [alfa][MDNDeviceOrientaitonAlpha], [beta][MDNDeviceOrientaitonBeta]e [gama][MDNDeviceOrientaitonGamma] .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Opções de orientação no painel sensores" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     Opções de **orientação** no painel **sensores**  
 :::image-end:::  
 
@@ -314,24 +314,24 @@ No painel **sensores** , você pode selecionar uma orientação predefinida no m
       
       1.  Escolha **Personalizar e controle devtools** \ ( `...` \) > **mais ferramentas**  >  **condições de rede**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Entrada de condições de rede no menu mais ferramentas" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          Entrada de **condições de rede** no menu **mais ferramentas**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Abrir o menu de comandos.  
-          *   Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Digite `Network conditions` e escolha **Mostrar condições de rede**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Mostrar condições de rede" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **Mostrar condições de rede**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Ao lado de **agente do usuário**, desmarque a caixa de seleção **selecionar automaticamente** .  Em seguida, selecione **personalizado...** para selecionar em uma lista de cadeias de caracteres de agente do usuário predefinidas.  Para inserir sua cadeia de caracteres de agente do usuário, insira a cadeia de caracteres em **digite um agente de usuário personalizado**.  
+Ao lado de **agente do usuário**, desmarque a caixa de seleção **selecionar automaticamente** .  Em seguida, escolha **personalizado...** para selecionar em uma lista de cadeias de caracteres de agente do usuário predefinidas.  Para inserir sua cadeia de caracteres de agente do usuário, insira a cadeia de caracteres em **digite um agente de usuário personalizado**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Definir a cadeia de caracteres do agente do usuário como Microsoft Edge no macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="A barra de ferramentas do dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Definir a cadeia de caracteres do agente do usuário como Microsoft Edge no macOS  
 :::image-end:::  
 

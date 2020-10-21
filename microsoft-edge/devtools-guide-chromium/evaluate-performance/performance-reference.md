@@ -3,16 +3,16 @@ description: O modo de eventos de linha do tempo exibe todos os eventos disparad
 title: Referência de Evento de Linha do Tempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 989d4d84345fedc1c5aef2cb8d893db3c0e1634b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992845"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124898"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992845"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Referência de Evento de Linha do Tempo   
-
-
-
+# Referência de Evento de Linha do Tempo  
 
 O modo de eventos de linha do tempo exibe todos os eventos disparados ao criar uma gravação.  Use a referência de evento Timeline para saber mais sobre cada tipo de evento de linha do tempo.  
 
@@ -149,11 +142,9 @@ Esta seção lista os eventos que pertencem à categoria de pintura e suas propr
 | Location | Para eventos de pintura, as coordenadas x e y do retângulo de pintura. |  
 | Dimension | Para eventos de pintura, a altura e a largura da região pintada. |  
 
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

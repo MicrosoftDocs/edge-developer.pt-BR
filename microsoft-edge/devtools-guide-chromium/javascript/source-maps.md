@@ -3,16 +3,16 @@ description: Mantenha o código do lado do cliente legível e debuggable, mesmo 
 title: Mapear Código em Pré-processamento para Código-fonte
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993230"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124675"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -50,7 +50,7 @@ Este artigo explica como interagir com mapas de origem JavaScript no painel DevT
 
 ## Usar um pré-processador compatível  
 
-Você precisa usar um Minifier que seja capaz de criar mapas de origem.  <!--For the most popular options, see the preprocessor support section.  -->  Para uma exibição estendida, consulte a página [mapas de origem: idiomas, ferramentas e outras informações][GitHubWikiSourceMapsLanguagesTools] wiki.  
+Você precisa usar um Minifier que seja capaz de criar mapas de origem.  <!--For the most popular options, navigate to preprocessor support section.  -->  Para um modo de exibição estendido, navegue até [mapas de origem: idiomas, ferramentas e outras informações][GitHubWikiSourceMapsLanguagesTools] wiki.  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -69,7 +69,7 @@ Ao executar mapas de origem no DevTools, você deve observar que o JavaScript n�
 
 ### Habilitar mapas de origem em configurações  
 
-Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** \ ( `...` \) e selecione **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
+Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** \ ( `...` \) e escolha **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Habilitar mapas de origem JavaScript**  
@@ -108,11 +108,11 @@ Conclua as ações a seguir.
     
 Se você expandir o Subpainel **fontes** , agora verá um novo arquivo com o nome de arquivo personalizado que você digitou anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele contém o JavaScript compilado para a fonte original.  Na última linha, no entanto, é um `// @sourceURL` comentário que indica o arquivo de origem original.  Isso pode ajudá-lo com a depuração enquanto trabalha com abstrações de idioma.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabalhar com sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Trabalhar com `sourceURL`  
 :::image-end:::  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools
+## Entrar em contato com a equipe Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

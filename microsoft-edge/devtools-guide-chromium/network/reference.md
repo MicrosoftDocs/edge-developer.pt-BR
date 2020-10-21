@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos do painel de rede do Micros
 title: Referência de análise de rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
-ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
+ms.openlocfilehash: 8123fbebadf1d43fd1460ecebf91190cac793e19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11092311"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125367"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,12 +49,12 @@ Por padrão, o DevTools registra todas as solicitações de rede no painel de re
 
 Para parar de gravar solicitações, conclua as etapas a seguir.  
 
-1.  Selecione **parar gravação do log de rede** \ ( ![ parar gravação ][ImageRecordOnIcon] do log de rede \) no painel **rede** .  Ele fica cinza para indicar que o DevTools não está mais gravando solicitações.  
-1.  Pressione `Control` + `E` \ (Windows \) ou `Command` + `E` \ (MacOS \) enquanto o painel de **rede** estiver em foco.  
+1.  Escolha **parar gravação do log** ![ de rede parar de gravar ][ImageRecordOnIcon] o log de rede no painel de **rede** .  Ele fica cinza para indicar que o DevTools não está mais gravando solicitações.  
+1.  Selecione `Control` + `E` \ (Windows, Linux \) ou `Command` + `E` \ (MacOS \) enquanto o painel de **rede** estiver em foco.  
 
 ### Solicitações de limpeza  
 
-Selecione **limpar** \ ( ![ limpar ][ImageClearIcon] \) no painel rede para limpar todas as solicitações da tabela solicitações.  
+Escolha **limpar** \ ( ![ limpar ][ImageClearIcon] \) no painel rede para limpar todas as solicitações da tabela solicitações.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-clear-button.msft.png":::
    O botão **limpar**  
@@ -72,7 +72,7 @@ Para salvar as solicitações nas cargas da página, marque a caixa de seleção
 
 Capture capturas de tela para analisar o que é exibido para os usuários enquanto aguarda a sua página ser carregada.  
 
-Para habilitar capturas de tela, selecione **configurações de rede** e escolha **capturar capturas de tela** no painel **rede** .  
+Para habilitar capturas de tela, escolha **configurações de rede** e escolha **capturar capturas de tela** no painel **rede** .  
 
 Atualize a página enquanto o painel de **rede** estiver em foco para capturar capturas de tela.  
 
@@ -88,7 +88,7 @@ Após a captura de uma captura de tela, você interage com ela das seguintes man
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Painel de rede" lightbox="../media/network-replay-xhr.msft.png":::
@@ -117,7 +117,7 @@ Se você quiser desabilitar o cache enquanto trabalha em outros painéis do DevT
 
 ### Limpar manualmente o cache do navegador  
 
-Para limpar manualmente o cache do navegador a qualquer momento, abra o menu contextual \ (clique com o botão direito do mouse \) em qualquer lugar na tabela solicitações e selecione **Limpar cache do navegador**.  
+Para limpar manualmente o cache do navegador a qualquer momento, abra o menu contextual \ (clique com o botão direito do mouse \) em qualquer lugar na tabela solicitações e escolha **Limpar cache do navegador**.  
 
 :::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    Selecionando **Limpar cache do navegador**  
@@ -129,7 +129,7 @@ Uma nova classe de aplicativos Web, chamada [Web Apps progressivos][DevtoolsProg
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Selecione o menu suspenso **online** , procure em **predefinições**e selecione **offline** para simular uma experiência de rede offline.  
+Selecione o menu suspenso **online** , procure em **predefinições**e escolha **offline** para simular uma experiência de rede offline.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-offline-dropdown.msft.png":::
    O menu suspenso **offline**  
@@ -158,7 +158,7 @@ Se você quiser controlar a conexão de rede enquanto trabalha em outros painéi
 
 ### Limpar manualmente os cookies do navegador  
 
-Para limpar manualmente os cookies do navegador a qualquer momento, abra o menu contextual \ (clique com o botão direito do mouse \) em qualquer lugar na tabela solicitações e selecione **Limpar cookies do navegador**.  
+Para limpar manualmente os cookies do navegador a qualquer momento, abra o menu contextual \ (clique com o botão direito do mouse \) em qualquer lugar na tabela solicitações e escolha **Limpar cookies do navegador**.  
 
 :::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    Selecionando **Limpar cookies do navegador**  
@@ -244,7 +244,7 @@ Para filtrar solicitações por tipo de solicitação, selecione um dos botões 
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Mídia**  
+      **Media**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -294,7 +294,7 @@ Para filtrar solicitações por tipo de solicitação, selecione um dos botões 
 Se os botões não forem exibidos, o painel **filtros** poderá estar oculto.  
 Para obter mais informações, navegue para [ocultar o painel filtros](#hide-the-filters-pane).  
 
-Para habilitar vários filtros de tipo simultaneamente, segure `Control` \ (Windows \) ou `Command` \ (MacOS \) e, em seguida, selecione.  
+Para habilitar vários filtros de tipo simultaneamente, segure `Control` \ (Windows, Linux \) ou `Command` \ (MacOS \) e, em seguida, selecione.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-type-filters.msft.png":::
    Usar os filtros de tipo para exibir os recursos de documento, CSS e JS  
@@ -464,7 +464,7 @@ Passe o mouse sobre o cabeçalho da tabela solicitações, abra o menu contextua
 
 #### Adicionar colunas personalizadas  
 
-Para adicionar uma coluna personalizada à tabela solicitações, passe o mouse sobre o cabeçalho da tabela solicitações, abra o menu contextual \ (clique com o botão direito do mouse \) e selecione **cabeçalhos de resposta**  >  **gerenciar colunas de cabeçalho**.  
+Para adicionar uma coluna personalizada à tabela solicitações, passe o mouse sobre o cabeçalho da tabela solicitações, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **cabeçalhos de resposta**  >  **gerenciar colunas de cabeçalho**.  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Adicionando uma coluna personalizada à tabela solicitações  
@@ -550,7 +550,7 @@ Para exibir dados de cabeçalho HTTP sobre uma solicitação, use as etapas a se
 Por padrão, a guia cabeçalhos mostra os nomes dos cabeçalhos em ordem alfabética.  Para exibir os nomes dos cabeçalhos HTTP na ordem recebida, use as etapas a seguir.  
 
 1.  Abra a guia **cabeçalhos** para a solicitação que lhe interessa.  Para obter mais informações, navegue para [Ver os cabeçalhos HTTP](#view-http-headers).  
-1.  Selecione **Exibir fonte**, ao lado da seção cabeçalho da **solicitação** ou **cabeçalho de resposta** .  
+1.  Escolha **Exibir fonte**, ao lado da seção cabeçalho da **solicitação** ou **cabeçalho de resposta** .  
 
 ### Exibir parâmetros da cadeia de caracteres de consulta  
 
@@ -568,14 +568,14 @@ Para exibir os parâmetros da cadeia de caracteres de consulta de uma URL em um 
 Para exibir a origem do parâmetro da cadeia de caracteres de consulta de uma solicitação, use as etapas a seguir.  
 
 1.  Vá para a seção parâmetros da cadeia de caracteres de consulta.  Para obter mais informações, navegue para [exibir os parâmetros da cadeia de consulta](#view-query-string-parameters).  
-1.  Selecione **Exibir código-fonte**.  
+1.  Escolha **Exibir fonte**.  
 
 #### Exibir parâmetros da cadeia de consulta codificada por URL  
 
 Para exibir os parâmetros da cadeia de caracteres de consulta em um formato legível pelo homem, mas com codificações preservadas, use as etapas a seguir.  
 
 1.  Vá para a seção parâmetros da cadeia de caracteres de consulta.  Para obter mais informações, navegue para [exibir os parâmetros da cadeia de consulta](#view-query-string-parameters).  
-1.  Selecione **exibir URL codificada**.  
+1.  Escolha **exibir URL codificado**.  
 
 ### Exibir cookies  
 
@@ -807,7 +807,7 @@ Marque a caixa de seleção **usar linhas de solicitação grandes** e examine o
 Para salvar todas as solicitações de rede em um arquivo HAR, conclua as etapas a seguir.  
 
 1.  Passe o mouse sobre qualquer solicitação na tabela solicitações e abra o menu contextual \ (clique com o botão direito do mouse \).  
-1.  Selecione **salvar como Har com conteúdo**.  DevTools salva todas as solicitações ocorridas desde que você abriu o DevTools para o arquivo HAR.  Você não pode filtrar solicitações.  Você também não pode salvar uma única solicitação.  
+1.  Escolha **salvar como Har com conteúdo**.  DevTools salva todas as solicitações ocorridas desde que você abriu o DevTools para o arquivo HAR.  Você não pode filtrar solicitações.  Você também não pode salvar uma única solicitação.  
 
 Depois de salvar um arquivo HAR, você poderá importá-lo novamente no DevTools para análise.  Basta arrastar e soltar o arquivo HAR na tabela solicitações.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
@@ -891,7 +891,7 @@ Você pode expandir ou recolher seções da interface do usuário do painel de r
 ### Ocultar o painel filtros  
 
 Por padrão, o DevTools mostra o **painel filtros**.  
-Selecione **filtro** \ ( ![ filtro ][ImageFilterIcon] \) para ocultá-lo.  
+Escolha **filtro** \ ( ![ filtro ][ImageFilterIcon] \) para ocultá-lo.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    O botão Ocultar filtros  
@@ -918,6 +918,10 @@ Por padrão, o DevTools mostra o **painel Visão geral**.  Desmarque a caixa de 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Painel de rede" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    A caixa de seleção **Mostrar visão geral**  
 :::image-end:::  
+
+## Entrar em contato com a equipe Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: Abra a guia sensores e selecione coordenadas na lista geolocalizaç
 title: Substituir geolocalização com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f2bc395993ff59d88360a363b2c4bc12b570f1ab
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992985"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125010"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,20 +36,20 @@ Muitos websites aproveitam o local do usuário para fornecer uma experiência ma
 
 Se você estiver criando uma interface do usuário que muda de acordo com o local em que o usuário está localizado, provavelmente desejará verificar se o site se comporta corretamente em locais diferentes ao lado do mundo.  Para substituir a localização geográfica no Microsoft Edge DevTools, conclua as ações a seguir.  
 
-1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comandos**.  
+1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
        O **menu de comando**  
     :::image-end:::  
     
-1.  Tipo `sensors` , selecione **Mostrar sensores**e pressione `Enter` .  A guia **sensores** é aberta na parte inferior da janela do devtools.  
-1.  Na lista **geolocalização** , selecione uma das cidades predefinidas, como `Tokyo` ou selecione **local personalizado** para inserir coordenadas de longitude e latitude personalizadas, ou selecione **local indisponível** para ver como o seu site se comporta quando o local do usuário não está disponível.  
+1.  Digite `sensors` , escolha **Mostrar sensores**e selecione `Enter` .  A guia **sensores** é aberta na parte inferior da janela do devtools.  
+1.  Na lista **geolocalização** , selecione uma das cidades predefinidas, como `Tokyo` ou escolha o **local personalizado** para inserir coordenadas de longitude e latitude personalizadas ou escolha **local indisponível** para ver como o seu site se comporta quando o local do usuário não está disponível.  
     
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Selecionar Tóquio na lista de geolocalização" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
        Selecionar `Tokyo` na lista de **geolocalização**  
     :::image-end:::  
     
-## Entrar em contato com a equipe do Microsoft Edge DevTools
+## Entrar em contato com a equipe Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

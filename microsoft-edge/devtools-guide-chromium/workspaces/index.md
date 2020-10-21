@@ -3,16 +3,16 @@ description: Saiba como salvar alterações feitas dentro de DevTools em disco.
 title: Editar arquivos com espaços de trabalho
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992719"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125346"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,9 +81,9 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
-    <!--1.  Select **Advanced Options** > **Download Project**.  
+    <!--1.  Choose **Advanced Options** > **Download Project**.  
     
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
 
@@ -111,22 +111,22 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
     
 1.  Abra uma guia no Microsoft Edge e vá para a versão hospedada localmente do site.  Você deve ser capaz de acessá-lo usando uma URL como `localhost:8080` ou `http://0.0.0.0:8080` .  O [número de porta][WikiPortURLs] exato pode ser diferente.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="A demonstração" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        A demonstração  
     :::image-end:::  
     
 ### Configurar o DevTools  
 
-1.  Selecione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \) para abrir o painel do **console** do devtools.  
+1.  Selecione `Control` + `Shift` + `J` \ (Windows, Linux \) ou `Command` + `Option` + `J` \ (MacOS \) para abrir o painel de **console** do devtools.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Painel do console" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        Painel do **console**  
     :::image-end:::  
     
 1.  Escolha a guia **fontes** .  
 1.  Escolha a guia **sistema de arquivos** .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="A guia sistema de arquivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        A guia **sistema de arquivos**  
     :::image-end:::  
     
@@ -135,7 +135,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
 1.  Escolha **permitir para que** o devtools Conceda permissão para ler e gravar no diretório.  
     Na guia **sistema de sistema** , agora há um ponto verde ao lado de `index.html` , `script.js` e `styles.css` .  Esses pontos verdes significam que o DevTools estabeleceu um mapeamento entre os recursos de rede da página e os arquivos `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="A guia sistema de arquivos agora mostra um mapeamento entre os arquivos locais e os de rede" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        A guia **sistema de arquivos** agora mostra um mapeamento entre os arquivos locais e os de rede  
     :::image-end:::  
     
@@ -146,7 +146,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
     > [!NOTE]
     > A `color` propriedade dos `h1` elementos é definida como `fuchsia` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Exibir estilos. CSS em um editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        Exibir `styles.css` em um editor de texto  
     :::image-end:::  
     
@@ -154,7 +154,7 @@ Conclua as ações a seguir para obter experiência prática com espaços de tra
 1.  Altere o valor da `color` Propriedade do `<h1>` elemento para sua cor favorita.  
     Lembre-se de que você precisa escolher o `<h1>` elemento na **árvore DOM** para ver as regras CSS aplicadas a ele no painel **estilos** .  O ponto verde ao lado de `styles.css:1` significa que qualquer alteração feita está mapeada `~/Desktop/app/styles.css` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="O indicador verde para o qual o arquivo está vinculado" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        O indicador verde para o qual o arquivo está vinculado  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ A árvore DOM não é HTML.
 1.  Choose the **Elements** tab.  
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
        Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
@@ -207,10 +207,10 @@ Se você quiser salvar uma alteração no HTML da página, use o painel **fontes
 1.  Escolha a guia **página** .  
 1.  Escolha **(índice)**.  O HTML da página é aberto.  
 1.  Substituir `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Veja a figura a seguir.  
-1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
+1.  Selecione `Control` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
 1.  Atualize a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterar o HTML no painel fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        Alterar o HTML no painel **fontes**  
     :::image-end:::  
     
@@ -221,17 +221,17 @@ Se você quiser salvar uma alteração no HTML da página, use o painel **fontes
 O painel **fontes** também é o local para fazer alterações em JavaScript.  Mas, às vezes, você precisa acessar outros painéis, como o painel **elementos** ou o painel do **console** , ao fazer alterações em seu site.  Há uma maneira de ter o painel **fontes** aberto junto com outros painéis.  
 
 1.  Escolha a guia **elementos** .  
-1.  Selecione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  O **menu de comando** é aberto.  
-1.  Digite `QS` e selecione **Mostrar fonte rápida**.  Na parte inferior da janela do DevTools, agora há uma guia **fonte rápida** .  A guia exibe o conteúdo de `index.html` , que é o último arquivo editado no painel **fontes** .  A guia **fonte rápida** oferece o editor do painel **fontes** , para que você possa editar arquivos enquanto tiver outros painéis abertos.  
+1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  O **menu de comando** é aberto.  
+1.  Digite `QS` e escolha **Mostrar fonte rápida**.  Na parte inferior da janela do DevTools, agora há uma guia **fonte rápida** .  A guia exibe o conteúdo de `index.html` , que é o último arquivo editado no painel **fontes** .  A guia **fonte rápida** oferece o editor do painel **fontes** , para que você possa editar arquivos enquanto tiver outros painéis abertos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrir a guia fonte rápida usando o menu de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Abrir a guia **fonte rápida** usando o **menu de comandos**  
     :::image-end:::  
     
-1.  Selecione `Control` + `P` \ (Windows \) ou `Command` + `P` \ (MacOS \) para abrir a caixa de diálogo **Abrir arquivo** .  Veja a figura a seguir.  
-1.  Digite `script` e, em seguida, selecione **app/script.js**.  
+1.  Selecione `Control` + `P` \ (Windows, Linux \) ou `Command` + `P` \ (MacOS \) para abrir a caixa de diálogo **Abrir arquivo** .  Veja a figura a seguir.  
+1.  Digite `script` e escolha **app/script.js**.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abrir script.js usando a caixa de diálogo abrir arquivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        Abrir `script.js` usando a caixa de diálogo **Abrir arquivo**  
     :::image-end:::  
     
@@ -245,13 +245,13 @@ O painel **fontes** também é o local para fazer alterações em JavaScript.  M
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Selecione `Control` + `S` \ (Windows \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
+1.  Selecione `Control` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) para salvar a alteração.  
 1.  Atualize a página.  
     
     > [!NOTE]
     > O link na página agora está em itálico.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="O link na página agora está em itálico" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Um projeto de falha" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
        O link na página agora está em itálico  
     :::image-end:::  
     
@@ -263,8 +263,11 @@ Use o que você aprendeu neste tutorial para configurar espaços de trabalho em 
 If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
-*   [Twitter][TwitterAlphabetBrowserDevTools]  
-    -->  
+*   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
+
+## Entrar em contato com a equipe Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

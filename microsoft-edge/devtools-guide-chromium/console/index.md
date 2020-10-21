@@ -3,16 +3,16 @@ description: Os principais usos do console do Microsoft Edge DevTools são as me
 title: Visão geral do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993153"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125262"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,13 @@ ms.locfileid: "10993153"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Visão geral do console   
+# Visão geral do console  
 
   
 
 Esta página explica como o console do Microsoft Edge DevTools torna mais fácil o desenvolvimento de páginas da Web.  O console tem dois usos principais: [Exibir mensagens registradas](#viewing-logged-messages) e [executar JavaScript](#running-javascript).  
 
-## Exibir mensagens registradas   
+## Exibir mensagens registradas  
 
 Os desenvolvedores da Web geralmente registram mensagens no console para verificar se o JavaScript está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e vê uma expressão como essa, ele registra a mensagem no console.  
 
@@ -62,7 +58,7 @@ Os desenvolvedores da Web geralmente registram mensagens no console para verific
                   const artists = [
                       { first: 'René', last: 'Magritte' },
                       { first: 'Chaim', last: 'Soutine' },
-                      { first: 'Henri', last: 'Matisse' }
+                        
                   ];
                   console.table(artists);
                   setTimeout(() => {
@@ -92,7 +88,7 @@ Os desenvolvedores da Web registram mensagens pelos seguintes dois motivos gerai
 
 Consulte [introdução ao registro de mensagens][DevtoolsConsoleLoggingMessages] para obter experiência prática com o registro em log.  Consulte a [referência de API do console][DevToolsConsoleAPI] para procurar a lista completa de `console` métodos.  A principal diferença entre os métodos é como os dados que estão sendo registrados são exibidos.  
 
-## Executando JavaScript   
+## Executando JavaScript  
 
 O **console** também é um [repl][WikiREPLoop].  Você pode executar JavaScript no **console** para interagir com a página que está sendo inspecionada.   
 
@@ -100,29 +96,29 @@ O **console** também é um [repl][WikiREPLoop].  Você pode executar JavaScript
    :::column span="":::
       Na figura a seguir, o **console** é mostrado ao lado da home page do devtools.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="O painel do console ao lado da home page do DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Painel do console" lightbox="../media/devtools-console-empty.msft.png":::
          O painel do **console** ao lado da home page do devtools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Na figura a seguir, a mesma página é mostrada após usar o **console** para alterar o título superior da página.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Usar o console para alterar o título superior da página" lightbox="../media/devtools-console-h1-changed.msft.png":::
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Painel do console" lightbox="../media/devtools-console-h1-changed.msft.png":::
          Usar o **console** para alterar o título superior da página  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-A modificação da página no **console** é possível porque o **console** tem acesso completo à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que o JavaScript contenha uma função chamada `hideModal` .  Executar `debug(hideModal)` pausa o código na primeira linha da `hideModal` próxima vez que você executá-lo.  Para obter mais informações sobre a lista completa de funções utilitárias, consulte [referência da API de utilitários de console][DevtoolsConsoleUtilitiesDebug].  
+A modificação da página no **console** é possível porque o **console** tem acesso completo à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que o JavaScript contenha uma função chamada `hideModal` .  Executar `debug(hideModal)` pausa o código na primeira linha da `hideModal` próxima vez que você executá-lo.  Para obter mais informações sobre a lista completa de funções de utilitário, navegue até a [referência da API de utilitários do console][DevtoolsConsoleUtilitiesDebug].  
 
 Quando você executa JavaScript, você não precisa interagir com a página.  Você pode usar o **console** para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você tenha aprendido apenas sobre o método interno de mapas de matrizes JavaScript [()][MDNMap] e queira experimentá-lo.  
 O **console** é um bom lugar para experimentar a função.  
 
-Para obter mais experiência prática com a execução de JavaScript no **console**, consulte [introdução à execução de JavaScript][DevtoolsConsoleRunningJavascript].  
+Para obter mais experiência prática com a execução de JavaScript no **console**, navegue até [introdução à execução do JavaScript][DevtoolsConsoleRunningJavascript].  
 
-   
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 80475ebcbbdd3fb04fd0196e993c933e0bdcf090
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993601"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125388"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993601"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Depurar aplicativos Web progressivos   
-
-
+# Depurar aplicativos Web progressivos  
 
 Use o painel do **aplicativo** para inspecionar, modificar e depurar manifestos do aplicativo Web, trabalhos de serviço e caches de trabalho do serviço.  
 
@@ -55,7 +49,7 @@ Este guia apenas descreve os recursos do aplicativo Web progressivo do painel do
 *   Exiba o cache do serviço de trabalho no painel **armazenamento do cache** .  
 *   Cancele o registro de um trabalhador de serviço e limpe todos os armazenamentos e caches com um único clique de botão no painel **limpar armazenamento** .  
     
-## Manifesto do aplicativo Web   
+## Manifesto do aplicativo Web  
 
 Se você quiser que os usuários possam adicionar seu aplicativo à sua homescreens móvel, você precisará de um manifesto do aplicativo Web.  O manifesto define como o aplicativo é exibido no tela inicial, onde direcionar o usuário ao iniciar a partir do tela inicial e como é a aparência do aplicativo durante a inicialização.  
 
@@ -77,7 +71,7 @@ Depois de configurar o manifesto, você pode usar o painel **manifesto** do pain
 *   As seções de **identidade** e **apresentação** só exibem os campos da fonte de manifesto em uma tela mais fácil de usar.  
 *   A seção **ícones** exibe todos os ícones que você especificou.  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -85,7 +79,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
-:::image type="complex" source="./media/io.msft.png" alt-text="Add to desktop shelf" lightbox="./media/io.msft.png":::
+:::image type="complex" source="./media/io.msft.png" alt-text="Painel de manifesto" lightbox="./media/io.msft.png":::
    Add to desktop shelf  
 :::image-end:::
 -->  
@@ -102,7 +96,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Trabalhadores do serviço   
+## Profissionais de serviço  
 
 Os funcionários de serviço são uma tecnologia fundamental na próxima plataforma Web.  Eles são scripts que o navegador executa em segundo plano, separado de uma página da Web.  Esses scripts permitem que você acesse recursos que não precisam de uma página da Web ou interação do usuário, como notificações por push, sincronização em segundo plano e experiências offline.  
 
@@ -115,7 +109,7 @@ Os funcionários de serviço são uma tecnologia fundamental na próxima platafo
 
 O painel de **trabalhadores de serviço** no painel de **aplicativos** é o local principal no devtools para inspecionar e depurar trabalhadores de serviço.  
 
-:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="O painel funcionários do serviço" lightbox="./media/service-workers-pane.msft.png":::
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="Painel de manifesto" lightbox="./media/service-workers-pane.msft.png":::
    O painel **funcionários do serviço**  
 :::image-end:::  
 
@@ -134,7 +128,7 @@ O painel de **trabalhadores de serviço** no painel de **aplicativos** é o loca
 Se o trabalhador do serviço causar algum erro, um novo rótulo chamado **erros** aparecerá.  
 
 <!--  
-:::image type="complex" source="./media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="./media/sw-error.msft.png":::
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="Painel de manifesto" lightbox="./media/sw-error.msft.png":::
    Service worker with errors  
 :::image-end:::
 -->  
@@ -142,11 +136,11 @@ Se o trabalhador do serviço causar algum erro, um novo rótulo chamado **erros*
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Caches de funcionários do serviço 
+## Caches de funcionários do serviço  
 
 O painel **armazenamento de cache** fornece uma lista somente leitura de recursos que foram armazenados em cache usando a API de [cache][MDNWebCacheAPI]\ (serviço de trabalho \).  
 
-:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Painel armazenamento do cache" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Painel de manifesto" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
    Painel **armazenamento do cache**  
 :::image-end:::  
 
@@ -155,11 +149,11 @@ O painel **armazenamento de cache** fornece uma lista somente leitura de recurso
 
 Se você tiver dois ou mais caches abertos, verá-os listados abaixo do menu suspenso **armazenamento em cache** .  
 
-:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="O menu suspenso armazenamento do cache" lightbox="./media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Painel de manifesto" lightbox="./media/cache-pane-cache-storage.msft.png":::
    O menu suspenso **armazenamento do cache**  
 :::image-end:::  
 
-## Uso da cota 
+## Uso da cota  
 
 Algumas respostas dentro do painel **armazenamento do cache** podem ser sinalizadas como "opaco".  Isso se refere a uma resposta recuperada de uma origem diferente, como de uma **CDN** ou API remota, quando o [CORS][FetchHttpCorsProtocol] não está habilitado.  
 
@@ -179,7 +173,7 @@ Guias relacionados:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Limpar armazenamento 
+## Limpar armazenamento  
 
 O painel **limpar armazenamento** é um recurso muito útil ao desenvolver aplicativos Web progressivos.  Esse painel permite cancelar o registro de trabalhadores do serviço e limpar todos os caches e armazenamento com um único clique de botão.  <!--Check out the section below to learn more.  -->
 
@@ -189,7 +183,7 @@ O painel **limpar armazenamento** é um recurso muito útil ao desenvolver aplic
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -198,13 +192,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

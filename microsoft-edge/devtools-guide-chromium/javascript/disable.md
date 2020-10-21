@@ -3,16 +3,16 @@ description: Abrir o menu de comando e executar o comando "desabilitar JavaScrip
 title: Desabilitar JavaScript com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992796"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124716"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -33,21 +33,21 @@ ms.locfileid: "10992796"
 Conclua as seguintes ações para ver como uma página da Web tem a aparência e se comporta quando o JavaScript está desabilitado.  
 
 1.  [Abra o Microsoft Edge devtools][DevToolsOpen].  
-1.  Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comandos**.  
+1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**.  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="O menu de comando" lightbox="../media/javascript-console-command.msft.png":::
        O **menu de comando**  
     :::image-end:::  
     
-1.  Comece a digitar `javascript` , selecione **desativar JavaScript**e pressione `Enter` para executar o comando.  JavaScript agora está desabilitado.  
+1.  Comece a digitar `javascript` , escolha **desabilitar JavaScript**e, em seguida, selecione `Enter` para executar o comando.  JavaScript agora está desabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Selecionar desativar JavaScript no menu de comando" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Selecionar **desativar JavaScript** no **menu de comando**  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="O menu de comando" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Escolha **desativar JavaScript** no **menu de comando**  
     :::image-end:::  
     
     O ícone de aviso amarelo ao lado de **fontes** lembra que o JavaScript está desabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="O ícone de aviso ao lado de fontes" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="O menu de comando" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        O ícone de aviso ao lado de **fontes**  
     :::image-end:::  
     
@@ -60,7 +60,7 @@ Para habilitar novamente o JavaScript, conclua as ações a seguir.
 *   Abra o **menu de comandos** novamente e execute o `Enable JavaScript` comando.  
 *   Feche o DevTools.  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

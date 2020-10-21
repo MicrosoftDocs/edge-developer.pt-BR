@@ -3,16 +3,16 @@ description: Inspecione e modifique as animações com o Inspetor de animação 
 title: Inspecionar animações
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fed686c07acd0648ac512dac131d85a317fb64eb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015769"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124772"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,9 +62,9 @@ Há duas maneiras de abrir o Inspetor de animação:
 
 *   Abrir o menu **Personalizar e devtools de controle**  
     1.  Navegue até o submenu **mais ferramentas** .  
-    1.  Selecionar **animações**:  
+    1.  Escolher **animações**:  
         
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animações usando o menu principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animações** usando o menu principal  
     :::image-end:::  
         
@@ -73,7 +73,7 @@ Há duas maneiras de abrir o Inspetor de animação:
 
 O Inspetor de animação é aberto como uma guia ao lado da gaveta do console.  Como o Inspetor de animação é uma guia gaveta, você pode usar o Inspetor de animação em qualquer painel do DevTools.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspetor de animação vazio" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
    Inspetor de animação vazio  
 :::image-end:::  
 
@@ -86,7 +86,7 @@ O Inspetor de animação está agrupado em quatro seções principais \ (ou pain
 | 3D | **Linha do Tempo** | Pause e inicie uma animação aqui, ou vá até um ponto específico na animação. |  
 | 4 | **Detalhes** | Inspecionar e modificar o grupo de animações selecionado no momento. |  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Inspetor de animação com anotações" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
    Inspetor de animação com anotações  
 :::image-end:::  
 
@@ -110,25 +110,25 @@ Depois de capturar uma animação, há algumas maneiras de reproduzi-la:
 
 Depois de capturar um grupo de animação, clique nele no painel **visão geral** para ver os detalhes.  No painel de **detalhes** , cada animação individual recebe a atribuição de uma linha.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Detalhes do grupo animação" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
    Detalhes do grupo animação  
 :::image-end:::  
 
 Passe o mouse sobre uma animação para realçá-la no visor.  Clique na animação para selecioná-la no painel de **elementos** .  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Passe o mouse sobre a animação para realçá-la no visor" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
    Passe o mouse sobre a animação para realçá-la no visor  
 :::image-end:::  
 
 A seção mais à esquerda de uma animação é a definição.  A seção direita e mais esmaecida representa iterações.  Por exemplo, na figura a seguir, as seções dois e três representam iterações da seção um.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Diagrama de iterações de animação" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
    Diagrama de iterações de animação  
 :::image-end:::  
 
 Se dois elementos tiverem a mesma animação aplicada, o Inspetor de animação atribuirá a mesma cor aos elementos.  A cor é aleatória e não tem importância.  Por exemplo, na figura a seguir, os dois elementos `div.cwccw.earlier` e `div.cwccw.later` têm a mesma animação \ ( `spinrightleft` \) aplicada, como os `div.ccwcw.earlier` elementos e `div.ccwcw.later` .  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Animações codificadas por cor" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    Animações codificadas por cor  
 :::image-end:::  
 
@@ -142,25 +142,25 @@ Há três maneiras como você pode modificar uma animação com o Inspetor de an
     
 Na figura a seguir, a animação original é representada.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Animação original antes da modificação" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
    Animação original antes da modificação  
 :::image-end:::  
 
 Para alterar a duração de uma animação, clique e arraste o primeiro ou o último círculo.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Duração modificada" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
    Duração modificada  
 :::image-end:::  
 
 Se a animação define quaisquer regras de quadro-chave, elas são representadas como círculos internos brancos.  Clique e arraste uma destas para alterar o intervalo do quadro-chave.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Quadro-chave modificado" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
    Quadro-chave modificado  
 :::image-end:::  
 
 Para adicionar um atraso a uma animação, clique e arraste-a para qualquer lugar, exceto os círculos.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Atraso modificado" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Inspetor de animação" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
    Atraso modificado  
 :::image-end:::  
 

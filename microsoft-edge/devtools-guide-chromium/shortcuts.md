@@ -3,16 +3,16 @@ description: A documentação canônica para os atalhos de teclado do Microsoft 
 title: Atalhos de teclado do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ab2e162af9b59e2ed92abc0cebf8e9fa2ac3a3d2
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 78e96fa3ae927a8aee24dfc18d4fa6ee515556a8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003947"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125339"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Você também pode encontrar atalhos nas dicas de ferramentas. Passe o mouse sob
 
 Para abrir o DevTools, selecione os seguintes atalhos de teclado enquanto o cursor está focalizado no visor do navegador.
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Abrir o painel usado por último | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Abrir o painel de **console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -48,7 +48,7 @@ Para abrir o DevTools, selecione os seguintes atalhos de teclado enquanto o curs
 
 Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não todos, DevTools.
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Mostrar **configurações** | `?` ou `F1` | `?` or `Function`+`F1` |  
 | Focalizar o próximo painel | `Control`+`]` | `Command`+`]` |  
@@ -73,7 +73,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ## Atalhos de teclado do painel elementos  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Desfazer alterar | `Control`+`Z` | `Command`+`Z` |  
 | Refazer alterar | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -88,7 +88,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ### Atalhos de teclado do painel estilos  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Ir para a linha na qual um valor de propriedade é declarado | Segure `Control` e selecione o valor da propriedade | Segure `Command` e selecione o valor da propriedade |  
 | Percorrer as representações RBGA, HSLA e HexA de um valor de cor | Segure `Shift` e escolha a caixa **visualização de cor** ao lado do valor | Segure `Shift` e escolha a caixa **visualização de cor** ao lado do valor |  
@@ -100,7 +100,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ## Atalhos de teclado do painel fontes  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Pausar o tempo de execução do script \ (se estiver em execução \) ou continuar \ (se estiver em pausa \) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |  
 | Etapa da próxima chamada de função | `F10` or `Control`+`'` | `F10` or `Command`+`'` |  
@@ -118,7 +118,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ### Atalhos de teclado do editor de código  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Excluir todos os caracteres na última palavra, até o cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Adicionar ou remover um [ponto de interrupção de linha de código][DevtoolsJavascriptBreakpointsLOC] | Focalize o cursor na linha e selecione `Control`+`B` | Focalize o cursor na linha e selecione `Command`+`B` |  
@@ -128,7 +128,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ## Atalhos de teclado do painel de desempenho  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Iniciar/parar gravação | `Control`+`E` | `Command`+`E` |  
 | Salvar gravação | `Control`+`S` | `Command`+`S` |  
@@ -136,13 +136,13 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 
 ## Atalhos de teclado do painel memória  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Iniciar/parar gravação | `Control`+`E` | `Command`+`E` |  
 
 ## Atalhos de teclado do painel do console  
 
-| Ação | Windows | macOS |  
+| Ação | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Aceitar sugestão de preenchimento automático | `Right Arrow` ou `Tab` | `Right Arrow` ou `Tab` |  
 | Rejeitar sugestão de preenchimento automático | `Escape` | `Escape` |  
@@ -152,7 +152,7 @@ Os atalhos de teclado a seguir estão disponíveis nos painéis mais, se não to
 | Limpar o **console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force uma entrada de várias linhas.  Esse atalho é praticamente desnecessário, porque o DevTools deve detectar cenários de várias linhas por padrão | `Shift`+`Enter` | `Command`+`Return` |  
 | Executar | `Enter` | `Return` |  
-| Expandir todas as subpropriedades de um objeto que são registrados no console | Segure `Alt` e, em seguida, selecione **expandir** \ ( ![ expandir ][ImageExpandIcon] \) | Segure `Alt` e, em seguida, selecione **expandir** \ ( ![ expandir ][ImageExpandIcon] \) |  
+| Expandir todas as subpropriedades de um objeto que são registrados no console | Segure `Alt` e escolha **expandir** \ ( ![ expandir ][ImageExpandIcon] \) | Segure `Alt` e escolha **expandir** \ ( ![ expandir ][ImageExpandIcon] \) |  
 
 ## Entrar em contato com a equipe Microsoft Edge DevTools  
 

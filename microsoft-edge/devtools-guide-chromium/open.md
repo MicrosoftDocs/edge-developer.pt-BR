@@ -3,16 +3,16 @@ description: Todas as maneiras de abrir o Microsoft Edge DevTools.
 title: Abrir o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ffc05a1eff2cdb7f3020a7dbb853a7520a0502dd
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 298edeebc99d858306938e4a876e8ef03a371f2c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993594"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125402"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,8 +36,8 @@ Há muitas maneiras de abrir o Microsoft Edge DevTools, pois diferentes usuário
 
 Cada uma das seguintes tarefas permite que você inspecione os estilos ou atributos de um nó DOM.
 
-*   Passe o cursor do mouse sobre o elemento, abra o menu contextual \ (clique com o botão direito do mouse \) e selecione **inspecionar**.  
-*   Pressione `Control` + `Shift` + `C` \ (Windows \) ou `Command` + `Option` + `C` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+*   Passe o cursor do mouse sobre o elemento, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **inspecionar**.  
+*   Selecione `Control` + `Shift` + `C` \ (Windows, Linux \) ou `Command` + `Option` + `C` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 
 :::image type="complex" source="./media/bing-right-click-inspect.msft.png" alt-text="A opção * * Inspecione * *" lightbox="./media/bing-right-click-inspect.msft.png":::
    A opção **inspecionar**  
@@ -54,13 +54,13 @@ Cada uma das seguintes tarefas permite abrir o painel de [console][DevToolsConso
     1.  [Abra o devtools](#open-microsoft-edge-devtools).  
     1.  Selecione o painel do [console][DevToolsConsoleIndex] .  
 
-*   Para saltar diretamente para o painel do [console][DevToolsConsoleIndex] , pressione `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+*   Para saltar diretamente para o painel do [console][DevToolsConsoleIndex] , selecione `Control` + `Shift` + `J` \ (Windows, Linux \) ou `Command` + `Option` + `J` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 
 <!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## Abrir o painel anterior  
 
-Para ir para o painel anterior que você abriu, pressione `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+Para ir para o painel anterior que você abriu, selecione `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 
 ## Abrir o Microsoft Edge DevTools  
 
@@ -69,12 +69,12 @@ Cada uma das seguintes tarefas permite abrir o DevTools.
 *   Use as etapas a seguir para abrir o Microsoft Edge DevTools.  
     
     1.  Selecione o  `...` ícone \ (o ícone **configurações e mais** ).  
-    1.  Selecione **mais ferramentas**.  
-    1.  Selecione **ferramentas de desenvolvedor**.  
+    1.  Escolha **mais ferramentas**.  
+    1.  Escolha **ferramentas de desenvolvedor**.  
     
-*   Para abrir o Microsoft Edge devtools, pressione `F12` ou `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, consulte [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+*   Para abrir o Microsoft Edge devtools, selecione `F12` ou `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 
-:::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Abrir o DevTools a partir do menu principal do Microsoft Edge" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+:::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="A opção * * Inspecione * *" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    Abrir o DevTools a partir do menu principal do Microsoft Edge  
 :::image-end:::  
 
@@ -82,17 +82,17 @@ Cada uma das seguintes tarefas permite abrir o DevTools.
 
 Para abrir automaticamente o DevTools em cada nova guia, abra o Microsoft Edge na linha de comando e passe o `--auto-open-devtools-for-tabs` sinalizador.  
 
-#### [CMD (Windows)](#tab/cmd-windows/)  
+#### [CMD (Windows)](#tab/cmd-Windows/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-#### [PowerShell (Windows)](#tab/powershell-windows/)  
+#### [PowerShell (Windows)](#tab/powershell-Windows/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
@@ -100,13 +100,25 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 
 #### [bash (macOS)](#tab/bash-macos/)  
 
-<a id="selenium-tools-install"></a>  
+<a id="auto-open-devtools-command-line"></a>  
 
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
+#### [bash (Linux)](#tab/bash-linux/)  
+
+<a id="auto-open-devtools-command-line"></a>  
+
+```bash
+microsoft-edge-dev --auto-open-devtools-for-tabs
+```  
+
 * * *  
+
+## Entrar em contato com a equipe Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

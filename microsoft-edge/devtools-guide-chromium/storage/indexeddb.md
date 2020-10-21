@@ -3,16 +3,16 @@ description: Como exibir e alterar dados do IndexedDB com o painel do aplicativo
 title: Exibir e alterar dados do IndexedDB com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993559"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125430"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993559"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Exibir e alterar dados do IndexedDB com o Microsoft Edge DevTools  
 
+Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para exibir e alterar dados do [IndexedDB][MDNIndexedDBAPI] .  Ele pressupõe que você esteja familiarizado com o DevTools.  Ele também pressupõe que você esteja familiarizado com o IndexedDB.  Caso contrário, navegue até [usando o IndexedDB][MDNUsingIndexedDB].  
 
-
-
-# Exibir e alterar dados do IndexedDB com o Microsoft Edge DevTools   
-
-  
-
-Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para exibir e alterar dados do [IndexedDB][MDNIndexedDBAPI] .  Ele pressupõe que você esteja familiarizado com o DevTools.  Ele também pressupõe que você esteja familiarizado com o IndexedDB.  Caso contrário, consulte [usando o IndexedDB][MDNUsingIndexedDB].  
-
-## Exibir dados do IndexedDB   
+## Exibir dados do IndexedDB  
 
 1.  Selecione a guia **aplicativo** para abrir o painel do **aplicativo** .  O painel de **manifesto** geralmente abre por padrão.  
     
@@ -48,7 +42,7 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Expanda o menu **IndexedDB** para ver quais bancos de dados estão disponíveis.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="O menu IndexedDB" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        O menu **IndexedDB**  
     :::image-end:::  
     
@@ -61,7 +55,7 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Selecione um banco de dados para ver a origem e o número da versão.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="O banco de dados anotações" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
        O banco de dados **anotações**  
     :::image-end:::  
     
@@ -70,7 +64,7 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     > [!NOTE]
     > Os dados do IndexedDB não são atualizados em tempo real.  Consulte [atualizar dados do IndexedDB](#refresh-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="O repositório de objetos anotações" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
        O repositório de objetos **anotações**  
     :::image-end:::  
     
@@ -79,87 +73,85 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Selecione uma célula na coluna **valor** para expandir esse valor.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Exibir um valor de IndexedDB" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
        Exibir um valor de **IndexedDB**  
     :::image-end:::  
     
 1.  Selecione um índice, como **título** ou **corpo** na figura a seguir, para classificar o repositório de objetos de acordo com os valores desse índice.  
    
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Classificar um repositório de objetos por um índice" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        Classificar um repositório de objetos por um índice  
     :::image-end:::  
     
-## Atualizar dados do IndexedDB   
+## Atualizar dados do IndexedDB  
 
-Os valores de IndexedDB no painel do **aplicativo** não são atualizados em tempo real.  Selecione **Atualizar** \ ( ![ Atualizar ][ImageReloadIcon] \) ao exibir um repositório de objetos para atualizar os dados ou exibir um banco de dados e clique em **Atualizar banco** de dados para atualizar todos os dados.  
+Os valores de IndexedDB no painel do **aplicativo** não são atualizados em tempo real.  Escolha **Atualizar** \ ( ![ Atualizar ][ImageReloadIcon] \) ao exibir um repositório de objetos para atualizar os dados ou exibir um banco de dados e escolha **Atualizar banco** de dados para atualizar todos os dados.  
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Exibir um banco de dados" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Exibir um banco de dados  
 :::image-end:::  
 
-## Editar dados do IndexedDB   
+## Editar dados do IndexedDB  
 
 As chaves e os valores do IndexedDB não podem ser editados no painel do **aplicativo** .  No entanto, como o DevTools tem acesso ao contexto da página, você pode executar o código JavaScript dentro do DevTools para editar os dados do IndexedDB.  
 
-### Editar dados do IndexedDB com snippets   
+### Editar dados do IndexedDB com snippets  
 
 Os [trechos][DevtoolsJavascriptSnippets] de código são uma maneira de armazenar e executar blocos de código JavaScript dentro do devtools.  Quando você executa um snippet, o resultado é registrado no **console**.  Você pode usar um snippet para executar o código JavaScript para editar um banco de dados do IndexedDB.  
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Usar um trecho para interagir com IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
    Usar um trecho para interagir com IndexedDB  
 :::image-end:::  
 
-## Excluir dados do IndexedDB   
+## Excluir dados do IndexedDB  
 
-### Excluir um par de valor-chave IndexedDB   
+### Excluir um par de valor-chave IndexedDB  
 
 1.  [Exibir um repositório de objetos IndexedDB](#view-indexeddb-data).  
 1.  Selecione o par chave-valor que você deseja excluir.  O DevTools a destaca para indicar que está selecionado.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Selecionar um par de valor chave para excluí-lo" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
        Selecionar um par de valor chave para excluí-lo  
     :::image-end:::  
     
-1.  Pressione a `Delete` tecla ou clique em **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
+1.  Pressione a `Delete` tecla ou escolha **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Como a loja de objetos se parece após o par de valor chave ter sido excluído" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Como a loja de objetos se parece após o par de valor chave ter sido excluído  
     :::image-end:::  
     
-### Excluir todos os pares de valores chave em um repositório de objetos   
+### Excluir todos os pares de valores chave em um repositório de objetos  
 
 1.  [Exibir um repositório de objetos IndexedDB](#view-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Exibir um repositório de objetos" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
        Exibir um repositório de objetos  
     :::image-end:::  
     
-1.  Selecione **limpar repositório de objetos** \ ( ![ limpar repositório de objetos ][ImageClearIcon] \).  
+1.  Escolha **limpar repositório de objetos** \ ( ![ limpar repositório de objetos ][ImageClearIcon] \).  
     
-### Excluir um banco de dados do IndexedDB   
+### Excluir um banco de dados do IndexedDB  
 
 1.  [Exiba o banco de dados do IndexedDB](#view-indexeddb-data) que você deseja excluir.  
-1.  Selecione **excluir banco de dados**.  
+1.  Escolha **excluir banco de dados**.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="O botão excluir banco de dados" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        O botão **excluir banco de dados**  
     :::image-end:::  
     
-### Excluir todo o armazenamento do IndexedDB   
+### Excluir todo o armazenamento do IndexedDB  
 
 1.  Abrir o painel **limpar armazenamento** .  
 1.  Verifique se a caixa de seleção **IndexedDB** está habilitada.  
-1.  Selecione **limpar dados do site**.  
+1.  Escolha **limpar dados do site**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="O painel limpar armazenamento" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        O painel **limpar armazenamento**  
     :::image-end:::  
     
-<!--  
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

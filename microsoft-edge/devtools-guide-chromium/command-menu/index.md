@@ -1,18 +1,18 @@
 ---
-description: Um guia sobre como abrir o menu de comando, executar comandos, ver outras ações e muito mais.
+description: Um guia sobre como abrir o menu de comando, executar comandos, revisar outras ações e muito mais.
 title: Executar comandos com o menu de comando do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993195"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125276"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993195"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Executar comandos com o menu de comando do Microsoft Edge DevTools   
+# Executar comandos com o menu de comando do Microsoft Edge DevTools  
 
   
 
@@ -42,31 +38,31 @@ O menu de comando fornece uma maneira rápida de navegar na interface do usuári
    Usar o menu de comandos para desativar o JavaScript  
 :::image-end:::  
 
-## Abrir o menu de comandos   
+## Abrir o menu de comandos  
 
-Pressione `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \). Ou clique em **Personalizar e controlar devtools** `...` e, em seguida, selecione **executar comando**.  
+Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \). Ou escolha **Personalizar e controlar devtools** `...` e, em seguida, escolha **executar comando**.  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Comando executar" lightbox="../media/command-menu-options-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Usar o menu de comandos para desativar o JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
    Comando executar  
 :::image-end:::  
 
-## Ver outras ações disponíveis   
+## Ver outras ações disponíveis  
 
 Se você usar o fluxo de trabalho descrito em [abrir o menu de comando](#open-the-command-menu), o menu de comandos será aberto com um `>` caractere semipendente na caixa de texto do menu de comandos.  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="O caractere de comando" lightbox="../media/command-menu-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Usar o menu de comandos para desativar o JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
    O caractere de comando  
 :::image-end:::  
 
 Exclua o `>` caractere e digite `?` para ver outras ações que estão disponíveis no menu de comando.  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Outras ações disponíveis" lightbox="../media/command-menu-help.msft.png":::
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Usar o menu de comandos para desativar o JavaScript" lightbox="../media/command-menu-help.msft.png":::
    Outras ações disponíveis  
 :::image-end:::  
 
- 
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

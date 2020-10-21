@@ -3,16 +3,16 @@ description: Habilite "marcar scripts de conteúdo como código de biblioteca" n
 title: Marcar Scripts de Conteúdo como Código de Biblioteca
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992789"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124695"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992789"
 
 Ao usar o painel **fontes** do Microsoft Edge devtools para percorrer o [código][DevToolsJavascriptStepThroughCode], às vezes, você pode pausar o código que não reconhece.  Você provavelmente pausou no código de uma das extensões do Microsoft Edge instaladas.  Conclua as etapas a seguir para não pausar no código de extensão.  
 
-1.  Abra o DevTools, selecione **Personalizar e controle devtools** \ ( `...` \) e escolha **configurações**.  Você também pode abrir **as configurações** selecionando `F1` .  
+1.  Abra o DevTools, escolha **Personalizar e controle devtools** \ ( `...` \) e escolha **configurações**.  Você também pode abrir **as configurações** selecionando `F1` .  
 
 1.  Selecione a guia **código de biblioteca** que abre a seção de código da biblioteca de **estrutura** de **configurações**.  
 1.  Habilite a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca** .  
@@ -41,7 +41,7 @@ Ao usar o painel **fontes** do Microsoft Edge devtools para percorrer o [código
        Habilitar a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca**  
     :::image-end:::  
     
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
