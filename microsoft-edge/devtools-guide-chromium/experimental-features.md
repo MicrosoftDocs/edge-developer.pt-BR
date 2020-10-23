@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124891"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133828"
 ---
 # Recursos experimentais  
 
@@ -31,7 +31,7 @@ Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, use as e
 1.  No lado esquerdo do painel **configurações** , escolha a seção **experimentos** .  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-devtools.msft.png":::
-       Lista de experimentos nas configurações do DevTools  
+       Lista de experimentos nas **configurações** do devtools  
     :::image-end:::  
     
 1.  Na página **experimentos** , percorra a lista de todos os recursos experimentais disponíveis e escolha a caixa de seleção ao lado de cada recurso que você deseja testar.  
@@ -52,6 +52,7 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 | [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
 | [Habilitar console de rede](#enable-network-console) | 85 ou posterior |  
 | [Visualizador de ordem de origem](#source-order-viewer) | 86 ou posterior |  
+| [Habilitar o editor de atalhos de teclado](#enable-keyboard-shortcut-editor) | 87 ou posterior |  
 
 ### Emulação: suporta o modo de tela dupla  
 
@@ -92,7 +93,7 @@ Para usar o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssM
 
 Quando você emula o [Surface Duo][SurfaceDevicesDuo] em uma postura de tela dupla no Microsoft Edge, a fenda \ (o espaço entre as duas telas \) é desenhada em seu site ou aplicativo.  
 
-A exibição emulada corresponde à maneira como seu site \ (ou app \) renderiza no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] no [Surface Duo][SurfaceDevicesDuo].  Pode ser necessário atualizar seu website \ (ou app \) para ser exibido melhor ao longo da fenda.  Para obter mais informações sobre como adaptar seu site \ (ou app \) à fenda, navegue até [como trabalhar com a fenda][DualScreenIntroductionHowWorkSeam] na documentação do Surface Duo.  
+A exibição emulada corresponde à maneira como seu site \ (ou app \) renderiza no [aplicativo Android do Microsoft Edge][GooglePlayMicrosoftEdge] em execução em [Surface Duo][SurfaceDevicesDuo].  Pode ser necessário atualizar seu website \ (ou app \) para ser exibido melhor ao longo da fenda.  Para obter mais informações sobre como adaptar seu site \ (ou app \) à fenda, navegue até [como trabalhar com a fenda][DualScreenIntroductionHowWorkSeam].  
 
 A [barra de ferramentas do dispositivo][DevtoolsDeviceModeIndexSimulateMobileViewport] tem recursos adicionais para ajudá-lo a testar seu site ou aplicativo em várias posturas e orientações.  Escolha **girar** \ ( ![ girar ][ImageRotateIcon] \) para girar o visor para a orientação paisagem. Combine o recurso com **span** \ ( ![ span ][ImageSpanIcon] \) para alternar entre as posturas de tela única ou dobrada e de tela dupla ou sem dobra.  Juntos, os recursos permitem testar o seu site ou aplicativo em todas as quatro posturas e orientações possíveis.  
 
@@ -105,7 +106,8 @@ O ícone de **recursos da plataforma da Web experimental** \ ( ![ ExperimentalAp
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Aqui estão recursos adicionais que podem ajudá-lo a aprimorar seu website \ (ou app \) para dispositivos de tela dupla:
+Aqui estão recursos adicionais que podem ajudá-lo a aprimorar seu website \ (ou app \) para dispositivos de tela dupla.  
+
 *   Para obter mais informações sobre o desenvolvimento da Web em dispositivos de tela dupla, acesse [experiências na Web de tela dupla][DualScreenWebIndex].  
 *   Instale o [emulador Surface Duo][DualScreenAndroidUseEmulator].  Ele é diferente do emulador no Microsoft Edge, emula o Surface Duo executando Android e integra-se ao [Android Studio][AndroidDeveloperStudio].  Para obter mais informações, navegue para [obter o SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
 
@@ -116,7 +118,7 @@ Aqui estão recursos adicionais que podem ajudá-lo a aprimorar seu website \ (o
 
 ### Habilitar novos recursos de depuração de grade CSS  
 
-Este recurso experimental fornece uma série de novas visualizações para ajudar você a depurar layouts de grade CSS.  Para visualizar os recursos experimentais mais recentes, [habilite este experimento](#turn-on-experimental-features) e recarregue o devtools.  Este experimento está ativado por padrão no Edge 87 e posterior.  
+Este recurso experimental fornece uma série de novas visualizações para ajudar você a depurar layouts de grade CSS.  Para visualizar os recursos experimentais mais recentes, [habilite este experimento](#turn-on-experimental-features) e recarregue o devtools.  Este experimento está ativado por padrão no Microsoft Edge versão 87 ou posterior.  
 
 #### Exibir sobreposições de grade de foco com a ferramenta inspecionar  
 
@@ -128,29 +130,29 @@ A ferramenta **inspecionar** fornece uma maneira rápida de identificar e Visual
 
 #### Exibindo sobreposições de grade persistente  
 
-No Edge 86 e posterior, o recurso experimental da grade CSS experimental também oferece a opção de habilitar sobreposições de grade persistentes.  As sobreposições persistentes fornecem vários benefícios.  
+No Microsoft Edge versão 86 ou posterior, o recurso experimental da CSS da CSS também oferece a opção de habilitar sobreposições de grade persistente.  As sobreposições persistentes fornecem vários benefícios.  
 
 *   As sobreposições persistentes permanecem visíveis na página enquanto você rola, move o mouse e usa outros recursos do DevTools.  
 *   Várias sobreposições persistentes podem ser habilitadas ao mesmo tempo, permitindo que você reveja vários layouts de grade ao mesmo tempo.  
-*   Sobreposições persistentes oferecem muitas opções de configuração, como ocultar ou mostrar nomes de área de grade, lacunas de grade, tamanhos de faixas e muito mais.  
+*   Sobreposições persistentes oferecem muitas opções de configuração, como ocultar ou mostrar nomes na área de grade, lacunas de grade, tamanhos de faixa e assim por diante.  
 
 As duas maneiras de alternar uma sobreposição de grade persistente.  
 
-*   Escolha o losango de **grade** ao lado de qualquer elemento de grade mostrado na árvore dom da ferramenta **elementos** .  
+*   Escolha o ícone de elipse de **grade** ao lado de qualquer elemento de grade mostrado na árvore dom da ferramenta de **elementos** .  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/grid-adorner.msft.png":::
-       Losango de grade na ferramenta elementos  
+       Ícone de elipse de grade na ferramenta **elementos**  
     :::image-end:::  
     
 *   Abra o painel novo **layout** localizado na ferramenta elementos e escolha a caixa de seleção ao lado de cada elemento de grade que você deseja realçar.  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
-       Painel de layout  
+       Painel de **layout** no devtools  
     :::image-end:::  
     
 #### Configurando sobreposições persistentes  
 
-O novo painel de **layout** , localizado na ferramenta **elementos** juntamente com as guias **estilos** e **calculados** no Edge 86 e posterior, superfícies opções de configuração para sobreposições persistentes.  
+No Microsoft Edge versão 86 ou posterior, o novo painel de **layout** está localizado na ferramenta **elementos** juntamente com as guias **estilos** e **calculadas** .  O painel de **layout** superfícies as opções de configuração para sobreposições persistentes.  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-grid.msft.png":::
    Recurso de depuração de grade CSS  
@@ -177,7 +179,7 @@ Normalmente, ferramentas como **elementos** e **rede** só podem abrir no painel
 *   PWAs  
 *   outros problemas comuns de desenvolvimento na Web  
 
-O experimento do [webhint][WebhintMain] exibe os comentários do webhint no painel [problemas][DevtoolsIssues] .  Selecione um problema para exibir a documentação da solução e uma lista dos recursos afetados em seu site.  Selecione um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
+O experimento do [webhint][WebhintMain] exibe os comentários do webhint no painel [problemas][DevtoolsIssues] .  Escolha um problema para exibir a documentação da solução e uma lista dos recursos afetados em seu site.  Escolha um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-webhint.msft.png":::
    Comentários da webhint no painel **problemas**  
@@ -211,7 +213,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 
 1.  Abrir o painel de **elementos** .  
 1.  Abra o painel **acessibilidade** no painel gaveta \ (inferior \).  
-1.  Na seção **Visualizador de ordem de origem** , marque a caixa de seleção **Mostrar ordem de origem** .  
+1.  Na seção **Visualizador de ordem de origem** , escolha a caixa de seleção **Mostrar ordem de origem** .  
 1.  Realce qualquer elemento HTML para exibir uma sobreposição que a ordem na fonte da página.  
 
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-source-order-viewer.msft.png":::
@@ -219,6 +221,42 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
+
+### Habilitar o editor de atalhos de teclado
+
+Com o **Editor de atalhos de teclado** ativado o experimento, agora você pode personalizar os atalhos de teclado para qualquer ação no devtools.  Para personalizar o atalho de teclado para uma ação específica, conclua as etapas a seguir.  
+
+1.  [Abra o devtools][DevtoolsOpenMain].  
+1.  Abrir [as configurações][DevToolsCustomizeSettings].
+    *   Selecione `Shift` + `?` .  
+1.  Navegue até a página **atalhos** .  
+1.  Escolha a ação que você deseja personalizar.  
+1.  Escolha o ícone **Editar** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Escolha a ação que deseja personalizar na página **atalhos** em [configurações][DevToolsCustomizeSettings]
+    :::image-end:::  
+    
+1.  No teclado, selecione as teclas que você deseja associar à ação.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Selecione as teclas que você deseja atribuir à ação
+    :::image-end:::  
+    
+1.  Para salvar seu novo atalho de teclado, escolha a marca de seleção \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) ícone.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Escolher o ícone de marca de seleção para salvar o novo atalho de teclado
+    :::image-end:::  
+    
+1.  Selecione o novo atalho de teclado para disparar a ação no DevTools.  
+    
+Na página **atalhos** , o ícone de **atalho de teclado personalizado** \ ( ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \) exibe os atalhos de teclado que você personalizou.  Para redefinir todos os atalhos, escolha **restaurar atalhos padrão**.  
+
+Quando você estiver editando os atalhos de teclado para uma ação, para descartar suas alterações, escolha o ícone X \ ( ![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \).  Para remover atalhos de uma ação específica, escolha o ícone **excluir atalho** \ ( ![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \).  Para adicionar vários atalhos para uma ação, escolha **Adicionar um atalho**.
+
+> [!NOTE]
+> Se um atalho de teclado estiver atribuído atualmente a outra ação, você não poderá salvá-lo para uma nova ação.  Você deve primeiro excluir o atalho de teclado para a ação anterior e, em seguida, adicioná-lo à nova ação.  
 
 ## Recursos experimentais anteriores  
 
@@ -247,6 +285,11 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -256,7 +299,8 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 [DevtoolsIssues]: ./issues/index.md "Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge | Documentos da Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsOpen]: ./open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Documentos da Microsoft"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsOpenMain]: ./open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Experiências na Web de tela dupla | Documentos da Microsoft"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obter o emulador Surface Duo | Documentos da Microsoft"  

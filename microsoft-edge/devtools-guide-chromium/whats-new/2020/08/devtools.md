@@ -7,12 +7,12 @@ ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104858"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133908"
 ---
 # O que há de novo no DevTools (Microsoft Edge 86)  
 
@@ -490,7 +490,7 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 [CR772558]: https://crbug.com/772558 "DevTools: Atualize para a versão mais recente do Lighthouse | Erros de Chromium"  
 [CR807440]: https://crbug.com/807440 "O Chrome trava com um grande número de SWs | Erros de Chromium"  
 [CR997694]: https://crbug.com/997694 "As solicitações XHR com o status do 302 não são mostradas no filtro \ "XHR \" no painel de rede | Erros de Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Ferramentas de grade/flexbox/tabela CSS"  
+[CR1047356]: https://crbug.com/1047356 "Ferramentas de grade/flexbox/tabela CSS | Erros de Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Suporta a depuração COOP/COEP no DevTools | Erros de Chromium"  
 [CR1054281]: https://crbug.com/1054281 "Solicitação de recurso: o DevTools deve emular dobrável e dispositivos de tela dupla | Erros de Chromium"  
 [CR1067184]: https://crbug.com/1067184 "Solicitação de recurso: botão Limpar filtro em elementos de & de rede-> entradas de filtro de estilo | Erros de Chromium"  
