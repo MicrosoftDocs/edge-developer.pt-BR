@@ -178,6 +178,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Trechos de código
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Substituições
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Visão geral do painel fontes
               href: devtools-guide-chromium/sources.md
             - name: Depurar serviços de segundo plano
