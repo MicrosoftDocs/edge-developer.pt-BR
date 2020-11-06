@@ -3,16 +3,16 @@ description: Fornece um resumo das alterações de alto impacto que podem afetar
 title: Compatibilidade do site – alterações que afetam o Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidade, plataforma da Web
-ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: bb4d67bf1ab6274a10a83ee750fa9db52ab85464
+ms.sourcegitcommit: 4497b399a6ddfa34163b7d3db4f76423d4da3c12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100285"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11156345"
 ---
 # Compatibilidade do site – alterações que afetam o Microsoft Edge  
 
@@ -28,7 +28,7 @@ A Web está em constante evolução para melhorar a experiência do usuário, a 
 | Bloquear downloads de conteúdo misto | [Chrome + 1](#release-comments) \ (Edge v86 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, incluindo a linha do tempo planejada pela Google para essa alteração, navegue até a [entrada de blog do Google Security][GoogleBlogSecurity20200206].  O cronograma de distribuição da Microsoft em tipos de arquivo para avisar ou bloquear está planejado para um lançamento após o Chrome.  |  
 | Substituir AppCache | [Chrome + 1](#release-comments) \ (Edge v86 \)  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, acesse a [documentação do webdev][WebDevAppCacheRemoval].  O cronograma de distribuição da Microsoft para substituição está planejado para um lançamento após o Chrome.  Solicitar um [token AppCache OriginTrial][AppCacheOriginTrial] permite que os sites continuem a usar a API substituída até que o Edge V90.  |  
 | Remoção do Adobe Flash | Borda V88  |  | Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, navegue até o [mapa do Adobe Flash Chromium][ChromiumFlashRoadmapSupportRemoved].  | 
-| Desativar e remover FTP | Borda V88  | Borda v87 | No Edge v87, o suporte para FTP está desativado por padrão.  No Edge V88, o suporte para FTP é removido.  Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, navegue até a [entrada de status da plataforma Chrome][ChromePlatformStatus6246151319715840].  |   
+| Desativar e remover FTP | Borda V88  | Edge beta v87 | No v87 Edge beta, o suporte para FTP está desativado por padrão; em Edge stable v87 ele permanecerá habilitado.  No Edge V88, o suporte para FTP é totalmente removido.  Essa alteração está acontecendo no projeto Chromium, no qual o Microsoft Edge é baseado.  Para obter mais informações, navegue até a [entrada de status da plataforma Chrome][ChromePlatformStatus6246151319715840].  As empresas que têm sites que ainda exigem suporte a FTP podem continuar a usar o FTP Configurando o site para usar o [modo IE](https://docs.microsoft.com/deployedge/edge-ie-mode).  |   
 
 ##### Comentários de versão  
 
@@ -64,3 +64,5 @@ A Web está em constante evolução para melhorar a experiência do usuário, a 
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "Remoção de AppCache"
 [AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "Token OriginTrial AppCache"
+
+<!--todo:  cleanup links  -->  
