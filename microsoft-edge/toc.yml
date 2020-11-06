@@ -525,6 +525,8 @@
       items:
         - name: Compatibilidade do site – alterações que afetam o Microsoft Edge
           href: web-platform/site-impacting-changes.md
+        - name: Movendo usuários do IE para o Microsoft Edge
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Controle de prevenção no Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Cadeia de Caracteres do agente de usuário do Microsoft Edge
