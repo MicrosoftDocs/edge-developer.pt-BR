@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
+ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133828"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "11160360"
 ---
 # Recursos experimentais  
 
@@ -22,7 +22,7 @@ Embora os recursos experimentais estejam disponíveis em todos os canais do Micr
 
 ## Ativar os recursos experimentais  
 
-Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, use as etapas a seguir.  
+Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, siga as etapas a seguir.  
 
 1.  [Abra o devtools][DevtoolsOpen].  
      *   Selecione `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
@@ -53,6 +53,7 @@ As seções a seguir descrevem os novos recursos experimentais que estão dispon
 | [Habilitar console de rede](#enable-network-console) | 85 ou posterior |  
 | [Visualizador de ordem de origem](#source-order-viewer) | 86 ou posterior |  
 | [Habilitar o editor de atalhos de teclado](#enable-keyboard-shortcut-editor) | 87 ou posterior |  
+| [Ativar camadas compostas no modo de exibição 3D](#turn-on-composited-layers-in-3d-view) | 87 ou posterior |  
 
 ### Emulação: suporta o modo de tela dupla  
 
@@ -68,7 +69,7 @@ EMule os dispositivos e alterne entre as seguintes condições.
     
 [Habilite APIs experimentais da Web Platform](#enable-experimental-apis) e use o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssMedia] e a [API JavaScript getWindowSegments][DualScreenDocsJSAPI] para aprimorar seu site \ (ou app \) para dispositivos de tela dupla e dobrável.  
 
-:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Emular superfície Duo no Microsoft Edge" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    Emular superfície Duo no Microsoft Edge  
 :::image-end:::  
 
@@ -80,7 +81,7 @@ Para usar o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssM
 1.  Na caixa de texto de **sinalizadores de pesquisa** , digite `Experimental Web Platform features` , escolha o sinalizador de **recursos da plataforma da Web experimental** e alterar **desabilitado** como **habilitado**.  
 1.  Reinicie o Microsoft Edge.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Habilitar o sinalizador de recursos da plataforma da Web experimental" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Habilitar o sinalizador de recursos da plataforma da Web experimental  
 :::image-end:::  
 
@@ -97,7 +98,7 @@ A exibição emulada corresponde à maneira como seu site \ (ou app \) renderiza
 
 A [barra de ferramentas do dispositivo][DevtoolsDeviceModeIndexSimulateMobileViewport] tem recursos adicionais para ajudá-lo a testar seu site ou aplicativo em várias posturas e orientações.  Escolha **girar** \ ( ![ girar ][ImageRotateIcon] \) para girar o visor para a orientação paisagem. Combine o recurso com **span** \ ( ![ span ][ImageSpanIcon] \) para alternar entre as posturas de tela única ou dobrada e de tela dupla ou sem dobra.  Juntos, os recursos permitem testar o seu site ou aplicativo em todas as quatro posturas e orientações possíveis.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matriz de posturas e orientações para dispositivos com tela dupla e dobrável" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    Matriz de posturas e orientações para dispositivos com tela dupla e dobrável  
 :::image-end:::  
 
@@ -124,7 +125,7 @@ Este recurso experimental fornece uma série de novas visualizações para ajuda
 
 A ferramenta **inspecionar** fornece uma maneira rápida de identificar e Visualizar layouts de grade CSS em um site passando o mouse sobre eles.  Escolha o ícone **inspecionar** \ ( ![ inspecionar ](./media/inspect-icon.msft.png) \) no canto superior esquerdo do devtools.  Em seguida, passe o mouse sobre um elemento de grade no site que você está depurando.  As estruturas de tópicos são exibidas ao lado da grade, e o sombreamento indica o local das lacunas da grade, se houver.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Visualização de grades com a ferramenta inspecionar" lightbox="./media/grid-inspect.msft.png":::
    Visualização de grades com a ferramenta inspecionar  
 :::image-end:::  
 
@@ -140,13 +141,13 @@ As duas maneiras de alternar uma sobreposição de grade persistente.
 
 *   Escolha o ícone de elipse de **grade** ao lado de qualquer elemento de grade mostrado na árvore dom da ferramenta de **elementos** .  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/grid-adorner.msft.png":::
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Ícone de elipse de grade na ferramenta elementos" lightbox="./media/grid-adorner.msft.png":::
        Ícone de elipse de grade na ferramenta **elementos**  
     :::image-end:::  
     
 *   Abra o painel novo **layout** localizado na ferramenta elementos e escolha a caixa de seleção ao lado de cada elemento de grade que você deseja realçar.  
     
-    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Painel de layout no DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
        Painel de **layout** no devtools  
     :::image-end:::  
     
@@ -154,7 +155,7 @@ As duas maneiras de alternar uma sobreposição de grade persistente.
 
 No Microsoft Edge versão 86 ou posterior, o novo painel de **layout** está localizado na ferramenta **elementos** juntamente com as guias **estilos** e **calculadas** .  O painel de **layout** superfícies as opções de configuração para sobreposições persistentes.  
 
-:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-grid.msft.png":::
+:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Recurso de depuração de grade CSS" lightbox="./media/experiments-grid.msft.png":::
    Recurso de depuração de grade CSS  
 :::image-end:::  
 
@@ -162,7 +163,7 @@ No Microsoft Edge versão 86 ou posterior, o novo painel de **layout** está loc
 
 Normalmente, ferramentas como **elementos** e **rede** só podem abrir no painel principal localizado na parte superior da devtools.  Ferramentas como **modo de exibição 3D** e **problemas** que normalmente são abertos apenas no painel de **gaveta** localizado na parte inferior da devtools.  Depois de escolher o experimento, você poderá mover ferramentas entre os painéis superior e inferior.  Para mover uma ferramenta, passe o mouse sobre a guia, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para o início** ou **mover para o fim**.   Este experimento permite que você personalize o layout do DevTools.  Para mostrar ou ocultar o painel de **gavetas** , selecione `Escape` .  
 
-:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-move-panels.msft.png":::
+:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Mover guias entre painéis" lightbox="./media/experiments-move-panels.msft.png":::
    Mover guias entre painéis  
 :::image-end:::  
 
@@ -176,12 +177,12 @@ Normalmente, ferramentas como **elementos** e **rede** só podem abrir no painel
 *   compatibilidade entre navegadores  
 *   segurança  
 *   execução  
-*   PWAs  
+*   Aplicativos Web progressivos (PWAs)  
 *   outros problemas comuns de desenvolvimento na Web  
 
 O experimento do [webhint][WebhintMain] exibe os comentários do webhint no painel [problemas][DevtoolsIssues] .  Escolha um problema para exibir a documentação da solução e uma lista dos recursos afetados em seu site.  Escolha um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Comentários da webhint no painel problemas" lightbox="./media/experiments-webhint.msft.png":::
    Comentários da webhint no painel **problemas**  
 :::image-end:::  
 
@@ -191,7 +192,7 @@ O experimento do [webhint][WebhintMain] exibe os comentários do webhint no pain
 
 **Console de rede** é o título de trabalho de um experimento para fazer solicitações de rede sintéticas por http.  Você pode usar o experimento do **console de rede** para enviar solicitações de API da Web.  
 
-Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar o **console de rede**, use as etapas a seguir.  
+Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar o **console de rede**, siga as etapas a seguir.  
 
 1.  Abra o painel **rede** .  
 1.  Localize a solicitação de rede que você deseja alterar e envie novamente.  
@@ -199,7 +200,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 1.  Quando o **console de rede** for aberto, edite as informações de solicitação de rede.  
 1.  Escolha **Enviar**.  
 
-:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/network-network-console.msft.png":::
+:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Console de rede na gaveta do console" lightbox="./media/network-network-console.msft.png":::
    **Console de rede** na gaveta do **console**  
 :::image-end:::  
 
@@ -209,14 +210,14 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 
 O **Visualizador de ordem de origem** é um experimento que exibe a ordem dos elementos na fonte da página.  A ordem de exibição na tela pode ser diferente da ordem da fonte, que confundi o leitor de tela e os usuários de teclado.  Use o **Visualizador de pedido de origem** para encontrar as diferenças entre ordem de exibição na tela e a ordem da fonte.  
 
-Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar o **Visualizador de ordem de origem**, use as etapas a seguir.  
+Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar o **Visualizador de ordem de origem**, conclua as etapas a seguir.  
 
 1.  Abrir o painel de **elementos** .  
 1.  Abra o painel **acessibilidade** no painel gaveta \ (inferior \).  
 1.  Na seção **Visualizador de ordem de origem** , escolha a caixa de seleção **Mostrar ordem de origem** .  
 1.  Realce qualquer elemento HTML para exibir uma sobreposição que a ordem na fonte da página.  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visualizador de ordem de origem no painel Acessibilidade" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Visualizador de ordem de origem** no painel **acessibilidade**  
 :::image-end:::  
 
@@ -233,19 +234,19 @@ Com o **Editor de atalhos de teclado** ativado o experimento, agora você pode p
 1.  Escolha a ação que você deseja personalizar.  
 1.  Escolha o ícone **Editar** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Escolha a ação que deseja personalizar na página atalhos em configurações" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Escolha a ação que deseja personalizar na página **atalhos** em [configurações][DevToolsCustomizeSettings]
     :::image-end:::  
     
 1.  No teclado, selecione as teclas que você deseja associar à ação.
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Selecione as teclas que você deseja atribuir à ação" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Selecione as teclas que você deseja atribuir à ação
     :::image-end:::  
     
 1.  Para salvar seu novo atalho de teclado, escolha a marca de seleção \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) ícone.
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Escolher o ícone de marca de seleção para salvar o novo atalho de teclado" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Escolher o ícone de marca de seleção para salvar o novo atalho de teclado
     :::image-end:::  
     
@@ -257,6 +258,25 @@ Quando você estiver editando os atalhos de teclado para uma ação, para descar
 
 > [!NOTE]
 > Se um atalho de teclado estiver atribuído atualmente a outra ação, você não poderá salvá-lo para uma nova ação.  Você deve primeiro excluir o atalho de teclado para a ação anterior e, em seguida, adicioná-lo à nova ação.  
+
+<!--Available in Microsoft Edge version 87 and later.  -->
+
+### Ativar camadas compostas no modo de exibição 3D
+
+Agora você pode visualizar camadas juntamente com os índices z e o modelo de objeto do documento \ (DOM \).  Esse recurso ajuda você a depurar sem mudar de contextos com frequência.  Você identificou que reduzir a alternância de contexto era um grande ponto problemático.  Nem sempre fica claro como o código que você escreve afeta o aplicativo Web.  Para uma experiência de depuração Visual abrangente, o modo de exibição 3D e as camadas compostas agora são combinados.  Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar **camadas compostas**, conclua as etapas a seguir.  
+
+<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
+1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
+1.  Open the Devtools.  -->  
+1.  Na gaveta, escolha a ferramenta **modo de exibição 3D** .  
+1.  Abrir o painel de **camadas compostas** .  
+1.  Todas as camadas pintadas do aplicativo são exibidas.  Experimente este recurso com seus próprios aplicativos Web.  
+
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Painel de camadas compostas" lightbox="./media/experiments-layers.msft.png":::
+   Painel de **camadas compostas**  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ## Recursos experimentais anteriores  
 
@@ -270,7 +290,7 @@ Para fornecer comentários sobre o Microsoft Edge DevTools experimentos ou qualq
 *   Envie seus comentários usando o ícone **enviar comentários** no devtools  
 *   Tweet em [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Lista de experimentos nas configurações do DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="O ícone enviar comentários no Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    O ícone **enviar comentários** no Microsoft Edge devtools  
 :::image-end:::  
 
