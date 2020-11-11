@@ -3,17 +3,17 @@ description: Guia de introdução com o WebView2 para aplicativos do WPF
 title: Introdução ao WebView2 para aplicativos do WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicativos WPF, WPF, Edge, CoreWebView2, controle do navegador, HTML do Edge, introdução, introdução, .NET
-ms.openlocfilehash: 8a18d12f30872ce3dd373e40ce8c7a4f0c4edad9
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 9977fad5f0462372eaa863fd740cbba6c92f6354
+ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119112"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162630"
 ---
 # Introdução ao WebView2 no WPF (visualização)
 
@@ -23,7 +23,7 @@ Neste artigo, comece a criar seu primeiro aplicativo WebView2 e saiba mais sobre
 
 Verifique se você instalou a seguinte lista de pré-requisitos antes de continuar:  
 
-* [Microsoft Edge (Chromium) Canárias Channel](https://www.microsoftedgeinsider.com/download) instalado no Windows 10, no Windows 8,1 ou no Windows 7.  
+* [WebView2 Runtime][Webview2Installer] ou qualquer [canal do Canárias Microsoft Edge (Chromium) não estável](https://www.microsoftedgeinsider.com/download) instalado no Windows 10, no Windows 8,1 ou no Windows 7.  
 * [Visual Studio](https://visualstudio.microsoft.com) 2017 ou posterior.  
 
 ## Etapa 1-criar um único aplicativo de janela  
@@ -39,7 +39,7 @@ Comece com um projeto de área de trabalho básico contendo uma única janela pr
              Núcleo do WPF :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Núcleo do WPF":::
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Estrutura WPF":::
              Estrutura WPF :::image-end:::
        :::column-end:::
     :::row-end:::
@@ -48,11 +48,11 @@ Comece com um projeto de área de trabalho básico contendo uma única janela pr
     
     :::row:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Núcleo do WPF":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Criar núcleo":::
                  Criar núcleo :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Núcleo do WPF":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Criar estrutura":::
                  Criar estrutura :::image-end:::
            :::column-end:::
         :::row-end:::
@@ -65,7 +65,7 @@ Em seguida, adicione o SDK WebView2 ao projeto.  Para a visualização, instale 
 
 1.  Abra o menu de contexto no projeto \ (clique com o botão direito do mouse \) e selecione **gerenciar pacotes NuGet..**..  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Núcleo do WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
        NuGet
     :::image-end:::
     
@@ -78,7 +78,7 @@ Em seguida, adicione o SDK WebView2 ao projeto.  Para a visualização, instale 
     
     Você está pronto para começar a desenvolver aplicativos usando a API WebView2.  Selecione `F5` para compilar e executar o projeto.  O projeto em execução exibe uma janela vazia.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Núcleo do WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Aplicativo vazio":::
        Aplicativo vazio
     :::image-end:::  
     
@@ -125,7 +125,7 @@ Em seguida, adicione um WebView ao seu aplicativo.
     
 1.  Pressione `F5` para compilar e executar seu projeto.  Confirme se o controle WebView2 é exibido [https://www.microsoft.com](https://www.microsoft.com) .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Núcleo do WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
     :::image-end:::  
     
@@ -183,7 +183,7 @@ Adicione a capacidade de permitir que os usuários alterem a URL que o controle 
     > [!NOTE]
     > Certifique-se de que uma URL completa seja inserida na barra de endereços.  Uma `ArgumentException` será lançada se a URL não iniciar com `http://` ou `https://` .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Núcleo do WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
        Bing
     :::image-end:::
     
@@ -199,7 +199,7 @@ O aplicativo que hospeda os controles WebView2 ouve os eventos a seguir que são
 
 Para obter mais informações, consulte [eventos de navegação](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Núcleo do WPF":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegação":::
    Eventos de navegação
 :::image-end:::  
 
@@ -256,7 +256,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 Pressione `F5` para compilar e executar seu projeto.  Confirme se o aplicativo exibe um alerta ao navegar para um site que não usa HTTPS.  
 
-:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="Núcleo do WPF":::
+:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
 :::image-end:::  
 
@@ -324,7 +324,7 @@ Em seu projeto, quando o controle WebView2 navega para uma URL, ele exibe a URL 
     
     Pressione `F5` para compilar e executar o aplicativo.  Agora a barra de endereços exibe o URI na WebView e, quando você navega com êxito para um novo URI, o WebView alerta o usuário do URI exibido na WebView.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="Núcleo do WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
        addressBar
     :::image-end:::
 
@@ -339,3 +339,8 @@ Parabéns, você criou seu primeiro aplicativo WebView2!
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+
+<!-- links -->  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador do WebView2" 
