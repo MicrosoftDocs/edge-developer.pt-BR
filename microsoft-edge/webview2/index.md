@@ -3,17 +3,17 @@ description: Hospedar conteúdo da Web em seus aplicativos do Win32, .NET e UWP 
 title: Controle WebView2 do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, controle de navegador, HTML de borda, Windows Forms, WinForms, WPF, .NET, WinUI, reunião do projeto
-ms.openlocfilehash: 412ff112ab0eed69b63316b2916f849a32196363
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
+ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120372"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182180"
 ---
 # Introdução ao Microsoft Edge WebView2  
 
@@ -27,15 +27,15 @@ O controle WebView2 do Microsoft Edge permite que você incorpore tecnologias da
 
 Geralmente, os desenvolvedores precisam decidir entre a criação de um aplicativo Web ou um aplicativo nativo.  As dobradiças de decisão sobre a compensação entre o alcance e a potência.  Os aplicativos da Web permitem um amplo alcance.  Como um desenvolvedor da Web, você pode reutilizar a maioria, se não todo o seu código, em todas as plataformas diferentes.  No entanto, os aplicativos nativos utilizam os recursos de toda a plataforma nativa.  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="O que é o WebView" lightbox="./media/WebView2/webnative.png":::
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web Native" lightbox="./media/WebView2/webnative.png":::
    Web Native  
 :::image-end:::  
 
 Os aplicativos híbridos permitem que os desenvolvedores aproveitem o melhor dos dois mundos.  Os desenvolvedores de aplicativos híbridos se beneficiam do Ubiquity e da força da plataforma da Web, e da capacidade e dos recursos completos da plataforma nativa.  
 
-## Benefícios do WebView2   
+## Benefícios do WebView2  
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="O que é o WebView" lightbox="./media/WebView2/webviewreasons.png":::
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Motivos da WebView" lightbox="./media/WebView2/webviewreasons.png":::
    Motivos da WebView  
 :::image-end:::  
 
@@ -97,22 +97,24 @@ O repositório de [exemplos WebView2][GithubMicrosoftedgeWebview2samples] conté
 
 Uma disponibilidade geral \ (GA \) ou versão de visualização está disponível nos seguintes ambientes de programação:  
 
-*   Win32 C/C++ \ (GA \)
-*   .NET Framework 4.6.2 ou posterior \ (visualização \) 
-*   .NET Core 3,0 ou posterior \ (visualização \)
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (visualização \)
+*   Win32 C/C++ \ (GA \)  
+*   .NET Framework 4.6.2 ou posterior \ (visualização \)  
+*   .NET Core 3,0 ou posterior \ (visualização \)  
+*   [WinUI 3,0][UwpToolkitsWinui3] \ (visualização \)  
 
 Você poderá executar aplicativos do WebView2 nas seguintes versões do Windows.  
 
 *   Windows 10  
 *   Windows 8.1  
-*   Windows 8  
-*   Windows 7  
+*   Windows 7 \ * \ *  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
-*   2012R2 do Windows Server  
-*   Windows Server 2008 R2  
+*   Windows Server 2012 R2  
+*   Windows Server 2008 R2 \ * \ *  
+
+> [!IMPORTANT]
+> \ * \ * O suporte do WebView2 para Windows 7 e Windows Server 2008 R2 tem o mesmo ciclo de suporte que o Microsoft Edge.  Para obter mais informações, navegue até [sistemas operacionais compatíveis com o Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].  
 
 ## Próximas etapas  
 
@@ -140,7 +142,7 @@ Para obter mais informações sobre como criar e implantar aplicativos do WebVie
 [Webview2ConceptsSecurity]: ./concepts/security.md "Práticas recomendadas para o desenvolvimento de aplicativos seguros do WebView2 | Documentos da Microsoft"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "Gerenciando a pasta dados do usuário | Documentos da Microsoft"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Compreenda as versões do SDK do WebView2 | Documentos da Microsoft"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Introdução ao WebView2 | Documentos da Microsoft"   
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Introdução ao WebView2 | Documentos da Microsoft"  
 [Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Introdução ao WebView2 em aplicativos do Windows Forms (visualização) | Documentos da Microsoft"  
 [Webview2GettingstartedWinui]: ./gettingstarted/winui.md "Introdução ao WebView2 no WinUI3 (visualização) | Documentos da Microsoft"  
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Introdução ao WebView2 no WPF (visualização) | Documentos da Microsoft"  
@@ -148,7 +150,9 @@ Para obter mais informações sobre como criar e implantar aplicativos do WebVie
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "Automatizando e testando o WebView2 com o Microsoft Edge driver | Documentos da Microsoft"  
 [Webview2Releasenotes]: ./releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
 
-[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI library 3 Preview 2 (julho de 2020) | Documentos da Microsoft"  
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Windows UI library 3 Preview 2 (julho de 2020) | Documentos da Microsoft"  
+
+[DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Sistemas operacionais com suporte do Microsoft Edge | Documentos da Microsoft"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Exemplos de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Feedback da WebView-MicrosoftEdge/WebViewFeedback | GitHub" 
