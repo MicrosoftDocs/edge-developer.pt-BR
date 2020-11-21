@@ -3,20 +3,20 @@ description: Recursos adicionados ao Microsoft Edge (Chromium) DevTools em març
 title: O que há de novo no Microsoft Edge (Chromium) DevTools em março de 2019
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 0b592eddbd68b3bbd8ff0a9edf9a1253bd79677e
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645319"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182509"
 ---
 # O que há de novo no Microsoft Edge (Chromium) DevTools
 
-Muito obrigado por experimentar uma visualização da próxima versão do Microsoft Edge! Com esta versão, desenvolvemos uma grande mudança na plataforma da Web subjacente do Microsoft Edge, adotando o projeto de fonte aberta Chromium. Com essa alteração, será mais fácil para você criar e testar seus sites no Microsoft Edge e garantir que eles ainda funcionarão como esperado, mesmo se seus usuários estiverem procurando em um navegador diferente baseado no Chromium, como Google Chrome, Vivaldi, Opera ou Brave.
+Muito obrigado por experimentar uma visualização do novo Microsoft Edge! Com esta versão, desenvolvemos uma grande mudança na plataforma da Web subjacente do Microsoft Edge, adotando o projeto de fonte aberta Chromium. Com essa alteração, será mais fácil para você criar e testar seus sites no Microsoft Edge e garantir que eles ainda funcionarão como esperado, mesmo se seus usuários estiverem procurando em um navegador diferente baseado no Chromium, como Google Chrome, Vivaldi, Opera ou Brave.
 
 ## O novo Microsoft Edge (Chromium) DevTools
 
@@ -24,7 +24,7 @@ Se você estiver fazendo check-out do Microsoft Edge e se desenvolve principalme
 
 ![Microsoft Edge (Chromium) DevTools](./media/devtools.png)
 
-Se você estiver fazendo check-out da próxima versão do Microsoft Edge e tiver desenvolvido principalmente no Microsoft Edge (EdgeHTML), temos algumas ótimas ferramentas novas que esperamos tornar mais fácil e rápido criar e testar seus sites no Microsoft Edge! Para saber mais sobre essas novas ferramentas, confira [o guia do devtools Microsoft Edge (Chromium)](../devtools-guide-chromium.md).
+Se você estiver fazendo o check-out do novo Microsoft Edge e tiver desenvolvido principalmente no Microsoft Edge (EdgeHTML), temos algumas ferramentas incríveis incríveis que esperamos facilitar e agilizar a criação e teste de seus sites da Web no Microsoft Edge! Para saber mais sobre essas novas ferramentas, confira [o guia do devtools Microsoft Edge (Chromium)](../devtools-guide-chromium.md).
 
 ## Novos temas escuros e leves para o DevTools
 
@@ -40,7 +40,7 @@ Com o [depurador para Microsoft Edge](https://marketplace.visualstudio.com/items
 
 ![Depurador para borda VS extensão de código](./media/vscode-debugger.png)
 
-Para iniciar o Microsoft Edge (Chromium) em vez do Microsoft Edge (EdgeHTML) a partir de código VS, você precisa adicionar um `version` atributo à sua configuração **Iniciar. JSON** existente com a versão do Microsoft Edge (Chromium) que deseja iniciar ( `dev` , `beta` , ou `canary` ). Aqui está uma configuração de exemplo de **inicialização. JSON** que iniciará a versão Canárias do Microsoft Edge (Chromium) para o [Bing.com](https://www.bing.com/):
+Para iniciar o Microsoft Edge (Chromium) em vez do Microsoft Edge (EdgeHTML) a partir do código VS, você precisa adicionar um `version` atributo ao seu **launch.jsexistente na** configuração com a versão do Microsoft Edge (Chromium) que deseja iniciar ( `dev` , `beta` ou ou `canary` ). Aqui está um exemplo **launch.jsna** configuração que iniciará a versão Canárias do Microsoft Edge (Chromium) para o [Bing.com](https://www.bing.com/):
 
 ```json
 {
@@ -58,7 +58,7 @@ Para obter mais informações, confira [como depurar o Microsoft Edge (Chromium)
 
 Com o turno na plataforma da Web subjacente do Microsoft Edge, o protocolo Edge DevTools não receberá mais nenhuma atualização. O DevTools Microsoft Edge (Chromium) usará o protocolo de DevTools do Chrome ou a CDP. Para fazer referência à documentação dos domínios e métodos no CDP, consulte [o Visualizador de CDP](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-Na próxima versão do Microsoft Edge, não haverá suporte para os métodos com prefixos `ms` . Para saber mais sobre como usar o CDP no Microsoft Edge (Chromium), consulte [devtools Protocol (Chromium)](../devtools-protocol-chromium.md).
+No novo Microsoft Edge, qualquer método com o prefixo `ms` não terá suporte. Para saber mais sobre como usar o CDP no Microsoft Edge (Chromium), consulte [devtools Protocol (Chromium)](../devtools-protocol-chromium.md).
 
 ## Problemas conhecidos
 

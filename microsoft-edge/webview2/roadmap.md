@@ -3,21 +3,21 @@ description: Saiba mais sobre o que vem a seguir para WebView2
 title: Mapa da WebView da Microsoft Edge 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120365"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182357"
 ---
 # Mapa de WebView2 do Microsoft Edge  
 
-##### Última atualização: outubro de 2020  
+##### Última atualização: novembro de 2020  
 
 O controle WebView2 permite que os desenvolvedores insiram tecnologias da Web em seus aplicativos nativos.  A página a seguir descreve o mapa potencial para WebView2.  
 
@@ -38,7 +38,7 @@ A equipe do WebView2 está planejando os principais esforços para atualizaçõe
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Versão corrigida  
+      Versão Não Editável  
    :::column-end:::
    :::column span="2":::
       *   Quarto trimestre de 2020  
@@ -61,7 +61,7 @@ O [modelo de distribuição verde][ConceptDistributionEvergreenModel] permite qu
 
 ## Versão corrigida  
 
-O [modelo de distribuição de versão fixa][ConceptsDistributionFixedVersionModel] permite empacotar os binários do Microsoft Edge dentro de seu aplicativo nativo.  No momento, ele está sendo visualizado e direcionado para o GA, quarto trimestre de 2020.  
+O [modelo de distribuição de versão fixa][ConceptsDistributionFixedVersionModel] permite empacotar os binários do Microsoft Edge dentro de seu aplicativo nativo.  A versão corrigida atingiu a disponibilidade geral \ (GA \).  
 
 ## Disponibilidade geral  
 
@@ -71,7 +71,7 @@ O SDK C/C++ do Win32 alcançou GA.
 
 ### .NET  
 
-O SDK do .NET encapsula o SDK C/C++ do Win32.  O SDK do .NET é esperado para GA, logo após o Win32 C/C++ GA no quarto trimestre de 2020.  
+O SDK do .NET alcançou o GA. 
 
 ### WinUI 3.0  
 
