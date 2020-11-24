@@ -3,17 +3,17 @@ description: Opções de distribuição ao liberar um aplicativo usando o Micros
 title: Distribuição de aplicativos do Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
+ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182406"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182906"
 ---
 # Distribuição de aplicativos usando o WebView2  
 
@@ -58,7 +58,7 @@ Apenas uma instalação do WebView2 do tempo de execução do verde é necessár
     
 Atualmente, tanto o bootstrapper quanto o instalador autônomo são compatíveis com instalações por máquina, o que requer elevação.  Se um instalador for executado sem elevação, o usuário será solicitado a elevar as permissões.  
 
-Use fluxos de trabalho a seguir para garantir que o tempo de execução já esteja instalado antes do aplicativo ser iniciado.  Você pode ajustar o fluxo de trabalho dependendo do cenário.  O código de exemplo está disponível no [Samples repositório] [GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
+Use fluxos de trabalho a seguir para garantir que o tempo de execução já esteja instalado antes do aplicativo ser iniciado.  Você pode ajustar o fluxo de trabalho dependendo do cenário.  O exemplo de código está disponível no [repositório de exemplos][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
 #### Implantação somente online  
 
@@ -195,6 +195,6 @@ Em comparação com o tempo de execução verde, a versão corrigida não tem um
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView feedback | GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Implantação do WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Implantação do WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
