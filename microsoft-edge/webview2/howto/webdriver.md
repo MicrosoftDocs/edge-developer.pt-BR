@@ -3,142 +3,173 @@ description: Automatizar e testar o controle WebView2 usando o Microsoft Edge dr
 title: Automatizando e testando o WebView2 com o Microsoft Edge driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Driver do Microsoft Edge
-ms.openlocfilehash: a91c01d1ad765dae45061e382daedc2295d70bb8
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 6f7f84fa88a57e54d7b5143a489d1138c7426d88
+ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926440"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191447"
 ---
-# <span data-ttu-id="9c063-104">Automatizando e testando o WebView2 com o Microsoft Edge driver</span><span class="sxs-lookup"><span data-stu-id="9c063-104">Automating and testing WebView2 with Microsoft Edge Driver</span></span>
+# <span data-ttu-id="71da7-104">Automatizando e testando o WebView2 com o Microsoft Edge driver</span><span class="sxs-lookup"><span data-stu-id="71da7-104">Automating and testing WebView2 with Microsoft Edge Driver</span></span>  
 
-<span data-ttu-id="9c063-105">Como o WebView2 utiliza a plataforma Web Chromium, WebView2 os desenvolvedores podem aproveitar as ferramentas padrão da Web para depuração e automação.</span><span class="sxs-lookup"><span data-stu-id="9c063-105">Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation.</span></span> <span data-ttu-id="9c063-106">Uma dessas ferramentas é Selenium, que implementa a API do W3C [WebDriver](https://www.w3.org/TR/webdriver2/) , que pode ser usada para criar testes automatizados que simulam interações do usuário.</span><span class="sxs-lookup"><span data-stu-id="9c063-106">One such tool is Selenium, which implements the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.</span></span>
+<span data-ttu-id="71da7-105">Como o WebView2 usa a plataforma da Web Microsoft Edge \ (Chromium \), os desenvolvedores WebView2 \ (você \) podem aproveitar a ferramenta padrão da Web para depuração e automação.</span><span class="sxs-lookup"><span data-stu-id="71da7-105">Because WebView2 uses the Microsoft Edge \(Chromium\) web platform, WebView2 developers \(you\) may take advantage of standard web tooling for debugging and automation.</span></span>  <span data-ttu-id="71da7-106">O Selenium é uma dessas ferramentas.</span><span class="sxs-lookup"><span data-stu-id="71da7-106">Selenium is one such tool.</span></span>  <span data-ttu-id="71da7-107">Ele implementa a API do W3C para [WebDriver][W3cWebdriver2] .</span><span class="sxs-lookup"><span data-stu-id="71da7-107">It implements the W3C [WebDriver][W3cWebdriver2] API.</span></span>  <span data-ttu-id="71da7-108">Você pode usar Selenium para criar testes automatizados para simular interações do usuário.</span><span class="sxs-lookup"><span data-stu-id="71da7-108">You may use Selenium to create automated tests to simulate user interactions.</span></span>  
 
-<span data-ttu-id="9c063-107">Veja como começar:</span><span class="sxs-lookup"><span data-stu-id="9c063-107">Here's how to get started:</span></span>
+<span data-ttu-id="71da7-109">Comece a usar as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="71da7-109">Get started with the following steps.</span></span>  
 
-## <span data-ttu-id="9c063-108">Etapa 1: baixar a amostra de WebView2API</span><span class="sxs-lookup"><span data-stu-id="9c063-108">Step 1: Download WebView2API Sample</span></span>
+## <span data-ttu-id="71da7-110">Etapa 1: baixar a amostra de WebView2API</span><span class="sxs-lookup"><span data-stu-id="71da7-110">Step 1: Download WebView2API Sample</span></span>  
 
-<span data-ttu-id="9c063-109">Se você não tiver um projeto existente do WebView2, baixe o [aplicativo de exemplo do WebView2API](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#webview2-api-sample), um exemplo abrangente do SDK WebView2 mais recente.</span><span class="sxs-lookup"><span data-stu-id="9c063-109">If you do not have an existing WebView2 project, download our [WebView2API Sample application](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#webview2-api-sample), a comprehensive sample of the latest WebView2 SDK.</span></span> <span data-ttu-id="9c063-110">Verifique se você já tem satisfeito por estes [pré-requisitos](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#prerequisites).</span><span class="sxs-lookup"><span data-stu-id="9c063-110">Please double check that you have satisfied these [prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#prerequisites).</span></span>
+<span data-ttu-id="71da7-111">Se você não tiver um projeto WebView2 existente, baixe o [aplicativo de exemplo WebView2API][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], um exemplo abrangente do SDK WebView2 mais recente.</span><span class="sxs-lookup"><span data-stu-id="71da7-111">If you do not have an existing WebView2 project, download the [WebView2API Sample app][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], a comprehensive sample of the latest WebView2 SDK.</span></span>  <span data-ttu-id="71da7-112">Certifique-se de que você tenha satisfeito com os [pré-requisitos do aplicativo de exemplo WebView2API][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites].</span><span class="sxs-lookup"><span data-stu-id="71da7-112">Ensure you have satisfied the [prerequisites for the WebView2API Sample app][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites].</span></span> 
 
-<span data-ttu-id="9c063-111">Depois de clonar o repositório, compile o projeto no Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="9c063-111">Once you have cloned the repo, build the project in Visual Studio.</span></span> <span data-ttu-id="9c063-112">Ele deve ter uma aparência semelhante a esta:</span><span class="sxs-lookup"><span data-stu-id="9c063-112">It should look like the following:</span></span>
+<span data-ttu-id="71da7-113">Depois de clonar o repositório, compile o projeto no Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="71da7-113">Once you have cloned the repo, build the project in Visual Studio.</span></span>  <span data-ttu-id="71da7-114">Ele deve ter a aparência da figura a seguir.</span><span class="sxs-lookup"><span data-stu-id="71da7-114">It should look like the following figure.</span></span>  
 
-![texto alternativo](../media/webdriver/sample-app.png)
+:::image type="complex" source="../media/webdriver/sample-app.png" alt-text="Aplicativo de exemplo WebView2API" lightbox="../media/webdriver/sample-app.png":::
+   <span data-ttu-id="71da7-116">Aplicativo de exemplo WebView2API</span><span class="sxs-lookup"><span data-stu-id="71da7-116">WebView2API Sample app</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="9c063-114">Etapa 2: instalar o driver Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="9c063-114">Step 2: Install Microsoft Edge Driver</span></span>
+## <span data-ttu-id="71da7-117">Etapa 2: instalar o driver Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="71da7-117">Step 2: Install Microsoft Edge Driver</span></span>  
 
-<span data-ttu-id="9c063-115">Siga as instruções para instalar o [Driver do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/webdriver-chromium#download-microsoft-edge-driver) o driver específico do navegador exigido pelo Selenium para automatizar e testar o WebView2.</span><span class="sxs-lookup"><span data-stu-id="9c063-115">Follow the instructions to install [Microsoft Edge Driver](https://docs.microsoft.com/microsoft-edge/webdriver-chromium#download-microsoft-edge-driver) the browser-specific driver required by Selenium to automate and test WebView2.</span></span>
+<span data-ttu-id="71da7-118">Siga as instruções para instalar o [Driver do Microsoft Edge][WebdriverChromiumDownloadMicrosoftEdgeDriver] o driver específico do navegador exigido pelo Selenium para automatizar e testar o WebView2.</span><span class="sxs-lookup"><span data-stu-id="71da7-118">Follow the instructions to install [Microsoft Edge Driver][WebdriverChromiumDownloadMicrosoftEdgeDriver] the browser-specific driver required by Selenium to automate and test WebView2.</span></span>  
 
-<span data-ttu-id="9c063-116">É importante verificar se a versão do driver do Microsoft Edge corresponde à versão do Microsoft Edge usada pelo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9c063-116">It is important to make sure that the version of Microsoft Edge Driver matches the version of Microsoft Edge that the application uses.</span></span> <span data-ttu-id="9c063-117">Para que a amostra WebView2API funcione, certifique-se de que sua versão do Microsoft Edge é maior ou igual à versão compatível da versão mais recente do SDK encontrada [nas nossas notas de versão](https://docs.microsoft.com/microsoft-edge/hosting/webview2/releasenotes).</span><span class="sxs-lookup"><span data-stu-id="9c063-117">For the WebView2API Sample to work, make sure that your version of Microsoft Edge is greater than or equal to the supported version of our latest SDK release found [in our Release Notes](https://docs.microsoft.com/microsoft-edge/hosting/webview2/releasenotes).</span></span> <span data-ttu-id="9c063-118">Para descobrir qual versão do Microsoft Edge você tem atualmente, carregue `edge://settings/help` no navegador.</span><span class="sxs-lookup"><span data-stu-id="9c063-118">To find out what version of Microsoft Edge you currently have, load `edge://settings/help` in the browser.</span></span>
+<span data-ttu-id="71da7-119">Verifique se a versão do driver do Microsoft Edge corresponde à versão do WebView2 Runtime que você usa em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="71da7-119">Ensure that the version of Microsoft Edge Driver matches the version of WebView2 Runtime that you app uses.</span></span>  <span data-ttu-id="71da7-120">Para que a amostra WebView2API funcione, certifique-se de que sua versão do WebView2 do tempo de execução é maior ou igual à versão compatível da versão mais recente do SDK do WebView2.</span><span class="sxs-lookup"><span data-stu-id="71da7-120">For the WebView2API Sample to work, make sure that your version of WebView2 Runtime is greater than or equal than the supported version of the latest WebView2 SDK release.</span></span>  <span data-ttu-id="71da7-121">Para localizar a versão mais recente do SDK do WebView2, acesse [WebView2 notas de versão][Webview2Releasenotes].</span><span class="sxs-lookup"><span data-stu-id="71da7-121">To locate the latest WebView2 SDK release, navigate to [WebView2 release notes][Webview2Releasenotes].</span></span>  <span data-ttu-id="71da7-122">Para saber qual é a versão do tempo de execução do WebView2 que você tem no momento, navegue até `edge://settings/help` .</span><span class="sxs-lookup"><span data-stu-id="71da7-122">To find out what version of WebView2 Runtime you currently have, navigate to `edge://settings/help`.</span></span>  
 
-## <span data-ttu-id="9c063-119">Etapa 3: Adicionar Selenium ao exemplo WebView2API</span><span class="sxs-lookup"><span data-stu-id="9c063-119">Step 3: Add Selenium to the WebView2API Sample</span></span>
+## <span data-ttu-id="71da7-123">Etapa 3: Adicionar Selenium ao exemplo WebView2API</span><span class="sxs-lookup"><span data-stu-id="71da7-123">Step 3: Add Selenium to the WebView2API Sample</span></span>  
 
-<span data-ttu-id="9c063-120">Nesse ponto, você deve ter o Microsoft Edge instalado, criar um projeto WebView2 e ter instalado o driver Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="9c063-120">At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver.</span></span> <span data-ttu-id="9c063-121">Agora, vamos começar a usar o Selenium.</span><span class="sxs-lookup"><span data-stu-id="9c063-121">Now, let's get started using Selenium.</span></span>
+<span data-ttu-id="71da7-124">Nesse ponto, você deve ter o WebView2 Runtime instalado, criar um projeto WebView2 e instalar o Microsoft Edge driver.</span><span class="sxs-lookup"><span data-stu-id="71da7-124">At this point you should have WebView2 Runtime installed, built a WebView2 project, and installed Microsoft Edge Driver.</span></span>  <span data-ttu-id="71da7-125">Agora, comece a usar o Selenium.</span><span class="sxs-lookup"><span data-stu-id="71da7-125">Now, get started using Selenium.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="9c063-122">O Selenium é compatível com C#, Java, Python, JavaScript e Ruby.</span><span class="sxs-lookup"><span data-stu-id="9c063-122">Selenium supports C#, Java, Python, Javascript, and Ruby.</span></span> <span data-ttu-id="9c063-123">No entanto, esse guia estará em C#.</span><span class="sxs-lookup"><span data-stu-id="9c063-123">However, this guide will be in C#.</span></span>
+> <span data-ttu-id="71da7-126">O Selenium dá suporte a C \ #, Java, Python, JavaScript e Ruby.</span><span class="sxs-lookup"><span data-stu-id="71da7-126">Selenium supports C\#, Java, Python, Javascript, and Ruby.</span></span>  <span data-ttu-id="71da7-127">No entanto, o guia a seguir é escrito usando C \ #.</span><span class="sxs-lookup"><span data-stu-id="71da7-127">However, the following guide is written using C\#.</span></span>  
 
-1. <span data-ttu-id="9c063-124">Comece criando um novo projeto **C# .NET Framework** no **Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="9c063-124">Start by creating a new **C# .NET Framework** project in **Visual Studio**.</span></span> <span data-ttu-id="9c063-125">Clique em **Avançar** no canto inferior direito para continuar.</span><span class="sxs-lookup"><span data-stu-id="9c063-125">Click **Next** on the bottom right-hand corner to continue.</span></span>
+1.  <span data-ttu-id="71da7-128">Comece criando um novo projeto **C# .NET Framework** no **Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="71da7-128">Start by creating a new **C# .NET Framework** project in **Visual Studio**.</span></span>  <span data-ttu-id="71da7-129">Escolha **Avançar** no canto inferior direito para continuar.</span><span class="sxs-lookup"><span data-stu-id="71da7-129">Choose **Next** on the bottom right-hand corner to continue.</span></span>  
+    
+    :::image type="complex" source="../media/webdriver/new-project.png" alt-text="Criar um novo projeto" lightbox="../media/webdriver/new-project.png":::
+       <span data-ttu-id="71da7-131">Criar um novo projeto</span><span class="sxs-lookup"><span data-stu-id="71da7-131">Create a new project</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="71da7-132">Dê um **nome**ao projeto, salve-o no seu **local**preferido e escolha **criar**.</span><span class="sxs-lookup"><span data-stu-id="71da7-132">Give your project a **name**, save it to your preferred **location**, and choose **Create**.</span></span>  
+    
+    :::image type="complex" source="../media/webdriver/app-create.png" alt-text="Configurar seu novo projeto" lightbox="../media/webdriver/app-create.png":::
+       <span data-ttu-id="71da7-134">Configurar seu novo projeto</span><span class="sxs-lookup"><span data-stu-id="71da7-134">Configure your new project</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="71da7-135">Um novo projeto é criado.</span><span class="sxs-lookup"><span data-stu-id="71da7-135">A new project is created.</span></span>  <span data-ttu-id="71da7-136">Neste guia, todo o código é escrito no `Program.cs` arquivo.</span><span class="sxs-lookup"><span data-stu-id="71da7-136">In this guide, all code is written to the `Program.cs` file.</span></span>  
+    
+    :::image type="complex" source="../media/webdriver/start-app.png" alt-text="Novo projeto" lightbox="../media/webdriver/start-app.png":::
+       <span data-ttu-id="71da7-138">Novo projeto</span><span class="sxs-lookup"><span data-stu-id="71da7-138">New project</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="71da7-139">Agora, adicione **Selenium** ao projeto.</span><span class="sxs-lookup"><span data-stu-id="71da7-139">Now add **Selenium** to the project.</span></span>  <span data-ttu-id="71da7-140">Instale o Selenium usando o **pacote NuGet Selenium. WebDriver**.</span><span class="sxs-lookup"><span data-stu-id="71da7-140">Install Selenium using the **Selenium.WebDriver NuGet package**.</span></span>  
+    
+    <span data-ttu-id="71da7-141">Para baixar o **pacote Selenium. WebDriver NuGet**, no **Visual Studio**, passe o mouse sobre o **Project**e escolha **gerenciar pacote NuGet**.</span><span class="sxs-lookup"><span data-stu-id="71da7-141">To download the **Selenium.WebDriver NuGet package**, in **Visual Studio**, hover over **Project**, and choose **Manage NuGet Package**.</span></span>  <span data-ttu-id="71da7-142">A tela a seguir deve ser exibida.</span><span class="sxs-lookup"><span data-stu-id="71da7-142">The following screen should appear.</span></span>  
+    
+    :::image type="complex" source="../media/webdriver/download-nuget.png" alt-text="Baixar pacote NuGet" lightbox="../media/webdriver/download-nuget.png":::
+       <span data-ttu-id="71da7-144">Baixar pacote NuGet</span><span class="sxs-lookup"><span data-stu-id="71da7-144">Download NuGet package</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="71da7-145">Digite **Selenium. WebDriver** na barra de pesquisa, escolha **Selenium. WebDriver** nos resultados e certifique-se de marca de seleção na caixa ao lado de **incluir pré-lançamento**.</span><span class="sxs-lookup"><span data-stu-id="71da7-145">Enter **Selenium.WebDriver** in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.</span></span> <span data-ttu-id="71da7-146">Na janela do lado direito, verifique se a **versão** está definida como **instalar o 4.0.0-alpha04** ou posterior e escolha **instalar**.</span><span class="sxs-lookup"><span data-stu-id="71da7-146">On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and choose **Install**.</span></span>  <span data-ttu-id="71da7-147">O NuGet baixa o Selenium em seu computador.</span><span class="sxs-lookup"><span data-stu-id="71da7-147">Nuget downloads Selenium to your machine.</span></span>  
+    
+    <span data-ttu-id="71da7-148">Para saber mais sobre o pacote NuGet Selenium. WebDriver, navegue até [Selenium. WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].</span><span class="sxs-lookup"><span data-stu-id="71da7-148">To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].</span></span>  
+    
+    :::image type="complex" source="../media/webdriver/nuget.png" alt-text="Gerenciar pacote NuGet" lightbox="../media/webdriver/nuget.png":::
+       <span data-ttu-id="71da7-150">Gerenciar pacote NuGet</span><span class="sxs-lookup"><span data-stu-id="71da7-150">Manage NuGet package</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="71da7-151">Use `OpenQA.Selenium.Edge` ao adicionar a seguinte instrução:  `using OpenQA.Selenium.Edge;` no início do `Program.cs` arquivo.</span><span class="sxs-lookup"><span data-stu-id="71da7-151">Use `OpenQA.Selenium.Edge` by adding the following statement:  `using OpenQA.Selenium.Edge;` at the beginning of `Program.cs` file.</span></span>  
+    
+    ```csharp
+    using OpenQA.Selenium.Edge;
+    
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    ```  
+    
+## <span data-ttu-id="71da7-152">Etapa 4: unidade WebView2 com o Selenium e o Microsoft Edge driver</span><span class="sxs-lookup"><span data-stu-id="71da7-152">Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver</span></span>  
 
-![texto alternativo](../media/webdriver/new-project.png)
-
-2. <span data-ttu-id="9c063-127">Dê um **nome**ao projeto, salve-o no seu **local**preferido e clique em **criar**.</span><span class="sxs-lookup"><span data-stu-id="9c063-127">Give your project a **name**, save it to your preferred **location**, and click **Create**.</span></span>
-
-![texto alternativo](../media/webdriver/app-create.png)
-
-3. <span data-ttu-id="9c063-129">Um novo projeto será criado.</span><span class="sxs-lookup"><span data-stu-id="9c063-129">A new project will be created.</span></span> <span data-ttu-id="9c063-130">Neste guia, todo o código será escrito no arquivo **Program.cs** .</span><span class="sxs-lookup"><span data-stu-id="9c063-130">In this guide, all code will be written in the **Program.cs** file.</span></span>
-
-![texto alternativo](../media/webdriver/start-app.png)
-
-4. <span data-ttu-id="9c063-132">Agora, vamos adicionar **Selenium** ao projeto.</span><span class="sxs-lookup"><span data-stu-id="9c063-132">Now let's add **Selenium** to the project.</span></span> <span data-ttu-id="9c063-133">Você pode instalar o Selenium pelo **pacote do Selenium. WebDriver NuGet**.</span><span class="sxs-lookup"><span data-stu-id="9c063-133">You can install Selenium via the **Selenium.WebDriver NuGet package**.</span></span>
-
-<span data-ttu-id="9c063-134">Para baixar o **pacote Selenium. WebDriver NuGet**, no **Visual Studio**, passe o mouse sobre o **Project** e selecione **Manage NuGet Package**.</span><span class="sxs-lookup"><span data-stu-id="9c063-134">To download the **Selenium.WebDriver NuGet package**, in **Visual Studio**, hover over **Project** and select **Manage NuGet Package**.</span></span> <span data-ttu-id="9c063-135">A seguinte tela deve aparecer:</span><span class="sxs-lookup"><span data-stu-id="9c063-135">The following screen should appear:</span></span>
-
-![texto alternativo](../media/webdriver/download-nuget.png)
-
-5. <span data-ttu-id="9c063-137">Digite **Selenium. WebDriver** na barra de pesquisa, clique em **Selenium. WebDriver** nos resultados e verifique se a caixa está marcando a caixa ao lado de **incluir a versão de pré-lançamento**.</span><span class="sxs-lookup"><span data-stu-id="9c063-137">Enter **Selenium.WebDriver** in the search bar, click **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.</span></span> <span data-ttu-id="9c063-138">Na janela do lado direito, verifique se a **versão** está definida como **instalar o 4.0.0-alpha04** ou posterior e clique em **instalar**.</span><span class="sxs-lookup"><span data-stu-id="9c063-138">On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and click **Install**.</span></span> <span data-ttu-id="9c063-139">O NuGet fará o download do Selenium em seu computador.</span><span class="sxs-lookup"><span data-stu-id="9c063-139">Nuget will download Selenium to your machine.</span></span>
-
-[<span data-ttu-id="9c063-140">Saiba mais sobre o pacote NuGet Selenium. WebDriver.</span><span class="sxs-lookup"><span data-stu-id="9c063-140">Learn more about the Selenium.WebDriver NuGet package.</span></span>](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04)
-
-![texto alternativo](../media/webdriver/nuget.png)
-
-6. <span data-ttu-id="9c063-142">Use **OpenQA. Selenium. Edge** adicionando a seguinte instrução: ```using OpenQA.Selenium.Edge;``` no início de **Program.cs**</span><span class="sxs-lookup"><span data-stu-id="9c063-142">Use **OpenQA.Selenium.Edge** by adding the following statement:```using OpenQA.Selenium.Edge;``` at the beginning of **Program.cs**</span></span>
-
-```csharp
-using OpenQA.Selenium.Edge;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-```
-
-## <span data-ttu-id="9c063-143">Etapa 4: unidade WebView2 com o Selenium e o Microsoft EdgeDriver</span><span class="sxs-lookup"><span data-stu-id="9c063-143">Step 4: Drive WebView2 with Selenium and Microsoft EdgeDriver</span></span>
-
-1. <span data-ttu-id="9c063-144">Primeiro, crie o `EdgeOptions` objeto, copiando o código abaixo:</span><span class="sxs-lookup"><span data-stu-id="9c063-144">First, create the `EdgeOptions` object, by copying the code below:</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // EdgeOptions() requires using OpenQA.Selenium.Edge
-    // Construct EdgeOptions with is_legacy = false and the string "webview2"
-    EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
-```
-
-<span data-ttu-id="9c063-145">O `EdgeOptions` objeto tem dois parâmetros:</span><span class="sxs-lookup"><span data-stu-id="9c063-145">The `EdgeOptions` object takes in two parameters:</span></span>
-\
-    **<span data-ttu-id="9c063-146">Os</span><span class="sxs-lookup"><span data-stu-id="9c063-146">Parameters:</span></span>**
-    1. `is_legacy`<span data-ttu-id="9c063-147">: definido como `false` , que informa ao Selenium que você está direcionando o novo navegador Microsoft Edge baseado em Chromium.</span><span class="sxs-lookup"><span data-stu-id="9c063-147">: set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser.</span></span>
-    2. `"webview2"`<span data-ttu-id="9c063-148">: uma cadeia de caracteres que diz ao Selenium que você está dirigindo **WebView2**</span><span class="sxs-lookup"><span data-stu-id="9c063-148">: a string that tell Selenium you are driving **WebView2**</span></span>
-
-2. <span data-ttu-id="9c063-149">Em seguida, defina `edgeOptions.BinaryLocation` como o caminho do arquivo do executável do seu projeto WebView2, crie uma cadeia de caracteres chamada `msedgedriverDir` que forneça o caminho do arquivo para o qual você instalou o [Microsoft Edge driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads)e crie uma cadeia de caracteres chamada `msedgedriverExe` para armazenar o nome do executável do driver Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="9c063-149">Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project's executable, create a string called `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads), and create a string called `msedgedriverExe` to store the name of the Microsoft Edge Driver executable.</span></span> <span data-ttu-id="9c063-150">Por padrão, o executável é chamado `"msedgedriver.exe"` .</span><span class="sxs-lookup"><span data-stu-id="9c063-150">By default, the executable is called `"msedgedriver.exe"`.</span></span> <span data-ttu-id="9c063-151">Use essas duas cadeias de caracteres para construir o `EdgeDriverService` objeto conforme mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="9c063-151">Use these two strings to construct the `EdgeDriverService` object as shown below.</span></span> <span data-ttu-id="9c063-152">Por fim, crie o `EdgeDriver` objeto usando `EdgeDriverService` e `EdgeOptions` .</span><span class="sxs-lookup"><span data-stu-id="9c063-152">Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.</span></span>
-
-<span data-ttu-id="9c063-153">Você pode copiar e colar o seguinte código abaixo `edgeOptions` .</span><span class="sxs-lookup"><span data-stu-id="9c063-153">You can copy and paste the following code underneath `edgeOptions`.</span></span> <span data-ttu-id="9c063-154">Certifique-se de especificar os caminhos de arquivo corretos para o executável do seu projeto e o executável do driver do Microsoft Edge em seu computador.</span><span class="sxs-lookup"><span data-stu-id="9c063-154">Make sure to specify the correct file paths to your project's executable and the Microsoft Edge Driver's executable on your machine.</span></span>
-
-```csharp
-    //Set the BinaryLocation to the filepath of the WebView2API Sample's executable
+1.  <span data-ttu-id="71da7-153">Primeiro, crie o `EdgeOptions` objeto, copiando o trecho de código a seguir.</span><span class="sxs-lookup"><span data-stu-id="71da7-153">First, create the `EdgeOptions` object, by copying the following code snippet.</span></span>  
+    
+    ```csharp
+    static void Main(string[] args)
+    {
+        // EdgeOptions() requires using OpenQA.Selenium.Edge
+        // Construct EdgeOptions with is_legacy = false and the string "webview2"
+        EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
+    ```  
+    
+    <span data-ttu-id="71da7-154">O `EdgeOptions` objeto assume os dois parâmetros a seguir.</span><span class="sxs-lookup"><span data-stu-id="71da7-154">The `EdgeOptions` object takes in the following two parameters.</span></span>  
+    
+    | <span data-ttu-id="71da7-155">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="71da7-155">Parameter</span></span> | <span data-ttu-id="71da7-156">Detalhes</span><span class="sxs-lookup"><span data-stu-id="71da7-156">Details</span></span> |    
+    |:--- |:--- |  
+    | `is_legacy` | <span data-ttu-id="71da7-157">Definido como `false` , que informa ao Selenium que você está direcionando o novo navegador Microsoft Edge baseado em Chromium.</span><span class="sxs-lookup"><span data-stu-id="71da7-157">Set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser.</span></span> |  
+    | `"webview2"` | <span data-ttu-id="71da7-158">Uma cadeia de caracteres que informa ao Selenium que você está dirigindo WebView2.</span><span class="sxs-lookup"><span data-stu-id="71da7-158">A string that tells Selenium you are driving WebView2.</span></span> |  
+    
+1.  <span data-ttu-id="71da7-159">Em seguida, defina o `edgeOptions.BinaryLocation` caminho do arquivo do tempo de execução do projeto do WebView2, crie uma cadeia de caracteres chamada `msedgedriverDir` que forneça o caminho do arquivo para o qual você instalou o [Microsoft Edge driver][MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads]e crie uma cadeia de caracteres chamada `msedgedriverExe` para armazenar o nome do tempo de execução do driver do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="71da7-159">Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime, create a string named `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads], and create a string named `msedgedriverExe` to store the name of the Microsoft Edge Driver runtime.</span></span>  <span data-ttu-id="71da7-160">Por padrão, o tempo de execução é nomeado `msedgedriver.exe` .</span><span class="sxs-lookup"><span data-stu-id="71da7-160">By default, the runtime is named `msedgedriver.exe`.</span></span> <span data-ttu-id="71da7-161">Use essas duas cadeias de caracteres para construir o `EdgeDriverService` objeto conforme mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="71da7-161">Use these two strings to construct the `EdgeDriverService` object as shown below.</span></span>  <span data-ttu-id="71da7-162">Por fim, crie o `EdgeDriver` objeto usando `EdgeDriverService` e `EdgeOptions` .</span><span class="sxs-lookup"><span data-stu-id="71da7-162">Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.</span></span>  
+    
+    <span data-ttu-id="71da7-163">Você pode copiar e colar o seguinte código abaixo `edgeOptions` .</span><span class="sxs-lookup"><span data-stu-id="71da7-163">You may copy and paste the following code underneath `edgeOptions`.</span></span>  <span data-ttu-id="71da7-164">Certifique-se de especificar os caminhos de arquivo corretos para o tempo de execução do projeto e o tempo de execução do driver do Microsoft Edge em seu computador.</span><span class="sxs-lookup"><span data-stu-id="71da7-164">Ensure you specify the correct file paths to your project runtime and the Microsoft Edge Driver runtime on your machine.</span></span>  
+    
+    ```csharp
+    //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
     edgeOptions.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
-
+    
     //Set msedgedriverDir to the filepath of the directory housing msedgedriver.exe
     string msedgedriverDir = @"C:\path\to\your\msededriver.exe's\directory";
-
+    
     //Set msedgedriverExe to the name of the Edge Driver. By default it is:
     string msedgedriverExe = @"msedgedriver.exe";
-
+    
     // Construct EdgeDriverService with is_legacy = false  
     EdgeDriverService service = EdgeDriverService.CreateDefaultService(msedgedriverDir, msedgedriverExe, false);
-
+    
     EdgeDriver e = new EdgeDriver(service, edgeOptions);
-```
+    ```
+    
+3.  <span data-ttu-id="71da7-165">Agora, `EdgeDriver` está configurado para direcionar o WebView2 em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="71da7-165">Now, `EdgeDriver` is configured to drive the WebView2 in your project.</span></span>  <span data-ttu-id="71da7-166">Por exemplo, se você estiver usando o **exemplo WebView2API**, poderá navegar `https://microsoft.com` executando o `e.Url = @"https://www.microsoft.com";` comando.</span><span class="sxs-lookup"><span data-stu-id="71da7-166">For example, if you are using the **WebView2API Sample**, you may navigate to `https://microsoft.com` by running the `e.Url = @"https://www.microsoft.com";` command.</span></span>  <span data-ttu-id="71da7-167">Verifique a unidade Selenium WebView2 definindo um ponto de interrupção na linha e executando o projeto.</span><span class="sxs-lookup"><span data-stu-id="71da7-167">Verify the Selenium drive WebView2 by setting a breakpoint on the line and running the project.</span></span>  
+    
+    ```csharp
+        //The following navigates the WebView2API Sample from bing.com to microsoft.com
+        e.Url = @"https://www.microsoft.com";
+        
+        //This exits the edge driver
+        e.Quit();
+    }
+    ```  
+    
+    :::image type="complex" source="../media/webdriver/microsoft.png" alt-text="Selenium executando o WebView2" lightbox="../media/webdriver/microsoft.png":::
+       <span data-ttu-id="71da7-169">Selenium executando o WebView2</span><span class="sxs-lookup"><span data-stu-id="71da7-169">Selenium running WebView2</span></span>  
+    :::image-end:::
 
-3. <span data-ttu-id="9c063-155">Agora, o **EdgeDriver** está configurado para direcionar o **WebView2** em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="9c063-155">Now, **EdgeDriver** is configured to drive the **WebView2** in your project.</span></span> <span data-ttu-id="9c063-156">Por exemplo, se você estiver usando o **exemplo WebView2API**, poderá **navegar** para fazer uma <https://microsoft.com> chamada ```e.Url = @"https://www.microsoft.com";``` .</span><span class="sxs-lookup"><span data-stu-id="9c063-156">For example, if you are using the **WebView2API Sample**, you can **Navigate** to <https://microsoft.com> by calling ```e.Url = @"https://www.microsoft.com";```.</span></span> <span data-ttu-id="9c063-157">Você pode assistir **Selenium** Drive **WebView2** definindo um ponto de interrupção nesta linha e executando o projeto.</span><span class="sxs-lookup"><span data-stu-id="9c063-157">You can watch **Selenium** drive **WebView2** by setting a breakpoint on this line and running the project.</span></span>
+<span data-ttu-id="71da7-170">Parabéns.</span><span class="sxs-lookup"><span data-stu-id="71da7-170">Congratulations.</span></span>  <span data-ttu-id="71da7-171">Você automatizau com êxito um projeto do WebView2 e conduziu WebView2 usando o Selenium e o Microsoft Edge driver.</span><span class="sxs-lookup"><span data-stu-id="71da7-171">You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.</span></span>  
 
-```csharp
-    //The following will Navigate the WebView2API Sample from bing.com to microsoft.com
-    e.Url = @"https://www.microsoft.com";
+## <span data-ttu-id="71da7-172">Consulte também</span><span class="sxs-lookup"><span data-stu-id="71da7-172">See also</span></span>  
 
-    //This exits the edge driver
-    e.Quit();
-}
-```
-
-![texto alternativo](../media/webdriver/microsoft.png)
-
-<span data-ttu-id="9c063-159">Parabéns!</span><span class="sxs-lookup"><span data-stu-id="9c063-159">Congratulations!</span></span> <span data-ttu-id="9c063-160">Você automatizau com êxito um projeto do WebView2 e conduziu WebView2 usando o Selenium e o Microsoft Edge driver.</span><span class="sxs-lookup"><span data-stu-id="9c063-160">You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.</span></span>
-
-## <span data-ttu-id="9c063-161">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="9c063-161">Next steps</span></span>
-
-<span data-ttu-id="9c063-162">Para saber mais:</span><span class="sxs-lookup"><span data-stu-id="9c063-162">To learn more:</span></span>
-
-- <span data-ttu-id="9c063-163">Confira a [documentação do Selenium](https://www.selenium.dev/documentation/en/webdriver/) para obter uma visão abrangente do Selenium de APIs que está disponível para direcionar o WebView2 ou o Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="9c063-163">Check out [Selenium's documentation](https://www.selenium.dev/documentation/en/webdriver/) for a comprehensive look at the APIs Selenium has available for driving WebView2 or Microsoft Edge (Chromium)</span></span>
-- <span data-ttu-id="9c063-164">Saiba mais sobre o controle [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) e como usá-lo ao inserir conteúdo da Web em seu aplicativo nativo</span><span class="sxs-lookup"><span data-stu-id="9c063-164">Learn more about [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) control and how to use it when embedding web content in your native app</span></span>
-- <span data-ttu-id="9c063-165">Confira a [documentação do driver Microsoft Edge](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) para saber mais sobre como automatizar o Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="9c063-165">Check out [documentation for Microsoft Edge Driver](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) to learn more about automating Microsoft Edge (Chromium)</span></span>
-
-## <span data-ttu-id="9c063-166">Entrar em contato com a equipe do Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="9c063-166">Getting in touch with the Microsoft Edge WebView team</span></span>  
+*   <span data-ttu-id="71da7-173">Para ter uma visão abrangente de como as APIs Selenium unidades WebView2 ou Microsoft Edge \ (Chromium \), navegue até [WebDriver na documentação do Selenium][SeleniumWebdriver]</span><span class="sxs-lookup"><span data-stu-id="71da7-173">For a comprehensive look at how the APIs Selenium drives WebView2 or Microsoft Edge \(Chromium\), navigate to [WebDriver on Selenium documentation][SeleniumWebdriver]</span></span>   
+*   <span data-ttu-id="71da7-174">Para saber mais sobre o controle WebView2 e como usá-lo ao inserir conteúdo da Web em seu aplicativo nativo, navegue até [introdução ao Microsoft Edge WebView2][WebViewIndex].</span><span class="sxs-lookup"><span data-stu-id="71da7-174">To learn more about WebView2 control and how to use it when embedding web content in your native app, navigate to [Introduction to Microsoft Edge WebView2][WebViewIndex].</span></span>  
+*   <span data-ttu-id="71da7-175">Para saber mais sobre como automatizar o Microsoft Edge \ (Chromium \), navegue para [usar o WebDriver (Chromium) para automação de teste][WebdriverChromium]</span><span class="sxs-lookup"><span data-stu-id="71da7-175">To learn more about automating Microsoft Edge \(Chromium\), navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromium]</span></span>   
+    
+## <span data-ttu-id="71da7-176">Entrar em contato com a equipe do Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="71da7-176">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+<!-- links -->  
+
+[WebdriverChromium]: ../../webdriver-chromium.md "Use o WebDriver (Chromium) para automação de teste | Documentos da Microsoft"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "Baixar o driver do Microsoft Edge-use o WebDriver (Chromium) para automação de teste | Documentos da Microsoft"  
+[WebViewIndex]: ../index.md "Introdução ao Microsoft Edge WebView2-documentos da Microsoft"  
+[Webview2Releasenotes]: ../releasenotes.md "Notas de versão do WebView2 SDK | Documentos da Microsoft"  
+
+[MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Baixar o WebDriver | Desenvolvedor do Microsoft Edge"  
+
+[GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "Exemplo de API WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites "Pré-requisitos-exemplo de API WebView2 | GitHub"  
+
+[NugetSeleniumWebdriver400Alpha04]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04 "Selenium. WebDriver 4.0.0-alpha04 | Galeria do NuGet"  
+
+[SeleniumWebdriver]: https://www.selenium.dev/documentation/en/webdriver "WebDriver | Selenium"  
+
+[W3cWebdriver2]: https://www.w3.org/TR/webdriver2 "WebDriver | W3C"  
