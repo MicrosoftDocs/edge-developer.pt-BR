@@ -3,16 +3,16 @@ description: Uma lista de maneiras de personalizar o Microsoft Edge DevTools
 title: Personalizar o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 91f353c6b6c4dea2bc6764a972acf2ad52b1f151
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125080"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11189967"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,55 +30,68 @@ ms.locfileid: "11125080"
 
 # Personalizar o Microsoft Edge DevTools  
 
-  
-
 Esta página lista as maneiras de personalizar o Microsoft Edge DevTools.  
 
 ## Configurações  
 
 **Configurações**  >  de As **preferências** contêm muitas opções para personalizar o devtools.  
 
-Para abrir as configurações, siga um destes procedimentos:  
+Para abrir as configurações, execute uma das seguintes ações.  
 
 *   Selecione `F1` enquanto o devtools está em foco.  
 *   Abra o **menu principal** e, em seguida, escolha **configurações**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configurações" lightbox="../media/customize-settings-preferences.msft.png":::
-       **Configurações**  
-    :::image-end:::  
-    
+:::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configurações" lightbox="../media/customize-settings-preferences.msft.png":::
+   **Configurações**  
+:::image-end:::  
+
 ## Arquiva  
 
-A **gaveta** contém muitos recursos ocultos.  
+A **gaveta** é um segundo painel onde as ferramentas da sua escolha são exibidas.  
 
-Selecione `Escape` para abrir ou fechar a **gaveta**.  
+Para abrir \ (ou fechar \) a **gaveta**, selecione `Escape` .  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Configurações" lightbox="../media/customize-drawer-open.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="A gaveta" lightbox="../media/customize-drawer-open.msft.png":::
    A **gaveta**  
 :::image-end:::  
 
-Escolha **mais** \ ( ![ mais ][ImageMoreIcon] \) para abrir outras guias de **gaveta** .  
+Por padrão, algumas ferramentas abrem no painel principal, enquanto outras são exibidas na **gaveta**.  Escolha **mais** \ ( `...` ) para abrir uma ferramenta na **gaveta**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Configurações" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   O botão para abrir as guias de **gaveta**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="O botão para abrir a gaveta" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   O botão para abrir a **gaveta**  
 :::image-end:::  
+
+Você pode mover ferramentas entre o painel principal e a gaveta.  
+
+*   Para mover uma ferramenta da gaveta para o painel principal, passe o mouse sobre uma ferramenta, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para o início**.  
+    
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Mover a ferramenta da gaveta para o painel principal" lightbox="../media/move-from-drawer.msft.png":::
+       Mover a ferramenta da **gaveta** para o painel principal  
+    :::image-end:::  
+    
+*   Para mover uma ferramenta do painel principal para a gaveta, passe o mouse sobre uma ferramenta, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para o fim**.  
+    
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Mover a ferramenta do painel principal para a gaveta" lightbox="../media/move-to-drawer.msft.png":::
+       Mover a ferramenta do painel principal para a **gaveta**
+    :::image-end:::  
+    
 
 ## Reordenar painéis  
 
-Clique e arraste uma guia do painel para alterar a ordem.  Sua ordem de tabulação personalizada persiste entre as sessões do DevTools.  
+Escolha e arraste uma ferramenta para alterar a ordem.  Sua ordem de ferramenta personalizada persiste entre as sessões do DevTools.  
 
 > [!NOTE]
-> Por padrão, a guia painel da **rede** geralmente é a quarta da esquerda.  Na figura a seguir, o painel de **rede** é o primeiro à esquerda.  
+> Por padrão, a ferramenta de **rede** geralmente é a quarta da esquerda.  Na figura a seguir, o painel de **rede** é o primeiro à esquerda.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Configurações" lightbox="../media/customize-network-first-position.msft.png":::
-   Uma janela do DevTools com uma guia personalizada no painel de classificação  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Ordem personalizada de devtools em um painel" lightbox="../media/customize-network-first-position.msft.png":::
+   Ordem personalizada de devtools em um painel  
 :::image-end:::  
 
 ## Alterar o posicionamento do DevTools  
 
 Consulte [posicionamento do Microsoft Edge devtools][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Configurações" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools desencaixado" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    DevTools desencaixado  
 :::image-end:::  
 
@@ -86,7 +99,7 @@ Consulte [posicionamento do Microsoft Edge devtools][DevToolsPlacement].
 
 Consulte [habilitar tema escuro][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Configurações" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="O tema escuro" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    O tema escuro  
 :::image-end:::  
 

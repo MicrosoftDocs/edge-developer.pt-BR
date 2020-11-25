@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a4c8d5ed7f3cf84f20b4b73531f871e17921b186
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125220"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190009"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,7 +65,7 @@ Se a folha de estilos for minified, navegue para [deixar um arquivo do minified 
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
-:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Exibir a folha de estilos onde uma regra está definida" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
   Exibir a folha de estilos onde uma regra está definida  
 :::image-end:::  
 
@@ -84,7 +84,7 @@ As propriedades herdadas são opacas.  Marque a caixa de seleção **Mostrar tud
 > [!NOTE]
 > Na figura a seguir, a guia **calculada** mostra as propriedades CSS aplicadas ao elemento atualmente selecionado `h1` .  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-computed-h1.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="A guia calculada" lightbox="../media/css-elements-computed-h1.msft.png":::
    A guia **calculada**  
 :::image-end:::  
 
@@ -105,7 +105,7 @@ Escolha e edite um valor para alterar um valor.
 > [!NOTE]
 > Na figura a seguir, o diagrama de **modelo de caixa** na guia **estilos** mostra o modelo de caixa do elemento atualmente selecionado `h1` .  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="O diagrama de modelo de caixa" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    O diagrama de **modelo de caixa**  
 :::image-end:::  
 
@@ -118,14 +118,14 @@ Para pesquisar também as propriedades herdadas na guia **calculada** , marque a
 > [!NOTE]
 > Na figura a seguir, a guia **estilos** é filtrada para mostrar apenas as regras que incluem a consulta de pesquisa `color` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtrar a guia estilos" lightbox="../media/css-elements-styles-filter-color.msft.png":::
    Filtrar a guia **estilos**  
 :::image-end:::  
 
 > [!NOTE]
 > Na figura a seguir, a guia **calculada** é filtrada para mostrar somente declarações que incluam a consulta de pesquisa `100%` .  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filtrar a guia calculada" lightbox="../media/css-elements-computed-filter-100.msft.png":::
    Filtrar a guia **calculada**  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ Conclua as ações a seguir para alternar uma pseudoclasse como `:active` , `:fo
 > [!NOTE]
 > Na figura a seguir, alterne a `:hover` pseudo-classe.  Na viewport, verifique se a `background-color: cornflowerblue` declaração está sendo aplicada ao elemento, mesmo que o elemento não esteja realmente sendo focalizado.  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Alternar o: hover pseudo-classe" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
    Alternar a `:hover` pseudo-classe  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ A guia cobertura mostra a CSS que uma página realmente usa.
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Abrindo a guia cobertura no menu comando" lightbox="../media/css-console-command-menu-coverage.msft.png":::
              Abrir a guia **cobertura** no **menu comando**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="A guia cobertura" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              A guia **cobertura**  
           :::image-end:::  
        :::column-end:::
@@ -177,7 +177,7 @@ A guia cobertura mostra a CSS que uma página realmente usa.
     
 1.  Escolha **Iniciar cobertura de instrumentação e atualize a página** \ ( ![ Iniciar cobertura de instrumentação e atualizar a página ][ImageRefreshIcon] \).  A página é atualizada e a guia cobertura fornece uma visão geral de quanto o CSS \ (e JavaScript \) é usado em cada arquivo que o navegador carrega.  Verde representa a CSS usada.  Vermelho representa a CSS não usada.  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Uma visão geral do quanto CSS (e JavaScript) é usado e não usado" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Uma visão geral do quanto o CSS \ (e JavaScript \) é usado e não é usado  
     :::image-end:::  
 
@@ -186,7 +186,7 @@ A guia cobertura mostra a CSS que uma página realmente usa.
     > [!NOTE]
     > Na figura a seguir, as linhas 145 a 147 e 149 a 151 de `b66bc881.site-ltr.css` não são usadas, enquanto as linhas 163 para 166 são usadas.  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-sources-css-coverage.msft.png":::
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Uma divisão linha por linha do CSS usado e não usado" lightbox="../media/css-sources-css-coverage.msft.png":::
        Uma divisão linha por linha do CSS usado e não usado  
     :::image-end:::  
     
@@ -221,7 +221,7 @@ Conclua as ações a seguir para adicionar uma declaração embutida.
 > [!NOTE]
 > Na figura a seguir, as `margin-top` Propriedades e foram `background-color` aplicadas ao elemento selecionado.  Na **árvore DOM** , verifique se as declarações são refletidas no `style` atributo para um elemento.  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Adicionar declarações embutidas" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
    Adicionar declarações embutidas  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ Conclua as ações a seguir para adicionar uma declaração a uma regra de estil
 1.  Insira um nome de propriedade e selecione `Enter` .  
 1.  Insira um valor válido para essa propriedade e selecione `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Adicionando uma declaração a uma regra de estilo" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
    Adicionar a `border-bottom-style:groove` declaração a uma regra de estilo  
 :::image-end:::  
 
@@ -242,7 +242,7 @@ Conclua as ações a seguir para adicionar uma declaração a uma regra de estil
 
 Escolha e edite o nome ou o valor de uma declaração para alterá-la.  Consulte [alterar valores de declaração com atalhos de teclado](#change-declaration-values-with-keyboard-shortcuts) para atalhos para incrementar ou decrementar rapidamente um valor por `0.1` ,, `1` `10` ou `100` unidades.  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Alterar o valor de uma declaração" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    Alterar o valor da `border-bottom-style` declaração  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ Conclua as ações a seguir para adicionar uma classe a um elemento.
 1.  Digite o nome da classe na caixa de texto **Adicionar nova classe** .  
 1.  Selecione `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="O painel classes de elemento" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    O painel **classes de elemento**  
 :::image-end:::  
 
@@ -288,7 +288,7 @@ Conclua as ações a seguir para adicionar uma nova regra de estilo.
 > [!NOTE]
 > Na figura a seguir, o DevTools adiciona a `h1.devsite-page-title` regra de estilo depois que você escolhe **nova regra de estilo**.  
 
-:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-style-new.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Adicionar uma nova regra de estilo" lightbox="../media/css-elements-styles-style-new.msft.png":::
    Adicionar uma nova regra de estilo  
 :::image-end:::  
 
@@ -296,7 +296,7 @@ Conclua as ações a seguir para adicionar uma nova regra de estilo.
 
 Ao [Adicionar uma nova regra de estilo](#add-a-style-rule), escolha e segure **nova regra de estilo** \ ( ![ nova regra de estilo ][ImageNewStyleRuleIcon] \) para escolher para qual folha de estilo adicionar a regra de estilo.  
 
-:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Escolher uma folha de estilos" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Escolher uma folha de estilos  
 :::image-end:::  
 
@@ -308,7 +308,7 @@ Conclua as ações a seguir para adicionar uma regra de estilo a um local espec�
 1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
 1.  Escolha **Inserir regra de estilo abaixo** \ ( ![ Inserir regra de estilo abaixo do ícone ][ImageNewStyleRuleIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Inserir regra de estilo abaixo" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Inserir regra de estilo abaixo**  
 :::image-end:::  
 
@@ -326,7 +326,7 @@ Conclua as ações a seguir para revelar a barra de ferramentas **mais ações**
     > [!NOTE]
     > Na figura a seguir, passe o mouse sobre a `.header-holder.has-default-focus` regra de estilo e **mais ações** serão reveladas no canto inferior direito da seção de regra de estilo.  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Revelar mais ações" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        Revelar **mais ações** \ ( `...` \)  
     :::image-end:::  
     
@@ -335,7 +335,7 @@ Conclua as ações a seguir para revelar a barra de ferramentas **mais ações**
     > [!NOTE]
     > A ação **Inserir regra de estilo abaixo** é revelada depois de passar o mouse sobre **mais ações**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="A barra de ferramentas mais ações" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        A barra de ferramentas **mais ações**  
     :::image-end:::  
     
@@ -350,7 +350,7 @@ Conclua as ações folllwoing para alternar uma única declaração em \ (ou off
 > [!NOTE]
 > Na figura a seguir, a `margin-top` Propriedade do elemento selecionado no momento foi desativada.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Alternar uma declaração" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
    Alternar uma declaração  
 :::image-end:::  
 
@@ -362,7 +362,7 @@ Conclua as ações a seguir para adicionar uma `background-color` declaração a
 1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
 1.  Escolha **adicionar cor de plano de fundo** \ ( ![ ícone de cor da tela de fundo ][ImageAddBackgroundColorIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Adicionar cor de plano de fundo" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Adicionar cor de plano de fundo**  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ Conclua as ações a seguir para adicionar uma `color` declaração a um element
 1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
 1.  Escolha **adicionar cor** \ ( ![ ícone Adicionar cor ][ImageAddColorIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Adicionar cor" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Adicionar cor**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ Conclua as ações a seguir para adicionar uma `box-shadow` declaração a um el
 1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
 1.  Escolha **Adicionar sombra de caixa** \ ( ![ ícone de sombra Adicionar caixa ][ImageAddBoxShadowIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Adicionar sombra à caixa" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Adicionar sombra à caixa**  
 :::image-end:::  
 
@@ -398,7 +398,7 @@ Conclua as ações a seguir para adicionar uma `text-shadow` declaração a um e
 1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
 1.  Escolha **Adicionar sombra de texto** \ ( ![ Adicionar ícone de sombra de texto ][ImageAddTextShadowIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Adicionar sombra de texto" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Adicionar sombra de texto**  
 :::image-end:::  
 
@@ -414,19 +414,19 @@ Conclua as seguintes ações para abrir o **seletor de cores**.
     > [!NOTE]
     > Na figura a seguir, o pequeno quadrado à esquerda de `rgba(0, 0, 0, 0.7)` é uma visualização da cor.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Visualização de cores" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
        Visualização de cores  
     :::image-end:::  
     
 1.  Escolha a visualização para abrir o **seletor de cores**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="O seletor de cores" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
        O **seletor de cores**  
     :::image-end:::  
     
 A figura a seguir e a lista descreve de cada um dos elementos da interface do usuário do **seletor de cores**.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="O seletor de cores, anotado" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
    O **seletor de cores**, anotado  
 :::image-end:::  
 
@@ -540,7 +540,7 @@ Quando você abre o **seletor de cores**, o **conta-gotas** \ ( ![ conta-gotas ]
     > [!NOTE]
     > Na figura a seguir, o **seletor de cores** mostra um valor de cor atual de `rgba(0,0,0,0.7)` , que é próximo a preto.  A cor específica deve mudar para a versão do preto que está realçada no visor depois que você a escolheu.  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Usar o conta-gotas" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
        Usar o conta-gotas  
     :::image-end:::  
     

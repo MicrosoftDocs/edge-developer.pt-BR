@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133915"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190002"
 ---
 # O que há de novo no DevTools (Microsoft Edge 87)  
 
@@ -41,14 +41,14 @@ O DevTools agora oferece suporte a ferramentas de movimentação entre os painé
    :::column span="":::
       Para mover qualquer ferramenta de cima para baixo, passe o mouse sobre uma guia, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para baixo**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Mover para o fim" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Mover para o fim  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Para mover qualquer ferramenta de cima para baixo, passe o mouse sobre uma guia, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **mover para o início**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Mover para o início" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Mover para o início  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,7 @@ O DevTools agora oferece suporte a ferramentas de movimentação entre os painé
 
 ## Salvar e exportar usando o console de rede  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
    Recurso experimental  
 :::image-end:::  
 
@@ -69,12 +69,12 @@ Para revisar as atualizações em tempo real deste recurso no projeto de fonte a
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Digite o nome do novo ambiente" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          Digite o nome do novo ambiente  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Escolher formato para o novo ambiente" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          Escolher formato para o novo ambiente  
       :::image-end:::  
    :::column-end:::
@@ -82,7 +82,7 @@ Para revisar as atualizações em tempo real deste recurso no projeto de fonte a
 
 ## Ferramentas de grade CSS aprimoradas  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
    Recurso experimental  
 :::image-end:::  
 
@@ -95,13 +95,13 @@ O Microsoft Edge DevTools agora oferece suporte aos recursos a seguir para inspe
     
 Os recursos estão ativados por padrão.  Para obter mais informações sobre os recursos, navegue até [grades CSS][DevtoolsCssGrid].  Para revisar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até Issue [#1047356][CR1047356].  Além disso, a equipe do Microsoft Edge DevTools está colaborando com a equipe do Chrome DevTools e com a Comunidade da Chromium para adicionar novos recursos de ferramenta de flexbox ao DevTools.  Para obter atualizações sobre a ferramenta flexbox no projeto de fonte aberta do Chromium, navegue até o Issue [#1136394][CR1136394].  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Ferramenta de layout com grades" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    Ferramenta de **layout** com grades  
 :::image-end:::  
 
 ## Personalizar atalhos de teclado em configurações  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
    Recurso experimental  
 :::image-end:::  
 
@@ -109,7 +109,7 @@ Agora você pode personalizar o atalho de teclado para qualquer ação no DevToo
 
 Para habilitar o experimento, navegue até [ativar recursos experimentais][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] e escolha a caixa de seleção ao lado de **habilitar o editor de atalhos de teclado**.  Para obter mais informações sobre como personalizar e editar atalhos, acesse o [recurso experimental do editor de atalhos de teclado][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Para revisar as atualizações em tempo real deste recurso no projeto de fonte aberta do Chromium, navegue até o Issue [#174309][CR174309].  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Atalho personalizado para pausar um script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Atalho personalizado para pausar um script  
 :::image-end:::  
 
@@ -125,12 +125,12 @@ Com a extensão, inicie o Microsoft Edge, conecte-se a uma instância existente 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Usar a extensão na captura de tela do modo de navegador completo" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          Usar a extensão na captura de tela do modo de navegador completo  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Usar a extensão na captura de tela de modo sem periféricos" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          Usar a extensão na captura de tela de modo sem periféricos  
       :::image-end:::  
    :::column-end:::
@@ -154,12 +154,12 @@ Você pode emular autenticadores e depurar a API de [autenticação da Web][Gith
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Abrir a ferramenta webauthn" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          Abrir a ferramenta **Webauthn**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Ferramenta webauthn" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          Ferramenta **Webauthn**  
       :::image-end:::  
    :::column-end:::
@@ -173,12 +173,12 @@ Alternar o painel **calculado** no painel **estilos** .  O painel **calculado** 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Abrir o painel da barra lateral calculada" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Abrir o painel da **barra lateral calculada**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Painel da barra lateral calculada" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          Painel da **barra lateral calculada**  
       :::image-end:::  
    :::column-end:::
@@ -188,7 +188,7 @@ Alternar o painel **calculado** no painel **estilos** .  O painel **calculado** 
 
 Para exibir a CSS aplicada com menos rolagem, agrupe as propriedades CSS por categorias no painel **calculado** .  Você também pode se concentrar seletivamente em um conjunto de propriedades relacionadas enquanto inspeciona seu CSS.  Na ferramenta **elementos** , escolha um elemento.  Para agrupar \ (ou desagrupar \) as propriedades CSS, alterne a caixa de seleção do **grupo** .  Para revisar as atualizações em tempo real deste recurso no projeto de fonte aberta do Chromium, navegue até problemas [#1096230][CR1096230], [#1084673][CR1084673]e [#1106251][CR1106251].  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Agrupando Propriedades CSS" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Agrupando Propriedades CSS  
 :::image-end:::  
 
@@ -210,7 +210,7 @@ performance.mark('end');
 
 Em seguida, abra a ferramenta [desempenho][DevtoolsGuideChromiumEvaluatePerformanceReference] e navegue até a **seção intervalos** para gravar o código JavaScript.  Os `performance.mark()` eventos que você adicionou são agora exibidos na gravação.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance. Mark eventos" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` MouseUp  
 :::image-end:::  
 
@@ -218,7 +218,7 @@ Em seguida, abra a ferramenta [desempenho][DevtoolsGuideChromiumEvaluatePerforma
 
 Use as `resource-type` `url` palavras-chave novo e na ferramenta **rede** para filtrar solicitações de rede.  Por exemplo, use `resource-type:image` para se concentrar nas solicitações de rede que são imagens.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="filtro do tipo recurso" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    filtro do tipo recurso  
 :::image-end:::  
 
@@ -230,7 +230,7 @@ Para descobrir mais palavras-chave especiais, como `resource-type` e `url` , nav
 
 Veja o ponto de extremidade da política incorporada de várias origens \ (COEP \) e interoriginal Opener Policy \ (COOP \) `reporting to` na seção **isolamento de segurança &** .  A [API de relatório][MdnReportingApi] define `Report-To` um novo cabeçalho HTTP, que oferece uma maneira de especificar os pontos de extremidade do servidor para que o navegador envie avisos e erros.  Para revisar as atualizações em tempo real deste recurso no projeto de fonte aberta do Chromium, navegue até o Issue [#1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="O relatório para o ponto de extremidade" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    O `reporting to` ponto de extremidade  
 :::image-end:::  
 
@@ -238,13 +238,13 @@ Veja o ponto de extremidade da política incorporada de várias origens \ (COEP 
 
 O DevTools agora exibe o `report-only` rótulo para COEP e Coop que estão definidos como `report-only` Mode.  Para revisar as atualizações em tempo real deste recurso no projeto de fonte aberta do Chromium, navegue até o Issue [#1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="O rótulo modo somente de relatório" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    O `report-only` rótulo Mode  
 :::image-end:::  
 
 ### Exibir e corrigir problemas de contraste de cor na ferramenta de visão geral CSS  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
    Recurso experimental  
 :::image-end:::  
 
@@ -254,7 +254,7 @@ A ferramenta de **visão geral CSS** agora exibe uma lista de elementos em sua p
 
 Para habilitar esse experimento, em **configurações**  >  **experimentos**, escolha a caixa de seleção **visão geral da CSS** .  Para exibir uma lista de elementos que têm um problema de contraste de cor, em **problemas de contraste**, escolha **texto**.  Para abrir o elemento na ferramenta **elementos** , escolha um elemento na lista.  Para ajudar a corrigir problemas de contraste, o Microsoft Edge DevTools [fornecer sugestões de cores automaticamente][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  Para revisar as atualizações em tempo real deste recurso no projeto de fonte aberta do Chromium, navegue até o Issue [#1120316][CR1120316].  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Ferramenta de rede com filtros não traduzidos" lightbox="../../media/2020/10/css-overview.msft.png":::
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Problemas de contraste de cor baixo" lightbox="../../media/2020/10/css-overview.msft.png":::
    Problemas de contraste de cor baixo  
 :::image-end:::  
 
