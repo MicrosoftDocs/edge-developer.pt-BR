@@ -3,17 +3,17 @@ description: Notas de versão do SDK do Microsoft Edge WebView2
 title: Notas de versão do Microsoft Edge WebView2 para Win32, WPF e WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, controle do navegador, HTML Edge
-ms.openlocfilehash: f0ddcbfe2d72c1285e6d4a42c3cb796b93495c55
-ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
+ms.openlocfilehash: 840d9d5e074e2ea2777942fd19106592151c29ee
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11191440"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192223"
 ---
 # Notas de versão do SDK do WebView2  
 
@@ -28,38 +28,43 @@ Data do lançamento: 23 de novembro de 2020
 
 [Pacote NuGet][NuGetGallery1.0.707-prerelease] \ | versão mínima do Microsoft Edge 86.0.616.0.  
 
-#### Geral  
+> [!IMPORTANT]
+> Este pacote foi preterido devido a erros conhecidos. 
 
-###### Recursos  
+<!--  
+#### General  
 
-*   Adicionadas [políticas de grupo do WebView2][DeployedgeMicrosoftEdgeWebviewPolicies].  Para obter mais informações sobre as práticas recomendadas, navegue até [políticas de grupo para WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].  
+###### Features  
+
+*   Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies].  For more information on recommended practices, navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].  
 *   > [!IMPORTANT]
-    > **Alteração de quebra**: preterida a localização antiga do registro.  
+    > **Breaking Change**:  Deprecated the old registry location.  
     > 
     > ```text
     > {Root}\Software\Policies\Microsoft\EmbeddedBrowserWebView\LoaderOverride\{AppId}
     > ```  
      
-*   Suporte adicionado para [arrastar & soltar][ReferenceWin32Icorewebview2experimentalcompositioncontroller3] em WebView2.  
-*   APIs adicionadas para manipular o suporte a DPI.  
-    *   Adicionada a propriedade [RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetRasterizationscale] para alterar a escala de DPI do conteúdo da WebView e dos popups da interface do usuário e do evento [RasterizationScaleChanged][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseAddRasterizationscalechanged] associado.  
-    *   Adicionada a propriedade [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetShouldDetectMonitorScaleChanges] para atualizar automaticamente a `RasterizationScale` propriedade, se necessário.  
-    *   Adicionada a [Propriedade BoundsMode][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetBoundsMode] para especificar que os limites são pixels lógicos e permitir que o WebView use a `RasterizationScale` exibição de pixel para WebView2 e que a WebView aplique o a para `RasterizationScale` `Bounds` obter o tamanho físico.
-*   `NewWindowRequested`Evento updated para manipular `Ctrl` + `click` e `Shift` + `click` .  \ ([\ #168][GithubMicrosoftedgeWebviewfeedbackIssue168] e [\ #371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
+*   Added support for [Drag & Drop][ReferenceWin32Icorewebview2experimentalcompositioncontroller3] within WebView2.  
+*   Added APIs to handle DPI support.  
+    *   Added [RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetRasterizationscale] property to change the DPI scale for WebView content and UI popups, and associated [RasterizationScaleChanged][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseAddRasterizationscalechanged] event.  
+    *   Added [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetShouldDetectMonitorScaleChanges] property to automatically update `RasterizationScale` property if needed.  
+    *   Added [BoundsMode property][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetBoundsMode] to specify that the bounds are logic pixels and allow WebView to use the `RasterizationScale` for WebView2 pixel display, and have WebView apply the `RasterizationScale` to the `Bounds` to get the physical size.
+*   Updated `NewWindowRequested` event to handle `Ctrl`+`click` and `Shift`+`click`.  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] and [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
 
 #### .NET  
 
-###### Recursos  
+###### Features  
 
-*   Habilitou o designer WinForms no .NET Core 3.1 + e no .NET 5.  
-*   Gerenciamento de cookies .NET aprimorado.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
-*   Renomeado `CoreWebView2Ready` para [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
+*   Enabled WinForms designer in .NET Core 3.1+ and .NET 5.  
+*   Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Renamed `CoreWebView2Ready` to [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
 
-###### Correções de bugs
+###### Bug fixes
 
-*   Adicionado o evento [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] para dar suporte à AcceleratorKey tipográfica no WebView2.  \ ([\ #288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
-*   Os arquivos desnecessários foram removidos da saída para pastas WebView2.  \ ([\ #461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
-*   API do objeto do host aprimorada.  \ ([\ #335][GithubMicrosoftedgeWebviewfeedbackIssue335] e [\ #525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
+*   Added [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] event to support AcceleratorKey press in WebView2.  \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
+*   Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
+*   Improved host object API.  \([\#335][GithubMicrosoftedgeWebviewfeedbackIssue335] and [\#525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
+-->  
 
 ## 1.0.664.37  
 

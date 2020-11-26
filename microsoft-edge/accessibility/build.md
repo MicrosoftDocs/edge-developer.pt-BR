@@ -1,20 +1,20 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Mostre como as práticas recomendadas e os aplicativos sofisticados da Internet (ARIA) acessíveis podem ser juntos para criar um site acessível.
-title: Acessibilidade – criar
+title: Build | Acesso
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: acessibilidade, acessibilidade para desenvolvedores, sites acessíveis, Edge, desenvolvimento da Web, ARIA, desenvolvedor, UIA, automação da interface do usuário
 ms.custom: seodec18
-ms.openlocfilehash: 4412fef6bb78b5a393ccafd5a2cfa79aba223141
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7a8ff5082132ec3270a6e01af594a5bd9fb35389
+ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560544"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191547"
 ---
 # Criando sites acessíveis
 A Web é preenchida com sites, aplicativos e interfaces do usuário dinâmicos e complexos criados usando uma combinação de HTML, CSS e JavaScript.  No entanto, quando projetado e criado sem acessibilidade em mente, esses sites complexos são difíceis de usar por pessoas que dependem de [tecnologias adaptativas](https://webaim.org/articles/motor/assistive) para navegar na Web. A criação de sites acessíveis para pessoas com deficiências exige informações semânticas sobre a interface do usuário. Isso permite que tecnologias assistenciais, como leitores de tela, transmitam as informações necessárias para ajudar as pessoas com diversas habilidades a usar o site.
@@ -57,6 +57,44 @@ Vá para [o modelo de funções](https://www.w3.org/TR/wai-aria-1.1/#roles) pelo
 
 Para obter mais informações sobre o ARIA, consulte o ARIA na seção [Resources](#resources) .
 
+## Teste de compatibilidade de tecnologia assistencial  
+
+Verificar se o site que você está criando funciona com tecnologias assistenciais reais é a melhor maneira de garantir uma boa experiência para os usuários com deficiências.  Como muitas tecnologias assistenciais usam o teclado, testar a acessibilidade de teclado do seu site é um bom lugar para começar.  O [teste de compatibilidade de teclado][W3cPerspectiveVideosKeyboard] valida que os usuários têm acesso a todos os controles interativos sem exigir um mouse.  O Microsoft [Accessibility insights para Web][AccessibilityinsightsWebOverview] é uma extensão de navegador para Microsoft Edge e Chrome que o orienta e revela vários problemas comuns.  
+
+Quando tiver certeza de que seu site funciona bem com um teclado, experimente-o com outras tecnologias assistenciais, como leitores de tela.  Ele revela problemas no seguinte.
+
+*   HTML, ARIA e CSS.  
+*   O nível de suporte de uma tecnologia assistencial para um recurso ou uma técnica.  
+    
+Diferentes navegadores podem mapear elementos para APIs de acessibilidade de plataforma de forma diferente do Microsoft Edge.  Ao criar sua interface, é importante considerar cada diferença.  
+
+O WebAIM conduz pesquisas com [leitores de tela][WebaimProjectsScreenreadersurvey8] e usuários com [deficiência visual][WebaimProjectsLowvisionsurvey2] que ajudam você a decidir quais tecnologias adaptativas e navegadores você deseja testar.  
+
+### Aprendendo a testar  
+
+Tecnologias adaptativas são ferramentas sofisticadas.  Não presuma que você pode iniciar imediatamente o teste com uma tecnologia assistencial sem primeiro aprender a trabalhar.  Aprender a testar com um leitor de tela tem uma curva de aprendizagem especialmente acentuada.  Um usuário do leitor de tela principiante pode supor que um erro de leitor de tela ocorreu enquanto o problema está relacionado ao uso indevido do leitor de tela.  
+
+Para obter mais informações sobre como aprender a testar com tecnologias adaptativas, navegue até [testando com leitores de tela][WebaimArticlesScreenreaderTesting] no WebAIM.  
+
+### Testando localmente  
+
+A maioria dos dispositivos inclui tecnologia assistencial interna ao sistema operacional.  O Microsoft Windows inclui o leitor de tela do [Windows narrador][MicrosoftSupport22798] e a [lupa do Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  tecnologias assistenciais de terceiros, como o [NVDA][NvaccessAboutNvda], o [FreedomscientificSoftwareJaws]e o [ZoomText][FreedomscientificSoftwareZoomtext] , estão disponíveis para download.  O Apple macOS inclui o leitor de tela [VoiceOver][AppleAccessibilityMacVision] .  E iOS, Android e Linux dão suporte a uma variedade de tecnologias adaptativas.  
+
+### Teste em emuladores e máquinas virtuais  
+
+Em macOS, se você quiser testar com uma tecnologia assistencial somente disponível para Windows, como o narrador do Windows ou o NVDA, crie um computador virtual do Windows.  Máquinas virtuais com o Microsoft Edge \ (EdgeHTML \) e o IE estão disponíveis para VirtualBox e VMWare na [página de download de máquinas virtuais][MicrosoftDeveloperEdgeVms].  
+
+O [Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclui um emulador que você testará as tecnologias assistenciais no [pacote de acessibilidade do Android][GooglePlayStoreAndroidAccessibilitySuite].  Siga as instruções para [configurar um dispositivo virtual][AndroidDeveloperDevicesManagingAvdsHtml] e [iniciar o emulador][AndroidDeveloperDevicesEmulatorHtml]e, em seguida, instalar o [pacote de acessibilidade Android][GooglePlayStoreAndroidAccessibilitySuite] na GooglePlay Store.  
+
+> [!NOTE]
+> No momento, o simulador do iOS não inclui o VoiceOver.  
+
+### Ferramentas de teste baseado em nuvem  
+
+Se uma tecnologia assistencial não estiver disponível no seu sistema operacional ou se você não puder instalar uma em uma máquina virtual ou emulador, as ferramentas de teste de tecnologia assistencial baseadas em nuvem serão a melhor coisa.  
+
+*   O [Assistiv Labs (comercial)][AssistivlabsMain] permite que você teste manualmente com tecnologias adaptativas por meio de qualquer navegador da Web moderno.  Escolha uma tecnologia assistencial e um navegador e conecte você a uma máquina virtual, emulador ou dispositivo real com o qual você pode interagir.  
+
 ## Recursos
 
 ### Noções básicas sobre acessibilidade
@@ -77,7 +115,7 @@ Simplesmente acessível é uma equipe de especialistas em acessibilidade que for
 SSB BART Group é uma empresa de acessibilidade digital que oferece suporte a seus clientes no desenvolvimento e implantação de produtos e serviços acessíveis. Seus tópicos de endereços de blog, como práticas recomendadas do ARIA, tendências de acessibilidade, webinars e muito mais.
 
 ### Exemplos acessíveis
-#### [Ally. js-tutoriais](http://allyjs.io/tutorials/)
+#### [ally.js-tutoriais](http://allyjs.io/tutorials/)
 Biblioteca JavaScript para ajudar os aplicativos da Web modernos com preocupações com acessibilidade, facilitando a acessibilidade.
 
 #### [Heydonworks-exemplos de ARIA](http://heydonworks.com/practical_aria_examples/)
@@ -141,3 +179,35 @@ Uma lista de ferramentas de avaliação de acessibilidade da Web para ajudar a d
 
 #### [Perspectivas de acessibilidade na Web: explorar o impacto e os benefícios de todos](https://w3.org/WAI/perspectives/)
 Uma série de vídeos de situação curto pelo W3C sobre o impacto da acessibilidade e os benefícios de todos.
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Máquinas virtuais | Desenvolvedor do Microsoft Edge"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guia completo do narrador | Suporte da Microsoft"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Use a lupa para facilitar a visualização de itens na tela | Suporte da Microsoft"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Informações sobre acessibilidade para Web | Informações sobre acessibilidade"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Criar e gerenciar dispositivos virtuais | Desenvolvedores Android"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Executar aplicativos no emulador Android | Desenvolvedores Android"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Baixar Android Studio | Desenvolvedores Android"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Acessibilidade de visão-Mac | Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Freedom científico"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freedom científico"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Pacote de acessibilidade do Android | GooglePlay Store"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Sobre o NVDA | Acesso NV"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Compatibilidade de teclado | W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Pesquisa de usuários com deficiência visual \ #2 resultados | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Pesquisa de usuários do leitor de tela \ #8 resultados | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testes com leitores de tela | WebAIM"  
