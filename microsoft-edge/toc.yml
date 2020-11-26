@@ -522,7 +522,11 @@
         - name: Dica da web
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium.md
+      items:
+        - name: Começando
+          href: webdriver-chromium/index.md
+        - name: Recursos e Opções do Edge
+          href: webdriver-chromium/capabilities-edge-options.md
     - name: WebDriver (EdgeHTML)
       href: webdriver.md
     - name: Plataforma Web (Chromium)
