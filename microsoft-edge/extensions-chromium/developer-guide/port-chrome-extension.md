@@ -1,58 +1,49 @@
 ---
 description: Processo de portabilidade da extensão Chrome para o Microsoft Edge.
-title: Extensão do Chrome de porta para a Microsoft (Chromium) Edge
+title: Extensão Chrome de porta para Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 1852e267579f0fb790c6b8cac75a566298223933
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: 0f767107bfb259476d1ab35d081fb9bb05c81b46
+ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015685"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195156"
 ---
-# Extensão Chrome de porta para a Microsoft \ (Chromium \) Edge  
+# Portar a extensão  
 
-O processo de portabilidade de uma extensão do Chrome para o Microsoft Edge é muito simples.  Extensões escritas para Chromium, na maioria dos casos, são executadas no Microsoft Edge com alterações mínimas.  As APIs de extensão e as chaves de manifesto aceitas pelo Chrome são compatíveis com o código com o Microsoft Edge.  No entanto, o Microsoft Edge não é compatível com as seguintes APIs de extensão:  
+O Microsoft Edge permite que você porte a extensão do Chrome com alterações mínimas.  As APIs de extensão e as chaves de manifesto aceitas pelo Chrome são compatíveis com o código com o Microsoft Edge.  Para obter uma lista de APIs com suporte no Microsoft Edge, navegue até [suporte à API][ExtensionApiSupport].  
 
-*   `chrome.gcm`  
-*   `chrome.identity.getAccounts`  
-*   `chrome.identity.getAuthToken`  
-*   `chrome.instanceID`  
+Para portar sua extensão Chrome, conclua as etapas a seguir.  
 
-> [!Note]
-> O usuário deve estar conectado ao Microsoft Edge usando uma conta do MSA ou AAD para usar a `chrome.identity.getProfileUserInfo` API.  Se o usuário estiver conectado ao Microsoft Edge usando o **anúncio local**, a API retornará `null` para os valores de email e ID.  
-
-> [!IMPORTANT]
-> **Pagamentos**: o Microsoft Edge não oferece suporte direto a uma extensão que use [pagamentos da loja da Web Chrome][ChromeDeveloperWebStorePayments] devido à necessidade de usar a `identity.getAuthtoken` solicitação para obter o token para que os usuários conectados enviem a solicitação de API de licenciamento baseado em REST.  O Microsoft Edge não é compatível com a `getAuthtoken` solicitação, portanto, esse fluxo não funciona.  
-
-Para portar a sua extensão Chrome, siga estas etapas:  
-
-1.  Examine as APIs de extensão do Chrome usadas nas extensões.  Se você estiver usando recursos ou APIs que não são compatíveis com o Microsoft Edge, talvez não seja possível portar a extensão.  
+1.  Examine as APIs de extensão do Chrome usadas em suas extensões com a lista de [APIs com suporte][ExtensionApiSupport] do Microsoft Edge Extensions.  
     
     > [!NOTE]
-    > A `getAuthToken` API não funciona com o Microsoft Edge, mas você pode usar `launchWebAuthFlow` para buscar um token OAuth2 para autenticar usuários.  
+    > Se sua extensão usa APIs que não são suportadas pelo Microsoft Edge, talvez não sejam portadas diretamente.  
     
-1.  Se você estiver usando `Chrome` no nome ou na descrição da extensão, remarcando a extensão para `Microsoft Edge` .  Você deve passar no processo de certificação.  
-    
-1.  Teste sua extensão para verificar se ela funciona no Microsoft Edge.  A primeira etapa para fazer isso é garantir que você tenha recursos de desenvolvedor de extensão ativados.  Isso permite que você carregue arquivos de extensão no Microsoft Edge para poder testar a extensão durante o seu desenvolvimento.  
-    
-1.  Se tiver problemas, depure as extensões no Microsoft Edge usando o DevTools ou [entre em contato conosco][mailtoExtensionPartnerOpsMicrosoft].  
-    
-1.  Agora, a extensão é refinada e está pronta para ser empacotada.  Se você quiser se preparar para enviar para o catálogo de Complementos do Microsoft Edge \ (Complementos do Microsoft Edge \), não será necessário empacotar a extensão.  Além disso, siga nossas [diretrizes de publicação][ExtensionsPublishExtension] para publicar sua extensão em Complementos do Microsoft Edge.  
+1.  Se o nome `Chrome` estiver sendo usado no nome ou na descrição da extensão, remarcando a extensão para `Microsoft Edge` .  Esta etapa é necessária para passar no processo de certificação.  
+1.  Teste sua extensão para verificar se ela funciona no Microsoft Edge por meio [de Sideload na extensão][ExtensionsGettingStartedExtensionSideloading].  
+1.  Se enfrentar algum problema, você pode depurar as extensões no Microsoft Edge usando o DevTools ou [entrar em contato conosco][mailtoExtensionMicrosoft].  
+1.  Siga as [diretrizes de publicação][ExtensionsPublishPublishExtension] para publicar sua extensão no repositório Complementos do Microsoft Edge.  
     
     > [!NOTE]
-    > Se sua extensão trocar mensagens com um aplicativo nativo usando `chrome.runtime.connectNative` API, certifique-se de que você definiu `allowedorigins` para " `extension://[Microsoft-Catalog-extensionID]` " em seu arquivo de manifesto do seu host de mensagens nativa.  Isso permite que o aplicativo identifique a extensão.  
+    > Se a extensão trocar mensagens com um aplicativo nativo usando `chrome.runtime.connectNative` API, certifique-se de que você definiu `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` no seu arquivo de manifesto do seu host de mensagens nativa.  Isso permite que o aplicativo identifique a extensão.  
+    
+## Próximas etapas  
 
-<!-- image links -->  
+Depois que o pacote de extensão estiver pronto para ser publicado no repositório Complementos do Microsoft Edge, [crie uma conta de desenvolvedor][ExtensionsPublishCreateDevAccount] e [publique a extensão][ExtensionsPublishPublishExtension].  
 
 <!-- links -->  
 
-[ExtensionsPublishExtension]: ../publish/publish-extension.md "Publicar uma extensão"  
+[ExtensionApiSupport]: ./api-support.md "Suporte à API | Documentos da Microsoft"  
+[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Sideload sua extensão | Documentos da Microsoft"  
+[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Registro do desenvolvedor | Documentos da Microsoft"  
+[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Publicar sua extensão | Documentos da Microsoft"  
 
-[mailtoExtensionPartnerOpsMicrosoft]: mailto:extensionpartnerops@microsoft.com "ExtensionPartnerOps@microsoft.com"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Pagamentos de uso único | Desenvolvedor Chrome"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Pagamentos unidirecionais-Google Chrome"  
+[mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"  
