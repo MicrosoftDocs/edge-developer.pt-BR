@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes do Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools, experimento
-ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
-ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
+ms.openlocfilehash: b2b2e591834f1c75d51ec98523e2752d67a2d354
+ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160360"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203896"
 ---
 # Recursos experimentais  
 
@@ -25,7 +25,7 @@ Embora os recursos experimentais estejam disponíveis em todos os canais do Micr
 Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, siga as etapas a seguir.  
 
 1.  [Abra o devtools][DevtoolsOpen].  
-     *   Selecione `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
+    *   Selecione `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Abra o painel [configurações][DevToolsCustomizeSettings] .  
     *   Selecione `Shift` + `?` .  Para obter mais informações, navegue até [atalhos de teclado do Microsoft Edge devtools][DevToolsShortcuts].  
 1.  No lado esquerdo do painel **configurações** , escolha a seção **experimentos** .  
@@ -36,7 +36,7 @@ Para ativar \ (ou desligar \) recursos experimentais no Microsoft Edge, siga as 
     
 1.  Na página **experimentos** , percorra a lista de todos os recursos experimentais disponíveis e escolha a caixa de seleção ao lado de cada recurso que você deseja testar.  
 1.  Feche e abra novamente o Microsoft Edge DevTools.  
-
+    
 > [!NOTE]
 > Os recursos experimentais são atualizados constantemente e podem causar problemas de desempenho.  Para desativar um recurso experimental, abra a página **experimentos** e desmarque a caixa de seleção do recurso experimental que você deseja desativar.  
 
@@ -61,7 +61,7 @@ Fornece recursos adicionais para emular dois novos dispositivos de tela dupla e 
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Dobra Samsung Galaxy][SamsungMobileGalaxyFold]  
-
+    
 EMule os dispositivos e alterne entre as seguintes condições.  
 
 *   postura de tela única ou dobrada  
@@ -80,7 +80,7 @@ Para usar o [recurso de distribuição de tela de mídia CSS][DualScreenDocsCssM
 1.  Navegue até `edge://flags` .  
 1.  Na caixa de texto de **sinalizadores de pesquisa** , digite `Experimental Web Platform features` , escolha o sinalizador de **recursos da plataforma da Web experimental** e alterar **desabilitado** como **habilitado**.  
 1.  Reinicie o Microsoft Edge.  
-
+    
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Habilitar o sinalizador de recursos da plataforma da Web experimental" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Habilitar o sinalizador de recursos da plataforma da Web experimental  
 :::image-end:::  
@@ -111,7 +111,7 @@ Aqui estão recursos adicionais que podem ajudá-lo a aprimorar seu website \ (o
 
 *   Para obter mais informações sobre o desenvolvimento da Web em dispositivos de tela dupla, acesse [experiências na Web de tela dupla][DualScreenWebIndex].  
 *   Instale o [emulador Surface Duo][DualScreenAndroidUseEmulator].  Ele é diferente do emulador no Microsoft Edge, emula o Surface Duo executando Android e integra-se ao [Android Studio][AndroidDeveloperStudio].  Para obter mais informações, navegue para [obter o SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
-
+    
 > [!NOTE]
 > Veja a seguir uma lista de problemas conhecidos atuais.  
 > 
@@ -136,7 +136,7 @@ No Microsoft Edge versão 86 ou posterior, o recurso experimental da CSS da CSS 
 *   As sobreposições persistentes permanecem visíveis na página enquanto você rola, move o mouse e usa outros recursos do DevTools.  
 *   Várias sobreposições persistentes podem ser habilitadas ao mesmo tempo, permitindo que você reveja vários layouts de grade ao mesmo tempo.  
 *   Sobreposições persistentes oferecem muitas opções de configuração, como ocultar ou mostrar nomes na área de grade, lacunas de grade, tamanhos de faixa e assim por diante.  
-
+    
 As duas maneiras de alternar uma sobreposição de grade persistente.  
 
 *   Escolha o ícone de elipse de **grade** ao lado de qualquer elemento de grade mostrado na árvore dom da ferramenta de **elementos** .  
@@ -179,7 +179,7 @@ Normalmente, ferramentas como **elementos** e **rede** só podem abrir no painel
 *   execução  
 *   Aplicativos Web progressivos (PWAs)  
 *   outros problemas comuns de desenvolvimento na Web  
-
+    
 O experimento do [webhint][WebhintMain] exibe os comentários do webhint no painel [problemas][DevtoolsIssues] .  Escolha um problema para exibir a documentação da solução e uma lista dos recursos afetados em seu site.  Escolha um link de recurso para abrir o painel de **rede**, **fontes**ou **elementos** relevantes no devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Comentários da webhint no painel problemas" lightbox="./media/experiments-webhint.msft.png":::
@@ -199,7 +199,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 1.  Abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **Editar e reproduzir**.  
 1.  Quando o **console de rede** for aberto, edite as informações de solicitação de rede.  
 1.  Escolha **Enviar**.  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Console de rede na gaveta do console" lightbox="./media/network-network-console.msft.png":::
    **Console de rede** na gaveta do **console**  
 :::image-end:::  
@@ -216,7 +216,7 @@ Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para 
 1.  Abra o painel **acessibilidade** no painel gaveta \ (inferior \).  
 1.  Na seção **Visualizador de ordem de origem** , escolha a caixa de seleção **Mostrar ordem de origem** .  
 1.  Realce qualquer elemento HTML para exibir uma sobreposição que a ordem na fonte da página.  
-
+    
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visualizador de ordem de origem no painel Acessibilidade" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Visualizador de ordem de origem** no painel **acessibilidade**  
 :::image-end:::  
@@ -265,13 +265,10 @@ Quando você estiver editando os atalhos de teclado para uma ação, para descar
 
 Agora você pode visualizar camadas juntamente com os índices z e o modelo de objeto do documento \ (DOM \).  Esse recurso ajuda você a depurar sem mudar de contextos com frequência.  Você identificou que reduzir a alternância de contexto era um grande ponto problemático.  Nem sempre fica claro como o código que você escreve afeta o aplicativo Web.  Para uma experiência de depuração Visual abrangente, o modo de exibição 3D e as camadas compostas agora são combinados.  Depois de habilitar o experimento, certifique-se de reiniciar o DevTools.  Para usar **camadas compostas**, conclua as etapas a seguir.  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  Na gaveta, escolha a ferramenta **modo de exibição 3D** .  
 1.  Abrir o painel de **camadas compostas** .  
 1.  Todas as camadas pintadas do aplicativo são exibidas.  Experimente este recurso com seus próprios aplicativos Web.  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Painel de camadas compostas" lightbox="./media/experiments-layers.msft.png":::
    Painel de **camadas compostas**  
 :::image-end:::  

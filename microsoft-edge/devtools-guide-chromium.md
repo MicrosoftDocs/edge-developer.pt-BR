@@ -3,17 +3,17 @@ description: Conheça as ferramentas de desenvolvedor do Microsoft Edge (Chromiu
 title: Ferramentas de desenvolvedor do Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/23/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+ms.openlocfilehash: 8f773db3d175f8b5128e1558809334c8f2de4bd7
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182495"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204002"
 ---
 # Ferramentas de desenvolvedor do Microsoft Edge (Chromium)  
 
@@ -112,7 +112,7 @@ Esses atalhos controlam a janela principal do DevTools, funcionam em todas as fe
 | Alternar o **modo inspecionar elemento** , que permite selecionar um elemento no site e ver o HTML e CSS no painel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Mostrar o menu de comandos | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Mostrar/ocultar a gaveta | `Esc` | `Esc` |  
-| Atualize.  Isso atualiza a página usando o cache.  | `F5` or `Ctrl`+`R` | `Command`+`R` |  
+| Atualizar.  Isso atualiza a página usando o cache.  | `F5` or `Ctrl`+`R` | `Command`+`R` |  
 | Atualização de hardware.  Isso obriga o Microsoft Edge a baixar recursos novamente e recarregar.  É possível que os recursos usados sejam provenientes de uma versão em cache | `Ctrl`+`F5` or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Pesquisar texto dentro do painel atual.  Não é compatível com os painéis auditorias, aplicativo e segurança | `Ctrl`+`F` | `Command`+`F` |  
 | Mostrar o painel de pesquisa na gaveta, o que permite Pesquisar texto em todos os recursos carregados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
@@ -126,7 +126,7 @@ Esses atalhos controlam a janela principal do DevTools, funcionam em todas as fe
 > [!NOTE]
 > Se você estiver Depurando e pausado em um ponto de interrupção, o atalho de **atualização** retomará o tempo de execução primeiro.  
 
-## Confira também  
+## Consulte também  
 
 *   [DevTools para iniciantes: introdução ao HTML e ao DOM][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Protocolo de DevTools Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
@@ -140,7 +140,7 @@ Se você quiser visualizar os [recursos mais recentes que chegam ao devtools][De
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para iniciantes: introdução ao HTML e ao DOM | Documentos da Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "O que há de novo no Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "O que há de novo no Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos do Microsoft Edge"  
