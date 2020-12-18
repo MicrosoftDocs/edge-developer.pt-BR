@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 29518882f80892eb5799a2cda7991963aa55ba60
-  ms.sourcegitcommit: 92e1fa81efe2d176353b5e81098b0761c3539d55
+  ms.openlocfilehash: 815394fd9d3f548f511c1c015e8a7ce5e8c2ba89
+  ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/10/2020
-  ms.locfileid: "11205746"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "11231164"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal estável oficial)
@@ -126,7 +126,7 @@ additionalContent:
         url: /microsoft-edge/webdriver-chromium
       - text: Puppeteer
         url: /microsoft-edge/puppeteer
-      - text: Interoperabilidade (compatibilidade com sites)
+      - text: Compatibilidade de sites
         url: /microsoft-edge/web-platform/site-impacting-changes
       - text: Dica da web
         url: https://webhint.io/docs/user-guide
@@ -218,19 +218,5 @@ additionalContent:
         url: /microsoft-edge/privacy-whitepaper
     - title: Documentação herdada do Microsoft Edge
       links:
-      - text: Guia de desenvolvimento (EdgeHTML)
-        url: /microsoft-edge/dev-guide
-      - text: DevTools (EdgeHTML)
-        url: /microsoft-edge/devtools-guide
-      - text: Protocolo DevTools (EdgeHTML)
-        url: /microsoft-edge/devtools-protocol/index
-      - text: Extensions (EdgeHTML)
-        url: /microsoft-edge/extensions/index
-      - text: Introdução ao PWAs (EdgeHTML)
-        url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-      - text: Hospedagem de Runtime no JavaScript
-        url: /microsoft-edge/hosting/javascript-runtime-hosting
-      - text: Guia do Desenvolvedor do WebVR
-        url: /microsoft-edge/webvr/index
-      - text: Windows Runtime (WinRT)
-        url: /microsoft-edge/windows-runtime
+      - text: Documentação herdada do Microsoft Edge
+        url: /microsoft-edge/edgehtml/index
