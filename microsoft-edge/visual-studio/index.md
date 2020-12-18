@@ -3,16 +3,16 @@ description: Microsoft Edge (Chromium) e Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2019
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, vs, Visual Studio, depurador
-ms.openlocfilehash: 3fc2e2c3dc21689d8c378ccbe33e4dff813ea12f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f3796a040fe6c658211b4009445b5c179ab9b077
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986189"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231206"
 ---
 # Visual Studio
 
@@ -76,7 +76,7 @@ O depurador de JavaScript no Visual Studio vai chegar ao ponto de interrupção 
 > ##### Figura 8
 > Visual Studio pausar JavaScript executando no Microsoft Edge ![ Visual Studio pausar o JavaScript em execução no Microsoft Edge](./media/hit-breakpoint.png)  
 
-Este exemplo era apenas uma demonstração mínima da funcionalidade disponível no Visual Studio. Saiba mais sobre todas as coisas que você pode fazer no Visual Studio 2019 lendo [a documentação dela](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019).
+Este exemplo era apenas uma demonstração mínima da funcionalidade disponível no Visual Studio. Saiba mais sobre todas as coisas que você pode fazer no Visual Studio 2019 lendo [a documentação dela](/visualstudio/windows/?view=vs-2019&preserve-view=true).
 
 ## Anexar ao Microsoft Edge
 No fluxo de trabalho anterior, o Visual Studio inicia o Microsoft Edge. Com esse fluxo de trabalho, você poderá anexar o depurador do Visual Studio a uma instância já em execução do Microsoft Edge. 

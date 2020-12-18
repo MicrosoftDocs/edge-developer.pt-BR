@@ -3,17 +3,17 @@ description: Saiba como usar JavaScript em cenários complexos em aplicativos do
 title: Usar JavaScript em aplicativos do WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 0fd4e33b7cfc16dcd19a850147b6efbca8922a8e
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: da04d1e24b95dfa7ea477bbd228fd46b64727ec3
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120064"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230933"
 ---
 # Usar JavaScript em WebView para cenários estendidos  
 
@@ -96,7 +96,7 @@ Para começar, explore a funcionalidade do menu contextual atual.
 1.  Execute o projeto.  
 1.  Passe o mouse em qualquer lugar do controle WebView2 e abra o menu de contexto \ (clique com o botão direito do mouse \).  O menu de contexto exibe as opções padrão.  
     
-    :::image type="complex" source="./media/contextmenu.png" alt-text="Resultado de arrastar e soltar contoso.txt" lightbox="./media/contextmenu.png":::
+    :::image type="complex" source="./media/contextmenu.png" alt-text="O menu de contexto mostrando as opções padrão" lightbox="./media/contextmenu.png":::
        O menu de contexto mostrando as opções padrão  
     :::image-end:::  
     
@@ -123,7 +123,7 @@ Agora, adicione código para remover a funcionalidade do menu contextual do cont
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[DevtoolsGuideChromiumMain]: ../index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Referência de API do Microsoft Edge WebView2 | Documentos da Microsoft"  

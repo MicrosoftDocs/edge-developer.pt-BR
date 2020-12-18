@@ -3,16 +3,16 @@ description: Saiba como usar o Microsoft Edge DevTools para exibir e alterar a C
 title: Inspecionar a grade CSS no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 150aea57aa676580b554cc74292671ed567a0a2c
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133917"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231094"
 ---
 # Inspecionar grade CSS  
 
@@ -37,13 +37,13 @@ Quando um elemento HTML na sua página tiver `display: grid` ou `display: inline
 
 Selecione o selo para alternar a exibição de uma sobreposição de grade na página.  A sobreposição aparece sobre o elemento, disposta como uma grade para exibir a posição das linhas de grade e as faixas:  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-highlight-grid.msft.png":::
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Alternar o selo da grade" lightbox="../media/grid-highlight-grid.msft.png":::
    Alternar o selo da grade  
 :::image-end:::  
 
 Abrir o painel de **layout** .  Quando as grades são incluídas em uma página, o painel de **layout** inclui uma seção de **grade** contendo várias opções para exibir as grades.  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-layout-pane.msft.png":::
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Painel de layout" lightbox="../media/grid-layout-pane.msft.png":::
    Painel de **layout**  
 :::image-end:::  
 
@@ -82,7 +82,7 @@ Por padrão, os números de linha positivos e negativos são exibidos na sobrepo
 
 Para obter mais informações sobre números negativos na sobreposição de grade, navegue até [posicionamento baseado em linha com grade CSS][MdnLineBasedPlacementCssGrid].  
 
-:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-show-line-numbers.msft.png":::
+:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Exibir números de linha" lightbox="../media/grid-show-line-numbers.msft.png":::
    Exibir números de linha  
 :::image-end:::  
 
@@ -90,20 +90,19 @@ Para obter mais informações sobre números negativos na sobreposição de grad
 
 Selecione **ocultar rótulos de linha** para ocultar os números de linha.  
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-hide-line-labels.msft.png":::
+:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Ocultar rótulos de linha" lightbox="../media/grid-hide-line-labels.msft.png":::
    Ocultar rótulos de linha  
 :::image-end:::  
 
 ### Mostrar nomes de linha  
 
-<!--todo: @rachel verify the link and text for line name -->  
 Para obter mais informações sobre nomes de linha na sobreposição de grade, navegue até [layout usando linhas de grade nomeadas][MdnLayoutUsingNamedGridLines].  
 
 Selecione **Mostrar nomes de linha** para exibir os nomes das linhas em vez de números.  No exemplo, 4 linhas têm nomes: `left` ,, `middle1` `middle2` e `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
-:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-show-line-names.msft.png":::
+:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Mostrar nomes de linha" lightbox="../media/grid-show-line-names.msft.png":::
    **Mostrar nomes de linha**  
 :::image-end:::  
 
@@ -132,7 +131,7 @@ Os rótulos de linha de linha exibem apenas os tamanhos calculados, pois não h�
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-show-track-sizes.msft.png":::
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Mostrar tamanhos de faixas" lightbox="../media/grid-show-track-sizes.msft.png":::
    **Mostrar tamanhos de faixas**  
 :::image-end:::  
 
@@ -140,7 +139,7 @@ Os rótulos de linha de linha exibem apenas os tamanhos calculados, pois não h�
 
 Para exibir os nomes das áreas, habilite a caixa de seleção **Mostrar nomes de área** .  No exemplo, há três áreas na grade: **superior**, **bottom1** e **bottom2**.  
 
-:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-show-area-names.msft.png":::
+:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Mostrar nomes de área" lightbox="../media/grid-show-area-names.msft.png":::
    **Mostrar nomes de área**  
 :::image-end:::  
 
@@ -148,7 +147,7 @@ Para exibir os nomes das áreas, habilite a caixa de seleção **Mostrar nomes d
 
 Habilite a caixa de seleção **estender linhas de grade** para estender as linhas de grade para a borda da viewport ao longo de cada eixo.  
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-extend-grid-lines.msft.png":::
+:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Estender linhas de grade" lightbox="../media/grid-extend-grid-lines.msft.png":::
    **Estender linhas de grade**  
 :::image-end:::  
 
@@ -158,14 +157,12 @@ A seção **sobreposições de grade** contém uma lista de grades que estão pr
 
 ### Habilitar modos de exibição de sobreposição de várias grades  
 
-<!--todo: @zoher verify and provide updates -->  
-
 Para exibir a grade de sobreposição para várias grades, escolha a caixa de seleção ao lado de cada nome da grade.  No exemplo, há duas sobreposições de grade habilitadas que são representadas com cores diferentes.  
 
 *   `main`  
 *   `div.snack-box`  
     
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-grid-overlays.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Habilitar modos de exibição de sobreposição de várias grades" lightbox="../media/grid-grid-overlays.msft.png":::
    Habilitar modos de exibição de sobreposição de várias grades  
 :::image-end:::  
 
@@ -173,7 +170,7 @@ Para exibir a grade de sobreposição para várias grades, escolha a caixa de se
 
 Para abrir o seletor de cores e personalizar a cor da sobreposição de grade, escolha a caixa ao lado do nome da sobreposição de grade.  
 
-:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-grid-overlays-color.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Personalizar a cor da sobreposição de grade" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Personalizar a cor da sobreposição de grade  
 :::image-end:::  
 
@@ -181,7 +178,7 @@ Para abrir o seletor de cores e personalizar a cor da sobreposição de grade, e
 
 Para realçar o elemento HTML no painel **elementos** e rolar para ele na página da Web, escolha o **elemento Mostrar no painel elementos** \ ( ![ Mostrar elemento no ícone do painel elementos ][ImageShowElementInElementsPanelIcon] \) ícone.  
 
-:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Descobrir grade" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Realçar a grade" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Realçar a grade  
 :::image-end:::  
 
@@ -195,7 +192,7 @@ Para realçar o elemento HTML no painel **elementos** e rolar para ele na págin
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Grade CSS | JEC. FYI"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Grade CSS | JEC. FYI"  
@@ -205,11 +202,11 @@ Para realçar o elemento HTML no painel **elementos** e rolar para ele na págin
 [MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Posicionamento baseado em linhas com grade CSS | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/grid) e é criada por [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome devtools \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/grid) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

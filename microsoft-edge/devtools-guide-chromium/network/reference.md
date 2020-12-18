@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos do painel de rede do Micros
 title: Referência de análise de rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4d4dc8ad5102766f3ad3c8322dbf9342a69e9097
-ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
+ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203903"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230751"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -972,7 +972,7 @@ Por padrão, o DevTools exibe o painel **visão geral** .  Para ocultá-la, desa
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Depurar aplicativos Web progressivos | Documentos da Microsoft"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Depurar aplicativos Web progressivos | Documentos da Microsoft"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
@@ -981,11 +981,11 @@ Por padrão, o DevTools exibe o painel **visão geral** .  Para ocultá-la, desa
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Servidor proxy-Wikipédia"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/network/reference) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

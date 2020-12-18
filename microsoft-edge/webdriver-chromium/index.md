@@ -3,19 +3,19 @@ description: Saiba como testar seu site ou aplicativo no Microsoft Edge ou autom
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desenvolvimento na Web, HTML, CSS, JavaScript, desenvolvedor, WebDriver, Selenium, testes, ferramentas, automação, teste
-ms.openlocfilehash: 3c197a83dbf16c68102ff6e9a4ee6f33b0573af2
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+ms.openlocfilehash: 5e881eec59c966fd4fa6d35118032a3a51e7b9e5
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192239"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231122"
 ---
-# Usar o WebDriver (Chromium) para automação de teste  
+# Usar o WebDriver (Chromium) para visão geral da automação de teste  
 
 O WebDriver permite que você \ (desenvolvedores \) crie testes automatizados que simulam a interação do usuário.  Testes e simulações do WebDriver diferem dos testes de unidade JavaScript devido aos seguintes motivos.  
 
@@ -36,19 +36,21 @@ Para começar a automatizar testes, use as etapas a seguir para garantir que a v
 
 1.  Navegue até `edge://settings/help` para obter a versão do Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-version.png" alt-text="O número do Build para o Microsoft Edge Canárias em 14 de janeiro de 2020" lightbox="../media/webdriver-chromium/edge-version.png":::
-       O número do Build para o Microsoft Edge Canárias em 14 de janeiro de 2020  
+    :::image type="complex" source="./media/edge-version.png" alt-text="O número do Build para o Microsoft Edge Canárias em 14 de janeiro de 2020":::
+       O número do Build para o Microsoft Edge Canárias em 14 de janeiro de 2020
     :::image-end:::  
     
 1.  Navegue até a página de [downloads do driver Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] e baixe o driver que corresponde ao número de versão do Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="A seção downloads da página do driver Microsoft Edge" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
-       A seção downloads da página do [driver Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="A seção downloads da página do driver Microsoft Edge":::
+       A seção downloads da página do [driver Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
+    <!--  
     > [!NOTE] 
-    > Para obter mais informações sobre a automação de teste usando o Microsoft Edge \ (EdgeHTML \), consulte [Microsoft WebDriver para Microsoft Edge (EdgeHTML)][Webdriver].  
-    
+    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    -->  
+
 ## Escolher uma associação de linguagem do WebDriver  
 
 O último componente que você deve baixar é um driver de cliente específico do idioma para traduzir seu código \ (Python, Java, C \ #, Ruby, JavaScript \) em comandos que o driver Microsoft Edge funciona no Microsoft Edge \ (Chromium \).  
@@ -332,8 +334,8 @@ A equipe do Microsoft Edge está ansiosos para ouvir seus comentários sobre com
 
 <!-- links -->  
 
-[DevToolsMain]: ../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"
-[Webdriver]: ../webdriver.md "WebDriver (EdgeHTML) | Documentos da Microsoft"  
+[DevToolsMain]: ../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"
+[Webdriver]: ../webdriver/index.md "WebDriver (EdgeHTML) | Documentos da Microsoft"  
 
 [DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability-Microsoft Edge-Policies | Documentos da Microsoft"  
 
@@ -355,7 +357,7 @@ A equipe do Microsoft Edge está ansiosos para ouvir seus comentários sobre com
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Baixar novo navegador Microsoft Edge"  
 
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Baixar canais do Microsoft Edge Insider"  
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Baixar o Microsoft Edge Insider Channels"  
 
 [NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet. CommandLine | Galeria do NuGet"  
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft. Edge. SeleniumTools | Galeria do NuGet"  

@@ -3,16 +3,16 @@ description: Use a ferramenta problemas para localizar e corrigir problemas com 
 title: Localizar e corrigir problemas com a ferramenta problemas do DevTools Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 8bd3e5950572a9d3fdce71ec6cd935f6b6d6a0b7
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124723"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230660"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -46,7 +46,7 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
 1.  [Abra o devtools][DevtoolsOpen].  
 1.  :::row:::
        :::column span="":::
-          Selecione o botão **ir para problemas** na barra de aviso amarela.  
+          Escolha o botão **ir para problemas** na barra de aviso amarela.  
           
           :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-open-issues-tab.msft.png":::
              O botão **ir para problemas** na barra de aviso amarela quando problemas são detectados.  
@@ -55,7 +55,7 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
        :::column span="":::
           Ou, se preferir, escolha **problemas** no menu **mais ferramentas** .  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Ferramenta problemas no menu mais ferramentas" lightbox="../media//issues-more-tools-menu.msft.png":::
              Ferramenta **problemas** no menu **mais ferramentas**  
           :::image-end:::  
        :::column-end:::
@@ -63,13 +63,13 @@ A ferramenta **problemas** no Microsoft Edge devtools reduz a notificação cans
     
 1.  Selecione o botão **recarregar página** , se necessário.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com o botão recarregar página" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Ferramenta **problemas** na gaveta devtools com o botão **recarregar página**  
     :::image-end:::  
 
     Os problemas relatados no **console** são muito difíceis de entender, como os avisos de cookies na imagem a seguir.  Com base nos problemas relatados, talvez não seja claro o que você deve fazer.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Ferramenta problemas na gaveta DevTools com três problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Ferramenta **problemas** na gaveta devtools com três problemas de cookies  
     :::image-end:::  
     
@@ -79,7 +79,7 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 
 1.  Selecione um item na ferramenta **problemas** para obter orientação sobre como corrigir o problema e localizar os recursos afetados.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar cookies entre sites como um problema seguro aberto na ferramenta problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Marcar cookies entre sites como** um problema seguro aberto na ferramenta **problemas**  
     :::image-end:::  
     
@@ -92,7 +92,7 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
     
 1.  Selecione itens em **recursos afetados** para exibir detalhes.  No exemplo a seguir, a **marca cookies entre sites como** um problema seguro afeta um cookie e duas solicitações.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afetados abertos na guia gaveta de problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Recursos afetados abertos na ferramenta **problemas** na gaveta do devtools  
     :::image-end:::  
     
@@ -100,13 +100,13 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 
 1.  Selecione um link de recurso para exibir o item no contexto apropriado no DevTools.  No exemplo a seguir, selecione `samesite-sandbox.glitch.me` em **solicitações** para mostrar os cookies anexados a essa solicitação.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Exibir o cookie afetado no painel de rede do DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
        Exibir o cookie afetado no painel de **rede** do devtools  
     :::image-end:::  
 
 1.  Role para ver o item com um problema: para o exemplo a seguir, o `ck02` Cookie.  Passe o mouse sobre a coluna **SameSite** para ver o `None` valor detectado pelo problema.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Botão ir para problemas na barra de aviso amarela quando problemas são detectados" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Nenhum valor na coluna SameSite para o cookie ck02 no painel de rede do DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` valor na coluna **SameSite** para o `ck02` cookie no painel de **rede** devtools  
     :::image-end:::  
 
@@ -116,7 +116,7 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsOpen]: ../open/index.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Testes de cookies SameSite | Problema"  
 
@@ -126,10 +126,10 @@ A ferramenta **problemas** na gaveta do devtools apresenta avisos em uma maneira
 [W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Política incorporada de origem cruzada | Grupo da Comunidade Incubator da Web"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/issues/index) e é criada por [Samuel Dutton][SamDutton] \ (defensora do desenvolvedor \).  
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

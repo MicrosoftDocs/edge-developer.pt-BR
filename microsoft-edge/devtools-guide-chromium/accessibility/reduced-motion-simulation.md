@@ -1,17 +1,18 @@
 ---
+description: Simule o Motion reduzido usando as ferramentas de desenvolvedor.
 title: Simular movimento reduzido usando as ferramentas de desenvolvedor (CSS prefere menor movimento)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/18/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento na Web, Ferramentas F12, devtools
-ms.openlocfilehash: f1bf90de4ac1832fff07e9ac963c26f92adeea2c
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
+ms.openlocfilehash: 0e5243e01ca6c9344dceffb0bf004dadccc3d4d7
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843981"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230786"
 ---
 # Simulação de movimento reduzida  
 
@@ -26,16 +27,16 @@ A animação em produtos da Web pode ser um problema de acessibilidade.  Os sist
 }
 ```  
 
-Usando o [Microsoft Edge devtools][DevtoolsGuideChromiumMain], você pode simular essa configuração de movimentação reduzida sem precisar alterar o sistema operacional.  
+Usando o [Microsoft Edge devtools][DevtoolsIndex], você pode simular essa configuração de movimentação reduzida sem precisar alterar o sistema operacional.  
 
 1.  Abrir o **menu de comandos**.  
-    1.  Pressione `Control` + `Shift` + `P` no Windows ou `Command` + `Shift` + `P` no MacOS.  
+    1.  Selecione `Control` + `Shift` + `P` no Windows/Linux ou `Command` + `Shift` + `P` no MacOS.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="O menu de comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            O **menu de comando**  
-        :::image-end:::   
+        :::image-end:::  
         
-1.  Digite `reduced` para ativar e desativar a simulação.  Selecione a opção e pressione `Enter` .  
+1.  Digite `reduced` para ativar e desativar a simulação.  Escolha a opção e selecione `Enter` .  
     
     :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Ativar ou desativar a configuração de opção escolher movimento reduzido do menu de comandos" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
        Ativar ou desativar a configuração de opção **escolher movimento reduzido** do **menu de comandos**  
@@ -43,13 +44,8 @@ Usando o [Microsoft Edge devtools][DevtoolsGuideChromiumMain], você pode simula
     
 1.  Atualize a página atual para testar se suas animações estão desativadas ou visíveis.  
     
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figura 1: menu de comando"  
-[ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "Figura 2: alternar o movimento reduzido da paleta de comandos"
-
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) Microsoft | Documentos da Microsoft"  
+[DevtoolsIndex]: ../index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "preferência-movimento reduzido | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "preferência-movimento reduzido | MDN"  

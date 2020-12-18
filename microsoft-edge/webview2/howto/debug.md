@@ -3,17 +3,17 @@ description: Saiba como depurar controles WebView2.
 title: Introdução à depuração de aplicativos WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 25a710796b499a78a43045266058029caa890b78
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 4f94fe880f66f8aeb387d2db4a8bfaab20699466
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119105"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230695"
 ---
 # Introdução à depuração de aplicativos WebView2  
 
@@ -26,7 +26,7 @@ Use as [ferramentas de desenvolvedor do Microsoft Edge (Chromium)][DevtoolsGuide
 *   Selecione `F12` .  
 *   Selecione `Ctrl` + `Shift` + `I` .  
 *   Abra o menu de contexto \ (clique com o botão direito do mouse \) e escolha `Inspect` .  
-
+    
 Para obter mais informações, consulte [visão geral de devtools][DevtoolsGuideChromiumMain].  
 
 :::image type="complex" source="./media/f12.png" alt-text="Depuração DevTools" lightbox="./media/f12.png":::
@@ -45,25 +45,26 @@ Antes de começar, certifique-se de que os seguintes requisitos sejam atendidos.
 *   Para depurar scripts, o aplicativo deve ser iniciado no Visual Studio.  
 *   Não é possível anexar um depurador a um processo de WebView2 em execução.  
 *   Instale o Visual Studio 2019 versão 16,4 Preview 2 ou posterior.  
-
+    
 Instale e configure as ferramentas do depurador de scripts no Visual Studio.  
 
 1.  Conclua as seguintes ações para instalar o componente de **diagnóstico JavaScript** no **desenvolvimento de área de trabalho com C++**.  
-
-    1. Na barra do Windows Explorer, digite `Visual Studio Installer` .  
-    1. Escolha **instalador do Visual Studio** para abri-lo.  
-    1. No instalador do Visual Studio, na versão instalada, escolha o botão **mais** e, em seguida, escolha **Modificar**.  
-    1. No Visual Studio, em **cargas**de trabalho, escolha a configuração **desenvolvimento de área de trabalho em C++** .  
+    
+    1.  Na barra do Windows Explorer, digite `Visual Studio Installer` .  
+    1.  Escolha **instalador do Visual Studio** para abri-lo.  
+    1.  No instalador do Visual Studio, na versão instalada, escolha o botão **mais** e, em seguida, escolha **Modificar**.  
+    1.  No Visual Studio, em **cargas**de trabalho, escolha a configuração **desenvolvimento de área de trabalho em C++** .  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Depuração DevTools" lightbox="./media/workloads.png":::
-            Tela modificando cargas de trabalho do Visual Studio :::image-end:::  
+        :::image type="complex" source="./media/workloads.png" alt-text="Tela modificando cargas de trabalho do Visual Studio" lightbox="./media/workloads.png":::
+            Tela modificando cargas de trabalho do Visual Studio
+        :::image-end:::  
         
     1.  Escolha **componentes individuais**.  
     1.  Na caixa de pesquisa, digite `JavaScript diagnostics` .  
     1.  Escolha a configuração **diagnóstico de JavaScript** .  
     1.  Escolha **Modificar**. 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Depuração DevTools" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio modificando a guia componentes individuais" lightbox="./media/indivcomp.png":::
            Visual Studio modificando a guia componentes individuais  
         :::image-end:::  
         
@@ -72,7 +73,7 @@ Instale e configure as ferramentas do depurador de scripts no Visual Studio.
     1.  Em **Propriedades de configuração**, escolha **depuração**.  
     1.  Em **tipo de depurador**, escolha **JavaScript (WebView2)**.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Depuração DevTools" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="Propriedade de configuração de depuração do Visual Studio" lightbox="./media/enbjs.png":::
            Propriedade de configuração de **depuração** do Visual Studio  
         :::image-end:::  
         
@@ -80,19 +81,19 @@ Conclua as seguintes ações para depurar seu aplicativo WebView2.
 
 1.  Para definir um ponto de interrupção no código-fonte, passe o mouse à esquerda do número da linha e escolha definir um ponto de interrupção.  O adaptador de depuração JS/TS não executa o mapeamento de caminho de origem.  Você deve abrir exatamente o mesmo caminho associado à sua WebView2.  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Depuração DevTools" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Adicionar ponto de interrupção do Visual Studio" lightbox="./media/breakpoint.png"::: 
        Adicionar ponto de interrupção do Visual Studio  
     :::image-end:::  
     
 1.  Para executar o depurador, escolha o tamanho do bit da plataforma e escolha o botão de reprodução verde ao lado de **depurador local do Windows**.  O aplicativo é executado e o depurador se conecta ao primeiro processo WebView2 criado.  
     
-    :::image type="complex" source="./media/run.png" alt-text="Depuração DevTools" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text=" Depurador local do Windows do Visual Studio" lightbox="./media/run.png"::: 
        **Depurador local do Windows** do Visual Studio  
     :::image-end:::  
     
 1.  No **console de depuração**, localize a saída do depurador.  
     
-    :::image type="complex" source="./media/console.png" alt-text="Depuração DevTools" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text=" Console de depuração do Visual Studio" lightbox="./media/console.png"::: 
        Console de **depuração** do Visual Studio  
     :::image-end:::  
     
@@ -103,7 +104,7 @@ Use o código do Microsoft Visual Studio para depurar scripts executados em cont
 No código do Visual Studio, conclua as seguintes ações para depurar seu código. 
 
 1.  Seu projeto precisa ter um `launch.json` arquivo.  Se o seu projeto não tiver um `launch.json` arquivo, copie o trecho de código a seguir e crie um novo `launch.json` arquivo.  
-        
+    
     ```json
         "name": "Hello debug world",
         "type": "pwa-msedge",
@@ -116,10 +117,10 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
         },
         "useWebView": true,
     ```  
-        
+    
 1.  Para definir um ponto de interrupção no código-fonte, passe o mouse sobre a linha e selecione `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Depuração DevTools" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="O ponto de interrupção é definido no código do Visual Studio" lightbox="./media/breakpointvs.png":::
        O ponto de interrupção é definido no código do Visual Studio  
     :::image-end:::
     
@@ -130,20 +131,20 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
     1.  Na guia **executar** , escolha a configuração iniciar no menu suspenso.  
     1.  Para iniciar a depuração do aplicativo, escolha Iniciar Depuração, que é o triângulo verde ao lado do menu suspenso configuração de inicialização.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text="Depuração DevTools" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Guia executar código do Visual Studio" lightbox="./media/runvs.png":::
            Guia executar código do Visual Studio  
         :::image-end:::  
         
 1.  Abra o **console de depuração** para exibir a saída de depuração e os erros.  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text="Depuração DevTools" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Console de depuração de código do Visual Studio" lightbox="./media/resultsvs.png":::
        Console de depuração de código do Visual Studio  
     :::image-end:::  
     
 **Configurações avançadas**:  
 
 *   Depuração WebView direcionada. 
-
+    
     Em alguns aplicativos do WebView2, você pode usar mais de um controle WebView2. Para escolher o controle WebView2 para depurar nesta situação, você pode usar a depuração de WebView2 direcionada 
     
     Abra `launch.json` e conclua as seguintes ações para usar a depuração WebView direcionada.  
@@ -170,7 +171,7 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
 *   Depurar processos em execução  
     
     Talvez seja necessário anexar o depurador para executar os processos do WebView2. Para fazer isso, `launch.json` atualize o `request` parâmetro para `attach` .
-        
+    
     ```json
         "name": "Hello debugging world",
         "type": "pwa-msedge",
@@ -182,7 +183,7 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
         },
         "useWebView": true
     ```  
-        
+    
     O controle WebView2 deve abrir a porta CDP para permitir a depuração do controle WebView2.  Seu código deve ser criado para garantir que apenas um controle WebView2 tenha uma porta CDP (protocolo de desenvolvedor Chrome) aberta antes de iniciar o depurador.  
     
 *   Opções de rastreamento de depuração  
@@ -190,8 +191,6 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
     Adicione o `trace` parâmetro a launch.jspara habilitar o rastreamento de depuração.  
     
     1.  Adicionar `trace` parâmetro.  
-        
- 
         
         :::row:::
            :::column span="":::
@@ -208,7 +207,7 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text="Depuração DevTools" lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Salvar a saída de depuração em um arquivo de log." lightbox="./media/tracelog.png":::
                  Salvar a saída de depuração em um arquivo de log  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +216,7 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text="Depuração DevTools" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text=" Saída detalhada" lightbox="./media/verbose.png":::
                  Saída de depuração de código do Visual Studio com o rastreamento detalhado ativado  
               :::image-end:::  
            :::column-end:::
@@ -234,13 +233,10 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
 *   Solucionando problemas com o depurador  
     
     Você pode encontrar os seguintes cenários ao usar o depurador.  
-
+    
     *   O depurador não pára no ponto de interrupção, e você tem saída de depuração.  Para resolver o problema, confirme se o arquivo com o ponto de interrupção é o mesmo arquivo que é usado pelo controle WebView2.  O depurador não executa o mapeamento de caminho de origem.  
     *   Você não pode anexar a um processo em execução e Obtém um erro de tempo limite.  Para solucionar o problema, confirme se o controle WebView2 abriu a porta CDP.  Verifique se o  `additionalBrowserArguments`  valor no registro está correto ou as opções estão corretas.  Para obter mais informações, consulte [additionalBrowserArguments para dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] e [additionalBrowserArguments para Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
-* * *  
-
-
 * * *  
 
 ## Consulte também  
@@ -249,14 +245,14 @@ No código do Visual Studio, conclua as seguintes ações para depurar seu códi
 *   Para obter um exemplo abrangente de recursos do WebView2, consulte o repositório do [WebView2Samples][GithubMicrosoftedgeWebview2samples] no github.
 *   Para obter informações mais detalhadas sobre APIs do WebView2, consulte [referência de API][Webview2ApiReference].
 *   Para obter mais informações sobre o WebView2, consulte [recursos do WebView2][Webview2MainNextSteps].
-
+    
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium)"  
+[DevtoolsGuideChromiumMain]: ../index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "Propriedade CoreWebView2EnvironmentOptions. AdditionalBrowserArguments (Microsoft. Web. WebView2. Core) | Documentos da Microsoft"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-globais | Documentos da Microsoft"  

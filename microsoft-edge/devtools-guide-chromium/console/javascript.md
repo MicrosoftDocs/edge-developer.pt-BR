@@ -3,16 +3,16 @@ description: Saiba como executar JavaScript no console.
 title: Começar a executar o JavaScript no console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125241"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231087"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,7 +49,7 @@ Este tutorial foi projetado para você abrir a demonstração e experimentar tod
     
     *   [Exemplo de JavaScript do console][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="O console" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="A página de exemplo de JavaScript do console à esquerda e DevTools à direita" lightbox="../media/console-javascript-example-console-empty.msft.png":::
        A página de exemplo de JavaScript do console à esquerda e DevTools à direita  
     :::image-end:::  
     
@@ -60,7 +60,7 @@ Ao criar ou depurar uma página, geralmente é útil executar instruções no **
 1.  Observe o texto no botão.  
 1.  Digite `document.getElementById('hello').textContent = 'Hello, Console!'` no **console** e selecione `Enter` para avaliar a expressão.  Observe como o texto dentro do botão muda.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="O console" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Como o console se parece após avaliar a expressão" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
        Como o **console** se parece após avaliar a expressão  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Ao criar ou depurar uma página, geralmente é útil executar instruções no **
     
 ## Executar JavaScript arbitrário que não está relacionado à página  
 
-Às vezes, você só quer um código playground onde você pode testar algum código ou experimentar novos recursos JavaScript com os quais não está familiarizado.  O console é um lugar perfeito para estes tipos de experimentos.  
+Às vezes, você só quer um código playground onde você pode testar algum código ou experimentar novos recursos JavaScript com os quais não está familiarizado.  O **console** é um lugar perfeito para estes tipos de experimentos.  
 
 1.  Digite `5 + 15` no console e selecione `Enter` para avaliar a expressão. O console imprime o resultado da expressão abaixo do código.  Na figura a seguir, o seu **console** deve exibir o resultado após avaliar a expressão.  
 
@@ -89,7 +89,7 @@ Ao criar ou depurar uma página, geralmente é útil executar instruções no **
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="O console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="O console é exibido após avaliar as expressões no trecho de código" lightbox="../media/console-javascript-example-console-playground.msft.png":::
              O **console** é exibido após avaliar as expressões no trecho de código  
           :::image-end:::  
        :::column-end:::
@@ -122,7 +122,7 @@ Para obter mais informações sobre as funções de conveniência, navegue até 
 [DevToolsConsoleLoggingMessages]: ./log.md "Introdução ao registro de mensagens no console | Documentos da Microsoft"  
 [DevToolsConsoleReference]: ./reference.md#run-javascript "Referência do console | Documentos da Microsoft"  
 [DevToolsConsoleUtilities]: ./utilities.md "Referência de API de utilitários de console | Documentos da Microsoft"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Introdução à depuração de JavaScript no Microsoft Edge DevTools"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Introdução à depuração JavaScript no Microsoft Edge DevTools | Documentos da Microsoft"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressões versus instruções em JavaScript"  
 
@@ -133,11 +133,11 @@ Para obter mais informações sobre as funções de conveniência, navegue até 
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Leitura – eval – loop de impressão-Wikipédia"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/console/javascript) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -3,16 +3,16 @@ description: Abra a guia "renderização" e selecione "emular mídia CSS" > "imp
 title: Forçar o Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: d4e8e06d60461ac4cdcab8686a18a0698d52f6e3
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a036e710de998f03e876126581956929d8652f1e
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125115"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230919"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,13 +39,13 @@ A [consulta imprimir mídia][MDNUsingMediaQueries] controla a aparência da sua 
     :::image-end:::  
     
 1.  Digite `rendering` , escolha **Mostrar renderização**e, em seguida, selecionar `Enter` .  
-1.  Em **emular mídia CSS** , escolha **Imprimir**.  
+1.  Em **emular mídia CSS**, escolha **Imprimir**.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="O menu de comando" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Modo de visualização de impressão" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Modo de visualização de impressão  
     :::image-end:::  
     
-Aqui, você pode exibir e alterar seu CSS, como qualquer outra página da Web.  Confira [introdução à exibição e à alteração da CSS][DevToolsCSSGetStarted].  
+Aqui, você pode exibir e alterar seu CSS, como qualquer outra página da Web.  Navegue até [introdução ao exibir e alterar CSS][DevToolsCSSGetStarted].  
 
 ## Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -53,17 +53,17 @@ Aqui, você pode exibir e alterar seu CSS, como qualquer outra página da Web.  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 [DevToolsCSSGetStarted]: ./index.md "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Usando consultas de mídia | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

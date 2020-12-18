@@ -3,16 +3,16 @@ description: Os usuários esperam páginas interativas e suaves.  Cada estágio 
 title: Analisar o desempenho do tempo de execução
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: d42ac5e7a7456971d48198a1f362eebe7156bbce
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992699"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230604"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -183,14 +183,14 @@ A tabela a seguir descreve alguns problemas comuns de pintura e composição e p
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Entrar em contato com a equipe do Microsoft Edge DevTools  
+## Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Acelerar o tempo de execução de JavaScript | Documentos da Microsoft"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Habilitar a instrumentação avançada de pintura – referência de análise de desempenho | Documentos da Microsoft"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Ativar a instrumentação avançada de pintura – referência de análise de desempenho | Documentos da Microsoft"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
@@ -215,11 +215,11 @@ A tabela a seguir descreve alguns problemas comuns de pintura e composição e p
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \) e [Meggin Kearney][MegginKearney] \ (Tech Writer \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

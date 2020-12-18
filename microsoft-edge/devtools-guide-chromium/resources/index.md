@@ -3,16 +3,16 @@ description: Organize recursos por quadro, domínio, tipo ou outros critérios.
 title: Exibir recursos de página com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a243a400dd85b587a8f299a6b8bc3d3d463796b0
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 353c36a9d98dac287c3fdaaa3feed2fe3b17cd07
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125395"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230772"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ Quando você sabe o nome do recurso que deseja inspecionar, o menu de **comando*
     
 1.  Selecione o arquivo na lista suspensa ou comece a digitar o nome do arquivo e selecione `Enter` uma vez que o arquivo correto seja realçado na caixa preenchimento automático.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Digite um nome de arquivo na caixa de diálogo abrir arquivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
        Digite um nome de arquivo na caixa de diálogo **Abrir arquivo**  
     :::image-end:::  
     
@@ -56,7 +56,7 @@ Quando você sabe o nome do recurso que deseja inspecionar, o menu de **comando*
 
 Navegue para [inspecionar os detalhes de um recurso][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspecionar um recurso no painel de rede" lightbox="../media/resources-network-response.msft.png":::
    Inspecionar um recurso no painel de **rede**  
 :::image-end:::  
 
@@ -64,7 +64,7 @@ Navegue para [inspecionar os detalhes de um recurso][DevtoolsNetworkInspectDetai
 
 A seção [procurar recursos](#browse-resources) abaixo mostra como exibir recursos de várias partes da interface do usuário do devtools.  Se você quiser inspecionar um recurso no painel de **rede** , clique com o botão direito do mouse no recurso e escolha **revelar no painel de rede**.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Revelar no painel de rede" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Revelar no painel de rede**  
 :::image-end:::  
 
@@ -74,7 +74,7 @@ A seção [procurar recursos](#browse-resources) abaixo mostra como exibir recur
 
 Navegue até [registrar atividades de rede][DevtoolsNetworkLogActivity].  
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-network-resources.msft.png":::
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Recursos de página no log de rede" lightbox="../media/resources-network-resources.msft.png":::
    Recursos de página no log de **rede**  
 :::image-end:::  
 
@@ -85,7 +85,7 @@ Para exibir os recursos de uma página organizada por diretório:
 1.  Clique na guia **fontes** para abrir o painel **fontes** .  
 1.  Clique na guia **página** para mostrar os recursos da página.  O painel da **página** é aberto.  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Painel de página" lightbox="../media/resources-sources-page-empty.msft.png":::
        Painel de **página**  
     :::image-end:::  
     
@@ -101,7 +101,7 @@ Para exibir os recursos de uma página organizada por diretório:
     
 1.  Clique em um recurso para exibi-lo no **Editor**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-sources-page-resource.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Exibir um arquivo no editor" lightbox="../media/resources-sources-page-resource.msft.png":::
        Exibir um arquivo no **Editor**  
     :::image-end:::  
     
@@ -112,13 +112,13 @@ Por padrão, o painel de **página** agrupa os recursos por diretório.  Para de
 1.  Abrir o painel da **página** .  Navegue até [navegar por diretório](#browse-by-directory).  
 1.  Escolha **mais opções** `...` e desabilite **Agrupar por pasta**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="A opção Agrupar por pasta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        A opção **Agrupar por pasta**  
     :::image-end:::  
     
     Os recursos são organizados por tipo de arquivo.  Em cada tipo de arquivo, os recursos são organizados em ordem alfabética.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="O painel da página depois de desabilitar agrupar por pasta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        O painel da **página** depois de desabilitar **Agrupar por pasta**  
     :::image-end:::  
     
@@ -128,20 +128,20 @@ Para agrupar recursos juntamente com base no tipo de arquivo:
 
 1.  Clique na guia **aplicativo** .  O painel **aplicativo** é aberto.  Por padrão, o painel de **manifesto** geralmente abre primeiro.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Painel de aplicativos" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        Painel de **aplicativos**  
     :::image-end:::  
     
 1.  Role para baixo até o painel **quadros** .  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="O painel quadros" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        O painel **quadros**  
     :::image-end:::  
     
 1.  Expanda as seções em que você está interessado.  
 1.  Clique em um recurso para exibi-lo.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Exibir um recurso no painel do aplicativo" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        Exibir um recurso no painel do **aplicativo**  
     :::image-end:::  
     
@@ -149,7 +149,7 @@ Para agrupar recursos juntamente com base no tipo de arquivo:
 
 Navegue até [Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="A caixa de diálogo abrir arquivo" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtro para CSS no log de rede" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filtro para CSS no log de **rede**  
 :::image-end:::  
 
@@ -159,7 +159,7 @@ Navegue até [Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 [DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso-inspecionar atividade de rede no Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspecionar os detalhes da atividade de rede de inspeção de recursos no Microsoft Edge DevTools | Documentos da Microsoft"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Registrar atividades de rede-Inspecione a atividade de rede no Microsoft Edge DevTools | Documentos da Microsoft"  
@@ -168,11 +168,11 @@ Navegue até [Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Aprender sobre desenvolvimento na Web | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/resources/index) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -3,16 +3,16 @@ description: Os trechos de código são pequenos scripts que você pode criar e 
 title: Executar trechos de JavaScript em qualquer página com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 3542243f7fa886865ced47d47991cd9b11001e2e
-ms.sourcegitcommit: 9dcaf598f3930bcfab9f93ff63463beb98274de0
+ms.openlocfilehash: 89b028177016a9194a67bbbe44d08572e5755f95
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145117"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230954"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ Usar Snippets é uma maneira excelente de alterar algumas coisas em uma página 
 
 Na figura a seguir, a página da Web é exibida após a execução do trecho de código.  A **gaveta do console** é exibida para exibir a `Hello, Snippets!` mensagem que o trecho registra e o conteúdo da página muda completamente.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="A página da Web após a execução do snippet" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    A página da Web após a execução do snippet  
 :::image-end:::  
 
@@ -67,7 +67,7 @@ Na figura a seguir, a página da Web é exibida após a execução do trecho de 
 
 O painel **Snippets** lista seus trechos de código.  Quando você quiser editar um trecho de código, será necessário abri-lo no painel **Snippets** .  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="O painel Snippets" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    O painel **Snippets**  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ O painel **Snippets** lista seus trechos de código.  Quando você quiser editar
 
 1.  Escolha a guia **fontes** para abrir a ferramenta **fontes** .  O painel de **página** geralmente abre por padrão.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="A ferramenta fontes com o painel da página aberto à esquerda" lightbox="../media/javascript-sources-page-pane.msft.png":::
        A ferramenta **fontes** com o painel da **página** aberto à esquerda  
     :::image-end:::  
     
@@ -87,7 +87,7 @@ O painel **Snippets** lista seus trechos de código.  Quando você quiser editar
 1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando.  
 1.  Tipo `Snippets` , escolha **Mostrar Snippets**e, em seguida, selecione `Enter` para executar o comando.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="O comando Mostrar Snippets" lightbox="../media/javascript-search-show-snippets.msft.png":::
        O comando **Mostrar Snippets**  
     :::image-end:::  
     
@@ -99,7 +99,7 @@ O painel **Snippets** lista seus trechos de código.  Quando você quiser editar
 1.  Escolha **novo snippet**.  
 1.  Digite um nome para o seu snippet e, em seguida, selecione `Enter` salvar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nomear um snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nomear um snippet  
     :::image-end:::  
     
@@ -109,7 +109,7 @@ O painel **Snippets** lista seus trechos de código.  Quando você quiser editar
 1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando.  
 1.  Digite `Snippet` , escolha **criar novo snippet**e, em seguida, selecione `Enter` para executar o comando.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="O comando para criar um novo snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        O comando para criar um novo snippet  
     :::image-end:::  
     
@@ -120,14 +120,14 @@ Para renomear o novo snippet com um nome personalizado, navegue até [renomear t
 1.  [Abrir o painel **Snippets** ](#open-the-snippets-pane).  
 1.  No painel **Snippets** , escolha o nome do trecho que você deseja editar.  Ele abre no **Editor de código**.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Editor de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        **Editor de código**  
     :::image-end:::  
     
 1.  Use o **Editor de código** para adicionar JavaScript ao seu snippet.  
 1.  Quando um asterisco é exibido ao lado do nome do seu snippet, isso significa que você tem código não salvo.  Selecione `Control` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) para salvar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Um asterisco ao lado do nome do trecho indica o código não salvo" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        Um asterisco ao lado do nome do trecho indica o código não salvo  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ Para renomear o novo snippet com um nome personalizado, navegue até [renomear t
 1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o menu de comando.  
 1.  Exclua o `>` caractere e digite o `!` caractere seguido do nome do trecho que você deseja executar.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="O antes de executar o trecho de código" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Executar um snippet no menu de comando" lightbox="../media/javascript-search-run-command.msft.png":::
        Executar um snippet no **menu de comando**  
     :::image-end:::  
     
@@ -173,18 +173,18 @@ Para renomear o novo snippet com um nome personalizado, navegue até [renomear t
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Visão geral do console | Documentos da Microsoft"  
-[DevToolsSourcesTool]: ../sources.md "Visão geral da ferramenta fontes | Documentos da Microsoft"  
+[DevToolsSourcesTool]: ../sources/index.md "Visão geral da ferramenta fontes | Documentos da Microsoft"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Substituições | Documentos da Microsoft"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Bloco de rascunho | MDN"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipédia"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

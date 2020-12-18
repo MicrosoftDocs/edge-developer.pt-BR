@@ -3,16 +3,16 @@ description: Como exibir e editar sessionStorage com o painel armazenamento da s
 title: Exibir e editar o armazenamento da sessão com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6543c03f04ff80b1bba1d244598a901d066db13a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e31e45abc5eac26d297cd9bc9fca43778dd74300
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125472"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231192"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,11 +30,11 @@ ms.locfileid: "11125472"
 
 # Exibir e editar o armazenamento da sessão com o Microsoft Edge DevTools  
 
-Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para exibir, editar e excluir [`sessionStorage`][MDNSessionStorage] pares de valores de chave.  
+Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de chave-valor de [sessionStorage][MDNSessionStorage] .  
 
 ## Exibir chaves e valores de sessionStorage  
 
-1.  Selecione a guia **aplicativo** para abrir o painel do **aplicativo** .  O painel **manifestar** é mostrado por padrão.  
+1.  Escolha a guia **aplicativo** para abrir a ferramenta **aplicativo** .  O painel **manifestar** é mostrado por padrão.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-manifest.msft.png":::
        Painel de **manifesto**  
@@ -42,45 +42,45 @@ Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] pa
     
 1.  Expanda o menu **armazenamento da sessão** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="O menu de armazenamento de sessão" lightbox="../media/storage-application-storage-session-storage.msft.png":::
        O menu de **armazenamento de sessão**  
     :::image-end:::  
     
-1.  Selecione um domínio para ver os pares de valor chave.  
+1.  Escolha um domínio para ver os pares de valor chave.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Os pares de chave-valor de sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
        Os `sessionStorage` pares de valor chave  
     :::image-end:::  
     
-1.  Selecione uma linha da tabela para exibir o valor no visualizador abaixo da tabela.  
+1.  Escolha uma linha da tabela para exibir o valor no visualizador abaixo da tabela.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Exibir o valor da chave x-Sid" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
        Exibir o valor da `x-sid` chave  
     :::image-end:::  
     
 ## Criar um novo par de chave-valor sessionStorage  
 
-1.  [Exiba os `sessionStorage` pares de valores chave de um domínio](#view-sessionstorage-keys-and-values).  
+1.  [Exiba os pares da chave-valor de sessionStorage de um domínio](#view-sessionstorage-keys-and-values).  
 1.  Clique duas vezes na parte vazia da tabela.  O DevTools cria uma nova linha e enfoca o cursor na coluna **chave** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="A parte vazia da tabela para clicar duas vezes para criar um novo par de valores chave" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
        A parte vazia da tabela para clicar duas vezes para criar um novo par de valores chave  
     :::image-end:::  
     
 ## Editar chaves ou valores de sessionStorage  
 
-1.  [Exiba os `sessionStorage` pares de valores chave de um domínio](#view-sessionstorage-keys-and-values).  
+1.  [Exiba os pares da chave-valor de sessionStorage de um domínio](#view-sessionstorage-keys-and-values).  
 1.  Clique duas vezes em uma célula na coluna **chave** ou **valor** para editar essa chave ou valor.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Editar uma chave sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
        Editar uma `sessionStorage` chave  
     :::image-end:::  
     
 ## Excluir pares de chave-valor de sessionStorage  
 
 1.  [Exiba os `sessionStorage` pares de valores chave de um domínio](#view-sessionstorage-keys-and-values).  
-1.  Selecione o par chave-valor que você deseja excluir.  O DevTools realça tudo em azul para indicar que está selecionado.  
-1.  Pressione a `Delete` tecla ou escolha **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
+1.  Escolha o par chave-valor que você deseja excluir.  O DevTools realça tudo em azul para indicar que está selecionado.  
+1.  Selecione a `Delete` chave ou escolha **excluir selecionado** \ ( ![ excluir selecionado ][ImageDeleteIcon] \).  
     
 ## Excluir todos os pares de chave-valor sessionStorage de um domínio  
 
@@ -93,13 +93,13 @@ Como você pode executar JavaScript no **console**e, como o **console** tem aces
 
 1.  Use o menu de **contextos de JavaScript** para alterar o contexto de JavaScript do **console** se desejar acessar os `sessionStorage` pares de valores chave de um domínio que não sejam a página em que você está.  
     
-    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-console-domain-selection.msft.png":::
-       Alterar o contexto JavaScript do console  
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Alterar o contexto JavaScript do console" lightbox="../media/storage-console-domain-selection.msft.png":::
+       Alterar o contexto JavaScript do **console**  
     :::image-end:::  
     
-1.  Execute suas `sessionStorage` expressões no console, da mesma forma que faria no JavaScript.  
+1.  Execute suas `sessionStorage` expressões no **console**, da mesma forma que faria no JavaScript.  
     
-    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interagir com o sessionStorage a partir do console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
        Interagir com `sessionStorage` base no **console**  
     :::image-end:::  
     
@@ -114,16 +114,16 @@ Como você pode executar JavaScript no **console**e, como o **console** tem aces
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window. sessionStorage | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

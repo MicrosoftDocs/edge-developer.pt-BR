@@ -3,16 +3,16 @@ description: Um guia sobre como navegar no Microsoft Edge DevTools usando a tecn
 title: Navegar no Microsoft Edge DevTools com tecnologia assistencial
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: d72c856e9136291e9255b3784aad7c6cd99f92fc
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125290"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230807"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -30,7 +30,7 @@ ms.locfileid: "11125290"
 
 # Navegar no Microsoft Edge DevTools com tecnologia assistencial  
 
-O artigo a seguir destina-se a ajudar os usuários que dependem principalmente da tecnologia adaptativa, como leitores de tela, e usam [o Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain].  O [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] é um pacote de ferramentas de desenvolvedor da Web integrado ao navegador Microsoft Edge.  Se você estiver procurando por recursos DevTools relacionados para melhorar a acessibilidade de uma página da Web, consulte [referência de acessibilidade][DevtoolsAccessibilityReference].  
+O artigo a seguir destina-se a ajudar os usuários que dependem principalmente da tecnologia adaptativa, como leitores de tela, e usam [o Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain].  O [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] é um pacote de ferramentas de desenvolvedor da Web integrado ao navegador Microsoft Edge.  Se você estiver procurando por recursos DevTools relacionados para melhorar a acessibilidade de uma página da Web, navegue até [referência de acessibilidade][DevtoolsAccessibilityReference].  
 
 A acessibilidade do DevTools é um trabalho em andamento.  Alguns painéis e guias funcionam melhor com a tecnologia assistencial do que outros.  Este guia o orienta pelos painéis que são mais acessíveis e realça problemas específicos que você pode encontrar ao longo do caminho.  
 
@@ -44,7 +44,7 @@ Por exemplo:
 *   O [painel de console][DevtoolsConsoleIndex] permite ler os logs de JavaScript e os objetos de edição ao vivo.  
 
 Na área de conteúdo de cada painel, há várias ferramentas diferentes, muitas vezes chamadas de guias ou painéis na documentação.  
-Por exemplo, o painel **elementos** contém guias adicionais para inspecionar ouvintes de eventos, a árvore de acessibilidade e muito mais.  A distinção entre guias e painéis é um pouco arbitrária.  A única razão pela qual você pode ver um termo ou o outro é manter a consistência com o restante da documentação oficial do DevTools.  
+Por exemplo, o painel **elementos** contém guias adicionais para inspecionar ouvintes de eventos, a árvore de acessibilidade e muito mais.  A distinção entre guias e painéis é um pouco arbitrária.  A única razão pela qual você pode revisar um termo ou o outro é manter a consistência com o restante da documentação oficial do DevTools.  
 
 ## Atalhos de teclado  
 
@@ -172,7 +172,7 @@ Para alternar o estado de um elemento, como `:active` ou `:focus` :
 
 Adjacente ao botão **alternar estado do elemento** é o botão **classes do elemento** .  Para mover o foco para ele, selecione `Tab` e selecione `Enter` .  O foco se move para um campo de edição de texto rotulado **Adicionar nova classe**.  
 
-O botão **classes de elemento** é usado principalmente para adicionar classes existentes a um elemento.  Por exemplo, se a sua folha de estilos contiver uma classe auxiliar nomeada `.clearfix` , você poderá selecionar `.` dentro do campo de edição de texto para ver uma lista de sugestões de classes e usar o `Down Arrow` para localizar a `.clearfix` sugestão.  Ou digite o nome da classe e selecione `Enter` para aplicá-la.  
+O botão **classes de elemento** é usado principalmente para adicionar classes existentes a um elemento.  Por exemplo, se a sua folha de estilos contiver uma classe auxiliar nomeada `.clearfix` , você poderá selecionar `.` dentro do campo de edição de texto para exibir uma lista de sugestões de classes e usar o `Down Arrow` para localizar a `.clearfix` sugestão.  Ou digite o nome da classe e selecione `Enter` para aplicá-la.  
 
 #### Adicionar uma nova regra de estilo  
 
@@ -244,17 +244,17 @@ Para executar uma nova auditoria, use `Shift` + `Tab` para sair do relatório e 
 
 [DevtoolsAccessibilityReference]: ./reference.md "Referência de acessibilidade | Documentos da Microsoft"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "O painel Acessibilidade-referência de acessibilidade | Documentos da Microsoft"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
-[DevtoolsConsoleIndex]: ../console/index.md "Visão geral do console | Documentos da Microsoft"  
+[DevtoolsConsoleIndex]: ../console/index.md "Visão geral do console | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /Dom/index.MD # View-dom-Nodes "Exibir nós DOM-introdução à exibição e alteração do DOM | Documentos da Microsoft "  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /Dom/index.MD # Navigate-The-dom-Tree-by-a-Keyboard "navegue pela árvore DOM com um teclado-comece a exibir e a alterar o DOM | Documentos da Microsoft "  
-[DevtoolsOpen]: .. /open.md "abrir o Microsoft Edge DevTools | Documentos da Microsoft "  
-[DevtoolsShortcuts]: .. /shortcuts.md "atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft "  
-[DevtoolsShortcutsStylesPaneKeyboard]: .. /Shortcuts.MD # estilos-painel-atalhos de teclado "atalhos de teclado do painel estilos-atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft "  
+[DevtoolsOpen]: .. /Open/index.MD "abrir o Microsoft Edge DevTools | Documentos da Microsoft "  
+[DevtoolsShortcuts]: .. /shortcuts/index.MD "atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft "  
+[DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.MD # estilos-painel-atalhos de teclado "atalhos de teclado do painel estilos-atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft "  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problema 868480-expor árvores do ARIA como tabelas na acessibilidade do Mac"  
 
@@ -269,11 +269,11 @@ Para executar uma nova auditoria, use `Shift` + `Tab` para sair do relatório e 
 [W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "Tree (função)-aplicativos sofisticados da Internet acessíveis (WAI-ARIA) 1,1 | W3C"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
 > A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) e é criada por [Rob Dodson][RobDodson] \ (colaborador, Google webfundamentals \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

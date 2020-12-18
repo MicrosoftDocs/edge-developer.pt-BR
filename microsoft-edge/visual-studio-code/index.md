@@ -7,14 +7,14 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, código vs, código do Visual Studio, depurador, dica da Web
-ms.openlocfilehash: 0d13c6eb9411f89e3a681176ade0caf8d59d46d8
-ms.sourcegitcommit: 02c602379537ab3b9d0a355cea7fcf96fdbd8870
+ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "11182725"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230688"
 ---
-# Visual Studio Code  
+# Visão geral do código do Visual Studio  
 
 O [código do Visual Studio][VisualStudioCodeDocs] é um editor de código-fonte leve, mas potente.  O [código do Visual Studio][VisualStudioCodeDocs] está disponível para Windows, Linux e MacOS.  Ele inclui suporte interno para JavaScript, TypeScript e Node.js, portanto é uma ótima ferramenta para desenvolvedores da Web antes de você personalizá-lo.  Se você ainda não o estiver usando, baixe o [código do Visual Studio][VisualstudioCode].  
 
