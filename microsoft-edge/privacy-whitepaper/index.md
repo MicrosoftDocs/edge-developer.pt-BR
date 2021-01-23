@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 86981c0ab9dcce7069c7da7b3bdaaee6bf93077e
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
+ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231299"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297734"
 ---
 # White paper de Privacidade do Microsoft Edge  
 
@@ -149,7 +149,7 @@ Quando a licença de mídia é retornada, um identificador de mídia exclusivo �
 Para desabilitar todas as proteções de DRM e de conteúdo, vá para `edge://settings/content/protectedContent` e desative as configurações **Permitir que sites reproduzam conteúdo protegido (recomendado)** e **Permitir identificadores de conteúdo protegido (pode ser necessário reiniciar o computador)**.  
 
 *   Desativar a configuração **Permitir que sites reproduzam conteúdo protegido** desabilita a reprodução de sistemas de DRM baseados em CDM, como o PlayReady e o Widevine, mas não para sistemas não baseados em CDM, como o DRM do Flash Access.  Para gerenciar as permissões de site do Flash, vá para `edge://settings/content/flash`.  Desativar a configuração faz com que a funcionalidade da mídia pare de funcionar corretamente.  
-*   Desativar a configuração **Permitir identificadores para conteúdo protegido** impede a criação de identificadores para o DRM do Flash Access e impede que o Widevine busque atualizações no Google periodicamente.  Desativar a configuração pode fazer com que algumas funcionalidades de mídia parem de funcionar corretamente em alguns sites.  
+*   Desativar a configuração **Permitir identificadores para conteúdo protegido** impede a criação de identificadores para o DRM do Flash Access e impede que o Widevine busque atualizações no Google periodicamente.  A replicação da configuração pode fazer com que algumas funcionalidades de mídia em alguns sites parem de funcionar corretamente.  
 
 ## Não Rastrear  
 
