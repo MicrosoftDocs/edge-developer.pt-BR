@@ -47,7 +47,7 @@ O trecho de código a seguir destaca as informações básicas necessárias no s
 
 Comece criando o `icons` diretório em seu projeto para armazenar os arquivos de imagem do ícone.  Os ícones são usados para a imagem de plano de fundo do botão que os usuários selecionam para iniciar a extensão.  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Ícone na barra de ferramentas para abrir a extensão&quot;:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Ícone na barra de ferramentas para abrir a extensão":::
    Ícone na barra de ferramentas para abrir a extensão
 :::image-end:::
 
