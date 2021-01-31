@@ -323,7 +323,9 @@
           href: webdriver-chromium/index.md
         - name: Recursos e Edgeoptions
           href: webdriver-chromium/capabilities-edge-options.md
-    - name: Plataforma da Web
+        - name: Verificando downloads de Ferramentas Selênio para o Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
+    - name: Plataforma da web
       items:
         - name: Compatibilidade do site – alterações que afetam o Microsoft Edge
           href: web-platform/site-impacting-changes.md
