@@ -3,16 +3,16 @@ description: Microsoft Edge no Linux, webhints aperfeiçoadas na ferramenta Issu
 title: O que há de novo no DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
-ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
-ms.translationtype: HT
+ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "11229470"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313083"
 ---
 # O que há de novo no DevTools (Microsoft Edge 88)  
 
@@ -62,7 +62,7 @@ Para ajudá-lo a revisar os problemas revelados pela [webhint][WebhintMain], a f
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 Agora você pode visualizar o conteúdo das **Camadas** juntamente com os valores de índice z e o Modelo de Objeto do Documento \(DOM\).  Esse recurso ajuda você a depurar sem alternar entre as ferramentas[exibição 3D][Devtools3dViewIndex] e **Camadas** com frequência.  Para uma experiência de depuração visual abrangente, o [Modo de exibição 3D e as camadas compostas agora são combinados][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
@@ -222,7 +222,7 @@ O ângulo CSS a seguir é usado para o exemplo.
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```  
+```
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="Ângulo de CSS" lightbox="../../media/2020/11/css-angle.msft.png":::
    Ângulo de CSS  
@@ -329,7 +329,7 @@ Por exemplo, a ferramenta **Rede** anteriormente usada `kB` em rótulos, mas ago
 
 ## Baixar os canais de visualização do Microsoft Edge  
 
-Se estiver no Windows, Linux ou macOS, considere o uso do [Microsoft Edge Preview Channels] [MicrosoftEdgePreviewChannels] como navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você estiver no Windows, Linux ou macOS, considere usar os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
 ## Como entrar em contato com a equipe do Microsoft Edge DevTools  
 
@@ -360,6 +360,8 @@ Se estiver no Windows, Linux ou macOS, considere o uso do [Microsoft Edge Previe
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Baixar o Microsoft Edge Insider Channels"  
 
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de Visualização do Microsoft Edge"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Erros do Chromium"  
@@ -370,7 +372,7 @@ Se estiver no Windows, Linux ou macOS, considere o uso do [Microsoft Edge Previe
 [CR1035309]: https://crbug.com/1035309 "Problema 1035309: DevTools deve usar consistentemente MB para significar megabyte, não mebibyte | Erros do Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Problema 1051466: suporte para a depuração COOP/COEP no DevTools | Erros do Chromium"  
 [CR1058836]: https://crbug.com/1058836 "Problema 1058836: problemas com o UX na depuração Wasm| Erros do Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Problema 1071432: ☂️ experiência do desenvolvedor básico do WASM | Erros do Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Problema 1071432: ☂︝ experiência de desenvolvedor do Wasm Basic | Bugs do Chromium"  
 [CR1107766]: https://crbug.com/1107766 "Problema 1107766: exibir informações sobre quadros gerados por 'window.open()' na árvore de quadros | Erros do Chromium"  
 [CR1122507]: https://crbug.com/1122507 "Problema 1122507: informações sobre o trabalho da superfície no modo de exibição árvore de quadros | Erros do Chromium"  
 [CR1126178]: https://crbug.com/1126178 "Problema 1126178: ☂ DevTools: CSS <type> components Erros do Chromium"  
