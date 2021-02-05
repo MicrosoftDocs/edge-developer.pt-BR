@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes no Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas f12, devtools, experimento
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313034"
+ms.locfileid: "11313462"
 ---
 # Recursos experimentais  
 
@@ -51,7 +51,7 @@ As seções a seguir descrevem os novos recursos experimentais disponíveis no M
 | [Visualizador da Ordem de Origem](#source-order-viewer) | 86 ou posterior |  
 | [Habilitar o editor de atalho do teclado](#enable-keyboard-shortcut-editor) | 87 ou posterior |  
 | [Habilitar camadas compostas no modo de exibição 3D](#enable-composited-layers-in-3d-view) | 87 ou posterior |  
-| [Habilitar a nova ferramenta Editor de Fontes no painel Estilos](#) | 89 ou posterior |  
+| [Habilitar a nova ferramenta Editor de Fontes no painel Estilos](#enable-new-font-editor-tool-within-the-styles-pane) | 89 ou posterior |  
 | [Habilitar novos recursos de depuração do CSS Flexbox](#enable-new-css-flexbox-debugging-features) | 89 ou posterior |  
 | [Habilitar + menus de guia de botão para abrir mais ferramentas](#enable--button-tab-menus-to-open-more-tools) | 89 ou posterior |  
 | [Habilitar guia Bem-vindo](#enable-welcome-tool) | 89 ou posterior |  
@@ -147,14 +147,14 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar o **Console de R
 
 ### Visualizador da Ordem de Origem  
 
-**O Visualizador de Ordem de** Origem é um experimento que exibe a ordem dos elementos na fonte da página da Web.  A ordem de exibição na tela pode ser diferente da ordem da origem, o que confunda os usuários do leitor de tela e do teclado.  Use o **experimento do Visualizador de Ordem** de Origem para encontrar as diferenças entre a ordem de exibição na tela e a ordem da fonte.  
+**O Visualizador de Ordem de** Origem é um experimento que exibe a ordem dos elementos na fonte da página da Web.  A ordem de exibição na tela pode ser diferente da ordem da origem, o que confunda os usuários do leitor de tela e do teclado.  Use o **experimento do Visualizador da Ordem** de Origem para encontrar as diferenças entre a ordem de exibição na tela e a ordem da fonte.  
 
 Depois de ativar o experimento, reinicie o DevTools.  Para usar **o Visualizador de Ordem de Origem,** conclua as etapas a seguir.  
 
 1.  Abra a **ferramenta Elementos.**  
 1.  Abra o **painel Acessibilidade** no painel de gaveta \(inferior\).  
 1.  Na seção **Visualizador da Ordem de** Origem, escolha a caixa de seleção Mostrar Ordem de **Origem.**  
-1.  Realça qualquer elemento HTML para exibir uma sobreposição à ordem na origem da página da Web.  
+1.  Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.  
     
 :::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Visualizador da Ordem de Origem no painel Acessibilidade" lightbox="../media/experiments-source-order-viewer.msft.png":::
    **Visualizador da Ordem de** Origem **no painel** Acessibilidade  
@@ -225,7 +225,7 @@ Agora você pode usar o novo Editor de [Fonte visual][DevtoolsInspectStylesEditF
 *   Converter unidades  
 *   Gerar código CSS preciso  
     
-Depois de ativar o experimento, reinicie o DevTools.  Para usar o novo Editor de **Fontes visual,** conclua as etapas a seguir.  
+Depois de ativar o experimento, reinicie o DevTools.  Para usar o novo Editor de **Fonte visual,** conclua as etapas a seguir.  
 
 1.  Abra a **ferramenta Elementos.**  
 1.  Abra o **painel** Estilos.  
@@ -253,7 +253,7 @@ A **ferramenta Inspect** fornece uma maneira rápida de identificar e visualizar
 
 #### Exibir sobreposições persistentes em layouts do Flexbox  
 
-No Microsoft Edge versão 89 ou posterior, o recurso experimental Css Flexbox também oferece a opção de ativar sobreposições persistentes em layouts do Flexbox.  As sobreposições persistentes oferecem os seguintes benefícios.  
+No Microsoft Edge versão 89 ou posterior, o recurso experimental CSS Flexbox também oferece a opção de ativar sobreposições persistentes em layouts do Flexbox.  As sobreposições persistentes oferecem os seguintes benefícios.  
 
 *   As sobreposições persistentes permanecem visíveis na página da Web à medida que você rola, move o mouse e usa outros recursos do DevTools.
 *   Várias sobreposições persistentes podem ser usadas ao mesmo tempo, para permitir que você revise vários layouts do Flexbox ao mesmo tempo.  
@@ -261,7 +261,7 @@ No Microsoft Edge versão 89 ou posterior, o recurso experimental Css Flexbox ta
     
 Para alternar sobreposições persistentes no layout do Flexbox, use uma das ações a seguir.  
 
-*   Escolha o ícone de oval **Flexbox** ao lado de qualquer contêiner flexbox exibido na árvore DOM da **ferramenta Elementos.**  
+*   Escolha o ícone de oval **Flexbox** ao lado de qualquer contêiner Flexbox exibido na árvore DOM da **ferramenta Elementos.**  
 *   Abra o novo **painel layout** localizado na ferramenta **Elementos** e escolha a caixa de seleção ao lado de cada contêiner do Flexbox que você deseja realçar.  
     
 :::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="Ícones flexíveis e painel layout no DevTools" lightbox="../media/flexbox-overlay.msft.png":::
