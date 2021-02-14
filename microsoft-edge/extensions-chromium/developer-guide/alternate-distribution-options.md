@@ -1,69 +1,141 @@
 ---
-description: O processo de distribuição da extensão por mecanismo diferente das lojas verificadas
-title: Método alternativo de distribuição de extensão
+description: Saiba como distribuir extensões usando métodos alternativos que não usam armazenamentos verificados
+title: Método alternativo para distribuir extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
+ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015692"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327621"
 ---
-# <span data-ttu-id="5ee9d-104">Método alternativo de distribuição de extensão</span><span class="sxs-lookup"><span data-stu-id="5ee9d-104">Alternate Method of Distributing Extension</span></span>  
+# <span data-ttu-id="6b9f8-104">Métodos de distribuição de extensão alternativos</span><span class="sxs-lookup"><span data-stu-id="6b9f8-104">Alternate extension distribution methods</span></span>  
 
-<span data-ttu-id="5ee9d-105">Se você for um desenvolvedor que deseja distribuir uma extensão como parte do processo de instalação para outro software ou um administrador de rede que queira distribuir uma extensão em toda a organização, o Microsoft Edge oferece suporte aos seguintes métodos de instalação de extensão:</span><span class="sxs-lookup"><span data-stu-id="5ee9d-105">If you are a developer who wants to distribute an Extension as part of the installation process for other software, or a network admin that want to distribute an Extension throughout their organization, Microsoft Edge supports the following Extension installation methods:</span></span>  
+<span data-ttu-id="6b9f8-105">Geralmente, as extensões são distribuídas por meio do armazenamento de complementos do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-105">Generally, extensions are distributed through the Microsoft Edge add-ons store.</span></span> <span data-ttu-id="6b9f8-106">Há alguns cenários em que os desenvolvedores talvez precisem distribuir extensões usando métodos alternativos.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-106">There are some scenarios where developers may need to distribute extensions using alternate methods.</span></span> <span data-ttu-id="6b9f8-107">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-107">For example:</span></span>
 
-*   **<span data-ttu-id="5ee9d-106">Usando o registro do Windows \ (somente Windows \)</span><span class="sxs-lookup"><span data-stu-id="5ee9d-106">Using the Windows registry \(Windows only\)</span></span>**  
+1.  <span data-ttu-id="6b9f8-108">A extensão está associada a outro software e deve ser instalada junto com o restante do software empacotado.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-108">The extension is associated with other software, and it should be installed together with the rest of the bundled software.</span></span>   
+1.  <span data-ttu-id="6b9f8-109">Os administradores de rede querem distribuir uma extensão em toda a organização.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-109">Network administrators want to distribute an extension throughout their organization.</span></span>   
 
-<span data-ttu-id="5ee9d-107">O Microsoft Edge suporta a instalação de uma extensão hospedada em um `update_URL` .</span><span class="sxs-lookup"><span data-stu-id="5ee9d-107">Microsoft Edge supports installing an Extension hosted at an `update_URL`.</span></span>  <span data-ttu-id="5ee9d-108">No Windows, o `update_URL` deve apontar para o catálogo de Complementos do Microsoft Edge \ (Complementos do Microsoft Edge \) onde a extensão deve ser hospedada.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-108">On Windows, the `update_URL` must point to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) where the Extension must be hosted.</span></span>  
+<span data-ttu-id="6b9f8-110">Extensões que não são carregadas do armazenamento de complementos do Edge são conhecidas como extensões instaladas externamente.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-110">Extensions that are not loaded from the Edge add-ons store are referred to as externally installed extensions.</span></span> <span data-ttu-id="6b9f8-111">A lista a seguir fornece métodos alternativos de distribuição de extensões instaladas externamente.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-111">The following list provides alternate methods of distributing externally installed extensions.</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="5ee9d-109">Instalação externa da extensão por meio de um arquivo JSON de preferências para o macOS</span><span class="sxs-lookup"><span data-stu-id="5ee9d-109">External installation of Extension via a preferences json file for macOS</span></span> <!--and Linux--> <span data-ttu-id="5ee9d-110">Ainda não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-110">are not supported yet.</span></span>  <span data-ttu-id="5ee9d-111">Este recurso de suporte estará disponível em breve.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-111">This feature support will soon be available.</span></span>
-
-## <span data-ttu-id="5ee9d-112">Usar o registro do Windows</span><span class="sxs-lookup"><span data-stu-id="5ee9d-112">Using the Windows registry</span></span>  
-
-<span data-ttu-id="5ee9d-113">Primeiro, publique a extensão nos Complementos do Microsoft Edge ou empacote um arquivo. crx e certifique-se de que ele seja instalado com êxito.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-113">First, publish the Extension in the Microsoft Edge Addons, or package a .crx file and make sure that it installs successfully.</span></span>  
-
-<span data-ttu-id="5ee9d-114">As etapas para instalar a extensão pelo registro no Windows são:</span><span class="sxs-lookup"><span data-stu-id="5ee9d-114">The steps to install Extension via registry in windows are:</span></span>  
-
-*   <span data-ttu-id="5ee9d-115">Localize ou crie a seguinte chave no registro:</span><span class="sxs-lookup"><span data-stu-id="5ee9d-115">Find or create the following key in the registry:</span></span>  
-    *   <span data-ttu-id="5ee9d-116">Windows de 32 bits:</span><span class="sxs-lookup"><span data-stu-id="5ee9d-116">32-bit Windows:</span></span>  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
-    *   <span data-ttu-id="5ee9d-117">Windows de 64 bits:</span><span class="sxs-lookup"><span data-stu-id="5ee9d-117">64-bit Windows:</span></span>  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   <span data-ttu-id="5ee9d-118">Crie uma nova chave \ (pasta \) na chave extensões com o mesmo nome que a ID da extensão \ (por exemplo, `aaaaaaaaaabbbbbbbbbbcccccccccc` \).</span><span class="sxs-lookup"><span data-stu-id="5ee9d-118">Create a new key \(folder\) under the Extensions key with the same name as the ID of your Extension \(for example, `aaaaaaaaaabbbbbbbbbbcccccccccc`\).</span></span>  
-*   <span data-ttu-id="5ee9d-119">Na sua chave de extensão, crie uma propriedade, `update_url` e defina-a como o valor: `https://edge.microsoft.com/extensionwebstorebase/v1/crx` , \ (isso aponta para o CRX de sua extensão nos Complementos do Microsoft Edge \).</span><span class="sxs-lookup"><span data-stu-id="5ee9d-119">In your Extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Addons\).</span></span> <span data-ttu-id="5ee9d-120">Se você quiser instalar uma extensão da loja da Web Chrome, forneça a URL de atualização do Chrome Web Store `https://clients2.google.com/service/update2/crx` .</span><span class="sxs-lookup"><span data-stu-id="5ee9d-120">If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.</span></span>  
+*   <span data-ttu-id="6b9f8-112">Use o Registro do Windows (somente Windows).</span><span class="sxs-lookup"><span data-stu-id="6b9f8-112">Use the Windows registry (Windows only).</span></span>  
+*   <span data-ttu-id="6b9f8-113">Use um arquivo JSON de preferências (macOS e Linux).</span><span class="sxs-lookup"><span data-stu-id="6b9f8-113">Use a preferences JSON file (macOS and Linux).</span></span>  
     
-    ```javascript
+## <span data-ttu-id="6b9f8-114">Antes de começar</span><span class="sxs-lookup"><span data-stu-id="6b9f8-114">Before you begin</span></span>  
+
+<span data-ttu-id="6b9f8-115">Certifique-se de publicar sua extensão no armazenamento de Complementos do Microsoft Edge ou empacote um arquivo e certifique-se de que ele seja instalado com `.crx` êxito no computador.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-115">Ensure that you publish your extension in the Microsoft Edge Add-ons store, or package a `.crx` file and ensure that it installs successfully on your computer.</span></span>  <span data-ttu-id="6b9f8-116">Se você instalar o `.crx` arquivo usando o , `update_URL` certifique-se de navegar até sua extensão nessa URL.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-116">If you install the `.crx` file using the `update_URL`, ensure you can navigate to your extension at that URL.</span></span>  
+
+<span data-ttu-id="6b9f8-117">Além disso, verifique se você tem as informações a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-117">Also, ensure that you have the following information.</span></span>    
+
+1.  <span data-ttu-id="6b9f8-118">O caminho do arquivo `.crx` ou a `update_URL` extensão.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-118">The file path of the `.crx` file, or the `update_URL` of your extension.</span></span>
+1.  <span data-ttu-id="6b9f8-119">A versão da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-119">The version of your extension.</span></span>  <span data-ttu-id="6b9f8-120">As informações de versão estão disponíveis no arquivo de manifesto ou no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-120">The version information is available in your manifest file, or in Microsoft Edge at `edge://extensions` after you load the packed extension.</span></span>   
+1.  <span data-ttu-id="6b9f8-121">A ID da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-121">The ID of your extension.</span></span>  <span data-ttu-id="6b9f8-122">As informações de ID estão disponíveis no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-122">The ID information is available in Microsoft Edge at `edge://extensions` after you load the packed extension.</span></span>  
+
+> [!NOTE] 
+> <span data-ttu-id="6b9f8-123">Os exemplos a seguir `1.0` usam como a versão e para a `aaaaaaaaaabbbbbbbbbbcccccccccc` ID.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-123">The following examples use `1.0` as the version, and `aaaaaaaaaabbbbbbbbbbcccccccccc` for the ID.</span></span>  
+
+## <span data-ttu-id="6b9f8-124">Usar o Registro do Windows (somente Windows)</span><span class="sxs-lookup"><span data-stu-id="6b9f8-124">Use the Windows registry (Windows only)</span></span>  
+
+<span data-ttu-id="6b9f8-125">Para distribuir sua extensão usando o Registro do Windows, execute as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-125">To distribute your extension using the Windows registry, perform the following steps.</span></span>
+
+1.  <span data-ttu-id="6b9f8-126">Encontre ou crie a seguinte chave no Registro:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-126">Find or create the following key in the registry:</span></span>  
+    *   <span data-ttu-id="6b9f8-127">Windows de 32 bits:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-127">32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`.</span></span>  
+    *   <span data-ttu-id="6b9f8-128">Windows de 64 bits:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-128">64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`.</span></span>  
+1.  <span data-ttu-id="6b9f8-129">Crie uma nova chave ou pasta em **Extensões** com o mesmo nome da ID da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-129">Create a new key, or folder, under **Extensions** with the same name as the ID of your extension.</span></span> <span data-ttu-id="6b9f8-130">Por exemplo, crie a chave com o `aaaaaaaaaabbbbbbbbbbcccccccccc` nome.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-130">For example, create the key with the name `aaaaaaaaaabbbbbbbbbbcccccccccc`.</span></span>  
+1.  <span data-ttu-id="6b9f8-131">Na chave **Extensions,** crie a `update_url` propriedade e de definida o valor como `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-131">In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.</span></span>  <span data-ttu-id="6b9f8-132">A propriedade aponta para o arquivo da extensão no armazenamento de `update_url` `.crx` Complementos do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-132">The `update_url` property points to the `.crx` file of your extension in the Microsoft Edge Add-ons store.</span></span>  
+
+    ```json
     {
         "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
     }
     ```  
     
-*   <span data-ttu-id="5ee9d-121">Inicie o navegador e vá para `edge://extensions` ; você deve ver a extensão listada.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-121">Launch the browser and go to `edge://extensions`; you should see the extension listed.</span></span>  
+    > [!NOTE]
+    > <span data-ttu-id="6b9f8-133">Se você quiser instalar uma extensão da Chrome Web Store, de definida como `update_url` `https://clients2.google.com/service/update2/crx` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-133">If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.</span></span>  
+  
+1.  <span data-ttu-id="6b9f8-134">Verifique se sua extensão está listada no Microsoft Edge navegando até `edge://extensions` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-134">Verify that your extension is listed in Microsoft Edge by navigating to `edge://extensions`.</span></span>  
 
-## <span data-ttu-id="5ee9d-122">Atualização e desinstalação</span><span class="sxs-lookup"><span data-stu-id="5ee9d-122">Updating and uninstalling</span></span>  
+## <span data-ttu-id="6b9f8-135">Usar um arquivo JSON de preferências (macOS e Linux)</span><span class="sxs-lookup"><span data-stu-id="6b9f8-135">Use a preferences JSON file (macOS and Linux)</span></span>  
 
-<span data-ttu-id="5ee9d-123">O Microsoft Edge verifica as entradas de metadados no registro toda vez que o navegador é iniciado e faz as alterações necessárias nas extensões externas instaladas.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-123">Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any necessary changes to the installed external extensions.</span></span>  
+<span data-ttu-id="6b9f8-136">Para distribuir sua extensão usando um arquivo JSON de preferências, execute as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-136">To distribute your extension using a preferences JSON file, perform the following steps.</span></span>
 
-<span data-ttu-id="5ee9d-124">Para atualizar a extensão para uma nova versão, atualize o arquivo e atualize a versão no registro.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-124">To update your extension to a new version, update the file, and then update the version in the registry.</span></span>  
+1.  <span data-ttu-id="6b9f8-137">Ao usar o Linux, verifique se o arquivo de extensão está disponível no computador em que a extensão `.crx` será instalada.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-137">When using Linux, ensure your `.crx` extension file is available on the machine that the extension will be installed on.</span></span> <span data-ttu-id="6b9f8-138">Copie o arquivo de extensão para um diretório local ou use um compartilhamento de rede `.crx` acessível do computador.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-138">Copy the `.crx` extension file to a local directory, or use a  network share that is reachable from the machine.</span></span> 
+1.  <span data-ttu-id="6b9f8-139">Crie um arquivo JSON em que o nome do arquivo corresponda à ID da extensão.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-139">Create a JSON file where the name of the file corresponds to the ID of your extension.</span></span> <span data-ttu-id="6b9f8-140">Por exemplo, crie um arquivo JSON com o nome de `aaaaaaaaaabbbbbbbbbbcccccccccc.json` arquivo.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-140">For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.</span></span>  
+1.  <span data-ttu-id="6b9f8-141">Dependendo do sistema operacional, salve o arquivo JSON em uma das pastas a seguir.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-141">Depending on your operating system, save the JSON file to one of the following folders.</span></span>   
+    *   **<span data-ttu-id="6b9f8-142">macOS</span><span class="sxs-lookup"><span data-stu-id="6b9f8-142">macOS</span></span>**  
+        *   <span data-ttu-id="6b9f8-143">Usuário específico:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-143">User specific:</span></span> `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  
+        *   <span data-ttu-id="6b9f8-144">Todos os usuários:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-144">All users:</span></span> `/Library/Application Support/Microsoft/Edge/External Extensions/`  
+        
+        <span data-ttu-id="6b9f8-145">Para impedir que usuários não autorizados instalem extensões para todos os usuários, verifique se o arquivo de extensão é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-145">To prevent unauthorized users from installing extensions for all users, ensure your extension file is read only.</span></span> <span data-ttu-id="6b9f8-146">Além disso, certifique-se de que as seguintes condições sejam atendidas:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-146">Additionally, ensure that the following conditions are met:</span></span>
+        
+        *   <span data-ttu-id="6b9f8-147">Cada diretório no caminho pertence à raiz do usuário.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-147">Every directory in the path is owned by the user root.</span></span>  
+        *   <span data-ttu-id="6b9f8-148">Todos os diretórios no caminho são atribuídos ao `admin` grupo `wheel` ou ao grupo.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-148">Every directory in the path is assigned to the `admin` or `wheel` group.</span></span>  
+        *   <span data-ttu-id="6b9f8-149">Cada diretório no caminho não é world writable.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-149">Every directory in the path isn't world writable.</span></span>  
+        *   <span data-ttu-id="6b9f8-150">O caminho também deve estar livre de links simbólicos.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-150">The path must also be free of symbolic links.</span></span>  
+        
+    *   **<span data-ttu-id="6b9f8-151">Linux</span><span class="sxs-lookup"><span data-stu-id="6b9f8-151">Linux</span></span>**  
+        *   <span data-ttu-id="6b9f8-152">Usuário específico:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-152">User specific:</span></span> `~/.config/microsoft-edge/External Extensions/`  
+        *   <span data-ttu-id="6b9f8-153">Todos os usuários:</span><span class="sxs-lookup"><span data-stu-id="6b9f8-153">All users:</span></span> `/usr/share/microsoft-edge/extensions/`  
+1.  <span data-ttu-id="6b9f8-154">Dependendo do cenário, copie o código apropriado que segue para o arquivo JSON.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-154">Depending on your scenario, copy the appropriate code that follows to your JSON file.</span></span> 
+    *   <span data-ttu-id="6b9f8-155">Aplica-se somente ao Linux.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-155">Applies to Linux only.</span></span> <span data-ttu-id="6b9f8-156">Se você instalar a partir de um arquivo, especifique o local e a versão usando `external_crx` e `external_version` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-156">If you install from a file, specify the location and version using `external_crx` and `external_version`.</span></span>  
+            
+        ```json
+        {
+            "external_crx": "/home/share/extension.crx",
+            "external_version": "1.0"
+        }
+        ```  
 
-<span data-ttu-id="5ee9d-125">Para desinstalar a extensão \ (por exemplo, se o seu software for desinstalado \), remova o arquivo de preferência \ ( `aaaaaaaaaabbbbbbbbbbcccccccccc.json` \) ou os metadados do registro.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-125">To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file \(`aaaaaaaaaabbbbbbbbbbcccccccccc.json`\) or the metadata from the registry.</span></span>  
+    *   <span data-ttu-id="6b9f8-157">Aplica-se ao macOS e Ao Linux.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-157">Applies to macOS and Linux.</span></span> <span data-ttu-id="6b9f8-158">Se você instalar a partir de `update_URL` um , especifique a URL de atualização usando `external_update_url` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-158">If you install from an `update_URL`, specify the update URL using `external_update_url`.</span></span> 
+        
+        <span data-ttu-id="6b9f8-159">Copie o código a seguir para o arquivo JSON ao instalar a partir de arquivos locais `.crx` somente no Linux.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-159">Copy the following code to your JSON file when installing from local `.crx` files on Linux only.</span></span>  
+    
+        ```json
+        {
+            "external_update_url": "http://myhost.com/mytestextension/updates.xml"
+        }
+        ```  
+ 
+    *  <span data-ttu-id="6b9f8-160">Copie o código a seguir para o arquivo JSON ao instalar a partir da loja de complementos do Microsoft Edge no macOS e no Linux.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-160">Copy the following code to your JSON file when installing from the Microsoft Edge add-ons store on macOS and Linux.</span></span>
+    
+        ```json
+        {
+            "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+        }
+        ```  
+    
+1.  <span data-ttu-id="6b9f8-161">Para instalar extensões para localidades específicas, liste as localidades com suporte usando `supported_locale` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-161">To install extensions for specific locales, list the supported locales using `supported_locale`.</span></span>  <span data-ttu-id="6b9f8-162">Você também pode especificar localidades pai para instalar sua extensão para todas as localidades de idioma que usam esse pai.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-162">You may also specify parent locales to install your extension for all language locales that use that parent.</span></span> <span data-ttu-id="6b9f8-163">Por exemplo, ao usar a localidade pai, sua extensão é instalada para todas as localidades em inglês, como `en` , e assim por `en-US` `en-GB` diante.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-163">For example, when using the parent locale `en`, your extension installs for all English locales, such as `en-US`, `en-GB`, and so on.</span></span>  <span data-ttu-id="6b9f8-164">Quando os usuários alteram sua localidade no navegador, as extensões instaladas externamente são desinstaladas.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-164">When users change their locale in their browser, externally installed extensions are uninstalled.</span></span>  <span data-ttu-id="6b9f8-165">Para instalar sua extensão para qualquer localidade, não `supported_locales` use.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-165">To install your extension for any locale, do not use `supported_locales`.</span></span>  
 
-<!-- image links -->  
+    ```json
+    {
+        "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+        "supported_locales": [ "en", "fr", "de" ]
+    }
+    ```  
+
+1.  <span data-ttu-id="6b9f8-166">Verifique se sua extensão está instalada no Microsoft Edge navegando até `edge://extensions` .</span><span class="sxs-lookup"><span data-stu-id="6b9f8-166">Verify that your extension is installed in Microsoft Edge by navigating to `edge://extensions`.</span></span>  
+
+## <span data-ttu-id="6b9f8-167">Atualizar e desinstalar extensões instaladas externamente</span><span class="sxs-lookup"><span data-stu-id="6b9f8-167">Update and uninstall externally installed extensions</span></span>
+
+<span data-ttu-id="6b9f8-168">O Microsoft Edge examina as entradas de metadados no Registro sempre que o navegador é iniciado e faz alterações nas extensões instaladas externamente.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-168">Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any changes to the externally installed extensions.</span></span>  
+
+<span data-ttu-id="6b9f8-169">Para atualizar sua extensão para uma nova versão, atualize a versão no arquivo de manifesto e atualize a versão no Registro.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-169">To update your extension to a new version, update the version in the manifest file, and then update the version in the registry.</span></span>  
+
+<span data-ttu-id="6b9f8-170">Talvez seja necessário desinstalar extensões instaladas externamente, que foram instaladas como parte de um pacote de software instalado anteriormente no computador.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-170">You may need to uninstall externally installed extensions, which were installed as part of a bundle of software that was previously installed on the machine.</span></span>  <span data-ttu-id="6b9f8-171">Para desinstalar sua extensão, remova o arquivo JSON de preferências ou remova a chave do Registro.</span><span class="sxs-lookup"><span data-stu-id="6b9f8-171">To uninstall your extension, remove your preferences JSON file or remove the key from the registry.</span></span>   
 
 <!-- links -->  
 
 > [!NOTE]
-> <span data-ttu-id="5ee9d-126">Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.</span><span class="sxs-lookup"><span data-stu-id="5ee9d-126">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="5ee9d-127">A página original foi encontrada [aqui](https://developer.chrome.com/apps/external_extensions).</span><span class="sxs-lookup"><span data-stu-id="5ee9d-127">The original page is found [here](https://developer.chrome.com/apps/external_extensions).</span></span>  
+> <span data-ttu-id="6b9f8-172">Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6b9f8-172">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  <span data-ttu-id="6b9f8-173">A página original é encontrada [aqui.](https://developer.chrome.com/apps/external_extensions)</span><span class="sxs-lookup"><span data-stu-id="6b9f8-173">The original page is found [here](https://developer.chrome.com/apps/external_extensions).</span></span>  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="5ee9d-129">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="5ee9d-129">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="6b9f8-175">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6b9f8-175">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
