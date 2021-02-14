@@ -1,69 +1,141 @@
 ---
-description: O processo de distribuição da extensão por mecanismo diferente das lojas verificadas
-title: Método alternativo de distribuição de extensão
+description: Saiba como distribuir extensões usando métodos alternativos que não usam armazenamentos verificados
+title: Método alternativo para distribuir extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
+ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015692"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327621"
 ---
-# Método alternativo de distribuição de extensão  
+# Métodos de distribuição de extensão alternativos  
 
-Se você for um desenvolvedor que deseja distribuir uma extensão como parte do processo de instalação para outro software ou um administrador de rede que queira distribuir uma extensão em toda a organização, o Microsoft Edge oferece suporte aos seguintes métodos de instalação de extensão:  
+Geralmente, as extensões são distribuídas por meio do armazenamento de complementos do Microsoft Edge. Há alguns cenários em que os desenvolvedores talvez precisem distribuir extensões usando métodos alternativos. Por exemplo:
 
-*   **Usando o registro do Windows \ (somente Windows \)**  
+1.  A extensão está associada a outro software e deve ser instalada junto com o restante do software empacotado.   
+1.  Os administradores de rede querem distribuir uma extensão em toda a organização.   
 
-O Microsoft Edge suporta a instalação de uma extensão hospedada em um `update_URL` .  No Windows, o `update_URL` deve apontar para o catálogo de Complementos do Microsoft Edge \ (Complementos do Microsoft Edge \) onde a extensão deve ser hospedada.  
+Extensões que não são carregadas do armazenamento de complementos do Edge são conhecidas como extensões instaladas externamente. A lista a seguir fornece métodos alternativos de distribuição de extensões instaladas externamente. 
 
-> [!NOTE]
-> Instalação externa da extensão por meio de um arquivo JSON de preferências para o macOS <!--and Linux--> Ainda não têm suporte.  Este recurso de suporte estará disponível em breve.
-
-## Usar o registro do Windows  
-
-Primeiro, publique a extensão nos Complementos do Microsoft Edge ou empacote um arquivo. crx e certifique-se de que ele seja instalado com êxito.  
-
-As etapas para instalar a extensão pelo registro no Windows são:  
-
-*   Localize ou crie a seguinte chave no registro:  
-    *   Windows de 32 bits:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
-    *   Windows de 64 bits:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   Crie uma nova chave \ (pasta \) na chave extensões com o mesmo nome que a ID da extensão \ (por exemplo, `aaaaaaaaaabbbbbbbbbbcccccccccc` \).  
-*   Na sua chave de extensão, crie uma propriedade, `update_url` e defina-a como o valor: `https://edge.microsoft.com/extensionwebstorebase/v1/crx` , \ (isso aponta para o CRX de sua extensão nos Complementos do Microsoft Edge \). Se você quiser instalar uma extensão da loja da Web Chrome, forneça a URL de atualização do Chrome Web Store `https://clients2.google.com/service/update2/crx` .  
+*   Use o Registro do Windows (somente Windows).  
+*   Use um arquivo JSON de preferências (macOS e Linux).  
     
-    ```javascript
+## Antes de começar  
+
+Certifique-se de publicar sua extensão no armazenamento de Complementos do Microsoft Edge ou empacote um arquivo e certifique-se de que ele seja instalado com `.crx` êxito no computador.  Se você instalar o `.crx` arquivo usando o , `update_URL` certifique-se de navegar até sua extensão nessa URL.  
+
+Além disso, verifique se você tem as informações a seguir.    
+
+1.  O caminho do arquivo `.crx` ou a `update_URL` extensão.
+1.  A versão da extensão.  As informações de versão estão disponíveis no arquivo de manifesto ou no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.   
+1.  A ID da extensão.  As informações de ID estão disponíveis no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.  
+
+> [!NOTE] 
+> Os exemplos a seguir `1.0` usam como a versão e para a `aaaaaaaaaabbbbbbbbbbcccccccccc` ID.  
+
+## Usar o Registro do Windows (somente Windows)  
+
+Para distribuir sua extensão usando o Registro do Windows, execute as etapas a seguir.
+
+1.  Encontre ou crie a seguinte chave no Registro:  
+    *   Windows de 32 bits:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` .  
+    *   Windows de 64 bits:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` .  
+1.  Crie uma nova chave ou pasta em **Extensões** com o mesmo nome da ID da extensão. Por exemplo, crie a chave com o `aaaaaaaaaabbbbbbbbbbcccccccccc` nome.  
+1.  Na chave **Extensions,** crie a `update_url` propriedade e de definida o valor como `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  A propriedade aponta para o arquivo da extensão no armazenamento de `update_url` `.crx` Complementos do Microsoft Edge.  
+
+    ```json
     {
         "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
     }
     ```  
     
-*   Inicie o navegador e vá para `edge://extensions` ; você deve ver a extensão listada.  
+    > [!NOTE]
+    > Se você quiser instalar uma extensão da Chrome Web Store, de definida como `update_url` `https://clients2.google.com/service/update2/crx` .  
+  
+1.  Verifique se sua extensão está listada no Microsoft Edge navegando até `edge://extensions` .  
 
-## Atualização e desinstalação  
+## Usar um arquivo JSON de preferências (macOS e Linux)  
 
-O Microsoft Edge verifica as entradas de metadados no registro toda vez que o navegador é iniciado e faz as alterações necessárias nas extensões externas instaladas.  
+Para distribuir sua extensão usando um arquivo JSON de preferências, execute as etapas a seguir.
 
-Para atualizar a extensão para uma nova versão, atualize o arquivo e atualize a versão no registro.  
+1.  Ao usar o Linux, verifique se o arquivo de extensão está disponível no computador em que a extensão `.crx` será instalada. Copie o arquivo de extensão para um diretório local ou use um compartilhamento de rede `.crx` acessível do computador. 
+1.  Crie um arquivo JSON em que o nome do arquivo corresponda à ID da extensão. Por exemplo, crie um arquivo JSON com o nome de `aaaaaaaaaabbbbbbbbbbcccccccccc.json` arquivo.  
+1.  Dependendo do sistema operacional, salve o arquivo JSON em uma das pastas a seguir.   
+    *   **macOS**  
+        *   Usuário específico: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  
+        *   Todos os usuários: `/Library/Application Support/Microsoft/Edge/External Extensions/`  
+        
+        Para impedir que usuários não autorizados instalem extensões para todos os usuários, verifique se o arquivo de extensão é somente leitura. Além disso, certifique-se de que as seguintes condições sejam atendidas:
+        
+        *   Cada diretório no caminho pertence à raiz do usuário.  
+        *   Todos os diretórios no caminho são atribuídos ao `admin` grupo `wheel` ou ao grupo.  
+        *   Cada diretório no caminho não é world writable.  
+        *   O caminho também deve estar livre de links simbólicos.  
+        
+    *   **Linux**  
+        *   Usuário específico: `~/.config/microsoft-edge/External Extensions/`  
+        *   Todos os usuários: `/usr/share/microsoft-edge/extensions/`  
+1.  Dependendo do cenário, copie o código apropriado que segue para o arquivo JSON. 
+    *   Aplica-se somente ao Linux. Se você instalar a partir de um arquivo, especifique o local e a versão usando `external_crx` e `external_version` .  
+            
+        ```json
+        {
+            "external_crx": "/home/share/extension.crx",
+            "external_version": "1.0"
+        }
+        ```  
 
-Para desinstalar a extensão \ (por exemplo, se o seu software for desinstalado \), remova o arquivo de preferência \ ( `aaaaaaaaaabbbbbbbbbbcccccccccc.json` \) ou os metadados do registro.  
+    *   Aplica-se ao macOS e Ao Linux. Se você instalar a partir de `update_URL` um , especifique a URL de atualização usando `external_update_url` . 
+        
+        Copie o código a seguir para o arquivo JSON ao instalar a partir de arquivos locais `.crx` somente no Linux.  
+    
+        ```json
+        {
+            "external_update_url": "http://myhost.com/mytestextension/updates.xml"
+        }
+        ```  
+ 
+    *  Copie o código a seguir para o arquivo JSON ao instalar a partir da loja de complementos do Microsoft Edge no macOS e no Linux.
+    
+        ```json
+        {
+            "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+        }
+        ```  
+    
+1.  Para instalar extensões para localidades específicas, liste as localidades com suporte usando `supported_locale` .  Você também pode especificar localidades pai para instalar sua extensão para todas as localidades de idioma que usam esse pai. Por exemplo, ao usar a localidade pai, sua extensão é instalada para todas as localidades em inglês, como `en` , e assim por `en-US` `en-GB` diante.  Quando os usuários alteram sua localidade no navegador, as extensões instaladas externamente são desinstaladas.  Para instalar sua extensão para qualquer localidade, não `supported_locales` use.  
 
-<!-- image links -->  
+    ```json
+    {
+        "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+        "supported_locales": [ "en", "fr", "de" ]
+    }
+    ```  
+
+1.  Verifique se sua extensão está instalada no Microsoft Edge navegando até `edge://extensions` .  
+
+## Atualizar e desinstalar extensões instaladas externamente
+
+O Microsoft Edge examina as entradas de metadados no Registro sempre que o navegador é iniciado e faz alterações nas extensões instaladas externamente.  
+
+Para atualizar sua extensão para uma nova versão, atualize a versão no arquivo de manifesto e atualize a versão no Registro.  
+
+Talvez seja necessário desinstalar extensões instaladas externamente, que foram instaladas como parte de um pacote de software instalado anteriormente no computador.  Para desinstalar sua extensão, remova o arquivo JSON de preferências ou remova a chave do Registro.   
 
 <!-- links -->  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original foi encontrada [aqui](https://developer.chrome.com/apps/external_extensions).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  A página original é encontrada [aqui.](https://developer.chrome.com/apps/external_extensions)  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

@@ -1,45 +1,43 @@
 ---
-description: Adendo da ADA do desenvolvedor do Edge
-title: Adendo de ADA
+description: Adendo do ADA do desenvolvedor do Edge
+title: ADA Addendum
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: 40147cd32f2dcd2c0069d34b5751305819834a22
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
+ms.openlocfilehash: 8f6df89fc48b3492d0e27183c90d29f79861b064
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015664"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327670"
 ---
-# Adendo ao contrato de desenvolvedor de aplicativos para usuários do programa Microsoft Edge  
+# Adendo do Contrato de Desenvolvedor de Aplicativos para usuários do programa Microsoft Edge  
 
-## Exibir G: termos e condições para extensões do Microsoft Edge  
+## Exibir G: Termos e Condições para Extensões do Microsoft Edge  
 
-Estes termos e condições para extensões do Microsoft Edge \ (o "Adendo de extensões" \) é um suplemento dos termos e condições do contrato de desenvolvedor de aplicativos, a versão atual do que pode ser encontrada em [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] .  Esse adendo se aplica se você enviou ou está disponibilizando extensões do Microsoft Edge \ (cada uma, "extensão" \) através dos complementos do Microsoft Edge.  Exceto quando modificado expressamente por esse adendo de extensões, todos os termos e condições do contrato de desenvolvedor de aplicativos, que é incorporado pela referência aqui contidas, se aplicam à oferta e à distribuição de suas extensões do Microsoft Edge.  Exceto quando modificado expressamente por esse adendo, os termos e as condições que se aplicam a um "aplicativo" ou "aplicativo" no contrato de desenvolvedor de aplicativos se aplicam a uma extensão conforme definido neste adendo e todas as referências a "repositório" ou "Microsoft Store" sob o contrato de desenvolvedor de aplicativos se aplicam a Complementos do Microsoft Edge conforme definido neste adendo.  
+Estes Termos e Condições para Extensões do Microsoft Edge \(o "Adendo de Extensões"\) é um suplemento para os termos e condições do Contrato de Desenvolvedor de Aplicativos, a versão atual da qual pode ser encontrada em [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] .  Esse Adendo se aplica se você enviou ou está disponibilizando extensões do Microsoft Edge \(cada uma, uma "Extensão"\) por meio de Complementos do Microsoft Edge.  Exceto conforme expressamente modificado por este Adendo de Extensões, todos os termos e condições do Contrato de Desenvolvedor de Aplicativos, incorporados por referência aqui, se aplicam à oferta e distribuição de suas Extensões do Microsoft Edge.  Exceto quando expressamente modificado por este Adendo, os termos e condições que se aplicam a um "Aplicativo" ou "Aplicativo" sob o Contrato de Desenvolvedor de Aplicativo serão aplicados a uma extensão, conforme definido neste Adendo, e todas as referências a "Store" ou "Microsoft Store" sob o Contrato de Desenvolvedor de Aplicativo serão aplicadas aos Complementos do Microsoft Edge conforme definido neste Adendo.  
 
-1.  Definições.  Os termos em maiúsculas não definidos aqui terão os significados fornecidos no contrato de desenvolvedor de aplicativos.  
+1.  DEFINIÇÕES.  Os termos em maiúsculas não definidos aqui terão os significados fornecidos no Contrato de Desenvolvedor de Aplicativos.  
 
-    1.  "Requisitos de certificação" refere-se aos requisitos de política técnica, funcional, conteúdo e outros fornecidos pela Microsoft \ (em [https://go.microsoft.com/fwlink/?linkid=2104222][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] ou outro local \ (s \) especificado pela Microsoft \) para extensões oferecidas pelos Complementos do Microsoft Edge.  
+    1.  "Requisitos de Certificação" significa os requisitos técnicos, funcionais, de conteúdo e outros requisitos de política fornecidos pela Microsoft \(em ou em outro local\(s\) especificado pela Microsoft\) para Extensões oferecidas por meio de Complementos do [https://go.microsoft.com/fwlink/?linkid=2104222][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] Microsoft Edge.  
 
-    1.  "Complementos do Microsoft Edge" significa uma plataforma de propriedade da Microsoft ou operada, mas nomeada, pela qual as extensões do Microsoft Edge podem ser oferecidas ou adquiridas por clientes.
+    1.  "Complementos do Microsoft Edge" significa uma plataforma de propriedade ou operada da Microsoft, no entanto nomeada, por meio da qual as Extensões do Microsoft Edge podem ser oferecidas ou adquiridas por clientes.
 
-1.  ENVIO, CERTIFICAÇÃO E DISTRIBUIÇÃO DE APLICATIVOS.  A seção 3 do contrato de desenvolvedor de aplicativos é excluída e substituída por este:  
+1.  ENVIO, CERTIFICAÇÃO E DISTRIBUIÇÃO DE APLICATIVOS.  A Seção 3 do Contrato de Desenvolvedor de Aplicativos é excluída e substituída pelo seguinte:  
 
-    1.  Transmissão.  Você deve enviar à Microsoft cada extensão que você deseja disponibilizar através dos complementos do Microsoft Edge, incluindo todas as atualizações de cada extensão.  Você é exclusivamente responsável e responsável pelas extensões que enviar.  Você é responsável por dar suporte a seu.  A Microsoft irá reter \ (ou destruir \) todas as cópias da extensão e outros materiais que você enviar.  A Microsoft não os retornará, portanto, você deve manter suas próprias cópias de backup.  
+    1.  Envio.  Você deve enviar à Microsoft cada Extensão que deseja disponibilizar por meio dos Complementos do Microsoft Edge, incluindo todas as atualizações de cada Extensão.  Você é o único responsável e responsável pelas Extensões que enviar.  Você é responsável pelo suporte à extensão.  A Microsoft manterá \(ou destruirá\) todas as cópias da Extensão e de outros materiais que você enviar.  A Microsoft não os retornará, portanto, você deve manter suas próprias cópias de backup.  
 
-    1.  Atualizações para extensões.  Você pode enviar atualizações para as extensões de certificação e distribuição através dos complementos do Microsoft Edge.  Essas atualizações estão sujeitas a todos os requisitos deste contrato.  Você entende que os usuários finais podem receber atualizações automaticamente.  Você não pode adicionar nenhuma nova funcionalidade à sua extensão por meio de uma atualização que exige consentimento por escrito do cliente sem antes fornecer o aviso para o cliente e obter qualquer um dos seus consents, pois isso pode ser exigido por lei nos mercados em que você opta por distribuir a extensão.  
+    1.  Atualizações para Extensões.  Você pode enviar atualizações para Extensões de Certificação e distribuição por meio de Complementos do Microsoft Edge.  Essas atualizações estão sujeitas a todos os requisitos deste Contrato.  Você entende que os usuários finais podem receber atualizações automaticamente.  Você não pode adicionar nenhuma nova funcionalidade à Extensão por meio de uma atualização que exija o consentimento por escrito do Cliente sem primeiro fornecer aviso ao Cliente e obter consentimentos, conforme pode ser exigido por lei nos mercados em que você opta por distribuir sua Extensão.  
 
-    1.  Certificação inicial.  A Microsoft testará cada extensão \ (incluindo todas as atualizações \) que você enviar para fins de conformidade com este contrato \ (que inclui os requisitos de certificação aplicáveis \) e outras políticas disponibilizadas para você \ (se houver \).  A Microsoft não disponibilizará qualquer extensão pelos Complementos do Microsoft Edge, a menos que e até que a extensão seja certificada.  
+    1.  Certificação inicial.  A Microsoft testará cada Extensão \(incluindo todas as atualizações\) que você enviar para conformidade com este Contrato \(que inclui os requisitos de certificação aplicáveis\) e outras políticas disponibilizadas para você \(se for o caso\).  A Microsoft não disponibiliza nenhuma Extensão por meio de Complementos do Microsoft Edge, a menos e até que a extensão seja certificada.  
 
-1.  NÃO É PRECISO RECUSAR AFIRMATIVA.  Não obstante a seção 4 \ (i \) do contrato de desenvolvedor de aplicativos, você não precisa affirmatively recusar a participação na Microsoft Store para empresas e na Microsoft Store para educação.  Sua extensão só estará disponível por meio dos complementos do Microsoft Edge.  
+1.  RECUSA AFIRMATIVA NÃO NECESSÁRIA.  Apesar da Seção 4\(i\) do Contrato de Desenvolvedor de Aplicativos, não é necessário recusar a participação na Microsoft Store para Empresas e na Microsoft Store para Educação.  Sua Extensão só estará disponível por meio dos Complementos do Microsoft Edge.  
 
-1.  PREÇO DO APLICATIVO, PAGAMENTOS, TRANSAÇÕES E IMPOSTOS.  A seção 6 do contrato de desenvolvedor de aplicativos não se aplica às extensões e é excluída por completo.  
-
-<!-- image links  -->  
+1.  PREÇOS, PAGAMENTOS, TRANSAÇÕES E IMPOSTOS DO APLICATIVO.  A seção 6 do Contrato de Desenvolvedor de Aplicativos não se aplica a Extensões e, por esse meio, é excluída em sua totalidade.  
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: developer-policies.md "Políticas de desenvolvedor de catálogo de Complementos do Microsoft Edge"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge | Microsoft Docs"  

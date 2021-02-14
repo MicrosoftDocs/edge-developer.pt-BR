@@ -1,51 +1,46 @@
 ---
-description: Extensions Enterprise documentação para extensões Edge (Chromium).
-title: Hospedagem e Atualização
+description: Hospedar e publicar extensões na empresa para o Microsoft Edge (Chromium).
+title: Publicar e atualizar extensões no armazenamento de Complementos do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, desenvolvimento de extensões, extensões de navegador, Complementos, centro de parceiros, desenvolvedor
-ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
+ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015699"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327684"
 ---
-# Hospedagem e atualização de loja da Web  
+# Publicar e atualizar extensões no armazenamento de Complementos do Microsoft Edge  
 
-A maioria das extensões está hospedada no [Catálogo de Complementos do Microsoft Edge Insider \ (Complementos do Microsoft Edge Insider \)][MicrosoftStoreExtensions] para melhor proteger os usuários contra extensões mal-intencionadas.  
+A maioria das extensões são [publicadas no armazenamento de Complementos][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] do Microsoft Edge para proteger os usuários contra extensões mal-intencionadas.  
 
-## Hospedagem  
+## Opções de publicação para extensões  
 
-Todas as extensões são distribuídas aos usuários como um arquivo ZIP especial com um sufixo. crx.  As extensões hospedadas nos Complementos do Microsoft Edge são carregadas como arquivos. zip. O processo de publicação converte automaticamente o. zip em um arquivo. crx.  
+Todas as extensões são distribuídas aos usuários como um arquivo morto especial \( `.zip` \) com `.crx` um sufixo.  As extensões publicadas no armazenamento de Complementos do Microsoft Edge são carregadas como `.zip` arquivos.  O processo de publicação converte automaticamente `.zip` o arquivo em um `.crx` arquivo.  
 
-Há duas exceções à regra de Hospedagem de Complementos do Microsoft Edge:  
+Os dois cenários a seguir não exigem que você publique sua extensão no armazenamento de Complementos do Microsoft Edge.  
 
-1.  Extensões que são distribuídas por meio da política da empresa.  
-1.  Diretórios de extensão descompactados de um computador local enquanto estiver no modo de desenvolvedor.  
+*   Extensões distribuídas usando a política Enterprise.  
+*   Usar diretórios de extensão não descompactados em um computador local quando o Microsoft Edge está no modo de desenvolvedor.  
 
-## Atualizar  
+## Atualizações para extensões
 
-O navegador Microsoft Edge verifica periodicamente se há novas versões instaladas de extensões instaladas e as atualiza sem intervenção do usuário.  
-
-> [!NOTE]
-> As etapas para atualizar uma extensão em Complementos do Microsoft Edge são previstas como adicionadas.  
-
-<!-- image links -->
+O navegador Microsoft Edge verifica periodicamente se há novas versões de extensões instaladas e atualiza cada uma sem a intervenção do usuário.  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensões-complementos do Microsoft Edge Insider"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensões - Complementos do Microsoft Edge Insider | Microsoft"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original foi encontrada [aqui](https://developer.chrome.com/extensions/hosting).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é encontrada [aqui.](https://developer.chrome.com/extensions/hosting)  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
