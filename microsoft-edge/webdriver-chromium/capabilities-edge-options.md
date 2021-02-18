@@ -3,21 +3,21 @@ description: Uma referência para recursos do WebDriver e opções específicas 
 title: Recursos e Edgeoptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, html, css, javascript, desenvolvedor, webdriver, selenium, teste, ferramentas, automação, teste
-ms.openlocfilehash: c2842740dfc6d902d1727634e00565f8e556969d
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: 5a48ca34e46b56fa60bcacfade2add23026be144
+ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306231"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "11343776"
 ---
 # Recursos e Edgeoptions  
 
-Recursos são opções que você pode usar para personalizar e configurar uma `EdgeDriver` sessão.  Para saber como iniciar uma nova `EdgeDriver` sessão, navegue até [Automação do Microsoft Edge.][WebdriverIndexDrivingMicrosoftEdgeChromium]  Este artigo descreve todos os recursos com suporte para [o Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] e detalhes sobre como passar os recursos para `EdgeDriver` sessões.  
+Recursos são opções que você pode usar para personalizar e configurar uma `EdgeDriver` sessão.  Para saber como iniciar uma nova `EdgeDriver` sessão, navegue até [Automação do Microsoft Edge.][WebdriverIndexAutomateMicrosoftEdgeChromium]  Este artigo descreve todos os recursos com suporte para [o Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] e detalhes sobre como passar os recursos para `EdgeDriver` sessões.  
 
 Os recursos são passados para uma sessão do WebDriver como um mapa JSON.  As vinculações de idioma do WebDriver normalmente fornecem métodos de conveniência seguros para tipo, para que você não precise configurar o mapa JSON por conta própria.  As diferentes vinculações de idioma do WebDriver usam mecanismos diferentes para configurar recursos.  Navegue até a documentação da [associação de idioma preferencial][WebdriverIndexChooseWebdriverLanguageBinding] para saber mais sobre como configurar recursos.  [Selenium][SeleniumMain] configura recursos por meio da `EdgeOptions` classe.  
 
@@ -74,7 +74,7 @@ O `perfLoggingPrefs` dicionário tem o seguinte formato \(todas as chaves são o
 | bufferUsageReportingInterval | inteiro positivo | 1000 | O número solicitado de milissegundos entre eventos de uso do buffer de rastreamento do DevTools.  Por exemplo, se 1000, uma vez por segundo, o DevTools relata o buffer de rastreamento completo.  Se um relatório indicar que o uso do buffer é 100%, um aviso será emitido. |  
 | enableNetwork | boolean | true | Para coletar eventos \(ou não coletar\) do domínio de rede. |  
 | enablePage | boolean | true | Para coletar eventos \(ou não coletar\) do domínio Page. |  
-| traceCategories | string | \(empty\) | Uma cadeia de caracteres separada por vírgulas de categorias de rastreamento do Microsoft Edge para as quais os eventos de rastreamento devem ser coletados.  Uma cadeia de caracteres vazia ou não especificada desabilita o rastreamento. |  
+| traceCategories | string | \(empty\) | Uma cadeia de caracteres separada por vírgulas das categorias de rastreamento do Microsoft Edge para as quais os eventos de rastreamento devem ser coletados.  Uma cadeia de caracteres vazia ou não especificada desabilita o rastreamento. |  
 
 ## Recursos retornados  
 
@@ -89,7 +89,7 @@ A lista a seguir contém todos os recursos específicos do Microsoft Edge que `E
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Começar a trabalhar com dispositivos Windows 10 de depuração remota | Microsoft Docs"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Escolha uma associação de idioma do WebDriver - aplicativo WebDriver (Chromium) | Microsoft Docs"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automatizando o Microsoft Edge (Chromium) - webdriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automatizar o Microsoft Edge (Chromium) - Aplicativo WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Instalar o Microsoft Edge (Chromium) - Aplicativo WebDriver (Chromium) | Microsoft Docs"  
 
 [SeleniumMain]: https://www.selenium.dev "Automação do Navegador SeleniumHQ"  

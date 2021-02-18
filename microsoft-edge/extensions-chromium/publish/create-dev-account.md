@@ -1,25 +1,25 @@
 ---
-description: Saiba como se registrar em uma conta de desenvolvedor para publicar extensões na loja de complementos do Microsoft Edge.
+description: Saiba como se registrar em uma conta de desenvolvedor para publicar extensões no armazenamento de Complementos do Microsoft Edge
 title: Registrar-se como um desenvolvedor de extensão do Microsoft Edge para publicar extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 0c3b4d70da214a171b7a6ebb308e89bad2ab16c2
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327516"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343056"
 ---
 # Registrar-se como um desenvolvedor de extensão do Microsoft Edge  
 
-Para enviar sua extensão para o catálogo de Complementos do Microsoft Edge, você deve estar registrado como um desenvolvedor no programa Microsoft Edge.  O programa Microsoft Edge está localizado no [Partner Center.][MicrosoftPartnerCenter]  
+Para enviar sua extensão para o armazenamento de Complementos do Microsoft Edge, você deve estar registrado como um desenvolvedor com o programa Microsoft Edge.  O programa Microsoft Edge está localizado no [Partner Center.][MicrosoftPartnerCenter]  
 
 > [!IMPORTANT]
-> Não há taxa de registro envolvida no envio de extensões ao programa Microsoft Edge.  
+> Não há taxa de registro envolvida no envio de extensões para o programa Microsoft Edge.  
 
 ## Antes de começar  
 
@@ -57,7 +57,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
           **Tipo de conta**  
        :::column-end:::
        :::column span="2":::
-          O programa Microsoft Edge no [Partner Center oferece][MicrosoftPartnerCenter] contas individuais e da empresa.  As contas são descritas em detalhes nos marcadores a seguir.  Ambos os tipos de conta permitem publicar extensões no catálogo de Complementos do Microsoft Edge.  
+          O programa Microsoft Edge no [Partner Center oferece][MicrosoftPartnerCenter] contas individuais e da empresa.  As contas são descritas em detalhes nos marcadores a seguir.  Ambos os tipos de conta permitem que você publique extensões no armazenamento de Complementos do Microsoft Edge.  
           
           > [!IMPORTANT]
           > Após o registro, você não poderá alterar o valor desse campo.  
@@ -75,7 +75,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
           **Nome de exibição do Editor**  
        :::column-end:::
        :::column span="2":::
-          Esse campo contém o nome que é exibido no catálogo de Complementos do Microsoft Edge.  Você só poderá usar um nome se ele estiver disponível e tiver os direitos de usá-lo.  As contas empresariais devem usar o nome comercial registrado da sua organização.  
+          Esse campo contém o nome que é exibido no armazenamento de Complementos do Microsoft Edge.  Você só poderá usar um nome se ele estiver disponível e tiver os direitos de usá-lo.  As contas empresariais devem usar o nome comercial registrado da sua organização.  
           
           > [!NOTE]
           > O comprimento máximo desse campo é de 50 caracteres.  
@@ -87,7 +87,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
           **Detalhes do contato**  
        :::column-end:::
        :::column span="2":::
-          Este campo contém qualquer informação de contato que a Microsoft usa para entrar em contato com você sobre qualquer problema de conta.  Depois que o registro for concluído, uma confirmação por email será enviada para você.  Para uma conta de empresa, você deve usar o endereço de email registrado associado à sua organização.  
+          Este campo contém qualquer informação de contato que a Microsoft usa para entrar em contato com você sobre quaisquer problemas de conta.  Depois que o registro for concluído, uma confirmação por email será enviada para você.  Para uma conta de empresa, você deve usar o endereço de email registrado associado à sua organização.  
        :::column-end:::
     :::row-end:::  
     :::row:::
@@ -104,7 +104,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
     
 ## Próximas etapas  
 
-Para exibir o status da verificação, navegue até o Partner Center > **Configurações da conta.**  Enquanto você aguarda a conclusão do processo de verificação, continue a criar, testar e preparar seus envios.  
+Para exibir o status da verificação, navegue até o Partner Center > **configurações da conta.**  Enquanto você aguarda a conclusão do processo de verificação, continue a criar, testar e preparar seus envios.  
 
 Para obter mais informações, navegue até [Publicar uma extensão.][ExtensionsChromiumPublishExtension]  Para obter informações sobre como começar a trabalhar com extensões, navegue até As extensões do [Microsoft Edge (Chromium).][ExtensionsChromiumGettingStartedIndex]  
 

@@ -3,16 +3,16 @@ description: Guia sobre como gerenciar a conta do Microsoft Edge Partner Center
 title: Atualizar Configurações de Conta
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: f929d087ecde0face752a4c3ce9b5fc6bbd9919d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: f74f16692af41557a495ae73dfc20b7422d18208
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327509"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343112"
 ---
 # Atualizar Configurações de Conta  
 
@@ -26,11 +26,11 @@ Para exibir as configurações da sua conta, escolha o ícone de engrenagem no c
 *   Links para outras páginas para revisar informações.  
 *   Edite as informações da sua conta.  
     
-Na seção **Detalhes da** conta, revise o status e o tipo da sua conta.  Sua ID de vendedor e outras informações de ID de editor também são exibidas aqui.  Os valores são atribuídos pela Microsoft para identificar exclusivamente sua conta de desenvolvedor e são somente leitura.  
+Na seção **Detalhes da** conta, revise o status e o tipo da sua conta.  Sua ID do Vendedor e outras informações de ID do editor também são exibidas na **seção Detalhes da** conta.  Os valores são atribuídos pela Microsoft para identificar exclusivamente sua conta de desenvolvedor e são somente leitura.  
 
 ## Detalhes de Contato  
 
-A **seção Informações de** contato exibe os detalhes que você forneceu ao criar sua conta.  A equipe de extensão do Microsoft Edge usa as informações de detalhes do contato para entrar em contato com você sobre sua conta.  O nome de exibição do editor exibido no armazenamento de Complementos do Microsoft Edge também é exibido aqui.  
+A **seção Informações de** contato exibe os detalhes que você forneceu ao criar sua conta.  A equipe de extensão do Microsoft Edge usa as informações de detalhes do contato para entrar em contato com você sobre sua conta.  O nome de exibição do editor exibido no armazenamento de Complementos do Microsoft Edge também é exibido na **seção Informações de** contato.  
   
 Se suas informações de contato mudarem, edite a **seção Informações de** contato.  Choose **Update**, make your changes, and then choose **Save**.  Você também pode escolher **Informações de contato** no menu de navegação esquerdo para abrir a seção Informações **de** contato.  
 

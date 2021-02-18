@@ -1,40 +1,40 @@
 ---
-description: Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge.
-title: Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge
+description: Políticas de desenvolvedor da Loja de complementos do Microsoft Edge
+title: Políticas de desenvolvedor da Loja de complementos do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 5c2a8dd816a28a35b6e7b725d5106814e401f6ec
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: cc34a95e08d01ebee54581222d0eb9fefa3dc458
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327642"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343077"
 ---
-# Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge  
+# Políticas de desenvolvedor da Loja de complementos do Microsoft Edge  
 
 ## Introdução e objetivo deste documento  
 
-Obrigado por seu interesse em desenvolver extensões para o catálogo de Complementos do Microsoft Edge.  As Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge \(Addons Catalog Developer Policies\) se aplicam às suas extensões, incluindo o envio de extensões por meio do [Partner Center][MicrosoftPartnerCenter] e o provisionamento dessas extensões por meio dos Complementos do Microsoft Edge.  
+Obrigado por seu interesse em desenvolver extensões para a loja de Complementos do Microsoft Edge.  Os Complementos do Microsoft Edge armazenam políticas de desenvolvedor \(Políticas de desenvolvedor da loja de complementos\) se aplicam às suas extensões, incluindo o envio de extensões por meio do [Partner Center][MicrosoftPartnerCenter] e o provisionamento dessas extensões por meio dos Complementos do Microsoft Edge.  
 
 ## Princípios  
 
 Alguns princípios para você começar:  
 
-*   Você deve oferecer valor exclusivo e distinto em suas extensões para o Microsoft Edge.  Forneça um motivo atraente para baixar suas extensões do catálogo de Complementos do Microsoft Edge \(Complementos do Microsoft Edge\).  
+*   Você deve oferecer valor exclusivo e distinto em suas extensões para o Microsoft Edge.  Forneça um motivo atraente para baixar suas extensões da loja de Complementos do Microsoft Edge \(Complementos do Microsoft Edge\).  
 *   Você não deve induzir nossos usuários conjuntos sobre o que sua extensão faz, quem a está oferecendo e assim por diante.  
 *   Você não deve tentar roubar usuários, o sistema ou o ecossistema.  Não há lugar nos complementos do Microsoft Edge para qualquer tipo de fraude; seja classificações e manipulação de análise, fraude de cartão de crédito ou outras atividades fraudulentas.  
     
-A adendo às Políticas de Desenvolvedor do armazenamento de Complementos do Microsoft Edge deve ajudá-lo a fazer escolhas que aprimoram o atraente e público-alvo de sua extensão.  
+A adendo às políticas de desenvolvedor da loja de Complementos do Microsoft Edge deve ajudá-lo a fazer escolhas que aprimoram o atraente e público-alvo de sua extensão.  
 
 Suas extensões são cruciais para a experiência de centenas de milhões de usuários.  Estamos ansiosos para experimentar o que você cria e está ansioso para ajudar a entregar suas extensões ao mundo.  
 
 ## 1. Políticas de produto  
 
-### 1.1 Valor de Função & Distinto; Representação precisa  
+### 1.1 Valor & Função Distinct; Representação precisa  
 
 Sua extensão e os metadados associados devem refletir com precisão e clareza a origem, a funcionalidade e os recursos que você descreve.  
 
@@ -64,7 +64,7 @@ Sua extensão não deve afetar negativamente o desempenho ou a estabilidade do M
 
 #### 1.1.7 Ofuscação  
 
-Extensões com código ofuscado não são permitidas.  Isso inclui código no pacote de extensão, bem como qualquer código externo ou recurso buscado na Web.  Você pode ser solicitado a refatorar partes do seu código se ele não for revisável.  
+Extensões com código ofuscado não são permitidas.  Isso inclui código no pacote de extensão, bem como qualquer código externo ou recurso buscado na Web.  Você pode ser solicitado a refatorar partes do seu código se ele não for revisível.  
 
 #### 1.1.8 Alterar configurações do navegador  
 
@@ -72,7 +72,7 @@ Sua extensão não deve, sem o consentimento apropriado do usuário, alterar ou 
 
 Qualquer alteração nas configurações do navegador deve ser explicitamente documentada na descrição da extensão.  
 
-Sua extensão só pode revisar as configurações de chave para substituir uma página da Web ou serviço da Microsoft por um \(por exemplo, exigir o uso de um mecanismo de pesquisa de terceiros ou definir a home page para uma propriedade da Web de terceiros\) se você for empregado por ou não associado a esses terceiros.  
+Sua extensão só pode revisar as configurações de chave para substituir uma página da Web ou serviço da Microsoft por um \(por exemplo, exigir o uso de um mecanismo de pesquisa de terceiros ou definir a home page para uma propriedade da Web de terceiros\) se você for empregado ou associado a esses terceiros.  
 
 ### 1.2 Segurança  
 
@@ -177,7 +177,7 @@ Sua extensão pode permitir que os usuários consumam conteúdo digital ou servi
 
 Você deve usar uma API de compra de terceiros segura para compras de bens ou serviços físicos.  Você deve usar uma API de compra de terceiros segura para pagamentos feitos em conexão com qualquer outro serviço, incluindo jogos de jogos de verdade ou contribuições de líderes.  
 
-*   Se sua extensão for usada para facilitar ou coletar contribuições sociais ou para realizar um prêmio ou um prêmio promocionais, você deverá fazê-lo em conformidade com a lei aplicável.  
+*   Se sua extensão for usada para facilitar ou coletar contribuições sociais ou para realizar uma promoção ou um prêmio promocional, você deverá fazê-lo em conformidade com a lei aplicável.  
 *   Você também deve dizer claramente que a Microsoft não é a patrocinadora da promoção.  
 *   As ofertas no produto vendidas em sua extensão não devem ser convertidas em qualquer moeda legalmente válida \(como USD, Euro e assim por diante\) ou quaisquer bens ou serviços físicos.  
     
@@ -211,7 +211,7 @@ Você não deve incluir em uma notificação quaisquer informações que os usu�
 
 #### 1.9.4 Finalidade das notificações  
 
-As notificações enviadas de sua extensão devem estar relacionadas a essa extensão ou a outras extensões que você publica no catálogo de Complementos do Microsoft Edge e não devem incluir mensagens promocionais de qualquer tipo que não estão relacionadas às suas extensões.  
+As notificações enviadas de sua extensão devem estar relacionadas a essa extensão ou a outras extensões que você publica na loja de Complementos do Microsoft Edge e não devem incluir mensagens promocionais de qualquer tipo que não estão relacionadas às suas extensões.  
 
 ### 1.10 Conteúdo e Conduta de Publicidade  
 
@@ -235,7 +235,7 @@ Se sua extensão exibir anúncios, todo o conteúdo exibido deverá estar em con
 
 Se você comprar ou criar campanhas publicitárias promocionais para promover suas extensões por meio da funcionalidade da campanha publicitária no [Partner Center][MicrosoftPartnerCenter], todos os materiais de publicidade que você fornece à Microsoft, incluindo qualquer página de aterrissagem associada, devem estar em conformidade com a Política de Especificações de [Criativos][MicrosoftAdvertisingCreativeSpecifications] da Microsoft e a Política de Aceitação de Criatividade da [Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
 
-#### 1.10.5 Notificando os usuários do Opt-Out para Interest-Based Publicidade  
+#### 1.10.5 Notificando os usuários sobre Opt-Out para Interest-Based Publicidade  
 
 Sua política de privacidade ou termos de uso deve permitir que os usuários saibam que você planeja enviar Informações Pessoais para o provedor de serviços de anúncios e devem dizer aos usuários como eles podem optar por não fazer publicidade baseada em interesse.  
 
@@ -286,7 +286,7 @@ Sua extensão não deve conter ou exibir conteúdo que uma pessoa razoável cons
 
 Sua extensão deve cumprir as seguintes condições.  
 
-*   Sua extensão não deve conter conteúdo ou fornecer serviços que facilitem jogos online.  Jogos online incluem, mas não se limitando a volantes online, esportes, esportes ou jogos de habilidades que oferecem dinheiro ou outro valor.  
+*   Sua extensão não deve conter conteúdo ou fornecer serviços que facilitem jogos online.  Jogos online incluem, mas não se limitando a volantes online, esportes, esportes ou jogos de habilidades que oferecem jogadores de dinheiro ou outro valor.  
 *   Sua extensão não deve fornecer acesso não autorizado ao conteúdo do site, por exemplo, contornando as restrições de pagamento ou de logon.  
 *   Sua extensão não deve fornecer, incentivar ou habilitar o acesso não autorizado, download ou streaming de conteúdo ou mídia protegido por direitos autorais.  
 *   Sua extensão não deve minerar a criptografia.  
@@ -314,7 +314,7 @@ O conteúdo ofensivo em qualquer país/região para o qual sua extensão está d
 
 #### 2.12.1 Conteúdo de vencimento  
 
-Ao enviar sua extensão para o [Partner Center,][MicrosoftPartnerCenter]você deve indicar se sua extensão exibe o conteúdo que deve ser marcado como "Adulto".  Ao determinar a classificação da extensão, considere todo o conteúdo do aplicativo, incluindo conteúdo gerado pelo usuário e anúncios, e o conteúdo que sua extensão vincula.  Se você indicar que sua extensão não contém conteúdo "Adulto", você é responsável por manter a precisão dessa classificação.  Independentemente da classificação dada à sua extensão, ela ainda deve cumprir todos os requisitos de conteúdo das políticas de Desenvolvedor de Complementos do Microsoft Edge  
+Ao enviar sua extensão para o [Partner Center,][MicrosoftPartnerCenter]você deve indicar se sua extensão exibe o conteúdo que deve ser marcado como "Adulto".  Ao determinar a classificação para sua extensão, considere todo o conteúdo em seu aplicativo, incluindo conteúdo gerado pelo usuário e anúncios e o conteúdo que sua extensão vincula.  Se você indicar que sua extensão não contém conteúdo "Adulto", será responsável por manter a precisão dessa classificação.  Independentemente da classificação dada à sua extensão, ela ainda deve cumprir todos os requisitos de conteúdo das políticas de Desenvolvedor de Complementos do Microsoft Edge  
 
 #### 2.12.2 Alteração de Classificações  
 

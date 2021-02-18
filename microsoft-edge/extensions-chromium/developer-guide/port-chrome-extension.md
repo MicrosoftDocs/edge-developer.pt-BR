@@ -1,24 +1,24 @@
 ---
-description: Processo de portagem da extensão do Chrome para o Microsoft Edge.
+description: Processo de portagem da extensão do Chrome para o Microsoft Edge
 title: Fazer a portabilidade da extensão do Chrome para o Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327691"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343133"
 ---
 # Fazer a portabilidade de sua extensão  
 
 O Microsoft Edge permite que você porte sua extensão do Chrome com alterações mínimas.  As APIs de extensão e as chaves de manifesto compatíveis com o Chrome são compatíveis com código com o Microsoft Edge.  Para uma lista de APIs com suporte no Microsoft Edge, navegue até o suporte [à API.][ExtensionApiSupport]  
 
-Para fazer a portabilidade da extensão do Chrome, conclua as etapas a seguir.  
+Para por a portabilidade da extensão do Chrome, conclua as etapas a seguir.  
 
 1.  Revise as APIs de extensão do Chrome usadas em suas extensões com a lista de APIs compatíveis com as [extensões do][ExtensionApiSupport] Microsoft Edge.  
     
@@ -36,7 +36,7 @@ Para fazer a portabilidade da extensão do Chrome, conclua as etapas a seguir.
     
 ## Próximas etapas  
 
-Depois que o pacote de extensão estiver pronto para ser publicado na loja de complementos do Microsoft [Edge,][ExtensionsPublishCreateDevAccount] crie uma conta de desenvolvedor e [publique sua extensão.][ExtensionsPublishPublishExtension]  
+Depois que o pacote de extensão estiver pronto para ser publicado na loja de Complementos do Microsoft [Edge,][ExtensionsPublishCreateDevAccount] crie uma conta de desenvolvedor e [publique sua extensão.][ExtensionsPublishPublishExtension]  
 
 <!-- links -->  
 

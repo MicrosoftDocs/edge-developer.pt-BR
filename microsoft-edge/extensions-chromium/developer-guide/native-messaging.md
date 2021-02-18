@@ -3,16 +3,16 @@ description: Documentação de mensagens nativas
 title: Sistema de mensagens nativo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: d9c2370d6a4f9f7cd25001c1c58ce266423af19a
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327698"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343063"
 ---
 # Sistema de mensagens nativo  
 
@@ -25,7 +25,7 @@ Para adquirir a extensão e o host de aplicativo nativo, você tem dois modelos 
 
 Para criar sua extensão para enviar e receber mensagens com hosts de aplicativo nativos, consulte as etapas a seguir.  
 
-## Etapa 1: adicionar permissões ao manifesto da extensão  
+## Etapa 1: Adicionar permissões ao manifesto da extensão  
 
 Adicione a `nativeMessaging` permissão aomanifest.js** no** arquivo da extensão.  O trecho de código a seguir é um exemplo ** demanifest.jsem**.  
 
@@ -53,7 +53,7 @@ Os aplicativos nativos devem fornecer um arquivo de manifesto do host de mensage
 *   O método de comunicação com a extensão.  
 *   Uma lista de extensões permitidas com as quais se comunica.  
     
-O navegador lê e valida o manifesto do host de mensagens nativo.  O navegador não instala nem gerencia o arquivo de manifesto do host de mensagens nativo.  
+O navegador lê e valida o manifesto nativo do host de mensagens.  O navegador não instala nem gerencia o arquivo de manifesto do host de mensagens nativo.  
 
 ```json
     {
@@ -126,17 +126,17 @@ O arquivo de manifesto do host deve ser um arquivo JSON válido que contenha as 
 Realizar sideload da extensão para testar as mensagens nativas com o host.  
 Para realizar o sideload da extensão durante o desenvolvimento e `microsoft_catalog_extension_id` recuperar, conclua as etapas a seguir.  
 
-1.  Navegue `edge://extensions` até e, em seguida, a a turn on the Developer mode toggle button.  
+1.  Navegue até e a ligue o botão de alternância do modo `edge://extensions` desenvolvedor.  
 1.  Escolha **Carregar descompactado**e selecione seu pacote de extensão para sideload.  
 1.  Escolha **OK**.  
 1.  Navegue `edge://extensions` até a página e verifique se sua extensão está listada.  
 1.  Copie a chave de `microsoft_catalog_extension_id` \(ID\) da listagem de extensão na página.  
 
-Quando você estiver pronto para distribuir sua extensão aos usuários, publique sua extensão no armazenamento de complementos do Microsoft Edge.  A ID de extensão da extensão publicada pode ser diferente da ID usada durante o sideload da extensão.  Se a ID for alterada, `allowed_origins` atualize no arquivo de manifesto do host com a ID da extensão publicada.  
+Quando você estiver pronto para distribuir sua extensão aos usuários, publique sua extensão no armazenamento de Complementos do Microsoft Edge.  A ID de extensão da extensão publicada pode ser diferente da ID usada durante o sideload da extensão.  Se a ID for alterada, `allowed_origins` atualize no arquivo de manifesto do host com a ID da extensão publicada.  
 
 ## Etapa 3: copiar o arquivo de manifesto do host de mensagens nativo para o sistema  
 
-A etapa final envolve copiar o arquivo de manifesto do host de mensagens nativo para seu computador e garantir que o arquivo de manifesto está configurado corretamente.  Para garantir que o arquivo de manifesto seja colocado no local esperado, conclua as etapas a seguir.  O local varia de acordo com a plataforma.  
+A etapa final envolve copiar o arquivo de manifesto do host de mensagens nativo para o computador e garantir que o arquivo de manifesto está configurado corretamente.  Para garantir que o arquivo de manifesto seja colocado no local esperado, conclua as etapas a seguir.  O local varia de acordo com a plataforma.  
 
 ### [Windows](#tab/windows/)  
 
@@ -156,7 +156,7 @@ Para adicionar uma chave do Registro ao diretório com a chave de manifesto.
 
 *   Execute o comando no prompt de comando.  
     
-    1.  Execute o seguinte comando.  
+    1.  Execute o comando a seguir.  
         
         ```shell
         REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
@@ -164,7 +164,7 @@ Para adicionar uma chave do Registro ao diretório com a chave de manifesto.
     
 *   Crie um `.reg` arquivo e execute-o.  
     
-    1.  Copie o comando a seguir em um `.reg` arquivo.  
+    1.  Copie o seguinte comando em um `.reg` arquivo.  
         
         ```shell
         Windows Registry Editor Version 5.00
@@ -214,7 +214,7 @@ Para armazenar o arquivo de manifesto, conclua uma das ações a seguir.
     /etc/opt/edge/native-messaging-hosts
     ```
     
-*   Hosts de mensagens nativos específicos do usuário, que estão disponíveis apenas para o usuário atual, estão localizados no subdiretório no `NativeMessagingHosts` diretório de perfil do usuário.  O arquivo de manifesto deve ser armazenado no seguinte local.  
+*   Hosts de mensagens nativos específicos do usuário, que estão disponíveis apenas para o usuário atual, estão localizados no `NativeMessagingHosts` subdiretório no diretório de perfil do usuário.  O arquivo de manifesto deve ser armazenado no seguinte local.  
     
     ```bash
     ~/.config/microsoft-edge/NativeMessagingHosts

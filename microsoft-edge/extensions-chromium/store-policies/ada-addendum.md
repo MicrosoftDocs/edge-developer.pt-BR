@@ -1,18 +1,18 @@
 ---
-description: Adendo do ADA do desenvolvedor do Edge
+description: Adendo ADA do desenvolvedor do Microsoft Edge
 title: ADA Addendum
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 8f6df89fc48b3492d0e27183c90d29f79861b064
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 89d29d3772934f9e1b4545d2a9e383ed6510df40
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327670"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343084"
 ---
 # Adendo do Contrato de Desenvolvedor de Aplicativos para usuários do programa Microsoft Edge  
 
@@ -28,7 +28,7 @@ Estes Termos e Condições para Extensões do Microsoft Edge \(o "Adendo de Exte
 
 1.  ENVIO, CERTIFICAÇÃO E DISTRIBUIÇÃO DE APLICATIVOS.  A Seção 3 do Contrato de Desenvolvedor de Aplicativos é excluída e substituída pelo seguinte:  
 
-    1.  Envio.  Você deve enviar à Microsoft cada Extensão que deseja disponibilizar por meio dos Complementos do Microsoft Edge, incluindo todas as atualizações de cada Extensão.  Você é o único responsável e responsável pelas Extensões que enviar.  Você é responsável pelo suporte à extensão.  A Microsoft manterá \(ou destruirá\) todas as cópias da Extensão e de outros materiais que você enviar.  A Microsoft não os retornará, portanto, você deve manter suas próprias cópias de backup.  
+    1.  Envio.  Você deve enviar à Microsoft cada Extensão que deseja disponibilizar por meio de Complementos do Microsoft Edge, incluindo todas as atualizações de cada Extensão.  Você é o único responsável e responsável pelas Extensões que enviar.  Você é responsável pelo suporte à extensão.  A Microsoft manterá \(ou destruirá\) todas as cópias da Extensão e de outros materiais que você enviar.  A Microsoft não os retornará, portanto, você deve manter suas próprias cópias de backup.  
 
     1.  Atualizações para Extensões.  Você pode enviar atualizações para Extensões de Certificação e distribuição por meio de Complementos do Microsoft Edge.  Essas atualizações estão sujeitas a todos os requisitos deste Contrato.  Você entende que os usuários finais podem receber atualizações automaticamente.  Você não pode adicionar nenhuma nova funcionalidade à Extensão por meio de uma atualização que exija o consentimento por escrito do Cliente sem primeiro fornecer aviso ao Cliente e obter consentimentos, conforme pode ser exigido por lei nos mercados em que você opta por distribuir sua Extensão.  
 
@@ -40,4 +40,4 @@ Estes Termos e Condições para Extensões do Microsoft Edge \(o "Adendo de Exte
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge | Microsoft Docs"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Os Complementos do Microsoft Edge armazenam políticas de desenvolvedor | Microsoft Docs"  

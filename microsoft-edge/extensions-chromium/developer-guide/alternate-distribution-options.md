@@ -3,25 +3,25 @@ description: Saiba como distribuir extensões usando métodos alternativos que n
 title: Método alternativo para distribuir extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 3b2c72e13488632e2fadea2a7e8eb95888f67170
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327621"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343146"
 ---
 # Métodos de distribuição de extensão alternativos  
 
-Geralmente, as extensões são distribuídas por meio do armazenamento de complementos do Microsoft Edge. Há alguns cenários em que os desenvolvedores talvez precisem distribuir extensões usando métodos alternativos. Por exemplo:
+Geralmente, as extensões são distribuídas por meio do armazenamento de Complementos do Microsoft Edge. Há alguns cenários em que os desenvolvedores talvez precisem distribuir extensões usando métodos alternativos. Por exemplo:
 
 1.  A extensão está associada a outro software e deve ser instalada junto com o restante do software empacotado.   
 1.  Os administradores de rede querem distribuir uma extensão em toda a organização.   
 
-Extensões que não são carregadas do armazenamento de complementos do Edge são conhecidas como extensões instaladas externamente. A lista a seguir fornece métodos alternativos de distribuição de extensões instaladas externamente. 
+Extensões que não são carregadas do armazenamento de Complementos de Borda são conhecidas como extensões instaladas externamente. A lista a seguir fornece métodos alternativos de distribuição de extensões instaladas externamente. 
 
 *   Use o Registro do Windows (somente Windows).  
 *   Use um arquivo JSON de preferências (macOS e Linux).  
@@ -34,7 +34,7 @@ Além disso, verifique se você tem as informações a seguir.
 
 1.  O caminho do arquivo `.crx` ou a `update_URL` extensão.
 1.  A versão da extensão.  As informações de versão estão disponíveis no arquivo de manifesto ou no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.   
-1.  A ID da extensão.  As informações de ID estão disponíveis no Microsoft Edge depois `edge://extensions` que você carrega a extensão empacotada.  
+1.  A ID da extensão.  As informações de ID estarão disponíveis no Microsoft Edge depois `edge://extensions` que você carregar a extensão empacotada.  
 
 > [!NOTE] 
 > Os exemplos a seguir `1.0` usam como a versão e para a `aaaaaaaaaabbbbbbbbbbcccccccccc` ID.  
@@ -68,7 +68,7 @@ Para distribuir sua extensão usando um arquivo JSON de preferências, execute a
 1.  Crie um arquivo JSON em que o nome do arquivo corresponda à ID da extensão. Por exemplo, crie um arquivo JSON com o nome de `aaaaaaaaaabbbbbbbbbbcccccccccc.json` arquivo.  
 1.  Dependendo do sistema operacional, salve o arquivo JSON em uma das pastas a seguir.   
     *   **macOS**  
-        *   Usuário específico: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  
+        *   Específico do usuário: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  
         *   Todos os usuários: `/Library/Application Support/Microsoft/Edge/External Extensions/`  
         
         Para impedir que usuários não autorizados instalem extensões para todos os usuários, verifique se o arquivo de extensão é somente leitura. Além disso, certifique-se de que as seguintes condições sejam atendidas:
@@ -79,7 +79,7 @@ Para distribuir sua extensão usando um arquivo JSON de preferências, execute a
         *   O caminho também deve estar livre de links simbólicos.  
         
     *   **Linux**  
-        *   Usuário específico: `~/.config/microsoft-edge/External Extensions/`  
+        *   Específico do usuário: `~/.config/microsoft-edge/External Extensions/`  
         *   Todos os usuários: `/usr/share/microsoft-edge/extensions/`  
 1.  Dependendo do cenário, copie o código apropriado que segue para o arquivo JSON. 
     *   Aplica-se somente ao Linux. Se você instalar a partir de um arquivo, especifique o local e a versão usando `external_crx` e `external_version` .  
@@ -101,7 +101,7 @@ Para distribuir sua extensão usando um arquivo JSON de preferências, execute a
         }
         ```  
  
-    *  Copie o código a seguir para o arquivo JSON ao instalar a partir da loja de complementos do Microsoft Edge no macOS e no Linux.
+    *  Copie o código a seguir para o arquivo JSON ao instalar a partir da loja de Complementos do Microsoft Edge no macOS e no Linux.
     
         ```json
         {

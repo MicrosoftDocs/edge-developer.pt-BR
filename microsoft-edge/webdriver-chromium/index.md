@@ -1,23 +1,23 @@
 ---
-description: Saiba como testar seu site ou aplicativo no Microsoft Edge ou automatizar o navegador com o WebDriver.
+description: Saiba como testar seu site ou aplicativo no Microsoft Edge ou automatizar o navegador com o WebDriver
 title: Usar o WebDriver (Chromium) para automação de teste
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, html, css, javascript, desenvolvedor, webdriver, selenium, teste, ferramentas, automação, teste
-ms.openlocfilehash: 295985734d93c5912922be22c0af0c0e33e00a54
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: b3b8a4ef2174c7f313fe9ee71bedbdf5e2f9b771
+ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306245"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "11343783"
 ---
 # Usar o WebDriver (Chromium) para automação de teste  
 
-O WebDriver permite que os desenvolvedores criem testes automatizados que simulam a interação do usuário.  Testes e simulações do WebDriver diferem dos testes de unidade JavaScript porque o WebDriver:  
+O WebDriver permite que os desenvolvedores criem testes automatizados que simulam a interação do usuário.  Testes e simulações do WebDriver são diferentes dos testes de unidade JavaScript das seguintes maneiras.  
 
 *   Acessa a funcionalidade e as informações não disponíveis para JavaScript em execução em navegadores.  
 *   Simula eventos do usuário ou eventos no nível do sistema operacional com mais precisão.  
@@ -28,27 +28,27 @@ A seção a seguir descreve como começar a usar o WebDriver para Microsoft Edge
 
 ## Instalar o Microsoft Edge (Chromium)  
 
-Certifique-se [de instalar o Microsoft Edge (Chromium).][MicrosoftEdge]  Para confirmar se você tem o Microsoft Edge \(Chromium\) instalado, navegue até e verifique se o número da versão é a `edge://settings/help` versão 75 ou posterior.  
+Certifique-se [de instalar o Microsoft Edge (Chromium).][MicrosoftEdge]  Para confirmar se você tem o Microsoft Edge \(Chromium\) instalado, navegue até e verifique se o número da versão é `edge://settings/help` a versão 75 ou posterior.  
 
 ## Baixar o Driver do Microsoft Edge  
 
 Para começar a automatizar testes, use as etapas a seguir para garantir que a versão do WebDriver instalada corresponde à versão do navegador.  
 
-1.  Navegue `edge://settings/help` para obter a versão do Microsoft Edge.  
+1.  Para exibir a versão do Microsoft Edge, navegue até `edge://settings/help` .  
     
-    :::image type="complex" source="./media/edge-version.png" alt-text="O número de build do Microsoft Edge Canary em 14 de janeiro de 2020":::
-       O número de build do Microsoft Edge Canary em 14 de janeiro de 2020
+    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="O número de build do Microsoft Edge Canary em 10 de fevereiro de 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+       O número de build do Microsoft Edge Canary em 10 de fevereiro de 2021  
     :::image-end:::  
     
-1.  Navegue até a [página de downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] do Driver do Microsoft Edge e baixe o driver que corresponde ao número de versão do Microsoft Edge.  
+1.  Navegue [até o Driver do Microsoft Edge,][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]na seção **Downloads,** e baixe o WebDriver que corresponde ao número de versão do Microsoft Edge.  
     
-    :::image type="complex" source="./media/edge-driver-install.png" alt-text="A seção Downloads da página Driver do Microsoft Edge":::
-       A seção Downloads da página [Driver do Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="A seção Downloads no Driver do Microsoft Edge" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       A **seção Downloads** no [Driver do Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
     -->  
 
 ## Escolher uma associação de idioma do WebDriver  
@@ -58,7 +58,7 @@ O último componente que você deve baixar é um driver de cliente específico d
 [Baixe a associação de idioma do WebDriver de sua escolha.][SeleniumDownloads]  A equipe do Microsoft Edge recomenda [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] ou posterior, porque dá suporte ao Microsoft Edge \(Chromium\).  No entanto, você pode controlar o Microsoft Edge \(Chromium\) em todas as versões mais antigas do Selenium, incluindo a versão estável atual do Selenium 3.  
 
 > [!IMPORTANT]
-> Se você estava automatizando ou testando anteriormente o Microsoft Edge \(Chromium\) usando e classes, o código do WebDriver não será executado no `ChromeDriver` `ChromeOptions` Microsoft Edge Versão 80 ou posterior.  Para resolver esse problema, atualize seus testes para usar a `EdgeOptions` classe e baixe o Driver do Microsoft [Edge.][MicrosoftDeveloperEdgeToolsWebdriver]  
+> Se você tiver automatizado ou testado anteriormente o Microsoft Edge \(Chromium\) usando e classes, o código do WebDriver não será executado no `ChromeDriver` `ChromeOptions` Microsoft Edge Versão 80 ou posterior.  Para resolver o problema, atualize seus testes para usar a `EdgeOptions` classe e baixe o Driver do Microsoft [Edge.][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
 
 ### Usar Selenium 3  
 
@@ -86,7 +86,7 @@ pip install msedge-selenium-tools selenium==3.141
 
 <a id="selenium-tools-install"></a>  
 
-Se o seu projeto Java usa o Maven, adicione [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] ao lidar com a seguinte dependência ao seu `pom.xml` arquivo:  
+Se seu projeto Java usa Maven, copie e copie e copie a seguinte dependência ao seu arquivo para adicionar `pom.xml` [msedge-selenium-tools-java][SonatypeMavenRepositorySearch].  
 
 ```xml
 <dependency>
@@ -112,17 +112,17 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 ## Automatizar o Microsoft Edge (Chromium) com o WebDriver  
 
-Para automatizar um navegador usando o WebDriver, primeiro você deve iniciar uma sessão do WebDriver usando sua associação de idioma preferencial do WebDriver.  Uma sessão é uma única instância em execução de um navegador que pode ser controlada usando comandos do WebDriver.  Iniciar uma sessão do WebDriver inicia uma nova instância do navegador.  O navegador que é lançado permanece aberto até que você feche a sessão do WebDriver.  
+Para automatizar um navegador usando o WebDriver, primeiro você deve iniciar uma sessão do WebDriver usando sua associação de idioma preferencial do WebDriver.  Uma sessão é uma única instância em execução de um navegador controlado usando comandos do WebDriver.  Inicie uma sessão do WebDriver para iniciar uma nova instância do navegador.  A instância do navegador lançada permanece aberta até que você feche a sessão do WebDriver.  
 
-O conteúdo a seguir orienta você a usar Selenium para iniciar uma sessão do WebDriver com o Microsoft Edge \(Chromium\).  Você pode executar esses exemplos usando Selenium 3 ou 4.  Para usar com Selenium 3, o pacote [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] deve ser instalado.  
+O conteúdo a seguir orienta você a usar Selenium para iniciar uma sessão do WebDriver com o Microsoft Edge \(Chromium\).  Você pode executar os exemplos usando Selenium 3 ou 4.  Para usar com Selenium 3, o pacote [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] deve ser instalado.  
 
-### Automatizando o Microsoft Edge (Chromium)  
+### Automatizar o Microsoft Edge (Chromium)  
 
-Selenium usa a `EdgeDriver` classe para gerenciar uma sessão do Microsoft Edge \(Chromium\). Para iniciar uma sessão e automatizar o Microsoft Edge \(Chromium\), crie um novo objeto e passe a ele um objeto com a propriedade `EdgeDriver` `EdgeOptions` definida para `UseChromium` `true` .  
+Selenium usa a `EdgeDriver` classe para gerenciar uma sessão do Microsoft Edge \(Chromium\).  Para iniciar uma sessão e automatizar o Microsoft Edge \(Chromium\), crie um novo objeto e passe um objeto para ele com a propriedade `EdgeDriver` `EdgeOptions` definida como `UseChromium` `true` .  
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="driving-microsoft-edge-chromium-code"></a>  
+<a id="drive-microsoft-edge-chromium-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -133,7 +133,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="driving-microsoft-edge-chromium-code"></a>  
+<a id="drive-microsoft-edge-chromium-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -144,9 +144,9 @@ driver = Edge(options)
 
 #### [Java](#tab/java/)  
 
-<a id="driving-microsoft-edge-chromium-code"></a>  
+<a id="drive-microsoft-edge-chromium-code"></a>  
 
-A `EdgeDriver` classe dá suporte apenas ao Microsoft Edge (Chromium) e não dá suporte ao Microsoft Edge (EdgeHTML). Para uso básico, você pode criar um `EdgeDriver` sem fornecer `EdgeOptions` .  
+A `EdgeDriver` classe só dá suporte ao Microsoft Edge \(Chromium\) e não dá suporte ao Microsoft Edge \(EdgeHTML\).  Para uso básico, você pode criar um `EdgeDriver` sem fornecer `EdgeOptions` .  
 
 ```java
 EdgeDriver driver = new EdgeDriver();
@@ -154,7 +154,7 @@ EdgeDriver driver = new EdgeDriver();
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="driving-microsoft-edge-chromium-code"></a>  
+<a id="drive-microsoft-edge-chromium-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -166,15 +166,15 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> Se o administrador de IT tiver definido a política [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] como , o Microsoft Edge Driver não poderá conduzir o Microsoft Edge (Chromium) porque o driver usa o `2` Microsoft Edge [DevTools.][DevtoolsIndex] [][MicrosoftDeveloperEdgeToolsWebdriver]  Verifique se [a política DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] está definida para `0` ou para `1` automatizar o Microsoft Edge (Chromium).  
+> Se o administrador de IT definiu a política [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] como , o Driver do Microsoft Edge é impedido de conduzir o `2`  [Microsoft][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] Edge \(Chromium\), porque o driver usa o [Microsoft Edge DevTools][DevtoolsIndex].  Verifique se [a política DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] está definida para `0` ou para `1` automatizar o Microsoft Edge (Chromium).  
 
-### Escolhendo binários específicos do navegador (somente Chromium)  
+### Escolher binários específicos do navegador (somente Chromium)  
 
 Você pode iniciar uma sessão do WebDriver com binários específicos do Microsoft Edge \(Chromium\).  Por exemplo, você pode executar testes usando os canais de visualização do [Microsoft Edge,][MicrosoftedgeinsiderDownload] como o Microsoft Edge Beta.  
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+<a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -186,7 +186,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+<a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -198,7 +198,7 @@ driver = Edge(options)
 
 #### [Java](#tab/java/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+<a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -209,7 +209,7 @@ EdgeDriver driver = new EdgeDriver(options);
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+<a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -221,15 +221,15 @@ let driver = edge.Driver.createSession(options);
 
 * * *  
 
-### Personalização do Serviço de Driver do Microsoft Edge  
+### Personalizar o Serviço de Driver do Microsoft Edge  
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="customizing-microsoft-edge-driver-services-code"></a>  
+<a id="customize-microsoft-edge-driver-services-code"></a>  
 
-Quando uma instância de classe é criada usando classe, ela cria e inicia a classe apropriada para `EdgeDriver` `EdgeOptions` o Microsoft Edge `EdgeDriverService` \(EdgeHTML\) ou o Microsoft Edge \(Chromium\).  
+Quando você usa a classe para criar uma instância de classe, ela cria e inicia a classe apropriada para `EdgeOptions` `EdgeDriver` o Microsoft Edge `EdgeDriverService` \(EdgeHTML\) ou o Microsoft Edge \(Chromium\).  
 
-Se você quiser criar um `EdgeDriverService` , crie um configurado para o Microsoft Edge \(Chromium\) usando o `CreateChromiumService()` método.  Você pode achar útil quando precisar adicionar personalizações. Por exemplo, o código a seguir inicia a saída detalhada do log.  
+Se você quiser criar um , use o método `EdgeDriverService` para criar um configurado para o Microsoft Edge `CreateChromiumService()` \(Chromium\).  O `CreateChromiumService()` método é útil quando você precisa adicionar personalizações.  Por exemplo, o código a seguir inicia a saída detalhada do log.  
 
 ```csharp
 using (var service = EdgeDriverService.CreateChromiumService())
@@ -241,14 +241,14 @@ using (var service = EdgeDriverService.CreateChromiumService())
 ```  
 
 > [!NOTE] 
->Você não precisa fornecer o `EdgeOptions` objeto ao passar para a `EdgeDriverService` `EdgeDriver` instância.  A `EdgeDriver` classe usa as opções padrão para o Microsoft Edge \(EdgeHTML\) ou o Microsoft Edge \(Chromium\) com base no serviço que você fornece.  
-> No entanto, se você quiser fornecer as duas classes, verifique se ambas estão `EdgeDriverService` `EdgeOptions` configuradas para a mesma versão do Microsoft Edge.  Por exemplo, não é possível usar uma classe padrão do Microsoft Edge \(EdgeHTML\) e propriedades `EdgeDriverService` do Chromium na `EdgeOptions` classe.  A `EdgeDriver` classe lança um erro para impedir o uso de versões diferentes.  
+>Você não precisa fornecer o `EdgeOptions` objeto quando passar para a `EdgeDriverService` `EdgeDriver` instância.  A `EdgeDriver` classe usa as opções padrão para o Microsoft Edge \(EdgeHTML\) ou o Microsoft Edge \(Chromium\) com base no serviço que você fornece.  
+> No entanto, se você quiser fornecer as duas classes, verifique se ambas estão `EdgeDriverService` `EdgeOptions` configuradas para a mesma versão do Microsoft Edge.  Por exemplo, você pode usar uma classe padrão do Microsoft Edge \(EdgeHTML\) e propriedades `EdgeDriverService` do Chromium na `EdgeOptions` classe.  A `EdgeDriver` classe lança um erro para impedir o uso de versões diferentes.  
 
 #### [Python](#tab/python/)  
 
-<a id="customizing-microsoft-edge-driver-services-code"></a>  
+<a id="customize-microsoft-edge-driver-services-code"></a>  
 
-Ao usar o Python, `Edge` o objeto cria e gerencia o `EdgeService` .  Para configurar o `EdgeService` , passe argumentos adicionais para `Edge` o objeto conforme indicado no código a seguir.  
+Quando você usa o Python, `Edge` o objeto cria e gerencia o `EdgeService` .  Para configurar o `EdgeService` , passe argumentos extras para `Edge` o objeto conforme indicado no código a seguir.  
 
 ```python
 service_args = ['--verbose']
@@ -257,9 +257,9 @@ driver = Edge(service_args = service_args)
 
 #### [Java](#tab/java/)  
 
-<a id="customizing-microsoft-edge-driver-services-code"></a>  
+<a id="customize-microsoft-edge-driver-services-code"></a>  
 
-Use o `createDefaultService()` método para criar um configurado para o Microsoft Edge `EdgeDriverService` \(Chromium\). Os serviços de driver em Java são personalizados usando as propriedades do sistema Java. Por exemplo, o código a seguir usa a `"webdriver.edge.verboseLogging"` propriedade para habilitar a saída detalhada do log.  
+Use o `createDefaultService()` método para criar um configurado para o Microsoft Edge `EdgeDriverService` \(Chromium\).  Use as propriedades do sistema Java para personalizar serviços de driver em Java.  Por exemplo, o código a seguir usa a `"webdriver.edge.verboseLogging"` propriedade para ativar a saída do log detalhado.  
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -270,10 +270,10 @@ EdgeDriver driver = new EdgeDriver(service, options);
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="customizing-microsoft-edge-driver-services-code"></a>  
+<a id="customize-microsoft-edge-driver-services-code"></a>  
 
 Ao usar JavaScript, crie e configure um `Service` com a `ServiceBuilder` classe.  Opcionalmente, você pode passar o objeto para o objeto, que inicia `Service` `Driver` \(e interrompe\) o serviço para você.  
-Para configurar o `Service` método , execute outro método na classe antes de usar o `ServiceBuilder` `build()` método.  Em seguida, `service` passe o parâmetro como um no `Driver.createSession()` método.  
+Para configurar `Service` o método , execute outro método na classe antes de usar o `ServiceBuilder` `build()` método.  Em seguida, `service` passe o parâmetro como um no `Driver.createSession()` método.  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
@@ -284,11 +284,11 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Usar Chromium-Specific opções  
 
-Se você definir a propriedade como , você pode usar a classe para acessar as mesmas propriedades e métodos específicos do Chromium que são usados ao automatizar outros navegadores `UseChromium` `true` `EdgeOptions` Chromium. [][WebdriverCapabilitiesEdgeOptions]  
+Se você definir a propriedade como , você pode usar a classe para acessar as mesmas propriedades e métodos específicos do Chromium que são usados quando você automatizar outros navegadores `UseChromium` `true` `EdgeOptions` Chromium. [][WebdriverCapabilitiesEdgeOptions]  
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="using-chromium-specific-options-code"></a>  
+<a id="use-chromium-specific-options-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -299,7 +299,7 @@ options.AddArgument("disable-gpu");
 
 #### [Python](#tab/python/)  
 
-<a id="using-chromium-specific-options-code"></a>  
+<a id="use-chromium-specific-options-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -310,7 +310,7 @@ options.add_argument("disable-gpu")
 
 #### [Java](#tab/java/)  
 
-<a id="using-chromium-specific-options-code"></a>  
+<a id="use-chromium-specific-options-code"></a>  
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -320,7 +320,7 @@ options.addArguments("disable-gpu");
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="using-chromium-specific-options-code"></a>  
+<a id="use-chromium-specific-options-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -334,21 +334,21 @@ options.addArguments("disable-gpu");
 > [!NOTE]
 > Se a propriedade estiver definida como , você não poderá usar propriedades e métodos para `UseChromium` `true` o Microsoft Edge \(EdgeHTML\).  
 
-## Opções adicionais de instalação do WebDriver  
+## Outras opções de instalação do WebDriver  
 
 ### Rêo  
 
-Se você usar [Alemy][Chocolatey] como seu gerenciador de pacotes, instale o Driver do Microsoft Edge executando o seguinte comando.  
+Se você usar [Ay como][Chocolatey] seu gerenciador de pacotes, execute o seguinte comando para instalar o Microsoft Edge Driver.  
 
 ```console
 choco install selenium-chromium-edge-driver
 ```  
 
-Para obter mais informações, consulte [Selenium Chromium Edge Driver on Mily][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
+Para obter mais informações, navegue [até Selenium Chromium Edge Driver em Mila .][ChocolateyPackagesSeleniumChromiumEdgeDriver]  
 
 ### Docker  
 
-Se você usar [o Docker,][DockerHub]baixe uma imagem pré-configurada com o Microsoft Edge \(Chromium\) e o Driver do [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] pré-instalados executando o seguinte comando.  
+Se você usar [o Docker,][DockerHub]execute o seguinte comando para baixar uma imagem pré-configurada com o Microsoft Edge \(Chromium\) e o Driver do [Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] pré-instalados.  
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -356,7 +356,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Para obter mais informações, navegue até o contêiner [msedgedriver no Hub do Docker.][DockerHubMsedgedriver]  
 
-## Próximas etapas
+## Próximas etapas  
 
 Para saber mais sobre o WebDriver e como escrever testes automatizados do WebDriver usando Selenium, navegue até a documentação [Selenium.][SeleniumDocumentation]  
 
@@ -390,8 +390,7 @@ A equipe do Microsoft Edge está ansioso para ouvir seus comentários sobre como
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
 [JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver | npm"  
 
-[MicrosoftDeveloperEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver | Desenvolvedor da Microsoft"  
-[MicrosoftDeveloperEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads "Downloads - WebDriver | Desenvolvedor da Microsoft"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver | Desenvolvedor da Microsoft"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Baixar Novo Navegador Microsoft Edge"  
 
@@ -407,7 +406,7 @@ A equipe do Microsoft Edge está ansioso para ouvir seus comentários sobre como
 [PythonSelenium]: https://pypi.org/project/selenium/ "selenium | PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
-[SeleniumDocumentation]: https://www.selenium.dev/documentation "The Selenium Browser Automation Project :: Documentation for Selenium"  
+[SeleniumDocumentation]: https://www.selenium.dev/documentation "O Projeto de Automação do Navegador Selenium | Documentação para Selenium"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selenium"  
 
 [SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"

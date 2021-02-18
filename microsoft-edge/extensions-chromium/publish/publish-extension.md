@@ -1,30 +1,30 @@
 ---
-description: Publicar extensões do Microsoft Edge (Chromium) na Loja de complementos do Microsoft Edge
+description: Publicar extensões do Microsoft Edge (Chromium) na loja de Complementos do Microsoft Edge
 title: Publicar sua extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: b03a74d1faef914298729020e3c9ca4d465e0443
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6784995f3e06bb6786315ea1040f9673dcaa76dd
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327671"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343126"
 ---
 # Publicar sua extensão  
 
-Depois de desenvolver e testar sua extensão, você estará pronto para distribuir sua extensão. Use o catálogo de complementos do Microsoft Edge para distribuir sua extensão.  Para liberar sua extensão Chromium existente para usuários do Microsoft Edge, navegue para por [a portabilidade da extensão Chromium existente.][PortChromiumExtension]  
+Depois de desenvolver e testar sua extensão, você estará pronto para distribuir sua extensão. Use o armazenamento de Complementos do Microsoft Edge para distribuir sua extensão.  Para liberar sua extensão Chromium existente para usuários do Microsoft Edge, navegue para por [a portabilidade de sua extensão Chromium existente.][PortChromiumExtension]  
 
-Publique sua extensão no catálogo de complementos do Microsoft Edge para aumentar o alcance dela e torná-la disponível para os usuários do Microsoft Edge.  Este artigo fornece o processo para enviar sua extensão ao catálogo de complementos do Microsoft Edge.  
+Publique sua extensão no armazenamento de Complementos do Microsoft Edge para aumentar o alcance dela e torná-la disponível para os usuários do Microsoft Edge.  Este artigo fornece o processo para enviar sua extensão para o armazenamento de Complementos do Microsoft Edge.  
 
 ## Antes de começar  
 
 Você deve ter um protótipo de trabalho de sua extensão pronta.  Para obter informações sobre como criar uma extensão, consulte o [tutorial de introdução.][ExtensionsGettingStarted]  
 
-Para publicar sua extensão no catálogo de complementos do Microsoft Edge, use sua conta de desenvolvedor ativa no [Partner Center.][MicrosoftPartnerCenter]  Se você não tiver uma conta de desenvolvedor, crie uma nova conta de desenvolvedor.  Para abrir uma nova conta de desenvolvedor e registrar-se no programa de complementos do Microsoft Edge, navegue até [Registro do desenvolvedor.][DeveloperRegistration]  
+Para publicar sua extensão na loja de Complementos do Microsoft Edge, use sua conta de desenvolvedor ativa no [Partner Center.][MicrosoftPartnerCenter]  Se você não tiver uma conta de desenvolvedor, crie uma nova conta de desenvolvedor.  Para abrir uma nova conta de desenvolvedor e registrar-se no programa de complementos do Microsoft Edge, navegue até [Registro do desenvolvedor.][DeveloperRegistration]  
 
 Crie um arquivo zip que representa seu pacote de extensão.  Seu pacote de extensão deve incluir os arquivos a seguir.  
 
@@ -36,7 +36,7 @@ Os campos a seguir no manifesto são incluídos automaticamente nos detalhes de 
 *   `Name` no arquivo de manifesto, que é o nome **para exibição** na página de detalhes do armazenamento.  
 *   `Description` no arquivo de manifesto, que é a **descrição Curta** na página de detalhes do armazenamento.  Forneça uma descrição curta e captura para exibir na parte superior da listagem da extensão.  Quando incluída, a breve descrição especificada no arquivo de manifesto da extensão é exibida na listagem da loja.  Se uma breve descrição não estiver incluída no arquivo de manifesto, as primeiras linhas de Descrição serão exibidas.  Forneça uma breve descrição para evitar a repetição de conteúdo na página de listagem da Loja.  
 
-## Enviar sua extensão para o armazenamento de complementos do Microsoft Edge  
+## Enviar sua extensão para o armazenamento de Complementos do Microsoft Edge  
 
 Para enviar sua extensão para [o Partner Center,][MicrosoftPartnerCenter]use as etapas a seguir.  
 
@@ -56,13 +56,13 @@ Na página **Disponibilidade,** insira as seguintes informações sobre a dispon
 
 ##### Visibilidade  
 
-Escolha uma das seguintes opções de visibilidade para definir se sua extensão pode ser descoberta no catálogo de complementos do Microsoft Edge.  
+Escolha uma das seguintes opções de visibilidade para definir se sua extensão pode ser descoberta no armazenamento de Complementos do Microsoft Edge.  
 
 *   `Public` \(padrão\)  
-    O público permite que todos descubram sua extensão por meio de pesquisa, navegação no catálogo de complementos do Microsoft Edge ou uso da URL de listagem para sua extensão no armazenamento de complementos do Microsoft Edge.  A URL de listagem está disponível no painel do Partner Center na página Visão Geral **da Extensão.**  
+    O público permite que todos descubram sua extensão por meio de pesquisa, navegação no armazenamento de Complementos do Microsoft Edge ou usando a URL de listagem para sua extensão no armazenamento de Complementos do Microsoft Edge.  A URL de listagem está disponível no painel do Partner Center na página Visão Geral **da Extensão.**  
     
 *   `Hidden`  
-    Oculto remove extensões dos resultados da pesquisa ou navegação no catálogo de complementos do Microsoft Edge.  Para distribuir extensões ocultas no armazenamento de complementos do Microsoft Edge, você deve compartilhar a URL de listagem para a extensão com seus clientes.  
+    O oculto remove extensões dos resultados da pesquisa ou da navegação no armazenamento de Complementos do Microsoft Edge.  Para distribuir extensões ocultas no armazenamento de Complementos do Microsoft Edge, você deve compartilhar a URL de listagem para a extensão com seus clientes.  
     
 > [!NOTE]
 > Você pode alterar a visibilidade de sua extensão de **Público** para **Oculto.**  Os usuários que instalaram sua extensão enquanto a visibilidade estava definida como pública retêm o acesso à extensão e recebem as atualizações disponibilizadas por meio do site de complementos do Microsoft Edge.  
@@ -72,37 +72,37 @@ Escolha uma das seguintes opções de visibilidade para definir se sua extensão
 Defina os mercados específicos nos quais você planeja oferecer sua extensão.  A configuração padrão para mercados é todos os mercados e que inclui quaisquer mercados futuros adicionados posteriormente.  Para escolher mercados específicos, escolha **Alterar mercados.**  Alterne os mercados individuais para excluir cada um deles ou escolha Desmarcar **tudo** e, em seguida, adicionar mercados individuais de sua escolha.  
 
 > [!NOTE]
-> Você pode alterar os mercados em que sua extensão é oferecida.  Um usuário que instala sua extensão enquanto ela está disponível no mercado do usuário retém o acesso à extensão.  No entanto, o usuário não tem acesso a atualizações futuras enviadas ao catálogo de complementos do Microsoft Edge.  
+> Você pode alterar os mercados em que sua extensão é oferecida.  Um usuário que instala sua extensão enquanto ela está disponível no mercado do usuário retém o acesso à extensão.  No entanto, o usuário não tem acesso a atualizações futuras enviadas ao armazenamento de Complementos do Microsoft Edge.  
 
 Selecione **Salvar** para continuar na **seção** Propriedades.  
 
 #### Etapa 4: Selecionar propriedades para sua extensão  
 
-Na página **Propriedades,** insira as informações a seguir para especificar as propriedades da extensão.  As propriedades são exibidas para os usuários no catálogo de complementos do Microsoft Edge.  
+Na página **Propriedades,** insira as informações a seguir para especificar as propriedades da extensão.  As propriedades são exibidas para os usuários no armazenamento de Complementos do Microsoft Edge.  
 
 | Nome da propriedade extension | Descrição |  
 |:--- |:--- |  
 | Category \(required\) | A categoria que melhor descreve sua extensão.  Listar sua extensão na categoria certa ajuda os usuários a encontrar sua extensão facilmente e a entender mais sobre ela.  |  
 | Requisitos de política de privacidade \(obrigatório\) | Indica se sua extensão acessa, coleta ou transmite qualquer informação pessoal.  Sua extensão poderá falhar na etapa de certificação se você escolher **Sim** e não fornecer um `Privacy policy URL` .  |  
-| URL da política de privacidade | Uma URL de política de privacidade válida para comunicar como sua extensão segue as leis e regulamentos de privacidade.  Você é responsável por garantir que sua extensão siga as leis e regulamentos de privacidade.  Você também é responsável por fornecer uma URL de política de privacidade se qualquer informação pessoal estiver sendo acessada, transmitida ou coletada por sua extensão.  Para determinar se sua extensão requer uma política de privacidade, navegue até o Contrato de Desenvolvedor do [Microsoft Edge][MicrosoftAppDeveloperAgreement] e as políticas de desenvolvedor do catálogo de [complementos do Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
-| URL do site | Uma página da Web que fornece informações adicionais sobre sua extensão.  Deve apontar para uma página em seu próprio site, não para a listagem da Web para sua extensão no catálogo de `Website URL` complementos do Microsoft Edge.  Ajuda `Website URL` os usuários a saber mais sobre sua extensão, seus recursos e outras informações relevantes.  |  
+| URL da política de privacidade | Uma URL de política de privacidade válida para comunicar como sua extensão segue as leis e regulamentos de privacidade.  Você é responsável por garantir que sua extensão siga as leis e regulamentos de privacidade.  Você também é responsável por fornecer uma URL de política de privacidade se qualquer informação pessoal estiver sendo acessada, transmitida ou coletada por sua extensão.  Para determinar se sua extensão requer uma política de privacidade, navegue até o Contrato de Desenvolvedor do [Microsoft Edge][MicrosoftAppDeveloperAgreement] e as políticas de desenvolvedor do armazenamento de [Complementos do Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
+| URL do site | Uma página da Web que fornece informações adicionais sobre sua extensão.  Deve apontar para uma página em seu próprio site, não para a listagem da Web para sua extensão no armazenamento de `Website URL` Complementos do Microsoft Edge.  Ajuda `Website URL` os usuários a saber mais sobre sua extensão, seus recursos e outras informações relevantes.  |  
 | Detalhes do contato de suporte | A URL da página da Web de suporte ou o endereço de email para entrar em contato com a equipe de suporte.  |  
-| Conteúdo mais adulto | Caixa de seleção para especificar se sua extensão inclui conteúdo adulto.  A classificação de extensão ajuda a determinar a faixa etária apropriada do público-alvo de sua extensão.  Para ajudar a determinar se sua extensão tem conteúdo adulto, navegue até as políticas de desenvolvedor do catálogo de [complementos do Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
+| Conteúdo mais adulto | Caixa de seleção para especificar se sua extensão inclui conteúdo adulto.  A classificação de extensão ajuda a determinar a faixa etária apropriada do público-alvo de sua extensão.  Para ajudar a determinar se sua extensão tem conteúdo mais apurado, navegue até As políticas de desenvolvedor da loja de [Complementos do Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 
 Selecione **Salvar** para continuar na seção **listagens da** Loja.  
 
 > [!Important]
-> O nome do desenvolvedor/organização, a URL do site e os detalhes de contato de suporte enviados durante o registro são exibidos aos usuários na loja de complementos do Microsoft Edge.  
+> O nome do desenvolvedor/organização, a URL do site e os detalhes de contato de suporte enviados durante o registro são exibidos aos usuários na loja de Complementos do Microsoft Edge.  
 
 #### Etapa 5: Adicionar detalhes de listagem da Loja para sua extensão  
 
-As informações fornecidas na seção a seguir são exibidas aos usuários que revisam sua listagem no catálogo de complementos do Microsoft Edge.  Embora alguns campos sejam opcionais, você deve fornecer o máximo de informações possível.  Para listar sua extensão na loja, os seguintes detalhes são necessários.  
+As informações fornecidas na seção a seguir são exibidas aos usuários que revisam sua listagem no armazenamento de Complementos do Microsoft Edge.  Embora alguns campos sejam opcionais, você deve fornecer o máximo de informações possível.  Para listar sua extensão na loja, os seguintes detalhes são necessários.  
 
 *   **Descrição** de cada idioma no pacote de extensão.  
 *   **Logotipo da Loja de** Extensões para cada idioma no pacote de extensão.  
     
 > [!NOTE]
-> Os detalhes mínimos necessários de listagem da loja devem ser preenchidos para pelo menos um dos idiomas mencionados no pacote zip de extensão.  Para adicionar ou remover idiomas na listagem da Loja no catálogo de complementos do Microsoft Edge, use **o** menu suspenso Adicionar um idioma na página **listagens da** Loja.  Além disso, você pode optar por duplicar seus ativos de um idioma em outros usando o botão de funcionalidade duplicada na página de detalhes do idioma.  
+> Os detalhes mínimos necessários de listagem da loja devem ser preenchidos para pelo menos um dos idiomas mencionados no pacote zip de extensão.  Para adicionar ou remover idiomas na listagem da Loja no armazenamento de Complementos do Microsoft Edge, use **o** menu suspenso Adicionar um idioma na página **listagens da** Loja.  Além disso, você pode optar por duplicar seus ativos de um idioma em outros usando o botão de funcionalidade duplicada na página de detalhes do idioma.  
 
 | Nome da propriedade de detalhes do idioma | Descrição |  
 |:--- |:--- |  
@@ -114,13 +114,13 @@ As informações fornecidas na seção a seguir são exibidas aos usuários que 
 | Large promotional tile \(optional\) | `Large promotion tiles` são usadas na loja para apresentar extensões com mais destaque no site de complementos do Microsoft Edge.  As imagens, se enviadas, ficam visíveis para os usuários.  O tamanho dos arquivos PNG deve ser de 1400 x 560 pixels.  Além disso, você pode optar por copiar o ativo de um idioma para todos os outros idiomas usando o botão duplicado.  O botão é encontrado após o campo depois que você carrega um pacote promocional para o idioma.  |  
 | URL de vídeo do YouTube \(opcional\) | Você pode incluir um vídeo promocional do YouTube de sua extensão.  O `YouTube video URL` vídeo é exibido na página de listagem da loja da extensão.  |  
 | Descrição curta \(obrigatório\) | Para editar o `short description` campo , você deve atualizar o campo de descrição no arquivo de manifesto do pacote de extensão e recarregá-lo.  |  
-| Termos de pesquisa \(opcional\) | `Search terms` são palavras ou frases individuais que ajudam os usuários a descobrir sua extensão ao pesquisar no Catálogo de Complementos do Microsoft Edge.  Os termos de pesquisa não são exibidos aos usuários.  |  
+| Termos de pesquisa \(opcional\) | `Search terms` são palavras ou frases individuais que ajudam os usuários a descobrir sua extensão ao pesquisar no armazenamento de Complementos do Microsoft Edge.  Os termos de pesquisa não são exibidos aos usuários.  |  
 
 ##### Requisitos de URL de vídeo do YouTube  
 
 Verifique se o vídeo atende aos requisitos a seguir.  
 
-*   Verifique se o conteúdo do vídeo do YouTube segue as Políticas de Desenvolvedor do Catálogo de Complementos do [Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  
+*   Verifique se o conteúdo do vídeo do YouTube segue as Políticas de Desenvolvedor do armazenamento de [Complementos do Microsoft Edge.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  
 *   Desativar anúncios em seu vídeo.  Para obter mais informações, navegue [até Definir os formatos de anúncio padrão][GoogleYoutubeAnswer2531367Topic7072227] e anúncios em vídeos [incorporados.][GoogleYoutubeAnswer132596]  
 *   Ativar a incorporação de seus vídeos.  Para obter mais informações, navegue [até Inserir vídeos & playlists][GoogleYoutubeAnswer171780].  
     
@@ -152,11 +152,11 @@ Certifique-se de incluir as informações a seguir, conforme necessário.
 *   Etapas para acessar recursos ocultos ou bloqueados.  
 *   Diferenças esperadas na funcionalidade com base na região ou em outras configurações do usuário.  
 *   Se o envio for uma atualização para uma extensão existente, inclua informações sobre as alterações feitas na extensão.  
-*   Qualquer informação adicional que os testadores devem entender sobre seu envio.  
+*   Quaisquer informações adicionais que os testadores devem entender sobre seu envio.  
 
-Depois de fornecer as informações, escolha **Publicar** para enviar sua extensão ao catálogo de complementos do Microsoft Edge.  Seu envio prosseguirá para a etapa de certificação.  O processo de certificação pode levar até sete dias úteis após o envio.  
+Depois de fornecer as informações, escolha **Publicar** para enviar sua extensão para o armazenamento de Complementos do Microsoft Edge.  Seu envio prosseguirá para a etapa de certificação.  O processo de certificação pode levar até sete dias úteis após o envio.  
 
-Quando seu envio for aprovado na certificação, sua extensão será publicada no catálogo de complementos do Microsoft Edge.  O status da extensão no painel do Partner Center muda para `In the Store` .  
+Quando seu envio for aprovado na certificação, sua extensão será publicada na loja de Complementos do Microsoft Edge.  O status da extensão no painel do Partner Center muda para `In the Store` .  
 
 > [!NOTE]
 > Se você encontrar algum problema no processo de envio [][ExtensionsSupportForm] ou registro, envie um tíquete de suporte na Solicitação de Suporte de Novas Extensões ou envie um email para [ext_dev_support@microsoft.com.][MailtoExtDevSupportMicrosoftCom]  
@@ -166,7 +166,7 @@ Quando seu envio for aprovado na certificação, sua extensão será publicada n
 [ExtensionsGettingStarted]: ../getting-started/index.md "Como começar a trabalhar com extensões do Microsoft Edge (Chromium) | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Registre-se como um desenvolvedor de extensões do Microsoft Edge | Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Fazer a portabilidade da extensão Chromium para o Microsoft Edge | Microsoft Docs"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Políticas de Desenvolvedor do Catálogo de Complementos do Microsoft Edge | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Os Complementos do Microsoft Edge armazenam políticas de desenvolvedor | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Contrato de Desenvolvedor de Aplicativos | Microsoft Docs"  
 
