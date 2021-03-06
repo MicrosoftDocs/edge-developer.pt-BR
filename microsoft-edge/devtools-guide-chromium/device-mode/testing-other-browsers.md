@@ -1,18 +1,18 @@
 ---
-description: Seu trabalho não termina com a garantia de que o seu site seja ótimo no Microsoft Edge e no Android.  Apesar de o modo de dispositivo poder simular uma faixa de outros dispositivos como iPhones, recomendamos que você consulte as soluções para emulação fornecidas por outros navegadores.
-title: Emular e Testar Outros Navegadores
+description: Seu trabalho não termina com a garantia de que seu site seja executado muito bem no Microsoft Edge e no Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.
+title: Emular e testar outros navegadores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124940"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398683"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,35 +28,35 @@ ms.locfileid: "11124940"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="61139-105">Emular e testar outros navegadores</span><span class="sxs-lookup"><span data-stu-id="61139-105">Emulate and test other browsers</span></span>  
+# <a name="emulate-and-test-other-browsers"></a><span data-ttu-id="fa51b-105">Emular e testar outros navegadores</span><span class="sxs-lookup"><span data-stu-id="fa51b-105">Emulate and test other browsers</span></span>  
 
-<span data-ttu-id="61139-106">Seu trabalho não termina com a garantia de que o seu site seja ótimo no Microsoft Edge e no Android.</span><span class="sxs-lookup"><span data-stu-id="61139-106">Your job does not end with ensuring your site runs great across Microsoft Edge and Android.</span></span>  <span data-ttu-id="61139-107">Apesar de o modo de dispositivo poder simular uma faixa de outros dispositivos como iPhones, recomendamos que você consulte as soluções para emulação fornecidas por outros navegadores.</span><span class="sxs-lookup"><span data-stu-id="61139-107">Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.</span></span>  
+<span data-ttu-id="fa51b-106">Seu trabalho não termina com a garantia de que seu site seja executado muito bem no Microsoft Edge e no Android.</span><span class="sxs-lookup"><span data-stu-id="fa51b-106">Your job does not end with ensuring your site runs great across Microsoft Edge and Android.</span></span>  <span data-ttu-id="fa51b-107">Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.</span><span class="sxs-lookup"><span data-stu-id="fa51b-107">Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.</span></span>  
 
-### <span data-ttu-id="61139-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="61139-108">Summary</span></span>  
+### <a name="summary"></a><span data-ttu-id="fa51b-108">Resumo</span><span class="sxs-lookup"><span data-stu-id="fa51b-108">Summary</span></span>  
 
-*   <span data-ttu-id="61139-109">Quando você não tiver um dispositivo em particular ou se quiser fazer uma verificação de ponto em algo, a melhor opção é emular o dispositivo diretamente dentro do navegador.</span><span class="sxs-lookup"><span data-stu-id="61139-109">When you do not have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.</span></span>  
-*   <span data-ttu-id="61139-110">Emuladores e emuladores de dispositivo permitem a imitação do seu site de desenvolvimento em uma variedade de dispositivos da sua estação de trabalho.</span><span class="sxs-lookup"><span data-stu-id="61139-110">Device emulators and simulators enable you to mimic your development site on a range of devices from your workstation.</span></span>  
-*   <span data-ttu-id="61139-111">Os emuladores baseados em nuvem permitem automatizar os testes de unidade do seu site em diferentes plataformas.</span><span class="sxs-lookup"><span data-stu-id="61139-111">Cloud-based emulators enable you to automate unit tests for your site across different platforms.</span></span>  
+*   <span data-ttu-id="fa51b-109">Quando você não tem um dispositivo específico ou deseja fazer uma verificação de ponto em algo, a melhor opção é emular o dispositivo dentro do navegador.</span><span class="sxs-lookup"><span data-stu-id="fa51b-109">When you do not have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.</span></span>  
+*   <span data-ttu-id="fa51b-110">Os emuladores de dispositivos e simuladores permitem que você mime seu site de desenvolvimento em um intervalo de dispositivos de sua estação de trabalho.</span><span class="sxs-lookup"><span data-stu-id="fa51b-110">Device emulators and simulators enable you to mimic your development site on a range of devices from your workstation.</span></span>  
+*   <span data-ttu-id="fa51b-111">Os emuladores baseados em nuvem permitem automatizar testes de unidade para seu site em diferentes plataformas.</span><span class="sxs-lookup"><span data-stu-id="fa51b-111">Cloud-based emulators enable you to automate unit tests for your site across different platforms.</span></span>  
 
-## <span data-ttu-id="61139-112">Emuladores de navegador</span><span class="sxs-lookup"><span data-stu-id="61139-112">Browser emulators</span></span>  
+## <a name="browser-emulators"></a><span data-ttu-id="fa51b-112">Emuladores de navegador</span><span class="sxs-lookup"><span data-stu-id="fa51b-112">Browser emulators</span></span>  
 
-<span data-ttu-id="61139-113">Os emuladores de navegador são ótimos para testar a capacidade de resposta de um site, mas cada um não emula diferenças na API, suporte a CSS e certos comportamentos que você vê em um navegador móvel.</span><span class="sxs-lookup"><span data-stu-id="61139-113">Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that you see on a mobile browser.</span></span>  <span data-ttu-id="61139-114">Teste seu site em navegadores executados em dispositivos reais para ter certeza de que tudo se comporta conforme o esperado.</span><span class="sxs-lookup"><span data-stu-id="61139-114">Test your site on browsers running on real devices to be certain everything behaves as expected.</span></span>  
+<span data-ttu-id="fa51b-113">Os emuladores de navegador são ótimos para testar a capacidade de resposta de um site, mas cada um deles não emula diferenças na API, no suporte CSS e em determinados comportamentos exibidos em um navegador móvel.</span><span class="sxs-lookup"><span data-stu-id="fa51b-113">Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that is displayed on a mobile browser.</span></span>  <span data-ttu-id="fa51b-114">Teste seu site em navegadores em execução em dispositivos reais para ter certeza de que tudo se comporta conforme o esperado.</span><span class="sxs-lookup"><span data-stu-id="fa51b-114">Test your site on browsers running on real devices to be certain everything behaves as expected.</span></span>  
 
-### <span data-ttu-id="61139-115">Modo de exibição de design responsivo do Firefox</span><span class="sxs-lookup"><span data-stu-id="61139-115">Firefox Responsive Design View</span></span>  
+### <a name="firefox-responsive-design-view"></a><span data-ttu-id="fa51b-115">Exibição de design responsivo do Firefox</span><span class="sxs-lookup"><span data-stu-id="fa51b-115">Firefox Responsive Design View</span></span>  
 
-<span data-ttu-id="61139-116">O Firefox tem um [modo de exibição de design responsivo][MDNResponsiveDesignMode] que incentiva você a parar de pensar em termos de dispositivos específicos e explorar como o design muda em tamanhos de tela comuns ou em seu próprio tamanho arrastando as bordas.</span><span class="sxs-lookup"><span data-stu-id="61139-116">Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.</span></span>  
+<span data-ttu-id="fa51b-116">O Firefox tem uma exibição de [design][MDNResponsiveDesignMode] responsivo que incentiva você a parar de pensar em termos de dispositivos específicos e, em vez disso, explorar como seu design muda em tamanhos de tela comuns ou seu próprio tamanho arrastando as bordas.</span><span class="sxs-lookup"><span data-stu-id="fa51b-116">Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.</span></span>  
 
-### <span data-ttu-id="61139-117">Emulação de EdgeHTML</span><span class="sxs-lookup"><span data-stu-id="61139-117">EdgeHTML emulation</span></span>  
+### <a name="edgehtml-emulation"></a><span data-ttu-id="fa51b-117">Emulação edgeHTML</span><span class="sxs-lookup"><span data-stu-id="fa51b-117">EdgeHTML emulation</span></span>  
 
-<span data-ttu-id="61139-118">Para emular telefones Windows, use a [emulação interna][DevToolsEdgeHtmlEmulation]do Microsoft Edge \ (EdgeHTML \).</span><span class="sxs-lookup"><span data-stu-id="61139-118">To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].</span></span>  
+<span data-ttu-id="fa51b-118">Para emular o Windows Phones, use a emulação do Microsoft Edge \(EdgeHTML\) [embutida][DevToolsEdgeHtmlEmulation].</span><span class="sxs-lookup"><span data-stu-id="fa51b-118">To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].</span></span>  
 
-<span data-ttu-id="61139-119">Use a [emulação do IE 11][Ie11DevToolsEmulation] para simular como a sua página pode ser exibida em versões mais antigas do Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="61139-119">Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.</span></span>  
+<span data-ttu-id="fa51b-119">Use [a Emulação do IE 11][Ie11DevToolsEmulation] para simular a aparência da sua página em versões mais antigas do Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="fa51b-119">Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.</span></span>  
 
-## <span data-ttu-id="61139-120">Emuladores de dispositivo e simuladores</span><span class="sxs-lookup"><span data-stu-id="61139-120">Device emulators and simulators</span></span>  
+## <a name="device-emulators-and-simulators"></a><span data-ttu-id="fa51b-120">Emuladores de dispositivos e simuladores</span><span class="sxs-lookup"><span data-stu-id="fa51b-120">Device emulators and simulators</span></span>  
 
-<span data-ttu-id="61139-121">Os simuladores de dispositivo e emuladores simulam não apenas o ambiente do navegador, mas o dispositivo inteiro.</span><span class="sxs-lookup"><span data-stu-id="61139-121">Device simulators and emulators simulate not just the browser environment but the entire device.</span></span>  <span data-ttu-id="61139-122">Cada um é útil para testar itens que exigem integração com o sistema operacional, por exemplo, entrada de formulário com teclados virtuais.</span><span class="sxs-lookup"><span data-stu-id="61139-122">Each are useful to test things that require OS integration, for example form input with virtual keyboards.</span></span>  
+<span data-ttu-id="fa51b-121">Simuladores de dispositivo e emuladores simulam não apenas o ambiente do navegador, mas todo o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="fa51b-121">Device simulators and emulators simulate not just the browser environment but the entire device.</span></span>  <span data-ttu-id="fa51b-122">Cada uma delas é útil para testar coisas que exigem integração do sistema operacional, por exemplo, entrada de formulário com teclados virtuais.</span><span class="sxs-lookup"><span data-stu-id="fa51b-122">Each are useful to test things that require OS integration, for example form input with virtual keyboards.</span></span>  
 
-### <span data-ttu-id="61139-123">Emulador Android</span><span class="sxs-lookup"><span data-stu-id="61139-123">Android emulator</span></span>  
+### <a name="android-emulator"></a><span data-ttu-id="fa51b-123">Emulador android</span><span class="sxs-lookup"><span data-stu-id="fa51b-123">Android emulator</span></span>  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
@@ -64,20 +64,20 @@ ms.locfileid: "11124940"
 :::image-end:::  
 -->  
 
-<span data-ttu-id="61139-124">No momento, não há nenhuma maneira de instalar o Microsoft Edge em um emulador Android.</span><span class="sxs-lookup"><span data-stu-id="61139-124">At the moment, there is no way to install Microsoft Edge on an Android emulator.</span></span>  <span data-ttu-id="61139-125">No entanto, você pode usar o navegador Android, o Shell de conteúdo do Chromium e o Firefox para Android, que são revisados mais adiante neste guia.</span><span class="sxs-lookup"><span data-stu-id="61139-125">However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.</span></span>  <span data-ttu-id="61139-126">Chromium o Shell de conteúdo executa o mesmo mecanismo de renderização Chromium como o Microsoft Edge, mas vem sem qualquer recurso específico do navegador.</span><span class="sxs-lookup"><span data-stu-id="61139-126">Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.</span></span>  
+<span data-ttu-id="fa51b-124">No momento, não há como instalar o Microsoft Edge em um emulador android.</span><span class="sxs-lookup"><span data-stu-id="fa51b-124">At the moment, there is no way to install Microsoft Edge on an Android emulator.</span></span>  <span data-ttu-id="fa51b-125">No entanto, você pode usar o Navegador android, o Shell de Conteúdo do Chromium e o Firefox para Android que revisaremos mais adiante neste guia.</span><span class="sxs-lookup"><span data-stu-id="fa51b-125">However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.</span></span>  <span data-ttu-id="fa51b-126">O Shell de Conteúdo do Chromium executa o mesmo mecanismo de renderização do Chromium que o Microsoft Edge, mas vem sem nenhum dos recursos específicos do navegador.</span><span class="sxs-lookup"><span data-stu-id="fa51b-126">Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.</span></span>  
 
-<span data-ttu-id="61139-127">O emulador Android vem com o SDK do Android que você precisa baixar como parte do [Android Studio][AndroidStudioDownload].</span><span class="sxs-lookup"><span data-stu-id="61139-127">The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].</span></span>  <span data-ttu-id="61139-128">Em seguida, siga as instruções para [configurar um dispositivo virtual][AndroidStudioCreateManageVirtualDevices] e [iniciar o emulador][AndroidStudioRunAppsAndroidEmulator].</span><span class="sxs-lookup"><span data-stu-id="61139-128">Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].</span></span>  
-<span data-ttu-id="61139-129">Depois que o emulador for inicializado, clique no ícone do navegador e teste o site no navegador de ações antigo para Android.</span><span class="sxs-lookup"><span data-stu-id="61139-129">Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.</span></span>  
+<span data-ttu-id="fa51b-127">O emulador android vem com o SDK do Android que você precisa baixar como parte do [Android Studio.][AndroidStudioDownload]</span><span class="sxs-lookup"><span data-stu-id="fa51b-127">The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].</span></span>  <span data-ttu-id="fa51b-128">Em seguida, siga as instruções [para configurar um dispositivo virtual][AndroidStudioCreateManageVirtualDevices] e iniciar o [emulador][AndroidStudioRunAppsAndroidEmulator].</span><span class="sxs-lookup"><span data-stu-id="fa51b-128">Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].</span></span>  
+<span data-ttu-id="fa51b-129">Depois que o emulador for inicializado, escolha no ícone Navegador e teste seu site no navegador de ações antigo para Android.</span><span class="sxs-lookup"><span data-stu-id="fa51b-129">Once your emulator is booted, choose on the Browser icon, and test your site on the old Stock Browser for Android.</span></span>  
 
-#### <span data-ttu-id="61139-130">Shell de conteúdo do Chromium no Android</span><span class="sxs-lookup"><span data-stu-id="61139-130">Chromium content shell on Android</span></span>  
+#### <a name="chromium-content-shell-on-android"></a><span data-ttu-id="fa51b-130">Shell de conteúdo do Chromium no Android</span><span class="sxs-lookup"><span data-stu-id="fa51b-130">Chromium content shell on Android</span></span>  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
 
-<span data-ttu-id="61139-131">Para instalar o Shell de conteúdo Chromium para Android, deixe seu emulador em execução e execute o comando a seguir.</span><span class="sxs-lookup"><span data-stu-id="61139-131">To install the Chromium Content Shell for Android, leave your emulator running and run the following command.</span></span>  
+<span data-ttu-id="fa51b-131">Para instalar o Shell de Conteúdo do Chromium para Android, deixe o emulador em execução e execute o seguinte comando.</span><span class="sxs-lookup"><span data-stu-id="fa51b-131">To install the Chromium Content Shell for Android, leave your emulator running and run the following command.</span></span>  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -85,81 +85,81 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-<span data-ttu-id="61139-132">Agora você pode testar seu site com o Shell de conteúdo do Chromium.</span><span class="sxs-lookup"><span data-stu-id="61139-132">Now you are able to test your site with the Chromium Content Shell.</span></span>  
+<span data-ttu-id="fa51b-132">Agora você pode testar seu site com o Shell de Conteúdo Chromium.</span><span class="sxs-lookup"><span data-stu-id="fa51b-132">Now you are able to test your site with the Chromium Content Shell.</span></span>  
 
-#### <span data-ttu-id="61139-133">Firefox no Android</span><span class="sxs-lookup"><span data-stu-id="61139-133">Firefox on Android</span></span>  
+#### <a name="firefox-on-android"></a><span data-ttu-id="fa51b-133">Firefox no Android</span><span class="sxs-lookup"><span data-stu-id="fa51b-133">Firefox on Android</span></span>  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
 
-<span data-ttu-id="61139-134">Semelhante ao Shell de conteúdo Chromium, você pode obter um APK para instalar o Firefox no emulador.</span><span class="sxs-lookup"><span data-stu-id="61139-134">Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.</span></span>  
+<span data-ttu-id="fa51b-134">Semelhante ao Shell de Conteúdo do Chromium, você pode obter um APK para instalar o Firefox no emulador.</span><span class="sxs-lookup"><span data-stu-id="fa51b-134">Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.</span></span>  
 
-<span data-ttu-id="61139-135">[Baixe o arquivo. apk correto][MozillaFirefoxDownload].</span><span class="sxs-lookup"><span data-stu-id="61139-135">[Download the correct .apk file][MozillaFirefoxDownload].</span></span>  
+<span data-ttu-id="fa51b-135">[Baixe o arquivo .apk correto.][MozillaFirefoxDownload]</span><span class="sxs-lookup"><span data-stu-id="fa51b-135">[Download the correct .apk file][MozillaFirefoxDownload].</span></span>  
 
-<span data-ttu-id="61139-136">Para instalar o arquivo em um emulador aberto ou dispositivo Android conectado, execute o comando a seguir.</span><span class="sxs-lookup"><span data-stu-id="61139-136">To install the file onto an open emulator or connected Android device, run the following command.</span></span>  
+<span data-ttu-id="fa51b-136">Para instalar o arquivo em um emulador aberto ou dispositivo Android conectado, execute o seguinte comando.</span><span class="sxs-lookup"><span data-stu-id="fa51b-136">To install the file onto an open emulator or connected Android device, run the following command.</span></span>  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### <span data-ttu-id="61139-137">simulador do iOS</span><span class="sxs-lookup"><span data-stu-id="61139-137">iOS simulator</span></span>  
+### <a name="ios-simulator"></a><span data-ttu-id="fa51b-137">Simulador do iOS</span><span class="sxs-lookup"><span data-stu-id="fa51b-137">iOS simulator</span></span>  
 
-<span data-ttu-id="61139-138">O simulador do iOS para Mac OS X vem com o Xcode, que você [instala a partir da App Store][MacAppStoreXcode].</span><span class="sxs-lookup"><span data-stu-id="61139-138">The iOS simulator for Mac OS X comes with Xcode, which you [install from the App Store][MacAppStoreXcode].</span></span>  
+<span data-ttu-id="fa51b-138">O simulador do iOS para Mac OS X vem com Xcode, que você [instala na App Store][MacAppStoreXcode].</span><span class="sxs-lookup"><span data-stu-id="fa51b-138">The iOS simulator for Mac OS X comes with Xcode, which you [install from the App Store][MacAppStoreXcode].</span></span>  
 
-<span data-ttu-id="61139-139">Quando terminar, aprenda a trabalhar com o simulador por meio da [documentação do desenvolvedor da Apple][AppleSimulatorHelp].</span><span class="sxs-lookup"><span data-stu-id="61139-139">When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].</span></span>  
+<span data-ttu-id="fa51b-139">Quando terminar, saiba como trabalhar com o simulador por meio da [documentação do Desenvolvedor da Apple.][AppleSimulatorHelp]</span><span class="sxs-lookup"><span data-stu-id="fa51b-139">When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="61139-140">Para evitar ter que abrir o Xcode sempre que você quiser usar o simulador do iOS, abra-o, clique com o botão direito do mouse no ícone do simulador do iOS em seu Dock e escolha **manter no Dock**.</span><span class="sxs-lookup"><span data-stu-id="61139-140">To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and choose **Keep in Dock**.</span></span>  <span data-ttu-id="61139-141">Agora, basta clicar nesse ícone sempre que precisar.</span><span class="sxs-lookup"><span data-stu-id="61139-141">Now just click this icon whenever you need it.</span></span>  
+> <span data-ttu-id="fa51b-140">Para evitar ter que abrir o Xcode sempre que quiser usar o Simulador do iOS, abra-o, passe o mouse no ícone do Simulador do iOS em seu dock, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Manter no Encaixe**.</span><span class="sxs-lookup"><span data-stu-id="fa51b-140">To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.</span></span>  <span data-ttu-id="fa51b-141">Agora basta escolher o ícone sempre que precisar dele.</span><span class="sxs-lookup"><span data-stu-id="fa51b-141">Now just choose the icon whenever you need it.</span></span>  
 
-###  <span data-ttu-id="61139-142">Microsoft Edge (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="61139-142">Microsoft Edge (EdgeHTML)</span></span>  
+###  <a name="microsoft-edge-edgehtml"></a><span data-ttu-id="fa51b-142">Microsoft Edge (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="fa51b-142">Microsoft Edge (EdgeHTML)</span></span>  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
-   <span data-ttu-id="61139-144">VM moderna do IE</span><span class="sxs-lookup"><span data-stu-id="61139-144">Modern IE VM</span></span>  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="VM moderna do IE" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   <span data-ttu-id="fa51b-144">VM moderna do IE</span><span class="sxs-lookup"><span data-stu-id="fa51b-144">Modern IE VM</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="61139-145">O Microsoft Edge \ (EdgeHTML \) máquinas virtuais \ (VMs \) permitem que você acesse versões diferentes do EdgeHTML e do IE em seu computador via VirtualBox \ (ou VMWare \).</span><span class="sxs-lookup"><span data-stu-id="61139-145">Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).</span></span>  <span data-ttu-id="61139-146">Escolha uma [máquina virtual na página de download][MicrosoftDeveloperEdgeVms].</span><span class="sxs-lookup"><span data-stu-id="61139-146">Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].</span></span>  
+<span data-ttu-id="fa51b-145">O Microsoft Edge \(EdgeHTML\) Máquinas Virtuais \(VMs\) permitem que você acesse diferentes versões do EdgeHTML e do IE em seu computador por meio de VirtualBox \(ou VMWare\).</span><span class="sxs-lookup"><span data-stu-id="fa51b-145">Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).</span></span>  <span data-ttu-id="fa51b-146">Escolha uma [máquina virtual na página de download.][MicrosoftDeveloperEdgeVms]</span><span class="sxs-lookup"><span data-stu-id="fa51b-146">Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].</span></span>  
 
-## <span data-ttu-id="61139-147">Emuladores e simuladores baseados em nuvem</span><span class="sxs-lookup"><span data-stu-id="61139-147">Cloud-based emulators and simulators</span></span>  
+## <a name="cloud-based-emulators-and-simulators"></a><span data-ttu-id="fa51b-147">Emuladores e simuladores baseados em nuvem</span><span class="sxs-lookup"><span data-stu-id="fa51b-147">Cloud-based emulators and simulators</span></span>  
 
-<span data-ttu-id="61139-148">Se você não conseguir usar os emuladores e não tiver acesso a dispositivos reais, os emuladores baseados em nuvem serão a melhor coisa melhor.</span><span class="sxs-lookup"><span data-stu-id="61139-148">If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.</span></span>  <span data-ttu-id="61139-149">Uma grande vantagem dos emuladores baseados em nuvem em dispositivos reais e emuladores locais é que você pode automatizar testes de unidade para o seu site em diferentes plataformas.</span><span class="sxs-lookup"><span data-stu-id="61139-149">A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.</span></span>  
+<span data-ttu-id="fa51b-148">Se você não for capaz de usar os emuladores e não tiver acesso a dispositivos reais, em seguida, os emuladores baseados em nuvem são a próxima melhor coisa.</span><span class="sxs-lookup"><span data-stu-id="fa51b-148">If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.</span></span>  <span data-ttu-id="fa51b-149">Uma grande vantagem dos emuladores baseados em nuvem em dispositivos reais e emuladores locais é que você é capaz de automatizar testes de unidade para seu site em diferentes plataformas.</span><span class="sxs-lookup"><span data-stu-id="fa51b-149">A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.</span></span>  
 
-*   <span data-ttu-id="61139-150">[BrowserStack (comercial)][|::ref1::|] é a maneira mais fácil de usar para testes manuais.</span><span class="sxs-lookup"><span data-stu-id="61139-150">[BrowserStack (commercial)][|::ref1::|] is the easiest to use for manual testing.</span></span>  <span data-ttu-id="61139-151">Selecione um sistema operacional, selecione a versão do navegador e o tipo de dispositivo, selecione uma URL para navegar e ele gira uma máquina virtual hospedada com a qual você pode interagir.</span><span class="sxs-lookup"><span data-stu-id="61139-151">You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.</span></span>  <span data-ttu-id="61139-152">Você também pode executar vários emuladores na mesma tela, permitindo que você teste a aparência do seu aplicativo em vários dispositivos ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="61139-152">You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.</span></span>  
-*   <span data-ttu-id="61139-153">O [SauceLabs (comercial)][SauceLabs] permite que você execute testes de unidade dentro de um emulador, que podem ser muito úteis para o script de um fluxo por meio de seu site e para observar a gravação de vídeo disso posteriormente em vários dispositivos.</span><span class="sxs-lookup"><span data-stu-id="61139-153">[SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.</span></span>  <span data-ttu-id="61139-154">Você também pode fazer testes manuais com o seu site.</span><span class="sxs-lookup"><span data-stu-id="61139-154">You are also able to do manual testing with your site.</span></span>  
-*   <span data-ttu-id="61139-155">O [dispositivo em qualquer lugar (comercial)][AppExperience] não usa emuladores, mas dispositivos reais que você pode controlar remotamente.</span><span class="sxs-lookup"><span data-stu-id="61139-155">[Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.</span></span>  <span data-ttu-id="61139-156">Isso é muito útil no evento em que você precisa reproduzir um problema em um dispositivo específico e não consegue ver o erro usando qualquer uma das opções nos guias anteriores.</span><span class="sxs-lookup"><span data-stu-id="61139-156">This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.</span></span>  
+*   <span data-ttu-id="fa51b-150">[BrowserStack (comercial)][|::ref1::|] é o mais fácil de usar para testes manuais.</span><span class="sxs-lookup"><span data-stu-id="fa51b-150">[BrowserStack (commercial)][|::ref1::|] is the easiest to use for manual testing.</span></span>  <span data-ttu-id="fa51b-151">Você seleciona um sistema operacional, seleciona a versão do navegador e o tipo de dispositivo, seleciona uma URL para navegar e ela gira uma máquina virtual hospedada com a qual você pode interagir.</span><span class="sxs-lookup"><span data-stu-id="fa51b-151">You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.</span></span>  <span data-ttu-id="fa51b-152">Você também pode executar vários emuladores na mesma tela, permitindo que você teste a aparência do seu aplicativo em vários dispositivos ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="fa51b-152">You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.</span></span>  
+*   <span data-ttu-id="fa51b-153">[O SauceLabs (comercial)][SauceLabs] permite que você execute testes de unidade dentro de um emulador, o que pode ser realmente útil para rotear um fluxo pelo seu site e assistir à gravação em vídeo disso depois em vários dispositivos.</span><span class="sxs-lookup"><span data-stu-id="fa51b-153">[SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.</span></span>  <span data-ttu-id="fa51b-154">Você também pode fazer testes manuais com seu site.</span><span class="sxs-lookup"><span data-stu-id="fa51b-154">You are also able to do manual testing with your site.</span></span>  
+*   <span data-ttu-id="fa51b-155">[Device Anywhere (comercial)][AppExperience] não usa emuladores, mas dispositivos reais que você pode controlar remotamente.</span><span class="sxs-lookup"><span data-stu-id="fa51b-155">[Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.</span></span>  <span data-ttu-id="fa51b-156">Isso é muito útil no caso em que você precisa reproduzir um problema em um dispositivo específico e pode não exibir o bug usando qualquer uma das opções nos guias anteriores.</span><span class="sxs-lookup"><span data-stu-id="fa51b-156">This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.</span></span>  
 
-## <span data-ttu-id="61139-157">Entrar em contato com a equipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="61139-157">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="fa51b-157">Entrar em contato com a equipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fa51b-157">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML)-emulação | Documentos da Microsoft"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulação | Microsoft Docs"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular navegadores, tamanhos de tela e locais de GPS | Documentos da Microsoft"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular navegadores, tamanhos de tela e localizações GPS | Microsoft Docs"  
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Baixar máquinas virtuais"  
 
 [AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Criar e gerenciar dispositivos virtuais | Desenvolvedores Android"  
-[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Baixar o Android Studio e ferramentas SDK | Desenvolvedores Android"  
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Executar aplicativos no emulador Android | Desenvolvedores Android"  
+[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Baixar ferramentas do Android Studio e SDK | Desenvolvedores Android"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Executar aplicativos no | Desenvolvedores Android"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "Experiência do aplicativo"  
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ajuda do simulador-atual | Apple"  
+[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ajuda do Simulador - atual | Apple"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
 [MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode na Mac App Store"  
-[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Modo de design responsivo | MDN"  
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Baixar o navegador Firefox"  
-[SauceLabs]: https://saucelabs.com "Molho Labs"  
+[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Modo de Design Responsivo | MDN"  
+[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Baixar o Navegador firefox"  
+[SauceLabs]: https://saucelabs.com "Laboratórios de Disco"  
 
 > [!NOTE]
-> <span data-ttu-id="61139-171">Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.</span><span class="sxs-lookup"><span data-stu-id="61139-171">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="61139-172">A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) e é criada por [Meggin Kearney][MegginKearney] \ (Tech Writer \) e [Paul Bakaus][PaulBakaus] \ (Open Web Developer defensor The Google | Ferramentas, desempenho, animação, UX \).</span><span class="sxs-lookup"><span data-stu-id="61139-172">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).</span></span>  
+> <span data-ttu-id="fa51b-171">Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fa51b-171">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="fa51b-172">A página original [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) é encontrada aqui e é de autoria de [Meggin Kearney][MegginKearney] \(Tech Writer\) e [Paulo Bakaus][PaulBakaus] \(Open Web Developer Advocate no Google | Ferramentas, Desempenho, Animação, UX\).</span><span class="sxs-lookup"><span data-stu-id="fa51b-172">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).</span></span>  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="61139-174">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="61139-174">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="fa51b-174">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fa51b-174">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

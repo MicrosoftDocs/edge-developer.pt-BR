@@ -1,79 +1,51 @@
 ---
-description: DevTools Protocol Version 0,2 (EdgeHTML) Reference para o domínio do esquema. Fornece informações sobre o esquema de protocolo.
-title: Schema Domain-DevTools Protocol versão 0,2 (EdgeHTML)
+description: Referência do Protocolo DevTools Versão 0.2 (EdgeHTML) para o Domínio de Esquema. Fornece informações sobre o esquema de protocolo.
+title: Domínio do Esquema - DevTools Protocol Versão 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 53038a02844fafc9550a6ac26303620a1a0183f8
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 6844939f452bc96980d6d67d4652adcc7c078c7a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231302"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398144"
 ---
-# <span data-ttu-id="b9366-104">Schema Domain-DevTools Protocol versão 0,2 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="b9366-104">Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)</span></span>  
+# <a name="schema-domain---devtools-protocol-version-02-edgehtml"></a><span data-ttu-id="d3244-104">Domínio do Esquema - DevTools Protocol Versão 0.2 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="d3244-104">Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)</span></span>  
 
-<span data-ttu-id="b9366-105">Fornece informações sobre o esquema de protocolo.</span><span class="sxs-lookup"><span data-stu-id="b9366-105">Provides information about the protocol schema.</span></span>
+<span data-ttu-id="d3244-105">Fornece informações sobre o esquema de protocolo.</span><span class="sxs-lookup"><span data-stu-id="d3244-105">Provides information about the protocol schema.</span></span>  
 
-| | |
-|-|-|
-| [**<span data-ttu-id="b9366-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="b9366-106">Methods</span></span>**](#methods) | [<span data-ttu-id="b9366-107">getdomains</span><span class="sxs-lookup"><span data-stu-id="b9366-107">getDomains</span></span>](#getdomains) |
-| [**<span data-ttu-id="b9366-108">Tipos</span><span class="sxs-lookup"><span data-stu-id="b9366-108">Types</span></span>**](#types) | [<span data-ttu-id="b9366-109">Domínio</span><span class="sxs-lookup"><span data-stu-id="b9366-109">Domain</span></span>](#domain) |
-## <span data-ttu-id="b9366-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="b9366-110">Methods</span></span>
+| <span data-ttu-id="d3244-106">Classificação</span><span class="sxs-lookup"><span data-stu-id="d3244-106">Classification</span></span> | <span data-ttu-id="d3244-107">Membros</span><span class="sxs-lookup"><span data-stu-id="d3244-107">Members</span></span> |  
+|:--- |:--- |  
+| [<span data-ttu-id="d3244-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="d3244-108">Methods</span></span>](#methods) | [<span data-ttu-id="d3244-109">getDomains</span><span class="sxs-lookup"><span data-stu-id="d3244-109">getDomains</span></span>](#getdomains) |  
+| [<span data-ttu-id="d3244-110">Tipos</span><span class="sxs-lookup"><span data-stu-id="d3244-110">Types</span></span>](#types) | [<span data-ttu-id="d3244-111">Objeto Domain</span><span class="sxs-lookup"><span data-stu-id="d3244-111">Domain object</span></span>](#domain) |  
 
-### <span data-ttu-id="b9366-111">getdomains</span><span class="sxs-lookup"><span data-stu-id="b9366-111">getDomains</span></span>
-<span data-ttu-id="b9366-112">Retorna domínios com suporte.</span><span class="sxs-lookup"><span data-stu-id="b9366-112">Returns supported domains.</span></span>
+## <a name="methods"></a><span data-ttu-id="d3244-112">Métodos</span><span class="sxs-lookup"><span data-stu-id="d3244-112">Methods</span></span>  
 
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="b9366-113">Devolver</span><span class="sxs-lookup"><span data-stu-id="b9366-113">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="b9366-114">domínio</span><span class="sxs-lookup"><span data-stu-id="b9366-114">domains</span></span></td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td><span data-ttu-id="b9366-115">Lista de domínios com suporte.</span><span class="sxs-lookup"><span data-stu-id="b9366-115">List of supported domains.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getdomains"></a><span data-ttu-id="d3244-113">getDomains</span><span class="sxs-lookup"><span data-stu-id="d3244-113">getDomains</span></span>  
 
----
+<span data-ttu-id="d3244-114">Retorna domínios com suporte.</span><span class="sxs-lookup"><span data-stu-id="d3244-114">Returns supported domains.</span></span>  
 
-## <span data-ttu-id="b9366-116">Tipos</span><span class="sxs-lookup"><span data-stu-id="b9366-116">Types</span></span>
+| <span data-ttu-id="d3244-115">Retorna</span><span class="sxs-lookup"><span data-stu-id="d3244-115">Returns</span></span> | <span data-ttu-id="d3244-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3244-116">Type</span></span> | <span data-ttu-id="d3244-117">Detalhes</span><span class="sxs-lookup"><span data-stu-id="d3244-117">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="d3244-118">domínios</span><span class="sxs-lookup"><span data-stu-id="d3244-118">domains</span></span> | [<span data-ttu-id="d3244-119">Domínio[]</span><span class="sxs-lookup"><span data-stu-id="d3244-119">Domain[]</span></span>](#domain) | <span data-ttu-id="d3244-120">Lista de domínios com suporte.</span><span class="sxs-lookup"><span data-stu-id="d3244-120">List of supported domains.</span></span> |  
 
-### <a name="domain"></a> <span data-ttu-id="b9366-117">Domínio</span><span class="sxs-lookup"><span data-stu-id="b9366-117">Domain</span></span> `object`
+---  
 
-<span data-ttu-id="b9366-118">Descrição do domínio do protocolo.</span><span class="sxs-lookup"><span data-stu-id="b9366-118">Description of the protocol domain.</span></span>
+## <a name="types"></a><span data-ttu-id="d3244-121">Tipos</span><span class="sxs-lookup"><span data-stu-id="d3244-121">Types</span></span>  
 
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="b9366-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b9366-119">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="b9366-120">name</span><span class="sxs-lookup"><span data-stu-id="b9366-120">name</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="b9366-121">Nome do domínio.</span><span class="sxs-lookup"><span data-stu-id="b9366-121">Domain name.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="b9366-122">version</span><span class="sxs-lookup"><span data-stu-id="b9366-122">version</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="b9366-123">Versão do domínio.</span><span class="sxs-lookup"><span data-stu-id="b9366-123">Domain version.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domain-object"></a><span data-ttu-id="d3244-122">Objeto Domain</span><span class="sxs-lookup"><span data-stu-id="d3244-122">Domain object</span></span>  
 
----
+<a name="domain"></a>  
+
+<span data-ttu-id="d3244-123">Descrição do domínio do protocolo.</span><span class="sxs-lookup"><span data-stu-id="d3244-123">Description of the protocol domain.</span></span>  
+
+| <span data-ttu-id="d3244-124">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d3244-124">Properties</span></span> | <span data-ttu-id="d3244-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3244-125">Type</span></span> | <span data-ttu-id="d3244-126">Detalhes</span><span class="sxs-lookup"><span data-stu-id="d3244-126">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="d3244-127">name</span><span class="sxs-lookup"><span data-stu-id="d3244-127">name</span></span> | `string` | <span data-ttu-id="d3244-128">Nome do domínio.</span><span class="sxs-lookup"><span data-stu-id="d3244-128">Domain name.</span></span> |  
+| <span data-ttu-id="d3244-129">version</span><span class="sxs-lookup"><span data-stu-id="d3244-129">version</span></span> | `string` | <span data-ttu-id="d3244-130">Versão de domínio.</span><span class="sxs-lookup"><span data-stu-id="d3244-130">Domain version.</span></span> |  
+
+---  
