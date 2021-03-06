@@ -1,18 +1,18 @@
 ---
 description: Como ativar o tema escuro no Microsoft Edge DevTools.
-title: Habilitar tema escuro no Microsoft Edge DevTools
+title: Habilitar Tema Escuro no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: dc857a65deef9b62614da79d2648c8b92ac9db07
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125094"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399019"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,51 +28,51 @@ ms.locfileid: "11125094"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Habilitar tema escuro no Microsoft Edge DevTools  
+# <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>Habilitar Tema Escuro no Microsoft Edge DevTools  
 
-Você pode habilitar o tema escuro em [configurações](#set-up-dark-theme-from-settings) ou o [menu de comando](#set-up-dark-theme-from-the-command-menu).  
+Você pode habilitar o tema escuro [em Configurações](#set-up-dark-theme-from-settings) ou no [Menu de Comando](#set-up-dark-theme-from-the-command-menu).  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="O tema escuro" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
    O tema escuro  
 :::image-end:::  
 
-## Configurar tema escuro a partir de configurações  
+## <a name="set-up-dark-theme-from-settings"></a>Configurar o tema escuro de Configurações  
 
-1.  Escolha **Personalizar e controle devtools** \ ( `...` \) e, em seguida, escolha **configurações**.  Você também pode abrir **as configurações** pressionando `F1` .  
+1.  Escolha **Personalizar e controlar DevTools** \( `...` \) > **Configurações**.  Você também pode abrir **Configurações** selecionando `F1` .  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="O tema escuro" lightbox="../media/customize-options-settings.msft.png":::
-       Abrir **configurações**  
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Abra Configurações" lightbox="../media/customize-options-settings.msft.png":::
+       Configurações **abertas**  
     :::image-end:::  
 
-1.  No painel **preferências** , em **aparência**, clique no menu suspenso **tema** e escolha **escuro**.  
+1.  No painel **Preferências,** em **Aparência,** escolha **Tema**  >  **Escuro**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="O tema escuro" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Preferências" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
        **Preferências**  
     :::image-end:::  
 
-## Configurar tema escuro no menu comando  
+## <a name="set-up-dark-theme-from-the-command-menu"></a>Configurar o tema escuro no Menu de Comando  
 
-1.  [Abrir o menu de comandos][DevtoolsCommandMenu].  
-1.  Comece a digitar `dark` , selecione o comando **alternar para tema escuro** e, em seguida, selecione `Enter` para executar o comando.  
+1.  [Abra o Menu de Comando][DevtoolsCommandMenu].  
+1.  Digite `dark` , escolha o comando **Alternar para Tema Escuro** e, em seguida, selecione para executar o `Enter` comando.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="O tema escuro" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="O comando tema escuro" lightbox="../media/customize-command-menu-dark.msft.png":::
        O comando tema escuro  
     :::image-end:::  
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Menu de comando | Documentos da Microsoft"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Menu de comando | Microsoft Docs"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -3,38 +3,38 @@ description: Modo IE e o Microsoft Edge (Chromium) DevTools
 title: Modo Internet Explorer e o DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, ie11, Internet Explorer 11, modo IE
-ms.openlocfilehash: c88da78e073a75a664561aba899ca5c8ada78477
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, ie11, internet explorer 11, modo ie
+ms.openlocfilehash: e65869cd88b449dcde0aec25c77df27f99b78f8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231275"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398599"
 ---
-# Modo Internet Explorer e o DevTools  
+# <a name="internet-explorer-mode-and-the-devtools"></a>Modo Internet Explorer e o DevTools  
 
-Este artigo descreve como o modo \ (IE Mode \) do Internet Explorer integra-se com o DevTools Microsoft Edge \ (Chromium \).  
+Este artigo descreve como o modo do Internet Explorer \(modo IE\) se integra ao Microsoft Edge \(Chromium\) DevTools.  
 
-## Noções básicas sobre o modo IE  
+## <a name="understanding-ie-mode"></a>Noções básicas sobre o modo IE  
 
-O modo IE permite que as empresas especifiquem uma lista de sites da Web que só funcionam no Internet Explorer 11.  Quando você navegar para esses sites no Microsoft Edge \ (Chromium \), uma instância do Internet Explorer 11 será executada e renderizará o site em uma guia.  A funcionalidade permite às empresas gerenciar a compatibilidade com tecnologias que atualmente não são compatíveis com qualquer navegador da Web moderno.  O suporte para as seguintes tecnologias está incluído no modo IE.  
+O modo IE permite que as empresas especifiquem uma lista de sites que funcionam apenas no Internet Explorer 11.  Quando você navega até esses sites no Microsoft Edge \(Chromium\), uma instância do Internet Explorer 11 é executado e renderiza o site em uma guia.  A funcionalidade permite que as empresas gerenciem a compatibilidade com tecnologias que atualmente não são compatíveis com nenhum navegador moderno da Web.  O suporte para as seguintes tecnologias está incluído no modo IE.  
 
 *   Modos de documento do IE  
 *   Controles ActiveX  
 *   outros componentes herdados  
 
-No modo IE, o processo de renderização é baseado no Internet Explorer 11.  O Gerenciador de processos do Microsoft Edge \ (Chromium \) manipula o tempo de vida do processo de renderização.  Ele é restrito ao tempo de vida da guia para um site específico \ (ou app \).  Quando uma guia é renderizada no modo IE, um emblema é exibido na barra de endereços para a guia específica.  
+No modo IE, o processo de renderização é baseado no Internet Explorer 11.  O gerenciador de processos do Microsoft Edge \(Chromium\) lida com o tempo de vida do processo de renderização.  Ele é restrito ao tempo de vida da guia para um site específico \(ou app\).  Quando uma guia é renderiza no modo IE, um selo aparece na barra de endereços da guia específica.  
 
-:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="Selo do modo do IE na barra de endereços" lightbox="../media/ie-mode-badge.msft.png":::
-   Selo do modo do IE na barra de endereços  
+:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="Selo do modo IE na barra de endereços" lightbox="../media/ie-mode-badge.msft.png":::
+   Selo do modo IE na barra de endereços  
 :::image-end:::  
 
-No momento, o modo do IE está disponível no Windows 10 versão 1903 \ (atualização de maio de 2019), mas estará disponível em breve para todas as plataformas do Windows com suporte.  
+O modo IE está atualmente disponível no Windows 10 Versão 1903 \(Atualização de maio de 2019\), mas está chegando em breve a todas as plataformas com suporte do Windows.  
 
-## Iniciando o DevTools em uma guia no modo IE  
+## <a name="launching-the-devtools-on-a-tab-in-ie-mode"></a>Iniciando o DevTools em uma guia no modo IE  
 
 Se você estiver tentando exibir o modo de documento de um site no modo IE, escolha o selo na barra de endereços.  
 
@@ -44,49 +44,49 @@ Se você estiver tentando exibir o modo de documento de um site no modo IE, esco
 
 Se uma guia estiver usando o modo IE, o DevTools não funcionará e as seguintes condições ocorrerão.
 
-*   Se você selecionar `F12` ou selecionar `Ctrl` + `Shift` + `I` uma instância em branco do Microsoft Edge \ (Chromium \) devtools será inicializada exibirá a mensagem a seguir.  
+*   Se você selecionar ou selecionar , uma instância em branco do `F12` `Ctrl` + `Shift` + `I` Microsoft Edge \(Chromium\) DevTools será lançada exibirá a seguinte mensagem.  
     
     ```text
     Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.
     ```  
     
-*   Se você abrir um menu contextual \ (clique com o botão direito do mouse \) e escolher **Exibir fonte**, o bloco de notas será iniciado.  
-*   Se você abrir um menu contextual \ (clique com o botão direito do mouse \), o **elemento inspecionar** não ficará visível.  
+*   Se você abrir um menu contextual \(clique com o botão direito do mouse\) e escolher **Exibir Fonte,** o Bloco de Notas será lançado.  
+*   Se você abrir um menu contextual \(clique com o botão direito do mouse\), o **Elemento Inspect** não será visível.  
 
-O motivo pelo qual um número de ferramentas na DevTools \ (como as ferramentas de **rede** e **desempenho** \) não funciona é o mecanismo de renderização switches do Chromium para o Internet Explorer 11 no modo IE.  Para enviar comentários, navegue até entrar [em contato com a equipe do Microsoft Edge devtools](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+O motivo pelo qual várias ferramentas dentro do DevTools **** \(como as ferramentas de Rede e Desempenho\) não funcionam é que o mecanismo de renderização alterna do Chromium para o Internet Explorer 11 no modo IE. ****  Para fornecer comentários, navegue [até Entrar em contato com a equipe do Microsoft Edge DevTools.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
 
-:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools iniciado no modo IE" lightbox="../media/ie-mode-devtools.msft.png":::
-   DevTools iniciado no modo IE  
+:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools lançado no modo IE" lightbox="../media/ie-mode-devtools.msft.png":::
+   DevTools lançado no modo IE  
 :::image-end:::  
 
-Para testar seu site baseado no Internet Explorer 11 (ou app \) no Internet Explorer 11 e no modo IE, siga as etapas a seguir.  
+Para testar seu site baseado no Internet Explorer 11 \(ou app\) no modo Internet Explorer 11 e IE, execute as etapas a seguir.  
 
 1.  Abra o Internet Explorer 11.  
     *   No Windows 10, localize o atalho para o Internet Explorer 11.
-        1.  **Menu iniciar**  >  **Acessórios**  >  do Windows **Internet Explorer 11**.  
+        1.  **Menu Iniciar**  >  **Acessórios do**  >  Windows **Internet Explorer 11**.  
     *   No Windows 7, localize o Internet Explorer 11.
-        1.  **Menu iniciar**  >  **Internet Explorer 11**.  
+        1.  **Menu Iniciar**  >  **Internet Explorer 11**.  
 1.  No Internet Explorer 11, abra a mesma página da Web.  
-1.  Inicie o Internet Explorer DevTools.  
+1.  Iniciar o Internet Explorer DevTools.  
     *   Selecione `F12` .  
-    *   Passe o mouse em qualquer lugar, abra um menu contextual \ (clique com o botão direito do mouse \) e escolha **inspecionar elemento**.  Para obter mais informações sobre como usar essas ferramentas, navegue até [usando as ferramentas de desenvolvedor F12][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
+    *   Passe o mouse em qualquer lugar, abra um menu contextual \(clique com o botão direito do mouse\) e escolha **Inspecionar elemento**.  Para obter mais informações sobre como usar essas ferramentas, navegue até [Using the F12 developer tools][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
-## Depuração remota e modo IE  
+## <a name="remote-debugging-and-ie-mode"></a>Modo de depuração remota e IE  
 
-Inicie o Microsoft Edge \ (Chromium \) com a depuração remota ativada na interface de linha de comando.  O Visual Studio, o código do Visual Studio e outras ferramentas de desenvolvimento normalmente executam um comando para iniciar o Microsoft Edge.  O comando a seguir inicia o Microsoft Edge com a porta de depuração remota definida como `9222` .  
+Iniciar o Microsoft Edge \(Chromium\) com a depuração remota acionda a partir da interface de linha de comando.  O Microsoft Visual Studio, o Microsoft Visual Studio Code e outras ferramentas de desenvolvimento normalmente executarão um comando para iniciar o Microsoft Edge.  O comando a seguir inicia o Microsoft Edge com a porta de depuração remota definida como `9222` .  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-Depois de iniciar o Microsoft Edge \ (Chromium \) usando um argumento de linha de comando, o modo IE não está disponível.  Você ainda pode navegar para os sites \ (ou aplicativos \) que, de outra forma, seriam exibidos no modo IE.  O conteúdo do site \ (ou app \) é renderizado usando Chromium, não o Internet Explorer 11.  Espere que as partes das páginas da Web que dependem de IE11, como controles ActiveX, não sejam renderizadas corretamente.  O selo do modo do IE não aparece na barra de endereços.  
+Depois de iniciar o Microsoft Edge \(Chromium\) usando um argumento de linha de comando, o modo IE fica indisponível.  Você ainda pode navegar para sites \(ou aplicativos\) que são exibidos de outra forma no modo IE.  O conteúdo do site \(ou app\) é renderiza usando o Chromium, não o Internet Explorer 11.  Espere que as partes das páginas da Web que dependem do IE11, como controles ActiveX, não renderizar corretamente.  O selo do modo IE não aparece na barra de endereços.  
 
-O modo IE permanecerá indisponível até você fechar completamente e reiniciar o Microsoft Edge \ (Chromium \).  
+O modo IE permanece indisponível até que você feche completamente e reinicie o Microsoft Edge \(Chromium\).  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Usar as ferramentas de desenvolvedor F12 | Documentos da Microsoft"  
+[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Usando as ferramentas de desenvolvedor F12 | Microsoft Docs"  

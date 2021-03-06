@@ -1,18 +1,18 @@
 ---
-description: O modo de eventos de linha do tempo exibe todos os eventos disparados ao criar uma gravação.  Use a referência de evento Timeline para saber mais sobre cada tipo de evento de linha do tempo.
-title: Referência de Evento de Linha do Tempo
+description: O modo de eventos de linha do tempo exibe todos os eventos disparados durante a gravação.  Use a referência de evento da linha do tempo para saber mais sobre cada tipo de evento de linha do tempo.
+title: Referência do evento Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 989d4d84345fedc1c5aef2cb8d893db3c0e1634b
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 2a166c9eebc980682fa872e5ee8d213f2058b384
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124898"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398662"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -28,140 +28,140 @@ ms.locfileid: "11124898"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Referência de Evento de Linha do Tempo  
+# <a name="timeline-event-reference"></a>Referência do evento Timeline  
 
-O modo de eventos de linha do tempo exibe todos os eventos disparados ao criar uma gravação.  Use a referência de evento Timeline para saber mais sobre cada tipo de evento de linha do tempo.  
+O modo de eventos de linha do tempo exibe todos os eventos disparados durante a gravação.  Use a referência de evento da linha do tempo para saber mais sobre cada tipo de evento de linha do tempo.  
 
-## Propriedades de eventos comuns da linha do tempo  
+## <a name="common-timeline-event-properties"></a>Propriedades comuns de eventos de linha do tempo  
 
-Alguns detalhes estão presentes em eventos de todos os tipos, enquanto alguns só se aplicam a determinados tipos de eventos.  Esta seção lista as propriedades comuns a diferentes tipos de eventos.  As propriedades específicas para determinados tipos de eventos são listadas nas referências para os tipos de eventos que se seguem.  
+Certos detalhes estão presentes em eventos de todos os tipos, enquanto alguns se aplicam apenas a determinados tipos de evento.  Esta seção lista propriedades comuns a tipos de eventos diferentes.  Propriedades específicas de determinados tipos de evento são listadas nas referências para os tipos de evento a seguir.  
 
-| Propriedade | Quando é exibido |  
+| Propriedade | Quando é mostrado |  
 |:--- |:--- |  
-| Tempo agregado | Para eventos com **eventos aninhados**, o tempo usado por cada categoria de eventos. |  
-| Pilha de chamadas | Para eventos com **eventos filho**, o tempo usado por cada categoria de eventos. |  
-| Tempo de CPU | Quanto tempo da CPU o evento registrado levou. |  
+| Tempo agregado | Para eventos com **eventos aninhados**, o tempo de cada categoria de eventos. |  
+| Pilha de chamada | Para eventos com **eventos filho**, o tempo de cada categoria de eventos. |  
+| Hora da CPU | Quanto tempo de CPU o evento gravado levou. |  
 | Detalhes | Outros detalhes sobre o evento. |  
-| Duration \ (no carimbo de data/hora \) | Quanto tempo levava o evento com todos os seus filhos a concluir; carimbo de data/hora é o horário em que o evento ocorreu em relação ao início da gravação. |  
-| Tempo de autoatendimento | Por quanto tempo o evento demorou sem qualquer um de seus filhos. |  
-| Tamanho de heap usado | A quantidade de memória que está sendo usada pelo aplicativo quando o evento foi gravado, e a alteração de \ (+/-\) do Delta é usada em tamanho de heap usado desde a última amostragem. |  
+| Duração \(at time-stamp\) | Quanto tempo levou para concluir o evento com todos os seus filhos; timestamp é o momento em que o evento ocorreu, em relação ao início da gravação. |  
+| Auto-tempo | Quanto tempo o evento demorou sem nenhum de seus filhos. |  
+| Tamanho da pilha usado | Quantidade de memória sendo usada pelo aplicativo quando o evento foi gravado e a alteração delta \(+/-\) no tamanho de pilha usado desde a última amostragem. |  
 
 <!--todo: add nested and child events (timelinetool) section when available -->  
 
-## Carregando eventos  
+## <a name="loading-events"></a>Carregando eventos  
 
-Esta seção lista os eventos que pertencem à categoria de carregamento e suas propriedades.  
+Esta seção lista eventos que pertencem à categoria Loading e suas propriedades.  
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| Analisar HTML |  O Microsoft Edge executou o algoritmo de análise HTML. |  
-| Concluir o carregamento |  Uma solicitação de rede foi concluída. |  
-| Receber dados |  Os dados de uma solicitação foram recebidos.  Há um ou mais eventos de recebimento de dados. |  
-| Receber resposta |  A resposta HTTP inicial de uma solicitação. |  
-| Enviar solicitação |  Uma solicitação de rede foi enviada. |  
+| HTML de análise |  O Microsoft Edge correu o algoritmo de análise HTML. |  
+| Concluir o carregamento |  Uma solicitação de rede concluída. |  
+| Receber Dados |  Os dados de uma solicitação foram recebidos.  Há um ou mais eventos De recebimento de dados. |  
+| Receber Resposta |  A resposta HTTP inicial de uma solicitação. |  
+| Enviar Solicitação |  Uma solicitação de rede foi enviada. |  
 
-### Carregando Propriedades do evento  
+### <a name="loading-event-properties"></a>Carregando propriedades de evento  
 
 | Propriedade | Descrição |  
 |:--- |:--- |  
 | Recurso | A URL do recurso solicitado. |  
-| Visualização | Visualização do recurso solicitado \ (apenas imagens \). |  
-| Método de solicitação | Método HTTP usado para a solicitação \ ( `GET` ou `POST` , por exemplo, \). |  
-| Código de status | Código de resposta HTTP. |  
+| Visualização | Visualização do recurso solicitado \(somente imagens\). |  
+| Método Request | Método HTTP usado para a solicitação \( `GET` ou `POST` , por exemplo\). |  
+| Código de Status | Código de resposta HTTP. |  
 | Tipo MIME | Tipo MIME do recurso solicitado. |  
 | Comprimento de dados codificados | Comprimento do recurso solicitado em bytes. |  
 
-## Eventos de script  
+## <a name="scripting-events"></a>Eventos de script  
 
-Esta seção lista os eventos que pertencem à categoria de script e suas propriedades.  
+Esta seção lista eventos que pertencem à categoria Scripting e suas propriedades.  
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| Quadro de animação acionado | Um quadro de animação programado foi acionado, e seu manipulador de retorno de chamada foi invocado. |  
-| Cancelar quadro de animação |  Um quadro de animação agendado foi cancelado. |  
-| Evento GC |  Ocorreu uma coleta de lixo. |  
-| DOMContentLoaded |  O [evento DOMContentLoaded][MDNWindowDOMContentLoadedEvent] foi acionado pelo navegador.  Esse evento é acionado quando todo o conteúdo DOM da página é carregado e analisado. |  
-| Avaliar o script | Um script foi avaliado. |  
-| Evento | Um evento JavaScript \ (por exemplo, `mousedown` , ou `key` \). |  
-| Chamada de função | Uma chamada de função JavaScript de nível superior foi feita \ (só aparece quando o navegador entra no mecanismo JavaScript \). |  
-| Temporizador de instalação | Um temporizador foi criado com [setInterval ()][MDNWindowOrWorkerGlobalScopeSetInterval] ou [setTimeout ()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
+| Quadro de animação disparado | Um quadro de animação agendado disparado e seu manipulador de retorno de chamada invocado. |  
+| Cancelar Quadro de Animação |  Um quadro de animação agendado foi cancelado. |  
+| Evento GC |  Coleta de lixo ocorreu. |  
+| DOMContentLoaded |  O [evento DOMContentLoaded][MDNWindowDOMContentLoadedEvent] foi disparado pelo navegador.  Esse evento é acionado quando todo o conteúdo DOM da página é carregado e analisado. |  
+| Avaliar Script | Um script foi avaliado. |  
+| Evento | Um evento JavaScript \(por exemplo, `mousedown` , ou `key` \). |  
+| Chamada de função | Uma chamada de função JavaScript de nível superior foi feita \(somente aparece quando o navegador entra no mecanismo JavaScript\). |  
+| Instalar Timer | Um timer foi criado com [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] ou [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
 | Quadro de animação de solicitação | Uma `requestAnimationFrame()` chamada agendou um novo quadro. |  
-| Remover temporizador | Um temporizador criado anteriormente foi limpo. |  
-| Hora |  Um script chamado [console. time ()][ConsoleApiTime]. |  
-| Término do tempo | Um script chamado [console. timeEnd ()][ConsoleApiTimeEnd]. |  
-| Temporizador acionado | Um temporizador foi acionado que foi agendado com `setInterval()` ou `setTimeout()` . |  
-| Alteração de estado pronto para XHR | O estado pronto de um XMLHttpRequest alterado. |  
-| Carga XHR | `XMLHTTPRequest`Conclusão do carregamento. |  
+| Remover Timer | Um temporizador criado anteriormente foi limpo. |  
+| Hora |  Um script chamado [console.time()][ConsoleApiTime]. |  
+| Fim do Tempo | Um script chamado [console.timeEnd()][ConsoleApiTimeEnd]. |  
+| Timer acionado | Um timer disparado que foi agendado `setInterval()` com ou `setTimeout()` . |  
+| Alteração de estado pronto XHR | O estado pronto de um XMLHTTPRequest foi alterado. |  
+| Carga XHR | Um `XMLHTTPRequest` carregamento concluído. |  
 
-### Propriedades de evento de script  
+### <a name="scripting-event-properties"></a>Propriedades do evento Scripting  
 
 | Propriedade | Descrição |  
 |:--- |:--- |  
-| ID do temporizador | A ID do temporizador. |  
-| Tempo limite | O tempo limite especificado pelo temporizador. |  
-| Repete | Booliano que especifica se o cronômetro se repete. |  
+| Timer ID | A ID do timer. |  
+| Tempo limite | O tempo de tempo especificado pelo temporizador. |  
+| Repetições | Boolean que especifica se o temporizador se repete. |  
 | Chamada de função | Uma função que foi invocada. |  
 
-## Eventos de renderização  
+## <a name="rendering-events"></a>Eventos de renderização  
 
-Esta seção lista os eventos que pertencem à categoria de renderização e suas propriedades.  
+Esta seção lista eventos que pertencem à categoria Rendering e suas propriedades.  
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| Layout Invalidate | O layout da página foi invalidado por uma alteração DOM. |  
+| Layout inválido | O layout da página foi invalidado por uma alteração dom. |  
 | Layout | Um layout de página foi concluído. |  
-| Recalcular estilo | Estilos de elemento recalculados do Microsoft Edge. |  
-| Rolagem | O conteúdo do modo de exibição aninhado foi rolado. |  
+| Estilo recalcular | Estilos de elemento recalculados do Microsoft Edge. |  
+| Rolagem | O conteúdo do exibição aninhado foi rolado. |  
 
-### Renderizando Propriedades de eventos  
+### <a name="rendering-event-properties"></a>Propriedades de evento de renderização  
 
 | Propriedade | Descrição |  
 |:--- |:--- |  
-| Layout invalidado | Para registros de layout, o rastreamento de pilha do código que fez com que o layout fosse invalidado. |  
-| Nós que precisam de layout | Para registros de layout, o número de nós que foram marcados como necessidade de layout antes do reinício do layout.  Esses nós normalmente são aqueles que foram invalidados pelo código do desenvolvedor, mais o caminho para a vertical para refazer o layout da raiz. |  
-| Tamanho da árvore de layout | Para registros de layout, o número total de nós sob a raiz do relayout \ (o nó que o Microsoft Edge inicia o relayout \). |  
-| Escopo de layout | Os valores possíveis são `Partial` \ (o limite de novo layout é uma parte do dom \) ou `Whole document` . |  
-| Elementos afetados | Para recalcular registros de estilo, o número de elementos afetados por um recálculo de estilo. |  
-| Estilos invalidados | Para recalcular registros de estilo, fornece o rastreamento de pilha do código que causou a invalidação de estilo. |  
+| Layout invalidado | Para registros de Layout, o rastreamento de pilha do código que fez com que o layout fosse invalidado. |  
+| Nós que precisam de layout | Para registros de Layout, o número de nós que foram marcados como layout necessário antes do retransmissão ser iniciado.  Esses são normalmente os nós que foram invalidados pelo código do desenvolvedor, além de um caminho para cima para raiz de retransmissão. |  
+| Tamanho da árvore de layout | Para registros de Layout, o número total de nós sob a raiz de retransmissão \(o nó que o Microsoft Edge inicia o retransmissão\). |  
+| Escopo de layout | Os valores `Partial` possíveis são \(o limite de layout de novo é uma parte do DOM\) ou `Whole document` . |  
+| Elementos afetados | Para registros de estilo recalculado, o número de elementos afetados por um recálculo de estilo. |  
+| Estilos invalidados | Para registros de estilo recalculado, fornece o rastreamento de pilha do código que causou a invalidação do estilo. |  
 
-## Eventos de pintura  
+## <a name="painting-events"></a>Eventos de pintura  
 
-Esta seção lista os eventos que pertencem à categoria de pintura e suas propriedades.  
+Esta seção lista eventos que pertencem à categoria Painting e suas propriedades.  
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| Camadas compostas | As camadas da imagem compostas para o mecanismo de renderização do Microsoft Edge. |  
-| Decodificação de imagem | Um recurso de imagem foi decodificado. |  
-| Redimensionamento de imagens | Uma imagem foi redimensionada a partir de suas dimensões nativas. |  
-| Paint | Camadas compostas foram pintadas para uma região da exibição.  Passar o mouse sobre um registro de pintura realça a região do vídeo que foi atualizado. |  
+| Camadas compostas | As camadas de imagem compostas para o mecanismo de renderização do Microsoft Edge. |  
+| Decodificar imagem | Um recurso de imagem foi decodificado. |  
+| Resize de imagem | Uma imagem foi resized de suas dimensões nativas. |  
+| Paint | Camadas compostas foram pintadas para uma região da exibição.  Passar o mouse sobre um registro Paint realça a região da exibição que foi atualizada. |  
 
-### Propriedades de evento de pintura  
+### <a name="painting-event-properties"></a>Propriedades do evento Painting  
 
 | Propriedade | Descrição |  
 |:--- |:--- |  
-| Location | Para eventos de pintura, as coordenadas x e y do retângulo de pintura. |  
-| Dimension | Para eventos de pintura, a altura e a largura da região pintada. |  
+| Location | Para eventos Paint, as coordenadas x e y do retângulo de tinta. |  
+| Dimensões | Para eventos Paint, a altura e a largura da região pintada. |  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "tempo-referência da API do console"  
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd-referência de API do console"  
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Referência da API de Console"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Referência da API de Console"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Janela: evento DOMContentLoaded | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope. setInterval () | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope. setTimeout () | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) e é criada por [Meggin Kearney][MegginKearney] \ (Tech Writer \) e o [Flavio][FlavioCopes] se encontra \ (desenvolvedor de pilha completa \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) e é de autoria de [Meggin Kearney][MegginKearney] \(Tech Writer\) e [Flávio Copes][FlavioCopes] \(Desenvolvedor de Pilha Completa\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

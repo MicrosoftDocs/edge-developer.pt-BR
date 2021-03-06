@@ -1,93 +1,102 @@
 ---
-description: Com as ferramentas de desenvolvedor F12, saiba como depurar um script de fundo de extensão, scripts de conteúdo e páginas de extensão.
-title: Extensões-depuração
+description: Com as Ferramentas de Desenvolvedor F12, saiba como depurar o script em segundo plano, scripts de conteúdo e páginas de extensão de uma extensão.
+title: Depuração | Extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desenvolvimento da Web, HTML, JavaScript, desenvolvedor, depuração, depuração
+keywords: edge, desenvolvimento da Web, html, javascript, desenvolvedor, depuração, depuração
 ms.custom: seodec18
-ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 17da1a2badd99dd57bb8b1e3de063fe045b34333
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: a23c7558080cca7671cdfc9790705a8d8c9ed705
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231864"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399362"
 ---
-# Depurar extensões  
+# <a name="debugging-extensions"></a>Depurar extensões  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Você pode depurar as extensões no Microsoft Edge usando as ferramentas de desenvolvedor F12.
+Você pode depurar suas extensões no Microsoft Edge usando as Ferramentas de Desenvolvedor F12.  
 
-O vídeo a seguir passa por uma extensão de depuração do Microsoft Edge, acompanhando cada cenário de depuração e corrigindo-o ao longo do caminho. Para obter mais informações, consulte as instruções passo a passo abaixo.
+O vídeo a seguir passa por uma extensão de bugs do Microsoft Edge, acompanhando cada cenário de depuração e corrigindo-o ao longo do caminho.  Confira as instruções passo a passo abaixo para obter mais informações.  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
-
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]  
 
 > [!NOTE]
-> Para aproveitar a depuração de extensão com F12, você deve primeiro ativar os recursos de desenvolvedor em About: flags. Consulte [adicionando e removendo extensões](./adding-and-removing-extensions.md) para obter detalhes sobre como fazer isso.
+> Para aproveitar a depuração de extensão com F12, primeiro você deve ativar os recursos do desenvolvedor em about:flags.  Consulte [Adicionando e removendo extensões](./adding-and-removing-extensions.md) para obter detalhes sobre como fazer isso.  
 
+## <a name="background-script-debugging"></a>Depuração de script em segundo plano  
 
-## Depuração de script em segundo plano
-Para iniciar a depuração do script de tela de fundo de sua extensão:
+Para começar a depurar o script em segundo plano da extensão:  
 
-1. Clique em **mais (...)** seguido de **extensões** para ir para o painel extensão.  
- ![botão mais](./../media/morebutton.png)
-2. Clique na extensão que você deseja depurar.
-3. Clique no link da **página de plano de fundo** para exibir F12 para o processo em segundo plano.  
- ![exibição de extensão selecionada de opções com o link inspecionar](./../media/debug-inspect.png)
-4. Selecione a guia **depurador** em F12.
-5. Navegue até o script de plano de fundo da extensão e selecione-o.
-6. Coloque pontos de interrupção para depuração clicando à esquerda do número de linha do código-fonte.  
- ![console F12 mostrando o script de fundo com pontos de interrupção](./../media/debug-f12-background.png)
-7. Selecionar a guia **console** e executar o comando " `location.reload()` ". Isso reexecutará o script em segundo plano, permitindo que você percorra o código.  
- ![console com local. recarregar inserido](./../media/debug-f12-background-console.png)
+1.  Clique em **Mais (...)** seguido de **Extensões** para entrar no painel de extensão.  
+    
+    ![botão mais](../media/morebutton.png)  
+    
+1.  Clique na extensão que você deseja depurar.  
+1.  Clique no link **Página em segundo** plano para trazer o F12 para o processo em segundo plano.  
+    
+    ![exibição de extensão selecionada de opções com link de inspeção](../media/debug-inspect.png)  
+    
+1.  Selecione a **guia Depurador** no F12.  
+1.  Navegue até e selecione o script em segundo plano da extensão.  
+1.  Coloque pontos de interrupção para depuração clicando à esquerda do número da linha de código-fonte.  
+    
+    ![console f12 mostrando script em segundo plano com pontos de quebra](../media/debug-f12-background.png)  
+    
+1.  Selecione a **guia Console** e execute o `location.reload()` comando.  Isso executará o script em segundo plano, permitindo que você execute o código.  
+    
+    ![console com location.reload inserido](../media/debug-f12-background-console.png)  
+    
+## <a name="content-script-debugging"></a>Depuração de script de conteúdo  
 
+Para começar a depurar o script de conteúdo da extensão:  
 
-## Depuração de script de conteúdo
-Para iniciar a depuração do script de conteúdo de sua extensão:
-
-1. Inicie o F12 navegando até o botão **mais (...)** e selecionando **"ferramentas de desenvolvedor F12"** ou pressionando F12 no teclado.
-2. Navegue até o script de conteúdo da extensão e selecione-o. Scripts de conteúdo para extensões em execução no momento serão representados por uma pasta diferente para cada extensão.
-
+1.  Iniciar F12 navegando até o botão **Mais (...)** e selecionando Ferramentas de Desenvolvedor **F12** ou pressionando `F12` o teclado.  
+1.  Navegue até e selecione o script de conteúdo da extensão.  Scripts de conteúdo para extensões em execução serão representados por uma pasta diferente para cada extensão.  
+    
     > [!NOTE]
-    > Somente scripts de conteúdo em execução aparecerão.
+    > Somente os scripts de conteúdo em execução serão exibidos.  
+    
+1.  Coloque pontos de interrupção para depuração clicando à esquerda do número da linha de código-fonte.  
+    
+    ![f12 com script de conteúdo sendo depurado](../media/debug-content-f12.png)  
+    
+1.  Atualize a guia do navegador para começar a fazer a revisão do código.  
+    
+## <a name="extension-page-debugging"></a>Depuração de página de extensão  
 
-3. Coloque pontos de interrupção para depuração clicando à esquerda do número de linha do código-fonte.  
- ![F12 com script de conteúdo sendo depurado](./../media/debug-content-f12.png)
-4. Atualize a guia do navegador para começar a percorrer o código.
+Há dois métodos que podem ser usados para acessar o código-fonte da página de extensão para depuração.  Um método se aplica a uma variedade de páginas enquanto o outro só funciona para páginas pop-up.  
 
+### <a name="debugging-any-extension-page"></a>Depurando qualquer página de extensão  
 
+O método a seguir funciona para todas as páginas de extensão, como a página de opções e pop-ups:  
 
+1.  Clique com o botão direito do mouse no plano de fundo da página.  
+1.  Selecione **Exibir fonte**.  
+    
+    ![Abrir depuração pop-up com f12](../media/debug-popup-select.png)  
+    
+1.  Quando f12 é aberto, coloque pontos de interrupção no arquivo que você deseja depurar.  
+    
+    ![depuração pop-up com f12](../media/debug-popup-f12.png)  
+    
+1.  Selecione a **guia Console** e execute o comando `location.reload()` .  Isso executará o script de página de novo, permitindo que você execute seu código.  
+    
+    ![console com location.reload inserido](../media/debug-f12-background-console.png)  
+    
+### <a name="debugging-a-popup-extension-page"></a>Depurando uma página de extensão pop-up  
 
-## Depuração da página de extensão
+Embora o método de depuração de páginas de extensão também se aplique a páginas de extensão pop-up, as etapas a seguir definem outra maneira de depurar seu pop-up:  
 
-Há dois métodos que podem ser usados para acessar o código-fonte da página de extensão para a depuração. Um método aplica-se a uma variedade de páginas enquanto a outra só funciona para páginas pop-up.
-
-### Depuração de qualquer página de extensão
-O método a seguir funciona para todas as páginas de extensão, como a página opções e pop-ups:
-
-
-1. Clique com o botão direito do mouse no plano de fundo da página.
-2. Selecione **"Exibir fonte"**.
-
-   ![depuração popup com F12-Select](./../media/debug-popup-select.png)
-
-3. Quando o F12 abrir, coloque os pontos de interrupção no arquivo que você deseja depurar.
-
-   ![depuração pop-up com F12](./../media/debug-popup-f12.png)
-4. Selecione a guia **console** e execute o comando `location.reload()` . Isso reexecutará o script de página, permitindo que você percorra o código.  
-
-   ![console com local. recarregar inserido](./../media/debug-f12-background-console.png)
-
-### Depurando uma página de extensão pop-up
-Embora o método de depuração de páginas de extensão também se aplique às páginas de extensão pop-up, as etapas a seguir descrevem outra maneira de depurar o Popup:
-
-1. Clique com o botão direito do mouse no ícone da extensão.
-2. Selecione **"inspecionar pop-up"**.
-
-   ![inspecionar depuração de pop-up](./../media/debug-popup-inspect.png)
-3. Siga as etapas 3 e 4 acima para colocar pontos de interrupção e recarregar o pop-up.
+1.  Clique com o botão direito do mouse no ícone da extensão.  
+1.  Selecione **Inspecionar pop-up**.  
+    
+    ![inspeção de depuração pop-up](../media/debug-popup-inspect.png)  
+    
+1.  Siga as etapas 3 e 4 acima para colocar pontos de interrupção e recarregar o pop-up.  
+    

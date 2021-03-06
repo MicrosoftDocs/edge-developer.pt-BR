@@ -1,18 +1,18 @@
 ---
-description: Use o painel de segurança para garantir que uma página seja totalmente protegida por HTTPS.
-title: Entender problemas de segurança com o Microsoft Edge DevTools
+description: Use o Painel de Segurança para garantir que uma página seja totalmente protegida por HTTPS.
+title: Compreender problemas de segurança com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 5bef22eae8deacc81e31cf6d1c7791e016541346
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230611"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397773"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11230611"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Entender problemas de segurança com o Microsoft Edge DevTools  
+# <a name="understand-security-issues-with-microsoft-edge-devtools"></a>Compreender problemas de segurança com o Microsoft Edge DevTools  
 
   
 
@@ -36,87 +36,87 @@ ms.locfileid: "11230611"
 
 <!--todo: add section when why-https is available -->  
 
-## Abrir o painel de segurança  
+## <a name="open-the-security-panel"></a>Abra o painel Segurança  
 
-O painel de **segurança** é o local principal no devtools para inspecionar a segurança de uma página.  
+O **painel** Segurança é o principal local no DevTools para inspecionar a segurança de uma página.  
 
-1.  [Abra o devtools][DevToolsOpen].  
-1.  Escolha a guia **segurança** para abrir o painel de **segurança** .  
+1.  [Abra DevTools][DevToolsOpen].  
+1.  Escolha a **guia Segurança** para abrir a **ferramenta Segurança.**  
     
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="O painel de segurança" lightbox="../media/security-security-overview-secure.msft.png":::
-       O painel de **segurança**  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="O painel Segurança" lightbox="../media/security-security-overview-secure.msft.png":::
+       O **painel Segurança**  
     :::image-end:::  
     
-## Problemas comuns  
+## <a name="common-problems"></a>Problemas comuns  
 
-### Origens principais não seguras  
+### <a name="non-secure-main-origins"></a>Origens principais não seguras  
 
-Quando a origem principal de uma página não é segura, a **visão geral da segurança** diz que **esta página não é segura**.  
+Quando a origem principal de uma página não é segura, a Visão Geral de Segurança **diz** que esta página não **é segura**.  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Uma página não segura" lightbox="../media/security-security-overview-non-secure.msft.png":::
    Uma página não segura  
 :::image-end:::  
 
-Esse problema ocorre quando a URL que você visitou era solicitada por HTTP.  Para torná-lo seguro, você precisa solicitá-lo por HTTPS.  Por exemplo, se você olhar para a URL na barra de endereços, provavelmente ela terá uma aparência semelhante `http://example.com` .  Para torná-lo seguro, a URL deve estar `https://example.com` .  
+Esse problema ocorre quando a URL que você visitou foi solicitada por HTTP.  Para torná-lo seguro, você precisa solicitá-lo por HTTPS.  Por exemplo, se você olhar para a URL na barra de endereços, provavelmente será semelhante a `http://example.com` .  Para torná-la segura, a URL deve ser `https://example.com` .  
 
-Se você já configurou o HTTPS em seu servidor, tudo o que precisa fazer para corrigir esse problema é configurar seu servidor para redirecionar todas as solicitações HTTP para HTTPS.  
+Se você já configurou HTTPS em seu servidor, tudo o que você precisa fazer para corrigir esse problema é configurar seu servidor para redirecionar todas as solicitações HTTP para HTTPS.  
 
-Se você não configurou HTTPS em seu servidor, [vamos criptografar][LetsEncrypt] uma maneira gratuita e fácil de iniciar o processo.  Ou você pode considerar hospedar seu site em uma CDN.  A maioria dos principais sites de host do CDNs em HTTPS, por padrão, agora.  
+Se você não tiver definido HTTPS em seu servidor, [Vamos][LetsEncrypt] Criptografar fornece uma maneira gratuita e relativamente fácil de iniciar o processo.  Ou você pode considerar hospedar seu site em uma CDN.  A maioria dos principais sites de host de CDNs em HTTPS por padrão agora.  
 
 > [!TIP]
-> A dica [use HTTPS][WebhintUseHttps] na [webhint][Webhint] pode ajudar a automatizar o processo de verificar se todas as solicitações HTTP são direcionadas para https.  
+> A [dica Usar HTTPS][WebhintUseHttps] na [webhint][Webhint] pode ajudar a automatizar o processo de garantir que todas as solicitações HTTP sejam direcionadas para HTTPS.  
 
-### Conteúdo misto  
+### <a name="mixed-content"></a>Conteúdo misto  
 
-**Conteúdo misto** significa que a origem principal de uma página é segura, mas a página solicitou recursos de origens não seguras.  Páginas de conteúdo misto são apenas parcialmente protegidas porque o conteúdo HTTP está acessível a farejadores e vulneráveis a ataques de Man-in-the-Middle.  
+**O conteúdo** misto significa que a origem principal de uma página é segura, mas a página solicitou recursos de origens não seguras.  Páginas de conteúdo misto só são parcialmente protegidas porque o conteúdo HTTP é acessível a farejadores e vulnerável a ataques de homem no meio.  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Conteúdo misto" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Conteúdo misto  
 :::image-end:::  
 
-Na figura anterior, escolha **exibir uma solicitação no painel de rede** para abrir o painel de **rede** e aplicar o `mixed-content:displayed` filtro para que o **log de rede** mostre apenas os recursos não seguros.  
+Na figura anterior, escolha **Exibir uma** solicitação **** no painel Rede para abrir a ferramenta Rede e aplicar o filtro para que o Log de Rede mostre apenas recursos `mixed-content:displayed` não seguros. ****  
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Recursos mistos no log de rede" lightbox="../media/security-network-filter.msft.png":::
-   Recursos mistos no **log de rede**  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Recursos mistos no Log de Rede" lightbox="../media/security-network-filter.msft.png":::
+   Recursos mistos no **Log de Rede**  
 :::image-end:::  
 
-## Exibir detalhes  
+## <a name="view-details"></a>Exibir detalhes  
 
-### Exibir certificado de origem principal  
+### <a name="view-main-origin-certificate"></a>Exibir certificado de origem principal  
 
-Na **visão geral de segurança**, escolha **Exibir certificado** para inspecionar rapidamente o certificado para a origem principal.  
+Na Visão **Geral de**Segurança, escolha **Exibir certificado** para inspecionar rapidamente o certificado para a origem principal.  
 
 :::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Um certificado de origem principal" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    Um certificado de origem principal  
 :::image-end:::  
 
-### Exibir detalhes da origem  
+### <a name="view-origin-details"></a>Exibir detalhes de origem  
 
-Escolha uma das entradas na barra de navegação à esquerda para exibir os detalhes da origem.  Na página detalhes, você pode exibir informações de conexão e certificado.  As informações sobre transparência do certificado também são mostradas quando disponíveis.  
+Escolha uma das entradas na nav à esquerda para exibir os detalhes da origem.  Na página de detalhes, você pode exibir informações de conexão e certificado.  As informações de transparência do certificado também são mostradas quando disponíveis.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Detalhes da origem principal" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
-   Detalhes da origem principal  
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Detalhes de origem principal" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+   Detalhes de origem principal  
 :::image-end:::  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
-[DevToolsOpen]: ../open/index.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
 
-[LetsEncrypt]: https://letsencrypt.org "Vamos criptografar certificados SSL/TLS grátis"  
+[LetsEncrypt]: https://letsencrypt.org "Vamos criptografar - certificados SSL/TLS gratuitos"  
 
 [Webhint]: https://webhint.io "webhint"  
-[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Usar HTTPS | documentação do webhint"  
+[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Use HTTPS | documentação webhint"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/security/index) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/security/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

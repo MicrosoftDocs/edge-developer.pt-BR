@@ -1,18 +1,18 @@
 ---
-description: Habilite "marcar scripts de conteúdo como código de biblioteca" nas configurações > código da biblioteca da estrutura.
-title: Marcar Scripts de Conteúdo como Código de Biblioteca
+description: Habilita "Marcar scripts de conteúdo como código biblioteca" a partir de Configurações > Código da Biblioteca da Estrutura.
+title: Marcar scripts de conteúdo como código biblioteca
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124695"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398949"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,33 +28,33 @@ ms.locfileid: "11124695"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Marcar scripts de conteúdo como código de biblioteca  
+# <a name="mark-content-scripts-as-library-code"></a>Marcar scripts de conteúdo como código biblioteca  
 
-Ao usar o painel **fontes** do Microsoft Edge devtools para percorrer o [código][DevToolsJavascriptStepThroughCode], às vezes, você pode pausar o código que não reconhece.  Você provavelmente pausou no código de uma das extensões do Microsoft Edge instaladas.  Conclua as etapas a seguir para não pausar no código de extensão.  
+Ao usar o **painel Fontes** do Microsoft Edge DevTools para passar o [código,][DevToolsJavascriptStepThroughCode]às vezes você pausa no código que não reconhece.  Você provavelmente fez uma pausa no código para uma das Extensões do Microsoft Edge instaladas.  Conclua as etapas a seguir para não pausar no código de extensão.  
 
-1.  Abra o DevTools, escolha **Personalizar e controle devtools** \ ( `...` \) e escolha **configurações**.  Você também pode abrir **as configurações** selecionando `F1` .  
+1.  Abra DevTools, escolha **Personalizar e controlar o DevTools** \( `...` \) > **Configurações**.  Você também pode abrir **Configurações** selecionando `F1` .  
 
-1.  Selecione a guia **código de biblioteca** que abre a seção de código da biblioteca de **estrutura** de **configurações**.  
-1.  Habilite a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca** .  
+1.  Escolha o **painel de código** biblioteca que abre a seção Código da **Biblioteca** da Estrutura **de Configurações**.  
+1.  A turn on the **Mark content scripts as Library code checkbox.**  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar a caixa de seleção Marcar scripts de conteúdo como código de biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Habilitar a caixa de seleção **Marcar scripts de conteúdo como código de biblioteca**  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar a caixa de seleção Marcar scripts de conteúdo como código da biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Habilitar a caixa de seleção **Marcar scripts de** conteúdo como código da biblioteca  
     :::image-end:::  
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Etapa 4: percorrer o código-introdução à depuração JavaScript no Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Etapa 4: passo a passo pelo código - Começar a depurar JavaScript no Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

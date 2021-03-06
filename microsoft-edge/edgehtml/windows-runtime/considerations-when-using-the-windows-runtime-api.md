@@ -1,6 +1,8 @@
 ---
-description: Considerações ao usar a API do Windows Runtime.
+description: Considerações ao usar a API do Windows Runtime
 title: Considerações ao usar a API do Windows Runtime
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -10,49 +12,48 @@ ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 718a23646ec9a82c1d53a2669d7cdbf218647e41
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 170374fd109802bff0aa0fc93cea6c8d50c9d7c7
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231602"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399341"
 ---
-# Considerações ao usar a API do Windows Runtime  
+# <a name="considerations-when-using-the-windows-runtime-api"></a>Considerações ao usar a API do Windows Runtime  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Você pode usar praticamente todos os elementos da API do tempo de execução do Windows em JavaScript.  No entanto, há alguns aspectos da representação JavaScript dos elementos do tempo de execução do Windows que você deve ter em mente.  
+Você pode usar quase todos os elementos da API do Windows Runtime em JavaScript.  No entanto, há alguns aspectos da representação JavaScript dos elementos do Windows Runtime que você deve ter em mente.  
 
 > [!IMPORTANT]
-> Para obter informações sobre como criar componentes do tempo de execução do Windows em C++, C# ou Visual Basic e consumindo-os em JavaScript, consulte [criando componentes do tempo de execução do Windows em c++][WindowsUwpComponentsCreatingCpp] e [criando componentes do tempo de execução do Windows em C# e Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
+> Para obter informações sobre como criar componentes do Windows Runtime em C++, C# ou Visual Basic e consumi-los em JavaScript, consulte [Creating Windows Runtime Components in C++][WindowsUwpComponentsCreatingCpp] and [Creating Windows Runtime Components in C# and Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
 
-## Casos especiais na representação JavaScript de tipos do Windows Runtime  
+## <a name="special-cases-in-the-javascript-representation-of-windows-runtime-types"></a>Casos especiais na Representação JavaScript de tipos do Windows Runtime  
 
 :::row:::
    :::column span="1":::
-      Seqüências  
+      Cadeias de caracteres  
    :::column-end:::
    :::column span="3":::
-      Uma cadeia de caracteres não inicializada é passada para um método do Windows Runtime como a cadeia de caracteres "undefined", e uma cadeia de caracteres `null` é passada como a cadeia de caracteres "NULL".  \ (Isso é verdade sempre que `null` um `undefined` valor ou for forçado para uma cadeia de caracteres. \) antes de passar uma cadeia de caracteres para um método do tempo de execução do Windows, você deve inicializá-la como uma cadeia de caracteres vazia \ ("" \).  
+      Uma cadeia de caracteres não unificada é passada para um método do Windows Runtime como a cadeia de caracteres "indefinida", e um conjunto de cadeias de caracteres é passado como a `null` cadeia de caracteres "null".  \(Isso é verdadeiro sempre que um ou valor é coagido a uma cadeia de caracteres.\) Antes de passar uma cadeia de caracteres para um método do Windows Runtime, você deve inicializa-la como a cadeia de caracteres `null` `undefined` vazia \(""\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Classes  
+      Interfaces  
    :::column-end:::
    :::column span="3":::
-      Não é possível implementar uma interface do tempo de execução do Windows em JavaScript.  
+      Não é possível implementar uma interface do Windows Runtime em JavaScript.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Vetor  
+      Matrizes  
    :::column-end:::
    :::column span="3":::
-      As matrizes do tempo de execução do Windows não são redimensionáveis, portanto métodos que redimensionam matrizes em JavaScript não funcionam em matrizes do Windows Runtime.  
-      *   Matrizes: se você passar um valor de matriz JavaScript para um método do tempo de execução do Windows, a matriz será copiada.  O método do tempo de execução do Windows não pode modificar a matriz nem seus membros e devolvê-los ao seu aplicativo JavaScript.  No entanto, você pode usar matrizes tipadas \ (por exemplo, [Int32Array objeto][MDNInt32array]\), que não são copiadas.  
+      As matrizes do Windows Runtime não são resizáveis, portanto, os métodos que resizem matrizes em JavaScript não funcionam em matrizes do Windows Runtime.  
+      *   Matrizes: se você passar um valor de matriz JavaScript para um método do Windows Runtime, a matriz será copiada.  O método Do Windows Runtime não é capaz de modificar a matriz ou seus membros e devolvê-la ao seu aplicativo JavaScript.  No entanto, você pode usar matrizes digitados \(por exemplo, [Objeto Int32Array][MDNInt32array]\), que não são copiadas.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -60,15 +61,15 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
       Estruturas  
    :::column-end:::
    :::column span="3":::
-      Estruturas do tempo de execução do Windows são objetos em JavaScript.  Se você quiser passar uma estrutura do tempo de execução do Windows para um método do tempo de execução do Windows, não instancie a estrutura com a `new` palavra-chave.  Em vez disso, crie um objeto e adicione os membros relevantes e seus valores.  Os nomes dos membros devem estar no camel case: `SomeStruct.firstMember` .  
+      As estruturas do Windows Runtime são objetos em JavaScript.  Se você quiser passar uma estrutura do Windows Runtime para um método do Windows Runtime, não instaurem a estrutura com a `new` palavra-chave.  Em vez disso, crie um objeto e adicione os membros relevantes e seus valores.  Os nomes dos membros devem estar em caso de camel: `SomeStruct.firstMember` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Eles  
+      Objetos  
    :::column-end:::
    :::column span="3":::
-      Objetos JavaScript não são iguais a objetos de código gerenciados \ ( `System.Object` \).  Você não pode passar um objeto JavaScript para um método do tempo de execução do Windows que exija um `System.Object` .  
+      Os objetos JavaScript não são iguais aos objetos de código gerenciado \( `System.Object` \).  Não é possível passar um objeto JavaScript para um método do Windows Runtime que exija um `System.Object` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -76,24 +77,24 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
       Identidade do objeto  
    :::column-end:::
    :::column span="3":::
-      Na maioria dos casos, os objetos passados para frente e para trás entre o Windows Runtime e o JavaScript não são alterados.  O mecanismo JavaScript mantém um mapa de objetos conhecidos.  Quando um objeto é retornado do tempo de execução do Windows, ele corresponde ao mapa e, se ele não existir, um novo objeto será criado.  O mesmo procedimento é seguido para objetos que representam interfaces que são retornadas por métodos do tempo de execução do Windows.  Há dois tipos de exceções:  
+      Na maioria dos casos, os objetos passados para frente e para trás entre o Windows Runtime e JavaScript não mudam.  O mecanismo JavaScript mantém um mapa de objetos conhecidos.  Quando um objeto é retornado do Windows Runtime, ele é corresponder ao mapa e, se ele não existir, um novo objeto será criado.  O mesmo procedimento é seguido para objetos que representam interfaces retornadas pelos métodos do Windows Runtime.  Há dois tipos de exceções:  
       
-      *   Os objetos retornados de uma chamada do tempo de execução do Windows e, em seguida, têm novas propriedades \ (expando \) adicionadas, não mantêm suas novas propriedades quando são passados para o tempo de execução do Windows.  No entanto, quando eles são retornados ao aplicativo JavaScript, porque eles são correspondentes ao objeto existente, o objeto retornado tem as propriedades expando.  
-      *   Estruturas e representantes no Windows Runtime não podem ser identificados como idênticos a estruturas ou representantes usados anteriormente.  Toda vez que uma estrutura ou representante é retornado, ele recebe uma nova referência.  
+      *   Os objetos retornados de uma chamada do Windows Runtime e, em seguida, têm novas propriedades \(expando\) adicionadas, não retêm suas novas propriedades quando são passadas de volta para o Windows Runtime.  No entanto, quando eles são retornados para o aplicativo JavaScript, porque eles são corresponder ao objeto existente, o objeto retornado tem as propriedades expando.  
+      *   Estruturas e representantes no Windows Runtime não podem ser identificados como idênticos a estruturas ou representantes usados anteriormente.  Sempre que uma estrutura ou representante é retornada, ela obtém uma nova referência.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Conflitos de nome  
+      Colisões de nomes  
    :::column-end:::
    :::column span="3":::
-      Várias interfaces do Windows Runtime podem ter membros com os mesmos nomes.  Se eles forem combinados em um único objeto JavaScript (que pode ser uma representação de uma classe de tempo de execução ou uma interface), os membros serão representados com nomes totalmente qualificados.  Você pode chamar esses membros usando a seguinte sintaxe:  
+      Várias interfaces do Windows Runtime podem ter membros com os mesmos nomes.  Se eles são combinados em um único objeto JavaScript (que pode ser uma representação de uma classe de tempo de execução ou uma interface), os membros serão representados com nomes totalmente qualificados.  Você pode chamar esses membros usando a seguinte sintaxe:  
       
       ```cpp
       Class["MemberName"](parameter)
       ```  
       
-      No código a seguir, duas interfaces têm um método Draw, e uma classe de tempo de execução implementa ambas as interfaces.  
+      No código a seguir, duas interfaces têm um método Draw e uma classe de tempo de execução implementa ambas as interfaces.  
       
       ```cpp
       namespace CollisionExample {
@@ -123,10 +124,10 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      `Out` os  
+      `Out` parameters  
    :::column-end:::
    :::column span="3":::
-      Se um método do tempo de execução do Windows tiver vários `out` parâmetros, em JavaScript, o método tem um objeto JavaScript como valor de retorno, e o objeto tem propriedades que correspondem ao `out` parâmetro.  Por exemplo, considere a seguinte assinatura do Windows Runtime em C++.  
+      Se um método do Windows Runtime tiver vários parâmetros, em JavaScript, o método tem um objeto JavaScript como seu valor de retorno e o objeto tem propriedades que correspondem `out` ao `out` parâmetro.  Por exemplo, considere a seguinte assinatura do Windows Runtime em C++.  
       
       ```cpp
       void ExampleMethod(
@@ -141,7 +142,7 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
       var returnValue = exampleMethod();
       ```  
       
-      Neste exemplo, `returnValue` é um objeto JavaScript que tem dois campos: `first` e `second` .  
+      Neste exemplo, `returnValue` é um objeto JavaScript que tem dois campos: e `first` `second` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -149,7 +150,7 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
       Membros estáticos  
    :::column-end:::
    :::column span="3":::
-      O tempo de execução do Windows define membros estáticos e membros de instância.  Em JavaScript, os membros estáticos são adicionados ao objeto associado à classe ou interface do Windows Runtime.  
+      O Windows Runtime define membros estáticos e membros de instância.  Em JavaScript, membros estáticos são adicionados ao objeto associado à classe ou interface do Windows Runtime.  
       
       ```javascript
       // Static method.
@@ -160,13 +161,13 @@ Você pode usar praticamente todos os elementos da API do tempo de execução do
    :::column-end:::
 :::row-end:::  
     
-Para obter mais informações sobre a representação JavaScript dos tipos básicos do Windows Runtime, consulte [representação JavaScript de tipos do tempo de execução do Windows][WindowsRuntimeJavascriptTypes].  
+Para obter mais informações sobre a representação JavaScript de tipos básicos do Windows Runtime, consulte [JavaScript Representation of Windows Runtime Types][WindowsRuntimeJavascriptTypes].  
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Representação JavaScript de tipos do Windows Runtime | Documentos da Microsoft"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Representação javascript de tipos de tempo de execução do Windows | Microsoft Docs"  
 
-[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Componentes do tempo de execução do Windows com C++/CX | Documentos da Microsoft"  
-[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Componentes do tempo de execução do Windows com C# e Visual Basic | Documentos da Microsoft"  
+[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Componentes do Windows Runtime com C++/CX | Microsoft Docs"  
+[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Componentes do Windows Runtime com C# e Visual Basic | Microsoft Docs"  
 
 [MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array | MDN"  

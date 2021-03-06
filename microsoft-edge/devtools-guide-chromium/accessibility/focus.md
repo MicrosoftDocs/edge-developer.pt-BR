@@ -1,18 +1,18 @@
 ---
-description: Abra o console, crie uma expressão ao vivo e defina a expressão como Document. ActiveElement.
-title: Acompanhar Qual Elemento Tem o Foco
+description: Abra o Console, crie uma Expressão Ativa e dejuste a expressão como document.activeElement.
+title: Acompanhar qual elemento tem o foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125304"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398312"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,31 @@ ms.locfileid: "11125304"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Acompanhar Qual Elemento Tem o Foco  
+# <a name="track-which-element-has-focus"></a>Acompanhar qual elemento tem o foco  
 
-Suponha que você esteja testando o acesso à navegação pelo teclado de uma página.  Ao navegar a página com a `Tab` chave, o anel de foco às vezes desaparece porque o elemento que tem o foco está oculto.  
+Suponha que você está testando a acessibilidade de navegação do teclado de uma página.  Ao navegar pela página com a chave, o anel de foco às vezes desaparece porque o elemento que `Tab` tem foco está oculto.  
 
-Conclua as ações a seguir para acompanhar o elemento focalizado no DevTools.  
+Conclua as seguintes ações para rastrear o elemento focado no DevTools.  
 
-1.  Abra o **console**.  
-1.  Escolha **criar expressão ao vivo** \ ( ![ criar expressão ao vivo ][ImageCreateIcon] \).  
+1.  Abra o **Console**.  
+1.  Escolha **Criar Expressão Ao Vivo** \( Criar Expressão Ao Vivo ![ ][ImageCreateIcon] \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Criar uma expressão ao vivo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Criar uma expressão ao vivo  
     :::image-end:::  
     
 1.  Digite `document.activeElement`.  
-1.  Clique fora da interface de usuário do **Live Expression** para salvar.  
+1.  Escolha fora da **interface do usuário expressão ao** vivo para salvar.  
     
-O valor que você vê abaixo `document.activeElement` é o resultado da expressão.  
+O valor exibido abaixo `document.activeElement` é o resultado da expressão.  
 
-Como essa expressão sempre representa o elemento destaques, agora você tem uma maneira de sempre manter o controle de qual elemento está focalizado.  
+Como essa expressão sempre representa o elemento focado, agora você tem uma maneira de sempre acompanhar qual elemento tem foco.  
 
-*   Passe o mouse sobre o resultado para realçar o elemento focalizado no visor.  
-*   Clique com o botão direito do mouse no resultado e escolha **revelar no painel de elementos** para mostrar o elemento na árvore DOM do painel **elementos** .  
-*   Clique com o botão direito do mouse no resultado e escolha **armazenar como variável global** para criar uma referência de variável para o nó que você pode usar no **console**.  
+*   Passe o mouse no resultado para realçar o elemento focado no viewport.  
+*   Passe o mouse no resultado, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Revelar** em Elementos painel para mostrar o elemento na Árvore DOM na **ferramenta Elementos.**  
+*   Passe o mouse no resultado, abra o menu contextual \(clique com o botão direito do mouse\) e escolha Store como **variável global** para criar uma referência variável ao nó que você pode usar no **Console**.  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -63,11 +63,11 @@ Como essa expressão sempre representa o elemento destaques, agora você tem uma
 <!-- links -->  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -3,15 +3,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 12/08/2020
-ms.openlocfilehash: 4dbb6c0c07b6294c647f49929f12739447b43e8a
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.date: 02/12/2021
+ms.openlocfilehash: 5002caa02ee7baee334c2fcb10f22916399f8173
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11205235"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397571"
 ---
-As seções a seguir listam os comunicados da equipe do Microsoft Edge DevTools.  Para experimentar novos recursos no DevTools, extensões de código do Visual Studio e muito mais, confira os comunicados.  Para ficar atualizado com os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga a equipe do Microsoft Edge devtools no Twitter][EdgeDevToolsTwitterAccount].
+As seções a seguir listam os comunicados da equipe do Microsoft Edge DevTools.  Para experimentar novos recursos no DevTools, microsoft Visual Studio extensões de código e muito mais, revise os comunicados.  Para se manter atualizado com os recursos mais recentes e maiores em suas ferramentas de desenvolvedor, baixe os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] e siga a equipe do Microsoft [Edge DevTools no Twitter][EdgeDevToolsTwitterAccount].
 
 <!-- links -->  
 

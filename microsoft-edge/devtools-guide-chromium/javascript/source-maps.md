@@ -1,18 +1,18 @@
 ---
-description: Mantenha o código do lado do cliente legível e debuggable, mesmo depois de combinar, Minify ou compilá-lo.
-title: Mapear Código em Pré-processamento para Código-fonte
+description: Mantenha seu código do lado do cliente acessível e depurável mesmo depois de combiná-lo, minificá-lo ou compilá-lo.
+title: Mapear código pré-processador para código-fonte
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: debea327be41ab8aa2da19aa8cc128a1897e51e5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124675"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398389"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,68 +28,68 @@ ms.locfileid: "11124675"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Mapear código pré-processado para código-fonte  
+# <a name="map-preprocessed-code-to-source-code"></a>Mapear código pré-processador para código-fonte  
 
-Mantenha o código do lado do cliente legível e debuggable, mesmo depois de combinar, Minify ou compilá-lo.  Use mapas de origem para mapear o código-fonte para o código compilado.  
+Mantenha seu código do lado do cliente acessível e depurável mesmo depois de combiná-lo, minificá-lo ou compilá-lo.  Use mapas de origem para mapear seu código-fonte para o código compilado.  
 
-### Resumo  
+### <a name="summary"></a>Resumo  
 
-*   Use mapas de origem para mapear o código minified para o código-fonte. Em seguida, você pode ler e depurar o código compilado na fonte original.  
-*   Use apenas processadores que sejam capazes de produzir mapas de origem.  
-*   Verifique se o servidor Web é capaz de servir mapas de origem.  
+*   Use Mapas de origem para mapear código minificado para código-fonte.  Em seguida, você pode ler e depurar código compilado na origem original.  
+*   Use somente pré-processadores capazes de produzir Mapas de origem.  
+*   Verifique se o servidor Web é capaz de servir Mapas de Origem.  
     
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-## Introdução aos pré-processadores  
+## <a name="get-started-with-preprocessors"></a>Começar com pré-processadores  
 
-Este artigo explica como interagir com mapas de origem JavaScript no painel DevTools fontes.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; see Set Up CSS & JS Preprocessors.  -->  
+Este artigo explica como interagir com mapas de origem JavaScript no Painel de Fontes de DevTools.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
 
-## Usar um pré-processador compatível  
+## <a name="use-a-supported-preprocessor"></a>Usar um pré-processador com suporte  
 
-Você precisa usar um Minifier que seja capaz de criar mapas de origem.  <!--For the most popular options, navigate to preprocessor support section.  -->  Para um modo de exibição estendido, navegue até [mapas de origem: idiomas, ferramentas e outras informações][GitHubWikiSourceMapsLanguagesTools] wiki.  
+Use um minifier capaz de criar mapas de origem.  <!--For the most popular options, navigate to preprocessor support section.  -->  Para uma exibição estendida, navegue até [Mapas de origem: idiomas, ferramentas e outras informações][GitHubWikiSourceMapsLanguagesTools] wiki.  
 
-<!--todo: add link to see the preprocessor support section when section is available -->  
+<!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-Os seguintes tipos de pré-processadores geralmente são usados em combinação com mapas de origem:  
+Os seguintes tipos de pré-processadores são comumente usados em combinação com mapas de origem:  
 
-*   Transcompilers \ ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
-*   Compiladores \ ([compilador de fechamento][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)  
-*   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
+*   Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
+*   Compiladores \([Compilador de Fechamento,][GitHubGoogleClosureCompiler] [TypeScript,][|::ref1::|Main] [CoffeeScript,][|::ref2::|Main] [Dardos][DartMain]\)  
+*   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)  
     
-## Mapas de origem no painel fontes do DevTools  
+## <a name="source-maps-in-devtools-sources-panel"></a>Mapas de origem no painel Fontes do DevTools  
 
-Mapas de origem de pré-processadors fazem com que o DevTools carregue seus arquivos originais, além de seus minified.  Em seguida, use os originais para definir pontos de interrupção e percorrer o código.  Enquanto isso, o Microsoft Edge está realmente executando o código minified. Isso lhe dá a ilusão de executar um site de desenvolvimento em produção.  
+Mapas de origem de pré-processadores causam o DevTools carregar seus arquivos originais, além dos seus minificados.  Em seguida, use os originais para definir pontos de interrupção e passar o código.  Enquanto isso, o Microsoft Edge está realmente executando seu código minificado.  A execução do código oferece a ilusão de executar um site de desenvolvimento em produção.  
 
-Ao executar mapas de origem no DevTools, você deve observar que o JavaScript não é compilado e você pode ver todos os arquivos JavaScript individuais referenciados.  Isso é usando o mapeamento de origem, mas, em realidade, os bastidores executam o código compilado.  Todos os erros, logs e pontos de interrupção são mapeados para o código de desenvolvimento para a depuração de awesome!  Então, em vigor, ele dá a você a ilusão de que você está executando um site de desenvolvimento em produção.  
+Ao executar mapas de origem no DevTools, você deve observar que o JavaScript não é compilado e todos os arquivos JavaScript individuais que ele faz referência são exibidos.  Mapas de origem no DevTools está usando mapeamento de origem, mas a funcionalidade subjacente realmente executa o código compilado.  Quaisquer erros, logs e pontos de interrupção mapeiam para o código de dev para depuração incrível.  Portanto, na verdade, ele dá a você a ilusão de que você está executando um site de dev em produção.  
 
-### Habilitar mapas de origem em configurações  
+### <a name="enable-source-maps-in-settings"></a>Habilitar mapas de origem nas configurações  
 
-Os mapas de origem são habilitados por padrão <!--\(as of Microsoft Edge 39\)-->, mas se você quiser verificá-los ou habilitá-los, clique duas vezes. Primeiro, abra o DevTools, clique no botão **Personalizar e controlar devtools** \ ( `...` \) e escolha **configurações**.  No painel **preferências** , em **fontes**, marque **habilitar mapas de origem JavaScript**.  Você também pode marcar **habilitar mapas de código-fonte CSS**.  
+Mapas de origem são habilitados por padrão<!-- \(as of Microsoft Edge 39\)-->, mas se você quiser verificar duas vezes ou habilita-los; primeiro abra DevTools, escolha **Personalizar e controlar DevTools** \( `...` \) > **Configurações**.  No painel **Preferências,** em **Fontes**, ative **Habilitar Mapas de Origem JavaScript.**  Você também pode ativar o **Enable CSS Source Maps**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   **Habilitar mapas de origem JavaScript**  
+   **Habilitar mapas de origem javascript**  
 :::image-end:::  
 
-### Depuração com mapas de origem  
+### <a name="debugging-with-source-maps"></a>Depuração com mapas de origem  
 
-Ao depurar seus mapas de código e de origem habilitados, os mapas de origem são exibidos em dois locais:  
+Ao depurar seu código e mapas de origem habilitados, os Mapas de Origem mostram em dois locais:  
 
-1.  No console \ (o link para a origem deve ser o arquivo original, não o um \ gerado)  
-1.  Quando percorrendo o código \ (os links na pilha de chamadas devem abrir o arquivo de origem original \)  
+1.  No console \(o link para a origem deve ser o arquivo original, não o gerado\)  
+1.  Ao passar pelo código \(os links na pilha de chamada devem abrir o arquivo de origem original\)  
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
-## @sourceURL e displayName  
+## <a name="sourceurl-and-displayname"></a>@sourceURL e displayName  
 
-Embora não faça parte da especificação do mapa de origem, o `@sourceURL` permite que você torne o desenvolvimento muito mais fácil ao trabalhar com evals.  Esse auxiliar é muito semelhante à `//# sourceMappingURL` propriedade e, na verdade, é mencionado nas especificações do mapa de fontes v3.  
+Embora não faça parte da especificação mapa de origem, o permite tornar o desenvolvimento muito mais `@sourceURL` fácil ao trabalhar com evals.  O auxiliar é exibido de forma semelhante à `//# sourceMappingURL` propriedade e é mencionado nas especificações do Mapa de Origem V3.  
 
-Ao incluir o seguinte comentário especial em seu código, que é proparado, você pode nomear avaliações e scripts e estilos embutidos para que cada um deles seja exibido como mais nomes lógicos em seu DevTools.  
+Ao incluir o seguinte comentário especial em seu código, que é evadida, você pode nomear evals e scripts e estilos em linha para que cada um apareça como nomes mais lógicos em seu DevTools.  
 
 ```javascript
 //# sourceURL=source.coffee
@@ -99,49 +99,49 @@ Navegue até a página a seguir.
 
 *   [demonstração][CssNinjaDemoSourceMapping]
 
-Conclua as ações a seguir.  
+Conclua as seguintes ações.  
 
-1.  Abra o DevTools e vá para o painel **fontes** .  
-1.  Insira um nome de arquivo no campo **nome do seu código:** entrada.  
-1.  Clique no botão **Compilar** .  
+1.  Abra o DevTools e navegue até o **painel Fontes.**  
+1.  Insira um nome de arquivo no **campo Nome do código:** entrada.  
+1.  Escolha o **botão compilar.**  
 1.  Um alerta é exibido com a soma avaliada da fonte CoffeeScript.  
     
-Se você expandir o Subpainel **fontes** , agora verá um novo arquivo com o nome de arquivo personalizado que você digitou anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele contém o JavaScript compilado para a fonte original.  Na última linha, no entanto, é um `// @sourceURL` comentário que indica o arquivo de origem original.  Isso pode ajudá-lo com a depuração enquanto trabalha com abstrações de idioma.  
+Se você expandir o sub-painel **Fontes,** agora exibirá um novo arquivo com o nome de arquivo personalizado inserido anteriormente.  Se você clicar duas vezes para exibir esse arquivo, ele conterá o JavaScript compilado para a origem original.  Na última linha, no entanto, há um `// @sourceURL` comentário indicando o arquivo de origem original.  Isso pode ajudá-lo com a depuração durante o trabalho com abstrações de idioma.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Habilitar mapas de origem" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabalhar com sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Trabalhar com `sourceURL`  
 :::image-end:::  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[BabelJS]: https://babeljs.io "Babel é um compilador JavaScript"  
+[BabelJS]: https://babeljs.io "O Babel é um compilador JavaScript"  
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
 
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Um exemplo simples de nomenclatura de eval//# sourceURL"  
+[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Um exemplo simples de nomeação de eval //# sourceURL"  
 
-[DartMain]: https://www.dartlang.org "Linguagem de programação DART"  
+[DartMain]: https://www.dartlang.org "Linguagem de programação de dardos"  
 
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/fechamento-compilador | GitHub"  
+[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"  
 
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Mapas de origem: idiomas, ferramentas e outras informações | Wiki do GitHub"  
 
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Introdução-Google/Traceur-Compiler | Wiki do GitHub"  
+[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Getting Started - google/traceur-compiler | Wiki do GitHub"  
 
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) e é criada por [Meggin Kearney][MegginKearney] \ (Tech Writer \) e [Paul Bakaus][PaulBakaus] \ (Open Web Developer defensor, Google: ferramentas, desempenho, animação e UX \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original [](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) é encontrada aqui e é de autoria de [Meggin Kearney][MegginKearney] \(Tech Writer\) e [Paulo Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation e UX\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

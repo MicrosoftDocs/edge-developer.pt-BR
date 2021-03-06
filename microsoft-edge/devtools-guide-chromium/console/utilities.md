@@ -1,18 +1,18 @@
 ---
-description: Uma referência aos comandos de conveniência disponíveis no console do DevTools Microsoft Edge.
-title: Referência de API de utilitários de console
+description: Uma referência de comandos de conveniência disponíveis no Console do Microsoft Edge DevTools.
+title: Referência da API de Utilitários de Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f224bb8235437e971ff0e59c20d69e589ce520fb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e7253bf5402a03d1659f56ba083bb87e93b3af38
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125248"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398823"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,16 +28,16 @@ ms.locfileid: "11125248"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Referência de API de utilitários de console  
+# <a name="console-utilities-api-reference"></a>Referência da API de Utilitários de Console  
 
-A API de utilitários de console contém um conjunto de comandos de conveniência para realizar tarefas comuns: selecionando e inspecionando os elementos DOM, exibindo dados em um formato legível, interrompendo e iniciando o gerador de perfil e monitorando eventos DOM.  
+A API de Utilitários de Console contém uma coleção de comandos de conveniência para executar tarefas comuns: selecionar e inspecionar elementos DOM, exibir dados em formato acessível, interromper e iniciar o profiler e monitorar eventos DOM.  
 
 > [!WARNING]
-> Os comandos a seguir só funcionam no console Microsoft Edge DevTools.  Os comandos não funcionam se forem executados a partir de seus scripts.  
+> Os comandos a seguir só funcionam no Console do Microsoft Edge DevTools.  Os comandos não funcionarão se executados de seus scripts.  
 
-Procurando `console.log()` , `console.error()` e o restante dos `console.*` métodos?  Consulte [referência de API do console][DevToolsConsoleApi].  
+Para os `console.log()` métodos e o restante dos `console.error()` `console.*` métodos, navegue até [Console API Reference][DevToolsConsoleApi].  
 
-## Expressão avaliada recentemente  
+## <a name="recently-evaluated-expression"></a>Expressão avaliada recentemente  
 
 ```console
 $_
@@ -45,25 +45,25 @@ $_
 
 Retorna o valor da expressão avaliada mais recentemente.  
 
-Na figura a seguir, uma expressão simples \ ( `2 + 2` \) é avaliada.  A `$_` propriedade é então avaliada, que contém o mesmo valor.  
+Na figura a seguir, uma expressão simples \( `2 + 2` \) é avaliada.  Em `$_` seguida, a propriedade é avaliada, que contém o mesmo valor.  
 
-:::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-arithmatic.msft.png":::
-   Figura 1:  `$_` a expressão avaliada mais recentemente  
+:::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ é a expressão avaliada mais recentemente" lightbox="../media/console-arithmatic.msft.png":::
+   Figura 1:  `$_` é a expressão avaliada mais recentemente  
 :::image-end:::  
 
-Na figura a seguir, a expressão avaliada inicialmente contém uma matriz de nomes.  Avaliando `$_.length` para localizar o comprimento da matriz, o valor armazenado em `$_` alterações para se tornar a expressão avaliada mais recente `4` .  
+Na figura a seguir, a expressão avaliada inicialmente contém uma matriz de nomes.  Avaliando para encontrar o comprimento da matriz, o valor armazenado em alterações para se tornar a expressão avaliada mais `$_.length` `$_` recente, `4` .  
 
-:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-array-length.msft.png":::
+:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$_ muda quando novos comandos são avaliados" lightbox="../media/console-array-length.msft.png":::
    Figura 2:  `$_` alterações quando novos comandos são avaliados  
 :::image-end:::  
 
-## Elemento ou objeto JavaScript selecionado recentemente  
+## <a name="recently-chosen-element-or-javascript-object"></a>Elemento escolhido recentemente ou objeto JavaScript  
 
 ```console
 $0
 ```  
 
-Retorna o elemento do elemento JavaScript ou o objeto selecionado mais recentemente.  `$1` Retorna a segunda opção selecionada mais recentemente e assim por diante.  Os `$0` comandos,,, `$1` `$2` `$3` e `$4` funcionam como uma referência histórica aos cinco últimos elementos DOM inspecionados no painel **elementos** ou nos últimos cinco objetos de heap JavaScript selecionados no painel **memória** .  
+Retorna o elemento selecionado mais recentemente ou o objeto JavaScript.  `$1` retorna o segundo selecionado mais recentemente e assim por diante.  Os comandos , , e funcionam como uma referência histórica aos últimos cinco elementos DOM inspecionados na ferramenta Elements ou os cinco últimos objetos de pilha JavaScript selecionados na `$0` `$1` ferramenta `$2` `$3` `$4` **Memória.** ****  
 
 :::row:::
    :::column span="1":::
@@ -97,60 +97,60 @@ Retorna o elemento do elemento JavaScript ou o objeto selecionado mais recenteme
    :::column-end:::
 :::row-end:::  
 
-Na figura a seguir, um `img` elemento é selecionado no painel **elementos** .  Na gaveta do **console** , foi `$0` avaliada e exibe o mesmo elemento.  
+Na figura a seguir, um `img` elemento é selecionado na ferramenta **Elements.**  Na gaveta **Console,** `$0` foi avaliado e exibe o mesmo elemento.  
 
-:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-image-highlighted-$0.msft.png":::
-   Figura 3: o `$0`  
+:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="Os $0" lightbox="../media/console-image-highlighted-$0.msft.png":::
+   Figura 3: O `$0`  
 :::image-end:::  
 
-Na figura a seguir, a imagem mostra um elemento diferente selecionado na mesma página.  O `$0` agora se refere ao elemento selecionado recentemente, enquanto `$1` retorna o anterior selecionado.  
+Na figura a seguir, a imagem mostra um elemento diferente selecionado na mesma página.  O `$0` agora se refere ao elemento recém-selecionado, enquanto retorna o elemento selecionado `$1` anteriormente.  
 
-:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-image-highlighted-$1.msft.png":::
-   Figura 4: o `$1`  
+:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="O $1" lightbox="../media/console-image-highlighted-$1.msft.png":::
+   Figura 4: O `$1`  
 :::image-end:::  
 
-## Seletor de consulta  
+## <a name="query-selector"></a>Seletor de consulta  
 
 ```console
 $(selector, [startNode])
 ```  
 
-Retorna a referência ao primeiro elemento DOM com o seletor CSS especificado.  Esse método é um alias para o método [Document. querySelector ()][MDNDocumentQuerySelector] .  
+Retorna a referência ao primeiro elemento DOM com o seletor CSS especificado.  Este método é um alias para o [método document.querySelector().][MDNDocumentQuerySelector]  
 
-Na figura a seguir, uma referência para o primeiro `<img>` elemento no documento é retornada.  
+Na figura a seguir, uma referência ao primeiro `<img>` elemento do documento é retornada.  
 
-:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-element-selector-image.msft.png":::
-   Figura 5: o `$('img')`  
+:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$('img')" lightbox="../media/console-element-selector-image.msft.png":::
+   Figura 5: O `$('img')`  
 :::image-end:::  
 
-Passe o cursor do mouse sobre o resultado retornado, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **revelar no painel de elementos** para localizá-lo no dom ou **role para o modo de exibição para exibi** -lo na página.  
+Passe o mouse no resultado retornado, abra o menu contextual \(clique com o botão **** direito do mouse\) e escolha **Revelar** no Painel de Elementos para encontrá-lo no DOM ou Role para Exibir para exibi-lo na página.  
 
-Na figura a seguir, uma referência ao elemento atualmente selecionado é retornada e a propriedade src é exibida.  
+Na figura a seguir, uma referência ao elemento selecionado no momento é retornada e a propriedade src é exibida.  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-element-selector-image-source.msft.png":::
-   Figura 6: o `$('img').src`  
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$('img').src" lightbox="../media/console-element-selector-image-source.msft.png":::
+   Figura 6: O `$('img').src`  
 :::image-end:::  
 
-Esse método também dá suporte a um segundo parâmetro, startNode, que especifica um "elemento" ou um nó do qual Pesquisar elementos.  O valor padrão do parâmetro é `document` .  
+Esse método também dá suporte a um segundo parâmetro, startNode, que especifica um "elemento" ou Nó do qual procurar elementos.  O valor padrão do parâmetro é `document` .  
 
-Na figura a seguir, o primeiro `img` elemento é encontrado após o `title--image` e exibe o `src` modo de exibição correto.  
+Na figura a seguir, o primeiro `img` elemento é encontrado depois que o e exibe `title--image` `src` corretamente é retornado.  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
-   Figura 7: o `$('img', document.querySelector('title--image')).src`  
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$('img', document.querySelector('title--image')).src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+   Figura 7: O `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 
 > [!NOTE]
-> Se você estiver usando uma biblioteca como o jQuery que usa `$` , a funcionalidade será sobrescrita e `$` corresponderá à implementação dessa biblioteca.  
+> Se você estiver usando uma biblioteca como jQuery que usa , a funcionalidade será substituída e corresponderá à implementação `$` `$` dessa biblioteca.  
 
-## Seletor de consulta tudo  
+## <a name="query-selector-all"></a>Seletor de Consulta Todos  
 
 ```console
 $$(selector, [startNode])
 ```  
 
-Retorna uma matriz de elementos que correspondem ao seletor CSS especificado.  Esse método é equivalente a chamar o método [Document. querySelectorAll ()][MDNDocumentQuerySelectorAll] .  
+Retorna uma matriz de elementos que corresponderão ao seletor CSS especificado.  Esse método equivale a executar o [método document.querySelectorAll().][MDNDocumentQuerySelectorAll]  
 
-No exemplo de código e na figura a seguir, use `$$()` para criar uma matriz de todos os `<img>` elementos no documento atual e exibir o valor da `src` propriedade de cada elemento.  
+Na figura e exemplo de código a seguir, use para criar uma matriz de todos os elementos no documento atual e exibir o valor da propriedade `$$()` `<img>` para cada `src` elemento.  
 
 ```console
 var images = $$('img');
@@ -159,13 +159,13 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-element-selector-image-all.msft.png":::
-   Figura 8: usar `$$()` para selecionar todas as imagens no documento e exibir as fontes  
+:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="Usando $$() para selecionar todas as imagens no documento e exibir as fontes" lightbox="../media/console-element-selector-image-all.msft.png":::
+   Figura 8: Usando `$$()` para selecionar todas as imagens no documento e exibir as fontes  
 :::image-end:::  
 
-Esse método também oferece suporte a um segundo parâmetro, startNode, que especifica um elemento ou nó do qual Pesquisar elementos.  O valor padrão do parâmetro é `document` .  
+Este método também dá suporte a um segundo parâmetro, startNode, que especifica um elemento ou Nó do qual procurar elementos.  O valor padrão do parâmetro é `document` .  
 
-No exemplo de código e na figura a seguir, uma versão modificada do exemplo de código anterior e da figura usa `$$()` para criar uma matriz de todos os `<img>` elementos que aparecem no documento atual após o nó selecionado.  
+Na figura e amostra de código a seguir, uma versão modificada do exemplo de código anterior e a figura usam para criar uma matriz de todos os elementos que aparecem no documento atual após o `$$()` `<img>` Nó selecionado.  
 
 ```console
 var images = $$('img', document.querySelector(`title--image`));
@@ -174,48 +174,48 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
-   Figura 9: usar `$$()` para selecionar todas as imagens que aparecem após o `<div>` elemento especificado no documento e exibir as fontes  
+:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Usando $$() para selecionar todas as imagens que aparecem após o elemento <div> no documento e exibir as fontes" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+   Figura 9: Usando para selecionar todas as imagens que aparecem após `$$()` o elemento especificado no documento e exibir as `<div>` fontes  
 :::image-end:::  
 
 > [!NOTE]
 > Selecione `Shift` + `Enter` no console para iniciar uma nova linha sem executar o script.  
 
-## XPath  
+## <a name="xpath"></a>XPath  
 
 ```console
 $x(path, [startNode])
 ```  
 
-Retorna uma matriz de elementos DOM que correspondem à expressão XPath especificada.  
+Retorna uma matriz de elementos DOM que corresponderão à expressão XPath especificada.  
 
-No exemplo de código e na figura a seguir, todos os `<p>` elementos na página são retornados.  
+Na figura e amostra de código a seguir, todos os `<p>` elementos na página são retornados.  
 
 ```console
 $x("//p")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-array-xpath.msft.png":::
-   Figura 10: usando um seletor XPath  
+:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="Usando um seletor XPath" lightbox="../media/console-array-xpath.msft.png":::
+   Figura 10: Usando um seletor XPath  
 :::image-end:::  
 
-No exemplo de código e na figura a seguir, todos os `<p>` elementos que contêm `<a>` elementos são retornados.  
+Na figura e amostra de código a seguir, todos os `<p>` elementos que contêm `<a>` elementos são retornados.  
 
 ```console
 $x("//p[a]")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-array-xpath-sub-element.msft.png":::
-   Figura 11: usando um seletor XPath mais complicado  
+:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Usando um seletor XPath mais complicado" lightbox="../media/console-array-xpath-sub-element.msft.png":::
+   Figura 11: Usando um seletor XPath mais complicado  
 :::image-end:::  
 
-Semelhante aos outros comandos do seletor, `$x(path)` tem um segundo parâmetro opcional, `startNode` que especifica um elemento ou nó do qual Pesquisar elementos.  
+Semelhante aos outros comandos do seletor, tem um segundo parâmetro opcional, , que especifica um elemento ou Nó do qual `$x(path)` `startNode` procurar elementos.  
 
-:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-array-xpath-startnode.msft.png":::
-   Figura 12: usando um seletor XPath com `startNode`  
+:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="Usando um seletor XPath com startNode" lightbox="../media/console-array-xpath-startnode.msft.png":::
+   Figura 12: Usando um seletor XPath com `startNode`  
 :::image-end:::  
 
-## elimina  
+## <a name="clear"></a>clear  
 
 ```console
 clear()
@@ -227,7 +227,7 @@ Limpa o console do histórico.
 clear()
 ```  
 
-## copy  
+## <a name="copy"></a>copy  
 
 ```console
 copy(object)
@@ -239,107 +239,107 @@ O `copy(object)` método copia uma representação de cadeia de caracteres do ob
 copy($0)
 ```  
 
-## depurar  
+## <a name="debug"></a>depurar  
 
 ```console
 debug(method)
 ```  
 
 >[!NOTE]
-> O [problema Chromium #1050237][MonorailIssue1050237] está acompanhando um bug com a `debug()` função.  Se você tiver o problema, tente [usar pontos de interrupção][DevtoolsJavascriptBreakpoints] em vez disso.  
+> O [problema do Chromium #1050237][MonorailIssue1050237] está rastreando um bug com a `debug()` função.  Se você encontrar o problema, tente [usar pontos de interrupção.][DevtoolsJavascriptBreakpoints]  
 
-Quando você solicita o método especificado, o depurador é invocado e é quebrado dentro do método no painel **fontes** , permitindo que você percorra o código e depure-o.  
+Quando você solicita o método especificado, o depurador é invocado e quebra dentro do método na ferramenta **Sources,** permitindo passar pelo código e depurá-lo.  
 
 ```console
 debug("debug");
 ```  
 
-:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-debug-text.msft.png":::
-   Figura 13: quebrando dentro de um método com `debug()`  
+:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="Quebrar dentro de um método com depuração()" lightbox="../media/console-debug-text.msft.png":::
+   Figura 13: Quebrar dentro de um método com `debug()`  
 :::image-end:::  
 
-Use `undebug(method)` para parar de quebrar o método ou use a interface do usuário para desativar todos os pontos de interrupção.  
+Use para parar de quebrar o método ou use a interface do usuário `undebug(method)` para desabilitar todos os pontos de interrupção.  
 
-Para obter mais informações sobre pontos de interrupção, navegue para [pausar o código com pontos de interrupção][DevToolsJavascriptBreakpoints].  
+Para obter mais informações sobre pontos de interrupção, navegue até [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 
-## dir  
+## <a name="dir"></a>dir  
 
 ```console
 dir(object)
 ```  
 
-Exibe uma listagem de estilo de objeto de todas as propriedades do objeto especificado.  Esse método é um alias para o método [console. dir ()][MDNConsoleDir] .  
+Exibe uma listagem de estilo de objeto de todas as propriedades do objeto especificado.  Este método é um alias para o [método console.dir().][MDNConsoleDir]  
 
-Avaliar `document.head` no console para exibir o HTML entre as `<head>` marcas e `</head>` .  No exemplo de código e na imagem a seguir, uma listagem de estilo de objeto é exibida após `console.dir()` o uso no console.  
+Avalie `document.head` no Console para exibir o HTML entre as marcas `<head>` `</head>` e.  Na figura e exemplo de código a seguir, uma listagem de estilo de objeto é exibida após o `console.dir()` uso no Console.  
 
 ```console
 document.head;
 dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-dir-document-head-expanded.msft.png":::
-   Figura 14: registro `document.head` no `dir()` método  
+:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Método log document.head com dir()" lightbox="../media/console-dir-document-head-expanded.msft.png":::
+   Figura 14: Log `document.head` com `dir()` método  
 :::image-end:::  
 
-Para obter mais informações, navegue até [`console.dir()`][DevToolsConsoleApiConsoleDirObject] a entrada na API do console.  
+Para obter mais informações, navegue [`console.dir()`][DevToolsConsoleApiConsoleDirObject] até a entrada na API do Console.  
 
-## dirxml  
+## <a name="dirxml"></a>dirxml  
 
 ```console
 dirxml(object)
 ```  
 
-Imprime uma representação XML do objeto especificado, como visto na guia **elementos** .  Esse método é equivalente ao método [console. DirXML ()][MDNConsoleDirxml] .  
+Imprime uma representação XML do objeto especificado, conforme exibido na **ferramenta Elements.**  Esse método é equivalente ao [método console.dirxml().][MDNConsoleDirxml]  
 
-## inspeção  
+## <a name="inspect"></a>inspect  
 
 ```console
 inspect(object/method)
 ```  
 
-Abre e seleciona o elemento ou o objeto especificado no painel apropriado: o painel **elementos** para elementos DOM ou o painel **memória** para objetos de heap JavaScript.  
+Abre e seleciona o elemento ou objeto especificado no painel apropriado: a ferramenta **Elements** para elementos DOM ou a ferramenta **Memória** para objetos de pilha JavaScript.  
 
-No exemplo de código e na figura a seguir, o `document.body` abre no painel de **elementos** .  
+Na figura e amostra de código a seguir, a `document.body` abre na **ferramenta Elements.**  
 
 ```console
 inspect(document.body);
 ```  
 
-:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-inspect-document-body.msft.png":::
-   Figura 15: inspecionar um elemento com `inspect()`  
+:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="Inspecionar um elemento com inspect()" lightbox="../media/console-inspect-document-body.msft.png":::
+   Figura 15: Inspecionar um elemento com `inspect()`  
 :::image-end:::  
 
-Ao passar um método para inspecionar, o método abre o documento no painel **fontes** para inspeção.  
+Ao passar um método para inspecionar, o método abre o documento na **ferramenta Fontes** para você inspecionar.  
 
-## getEventListeners  
+## <a name="geteventlisteners"></a>getEventListeners  
 
 ```console
 getEventListeners(object)
 ```  
 
-Retorna os ouvintes de eventos registrados no objeto especificado.  O valor de retorno é um objeto que contém uma matriz para cada tipo de evento registrado \ (como `click` ou `keydown` \).  Os membros de cada matriz são objetos que descrevem o ouvinte registrado para cada tipo.  Na imagem de exemplo de código a seguir, todos os ouvintes de eventos registrados no objeto do documento são listados.  
+Retorna os ouvintes de eventos registrados no objeto especificado.  O valor de retorno é um objeto que contém uma matriz para cada tipo de evento registrado \(como `click` ou `keydown` \).  Os membros de cada matriz são objetos que descrevem o ouvinte registrado para cada tipo.  Na figura de exemplo de código a seguir, todos os ouvintes de eventos registrados no objeto do documento são listados.  
 
 ```console
 getEventListeners(document);
 ```  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
-   Figura 16: o resultado de usar `getEventListeners(document)`  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Saída do uso de getEventListeners(document)" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+   Figura 16: O resultado do uso `getEventListeners(document)`  
 :::image-end:::  
 
-Se mais de um ouvinte estiver registrado no objeto especificado, a matriz contém um membro para cada ouvinte.  Na figura a seguir, há dois ouvintes de eventos registrados no elemento do documento para o `click` evento.  
+Se mais de um ouvinte estiver registrado no objeto especificado, a matriz conterá um membro para cada ouvinte.  Na figura a seguir, há dois ouvintes de eventos registrados no elemento de documento do `click` evento.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
-   Figura 17: vários ouvintes  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="Vários ouvintes" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
+   Figura 17: Vários ouvintes  
 :::image-end:::  
 
-Você pode expandir ainda mais cada um dos seguintes objetos para explorar as propriedades.  
+Você pode expandir ainda mais cada um dos objetos a seguir para explorar as propriedades.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
-   Figura 18: exibição expandida do objeto Listener  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Exibição expandida do objeto ouvinte" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
+   Figura 18: Exibição expandida do objeto ouvinte  
 :::image-end:::  
 
-## chaves  
+## <a name="keys"></a>chaves  
 
 ```console
 keys(object)
@@ -353,7 +353,7 @@ Por exemplo, suponha que seu aplicativo definiu o objeto a seguir.
 var player1 =   
 ```  
 
-Nos exemplos de código e na figura a seguir, o resultado pressupõe `player1` que foi definido no namespace global \ (para simplicidade \) antes de digitar `keys(player1)` e `values(player1)` no console.  
+Na figura e amostras de código a seguir, o resultado supõe que foi definido no `player1` namespace global \(for simplicity\) antes de digitar e `keys(player1)` no `values(player1)` console.  
 
 ```console
 keys(player1)
@@ -361,17 +361,17 @@ keys(player1)
 values(player1)
 ```  
 
-:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-keys-values.msft.png":::
-   Figura 19: `keys()` comandos e `values()`  
+:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Os comandos keys() e values()" lightbox="../media/console-keys-values.msft.png":::
+   Figura 19: Os `keys()` comandos e `values()`  
 :::image-end:::  
 
-## monitor  
+## <a name="monitor"></a>monitor  
 
 ```console
 monitor(method)
 ```  
 
-Registra uma mensagem no console que indica o nome do método juntamente com os argumentos que são passados para o método quando ele é chamado.  
+Registra uma mensagem no console que indica o nome do método juntamente com os argumentos que são passados para o método quando ele foi chamado.  
 
 ```console
 function sum(x, y) {
@@ -380,64 +380,64 @@ function sum(x, y) {
 monitor(sum);
 ```  
 
-:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-function-monitor-sum.msft.png":::
-   Figura 20: o `monitor()` método  
+:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="O método monitor()" lightbox="../media/console-function-monitor-sum.msft.png":::
+   Figura 20: O `monitor()` método  
 :::image-end:::  
 
 Use `unmonitor(method)` para interromper o monitoramento.  
 
-## monitorEvents  
+## <a name="monitorevents"></a>monitorEvents  
 
 ```console
 monitorEvents(object[, events])
 ```  
 
-Quando ocorre um dos eventos especificados no objeto especificado, o objeto de evento é registrado no console.  Você pode especificar um único evento para monitorar, uma matriz de eventos ou um dos tipos de eventos genéricos que são mapeados para uma coleção predefinida de eventos.  Consulte o exemplo de código e a imagem a seguir.  
+Quando um dos eventos especificados ocorre no objeto especificado, o objeto de evento é registrado no console.  Você pode especificar um único evento a ser monitorado, uma matriz de eventos ou um dos tipos de eventos genéricos mapeados para uma coleção predefinida de eventos.  Revise o exemplo de código a seguir e a figura.  
 
-Os seguintes monitores redimensionam eventos no objeto Window.  
+O seguinte monitora todos os eventos de resize no objeto window.  
 
 ```console
 monitorEvents(window, "resize");
 ```  
 
-:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-monitor-events-resize-window.msft.png":::
-   Figura 21: monitorar eventos do Window Resize  
+:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Monitoring window resize events" lightbox="../media/console-monitor-events-resize-window.msft.png":::
+   Figura 21: Monitoring window resize events  
 :::image-end:::  
 
-O seguinte define uma matriz para monitorar os dois `resize` e os `scroll` eventos no objeto Window.  
+O seguinte define uma matriz para monitorar eventos `resize` e ambos no objeto `scroll` window.  
 
 ```console
 monitorEvents(window, ["resize", "scroll"]);
 ```  
 
-Você também pode especificar um dos tipos de eventos disponíveis, cadeias de caracteres que são mapeados para conjuntos de eventos predefinidos.  A tabela a seguir mostra os tipos de eventos disponíveis e os mapeamentos de eventos associados.  
+Você também pode especificar um dos tipos de eventos disponíveis, cadeias de caracteres que mapeiam para conjuntos predefinidos de eventos.  A tabela a seguir exibe os tipos de eventos disponíveis e os mapeamentos de eventos associados.  
 
 | Event type | Eventos mapeados correspondentes |  
 |:--- |:--- |  
-| `mouse` | "clique em", "DblClick", "botão de mouse", "MouseUp", "mouseout", "mouse pressionado", "MouseUp", "MouseWheel" |  
-| `key` | "KeyDown", "KeyPress", "KeyUp", "textInput" |  
+| `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |  
+| `key` | "keydown", "keypress", "keyup", "textInput" |  
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |  
-| `control` | "Blur", "alterar", "enfocar", "selecionar", "enviar", "zoom", "selecionar", "enviar", "zoom" |  
+| `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |  
 
-No exemplo de código a seguir, o `key` tipo de evento correspondente a `key` eventos em um campo de texto de entrada está selecionado atualmente no painel de **elementos** .  
+No exemplo de código a seguir, o tipo de evento correspondente a eventos em um campo de texto de entrada está atualmente `key` `key` selecionado na ferramenta **Elements.**  
 
 ```console
 monitorEvents($0, "key");
 ```  
 
-Na figura a seguir, a saída de exemplo após a digitação de um caractere no campo de texto é exibida.  
+Na figura a seguir, a saída de exemplo após digitar um caractere no campo de texto é exibida.  
 
-:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
-   Figura 22: monitorar eventos de chave  
+:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitorando os principais eventos" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
+   Figura 22: Monitorando os principais eventos  
 :::image-end:::  
 
-## profile  
+## <a name="profile"></a>profile  
 
 ```console
 profile([name])
 ```  
 
-Inicia uma sessão de criação de perfil de CPU JavaScript com um nome opcional.  O método [profileEnd ()](#profileend) conclui o perfil e exibe os resultados no painel **memória** .  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Inicia uma sessão de criação de perfil de CPU JavaScript com um nome opcional.  O [método profileEnd()](#profileend) conclui o perfil e exibe os resultados na **ferramenta Memória.**  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Execute o `profile()` método para iniciar a criação de perfil.  
     
@@ -445,9 +445,9 @@ Inicia uma sessão de criação de perfil de CPU JavaScript com um nome opcional
     profile("My profile")
     ```  
     
-1.  Execute o método [profileEnd ()](#profileend) para interromper a criação de perfil e exibir os resultados no painel **memória** .  
+1.  Execute o [método profileEnd()](#profileend) para interromper a criação de perfil e exibir os resultados na **ferramenta Memória.**  
 
-Perfis também podem ser aninhados.  Nos exemplos de código a seguir, configurando o resultado é o mesmo, independentemente da ordem.  
+Os perfis também podem ser aninhados.  Nos exemplos de código a seguir e figurar o resultado é o mesmo, independentemente da ordem.  
 
 ```console
 profile('A');
@@ -457,24 +457,24 @@ profileEnd('B');
 ```  
 
 > [!NOTE]
-> Vários perfis de CPU podem operar ao mesmo tempo e não é necessário fechar cada um deles na ordem de criação.  
+> Vários perfis de CPU podem operar ao mesmo tempo e você não precisa fechar cada um deles na ordem de criação.  
 
-## profileEnd  
+## <a name="profileend"></a>profileEnd  
 
 ```console
 profileEnd([name])
 ```  
 
-Conclui uma sessão de criação de perfil de CPU JavaScript e exibe os resultados no painel **memória** .  Você deve estar executando o método [Profile ()](#profile) .  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Conclui uma sessão de criação de perfil de CPU JavaScript e exibe os resultados na **ferramenta Memória.**  Você deve estar executando o [método profile().](#profile)  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
-1.  Execute o método [Profile ()](#profile) para iniciar a criação de perfil.  
-1.  Execute o `profileEnd()` método para interromper a criação de perfil e exibir os resultados no painel **memória** .  
+1.  Execute o [método profile()](#profile) para iniciar a criação de perfil.  
+1.  Execute o `profileEnd()` método para interromper a criação de perfil e exibir os resultados na ferramenta **Memória.**  
     
     ```console
     profileEnd("My profile")
     ```  
 
-Perfis também podem ser aninhados.  No exemplo de código a seguir e figura, o resultado é o mesmo, independentemente da ordem.  
+Os perfis também podem ser aninhados.  No exemplo de código a seguir e figura o resultado é o mesmo, independentemente da ordem.  
 
 ```console
 profile('A');
@@ -483,22 +483,22 @@ profileEnd('A');
 profileEnd('B');
 ```  
 
-O resultado aparece como um instantâneo de heap no painel **memória** .  
+O resultado aparece como um Instantâneo de Pilha na **ferramenta Memória.**  
 
-:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
-   Figura 23: perfis agrupados  
+:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Perfis agrupados" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+   Figura 23: Perfis agrupados  
 :::image-end:::  
 
 > [!NOTE]
-> Vários perfis de CPU podem operar ao mesmo tempo e não é necessário fechar cada um deles na ordem de criação.  
+> Vários perfis de CPU podem operar ao mesmo tempo e você não precisa fechar cada um deles na ordem de criação.  
 
-## queryObjects  
+## <a name="queryobjects"></a>queryObjects  
 
 ```console
 queryObjects(Constructor)
 ```  
 
-Retorna uma matriz de objetos criados com o Construtor especificado.  O escopo de `queryObjects()` é o contexto de tempo de execução atualmente selecionado no console.
+Retornar uma matriz de objetos criados com o construtor especificado.  O escopo de é o contexto de tempo de execução `queryObjects()` selecionado no console.
 
 :::row:::
    :::column span="1":::
@@ -506,7 +506,7 @@ Retorna uma matriz de objetos criados com o Construtor especificado.  O escopo d
       queryObjects(promise)
       ```  
       
-      Retorna All `Promises` .  
+      Retorna todos `Promises` .  
    :::column-end:::
    :::column span="1":::
       ```console
@@ -520,19 +520,19 @@ Retorna uma matriz de objetos criados com o Construtor especificado.  O escopo d
       queryObjects(functionName)
       ```  
       
-      Retorna todos os objetos que foram instanciados usando `new functionName()` .  
+      Retorna todos os objetos que foram instautados usando `new functionName()` .  
    :::column-end:::
 :::row-end:::  
 
 ---  
 
-## TableName  
+## <a name="table"></a>table  
 
 ```console
 table(data[, columns])
 ```  
 
-Registra dados de objeto com formatação de tabela com base no objeto de dados em títulos de coluna opcionais.  No exemplo de código e na imagem a seguir, é exibida uma lista de nomes usando uma tabela no console.  
+Registra dados de objeto com formatação de tabela com base no objeto de dados em com títulos opcionais de coluna.  Na figura e exemplo de código a seguir, uma lista de nomes usando uma tabela no console é exibida.  
 
 ```console
 var names = {
@@ -548,11 +548,11 @@ var names = {
 table(names);
 ```  
 
-:::image type="complex" source="../media/console-table-display.msft.png" alt-text="$ _ é a expressão avaliada mais recentemente" lightbox="../media/console-table-display.msft.png":::
-   Figura 24: o resultado do `table()` método  
+:::image type="complex" source="../media/console-table-display.msft.png" alt-text="O resultado do método table()" lightbox="../media/console-table-display.msft.png":::
+   Figura 24: O resultado do `table()` método  
 :::image-end:::  
 
-## desdepurar  
+## <a name="undebug"></a>undebug  
 
 ```console
 undebug(method)
@@ -564,38 +564,38 @@ Interrompe a depuração do método especificado para que, quando o método for 
 undebug(getData);
 ```  
 
-## desmonitorar  
+## <a name="unmonitor"></a>unmonitor  
 
 ```console
 unmonitor(method)
 ```  
 
-Interrompe o monitoramento do método especificado.  Esse método é usado em conjunto com o método [Monitor ()](#monitor) .  
+Interrompe o monitoramento do método especificado.  Esse método é usado em conjunto com o [método monitor().](#monitor)  
 
 ```console
 unmonitor(getData);
 ```  
 
-## unmonitorEvents  
+## <a name="unmonitorevents"></a>unmonitorEvents  
 
 ```console
 unmonitorEvents(object[, events])
 ```  
 
-Interrompe o monitoramento de eventos do objeto e dos eventos especificados.  Por exemplo, o seguinte interrompe todos os monitoramentos de evento no objeto Window.  
+Interrompe o monitoramento de eventos para o objeto e eventos especificados.  Por exemplo, o seguinte interrompe todo o monitoramento de eventos no objeto window.  
 
 ```console
 unmonitorEvents(window);
 ```  
 
-Você também pode parar seletivamente o monitoramento de eventos específicos em um objeto.  Por exemplo, o código a seguir começa a monitorar todos os `mouse` eventos no elemento atualmente selecionado e, em seguida, interrompe o monitoramento de `mousemove` eventos \ (talvez reduzir o ruído na saída do console \).  
+Você também pode parar seletivamente o monitoramento de eventos específicos em um objeto.  Por exemplo, o código a seguir começa a monitorar todos os eventos no elemento selecionado no momento e interrompe o monitoramento de eventos \(talvez para reduzir o ruído na saída `mouse` `mousemove` do console\).  
 
 ```console
 monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
-## valores  
+## <a name="values"></a>values  
 
 ```console
 values(object)
@@ -607,30 +607,30 @@ Retorna uma matriz que contém os valores de todas as propriedades pertencentes 
 values(object);
 ```  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Referência de API do console"  
-[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "Dir-referência de API do console"  
-[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "Como pausar um código com pontos de interrupção no Microsoft Edge DevTools"  
+[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Referência da API do Console"  
+[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir - Referência da API de Console"  
+[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools"  
 [DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Acelerar o tempo de execução do JavaScript"  
 
-[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console. dir () | MDN"  
-[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console. DirXML () | MDN"  
-[MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document. querySelector () | MDN"  
-[MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document. querySelectorAll () | MDN"  
+[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
+[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
+[MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document.querySelector() | MDN"  
+[MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document.querySelectorAll() | MDN"  
 
-[MonorailIssue1050237]: https://bugs.chromium.org/p/chromium/issues/detail?id=1050237 "Problema 1050237: a depuração (função) não está funcionando | Monorail"  
+[MonorailIssue1050237]: https://bugs.chromium.org/p/chromium/issues/detail?id=1050237 "Problema 1050237: depuração(função) não está funcionando | Monotrilho"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/console/utilities) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/console/utilities) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

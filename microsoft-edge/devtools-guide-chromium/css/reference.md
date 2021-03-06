@@ -1,18 +1,18 @@
 ---
-description: Descubra novos fluxos de trabalho para exibir e alterar CSS no Microsoft Edge DevTools.
-title: Referência BITS
+description: Descubra novos fluxos de trabalho para exibição e alteração de CSS no Microsoft Edge DevTools.
+title: Referência CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11204009"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399138"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,414 +28,414 @@ ms.locfileid: "11204009"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Referência CSS  
+# <a name="css-reference"></a>Referência CSS  
 
-Descubra novos fluxos de trabalho na seguinte referência abrangente dos recursos do Microsoft Edge DevTools relacionados à exibição e alteração da CSS.  
+Descubra novos fluxos de trabalho na referência abrangente a seguir dos recursos do Microsoft Edge DevTools relacionados à exibição e alteração de CSS.  
 
-Confira [introdução e alterar CSS][DevToolsCSSGetStarted] para aprender as noções básicas.  
+Para saber as noções básicas, navegue até [Começar a exibir e alterar CSS][DevToolsCSSGetStarted].  
 
-## Selecionar um elemento  
+## <a name="choose-an-element"></a>Escolher um elemento  
 
-O painel **elementos** do devtools permite que você visualize ou altere a CSS de um elemento de cada vez.  O elemento selecionado é realçado na **árvore DOM**.  Os estilos do elemento são mostrados no painel **estilos** .  Consulte [Exibir o CSS de um elemento][DevToolsCSSGetStartedTutorial] para um tutorial.  
+A **ferramenta Elements** do DevTools permite exibir ou alterar o CSS de um elemento de cada vez.  O elemento selecionado é realçado na árvore **DOM**.  Os estilos do elemento são mostrados no painel **Estilos.**  Para um tutorial, navegue até [Exibir o CSS para um elemento][DevToolsCSSGetStartedTutorial].  
 
 > [!NOTE]
-> Na figura a seguir, o `h1` elemento que está realçado na **árvore DOM** é o elemento selecionado.  À direita, os estilos do elemento são mostrados no painel **estilos** .  À esquerda, o elemento é realçado na viewport, mas só porque o mouse está passando no momento sobre ele na **árvore DOM**.  
+> Na figura a seguir, o `h1` elemento realçado na Árvore **DOM** é o elemento selecionado.  À direita, os estilos do elemento são mostrados no painel **Estilos.**  À esquerda, o elemento é realçado no viewport, mas somente porque o mouse está atualmente pairando sobre ele na **árvore DOM**.  
 
 :::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="Um exemplo de um elemento selecionado" lightbox="../media/css-elements-styles-h1.msft.png":::
    Um exemplo de um elemento selecionado  
 :::image-end:::  
 
-Use uma das ações a seguir para selecionar um elemento.  
+Use uma das seguintes ações para selecionar um elemento.  
 
-*   No seu visor, passe o cursor do mouse sobre o elemento, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **inspecionar**.  
-*   No devtools, escolha **selecionar um elemento** \ ( ![ Selecione um elemento ][ImageSelectAnElementIcon] \) ou selecionar `Control` + `Shift` + `C` \ (Windows, Linux \) ou `Command` + `Shift` + `C` \ (MacOS \) e, em seguida, escolha o elemento no visor.  
-*   No DevTools, escolha o elemento na **árvore DOM**.  
-*   No DevTools, execute uma consulta como `document.querySelector('p')` no **console**, passe o cursor do mouse sobre o resultado, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **revelar no painel de elementos**.  
+*   No seu viewport, passe o mouse no elemento, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Inspecionar**.  
+*   No DevTools, escolha **Selecionar** um elemento \( Selecione um elemento \) ou selecione ![ ][ImageSelectAnElementIcon] `Control` + `Shift` + `C` \(Windows, Linux\) `Command` + `Shift` + `C` ou \(macOS\) e escolha o elemento no viewport.  
+*   Em DevTools, escolha o elemento na Árvore **DOM**.  
+*   No DevTools, execute uma consulta como no Console , passe o mouse no resultado, abra o menu contextual \(clique com o botão direito do mouse\) e escolha `document.querySelector('p')` Revelar em Elementos **** **painel**.  
 
-## Exibir CSS  
+## <a name="view-css"></a>Exibir CSS  
 
-### Exibir a folha de estilos externa na qual uma regra está definida  
+### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>Exibir a folha de estilos externa onde uma regra é definida  
 
-No painel **estilos** , escolha o link ao lado de uma regra CSS para abrir a folha de estilos externa que define a regra.  
+No painel **Estilos,** escolha o link ao lado de uma regra CSS para abrir a folha de estilos externa que define a regra.  
 
-Se a folha de estilos for minified, navegue para [deixar um arquivo do minified legível][DevToolsJavascriptReferenceFormat].  
+Se a folha de estilos for minificada, navegue até [Tornar um arquivo minificado acessível][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
-> Na figura a seguir, depois de escolher `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` você será levado para a linha 2 de `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` , onde a `.content h1:first-of-type` regra CSS é definida.  
+> Na figura a seguir, depois de escolher, você é levado para a `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` linha 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` de , onde a regra CSS é `.content h1:first-of-type` definida.  
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
-:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Exibir a folha de estilos onde uma regra está definida" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
-  Exibir a folha de estilos onde uma regra está definida  
+:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Exibindo a folha de estilos em que uma regra é definida" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+  Exibindo a folha de estilos em que uma regra é definida  
 :::image-end:::  
 
-### Exibir apenas a CSS que é realmente aplicada a um elemento  
+### <a name="view-only-the-css-that-is-actually-applied-to-an-element"></a>Exibir apenas o CSS que é realmente aplicado a um elemento  
 
-A guia **estilos** mostra todas as regras que se aplicam a um elemento, incluindo declarações que foram substituídas.  Quando você não está interessado em declarações substituídas, use a guia **calculada** para exibir apenas a CSS que está realmente sendo aplicada a um elemento.  
+O **painel Estilos** mostra todas as regras que se aplicam a um elemento, incluindo declarações que foram substituídos.  Quando você não estiver interessado em declarações substituidas, use o painel **Computed** para exibir apenas o CSS que está realmente sendo aplicado a um elemento.  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  Vá para a guia **calculada** no painel **elementos** .  
-
-> [!NOTE]
-> Em uma ampla janela do DevTools, a guia **calculada** não existe.  O conteúdo da guia **calculada** é mostrado na guia **estilos** .  
-
-As propriedades herdadas são opacas.  Marque a caixa de seleção **Mostrar tudo** para ver todos os valores herdados.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  Navegue até **o painel Computed** na **ferramenta Elements.**  
 
 > [!NOTE]
-> Na figura a seguir, a guia **calculada** mostra as propriedades CSS aplicadas ao elemento atualmente selecionado `h1` .  
+> Em uma janela ampla do DevTools, o painel **Computed** não existe.  O conteúdo do painel **Computed** é mostrado no painel **Estilos.**  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="A guia calculada" lightbox="../media/css-elements-computed-h1.msft.png":::
-   A guia **calculada**  
+As propriedades herdadas são opacas.  Para exibir todos os valores herdados, selecione a **caixa de seleção Mostrar Tudo.**  
+
+> [!NOTE]
+> Na figura a seguir, o **painel Computed** mostra as propriedades CSS que estão sendo aplicadas ao elemento selecionado `h1` no momento.  
+
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="O painel Computed" lightbox="../media/css-elements-computed-h1.msft.png":::
+   O **painel Computed**  
 :::image-end:::  
 
-### Exibir as propriedades CSS em ordem alfabética  
+### <a name="view-css-properties-in-alphabetical-order"></a>Exibir propriedades CSS em ordem alfabética  
 
-Use a guia **calculada** .  Consulte [exibir apenas a CSS que é realmente aplicada a um elemento](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Use o **painel Computed.**  Navegue [até Exibir somente o CSS que é realmente aplicado a um elemento](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
-### Exibir Propriedades CSS herdadas  
+### <a name="view-inherited-css-properties"></a>Exibir propriedades CSS herdadas  
 
-Marque a caixa de seleção **Mostrar tudo** na guia **calculada** .  Consulte [exibir apenas a CSS que é realmente aplicada a um elemento](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Marque a **caixa de seleção** Mostrar Tudo no painel **Computado.**  Navegue [até Exibir somente o CSS que é realmente aplicado a um elemento](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
-### Exibir o modelo de caixa para um elemento  
+### <a name="view-the-box-model-for-an-element"></a>Exibir o modelo de caixa de um elemento  
 
-Para exibir [o modelo de caixa][MDNBoxModel] de um elemento, acesse a guia **estilos** .  Se a janela do DevTools for restrita, o diagrama de **modelo de caixa** estará na parte inferior da guia.  
+Para exibir [o modelo de caixa][MDNBoxModel] de um elemento, navegue até o painel **Estilos.**  Se sua janela DevTools for estreita, o diagrama **do Modelo** de Caixa será na parte inferior do painel.  
 
-Escolha e edite um valor para alterar um valor.  
-
-> [!NOTE]
-> Na figura a seguir, o diagrama de **modelo de caixa** na guia **estilos** mostra o modelo de caixa do elemento atualmente selecionado `h1` .  
-
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="O diagrama de modelo de caixa" lightbox="../media/css-elements-styles-h1-2.msft.png":::
-   O diagrama de **modelo de caixa**  
-:::image-end:::  
-
-### Pesquisar e filtrar a CSS de um elemento  
-
-Use a caixa de texto **Filtrar** nas guias **estilos** e **calculados** para pesquisar valores ou propriedades CSS específicas.  
-
-Para pesquisar também as propriedades herdadas na guia **calculada** , marque a caixa de seleção **Mostrar tudo** .  
+Escolha e edite em um valor para alterar um valor.  
 
 > [!NOTE]
-> Na figura a seguir, a guia **estilos** é filtrada para mostrar apenas as regras que incluem a consulta de pesquisa `color` .  
+> Na figura a seguir, o diagrama **Modelo** de Caixa no painel **Estilos** mostra o modelo de caixa do elemento selecionado `h1` no momento.  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtrar a guia estilos" lightbox="../media/css-elements-styles-filter-color.msft.png":::
-   Filtrar a guia **estilos**  
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="O diagrama do modelo de caixa" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+   O **diagrama do modelo de** caixa  
+:::image-end:::  
+
+### <a name="search-and-filter-the-css-of-an-element"></a>Pesquisar e filtrar o CSS de um elemento  
+
+Use a **caixa de** texto Filtrar nos **painéis Estilos** e **Computados** para pesquisar propriedades ou valores CSS específicos.  
+
+Para também pesquisar propriedades herdadas no **painel Computed,** marque a caixa de seleção **Mostrar Tudo.**  
+
+> [!NOTE]
+> Na figura a seguir, o painel **Estilos** é filtrado para mostrar apenas regras que incluem a consulta de pesquisa `color` .  
+
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtrar o painel Estilos" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+   Filtrar o **painel Estilos**  
 :::image-end:::  
 
 > [!NOTE]
-> Na figura a seguir, a guia **calculada** é filtrada para mostrar somente declarações que incluam a consulta de pesquisa `100%` .  
+> Na figura a seguir, o **painel Computed** é filtrado para mostrar apenas declarações que incluem a consulta de pesquisa `100%` .  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filtrar a guia calculada" lightbox="../media/css-elements-computed-filter-100.msft.png":::
-   Filtrar a guia **calculada**  
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filtrar o painel Computed" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+   Filtrar o **painel Computed**  
 :::image-end:::  
 
-### Alternar uma pseudo-classe  
+### <a name="toggle-a-pseudo-class"></a>Alternar uma pseudo-classe  
 
-Conclua as ações a seguir para alternar uma pseudoclasse como `:active` , `:focus` , `:hover` ou `:visited` .  
+Conclua as seguintes ações para alternar uma pseudo-classe `:active` como , , ou `:focus` `:hover` `:visited` .  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  No painel **elementos** , vá para a guia **estilos** .  
-1.  Escolha **: Hov**.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  Na ferramenta **Elementos,** navegue até o **painel Estilos.**  
+1.  Escolha **:hov**.  
 1.  Verifique a pseudo-classe que você deseja habilitar.  
 
 > [!NOTE]
-> Na figura a seguir, alterne a `:hover` pseudo-classe.  Na viewport, verifique se a `background-color: cornflowerblue` declaração está sendo aplicada ao elemento, mesmo que o elemento não esteja realmente sendo focalizado.  
+> Na figura a seguir, alterne a `:hover` pseudo-classe.  No viewport, verifique se a declaração está sendo aplicada ao elemento, mesmo que o elemento não está realmente sendo `background-color: cornflowerblue` pairado sobre.  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Alternar o: hover pseudo-classe" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Alternar a pseudo-classe :hover" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
    Alternar a `:hover` pseudo-classe  
 :::image-end:::  
 
-Para obter um tutorial interativo, navegue para [Adicionar um pseudo-estado a uma classe][DevToolsCSSGetStartedAddPseudoState].  
+Para um tutorial interativo, navegue até [Adicionar um pseudostate a uma classe][DevToolsCSSGetStartedAddPseudoState].  
 
-### Exibir uma página no modo de impressão  
+### <a name="view-a-page-in-print-mode"></a>Exibir uma página no modo de impressão  
 
-Conclua as ações a seguir para exibir uma página no modo de impressão.  
+Conclua as seguintes ações para exibir uma página no modo de impressão.  
 
-1.  [Abrir o menu de comandos][DevToolsCommandMenu].  
+1.  [Abra o Menu de Comando][DevToolsCommandMenu].  
 1.  Comece a digitar `Rendering` e selecione `Show Rendering` .  
-1.  Para o menu suspenso **emular CSS Media** , escolha **Imprimir**.  
+1.  Para o **menu suspenso Emular Mídia CSS,** escolha **imprimir**.  
 
-### Exibir CSS usado e não usado com a guia cobertura  
+### <a name="view-used-and-unused-css-with-the-coverage-tool"></a>Exibir CSS usado e não usado com a ferramenta Coverage  
 
-A guia cobertura mostra a CSS que uma página realmente usa.  
+A **ferramenta Coverage** mostra qual CSS uma página realmente usa.  
 
-1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) enquanto o devtools estiver em foco para [abrir o menu de comando][DevToolsCommandMenu].  
-1.  Comece a digitar `coverage` e escolha **Mostrar cobertura**.  A guia cobertura é exibida.  
+1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) enquanto o [][DevToolsCommandMenu]DevTools está em foco para abrir o Menu de Comando .  
+1.  Comece a digitar `coverage` e escolha Mostrar **Cobertura**.  A **ferramenta Coverage** é exibida.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Abrindo a guia cobertura no menu comando" lightbox="../media/css-console-command-menu-coverage.msft.png":::
-             Abrir a guia **cobertura** no **menu comando**  
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Abrindo a ferramenta Cobertura no Menu de Comando" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+             Abra a **ferramenta Cobertura** no Menu **de Comando**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="A guia cobertura" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
-             A guia **cobertura**  
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="A ferramenta Coverage" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+             A **ferramenta Coverage**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  Escolha **Iniciar cobertura de instrumentação e atualize a página** \ ( ![ Iniciar cobertura de instrumentação e atualizar a página ][ImageRefreshIcon] \).  A página é atualizada e a guia cobertura fornece uma visão geral de quanto o CSS \ (e JavaScript \) é usado em cada arquivo que o navegador carrega.  Verde representa a CSS usada.  Vermelho representa a CSS não usada.  
+1.  Escolha **Iniciar a cobertura de instrumentação e atualize a página** \( Inicie a cobertura de ![ instrumentação e atualize a ][ImageRefreshIcon] página \).  A página atualiza e a ferramenta **Coverage** fornece uma visão geral de quanto CSS \(e JavaScript\) é usado a partir de cada arquivo que o navegador carrega.  Verde representa CSS usado.  Vermelho representa CSS nãousado.  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Uma visão geral do quanto CSS (e JavaScript) é usado e não usado" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       Uma visão geral do quanto o CSS \ (e JavaScript \) é usado e não é usado  
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Uma visão geral de quanto CSS (e JavaScript) é usado e não usado" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+       Uma visão geral de quanto CSS \(e JavaScript\) é usado e não usado  
     :::image-end:::  
 
-1.  Escolha um arquivo CSS para ver uma divisão linha por linha de qual CSS ele usa.  
+1.  Para exibir uma divisão linha a linha do que CSS é usado, escolha um arquivo CSS.  
     
     > [!NOTE]
-    > Na figura a seguir, as linhas 145 a 147 e 149 a 151 de `b66bc881.site-ltr.css` não são usadas, enquanto as linhas 163 para 166 são usadas.  
+    > Na figura a seguir, as linhas 145 a 147 e 149 a 151 de não são usadas, enquanto as linhas `b66bc881.site-ltr.css` 163 a 166 são usadas.  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Uma divisão linha por linha do CSS usado e não usado" lightbox="../media/css-sources-css-coverage.msft.png":::
-       Uma divisão linha por linha do CSS usado e não usado  
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Uma divisão linha a linha de CSS usada e não utilizada" lightbox="../media/css-sources-css-coverage.msft.png":::
+       Uma divisão linha a linha de CSS usada e não utilizada  
     :::image-end:::  
     
-### Modo de visualização de impressão forçado  
+### <a name="force-print-preview-mode"></a>Forçar o modo de visualização de impressão  
 
-Consulte [forçar devtools no modo de visualização de impressão][DevToolsCssPrintPreview].  
+Navegue [até Forçar DevTools no modo Visualização de Impressão.][DevToolsCssPrintPreview]  
 
-## Alterar CSS  
+## <a name="change-css"></a>Alterar CSS  
 
 <!-- todo s/CSS declaration/declaration/ -->  
 
-### Adicionar uma declaração CSS a um elemento  
+### <a name="add-a-css-declaration-to-an-element"></a>Adicionar uma declaração CSS a um elemento  
 
-A ordem das declarações afeta a forma como um elemento é estilizado, use a lista a seguir para ajudá-lo a adicionar declarações de maneiras diferentes.  
+A ordem das declarações afeta a forma como um elemento é estilado, use a lista a seguir para ajudá-lo a adicionar declarações de maneiras diferentes.  
 
-*   [Adicione uma declaração embutida](#add-an-inline-declaration).  Equivalente a adicionar um `style` atributo ao HTML de um elemento.  
-*   [Adicione uma declaração a uma regra de estilo](#add-a-declaration-to-a-style-rule).  
+*   [Adicione uma declaração em linha](#add-an-inline-declaration).  Equivalente a adicionar `style` um atributo ao HTML de um elemento.  
+*   [Adicione uma declaração a uma regra de estilo.](#add-a-declaration-to-a-style-rule)  
 
-**Que fluxo de trabalho você deve usar?** Para a maioria dos cenários, você provavelmente deseja usar o fluxo de trabalho da declaração embutida.  As declarações embutidas têm uma prioridade mais alta do que as externas, portanto, o fluxo de trabalho embutido garante que as alterações entrem em vigor no elemento esperado.  Para obter mais informações sobre a específicaidade, navegue até [tipos de seletor][MDNSelectorTypes].  
+**Qual fluxo de trabalho você deve usar?** Para a maioria dos cenários, você provavelmente deseja usar o fluxo de trabalho de declaração em linha.  As declarações em linha têm maior especificidade do que as externas, portanto, o fluxo de trabalho em linha garante que as alterações tenham efeito no elemento esperado.  Para obter mais informações sobre a especificidade, navegue até [Tipos de Seletor][MDNSelectorTypes].  
 
-Se você estiver Depurando qualquer estilo do elemento e precisar testar especificamente o que acontece quando uma declaração é definida em locais diferentes, use o outro fluxo de trabalho.  
+Se você estiver depurando quaisquer estilos do elemento e precisar testar especificamente o que acontece quando uma declaração é definida em locais diferentes, use o outro fluxo de trabalho.  
 
-#### Adicionar uma declaração embutida  
+#### <a name="add-an-inline-declaration"></a>Adicionar uma declaração em linha  
 
-Conclua as ações a seguir para adicionar uma declaração embutida.  
+Conclua as seguintes ações para adicionar uma declaração em linha.  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  No painel **estilos** , escolha entre os colchetes da seção **elemento. Style** .  O cursor se concentra, permitindo que você insira texto.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  No painel **Estilos,** escolha entre os colchetes da **seção element.style.**  O cursor se concentra, permitindo que você insira texto.  
 1.  Insira um nome de propriedade e selecione `Enter` .  
-1.  Insira um valor válido para essa propriedade e selecione `Enter` .  Na **árvore DOM**, verifique se um `style` atributo foi adicionado ao elemento.  
+1.  Insira um valor válido para essa propriedade e selecione `Enter` .  Na Árvore **DOM,** verifique se um `style` atributo foi adicionado ao elemento.  
 
 > [!NOTE]
-> Na figura a seguir, as `margin-top` Propriedades e foram `background-color` aplicadas ao elemento selecionado.  Na **árvore DOM** , verifique se as declarações são refletidas no `style` atributo para um elemento.  
+> Na figura a seguir, `margin-top` as propriedades e foram `background-color` aplicadas ao elemento selecionado.  Na Árvore **DOM,** verifique se as declarações são refletidas no `style` atributo de um elemento.  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Adicionar declarações embutidas" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
-   Adicionar declarações embutidas  
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Adicionar declarações em linha" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+   Adicionar declarações em linha  
 :::image-end:::  
 
-#### Adicionar uma declaração a uma regra de estilo  
+#### <a name="add-a-declaration-to-a-style-rule"></a>Adicionar uma declaração a uma regra de estilo  
 
-Conclua as ações a seguir para adicionar uma declaração a uma regra de estilo existente.  
+Conclua as seguintes ações para adicionar uma declaração a uma regra de estilo existente.  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  No painel **estilos** , escolha entre os colchetes da regra de estilo à qual você deseja adicionar a declaração.  O cursor se concentra, permitindo que você insira texto.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  No painel **Estilos,** escolha entre os colchetes da regra de estilo à qual você deseja adicionar a declaração.  O cursor se concentra, permitindo que você insira texto.  
 1.  Insira um nome de propriedade e selecione `Enter` .  
 1.  Insira um valor válido para essa propriedade e selecione `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Adicionando uma declaração a uma regra de estilo" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Adicionar uma declaração a uma regra de estilo" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
    Adicionar a `border-bottom-style:groove` declaração a uma regra de estilo  
 :::image-end:::  
 
-### Alterar um nome ou valor de declaração  
+### <a name="change-a-declaration-name-or-value"></a>Alterar um nome ou valor de declaração  
 
-Escolha e edite o nome ou o valor de uma declaração para alterá-la.  Consulte [alterar valores de declaração com atalhos de teclado](#change-declaration-values-with-keyboard-shortcuts) para atalhos para incrementar ou decrementar rapidamente um valor por `0.1` ,, `1` `10` ou `100` unidades.  
+Escolha e edite o nome ou o valor de uma declaração para alterá-la.  Para atalhos para incrementar ou decrementar rapidamente um valor por , , ou unidades, navegue até Alterar valores de declaração `0.1` `1` com `10` `100` [atalhos de teclado](#change-declaration-values-with-keyboard-shortcuts).  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Alterar o valor de uma declaração" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Alterando o valor de uma declaração" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    Alterar o valor da `border-bottom-style` declaração  
 :::image-end:::  
 
-### Alterar valores de declaração com atalhos de teclado  
+### <a name="change-declaration-values-with-keyboard-shortcuts"></a>Alterar valores de declaração com atalhos de teclado  
 
-Durante a edição do valor de uma declaração, você pode usar os seguintes atalhos de teclado para incrementar o valor por uma quantia específica.  
+Ao editar o valor de uma declaração, você pode usar os atalhos de teclado a seguir para incrementar o valor por uma quantidade específica.  
 
-*   Selecione `Alt` + `Up` \ (Windows, Linux \) ou `Option` + `Up` \ (MacOS \) para aumentar o incremento `0.1` .  
-*   Selecione `Up` para alterar o valor por `1` , ou `0.1` se o valor atual estiver entre `-1` e `1` .  
-*   Selecione `Shift` + `Up` para aumentar o incremento `10` .  
-*   Selecione `Shift` + `Page Up` \ (Windows, Linux \) ou `Shift` + `Command` + `Up` \ (MacOS \) para incrementar o valor por `100` .  
+*   Selecione `Alt` + `Up` \(Windows, Linux\) `Option` + `Up` ou \(macOS\) para incrementar `0.1` por .  
+*   Selecione `Up` para alterar o valor por , ou se o valor atual estiver entre e `1` `0.1` `-1` `1` .  
+*   Selecione `Shift` + `Up` para incrementar `10` por .  
+*   Selecione `Shift` + `Page Up` \(Windows, Linux\) `Shift` + `Command` + `Up` ou \(macOS\) para incrementar o valor em `100` .  
 
-O decréscimo também funciona.  Basta substituir cada ocorrência de `Up` mencionado acima por `Down` .  
+A decrementação também funciona.  Basta substituir cada instância mencionada `Up` acima por `Down` .  
 
-### Adicionar uma classe a um elemento  
+### <a name="add-a-class-to-an-element"></a>Adicionar uma classe a um elemento  
 
-Conclua as ações a seguir para adicionar uma classe a um elemento.  
+Conclua as seguintes ações para adicionar uma classe a um elemento.  
 
-1.  [Selecione o elemento](#select-an-element) na **árvore DOM**.  
-1.  Choose **. CLS**.  
-1.  Digite o nome da classe na caixa de texto **Adicionar nova classe** .  
+1.  [Selecione o elemento](#choose-an-element) na Árvore **DOM**.  
+1.  Escolha **.cls**.  
+1.  Insira o nome da classe na caixa **de texto Adicionar Nova** Classe.  
 1.  Selecione `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="O painel classes de elemento" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
-   O painel **classes de elemento**  
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="O painel Classes de Elemento" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+   O **painel Classes de** Elemento  
 :::image-end:::  
 
-### Alternar uma classe  
+### <a name="toggle-a-class"></a>Alternar uma classe  
 
-Conclua as ações a seguir para habilitar ou desabilitar uma classe em um elemento.  
+Conclua as seguintes ações para habilitar ou desabilitar uma classe em um elemento.  
 
-1.  [Selecione o elemento](#select-an-element) na **árvore DOM**.  
-1.  Abrir o painel **classes de elementos** .  Consulte [Adicionar uma classe a um elemento](#add-a-class-to-an-element).  Abaixo da caixa de texto **Adicionar nova classe** estão todas as classes que estão sendo aplicadas ao elemento específico.  
-1.  Alternar a caixa de seleção ao lado da classe que você deseja habilitar ou desabilitar.  
+1.  [Selecione o elemento](#choose-an-element) na Árvore **DOM**.  
+1.  Abra o **painel Classes de** Elemento.  Navegue [até Adicionar uma classe a um elemento](#add-a-class-to-an-element).  Abaixo da **caixa de texto** Adicionar Nova Classe estão todas as classes aplicadas ao elemento específico.  
+1.  Alterne a caixa de seleção ao lado da classe que você deseja ativar ou desativar.  
 
-### Adicionar uma regra de estilo  
+### <a name="add-a-style-rule"></a>Adicionar uma regra de estilo  
 
-Conclua as ações a seguir para adicionar uma nova regra de estilo.  
+Conclua as seguintes ações para adicionar uma nova regra de estilo.  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  Escolha **novo regra de estilo** \ ( ![ novo regra de estilo ][ImageNewStyleRuleIcon] \).  DevTools insere uma nova regra abaixo da regra **elemento. Style** .  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  Escolha **Nova Regra de Estilo** \( Nova Regra de Estilo ![ ][ImageNewStyleRuleIcon] \).  O DevTools insere uma nova regra abaixo da **regra element.style.**  
 
 > [!NOTE]
-> Na figura a seguir, o DevTools adiciona a `h1.devsite-page-title` regra de estilo depois que você escolhe **nova regra de estilo**.  
+> Na figura a seguir, DevTools adiciona a regra de estilo `h1.devsite-page-title` depois de escolher Nova Regra de **Estilo**.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Adicionar uma nova regra de estilo" lightbox="../media/css-elements-styles-style-new.msft.png":::
    Adicionar uma nova regra de estilo  
 :::image-end:::  
 
-#### Escolha em qual folha de estilos você deseja adicionar uma regra  
+#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Escolha a qual folha de estilos adicionar uma regra  
 
-Ao [Adicionar uma nova regra de estilo](#add-a-style-rule), escolha e segure **nova regra de estilo** \ ( ![ nova regra de estilo ][ImageNewStyleRuleIcon] \) para escolher para qual folha de estilo adicionar a regra de estilo.  
+Ao [adicionar uma nova regra de](#add-a-style-rule)estilo, escolha e segure New Style **Rule** \( New Style Rule \) para escolher qual folha de estilos adicionar a regra ![ de ][ImageNewStyleRuleIcon] estilo.  
 
-:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Escolher uma folha de estilos" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
-   Escolher uma folha de estilos  
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Escolha uma folha de estilos" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+   Escolha uma folha de estilos  
 :::image-end:::  
 
-#### Adicionar uma regra de estilo a um local específico  
+#### <a name="add-a-style-rule-to-a-specific-location"></a>Adicionar uma regra de estilo a um local específico  
 
-Conclua as ações a seguir para adicionar uma regra de estilo a um local específico na guia **estilos** .  
+Conclua as seguintes ações para adicionar uma regra de estilo a um local específico no painel **Estilos.**  
 
-1.  Passe o mouse sobre a regra de estilo que está diretamente acima de onde você deseja adicionar sua nova regra de estilo.  
-1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
-1.  Escolha **Inserir regra de estilo abaixo** \ ( ![ Inserir regra de estilo abaixo do ícone ][ImageNewStyleRuleIcon] \).  
+1.  Passe o mouse na regra de estilo que está diretamente acima de onde você deseja adicionar sua nova regra de estilo.  
+1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
+1.  Escolha **Inserir Regra de Estilo abaixo** \( Inserir Regra de Estilo abaixo ícone ![ ][ImageNewStyleRuleIcon] \).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Inserir regra de estilo abaixo" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Inserir regra de estilo abaixo**  
 :::image-end:::  
 
-### Revelar a barra de ferramentas mais ações  
+### <a name="reveal-the-more-actions-toolbar"></a>Revelar a barra de ferramentas Mais Ações  
 
-A barra de ferramentas **mais ações** permite executar as seguintes ações.  
+A **barra de ferramentas** Mais Ações permite executar as seguintes ações.  
 
-*   Insira uma regra de estilo diretamente abaixo da que você está focalizado.  
-*   Adicione uma `background-color` `color` declaração,, `box-shadow` ou `text-shadow` para a regra de estilo na qual você está focalizado.  
+*   Insira uma regra de estilo diretamente abaixo da que você está focado.  
+*   Adicione uma `background-color` , , ou declaração à regra de estilo em que você está `color` `box-shadow` `text-shadow` focado.  
 
-Conclua as ações a seguir para revelar a barra de ferramentas **mais ações** .  
+Conclua as seguintes ações para revelar a barra **de ferramentas Mais** Ações.  
 
-1.  Na guia **estilos** , passe o mouse sobre uma regra de estilo.  **Mais ações** \ ( `...` \) são reveladas no canto inferior direito da seção de regra de estilo.  
+1.  No painel **Estilos,** passe o mouse em uma regra de estilo.  **Mais Ações** \( \) é revelado na parte inferior `...` direita da seção de regra de estilo.  
     
     > [!NOTE]
-    > Na figura a seguir, passe o mouse sobre a `.header-holder.has-default-focus` regra de estilo e **mais ações** serão reveladas no canto inferior direito da seção de regra de estilo.  
+    > Na figura a seguir, passe o mouse na regra de estilo e Mais Ações será revelada no canto inferior direito `.header-holder.has-default-focus` da seção de regra de estilo. ****  
     
     :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Revelar mais ações" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
-       Revelar **mais ações** \ ( `...` \)  
+       Revelar **mais ações** \( `...` \)  
     :::image-end:::  
     
-1.  Passe o mouse sobre **mais ações** \ ( `...` \) para revelar as ações mencionadas acima.  
+1.  Passe o **mouse sobre Mais Ações** `...` \( \) para revelar as ações mencionadas acima.  
     
     > [!NOTE]
-    > A ação **Inserir regra de estilo abaixo** é revelada depois de passar o mouse sobre **mais ações**.  
+    > A **ação Inserir Regra de Estilo Abaixo** é revelada após passar o mouse sobre Mais **Ações**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="A barra de ferramentas mais ações" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
-       A barra de ferramentas **mais ações**  
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="A barra de ferramentas Mais Ações" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+       A **barra de ferramentas Mais** Ações  
     :::image-end:::  
     
-### Alternar uma declaração  
+### <a name="toggle-a-declaration"></a>Alternar uma declaração  
 
-Conclua as ações folllwoing para alternar uma única declaração em \ (ou off \).  
+Conclua as ações folllwoing para alternar uma única declaração em \(ou off\).  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  No painel **estilos** , passe o mouse sobre a regra que define a declaração.  Uma caixa de seleção é exibida ao lado de cada declaração.  
-1.  Marque \ (ou desmarque \) a caixa de seleção ao lado da declaração.  Quando você desmarca uma declaração, o DevTools a risca para indicar que não está mais ativo.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  No painel **Estilos,** passe o mouse na regra que define a declaração.  Uma caixa de seleção é exibida ao lado de cada declaração.  
+1.  Marque \(ou desmarcar\) a caixa de seleção ao lado da declaração.  Quando você desmarca uma declaração, o DevTools a cruza para indicar que ela não está mais ativa.  
 
 > [!NOTE]
-> Na figura a seguir, a `margin-top` Propriedade do elemento selecionado no momento foi desativada.  
+> Na figura a seguir, a propriedade do elemento selecionado no momento `margin-top` foi alternada.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Alternar uma declaração" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
    Alternar uma declaração  
 :::image-end:::  
 
-### Adicionar uma declaração de cor de plano de fundo  
+### <a name="add-a-background-color-declaration"></a>Adicionar uma declaração de cor de plano de fundo  
 
-Conclua as ações a seguir para adicionar uma `background-color` declaração a um elemento.  
+Conclua as seguintes ações para adicionar `background-color` uma declaração a um elemento.  
 
-1.  Passe o mouse sobre a regra de estilo à qual você deseja adicionar a `background-color` declaração.  
-1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
-1.  Escolha **adicionar cor de plano de fundo** \ ( ![ ícone de cor da tela de fundo ][ImageAddBackgroundColorIcon] \).  
+1.  Passe o mouse na regra de estilo à que você deseja `background-color` adicionar a declaração.  
+1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
+1.  Escolha **Adicionar Cor do Plano de** Fundo \( Adicionar ícone de cor de plano de fundo ![ ][ImageAddBackgroundColorIcon] \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Adicionar cor de plano de fundo" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Adicionar cor de plano de fundo**  
 :::image-end:::  
 
-### Adicionar uma declaração de cor  
+### <a name="add-a-color-declaration"></a>Adicionar uma declaração de cor  
 
-Conclua as ações a seguir para adicionar uma `color` declaração a um elemento.  
+Conclua as seguintes ações para adicionar `color` uma declaração a um elemento.  
 
-1.  Passe o mouse sobre a regra de estilo à qual você deseja adicionar a `color` declaração.  
-1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
-1.  Escolha **adicionar cor** \ ( ![ ícone Adicionar cor ][ImageAddColorIcon] \).  
+1.  Passe o mouse na regra de estilo à que você deseja `color` adicionar a declaração.  
+1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
+1.  Escolha **Adicionar Cor** \( Adicionar ícone de cor ![ ][ImageAddColorIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Adicionar cor" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
-   **Adicionar cor**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Adicionar Cor" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+   **Adicionar Cor**  
 :::image-end:::  
 
-### Adicionar uma declaração de caixa-sombra  
+### <a name="add-a-box-shadow-declaration"></a>Adicionar uma declaração de sombra de caixa  
 
-Conclua as ações a seguir para adicionar uma `box-shadow` declaração a um elemento.  
+Conclua as seguintes ações para adicionar `box-shadow` uma declaração a um elemento.  
 
-1.  Passe o mouse sobre a regra de estilo à qual você deseja adicionar a `box-shadow` declaração.  
-1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
-1.  Escolha **Adicionar sombra de caixa** \ ( ![ ícone de sombra Adicionar caixa ][ImageAddBoxShadowIcon] \).  
+1.  Passe o mouse na regra de estilo à que você deseja `box-shadow` adicionar a declaração.  
+1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
+1.  Escolha **Adicionar Sombra de Caixa** \( Adicionar ícone sombra de caixa ![ ][ImageAddBoxShadowIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Adicionar sombra à caixa" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
-   **Adicionar sombra à caixa**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Adicionar Sombra de Caixa" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+   **Adicionar Sombra de Caixa**  
 :::image-end:::  
 
-### Adicionar uma declaração de sombra de texto  
+### <a name="add-a-text-shadow-declaration"></a>Adicionar uma declaração de sombra de texto  
 
-Conclua as ações a seguir para adicionar uma `text-shadow` declaração a um elemento.  
+Conclua as seguintes ações para adicionar `text-shadow` uma declaração a um elemento.  
 
-1.  Passe o mouse sobre a regra de estilo à qual você deseja adicionar a `text-shadow` declaração.  
-1.  [Revelar a barra de ferramentas **mais ações** ](#reveal-the-more-actions-toolbar).  
-1.  Escolha **Adicionar sombra de texto** \ ( ![ Adicionar ícone de sombra de texto ][ImageAddTextShadowIcon] \).  
+1.  Passe o mouse na regra de estilo à que você deseja `text-shadow` adicionar a declaração.  
+1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
+1.  Escolha **Adicionar Sombra de Texto** \( Adicionar ícone sombra de texto ![ ][ImageAddTextShadowIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Adicionar sombra de texto" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
-   **Adicionar sombra de texto**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Adicionar Sombra de Texto" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+   **Adicionar Sombra de Texto**  
 :::image-end:::  
 
-### Alterar as cores com o seletor de cores  
+### <a name="change-colors-with-the-color-picker"></a>Alterar cores com o Selador de Cores  
 
-O **seletor de cores** fornece uma GUI para alteração `color` e `background-color` declarações.  
+O **Selador de** Cores fornece uma GUI para alterações `color` e `background-color` declarações.  
 
-Conclua as seguintes ações para abrir o **seletor de cores**.  
+Conclua as seguintes ações para abrir o **Selador de Cores**.  
 
-1.  [Selecione um elemento](#select-an-element).  
-1.  Na guia **estilos** , localize a `color` declaração, `background-color` ou semelhante, que você deseja alterar.  À esquerda do `color` `background-color` valor, ou semelhante, há um quadrado pequeno que é uma visualização da cor.  
+1.  [Selecione um elemento](#choose-an-element).  
+1.  No painel **Estilos,** encontre `color` a declaração , ou semelhante que você deseja `background-color` alterar.  À esquerda do valor , ou semelhante, há um pequeno `color` quadrado que é uma `background-color` visualização da cor.  
     
     > [!NOTE]
-    > Na figura a seguir, o pequeno quadrado à esquerda de `rgba(0, 0, 0, 0.7)` é uma visualização da cor.  
+    > Na figura a seguir, o pequeno quadrado à esquerda `rgba(0, 0, 0, 0.7)` é uma visualização dessa cor.  
     
     :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Visualização de cores" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
        Visualização de cores  
     :::image-end:::  
     
-1.  Escolha a visualização para abrir o **seletor de cores**.  
+1.  Escolha a visualização para abrir o **Selador de Cores**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="O seletor de cores" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
-       O **seletor de cores**  
+    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="O Se picker de cores" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+       O **Se picker de cores**  
     :::image-end:::  
     
-A figura a seguir e a lista descreve de cada um dos elementos da interface do usuário do **seletor de cores**.  
+A figura a seguir e os descries de lista de cada um dos elementos da interface do usuário do **Selador de Cores**.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="O seletor de cores, anotado" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
-   O **seletor de cores**, anotado  
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="O Seletor de Cores, anotado" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+   O **Seletor de**Cores , anotado  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      um  
+      1  
    :::column-end:::
    :::column span="1":::
-      **Sombras**  
+      **Sombreos**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -446,21 +446,21 @@ A figura a seguir e a lista descreve de cada um dos elementos da interface do us
       2  
    :::column-end:::
    :::column span="1":::
-      **Ferramenta**  
+      **Conta-gotas**  
    :::column-end:::
    :::column span="2":::
-      Para obter mais informações, navegue para obter [uma amostra de cor na página com o conta-gotas](#sample-a-color-off-the-page-with-the-eyedropper).  
+      Para obter mais informações, navegue até Amostra de uma cor da [página com o Conta-gotas](#sample-a-color-off-the-page-with-the-eyedropper).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      3D  
+      3  
    :::column-end:::
    :::column span="1":::
       **Copiar para área de transferência**  
    :::column-end:::
    :::column span="2":::
-      Copie o **valor de exibição** para a área de transferência.  
+      Copie o **Valor de Exibição** para sua área de transferência.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -471,7 +471,7 @@ A figura a seguir e a lista descreve de cada um dos elementos da interface do us
       **Valor de exibição**  
    :::column-end:::
    :::column span="2":::
-      A representação RGBA, HSLA ou hexa da cor.  
+      A representação RGBA, HSLA ou Hex da cor.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -479,7 +479,7 @@ A figura a seguir e a lista descreve de cada um dos elementos da interface do us
       5  
    :::column-end:::
    :::column span="1":::
-      **Paleta de cores**  
+      **Paleta de Cores**  
    :::column-end:::
    :::column span="2":::
       Escolha um dos quadrados para alterar a cor para esse quadrado.  
@@ -487,10 +487,10 @@ A figura a seguir e a lista descreve de cada um dos elementos da interface do us
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      5  
+      6  
    :::column-end:::
    :::column span="1":::
-      **Matiz**  
+      **Hue**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -509,44 +509,44 @@ A figura a seguir e a lista descreve de cada um dos elementos da interface do us
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      08  
+      8  
    :::column-end:::
    :::column span="1":::
-      **Seletor de valor de exibição**  
+      **Alternador de valor de exibição**  
    :::column-end:::
    :::column span="2":::
-      Alternar entre as representações de RGBA, HSLA e HexA da cor atual.  
+      Alterne entre as representações RGBA, HSLA e Hex da cor atual.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      222  
+      9  
    :::column-end:::
    :::column span="1":::
-      **Seletor de paleta de cores**  
+      **Alternador de Paleta de Cores**  
    :::column-end:::
    :::column span="2":::
-      Alternar entre a [paleta de design de material][MaterialDesignColorSystem], uma paleta personalizada ou uma paleta de cores de página.  O DevTools gera a paleta de cores da página com base nas cores encontradas nas suas folhas de estilos.  
+      Alterne entre a paleta [Design de Material,][MaterialDesignColorSystem]uma paleta personalizada ou uma paleta de cores de página.  O DevTools gera a paleta de cores da página com base nas cores que ele encontra em suas folhas de estilo.  
    :::column-end:::
 :::row-end:::  
 
-#### Exemplo de uma cor para fora da página com o conta-gotas  
+#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>Amostra de uma cor da página com o Conta-gotas  
 
-Quando você abre o **seletor de cores**, o **conta-gotas** \ ( ![ conta-gotas ][ImageEyedropperIcon] \) é ativado por padrão.  Conclua as ações a seguir para alterar a cor selecionada para outra cor na página.  
+Quando você abre o **Selador de**Cores, **o** Conta-gotas \( Conta-gotas ![ ][ImageEyedropperIcon] \) está em uso por padrão.  Conclua as seguintes ações para alterar a cor selecionada para outra cor na página.  
 
-1.  Passe o mouse sobre a cor de destino no visor.  
+1.  Passe o mouse sobre a cor de destino no viewport.  
 1.  Escolha confirmar.  
     
     > [!NOTE]
-    > Na figura a seguir, o **seletor de cores** mostra um valor de cor atual de `rgba(0,0,0,0.7)` , que é próximo a preto.  A cor específica deve mudar para a versão do preto que está realçada no visor depois que você a escolheu.  
+    > Na figura a seguir, o **Selador** de Cores mostra um valor de cor atual `rgba(0,0,0,0.7)` de , que está próximo ao preto.  A cor específica deve mudar para a versão do preto que está realçada no viewport depois que você a escolheu.  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Usar o conta-gotas" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
-       Usar o conta-gotas  
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Usando o Conta-gotas" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+       Usando o Conta-gotas  
     :::image-end:::  
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -563,23 +563,23 @@ Quando você abre o **seletor de cores**, o **conta-gotas** \ ( ![ conta-gotas ]
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
-[DevToolsCSSGetStarted]: ../css/index.md "Introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Adicionar um PseudoState a uma classe-introdução ao visualizar e alterar CSS | Documentos da Microsoft"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Exibir o CSS de um elemento-introdução ao modo de exibição e alteração de CSS | Documentos da Microsoft"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "Forçar o Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS) | Documentos da Microsoft"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Torne um arquivo minified legível – referência de depuração de JavaScript | Documentos da Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Executar comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "Começar a exibir e alterar o css | Microsoft Docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Adicionar um pseudostate a uma classe - Começar a exibir e alterar o css | Microsoft Docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Exibir o CSS para um elemento - Começar a exibir e alterar o css | Microsoft Docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Forçar o Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS) | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Tornar um arquivo minificado acessível - Referência de Depuração de JavaScript | Microsoft Docs"  
 
-[MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "O sistema de cores-design do material"  
+[MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "O sistema de cores - Design de Material"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "O modelo de caixa | MDN"  
-[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Tipos de seletor-específico | MDN"  
+[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Tipos de seletor - Especificidade | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/reference) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/css/reference) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

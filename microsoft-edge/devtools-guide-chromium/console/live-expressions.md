@@ -1,18 +1,18 @@
 ---
-description: Se você estiver digitando as mesmas expressões JavaScript no console repetidamente, experimente expressões dinâmicas em vez disso.
-title: Assista aos valores de expressão JavaScript no Real-Time com expressões ao vivo
+description: Se você estiver digitando as mesmas expressões JavaScript no Console repetidamente, experimente Expressões Ao Vivo.
+title: Assista aos valores de expressão javascript em tempo real com expressões ao vivo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125227"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398795"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11125227"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Assista aos valores de expressão JavaScript no Real-Time com expressões ao vivo  
+# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Assista aos valores de expressão javascript em tempo real com expressões ao vivo  
 
-Se você mesmo digitar a mesma expressão de JavaScript no console repetidamente, talvez seja mais fácil criar uma **expressão ao vivo**.  Com **expressões ao vivo** , você digita uma expressão uma vez e a fixa na parte superior do console.  O valor da expressão é atualizado em tempo real quase em tempo real.  
+Se você estiver digitando a mesma expressão JavaScript no Console repetidamente, talvez seja mais fácil criar uma **expressão ao vivo.**  Com **expressões ao vivo,** você digita uma expressão uma vez e, em seguida, fixá-la na parte superior do console.  O valor da expressão é atualizado quase em tempo real.  
 
-## Criar uma expressão ao vivo  
+## <a name="create-a-live-expression"></a>Criar uma expressão ao vivo  
 
-1.  [Abra o console][DevToolsConsoleReferenceOpenConsole].  
-1.  Escolha **criar expressão ao vivo** \ ( ![ criar expressão ao vivo ][ImageCreateLiveExpressionIcon] \).  A caixa de texto **expressão ao vivo** é exibida.  
+1.  [Abra o Console][DevToolsConsoleReferenceOpenConsole].  
+1.  Escolha **Criar Expressão Ao Vivo** \( Criar Expressão Ao Vivo ![ ][ImageCreateLiveExpressionIcon] \).  A **caixa de texto Expressão** Ao Vivo é exibida.  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Digitando documento. ActiveElement na caixa de texto expressão dinâmica" lightbox="../media/console-create-live-expression.msft.png":::
-       Digitando `document.activeElement` na caixa de texto **expressão dinâmica**  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Digitando document.activeElement na caixa de texto Expressão Ativa" lightbox="../media/console-create-live-expression.msft.png":::
+       Digitando `document.activeElement` na caixa de texto **Expressão** Ao Vivo  
     :::image-end:::  
     
-1.  Selecione `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \) para salvar a expressão ou escolha fora da caixa de texto de **expressão ao vivo** .  
+1.  Selecione `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\) **** para salvar a expressão ou escolha fora da caixa de texto Expressão Ao Vivo.  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -53,14 +53,14 @@ Se você mesmo digitar a mesma expressão de JavaScript no console repetidamente
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abrir o console-referência do console | Documentos da Microsoft"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abra o Console - Console Reference | Microsoft Docs"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

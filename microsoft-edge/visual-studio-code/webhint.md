@@ -1,34 +1,34 @@
 ---
-description: Como usar webhint no código do Visual Studio
-title: extensão de código do webhint VS
+description: Como usar webhint no Visual Studio Code
+title: webhint Visual Studio de código
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento da Web, código vs, código do Visual Studio, dica da Web
-ms.openlocfilehash: ec218fab8cbfb8181a0416c8e0eadc0e00412529
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+keywords: microsoft edge, desenvolvimento da Web, vs code, código do visual studio, webhint
+ms.openlocfilehash: 3dfd900bf818d02dbc8123c00e7928e56d9b6ade
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695856"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399271"
 ---
-# Extensão de código do webhint vs  
+# <a name="webhint-vs-code-extension"></a>Extensão webhint vs code  
 
-Use [webhint][WebhintMain], uma ferramenta de redimensionamento personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade do PWA e a segurança do seu site.  Ele verifica o código em busca de práticas recomendadas e erros comuns. Este projeto de código aberto, inicialmente desenvolvido pela equipe Microsoft Edge, agora faz parte da [Fundação OpenJS][OpenjsFoundation].  A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores da Web na Comunidade.  
+Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade com o PWA e a segurança do seu site.  Ele verifica seu código em busca de práticas recomendadas e erros comuns. Este projeto de código aberto, inicialmente desenvolvido pela equipe do Microsoft Edge, agora faz parte do [OpenJS Foundation][OpenjsFoundation].  A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores web na comunidade.  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão de código do webhint VS":::
-   Captura de tela da extensão de código do webhint VS  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão Visual Studio Código da Web":::
+   Captura de tela da extensão Visual Studio Código da Web  
 :::image-end:::
 
-<!--![Screenshot of webhint VS Code extension][ImageWebhintExtension]  -->  
+<!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-Identifique e corrija problemas em HTML, CSS, JavaScript, TypeScript e muito mais adicionando a [extensão webhint para o código vs][VisualstudioMarketplaceWebhint].  As dicas aparecem como sublinhados embutidos e são resumidas no painel **problemas** .  
+Identifique e corrige problemas em seu HTML, CSS, JavaScript, TypeScript e muito mais adicionando a extensão [webhint para Visual Studio Código][VisualstudioMarketplaceWebhint].  As dicas aparecem como sublinhados em linha e são resumidas no painel **Problemas.**  
 
-## Configuração  
+## <a name="configuration"></a>Configuração  
 
-Essa extensão usa um arquivo JSON de [configuração padrão][GithubWebhintioIndexjson] que ativa dicas e analisadores para HTML, CSS, sistemas de templating \ (JSX/TSX, angular e assim por diante \), JavaScript/TypeScript e muito mais.  
+Essa extensão usa um arquivo [json][GithubWebhintioIndexjson] de configuração padrão que ativa dicas e analisadores para HTML, CSS, sistemas de templating \(JSX/TSX, Angular e assim por diante\), JavaScript/TypeScript e muito mais.  
 
 ```json
 {
@@ -80,37 +80,37 @@ Essa extensão usa um arquivo JSON de [configuração padrão][GithubWebhintioIn
 }
 ```  
 
-Se quiser ter mais controle sobre as dicas e analisadores que são ativados, crie um `.hintrc` arquivo local para configurar a dica na webquerer.  Para obter ajuda com a saída de dicas específicas, consulte [Guia do usuário da WebDicas][WebhintDocsUserguideConfiguringSummary].  
+Se você quiser mais controle sobre as dicas e analisadores que são ativadas, crie um arquivo local `.hintrc` para configurar a webhint.  Para ajuda com a saída de dicas específicas, navegue até [webhint user guide][WebhintDocsUserguideConfiguringSummary].  
 
-## Como entrar em contato com a equipe webhint  
+## <a name="getting-in-touch-with-the-webhint-team"></a>Entrar em contato com a equipe webhint  
 
-Envie seus comentários por meio do [arquivamento de um problema][GithubWebhintioIssuesNew] na [webhint do repositório do GitHub][GithubWebhintio].  
+Envie seus comentários [arquivando um problema][GithubWebhintioIssuesNew] no [repositório do GitHub da Webhint.][GithubWebhintio]  
 
-Para contribuir para a extensão, consulte [Guia de contribuição da extensão de código do vs][GithubWebhintioExtensionVscodeContributing].  
+Para contribuir com a extensão, navegue até [Webhint Visual Studio Guia de contribuição][GithubWebhintioExtensionVscodeContributing]de extensão de código.  
 
-## Consulte também  
+## <a name="see-also"></a>Veja também  
 
 *   [Acessibilidade][AccessibilityIndex]  
 *   [Visual Studio Code][VisualstudiocodeIndex]  
 
 <!-- image links -->  
 
-<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  -->  
+<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint Visual Studio Code extension"  -->  
 
 <!--links -->  
 
-[AccessibilityIndex]: /microsoft-edge/accessibility "Acessibilidade | Documentos da Microsoft"  
+[AccessibilityIndex]: /microsoft-edge/accessibility "Acessibilidade | Microsoft Docs"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Código do Visual Studio | Documentos da Microsoft"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio código | Microsoft Docs"  
 
 [GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
-[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Colaborador-dica da GitHub"  
-[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index. JSON-webhintio/Hint | GitHub"
-[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Novos problemas-webhintio/dica | GitHub"  
+[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contribuição - webhint | GitHub"  
+[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index.json - webhintio/hint | GitHub"
+[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Novos problemas - webhintio/| GitHub"  
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 
-[OpenjsFoundation]:  https://openjsf.org "Base do OpenJS"  
+[OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
 
-[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Configurando webhint | Documentação do webhint"  
+[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Configurando o webhint | Documentação webhint"  
 [WebhintMain]:  https://webhint.io "webhint"  

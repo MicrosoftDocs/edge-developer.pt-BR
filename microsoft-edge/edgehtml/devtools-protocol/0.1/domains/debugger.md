@@ -1,818 +1,375 @@
 ---
-description: DevTools Protocol Version 0,1 (EdgeHTML) Reference para o domínio do depurador. O domínio do depurador expõe recursos de depuração JavaScript. Ele permite definir e remover pontos de interrupção, percorrer a execução, explorar rastreamentos de pilha, etc.
-title: Debugger Domain-DevTools Protocol versão 0,1 (EdgeHTML)
+description: Referência do Protocolo DevTools Versão 0.1 (EdgeHTML) para o Domínio de Depurador.  O domínio depurador expõe os recursos de depuração do JavaScript.  Ele permite definir e remover pontos de interrupção, passar pela execução, explorar rastreamentos de pilha, etc.
+title: Domínio de depurador - DevTools Protocol Versão 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 5160e6e69ec76f8c584f1bdb969464d805c7afa7
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d63408e23fd8912cf617bfefae2b991387b45a38
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231698"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397675"
 ---
-# Debugger Domain-DevTools Protocol versão 0,1 (EdgeHTML)  
+# <a name="debugger-domain---devtools-protocol-version-01-edgehtml"></a>Domínio de depurador - DevTools Protocol Versão 0.1 (EdgeHTML)  
   
-O domínio do depurador expõe recursos de depuração JavaScript. Ele permite definir e remover pontos de interrupção, percorrer a execução, explorar rastreamentos de pilha, etc.
-
-| | |
-|-|-|
-| [**Métodos**](#methods) | [habilitar](#enable), [desabilitar](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [SetBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [StepOut](#stepout), [Pause](#pause), [resume](#resume), [getscriptname](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setvariablevalue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Eventos**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [pausado](#paused), [retomado](#resumed) |
-| [**Tipos**](#types) | [Breakpointid](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Dependências**](#dependencies) | [Tempo de Execução](runtime.md) |
-## Métodos
-
-### Habilitar
-Habilita o depurador para a página especificada. Os clientes não devem presumir que a depuração foi habilitada até que o resultado desse comando seja recebido.
-
-
----
-
-### Desabilitar 
-Desabilita o depurador para determinada página.
-
-
----
-
-### getPossibleBreakpoints
-Retorna possíveis locais para o ponto de interrupção. os scripts em locais de intervalo de início e término devem ser iguais.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>start</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Início do intervalo para pesquisar possíveis locais de ponto de interrupção em.</td>
-        </tr>
-        <tr>
-            <td>encerrar</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Fim do intervalo para pesquisar possíveis locais de ponto de interrupção (excluindo). Quando não especificado, o final dos scripts é usado como final do intervalo.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>localiza</td>
-            <td><a href="#breaklocation"><code class="flyout">BreakLocation</code></a></td>
-            <td>Lista de possíveis locais de ponto de interrupção.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBreakpointsActive
-Ativa/desativa todos os pontos de interrupção na página.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>active</td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Novo valor para o estado ativo dos pontos de interrupção.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBreakpointByUrl
-Define o ponto de interrupção JavaScript em um determinado local especificado por URL ou Regex de URL. Depois que esse comando for emitido, todos os scripts analisados existentes terão pontos de interrupção resolvidos e retornados na <code>locations</code> propriedade. A análise de script correspondente resultará em eventos subsequentes <code>breakpointResolved</code> emitidos. Esse ponto de interrupção lógico permanecerá recarregamentos de página.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Número da linha para definir o ponto de interrupção em.</td>
-        </tr>
-        <tr>
-            <td>url <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>URL dos recursos para definir o ponto de interrupção.</td>
-        </tr>
-        <tr>
-            <td>urlRegex <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Padrão Regex para as URLs dos recursos para definir os pontos de interrupção. <code>url</code>Ou <code>urlRegex</code> deve ser especificado.</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Offset na linha para definir o ponto de interrupção.</td>
-        </tr>
-        <tr>
-            <td>problema <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Expressão a ser usada como uma condição de ponto de interrupção. Quando especificado, o depurador só será interrompido no ponto de interrupção se essa expressão for avaliada como true.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointid</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>ID do ponto de interrupção criado para referência adicional.</td>
-        </tr>
-        <tr>
-            <td>localiza</td>
-            <td><a href="#location"><code class="flyout">Location[]</code></a></td>
-            <td>Lista de locais para os quais esse ponto de interrupção foi resolvido após adição.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### SetBreakpoint
-Define o ponto de interrupção JavaScript em um determinado local.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ponto</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local para definir o ponto de interrupção.</td>
-        </tr>
-        <tr>
-            <td>problema <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Expressão a ser usada como uma condição de ponto de interrupção. Quando especificado, o depurador só será interrompido no ponto de interrupção se essa expressão for avaliada como true.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointid</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>ID do ponto de interrupção criado para referência adicional.</td>
-        </tr>
-        <tr>
-            <td>actualLocation</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local em que este ponto de interrupção foi resolvido.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### removeBreakpoint
-Remove o ponto de interrupção JavaScript.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointid</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### stepOver
-Etapas sobre a instrução.
-
-
----
-
-### stepInto
-Etapas para a chamada de função.
-
-
----
-
-### passo a passo
-Etapas para sair da chamada de função.
-
-
----
-
-### pause
-Para a próxima instrução JavaScript.
-
-
----
-
-### resume
-Retoma a execução do JavaScript.
-
-
----
-
-### getscriptname
-Retorna a origem do script com ID especificado.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptid</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>ID do script para o qual obter a fonte.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptização</td>
-            <td><code class="flyout">string</code></td>
-            <td>Fonte de script.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setPauseOnExceptions
-Define o estado pausar exceções. Pode ser definido para interromper todas as exceções, exceções não capturadas ou nenhuma exceção. O estado de pausa inicial em exceções é <code>none</code> .
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Estado</td>
-            <td><code class="flyout">string</code> <br/> <i>Valores permitidos: None, unpercebeud, All</i></td>
-            <td>Pausar no modo de exceções.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### evaluateOnCallFrame
-Avalia a expressão em um determinado quadro de chamada.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Identificador de quadro de chamada para avaliação.</td>
-        </tr>
-        <tr>
-            <td>Express</td>
-            <td><code class="flyout">string</code></td>
-            <td>Expressão a ser avaliada.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>levar</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Wrapper do objeto para o resultado da avaliação.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setvariablevalue
-Altera o valor da variável em um callframe. Escopos baseados em objeto não são compatíveis e devem ser modificados manualmente.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scopeNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>número baseado em 0 do escopo como foi listado na cadeia de escopos. Somente os tipos de escopo ' local ', ' fechamento ' e ' Catch ' são permitidos. Outros escopos podem ser manipulados manualmente.</td>
-        </tr>
-        <tr>
-            <td>VariableName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nome da variável.</td>
-        </tr>
-        <tr>
-            <td>newValue</td>
-            <td><a href="runtime.md#callargument"><code class="flyout">Runtime.CallArgument</code></a></td>
-            <td>Novo valor de variável.</td>
-        </tr>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>ID de callframe que mantém a variável.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBlackboxPatterns
-<span><b>Experimentais. </b></span>Substituir os padrões de Blackbox anteriores pelos aprovados. Força o back-end a ignorar a depuração/pausa em scripts com URL correspondente a um dos padrões. O depurador tentará deixar o script do blackboxed executando ' Step in ' várias vezes, finalmente reclassificando para "Step Out" se não tiver êxito.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>padrões</td>
-            <td><code class="flyout">string[]</code></td>
-            <td>Matriz de regexps que será usada para verificar a URL do script para o estado Blackbox.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### msSetDebuggerPropertyValue
-<span><b>Experimentais. </b></span>Microsoft: define a Propriedade Debugger especificada para o valor especificado.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>debuggerPropertyId</td>
-            <td><code class="flyout">string</code></td>
-            <td>Microsoft: a identificação da propriedade (por exemplo, msDebuggerPropertyId) a ser definida.</td>
-        </tr>
-        <tr>
-            <td>newValue</td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## Eventos
-
-### scriptParsed
-Acionado quando o script é analisado. Esse evento também é disparado para todos os scripts conhecidos e não coletados, quando o depurador é ativado.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptid</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Identificador do script analisado.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL ou nome do script analisado (se houver).</td>
-        </tr>
-        <tr>
-            <td>início</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Deslocamento de linha do script dentro do recurso com a URL fornecida (para marcas de script).</td>
-        </tr>
-        <tr>
-            <td>startColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>O deslocamento da coluna do script dentro do recurso com a URL fornecida.</td>
-        </tr>
-        <tr>
-            <td>Line</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Última linha do script.</td>
-        </tr>
-        <tr>
-            <td>Coluna de EndColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Comprimento da última linha do script.</td>
-        </tr>
-        <tr>
-            <td>executionContextid</td>
-            <td><a href="runtime.md#executioncontextid"><code class="flyout">Runtime.ExecutionContextId</code></a></td>
-            <td>Especifica o contexto de criação de script.</td>
-        </tr>
-        <tr>
-            <td>sourceMapURL <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>URL do mapa de origem associado ao script (se houver).</td>
-        </tr>
-        <tr>
-            <td>das <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimentais. </b></span>Esse tamanho do script.</td>
-        </tr>
-        <tr>
-            <td>msParentId <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Experimentais. </b></span>Esta é a ID do documento pai.</td>
-        </tr>
-        <tr>
-            <td>msMimeType <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Experimentais. </b></span>Esse é o tipo MIME.</td>
-        </tr>
-        <tr>
-            <td>msIsDynamicCode <br/> <i>opcional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b>Experimentais. </b></span>Isso indica se é um código dinâmico.</td>
-        </tr>
-        <tr>
-            <td>msLongDocumentId <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimentais. </b></span>Esta é a ID do documento longo.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### breakpointResolved
-Disparado quando o ponto de interrupção é resolvido para um script e local reais.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointid</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>Identificador exclusivo de ponto de interrupção.</td>
-        </tr>
-        <tr>
-            <td>ponto</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local do ponto de interrupção real.</td>
-        </tr>
-        <tr>
-            <td>msLength <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimentais. </b></span>Microsoft: comprimento do código (ou seja, número de caracteres) no local do ponto de interrupção.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### pausado
-Acionado quando os depuradores violam um ponto de interrupção ou uma exceção.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrames</td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td>Pilha de chamadas no depurador interrompido.</td>
-        </tr>
-        <tr>
-            <td>motivo</td>
-            <td><code class="flyout">string</code> <br/> <i>Valores permitidos: Breakpoint, Step, Exception, Other</i></td>
-            <td>Motivo da pausa.</td>
-        </tr>
-        <tr>
-            <td>data <br/> <i>opcional</i></td>
-            <td><code class="flyout">object</code></td>
-            <td>Objeto que contém propriedades auxiliares de quebra específicas.</td>
-        </tr>
-        <tr>
-            <td>hitBreakpoints <br/> <i>opcional</i></td>
-            <td><code class="flyout">string[]</code></td>
-            <td>IDs de pontos de interrupção de acesso</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### retomado
-Acionado quando o depurador retomar a execução.
-
-
----
-
-## Tipos
-
-### <a name="breakpointid"></a> Breakpointid `string`
-
-Identificador de ponto de interrupção.
-
-
----
-
-### <a name="callframeid"></a> CallFrameId `string`
-
-Identificador de quadro de chamada.
-
-
----
-
-### <a name="location"></a> Localização `object`
-
-Local no código-fonte.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptid</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Identificador de script reportado no <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Número da linha no script (baseado em 0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Número da coluna no script (baseado em 0).</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Microsoft: comprimento do código (ou seja, número de caracteres) nesse quadro de chamada.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="breaklocation"></a> BreakLocation `object`
-
-Interrompa o local no código-fonte.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptid</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Identificador de script reportado no <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Número da linha no script (baseado em 0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>opcional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Número da coluna no script (baseado em 0).</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Microsoft: comprimento do código (ou seja, número de caracteres) nesse quadro de chamada.</td>
-        </tr>
-        <tr>
-            <td>tipo <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Valores permitidos: debuggerStatement, Call, Return.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="callframe"></a> CallFrame `object`
-
-Quadro de chamada JavaScript. Matriz de quadros de chamadas formam a pilha de chamadas.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Identificador de quadro de chamada. Esse identificador só é válido enquanto o depurador está pausado.</td>
-        </tr>
-        <tr>
-            <td>função FunctionName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nome da função JavaScript chamada neste quadro de chamada.</td>
-        </tr>
-        <tr>
-            <td>functionLocation <br/> <i>opcional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td><span><b>Experimentais. </b></span>Local no código-fonte.</td>
-        </tr>
-        <tr>
-            <td>ponto</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local no código-fonte.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nome ou URL do script JavaScript.</td>
-        </tr>
-        <tr>
-            <td>scopeChain</td>
-            <td><a href="#scope"><code class="flyout">Scope[]</code></a></td>
-            <td>Cadeia de escopos para este quadro de chamada.</td>
-        </tr>
-        <tr>
-            <td>deste</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td><code>this</code> objeto para este quadro de chamada.</td>
-        </tr>
-        <tr>
-            <td>returnValue <br/> <i>opcional</i></td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>O valor que está sendo retornado, se a função estiver em um ponto de retorno.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="scope"></a> Escopo `object`
-
-Descrição do escopo.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>tipo</td>
-            <td><code class="flyout">string</code> <br/> <i>Valores permitidos: global, local, com, fechamento, catch, Block, script, eval, módulo</i></td>
-            <td>Tipo de escopo.</td>
-        </tr>
-        <tr>
-            <td>object</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Objeto que representa o escopo. Para <code>global</code> e <code>with</code> escopos, ele representa o objeto real; para o restante dos escopos, é um objeto transitório artificial enumerando variáveis de escopo como suas propriedades.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>startLocation <br/> <i>opcional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local no código-fonte onde o escopo é iniciado</td>
-        </tr>
-        <tr>
-            <td>EndLocation <br/> <i>opcional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Local no código-fonte em que termina o escopo</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## Dependências
-
-[Tempo de Execução](runtime.md)
+O domínio depurador expõe os recursos de depuração do JavaScript.  Ele permite definir e remover pontos de interrupção, passar pela execução, explorar rastreamentos de pilha, etc.
+
+| Classificação | Membros |  
+|:--- |:--- |  
+| [Métodos](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |  
+| [Eventos](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |  
+| [Tipos](#types) | [BreakpointId,](#breakpointid) [CallFrameId,](#callframeid) [Location,](#location) [BreakLocation,](#breaklocation) [CallFrame,](#callframe) [Scope](#scope) |  
+| [Dependências](#dependencies) | [Tempo de Execução](./runtime.md) |  
+
+## <a name="methods"></a>Métodos  
+
+### <a name="enable"></a>Habilitar  
+
+Habilita o depurador para a página determinada.  Os clientes não devem presumir que a depuração foi habilitada até que o resultado desse comando seja recebido.  
+
+&nbsp;  
+
+---  
+
+### <a name="disable"></a>Desabilitar   
+
+Desabilita o depurador para determinada página.  
+
+&nbsp;  
+
+---  
+
+### <a name="getpossiblebreakpoints"></a>getPossibleBreakpoints  
+
+Retorna possíveis locais para ponto de interrupção.  scriptId em locais de intervalo inicial e final deve ser o mesmo.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| start | [Location](#location) | Início do intervalo para pesquisar possíveis locais de ponto de interrupção em. |  
+| encerrar | [Location](#location) | Fim do intervalo para pesquisar possíveis locais de ponto de interrupção em \(excludendo\).  Quando não especificado, o fim dos scripts é usado como fim do intervalo. |  
+
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| locations | [BreakLocation](#breaklocation) | Lista dos possíveis locais de ponto de interrupção. |  
+
+---  
+
+### <a name="setbreakpointsactive"></a>setBreakpointsActive  
+
+Ativa/desativa todos os pontos de interrupção na página.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| active | `boolean` | Novo valor para o estado ativo de pontos de interrupção. |  
+
+---  
+
+### <a name="setbreakpointbyurl"></a>setBreakpointByUrl  
+
+Define o ponto de interrupção JavaScript em determinado local especificado por URL ou URL regex.  Depois que esse comando for emitido, todos os scripts analisados existentes terão pontos de interrupção resolvidos e retornados na `locations` propriedade.  A análise de scripts correspondentes posteriores resultará em eventos `breakpointResolved` subsequentes emitidos.  Esse ponto de interrupção lógico sobreviverá a recarregações de página.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| lineNumber | `integer` | Número da linha para definir ponto de interrupção em. |  
+| url \(optional\) | `string` | URL dos recursos para definir o ponto de interrupção. |  
+| urlRegex \(optional\) | `string` | Padrão regex para as URLs dos recursos para definir pontos de interrupção.  Ou `url` `urlRegex` deve ser especificado. |  
+| columnNumber \(optional\) | `integer` | Deslocamento na linha para definir ponto de interrupção em. |  
+| condição \(opcional\) | `string` | Expressão a ser usada como uma condição de ponto de interrupção.  Quando especificado, o depurador só será parar no ponto de interrupção se essa expressão for avaliada como true. |  
+
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID do ponto de interrupção criado para referência posterior. |  
+| locations | [Local[]](#location) | Lista dos locais em que esse ponto de interrupção foi resolvido após a adição. |  
+
+---  
+
+### <a name="setbreakpoint"></a>setBreakpoint  
+
+Define o ponto de interrupção JavaScript em um determinado local.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| location | [Location](#location) | Local para definir o ponto de interrupção. |  
+| condição \(opcional\) | `string` | Expressão a ser usada como uma condição de ponto de interrupção.  Quando especificado, o depurador só será parar no ponto de interrupção se essa expressão for avaliada como true. |  
+
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID do ponto de interrupção criado para referência posterior. |  
+| actualLocation | [Location](#location) | Local em que o ponto de interrupção foi resolvido. |  
+
+---  
+
+### <a name="removebreakpoint"></a>removeBreakpoint  
+
+Remove o ponto de interrupção JavaScript.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | &nbsp; |  
+
+---  
+
+### <a name="stepover"></a>stepOver  
+
+Etapas sobre a instrução.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepinto"></a>stepInto  
+
+Etapas na chamada de função.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepout"></a>stepOut  
+
+Sai da chamada de função.  
+
+&nbsp;  
+
+---  
+
+### <a name="pause"></a>pause  
+
+Para na próxima instrução JavaScript.  
+
+&nbsp;  
+
+---  
+
+### <a name="resume"></a>resume  
+
+Retoma a execução do JavaScript.  
+
+&nbsp;  
+
+---  
+
+### <a name="getscriptsource"></a>getScriptSource  
+
+Retorna a origem do script com a ID determinada.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | ID do script para o que obter a origem. |  
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scriptSource | `string` | Origem do script. |  
+
+---  
+
+### <a name="setpauseonexceptions"></a>setPauseOnExceptions  
+
+Define pausa no estado de exceções.  Pode ser definido para parar em todas as exceções, exceções não ativas ou nenhuma exceção.  A pausa inicial no estado de exceções é `none` .  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| state | `string` | Pause no modo de exceções.  Valores permitidos:  `none` `uncaught` , e `all` |  
+
+---  
+
+### <a name="evaluateoncallframe"></a>evaluateOnCallFrame  
+
+Avalia a expressão em um determinado quadro de chamada.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Identificador de quadro de chamada a ser avaliada. |  
+| expressão | `string` | Expressão a ser avaliada. |  
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| result | [Runtime.RemoteObject](./runtime.md#remoteobject) | Wrapper do objeto para o resultado da avaliação. |  
+
+---  
+
+### <a name="setvariablevalue"></a>setVariableValue  
+
+Altera o valor da variável em um callframe.  Os escopos baseados em objeto não têm suporte e devem ser transformados manualmente.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scopeNumber | `integer` | Número baseado em 0 do escopo conforme listado na cadeia de escopo.  Somente `local` , e os tipos de escopo são `closure` `catch` permitidos.  Outros escopos podem ser manipulados manualmente. |  
+| variableName | `string` | Nome da variável. |  
+| newValue | [Runtime.CallArgument](./runtime.md#callargument) | Novo valor variável. |  
+| callFrameId | [CallFrameId](#callframeid) | ID do callframe que contém variável. |  
+
+---  
+
+### <a name="setblackboxpatterns"></a>setBlackboxPatterns  
+
+**Experimental**.  Substitua padrões de caixa preta anteriores por aqueles passados.  Força o back-end a ignorar a revisão/pausa em scripts com a URL correspondente a um dos padrões.  O depurador tentará deixar o script em caixa preta executando várias vezes, finalmente `step in` recorrendo `step out` se não tiver êxito.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| patterns | `string[]` | Matriz de regexps que será usada para verificar a URL do script para o estado de blackbox. |  
+
+---  
+
+### <a name="mssetdebuggerpropertyvalue"></a>msSetDebuggerPropertyValue  
+
+**Experimental**.  Microsoft: define a propriedade depurador especificada como o valor especificado.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| debuggerPropertyId | `string` | Microsoft: A ID da propriedade \(ou seja, msDebuggerPropertyId\) a ser definida. |  
+| newValue | `string` | &nbsp; |  
+
+---  
+
+## <a name="events"></a>Eventos  
+
+### <a name="scriptparsed"></a>scriptParsed  
+
+Disparado quando o script é analisado.  Esse evento também é acionado para todos os scripts conhecidos e não recolhidos ao habilitar o depurador.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Identificador do script analisado. |  
+| url | `string` | URL ou nome do script analisado \(se tiver\). |  
+| startLine | `integer` | Deslocamento de linha do script dentro do recurso com a URL determinada \(para marcas de script\). |  
+| startColumn | `integer` | Deslocamento de coluna do script dentro do recurso com a URL determinada. |  
+| endLine | `integer` | Última linha do script. |  
+| endColumn | `integer` | Comprimento da última linha do script. |  
+| executionContextId | [Runtime.ExecutionContextId](./runtime.md#executioncontextid) | Especifica o contexto de criação de script. |  
+| sourceMapURL \(optional\) | `string` | URL do mapa de origem associado ao script (se for o caso). |  
+| comprimento \(opcional\) | `integer` | **Experimental**.  Este comprimento do script. |  
+| msParentId \(optional\) | `string` | **Experimental**.  Esta é a ID do documento pai. |  
+| msMimeType \(optional\) | `string` | **Experimental**.  Esse é o tipo de mime. |  
+| msIsDynamicCode \(optional\) | `boolean` | **Experimental**.  Isso indica se é um código dinâmico. |  
+| msLongDocumentId \(optional\) | `integer` | **Experimental**.  Esta é a ID do documento longa. |  
+
+---  
+
+### <a name="breakpointresolved"></a>breakpointResolved  
+
+Acionado quando o ponto de interrupção é resolvido para um script e local reais.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | Identificador exclusivo do ponto de interrupção. |  
+| location | [Location](#location) | Local real do ponto de interrupção. |  
+| msLength \(optional\) | `integer` | **Experimental**.  Microsoft: Comprimento do código \(ou seja, número de caracteres\) no local do ponto de interrupção. |  
+
+---  
+
+### <a name="paused"></a>pausado  
+
+Acionado quando os depurador quebram para um ponto de interrupção ou exceção.  
+
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| callFrames | [CallFrame[]](#callframe) | Pilha de chamada em que o depurador parou. |  
+| reason | `string` | Pause reason.  Valores permitidos:  `breakpoint` `step` , , `exception` e `other` |  
+| data \(optional\) | `object` | Objeto que contém propriedades auxiliares específicas de quebra. |  
+| hitBreakpoints \(optional\) | `string[]` | Hit breakpoints IDs |  
+
+---  
+
+### <a name="resumed"></a>retomada  
+
+Acionado quando o depurador retoma a execução.  
+
+&nbsp;  
+
+---  
+
+## <a name="types"></a>Tipos  
+
+### <a name="breakpointid-string"></a>Cadeia de caracteres BreakpointId  
+
+<a name="breakpointid"></a>  
+
+Identificador de ponto de interrupção.  
+
+&nbsp;  
+
+---  
+
+### <a name="callframeid-string"></a>Cadeia de caracteres CallFrameId  
+
+<a name="callframeid"></a>  
+
+Identificador de quadro de chamada.  
+
+&nbsp;  
+
+---  
+
+### <a name="location-object"></a>Objeto Location  
+
+<a name="location"></a>  
+
+Local no código-fonte.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Identificador de script conforme relatado no `Debugger.scriptParsed` . |  
+| lineNumber | `integer` | Número da linha no script \(0-based\). |  
+| columnNumber \(optional\) | `integer` | Número da coluna no script \(0-based\). |  
+| msLength | `integer` | Microsoft: Comprimento do código \(ou seja, número de caracteres\) neste quadro de chamada. |  
+
+---  
+
+### <a name="breaklocation-object"></a>Objeto BreakLocation  
+
+<a name="breaklocation"></a>  
+
+Local de quebra no código-fonte.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Identificador de script conforme relatado no `Debugger.scriptParsed` . |  
+| lineNumber | `integer` | Número da linha no script \(0-based\). |  
+| columnNumber \(optional\) | `integer` | Número da coluna no script \(0-based\). |  
+| msLength | `integer` | Microsoft: Comprimento do código \(ou seja, número de caracteres\) neste quadro de chamada. |  
+| tipo \(opcional\) | `string` | Valores permitidos:  `debuggerStatement` `call` , e `return` |  
+
+---  
+
+### <a name="callframe-object"></a>Objeto CallFrame  
+
+<a name="callframe"></a>  
+
+Quadro de chamada JavaScript.  Matriz de quadros de chamada forma a pilha de chamada.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Identificador de quadro de chamada.  Esse identificador só é válido enquanto o depurador é pausado. |  
+| functionName | `string` | Nome da função JavaScript chamada neste quadro de chamada. |  
+| functionLocation \(optional\) | [Location](#location) | **Experimental**.  Local no código-fonte. |  
+| location | [Location](#location) | Local no código-fonte. |  
+| url | `string` | Nome ou url do script JavaScript. |  
+| scopeChain | [Scope[]](#scope) | Cadeia de escopo para esse quadro de chamada. |  
+| this | [Runtime.RemoteObject](./runtime.md#remoteobject) | `this` para esse quadro de chamada. |  
+| returnValue \(optional\) | [Runtime.RemoteObject](./runtime.md#remoteobject) | O valor que está sendo retornado, se a função estiver no ponto de retorno. |  
+
+---  
+
+### <a name="scope-object"></a>Objeto Scope  
+
+<a name="scope"></a>  
+
+Descrição do escopo.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| tipo | `string` | Tipo de escopo.  Valores permitidos:  `global` , , , , , , , `local` , `with` `closure` `catch` `block` `script` `eval` e `module` |  
+| object | [Runtime.RemoteObject](./runtime.md#remoteobject) | Objeto que representa o escopo.  Para e escopos ele representa o objeto real; para o restante dos escopos, ele é `global` objeto transitório artificial enumerando variáveis de escopo `with` como suas propriedades. |  
+| nome \(opcional\) | `string` | &nbsp; |  
+| startLocation \(optional\) | [Location](#location) | Local no código-fonte onde o escopo é iniciado. |  
+| endLocation \(optional\) | [Location](#location) | Local no código-fonte onde o escopo termina. |  
+
+---  
+
+## <a name="dependencies"></a>Dependências  
+
+[Tempo de Execução](./runtime.md)  

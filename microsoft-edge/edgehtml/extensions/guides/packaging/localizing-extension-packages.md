@@ -1,64 +1,56 @@
 ---
-ms.assetid: c4043c1e-15ac-4210-8851-3804c7708f49
-description: Saiba como localizar seu pacote de extensão do Microsoft Edge para que ele esteja pronto para várias localidades durante o lançamento.
+description: Saiba como localizar o pacote de extensão do Microsoft Edge para que ele esteja pronto para várias localidades após a versão.
 title: Localizando pacotes de extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desenvolvimento da Web, HTML, CSS, JavaScript, desenvolvedor
+ms.assetid: c4043c1e-15ac-4210-8851-3804c7708f49
+keywords: edge, desenvolvimento da Web, html, css, javascript, desenvolvedor
 ms.custom: seodec18
-ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: cfa85eda47fd71099bb5d201d1cf85992931228c
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d5dd21f82fd746ad619e9d89a1526ff6a511d615
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231825"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397717"
 ---
-# Localizando extensões do Microsoft Edge para Windows e a Microsoft Store  
+# <a name="localizing-microsoft-edge-extensions-for-windows-and-the-microsoft-store"></a>Localizando extensões do Microsoft Edge para Windows e Microsoft Store  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-Este guia percorre como localizar sua extensão do Microsoft Edge para que ele esteja pronto para várias localidades durante o lançamento. Para localizar completamente sua extensão, você precisará seguir as etapas para o Windows e para a Microsoft Store.
+Este guia explica como localizar sua extensão do Microsoft Edge para que ela esteja pronta para várias localidades após a versão.  Para localização completa da extensão, você precisará seguir as etapas do Windows e da Microsoft Store.  
 
-Se quiser localizar seus recursos de extensão para o Microsoft Edge, você pode aprender a usar a estrutura de i18n no [Guia de internacionalização](../internationalization.md).
-
-
-> [!NOTE]
-> Se a extensão não oferecer suporte a vários idiomas, você poderá ignorar [o nome e a descrição da localização na Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
-
-
-## A visão geral do processo de localização
-
-A primeira etapa para obter a extensão disponível para um público largo é [Configurar o AppxManifest](#configuring-the-appxmanifest) para vários idiomas. Na Microsoft Store, isso mostrará aos usuários quais idiomas sua extensão oferece suporte. Certos campos na AppxManifest também precisarão ser alterados se você quiser que o nome de sua extensão seja [localizado na interface do usuário do Windows e na Microsoft Store](#localizing-extension-resources-for-windows-and-the-microsoft-store).
-
-
-Depois de configurar o AppxManifest, você precisará [criar recursos de cadeia de caracteres JSON](#creating-json-string-resources) para os idiomas que você indicou como suportados. Isso requer a criação de um arquivo. resjson para cada idioma, em que cada arquivo tem todas as cadeias de caracteres da interface do usuário do idioma dentro dele.
-
-
-Após a criação dos arquivos. resjson para os idiomas com suporte, [será necessário criar um arquivo de recursos. pri](#creating-the-resources-file). Isso será criado usando um arquivo de configuração para a ferramenta **MakePRI** que vem com o [SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk). 
+Se quiser localizar seus recursos de extensão para o Microsoft Edge, saiba como usar a estrutura i18n no guia [Internacionalização.](../internationalization.md)  
 
 > [!NOTE]
-> Se você estiver baixando o SDK do Windows 10 para usar a ferramenta MakePri.exe, poderá selecionar apenas os recursos "ferramentas de assinatura do SDK do Windows para aplicativos da área de trabalho" e "SDK do Windows para aplicativos da UWP Managed" para manter o download mais claro. A ferramenta MakePri.exe aparecerá em subpastas de C:\Program Files (x86) \Windows Kits\10\bin\10.0.17713.0.
+> Se sua extensão não tiver suporte para vários idiomas, você poderá ignorar o nome e a descrição de localização [na Microsoft Store.](#localizing-name-and-description-in-the-microsoft-store)  
 
+## <a name="the-localization-process-overview"></a>Visão geral do processo de localização  
 
-Depois de carregar a extensão, a etapa final será [localizar o nome e a descrição na Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
+A primeira etapa para disponibilizar sua extensão para uma ampla audiência é configurar seu [AppxManifest](#configuring-the-appxmanifest) para vários idiomas.  Na Microsoft Store, isso mostrará aos usuários quais idiomas sua extensão oferece suporte.  Determinados campos no AppxManifest também precisarão ser alterados se você quiser que o nome da sua extensão seja localizado na interface do usuário do Windows e [na Microsoft Store](#localizing-extension-resources-for-windows-and-the-microsoft-store).  
+
+Depois que o AppxManifest estiver configurado, você precisará criar recursos de cadeia de caracteres [JSON](#creating-json-string-resources) para os idiomas que você indicou como suportados.  Isso requer a criação de um arquivo para cada idioma, onde cada arquivo tem todas as cadeias de caracteres de interface do usuário `.resjson` desse idioma dentro dele.  
+
+Depois que os arquivos dos idiomas com suporte foram feitos, um arquivo de recurso `.resjson` [.pri precisará ser criado](#creating-the-resources-file). Isso será criado usando um arquivo de configuração para a ferramenta MakePRI que vem com o [SDK do Windows 10.](https://developer.microsoft.com/windows/downloads/windows-10-sdk)  
 
 > [!NOTE]
-> No momento, o envio de uma extensão do Microsoft Edge para a Microsoft Store é um recurso restrito. Entre [em contato conosco](https://aka.ms/extension-request) com suas solicitações para fazer parte da Microsoft Store, e consideraremos você para uma atualização futura.
+> Se você estiver baixando apenas o SDK do Windows 10 para usar a ferramenta, poderá selecionar apenas as Ferramentas de Assinatura do SDK do Windows para Aplicativos de Área de Trabalho e o SDK do Windows para recursos do Aplicativo Gerenciado `MakePri.exe` **UWP** para manter o download mais claro. ****  A `MakePri.exe` ferramenta aparecerá em subpastas de `C:\Program Files (x86)\Windows Kits\10\bin\10.0.17713.0` .  
 
+Depois de carregar sua extensão, a etapa final é localizar o nome e a [descrição na Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).  
 
+> [!NOTE]
+> No momento, enviar uma extensão do Microsoft Edge à Microsoft Store é um recurso restrito.  **Entre em contato conosco com** suas solicitações para fazer parte da Microsoft Store e consideraremos você para uma atualização futura.  
 
-## Configurando o AppXManifest
+## <a name="configuring-the-appxmanifest"></a>Configurando o AppXManifest  
 
-A lista de "idiomas com suporte" da extensão na Microsoft Store é gerada com base em seus valores de AppXManifest. Essa lista é especificada usando o `Resource` elemento.
+A lista de idiomas com suporte da sua extensão na Microsoft Store é gerada com base em seus valores AppXManifest.  Essa lista é especificada usando o `Resource` elemento.  
 
+![Detalhes do aplicativo](../../media/language-app-details.png)  
 
-![imagem das configurações – detalhes do aplicativo de linguagem](./../../media/language-app-details.png)
-
-Para especificar a lista de idiomas com suporte na sua extensão, você pode adicionar um `Resource` elemento no formato visto abaixo (esse `Resource` elemento mostrará o suporte para inglês, alemão e francês na Microsoft Store):
+Para especificar a lista de idiomas que são suportados pela extensão, você pode adicionar um elemento no formato visto abaixo \(este elemento mostrará suporte para inglês, alemão e francês na `Resource` `Resource` Microsoft Store\):  
 
 ```xml
 <Resources>
@@ -66,19 +58,17 @@ Para especificar a lista de idiomas com suporte na sua extensão, você pode adi
     <Resource Language="de-de"/>
     <Resource Language="fr-fr"/>
 </Resources>
-```
+```  
 
-Consulte [idiomas com suporte](https://msdn.microsoft.com/windows/uwp/publish/supported-languages) para obter informações sobre os idiomas/códigos de idioma com suporte na Microsoft Store.
+Consulte [Idiomas com suporte para](/windows/uwp/publish/supported-languages) obter informações sobre os códigos de idiomas/idiomas compatíveis com a Microsoft Store.  
 
+Para especificar cadeias de caracteres localizadas para todos os elementos visíveis publicamente no AppxManifest, você terá que usar um identificador de recurso no formato `ms-resource:<resource id>` de .  
 
-Para especificar cadeias de caracteres localizadas para todos os elementos publicamente visíveis no AppxManifest, você precisará usar um identificador de recurso no formato de `ms-resource:<resource id>` .
+Os trechos abaixo fazem um AppxManifest completo. Os seguintes valores devem ser recuperados de arquivos de recursos localizados:  
 
-Os snippets abaixo fazem uma AppxManifest completa. Os seguintes valores devem ser recuperados de arquivos de recursos localizados:
-
-- Properties\DisplayName
-- Properties\Description
-- Properties\PublisherDisplayName
-
+*   Properties\DisplayName  
+*   Properties\Description  
+*   Properties\PublisherDisplayName  
 
 ```xml
 <Properties>
@@ -87,11 +77,11 @@ Os snippets abaixo fazem uma AppxManifest completa. Os seguintes valores devem s
     <Logo>Assets\PackageLogo.png</Logo>
     <PublisherDisplayName>ms-resource:PublisherName</PublisherDisplayName>
 </Properties>
-```
+```  
 
-- Applications\Application\VisualElements\DisplayName
-- Applications\Application\VisualElements\Description
-- Applications\Application\Extensions\Extension\AppExtension\DisplayName
+*   Applications\Application\VisualElements\DisplayName  
+*   Applications\Application\VisualElements\Description  
+*   Applications\Application\Extensions\Extension\AppExtension\DisplayName  
 
 ```xml
 <Applications>
@@ -115,40 +105,35 @@ Os snippets abaixo fazem uma AppxManifest completa. Os seguintes valores devem s
       </Extensions>
     </Application>
   </Applications>
-```
+```  
 
+## <a name="localizing-extension-resources-for-windows-and-the-microsoft-store"></a>Localizando recursos de extensão para Windows e a Microsoft Store  
 
-## Localizando recursos de extensão para Windows e a Microsoft Store
+Agora que seu AppxManifest está configurado para vários idiomas, há algumas diferenças importantes que você deve saber entre a localização da interface do usuário em sua extensão e a localização de sua extensão para Windows e a Microsoft Store.  
 
-Agora que o AppxManifest está configurado para vários idiomas, há algumas diferenças importantes que você deve saber entre localizar a interface do usuário dentro da extensão e localizar sua extensão para Windows e a Microsoft Store.
+Embora as extensões do Microsoft Edge não são executados fora do Microsoft Edge, o gerenciamento delas pode ocorrer no Windows.  Por exemplo, os usuários podem gerenciar suas extensões no aplicativo Configurações:  
 
-Embora as extensões do Microsoft Edge não sejam executadas fora do Microsoft Edge, o gerenciamento delas pode ocorrer dentro do Windows. Por exemplo, os usuários podem gerenciar as extensões no aplicativo configurações:
+![aplicativo settings](../../media/settings.png)  
 
-
-![imagem de configurações](./../../media/settings.png)
-
-
-
-O nome da extensão que aparece no aplicativo Configurações do Windows vem do AppXManifest. Se esse valor for codificado em inglês, a versão em inglês do nome aparecerá em dispositivos Windows que não estejam em inglês. Se a identidade visual da extensão for somente em inglês, não há problema em deixá-la codificada.
-
+O nome da extensão que aparece no aplicativo Configurações no Windows vem do AppXManifest.  Se esse valor for hardcoded em inglês, a versão em inglês do nome será aparecer em dispositivos Windows que não sejam inglês.  Se a identidade visual da extensão for somente em inglês, não há problema em deixá-la codificada.  
 
 > [!NOTE]
-> Se você quiser usar nomes localizados para a extensão do Microsoft Edge no Windows, certifique-se de que os nomes localizados também estejam [disponíveis e reservados](./extensions-in-the-windows-dev-center.md#name-reservation) antes de fazer as alterações no arquivo AppXManifest. Se os nomes não forem reservados, você receberá o seguinte erro ao carregar o pacote final para o centro de desenvolvimento do Windows:</br></br>
+> Se você quiser usar nomes localizados para o Microsoft Edge Extension no [](./extensions-in-the-windows-dev-center.md#name-reservation) Windows, certifique-se de que os nomes localizados também estão disponíveis e reservados antes de fazer as alterações no arquivo AppXManifest.  Se os nomes não são reservados, você obterá o seguinte erro ao carregar o pacote final no Centro de Dev do Windows:  
+> 
+> ![erro de idioma](../../media/language-error.png)  
 
-![erro de idioma](./../../media/language-error.png)</br></br>
+A infraestrutura de localização baseada em i18n definida para extensões JavaScript só é aplicável no ambiente do Microsoft Edge.  
 
+Fora do Microsoft Edge, no Windows e na Microsoft Store, a única estrutura de localização com suporte é baseada na estrutura de localização da Plataforma Universal do Windows (UWP).  
 
-A infraestrutura de localização baseada em i18n definida para extensões JavaScript só se aplica dentro do ambiente Microsoft Edge.
+Embora suportemos recursos baseados em JSON para aplicativos windows baseados em HTML, o esquema para os recursos JSON não é igual ao definido para extensões JavaScript.  
 
-Fora do Microsoft Edge, no Windows e na Microsoft Store, a única estrutura de localização com suporte é baseada na estrutura de localização da plataforma universal do Windows (UWP).
+Veja a seguir as principais diferenças em [aplicativos baseados em HTML do Windows:](/previous-versions/windows/apps/hh465228(v=win.10))  
 
-Enquanto damos suporte a recursos baseados em JSON para aplicativos do Windows baseados em HTML, o esquema dos recursos JSON não corresponde a um definido para extensões JavaScript.
-
-
-Estas são as principais diferenças em [aplicativos do Windows baseados em HTML](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx):
--    Os recursos são especificados em arquivos. resjson em vez de arquivos. JSON.
--    As localidades com suporte devem ser especificadas no arquivo AppXManifest, com a primeira localidade sendo a localidade padrão.
--    Os recursos de aplicativos baseados em HTML do Windows usam o seguinte esquema:
+*   Os recursos são especificados em `.resjson` arquivos em vez de `.json` arquivos.  
+*   As localidades com suporte devem ser especificadas no arquivo AppXManifest, com a primeira localidade sendo a localidade padrão.  
+*   Os recursos de aplicativos do Windows baseados em HTML usam o seguinte esquema:  
+    
     ```json
     {
         "greeting"              : "Hello",
@@ -157,40 +142,39 @@ Estas são as principais diferenças em [aplicativos do Windows baseados em HTML
         "farewell"              : "Goodbye",
         "_farewell.comment"     : "A goodbye."
     }
-    ```
-    O par nome/valor indicado por um sublinhado é um comentário para o recurso de cadeia de caracteres correspondente.
--    os arquivos. resjson são compilados em arquivos. pri que devem ser incluídos durante a criação do pacote AppX.
+    ```  
+    
+    O par nome/valor denotado por um sublinhado são comentários para o recurso de cadeia de caracteres correspondente.  
+*   `.resjson` os arquivos são compilados em `.pri` arquivos que devem ser incluídos durante a criação do pacote AppX.  
+    
+### <a name="creating-json-string-resources"></a>Criando recursos de cadeia de caracteres JSON  
 
+Com um AppxManifest configurado em mãos e as diferenças entre as estruturas de localização i18n e UWP realçadas, você está pronto para criar seus arquivos de recursos.  
 
-### Criando recursos de cadeia de caracteres JSON
-Com uma AppxManifest configurada em mãos e as diferenças entre as estruturas de localização da i18n e da UWP realçadas, você está pronto para criar seus arquivos de recursos.
-
-Apenas uma cadeia de caracteres de recurso no manifesto se aplica aos pacotes de extensão do Microsoft Edge. `DisplayName`Geralmente, a cadeia de caracteres é localizada em extensões JavaScript e pode ser facilmente mapeada para os arquivos. resjson esperados pelo Windows. Pressupondo que este seja o único recurso que você gostaria de localizar, aqui está um arquivo. resjson de exemplo que deve ser criado:
+Somente uma cadeia de caracteres de recurso no manifesto é aplicável aos pacotes de extensão do Microsoft Edge.  A cadeia de caracteres é geralmente localizada em extensões JavaScript e pode ser facilmente mapeada para os `DisplayName` arquivos que o Windows `.resjson` espera.  Supondo que esse seja o único recurso que você gostaria de localização, aqui está um arquivo de `.resjson` exemplo que deve ser criado:  
 
 ```json
 {
     "DisplayName"              : "Jigsaw",
     "_DisplayName.comment"     : "Name of extension."
 }
-```
+```  
 
-A ID do recurso em cada arquivo. resjson precisa corresponder à identificação usada no AppXManifest. Usando o trecho de exemplo de resjson acima, a entrada AppXManifest correspondente deve ser:
+A ID do recurso em cada `.resjson` arquivo precisa corresponder à ID usada no AppXManifest.  Usando o `.resjson` trecho de exemplo acima, a entrada appXManifest correspondente deve ser:  
 
-`DisplayName="ms-resource:DisplayName"`
+`DisplayName="ms-resource:DisplayName"`  
 
-Cada idioma compatível com a extensão deve ter um arquivo Resources. resjson correspondente e ser colocado na seguinte estrutura de pastas:
+Cada idioma compatível com sua extensão deve ter um arquivo de recursos correspondente e `.resjson` ser colocado na seguinte estrutura de pastas:  
 
-![estrutura da pasta de idiomas](./../../media/resources-folder.png)
+![estrutura de pasta de idioma](../../media/resources-folder.png)  
 
+### <a name="creating-the-resources-file"></a>Criando o arquivo de recursos  
 
-### Criando o arquivo de recursos
-Depois de criar todos os arquivos. resjson, você estará pronto para criar seu arquivo de índice de recursos de pacote (PRI). Esse arquivo armazena os recursos de todos os idiomas com suporte. Para fazer isso, você pode usar a ferramenta **MakePRI** incluída com o SDK do Windows 10.
+Depois de criar todos os seus arquivos, você estará pronto para criar seu arquivo de índice de recursos do pacote `.resjson` \(PRI\).  Esse arquivo armazena os recursos de todos os idiomas com suporte.  Para fazer isso, você pode usar a **ferramenta MakePRI** que está incluída no SDK do Windows 10.  
 
+Primeiro, você precisará criar o arquivo de configuração.  Isso define os qualificadores padrão e a plataforma para os recursos.  Para este exemplo, faça o idioma padrão `English (US)` e a plataforma Windows 10.  Para fazer isso, crie `priconfig.xml` um arquivo com o seguinte conteúdo no `[Root folder]` :  
 
-Primeiro, você precisará criar o arquivo de configuração. Isso define os qualificadores e a plataforma padrão para os recursos. Para este exemplo, torne o idioma padrão Inglês (EUA) e a plataforma Windows 10. Para fazer isso, crie um arquivo priconfig.xml com o seguinte conteúdo na [pasta raiz]:
-
-![priconfig na pasta](./../../media/priconfig.png)
-
+![priconfig na pasta](../../media/priconfig.png)  
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -215,47 +199,43 @@ Primeiro, você precisará criar o arquivo de configuração. Isso define os qua
         <indexer-config type="PRI"/>
     </index>
 </resources>
-```
+```  
 
-Agora você pode usar o arquivo de configuração e a ferramenta MakePRI para criar o arquivo Resources. pri. Para este exemplo, o local raiz para o projeto será [pasta raiz].
-
+Agora você pode usar o arquivo de configuração e a ferramenta MakePRI para criar o arquivo resources.pri.  Para este exemplo, o local raiz do projeto será `[Root folder]` .  
 
 ```cmd
 MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
-```
+```  
 
-Agora você deve ter um arquivo Resources. pri na sua pasta raiz:
+Agora você deve ter um arquivo resources.pri em sua pasta raiz:  
 
-![pasta recursos](./../../media/resources.png)
+![pasta resources](../../media/resources.png)  
 
+## <a name="localizing-name-and-description-in-the-microsoft-store"></a>Nome e descrição de localização na Microsoft Store  
 
-## Localizando o nome e a descrição na Microsoft Store
+Depois de tentar carregar seu pacote completo localizado, o Centro de Desenvolvimento do Windows detectará que há suporte para mais de um idioma e verificará se você tem nomes e descrições localizadas correspondentes para cada um deles.  Se algum dos valores localizados estiver ausente, seu envio será bloqueado até que você forneça os valores.  
 
-Depois de tentar carregar o pacote completo e localizado, o centro de desenvolvimento do Windows detectará se há mais de um idioma com suporte e verificará se você tem descrições e nomes localizados correspondentes para cada um deles. Se algum dos valores localizados estiver ausente, o envio será bloqueado até você fornecer os valores.
+Se você estiver interessado apenas em fornecer um nome e uma descrição localizados para a Microsoft Store (e não o Windows), você pode fazer isso [reservando](./extensions-in-the-windows-dev-center.md#name-reservation)todos os nomes localizados para sua extensão .  
 
-Se você estiver interessado apenas em fornecer um nome localizado e uma descrição para a Microsoft Store (e não para Windows), é possível fazer isso, [reservindo todos os nomes localizados para a extensão](./extensions-in-the-windows-dev-center.md#name-reservation).
+Depois de ter reservado nomes localizados adicionais, você pode criar um envio atualizado.  Na seção descrição, você pode gerenciar idiomas adicionais para sua listagem da Microsoft Store:  
 
+![Gerenciar idiomas de descrição](../../media/manage-description-languages.png)  
 
-Depois de reservar nomes localizados adicionais, você pode criar um envio atualizado. Na seção Descrição, você pode gerenciar idiomas adicionais para a listagem da Microsoft Store:
+Depois de selecionar **Gerenciar idiomas**adicionais, você poderá selecionar quais idiomas deseja adicionar à sua listagem da Microsoft Store.  O novo idioma será aparecer como **idioma de descrição adicional** na seção **Descrição.**  
 
-![Descrição do aplicativo japonês-gerenciar](./../../media/manage-description-languages.png)
+Você pode clicar no link individual na seção **Descrição** para fornecer um nome e uma descrição localizados, notas de versão e ativos visuais para cada idioma.  A descrição da Microsoft Store não é extraída do AppXManifest.  Cada descrição localizada precisa ser inserida manualmente no Centro de Desenvolvimento do Windows:  
 
-Depois de selecionar "gerenciar idiomas adicionais", você terá que selecionar quais idiomas deseja adicionar à listagem da Microsoft Store. O novo idioma será exibido como ' idioma de descrição adicional ' na seção "Descrição".
+![Descrição do aplicativo japonês](../../media/japanese-app-description.png)  
 
-Você pode clicar no link individual na seção "Descrição" para fornecer um nome localizado e uma descrição, notas de versão e ativos visuais para cada idioma. A descrição da Microsoft Store não é extraída da AppXManifest. Cada descrição localizada precisa ser inserida manualmente no centro de desenvolvimento do Windows:
+Depois que as descrições localizadas são enviadas e a extensão é publicada, qualquer pessoa acessando uma página localizada da extensão na Microsoft Store verá a interface do usuário a seguir:  
 
-![Descrição do aplicativo japonês](./../../media/japanese-app-description.png)
+![windows store japonês](../../media/japanese-windows-store.png)  
 
-Depois que as descrições localizadas são enviadas e a extensão é publicada, qualquer pessoa que acesse uma página localizada da extensão na Microsoft Store irá ver a seguinte interface do usuário:
+## <a name="appxmanifest-samples"></a>Exemplos de AppxManifest  
 
-![Windows Store japonês](./../../media/japanese-windows-store.png)
- 
+### <a name="non-localized-appxmanifest"></a>AppxManifest não localizado  
 
-## Exemplos de AppxManifest
-
-### AppxManifest não localizado
-O exemplo a seguir mostra um AppxManifest que não está localizado e só tem suporte para a localidade "en-US".
-
+O exemplo a seguir mostra um AppxManifest que não está localizado e dá suporte apenas à `en-us` localidade.  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -313,12 +293,11 @@ O exemplo a seguir mostra um AppxManifest que não está localizado e só tem su
         </Application>
     </Applications>
 </Package>
-```
+```  
 
+#### <a name="localized-appxmanifest"></a>AppxManifest localizado  
 
-#### AppxManifest localizado
-Este exemplo de AppxManifest é localizado para oito outros locais além de "en-US". Observe as `ms-resource:<resource id>` ocorrências:
-
+Este exemplo appxManifest é localizado para outras oito localidades além de "en-us". Observe as `ms-resource:<resource id>` ocorrências:  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -384,4 +363,4 @@ Este exemplo de AppxManifest é localizado para oito outros locais além de "en-
         </Application>
     </Applications>
 </Package>
-```
+```  

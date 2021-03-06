@@ -1,18 +1,18 @@
 ---
-description: Como exibir dados do SQL da Web no painel de aplicativos do Microsoft Edge DevTools.
-title: Exibir dados do SQL da Web com o Microsoft Edge DevTools
+description: Como exibir dados SQL Web no painel Aplicativo do Microsoft Edge DevTools.
+title: Exibir dados SQL Web com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 802f21cb4cadfa3ee08ddd8feeea8b8132551740
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231171"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397549"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,78 +28,78 @@ ms.locfileid: "11231171"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Exibir dados do SQL da Web com o Microsoft Edge DevTools  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Exibir dados SQL Web com o Microsoft Edge DevTools  
 
 > [!WARNING]
-> A especificação SQL da Web [não está sendo mantida][W3CWebSQLStatus].  
+> A especificação SQL Web [não está sendo mantida.][W3CWebSQLStatus]  
 
-Este guia mostra como usar [o Microsoft Edge devtools][MicrosoftEdgeDevTools] para inspecionar dados SQL da Web.  
+Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspecionar dados SQL Web.  
 
-## Exibir dados do SQL Web  
+## <a name="view-web-sql-data"></a>Exibir dados SQL Web  
 
-1.  Selecione a guia **fontes** para abrir a ferramenta **fontes** .  O painel de **manifesto** geralmente abre por padrão.  
+1.  Escolha a **ferramenta Fontes** para abrir a **ferramenta Sources.**  O **painel** Manifesto geralmente é aberto por padrão.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Painel de manifesto" lightbox="../media/storage-application-manifest.msft.png":::
-       Painel de **manifesto**  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="O painel Manifesto" lightbox="../media/storage-application-manifest.msft.png":::
+       O **painel** Manifesto  
     :::image-end:::  
     
-1.  Expanda a seção **SQL Web** para exibir bancos de dados e tabelas.  Na figura a seguir, abaixo de **html5meetup** é um banco de dados e **salas** é uma tabela.  
+1.  Expanda a **seção SQL** Web para exibir bancos de dados e tabelas.  Na figura a seguir, abaixo **html5meetup** está um banco de dados e **salas** é uma tabela.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="O painel SQL Web" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       O painel **SQL Web**  
+       O **painel SQL** Web  
     :::image-end:::  
     
-1.  Selecione uma tabela para exibir os dados dessa tabela.  
+1.  Escolha uma tabela para exibir os dados dessa tabela.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Exibir os dados de uma tabela SQL da Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
-       Exibir os dados de uma tabela SQL da Web  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Exibir os dados de uma tabela de SQL Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+       Exibir os dados de uma tabela de SQL Web  
     :::image-end:::  
     
-## Editar dados do SQL da Web  
+## <a name="edit-web-sql-data"></a>Editar dados SQL Web  
 
-Você não pode editar dados SQL da Web ao exibir uma tabela SQL da Web, como no anterior acima.  Mas você pode executar instruções a partir do console SQL Web que edita ou exclui tabelas.  Consulte [executar consultas do SQL Web](#run-web-sql-queries).  
+Você não é capaz de editar dados SQL Web ao exibir uma tabela SQL Web, como na anterior acima.  Mas você pode executar instruções do Console web SQL que editam ou excluem tabelas.  Navegue [até Executar consultas SQL Web.](#run-web-sql-queries)  
 
-## Executar consultas do SQL da Web  
+## <a name="run-web-sql-queries"></a>Executar consultas SQL Web  
 
 1.  Escolha um banco de dados para abrir um console para esse banco de dados.  
-1.  Digite uma instrução SQL da Web e selecione `Enter` para executá-la.  
+1.  Digite uma instrução SQL Web e selecione `Enter` para executar.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Usar o console do SQL Web para excluir uma linha de uma tabela" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Usar o console do SQL Web para excluir uma linha de uma tabela  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Usar o Console SQL Web para excluir uma linha de uma tabela" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Usar o Console SQL Web para excluir uma linha de uma tabela  
     :::image-end:::  
     
-## Atualizar uma tabela SQL da Web  
+## <a name="refresh-a-web-sql-table"></a>Atualizar uma tabela SQL Web  
 
-O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma tabela, conclua as ações a seguir.  
+O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma tabela, conclua as seguintes ações.  
 
-1.  [Exiba os dados em uma tabela SQL da Web](#view-web-sql-data).  
-1.  Escolha **Atualizar** \ ( ![ Atualizar ][ImageRefreshIcon] \).  
+1.  [Exibir os dados em uma tabela SQL Web.](#view-web-sql-data)  
+1.  Escolha **Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \).  
     
-## Filtrar colunas em uma tabela SQL da Web  
+## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtrar colunas em uma tabela SQL Web  
 
-1.  [Exiba os dados em uma tabela SQL da Web](#view-web-sql-data).  
-1.  Use a caixa de texto **colunas visíveis** para especificar quais colunas você deseja mostrar.  Forneça os nomes de coluna como uma lista de CSV.  
+1.  [Exibir os dados em uma tabela SQL Web.](#view-web-sql-data)  
+1.  Use a **caixa de texto Colunas** Visíveis para especificar quais colunas você deseja mostrar.  Forneça os nomes das colunas como uma lista CSV.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Use a caixa de texto colunas visíveis para reduzir o número de colunas exibidas" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       Use a caixa de texto **colunas visíveis** para reduzir o número de colunas exibidas  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Use a caixa de texto Colunas Visíveis para reduzir o número de colunas mostradas" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Use a **caixa de texto Colunas** Visíveis para reduzir o número de colunas mostradas  
     :::image-end:::  
     
-## Excluir todos os dados SQL da Web  
+## <a name="delete-all-web-sql-data"></a>Excluir todos os dados SQL Web  
 
-1.  Abrir o painel **limpar armazenamento** .  
-1.  Certifique-se de que a caixa de seleção **SQL da Web** esteja ativada.  
+1.  Abra o **painel Limpar Armazenamento.**  
+1.  Verifique se a caixa de **SQL** Web está 100% 100% 2000.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="A caixa de seleção SQL da Web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       A caixa de seleção **SQL da Web**  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Caixa de SQL Web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       Caixa **de SQL** Web  
     :::image-end:::  
     
-1.  Escolha **limpar dados do site**.  
+1.  Escolha **Limpar dados do site**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="O botão limpar dados do site" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       O botão **limpar dados do site**  
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="O botão Limpar Dados do Site" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+       O **botão Limpar Dados do Site**  
     :::image-end:::  
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -109,13 +109,13 @@ O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Banco de dados SQL Web | W3C"  
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL banco de dados | W3C"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/storage/websql) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/storage/websql) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

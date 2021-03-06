@@ -1,45 +1,54 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
-description: Dê uma olhada nas ferramentas e procedimentos de teste que ajudam a avaliar a acessibilidade de um site.
-title: Acessibilidade – teste
+description: Confira ferramentas e procedimentos de teste que ajudam a avaliar a acessibilidade de um site.
+title: Acessibilidade - Teste
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: acessibilidade, acessibilidade para desenvolvedores, sites acessíveis, Edge, desenvolvimento da Web, ARIA, desenvolvedor, UIA, automação da interface do usuário
-ms.openlocfilehash: 66b511b09be1ae16caa9ed0bbbae823a27cefea2
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: acessibilidade, acessibilidade para desenvolvedores, sites acessíveis, borda, desenvolvimento da Web, ARIA, desenvolvedor, UIA, Automação da Interface do Usuário
+ms.openlocfilehash: b3aeb5ede1519352c12ab190fa6fbef9eee2ae12
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10560538"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397878"
 ---
-# Testes de acessibilidade
-O teste de acessibilidade é uma forma de teste de usabilidade para verificar se seu site é utilizável por todas as pessoas. Confira a página de [teste de acessibilidade](https://www.w3.org/wiki/Accessibility_testing) do W3C's para obter informações sobre quando o teste deve ser feito, os requisitos de teste, que devem testar o seu site etc.
+# <a name="accessibility-testing"></a>Teste de acessibilidade  
 
-Use as seguintes ferramentas e produtores de teste para avaliar o seu site para acessibilidade:
+O teste de acessibilidade é uma forma de teste de usabilidade para verificar se seu site é usável por todas as pessoas. Confira a página [](https://www.w3.org/wiki/Accessibility_testing) Teste de Acessibilidade W3C para obter informações sobre quando o teste deve ser feito, os requisitos de teste, quem deve testar seu site, etc.
 
-#### [Recursos de avaliação de acessibilidade](https://www.w3.org/WAI/eval/Overview.html)
-Recursos de avaliação de acessibilidade é um recurso de várias páginas pelo W3C que descreve abordagens diferentes para a avaliação de sites para acessibilidade.
+Use as seguintes ferramentas e produtores de teste para avaliar seu site para acessibilidade:
 
-#### [Testes de compatibilidade de tecnologia assistencial](http://www.powermapper.com/tests/)
-Resultados de teste mostrando como diferentes tipos de conteúdo e padrões se comportam em tecnologias assistenciais (AT), como leitores de tela.
+#### [<a name="accessibility-evaluation-resources"></a>Recursos de Avaliação de Acessibilidade](https://www.w3.org/WAI/eval/Overview.html)  
 
-#### [Verificações fáceis – uma primeira revisão da acessibilidade na Web](https://www.w3.org/WAI/eval/preliminary.html)
-Uma série de verificações rápidas do WAI que ajudam você a Asses a acessibilidade de uma página da Web.
+Recursos de Avaliação de Acessibilidade é um recurso de várias páginas do W3C que descreve diferentes abordagens para avaliar sites para acessibilidade.
 
-#### [Como se adequar à WCAG 2,0](https://www.w3.org/WAI/WCAG20/quickref/)
-Uma referência rápida às diretrizes de acessibilidade de conteúdo da Web (WCAG) 2,0 requisitos (critérios de sucesso) e técnicas.
+#### [<a name="assistive-technology-compatibility-tests"></a>Testes de compatibilidade de tecnologia assistida](http://www.powermapper.com/tests)  
 
-#### [HTML5Accessibility](https://html5accessibility.com)
-Este site testa quais novos recursos do HTML5 são accessibly suportados pelos principais navegadores. 
+Resultados de teste mostrando como diferentes tipos de conteúdo e padrões se comportam em tecnologias assistivas (AT), como leitores de tela.
 
-#### [webhint](https://webhint.io/)
-Use [webhint](https://webhint.io/) para verificar se há bibliotecas desatualizadas, melhorias de segurança, problemas de desempenho, problemas de acessibilidade e muito mais.
+#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>Verificações Fáceis – Uma primeira revisão da acessibilidade da Web](https://www.w3.org/WAI/eval/preliminary.html)  
 
-#### [Verificador de acessibilidade pela Web](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
-Uma extensão do Visual Studio que executa verificações de acessibilidade em qualquer aplicativo Web do ASP.NET.
+Uma série de verificações rápidas feitas pelo WAI que ajudam você a avaliar a acessibilidade de uma página da Web.
 
-#### [Lista de ferramentas de avaliação da Web Accessibility](https://www.w3.org/WAI/ER/tools/index.html)
+#### [<a name="how-to-meet-wcag-20"></a>Como atender ao WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
+
+Uma referência rápida às Diretrizes de Acessibilidade de Conteúdo da Web \(WCAG\) 2.0 requisitos (critérios de sucesso) e técnicas.
+
+#### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
+
+Este site testa quais novos recursos HTML5 são suportados com acesso pelos principais navegadores. 
+
+#### [<a name="webhint"></a>Dica da web](https://webhint.io)  
+
+Use [o webhint](https://webhint.io/) para verificar bibliotecas desataradas, melhorias de segurança, problemas de desempenho, problemas de acessibilidade e muito mais.
+
+#### [<a name="web-accessibility-checker"></a>Verificador de Acessibilidade da Web](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)  
+
+Uma Visual Studio que executa verificações de acessibilidade em qualquer ASP.NET web.
+
+#### [<a name="web-accessibility-evaluation-tools-list"></a>Lista de Ferramentas de Avaliação de Acessibilidade da Web](https://www.w3.org/WAI/ER/tools/index.html)  
+
 Uma lista de ferramentas de avaliação de acessibilidade da Web para ajudar a determinar se os sites atendem às diretrizes de acessibilidade.

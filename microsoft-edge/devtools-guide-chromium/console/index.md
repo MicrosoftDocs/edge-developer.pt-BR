@@ -1,18 +1,18 @@
 ---
-description: Os principais usos do console do Microsoft Edge DevTools são as mensagens registradas e a execução de JavaScript.
+description: Os principais usos do Console do Microsoft Edge DevTools são registrar mensagens e executar JavaScript.
 title: Visão geral do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125262"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399117"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,19 @@ ms.locfileid: "11125262"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Visão geral do console  
+# <a name="console-overview"></a>Visão geral do console  
 
   
 
-Esta página explica como o console do Microsoft Edge DevTools torna mais fácil o desenvolvimento de páginas da Web.  O console tem dois usos principais: [Exibir mensagens registradas](#viewing-logged-messages) e [executar JavaScript](#running-javascript).  
+Esta página explica como o Console do Microsoft Edge DevTools facilita o desenvolvimento de páginas da Web.  O **Console** tem 2 usos principais: [exibição de mensagens registradas e](#viewing-logged-messages) execução de [JavaScript](#running-javascript).  
 
-## Exibir mensagens registradas  
+## <a name="viewing-logged-messages"></a>Exibindo mensagens registradas  
 
-Os desenvolvedores da Web geralmente registram mensagens no console para verificar se o JavaScript está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e vê uma expressão como essa, ele registra a mensagem no console.  
+Os desenvolvedores da Web geralmente registram mensagens no Console para garantir que o JavaScript deles está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e processa uma expressão como essa, o navegador registra a mensagem no **Console**.  
 
 :::row:::
    :::column span="":::
-      O HTML e JavaScript da página.  
+      O HTML e JavaScript para a página.  
       
       ```html
       <!doctype html>
@@ -71,73 +71,73 @@ Os desenvolvedores da Web geralmente registram mensagens no console para verific
       ```  
    :::column-end:::
    :::column span="":::
-      Na figura a seguir, o **console** exibe os resultados de carregar a página e esperar 3 segundos.  
+      Na figura a seguir, o **Console** exibe os resultados de carregar a página e aguardar 3 segundos.  
       
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Painel do console" lightbox="../media/console-console-demo.msft.png":::
-         Painel do **console**  
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="O painel Console" lightbox="../media/console-console-demo.msft.png":::
+         A **ferramenta Console**  
       :::image-end:::  
       
-      Tente determinar quais linhas de código fizeram o navegador registrar as mensagens.  
+      Tente determinar quais linhas de código fizeram com que o navegador registrava as mensagens.  
    :::column-end:::
 :::row-end:::  
 
-Os desenvolvedores da Web registram mensagens pelos seguintes dois motivos gerais.  
+Os desenvolvedores da Web registram mensagens pelos dois motivos gerais a seguir.  
 
-*   Verificar se o código está em execução na ordem correta.  
-*   Inspecionar os valores de variáveis em um determinado momento no tempo.  
+*   Certifique-se de que o código está sendo executado na ordem certa.  
+*   Inspecionando os valores das variáveis em um determinado momento no tempo.  
 
-Consulte [introdução ao registro de mensagens][DevtoolsConsoleLoggingMessages] para obter experiência prática com o registro em log.  Consulte a [referência de API do console][DevToolsConsoleAPI] para procurar a lista completa de `console` métodos.  A principal diferença entre os métodos é como os dados que estão sendo registrados são exibidos.  
+Para obter a experiência prática com o registro em log, navegue até [Começar a registrar mensagens][DevtoolsConsoleLoggingMessages].  Para procurar a lista completa `console` de métodos, navegue até a [Referência da API do Console.][DevToolsConsoleAPI]  A principal diferença entre os métodos é como os dados que estão sendo registrados são exibidos.  
 
-## Executando JavaScript  
+## <a name="running-javascript"></a>Executando JavaScript  
 
-O **console** também é um [repl][WikiREPLoop].  Você pode executar JavaScript no **console** para interagir com a página que está sendo inspecionada.   
+O **Console** também é [um REPL][WikiREPLoop].  Você pode executar JavaScript no **Console para** interagir com a página que está sendo inspecionada.   
 
 :::row:::
    :::column span="":::
-      Na figura a seguir, o **console** é mostrado ao lado da home page do devtools.  
+      Na figura a seguir, **o Console** é mostrado ao lado da homepage DevTools.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Painel do console" lightbox="../media/devtools-console-empty.msft.png":::
-         O painel do **console** ao lado da home page do devtools  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="A ferramenta Console ao lado da página inicial do DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+         A **ferramenta Console** ao lado da página inicial do DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Na figura a seguir, a mesma página é mostrada após usar o **console** para alterar o título superior da página.
+      Na figura a seguir, a mesma página é mostrada depois de usar o **Console** para alterar o título superior da página.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Painel do console" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Usar o **console** para alterar o título superior da página  
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Use o Console para alterar o título superior da página" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Use o **Console** para alterar o título superior da página  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-A modificação da página no **console** é possível porque o **console** tem acesso completo à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que o JavaScript contenha uma função chamada `hideModal` .  Executar `debug(hideModal)` pausa o código na primeira linha da `hideModal` próxima vez que você executá-lo.  Para obter mais informações sobre a lista completa de funções de utilitário, navegue até a [referência da API de utilitários do console][DevtoolsConsoleUtilitiesDebug].  
+Modificar a página do **Console** é possível porque o **Console** tem acesso total à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que seu JavaScript contenha uma função chamada `hideModal` .  A `debug(hideModal)` execução pausa seu código na primeira linha da próxima vez que você o `hideModal` executa.  Para obter mais informações sobre a lista completa de funções de utilitário, navegue até Referência da [API de Utilitários de Console.][DevtoolsConsoleUtilitiesDebug]  
 
-Quando você executa JavaScript, você não precisa interagir com a página.  Você pode usar o **console** para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você tenha aprendido apenas sobre o método interno de mapas de matrizes JavaScript [()][MDNMap] e queira experimentá-lo.  
-O **console** é um bom lugar para experimentar a função.  
+Ao executar o JavaScript, você não precisa interagir com a página.  Você pode usar o **Console** para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você acabou de aprender sobre o método JavaScript Array [map()][MDNMap] integrado e deseja experimentar com ele.  
+O **Console** é um bom lugar para experimentar a função.  
 
-Para obter mais experiência prática com a execução de JavaScript no **console**, navegue até [introdução à execução do JavaScript][DevtoolsConsoleRunningJavascript].  
+Para obter mais experiência prática com a execução de JavaScript no **Console,** navegue até [Começar a executar JavaScript][DevtoolsConsoleRunningJavascript].  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Referência de API de console | Documentos da Microsoft"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Introdução ao registro de mensagens no console | Documentos da Microsoft"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Comece a executar o JavaScript no console | Documentos da Microsoft"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Referência de API de utilitários de console de depuração | Documentos da Microsoft"  
+[DevToolsConsoleAPI]: ./api.md "Referência da API de console | Microsoft Docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Começar a registrar mensagens no console | Microsoft Docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Começar a executar JavaScript no console | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "depuração - Referência da API de Utilitários de Console | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. prototype. Map () | MDN"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Janela | MDN"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Leitura – eval – loop de impressão-Wikipédia"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Loop de leitura-eval-print - Wikipédia"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/console/index) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/console/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

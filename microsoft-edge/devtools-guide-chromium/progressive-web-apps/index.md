@@ -1,18 +1,18 @@
 ---
-description: Use o painel do aplicativo para inspecionar, modificar e depurar manifestos do aplicativo Web, trabalhos de serviço e caches de trabalho do serviço.
+description: Use o painel Aplicativo para inspecionar, modificar e depurar manifestos de aplicativo Web, funcionários de serviço e caches de funcionários do serviço.
 title: Depurar aplicativos Web progressivos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 79edf4b04c85db33e89d18ec1832138a61f4f884
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231272"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398536"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,9 +28,9 @@ ms.locfileid: "11231272"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Depurar aplicativos Web progressivos  
+# <a name="debug-progressive-web-apps"></a>Depurar aplicativos Web progressivos  
 
-Use o painel do **aplicativo** para inspecionar, modificar e depurar manifestos do aplicativo Web, trabalhos de serviço e caches de trabalho do serviço.  
+Use o **painel Aplicativo** para inspecionar, modificar e depurar manifestos de aplicativo Web, funcionários de serviço e caches de funcionários do serviço.  
 
 <!--Related Guides:  
 
@@ -38,20 +38,20 @@ Use o painel do **aplicativo** para inspecionar, modificar e depurar manifestos 
 
 <!--TODO:  Link web "Progressive Web Apps" section when available. -->
 
-Este guia apenas descreve os recursos do aplicativo Web progressivo do painel do **aplicativo** .  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
+Este guia discute apenas os recursos do Progressive Web App do **painel Aplicativo.**  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
 
 <!--TODO:  Link to sections when available. -->
 
-### Resumo  
+### <a name="summary"></a>Resumo  
 
-*   Use o painel **manifestar** para inspecionar seu manifesto do aplicativo Web e disparar adicionar a eventos tela inicial.  
-*   Use o painel **trabalhadores do serviço** para uma variedade completa de tarefas relacionadas ao trabalhador, como cancelar o registro ou a atualização de um serviço, a emulação de eventos Push, o offline ou a interrupção de um trabalhador de serviço.  
-*   Exiba o cache do serviço de trabalho no painel **armazenamento do cache** .  
-*   Cancele o registro de um trabalhador de serviço e limpe todos os armazenamentos e caches com um único clique de botão no painel **limpar armazenamento** .  
+*   Use o **painel Manifesto** para inspecionar o manifesto do aplicativo Web e disparar Adicionar a eventos homescreen.  
+*   Use **** o painel Funcionários do Serviço para uma ampla gama de tarefas relacionadas ao serviço de trabalho, como o registro ou atualização de um serviço, a emulação de eventos push, a offline ou a interrupção de um trabalhador de serviço.  
+*   Exibir seu cache de funcionário de serviço no **painel Armazenamento de** Cache.  
+*   Desaconselhe um funcionário de serviço e limpe todos os armazenamentos e caches com um único botão escolha no painel **Limpar armazenamento.**  
     
-## Manifesto do aplicativo Web  
+## <a name="web-app-manifest"></a>Manifesto do aplicativo Web  
 
-Se você quiser que os usuários possam adicionar seu aplicativo à sua homescreens móvel, você precisará de um manifesto do aplicativo Web.  O manifesto define como o aplicativo é exibido no tela inicial, onde direcionar o usuário ao iniciar a partir do tela inicial e como é a aparência do aplicativo durante a inicialização.  
+Se você quiser que seus usuários sejam capazes de adicionar seu aplicativo às telas de tela inicial móveis, você precisa de um manifesto do aplicativo Web.  O manifesto define como o aplicativo aparece na tela inicial, onde direcionar o usuário ao iniciar a partir da tela inicial e como o aplicativo se parece ao iniciar.  
 
 <!--Related Guides:  
 
@@ -60,23 +60,23 @@ Se você quiser que os usuários possam adicionar seu aplicativo à sua homescre
 
 <!--TODO:  Link to sections when available. -->
 
-Depois de configurar o manifesto, você pode usar o painel **manifesto** do painel do **aplicativo** para inspecioná-lo.  
+Depois de configurar o manifesto, você pode usar o painel **Manifesto** do painel **Aplicativo** para inspecioná-lo.  
 
-:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="Painel de manifesto" lightbox="../media/manifest-pane.msft.png":::
-   Painel de **manifesto**  
+:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="O Painel de Manifesto" lightbox="../media/manifest-pane.msft.png":::
+   O **Painel de** Manifesto  
 :::image-end:::  
 
-*   Para ver a origem do manifesto, clique no link abaixo do rótulo do **manifesto do aplicativo** \ ( `https://airhorner.com/manifest.json` na figura anterior \).  
-<!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
-*   As seções de **identidade** e **apresentação** só exibem os campos da fonte de manifesto em uma tela mais fácil de usar.  
-*   A seção **ícones** exibe todos os ícones que você especificou.  
+*   Para ver a fonte do manifesto, escolha o link abaixo rótulo **de Manifesto** do Aplicativo \( na `https://airhorner.com/manifest.json` figura anterior\).  
+<!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
+*   As **seções Identidade** e **Apresentação** exibem apenas campos da fonte de manifesto em uma exibição mais fácil de usar.  
+*   A **seção Ícones** exibe todos os ícones especificados.  
     
 <!--### Simulate Add to Homescreen events  -->
 
-<!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
+<!--A web app may only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, the criteria is potentially inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
 
-<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
+<!--You may test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
 :::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf" lightbox="../media/io.msft.png":::
@@ -88,17 +88,17 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you can successfully add your app to your desktop shelf, then it'll work for mobile, too.  -->
+<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
-<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via **remote debugging**, and then click the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Profissionais de serviço  
+## <a name="service-workers"></a>Profissionais de serviço  
 
-Os funcionários de serviço são uma tecnologia fundamental na próxima plataforma Web.  Eles são scripts que o navegador executa em segundo plano, separado de uma página da Web.  Esses scripts permitem que você acesse recursos que não precisam de uma página da Web ou interação do usuário, como notificações por push, sincronização em segundo plano e experiências offline.  
+Os funcionários de serviços são uma tecnologia fundamental na plataforma Web futura.  Eles são scripts que o navegador executa em segundo plano, separados de uma página da Web.  Os scripts permitem que você acesse recursos que sem a necessidade de uma página da Web ou interação do usuário, como notificações por push, sincronização em segundo plano e experiências offline.  
 
 <!--Related Guides:  
 
@@ -107,25 +107,25 @@ Os funcionários de serviço são uma tecnologia fundamental na próxima platafo
     
 <!--TODO:  Link to sections when available. -->  
 
-O painel de **trabalhadores de serviço** no painel de **aplicativos** é o local principal no devtools para inspecionar e depurar trabalhadores de serviço.  
+O **painel Trabalhadores do** Serviço no painel **Aplicativo** é o principal local no DevTools para inspecionar e depurar os funcionários do serviço.  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="O painel funcionários do serviço" lightbox="../media/service-workers-pane.msft.png":::
-   O painel **funcionários do serviço**  
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="O painel Trabalhadores do Serviço" lightbox="../media/service-workers-pane.msft.png":::
+   O **painel Trabalhadores do** Serviço  
 :::image-end:::  
 
-*   Se um trabalhador do serviço estiver instalado na página atualmente aberta, você verá-o listado nesse painel.  Por exemplo, na figura anterior, há um trabalho de serviço instalado para o escopo de `https://weather-pwa-sample.firebaseapp.com` .  
-*   A caixa de seleção **offline** coloca devtools no modo offline.  Isso equivale ao modo offline disponível no painel **rede** ou na `Go offline` opção no [menu de comando][DevtoolsCommandMenuIndex].  
-*   A caixa de seleção **Atualizar na recarga** força o trabalhador do serviço a atualizar em cada carregamento de página.  
-*   A caixa **de seleção Ignorar para rede** ignora o trabalhador do serviço e força o navegador a ir para a rede para obter os recursos solicitados.  
-*   O botão **Atualizar** executa uma atualização única do trabalho de serviço especificado.  
-*   O botão de **ação** emula uma notificação por push sem uma carga \ (também conhecida como **Tickle**\).  
-*   O botão **sincronizar** emula um evento de sincronização em segundo plano.  
-*   O botão **Cancelar registro** cancela o registro do trabalho de serviço especificado.  Confira o [armazenamento claro](#clear-storage) para obter uma maneira de cancelar o registro de um trabalhador de serviço e revelar armazenamento e caches com um único clique de botão.  
-*   A linha de **origem** informa quando o trabalho de serviço atualmente em execução foi instalado.  O link é o nome do arquivo de origem do trabalhador do serviço.  Clicar no link envia você para a fonte do trabalhador do serviço.  
-*   A linha **status** informa o status do trabalhador do serviço.  O número de identificação ao lado do indicador de status verde \ ( `#36` na figura anterior \) é para o trabalhador de serviço ativo no momento.  Ao lado do status, você verá um botão **Iniciar** \ (se o trabalhador do serviço estiver parado \) ou um botão **parar** \ (se o trabalhador do serviço estiver em execução \).  Os funcionários de serviço são projetados para serem interrompidos e iniciados pelo navegador a qualquer momento.  Parar explicitamente seu trabalho de serviço usando o botão **parar** pode simular isso.  Parar seu trabalho de serviço é uma ótima maneira de testar como o seu código se comporta quando o trabalho do serviço começa a fazer backup novamente.  Freqüentemente, ele revela bugs devido a suposições defeituosas sobre o estado global persistente.  
-*   A linha **clientes** informa a origem para a qual o trabalhador do serviço tem escopo.  O botão **foco** é principalmente útil quando você habilita a caixa de seleção **Mostrar tudo** .  Quando essa caixa de seleção estiver habilitada, todos os trabalhos de serviço registrados serão listados.  Se você clicar no botão **foco** ao lado de um trabalhador de serviço que está sendo executado em uma guia diferente, o Microsoft Edge será focalizado nessa guia.  
+*   Se um trabalhador de serviço estiver instalado na página aberta no momento, ele será listado neste painel.  Por exemplo, na figura anterior, há um trabalhador de serviço instalado para o escopo de `https://weather-pwa-sample.firebaseapp.com` .  
+*   A **caixa de** seleção Offline coloca o DevTools no modo offline.  Isso equivale ao modo offline disponível na ferramenta **Rede** ou à opção `Go offline` no Menu De [comando][DevtoolsCommandMenuIndex].  
+*   A **caixa de seleção** Atualizar ao recarregar força o trabalhador do serviço a atualizar em cada carga de página.  
+*   A **caixa de seleção Ignorar** para rede ignora o funcionário do serviço e força o navegador a ir para a rede para recursos solicitados.  
+*   O **botão** Atualizar executa uma atualização única do trabalhador de serviço especificado.  
+*   O **botão Push** emula uma notificação por push sem uma carga \(também conhecida como uma **coceira**\).  
+*   O **botão Sincronizar** emula um evento de sincronização em segundo plano.  
+*   O **botão Não registro** no registro do funcionário de serviço especificado.  Confira [Limpar o armazenamento para](#clear-storage) saber como desoperdá-lo e apagar o armazenamento e os caches com um único botão escolha.  
+*   A **linha Source** informa quando o funcionário do serviço em execução foi instalado.  O link é o nome do arquivo de origem do trabalhador do serviço.  A escolha no link o envia para a origem do trabalhador do serviço.  
+*   A **linha Status** informa o status do trabalhador do serviço.  O número de ID ao lado do indicador de status verde \( na figura anterior\) é para o Trabalhador `#36` de Serviço ativo no momento.  Ao lado do status, **um** botão iniciar \(se o **** trabalhador do serviço for interrompido\) ou um botão de parada \(se o trabalhador do serviço estiver em execução\) é exibido.  Os funcionários do serviço são projetados para serem interrompidos e iniciados pelo navegador a qualquer momento.  Interromper explicitamente o trabalho de serviço usando o **botão parar** pode simular isso.  Parar o seu funcionário de serviço é uma ótima maneira de testar como seu código se comporta quando o trabalhador do serviço começa a fazer o back-up novamente.  Ele frequentemente revela bugs devido a suposições incorretas sobre o estado global persistente.  
+*   A **linha Clientes** informa a origem para a que o trabalhador do serviço tem escopo.  O **botão** de foco é mais útil quando você habilita a caixa de **seleção mostrar tudo.**  Quando essa caixa de seleção está habilitada, todos os funcionários de serviço registrados são listados.  Se você escolher o botão **de foco** ao lado de um trabalhador de serviço que está em execução em uma guia diferente, o Microsoft Edge se concentrará nessa guia.  
     
-Se o trabalhador do serviço causar algum erro, um novo rótulo chamado **erros** aparecerá.  
+Se o trabalhador do serviço causar erros, um novo rótulo chamado **Errors** será a aparecer.  
 
 <!--  
 :::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="../media/sw-error.msft.png":::
@@ -136,46 +136,46 @@ Se o trabalhador do serviço causar algum erro, um novo rótulo chamado **erros*
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Caches de funcionários do serviço  
+## <a name="service-worker-caches"></a>Caches de funcionários de serviço  
 
-O painel **armazenamento de cache** fornece uma lista somente leitura de recursos que foram armazenados em cache usando a API de [cache][MDNWebCacheAPI]\ (serviço de trabalho \).  
+O **painel Armazenamento de** Cache fornece uma lista somente leitura de recursos que foram armazenados em cache usando a API de Cache \(service worker\) [Cache][MDNWebCacheAPI].  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Painel armazenamento do cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   Painel **armazenamento do cache**  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="O Painel de Armazenamento de Cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   O **Painel de Armazenamento de** Cache  
 :::image-end:::  
 
 > [!NOTE]
-> Na primeira vez que você abre um cache e adiciona um recurso a ele, a DevTools pode não detectar a alteração.  Recarregue a página e você deve ver o cache.  
+> Na primeira vez que você abrir um cache e adicionar um recurso a ele, o DevTools pode não detectar a alteração.  Atualize a página e para exibir o cache.  
 
-Se você tiver dois ou mais caches abertos, verá-os listados abaixo do menu suspenso **armazenamento em cache** .  
+Se você tiver dois ou mais caches abertos, os caches serão exibidos no menu suspenso Armazenamento **de Cache** a seguir.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="O menu suspenso armazenamento do cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   O menu suspenso **armazenamento do cache**  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="O menu suspenso Armazenamento de Cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   O **menu suspenso Armazenamento de** Cache  
 :::image-end:::  
 
-## Uso da cota  
+## <a name="quota-usage"></a>Uso de cota  
 
-Algumas respostas dentro do painel **armazenamento do cache** podem ser sinalizadas como "opaco".  Isso se refere a uma resposta recuperada de uma origem diferente, como de uma **CDN** ou API remota, quando o [CORS][FetchHttpCorsProtocol] não está habilitado.  
+Algumas respostas no painel Armazenamento **de Cache** podem ser sinalizadas como "opacas".  Isso se refere a uma resposta recuperada de uma origem diferente, como de **uma CDN** ou API remota, quando [o CORS][FetchHttpCorsProtocol] não está habilitado.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-Para evitar o vazamento de informações entre domínios, há um preenchimento significativo adicionado ao tamanho de uma resposta opaca usada para calcular limites de cotas de armazenamento \ (por exemplo, se uma `QuotaExceeded` exceção é acionada \) e reportada pela `navigator.storage` API.  
+Para evitar vazamento de informações entre domínios, preenchimento significativo é adicionado ao tamanho de uma resposta opaca usada para calcular os limites de cota de armazenamento \(por exemplo, se uma exceção é lançada\) e relatada pela `QuotaExceeded` `navigator.storage` API.  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-Os detalhes desse preenchimento variam do navegador para o navegador, mas para o Microsoft Edge, isso significa que o **tamanho mínimo** que qualquer resposta opaca em cache única contribui para o uso geral do armazenamento é de [aproximadamente 7 megabytes][ChromiumIssues796060#c17].  Você deve ter isso em mente ao determinar quantas respostas opacas você deseja armazenar em cache, pois você pode ter facilmente excedido as limitações de cotas de armazenamento muito antes do que você esperaria com base no tamanho real dos recursos opacos.  
+Os detalhes desse preenchimento variam de navegador para navegador, mas **** para o Microsoft Edge, isso significa que o tamanho mínimo que qualquer resposta opaca em cache único contribui para o uso geral do armazenamento é de aproximadamente [7 megabytes][ChromiumIssues796060#c17].  Lembre-se do preenchimento ao determinar quantas respostas opacas você deseja armazenar em cache, já que você pode exceder facilmente as limitações de cota de armazenamento muito antes do esperado com base no tamanho real dos recursos opacos.  
 
 Guias relacionados:  
 
-*   [Estouro de pilha: quais limitações se aplicam às respostas opacas?][StackOverflowLimitationsForOpaqueResponses]  
+*   [Stack Overflow: Quais limitações se aplicam às respostas opacas?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Limpar armazenamento  
+## <a name="clear-storage"></a>Limpar o armazenamento  
 
-O painel **limpar armazenamento** é um recurso muito útil ao desenvolver aplicativos Web progressivos.  Esse painel permite cancelar o registro de trabalhadores do serviço e limpar todos os caches e armazenamento com um único clique de botão.  <!--Check out the section below to learn more.  -->
+O **painel Armazenamento Limpo** é um recurso muito útil ao desenvolver aplicativos Web progressivos.  Esse painel permite que você desaconselhe os funcionários do serviço e desimpe todos os caches e armazenamento com um único botão escolha.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -192,21 +192,21 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o menu de comando do Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Execute comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "796060 problema de Chromium: o valor de armazenamento em cache aumenta em cada atualização quando o código analítico está em HTML"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Problema Chromium 796060: o valor de armazenamento em cache aumenta em cada atualização quando o código do Analytics está no html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
-[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "APIs da Web em cache | MDN"  
+[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache - APIs da Web | MDN"  
 
-[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Estouro de pilha: quais limitações se aplicam às respostas opacas?"  
+[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: Quais limitações se aplicam às respostas opacas?"  
 
 <!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
 <!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
@@ -217,7 +217,7 @@ Related Guides:
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

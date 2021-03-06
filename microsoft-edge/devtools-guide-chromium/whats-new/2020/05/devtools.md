@@ -1,18 +1,18 @@
 ---
-description: Use o DevTools no modo de alto contraste do Windows, CORRESP os atalhos de teclado no código do DevTools para o Visual Studio e muito mais.
-title: O que há de novo no DevTools (Microsoft Edge 84)
+description: Use o DevTools no modo de alto contraste do Windows, match keyboard shortcuts in the DevTools to Visual Studio Code e muito mais.
+title: Novidades no DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2752dec8bc7c4eec34ddde05a7dedff7bebef05f
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+ms.openlocfilehash: 701c328c1dc975a81129049fe2931139757205c3
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015486"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398571"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,13 @@ ms.locfileid: "11015486"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# O que há de novo no DevTools (Microsoft Edge 84)  
+# <a name="whats-new-in-devtools-microsoft-edge-84"></a>Novidades no DevTools (Microsoft Edge 84)  
 
-## Anúncios da equipe do Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Comunicados da equipe do Microsoft Edge DevTools  
 
-As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools! Dê uma olhada neles para experimentar novos recursos no DevTools, extensões de código do Visual Studio e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e mais recentes em suas ferramentas de desenvolvedor, baixe os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
+As seções a seguir são uma lista de comunicados que você pode ter perdido da equipe do Microsoft Edge DevTools.  Confira os comunicados para experimentar novos recursos no DevTools, no Microsoft Visual Studio Code e muito mais.  Para ficar atualizado sobre todos os recursos mais recentes e maiores em suas ferramentas de desenvolvedor, baixe os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] e [siga-nos no Twitter][EdgeDevToolsTwitterAccount].  
 
-### Usar o DevTools no modo de alto contraste do Windows
+### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Usar o DevTools no modo de alto contraste do Windows
 
 O Microsoft Edge DevTools agora é exibido no modo de alto contraste quando o Windows está no modo de alto contraste.  
 
@@ -42,240 +42,240 @@ O Microsoft Edge DevTools agora é exibido no modo de alto contraste quando o Wi
    O Microsoft Edge DevTools no modo de alto contraste  
 :::image-end:::  
 
-[Siga as instruções para ativar o modo de alto contraste no Windows][MicrosoftSupportWindows10HighContrastMode].  Abra o DevTools no Microsoft Edge pressionando `F12` ou `Ctrl` + `Shift` + `I` .  O DevTools é exibido no modo de alto contraste.  
+[Siga as instruções para ativar o modo de alto contraste no Windows][MicrosoftSupportWindows10HighContrastMode].  Para abrir o DevTools no Microsoft Edge, selecione `F12` ou `Ctrl` + `Shift` + `I` .  Os DevTools são exibidos no modo de alto contraste.  
 
 > [!NOTE]
-> O Microsoft Edge DevTools atualmente é compatível com o modo de alto contraste no Windows, mas não no macOS. 
+> O Microsoft Edge DevTools atualmente suporta o modo de alto contraste no Windows, mas não no macOS.  
 
-Chromium problema [#1048378][CR1048378]  
+Problema do Chromium [#1048378][CR1048378]  
 
-### Corresponder os atalhos de teclado no código do DevTools para o Visual Studio  
+### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>Corresponder atalhos de teclado no DevTools para Visual Studio Código  
 
-Do seu [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) e do [controlador de problemas Chromium público][CRIssuesList], a equipe do Microsoft Edge devtools aprendeu que você queria a capacidade de personalizar atalhos de teclado no devtools.  No Microsoft Edge 84, agora você pode fazer a correspondência entre os atalhos de teclado no código do DevTools para o [Visual Studio][VSCode], que é apenas um dos recursos nos quais a equipe está trabalhando para a personalização de atalhos.  
+Com seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team) e o rastreador de problemas públicos [do Chromium,][CRIssuesList]a equipe do Microsoft Edge DevTools aprendeu que você queria a capacidade de personalizar atalhos de teclado no DevTools.  No Microsoft Edge 84, agora você pode corresponder atalhos de teclado no DevTools a [Visual Studio Code,][VisualStudioCode]que é apenas um dos recursos em que a equipe está trabalhando para personalização de atalho.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Corresponder atalhos de teclado no DevTools para Visual Studio Código" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    O Microsoft Edge DevTools no modo de alto contraste  
 :::image-end:::  
 
-Para experimentar o experimento, abra as configurações do DevTools pressionando `?` ou selecionando o ícone de ![ configurações do devtools ][ImageSettingsIcon] no canto superior direito da devtools.  Navegue até a seção **experimentos** e marque **habilitar a guia Configurações de atalhos de teclado personalizados (requer recarregamento)**.  Agora, recarregue o DevTools, abra as configurações novamente e navegue até a seção **atalhos** .  
+Para experimentar o experimento, abra Configurações do DevTools selecionando ou escolhendo o ícone de configurações de DevTools no canto superior direito do `?` ![ ][ImageSettingsIcon] DevTools.  Navegue até **a seção Experimentos** e verifique **Habilitar configurações de atalhos de teclado personalizadas (requer recarga)**.  Agora, recarregue o DevTools, abra Configurações novamente e navegue até a **seção Atalhos.**  
 
-Selecione **devtools (padrão)** na lista suspensa **coincidir os atalhos de predefinir** e selecione **código do Visual Studio**.  Os atalhos de teclado no DevTools agora correspondem aos atalhos para ações equivalentes no código do Visual Studio.  
+Escolha **DevTools (Padrão)** no menu suspenso Corresponder **atalhos** e selecione **Visual Studio Código**.  Os atalhos de teclado no DevTools agora corresponderão aos atalhos para ações equivalentes no Visual Studio Code.  
 
-Por exemplo, o atalho de teclado para pausar ou continuar a execução de um script no [código do Visual Studio][VSCodeShortcuts] é `F5` .  Com a predefinição **devtools (padrão)** , o mesmo atalho no devtools está, `F8` mas com a predefinição de **código do Visual Studio** , esse atalho também é `F5` .  
+Por exemplo, o atalho do teclado para pausar ou continuar executando um script no [Visual Studio Code][VisualStudioCodeShortcuts] é `F5` .  Com a **predefinição DevTools (Padrão),** esse mesmo atalho no DevTools é, mas com Visual Studio código predefinido, esse atalho agora `F8` também é **** `F5` .  
 
-No momento, o recurso está disponível no Microsoft Edge 84 como um experimento, portanto Compartilhe seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team) com a equipe!  
+O recurso está disponível no Microsoft Edge 84 como um experimento, portanto, compartilhe seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team) com a equipe!  
 
-Chromium problema [#174309][CR174309]  
+Problema do Chromium [#174309][CR174309]  
 
-### Emuladores Remote Debug Surface Duo  
+### <a name="remote-debug-surface-duo-emulators"></a>Emuladores do Surface Duo de depuração remota  
 
-Agora você pode depurar remotamente o conteúdo da Web em execução no [emulador Surface Duo][DualScreensAndroidEmulator] usando toda a capacidade do [Microsoft Edge devtools][DevToolsChromiumGuide].  
+Agora você pode depurar remotamente o conteúdo da Web em execução no [emulador do Surface Duo][DualScreensAndroidEmulator] usando a potência total do [Microsoft Edge DevTools][DevToolsChromiumGuide].  
 
-Com o [emulador Surface Duo][DualScreensAndroidEmulator], você pode testar como o conteúdo da Web é renderizado em uma nova classe de dispositivos dobrável e de tela dupla.  O emulador executa o sistema operacional Android e fornece o [aplicativo Android do Microsoft Edge][AndroidEdge].  Carregue o conteúdo da Web no [aplicativo Microsoft Edge][AndroidEdge] e depure-o com o [Microsoft Edge devtools][DevToolsChromiumGuide].  
+Com o [emulador do Surface Duo,][DualScreensAndroidEmulator]você pode testar como o conteúdo da Web é renderizável em uma nova classe de dispositivos de tela dupla e dobrável.  O emulador executa o sistema operacional Android e fornece o [aplicativo Android do Microsoft Edge.][AndroidEdge]  Carregue o conteúdo da Web no [aplicativo do Microsoft Edge][AndroidEdge] e depure-o com o Microsoft Edge [DevTools][DevToolsChromiumGuide].  
 
-:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="O aplicativo Microsoft Edge em execução no emulador Surface Duo" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
-   O aplicativo Microsoft Edge no emulador Surface Duo  
+:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="O aplicativo do Microsoft Edge em execução no emulador do Surface Duo" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+   O aplicativo Microsoft Edge no emulador do Surface Duo  
 :::image-end:::  
 
-A `edge://inspect` página em uma instância da área de trabalho do [Microsoft Edge][DesktopEdge] mostra o **SurfaceDuoEmulator** com uma lista das guias abertas ou [PWAs][PwaIndex] que estão em execução no [emulador Surface Duo][DualScreensAndroidEmulator].  
+A página em uma instância da área de trabalho do Microsoft Edge mostra o `edge://inspect` **SurfaceDuoEmulator** com uma lista das guias abertas ou [PWAs][PwaIndex] que estão sendo executados no [emulador do Surface Duo.][DualScreensAndroidEmulator] [][DesktopEdge]  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="A página edge://inspect exibe uma lista das guias abertas no aplicativo Microsoft Edge em execução no emulador" lightbox="../../media/2020/05/edge-inspect.msft.png":::
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="A edge://inspect exibe uma lista das guias abertas no aplicativo Microsoft Edge em execução no emulador" lightbox="../../media/2020/05/edge-inspect.msft.png":::
    A `edge://inspect` página exibe uma lista das guias abertas no aplicativo Microsoft Edge em execução no emulador
 :::image-end:::  
 
-Selecionar **inspecionar** para a guia ou PWA que você deseja depurar abre o [Microsoft Edge devtools][DevToolsChromiumGuide].  [Siga o guia passo a passo para depurar remotamente o conteúdo da Web no emulador Surface Duo][DevToolsRemoteDebugDuoEmulator].  
+Escolha **inspecionar** a guia ou o PWA que você deseja depurar para abrir o [Microsoft Edge DevTools][DevToolsChromiumGuide].  Siga o guia passo a passo para depurar remotamente o conteúdo [da Web no emulador do Surface Duo.][DevToolsRemoteDebugDuoEmulator]  
 
-### Redimensionar a gaveta DevTools mais facilmente  
+### <a name="resize-the-devtools-drawer-more-easily"></a>Resize a gaveta DevTools com mais facilidade  
 
-No Microsoft Edge 83 ou anterior, você foi capaz de redimensionar a [gaveta devtools][DevToolsDrawer] passando dentro da barra de ferramentas da gaveta.  A gaveta se comportada de maneira diferente dos outros controles de redimensionamento para painéis no DevTools onde você passa o mouse sobre a borda do painel para redimensioná-lo.  Selecione a imagem a seguir para ver como o redimensionamento da gaveta trabalhou na versão 83 ou anterior do Microsoft Edge.  
+No Microsoft Edge 83 ou anterior, você só foi capaz de resizer a [Gaveta de DevTools][DevToolsDrawer] pairando na barra de ferramentas da Gaveta.  A Gaveta se comportava de forma diferente dos outros controles de ressarção para painéis no DevTools, onde você passar o mouse na borda do painel para ressilá-lo.  Escolha a imagem a seguir para exibir como ressizing the Drawer funcionou na versão 83 ou anterior do Microsoft Edge.  
 
-:::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Redimensionando a gaveta DevTools no Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
-   Redimensionando a gaveta DevTools no Microsoft Edge 83
+:::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
+   Resizing the DevTools Drawer in Microsoft Edge 83
 :::image-end:::  
 
 <!--todo:  create png that represents the gif information  -->  
 
-Começando com o Microsoft Edge 84, agora você pode redimensionar a gaveta passando o mouse sobre a borda da gaveta.  Essa alteração alinha o comportamento redimensionando a gaveta DevTools com a maneira como você redimensiona outros painéis no DevTools.  Selecione a imagem a seguir para ver o redimensionamento em ação no Microsoft Edge 84.  
+A partir do Microsoft Edge 84, você agora é capaz de ressarcionar a Gaveta pairando sobre a borda da Gaveta.  Essa alteração alinha o comportamento resizing the DevTools Drawer com a maneira como você resize outros painéis no DevTools.  Escolha a imagem a seguir para exibir o resizing em ação no Microsoft Edge 84.  
 
-:::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Redimensionando a gaveta DevTools no Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
-   Redimensionando a gaveta DevTools no Microsoft Edge 84
+:::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
+   Resizing the DevTools Drawer in Microsoft Edge 84
 :::image-end:::  
 
 <!--todo:  create png that represents the gif information  -->  
 
-Chromium problema [#1076112][CR1076112]  
+Problema do Chromium [#1076112][CR1076112]  
 
-### Botões de navegação de screencasts exibem o foco  
+### <a name="screencasting-navigation-buttons-display-focus"></a>Botões de navegação de screencasting exibem o foco  
 
-Ao depurar remotamente um [dispositivo Android][DevToolsRemoteDebugAndroid], um [dispositivo com o Windows 10][DevToolsRemoteDebugWindows]ou um [emulador Surface Duo][DevToolsRemoteDebugDuoEmulator], você pode alternar o screencast com o ![ ícone alternar screencast ][ImageScreencastingIcon] no canto superior esquerdo da devtools.  Com o screencast habilitado, você poderá navegar na guia no Microsoft Edge no dispositivo remoto na janela do DevTools.  No Microsoft Edge 84, esses botões de navegação agora também são acessíveis pelo teclado.  
+Ao depurar remotamente um dispositivo [Android,][DevToolsRemoteDebugAndroid]um [dispositivo Windows 10][DevToolsRemoteDebugWindows]ou [um emulador do Surface Duo,][DevToolsRemoteDebugDuoEmulator]você pode alternar a telacasting com o ícone Deggle Screencast no canto superior esquerdo do ![ ][ImageScreencastingIcon] DevTools.  Com a screencasting habilitada, você pode navegar na guia no Microsoft Edge no dispositivo remoto da janela DevTools.  No Microsoft Edge 84, esses botões de navegação agora também estão acessíveis ao teclado.  
 
-:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Pressionar Shift + Tab na barra de URL do screencast mostra o foco no botão atualizar" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
-   Pressione `Shift` + `Tab` a barra de URL com o screencast para mostrar o foco no botão **Atualizar**
+:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Selecione Shift+Tab na barra de URL em tela mostra o foco no botão Atualizar" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+   Selecionar na barra de URL em `Shift` + `Tab` tela mostra o foco no **botão Atualizar**
 :::image-end:::  
 
-Chromium problema [#1081486][CR1081486]  
+Problema do Chromium [#1081486][CR1081486]  
 
-### O painel de detalhes do painel de rede agora está acessível  
+### <a name="network-panel-details-pane-is-now-accessible"></a>Painel Detalhes do painel de rede agora está acessível  
 
-No Microsoft Edge 84, o [painel de detalhes][DevToolsNetworkDetails] no painel de **rede** agora tem foco quando você o abre para um recurso no [log de rede][DevToolsNetworkLog].  Essa alteração permite que os leitores de tela leiam e interajam com o conteúdo do painel de **detalhes** .  
+No Microsoft Edge 84, o [painel Detalhes][DevToolsNetworkDetails] na ferramenta **Rede** agora tem foco ao abri-lo para um recurso no Log [de Rede.][DevToolsNetworkLog]  Essa alteração permite que os leitores de tela leiam e interajam com o conteúdo do painel **Detalhes.**  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="O painel de detalhes no painel rede tem o foco quando aberto" lightbox="../../media/2020/05/network-details.msft.png":::
-   O painel de **detalhes** no painel **rede** tem o foco quando aberto
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="O painel Detalhes no painel Rede tem foco quando aberto" lightbox="../../media/2020/05/network-details.msft.png":::
+   O **painel Detalhes** na ferramenta **Rede** tem foco quando aberto
 :::image-end:::  
 
-Chromium problema [#963183][CR963183]  
+Problema do Chromium [#963183][CR963183]  
 
-## Anúncios do projeto Chromium  
+## <a name="announcements-from-the-chromium-project"></a>Anúncios do projeto Chromium  
 
-As seções a seguir anunciarão recursos adicionais disponíveis no Microsoft Edge 84 que contribuíram para o projeto de código-fonte aberto Chromium.  
+As seções a seguir anunciam recursos adicionais disponíveis no Microsoft Edge 84 que contribuíram para o projeto Chromium de código aberto.  
 
-### Corrigir problemas de site com a nova ferramenta problemas na gaveta do DevTools
+### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Corrigir problemas de site com a nova ferramenta Problemas na Gaveta de DevTools
 
-A nova ferramenta de **problemas** na gaveta devtools foi criada para ajudar a reduzir o cansativo de notificação e o email secundário do **console**.  Atualmente, o **console** é o local central para desenvolvedores de site, bibliotecas, estruturas e Microsoft Edge para registrar mensagens, avisos e erros.  A ferramenta **problemas** agrega avisos do navegador em uma maneira estruturada, agregada e acionável, links para recursos afetados no Microsoft Edge devtools e fornece orientação sobre como corrigir os problemas.  Ao longo do tempo, você deve ver mais e mais avisos no Microsoft Edge faceamento na ferramenta **problemas** em vez de no **console**, o que pode ajudar a reduzir o email secundário no **console**.  
+A nova **ferramenta Issues** na DevTools Drawer foi criada para ajudar a reduzir a fatiga de notificação e a desordem do **Console.**  Atualmente, o **Console** é o local central para desenvolvedores de site, bibliotecas, estruturas e Microsoft Edge registrar mensagens, avisos e erros.  A **ferramenta Issues** agrega avisos do navegador de forma estruturada, agregada e a ação, links para recursos afetados no Microsoft Edge DevTools e fornece orientações sobre como corrigir os problemas.  Com o tempo, mais e mais avisos são a tona no Microsoft Edge na ferramenta **Problemas,** em vez do **Console,** o que deve ajudar a reduzir a desordem no **Console**.  
 
-Para começar, confira [Localizar e corrigir problemas com a ferramenta problemas do Microsoft Edge devtools][DevtoolsIssuesIndex].  
+Para começar, navegue até [Encontrar e corrigir problemas com a ferramenta Problemas do Microsoft Edge DevTools.][DevtoolsIssuesIndex]  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="A ferramenta problemas na gaveta DevTools" lightbox="../../media/2020/05/issues.msft.png":::
-   A ferramenta **problemas** na gaveta devtools  
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="A ferramenta Problemas na Gaveta de DevTools" lightbox="../../media/2020/05/issues.msft.png":::
+   A **ferramenta Problemas** na Gaveta de DevTools  
 :::image-end:::  
 
-Chromium problema [#1068116][CR1068116]  
+Problema do Chromium [#1068116][CR1068116]  
 
-### Exibir informações de acessibilidade na dica de ferramenta do modo de inspeção  
+### <a name="view-accessibility-information-in-the-inspect-mode-tooltip"></a>Exibir informações de acessibilidade na dica de ferramenta Inspecionar Modo  
 
-A dica de ferramenta do **modo de inspeção** agora indica se o elemento tem um [nome e função][WebhintHintsAxeNameRoleValue] acessível e se é [focado no teclado][WebhintHintsAxeKeyboard].  
+A **dica de ferramenta Modo** de Inspeção agora indica se o elemento tem um nome e função acessíveis e é focalizado no [teclado][WebhintHintsAxeKeyboard]. [][WebhintHintsAxeNameRoleValue]  
 
 <!--todo:  add link inspect mode tooltip (WebdevCls) when section is live  -->  
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->  
 <!--todo:  add link keyboard-focusable (WebdevControlFocus) when section is live  -->  
 
-:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="Dica de ferramenta do modo de inspeção com informações de acessibilidade" lightbox="../../media/2020/05/a11y.msft.png":::
-  Dica de ferramenta do **modo de inspeção** com informações de acessibilidade  
+:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="A dica de ferramenta Inspecionar Modo com informações de acessibilidade" lightbox="../../media/2020/05/a11y.msft.png":::
+  A **dica de ferramenta Inspecionar Modo** com informações de acessibilidade  
 :::image-end:::  
 
-Chromium problema [#1040025][CR1040025]  
+Problema do Chromium [#1040025][CR1040025]  
 
-### Atualizações do painel de desempenho  
+### <a name="performance-panel-updates"></a>Atualizações do painel de desempenho  
 
-#### Exibir informações de tempo de bloqueio total no rodapé  
+#### <a name="view-total-blocking-time-information-in-the-footer"></a>Exibir informações de Tempo de Bloqueio Total no rodapé  
 
-Depois de gravar o desempenho da carga, o painel **desempenho** agora mostra as informações do tempo de bloqueio total \ (TBT \) no rodapé.  TBT é uma métrica de desempenho de carga que ajuda a quantificar o tempo que uma página leva para ser utilizável.  Isso essencialmente mede o tempo em que uma página parece ser utilizável \ (porque o conteúdo é renderizado na tela \); Mas não é utilizável realmente porque o JavaScript está bloqueando o thread principal e, portanto, a página não responde à entrada do usuário.  TBT é a métrica principal para approximating do primeiro atraso de entrada.  
+Depois de gravar seu desempenho de carga, o **painel Desempenho** agora mostra informações de Tempo de Bloqueio Total \(TBT\) no rodapé.  O TBT é uma métrica de desempenho de carga que ajuda a quantificar quanto tempo uma página leva para se tornar usável.  Ele mede basicamente por quanto tempo uma página parece ser usável \(porque o conteúdo é renderizado na tela\); mas não é realmente usável, porque JavaScript está bloqueando o thread principal e, portanto, a página não responde à entrada do usuário.  O TBT é a principal métrica para se aproximar do Primeiro Atraso de Entrada.  
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->  
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 
-Para obter informações sobre o tempo total de bloqueio, não use o fluxo de trabalho **Atualizar** ![ ícone da página ][ImageRefreshPageIcon] de atualização de página para gravar o desempenho da carga da página.  
+Para obter informações de Tempo de Bloqueio Total, não use o **fluxo** de trabalho de ícone da página Atualizar Página de Atualização ![ para registrar o desempenho da carga da ][ImageRefreshPageIcon] página.  
 
-Em vez disso **, selecione** ![ o ícone registro ][ImageRecordIcon] de registro, recarregue manualmente a página, aguarde até que a página seja carregada e, em seguida, pare a gravação.  
+Em vez disso, **selecione Record** Record icon ![ , recarrege manualmente a página, aguarde a página ser carregada e, ][ImageRecordIcon] em seguida, pare a gravação.  
 
-Se você vir `Total Blocking Time: Unavailable` , o Microsoft Edge devtools não obteve as informações necessárias dos dados internos de criação de perfil no Microsoft Edge.  
+Se `Total Blocking Time: Unavailable` for exibido, o Microsoft Edge DevTools não obterá as informações necessárias dos dados de perfil interno no Microsoft Edge.  
 
-:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Total de informações de tempo de bloqueio no rodapé de uma gravação de painel de desempenho" lightbox="../../media/2020/05/tbt.msft.png":::
-   Total de informações de tempo de bloqueio no rodapé de uma gravação de painel de **desempenho**  
+:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Total de informações de Tempo de Bloqueio no rodapé de uma gravação de painel de desempenho" lightbox="../../media/2020/05/tbt.msft.png":::
+   Total de informações de Tempo de Bloqueio no rodapé de uma **gravação de painel** de desempenho  
 :::image-end:::  
 
-Chromium problema [#1054381][CR1054381]  
+Problema do Chromium [#1054381][CR1054381]  
 
-#### Eventos Shift de layout na seção nova experiência  
+#### <a name="layout-shift-events-in-the-new-experience-section"></a>Eventos de Layout Shift na nova seção Experiência  
 
-A seção **experiência** nova do painel **desempenho** ajuda você a detectar turnos de layout.  O deslocamento de layout cumulativo \ (CLS \) é uma métrica que ajuda você a quantificar a instabilidade Visual indesejada.
+A nova **seção Experiência** do **painel Desempenho** ajuda você a detectar turnos de layout.  A Mudança cumulativa de Layout \(CLS\) é uma métrica que ajuda você a quantificar a instabilidade visual indesejada.
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Selecione o evento de **deslocamento de layout** para ver os detalhes do deslocamento de layout no painel **Resumo** .  Passe o mouse sobre os campos **movido de** e **movido para** para visualizar onde a mudança de layout ocorreu.  
+Escolha o **evento Layout Shift** para exibir os detalhes da mudança de layout no painel **Resumo.**  Passe o mouse nos **campos Movido de e** Movido **para** visualizar onde ocorreu a mudança de layout.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="Os detalhes de uma mudança de layout" lightbox="../../media/2020/05/cls.msft.png":::
    Os detalhes de uma mudança de layout  
 :::image-end:::  
 
-### Terminologia Promise mais precisa no console  
+### <a name="more-accurate-promise-terminology-in-the-console"></a>Terminologia de promessa mais precisa no Console  
 
-Ao registrar um `Promise` , o valor de **console** fornecido incorretamente é `PromiseStatus` definido como `resolved` .  
+Ao registrar um `Promise` , o console **forneceu** o valor `PromiseStatus` incorretamente definido como `resolved` .  
 
-:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="Um exemplo do console usando a antiga terminologia resolvida" lightbox="../../media/2020/05/resolved.msft.png":::
-   Um exemplo do **console** que usa a antiga `resolved` terminologia  
+:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="Um exemplo do Console usando a terminologia resolvida antiga" lightbox="../../media/2020/05/resolved.msft.png":::
+   Um exemplo do **Console** usando a `resolved` terminologia antiga  
 :::image-end:::  
 
-O **console** agora usa o termo `fulfilled` , que se alinha com a `Promise` especificação.  Para obter mais informações sobre a `Promise` especificação, consulte [Estados e Fates no GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
+O **Console** agora usa o termo `fulfilled` , que se alinha à `Promise` especificação.  Para obter mais informações sobre a `Promise` especificação, navegue até [Estados e Destinos no GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
 
-:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="Um exemplo do console usando a nova terminologia atendida" lightbox="../../media/2020/05/fulfilled.msft.png":::
-  Um exemplo do **console** usando a nova `fulfilled` terminologia  
+:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="Um exemplo do Console usando a nova terminologia cumprida" lightbox="../../media/2020/05/fulfilled.msft.png":::
+  Um exemplo do **Console usando** a `fulfilled` nova terminologia  
 :::image-end:::  
 
-V8 problema [#6751][CRV86751]  
+V8 issue [#6751][CRV86751]  
 
-### Atualizações do painel de estilos  
+### <a name="styles-pane-updates"></a>Atualizações do painel estilos  
 
-#### Suporte para a palavra-chave REVERT  
+#### <a name="support-for-the-revert-keyword"></a>Suporte para a palavra-chave de reverter  
 
-A interface do usuário de autocompletar do painel **estilos** agora detecta a palavra-chave CSS [REVERT][MDNRevert] , que reverte o valor em cascata de uma propriedade para o valor anterior aplicado ao estilo do elemento.  
+A interface do usuário de preenchimento automático do painel **Estilos** agora detecta a palavra-chave [CSS][MDNRevert] revertida, que reverte o valor em cascata de uma propriedade para o valor anterior aplicado ao estilo do elemento.  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Definir o valor de uma propriedade para reverter" lightbox="../../media/2020/05/revert.msft.png":::
-  Definir o valor de uma propriedade para reverter  
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Definindo o valor de uma propriedade a ser revertida" lightbox="../../media/2020/05/revert.msft.png":::
+  Definindo o valor de uma propriedade a ser revertida  
 :::image-end:::  
 
-Chromium problema [#1075437][CR1075437]  
+Problema do Chromium [#1075437][CR1075437]  
 
-#### Visualizações de imagens  
+#### <a name="image-previews"></a>Visualizações de imagem  
 
-Passe o mouse sobre um `background-image` valor no painel **estilos** para ver uma visualização da imagem em uma dica de ferramenta.  
+Passe o mouse em um valor no painel Estilos para `background-image` exibir uma visualização da imagem em uma dica de ferramenta. ****  
 
-:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Passando o cursor do mouse sobre um valor de imagem de tela de fundo" lightbox="../../media/2020/05/image-preview.msft.png":::
+:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Passar o mouse sobre um valor de imagem em segundo plano" lightbox="../../media/2020/05/image-preview.msft.png":::
   Passar o mouse sobre um `background-image` valor  
 :::image-end:::  
 
-Chromium problema [#1040019][CR1040019]  
+Problema do Chromium [#1040019][CR1040019]  
 
-#### Agora, o seletor de cores usa a notação de cores funcional separada por espaços  
+#### <a name="color-picker-now-uses-space-separated-functional-color-notation"></a>O Selador de Cores agora usa notação de cor funcional separada por espaço  
 
-[Módulo de cores CSS nível 4][CSSWGDraftsColor4Changes3] especifica que as funções de cor, como, por exemplo `rgb()` , devem dar suporte a argumentos separados por espaço.  Por exemplo, `rgb(0, 0, 0)` é equivalente a `rbg(0 0 0)`.  
+[O Módulo de Cor CSS Nível 4][CSSWGDraftsColor4Changes3] especifica que as funções de cor, como , devem dar suporte a `rgb()` argumentos separados por espaço.  Por exemplo, `rgb(0, 0, 0)` é equivalente a `rbg(0 0 0)`.  
 
-Ao escolher as cores com o [seletor de cores][DevtoolsCssReferenceColorPicker] ou alternar entre as representações de cores no painel **estilos** , mantendo `Shift` e selecionando o `background-color` valor, você verá a sintaxe do argumento separado por espaços.  
+Quando você escolhe [][DevtoolsCssReferenceColorPicker] cores com o Seletor de Cores ou alterna entre representações de cores no painel **Estilos** segurando e selecionando o valor, a sintaxe de argumento separada por espaço é `Shift` `background-color` exibida.  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Usando argumentos separados por espaço no painel estilos" lightbox="../../media/2020/05/color.msft.png":::
-  Usando argumentos separados por espaço no painel **estilos**  
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Usando argumentos separados por espaço no painel Estilos" lightbox="../../media/2020/05/color.msft.png":::
+  Usando argumentos separados por espaço no painel **Estilos**  
 :::image-end:::  
 
-Você também deve ver a sintaxe no painel **calculado** e a dica de ferramenta do **modo de inspeção** .  
+Você também deve exibir a sintaxe no painel **Computed** e na dica de ferramenta **Inspecionar Modo.**  
 
-O Microsoft Edge DevTools está usando a nova sintaxe porque recursos CSS futuros, como [Color ()][CSSWGDraftsColor4Property] , não são compatíveis com a sintaxe do argumento separado por vírgulas substituídas por vírgula.  
+O Microsoft Edge DevTools está usando a nova sintaxe porque os recursos CSS futuros, como [color()][CSSWGDraftsColor4Property] não suportam a sintaxe de argumento preterida separada por vírgulas.  
 
-A sintaxe do argumento separado por espaços tem suporte na maioria dos navegadores há algum tempo.  Para obter mais informações, consulte [posso usar: notações de cores funcionais separadas por espaços?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
+A sintaxe de argumento separada por espaço tem suporte na maioria dos navegadores por um tempo.  Para obter mais informações, navegue até [Posso usar: Notações][CaniuseMDNSpaceSeparatedFunctionalColorNotations] de cores funcionais separadas por espaço?  
 
-Chromium problema [#1072952][CR1072952]  
+Problema do Chromium [#1072952][CR1072952]  
 
-### Substituição do painel Propriedades no painel elementos  
+### <a name="deprecation-of-the-properties-pane-in-the-elements-panel"></a>Deprecation do painel Propriedades no painel Elementos  
 
-O painel **Propriedades** no painel **elementos** é preterido.  `console.dir($0)`Em vez disso, execute no **console** .  
+O **painel Propriedades** na ferramenta **Elements** é preterido.  Em `console.dir($0)` vez **disso, execute no Console.**  
 
-:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="O painel Propriedades preteridas" lightbox="../../media/2020/05/properties.msft.png":::
-   O painel **Propriedades** preteridas  
+:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="O painel Propriedades preterida" lightbox="../../media/2020/05/properties.msft.png":::
+   O painel Propriedades **** preterida  
 :::image-end:::  
 
-#### Referências  
+#### <a name="references"></a>Referências  
 
-*   [console. dir ()][DevtoolsConsoleApiDir]  
+*   [console.dir()][DevtoolsConsoleApiDir]  
 *   [$0][DevtoolsConsoleUtilitiesDom]  
 
-### Suporte a atalhos do aplicativo no painel manifesto  
+### <a name="app-shortcuts-support-in-the-manifest-pane"></a>Suporte a atalhos de aplicativo no painel Manifesto  
 
-Os atalhos do aplicativo ajudam os usuários a iniciar rapidamente tarefas comuns ou recomendadas em um aplicativo Web.  O menu de atalhos do aplicativo é mostrado somente para [aplicativos Web progressivos][PwaIndex] que são instalados na área de trabalho do usuário ou no dispositivo móvel.  
+Atalhos de aplicativo ajudam os usuários a iniciar rapidamente tarefas comuns ou recomendadas em um aplicativo Web.  O menu atalhos do aplicativo é mostrado apenas para Aplicativos [Web][PwaIndex] Progressivos instalados na área de trabalho ou dispositivo móvel do usuário.  
 
-<!--For more information, see [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
+<!--For more information, navigate to [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="Atalhos do aplicativo no painel manifesto" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
-  Atalhos do aplicativo no painel **manifesto**  
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="Atalhos de aplicativo no painel Manifesto" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+  Atalhos de aplicativo no painel **Manifesto**  
 :::image-end:::  
 
-## Baixar os canais de visualização do Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Baixar os canais de visualização do Microsoft Edge  
 
-Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você estiver no Windows ou macOS, considere usar os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
-## Como entrar em contato com o Microsoft Edge devtools equipe  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe do Microsoft Edge Devtools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -288,62 +288,62 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 
 <!-- links -->  
 
-[DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Use o emulador Surface Duo | Documentos da Microsoft"
+[DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Use o emulador do Surface Duo | Microsoft Docs"
 
-[DevtoolsConsoleApiDir]: /microsoft-edge/devtools-guide-chromium/console/api#dir "Dir-referência de API do console | Documentos da Microsoft"  
-[DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Elemento JavaScript ou elemento JavaScript selecionado recentemente-referência de API de utilitários de console | Documentos da Microsoft"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Alterar as cores com o seletor de cores – referência de CSS | Documentos da Microsoft"  
-[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Gaveta-personalizar visão geral | Documentos da Microsoft"  
-[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Localizar e corrigir problemas com a guia problemas do Microsoft Edge DevTools | Documentos da Microsoft"  
-[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Introdução à depuração remota de dispositivos Android | Documentos da Microsoft"  
-[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Introdução aos emuladores Remote Debugging Surface Duo | Documentos da Microsoft"  
-[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Introdução à depuração remota de dispositivos Windows 10 | Documentos da Microsoft"  
-[DevToolsNetworkDetails]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Inspecione os detalhes do recurso | Documentos da Microsoft"  
-[DevToolsNetworkLog]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Registrar atividades da rede | Documentos da Microsoft"  
-[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Aplicativos Web progressivos no Windows | Documentos da Microsoft"  
+[DevtoolsConsoleApiDir]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir - Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Elemento selecionado recentemente ou objeto JavaScript - Referência da API de Utilitários de Console | Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Alterar cores com o Seletor de Cores - Referência CSS | Microsoft Docs"  
+[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Gaveta - Personalizar visão geral | Microsoft Docs"  
+[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Encontre e corrige problemas com a guia Problemas do Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Começar com a depuração remota de dispositivos Android | Microsoft Docs"  
+[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Iniciar com emuladores do Surface Duo de Depuração Remota | Microsoft Docs"  
+[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Começar com a depuração remota de dispositivos Windows 10 | Microsoft Docs"  
+[DevToolsNetworkDetails]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Inspecione os detalhes do recurso | Microsoft Docs"  
+[DevToolsNetworkLog]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Log network activity | Microsoft Docs"  
+[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Aplicativos Web Progressivos no Windows | Microsoft Docs"  
 <!--[DevtoolsWhatsNew201901Inspect]: /microsoft-edge/devtools-guide-chromium/whats-new/2019/01/devtools#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
 
-[AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Aplicativo Android do Microsoft Edge"
+[AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Aplicativo Do Microsoft Edge Android"
 
-[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Notações de cores funcionais separadas por espaços-MDN | Posso usar"  
+[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Notações de cores funcionais separadas por espaço - MDN | Posso usar"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Erros de Chromium"
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Erros do Chromium"
 
-[CR174309]: https://crbug.com/174309 "DevTools: permite personalizar atalhos de teclado/associações de teclas | Erros de Chromium"  
-[CR963183]: https://crbug.com/963183 "DevTools não são compatíveis com a WCAG | Erros de Chromium"  
-[CR1040019]: https://crbug.com/1040019 "DevTools: visualize facilmente imagens de plano de fundo e imagens no painel estilos | Erros de Chromium"  
-[CR1040025]: https://crbug.com/1040025 "DevTools: show Basic A11y info in Element popover | Erros de Chromium"  
-[CR1048378]: https://crbug.com/1048378 "Suporte de interface do usuário DevTools para modo de alto contraste | Erros de Chromium"  
-[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Erros de Chromium"  
-[CR1068116]: https://crbug.com/1068116 "Painel de envio de problemas | Erros de Chromium"  
-[CR1072952]: https://crbug.com/1072952 "DevTools: o seletor de cores deve produzir uma sintaxe de cor CSS moderna | Erros de Chromium"  
-[CR1075437]: https://crbug.com/1075437 "DevTools: adicionar suporte para a palavra-chave/valor da CSS ' rever ' | Erros de Chromium"  
-[CR1076112]: https://crbug.com/1076112 "Personalização de devtools-redimensionador de gaveta"  
-[CR1081486]: https://crbug.com/1081486 "O foco do teclado não está visível para botões de navegação no modo screencast | Erros de Chromium"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus deve ser ' cumprido ', não ' resolvido ' | Erros de V8"  
+[CR174309]: https://crbug.com/174309 "DevTools: Permitir personalizar atalhos de teclado/vinculações de teclas | Bugs do Chromium"  
+[CR963183]: https://crbug.com/963183 "DevTools não são compatíveis com wcag | Bugs do Chromium"  
+[CR1040019]: https://crbug.com/1040019 "DevTools: visualizar facilmente imagens e imagens de plano de fundo no painel Estilos | Bugs do Chromium"  
+[CR1040025]: https://crbug.com/1040025 "DevTools: mostrar informações básicas do a11y no elemento | Bugs do Chromium"  
+[CR1048378]: https://crbug.com/1048378 "Suporte à interface do usuário do DevTools para o modo de alto contraste | Bugs do Chromium"  
+[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Bugs do Chromium"  
+[CR1068116]: https://crbug.com/1068116 "Painel de problemas de | Bugs do Chromium"  
+[CR1072952]: https://crbug.com/1072952 "DevTools: o seletor de cores deve produzir uma sintaxe de cor CSS moderna | Bugs do Chromium"  
+[CR1075437]: https://crbug.com/1075437 "DevTools: adicione suporte para a palavra-chave/valor css 'reverter' | Bugs do Chromium"  
+[CR1076112]: https://crbug.com/1076112 "Personalização de devtools - resizer de gaveta"  
+[CR1081486]: https://crbug.com/1081486 "Foco do teclado não visível para botões de navegação no modo screencast | Bugs do Chromium"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus deve ser 'cumprido', não 'resolvido' | Bugs de V8"  
 
-[CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Alterações de cores 3-módulo de cor CSS nível 4 | Rascunhos do editor de grupo de trabalho W3C CSS"  
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. cor do primeiro plano: ' cor '-nível 4 do módulo colorido CSS | Rascunhos do editor de grupo de trabalho W3C CSS"  
+[CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Alterações de Cores 3 - Css Color Module Level 4 | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
+[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Cor de primeiro plano: a "cor" - Css Color Module Level 4 | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
 
 [DesktopEdge]: https://www.microsoft.com/edge/ "Apresentando o novo Microsoft Edge"  
 
-[GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "Estados e Fates-Domenic/promessas-desempacotamento | GitHub"  
+[GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "Estados e Destinos - domenic/promises-unwrapping | GitHub"  
 
 [MDNRevert]: https://developer.mozilla.org/docs/Web/CSS/revert "reverter | MDN"  
-[MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Compatibilidade com o navegador | MDN"  
+[MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Compatibilidade do navegador | MDN"  
 
-[VSCode]: https://code.visualstudio.com/ "Código do Visual Studio"  
-[VSCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Atalhos de teclado de código do Visual Studio para Windows"  
+[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Código"  
+[VisualStudioCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio atalhos de teclado de código para Windows"  
 
-[WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: teclado | Webhint"  
-[WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: nome função valor | Webhint"  
+[WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: teclado | WebHint"  
+[WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: Name Role Value | WebHint"  
 
-[MicrosoftSupportWindows10HighContrastMode]: https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Ativar ou desativar o modo de alto contraste no Windows | Suporte do Windows"  
+[MicrosoftSupportWindows10HighContrastMode]: https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Ativar ou desativar o modo de alto contraste no Windows | Suporte ao Windows"  
 
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Postar um tweet"  
+[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Postar um Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools conta do Twitter"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Novo problema-MicrosoftDocs/Edge-Developer"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Novo problema - MicrosoftDocs/desenvolvedor de borda"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Canais de visualização do Microsoft Edge"  
 [TheWebWeWant]: https://aka.ms/webwewant "A Web que queremos"  
 
@@ -356,11 +356,11 @@ Se você estiver no Windows ou no macOS, considere o uso dos [canais da visualiz
 <!--[WebdevCoreWebVitals]: https://alphabet-dev/vitals#core-web-vitals "Core Web Vitals | alphabet-dev"  -->  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2020/05/devtools/index) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/updates/2020/05/devtools/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

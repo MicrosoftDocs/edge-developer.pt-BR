@@ -1,71 +1,85 @@
 ---
-description: Use o painel mídia para ver informações e depurar a guia media players por navegador.
-title: Exibir e depurar informações do media players
+description: Use a ferramenta Mídia para exibir informações e depurar os media players por guia do navegador.
+title: Exibir e depurar informações de players de mídia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230947"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398403"
 ---
-# Exibir e depurar informações do media players  
+<!-- Copyright Jecelyn Yeen
 
-Use o painel **mídia** no Microsoft Edge devtools para exibir informações e depurar a guia media players por navegador.  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-## Abrir o painel mídia  
+       https://www.apache.org/licenses/LICENSE-2.0
 
-O painel **mídia** é o local principal no devtools para inspecionar o Media Player de uma página da Web.
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 
-1.  [Abra o devtools][DevtoolsGuideChromiumOpen].  
-1.  Para abrir o painel **mídia** , escolha **Personalizar e controle devtools** `...`  >  **mais ferramentas**de  >  **mídia**.  
+# <a name="view-and-debug-media-players-information"></a>Exibir e depurar informações de players de mídia  
+
+Use a **ferramenta Mídia** no Microsoft Edge DevTools para exibir informações e depurar os media players por guia do navegador.  
+
+## <a name="open-the-media-tool"></a>Abra a ferramenta Mídia  
+
+A **ferramenta Mídia** é o principal local no DevTools para inspecionar o media player de uma página da Web.
+
+1.  [Abra DevTools][DevtoolsGuideChromiumOpen].  
+1.  Para abrir o **painel Mídia,** escolha **Personalizar e controlar DevTools** `...`  >  **Mais ferramentas**  >  **Mídia**.  
     
-    :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Painel mídia" lightbox="../media/media-panel-empty.msft.png":::
-       Painel **mídia**  
+    :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Painel de mídia" lightbox="../media/media-panel-empty.msft.png":::
+       **Painel de** mídia  
     :::image-end:::  
     
-## Ver as informações do media players  
+## <a name="view-media-players-information"></a>Exibir informações de media players  
 
-1.  Navegue até uma página da Web com um Media Player, como a página da Web a seguir.  
+1.  Navegue até uma página da Web com um media player, como a página da Web a seguir.  
     
-    [Maximizar a produtividade com as ferramentas de desenvolvedor Edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [Maximizando a produtividade com as Ferramentas de Desenvolvedor de Borda][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  No menu **jogadores** , é exibido um player de mídia.  
-1.  Selecione o jogador.  A guia **Propriedades** exibe as propriedades do Media Player.  
+1.  No menu **Jogadores,** um media player é exibido.  
+1.  Escolha o player.  O **painel Propriedades** exibe as propriedades do media player.  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propriedades da mídia" lightbox="../media/media-panel-view.msft.png":::
-       Propriedades da mídia  
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propriedades de mídia" lightbox="../media/media-panel-view.msft.png":::
+       Propriedades de mídia  
     :::image-end:::  
     
-1.  Para ver todos os eventos do Media Player, escolha a guia **Events (eventos** ).  
+1.  Para exibir todos os eventos do media player, escolha o **painel Eventos.**  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Eventos de mídia" lightbox="../media/media-panel-events.msft.png":::
        Eventos de mídia  
     :::image-end:::  
     
-1.  Para exibir os logs de mensagens do Media Player, escolha a guia **mensagens** .  Você pode filtrar as mensagens por nível de log ou cadeia de caracteres.  
+1.  Para exibir os logs de mensagens do media player, escolha o **painel Mensagens.**  Você pode filtrar as mensagens por nível de log ou cadeia de caracteres.  
     
     :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Mensagens de mídia" lightbox="../media/media-panel-messages.msft.png":::
        Mensagens de mídia  
     :::image-end:::  
     
-1.  Na guia **linha do tempo** , a reprodução de mídia e o status do buffer são exibidos ao vivo.  
+1.  No painel **Linha do** Tempo, a reprodução de mídia e o status do buffer são exibidos ao vivo.  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Linha do tempo de mídia" lightbox="../media/media-panel-timeline.msft.png":::
-       Linha do tempo de mídia  
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Linha do tempo da mídia" lightbox="../media/media-panel-timeline.msft.png":::
+       Linha do tempo da mídia  
     :::image-end:::  
     
-### Depuração remota  
+### <a name="remote-debugging"></a>Depuração remota  
 
-Exiba as informações do Media Player em um dispositivo Android a partir de seu computador com Windows ou macOS.  
+Exibir as informações dos media players em um dispositivo Android do computador Windows ou macOS.  
 
-1.  Para configurar a depuração remota, navegue até [introdução à depuração remota de dispositivos Android][DevtoolsGuideChromiumRemoteDebuggingIndex].  
-1.  Exiba as informações do Media Player remotamente.  
+1.  Para configurar a depuração remota, navegue até [Começar com dispositivos Android de depuração remota.][DevtoolsGuideChromiumRemoteDebuggingIndex]  
+1.  Exibir as informações dos media players remotamente.  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
@@ -74,40 +88,40 @@ Exiba as informações do Media Player em um dispositivo Android a partir de seu
     :::image-end:::  
     -->  
     
-## Ocultar e mostrar media players  
+## <a name="hide-and-show-media-players"></a>Ocultar e mostrar jogadores de mídia  
 
-Às vezes, você executa mais de um Media Player em uma página da Web ou usa a mesma guia do navegador para navegar por páginas da Web diferentes, cada uma com media players.
+Às vezes, você pode executar mais de um media player em uma página da Web ou usar a mesma guia do navegador para navegar em diferentes páginas da Web, cada uma com media players.
 
-Você pode optar por ocultar \ (ou mostrar \) cada Player de mídia para ter uma experiência de depuração mais fácil.  
+Você pode optar por ocultar \(ou mostrar\) cada media player para uma experiência de depuração mais fácil.  
 
 1.  Navegue até várias páginas da Web de vídeo diferentes usando a mesma guia do navegador.  
-1.  Para ocultar players de mídia, execute uma das seguintes ações.  
-    *   Para ocultar um Media Player, passe o mouse sobre um Media Player, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **ocultar Player**.  
-    *   Para ocultar todos os outros media players, passe o mouse em um Media Player, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **ocultar todos os outros**.  
+1.  Para ocultar media players, conclua uma das seguintes ações.  
+    *   Para ocultar um media player, passe o mouse em um media player, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Ocultar player**.  
+    *   Para ocultar todos os outros media players, passe o mouse em um media player, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Ocultar todos os outros**.  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Ocultar players de mídia" lightbox="../media/media-panel-hide-show.msft.png":::
-       Ocultar players de mídia  
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Ocultar media players" lightbox="../media/media-panel-hide-show.msft.png":::
+       Ocultar media players  
     :::image-end:::  
     
-## Exportar informações do player de mídia  
+## <a name="export-media-player-information"></a>Exportar informações do media player  
 
-1.  Para baixar as informações do Media Player como um arquivo JSON, passe o mouse em um player de mídia, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **salvar informações do jogador**.  
+1.  Para baixar as informações do media player como um arquivo JSON, passe o mouse em um media player, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Salvar informações do player**.  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Exportar informações de mídia" lightbox="../media/media-panel-save.msft.png":::
        Exportar informações de mídia  
     :::image-end:::  
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir o Microsoft Edge (Chromium) DevTools | Documentos da Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra o Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Introdução à depuração remota de dispositivos Android | Documentos da Microsoft"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Começar com a depuração remota de dispositivos Android | Microsoft Docs"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizar a produtividade com as ferramentas de desenvolvedor Edge | Vídeo do Bing"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizando a produtividade com as ferramentas de desenvolvedor de borda | Bing Video"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  

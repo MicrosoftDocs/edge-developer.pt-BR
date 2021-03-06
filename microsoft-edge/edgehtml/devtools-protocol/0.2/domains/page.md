@@ -1,322 +1,164 @@
 ---
-description: Referência do protocolo DevTools versão 0,2 (EdgeHTML) para o domínio da página. Ações e eventos relacionados à página inspecionada pertencem ao domínio da página.
-title: Page Domain-DevTools Protocol Version 0,2 (EdgeHTML)
+description: Referência do Protocolo DevTools Versão 0.2 (EdgeHTML) para o Domínio da Página. Ações e eventos relacionados à página inspecionada pertencem ao domínio da página.
+title: Domínio da Página - DevTools Protocol Versão 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2f1849a2e2aa2f53cef9dff5d03ac991d368a6f3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d969dd100164ace61445a4618174cfa943dcfd2b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231307"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398844"
 ---
-# Page Domain-DevTools Protocol Version 0,2 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-02-edgehtml"></a>Domínio da Página - DevTools Protocol Versão 0.2 (EdgeHTML)  
 
-Ações e eventos relacionados à página inspecionada pertencem ao domínio da página.
+Ações e eventos relacionados à página inspecionada pertencem ao domínio da página.  
 
-| | |
-|-|-|
-| [**Métodos**](#methods) | [habilitar](#enable), [desabilitar](#disable), [navegar](#navigate), [getFrameTree](#getframetree) |
-| [**Eventos**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
-| [**Tipos**](#types) | [Frameid](#frameid), [frame](#frame), [FrameTree](#frametree) |
-## Métodos
+| Classificação | Membros |  
+|:--- |:--- |  
+| [Métodos](#methods) | [habilitar](#enable), [desabilitar, navegar](#navigate), [getFrameTree](#getframetree) [](#disable) |  
+| [Eventos](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired,](#loadeventfired) [domContentEventFired](#domcontenteventfired) |  
+| [Tipos](#types) | [FrameId,](#frameid) [Frame](#frame), [FrameTree](#frametree) |  
 
-### Habilitar
-Habilita as notificações de domínio da página.
+## <a name="methods"></a>Métodos  
 
-</p>
+### <a name="enable"></a>Habilitar  
 
----
+Habilita notificações de domínio de página.  
 
-### Desabilitar 
-Desativa as notificações de domínio da página.
+&nbsp;  
 
-</p>
+---  
 
----
+### <a name="disable"></a>Desabilitar   
 
-### navegar
-Navega a página atual para a URL fornecida.
+Desabilita notificações de domínio de página.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL para navegar na página.</td>
-        </tr>
-        <tr>
-            <td>frameid <br/> <i>opcional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID do quadro para navegar. Se não for especificado, navegará na página superior.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameid</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID do quadro que será navegada.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+&nbsp;  
 
----
+---  
 
-### getFrameTree
-Retorna a estrutura da árvore de quadros atual.
+### <a name="navigate"></a>navegar  
 
-<table>
-    <thead>
-        <tr>
-            <th>Devolver</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>Apresentar estrutura de árvore de quadros.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Navega a página atual para a URL determinada.  
 
----
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| url | `string` | URL para navegar na página. |  
+| frameId \(optional\) | [FrameId](#frameid) | ID do quadro para navegar.  Se não for especificado, navegará pela página superior. |  
 
-## Eventos
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID do quadro que será navegada. |  
 
-### frameAttached
-Disparado quando o quadro é anexado ao seu pai.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameid</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID do quadro que foi anexado.</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador de quadro pai.</td>
-        </tr>
-        <tr>
-            <td>empilh <br/> <i>opcional</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>Rastreamento de pilha JavaScript de quando o quadro foi anexado, somente defina se o quadro foi iniciado a partir do script.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getframetree"></a>getFrameTree  
 
----
+Retorna a estrutura da árvore de quadros atual.  
 
-### frameDetached
-Disparado quando o quadro é separado de seu pai.
+| Retorna | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | Estrutura da árvore de quadros presente. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameid</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID do quadro que foi desconectado.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+## <a name="events"></a>Eventos  
 
-### frameNavigated
-Disparado após a conclusão da navegação do quadro.
+### <a name="frameattached"></a>frameAttached  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>tempo</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Objeto frame.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Acionado quando o quadro foi anexado ao pai.  
 
----
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID do quadro anexado. |  
+| parentFrameId | [FrameId](#frameid) | Identificador de quadro pai. |  
+| stack \(optional\) | [Runtime.StackTrace](./runtime.md#stacktrace) | Rastreamento de pilha JavaScript de quando o quadro foi anexado, somente definido se o quadro tiver sido iniciado a partir do script. |  
 
-### loadEventFired
-Corresponde ao evento Window. OnLoad.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>carimbo</td>
-            <td><code class="flyout">number</code></td>
-            <td>Número de milissegundos desde a época.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="framedetached"></a>frameDetached  
 
----
+Acionado quando o quadro foi desvinculado de seu pai.  
 
-### domContentEventFired
-Corresponde ao evento Document. onDOMContentLoaded.
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID do quadro que foi desvinculado. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parâmetros</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>carimbo</td>
-            <td><code class="flyout">number</code></td>
-            <td>Número de milissegundos desde a época.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+### <a name="framenavigated"></a>frameNavigated  
 
-## Tipos
+Acionado depois que a navegação do quadro tiver sido concluída.  
 
-### <a name="frameid"></a> Frameid `string`
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frame | [Quadro](#frame) | Objeto Frame. |  
 
-Identificador de quadro exclusivo.
+---  
 
-</p>
+### <a name="loadeventfired"></a>loadEventFired  
 
----
+Corresponde ao `window.onload` evento.  
 
-### <a name="frame"></a> Quadro `object`
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Número de milissegundos desde a época. |  
 
-Informações sobre o quadro na página.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador exclusivo do quadro.</td>
-        </tr>
-        <tr>
-            <td>parentId <br/> <i>opcional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador exclusivo do quadro pai.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nome do quadro, conforme especificado na marca.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL do documento de quadro.</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>Origem de segurança do documento de quadro.</td>
-        </tr>
-        <tr>
-            <td>MIME</td>
-            <td><code class="flyout">string</code></td>
-            <td>MimeType do documento de quadro conforme determinado pelo navegador.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domcontenteventfired"></a>domContentEventFired  
 
----
+Corresponde ao `document.onDOMContentLoaded` evento.  
 
-### <a name="frametree"></a> FrameTree `object`
+| Parâmetros | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Número de milissegundos desde a época. |  
 
-Informações sobre a hierarquia de quadros.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propriedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>tempo</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Informações de quadro para este item de árvore.</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>opcional</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>Quadros filho.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+## <a name="types"></a>Tipos  
 
----
+### <a name="frameid-string"></a>Cadeia de caracteres FrameId  
+
+<a name="frameid"></a>  
+
+Identificador de quadro exclusivo.  
+
+&nbsp;  
+
+---  
+
+### <a name="frame-object"></a>Objeto Frame  
+
+<a name="frame"></a>  
+
+Informações sobre o Quadro na Página.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | Identificador exclusivo do quadro. |  
+| parentId \(optional\) | [FrameId](#frameid) | Identificador exclusivo do quadro pai. |  
+| nome \(opcional\) | `string` | O nome do quadro conforme especificado na marca. |  
+| url | `string` | URL do documento do quadro. |  
+| securityOrigin | `string` | Origem da segurança do documento do quadro. |  
+| mimeType | `string` | MimeType do documento de quadro conforme determinado pelo navegador. |  
+
+---  
+
+### <a name="frametree-object"></a>Objeto FrameTree  
+
+<a name="frametree"></a>  
+
+Informações sobre a hierarquia frame.  
+
+| Propriedades | Tipo | Detalhes |  
+|:--- |:--- |:--- |  
+| frame | [Quadro](#frame) | Informações de quadro para este item de árvore. |  
+| childFrames \(optional\) | [FrameTree[]](#frametree) | Quadros filho. |  
+
+---  

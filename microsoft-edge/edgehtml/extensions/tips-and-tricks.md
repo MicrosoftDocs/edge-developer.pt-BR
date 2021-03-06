@@ -1,68 +1,68 @@
 ---
-description: Saiba mais sobre algumas dicas e truques úteis em relação às extensões do Microsoft Edge
-title: Dicas e truques | Extensions
+description: Saiba mais sobre algumas dicas úteis e truques sobre extensões do Microsoft Edge
+title: Dicas e truques | Extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desenvolvimento da Web, HTML, CSS, JavaScript, desenvolvedor, extensões
-ms.date: 12/15/2020
+keywords: edge, desenvolvimento da Web, html, css, javascript, desenvolvedor, extensões
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: cd512085f13b76c5a8e474301ef296612eeb0414
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 8a5ea19152f5524d86d17d6f978c677c45f8f3a8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231468"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399348"
 ---
-# Dicas e truques  
+# <a name="tips-and-tricks"></a>Dicas e truques  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-Não importa se você está trabalhando em uma extensão do Microsoft Edge ou já publicou uma, as dicas e truques a seguir podem ser úteis.
+Se você estiver trabalhando em uma extensão do Microsoft Edge ou já tiver publicado uma, as dicas e truques a seguir podem ser úteis.  
 
-## Obter um link direto para sua extensão na Microsoft Store
+## <a name="get-a-direct-link-to-your-extension-in-the-microsoft-store"></a>Obter um link direto para sua extensão na Microsoft Store  
 
-No painel do centro de desenvolvimento do Windows, você pode encontrar um link direto para sua extensão na Microsoft Store. Esse link pode ser útil para publicidade e compartilhamento de sua extensão.
+No painel do Centro de Dev do Windows, você pode encontrar um link direto para sua extensão na Microsoft Store.  Esse link pode ser útil para publicidade e compartilhamento de sua extensão.  
 
-Depois de fazer logon no centro de desenvolvimento do Windows e navegar para sua extensão por meio do painel, na página identidade do aplicativo, você encontrará o link na linha do **link do protocolo da loja** :
+Depois de entrar no Centro de Dev do Windows e navegar até sua extensão pelo painel, na página Identidade do aplicativo, você encontrará o link na linha de link de protocolo **da Loja:**  
 
-![link do protocolo da loja](./media/store-link.png)
+![link de protocolo de armazenamento](./media/store-link.png)  
  
-## Verifique se você está acompanhando a política da Microsoft Store
+## <a name="make-sure-youre-following-the-microsoft-store-policy"></a>Certifique-se de que você está seguindo a Política da Microsoft Store  
 
-Ao criar sua extensão, certifique-se de ter em mente as diretrizes para enviar para a Microsoft Store realçada na [política da Microsoft Store](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx). 
+Ao criar sua extensão, lembre-se de ter em mente as diretrizes para envio à Microsoft Store realçadas na [Política da Microsoft Store.](/windows/uwp/publish/store-policies)  
  
-O Microsoft Edge Extensions também tem um conjunto de políticas adicional para acompanhar [aqui](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).
+As extensões do Microsoft Edge também têm um conjunto adicional de políticas a seguir [vistas aqui](/windows/uwp/publish/store-policies#pol_10_12).  
 
-## Melhorar a capacidade de descoberta da extensão na Microsoft Store
+## <a name="improve-your-extensions-discoverability-in-the-microsoft-store"></a>Melhorar a capacidade de descoberta da extensão na Microsoft Store  
 
-Você pode adicionar palavras-chave ao envio da extensão para melhorar a sua capacidade de descoberta por meio das pesquisas. Por exemplo, "extensões Microsoft Edge" e "nome da minha extensão". 
+Você pode adicionar palavras-chave ao envio de extensão para melhorar sua capacidade de descoberta por meio de pesquisas.  Por exemplo, `Microsoft Edge Extensions` e `name of my extension` .  
 
-Isso pode ser feito no centro de desenvolvimento do Windows na seção Descrição da extensão. Essas palavras-chave precisarão ser adicionadas para cada idioma ao qual a extensão for compatível.
+Isso pode ser feito no Centro de Dev do Windows na seção descrição da extensão.  Essas palavras-chave precisarão ser adicionadas para cada idioma que sua extensão oferece suporte.  
 
-![Enviar uma resposta a uma revisão-palavras-chave](./media/keywords.png)
+![Usar palavras-chave para enviar uma resposta a uma revisão](./media/keywords.png)  
 
-## Automatizar o envio para a Microsoft Store
+## <a name="automate-your-submission-to-the-microsoft-store"></a>Automatizar seu envio para a Microsoft Store  
 
-Você pode automatizar e simplificar seus envios para a Microsoft Store usando a nova API de envio da Microsoft Store, que permite atualizar aplicativos/jogos, Complementos (compras no aplicativo) e pacotes de pré-lançamento por meio de uma API REST. Confira a [documentação e os exemplos](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) ou use a [extensão do VSTS da API de envio](https://github.com/Microsoft/windows-dev-center-vsts-extension) do código-fonte aberto para começar.
+Você pode automatizar e simplificar seus envios para a Microsoft Store usando a nova API de Envio da Microsoft Store, que permite atualizar aplicativos/jogos, complementos \(compras no aplicativo\) e pacotes de pré-venda por meio de uma API REST.  Confira a [documentação e os exemplos](/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) ou use a extensão [VSTS](https://github.com/Microsoft/windows-dev-center-vsts-extension) da API de Envio de código aberto para começar.  
 
-## Usar o Hub de feedback do Windows para reunir comentários/análises/solicitações de recursos
+## <a name="use-the-windows-feedback-hub-to-gather-feedbackreviewsfeature-requests"></a>Usar o Hub de Feedback do Windows para coletar comentários/avaliações/solicitações de recursos  
 
-Você pode direcionar os usuários para a subcategoria do hub de feedback do Windows para sua extensão inserindo um link que aponta para ele. Será necessário criar esse link usando o seguinte formato: 
+Você pode direcionar os usuários para a subcategoria do Windows Feedback Hub para sua extensão incorporando um link que aponta para ele.  Este link precisará ser criado usando o seguinte formato:  
 
 ```text
 feedback-hub://?tabid=2&appid=<PFN>!App
 ```  
 
-Você precisará substituir `<PFN>` pelo nome da família de pacotes pela extensão. Isso pode ser encontrado na seção **identidade do aplicativo** para sua extensão no centro de desenvolvimento do Windows.
+Você precisará substituir pelo Nome da Família de `<PFN>` Pacotes de sua extensão.  Isso pode ser encontrado na seção **Identidade do aplicativo** para sua extensão no Centro de Dev do Windows.  
 
-## Confira suas classificações e avaliações
+## <a name="check-out-your-ratings-and-reviews"></a>Confira suas classificações e críticas  
 
-Faça logon regularmente para verificar suas análises e classificações de usuários. Embora o aplicativo UWP só tenha informações sobre o mercado atual do usuário, fazer logon no centro de desenvolvimento do Windows exibirá a classificação média em todos os mercados.
+Faça logoff regularmente para verificar as avaliações e classificações do usuário.  Embora o aplicativo UWP tenha apenas informações sobre o mercado de usuários atual, o log no Centro de Desenvolvimento do Windows exibirá a classificação média em todos os mercados.  
 
-## Responder às críticas do usuário
+## <a name="respond-to-user-reviews"></a>Responder a avaliações do usuário  
 
-Você pode responder às críticas do usuário na Microsoft Store por meio do painel do centro de desenvolvimento do Windows. Navegue até sua extensão e em análises selecione **análises**. Um link será exibido abaixo de cada revisão que permitirá que você responda diretamente ao cliente. Este canal de comunicação permite que você ofereça feedback, resoluções ou envie um agradecimento para a revisão!
+Você pode responder às críticas do usuário na Microsoft Store por meio do painel do Centro de Dev do Windows.  Navegue até sua extensão e, em Análise, selecione **Avaliações**.  Um link aparecerá abaixo de cada revisão que permitirá que você responda diretamente ao cliente.  Este canal de comunicação permite que você ofereça comentários, resoluções ou envie um obrigado pela revisão!  
 
-![Enviar uma resposta a uma crítica](./media/reviews.png)
+![Responder à revisão do usuário](./media/reviews.png)  

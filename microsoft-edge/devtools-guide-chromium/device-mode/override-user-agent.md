@@ -1,18 +1,18 @@
 ---
-description: Abra a guia condições de rede, desabilite selecionar automaticamente e escolha na lista ou insira uma cadeia de caracteres personalizada.
-title: Substituir a cadeia de caracteres do agente do usuário do Microsoft Edge DevTools
+description: Abra a ferramenta Condições de Rede, desabilite Selecionar automaticamente e escolha na lista ou insira uma cadeia de caracteres personalizada.
+title: Substituir a cadeia de caracteres de agente do usuário do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124947"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398690"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,26 +28,26 @@ ms.locfileid: "11124947"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Substituir a cadeia de caracteres do agente do usuário do Microsoft Edge DevTools  
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Substituir a cadeia de caracteres de agente do usuário do Microsoft Edge DevTools  
 
-Para substituir a cadeia de caracteres do [agente do usuário][MDNUserAgent] do Microsoft Edge devtools:  
+Para substituir a [cadeia de caracteres de][MDNUserAgent] agente do usuário do Microsoft Edge DevTools:  
 
-1.  Selecione `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) para abrir o **menu de comando**.  
+1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o **Menu de Comando**.  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       O **menu de comando**  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="O Menu De comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       O **Menu De comando**  
     :::image-end:::  
     
-1.  Tipo `network conditions` , escolha **Mostrar condições de rede**e selecione `Enter` para abrir a guia **condições de rede** .  
-1.  Na seção **agente do usuário** , desabilite a caixa de seleção **selecionar automaticamente** .  
+1.  Digite `network conditions` , escolha Mostrar condições de **rede**e selecione para abrir a ferramenta `Enter` Condições **de** rede.  
+1.  Na seção **Agente do usuário,** desligue a caixa de **seleção Selecionar** automaticamente.  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="O menu de comando" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       Desabilitar **selecionar automaticamente**  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Desativar Selecionar automaticamente" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Desativar Selecionar **automaticamente**  
     :::image-end:::  
     
-1.  Selecione uma cadeia de caracteres de agente do usuário na lista ou insira sua própria cadeia de caracteres personalizada.  
+1.  Escolha uma cadeia de caracteres de agente do usuário na lista ou insira sua própria cadeia de caracteres personalizada.  
     
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -56,11 +56,11 @@ Para substituir a cadeia de caracteres do [agente do usuário][MDNUserAgent] do 
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Agente de usuário | MDN"  
 
 > [!NOTE]
-> Partes desta página são modificações com base no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usados de acordo com os termos descritos na [licença internacional Creative Commons][CCA4IL]rereference 4,0 International.  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) e é criada por [Kayce Basques][KayceBasques] \ (redator técnico, Chrome devtools \ & Lighthouse \).  
+> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
+> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International (CC BY 4.0) da Creative Commons][CCA4IL].  
+Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

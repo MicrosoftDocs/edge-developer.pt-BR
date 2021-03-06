@@ -1,36 +1,36 @@
 ---
 description: Inserir dinamicamente a imagem da NASA abaixo da marca de corpo da página usando scripts de conteúdo
-title: Criar um tutorial de extensão parte 2
+title: Criar um tutorial para extensão Parte 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, desenvolvimento da Web, HTML, CSS, JavaScript, Developer, extensões
-ms.openlocfilehash: 755b70635c93d7331ef3ac985625ba7ac5689679
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, desenvolvimento da Web, html, css, javascript, desenvolvedor, extensões
+ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104711"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397913"
 ---
-# Criar um tutorial de extensão parte 2  
+# <a name="create-an-extension-tutorial-part-2"></a>Criar um tutorial para extensão Parte 2  
   
-[Origem do pacote de extensão concluída para esta parte][ArchiveExtensionGettingStartedPart2]    
+[Fonte do pacote de extensão concluída para esta parte][ArchiveExtensionGettingStartedPart2]    
 
-## Visão geral  
+## <a name="overview"></a>Visão geral  
 
 Este tutorial aborda as seguintes tecnologias de extensão.
-*   Injetando bibliotecas JavaScript na extensão  
-*   Expondo ativos de extensão a guias do navegador  
-*   Incluindo páginas de conteúdo em guias existentes do navegador  
-*   Fazer com que as páginas de conteúdo escutem mensagens de pop-ups e respondam  
+*   Injetar bibliotecas JavaScript em extensão  
+*   Expondo ativos de extensão às guias do navegador  
+*   Incluindo páginas de conteúdo em guias de navegador existentes  
+*   Ter páginas de conteúdo escutando mensagens de pop-ups e respondendo  
 
-Você aprenderá a atualizar o menu pop-up para substituir sua imagem de início estático por um título e um botão HTML padrão.  Quando selecionado, esse botão passa essa imagem de estrelas, que é inserida na extensão, para a página de conteúdo.  Essa imagem é inserida na guia ativa do navegador. Siga as etapas abaixo para obter mais detalhes.
+Você aprenderá a atualizar seu menu pop-up para substituir sua imagem estática de início por um título e um botão HTML padrão.  Esse botão, quando selecionado, passa a imagem de estrelas, inserida na extensão, para a página de conteúdo.  Essa imagem é inserida na guia do navegador ativo. Siga as etapas abaixo para obter mais detalhes.
 
-1.  Remover a imagem do pop-up e substituí-la por um botão  
+1.  Remova a imagem do pop-up e substitua-a por um botão  
 
-Primeiro, atualize o `popup.html` arquivo com uma marcação direta que exiba um título e um botão.  Você programará esse botão em breve, mas, por enquanto, simplesmente incluirá uma referência a um arquivo JavaScript vazio `popup.js` .  Aqui está a atualização de HTML.  
+Primeiro, atualize seu arquivo com alguma marcação direta `popup.html` que exibe um título e um botão.  Você programa esse botão em breve, mas, por enquanto, basta incluir uma referência a um arquivo JavaScript `popup.js` vazio.  Aqui está o HTML de atualização.  
 
 ```html
 <html>
@@ -59,23 +59,23 @@ Primeiro, atualize o `popup.html` arquivo com uma marcação direta que exiba um
 </html>
 ```  
 
-Depois de atualizar e abrir a extensão, um pop-up abre com um botão de exibição.  
+Depois de atualizar e abrir a extensão, um pop-up será aberto com um botão de exibição.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmexibição de l após pressionar o ícone de extensão":::
-   popup.htmexibição de l após pressionar o ícone de extensão
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html exibir depois de selecionar o ícone Extensão":::
+   popup.html exibir depois de selecionar o ícone Extensão
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
-2.  Atualizar estratégia para exibir imagem na parte superior da guia do navegador  
+2.  Atualizar estratégia para exibir imagem na parte superior da guia navegador  
 
-Depois de adicionar o botão, a próxima tarefa é fazer com que ele traga o `images/stars.jpeg` arquivo de imagem na parte superior da página da guia ativa.  
+Depois de adicionar o botão, a próxima tarefa é fazer com que ele traga o arquivo de imagem na `images/stars.jpeg` parte superior da página de guia ativa.  
 
-Lembre-se de que cada página da guia funciona em seu próprio thread. Além disso, a extensão usa um thread diferente.  Primeiro, crie um script de conteúdo que é injetado na página da guia.  Em seguida, envie uma mensagem do seu pop-up para esse script de conteúdo em execução na página da guia. O script de conteúdo recebe a mensagem, que descreve qual imagem deve ser exibida.  
+Lembre-se de que cada página de tabulação é executado em seu próprio thread. Além disso, a extensão usa um thread diferente.  Primeiro, crie um script de conteúdo injetado na página de tabulação.  Em seguida, envie uma mensagem do pop-up para o script de conteúdo em execução na página de guia. O script de conteúdo recebe a mensagem, que descreve qual imagem deve ser exibida.  
 
 3. Criar o JavaScript pop-up para enviar uma mensagem  
 
-Primeiro, crie `popup/popup.js` e adicione código para enviar uma mensagem para o script de conteúdo ainda não criado que você deve criar e injetar momentaneamente na guia do navegador.  Para fazer isso, o código a seguir adiciona um `onclick` evento ao seu botão pop-up de exibição.  
+Primeiro, crie e adicione código para enviar uma mensagem ao script de conteúdo ainda não criado que você deve criar e injetar momentaneamente na guia `popup/popup.js` do navegador.  Para fazer isso, o código a seguir adiciona um `onclick` evento ao botão de exibição pop-up.  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -86,9 +86,9 @@ if (sendMessageId) {
 }
 ```  
 
-No `onclick` evento, localize a guia atual do navegador.  Em seguida, use a `chrome.tabs.sendmessage` API de extensão para enviar uma mensagem para essa guia.  
+No `onclick` evento, encontre a guia do navegador atual.  Em seguida, use `chrome.tabs.sendmessage` a API de extensão para enviar uma mensagem para essa guia.  
 
-Nessa mensagem, você deve incluir a URL para a imagem que você deseja exibir. Além disso, envie uma ID exclusiva para atribuir à imagem inserida.  Você pode optar por permitir que o JavaScript de inserção de conteúdo gere isso, mas por motivos que se tornam aparentes mais tarde, gere essa identificação exclusiva aqui `popup.js` e passe-a para o script de conteúdo ainda não criado.  
+Nessa mensagem, você deve incluir a URL da imagem que deseja exibir. Além disso, envie uma ID exclusiva para atribuir à imagem inserida.  Você pode optar por permitir que o JavaScript de inserção de conteúdo gere isso, mas por motivos que se tornam aparentes mais tarde, gere essa ID exclusiva aqui e passe-a para o script de conteúdo ainda não `popup.js` criado.  
 
 O trecho de código a seguir descreve o código atualizado em `popup/popup.js` .  Além disso, passe a ID da guia atual, que é usada posteriormente neste artigo.  
 
@@ -119,17 +119,17 @@ if (sendMessageId) {
 }
 ```  
 
-4. Disponibilizar seus estrelas. jpeg em qualquer guia do navegador  
+4. Disponibilizar suas estrelas.jpeg em qualquer guia do navegador  
 
-Provavelmente, você deve estar se perguntando por que, quando você passar, `images/stars.jpeg` deve usar a `chrome.extension.getURL` API de extensão Chrome em vez de apenas transmitir a URL relativa sem o prefixo adicional, como na seção anterior.  A propósito, esse prefixo extra, retornado por `getUrl` com a imagem anexada tem a seguinte aparência:  
+Você provavelmente está se perguntando por que, ao passar na API de extensão do chrome, você deve usar apenas passar a URL relativa sem o prefixo extra, como na `images/stars.jpeg` `chrome.extension.getURL` seção anterior.  A propósito, esse prefixo extra, retornado com `getUrl` a imagem anexada, se parece com o seguinte.  
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 ```  
 
-O motivo é que você está injetando a imagem usando o `src` atributo do `img` elemento na página de conteúdo.  A página de conteúdo está em execução em um thread exclusivo que não é igual ao thread que executa a extensão.  Você deve expor o arquivo de imagem estática como um ativo da Web para que ele funcione corretamente.  
+O motivo é que você está injetando a imagem usando o `src` atributo do elemento na página de `img` conteúdo.  A página de conteúdo está sendo executado em um thread exclusivo que não é o mesmo que o thread que está executando o Extension.  Você deve expor o arquivo de imagem estática como um ativo da Web para que ele funcione corretamente.  
 
-Adicione outra entrada no `manifest.json` arquivo para declarar que a imagem está disponível para todas as guias do navegador.  Essa entrada é a seguinte \ (você deve vê-la no `manifest.json` arquivo completo abaixo quando adiciona a declaração de script de conteúdo que está chegando \).  
+Adicione outra entrada no `manifest.json` arquivo para declarar que a imagem está disponível para todas as guias do navegador.  Essa entrada é a seguinte \(você deve vê-la no arquivo completo abaixo ao adicionar a declaração de script de conteúdo `manifest.json` que está chegando\).  
 
 ```json
 "web_accessible_resources": [
@@ -137,11 +137,11 @@ Adicione outra entrada no `manifest.json` arquivo para declarar que a imagem est
 ]
 ```  
 
-Agora você escreveu o código em seu `popup.js` arquivo para enviar uma mensagem para a página de conteúdo que está inserida na página da guia ativa atual, mas você não criou e injetau essa página de conteúdo.  Faça isso agora.  
+Agora você escreveu o código em seu arquivo para enviar uma mensagem para a página de conteúdo inserida na página de tabulação ativa atual, mas você não criou e `popup.js` injetou essa página de conteúdo.  Faça isso agora.  
 
-5.  Atualize o seu manifest.jspara obter conteúdo e acesso à Web  
+5.  Atualizar seu manifest.jspara conteúdo e acesso à Web  
 
-A atualização `manifest.json` que inclui o `content-scripts` e `web_accessible_resources` é a seguinte.  
+O atualizado `manifest.json` que inclui o e é o `content-scripts` `web_accessible_resources` seguinte.  
 
 ```json
 {
@@ -172,17 +172,17 @@ A atualização `manifest.json` que inclui o `content-scripts` e `web_accessible
 }
 ```  
 
-A seção que você adicionou está `content_scripts` .  O `matches` atributo é definido como `<all_urls>` , o que significa que todos os arquivos `content_scripts` são injetados em todas as páginas da guia do navegador quando cada guia é carregada.  Os tipos de arquivos permitidos que podem ser injetados são JavaScript e CSS.  Você também adicionou `libjquery.min.js` .  Você pode incluir isso do download mencionado na parte superior da seção.  
+A seção adicionada é `content_scripts` .  O atributo é definido como , o que significa que todos os arquivos em são injetados em todas as páginas de guia `matches` do navegador quando cada guia é `<all_urls>` `content_scripts` carregada.  Os tipos de arquivos permitidos que podem ser injetados são JavaScript e CSS.  Você também adicionou `libjquery.min.js` .  Você pode incluir isso no download mencionado na parte superior da seção.  
 
-6. Adicionar jQuery e noções básicas sobre o thread associado  
+6. Adicionar jQuery e entender o thread associado  
 
-Nos scripts de conteúdo que você está injetando, planeje o uso do jQuery \ ( `$` \).  Você adicionou uma versão minified do jQuery e a coloca em seu pacote de extensão como `lib\jquery.min.js` .  Esses scripts de conteúdo são executados em caixas de proteção individuais, o que significa que o jQuery injetado na `popup.js` página não é compartilhado com o conteúdo.  
+Nos scripts de conteúdo que você está injetando, planeje usar jQuery \( `$` \).  Você adicionou uma versão minificada do jQuery e a colocou no pacote de Extensão como `lib\jquery.min.js` .  Esses scripts de conteúdo são executados em áreas de resquência individuais, o que significa que o jQuery injetado na página não `popup.js` é compartilhado com o conteúdo.  
 
-Lembre-se de que, mesmo se a guia do navegador tiver JavaScript em execução na página da Web carregada, qualquer conteúdo injetado não terá acesso a isso.  Que injetado JavaScript apenas tem acesso ao DOM real carregado na guia do navegador.  
+Lembre-se de que, mesmo que a guia do navegador tenha JavaScript em execução na página da Web carregada, qualquer conteúdo injetado não tem acesso a isso.  Esse JavaScript injetado tem acesso ao DOM real carregado nessa guia do navegador.  
 
-7. Adicionar o ouvinte de mensagem de script de conteúdo  
+7. Adicionar o ouvinte de mensagens de script de conteúdo  
 
-Aqui está `content-scripts\content.js` um arquivo que é injetado em cada página da guia do navegador com base na sua `manifest.json` `content-scripts` seção.  
+Este é o `content-scripts\content.js` arquivo que é injetado em todas as páginas de guia do navegador com base em sua `manifest.json` `content-scripts` seção.  
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -205,26 +205,37 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```  
 
-Observe que todas as opções JavaScript a seguir são registradas `listener` usando o `chrome.runtime.onMessage.addListener` método de API de extensão.  Esse ouvinte aguarda mensagens como a que você enviou do `popup.js` descrito anteriormente com o método de `chrome.tabs.sendMessage` API de extensão.  
+Observe que todo o JavaScript acima faz é registrar um `listener` usando o método API de `chrome.runtime.onMessage.addListener` extensão.  Esse ouvinte aguarda mensagens como as que você enviou da descrita `popup.js` anteriormente com o método `chrome.tabs.sendMessage` API de extensão.  
 
-O primeiro parâmetro do `addListener` método é uma função cujo primeiro parâmetro, solicitação, é o detalhe da mensagem que está sendo transmitida.  Lembre-se, de `popup.js` quando você usou o `sendMessage` método, esses atributos do primeiro parâmetro são `url` e `imageDivId` .  
+O primeiro parâmetro do método é uma função cujo primeiro parâmetro, a solicitação, é os detalhes da `addListener` mensagem que está sendo passada.  Lembre-se, `popup.js` de , quando você usou o `sendMessage` método, esses atributos do primeiro parâmetro `url` são e `imageDivId` .  
 
-Quando um evento é processado pelo ouvinte, a função que é o primeiro parâmetro é executada.  O primeiro parâmetro dessa função é um objeto com atributos como atribuído por `sendMessage` .  Essa função simplesmente processa as três linhas de script do jQuery.  
+Quando um evento é processado pelo ouvinte, a função que é o primeiro parâmetro é executado.  O primeiro parâmetro dessa função é um objeto que tem atributos atribuídos por `sendMessage` .  Essa função simplesmente processa as três linhas de script jQuery.  
 
-*   A primeira linha de script insere dinamicamente no cabeçalho DOM uma **\<style\>** seção que você deve atribuir como uma `slide-image` classe ao seu `img` elemento.  
-*   A segunda linha de script acrescenta um `img` elemento logo abaixo da `body` Guia do navegador que tem a `slide-image` classe atribuída, bem como a `imageDivId` ID do elemento da imagem.  
-*   A terceira linha de script adiciona um `click` evento que abrange toda a imagem, permitindo que o usuário selecione qualquer lugar na imagem e essa imagem seja removida da página \ (juntamente com é ouvinte de evento \).  
+*   A primeira linha de script insere dinamicamente no header DOM uma seção que você deve atribuir como **\<style\>** `slide-image` uma classe ao `img` elemento.  
+*   A segunda linha de script anexa um elemento logo abaixo da guia do navegador que tem a classe atribuída, bem como a `img` `body` `slide-image` `imageDivId` ID desse elemento de imagem.  
+*   A terceira linha de script adiciona um evento que abrange toda a imagem, permitindo que o usuário selecione em qualquer lugar na imagem e essa imagem seja removida da página \(juntamente com ela é ouvinte de `click` eventos\).  
 
 8. Adicionar funcionalidade para remover a imagem exibida quando selecionada  
 
-Agora, quando você navegar em qualquer página e selecionar o ícone da **extensão** , o menu pop-up será exibido da seguinte maneira.  
+Agora, quando você navega para qualquer página e seleciona o ícone **extensão,** o menu pop-up é exibido da seguinte forma.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmexibição de l após pressionar o ícone de extensão":::
-   popup.htmexibição de l após pressionar o ícone de extensão
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html exibir depois de selecionar o ícone Extensão":::
+   popup.html exibir depois de selecionar o ícone Extensão
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
-Ao selecionar o `Display` botão, você obtém o que está abaixo.  Se você selecionar qualquer lugar da `stars.jpeg` imagem, esse elemento de imagem será removido e as páginas da guia serão recolhidas para o que foi exibido originalmente.  
+Ao selecionar o `Display` botão, você obterá o que está abaixo.  Se você selecionar em qualquer lugar da imagem, esse elemento de imagem será removido e as páginas de tabulação voltarão ao que `stars.jpeg` foi originalmente exibido.  
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="popup.htmexibição de l após pressionar o ícone de extensão"  
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="A imagem que aparece no navegador":::
+   A imagem que aparece no navegador
+:::image-end:::
+
+Você criou um Extension que envia com êxito uma mensagem do pop-up do ícone de extensão e inseriu dinamicamente o JavaScript em execução como conteúdo na guia navegador.  O conteúdo injetado define o elemento image para exibir suas estrelas estáticas jpeg.  
+
+<!-- image links -->  
+
+
+<!-- links -->  
+
+[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Fonte de pacote de extensão concluída | Microsoft Docs"  
