@@ -1,52 +1,84 @@
 ---
-description: Corresponder os atalhos de teclado no código do DevTools para o Visual Studio
+description: Corresponder atalhos de teclado no DevTools para Visual Studio Código
 title: Personalizar atalhos de teclado no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desenvolvimento da Web, Ferramentas F12, devtools, personalizado, atalhos, teclado, código do Visual Studio
-ms.openlocfilehash: d7cae5a7718c48f9665b17e59bd006bacd27d4ee
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, personalizado, atalhos, teclado, código do visual studio
+ms.openlocfilehash: ec48b075ff6741e0905e963993e7ca4e5dabe714
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230905"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408280"
 ---
-# <span data-ttu-id="49cec-104">Personalizar atalhos de teclado no Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="49cec-104">Customize keyboard shortcuts in the Microsoft Edge DevTools</span></span>  
+# <a name="customize-keyboard-shortcuts-in-the-microsoft-edge-devtools"></a><span data-ttu-id="58523-104">Personalizar atalhos de teclado no Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="58523-104">Customize keyboard shortcuts in the Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="49cec-105">A página **atalhos** em [configurações][DevToolsCustomizeSettings] fornece uma lista de [atalhos de teclado no devtools][DevToolsShortcuts] e [recursos para personalizar os atalhos](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).</span><span class="sxs-lookup"><span data-stu-id="49cec-105">The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list of [keyboard shortcuts in the DevTools][DevToolsShortcuts] and [features to customize the shortcuts](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).</span></span>  <span data-ttu-id="49cec-106">Para navegar até a página **atalhos** , siga as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="49cec-106">To navigate to the **Shortcuts** page, complete the following steps.</span></span>  
+<span data-ttu-id="58523-105">A **página Atalhos** em [Configurações][DevToolsCustomizeSettings] fornece uma lista de atalhos de teclado no [DevTools][DevToolsShortcuts] e recursos para personalizar [os atalhos.](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code)</span><span class="sxs-lookup"><span data-stu-id="58523-105">The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list of [keyboard shortcuts in the DevTools][DevToolsShortcuts] and [features to customize the shortcuts](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).</span></span>  <span data-ttu-id="58523-106">Para navegar até a página **Atalhos,** conclua as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="58523-106">To navigate to the **Shortcuts** page, complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="49cec-107">[Abra o devtools][DevtoolsOpenMain].</span><span class="sxs-lookup"><span data-stu-id="49cec-107">[Open DevTools][DevtoolsOpenMain].</span></span>  
-1.  <span data-ttu-id="49cec-108">Abrir [as configurações][DevToolsCustomizeSettings].</span><span class="sxs-lookup"><span data-stu-id="49cec-108">Open [Settings][DevToolsCustomizeSettings].</span></span>
-    *   <span data-ttu-id="49cec-109">Selecione `Shift` + `?` .</span><span class="sxs-lookup"><span data-stu-id="49cec-109">Select `Shift`+`?`.</span></span>  
-1.  <span data-ttu-id="49cec-110">Navegue até a página **atalhos** .</span><span class="sxs-lookup"><span data-stu-id="49cec-110">Navigate to the **Shortcuts** page.</span></span>  
+1.  <span data-ttu-id="58523-107">[Abra DevTools][DevtoolsOpenMain].</span><span class="sxs-lookup"><span data-stu-id="58523-107">[Open DevTools][DevtoolsOpenMain].</span></span>  
+1.  <span data-ttu-id="58523-108">Configurações [abertas][DevToolsCustomizeSettings].</span><span class="sxs-lookup"><span data-stu-id="58523-108">Open [Settings][DevToolsCustomizeSettings].</span></span>
+    *   <span data-ttu-id="58523-109">Selecione `Shift` + `?` .</span><span class="sxs-lookup"><span data-stu-id="58523-109">Select `Shift`+`?`.</span></span>  
+1.  <span data-ttu-id="58523-110">Navegue até **a página Atalhos.**</span><span class="sxs-lookup"><span data-stu-id="58523-110">Navigate to the **Shortcuts** page.</span></span>  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="A página atalhos em configurações" lightbox="../media/settings-shortcuts.msft.png":::
-       <span data-ttu-id="49cec-112">A página **atalhos** em **configurações**</span><span class="sxs-lookup"><span data-stu-id="49cec-112">The **Shortcuts** page in **Settings**</span></span>  
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="A página Atalhos em Configurações" lightbox="../media/settings-shortcuts.msft.png":::
+       <span data-ttu-id="58523-112">A **página Atalhos** **em Configurações**</span><span class="sxs-lookup"><span data-stu-id="58523-112">The **Shortcuts** page in **Settings**</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="49cec-113">Corresponder os atalhos de teclado no código do DevTools para o Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="49cec-113">Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code</span></span>  
+## <a name="match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code"></a><span data-ttu-id="58523-113">Corresponder atalhos de teclado no DevTools ao Código Visual Studio Microsoft</span><span class="sxs-lookup"><span data-stu-id="58523-113">Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code</span></span>  
 
-<span data-ttu-id="49cec-114">Para corresponder os atalhos de teclado no Microsoft Edge DevTools para ações equivalentes no [código do Visual Studio][VisualStudioCode], conclua as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="49cec-114">To match the keyboard shortcuts in the Microsoft Edge DevTools for equivalent actions in [Visual Studio Code][VisualStudioCode], complete the following steps.</span></span>  
+<span data-ttu-id="58523-114">Para corresponder ao atalho do teclado no Microsoft Edge DevTools para uma ação equivalente Visual Studio [Código][VisualStudioCode], conclua as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="58523-114">To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in [Visual Studio Code][VisualStudioCode], complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="49cec-115">Abrir a página **atalhos** .</span><span class="sxs-lookup"><span data-stu-id="49cec-115">Open the **Shortcuts** page.</span></span>
-1.  <span data-ttu-id="49cec-116">Escolha os **atalhos Coincidir de lista suspensa predefinidos** e altere **devtools (padrão)** para **código do Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="49cec-116">Choose the **Match shortcuts from preset** dropdown and change **DevTools (Default)** to **Visual Studio Code**.</span></span>  
+1.  <span data-ttu-id="58523-115">Navegue até a página da Web [Atalhos.](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools)</span><span class="sxs-lookup"><span data-stu-id="58523-115">Navigate to the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) webpage.</span></span>  
+1.  <span data-ttu-id="58523-116">Escolha Os **atalhos de match no** menu suspenso predefinido e altere **DevTools (Padrão)** para **Visual Studio Código**.</span><span class="sxs-lookup"><span data-stu-id="58523-116">Choose the **Match shortcuts from preset** dropdown and change **DevTools (Default)** to **Visual Studio Code**.</span></span>  
     
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Corresponder os atalhos de teclado no código do DevTools para o Visual Studio" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
-       <span data-ttu-id="49cec-118">Corresponder os atalhos de teclado no código do DevTools para o Visual Studio</span><span class="sxs-lookup"><span data-stu-id="49cec-118">Match keyboard shortcuts in the DevTools to Visual Studio Code</span></span>  
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Corresponder atalhos de teclado no DevTools para Visual Studio Código" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+       <span data-ttu-id="58523-118">Corresponder atalhos de teclado no DevTools para Visual Studio Código</span><span class="sxs-lookup"><span data-stu-id="58523-118">Match keyboard shortcuts in the DevTools to Visual Studio Code</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="49cec-119">Por exemplo, para pausar ou continuar executando um script no [código do Visual Studio][VisualStudioCodeShortcutsKeyboardWindows], selecione `F5` .</span><span class="sxs-lookup"><span data-stu-id="49cec-119">For example, to pause or continue running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], you select `F5`.</span></span>  <span data-ttu-id="49cec-120">Com a predefinição **devtools (padrão)** , para pausar ou continuar a execução de um script, selecione `F8` .</span><span class="sxs-lookup"><span data-stu-id="49cec-120">With the **DevTools (Default)** preset, to pause or continue running a script, you select `F8`.</span></span>  <span data-ttu-id="49cec-121">Quando você altera a predefinição para o **código do Visual Studio**, agora você também seleciona `F5` , assim como no [código do Visual Studio][VisualStudioCodeShortcutsKeyboardWindows].</span><span class="sxs-lookup"><span data-stu-id="49cec-121">When you change the preset to **Visual Studio Code**, you now also select `F5`, just like in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows].</span></span>  
+<span data-ttu-id="58523-119">Por exemplo, para pausar ou continuar executando um script [Visual Studio Código,][VisualStudioCodeShortcutsKeyboardWindows]selecione `F5` .</span><span class="sxs-lookup"><span data-stu-id="58523-119">For example, to pause or continue running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], you select `F5`.</span></span>  <span data-ttu-id="58523-120">Com a **predefinição DevTools (Padrão),** para pausar ou continuar executando um script, selecione `F8` .</span><span class="sxs-lookup"><span data-stu-id="58523-120">With the **DevTools (Default)** preset, to pause or continue running a script, you select `F8`.</span></span>  <span data-ttu-id="58523-121">Quando você altera a predefinição **para Visual Studio Código**, agora você também seleciona , assim como no código Visual Studio `F5` [Código][VisualStudioCodeShortcutsKeyboardWindows].</span><span class="sxs-lookup"><span data-stu-id="58523-121">When you change the preset to **Visual Studio Code**, you now also select `F5`, just like in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows].</span></span>  
 
-<!-- ## Edit shortcuts for any action in the DevTools -->
+## <a name="edit-keyboard-shortcuts-for-any-action-in-the-devtools"></a><span data-ttu-id="58523-122">Editar atalhos de teclado para qualquer ação no DevTools</span><span class="sxs-lookup"><span data-stu-id="58523-122">Edit keyboard shortcuts for any action in the DevTools</span></span>  
+
+<span data-ttu-id="58523-123">Para personalizar o atalho do teclado para uma ação específica no DevTools, conclua as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="58523-123">To customize the keyboard shortcut for a specific action in DevTools, complete the following steps.</span></span>  
+
+1.  <span data-ttu-id="58523-124">Navegue até a página da Web [Atalhos.](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools)</span><span class="sxs-lookup"><span data-stu-id="58523-124">Navigate to the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) webpage.</span></span>  
+1.  <span data-ttu-id="58523-125">Escolha a ação que você deseja personalizar.</span><span class="sxs-lookup"><span data-stu-id="58523-125">Choose the action you want to customize.</span></span>  <span data-ttu-id="58523-126">Por exemplo, na seção **Depurador,** encontre e selecione a ação **Pausar execução de script.**</span><span class="sxs-lookup"><span data-stu-id="58523-126">For example, in the **Debugger** section, find and select the **Pause script execution** action.</span></span>  
+1.  <span data-ttu-id="58523-127">Escolha o **ícone Editar** \( ![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \)</span><span class="sxs-lookup"><span data-stu-id="58523-127">Choose the **Edit** \(![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)\) icon.</span></span>  
+    
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Escolha a ação a ser personalizar na página Atalhos em Configurações" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       <span data-ttu-id="58523-129">Escolha a ação a ser personalizar na página [Atalhos](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) [em Configurações][DevToolsCustomizeSettings]</span><span class="sxs-lookup"><span data-stu-id="58523-129">Choose the action to customize from the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page in [Settings][DevToolsCustomizeSettings]</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="58523-130">Para vincular as teclas de atalho à ação, verifique se a caixa de texto ao lado da ação tem foco e use o teclado para selecionar as teclas de atalho.</span><span class="sxs-lookup"><span data-stu-id="58523-130">To bind the shortcut keys to the action, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.</span></span>  
+1.  <span data-ttu-id="58523-131">Para vincular mais de uma combinação de atalho a uma ação, escolha Adicionar um atalho, verifique se **a**caixa de texto ao lado da ação tem foco e use o teclado para selecionar as teclas de atalho.</span><span class="sxs-lookup"><span data-stu-id="58523-131">To bind more than one shortcut combination to an action, choose **Add a shortcut**, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.</span></span>  
+    
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Selecione as chaves que você deseja atribuir à ação" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       <span data-ttu-id="58523-133">Selecione as chaves que você deseja atribuir à ação</span><span class="sxs-lookup"><span data-stu-id="58523-133">Select the keys you want to assign to the action</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="58523-134">Para salvar seu novo atalho de teclado, escolha a marca de seleção \(</span><span class="sxs-lookup"><span data-stu-id="58523-134">To save your new keyboard shortcut, choose the checkmark \(</span></span>![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)<span data-ttu-id="58523-136">\) ícone.</span><span class="sxs-lookup"><span data-stu-id="58523-136">\) icon.</span></span>
+    
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Escolha o ícone de marca de seleção para salvar seu novo atalho de teclado" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       <span data-ttu-id="58523-138">Escolha o ícone de marca de seleção para salvar seu novo atalho de teclado</span><span class="sxs-lookup"><span data-stu-id="58523-138">Choose the checkmark icon to save your new keyboard shortcut</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="58523-139">Selecione seu novo atalho de teclado para disparar a ação no DevTools.</span><span class="sxs-lookup"><span data-stu-id="58523-139">Select your new keyboard shortcut to trigger the action in the DevTools.</span></span>  
+    
+<span data-ttu-id="58523-140">Na página [Atalhos,](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) o **ícone Atalho** personalizado do Teclado \( ![ CustomKeyboardShortcut \) exibe atalhos de teclado ](../media/custom-keyboard-shortcut-icon.msft.png) personalizados.</span><span class="sxs-lookup"><span data-stu-id="58523-140">On the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)\) icon displays keyboard shortcuts that you have customized.</span></span>  <span data-ttu-id="58523-141">Para redefinir todos os atalhos, escolha **Restaurar atalhos padrão**.</span><span class="sxs-lookup"><span data-stu-id="58523-141">To reset all shortcuts, choose **Restore default shortcuts**.</span></span>  
+
+<span data-ttu-id="58523-142">Enquanto você edita os atalhos de teclado para uma ação, para descartar suas alterações, escolha o ícone X \( ![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \)</span><span class="sxs-lookup"><span data-stu-id="58523-142">While you edit the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)\) icon.</span></span>  <span data-ttu-id="58523-143">Para remover atalhos para uma ação específica, escolha o ícone **Excluir atalho** \( ![ DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \)</span><span class="sxs-lookup"><span data-stu-id="58523-143">To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut](../media/delete-keyboard-shortcut-icon.msft.png)\) icon.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="58523-144">Se um atalho de teclado estiver atribuído a uma ação, você será impedido de salvá-lo em outra ação.</span><span class="sxs-lookup"><span data-stu-id="58523-144">If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.</span></span>  <span data-ttu-id="58523-145">Em vez disso, exclua o atalho do teclado da ação anterior e adicione-o à nova ação.</span><span class="sxs-lookup"><span data-stu-id="58523-145">Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.</span></span>  
 
 <!-- links -->  
 
 [DevToolsCustomizeSettings]: ./index.md#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsOpenMain]: ../open/index.md "Abrir o Microsoft Edge DevTools | Documentos da Microsoft"  
-[DevToolsShortcuts]: ../shortcuts/index.md "Atalhos de teclado do Microsoft Edge DevTools | Documentos da Microsoft"  
+[DevtoolsOpenMain]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Código do Microsoft Visual Studio"  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Atalhos de teclado de código do Visual Studio para Windows | Código do Microsoft Visual Studio"  
+[VisualStudioCode]: https://code.visualstudio.com "Código Visual Studio Microsoft"  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio atalhos de Teclado de Código para Windows | Código Visual Studio Microsoft"  
