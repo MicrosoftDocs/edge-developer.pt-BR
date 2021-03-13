@@ -3,17 +3,17 @@ description: Conheça as Ferramentas de Desenvolvedor do Microsoft Edge (Chromiu
 title: Ferramentas de desenvolvedor do Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 29ded7376ab1788998acf059c6677916a52d5d15
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397697"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408273"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Visão geral das Ferramentas de Desenvolvedor do Microsoft Edge (Chromium)  
 
@@ -126,7 +126,7 @@ Os atalhos a seguir controlam a janela principal do DevTools, funcionam em todas
 > [!NOTE]
 > Se você estiver depurando e pausado em um ponto de interrupção, o atalho **Atualizar** retomará o tempo de execução primeiro.  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Ver também  
 
 *   [DevTools para Iniciantes: Começar com HTML e o DOM][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Protocolo DevTools do Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
@@ -140,7 +140,7 @@ Se você quiser visualizar os recursos mais recentes que vêm para [o DevTools,]
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para Iniciantes: Começar com HTML e o dom | Microsoft Docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Novidades no Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "Novidades no Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo DevTools do Microsoft Edge (Chromium) | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos do Microsoft Edge"  
