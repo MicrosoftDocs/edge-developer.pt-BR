@@ -3,157 +3,75 @@ description: Documentação herdada do Microsoft Edge.  Conteúdo para Microsoft
 title: Documentação herdada do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ca3b9787ddce23ea3692fc2d93d005fa52ea791f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0579626f42cfda823b5bb3ec732370a2ccf86bc7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231916"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439728"
 ---
-# <span data-ttu-id="5ef88-105">Documentação herdada do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5ef88-105">Legacy Microsoft Edge documentation</span></span>  
+# <a name="legacy-microsoft-edge-documentation"></a><span data-ttu-id="4e948-105">Documentação herdada do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="4e948-105">Legacy Microsoft Edge documentation</span></span>  
 
-<span data-ttu-id="5ef88-106">Obrigado pelo seu interesse no Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-106">Thank you for your interest in Microsoft Edge.</span></span>  <span data-ttu-id="5ef88-107">O artigo a seguir resume o conteúdo do produto herdado, que não está mais sendo atualizado.</span><span class="sxs-lookup"><span data-stu-id="5ef88-107">The following article summarizes content for the legacy product, which is no longer being updated.</span></span>  <span data-ttu-id="5ef88-108">O novo conteúdo do Microsoft Edge substitui o conteúdo do produto herdado e é marcado como recomendado nas tabelas a seguir.</span><span class="sxs-lookup"><span data-stu-id="5ef88-108">The new Microsoft Edge content replaces the content for the legacy product and is marked as recommended in the following tables.</span></span>  
+<span data-ttu-id="4e948-106">Obrigado pelo seu interesse no Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-106">Thank you for your interest in Microsoft Edge.</span></span>  <span data-ttu-id="4e948-107">O artigo a seguir resume o conteúdo do produto herdado, que não está mais sendo atualizado.</span><span class="sxs-lookup"><span data-stu-id="4e948-107">The following article summarizes content for the legacy product, which is no longer being updated.</span></span>  <span data-ttu-id="4e948-108">O novo conteúdo do Microsoft Edge substitui o conteúdo do produto herdado e é marcado como recomendado nas tabelas a seguir.</span><span class="sxs-lookup"><span data-stu-id="4e948-108">The new Microsoft Edge content replaces the content for the legacy product and is marked as recommended in the following tables.</span></span>  
 
-## <span data-ttu-id="5ef88-109">Nova documentação do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5ef88-109">New Microsoft Edge documentation</span></span>  
+## <a name="new-microsoft-edge-documentation"></a><span data-ttu-id="4e948-109">Nova documentação do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="4e948-109">New Microsoft Edge documentation</span></span>  
 
-| <span data-ttu-id="5ef88-110">Recurso</span><span class="sxs-lookup"><span data-stu-id="5ef88-110">Feature</span></span> | <span data-ttu-id="5ef88-111">Detalhes</span><span class="sxs-lookup"><span data-stu-id="5ef88-111">Details</span></span> |  
+| <span data-ttu-id="4e948-110">Recurso</span><span class="sxs-lookup"><span data-stu-id="4e948-110">Feature</span></span> | <span data-ttu-id="4e948-111">Detalhes</span><span class="sxs-lookup"><span data-stu-id="4e948-111">Details</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="5ef88-112">[Visão geral do devtools][DevtoolsGuideChromiumMain] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-112">[DevTools overview][DevtoolsGuideChromiumMain] \(recommended\)</span></span> | <span data-ttu-id="5ef88-113">Conheça as ferramentas de desenvolvedor do Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="5ef88-113">Get to know the Microsoft Edge \(Chromium\) Developer Tools.</span></span> |  
-| <span data-ttu-id="5ef88-114">[Visão geral do protocolo devtools][DevtoolsProtocolChromiumMain] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-114">[DevTools Protocol overview][DevtoolsProtocolChromiumMain] \(recommended\)</span></span> | <span data-ttu-id="5ef88-115">Atualize para o protocolo DevTools do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-115">Update to the Microsoft Edge DevTools Protocol.</span></span> |  
-| <span data-ttu-id="5ef88-116">[Visão geral das extensões][ExtensionsChromiumIndex] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-116">[Extensions overview][ExtensionsChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="5ef88-117">A visão geral para as extensões do Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="5ef88-117">The overview for the Microsoft Edge \(Chromium\) Extensions.</span></span>  <span data-ttu-id="5ef88-118">Criar e publicar extensões do navegador em geral.</span><span class="sxs-lookup"><span data-stu-id="5ef88-118">Build and publish browser extensions in general.</span></span> |  
-| <span data-ttu-id="5ef88-119">[Visão geral dos aplicativos Web progressivos][ProgressiveWebAppsChromiumIndex] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-119">[Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="5ef88-120">Os aplicativos Web progressivos \ (Chromium \) são executados nativamente no Windows 10.</span><span class="sxs-lookup"><span data-stu-id="5ef88-120">Progressive Web Apps \(Chromium\) run natively on Windows 10.</span></span>  <span data-ttu-id="5ef88-121">Tudo o que você precisa saber como desenvolvedor da Web.</span><span class="sxs-lookup"><span data-stu-id="5ef88-121">Everything you need to know as a web developer.</span></span> |  
-| <span data-ttu-id="5ef88-122">[Visão geral do WebView2][Webview2Index] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-122">[WebView2 overview][Webview2Index] \(recommended\)</span></span> | <span data-ttu-id="5ef88-123">Hospede o conteúdo da Web em seus aplicativos do Win32, .NET e UWP com o controle WebView2 do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-123">Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control.</span></span> |  
-| <span data-ttu-id="5ef88-124">[Interoperabilidade (compatibilidade de site)][WebPlatformSiteImpactingChanges] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-124">[Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\)</span></span> | <span data-ttu-id="5ef88-125">Fornece um resumo das alterações de alto impacto que podem afetar a compatibilidade do site.</span><span class="sxs-lookup"><span data-stu-id="5ef88-125">Provides a summary of high-impact changes that may impact site compatibility.</span></span> |  
-| <span data-ttu-id="5ef88-126">[WebDriver][WebdriverChromiumIndex] \ (recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-126">[WebDriver][WebdriverChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="5ef88-127">Saiba como testar seu site ou aplicativo no Microsoft Edge ou automatizar o navegador com o WebDriver.</span><span class="sxs-lookup"><span data-stu-id="5ef88-127">Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver.</span></span> |  
+| <span data-ttu-id="4e948-112">[Visão geral do DevTools ][DevtoolsGuideChromiumMain] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-112">[DevTools overview][DevtoolsGuideChromiumMain] \(recommended\)</span></span> | <span data-ttu-id="4e948-113">Conheça as Ferramentas para Desenvolvedor do Microsoft Edge \(Chromium\).</span><span class="sxs-lookup"><span data-stu-id="4e948-113">Get to know the Microsoft Edge \(Chromium\) Developer Tools.</span></span> |  
+| <span data-ttu-id="4e948-114">[Visão geral do Protocolo DevTools][DevtoolsProtocolChromiumMain] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-114">[DevTools Protocol overview][DevtoolsProtocolChromiumMain] \(recommended\)</span></span> | <span data-ttu-id="4e948-115">Atualizar para o Protocolo de Ferramentas de Desenvolvedor do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-115">Update to the Microsoft Edge DevTools Protocol.</span></span> |  
+| <span data-ttu-id="4e948-116">[Visão geral das Extensões][ExtensionsChromiumIndex] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-116">[Extensions overview][ExtensionsChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="4e948-117">A visão geral das Extensões do Microsoft Edge \(Chromium\).</span><span class="sxs-lookup"><span data-stu-id="4e948-117">The overview for the Microsoft Edge \(Chromium\) Extensions.</span></span>  <span data-ttu-id="4e948-118">Compilar e publicar extensões de navegador em geral.</span><span class="sxs-lookup"><span data-stu-id="4e948-118">Build and publish browser extensions in general.</span></span> |  
+| <span data-ttu-id="4e948-119">[Visão geral dos Aplicativos Web Progressivos][ProgressiveWebAppsChromiumIndex] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-119">[Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="4e948-120">Aplicativos Web Progressivos \(Chromium\) executado de forma nativa no Windows 10.</span><span class="sxs-lookup"><span data-stu-id="4e948-120">Progressive Web Apps \(Chromium\) run natively on Windows 10.</span></span>  <span data-ttu-id="4e948-121">Tudo o que você precisa saber como desenvolvedor web.</span><span class="sxs-lookup"><span data-stu-id="4e948-121">Everything you need to know as a web developer.</span></span> |  
+| <span data-ttu-id="4e948-122">[Visão geral do WebView2][Webview2Index] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-122">[WebView2 overview][Webview2Index] \(recommended\)</span></span> | <span data-ttu-id="4e948-123">Hospedar conteúdo da Web em seus aplicativos Win32, .NET e UWP com o controle WebView2 do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-123">Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control.</span></span> |  
+| <span data-ttu-id="4e948-124">[Interoperabilidade (Compatibilidade de Site)][WebPlatformSiteImpactingChanges] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-124">[Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\)</span></span> | <span data-ttu-id="4e948-125">Fornece um resumo das alterações de alto impacto que podem afetar a compatibilidade do site.</span><span class="sxs-lookup"><span data-stu-id="4e948-125">Provides a summary of high-impact changes that may impact site compatibility.</span></span> |  
+| <span data-ttu-id="4e948-126">[WebDriver][WebdriverChromiumIndex] \(recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-126">[WebDriver][WebdriverChromiumIndex] \(recommended\)</span></span> | <span data-ttu-id="4e948-127">Saiba como testar seu site ou aplicativo no Microsoft Edge ou automatizar o navegador com o WebDriver.</span><span class="sxs-lookup"><span data-stu-id="4e948-127">Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver.</span></span> |  
 
-<!--  
-:::row:::
-   :::column span="":::
-      [DevTools overview][DevtoolsGuideChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [Extensions overview][ExtensionsChromiumIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      [New Microsoft Edge WebView2 overview][Webview2Index]  
-   :::column-end:::
-   :::column span="":::
-      [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebDriver][WebdriverChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
-
-## <span data-ttu-id="5ef88-128">Documentação herdada do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5ef88-128">Legacy Microsoft Edge documentation</span></span>  
+## <a name="legacy-microsoft-edge-documentation"></a><span data-ttu-id="4e948-128">Documentação herdada do Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="4e948-128">Legacy Microsoft Edge documentation</span></span>  
 
 <!--  This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  -->  
 
 > [!IMPORTANT]
-> <span data-ttu-id="5ef88-129">O Microsoft Edge herdado foi substituído pelo novo Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-129">The legacy Microsoft Edge has been replaced with new Microsoft Edge.</span></span>  
+> <span data-ttu-id="4e948-129">Herdado Microsoft Edge foi substituído pelo novo Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-129">The legacy Microsoft Edge has been replaced with new Microsoft Edge.</span></span>  
 
-| <span data-ttu-id="5ef88-130">Recurso</span><span class="sxs-lookup"><span data-stu-id="5ef88-130">Feature</span></span> | <span data-ttu-id="5ef88-131">Detalhes</span><span class="sxs-lookup"><span data-stu-id="5ef88-131">Details</span></span> |  
+| <span data-ttu-id="4e948-130">Recurso</span><span class="sxs-lookup"><span data-stu-id="4e948-130">Feature</span></span> | <span data-ttu-id="4e948-131">Detalhes</span><span class="sxs-lookup"><span data-stu-id="4e948-131">Details</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="5ef88-132">[Guia do desenvolvedor][EdgehtmlDevGuideIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-132">[Developer guide][EdgehtmlDevGuideIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-133">Este artigo fornece uma visão geral dos recursos e padrões do desenvolvedor incluídos no Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-133">This article provides an overview of the developer features and standards included in Microsoft Edge.</span></span> |  
-| <span data-ttu-id="5ef88-134">[Visão geral das ferramentas de desenvolvedor][EdgehtmlDevtoolsGuideIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-134">[Developer Tools overview][EdgehtmlDevtoolsGuideIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-135">Conheça as ferramentas de desenvolvedor do Microsoft Edge \ (EdgeHTML \).</span><span class="sxs-lookup"><span data-stu-id="5ef88-135">Get to know the Microsoft Edge \(EdgeHTML\) Developer Tools.</span></span> |  
-| <span data-ttu-id="5ef88-136">[Visão geral do protocolo de ferramentas de desenvolvedor][EdgehtmlDevtoolsProtocolIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-136">[Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-137">Use o protocolo DevTools do Microsoft Edge para inspecionar e depurar o navegador Microsoft Edge \ (EdgeHTML \).</span><span class="sxs-lookup"><span data-stu-id="5ef88-137">Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge \(EdgeHTML\) browser.</span></span> |  
-| <span data-ttu-id="5ef88-138">[Visão geral das extensões][EdgehtmlExtensionsIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-138">[Extensions overview][EdgehtmlExtensionsIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-139">Saiba como desenvolver extensões do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-139">Learn how to develop Microsoft Edge extensions.</span></span>  <span data-ttu-id="5ef88-140">Os programas pequenos são usados para adicionar novos recursos ao Microsoft Edge ou modificar a funcionalidade existente.</span><span class="sxs-lookup"><span data-stu-id="5ef88-140">The small programs are used to add new features to Microsoft Edge or modify existing functionality.</span></span> |  
-| <span data-ttu-id="5ef88-141">[Visão geral dos aplicativos Web progressivos][EdgehtmlProgressiveWebAppsIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-141">[Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-142">Um aplicativo Web progressivo é executado nativamente no Windows 10.</span><span class="sxs-lookup"><span data-stu-id="5ef88-142">A Progressive Web App runs natively on Windows 10.</span></span>  <span data-ttu-id="5ef88-143">Tudo o que você precisa saber como desenvolvedor da Web.</span><span class="sxs-lookup"><span data-stu-id="5ef88-143">Everything you need to know as a web developer.</span></span> |  
-| <span data-ttu-id="5ef88-144">[Visão geral da WebView][EdgehtmlHostingWebviewIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-144">[WebView overview][EdgehtmlHostingWebviewIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-145">Hospede o conteúdo da Web em seu aplicativo do Windows 10 com o controle WebView \ (EdgeHTML \).</span><span class="sxs-lookup"><span data-stu-id="5ef88-145">Host web content in your Windows 10 app with the WebView \(EdgeHTML\) control.</span></span> |  
-| <span data-ttu-id="5ef88-146">[Visão geral da Hospedagem de tempo de execução JavaScript][EdgehtmlHostingJavascriptRuntimeHostingIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-146">[JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-147">As APIs do tempo de execução JavaScript \ (JsRT \) oferecem uma maneira para aplicativos da área de trabalho, da Windows Store e do lado do servidor.</span><span class="sxs-lookup"><span data-stu-id="5ef88-147">The JavaScript Runtime \(JsRT\) APIs provide a way for desktop, Windows Store, and server-side apps.</span></span>  <span data-ttu-id="5ef88-148">As APIs são executadas no sistema operacional Windows para adicionar recursos de script a um aplicativo usando o mecanismo JavaScript Chakra baseado em padrões.</span><span class="sxs-lookup"><span data-stu-id="5ef88-148">The APIs run on the Windows operating system to add scripting capabilities to an app using the standards-based Chakra JavaScript engine.</span></span>   <span data-ttu-id="5ef88-149">O mecanismo JavaScript Chakra também é usado pelo Microsoft Edge herdado e pelo Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="5ef88-149">The Chakra JavaScript engine is also utilized by legacy Microsoft Edge and Internet Explorer.</span></span> |  
-| <span data-ttu-id="5ef88-150">[Visão geral da análise de desempenho][EdgehtmlPerformanceAnalysisIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-150">[Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-151">Use as ferramentas de desenvolvedor F12 para analisar o desempenho geral dos sites.</span><span class="sxs-lookup"><span data-stu-id="5ef88-151">Use F12 developer tools to analyze the general performance of websites.</span></span> |  
-| <span data-ttu-id="5ef88-152">[Visão geral do WebDriver][EdgehtmlWebdriverIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-152">[WebDriver overview][EdgehtmlWebdriverIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-153">Saiba como começar a usar o WebDriver.</span><span class="sxs-lookup"><span data-stu-id="5ef88-153">Learn how to get started with WebDriver.</span></span>  <span data-ttu-id="5ef88-154">O WebDriver é um protocolo de conexão que permite que programas e scripts controlem o comportamento do seu navegador da Web.</span><span class="sxs-lookup"><span data-stu-id="5ef88-154">WebDriver is a wire protocol that allows programs and scripts to control the behavior of your web browser.</span></span> |  
-| <span data-ttu-id="5ef88-155">[WebVR][WebvrIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-155">[WebVR][WebvrIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-156">O WebVR é uma API JavaScript padrão aberta que torna possível o uso de aplicativos de realidade virtual 3D de "VR \) usando um navegador da Web como o Microsoft Edge e um fone de ouvido com microfone compatível com o Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5ef88-156">WebVR is an open standard JavaScript API that makes it possible to experience immersive 3D Virtual Reality \(VR\) apps using a web browser like Microsoft Edge and a supported VR headset.</span></span> |  
-| <span data-ttu-id="5ef88-157">[Visão geral do tempo de execução do Windows (WinRT)][EdgehtmlWindowsRuntimeIndex] \ (não recomendado \)</span><span class="sxs-lookup"><span data-stu-id="5ef88-157">[Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex] \(not recommended\)</span></span> | <span data-ttu-id="5ef88-158">Use o \ tempo de execução do Windows \ (WinRT \) para chamar APIs nativas do Windows a partir do seu aplicativo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="5ef88-158">Use the Windows Runtime \(WinRT\) to call native Windows APIs from your JavaScript app.</span></span> |  
-
-<!--  
-:::row:::
-   :::column span="":::
-      [developer guide][EdgehtmlDevGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Extensions overview][EdgehtmlExtensionsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebView overview][EdgehtmlHostingWebviewIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebDriver overview][EdgehtmlWebdriverIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebVR][WebvrIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
+| <span data-ttu-id="4e948-132">[Guia do desenvolvedor][EdgehtmlDevGuideIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-132">[Developer guide][EdgehtmlDevGuideIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-133">Este artigo fornece uma visão geral dos recursos e padrões do desenvolvedor incluídos no Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-133">This article provides an overview of the developer features and standards included in Microsoft Edge.</span></span> |  
+| <span data-ttu-id="4e948-134">[Visão geral das Ferramentas para Desenvolvedores][EdgehtmlDevtoolsGuideIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-134">[Developer Tools overview][EdgehtmlDevtoolsGuideIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-135">Conheça as Ferramentas de Desenvolvedor do Microsoft Edge \(EdgeHTML\).</span><span class="sxs-lookup"><span data-stu-id="4e948-135">Get to know the Microsoft Edge \(EdgeHTML\) Developer Tools.</span></span> |  
+| <span data-ttu-id="4e948-136">[Visão geral do Protocolo deFerramentas para Desenvolvedor][EdgehtmlDevtoolsProtocolIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-136">[Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-137">Usar o protocolo das Ferramentas de Desenvolvedor do Microsoft Edge para inspecionar e depurar o navegador Microsoft Edge \(EdgeHTML\).</span><span class="sxs-lookup"><span data-stu-id="4e948-137">Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge \(EdgeHTML\) browser.</span></span> |  
+| <span data-ttu-id="4e948-138">[Visão geral das Extensões][EdgehtmlExtensionsIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-138">[Extensions overview][EdgehtmlExtensionsIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-139">Saiba como desenvolver extensões do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4e948-139">Learn how to develop Microsoft Edge extensions.</span></span>  <span data-ttu-id="4e948-140">Os pequenos programas são usados para adicionar novos recursos ao Microsoft Edge ou modificar funcionalidades existentes.</span><span class="sxs-lookup"><span data-stu-id="4e948-140">The small programs are used to add new features to Microsoft Edge or modify existing functionality.</span></span> |  
+| <span data-ttu-id="4e948-141">[Visão geral dos Aplicativos Web Progressivos][EdgehtmlProgressiveWebAppsIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-141">[Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-142">Um Aplicativo Web Progressivo é executado de forma nativa no Windows 10.</span><span class="sxs-lookup"><span data-stu-id="4e948-142">A Progressive Web App runs natively on Windows 10.</span></span>  <span data-ttu-id="4e948-143">Tudo o que você precisa saber como desenvolvedor web.</span><span class="sxs-lookup"><span data-stu-id="4e948-143">Everything you need to know as a web developer.</span></span> |  
+| <span data-ttu-id="4e948-144">[Visão geral do WebView][EdgehtmlHostingWebviewIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-144">[WebView overview][EdgehtmlHostingWebviewIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-145">Hospedar conteúdo da Web em seu aplicativo Windows 10 com o controle WebView \(EdgeHTML\).</span><span class="sxs-lookup"><span data-stu-id="4e948-145">Host web content in your Windows 10 app with the WebView \(EdgeHTML\) control.</span></span> |  
+| <span data-ttu-id="4e948-146">[Visão geral da hospedagem em tempo de execução JavaScript][EdgehtmlHostingJavascriptRuntimeHostingIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-146">[JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-147">As APIs JavaScript Runtime \(JsRT\) fornecem uma maneira para aplicativos de área de trabalho, Windows Store e do lado do servidor.</span><span class="sxs-lookup"><span data-stu-id="4e948-147">The JavaScript Runtime \(JsRT\) APIs provide a way for desktop, Windows Store, and server-side apps.</span></span>  <span data-ttu-id="4e948-148">As APIs são executadas no sistema operacional Windows para adicionar recursos de script a um aplicativo usando o mecanismo Chakra JavaScript baseado em padrões.</span><span class="sxs-lookup"><span data-stu-id="4e948-148">The APIs run on the Windows operating system to add scripting capabilities to an app using the standards-based Chakra JavaScript engine.</span></span>   <span data-ttu-id="4e948-149">O mecanismo JavaScript de Chakra também é utilizado pelo Microsoft Edge herdado e pelo Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="4e948-149">The Chakra JavaScript engine is also utilized by legacy Microsoft Edge and Internet Explorer.</span></span> |  
+| <span data-ttu-id="4e948-150">[Visão geral da Análise de Desempenho][EdgehtmlPerformanceAnalysisIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-150">[Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-151">Usar as ferramentas de desenvolvedor F12 para analisar o desempenho geral dos sites.</span><span class="sxs-lookup"><span data-stu-id="4e948-151">Use F12 developer tools to analyze the general performance of websites.</span></span> |  
+| <span data-ttu-id="4e948-152">[Visão geral do WebDriver][EdgehtmlWebdriverIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-152">[WebDriver overview][EdgehtmlWebdriverIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-153">Saiba como iniciar a usar o WebDriver.</span><span class="sxs-lookup"><span data-stu-id="4e948-153">Learn how to get started with WebDriver.</span></span>  <span data-ttu-id="4e948-154">WebDriver é um protocolo com fio que permite que programas e scripts controlem o comportamento do seu navegador da web.</span><span class="sxs-lookup"><span data-stu-id="4e948-154">WebDriver is a wire protocol that allows programs and scripts to control the behavior of your web browser.</span></span> |  
+| <span data-ttu-id="4e948-155">[WebVR][WebvrIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-155">[WebVR][WebvrIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-156">WebVR é uma API JavaScript de padrão aberto que torna possível experimentar aplicativos de Realidade Virtual 3D \(VR\) imersivos usando um navegador da web como o Microsoft Edge e um headset VR compatível.</span><span class="sxs-lookup"><span data-stu-id="4e948-156">WebVR is an open standard JavaScript API that makes it possible to experience immersive 3D Virtual Reality \(VR\) apps using a web browser like Microsoft Edge and a supported VR headset.</span></span> |  
+| <span data-ttu-id="4e948-157">[Visão geral do Windows Runtime (WinRT)][EdgehtmlWindowsRuntimeIndex] \(not recommended\)</span><span class="sxs-lookup"><span data-stu-id="4e948-157">[Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex] \(not recommended\)</span></span> | <span data-ttu-id="4e948-158">Use o Windows Runtime \(WinRT\) para chamar APIs nativas do Windows do seu aplicativo JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4e948-158">Use the Windows Runtime \(WinRT\) to call native Windows APIs from your JavaScript app.</span></span> |  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../devtools-guide-chromium/index.md "Visão geral das ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Documentos da Microsoft"  
-[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "Visão geral do protocolo DevTools Microsoft Edge (Chromium) | Documentos da Microsoft"  
-[EdgehtmlDevGuideIndex]: ./dev-guide/index.md "Guia de desenvolvedor do Microsoft Edge | Documentos da Microsoft"  
-[EdgehtmlDevtoolsGuideIndex]: ./devtools-guide/index.md "Ferramentas de desenvolvedor do Microsoft Edge (EdgeHTML) | Documentos da Microsoft"  
-[EdgehtmlDevtoolsProtocolIndex]: ./devtools-protocol/index.md "Protocolo de DevTools Microsoft Edge (EdgeHTML) | Documentos da Microsoft"  
-[EdgehtmlExtensionsIndex]: ./extensions/index.md "Extensões Microsoft Edge (EdgeHTML) | Documentos da Microsoft"  
-[EdgehtmlProgressiveWebAppsIndex]: ./progressive-web-apps/index.md "Aplicativos Web progressivos (EdgeHTML) no Windows | Documentos da Microsoft"  
-[EdgehtmlHostingWebviewIndex]: ./hosting/webview/index.md "WebView (EdgeHTML) para aplicativos do Windows 10 | Documentos da Microsoft"  
-[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting.md "Hospedagem do tempo de execução do JavaScript | Documentos da Microsoft"  
-[EdgehtmlPerformanceAnalysisIndex]: ./performance-analysis/index.md "Análise de desempenho | Documentos da Microsoft"  
-[EdgehtmlWebdriverIndex]: ./webdriver/index.md "WebDriver (EdgeHTML) | Documentos da Microsoft"  
-[EdgehtmlWindowsRuntimeIndex]: ./windows-runtime/index.md "Tempo de execução do Windows (WinRT) para JavaScript | Documentos da Microsoft"  
-[ExtensionsChromiumIndex]: ../extensions-chromium/index.md "Visão geral das extensões do Microsoft Edge (Chromium) | Documentos da Microsoft"  
-[ProgressiveWebAppsChromiumIndex]: ../progressive-web-apps-chromium/index.md "Aplicativos Web progressivos na visão geral do Windows | Documentos da Microsoft"  
-[WebdriverChromiumIndex]: ../webdriver-chromium/index.md "Use o WebDriver (Chromium) para obter uma visão geral de automação de teste | Documentos da Microsoft"  
-[WebPlatformSiteImpactingChanges]: ../web-platform/site-impacting-changes.md "Compatibilidade de site-alterações de impacto no Microsoft Edge | Documentos da Microsoft"  
-[Webview2Index]: ../webview2/index.md "Introdução ao Microsoft Edge WebView2 | Documentos da Microsoft"  
+[DevtoolsGuideChromiumMain]: ../devtools-guide-chromium/index.md "Visão geral das Ferramentas para Desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "Visão geral do Protocolo DevTools do Microsoft Edge (Chromium) | Microsoft Docs"  
+[EdgehtmlDevGuideIndex]: ./dev-guide/index.md "Guia do Desenvolvedor do Microsoft Edge | Microsoft Docs"  
+[EdgehtmlDevtoolsGuideIndex]: ./devtools-guide/index.md "Ferramentas para Desenvolvedor do Microsoft Edge (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlDevtoolsProtocolIndex]: ./devtools-protocol/index.md "Microsoft Edge (EdgeHTML) Protocolo DevTools | Microsoft Docs"  
+[EdgehtmlExtensionsIndex]: ./extensions/index.md "Extensões do Microsoft Edge (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlProgressiveWebAppsIndex]: ./progressive-web-apps/index.md "Aplicativos Web Progressivos (EdgeHTML) no Windows | Microsoft Docs"  
+[EdgehtmlHostingWebviewIndex]: ./hosting/webview/index.md "WebView (EdgeHTML) para aplicativos Windows 10 | Microsoft Docs"  
+[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting.md "JavaScript runtime hosting | Microsoft Docs"  
+[EdgehtmlPerformanceAnalysisIndex]: ./performance-analysis/index.md "Análise de Desempenho | Microsoft Docs"  
+[EdgehtmlWebdriverIndex]: ./webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlWindowsRuntimeIndex]: ./windows-runtime/index.md "Windows Runtime (WinRT) para JavaScript | Microsoft Docs"  
+[ExtensionsChromiumIndex]: ../extensions-chromium/index.md "Visão geral das extensões do Microsoft Edge (Chromium) | Microsoft Docs"  
+[ProgressiveWebAppsChromiumIndex]: ../progressive-web-apps-chromium/index.md "Visão geral progressiva dos Aplicativos Web no Windows | Microsoft Docs"  
+[WebdriverChromiumIndex]: ../webdriver-chromium/index.md "Use o WebDriver (Chromium) para visão geral da automação de teste | Microsoft Docs"  
+[WebPlatformSiteImpactingChanges]: ../web-platform/site-impacting-changes.md "Alterações que impactam a compatibilidade do site chegando ao Microsoft Edge | Microsoft Docs"  
+[Webview2Index]: ../webview2/index.md "Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
 
-[WebvrIndex]: /microsoft-edge/webvr/index "Guia do desenvolvedor do WebVR | Documentos da Microsoft"  
+[WebvrIndex]: /microsoft-edge/webvr/index "Guia do Desenvolvedor WebVR | Microsoft Docs"  
 
