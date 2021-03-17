@@ -3,16 +3,16 @@ description: Como exibir dados de cache do painel Aplicativo do Microsoft Edge D
 title: Exibir dados de cache com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397535"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439314"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -75,7 +75,7 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
        Escolher um recurso para atualizar  
     :::image-end:::  
     
-1.  Escolha **Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \).  
+1.  Escolha **Atualizar** \( ![ Atualizar ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-resources"></a>Filtrar recursos  
 
@@ -95,7 +95,7 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
        Escolher um recurso a ser excluído  
     :::image-end:::  
     
-1.  Escolha **Excluir Selecionado** \( Excluir Selecionado ![ ][ImageDeleteIcon] \).  
+1.  Escolha **Excluir Selecionado** \( Excluir Selecionado ![ ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-cache-data"></a>Excluir todos os dados de cache  
 
@@ -115,11 +115,6 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

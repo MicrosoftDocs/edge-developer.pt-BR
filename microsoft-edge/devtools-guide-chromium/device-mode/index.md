@@ -3,16 +3,16 @@ description: Use dispositivos virtuais no Microsoft Edge para criar sites móvei
 title: Emular dispositivos móveis no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, emulação, dispositivo, simulação, celular
-ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398781"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439448"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,7 +47,7 @@ Alguns aspectos de dispositivos móveis nunca são emulados no DevTools.  Por ex
 
 ## <a name="simulate-a-mobile-viewport"></a>Simular um viewport móvel  
 
-Escolha **Alternar** a emulação de dispositivo \( Toggle Device Toolbar \) ou escolha Personalizar e controlar ![ ][ImageDeviceToolbarIcon] **DevTools** \( `...` \) emulação **** de dispositivo > para abrir a interface do usuário que permite simular um modo de exibição móvel.  
+Escolha **Alternar** a emulação de dispositivo \( Toggle Device Toolbar \) ou escolha Personalizar e controlar ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** \( `...` \) emulação **** de dispositivo > para abrir a interface do usuário que permite simular um modo de exibição móvel.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="A barra de ferramentas de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     A barra de ferramentas de dispositivo  
@@ -109,7 +109,7 @@ Para simular as dimensões de um dispositivo móvel específico, selecione o dis
 
 Teste sua página da Web na orientação paisagem.  
 
-*   Para girar o viewport para orientação paisagem, escolha **Girar** \( ![ Girar ][ImageRotateIcon] \).  
+*   Para girar o viewport para orientação paisagem, escolha **Girar** \( ![ Girar ](../media/rotate-dark-icon.msft.png) \).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Página exibida na orientação paisagem" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Página exibida na orientação paisagem  
@@ -216,7 +216,7 @@ Toda a throttling se baseia na funcionalidade normal do laptop ou da área de tr
 
 Para acelerar apenas a CPU e não a rede, conclua as etapas a seguir.
 
-1.  Escolha o **painel Desempenho** e escolha **Configurações de** Captura \( ![ Configurações de Captura ][ImageCaptureIcon] \).
+1.  Escolha o **painel Desempenho** e escolha **Configurações de** Captura \( ![ Configurações de Captura ](../media/capture-settings-icon.msft.png) \).
 1.  Escolha **a lentidão**da CPU  >  **4x** ou **6x de lentidão**.
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="A lista de CPU no painel Desempenho" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -242,7 +242,7 @@ Para acelerar apenas a rede, conclua as etapas a seguir.
     
 Você também pode definir a throttling de rede a partir do **painel Desempenho.**  
 
-1.  Escolha **Configurações de** Captura \( Configurações de Captura \) e escolha a lista Rede e altere a ![ ][ImageCaptureIcon] predefinição para Fast **3G** ou **Slow 3G**. ****  
+1.  Escolha **Configurações de** Captura \( Configurações de Captura \) e escolha a lista Rede e altere a ![ ](../media/capture-settings-icon.msft.png) predefinição para Fast **3G** ou **Slow 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Definir a throttling de rede do painel Desempenho" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Definir a throttling de rede do **painel Desempenho**  
@@ -338,12 +338,6 @@ Ao lado **de Agente de usuário,** desempure a **caixa de seleção Selecionar**
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

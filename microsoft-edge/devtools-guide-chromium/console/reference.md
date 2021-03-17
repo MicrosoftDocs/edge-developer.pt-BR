@@ -3,16 +3,16 @@ description: Uma referência abrangente sobre todos os recursos e comportamentos
 title: Referência do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399159"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439364"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,7 +74,7 @@ Para abrir a **ferramenta Console** no Menu [de Comando,][DevToolsCommandMenu]co
 
 ### <a name="open-console-settings"></a>Configurações do Console Aberto  
 
-Escolha **Configurações do** Console \( ![ Ícone de Configurações de Console ][ImageSettingsButtonIcon] \).  
+Escolha **Configurações do** Console \( ![ Ícone de Configurações de Console ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Configurações do Console" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Configurações do Console**  
@@ -92,7 +92,7 @@ Os links abaixo explicam cada configuração:
     
 ### <a name="open-the-console-sidebar"></a>Abra a barra lateral do console  
 
-Escolha **Mostrar Barra Lateral do Console** \( Mostrar Barra Lateral do Console \) para mostrar a Barra ![ ][ImageShowConsoleSidebarIcon] lateral, que é útil para filtragem.  
+Escolha **Mostrar Barra Lateral do Console** \( Mostrar Barra Lateral do Console \) para mostrar a Barra ![ ](../media/show-console-sidebar-icon.msft.png) lateral, que é útil para filtragem.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Barra Lateral do Console" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console** Barra lateral  
@@ -246,7 +246,7 @@ Suponha que você tenha um ad em sua página inserida em `<iframe>` um .  Você 
 
 Você pode usar qualquer um dos seguintes fluxos de trabalho para limpar o Console:  
 
-*   Escolha **Limpar Console** \( Limpar Console ![ ][ImageClearConsoleIcon] \).  
+*   Escolha **Limpar Console** \( Limpar Console ![ ](../media/clear-console-button-icon.msft.png) \).  
 *   Passe o mouse em uma mensagem, abra o menu contextual \(righ-click\) e escolha **Limpar Console**.  
 *   Insira `clear()` no Console **e** selecione `Enter` .  
 *   Execute `console.clear()` a partir do JavaScript para sua página da Web.  
@@ -255,12 +255,6 @@ Você pode usar qualquer um dos seguintes fluxos de trabalho para limpar o Conso
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

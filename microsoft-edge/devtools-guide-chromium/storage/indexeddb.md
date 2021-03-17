@@ -3,16 +3,16 @@ description: Como exibir e alterar dados IndexedDB com o painel de aplicativos e
 title: Exibir e alterar dados IndexedDB com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6062cb6b574b2295441bc98616f600cbf00cee8e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398973"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439707"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,8 +46,8 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
        O **menu IndexedDB**  
     :::image-end:::  
     
-    *   \( Ícone de banco de dados \) representa um banco de dados, onde é o nome do banco de dados e é a origem que ![ acessa o banco de ][ImageDatabaseIcon] `notes - https://mdn.github.io` `notes` `https://mdn.github.io` dados.  
-    *   \( ![ Ícone do Armazenamento de Objetos ][ImageObjectStoreIcon] \) é um armazenamento de `notes` objetos.  
+    *   \( Ícone de banco de dados \) representa um banco de dados, onde é o nome do banco de dados e é a origem que ![ acessa o banco de ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` dados.  
+    *   \( ![ Ícone do Armazenamento de Objetos ](../media/object-store-icon.msft.png) \) é um armazenamento de `notes` objetos.  
     *   **title** e **body** são [índices][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -85,7 +85,7 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
     
 ## <a name="refresh-indexeddb-data"></a>Atualizar dados IndexedDB  
 
-Os valores indexadosDB na **ferramenta Application** não são atualizados em tempo real.  Escolha **Atualizar** \( Atualizar \) ao exibir um armazenamento de objetos para atualizar os dados ou exibir um banco de dados e escolher Atualizar banco de dados para ![ atualizar todos os ][ImageRefreshIcon] dados. ****  
+Os valores indexadosDB na **ferramenta Application** não são atualizados em tempo real.  Escolha **Atualizar** \( Atualizar \) ao exibir um armazenamento de objetos para atualizar os dados ou exibir um banco de dados e escolher Atualizar banco de dados para ![ atualizar todos os ](../media/reload-icon.msft.png) dados. ****  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Exibir um banco de dados" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Exibir um banco de dados  
@@ -114,7 +114,7 @@ As teclas indexadasDB e os valores não podem ser editáveis na **ferramenta App
        Escolha um par de valores-chave para excluí-lo  
     :::image-end:::  
     
-1.  Selecione a `Delete` chave ou escolha Excluir **Selecionado** \( Excluir ![ Selecionado ][ImageDeleteIcon] \).  
+1.  Selecione a `Delete` chave ou escolha Excluir **Selecionado** \( Excluir ![ Selecionado ](../media/delete-icon.msft.png) \).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Como o armazenamento de objetos se parece após a exclusão do par de valores-chave" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Como o armazenamento de objetos se parece após a exclusão do par de valores-chave  
@@ -128,7 +128,7 @@ As teclas indexadasDB e os valores não podem ser editáveis na **ferramenta App
        Exibir um armazenamento de objetos  
     :::image-end:::  
     
-1.  Escolha **Limpar o armazenamento de objetos** \( Limpar o armazenamento de objetos ![ ][ImageClearIcon] \).  
+1.  Escolha **Limpar o armazenamento de objetos** \( Limpar o armazenamento de objetos ![ ](../media/clear-icon.msft.png) \).  
     
 ### <a name="delete-an-indexeddb-database"></a>Excluir um banco de dados IndexedDB  
 
@@ -152,14 +152,6 @@ As teclas indexadasDB e os valores não podem ser editáveis na **ferramenta App
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDatabaseIcon]: ../media/database-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 

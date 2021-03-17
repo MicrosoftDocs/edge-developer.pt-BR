@@ -3,16 +3,16 @@ description: Como exibir dados SQL Web no painel Aplicativo do Microsoft Edge De
 title: Exibir dados SQL Web com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397549"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439595"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ Você não é capaz de editar dados SQL Web ao exibir uma tabela SQL Web, como n
 O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma tabela, conclua as seguintes ações.  
 
 1.  [Exibir os dados em uma tabela SQL Web.](#view-web-sql-data)  
-1.  Escolha **Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \).  
+1.  Escolha **Atualizar** \( ![ Atualizar ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtrar colunas em uma tabela SQL Web  
 
@@ -102,10 +102,6 @@ O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

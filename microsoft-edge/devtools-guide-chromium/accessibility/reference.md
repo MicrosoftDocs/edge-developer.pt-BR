@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos de acessibilidade no Micros
 title: Referência de acessibilidade
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398333"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439251"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +72,7 @@ Para auditar uma página:
     :::image-end:::  
     
     > [!NOTE]
-    > As capturas de tela nesta seção foram feitas com a versão 79 do Microsoft Edge.  Você pode verificar qual versão está executando em `edge://version` .  A **interface do usuário da** ferramenta Auditorias parece diferente em versões anteriores do Microsoft Edge, mas o fluxo de trabalho geral é o mesmo.  
+    > As capturas de tela nesta seção foram feitas com o Microsoft Edge versão 79.  Você pode verificar qual versão está executando em `edge://version` .  A **interface do usuário da** ferramenta Auditorias parece diferente em versões anteriores do Microsoft Edge, mas o fluxo de trabalho geral é o mesmo.  
     
 1.  Para **Dispositivo**, escolha **Móvel** se quiser simular um dispositivo móvel.  Essa opção altera a cadeia de caracteres do agente do usuário e resize o viewport.  Se a versão móvel da página for exibida de forma diferente da versão da área de trabalho, essa opção poderá ter um efeito significativo nos resultados da auditoria.  
 1.  Na seção **Auditorias,** certifique-se de **que a Acessibilidade** está habilitada.  Desabilite as outras categorias se quiser exclui-las do relatório.  Deixe-os habilitados se você quiser descobrir outras maneiras de melhorar a qualidade da sua página.  
@@ -114,7 +114,7 @@ Para abrir o **painel Acessibilidade:**
 
 1.  Escolha a **ferramenta Elementos.**  
 1.  Na Árvore **DOM,** selecione o elemento que você deseja inspecionar.  
-1.  Escolha o **painel Acessibilidade.**  Esse painel pode estar oculto atrás do **botão Mais Guias** \( Mais Guias ![ ][ImageMoreTabsIcon] \).  
+1.  Escolha o **painel Acessibilidade.**  Esse painel pode estar oculto atrás do **botão Mais Guias** \( Mais Guias ![ ](../media/more-tabs-icon.msft.png) \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecione o elemento h1 da homepage DevTools no painel Acessibilidade" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspecionar o `h1` elemento da homepage DevTools no painel **Acessibilidade**  
@@ -189,10 +189,6 @@ O Selador de Cores ajuda você a verificar se seu texto atende aos níveis de ta
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 

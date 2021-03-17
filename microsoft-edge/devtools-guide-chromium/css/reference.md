@@ -3,16 +3,16 @@ description: Descubra novos fluxos de trabalho para exibição e alteração de 
 title: Referência CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399138"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439300"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ A **ferramenta Elements** do DevTools permite exibir ou alterar o CSS de um elem
 Use uma das seguintes ações para selecionar um elemento.  
 
 *   No seu viewport, passe o mouse no elemento, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Inspecionar**.  
-*   No DevTools, escolha **Selecionar** um elemento \( Selecione um elemento \) ou selecione ![ ][ImageSelectAnElementIcon] `Control` + `Shift` + `C` \(Windows, Linux\) `Command` + `Shift` + `C` ou \(macOS\) e escolha o elemento no viewport.  
+*   No DevTools, escolha **Selecionar** um elemento \( Selecione um elemento \) ou selecione ![ ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` \(Windows, Linux\) `Command` + `Shift` + `C` ou \(macOS\) e escolha o elemento no viewport.  
 *   Em DevTools, escolha o elemento na Árvore **DOM**.  
 *   No DevTools, execute uma consulta como no Console , passe o mouse no resultado, abra o menu contextual \(clique com o botão direito do mouse\) e escolha `document.querySelector('p')` Revelar em Elementos **** **painel**.  
 
@@ -175,7 +175,7 @@ A **ferramenta Coverage** mostra qual CSS uma página realmente usa.
        :::column-end:::
     :::row-end:::  
     
-1.  Escolha **Iniciar a cobertura de instrumentação e atualize a página** \( Inicie a cobertura de ![ instrumentação e atualize a ][ImageRefreshIcon] página \).  A página atualiza e a ferramenta **Coverage** fornece uma visão geral de quanto CSS \(e JavaScript\) é usado a partir de cada arquivo que o navegador carrega.  Verde representa CSS usado.  Vermelho representa CSS nãousado.  
+1.  Escolha **Iniciar a cobertura de instrumentação e atualize a página** \( Inicie a cobertura de ![ instrumentação e atualize a ](../media/refresh-icon.msft.png) página \).  A página atualiza e a ferramenta **Coverage** fornece uma visão geral de quanto CSS \(e JavaScript\) é usado a partir de cada arquivo que o navegador carrega.  Verde representa CSS usado.  Vermelho representa CSS nãousado.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Uma visão geral de quanto CSS (e JavaScript) é usado e não usado" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Uma visão geral de quanto CSS \(e JavaScript\) é usado e não usado  
@@ -283,7 +283,7 @@ Conclua as seguintes ações para habilitar ou desabilitar uma classe em um elem
 Conclua as seguintes ações para adicionar uma nova regra de estilo.  
 
 1.  [Selecione um elemento](#choose-an-element).  
-1.  Escolha **Nova Regra de Estilo** \( Nova Regra de Estilo ![ ][ImageNewStyleRuleIcon] \).  O DevTools insere uma nova regra abaixo da **regra element.style.**  
+1.  Escolha **Nova Regra de Estilo** \( Nova Regra de Estilo ![ ](../media/new-style-rule-icon.msft.png) \).  O DevTools insere uma nova regra abaixo da **regra element.style.**  
 
 > [!NOTE]
 > Na figura a seguir, DevTools adiciona a regra de estilo `h1.devsite-page-title` depois de escolher Nova Regra de **Estilo**.  
@@ -294,7 +294,7 @@ Conclua as seguintes ações para adicionar uma nova regra de estilo.
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Escolha a qual folha de estilos adicionar uma regra  
 
-Ao [adicionar uma nova regra de](#add-a-style-rule)estilo, escolha e segure New Style **Rule** \( New Style Rule \) para escolher qual folha de estilos adicionar a regra ![ de ][ImageNewStyleRuleIcon] estilo.  
+Ao [adicionar uma nova regra de](#add-a-style-rule)estilo, escolha e segure New Style **Rule** \( New Style Rule \) para escolher qual folha de estilos adicionar a regra ![ de ](../media/new-style-rule-icon.msft.png) estilo.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Escolha uma folha de estilos" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Escolha uma folha de estilos  
@@ -306,7 +306,7 @@ Conclua as seguintes ações para adicionar uma regra de estilo a um local espec
 
 1.  Passe o mouse na regra de estilo que está diretamente acima de onde você deseja adicionar sua nova regra de estilo.  
 1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
-1.  Escolha **Inserir Regra de Estilo abaixo** \( Inserir Regra de Estilo abaixo ícone ![ ][ImageNewStyleRuleIcon] \).  
+1.  Escolha **Inserir Regra de Estilo abaixo** \( Inserir Regra de Estilo abaixo ícone ![ ](../media/new-style-rule-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Inserir regra de estilo abaixo" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Inserir regra de estilo abaixo**  
@@ -360,7 +360,7 @@ Conclua as seguintes ações para adicionar `background-color` uma declaração 
 
 1.  Passe o mouse na regra de estilo à que você deseja `background-color` adicionar a declaração.  
 1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
-1.  Escolha **Adicionar Cor do Plano de** Fundo \( Adicionar ícone de cor de plano de fundo ![ ][ImageAddBackgroundColorIcon] \).  
+1.  Escolha **Adicionar Cor do Plano de** Fundo \( Adicionar ícone de cor de plano de fundo ![ ](../media/add-background-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Adicionar cor de plano de fundo" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Adicionar cor de plano de fundo**  
@@ -372,7 +372,7 @@ Conclua as seguintes ações para adicionar `color` uma declaração a um elemen
 
 1.  Passe o mouse na regra de estilo à que você deseja `color` adicionar a declaração.  
 1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
-1.  Escolha **Adicionar Cor** \( Adicionar ícone de cor ![ ][ImageAddColorIcon] \).  
+1.  Escolha **Adicionar Cor** \( Adicionar ícone de cor ![ ](../media/add-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Adicionar Cor" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Adicionar Cor**  
@@ -384,7 +384,7 @@ Conclua as seguintes ações para adicionar `box-shadow` uma declaração a um e
 
 1.  Passe o mouse na regra de estilo à que você deseja `box-shadow` adicionar a declaração.  
 1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
-1.  Escolha **Adicionar Sombra de Caixa** \( Adicionar ícone sombra de caixa ![ ][ImageAddBoxShadowIcon] \).  
+1.  Escolha **Adicionar Sombra de Caixa** \( Adicionar ícone sombra de caixa ![ ](../media/add-box-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Adicionar Sombra de Caixa" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Adicionar Sombra de Caixa**  
@@ -396,7 +396,7 @@ Conclua as seguintes ações para adicionar `text-shadow` uma declaração a um 
 
 1.  Passe o mouse na regra de estilo à que você deseja `text-shadow` adicionar a declaração.  
 1.  [Revelar a **barra de ferramentas Mais Ações.** ](#reveal-the-more-actions-toolbar)  
-1.  Escolha **Adicionar Sombra de Texto** \( Adicionar ícone sombra de texto ![ ][ImageAddTextShadowIcon] \).  
+1.  Escolha **Adicionar Sombra de Texto** \( Adicionar ícone sombra de texto ![ ](../media/add-text-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Adicionar Sombra de Texto" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Adicionar Sombra de Texto**  
@@ -532,7 +532,7 @@ A figura a seguir e os descries de lista de cada um dos elementos da interface d
 
 #### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>Amostra de uma cor da página com o Conta-gotas  
 
-Quando você abre o **Selador de**Cores, **o** Conta-gotas \( Conta-gotas ![ ][ImageEyedropperIcon] \) está em uso por padrão.  Conclua as seguintes ações para alterar a cor selecionada para outra cor na página.  
+Quando você abre o **Selador de**Cores, **o** Conta-gotas \( Conta-gotas ![ ](../media/eyedropper-icon.msft.png) \) está em uso por padrão.  Conclua as seguintes ações para alterar a cor selecionada para outra cor na página.  
 
 1.  Passe o mouse sobre a cor de destino no viewport.  
 1.  Escolha confirmar.  
@@ -549,17 +549,6 @@ Quando você abre o **Selador de**Cores, **o** Conta-gotas \( Conta-gotas ![ ][I
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 

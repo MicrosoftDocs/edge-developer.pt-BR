@@ -3,16 +3,16 @@ description: Saiba como avaliar o desempenho do tempo de execução no Microsoft
 title: Começar a analisar o desempenho do Tempo de Execução
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 074c112b99abb4689cac2274338f2276bc46b4ae
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398718"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439609"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,8 +65,8 @@ No tutorial a seguir, você abre o DevTools em uma página ao vivo e usa o paine
 Os dispositivos móveis têm muito menos energia da CPU do que desktops e laptops.  Sempre que você perfilar uma página, use a Throttling da CPU para simular o desempenho da sua página em dispositivos móveis.  
 
 1.  No DevTools, escolha a **ferramenta Performance.**  
-1.  Verifique se a **caixa de seleção Capturas** de Tela está habilitada.  
-1.  Escolha **Configurações de Captura** \(![ Configurações de Captura][ImageCaptureSettingsIcon]\).  O DevTools revela configurações relacionadas à forma como captura métricas de desempenho.  
+1.  Certifique-se de escolher a caixa de seleção ao lado **de Capturas de Tela**.  
+1.  Escolha **Configurações de Captura** \( ![ Configurações de Captura ](../media/capture-settings-icon.msft.png) \).  O DevTools revela configurações relacionadas à forma como captura métricas de desempenho.  
 1.  Para **CPU,** escolha **4x de lentidão**.  O DevTools acelera sua CPU para que ela seja 4 vezes mais lenta do que o normal.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Aceleração da CPU" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -93,7 +93,7 @@ Os dispositivos móveis têm muito menos energia da CPU do que desktops e laptop
 
 Quando você correu a versão otimizada da página, os ícones azuis são mais rápidos.  Por que isso?  Ambas as versões devem mover os ícones da mesma quantidade de espaço no mesmo período de tempo.  Leve uma gravação no painel Desempenho para saber como detectar o a gargalo de desempenho na versão não otimizada.  
 
-1.  No DevTools, escolha **Gravar** \(![ Record][ImageRecordIcon]\).  O DevTools captura métricas de desempenho à medida que a página é executado.  
+1.  Em DevTools, escolha **Gravar** \( ![ Record ](../media/record-icon.msft.png) \).  O DevTools captura métricas de desempenho à medida que a página é executado.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Perfil da página" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Perfil da página  
@@ -148,7 +148,7 @@ Outra ferramenta útil é o medidor FPS, que fornece estimativas em tempo real p
 
 1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o **Menu de Comando**.  
 1.  Comece a digitar `Rendering` no Menu de Comando **e** escolha **Mostrar Renderização**.  
-1.  Na ferramenta **Renderização,** habilita **o Medidor de FPS**.  Uma nova sobreposição aparece na parte superior direita do seu viewport.  
+1.  Na ferramenta **Renderização,** a turn on **FPS Meter**.  Uma nova sobreposição aparece na parte superior direita do seu viewport.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="O medidor FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        O **medidor FPS**  
@@ -184,7 +184,7 @@ Depois de medir e verificar se a animação não está bem, a próxima etapa é 
     1.  Concentre-se no triângulo vermelho no canto superior direito do **evento Animation Frame Fired.**  Sempre que um triângulo vermelho é exibido, é um aviso de que pode haver um problema relacionado ao evento.  
     
     > [!NOTE]
-    > O **evento Animation Frame Fired** ocorre sempre que um retorno de [ `requestAnimationFrame()` chamada][MDNWebRequestAnimationFrame] é executado.  
+    > O **evento Animation Frame Fired** ocorre sempre que um retorno de chamada [requestAnimationFrame()][MDNWebRequestAnimationFrame] é executado.  
     
 1.  Escolha o **evento Animation Frame Fired.**  O **painel** Resumo agora mostra informações sobre esse evento.  Observe o link **Revelação.**  Depois de escolher, DevTools realça o evento que iniciou o **evento Animation Frame Fired.**  Além disso, concentre-se **no linkapp.js:95.**  Depois de escolher, a linha relevante no código-fonte será exibida.
     
@@ -213,7 +213,7 @@ Isso foi muito para aprender.  Agora você tem uma base sólida no fluxo de trab
 
 ### <a name="bonus-analyze-the-optimized-version"></a>Bônus: Analisar a versão otimizada  
 
-Usando os fluxos de trabalho e as ferramentas que você acabou de aprender, escolha **Otimizar** na demonstração para habilitar o código otimizado, fazer outra gravação de desempenho e analisar os resultados.  Da taxa de quadros aprimorada até a redução de eventos no gráfico de chama na seção **Principal,** a versão otimizada do aplicativo faz muito menos trabalho, resultando em melhor desempenho.  
+Usando os fluxos de trabalho e as ferramentas que você acabou de aprender, escolha **Otimizar** na demonstração para ativar o código otimizado, fazer outra gravação de desempenho e analisar os resultados.  Da taxa de quadros aprimorada até a redução de eventos no gráfico de chama na seção **Principal,** a versão otimizada do aplicativo faz muito menos trabalho, resultando em melhor desempenho.  
 
 > [!NOTE]
 > Mesmo a versão otimizada não é ótima, pois manipula a `top` propriedade de cada ícone.  Uma abordagem melhor é manter as propriedades que afetam apenas a composição.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  

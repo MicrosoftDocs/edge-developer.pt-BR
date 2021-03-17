@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398767"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439258"
 ---
 # <a name="inspect-css-grid"></a>Inspecionar Grade CSS  
 
@@ -176,7 +176,7 @@ Para abrir o selador de cores e personalizar a cor da sobreposição de grade, e
 
 ### <a name="highlight-the-grid"></a>Realça a grade  
 
-Para realçar o elemento HTML na ferramenta **Elementos** e rolar até ele na página da Web, escolha o elemento **Mostrar** no painel Elementos \( Elemento Mostrar no ícone do painel Elementos ![ ][ImageShowElementInElementsPanelIcon] \) ícone.  
+Para realçar o elemento HTML na ferramenta **Elementos** e rolar até ele na página da Web, escolha o elemento **Mostrar** no painel Elementos \( Elemento Mostrar no ícone do painel Elementos ![ ](../media/show-element-in-element-panel-icon.msft.png) \) ícone.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Realça a grade" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Realça a grade  
@@ -185,10 +185,6 @@ Para realçar o elemento HTML na ferramenta **Elementos** e rolar até ele na p�
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,31 @@ description: Os recursos experimentais mais recentes no Microsoft Edge DevTools
 title: Recursos experimentais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, experimento
-ms.openlocfilehash: 612b3b83aee1ee9035982e58e008395ec3645b2b
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+no-loc:
+- Enable webhint
+- Enable Network Console
+- Source Order Viewer
+- Enable Composited Layers in 3D View
+- Enable new Font Editor tool within the Styles pane
+- Enable new CSS Flexbox debugging features
+- Enable + button tab menus to open more tools
+- Enable Welcome tab
+- 3D View
+- Turn on support to move tabs between panels
+- Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code
+- Edit keyboard shortcuts for any action in the DevTools
+- Turn on new CSS grid debugging features
+- 'Emulation: Support dual screen mode'
+ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408301"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439581"
 ---
 # <a name="experimental-features"></a>Recursos experimentais  
 
@@ -46,16 +61,16 @@ As seções a seguir descrevem os novos recursos experimentais disponíveis no M
 
 | Recurso experimental | Versão do Microsoft Edge |  
 |:--- |:--- |  
-| [Habilitar webhint](#enable-webhint) | 85 ou posterior |  
-| [Habilitar o Console de Rede](#enable-network-console) | 85 ou posterior |  
-| [Visualizador de Ordem de Origem](#source-order-viewer) | 86 ou posterior |  
-| [Habilitar camadas compostas no modo de exibição 3D](#enable-composited-layers-in-3d-view) | 87 ou posterior |  
-| [Habilitar a nova ferramenta Editor de Fontes no painel Estilos](#enable-new-font-editor-tool-within-the-styles-pane) | 89 ou posterior |  
-| [Habilitar novos recursos de depuração do CSS Flexbox](#enable-new-css-flexbox-debugging-features) | 89 ou posterior |  
-| [Habilitar + menus de guia de botão para abrir mais ferramentas](#enable--button-tab-menus-to-open-more-tools) | 89 ou posterior |  
-| [Habilitar a guia Bem-vindo](#enable-welcome-tool) | 89 ou posterior |  
+| [Enable webhint](#enable-webhint) | 85 ou posterior |  
+| [Enable Network Console](#enable-network-console) | 85 ou posterior |  
+| [Source Order Viewer](#source-order-viewer) | 86 ou posterior |  
+| [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 ou posterior |  
+| [Enable new Font Editor tool within the Styles pane](#enable-new-font-editor-tool-within-the-styles-pane) | 89 ou posterior |  
+| [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 ou posterior |  
+| [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 ou posterior |  
+| [Enable Welcome tab](#enable-welcome-tab) | 89 ou posterior |  
 
-### <a name="enable-webhint"></a>Habilitar webhint  
+### Enable webhint  
 
 [webhint][WebhintMain] é uma ferramenta de código aberto que fornece comentários em tempo real para sites e páginas da Web locais.  O tipo de comentários fornecido pela [webhint][WebhintMain].  
 
@@ -74,7 +89,7 @@ O [experimento webhint][WebhintMain] exibe os comentários webhint no painel [Pr
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### <a name="enable-network-console"></a>Habilitar o Console de Rede  
+### Enable Network Console  
 
 **Console de** Rede é o título de trabalho de um experimento para fazer solicitações de rede sintéticas por HTTP.  Você pode usar o experimento **de Console de Rede** para enviar solicitações de API da Web.  
 
@@ -92,30 +107,29 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar o **Console de R
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### <a name="source-order-viewer"></a>Visualizador de Ordem de Origem  
+### Source Order Viewer  
 
-**O Visualizador de Ordem de** Origem é um experimento que exibe a ordem dos elementos na origem da página da Web.  A ordem de exibição na tela pode ser diferente da ordem da origem, o que confundiu usuários de leitor de tela e teclado.  Use o **experimento Visualizador de Ordem** de Origem para encontrar as diferenças entre a ordem de exibição na tela e a ordem da fonte.  
+**Source Order Viewer** é um experimento que exibe a ordem dos elementos na origem da página da Web.  A ordem de exibição na tela pode ser diferente da ordem da origem, o que confundiu usuários de leitor de tela e teclado.  Use o experimento para encontrar as diferenças entre a ordem de exibição na **Source Order Viewer** tela e a ordem da fonte.  
 
-Depois de ativar o experimento, reinicie o DevTools.  Para usar **o Visualizador de Ordem de**Origem, conclua as etapas a seguir.  
+Depois de ativar o experimento, reinicie o DevTools.  Para usar **Source Order Viewer** , conclua as etapas a seguir.  
 
 1.  Abra a **ferramenta Elements.**  
 1.  Abra o **painel Acessibilidade** no painel de gaveta \(bottom\)  
-1.  Na seção **Visualizador de Ordem de** Origem, escolha a caixa de seleção **Mostrar Ordem** de Origem.  
+1.  Na **Source Order Viewer** seção, escolha a caixa de seleção **Mostrar Ordem de** Origem.  
 1.  Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Visualizador de Ordem de Origem no painel Acessibilidade" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Visualizador de Ordem de** Origem no painel **Acessibilidade**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: no **Source Order Viewer** painel **Acessibilidade**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
-### <a name="enable-composited-layers-in-3d-view"></a>Habilitar camadas compostas no modo de exibição 3D  
+### Enable Composited Layers in 3D View  
 
-Agora você pode visualizar Layers juntamente com índices z e o Modelo de Objeto de Documento \(DOM\).  Esse recurso ajuda você a depurar sem alternar contextos com a mesma frequência.  Você identificou que a redução da alternção de contexto era um grande ponto de dor.  Nem sempre é claro como o código que você escreve afeta seu aplicativo Web.  Para uma experiência de depuração visual abrangente, o Modo de exibição 3D e as camadas compostas agora são combinados.  
+Agora você pode visualizar Layers juntamente com índices z e o Modelo de Objeto de Documento \(DOM\).  Esse recurso ajuda você a depurar sem alternar contextos com a mesma frequência.  Você identificou que a redução da alternção de contexto era um grande ponto de dor.  Nem sempre é claro como o código que você escreve afeta seu aplicativo Web.  Para uma experiência abrangente de depuração visual, as Camadas Compostas e 3D View agora são combinadas.  
 
 Depois de ativar o experimento, reinicie o DevTools.  Para usar **Camadas Compostas,** conclua as etapas a seguir.  
 
-1.  Na gaveta, escolha a ferramenta De exibição **3D.**  
+1.  Na gaveta, escolha a **3D View** ferramenta.  
 1.  Abra o **painel Camadas Compostas.**  
 1.  Todas as camadas pintadas do aplicativo são exibidas.  Experimente esse recurso com seus próprios aplicativos Web.  
     
@@ -125,7 +139,7 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar **Camadas Compos
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
-### <a name="enable-new-font-editor-tool-within-the-styles-pane"></a>Habilitar a nova ferramenta Editor de Fontes no painel Estilos  
+### Enable new Font Editor tool within the Styles pane  
 
 Agora você pode usar o novo Editor de [Fonte visual][DevtoolsInspectStylesEditFonts] para editar fontes.  Use-o para definir fontes e características de fonte.  O Editor **de Fonte visual** ajuda você a concluir as seguintes ações.  
 
@@ -148,7 +162,7 @@ Para obter mais informações sobre o novo Editor de **Fontes visuais,** navegue
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable-new-css-flexbox-debugging-features"></a>Habilitar novos recursos de depuração do CSS Flexbox  
+### Enable new CSS Flexbox debugging features  
 
 Esse recurso experimental fornece muitas novas visualizações para ajudá-lo a depurar layouts do CSS Flexbox.  Para visualizar os recursos experimentais mais recentes, [a ligue este experimento](#turn-on-experimental-features) e recarregue o DevTools.  
 
@@ -187,9 +201,9 @@ Para configurar opções para sobreposições persistentes para grades CSS ou la
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable--button-tab-menus-to-open-more-tools"></a>Habilitar + menus de guia de botão para abrir mais ferramentas  
+### Enable + button tab menus to open more tools  
 
-Agora você pode abrir mais ferramentas usando o novo ícone **Mais Ferramentas** \( `+` \)  Depois de ativar os **menus** de guia Habilitar + botão para abrir mais ferramentas experimento e recarregar DevTools, um sinal de a mais \( \) é exibido à direita do grupo de guias na parte superior `+` do DevTools.  Para exibir uma lista de outras ferramentas que você pode adicionar à barra de guias, escolha o novo ícone **Mais Ferramentas** \( `+` \).  
+Agora você pode abrir mais ferramentas usando o novo ícone **Mais Ferramentas** \( `+` \)  Depois de ativar o experimento e recarregar o DevTools, um sinal de a mais \( \) será exibido à direita do grupo de guias na parte superior do **Enable + button tab menus to open more tools** `+` DevTools.  Para exibir uma lista de outras ferramentas que você pode adicionar à barra de guias, escolha o novo ícone **Mais Ferramentas** \( `+` \).  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="Mais Ferramentas no painel superior" lightbox="../media/experiments-more-tools-button.msft.png":::
    **Mais Ferramentas** no painel superior
@@ -197,7 +211,7 @@ Agora você pode abrir mais ferramentas usando o novo ícone **Mais Ferramentas*
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### <a name="enable-welcome-tool"></a>Habilitar a ferramenta Bem-vindo
+### Enable Welcome tab
 
 Este experimento substitui a **ferramenta Novidades** pela nova ferramenta **de Boas-vindas.**  Ele exibe um design atualizado para o conteúdo a seguir.  
 
@@ -208,7 +222,7 @@ Este experimento substitui a **ferramenta Novidades** pela nova ferramenta **de 
     
 A **ferramenta Bem-vindo** é aberta automaticamente após cada atualização para o Microsoft Edge.  Para impedir a exibição da ferramenta **De** boas-vindas após cada atualização, deslocar a caixa de seleção ao lado da guia **Abrir** após cada atualização sob o **título** da ferramenta de boas-vindas.  
 
-Se você preferir a ferramenta **Original Novidades,** navegue até [Configurações Experimentos][DevtoolsCustomizeIndexSettings]e remova a caixa de seleção ao lado da guia  >  **** Habilitar **Boas-vindas.**  
+Se você preferir a ferramenta **original What's New,** navegue até [Settings Experiments][DevtoolsCustomizeIndexSettings]e remova a caixa de seleção  >  **** ao lado de **Enable Welcome tab** .  
 
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Ferramenta de boas-vindas" lightbox="../media/experiments-welcome.msft.png":::
    **Ferramenta de boas-vindas**  
@@ -218,14 +232,13 @@ Se você preferir a ferramenta **Original Novidades,** navegue até [Configuraç
 
 ## <a name="previous-experimental-features"></a>Recursos experimentais anteriores  
 
-*   [O Modo de Exibição 3D][Devtools3dViewIndex] agora está disponível e ligado por padrão no Microsoft Edge versão 83 ou posterior.  
-*   [Ativar o suporte para mover guias][DevtoolsCustomizeIndex] entre painéis agora está disponível e ligado por padrão no Microsoft Edge versão 85 ou posterior.  
-*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] is now available and turned on by default in Microsoft Edge version 86 or later.  
-*   Editar atalhos de teclado para qualquer ação no [DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] agora está disponível e ativado por padrão no Microsoft Edge versão 89 ou posterior.  
-*   [Ativar novos recursos de depuração][DevtoolsCssGrid] de grade CSS agora está disponível e ligado por padrão no Microsoft Edge versão 89 ou posterior.  
-*   [Emulação: o modo de tela dupla][DevtoolsDeviceModeDualScreenAndFoldables] de suporte agora está disponível e ligado por padrão no Microsoft Edge versão 90 ou posterior.  
+*   [3D View][Devtools3dViewIndex] agora está disponível e ligado por padrão no Microsoft Edge versão 83 ou posterior.  
+*   [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] agora está disponível e ligado por padrão no Microsoft Edge versão 85 ou posterior.  
+*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] agora está disponível e ligado por padrão no Microsoft Edge versão 86 ou posterior.  
+*   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] agora está disponível e ligado por padrão no Microsoft Edge versão 89 ou posterior.  
+*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] agora está disponível e ligado por padrão no Microsoft Edge versão 89 ou posterior.  
+*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] agora está disponível e ligado por padrão no Microsoft Edge versão 90 ou posterior.  
 
-    
 ## <a name="providing-feedback-on-experimental-features"></a>Fornecendo comentários sobre recursos experimentais  
 
 Para fornecer comentários sobre experimentos do Microsoft Edge DevTools ou qualquer outra coisa relacionada ao DevTools.  
@@ -245,11 +258,11 @@ Para fornecer comentários sobre experimentos do Microsoft Edge DevTools ou qual
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ../3d-view/index.md "Modo de exibição 3D | Microsoft Docs"  
+[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspecionar Grade CSS no Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Editar atalhos de teclado para qualquer ação no devTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Editar atalhos de teclado para qualquer ação no DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos de fonte CSS e configurações no painel Estilos no DevTools | Microsoft Docs"  

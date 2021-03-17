@@ -3,16 +3,16 @@ description: Exibir e editar arquivos, criar trechos de código, depurar JavaScr
 title: Visão geral do painel fontes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7ce7ae32b4bf91419512ec9e387cdf75549552a5
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397759"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439602"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -101,7 +101,7 @@ Em vez disso, você pode salvar esse código em **um trecho** de código e execu
 
 Para executar um **trecho de código:**
 
-*   Abra o arquivo usando o painel **Trechos** de Código e escolha **Executar** \( ![ O botão Executar ][ImageRunIcon] \).  
+*   Abra o arquivo usando o painel **Trechos** de Código e escolha **Executar** \( ![ O botão Executar ](../media/run-snippet-icon.msft.png) \).  
 *   Abra o [Menu de Comando,][DevtoolsGuideChromiumCommandMenuIndex]exclua o caractere, digite , digite o nome do trecho de código e `>` `!` selecione **** `Enter` .  
     
 Navegue [até Executar trechos de código de qualquer página][DevtoolsGuideChromiumJavascriptSnippets] para saber mais.
@@ -125,10 +125,6 @@ Navegue [até Editar Arquivos com Espaços de Trabalho][DevtoolsGuideChromiumWor
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

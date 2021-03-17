@@ -3,16 +3,16 @@ description: Saiba como usar o Microsoft Edge DevTools para encontrar maneiras d
 title: Otimizar a velocidade do site com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7de97ab27528e89e2373e0a0d1002e8c86e37613
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398109"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439441"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -94,7 +94,7 @@ Para o restante das capturas de tela neste tutorial, DevTools é mostrado em uma
 
 A linha de base é um registro de como o site foi executado antes de você fazer quaisquer melhorias de desempenho.  
 
-1.  Escolha a **ferramenta Auditorias.**  Ele pode estar oculto atrás do **botão Mais Painéis** \( ![ Mais ][ImageMorePanelsIcon] Painéis \).  Há um Farol neste painel porque o projeto que alimenta o painel de Auditorias é chamado **de Farol**.  
+1.  Escolha a **ferramenta Auditorias.**  Ele pode estar oculto atrás do **botão Mais Painéis** \( ![ Mais ](../media/more-panels-icon.msft.png) Painéis \).  Há um Farol neste painel porque o projeto que alimenta o painel de Auditorias é chamado **de Farol**.  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
@@ -278,7 +278,7 @@ Use os fluxos de trabalho que você aprendeu anteriormente para verificar manual
 Audite a página novamente para medir que tipo de compactação de texto de impacto tem no desempenho da carga da página:  
 
 1.  Escolha a **ferramenta Auditorias.**  
-1.  Escolha **Executar uma auditoria** \( Executar uma auditoria ![ ][ImagePerformIcon] \).  
+1.  Escolha **Executar uma auditoria** \( Executar uma auditoria ![ ](../media/perform-icon.msft.png) \).  
 1.  Deixe as configurações da mesma forma de antes.  
 1.  Escolha **Executar auditoria**.  
     
@@ -353,7 +353,7 @@ A primeira tarefa, então, é encontrar o código que você não precisa executa
        A **ferramenta Coverage**  
     :::image-end:::  
     
-1.  Escolha **Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \).  A **ferramenta Coverage** fornece uma visão geral de quanto do código em , e é executado enquanto a página é `bundle.js` `jquery.js` `lodash.js` carregada.  Na figura após o seguinte, cerca de 76% e 30% dos arquivos jQuery e Lodash não são usados, respectivamente.  
+1.  Escolha **Atualizar** \( ![ Atualizar ](../media/reload-icon.msft.png) \).  A **ferramenta Coverage** fornece uma visão geral de quanto do código em , e é executado enquanto a página é `bundle.js` `jquery.js` `lodash.js` carregada.  Na figura após o seguinte, cerca de 76% e 30% dos arquivos jQuery e Lodash não são usados, respectivamente.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="O relatório de cobertura" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        O relatório de cobertura  
@@ -379,7 +379,7 @@ Os `jquery.js` arquivos e `lodash.js` são necessários para carregar a página?
        A **ferramenta de bloqueio solicitação**  
     :::image-end:::  
     
-1.  Escolha **Adicionar Padrão** \( Adicionar Padrão ![ ][ImageAddPatternIcon] \), digite e selecione `/libs/*` `Enter` confirmar.  
+1.  Escolha **Adicionar Padrão** \( Adicionar Padrão ![ ](../media/add-pattern-icon.msft.png) \), digite e selecione `/libs/*` `Enter` confirmar.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Adicionar um padrão para bloquear qualquer solicitação ao diretório libs" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Adicionar um padrão para bloquear qualquer solicitação ao `libs` diretório  
@@ -391,7 +391,7 @@ Os `jquery.js` arquivos e `lodash.js` são necessários para carregar a página?
        A **ferramenta Rede** mostra que as solicitações foram bloqueadas  
     :::image-end:::  
     
-1.  Escolha **Remover todos os padrões** \( Remover todos os padrões ![ ][ImageRemoveIcon] \) para excluir o padrão de `/libs/*` bloqueio.  
+1.  Escolha **Remover todos os padrões** \( Remover todos os padrões ![ ](../media/remove-icon.msft.png) \) para excluir o padrão de `/libs/*` bloqueio.  
     
 Em geral, a **ferramenta de** bloqueio solicitação é útil para simular como sua página se comporta quando um determinado recurso não está disponível.  
 
@@ -426,9 +426,9 @@ O thread principal é onde o navegador faz a maior parte do trabalho necessário
 O objetivo é usar o painel Desempenho para analisar o trabalho que o thread principal está fazendo enquanto a página é carregada e encontrar maneiras de adiar ou remover o trabalho desnecessário.  
 
 1.  Escolha a **ferramenta Desempenho.**  
-1.  Escolha **Configurações de Captura** \( ![ Configurações de Captura ][ImageCaptureIcon] \).  
+1.  Escolha **Configurações de Captura** \( ![ Configurações de Captura ](../media/capture-icon.msft.png) \).  
 1.  Definir **Rede como** Slow **3G** e **CPU** como **6x de lentidão**.  Dispositivos móveis geralmente têm mais restrições de hardware do que laptops ou desktops, portanto, essas configurações permitem que você experimente a carga da página como se você estivesse usando um dispositivo menos poderoso.  
-1.  Escolha **Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \).  O DevTools atualiza a página e produz uma visualização de todo o trabalho executado para carregar a página.  Essa visualização é chamada de **rastreamento**.  
+1.  Escolha **Atualizar** \( ![ Atualizar ](../media/reload-icon.msft.png) \).  O DevTools atualiza a página e produz uma visualização de todo o trabalho executado para carregar a página.  Essa visualização é chamada de **rastreamento**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="O rastreamento da ferramenta Performance da carga da página" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        O **rastreamento da** ferramenta Performance da carga da página  
@@ -523,15 +523,6 @@ Se você preferir uma abordagem que se parece mais com , a API de Tempo do Usuá
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: ../media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
-[ImagePerformIcon]: ../media/perform-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
-[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Referência de análise de desempenho | Microsoft Docs"  

@@ -3,16 +3,16 @@ description: Inspecionar e modificar animações com o Inspetor de Animação do
 title: Inspecionar animações
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397731"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439539"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -103,7 +103,7 @@ Para capturar uma animação, basta executar a interação que dispara a animaç
 Depois de capturar uma animação, há algumas maneiras de replay dela:  
 
 *   Passe o mouse na miniatura no painel **Visão** geral para exibir uma visualização dela.  
-*   Escolha o Grupo **** de Animação no painel Visão geral \(para que ele seja exibido no **painel** Detalhes\) e escolha o ícone de **repetição** \( ícone de ![ repetição ][ImageReplayButtonIcon] \).  A animação é reprisada no viewport.  Escolha os **ícones de** velocidade de animação \( ícones de velocidade de ![ animação \) para alterar a velocidade de visualização do Grupo de Animação selecionado ][ImageAnimationSpeedButtonsIcon] no momento.  Você pode usar a barra vertical vermelha para alterar sua posição atual.  
+*   Escolha o Grupo **** de Animação no painel Visão geral \(para que ele seja exibido no **painel** Detalhes\) e escolha o ícone de **repetição** \( ícone de ![ repetição ](../media/replay-button-icon.msft.png) \).  A animação é reprisada no viewport.  Escolha os **ícones de** velocidade de animação \( ícones de velocidade de ![ animação \) para alterar a velocidade de visualização do Grupo de Animação selecionado ](../media/animation-speed-buttons-icon.msft.png) no momento.  Você pode usar a barra vertical vermelha para alterar sua posição atual.  
 *   Escolha e arraste a barra vertical vermelha para limpar a animação do viewport.  
     
 ### <a name="view-animation-details"></a>Exibir detalhes da animação  
@@ -170,8 +170,8 @@ Para adicionar um atraso a uma animação, escolha e arraste-a em qualquer lugar
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
+(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
+(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

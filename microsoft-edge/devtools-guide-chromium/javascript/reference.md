@@ -3,16 +3,16 @@ description: Descubra novos fluxos de trabalho de depuração nesta referência 
 title: Referências de depuração de JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 09a2d61269b2fe3a23a57ce58eb1c89b12a7639c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2944e054a08a901d2e1752fa7c4e48ae110f5787
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398473"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439455"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,7 +46,7 @@ Depois que seu código for pausado, passo a passo por ele, uma linha por vez, in
 
 ### <a name="step-over-line-of-code"></a>Passo a passo sobre a linha de código  
 
-Quando pausado em uma linha de código que contém uma função que não é relevante para o problema que você está depurando, escolha o botão **Passo** a passo \( Passo a passo \) para executar a função sem entrar ![ ][ImageStepOverIcon] nele.  
+Quando pausado em uma linha de código que contém uma função que não é relevante para o problema que você está depurando, escolha o botão **Passo** a passo \( Passo a passo \) para executar a função sem entrar ![ ](../media/step-over-icon.msft.png) nele.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Escolha Passo a passo" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Escolha **Passo a passo**  
@@ -70,7 +70,7 @@ Você está pausado em `A` .  Depois de escolher **Passo a Passo,** o DevTools e
 
 ### <a name="step-into-line-of-code"></a>Entrar na linha de código  
 
-Quando pausado em uma linha de código que contém uma chamada de função relacionada ao problema que você está depurando, escolha o botão **Entrar** em \( Entrar em \) para investigar ainda mais essa ![ ][ImageStepIntoIcon] função.  
+Quando pausado em uma linha de código que contém uma chamada de função relacionada ao problema que você está depurando, escolha o botão **Entrar** em \( Entrar em \) para investigar ainda mais essa ![ ](../media/step-into-icon.msft.png) função.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Escolha Entrar" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Escolha **Entrar**  
@@ -94,7 +94,7 @@ Você está pausado em `A` .  Depois de escolher **Entrar,** o DevTools executa 
 
 ### <a name="step-out-of-line-of-code"></a>Sair da linha de código  
 
-Quando pausado dentro de uma função que não está relacionada ao problema que você está depurando, escolha o botão **Sair** \( Sair \) para executar o restante do código da ![ ][ImageStepOutIcon] função.  
+Quando pausado dentro de uma função que não está relacionada ao problema que você está depurando, escolha o botão **Sair** \( Sair \) para executar o restante do código da ![ ](../media/step-out-icon.msft.png) função.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Escolha Sair" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Escolha **Sair**  
@@ -120,7 +120,7 @@ Você está pausado em `A` .  Depois de escolher **Sair,** o DevTools executa o 
 
 Ao depurar uma função longa, pode haver muito código que não está relacionado ao problema que você está depurando.  
 
-Você pode optar por passar por todas as linhas, mas isso é entediante.  Você pode optar por definir um ponto de interrupção de linha de código na linha na qual você está interessado e, em seguida, escolher o botão Retomar Execução de **Script** \( Retomar Execução de Script \) mas há uma maneira mais ![ ][ImageResumeScriptExecutionIcon] rápida.  
+Você pode optar por passar por todas as linhas, mas isso é entediante.  Você pode optar por definir um ponto de interrupção de linha de código na linha na qual você está interessado e, em seguida, escolher o botão Retomar Execução de **Script** \( Retomar Execução de Script \) mas há uma maneira mais ![ ](../media/resume-script-run-icon.msft.png) rápida.  
 
 Passe o mouse na linha de código na qual você está **interessado,** abra o menu contextual \(clique com o botão direito do mouse\) e escolha Continuar até aqui .  O DevTools executa todo o código até esse ponto e pausa nessa linha.  
 
@@ -152,7 +152,7 @@ Você está pausado em `A` .  Depois de **escolher Reiniciar Quadro**, você dev
 
 ### <a name="resume-script-runtime"></a>Retomar o tempo de execução do script  
 
-Para continuar o tempo de execução após uma pausa do seu script, escolha o botão Retomar Execução de **Script** \( ![ Retomar Execução de Script ][ImageResumeScriptExecutionIcon] \).  O DevTools executa o script até o próximo ponto de interrupção, se for o caso.  
+Para continuar o tempo de execução após uma pausa do seu script, escolha o botão Retomar Execução de **Script** \( ![ Retomar Execução de Script ](../media/resume-script-run-icon.msft.png) \).  O DevTools executa o script até o próximo ponto de interrupção, se for o caso.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Escolha Retomar execução de script" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Escolha **Retomar execução de script**  
@@ -160,7 +160,7 @@ Para continuar o tempo de execução após uma pausa do seu script, escolha o bo
 
 #### <a name="force-script-runtime"></a>Forçar o tempo de execução do script  
 
-Para ignorar todos os pontos de interrupção e forçar seu script a continuar em execução, escolha e segure o botão Retomar Execução de Script **\(** Retomar Execução de Script \) e escolha o botão Forçar execução de script \( Forçar execução ![ de script ][ImageResumeScriptExecutionIcon] **** ![ ][ImageForceScriptExecutionIcon] \) .  
+Para ignorar todos os pontos de interrupção e forçar seu script a continuar em execução, escolha e segure o botão Retomar Execução de Script **\(** Retomar Execução de Script \) e escolha o botão Forçar execução de script \( Forçar execução ![ de script ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png) \) .  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Escolha Forçar execução de script" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Escolha **Forçar execução de script**  
@@ -289,13 +289,13 @@ Use o **painel** de relógio para observar os valores de expressões personaliza
    O **painel** de relógio  
 :::image-end:::  
 
-*   Escolha o **botão Adicionar Expressão** \( Adicionar Expressão ![ ][ImageAddExpressionIcon] \) para criar uma nova expressão de relógio.  
-*   Escolha o **botão Atualizar** \( ![ Atualizar ][ImageRefreshIcon] \) para atualizar os valores de todas as expressões existentes.  Os valores são atualizados automaticamente ao passar pelo código.  
-*   Passe o mouse em uma expressão e escolha o botão **Excluir Expressão** \( Excluir ![ Expressão ][ImageDeleteExpressionIcon] \) para excluí-la.  
+*   Escolha o **botão Adicionar Expressão** \( Adicionar Expressão ![ ](../media/add-expression-icon.msft.png) \) para criar uma nova expressão de relógio.  
+*   Escolha o **botão Atualizar** \( ![ Atualizar ](../media/refresh-icon.msft.png) \) para atualizar os valores de todas as expressões existentes.  Os valores são atualizados automaticamente ao passar pelo código.  
+*   Passe o mouse em uma expressão e escolha o botão **Excluir Expressão** \( Excluir ![ Expressão ](../media/delete-expression-icon.msft.png) \) para excluí-la.  
 
 ## <a name="make-a-minified-file-readable"></a>Tornar um arquivo minificado acessível  
 
-Escolha o **botão Formatar** \( ![ Formatar ][ImageFormatIcon] \) para tornar um arquivo minificado acessível.  
+Escolha o **botão Formatar** \( ![ Formatar ](../media/format-icon.msft.png) \) para tornar um arquivo minificado acessível.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="O botão Formatar" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    O **botão Formatar**  
@@ -322,18 +322,6 @@ Navegue [até Desabilitar JavaScript com o Microsoft Edge DevTools][DevToolsJava
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 

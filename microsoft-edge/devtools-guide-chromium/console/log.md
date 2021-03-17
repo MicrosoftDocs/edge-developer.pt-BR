@@ -3,16 +3,16 @@ description: Saiba como registrar mensagens no Console.
 title: Começar a registrar mensagens no Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e2ea1a8327dd2a591e067b69198c4509b2abcb2d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fb428154b00959db1627096819c565dd5dc11346
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399166"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439286"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -122,7 +122,7 @@ A maioria das mensagens exibidas no **Console vem** dos desenvolvedores da Web q
     > [!TIP]
     > Se você quiser exibir o código que fez com que uma mensagem fosse registrada de uma determinada maneira, escolha em um script \(como \) para exibir o código que fez com que a mensagem fosse `log.js:12` formatada.  
 
-1.  Escolha o **ícone Expandir** \( ![ Expand ][ImageExpandIcon] \) na frente de `Abandon Hope All Ye Who Enter` .  DevTools mostra o [rastreamento de][WikiStackTrace] pilha que antecede a chamada.  
+1.  Escolha o **ícone Expandir** \( ![ Expand ](../media/expand-icon.msft.png) \) na frente de `Abandon Hope All Ye Who Enter` .  DevTools mostra o [rastreamento de][WikiStackTrace] pilha que antecede a chamada.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Um rastreamento de pilha" lightbox="../media/console-log-warning-expanded.msft.png":::
        Um rastreamento de pilha  
@@ -236,13 +236,13 @@ Quando você quiser mostrar todas as mensagens que incluem um padrão de texto, 
 
 Quando você quiser exibir apenas as mensagens que vieram de uma determinada URL, use a **barra lateral**.  
 
-1.  Escolha **Mostrar Barra Lateral do Console** \( Mostrar Barra Lateral do Console ![ ][ImageShowConsoleSidebarIcon] \).  
+1.  Escolha **Mostrar Barra Lateral do Console** \( Mostrar Barra Lateral do Console ![ ](../media/show-console-sidebar-icon.msft.png) \).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="A barra lateral" lightbox="../media/console-sidebar-all-messages.msft.png":::
        A barra lateral  
     :::image-end:::  
     
-1.  Escolha o **ícone Expandir** \( ![ Expand ][ImageExpandIcon] \) ao lado do número de mensagens.  Na figura a seguir, o número de mensagens é indicado como **13 Mensagens**.  A **barra lateral** mostra uma lista de URLs que causaram o registro de mensagens.  Por exemplo, `log.js` causou 11 mensagens.  
+1.  Escolha o **ícone Expandir** \( ![ Expand ](../media/expand-icon.msft.png) \) ao lado do número de mensagens.  Na figura a seguir, o número de mensagens é indicado como **13 Mensagens**.  A **barra lateral** mostra uma lista de URLs que causaram o registro de mensagens.  Por exemplo, `log.js` causou 11 mensagens.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Exibindo a origem das mensagens na barra lateral" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Exibindo a origem das mensagens na barra lateral  
@@ -271,7 +271,7 @@ Se você estiver editando estilos, mas precisar verificar rapidamente o log do C
          A **ferramenta Console** na **Gaveta**  
     :::image-end:::  
     
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Ver também  
 
 *   Para explorar mais recursos e fluxos de trabalho relacionados à interface do usuário do **Console,** navegue até [Referência do Console][DevToolsConsoleApi].  
 *   Para saber mais sobre todos os métodos demonstrados em Exibir mensagens registradas no JavaScript e explorar os outros métodos não abordados neste artigo, navegue até Referência da `console` API de [](#view-messages-logged-from-javascript) `console` [Console.][DevToolsConsoleReference]  
@@ -280,11 +280,6 @@ Se você estiver editando estilos, mas precisar verificar rapidamente o log do C
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

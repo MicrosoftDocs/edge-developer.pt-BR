@@ -3,16 +3,16 @@ description: Como depurar a Busca de Plano de Fundo, Sincronização em Segundo 
 title: Depurar serviços em segundo plano com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: cf3459e7b5f80a695a855ffdd0c249c2bc223d31
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398634"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439525"
 ---
 <!-- Copyright Kayce Basques
 
@@ -60,7 +60,7 @@ A **API de Busca de Plano** de Fundo permite que um funcionário do serviço bai
        O **painel Busca de** Plano de Fundo  
     :::image-end:::  
     
-1.  Escolha **Registro** \( ![ Record ][ImageRecordIcon] \).  
+1.  Escolha **Registro** \( ![ Record ](../media/record-icon.msft.png) \).  
    Depois de disparar alguma atividade de Busca em Segundo Plano, o DevTools registra os eventos na tabela.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Um log de eventos no painel Busca em Segundo Plano" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -87,7 +87,7 @@ A **API de Sincronização** de Plano de Fundo permite que um trabalhador de ser
        O **painel Sincronização de** Plano de Fundo  
     :::image-end:::  
     
-1.  Escolha **Registro** \( ![ Record ][ImageRecordIcon] \).  
+1.  Escolha **Registro** \( ![ Record ](../media/record-icon.msft.png) \).  
    Depois de disparar alguma atividade de Sincronização em Segundo Plano, o DevTools registra os eventos na tabela.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Um log de eventos no painel Sincronização de Plano de Fundo" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -112,7 +112,7 @@ Depois que **um funcionário** de serviço recebe uma [Mensagem push][MDNPush] d
        O **painel Notificações**  
     :::image-end:::  
     
-1.  Escolha **Registro** \( ![ Record ][ImageRecordIcon] \).  
+1.  Escolha **Registro** \( ![ Record ](../media/record-icon.msft.png) \).  
    Depois de disparar algumas atividades de Notificações, o DevTools registra os eventos na tabela.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Um log de eventos no painel Notificações" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -137,7 +137,7 @@ Para exibir uma notificação por push para um usuário, um funcionário do serv
        Abra o **painel Mensagens por** Push  
     :::image-end:::  
     
-1.  Escolha **Registro** \( ![ Record ][ImageRecordIcon] \).  
+1.  Escolha **Registro** \( ![ Record ](../media/record-icon.msft.png) \).  
     Depois de disparar alguma atividade de Mensagem push, o DevTools registra os eventos na tabela.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Um log de eventos no painel Mensagens por Push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -153,10 +153,6 @@ Para exibir uma notificação por push para um usuário, um funcionário do serv
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 

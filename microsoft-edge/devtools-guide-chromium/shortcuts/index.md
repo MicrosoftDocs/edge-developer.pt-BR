@@ -3,16 +3,16 @@ description: A documentação canônica para atalhos de teclado do Microsoft Edg
 title: Atalhos de teclado do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398347"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439588"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -152,15 +152,11 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 | Limpar o **Console** | `Control`+`L` | `Command`+`K` ou `Option`+`L` |  
 | Force uma entrada de várias linhas.  Esse atalho é basicamente desnecessário, porque o DevTools deve detectar cenários de várias linhas por padrão | `Shift`+`Enter` | `Command`+`Return` |  
 | Executar | `Enter` | `Return` |  
-| Expanda todas as subpropropriedades de um objeto conectado ao Console | Segure `Alt` e escolha **Expandir** \( ![ Expand ][ImageExpandIcon] \) | Segure `Alt` e escolha **Expandir** \( ![ Expand ][ImageExpandIcon] \) |  
+| Expanda todas as subpropropriedades de um objeto conectado ao Console | Segure `Alt` e escolha **Expandir** \( ![ Expand ](../media/expand-icon.msft.png) \) | Segure `Alt` e escolha **Expandir** \( ![ Expand ](../media/expand-icon.msft.png) \) |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 

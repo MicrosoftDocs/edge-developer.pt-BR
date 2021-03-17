@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos do painel do Microsoft Edge
 title: Referência de Análise de Rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398375"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439700"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,12 @@ Por padrão, o DevTools registra todas as solicitações de rede na ferramenta *
 
 Para interromper a gravação de solicitações, conclua as etapas a seguir.  
 
-1.  Na ferramenta **Rede,** escolha **Parar de gravar log de rede** \( Pare de gravar log de rede ![ ][ImageRecordOnIcon] \).  Fica cinza para indicar que o DevTools não está mais gravando solicitações.  
+1.  Na ferramenta **Rede,** escolha **Parar de gravar log de rede** \( Pare de gravar log de rede ![ ](../media/record-on-icon.msft.png) \).  Fica cinza para indicar que o DevTools não está mais gravando solicitações.  
 1.  Selecione `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) enquanto **a ferramenta Rede** está em foco.  
 
 ### <a name="clear-requests"></a>Limpar solicitações  
 
-Escolha **Limpar** \( ![ Limpar ][ImageClearIcon] \) na ferramenta **Rede** para limpar todas as solicitações da tabela Solicitações.  
+Escolha **Limpar** \( ![ Limpar ](../media/clear-requests-icon.msft.png) \) na ferramenta **Rede** para limpar todas as solicitações da tabela Solicitações.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="O botão Limpar" lightbox="../media/network-network-clear-button.msft.png":::
    O **botão Limpar**  
@@ -239,7 +239,7 @@ Para filtrar solicitações por tipo de solicitação, escolha um dos seguintes 
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Media**  
+      **Mídia**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -929,7 +929,7 @@ Você pode expandir ou fechar **** seções da interface do usuário da ferramen
 ### <a name="hide-the-filters-pane"></a>Ocultar o painel Filtros  
 
 Por padrão, DevTools mostra o painel **Filtros.**  
-Escolha **Filtrar** \( ![ ][ImageFilterIcon] Filtrar \) para o ocultar.  
+Escolha **Filtrar** \( ![ ](../media/filter-icon.msft.png) Filtrar \) para o ocultar.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="O botão Ocultar Filtros" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    O botão Ocultar Filtros  
@@ -960,15 +960,6 @@ Por padrão, o DevTools exibe o painel **Visão** geral.  Para o ocultar, deslig
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 

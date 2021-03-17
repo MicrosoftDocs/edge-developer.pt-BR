@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398760"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439195"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,9 +72,9 @@ Esta folha de estilos não inclui apenas o código do componente do botão.  Ele
 ## <a name="record-code-coverage"></a>Cobertura de código de registro  
 
 1.  Escolha um dos seguintes botões no painel **Cobertura.**  
-    *   Escolha **Iniciar a Cobertura de Instrumentação** e Recarregar Página \( Iniciar Cobertura de Instrumentação e Recarregar Página \) se quiser revisar qual código é necessário para carregar a ![ ][ImageReloadIcon] página.  
-    *   Escolha **Cobertura de** Instrumento \( Cobertura de Instrumento \) se quiser revisar qual código é usado após interagir com a ![ ][ImageRecordIcon] página.  
-1.  Escolha **Parar a cobertura de instrumentação e mostrar resultados** \( Parar a cobertura de instrumentação e mostrar resultados \) quando quiser parar de gravar a cobertura de ![ ][ImageStopIcon] código.  
+    *   Escolha **Iniciar a Cobertura de Instrumentação** e Recarregar Página \( Iniciar Cobertura de Instrumentação e Recarregar Página \) se quiser revisar qual código é necessário para carregar a ![ ](../media/reload-icon.msft.png) página.  
+    *   Escolha **Cobertura de** Instrumento \( Cobertura de Instrumento \) se quiser revisar qual código é usado após interagir com a ![ ](../media/record-icon.msft.png) página.  
+1.  Escolha **Parar a cobertura de instrumentação e mostrar resultados** \( Parar a cobertura de instrumentação e mostrar resultados \) quando quiser parar de gravar a cobertura de ![ ](../media/stop-icon.msft.png) código.  
     
 ## <a name="analyze-code-coverage"></a>Analisar a cobertura de código  
 
@@ -93,12 +93,6 @@ A tabela no painel **Cobertura** exibe os recursos que foram analisados e quanto
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png  
-[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 

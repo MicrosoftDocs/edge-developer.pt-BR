@@ -3,16 +3,16 @@ description: Começar com emuladores do Surface Duo de Depuração Remota.
 title: Começar com emuladores do Surface Duo de Depuração Remota
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, depuração remota, android, surface duo
-ms.openlocfilehash: a9696e63528a674d349b78fbdec2a1b804f61c49
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398011"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439322"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Começar com emuladores do Surface Duo de Depuração Remota  
 
@@ -62,7 +62,7 @@ Alternar de volta para a instância da área de trabalho [do Microsoft Edge][Mic
 > [!NOTE]
 > Se **SurfaceDuoEmulator** não for exibido na página, tente abrir ou fechar guias no aplicativo Microsoft Edge no `edge://inspect` [Emulador surface Duo][DualScreenAndroidUseEmulator]. [][GooglePlayStoreAppsComMicrosoftEmmx]  Para obter etapas adicionais de solução de problemas, navegue até a seção [solução de problemas para dispositivos Android.][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]  
 
-Na lista de guias abertas em execução **** no emulador, escolha inspecionar na guia que tem o conteúdo da Web a ser depurado.  O [Microsoft Edge DevTools][DevtoolsIndex] será aberto em uma nova janela.  Escolha **Toggle Screencast** \( Toggle Screencast \) para exibir o conteúdo da Web a partir do ![ ][ImageToggleScreencastIcon] [emulador do Surface Duo][DualScreenAndroidUseEmulator] na janela DevTools.  Agora você pode usar o Microsoft Edge DevTools para depurar o conteúdo da Web no [emulador do Surface Duo.][DualScreenAndroidUseEmulator]  
+Na lista de guias abertas em execução **** no emulador, escolha inspecionar na guia que tem o conteúdo da Web a ser depurado.  O [Microsoft Edge DevTools][DevtoolsIndex] será aberto em uma nova janela.  Escolha **Toggle Screencast** \( Toggle Screencast \) para exibir o conteúdo da Web a partir do ![ ](../media/toggle-screencast-icon.msft.png) [emulador do Surface Duo][DualScreenAndroidUseEmulator] na janela DevTools.  Agora você pode usar o Microsoft Edge DevTools para depurar o conteúdo da Web no [emulador do Surface Duo.][DualScreenAndroidUseEmulator]  
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Usando o Microsoft Edge DevTools para depurar o Bing no aplicativo do Microsoft Edge no emulador do Surface Duo" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    Usando o Microsoft Edge DevTools para depurar o Bing no aplicativo do Microsoft Edge no emulador do Surface Duo  
@@ -79,9 +79,9 @@ A Web é uma ótima plataforma para a nova classe de dispositivos de tela dupla 
 *   [O explicador da plataforma Web do Microsoft Edge para novas APIs para criar experiências da Web em dispositivos dobráveis e de tela dupla][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
 *   [Gravação da sessão do Dia do Desenvolvedor do Microsoft 365: como criar experiências de tela dupla para sites e aplicativos Web][YoutubeDxrzwsqxpvc]  
 
-<!-- image links -->  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

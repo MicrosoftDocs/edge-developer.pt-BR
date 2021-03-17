@@ -3,16 +3,16 @@ description: Um tutorial sobre os recursos relacionados à rede mais populares n
 title: Inspecionar a atividade de rede no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 16b60716c91d2f4ce778f1fac37afc0e73e30ab6
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398655"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439693"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -151,7 +151,7 @@ A conexão de rede do computador que você usa para criar sites provavelmente é
        Escolha Slow 3G  
     :::image-end:::  
     
-1.  Pressione Longa **carga** \( Recarregar \) e escolha ![ Cache Vazio e ][ImageRefreshIcon] **Recarregá-lo.**  
+1.  Pressione Longa **carga** \( Recarregar \) e escolha ![ Cache Vazio e ](../media/refresh-icon.msft.png) **Recarregá-lo.**  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Cache vazio e recarregá-la" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Cache vazio e recarregá-la**  
@@ -166,7 +166,7 @@ A conexão de rede do computador que você usa para criar sites provavelmente é
 
 Capturas de tela exibem a aparência de uma página da Web ao longo do tempo enquanto ela é carregada.  
 
-1.  Escolha \( Configurações de rede \) e a caixa de seleção ![ ][ImageSettingsIcon] Captura captura **capturas** de tela.
+1.  Escolha \( Configurações de rede \) e a caixa de seleção ![ ](../media/settings-icon.msft.png) Captura captura **capturas** de tela.
 1.  Atualize a página novamente usando **o fluxo de trabalho de Cache Vazio e De Carregamento** Rígido.  Navegue [até Simular uma conexão mais](#simulate-a-slower-network-connection) lenta se precisar de um lembrete sobre como fazer isso.  
     O painel Capturas de Tela fornece miniaturas de como a página foi olhada em vários pontos durante o processo de carregamento.  
     
@@ -180,7 +180,7 @@ Capturas de tela exibem a aparência de uma página da Web ao longo do tempo enq
        A atividade de rede que estava acontecendo durante a primeira captura de tela  
     :::image-end:::  
     
-1.  Escolha \( Configurações de rede \) novamente e desativar a caixa de seleção Captura capturas de tela para fechar o ![ ][ImageSettingsIcon] painel Capturas de Tela. ****
+1.  Escolha \( Configurações de rede \) novamente e desativar a caixa de seleção Captura capturas de tela para fechar o ![ ](../media/settings-icon.msft.png) painel Capturas de Tela. ****
 1.  Atualize a página novamente.  
     
 ## <a name="inspect-the-details-of-the-resource"></a>Inspecionar os detalhes do recurso  
@@ -208,7 +208,7 @@ Escolha um recurso para saber mais sobre ele.  Experimente agora:
     :::image-end:::  
     
     > [!TIP]
-    > Quando um arquivo for minificado, escolha o botão **Formatar** \( Formatar \) na parte inferior do painel resposta para formatar o conteúdo do arquivo para capacidade ![ ][ImageFormatIcon] de leitura. ****  
+    > Quando um arquivo for minificado, escolha o botão **Formatar** \( Formatar \) na parte inferior do painel resposta para formatar o conteúdo do arquivo para capacidade ![ ](../media/format-icon.msft.png) de leitura. ****  
     
 1.  Escolha o **painel Timing.**  Uma divisão da atividade de rede do recurso é exibida.  
     
@@ -216,7 +216,7 @@ Escolha um recurso para saber mais sobre ele.  Experimente agora:
        O **painel Timing**  
     :::image-end:::  
     
-1.  Escolha **Fechar** \( ![ Fechar ][ImageCloseIcon] \) para exibir o Log de Rede novamente.  
+1.  Escolha **Fechar** \( ![ Fechar ](../media/close-icon.msft.png) \) para exibir o Log de Rede novamente.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="O botão Fechar" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        O **botão Fechar**  
@@ -230,7 +230,7 @@ Por exemplo, suponha que você queira verificar se seus recursos estão usando p
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Escolha **Pesquisar** \( ![ Pesquisar ][ImageSearchIcon] \).  O painel Pesquisar é aberto à esquerda do log de rede.  
+1.  Escolha **Pesquisar** \( ![ Pesquisar ](../media/search-icon.msft.png) \).  O painel Pesquisar é aberto à esquerda do log de rede.  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="O painel Pesquisar" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        O **painel** Pesquisar  
@@ -264,7 +264,7 @@ O DevTools fornece vários fluxos de trabalho para filtrar recursos que não sã
 
 A **barra de** ferramentas Filters deve ser ativado por padrão.  Caso não seja:  
 
-1.  Escolha **Filtrar** \( ![ ][ImageFilterIcon] Filtrar \) para exibi-lo.  
+1.  Escolha **Filtrar** \( ![ ](../media/filter-icon.msft.png) Filtrar \) para exibi-lo.  
     
 ### <a name="filter-by-string-regular-expression-or-property"></a>Filtrar por cadeia de caracteres, expressão regular ou propriedade  
 
@@ -334,7 +334,7 @@ Como uma página fica e se comporta quando alguns dos recursos da página não e
        **Mostrar Bloqueio de Solicitação**  
     :::image-end:::  
     
-1.  Escolha **Adicionar Padrão** \( Adicionar Padrão ![ ][ImageAddIcon] \).  
+1.  Escolha **Adicionar Padrão** \( Adicionar Padrão ![ ](../media/add-icon.msft.png) \).  
 1.  Digite `main.css`.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Bloqueando main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -362,17 +362,6 @@ Navegue até [a Referência de Rede][DevtoolsNetworkReference] para descobrir ma
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-icon.msft.png  
-[ImageCloseIcon]: ../media/close-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageScreenshotsIcon]: ../media/screenshots-icon.msft.png  
-[ImageSearchIcon]: ../media/search-icon.msft.png  
-[ImageSettingsIcon]: ../media/settings-icon.msft.png
 
 <!-- links -->  
 

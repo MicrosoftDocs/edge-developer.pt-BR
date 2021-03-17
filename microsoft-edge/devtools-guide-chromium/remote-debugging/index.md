@@ -1,18 +1,18 @@
 ---
 description: Conteúdo ao vivo de depuração remota em um dispositivo Android de um computador Windows ou macOS.
-title: Começar a depurar dispositivos Android remotos
+title: Introdução à depuração remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398256"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439561"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398256"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="get-started-with-remote-debugging-android-devices"></a>Começar a depurar dispositivos Android remotos  
+# <a name="get-started-with-remote-debugging-android-devices"></a>Introdução à depuração remota de dispositivos Android  
 
 Conteúdo ao vivo de depuração remota em um dispositivo Android do computador Windows ou macOS.  A página de tutorial a seguir ensina como concluir as seguintes ações.  
 
@@ -126,14 +126,14 @@ Escolha **a guia foco,** **recarregue**ou **feche** ao lado da guia que você de
 
 Navegue até **a ferramenta Elements** da sua instância do DevTools e passe o mouse em um elemento para realça-lo no viewport do seu dispositivo Android.  
 
-Você também pode selecionar um elemento na tela do dispositivo Android para selecioná-lo na **ferramenta Elementos.**  Escolha **Selecionar Elemento** \( Selecione Elemento \) ícone em sua instância do ![ DevTools e selecione o elemento na tela ][ImageSelectElementIcon] do dispositivo Android.  
+Você também pode selecionar um elemento na tela do dispositivo Android para selecioná-lo na **ferramenta Elementos.**  Escolha **Selecionar Elemento** \( Selecione Elemento \) ícone em sua instância do ![ DevTools e selecione o elemento na tela ](../media/select-element-icon.msft.png) do dispositivo Android.  
 
 > [!NOTE]
 > **Select Element** é desabilitado após a primeira seleção, portanto, você deve reabilitar sempre que quiser usar o recurso.  
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>Screencast your Android screen to your development machine  
 
-Escolha **Toggle Screencast** \( Toggle Screencast \) icon para exibir o conteúdo do seu dispositivo Android em sua instância ![ do ][ImageToggleScreencastIcon] DevTools.  
+Escolha **Toggle Screencast** \( Toggle Screencast \) icon para exibir o conteúdo do seu dispositivo Android em sua instância ![ do ](../media/toggle-screencast-icon.msft.png) DevTools.  
 
 Você pode interagir com o screencast das seguintes maneiras.  
 
@@ -152,11 +152,6 @@ Você pode interagir com o screencast das seguintes maneiras.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

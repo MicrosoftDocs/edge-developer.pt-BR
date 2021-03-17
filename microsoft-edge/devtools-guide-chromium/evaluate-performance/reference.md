@@ -3,16 +3,16 @@ description: Uma referência sobre todas as maneiras de registrar e analisar o d
 title: Referência de análise de desempenho
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 181bc05fffbaef6a06bebcc5cb9ccfcc8e7de498
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398802"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439686"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ Grave o desempenho do tempo de execução quando quiser analisar o desempenho de
 
 1.  Navegue até a página que você deseja analisar.  
 1.  Abra a **ferramenta Performance** no DevTools.  
-1.  Escolha **Gravar** \( ![ Ícone de registro ][ImageRecordIcon] \).  
+1.  Escolha **Gravar** \( ![ Ícone de registro ](../media/record-icon.msft.png) \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
@@ -57,7 +57,7 @@ Registrar o desempenho da carga quando você quiser analisar o desempenho de uma
 
 1.  Navegue até a página que você deseja analisar.  
 1.  Abra o **painel Desempenho** do DevTools.  
-1.  Escolha **Atualizar página** \( Atualizar Página ![ ][ImageRefreshPageIcon] \).  O DevTools registra métricas de desempenho enquanto a página é atualizada e interrompe automaticamente a gravação alguns segundos depois que a carga é final.  
+1.  Escolha **Atualizar página** \( Atualizar Página ![ ](../media/refresh-page-icon.msft.png) \).  O DevTools registra métricas de desempenho enquanto a página é atualizada e interrompe automaticamente a gravação alguns segundos depois que a carga é final.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Página Atualizar" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Página Atualizar**  
@@ -81,7 +81,7 @@ Navegue [até Exibir uma captura de](#view-a-screenshot) tela para saber como in
 
 ### <a name="force-garbage-collection-while-recording"></a>Forçar a coleta de lixo durante a gravação  
 
-Enquanto estiver gravando uma página, escolha **Coletar lixo** \( Coletar ícone de ![ lixo ][ImageCollectGarbageIcon] \) para forçar a coleta de lixo.  
+Enquanto estiver gravando uma página, escolha **Coletar lixo** \( Coletar ícone de ![ lixo ](../media/collect-garbage-icon.msft.png) \) para forçar a coleta de lixo.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Coletar lixo" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Coletar lixo  
@@ -89,7 +89,7 @@ Enquanto estiver gravando uma página, escolha **Coletar lixo** \( Coletar ícon
 
 ### <a name="show-recording-settings"></a>Mostrar configurações de gravação  
 
-Escolha **Configurações de captura** \( Configurações de captura \) para expor mais configurações relacionadas à forma como o ![ ][ImageCaptureSettingsIcon] DevTools captura gravações de desempenho.  
+Escolha **Configurações de captura** \( Configurações de captura \) para expor mais configurações relacionadas à forma como o ![ ](../media/capture-settings-icon.msft.png) DevTools captura gravações de desempenho.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="A seção Configurações de Captura" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    A **seção Configurações de** Captura  
@@ -161,7 +161,7 @@ Para carregar uma gravação, abra o menu contextual \(clique com o botão direi
 
 ## <a name="clear-the-previous-recording"></a>Limpar a gravação anterior  
 
-Depois de fazer uma gravação, escolha **Limpar gravação** \( Limpar o ícone de gravação \) para limpar essa gravação do ![ painel ][ImageClearRecordingIcon] **Desempenho.**  
+Depois de fazer uma gravação, escolha **Limpar gravação** \( Limpar o ícone de gravação \) para limpar essa gravação do ![ painel ](../media/clear-recording-icon.msft.png) **Desempenho.**  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Limpar gravação" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Limpar gravação**  
@@ -201,13 +201,13 @@ Selecione `Control` + `F` \(Windows, Linux\) ou `Command` + `F` \(macOS\) **** p
 
 Para navegar em atividades que corresponderem à sua consulta:  
 
-*   Use os **botões Anterior** \( ![ Previous ][ImagePreviousIcon] \) e **Next** \( ![ Next ][ImageNextIcon] \) .  
+*   Use os **botões Anterior** \( ![ Previous ](../media/previous-icon.msft.png) \) e **Next** \( ![ Next ](../media/next-icon.msft.png) \) .  
 *   Selecione `Shift` + `Enter` para selecionar o anterior ou `Enter` para selecionar o próximo.  
 
 Para modificar as configurações de consulta:  
 
-*   Escolha **Case sensitive** \( Case sensitive ![ ][ImageSearchCaseIcon] \) to make the query case sensitive.  
-*   Escolha **Regex** \( ![ Regex ][ImageSearchRegexIcon] \) para usar uma expressão regular em sua consulta.  
+*   Escolha **Case sensitive** \( Case sensitive ![ ](../media/search-case-icon.msft.png) \) to make the query case sensitive.  
+*   Escolha **Regex** \( ![ Regex ](../media/search-regex-icon.msft.png) \) para usar uma expressão regular em sua consulta.  
 
 Para ocultar a caixa de pesquisa, escolha **Cancelar**.  
 
@@ -278,7 +278,7 @@ Use a **caixa de texto** Filtrar para filtrar eventos pelo nome da atividade.
 
 Por padrão, o menu **Agrupar** é definido como **Sem Agrupar**.  Use o menu **Agrupar** para classificar a tabela de atividades com base em vários critérios.  
 
-Escolha **Mostrar Pilha Mais Pesada** \( Mostrar Pilha Mais Pesada \) para revelar outra tabela à direita da tabela ![ ][ImageShowHeaviestStackIcon] **Atividade.**  Escolha uma atividade para preencher a tabela **Pilha Mais** Pesada.  A **tabela Pilha mais pesada** exibe quais filhos da atividade selecionada levaram mais tempo para ser executado.  
+Escolha **Mostrar Pilha Mais Pesada** \( Mostrar Pilha Mais Pesada \) para revelar outra tabela à direita da tabela ![ ](../media/show-heaviest-stack-icon.msft.png) **Atividade.**  Escolha uma atividade para preencher a tabela **Pilha Mais** Pesada.  A **tabela Pilha mais pesada** exibe quais filhos da atividade selecionada levaram mais tempo para ser executado.  
 
 #### <a name="the-bottom-up-panel"></a>O Bottom-Up painel  
 
@@ -489,9 +489,9 @@ Passe o mouse em uma camada para realça-la no diagrama.
 
 Para mover o diagrama:  
 
-*   Escolha **Modo Pan** \( Modo Pan ![ ][ImagePanModeIcon] \) para mover ao longo dos eixos X e Y.  
-*   Escolha **Girar Modo** \( Modo de ![ Rotação ][ImageRotateModeIcon] \) para girar ao longo do eixo Z.  
-*   Escolha **Redefinir Transformar** \( ![ Redefinir Transformar ][ImageResetTransformIcon] \) para redefinir o diagrama para a posição original.  
+*   Escolha **Modo Pan** \( Modo Pan ![ ](../media/pan-mode-icon.msft.png) \) para mover ao longo dos eixos X e Y.  
+*   Escolha **Girar Modo** \( Modo de ![ Rotação ](../media/rotate-mode-icon.msft.png) \) para girar ao longo do eixo Z.  
+*   Escolha **Redefinir Transformar** \( ![ Redefinir Transformar ](../media/reset-transform-icon.msft.png) \) para redefinir o diagrama para a posição original.  
     
 ### <a name="view-paint-profiler"></a>Exibir profiler de tinta  
 
@@ -573,22 +573,6 @@ Para exibir problemas de desempenho de rolagem, conclua as seguintes ações.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: ../media/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: ../media/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageNextIcon]: ../media/next-icon.msft.png  
-[ImagePanModeIcon]: ../media/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: ../media/previous-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png
-[ImageRefreshPageIcon]: ../media/refresh-page-icon.msft.png  
-[ImageResetTransformIcon]: ../media/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: ../media/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: ../media/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: ../media/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: ../media/show-heaviest-stack-icon.msft.png  
 
 <!-- links -->  
 

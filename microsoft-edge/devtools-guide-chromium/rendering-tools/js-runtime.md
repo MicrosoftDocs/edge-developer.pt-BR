@@ -3,16 +3,16 @@ description: Identifique funções caras usando o painel Memória do Microsoft E
 title: Acelerar o tempo de execução do JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397598"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439735"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,7 +30,7 @@ ms.locfileid: "11397598"
 
 # <a name="speed-up-javascript-runtime"></a>Acelerar o tempo de execução do JavaScript  
 
-Identifique funções caras usando o **painel Memória.**  
+Identifique funções caras usando a **ferramenta Memória.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfis de Exemplo" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Perfis de Exemplo  
@@ -38,14 +38,14 @@ Identifique funções caras usando o **painel Memória.**
 
 ### <a name="summary"></a>Resumo  
 
-*   Grave exatamente quais funções foram chamadas e quanta memória cada uma requer com a Amostragem de Alocação no **painel Memória.**  
+*   Grave exatamente quais funções foram chamadas e quanta memória cada uma requer com a Amostragem de Alocação na **ferramenta Memória.**  
 *   Visualize seus perfis como um gráfico de chama.  
     
 ## <a name="record-a-sampling-profile"></a>Registrar um perfil de amostragem  
 
 Se você observar jank em seu JavaScript, colete um Perfil de Amostragem.  Os Perfis de Amostragem mostram onde o tempo de execução é gasto em funções em sua página.  
 
-1.  Navegue até **o painel Memória** do DevTools.  
+1.  Navegue até **a ferramenta Memória** do DevTools.  
 1.  Escolha o **botão de rádio de amostragem** de alocação.  
 1.  Escolha **Iniciar**.  
 1.  Dependendo do que você está tentando analisar, você pode atualizar a página, interagir com a página ou apenas deixar a página ser executado.  
@@ -62,7 +62,7 @@ O modo de exibição padrão **é Heavy \(Bottom Up\)**.  Essa exibição permit
 
 ### <a name="change-sort-order"></a>Alterar ordem de classificação  
 
-Para alterar a ordem de classificação, selecione o menu suspenso ao lado da função selecionada **de** foco \( ícone de função selecionada por foco \) e escolha uma ![ das opções a ][ImageFocusIcon] seguir.
+Para alterar a ordem de classificação, selecione o menu suspenso ao lado da função selecionada **de** foco \( ícone de função selecionada por foco \) e escolha uma ![ das opções a ](../media/focus-icon.msft.png) seguir.
 
 **Gráfico**.  Exibe um gráfico cronologicamente da gravação.  
 
@@ -84,9 +84,9 @@ Para alterar a ordem de classificação, selecione o menu suspenso ao lado da fu
 
 ### <a name="exclude-functions"></a>Excluir funções  
 
-Para excluir uma função do seu Perfil de Amostragem, selecione-a e selecione o botão **excluir** função selecionada \( excluir função ![ selecionada ][ImageExcludeIcon] \).  A função solicitante \(parent\) da função excluída \(child\) é carregada com a memória alocada atribuída à função excluída \(child\).  
+Para excluir uma função do seu Perfil de Amostragem, escolha-a e escolha o botão **excluir** função selecionada \( excluir função ![ selecionada ](../media/exclude-icon.msft.png) \).  A função solicitante \(parent\) da função excluída \(child\) é carregada com a memória alocada atribuída à função excluída \(child\).  
 
-Escolha o **botão restaurar todas as** funções \( restaure todas as funções \) para restaurar todas as funções excluídas de volta à ![ ][ImageRestoreIcon] gravação.  
+Escolha o **botão restaurar todas as** funções \( restaure todas as funções \) para restaurar todas as funções excluídas de volta à ![ ](../media/restore-icon.msft.png) gravação.  
 
 ## <a name="view-sampling-profile-as-chart"></a>Exibir Perfil de Amostragem como Gráfico  
 
@@ -123,7 +123,7 @@ Escolha, segure e arraste o mouse para a esquerda e para a direita na visão ger
 
 ### <a name="view-function-details"></a>Exibir detalhes da função  
 
-Escolha uma função para exibir a definição no painel **Fontes.**  
+Escolha uma função para exibir a definição na **ferramenta Fontes.**  
 
 Passe o mouse em uma função para exibir o nome e os dados de tempo.  As informações a seguir são fornecidas.  
 
@@ -144,12 +144,6 @@ Passe o mouse em uma função para exibir o nome e os dados de tempo.  As inform
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

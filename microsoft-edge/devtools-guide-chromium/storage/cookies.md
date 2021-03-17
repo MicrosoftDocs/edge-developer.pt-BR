@@ -3,16 +3,16 @@ description: Saiba como exibir, editar e excluir os cookies HTTP de uma página 
 title: Exibir, editar e excluir cookies com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397745"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439679"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,13 +81,13 @@ Clique duas vezes em um campo para editá-lo.
 
 ## <a name="delete-cookies"></a>Excluir cookies  
 
-Escolha um cookie e escolha **Excluir Selecionado** \( Excluir ![ Selecionado ][ImageDeleteIcon] \) para excluir o cookie específico.  
+Escolha um cookie e escolha **Excluir Selecionado** \( Excluir ![ Selecionado ](../media/delete-icon.msft.png) \) para excluir o cookie específico.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Excluir um cookie específico" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figura 5: Excluir um cookie específico  
 :::image-end:::  
 
-Escolha **Limpar Tudo** \( Limpar Tudo ![ ][ImageClearIcon] \) para excluir todos os cookies.  
+Escolha **Limpar Tudo** \( Limpar Tudo ![ ](../media/clear-icon.msft.png) \) para excluir todos os cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Limpar todos os cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figura 6: Limpar todos os cookies  
@@ -96,11 +96,6 @@ Escolha **Limpar Tudo** \( Limpar Tudo ![ ][ImageClearIcon] \) para excluir todo
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

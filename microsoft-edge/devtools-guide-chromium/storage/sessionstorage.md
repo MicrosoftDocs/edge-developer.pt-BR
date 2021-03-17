@@ -3,16 +3,16 @@ description: Como exibir e editar sessõesStorage com o painel Armazenamento de 
 title: Exibir e editar o armazenamento de sessão com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398004"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439658"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,12 +80,12 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
 
 1.  [Exibir os `sessionStorage` pares de valores-chave de um domínio](#view-sessionstorage-keys-and-values).  
 1.  Escolha o par de valores-chave que você deseja excluir.  O DevTools realça o azul para indicar que ele está selecionado.  
-1.  Selecione a `Delete` chave ou escolha Excluir **Selecionado** \( Excluir ![ Selecionado ][ImageDeleteIcon] \).  
+1.  Selecione a `Delete` chave ou escolha Excluir **Selecionado** \( Excluir ![ Selecionado ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Excluir todos os pares de valores de chave sessionStorage para um domínio  
 
 1.  [Exibir os `sessionStorage` pares de valores-chave de um domínio](#view-sessionstorage-keys-and-values).  
-1.  Escolha **Limpar Tudo** \( Limpar Tudo ![ ][ImageClearIcon] \).  
+1.  Escolha **Limpar Tudo** \( Limpar Tudo ![ ](../media/clear-icon.msft.png) \).  
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a>Interagir com sessionStorage do Console  
 
@@ -106,11 +106,6 @@ Como você pode executar JavaScript no **Console**e, como o **Console** tem aces
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

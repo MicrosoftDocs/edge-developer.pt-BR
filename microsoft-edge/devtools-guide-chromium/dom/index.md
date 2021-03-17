@@ -3,16 +3,16 @@ description: Como exibir nós, pesquisar nós, editar nós, fazer referência a 
 title: Começar a exibir e alterar o DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398326"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439237"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -61,7 +61,7 @@ Quando você estiver interessado em um nó DOM específico, **Inspecionar** é u
            Realça o `Michelangelo` nó  
         :::image-end:::  
         
-        1.  Escolha o **ícone Inspecionar** \( ![ Inspecionar ][ImageInspectIcon] \) no canto superior esquerdo do DevTools.  
+        1.  Escolha o **ícone Inspecionar** \( ![ Inspecionar ](../media/inspect-icon.msft.png) \) no canto superior esquerdo do DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="O ícone Inspecionar" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                O **ícone Inspecionar**  
@@ -285,14 +285,14 @@ Use pontos de interrupção de modificação de atributo quando quiser pausar o 
            **Quebra de modificações de atributo**  
         :::image-end:::  
         
-    1.  Na próxima etapa, você será instruído a escolher um botão que pausa o código da página.  Depois que a página for pausada, você não poderá mais rolar a página.  Você deve escolher **Resume Script** \( Resume ![ Script ][ImageResumeScriptIcon] \) para tornar a página rolável novamente.
+    1.  Na próxima etapa, você será instruído a escolher um botão que pausa o código da página.  Depois que a página for pausada, você não poderá mais rolar a página.  Você deve escolher **Resume Script** \( Resume ![ Script ](../media/resume-script-icon.msft.png) \) para tornar a página rolável novamente.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Onde retomar a execução do script" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Onde retomar a execução do script  
         :::image-end:::  
         
     1.  Escolha o **botão Definir Plano de** Fundo acima.  Isso define o `style` atributo do nó como `background-color:thistle` .  O DevTools pausa a página e realça o código que causou a alteração do atributo.  
-    1.  Escolha **Retomar Script** \( Resume Script ![ ][ImageResumeScriptIcon] \), conforme mencionado anteriormente.  
+    1.  Escolha **Retomar Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \), conforme mencionado anteriormente.  
     
 ### <a name="break-on-node-removal"></a>Quebra na remoção do nó  
 
@@ -302,7 +302,7 @@ Se você quiser pausar quando um nó específico for removido, use pontos de int
 1.  Em **Quebra na Remoção de Nó**, escolha Com o direito o **Neuromancer** e escolha **Inspecionar**.  
     1.  Na Árvore DOM, passe o mouse sobre , abra o menu contextual \(clique com o botão direito `<li id="target">Neuromancer</li>` do mouse\) e escolha Break **On**  >  **Node Removal**.  Navegue [até Apêndice: Opções ausentes](#appendix-missing-options) se a opção não for exibida.  
     1.  Escolha o **botão Excluir** acima.  O DevTools pausa a página e realça o código que fez com que o nó fosse removido.  
-    1.  Escolha **Retomar Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+    1.  Escolha **Retomar Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Quebra em modificações de subárvore  
 
@@ -312,7 +312,7 @@ Depois de colocar um ponto de interrupção de modificação de subárvore em um
 1.  Em **Break on Subtree Modifications**, right-choose **A Fire Upon The Deep** e choose **Inspect**.  
     1.  Na Árvore DOM, passe o mouse sobre , que é o nó acima, abra o menu contextual \(clique com o botão direito do mouse\) e escolha `<ul id="target">` `<li>A Fire Upon the Deep</li>` Quebrar **modificações**  >  **de subárvore**.  Se a opção não for exibida, navegue até [Apêndice: Opções ausentes](#appendix-missing-options).  
     1.  Escolha **Adicionar Filho**.  O código pausa porque um `<li>` nó foi adicionado à lista.  
-    1.  Escolha **Retomar Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+    1.  Escolha **Retomar Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Próximas etapas  
 
@@ -416,11 +416,6 @@ Muitas das instruções neste tutorial instruim você a passar o mouse em um nó
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 
