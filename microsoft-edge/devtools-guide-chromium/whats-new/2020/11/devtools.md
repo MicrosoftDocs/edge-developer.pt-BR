@@ -3,16 +3,17 @@ description: Microsoft Edge no Linux, webhints aperfeiçoadas na ferramenta Issu
 title: O que há de novo no DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408364"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439272"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -113,9 +114,9 @@ No painel **Estilos**, as [variáveis CSS][MdnUsingCssCustomProperties] agora se
 
 Os novos recursos a seguir nas ferramentas [Rede](#network-tool), [Aplicativo](#application-tool)e [Fontes](#sources-tool) ajudam você a criar seu [PWA][ProgressiveWebAppsIndex].  Use os recursos a seguir quando tiver dificuldades para depurar o Trabalho de Serviço.  
 
-O roteamento de solicitação exibe os eventos `startup` e os eventos `fetch` com base nas solicitações de rede executadas por meio de Trabalho de Serviço.  As linhas do tempo são acessadas a partir da ferramenta **Aplicativo** ou **Rede**.  As linhas do tempo ajudam quando você está com problemas com os funcionários do serviço e deseja exibir se há algo de errado com `startup` o evento `fetch` ou.  
+O roteamento de solicitação exibe os eventos `startup` e os eventos `fetch` com base nas solicitações de rede executadas por meio de Trabalho de Serviço.  As linhas do tempo são acessadas a partir da ferramenta **Aplicativo** ou **Rede**.  Os cronogramas ajudam quando você está tendo problemas com trabalhadores de serviço e deseja exibir se algo está errado com o evento `startup` ou `fetch`.  
 
-### <a name="application-tool"></a>Ferramenta Aplicativo  
+### <a name="application-tool"></a>Ferramenta aplicativo  
 
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
@@ -342,7 +343,7 @@ Por exemplo, a ferramenta **Rede** anteriormente usada `kB` em rótulos, mas ago
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Baixar os canais de visualização do Microsoft Edge  
 
-Se você estiver no Windows, Linux ou macOS, considere usar os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você estiver no Windows, Linux ou macOS, considere usar os [canais de prévia do Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Como entrar em contato com a equipe do Microsoft Edge DevTools  
 

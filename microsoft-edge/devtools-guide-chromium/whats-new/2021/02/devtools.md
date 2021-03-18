@@ -1,18 +1,19 @@
 ---
-description: Suporte de depuração para CSS Flexbox, exibição de heads-up de desempenho na página da Web, problemas de atualizações da ferramenta e muito mais
-title: Novidades no DevTools (Microsoft Edge 90)
+description: Suporte de depuração para CSS Flexbox, tela de alerta de desempenho na página da Web, atualizações de ferramenta de problemas e muito mais
+title: O que há de novo no DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4222bcf7284b69269691ec9fb78094e5efb95793
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408431"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439742"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -27,7 +28,7 @@ ms.locfileid: "11408431"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-90"></a>Novidades no DevTools (Microsoft Edge 90)  
+# <a name="whats-new-in-devtools-microsoft-edge-90"></a>O que há de novo no DevTools (Microsoft Edge 90)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
@@ -36,9 +37,9 @@ ms.locfileid: "11408431"
 <!-- Title: Grouping the tools in Focus Mode  -->  
 <!-- Subtitle: Organize your favorite tools into groups with the new Focus Mode UI.  -->  
 
-O Modo de Foco é uma interface experimental que permite agrupar diferentes ferramentas com base em seus próprios cenários de depuração.  A nova **Barra de Atividades** exibida à esquerda inclui grupos de ferramentas predefinidos, como **Layout** e **Depuração.**  Para personalizar cada grupo de ferramentas, feche as ferramentas com o ícone **Fechar** \( \) ou adicione novas ferramentas com o ícone `X` Mais **ferramentas** \( `+` \).  
+O Modo de Foco é uma interface experimental que permite agrupar diferentes ferramentas com base em seus próprios cenários de depuração.  A nova **Barra de Atividades** exibida à esquerda inclui grupos de ferramentas predefinidos, como **Layout** e **Depuração**.  Para personalizar cada grupo de ferramentas, feche as ferramentas com o ícone **Fechar** \(`X`\) ou adicione novas ferramentas com o ícone **Mais ferramentas** \(`+`\).  
 
-Para ativar o experimento, [][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] navegue até Ativar recursos experimentais e escolha as caixas de seleção ao lado de Focus Mode e **DevTools Tooltips** e **Habilitar + menus**de guia de botão para abrir mais ferramentas .  Para obter mais informações sobre esse recurso ou para comentar com perguntas e ideias, navegue até [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+Para ativar o experimento, navegue até [Ativar recursos experimentais][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] e escolha as caixas de seleção ao lado de **Modo de foco e Dicas de ferramentas do DevTools** e **Habilitar os menus da guia do botão + para abrir mais ferramentas**.  Para obter mais informações sobre este recurso ou para comentar com perguntas e ideias, navegue até [DevTools: Interface do usuário Modo de Foco][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
 :::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Exibir a Barra de Atividades" lightbox="../../media/2021/02/focus-mode.msft.png":::
    Exibir a **Barra de Atividades**  
@@ -49,106 +50,106 @@ Para ativar o experimento, [][DevtoolsExperimentalFeaturesIndexTurnOnExperimenta
 <!-- Title: DevTools Tooltips  -->  
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
 
-O recurso Dicas de Ferramentas do DevTools ajuda você a aprender sobre todas as diferentes ferramentas e painéis.  Escolha o ícone Ajuda \( \) na parte inferior da Barra de Atividades para alternar dicas de `?` ferramenta no **** DevTools.  Quando as dicas de ferramenta estão ativados, passe o mouse sobre cada região descrita do DevTools para saber mais sobre como usar a ferramenta.  Para ativar o experimento, [][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] navegue até Ativar recursos experimentais e escolha as caixas de seleção ao lado de Focus Mode e **DevTools Tooltips** e **Habilitar + menus**de guia de botão para abrir mais ferramentas .  Para obter mais informações sobre esse recurso ou para comentar com perguntas e ideias, navegue até [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+O recurso de Dicas de Ferramentas do DevTools ajuda você a aprender sobre todas as diferentes ferramentas e painéis.  Escolha o ícone Ajuda \(`?`\) na parte inferior da **Barra de Atividades** para alternar as dicas de ferramentas no DevTools.  Quando as dicas de ferramentas estiverem habilitadas, passe o mouse sobre cada região delineada do DevTools para saber mais sobre como usar a ferramenta.  Para ativar o experimento, navegue até [Ativar recursos experimentais][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] e escolha as caixas de seleção ao lado de **Modo de foco e Dicas de ferramentas do DevTools** e **Habilitar os menus da guia do botão + para abrir mais ferramentas**.  Para obter mais informações sobre este recurso ou para comentar com perguntas e ideias, navegue até [DevTools: Interface do usuário Modo de Foco][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Escolha o ícone ajuda (?) na Barra de Atividades para exibir dicas de ferramentas" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Escolha o ícone Ajuda \( `?` \) na **Barra de Atividades** para exibir dicas de ferramenta  
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Escolha o ícone de Ajuda (?) Na Barra de Atividades para exibir as dicas de ferramentas" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Escolha o ícone Ajuda \(`?`\) na **Barra de Atividades** para exibir dicas de ferramenta  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalizar atalhos de teclado em Configurações  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalize os atalhos do teclado em Configurações  
 
 <!-- Title: Change keyboard shortcuts in Settings  -->  
 <!-- TODO:  Rachel's feedback is about the fact that this experimental feature is turned on by default, may have separate section in What's New for experimental features)  -->  
 <!-- Subtitle: Make DevTools work better for you by creating new keyboard shortcuts for any action in the DevTools.  -->  
 
-Agora você pode personalizar o atalho do teclado para qualquer ação no DevTools.  Para editar um atalho de teclado, conclua as seguintes ações.  
+Agora você pode personalizar o atalho de teclado para qualquer ação no DevTools.  Para editar um atalho de teclado, execute as seguintes ações.  
 
-1.  Abra o DevTools e escolha **Atalhos**  >  **de Configurações.**  
+1.  Abra o DevTools e escolha **Atalhos** > **de Configurações**.  
 1.  Escolha a ação que você deseja personalizar.  
-1.  Escolha Editar \(![Editar ícone de atalho do teclado](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) ícone.  
-1.  Selecione as chaves que você deseja vincular à ação.  
-1.  Escolha a marca de seleção \(![Ícone de Atalho de Teclado de Marca de Verificação](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) ícone.  
+1.  Escolha Editar \(![Editar o ícone de Atalho de Teclado](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) ícone.  
+1.  Selecione as teclas que você deseja vincular à ação.  
+1.  Escolha a marca de seleção \(![Ícone de Atalho de Teclado marca de seleção](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) ícone.  
     
-Para obter mais informações sobre como personalizar e editar atalhos, navegue até Personalizar atalhos de teclado [no Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  Para revisar atualizações em tempo real sobre esse recurso no projeto de código aberto do Chromium, navegue até o Problema [174309][CR174309].  
+Para obter mais informações sobre como personalizar e editar atalhos, navegue até [Personalizar atalhos de teclado no Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  Para revisar as atualizações em tempo real desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [174309][CR174309].  
 
-:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Personalizar atalhos de teclado nas Configurações de DevTools em Atalhos com um atalho no modo de edição" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
-   Personalizar atalhos de teclado nas [Configurações de DevTools][DevtoolsCustomizeIndexSettings] em Atalhos com um atalho no modo de edição  
+:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Personalize os atalhos de teclado nas Configurações do DevTools em Atalhos com um atalho no modo de edição" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+   Personalize os atalhos de teclado nas [Configurações do DevTools][DevtoolsCustomizeIndexSettings] em Atalhos com um atalho no modo de edição  
 :::image-end:::  
 
-## <a name="microsoft-edge-devtools-for-visual-studio-code-extension-update-114"></a>Microsoft Edge DevTools para Visual Studio atualização de extensão de código 1.1.4  
+## <a name="microsoft-edge-devtools-for-visual-studio-code-extension-update-114"></a>Atualização 1.1.4 da extensão do Microsoft Edge DevTools para o Visual Studio Code  
 
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->  
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->  
 
-O [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version 1.1.4 for Microsoft Visual Studio Code agora exibe um favicon ao lado de cada uma das instâncias do DevTools.  As mensagens de console do Microsoft Edge agora são exibidas no **Console de DevTools** em **Saída** do Microsoft Visual Studio Code.  O Microsoft Visual Studio Code atualiza as extensões automaticamente.  Para atualizar manualmente para a versão 1.1.4, navegue até [Atualizar uma extensão manualmente.][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  Você pode registrar problemas e contribuir para a extensão no repositório [do GitHub vscode-edge-devtools.][GithubMicrosoftVscodeEdgeDevtools]  
+O [Microsoft Edge Developer Tools para o Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extensão 1.1.4 para o Microsoft Visual Studio Code agora exibe um favicon próximo a cada uma das instâncias do DevTools.  As mensagens do console do Microsoft Edge agora são exibidas no **Console do DevTools** em **Saída** do Microsoft Visual Studio Code.  O Microsoft Visual Studio Code atualiza as extensões automaticamente.  Para atualizar manualmente para a versão 1.1.4, navegue até [Atualizar uma extensão manualmente][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  Você pode registrar problemas e contribuir para a extensão no repositório do GitHub [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools].  
 
 :::row:::
    :::column span="":::
-      A figura a seguir exibe mensagens de uma página da Web de exemplo registrada na **ferramenta Console** no Microsoft Edge.  
+      A figura a seguir exibe as mensagens de uma página da Web de exemplo registrada na ferramenta **Console** no Microsoft Edge.  
    :::column-end:::
    :::column span="":::
-      A figura a seguir exibe as mesmas mensagens da página da Web de exemplo registrada no **Console de DevTools** em **Saída** do Microsoft Visual Studio Code.  
+      A figura a seguir exibe as mesmas mensagens da página da Web de exemplo registrada no **Console do DevTools** em **Saída** do Microsoft Visual Studio Code.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Exibir uma mensagem no Console no Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
-         Exibir uma mensagem no Console no Microsoft Edge DevTools  
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Exibir uma mensagem no Console do Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+         Exibir uma mensagem no Console do Microsoft Edge DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Exibir a mesma mensagem no Console de DevTools em Saída do Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
-         Exibir a mesma mensagem no Console de DevTools em Saída do Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Exibir a mesma mensagem no Console do DevTools em Saída do Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+         Exibir a mesma mensagem no Console do DevTools em Saída do Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="improved-css-flexbox-editing-with-visual-flexbox-editor-and-multiple-overlays"></a>Edição de flexbox CSS aprimorada com editor de flexbox visual e várias sobreposições  
+## <a name="improved-css-flexbox-editing-with-visual-flexbox-editor-and-multiple-overlays"></a>Edição com CSS flexbox aprimorada com editor visual flexbox e múltiplas sobreposições  
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->  
 <!-- Subtitle: In the Styles pane, choose the icon that appears next to display: flex to try different layout properties for flex containers.  -->  
 
-O DevTools agora tem ferramentas de depuração de área de flexbox CSS dedicadas.  Se o estilo ou CSS for aplicado a um elemento HTML, um ícone será exibido ao lado desse `display: flex` `display: inline-flex` elemento na ferramenta `flex` **Elements.**  Para exibir \(ou ocultar\) uma sobreposição flexível na página da Web, escolha o `flex` ícone.  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até Problemas [1166710][CR1166710] e [1175699][CR1175699].  
+O DevTools agora possui ferramentas de depuração do CSS flexbox dedicadas.  Se o `display: flex` ou `display: inline-flex` estilo CSS for aplicado a um elemento HTML, um `flex` ícone será exibido próximo a esse elemento na ferramenta **Elementos**.  Para exibir \(ou ocultar\) uma sobreposição flexível na página da Web, escolha o ícone`flex`.  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até os Problemas [1166710][CR1166710] e [1175699][CR1175699].  
 
 :::row:::
    :::column span="":::
-      Para abrir o editor **do Flexbox,** navegue até o painel **Estilos** e escolha o novo ícone ao lado `display: flex` do ou `display: inline-flex` estilo.  O **editor do Flexbox** fornece uma maneira rápida de editar as propriedades do flexbox.  
+      Para abrir o editor do**Flexbox**, navegue até o painel **Estilos** e escolha o novo ícone ao lado do `display: flex` ou `display: inline-flex` estilo.  O editor do **Flexbox** fornece uma maneira rápida de editar as propriedades do flexbox.  
    :::column-end:::
    :::column span="":::
-      Além disso, a **seção Flexbox** no **painel Layout** exibe todos os elementos de flexbox na página da Web.  Você pode alternar a sobreposição de cada elemento.  
+      Além disso, a seção do **Flexbox** no painel **Layout** exibe todos os elementos do flexbox na página da Web.  Você pode alternar a sobreposição de cada elemento.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="Ferramentas de depuração de flexbox CSS" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
-         Ferramentas de depuração de flexbox CSS  
+      :::image type="complex" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="Ferramentas de depuração do CSS flexbox" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+         Ferramentas de depuração do CSS flexbox  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Seção Flexbox no painel Layout" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
-         **Seção Flexbox** no **painel Layout**  
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Seção do Flexbox no painel Layout" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+         Seção do **Flexbox** no painel **Layout**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="keyboard-navigation-improvements-for-network-requests"></a>Melhorias de navegação de teclado para solicitações de rede  
+## <a name="keyboard-navigation-improvements-for-network-requests"></a>Melhorias na navegação do teclado para solicitações de rede  
 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->  
 <!-- Subtitle: The Initiator pane may now be expanded or collapsed with the arrow keys.  -->  
 
-Anteriormente, você não era capaz de expandir ou fechar a cadeia **** de solicitações usando as teclas de seta no teclado no painel Iniciador, ao contrário do DOM na **ferramenta Elements.**  Quando uma solicitação de **** rede é selecionada na ferramenta Rede, o painel **Iniciador** exibe a cadeia de solicitações que iniciou a solicitação selecionada no momento.  
+Anteriormente, você não conseguia expandir ou recolher a cadeia de solicitações usando as teclas de direção do teclado no painel **Iniciador**, ao contrário do DOM na ferramenta **Elementos**.  Quando uma solicitação de rede é selecionada na ferramenta **Rede**, o painel **Iniciador** exibe a cadeia de solicitações que iniciou a solicitação atualmente selecionada.  
 
-No Microsoft Edge versão 90, você pode expandir ou fechar a cadeia de solicitações usando as teclas de seta no teclado no painel **Iniciador.**  A solicitação de rede focada na cadeia também agora está realçada.  Para saber mais sobre iniciadores na ferramenta **Rede,** navegue até [Exibir iniciadores e dependências.][DevtoolsNetworkReferenceDisplayInitiatorsDependencies]  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até Problemas [1158276][CR1158276] e [1160637][CR1160637].  
+No Microsoft Edge versão 90, você pode expandir ou recolher a cadeia de solicitações usando as teclas de direção no teclado no painel **Iniciador**.  A solicitação de rede focada na rede também está agora em destaque.  Para saber mais sobre os iniciadores na ferramenta **Rede**, navegue até [Exibir iniciadores e dependências][DevtoolsNetworkReferenceDisplayInitiatorsDependencies].  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até os Problemas [1158276][CR1158276] e [1160637][CR1160637].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Escolha uma solicitação de rede e escolha o painel Iniciador" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
-         Escolha uma solicitação de rede e escolha o painel **Iniciador**  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Escolha uma solicitação de Rede e escolha o painel Iniciador" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+         Escolha uma solicitação de Rede e escolha o painel **Iniciador**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expanda ou colapse a cadeia de iniciador de solicitação e siga a linha realçada" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
-         Expanda ou colapse a cadeia de iniciador de solicitação e siga a linha realçada  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expanda ou recolha a solicitação de cadeia de iniciador e siga a linha destacada" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+         Expanda ou recolha a solicitação de cadeia de iniciador e siga a linha destacada  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -158,17 +159,17 @@ No Microsoft Edge versão 90, você pode expandir ou fechar a cadeia de solicita
 <!-- Title: Console improvements make filtering more consistent  -->  
 <!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->  
 
-Enquanto você filtra com a Barra Lateral do [Console,][DevtoolsConsoleReferenceOpenConsoleSidebar]os filtros na lista suspenso Níveis de [Log][DevtoolsConsoleReferenceFilterByLogLevel] não estão disponíveis.  Anteriormente, o **menu suspenso Níveis** de Log realçava quando você pairava sobre ele, mesmo enquanto um filtro da Barra Lateral do **Console** era escolhido.  No Microsoft Edge versão 90, o menu suspenso Níveis de **Log** não é mais realçado quando você passar o mouse nele enquanto um filtro da **Barra Lateral** do Console é escolhido.  Para saber mais sobre a filtragem no **Console,** navegue até [Filtrar Mensagens][DevtoolsConsoleReferenceFilterMessages].  
+Enquanto você filtra com a [Barra Lateral do Console][DevtoolsConsoleReferenceOpenConsoleSidebar], os filtros na lista suspensa [Níveis de Registro][DevtoolsConsoleReferenceFilterByLogLevel] não estão disponíveis.  Anteriormente, a lista suspensa **Níveis de Registro** era destacada quando você passava o mouse sobre ela, mesmo quando um filtro da **Barra Lateral do Console** era escolhido.  No Microsoft Edge versão 90, a lista suspensa **Níveis de Registro** não é mais realçada quando você passa o mouse sobre ela enquanto um filtro da **Barra Lateral do Console** é escolhido.  Para saber mais sobre a filtragem no **Console**, navegue até [Filtrar Mensagens][DevtoolsConsoleReferenceFilterMessages].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Anteriormente, se você abrir a barra lateral do Console e passar o mouse nos níveis padrão, ela foi realçada" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
-         Anteriormente, se você abrir a **barra lateral do Console** e passar o mouse nos níveis **padrão,** ela foi realçada  
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Anteriormente, se você abrisse a barra lateral do Console e passasse o mouse sobre os níveis Padrão, ele ficava realçado" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+         Anteriormente, se você abrisse a **barra lateral do Console** e passasse o mouse sobre os **níveis Padrão**, ele ficava realçado  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="A partir do Microsoft Edge 90, se você escolher a barra lateral do Console e passar o mouse nos níveis padrão, ela não será realçada" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
-         A partir do Microsoft Edge 90, se você escolher a **barra lateral do Console** e passar o mouse nos níveis padrão, ela não será realçada ****  
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="A partir do Microsoft Edge 90, se você escolhesse a barra lateral do Console e passasse o mouse sobre os níveis padrão, ele não será realçada" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+         A partir do Microsoft Edge 90, se você escolhesse a **barra lateral do Console** e passasse o mouse sobre os **níveis padrão**, ele não será realçada  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -177,61 +178,61 @@ Enquanto você filtra com a Barra Lateral do [Console,][DevtoolsConsoleReference
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### <a name="the-console-now-escapes-double-quote-characters"></a>O Console agora escapou de caracteres de aspas duplas  
+### <a name="the-console-now-escapes-double-quote-characters"></a>O console agora escapa de caracteres de aspas duplas  
 
-Anteriormente, **o Console** não tinha caracteres válidos de aspas duplas \( `"` \) em cadeias de caracteres JavaScript.  A partir da versão 90 do Microsoft Edge, o **Console** saída cadeias de caracteres JavaScript usando caracteres de aspas duplas \( `"` \).  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1178530][CR1178530].  
+Anteriormente, o **Console** não produzia caracteres de aspas duplas \(`"`\) válidos em strings do JavaScript.  A partir do Microsoft Edge versão 90, o **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \ (`"`\).  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1178530][CR1178530].  
 
-:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="O Console saídas cadeias de caracteres JavaScript usando caracteres de aspas duplas de escape (&#0022;)" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
-   O **Console saídas** cadeias de caracteres JavaScript usando caracteres de aspas duplas \( `"` \)  
+:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="O Console gera strings do JavaScript usando caracteres de aspas duplas escapadas (&#0022;)" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
+   O **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \(`"`\)  
 :::image-end:::  
 
-### <a name="emulate-the-css-color-gamut-media-feature"></a>Emular o recurso de mídia css color-gamut  
+### <a name="emulate-the-css-color-gamut-media-feature"></a>Emular a gama de cores do recurso de mídia do CSS  
 
-A [consulta de][ChromestatusFeature5354410980933632] mídia de gama de cores emula o intervalo aproximado de cores com suporte do navegador e do dispositivo que você está testando.  O menu suspenso em Emular o recurso de **mídia CSS color-gamut** contém espaços de cores que o DevTools pode emular.  Por exemplo, para disparar uma `color-gamut: p3` consulta de mídia, escolha **color-gamut: p3** no menu suspenso.  
+A consulta de mídia de [gama de cores][ChromestatusFeature5354410980933632] emula a faixa aproximada de cores suportada pelo navegador e o dispositivo que você está testando.  A lista suspensa em **Emular a gama de cores do recurso de mídia do CSS** contém espaços de cores que o DevTools pode emular.  Por exemplo, para acionar uma `color-gamut: p3` consulta de mídia, escolha **gama de cores: p3** no menu suspenso.  
 
-Para emular o recurso de mídia css color-gamut, conclua as seguintes ações.  
+Para emular a gama de cores do recurso de mídia do CSS, conclua as seguintes ações.  
 
 1.  Abra o [Menu de Comando][DevtoolsCommandMenuIndex].  
 1.  Digite `Rendering`.  
-1.  Execute o **comando Mostrar Renderização.**  
-1.  Navegue **até Emular color-gamut** do recurso de mídia CSS e escolha uma opção.  
+1.  Execute o comando **Mostrar Renderização**.  
+1.  Navegue até **Emular a gama de cores do recurso de mídia do CSS** e escolha uma opção.  
 
-Para saber mais sobre o `color-gamut` recurso, navegue até [Color Display Quality: the 'color-gamut' feature][CsswgDraftsMediaqueries4ColorGamut].  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1073887][CR1073887].  
+Para saber mais sobre o recurso `color-gamut`, navegue até [Qualidade de Exibição de Cores: O recurso de 'gama de cores'][CsswgDraftsMediaqueries4ColorGamut].  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1073887][CR1073887].  
 
-:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emular o recurso de mídia css color-gamut" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
-   Emular o recurso de mídia css color-gamut  
+:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emular a gama de cores do recurso de mídia do CSS" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
+   Emular a gama de cores do recurso de mídia do CSS  
 :::image-end:::  
 
-### <a name="improved-progressive-web-apps-tooling"></a>Ferramenta progressiva aprimorada de Aplicativos Web  
+### <a name="improved-progressive-web-apps-tooling"></a>Ferramentas de Aplicativos Web progressivos  
 
-#### <a name="pwa-installability-warning-in-the-console"></a>Aviso de capacidade de instalação do PWA no Console  
+#### <a name="pwa-installability-warning-in-the-console"></a>Aviso de instalabilidade do PWA no Console  
 
-O **Console** agora exibe uma mensagem de aviso de capacidade de instalação do [PWA (Progressive Web Apps)][ProgressiveWebAppsIndex] mais detalhada com um link para Melhorar a detecção de suporte [offline do Progressive Web App.][ChromeDeveloperBlogImprovedPwaOfflineDetection]  
+O **Console** agora exibe uma mensagem de aviso de instalação dos [Aplicativos Web Progressivos (PWA)][ProgressiveWebAppsIndex] mais detalhada com um link para [Aprimoramento da detecção de suporte offline do Aplicativo Web Progressivo][ChromeDeveloperBlogImprovedPwaOfflineDetection].  
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="Aviso de capacidade de instalação do PWA na ferramenta Console" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
-   Aviso de capacidade de instalação do PWA na **ferramenta Console**  
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="Aviso de instalabilidade do PWA na ferramenta Console" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+   Aviso de instalabilidade do PWA na ferramenta **Console**  
 :::image-end:::  
 
 #### <a name="pwa-description-length-warning-in-the-manifest-pane"></a>Aviso de comprimento da descrição do PWA no painel Manifesto
 
-O **painel** Manifesto agora exibirá uma mensagem de aviso se a descrição do manifesto exceder 324 caracteres.  
+O painel **Manifesto** agora exibe uma mensagem de aviso se a descrição do manifesto exceder 324 caracteres.  
 
-:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="Aviso de truncado de descrição do PWA" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
-   Aviso de truncado de descrição do PWA  
+:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="Aviso de truncamento da descrição do PWA" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
+   Aviso de truncamento da descrição do PWA  
 :::image-end:::  
 
-Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até Problemas [965802][CR965802], [1146450][CR1146450]e [1169689][CR1169689].  
+Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até os Problemas [965802][CR965802], [1146450][CR1146450] e [1169689][CR1169689].  
 
 ### <a name="new-remote-address-space-column-in-the-network-tool"></a>Nova coluna Espaço de Endereço Remoto na ferramenta Rede  
 
 <!-- does not work in canary 90.0.813.0 -->  
-A nova **coluna Espaço de Endereço Remoto** exibe o espaço de endereço IP de rede de cada recurso de rede.  Para exibir a nova coluna Espaço de Endereço Remoto, conclua as seguintes ações.  
+A nova coluna **Espaço de Endereço Remoto** exibe o espaço de endereço do IP da rede de cada recurso da rede.  Para exibir a nova coluna Espaço de Endereço Remoto, conclua as seguintes ações.  
 
-1.  Navegue até **a ferramenta Rede.**  
-1.  Na tabela Solicitações, passe o mouse na linha do header e abra o menu contextual \(clique com o botão direito do mouse\).  Para saber como adicionar ou remover colunas da tabela Solicitações, navegue até [Adicionar ou remover colunas][DevtoolsNetworkReferenceAddRemoveColumns].  
+1.  Navegue até a ferramenta **Rede**.  
+1.  Na tabela Solicitações, passe o mouse sobre a linha do cabeçalho e abra o menu contextual \(clique com o botão direito\).  Para saber como adicionar ou remover colunas da tabela Solicitações, navegue até [Adicionar ou remover colunas][DevtoolsNetworkReferenceAddRemoveColumns].  
 1.  Escolha **Espaço de Endereço Remoto**.  
     
-A tabela Solicitações agora exibe uma nova coluna com o header chamado **Espaço de Endereço Remoto**.  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1128885][CR1128885].  
+A tabela Solicitações agora exibe uma nova coluna com o cabeçalho denominado**Espaço de Endereço Remoto**.  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1128885][CR1128885].  
 
 :::row:::
    :::column span="":::
@@ -241,13 +242,13 @@ A tabela Solicitações agora exibe uma nova coluna com o header chamado **Espa�
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="A tabela Solicitações agora exibe a coluna Espaço de Endereço Remoto" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
-         A tabela Solicitações agora exibe a coluna **Espaço de Endereço** Remoto :::image-end:::  
+         A tabela Solicitações agora exibe a coluna **Espaço de Endereço Remoto** :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>Exibir recursos permitidos e não permitidos na exibição De detalhes do quadro  
+### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>Exibir recursos permitidos e não permitidos na visualização de detalhes do Quadro  
 
-A exibição de detalhes do Quadro agora exibe uma lista de recursos permitidos e não permitidos do navegador [controlados][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]pela Política de Permissões .  Política de Permissões é uma API de plataforma da Web que permite \(ou bloqueia\) uma página da Web o uso de recursos do navegador em um quadro individual ou em iframes que ele incorpora.  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1158827][CR1158827].  
+A exibição de detalhes do Quadro agora exibe uma lista de recursos permitidos e não permitidos do navegador controlados pela [Política de Permissões][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  A Política de Permissões é uma API de plataforma Web que permite \(ou bloqueia\) o uso de recursos do navegador de uma página da Web em um quadro individual ou em iframes que ela incorpora.  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1158827][CR1158827].  
 
 :::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Recursos permitidos e não permitidos com base na Política de Permissão" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    Recursos permitidos e não permitidos com base na Política de Permissão  
@@ -255,105 +256,105 @@ A exibição de detalhes do Quadro agora exibe uma lista de recursos permitidos 
 
 ### <a name="new-sameparty-column-in-the-cookies-pane"></a>Nova coluna SameParty no painel Cookies  
 
-O **painel Cookies** na ferramenta **Application** agora exibe o atributo para `SameParty` cada cookie.  O `SameParty` atributo é um novo atributo booliano para indicar se um cookie está incluído em solicitações para origens dos mesmos Conjuntos de Primeira [Parte][GithubPrivacycgFirstPartySets].  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1161427][CR1161427].  
+O painel **Cookies** na ferramenta **Aplicativo** agora exibe o atributo `SameParty` para cada cookie.  O atributo `SameParty` é um novo atributo booleano para indicar se um cookie está incluído em solicitações para origens dos mesmos [Conjuntos de Primeira Parte][GithubPrivacycgFirstPartySets].  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1161427][CR1161427].  
 
 :::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="Coluna SameParty no painel Cookies" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
-   **Coluna SameParty** no painel **Cookies**  
+   Coluna **SameParty** no painel **Cookies**  
 :::image-end:::  
 
-### <a name="fndisplayname-property-in-the-console-tool-is-now-deprecated"></a>A propriedade fn.displayName na ferramenta Console agora está preterida  
+### <a name="fndisplayname-property-in-the-console-tool-is-now-deprecated"></a>A propriedade fn.displayName na ferramenta Console agora está obsoleta  
 
-Anteriormente, a propriedade permitia controlar nomes de depuração para funções que eram exibidas em e em Rastreamentos de `fn.displayName` `error.stack` pilha do DevTools.  A partir da versão 90 do Microsoft Edge, a propriedade agora é preterida e substituída `fn.displayName` pela `fn.name` propriedade.  Use o método `Object.defineProperty` padrão para definir a `fn.name` propriedade.  Para saber mais `fn.name` sobre , navegue [até Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1177685][CR1177685].  
+Anteriormente, a `fn.displayName` propriedade permitia controlar os nomes de depuração das funções a serem exibidas em `error.stack`e nos rastreamentos de pilha do DevTools.  A partir do Microsoft Edge versão 90, a propriedade `fn.displayName` foi descontinuada e substituída pela propriedade `fn.name`.  Use o método padrão `Object.defineProperty` para definir a propriedade `fn.name`.  Para saber mais sobre `fn.name`, navegue até [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1177685][CR1177685].  
 
-:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="Um exemplo da propriedade fn.name para controlar nomes de depuração para funções" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
-   Um exemplo da propriedade `fn.name` para controlar nomes de depuração para funções  
+:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="Um exemplo da propriedade fn.name para controlar os nomes de depuração para funções" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+   Um exemplo da propriedade `fn.name` para controlar os nomes de depuração para funções  
 :::image-end:::  
 
-### <a name="full-accessibility-tree-view-in-the-elements-tool"></a>Exibição de árvore de acessibilidade completa na ferramenta Elements  
+### <a name="full-accessibility-tree-view-in-the-elements-tool"></a>Exibição em árvore de acessibilidade completa na ferramenta Elementos  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Este experimento fornece uma **exibição completa de árvore de** acessibilidade na ferramenta **Elements.**  O [painel Acessibilidade][DevtoolsAccessibilityReferenceTheAccessibilityPane] fornece uma exibição parcial de árvore de acessibilidade, que exibe a cadeia ancestral direta do nó raiz para o nó inspecionado.  
+Este experimento fornece uma **exibição em árvore de acessibilidade completa** na ferramenta **Elementos**.  O painel [Acessibilidade][DevtoolsAccessibilityReferenceTheAccessibilityPane] fornece uma visualização em árvore de acessibilidade parcial que exibe a cadeia ancestral direta do nó raiz ao nó inspecionado.  
 Depois de ativar esse experimento e recarregar o DevTools, escolha um dos seguintes botões para alternar a exibição na ferramenta Elementos para todos os elementos na página da Web.  
 
-*   Para exibir a exibição de árvore de acessibilidade completa, escolha a **exibição Alternar**para Árvore de Acessibilidade.  
-*   Para exibir a exibição de árvore DOM, escolha a **exibição Alternar para Árvore DOM**.  
+*   Para exibir em árvore de acessibilidade completa, escolha **Alternar para o modo de exibição em Árvore de Acessibilidade**.  
+*   Para exibir a exibição da árvore DOM, escolha **Alternar para exibição da árvore DOM**.  
     
-Para ativar o experimento, [][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] navegue até Ativar recursos experimentais e escolha a caixa de seleção ao lado de Habilitar o modo de exibição de árvore de acessibilidade total no **painel Elementos.**  Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [887173][CR887173].  
+Para ativar o experimento, navegue até [Ativar recursos experimentais][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] e escolha a caixa de seleção ao lado de **Ativar visualização em árvore de acessibilidade completa no painel Elementos**.  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [887173][CR887173].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Exibir o exibição de árvore DOM" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Exibir o **exibição DOM**  
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Exibir o modo de exibição árvore DOM" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+         Exibir o **modo de exibição DOM**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Exibir a exibição de árvore de acessibilidade completa" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
-         Exibir o **exibição árvore de acessibilidade total**  
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Exibir o modo de exibição em árvore de acessibilidade completa" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+         Exibir o modo de exibição em **Árvore de Acessibilidade Completa**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Baixar os canais de visualização do Microsoft Edge  
 
-Se você estiver no Windows, Linux ou macOS, considere usar os canais de visualização do [Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você estiver no Windows, Linux ou macOS, considere usar os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] como o seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Como entrar em contato com a equipe do Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe do Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "Painel Acessibilidade - Referência de acessibilidade | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Execute comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nível de log - referência de console | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filtrar mensagens - Console Reference | Microsoft Docs"  
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Abra a barra lateral do console - referência do console | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "O painel de Acessibilidade - referência de acessibilidade | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nível de registro - referência do console | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filtrar mensagens - Referência do Console | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Abra a Barra Lateral do Console - referência do Console | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar atalhos de teclado no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Habilitar + menus de guia de botão para abrir mais ferramentas - Recursos experimentais | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalize os atalhos do teclado no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Ative os menus da guia do botão + para abrir mais ferramentas - Recursos experimentais | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Ativar recursos experimentais - Recursos experimentais | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Adicionar ou remover colunas - Referência de Análise de Rede | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Exibir iniciadores e dependências - Referência de Análise de Rede | Microsoft Docs"  
 
 [ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Visão geral progressiva dos Aplicativos Web no Windows | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de visualização do Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de Visualização do Microsoft Edge"  
 
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Atualizar uma extensão manualmente - Extensão do Marketplace | Visual Studio Código"  
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Atualizar uma extensão manualmente - Marketplace da Extensão | Visual Studio Code"  
 
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Ferramentas do Microsoft Edge para o Visual Studio Code | Visual Studio Marketplace"  
 
 [ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection "Melhorar a detecção de suporte offline do Aplicativo Web Progressivo | Desenvolvedores do Chrome"  
 
-[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "color-gamut media query | Status da plataforma Chrome"  
+[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "consulta de mídia de gama de cores | Status da Plataforma Chrome"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bugs do Chromium"  
-[CR174309]: https://crbug.com/174309 "Problema 174309: DevTools: permitir a personalização de atalhos de teclado/associações de chave | Erros de Chromium"  
-[CR887173]: https://crbug.com/887173 "Problema 887173: DevTools: Inspeção completa de árvore de acessibilidade | Bugs do Chromium"  
-[CR965802]: https://crbug.com/965802 "Problema 965802: Implemente a detecção de recursos offline mais precisa do trabalhador do serviço | Bugs do Chromium"  
-[CR1073887]: https://crbug.com/1073887 "Problema 1073887: DevTools: @media (color-gamut: ...) colorspace | Bugs do Chromium"  
-[CR1128885]: https://crbug.com/1128885 "Problema 1128885: Suporte a DevTools para CORS-RFC1918 | Bugs do Chromium"  
-[CR1146450]: https://crbug.com/1146450 "Problema 1146450: [Android] Implementar instalação de planilha inferior | Bugs do Chromium"  
-[CR1158276]: https://crbug.com/1158276 "Problema 1158276: Não é possível expandir/contrair o painel 'Solicitar cadeia de iniciadores' usando teclas de seta na seção 'Rede' do DevTools | Bugs do Chromium"  
-[CR1158827]: https://crbug.com/1158827 "Problema 1158827: [Política de Permissões] Implementar o suporte ao devtool para políticas de permissões | Bugs do Chromium"  
-[CR1160637]: https://crbug.com/1160637 "Problema 1160637: o foco em 'Cadeia de iniciadores de solicitação' é visto incompleto na seção 'Rede' da janela 'Ferramentas de Dev' | Bugs de cromo"  
+[CR174309]: https://crbug.com/174309 "Problema 174309: DevTools: permitir a personalização de atalhos de teclado/associações de chave | Bugs do Chromium"  
+[CR887173]: https://crbug.com/887173 "Problema 887173: DevTools: Inspeção da Árvore de Acessibilidade Completa | Bugs do Chromium"  
+[CR965802]: https://crbug.com/965802 "Problema 965802: Implementar a detecção de recursos offline mais precisa do trabalho de serviço | Bugs do Chromium"  
+[CR1073887]: https://crbug.com/1073887 "Problema 1073887: DevTools: @media (Gama de cores: ...) emulação de espaço de cores | Bugs do Chromium"  
+[CR1128885]: https://crbug.com/1128885 "Problema 1128885: Suporte do DevTools para CORS-RFC1918 | Bugs do Chromium"  
+[CR1146450]: https://crbug.com/1146450 "Problema 1146450: [Android] Implementar instalações de folha inferior | Bugs do Chromium"  
+[CR1158276]: https://crbug.com/1158276 "Problema 1158276: Não é possível expandir/contrair o painel 'Solicitação de cadeia de iniciador' usando as teclas de direção na seção 'Rede' do DevTools | Bugs do Chromium"  
+[CR1158827]: https://crbug.com/1158827 "Problema 1158827: [Política de Permissões] Implementar suporte do devtool para políticas de permissões | Bugs do Chromium"  
+[CR1160637]: https://crbug.com/1160637 "Problema 1160637: O Foco em 'Solicitação de cadeia de iniciador' é visto incompleto na seção 'Rede' da janela 'Dev Tools' | Bugs de cromo"  
 [CR1161427]: https://crbug.com/1161427 "Problema 1161427: &#9730; suporte à depuração de atributo de cookie SameParty no DevTools | Bugs do Chromium"  
-[CR1166710]: https://crbug.com/1166710 "Problema 1166710: ativar o experimento de ferramentas de flexbox por padrão | Bugs do Chromium"  
-[CR1169689]: https://crbug.com/1169689 "Problema 1169689: a planilha inferior de instalação do PWA não deve apresentar categorias | Bugs do Chromium"  
-[CR1175699]: https://crbug.com/1175699 "Problema 1175699: editor do Flexbox | Bugs do Chromium"  
-[CR1177685]: https://crbug.com/1177685 "Problema 1177685: Remover suporte não padrão fn.displayName | Bugs do Chromium"  
-[CR1178530]: https://crbug.com/1178530 "Problema 1178530: Console não escapa de doublequotes ao imprimir cadeias de caracteres | Bugs do Chromium"  
+[CR1166710]: https://crbug.com/1166710 "Problema 1166710: Ativar o experimento de ferramentas do flexbox por padrão | Bugs do Chromium"  
+[CR1169689]: https://crbug.com/1169689 "Problema 1169689: A folha inferior de instalação do PWA não deve apresentar categorias | Bugs do Chromium"  
+[CR1175699]: https://crbug.com/1175699 "Problema 1175699: Editor do Flexbox | Bugs do Chromium"  
+[CR1177685]: https://crbug.com/1177685 "Problema 1177685: Remover o suporte não-padronizado fn.displayName | Bugs do Chromium"  
+[CR1178530]: https://crbug.com/1178530 "Problema 1178530: O console não evita aspas duplas ao imprimir as cadeias de caracteres | Bugs do Chromium"  
 
-[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Qualidade de exibição de cor: o recurso "color-gamut" | Rascunhos do Editor do Grupo de Trabalho CSS"  
+[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Qualidade de Exibição de Cores: O recurso de 'gama de cores' | Rascunhos do Editor do Grupo de Trabalho do CSS"  
 
 [GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Interface do Usuário do Modo de Foco - MicrosoftEdge/MSEdgeExplainers | GitHub"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
-[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "Conjuntos de primeira | GitHub"  
+[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "Conjuntos de Primeira Parte | GitHub"  
 
-[GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Explicador de Política de Permissões | GitHub"  
+[GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Explicação da Política de Permissões | GitHub"  
 
 [MdnJavascriptReferenceGlobalObjectsFunctionName]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name "Function.name | MDN"  
 
