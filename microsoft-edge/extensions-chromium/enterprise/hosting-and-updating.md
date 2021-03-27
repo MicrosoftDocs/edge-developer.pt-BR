@@ -1,43 +1,46 @@
 ---
 description: Hospedar e publicar extensões na empresa para o Microsoft Edge (Chromium).
-title: Publicar e atualizar extensões no armazenamento de Complementos do Microsoft Edge
+title: Publicar e atualizar extensões no armazenamento de complementos do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 2249462b0a2dac86efa4b775171e2a3229a34431
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327684"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461217"
 ---
-# Publicar e atualizar extensões no armazenamento de Complementos do Microsoft Edge  
+# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Publicar e atualizar extensões no armazenamento de complementos do Microsoft Edge  
 
-A maioria das extensões são [publicadas no armazenamento de Complementos][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] do Microsoft Edge para proteger os usuários contra extensões mal-intencionadas.  
+A maioria das extensões é publicada no armazenamento de [Complementos][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] do Microsoft Edge para proteger os usuários contra extensões mal-intencionadas.  
 
-## Opções de publicação para extensões  
+## <a name="publish-options-for-extensions"></a>Opções de publicação para extensões  
 
-Todas as extensões são distribuídas aos usuários como um arquivo morto especial \( `.zip` \) com `.crx` um sufixo.  As extensões publicadas no armazenamento de Complementos do Microsoft Edge são carregadas como `.zip` arquivos.  O processo de publicação converte automaticamente `.zip` o arquivo em um `.crx` arquivo.  
+Todas as extensões são distribuídas aos usuários como um arquivo de arquivo especial \( `.zip` \) com `.crx` um sufixo.  Extensões publicadas no armazenamento de Complementos do Microsoft Edge são carregadas como `.zip` arquivos.  O processo de publicação converte automaticamente o `.zip` arquivo em um `.crx` arquivo.  
 
 Os dois cenários a seguir não exigem que você publique sua extensão no armazenamento de Complementos do Microsoft Edge.  
 
 *   Extensões distribuídas usando a política Enterprise.  
-*   Usar diretórios de extensão não descompactados em um computador local quando o Microsoft Edge está no modo de desenvolvedor.  
+*   Usando diretórios de extensão descompactados em uma máquina local quando o Microsoft Edge está no modo de desenvolvedor.  
 
-## Atualizações para extensões
+## <a name="updates-to-extensions"></a>Atualizações para extensões
 
-O navegador Microsoft Edge verifica periodicamente se há novas versões de extensões instaladas e atualiza cada uma sem a intervenção do usuário.  
+O navegador do Microsoft Edge verifica automaticamente as novas versões de Extensões instaladas. As atualizações são instaladas sem intervenção do usuário.  
+
+
+<!-- image links -->
 
 <!-- links -->  
 
-[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensões - Complementos do Microsoft Edge Insider | Microsoft"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensões - Microsoft Edge Insider Addons | Microsoft"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui.](https://developer.chrome.com/extensions/hosting)  
+> A página original é encontrada [aqui](https://developer.chrome.com/extensions/hosting).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

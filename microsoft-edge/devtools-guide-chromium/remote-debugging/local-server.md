@@ -3,16 +3,16 @@ description: Hospede um site em um servidor Web de máquina de desenvolvimento e
 title: Acessar servidores locais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 16c9927ce4548d71681d35e643aea0a6c44ec75a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398207"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461259"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398207"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="access-local-servers"></a>Acessar servidores locais  
 
 Hospede um site em um servidor Web de máquina de desenvolvimento e, em seguida, acesse o conteúdo de um dispositivo Android.  

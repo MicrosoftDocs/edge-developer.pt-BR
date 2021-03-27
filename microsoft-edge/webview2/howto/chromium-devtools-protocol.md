@@ -3,17 +3,17 @@ description: Saiba como usar o Protocolo Chrome DevTools em seus aplicativos Web
 title: Usar o Protocolo Chrome DevTools no WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
-ms.openlocfilehash: 0f7a2dd4bb3b1621e854cd4c0c5410e64d3c03ff
-ms.sourcegitcommit: 0ef5bb3933cde8a466f2931b824f07b4995cfe5e
+ms.openlocfilehash: 86846ee195406f78d5fd7c369f375ed1e359101a
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "11409301"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461196"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>Usar o Protocolo Chromium DevTools no WebView2  
 
@@ -26,7 +26,7 @@ O [Protocolo Chromium DevTools][GitHubChromedevtoolsDevtoolsProtocol] fornece AP
 
 Para usar a API de Protocolo Chromium DevTools no WebView2, use uma das seguintes ações.  
 
-*   Instale e use o [pacote NuGet do Microsoft.Web.WebView2.DevToolsProtocolExtension (Visualização)][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] \(.NET\).  
+*   Instale e use o [pacote NuGet do Microsoft.Web.WebView2.DevToolsProtocolExtension (Visualização)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] \(.NET\).  
 *   Execute um dos seguintes métodos.  
     *   .NET:  [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32 C/C++:  [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -34,9 +34,9 @@ Para usar a API de Protocolo Chromium DevTools no WebView2, use uma das seguinte
 ## <a name="use-devtoolsprotocolhelper-preview"></a>Usar DevToolsProtocolHelper (Visualização)
 
 > [!NOTE]
-> O [pacote NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] está atualmente em visualização técnica.  Durante a visualização, evite usar o pacote em aplicativos de produção.
+> O [pacote NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] está atualmente em visualização técnica.  Durante a visualização, evite usar o pacote em aplicativos de produção.
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] é um pacote NuGet criado pela equipe webView2 que fornece fácil acesso aos recursos do Protocolo Chromium DevTools.  Os exemplos a seguir descrevem como usar a funcionalidade de localização geográfica no Protocolo Chromium DevTools em seu controle WebView2.  Você pode seguir um padrão semelhante para usar outros recursos do Chromium DevTools Protocol.  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] é um pacote NuGet criado pela equipe webView2 que fornece fácil acesso aos recursos do Protocolo Chromium DevTools.  Os exemplos a seguir descrevem como usar a funcionalidade de localização geográfica no Protocolo Chromium DevTools em seu controle WebView2.  Você pode seguir um padrão semelhante para usar outros recursos do Chromium DevTools Protocol.  
 
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>Etapa 1: Criar uma página da Web para encontrar sua localização geográfica  
 
@@ -200,4 +200,4 @@ Para arquivar um bug ou problema do Protocolo Chromium DevTools, conclua as segu
 
 [ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Relatório de bugs | Bugs de cromo"  
 
-[NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | Galeria de QA NuGet"  
+[NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | Galeria de QA NuGet"  
