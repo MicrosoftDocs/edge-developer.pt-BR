@@ -3,16 +3,16 @@ description: Conteúdo ao vivo de depuração remota em um dispositivo Android d
 title: Introdução à depuração remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439561"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461210"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439561"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-remote-debugging-android-devices"></a><span data-ttu-id="838a4-104">Introdução à depuração remota de dispositivos Android</span><span class="sxs-lookup"><span data-stu-id="838a4-104">Get started with remote debugging Android devices</span></span>  
 
 <span data-ttu-id="838a4-105">Conteúdo ao vivo de depuração remota em um dispositivo Android do computador Windows ou macOS.</span><span class="sxs-lookup"><span data-stu-id="838a4-105">Remote debug live content on an Android device from your Windows or macOS computer.</span></span>  <span data-ttu-id="838a4-106">A página de tutorial a seguir ensina como concluir as seguintes ações.</span><span class="sxs-lookup"><span data-stu-id="838a4-106">The following tutorial page teaches you how to complete the following actions.</span></span>  
