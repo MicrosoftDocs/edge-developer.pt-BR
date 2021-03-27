@@ -1,224 +1,225 @@
-# - name: Legacy Microsoft Edge documentation
-expanded: true
-items:
-  - name: Guia de desenvolvimento herdado
-    items:
-      - name: Visão geral do guia de desenvolvimento (EdgeHtml)
-        href: dev-guide/index.md
-      - name: Novidades no EdgeHTML
-        href: dev-guide/whats-new.md
-        items:
-          - name: EdgeHTML 17
-            href: dev-guide/whats-new/edgeHTML-17.md
-          - name: EdgeHTML 16
-            href: dev-guide/whats-new/edgeHTML-16.md
-          - name: EdgeHTML 15
-            href: dev-guide/whats-new/edgeHTML-15.md
-          - name: EdgeHTML 14
-            href: dev-guide/whats-new/edgeHTML-14.md
-          - name: EdgeHTML 13
-            href: dev-guide/whats-new/edgeHTML-13.md
-          - name: EdgeHTML 12
-            href: dev-guide/whats-new/edgeHTML-12.md
-            items:
-              - name: Informações de versão do JavaScript
-                href: dev-guide/whats-new/javascript-version-information.md
-      - name: Recursos do navegador
-        href: dev-guide/browser-features.md
-        items:
-          - name: Políticas de reprodução automática
-            href: dev-guide/browser-features/autoplay-policies.md
-          - name: Flash
-            href: dev-guide/browser-features/flash.md
-          - name: Modo de exibição de leitura.
-            href: dev-guide/browser-features/reading-view.md
-          - name: Descoberta de provedores de pesquisa
-            href: dev-guide/browser-features/search-provider-discovery.md
-      - name: Recursos de integração do Windows
-        href: dev-guide/windows-integration.md
-        items:
-          - name: API da Solicitação de Pagamento
-            href: dev-guide/windows-integration/Payment-Request-API.md
-          - name: Autenticação Web
-            href: dev-guide/windows-integration/web-authentication.md
-          - name: API de Notificações Web
-            href: dev-guide/windows-integration/web-Notifications-API.md
-  - name: DevTools herdado
-    items:
-      - name: Visão geral do DevTools (EdgeHTML)
-        href: devtools-guide/index.md
-      - name: Novidades
-        href: devtools-guide/whats-new.md
-        items:
-          - name: EdgeHTML 17
-            href: devtools-guide/whats-new/edgehtml-17.md
-          - name: EdgeHTML 16
-            href: devtools-guide/whats-new/edgehtml-16.md
-      - name: Elementos
-        href: devtools-guide/elements.md
-        items:
-          - name: Estilos
-            href: devtools-guide/elements/styles.md
-          - name: Calculado
-            href: devtools-guide/elements/computed.md
-          - name: Eventos
-            href: devtools-guide/elements/events.md
-          - name: Pontos de Interrupção DOM
-            href: devtools-guide/elements/dom-breakpoints.md
-          - name: Fontes
-            href: devtools-guide/elements/fonts.md
-          - name: Acessibilidade
-            href: devtools-guide/elements/accessibility.md
-          - name: Alterações
-            href: devtools-guide/elements/changes.md
-      - name: Console
-        href: devtools-guide/console.md
-        items:
-          - name: API do Console
-            href: devtools-guide/console/console-api.md
-          - name: Linha de comando
-            href: devtools-guide/console/command-line.md
-          - name: Códigos de erro e status
-            href: devtools-guide/console/error-and-status-codes.md
-      - name: Depurador
-        href: devtools-guide/debugger.md
-      - name: Rede
-        href: devtools-guide/network.md
-      - name: Desempenho
-        href: devtools-guide/performance.md
-      - name: Memória
-        href: devtools-guide/memory.md
-      - name: Armazenamento
-        href: devtools-guide/storage.md
-      - name: Profissionais de serviço
-        href: devtools-guide/service-workers.md
-      - name: Emulação
-        href: devtools-guide/emulation.md
-  - name: Protocolo DevTools herdado
-    items:
-      - name: Protocolo DevTools (EdgeHTML)
-        href: devtools-protocol/index.md
-      - name: 0.1
-        href: devtools-protocol/0.1/index.md
-        items:
-          - name: Clientes
-            href: devtools-protocol/0.1/clients.md
-          - name: Pontos de extremidade HTTP
-            href: devtools-protocol/0.1/http.md
-          - name: Domínios
-            href: devtools-protocol/0.1/domains/index.md
-            items:
-              - name: Depurador
-                href: devtools-protocol/0.1/domains/debugger.md
-              - name: Page
-                href: devtools-protocol/0.1/domains/page.md
-              - name: Tempo de Execução
-                href: devtools-protocol/0.1/domains/runtime.md
-              - name: Esquema
-                href: devtools-protocol/0.1/domains/schema.md
-      - name: 0.2
-        href: devtools-protocol/0.2/index.md
-        items:
-          - name: Clientes
-            href: devtools-protocol/0.2/clients.md
-          - name: Pontos de extremidade HTTP
-            href: devtools-protocol/0.2/http.md
-          - name: Domínios
-            href: devtools-protocol/0.2/domains/index.md
-            items:
-              - name: CSS
-                href: devtools-protocol/0.2/domains/css.md
-              - name: DOM
-                href: devtools-protocol/0.2/domains/dom.md
-              - name: DOMDebugger
-                href: devtools-protocol/0.2/domains/domdebugger.md
-              - name: Depurador
-                href: devtools-protocol/0.2/domains/debugger.md
-              - name: Sobreposição
-                href: devtools-protocol/0.2/domains/overlay.md
-              - name: Page
-                href: devtools-protocol/0.2/domains/page.md
-              - name: Tempo de Execução
-                href: devtools-protocol/0.2/domains/runtime.md
-              - name: Esquema
-                href: devtools-protocol/0.2/domains/schema.md
-  - name: Extensões herdadas
-    items:
-      - name: Extensões (EdgeHTML)
-        href: extensions/index.md
-      - name: Suporte a API
-        href: extensions/API-support.md
-        items:
-          - name: Mapa da API da extensão
-            href: extensions/API-support/extension-API-roadmap.md
-          - name: APIs com suporte
-            href: extensions/API-support/supported-APIs.md
-          - name: Chaves de manifesto com suporte
-            href: extensions/API-support/supported-manifest-keys.md
-            items:
-              - name: Exemplo de manifesto JSON
-                href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
-      - name: Extensões para empresas
-        href: extensions/extensions-for-enterprise.md
-      - name: Introdução
-        href: extensions/getting-started.md
-      - name: Guias
-        href: extensions/guides.md
-        items:
-          - name: Acessibilidade
-            href: extensions/guides/accessibility.md
-          - name: Adicionando e removendo extensões
-            href: extensions/guides/adding-and-removing-extensions.md
-          - name: Criar uma extensão
-            href: extensions/guides/creating-an-extension.md
-          - name: Depurar extensões
-            href: extensions/guides/debugging-extensions.md
-          - name: Criar
-            href: extensions/guides/design.md
-          - name: Internacionalização
-            href: extensions/guides/internationalization.md
-          - name: Sistema de mensagens nativo
-            href: extensions/guides/native-messaging.md
-          - name: Embalagem
-            href: extensions/guides/packaging.md
-            items:
-              - name: Criar e testar pacotes de extensão
-                href: extensions/guides/packaging/creating-and-testing-extension-packages.md
-              - name: Extensões no Centro de Desenvolvimento do Windows
-                href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
-              - name: Localizando pacotes de extensão
-                href: extensions/guides/packaging/localizing-extension-packages.md
-              - name: Usar ManifoldJS para extensões de pacote
-                href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
-              - name: Executar o Kit de Certificação de Aplicativos Windows
-                href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
-          - name: Compatibilizar Extensões do Chrome
-            href: extensions/guides/porting-Chrome-extensions.md
-      - name: Dicas e truques
-        href: extensions/tips-and-tricks.md
-      - name: Solução de problemas
-        href: extensions/troubleshooting.md
-  - name: Hospedagem herdada
-    href: hosting/toc.md
-  - name: Análise de desempenho herdada
-    href: performance-analysis/index.md
-  - name: Aplicativos Web progressivos herdados
-    items:
-      - name: Aplicativos Web Progressivos (EdgeHTML)
-        href: progressive-web-apps/index.md
-      - name: Introdução aos PWAs (EdgeHTML)
-        href: progressive-web-apps/get-started.md
-      - name: Ajustar seu PWA para o Windows
-        href: progressive-web-apps/windows-features.md
-        items:
-          - name: PWAs para o Xbox
-            href: progressive-web-apps/xbox-considerations.md
-      - name: PWAs na Microsoft Store
-        href: progressive-web-apps/microsoft-store.md
-  - name: WebDriver herdado
-    items:
-      - name: Visão geral do WebDriver (EdgeHTML)
-        href: webdriver/index.md
-  - name: Windows Runtime (WinRT)
-    href: windows-runtime/toc.yml
-    topicHref: windows-runtime/index.md
+- name: Documentação da Versão Prévia do Microsoft Edge
+  href: index.md
+  expanded: true
+  items:
+    - name: Guia de desenvolvimento da Versão Prévia
+      items:
+        - name: Visão geral do guia de desenvolvimento (EdgeHtml)
+          href: dev-guide/index.md
+        - name: Novidades no EdgeHTML
+          href: dev-guide/whats-new.md
+          items:
+            - name: EdgeHTML 17
+              href: dev-guide/whats-new/edgeHTML-17.md
+            - name: EdgeHTML 16
+              href: dev-guide/whats-new/edgeHTML-16.md
+            - name: EdgeHTML 15
+              href: dev-guide/whats-new/edgeHTML-15.md
+            - name: EdgeHTML 14
+              href: dev-guide/whats-new/edgeHTML-14.md
+            - name: EdgeHTML 13
+              href: dev-guide/whats-new/edgeHTML-13.md
+            - name: EdgeHTML 12
+              href: dev-guide/whats-new/edgeHTML-12.md
+              items:
+                - name: Informações de versão do JavaScript
+                  href: dev-guide/whats-new/javascript-version-information.md
+        - name: Recursos do navegador
+          href: dev-guide/browser-features.md
+          items:
+            - name: Políticas de reprodução automática
+              href: dev-guide/browser-features/autoplay-policies.md
+            - name: Flash
+              href: dev-guide/browser-features/flash.md
+            - name: Modo de exibição de leitura.
+              href: dev-guide/browser-features/reading-view.md
+            - name: Descoberta de provedores de pesquisa
+              href: dev-guide/browser-features/search-provider-discovery.md
+        - name: Recursos de integração do Windows
+          href: dev-guide/windows-integration.md
+          items:
+            - name: API da Solicitação de Pagamento
+              href: dev-guide/windows-integration/Payment-Request-API.md
+            - name: Autenticação Web
+              href: dev-guide/windows-integration/web-authentication.md
+            - name: API de Notificações Web
+              href: dev-guide/windows-integration/web-Notifications-API.md
+    - name: DevTools herdado
+      items:
+        - name: Visão geral do DevTools (EdgeHTML)
+          href: devtools-guide/index.md
+        - name: Novidades
+          href: devtools-guide/whats-new.md
+          items:
+            - name: EdgeHTML 17
+              href: devtools-guide/whats-new/edgehtml-17.md
+            - name: EdgeHTML 16
+              href: devtools-guide/whats-new/edgehtml-16.md
+        - name: Elementos
+          href: devtools-guide/elements.md
+          items:
+            - name: Estilos
+              href: devtools-guide/elements/styles.md
+            - name: Calculado
+              href: devtools-guide/elements/computed.md
+            - name: Eventos
+              href: devtools-guide/elements/events.md
+            - name: Pontos de Interrupção DOM
+              href: devtools-guide/elements/dom-breakpoints.md
+            - name: Fontes
+              href: devtools-guide/elements/fonts.md
+            - name: Acessibilidade
+              href: devtools-guide/elements/accessibility.md
+            - name: Alterações
+              href: devtools-guide/elements/changes.md
+        - name: Console
+          href: devtools-guide/console.md
+          items:
+            - name: API do Console
+              href: devtools-guide/console/console-api.md
+            - name: Linha de comando
+              href: devtools-guide/console/command-line.md
+            - name: Códigos de erro e status
+              href: devtools-guide/console/error-and-status-codes.md
+        - name: Depurador
+          href: devtools-guide/debugger.md
+        - name: Rede
+          href: devtools-guide/network.md
+        - name: Desempenho
+          href: devtools-guide/performance.md
+        - name: Memória
+          href: devtools-guide/memory.md
+        - name: Armazenamento
+          href: devtools-guide/storage.md
+        - name: Profissionais de serviço
+          href: devtools-guide/service-workers.md
+        - name: Emulação
+          href: devtools-guide/emulation.md
+    - name: Protocolo DevTools herdado
+      items:
+        - name: Protocolo DevTools (EdgeHTML)
+          href: devtools-protocol/index.md
+        - name: 0.1
+          href: devtools-protocol/0.1/index.md
+          items:
+            - name: Clientes
+              href: devtools-protocol/0.1/clients.md
+            - name: Pontos de extremidade HTTP
+              href: devtools-protocol/0.1/http.md
+            - name: Domínios
+              href: devtools-protocol/0.1/domains/index.md
+              items:
+                - name: Depurador
+                  href: devtools-protocol/0.1/domains/debugger.md
+                - name: Page
+                  href: devtools-protocol/0.1/domains/page.md
+                - name: Tempo de Execução
+                  href: devtools-protocol/0.1/domains/runtime.md
+                - name: Esquema
+                  href: devtools-protocol/0.1/domains/schema.md
+        - name: 0.2
+          href: devtools-protocol/0.2/index.md
+          items:
+            - name: Clientes
+              href: devtools-protocol/0.2/clients.md
+            - name: Pontos de extremidade HTTP
+              href: devtools-protocol/0.2/http.md
+            - name: Domínios
+              href: devtools-protocol/0.2/domains/index.md
+              items:
+                - name: CSS
+                  href: devtools-protocol/0.2/domains/css.md
+                - name: DOM
+                  href: devtools-protocol/0.2/domains/dom.md
+                - name: DOMDebugger
+                  href: devtools-protocol/0.2/domains/domdebugger.md
+                - name: Depurador
+                  href: devtools-protocol/0.2/domains/debugger.md
+                - name: Sobreposição
+                  href: devtools-protocol/0.2/domains/overlay.md
+                - name: Page
+                  href: devtools-protocol/0.2/domains/page.md
+                - name: Tempo de Execução
+                  href: devtools-protocol/0.2/domains/runtime.md
+                - name: Esquema
+                  href: devtools-protocol/0.2/domains/schema.md
+    - name: Extensões herdadas
+      items:
+        - name: Extensões (EdgeHTML)
+          href: extensions/index.md
+        - name: Suporte a API
+          href: extensions/API-support.md
+          items:
+            - name: Mapa da API da extensão
+              href: extensions/API-support/extension-API-roadmap.md
+            - name: APIs com suporte
+              href: extensions/API-support/supported-APIs.md
+            - name: Chaves de manifesto com suporte
+              href: extensions/API-support/supported-manifest-keys.md
+              items:
+                - name: Exemplo de manifesto JSON
+                  href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
+        - name: Extensões para empresas
+          href: extensions/extensions-for-enterprise.md
+        - name: Introdução
+          href: extensions/getting-started.md
+        - name: Guias
+          href: extensions/guides.md
+          items:
+            - name: Acessibilidade
+              href: extensions/guides/accessibility.md
+            - name: Adicionando e removendo extensões
+              href: extensions/guides/adding-and-removing-extensions.md
+            - name: Criar uma extensão
+              href: extensions/guides/creating-an-extension.md
+            - name: Depurar extensões
+              href: extensions/guides/debugging-extensions.md
+            - name: Criar
+              href: extensions/guides/design.md
+            - name: Internacionalização
+              href: extensions/guides/internationalization.md
+            - name: Sistema de mensagens nativo
+              href: extensions/guides/native-messaging.md
+            - name: Embalagem
+              href: extensions/guides/packaging.md
+              items:
+                - name: Criar e testar pacotes de extensão
+                  href: extensions/guides/packaging/creating-and-testing-extension-packages.md
+                - name: Extensões no Centro de Desenvolvimento do Windows
+                  href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
+                - name: Localizando pacotes de extensão
+                  href: extensions/guides/packaging/localizing-extension-packages.md
+                - name: Usar ManifoldJS para extensões de pacote
+                  href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
+                - name: Executar o Kit de Certificação de Aplicativos Windows
+                  href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
+            - name: Compatibilizar Extensões do Chrome
+              href: extensions/guides/porting-Chrome-extensions.md
+        - name: Dicas e truques
+          href: extensions/tips-and-tricks.md
+        - name: Solução de problemas
+          href: extensions/troubleshooting.md
+    - name: Hospedagem herdada
+      href: hosting/toc.yml
+    - name: Análise de desempenho herdada
+      href: performance-analysis/index.md
+    - name: Aplicativos Web progressivos herdados
+      items:
+        - name: Aplicativos Web Progressivos (EdgeHTML)
+          href: progressive-web-apps/index.md
+        - name: Introdução aos PWAs (EdgeHTML)
+          href: progressive-web-apps/get-started.md
+        - name: Ajustar seu PWA para o Windows
+          href: progressive-web-apps/windows-features.md
+          items:
+            - name: PWAs para o Xbox
+              href: progressive-web-apps/xbox-considerations.md
+        - name: PWAs na Microsoft Store
+          href: progressive-web-apps/microsoft-store.md
+    - name: WebDriver herdado
+      items:
+        - name: Visão geral do WebDriver (EdgeHTML)
+          href: webdriver/index.md
+    - name: Windows Runtime (WinRT)
+      href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md
