@@ -104,7 +104,7 @@ ms.locfileid: "11461476"
 
 1.  <span data-ttu-id="20d2f-157">Navegue até [Construtor do PWA][PwabuilderMain].</span><span class="sxs-lookup"><span data-stu-id="20d2f-157">Navigate to [PWA Builder][PwabuilderMain].</span></span>  
 1.  <span data-ttu-id="20d2f-158">Digite a URL do seu PWA.</span><span class="sxs-lookup"><span data-stu-id="20d2f-158">Type the URL of your PWA.</span></span>  
-1.  <span data-ttu-id="20d2f-159">Escolha **Iniciar**  >  **a com build minhas opções do Windows do PWA.**  >  \*\*\*\*  >  \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="20d2f-159">Choose **Start** > **Build My PWA** > **Windows** > **Options**.</span></span>  
+1.  <span data-ttu-id="20d2f-159">Escolha **Iniciar**  >  **a com build minhas opções do Windows do PWA.**  >    >  </span><span class="sxs-lookup"><span data-stu-id="20d2f-159">Choose **Start** > **Build My PWA** > **Windows** > **Options**.</span></span>  
 1.  <span data-ttu-id="20d2f-160">Colar os seguintes valores que você salvou na seção [Criar uma reserva de](#create-an-app-reservation) aplicativo.</span><span class="sxs-lookup"><span data-stu-id="20d2f-160">Paste the following values that you saved in the [Create an app reservation](#create-an-app-reservation) section.</span></span>  
     *   **<span data-ttu-id="20d2f-161">ID do pacote</span><span class="sxs-lookup"><span data-stu-id="20d2f-161">Package ID</span></span>**  
     *   **<span data-ttu-id="20d2f-162">Publisher ID</span><span class="sxs-lookup"><span data-stu-id="20d2f-162">Publisher ID</span></span>**  

@@ -94,7 +94,7 @@ ms.locfileid: "11230933"
 <span data-ttu-id="f05d0-146">Para começar, explore a funcionalidade do menu contextual atual.</span><span class="sxs-lookup"><span data-stu-id="f05d0-146">To begin, explore the current contextual menu functionality.</span></span>  
 
 1.  <span data-ttu-id="f05d0-147">Execute o projeto.</span><span class="sxs-lookup"><span data-stu-id="f05d0-147">Run your project.</span></span>  
-1.  <span data-ttu-id="f05d0-148">Passe o mouse em qualquer lugar do controle WebView2 e abra o menu de contexto \ (clique com o botão direito do mouse \).</span><span class="sxs-lookup"><span data-stu-id="f05d0-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="f05d0-149">O menu de contexto exibe as opções padrão.</span><span class="sxs-lookup"><span data-stu-id="f05d0-149">The context menu displays the default choices.</span></span>  
+1.  <span data-ttu-id="f05d0-148">Passe o mouse em qualquer lugar do controle WebView2 e abra o menu de contexto \(clique com o botão direito do mouse \).</span><span class="sxs-lookup"><span data-stu-id="f05d0-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="f05d0-149">O menu de contexto exibe as opções padrão.</span><span class="sxs-lookup"><span data-stu-id="f05d0-149">The context menu displays the default choices.</span></span>  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="O menu de contexto mostrando as opções padrão" lightbox="./media/contextmenu.png":::
        <span data-ttu-id="f05d0-151">O menu de contexto mostrando as opções padrão</span><span class="sxs-lookup"><span data-stu-id="f05d0-151">The context menu showing the default choices</span></span>  
@@ -108,7 +108,7 @@ ms.locfileid: "11230933"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  <span data-ttu-id="f05d0-154">Execute o código novamente.</span><span class="sxs-lookup"><span data-stu-id="f05d0-154">Run the code again.</span></span>  <span data-ttu-id="f05d0-155">Confirme que você não pode abrir um menu de contexto \ (clique com o botão direito do mouse \).</span><span class="sxs-lookup"><span data-stu-id="f05d0-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="f05d0-154">Execute o código novamente.</span><span class="sxs-lookup"><span data-stu-id="f05d0-154">Run the code again.</span></span>  <span data-ttu-id="f05d0-155">Confirme que você não pode abrir um menu de contexto \(clique com o botão direito do mouse \).</span><span class="sxs-lookup"><span data-stu-id="f05d0-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
    
 ## <span data-ttu-id="f05d0-156">Consulte também</span><span class="sxs-lookup"><span data-stu-id="f05d0-156">See also</span></span>  
 

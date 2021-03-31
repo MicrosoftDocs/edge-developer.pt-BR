@@ -30,7 +30,7 @@ ms.locfileid: "11439602"
 
 # <a name="sources-panel-overview"></a><span data-ttu-id="9d323-104">Visão geral do painel fontes</span><span class="sxs-lookup"><span data-stu-id="9d323-104">Sources panel overview</span></span>  
 
-<span data-ttu-id="9d323-105">Use o painel Fontes \*\*\*\* do Microsoft Edge DevTools para executar as seguintes ações.</span><span class="sxs-lookup"><span data-stu-id="9d323-105">Use the Microsoft Edge DevTools **Sources** panel to perform the following actions.</span></span>  
+<span data-ttu-id="9d323-105">Use o painel Fontes  do Microsoft Edge DevTools para executar as seguintes ações.</span><span class="sxs-lookup"><span data-stu-id="9d323-105">Use the Microsoft Edge DevTools **Sources** panel to perform the following actions.</span></span>  
 
 *   <span data-ttu-id="9d323-106">[Exibir arquivos](#display-files).</span><span class="sxs-lookup"><span data-stu-id="9d323-106">[Display files](#display-files).</span></span>  
 *   <span data-ttu-id="9d323-107">[Edite CSS e JavaScript](#edit-css-and-javascript).</span><span class="sxs-lookup"><span data-stu-id="9d323-107">[Edit CSS and JavaScript](#edit-css-and-javascript).</span></span>  
@@ -102,7 +102,7 @@ document.head.appendChild(script);
 <span data-ttu-id="9d323-151">Para executar um **trecho de código:**</span><span class="sxs-lookup"><span data-stu-id="9d323-151">To run a **Snippet**:</span></span>
 
 *   <span data-ttu-id="9d323-152">Abra o arquivo usando o painel **Trechos** de Código e escolha **Executar** \( ![ O botão Executar ](../media/run-snippet-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="9d323-152">Open the file using the **Snippets** panel, and choose **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).</span></span>  
-*   <span data-ttu-id="9d323-153">Abra o [Menu de Comando,][DevtoolsGuideChromiumCommandMenuIndex]exclua o caractere, digite , digite o nome do trecho de código e `>` `!` selecione \*\*\*\* `Enter` .</span><span class="sxs-lookup"><span data-stu-id="9d323-153">Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.</span></span>  
+*   <span data-ttu-id="9d323-153">Abra o [Menu de Comando,][DevtoolsGuideChromiumCommandMenuIndex]exclua o caractere, digite , digite o nome do trecho de código e `>` `!` selecione  `Enter` .</span><span class="sxs-lookup"><span data-stu-id="9d323-153">Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.</span></span>  
     
 <span data-ttu-id="9d323-154">Navegue [até Executar trechos de código de qualquer página][DevtoolsGuideChromiumJavascriptSnippets] para saber mais.</span><span class="sxs-lookup"><span data-stu-id="9d323-154">Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.</span></span>
 

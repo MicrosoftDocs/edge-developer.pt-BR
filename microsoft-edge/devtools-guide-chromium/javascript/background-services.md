@@ -48,7 +48,7 @@ ms.locfileid: "11439525"
 
 ## <a name="background-fetch"></a><span data-ttu-id="2ad6d-117">Busca de plano de fundo</span><span class="sxs-lookup"><span data-stu-id="2ad6d-117">Background Fetch</span></span>  
 
-<span data-ttu-id="2ad6d-118">A **API de Busca de Plano** de Fundo permite que um funcionário do serviço baixe com confiança grandes recursos, como filmes ou podcasts, como um serviço em segundo plano. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="2ad6d-118">The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.</span></span>  <span data-ttu-id="2ad6d-119">Para registrar o evento Background Fetch por 3 dias, mesmo quando o DevTools não estiver aberto:</span><span class="sxs-lookup"><span data-stu-id="2ad6d-119">To log Background Fetch event for 3 days, even when DevTools is not open:</span></span>  
+<span data-ttu-id="2ad6d-118">A **API de Busca de Plano** de Fundo permite que um funcionário do serviço baixe com confiança grandes recursos, como filmes ou podcasts, como um serviço em segundo plano. </span><span class="sxs-lookup"><span data-stu-id="2ad6d-118">The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.</span></span>  <span data-ttu-id="2ad6d-119">Para registrar o evento Background Fetch por 3 dias, mesmo quando o DevTools não estiver aberto:</span><span class="sxs-lookup"><span data-stu-id="2ad6d-119">To log Background Fetch event for 3 days, even when DevTools is not open:</span></span>  
 
 <!--Todo: add background fetch api section when available -->  
 

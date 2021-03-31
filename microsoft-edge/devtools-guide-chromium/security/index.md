@@ -74,7 +74,7 @@ ms.locfileid: "11397773"
    <span data-ttu-id="fbd4a-129">Conteúdo misto</span><span class="sxs-lookup"><span data-stu-id="fbd4a-129">Mixed content</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fbd4a-130">Na figura anterior, escolha **Exibir uma** solicitação \*\*\*\* no painel Rede para abrir a ferramenta Rede e aplicar o filtro para que o Log de Rede mostre apenas recursos `mixed-content:displayed` não seguros. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="fbd4a-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
+<span data-ttu-id="fbd4a-130">Na figura anterior, escolha **Exibir uma** solicitação  no painel Rede para abrir a ferramenta Rede e aplicar o filtro para que o Log de Rede mostre apenas recursos `mixed-content:displayed` não seguros. </span><span class="sxs-lookup"><span data-stu-id="fbd4a-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Recursos mistos no Log de Rede" lightbox="../media/security-network-filter.msft.png":::
    <span data-ttu-id="fbd4a-132">Recursos mistos no **Log de Rede**</span><span class="sxs-lookup"><span data-stu-id="fbd4a-132">Mixed resources in the **Network Log**</span></span>  

@@ -44,7 +44,7 @@ ms.locfileid: "11231956"
 
 ![Seletor de recursos do depurador](./media/debugger_resource_picker.png)
 
-<span data-ttu-id="3e4a3-130">No menu de contexto do *seletor de recursos* , você também pode marcar um arquivo como **código de biblioteca** ( `Ctrl+L` ), oferecendo a opção de [ignorar o código no depurador](#debug-window) e [ocultá-lo no painel **pilha de chamadas** ](#call-stack).</span><span class="sxs-lookup"><span data-stu-id="3e4a3-130">From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack).</span></span> <span data-ttu-id="3e4a3-131">Clicar (ou `Ctrl+L` ) novamente alternará o arquivo de volta para o valor anterior \*\* como código ou *código da biblioteca*.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-131">Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.</span></span>
+<span data-ttu-id="3e4a3-130">No menu de contexto do *seletor de recursos* , você também pode marcar um arquivo como **código de biblioteca** ( `Ctrl+L` ), oferecendo a opção de [ignorar o código no depurador](#debug-window) e [ocultá-lo no painel **pilha de chamadas** ](#call-stack).</span><span class="sxs-lookup"><span data-stu-id="3e4a3-130">From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack).</span></span> <span data-ttu-id="3e4a3-131">Clicar (ou `Ctrl+L` ) novamente alternará o arquivo de volta para o valor anterior  como código ou *código da biblioteca*.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-131">Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.</span></span>
 
 ### <span data-ttu-id="3e4a3-132">Pesquisa de arquivos</span><span class="sxs-lookup"><span data-stu-id="3e4a3-132">File search</span></span>
 
@@ -122,7 +122,7 @@ ms.locfileid: "11231956"
 ### <span data-ttu-id="3e4a3-182">2. funções de etapa ( `F11` , `Ctrl+F10` , `Shift+F11` )</span><span class="sxs-lookup"><span data-stu-id="3e4a3-182">2. Step functions (`F11`, `Ctrl+F10`, `Shift+F11`)</span></span>
  <span data-ttu-id="3e4a3-183">**Step Into** ( `F11` ) etapas para a função que está sendo chamada.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-183">**Step into** (`F11`) steps into the function being called.</span></span> 
 
- <span data-ttu-id="3e4a3-184">\*\*\*\* `Ctrl+F10` Etapas de passar sobre a função que estão sendo chamadas.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-184">**Step over** (`Ctrl+F10`) steps over the function being called.</span></span> 
+ <span data-ttu-id="3e4a3-184"> `Ctrl+F10` Etapas de passar sobre a função que estão sendo chamadas.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-184">**Step over** (`Ctrl+F10`) steps over the function being called.</span></span> 
 
  <span data-ttu-id="3e4a3-185">**Step Out** ( `Shift+F11` ) percorre a função atual e para a função de chamadas.</span><span class="sxs-lookup"><span data-stu-id="3e4a3-185">**Step out** (`Shift+F11`) steps out of the current function and into the calling function.</span></span> 
 

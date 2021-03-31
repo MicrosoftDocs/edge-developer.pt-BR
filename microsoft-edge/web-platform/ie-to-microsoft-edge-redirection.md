@@ -57,7 +57,7 @@ ms.locfileid: "11461133"
    :::column-end:::
 :::row-end:::
 
-<span data-ttu-id="a4085-136">Se o usuário não consentir escolhendo a caixa de seleção Sempre trazer meus dados de \*\*\*\* navegação e preferências do **Internet Explorer,** o usuário poderá escolher Continuar a navegação para continuar a sessão   de navegação.</span><span class="sxs-lookup"><span data-stu-id="a4085-136">If the user does not consent by choosing the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.</span></span>  
+<span data-ttu-id="a4085-136">Se o usuário não consentir escolhendo a caixa de seleção Sempre trazer meus dados de  navegação e preferências do **Internet Explorer,** o usuário poderá escolher Continuar a navegação para continuar a sessão   de navegação.</span><span class="sxs-lookup"><span data-stu-id="a4085-136">If the user does not consent by choosing the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.</span></span>  
 
 <span data-ttu-id="a4085-137">Por fim, um banner de incompatibilidade de site é exibido na barra de endereços para cada redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="a4085-137">Finally, a website incompatibility banner is displayed under the address bar for each redirection.</span></span>  <span data-ttu-id="a4085-138">Um exemplo de uma faixa de incompatibilidade de site é exibido na figura a seguir.</span><span class="sxs-lookup"><span data-stu-id="a4085-138">An example of a website incompatibility banner is displayed in following figure.</span></span>
 

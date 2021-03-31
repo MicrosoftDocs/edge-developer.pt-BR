@@ -27,7 +27,7 @@ ms.locfileid: "11343063"
 
 ## <span data-ttu-id="abd93-114">Etapa 1: Adicionar permissões ao manifesto da extensão</span><span class="sxs-lookup"><span data-stu-id="abd93-114">Step 1 - Add permissions to the extension manifest</span></span>  
 
-<span data-ttu-id="abd93-115">Adicione a `nativeMessaging` permissão aomanifest.js\*\* no\*\* arquivo da extensão.</span><span class="sxs-lookup"><span data-stu-id="abd93-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="abd93-116">O trecho de código a seguir é um exemplo \*\* demanifest.jsem\*\*.</span><span class="sxs-lookup"><span data-stu-id="abd93-116">The following code snippet is an example of **manifest.json**.</span></span>  
+<span data-ttu-id="abd93-115">Adicione a `nativeMessaging` permissão aomanifest.js no arquivo da extensão.</span><span class="sxs-lookup"><span data-stu-id="abd93-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="abd93-116">O trecho de código a seguir é um exemplo  demanifest.jsem.</span><span class="sxs-lookup"><span data-stu-id="abd93-116">The following code snippet is an example of **manifest.json**.</span></span>  
 
 ```json
     {

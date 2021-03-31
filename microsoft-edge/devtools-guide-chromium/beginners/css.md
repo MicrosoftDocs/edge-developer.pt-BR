@@ -284,7 +284,7 @@ li a {
     
     :::row:::
        :::column span="":::
-          <span data-ttu-id="6b978-231">Na figura a seguir, a declaração à qual você adicionou anteriormente é exibida na `font-family: 'Courier New', Courier, serif` guia Estilos abaixo da árvore `contact.html` DOM. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6b978-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
+          <span data-ttu-id="6b978-231">Na figura a seguir, a declaração à qual você adicionou anteriormente é exibida na `font-family: 'Courier New', Courier, serif` guia Estilos abaixo da árvore `contact.html` DOM. </span><span class="sxs-lookup"><span data-stu-id="6b978-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
           
           :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="A guia Estilos está abaixo da árvore DOM" lightbox="../media/beginners-css-add2.msft.png":::
              <span data-ttu-id="6b978-233">A **guia Estilos** está abaixo da árvore DOM</span><span class="sxs-lookup"><span data-stu-id="6b978-233">The **Styles** tab is below the DOM Tree</span></span>  

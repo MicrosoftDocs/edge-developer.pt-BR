@@ -17,7 +17,7 @@ ms.locfileid: "11182364"
 ---
 # <span data-ttu-id="3173c-104">Introdução ao Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="3173c-104">Introduction to Microsoft Edge WebView2</span></span>  
 
-<span data-ttu-id="3173c-105">O controle WebView2 do Microsoft Edge permite que você incorpore tecnologias da Web \ (HTML, CSS e JavaScript \) em seus aplicativos nativos.</span><span class="sxs-lookup"><span data-stu-id="3173c-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="3173c-106">O controle WebView2 usa o [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] como o mecanismo de renderização para exibir o conteúdo da Web em aplicativos nativos.</span><span class="sxs-lookup"><span data-stu-id="3173c-106">The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="3173c-107">Com o WebView2, você pode inserir código da Web em diferentes partes do seu aplicativo nativo ou criar todo o aplicativo nativo em um único WebView.</span><span class="sxs-lookup"><span data-stu-id="3173c-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="3173c-108">Para obter informações sobre como começar a criar um aplicativo do WebView2, navegue até [introdução](#getting-started).</span><span class="sxs-lookup"><span data-stu-id="3173c-108">For information on how to start building a WebView2 application, navigate to [Get Started](#getting-started).</span></span>  
+<span data-ttu-id="3173c-105">O controle WebView2 do Microsoft Edge permite que você incorpore tecnologias da Web \(HTML, CSS e JavaScript \) em seus aplicativos nativos.</span><span class="sxs-lookup"><span data-stu-id="3173c-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="3173c-106">O controle WebView2 usa o [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] como o mecanismo de renderização para exibir o conteúdo da Web em aplicativos nativos.</span><span class="sxs-lookup"><span data-stu-id="3173c-106">The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="3173c-107">Com o WebView2, você pode inserir código da Web em diferentes partes do seu aplicativo nativo ou criar todo o aplicativo nativo em um único WebView.</span><span class="sxs-lookup"><span data-stu-id="3173c-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="3173c-108">Para obter informações sobre como começar a criar um aplicativo do WebView2, navegue até [introdução](#getting-started).</span><span class="sxs-lookup"><span data-stu-id="3173c-108">For information on how to start building a WebView2 application, navigate to [Get Started](#getting-started).</span></span>  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="O que é o WebView" lightbox="./media/WebView2/whatwebview.png":::
    <span data-ttu-id="3173c-110">O que é o WebView</span><span class="sxs-lookup"><span data-stu-id="3173c-110">What is WebView</span></span>  
@@ -73,7 +73,7 @@ ms.locfileid: "11182364"
       <span data-ttu-id="3173c-137">Conte com uma versão atualizada do Chromium com atualizações de plataforma regulares e correções de segurança.</span><span class="sxs-lookup"><span data-stu-id="3173c-137">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="3173c-138">**Corrigido** \ (em breve \)</span><span class="sxs-lookup"><span data-stu-id="3173c-138">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="3173c-138">**Corrigido** \(em breve \)</span><span class="sxs-lookup"><span data-stu-id="3173c-138">**Fixed** \(coming soon\)</span></span>  
       <span data-ttu-id="3173c-139">Escolha para empacotar os bits Chromium em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3173c-139">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
@@ -95,27 +95,27 @@ ms.locfileid: "11182364"
 
 ## <span data-ttu-id="3173c-151">Plataformas compatíveis</span><span class="sxs-lookup"><span data-stu-id="3173c-151">Supported platforms</span></span>  
 
-<span data-ttu-id="3173c-152">Uma disponibilidade geral \ (GA \) ou versão de visualização está disponível nos seguintes ambientes de programação:</span><span class="sxs-lookup"><span data-stu-id="3173c-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
+<span data-ttu-id="3173c-152">Uma disponibilidade geral \(GA \) ou versão de visualização está disponível nos seguintes ambientes de programação:</span><span class="sxs-lookup"><span data-stu-id="3173c-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="3173c-153">Win32 C/C++ \ (GA \)</span><span class="sxs-lookup"><span data-stu-id="3173c-153">Win32 C/C++ \(GA\)</span></span>
+*   <span data-ttu-id="3173c-153">Win32 C/C++ \(GA \)</span><span class="sxs-lookup"><span data-stu-id="3173c-153">Win32 C/C++ \(GA\)</span></span>
 *   <span data-ttu-id="3173c-154">.NET Framework 4.6.2 ou posterior</span><span class="sxs-lookup"><span data-stu-id="3173c-154">.NET Framework 4.6.2 or later</span></span>
 *   <span data-ttu-id="3173c-155">.NET Core 3,1 ou posterior</span><span class="sxs-lookup"><span data-stu-id="3173c-155">.NET Core 3.1 or later</span></span>
 *   <span data-ttu-id="3173c-156">.NET 5</span><span class="sxs-lookup"><span data-stu-id="3173c-156">.NET 5</span></span>
-*   <span data-ttu-id="3173c-157">[WinUI 3,0][UwpToolkitsWinui3] \ (visualização \)</span><span class="sxs-lookup"><span data-stu-id="3173c-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
+*   <span data-ttu-id="3173c-157">[WinUI 3,0][UwpToolkitsWinui3] \(visualização \)</span><span class="sxs-lookup"><span data-stu-id="3173c-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
 
 <span data-ttu-id="3173c-158">Você poderá executar aplicativos do WebView2 nas seguintes versões do Windows.</span><span class="sxs-lookup"><span data-stu-id="3173c-158">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
 *   <span data-ttu-id="3173c-159">Windows 10</span><span class="sxs-lookup"><span data-stu-id="3173c-159">Windows 10</span></span>  
 *   <span data-ttu-id="3173c-160">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="3173c-160">Windows 8.1</span></span>  
-*   <span data-ttu-id="3173c-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="3173c-161">Windows 7 \*\*</span></span>  
+*   <span data-ttu-id="3173c-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="3173c-161">Windows 7 </span></span>  
 *   <span data-ttu-id="3173c-162">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="3173c-162">Windows Server 2019</span></span>  
 *   <span data-ttu-id="3173c-163">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="3173c-163">Windows Server 2016</span></span>  
 *   <span data-ttu-id="3173c-164">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="3173c-164">Windows Server 2012</span></span>  
 *   <span data-ttu-id="3173c-165">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="3173c-165">Windows Server 2012 R2</span></span>  
-*   <span data-ttu-id="3173c-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="3173c-166">Windows Server 2008 R2 \*\*</span></span>  
+*   <span data-ttu-id="3173c-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="3173c-166">Windows Server 2008 R2 </span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="3173c-167">\ \* \ \* O suporte do WebView2 para Windows 7 e Windows Server 2008 R2 tem o mesmo ciclo de suporte que o Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="3173c-167">\*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="3173c-168">Para obter mais informações, navegue até [sistemas operacionais compatíveis com o Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="3173c-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
+> <span data-ttu-id="3173c-167">\ \* \ \* O suporte do WebView2 para Windows 7 e Windows Server 2008 R2 tem o mesmo ciclo de suporte que o Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="3173c-167"> WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="3173c-168">Para obter mais informações, navegue até [sistemas operacionais compatíveis com o Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="3173c-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
 
 ## <span data-ttu-id="3173c-169">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="3173c-169">Next steps</span></span>  
 

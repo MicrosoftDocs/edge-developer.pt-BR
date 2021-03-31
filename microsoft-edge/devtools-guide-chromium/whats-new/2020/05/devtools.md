@@ -60,7 +60,7 @@ ms.locfileid: "11408322"
 
 <span data-ttu-id="4294f-126">Escolha **DevTools (Padrão)** no menu suspenso Corresponder **atalhos** e selecione **Visual Studio Código**.</span><span class="sxs-lookup"><span data-stu-id="4294f-126">Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.</span></span>  <span data-ttu-id="4294f-127">Os atalhos de teclado no DevTools agora corresponderão aos atalhos para ações equivalentes no Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="4294f-127">The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.</span></span>  
 
-<span data-ttu-id="4294f-128">Por exemplo, o atalho do teclado para pausar ou continuar executando um script no [Visual Studio Code][VisualStudioCodeShortcuts] é `F5` .</span><span class="sxs-lookup"><span data-stu-id="4294f-128">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcuts] is `F5`.</span></span>  <span data-ttu-id="4294f-129">Com a **predefinição DevTools (Padrão),** esse mesmo atalho no DevTools é, mas com Visual Studio código predefinido, esse atalho agora `F8` também é \*\*\*\* `F5` .</span><span class="sxs-lookup"><span data-stu-id="4294f-129">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
+<span data-ttu-id="4294f-128">Por exemplo, o atalho do teclado para pausar ou continuar executando um script no [Visual Studio Code][VisualStudioCodeShortcuts] é `F5` .</span><span class="sxs-lookup"><span data-stu-id="4294f-128">For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcuts] is `F5`.</span></span>  <span data-ttu-id="4294f-129">Com a **predefinição DevTools (Padrão),** esse mesmo atalho no DevTools é, mas com Visual Studio código predefinido, esse atalho agora `F8` também é  `F5` .</span><span class="sxs-lookup"><span data-stu-id="4294f-129">With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.</span></span>  
 
 <span data-ttu-id="4294f-130">O recurso está disponível no Microsoft Edge 84 como um experimento, portanto, compartilhe seus [comentários](#getting-in-touch-with-microsoft-edge-devtools-team) com a equipe!</span><span class="sxs-lookup"><span data-stu-id="4294f-130">The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team!</span></span>  
 
@@ -219,7 +219,7 @@ ms.locfileid: "11408322"
 
 #### <a name="image-previews"></a><span data-ttu-id="4294f-219">Visualizações de imagem</span><span class="sxs-lookup"><span data-stu-id="4294f-219">Image previews</span></span>  
 
-<span data-ttu-id="4294f-220">Passe o mouse em um valor no painel Estilos para `background-image` exibir uma visualização da imagem em uma dica de ferramenta. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4294f-220">Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.</span></span>  
+<span data-ttu-id="4294f-220">Passe o mouse em um valor no painel Estilos para `background-image` exibir uma visualização da imagem em uma dica de ferramenta. </span><span class="sxs-lookup"><span data-stu-id="4294f-220">Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.</span></span>  
 
 :::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Passar o mouse sobre um valor de imagem em segundo plano" lightbox="../../media/2020/05/image-preview.msft.png":::
   <span data-ttu-id="4294f-222">Passar o mouse sobre um `background-image` valor</span><span class="sxs-lookup"><span data-stu-id="4294f-222">Hovering over a `background-image` value</span></span>  
@@ -250,7 +250,7 @@ ms.locfileid: "11408322"
 <span data-ttu-id="4294f-236">O **painel Propriedades** na ferramenta **Elements** é preterido.</span><span class="sxs-lookup"><span data-stu-id="4294f-236">The **Properties** pane in the **Elements** tool is deprecated.</span></span>  <span data-ttu-id="4294f-237">Em `console.dir($0)` vez **disso, execute no Console.**</span><span class="sxs-lookup"><span data-stu-id="4294f-237">Run `console.dir($0)` in the **Console** instead.</span></span>  
 
 :::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="O painel Propriedades preterida" lightbox="../../media/2020/05/properties.msft.png":::
-   <span data-ttu-id="4294f-239">O painel Propriedades \*\*\*\* preterida</span><span class="sxs-lookup"><span data-stu-id="4294f-239">The deprecated **Properties** pane</span></span>  
+   <span data-ttu-id="4294f-239">O painel Propriedades  preterida</span><span class="sxs-lookup"><span data-stu-id="4294f-239">The deprecated **Properties** pane</span></span>  
 :::image-end:::  
 
 #### <a name="references"></a><span data-ttu-id="4294f-240">Referências</span><span class="sxs-lookup"><span data-stu-id="4294f-240">References</span></span>  

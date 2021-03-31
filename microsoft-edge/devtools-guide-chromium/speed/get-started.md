@@ -84,7 +84,7 @@ ms.locfileid: "11439441"
        <span data-ttu-id="ddb10-145">DevTools e a demonstração</span><span class="sxs-lookup"><span data-stu-id="ddb10-145">DevTools and the demo</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="ddb10-146">Para o restante das capturas de tela neste tutorial, DevTools é mostrado em uma janela separada.</span><span class="sxs-lookup"><span data-stu-id="ddb10-146">For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.</span></span>  <span data-ttu-id="ddb10-147">Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Undock` \*\*\*\* para abrir o Menu de Comando, digitando e selecionando Desfazer em janela separada.</span><span class="sxs-lookup"><span data-stu-id="ddb10-147">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.</span></span>  
+<span data-ttu-id="ddb10-146">Para o restante das capturas de tela neste tutorial, DevTools é mostrado em uma janela separada.</span><span class="sxs-lookup"><span data-stu-id="ddb10-146">For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.</span></span>  <span data-ttu-id="ddb10-147">Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Undock`  para abrir o Menu de Comando, digitando e selecionando Desfazer em janela separada.</span><span class="sxs-lookup"><span data-stu-id="ddb10-147">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.</span></span>  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="DevTools DevTools desfaçada" lightbox="../media/speed-console.msft.png":::
    <span data-ttu-id="ddb10-149">DevTools DevTools desfaçada</span><span class="sxs-lookup"><span data-stu-id="ddb10-149">Undocked DevTools</span></span>  
@@ -234,7 +234,7 @@ ms.locfileid: "11439441"
        <span data-ttu-id="ddb10-253">Editar</span><span class="sxs-lookup"><span data-stu-id="ddb10-253">Edit</span></span> `server.js`  
     :::image-end:::  
     
-1.  <span data-ttu-id="ddb10-254">Adicione o código a seguir \*\* aserver.js\*\*.</span><span class="sxs-lookup"><span data-stu-id="ddb10-254">Add the following code to **server.js**.</span></span>  <span data-ttu-id="ddb10-255">Certifique-se de colocar `app.use(compression())` antes `app.use(express.static('build'))` .</span><span class="sxs-lookup"><span data-stu-id="ddb10-255">Make sure to put `app.use(compression())` before `app.use(express.static('build'))`.</span></span>  
+1.  <span data-ttu-id="ddb10-254">Adicione o código a seguir  aserver.js.</span><span class="sxs-lookup"><span data-stu-id="ddb10-254">Add the following code to **server.js**.</span></span>  <span data-ttu-id="ddb10-255">Certifique-se de colocar `app.use(compression())` antes `app.use(express.static('build'))` .</span><span class="sxs-lookup"><span data-stu-id="ddb10-255">Make sure to put `app.use(compression())` before `app.use(express.static('build'))`.</span></span>  
 
     ```javascript
     const express = require('express');
@@ -343,7 +343,7 @@ ms.locfileid: "11439441"
        <span data-ttu-id="ddb10-317">Mais informações sobre a oportunidade **De eliminar recursos de bloqueio de renderização**</span><span class="sxs-lookup"><span data-stu-id="ddb10-317">More information about the **Eliminate render-blocking resources** opportunity</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="ddb10-318">Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Coverage` \*\*\*\* para abrir o Menu de Comando, começar a digitar e, em seguida, escolher Mostrar Cobertura .</span><span class="sxs-lookup"><span data-stu-id="ddb10-318">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then choose **Show Coverage**.</span></span>  
+1.  <span data-ttu-id="ddb10-318">Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Coverage`  para abrir o Menu de Comando, começar a digitar e, em seguida, escolher Mostrar Cobertura .</span><span class="sxs-lookup"><span data-stu-id="ddb10-318">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then choose **Show Coverage**.</span></span>  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Abra o Menu de Comando no painel Auditorias" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        <span data-ttu-id="ddb10-320">Abra o Menu de Comando no **painel Auditorias**</span><span class="sxs-lookup"><span data-stu-id="ddb10-320">Open the Command Menu from the **Audits** panel</span></span>  

@@ -68,7 +68,7 @@ ms.locfileid: "11398263"
 
 *   <span data-ttu-id="e2d0e-125">Use a interface do usuário do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="e2d0e-125">Use the Microsoft Edge UI.</span></span>  
     
-    1.  <span data-ttu-id="e2d0e-126">Escolha o **ícone Configurações e** mais \( \) > Ferramentas de Desenvolvedor mais `...` \*\*\*\*  >   **Ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="e2d0e-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
+    1.  <span data-ttu-id="e2d0e-126">Escolha o **ícone Configurações e** mais \( \) > Ferramentas de Desenvolvedor mais `...`   >   **Ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="e2d0e-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
     
 *   <span data-ttu-id="e2d0e-127">Use o teclado.</span><span class="sxs-lookup"><span data-stu-id="e2d0e-127">Use the keyboard.</span></span>  
     *   <span data-ttu-id="e2d0e-128">Selecione `F12` ou `Control` + `Shift` + `I` \(Windows, Linux\) `Command` + `Option` + `I` ou \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="e2d0e-128">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  

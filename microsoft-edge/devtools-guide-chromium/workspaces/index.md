@@ -152,7 +152,7 @@ ms.locfileid: "11399243"
     
 1.  <span data-ttu-id="c7984-164">Escolha a **ferramenta Elementos.**</span><span class="sxs-lookup"><span data-stu-id="c7984-164">Choose the **Elements** tool.</span></span>  
 1.  <span data-ttu-id="c7984-165">Altere o valor `color` da propriedade do elemento para sua cor `<h1>` favorita.</span><span class="sxs-lookup"><span data-stu-id="c7984-165">Change the value of the `color` property of the `<h1>` element to your favorite color.</span></span>  
-    <span data-ttu-id="c7984-166">Lembre-se de que você precisa escolher o elemento na Árvore DOM para exibir as regras CSS aplicadas a `<h1>` ele no painel **Estilos.** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="c7984-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="c7984-167">O ponto verde ao lado `styles.css:1` significa que qualquer alteração que você fizer será mapeada para `~/Desktop/app/styles.css` .</span><span class="sxs-lookup"><span data-stu-id="c7984-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
+    <span data-ttu-id="c7984-166">Lembre-se de que você precisa escolher o elemento na Árvore DOM para exibir as regras CSS aplicadas a `<h1>` ele no painel **Estilos.** </span><span class="sxs-lookup"><span data-stu-id="c7984-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="c7984-167">O ponto verde ao lado `styles.css:1` significa que qualquer alteração que você fizer será mapeada para `~/Desktop/app/styles.css` .</span><span class="sxs-lookup"><span data-stu-id="c7984-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="O indicador verde que o arquivo está vinculado" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        <span data-ttu-id="c7984-169">O indicador verde que o arquivo está vinculado</span><span class="sxs-lookup"><span data-stu-id="c7984-169">The green indicator that the file is linked</span></span>  
@@ -238,7 +238,7 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > <span data-ttu-id="c7984-213">O `Save Changes To Disk With Workspaces` link na demonstração é estilizado regularmente.</span><span class="sxs-lookup"><span data-stu-id="c7984-213">The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.</span></span>  
     
-1.  <span data-ttu-id="c7984-214">Adicione o código a seguir à parte inferior \*\* da \*\*script.jsusando o **painel Fonte** Rápida.</span><span class="sxs-lookup"><span data-stu-id="c7984-214">Add the following code to the bottom of **script.js** using the **Quick Source** panel.</span></span>  
+1.  <span data-ttu-id="c7984-214">Adicione o código a seguir à parte inferior  da script.jsusando o **painel Fonte** Rápida.</span><span class="sxs-lookup"><span data-stu-id="c7984-214">Add the following code to the bottom of **script.js** using the **Quick Source** panel.</span></span>  
     
     ```javascript
     console.log('greetings from script.js');

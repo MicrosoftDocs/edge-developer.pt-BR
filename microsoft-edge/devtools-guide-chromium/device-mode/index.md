@@ -47,7 +47,7 @@ ms.locfileid: "11439448"
 
 ## <a name="simulate-a-mobile-viewport"></a><span data-ttu-id="8dea2-124">Simular um viewport móvel</span><span class="sxs-lookup"><span data-stu-id="8dea2-124">Simulate a mobile viewport</span></span>  
 
-<span data-ttu-id="8dea2-125">Escolha **Alternar** a emulação de dispositivo \( Toggle Device Toolbar \) ou escolha Personalizar e controlar ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** \( `...` \) emulação \*\*\*\* de dispositivo > para abrir a interface do usuário que permite simular um modo de exibição móvel.</span><span class="sxs-lookup"><span data-stu-id="8dea2-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
+<span data-ttu-id="8dea2-125">Escolha **Alternar** a emulação de dispositivo \( Toggle Device Toolbar \) ou escolha Personalizar e controlar ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** \( `...` \) emulação  de dispositivo > para abrir a interface do usuário que permite simular um modo de exibição móvel.</span><span class="sxs-lookup"><span data-stu-id="8dea2-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="A barra de ferramentas de dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     <span data-ttu-id="8dea2-127">A barra de ferramentas de dispositivo</span><span class="sxs-lookup"><span data-stu-id="8dea2-127">The Device Toolbar</span></span>  
@@ -234,7 +234,7 @@ ms.locfileid: "11439448"
        <span data-ttu-id="8dea2-244">A **lista De** aceleração no painel Rede</span><span class="sxs-lookup"><span data-stu-id="8dea2-244">The **Throttle** list in the Network panel</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="8dea2-245">Ou selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) \*\*\*\* `3G` \*\*\*\* \*\*\*\* para abrir o Menu de Comando , digite e escolha Habilitar a desaceleração 3G rápida ou Habilitar a desaceleração lenta do 3G .</span><span class="sxs-lookup"><span data-stu-id="8dea2-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
+    <span data-ttu-id="8dea2-245">Ou selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\)  `3G`   para abrir o Menu de Comando , digite e escolha Habilitar a desaceleração 3G rápida ou Habilitar a desaceleração lenta do 3G .</span><span class="sxs-lookup"><span data-stu-id="8dea2-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="O Menu De comando" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        <span data-ttu-id="8dea2-247">O **Menu De comando**</span><span class="sxs-lookup"><span data-stu-id="8dea2-247">The **Command Menu**</span></span>  
@@ -242,7 +242,7 @@ ms.locfileid: "11439448"
     
 <span data-ttu-id="8dea2-248">Você também pode definir a throttling de rede a partir do **painel Desempenho.**</span><span class="sxs-lookup"><span data-stu-id="8dea2-248">You may also set network throttling from the **Performance** panel.</span></span>  
 
-1.  <span data-ttu-id="8dea2-249">Escolha **Configurações de** Captura \( Configurações de Captura \) e escolha a lista Rede e altere a ![ ](../media/capture-settings-icon.msft.png) predefinição para Fast **3G** ou **Slow 3G**. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="8dea2-249">Choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.</span></span>  
+1.  <span data-ttu-id="8dea2-249">Escolha **Configurações de** Captura \( Configurações de Captura \) e escolha a lista Rede e altere a ![ ](../media/capture-settings-icon.msft.png) predefinição para Fast **3G** ou **Slow 3G**. </span><span class="sxs-lookup"><span data-stu-id="8dea2-249">Choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.</span></span>  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Definir a throttling de rede do painel Desempenho" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        <span data-ttu-id="8dea2-251">Definir a throttling de rede do **painel Desempenho**</span><span class="sxs-lookup"><span data-stu-id="8dea2-251">Set network throttling from the **Performance** panel</span></span>  
@@ -254,7 +254,7 @@ ms.locfileid: "11439448"
    :::column span="":::
       <span data-ttu-id="8dea2-253">Se sua página depender das informações de localização geográfica de um dispositivo móvel para renderizar corretamente, forneça diferentes localizações geográficas usando a interface do usuário de sobrelocação geográfica.</span><span class="sxs-lookup"><span data-stu-id="8dea2-253">If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.</span></span>  
 
-      1.  <span data-ttu-id="8dea2-254">Escolha **Personalizar e controlar o DevTools** \( `...` \) > Mais sensores de \*\*\*\*  >  **ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="8dea2-254">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
+      1.  <span data-ttu-id="8dea2-254">Escolha **Personalizar e controlar o DevTools** \( `...` \) > Mais sensores de   >  **ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="8dea2-254">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores para localização geográfica" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          <span data-ttu-id="8dea2-256">**Sensores** para localização geográfica</span><span class="sxs-lookup"><span data-stu-id="8dea2-256">**Sensors** for geolocation</span></span>  
@@ -283,7 +283,7 @@ ms.locfileid: "11439448"
    :::column span="":::
       <span data-ttu-id="8dea2-269">Se sua página depender das informações de orientação de um dispositivo móvel para renderizar corretamente, abra a interface do usuário de orientação.</span><span class="sxs-lookup"><span data-stu-id="8dea2-269">If your page depends on orientation information from a mobile device to render properly, open the orientation UI.</span></span>  
 
-      1.  <span data-ttu-id="8dea2-270">Escolha **Personalizar e controlar o DevTools** \( `...` \) > Mais sensores de \*\*\*\*  >  **ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="8dea2-270">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
+      1.  <span data-ttu-id="8dea2-270">Escolha **Personalizar e controlar o DevTools** \( `...` \) > Mais sensores de   >  **ferramentas.**</span><span class="sxs-lookup"><span data-stu-id="8dea2-270">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores para orientação" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          <span data-ttu-id="8dea2-272">**Sensores** para orientação</span><span class="sxs-lookup"><span data-stu-id="8dea2-272">**Sensors** for orientation</span></span>  
@@ -310,7 +310,7 @@ ms.locfileid: "11439448"
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="8dea2-283">Se sua página depender da cadeia de caracteres do \*\*\*\* agente do usuário de um dispositivo móvel para renderizar corretamente, use o painel Condições de rede para fornecer cadeias de caracteres de agente de usuário diferentes.</span><span class="sxs-lookup"><span data-stu-id="8dea2-283">If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.</span></span>  
+      <span data-ttu-id="8dea2-283">Se sua página depender da cadeia de caracteres do  agente do usuário de um dispositivo móvel para renderizar corretamente, use o painel Condições de rede para fornecer cadeias de caracteres de agente de usuário diferentes.</span><span class="sxs-lookup"><span data-stu-id="8dea2-283">If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.</span></span>  
       
       1.  <span data-ttu-id="8dea2-284">Escolha **Personalizar e controlar o DevTools** \( `...` \) > Mais **ferramentas**Condições  >  **de rede**.</span><span class="sxs-lookup"><span data-stu-id="8dea2-284">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.</span></span>  
       

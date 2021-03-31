@@ -597,7 +597,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 <span data-ttu-id="83d1d-359">Para uma maneira mais rápida de acessar os dados, navegue até [Visualizar uma divisão de tempo.](#preview-a-timing-breakdown)</span><span class="sxs-lookup"><span data-stu-id="83d1d-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
 
-<span data-ttu-id="83d1d-360">Para obter mais informações sobre cada uma das \*\*\*\* fases que podem ser exibidas no painel Timing, navegue até Fases de divisão [de tempo explicadas](#timing-breakdown-phases-explained).</span><span class="sxs-lookup"><span data-stu-id="83d1d-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
+<span data-ttu-id="83d1d-360">Para obter mais informações sobre cada uma das  fases que podem ser exibidas no painel Timing, navegue até Fases de divisão [de tempo explicadas](#timing-breakdown-phases-explained).</span><span class="sxs-lookup"><span data-stu-id="83d1d-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
 
 :::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="O painel Timing" lightbox="../media/network-network-resources-timing.msft.png":::
    <span data-ttu-id="83d1d-362">O **painel Timing**</span><span class="sxs-lookup"><span data-stu-id="83d1d-362">The **Timing** panel</span></span>  
@@ -924,7 +924,7 @@ init();
     
 ## <a name="change-the-layout-of-the-network-panel"></a><span data-ttu-id="83d1d-485">Alterar o layout do painel Rede</span><span class="sxs-lookup"><span data-stu-id="83d1d-485">Change the layout of the Network panel</span></span>  
 
-<span data-ttu-id="83d1d-486">Você pode expandir ou fechar \*\*\*\* seções da interface do usuário da ferramenta de rede para focalizar informações importantes.</span><span class="sxs-lookup"><span data-stu-id="83d1d-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
+<span data-ttu-id="83d1d-486">Você pode expandir ou fechar  seções da interface do usuário da ferramenta de rede para focalizar informações importantes.</span><span class="sxs-lookup"><span data-stu-id="83d1d-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
 
 ### <a name="hide-the-filters-pane"></a><span data-ttu-id="83d1d-487">Ocultar o painel Filtros</span><span class="sxs-lookup"><span data-stu-id="83d1d-487">Hide the Filters pane</span></span>  
 

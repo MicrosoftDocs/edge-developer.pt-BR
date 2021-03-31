@@ -22,7 +22,7 @@ ms.locfileid: "11231528"
 
 ## <span data-ttu-id="52515-105">API da Solicitação de Pagamento</span><span class="sxs-lookup"><span data-stu-id="52515-105">Payment Request API</span></span>  
 
-<span data-ttu-id="52515-106">A [API de solicitação de pagamento](./windows-integration/payment-request-api.md) é um padrão de navegador cruzado aberto que permite que os navegadores atuem como intermediários entre comerciantes, consumidores e métodos de pagamento \ (como cartões de crédito \) que os consumidores armazenaram na nuvem.</span><span class="sxs-lookup"><span data-stu-id="52515-106">The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.</span></span>  
+<span data-ttu-id="52515-106">A [API de solicitação de pagamento](./windows-integration/payment-request-api.md) é um padrão de navegador cruzado aberto que permite que os navegadores atuem como intermediários entre comerciantes, consumidores e métodos de pagamento \(como cartões de crédito \) que os consumidores armazenaram na nuvem.</span><span class="sxs-lookup"><span data-stu-id="52515-106">The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.</span></span>  
 
 ## <span data-ttu-id="52515-107">Autenticação da Web e Windows Hello</span><span class="sxs-lookup"><span data-stu-id="52515-107">Web Authentication and Windows Hello</span></span>  
 

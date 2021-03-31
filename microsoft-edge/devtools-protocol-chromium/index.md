@@ -15,19 +15,19 @@ ms.locfileid: "11231728"
 ---
 # <span data-ttu-id="c1791-103">Visão geral do protocolo DevTools Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="c1791-103">Microsoft Edge (Chromium) DevTools Protocol overview</span></span>  
 
-<span data-ttu-id="c1791-104">Com o turno na plataforma da Web subjacente do Microsoft Edge com o Chromium, o [protocolo de devtools do Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não receberá mais atualizações.</span><span class="sxs-lookup"><span data-stu-id="c1791-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="c1791-105">O protocolo DevTools do Microsoft Edge \ (Chromium \) corresponderá às APIs do protocolo Chrome DevTools em andamento.</span><span class="sxs-lookup"><span data-stu-id="c1791-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
+<span data-ttu-id="c1791-104">Com o turno na plataforma da Web subjacente do Microsoft Edge com o Chromium, o [protocolo de devtools do Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não receberá mais atualizações.</span><span class="sxs-lookup"><span data-stu-id="c1791-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="c1791-105">O protocolo DevTools do Microsoft Edge \(Chromium \) corresponderá às APIs do protocolo Chrome DevTools em andamento.</span><span class="sxs-lookup"><span data-stu-id="c1791-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
 
 <span data-ttu-id="c1791-106">Você pode encontrar documentação sobre esses domínios e métodos fazendo referência ao Visualizador de [protocolo do Chrome devtools](https://chromedevtools.github.io/devtools-protocol/tot/).</span><span class="sxs-lookup"><span data-stu-id="c1791-106">You can find documentation on those domains and methods by referring to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot/).</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="c1791-107">Qualquer método que tenha sido prefixado `ms` no [protocolo devtools Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não tem mais suporte no protocolo devtools do Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="c1791-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
+> <span data-ttu-id="c1791-107">Qualquer método que tenha sido prefixado `ms` no [protocolo devtools Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não tem mais suporte no protocolo devtools do Microsoft Edge \(Chromium \).</span><span class="sxs-lookup"><span data-stu-id="c1791-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
 
 ## <span data-ttu-id="c1791-108">Usar o protocolo DevTools</span><span class="sxs-lookup"><span data-stu-id="c1791-108">Using the DevTools Protocol</span></span>  
 
-<span data-ttu-id="c1791-109">Veja como anexar um cliente de ferramentas personalizado ao servidor DevTools no Microsoft Edge \ (Chromium \).</span><span class="sxs-lookup"><span data-stu-id="c1791-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
+<span data-ttu-id="c1791-109">Veja como anexar um cliente de ferramentas personalizado ao servidor DevTools no Microsoft Edge \(Chromium \).</span><span class="sxs-lookup"><span data-stu-id="c1791-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
 
-1.  <span data-ttu-id="c1791-110">Verifique se todas as instâncias do Microsoft Edge \ (Chromium \) estão fechadas.</span><span class="sxs-lookup"><span data-stu-id="c1791-110">Ensure all instances of Microsoft Edge \(Chromium\) are closed.</span></span>  
-1.  <span data-ttu-id="c1791-111">Inicie o Microsoft Edge \ (Chromium \) com a porta de depuração remota:.</span><span class="sxs-lookup"><span data-stu-id="c1791-111">Launch Microsoft Edge \(Chromium\) with the remote debugging port:.</span></span> 
+1.  <span data-ttu-id="c1791-110">Verifique se todas as instâncias do Microsoft Edge \(Chromium \) estão fechadas.</span><span class="sxs-lookup"><span data-stu-id="c1791-110">Ensure all instances of Microsoft Edge \(Chromium\) are closed.</span></span>  
+1.  <span data-ttu-id="c1791-111">Inicie o Microsoft Edge \(Chromium \) com a porta de depuração remota:.</span><span class="sxs-lookup"><span data-stu-id="c1791-111">Launch Microsoft Edge \(Chromium\) with the remote debugging port:.</span></span> 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ ms.locfileid: "11231728"
 
 ## <span data-ttu-id="c1791-115">Pontos de extremidade HTTP do protocolo DevTools</span><span class="sxs-lookup"><span data-stu-id="c1791-115">DevTools Protocol HTTP Endpoints</span></span>  
 
-<span data-ttu-id="c1791-116">O protocolo DevTools do Microsoft Edge \ (Chromium \) dá suporte aos seguintes pontos de extremidade HTTP.</span><span class="sxs-lookup"><span data-stu-id="c1791-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
+<span data-ttu-id="c1791-116">O protocolo DevTools do Microsoft Edge \(Chromium \) dá suporte aos seguintes pontos de extremidade HTTP.</span><span class="sxs-lookup"><span data-stu-id="c1791-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
 
 ## <span data-ttu-id="c1791-117">/json/version</span><span class="sxs-lookup"><span data-stu-id="c1791-117">/json/version</span></span>  
 
@@ -108,7 +108,7 @@ ms.locfileid: "11231728"
 
 ## <span data-ttu-id="c1791-133">/json/close</span><span class="sxs-lookup"><span data-stu-id="c1791-133">/json/close</span></span>  
 
-<span data-ttu-id="c1791-134">Fecha o processo de destino \ (por exemplo, no Microsoft Edge \ (Chromium \), fecha a guia da página \).</span><span class="sxs-lookup"><span data-stu-id="c1791-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
+<span data-ttu-id="c1791-134">Fecha o processo de destino \(por exemplo, no Microsoft Edge \(Chromium \), fecha a guia da página \).</span><span class="sxs-lookup"><span data-stu-id="c1791-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
 
 **<span data-ttu-id="c1791-135">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c1791-135">Parameters</span></span>**  
 
@@ -130,7 +130,7 @@ String(“Target is closing”)
 
 ### <span data-ttu-id="c1791-145">/msedge/json/list</span><span class="sxs-lookup"><span data-stu-id="c1791-145">/msedge/json/list</span></span>  
 
-<span data-ttu-id="c1791-146">Fornece uma lista de candidatos de todos os `msedge.exe` processos \ (incluindo [PWAs](../progressive-web-apps-chromium/index.md) e todas as guias em todas as instâncias do Microsoft Edge \) no dispositivo Windows 10 para depuração.</span><span class="sxs-lookup"><span data-stu-id="c1791-146">Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.</span></span>  
+<span data-ttu-id="c1791-146">Fornece uma lista de candidatos de todos os `msedge.exe` processos \(incluindo [PWAs](../progressive-web-apps-chromium/index.md) e todas as guias em todas as instâncias do Microsoft Edge \) no dispositivo Windows 10 para depuração.</span><span class="sxs-lookup"><span data-stu-id="c1791-146">Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.</span></span>  
 
 **<span data-ttu-id="c1791-147">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c1791-147">Parameters</span></span>**  
 
