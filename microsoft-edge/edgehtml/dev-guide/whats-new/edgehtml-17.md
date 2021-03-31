@@ -19,7 +19,7 @@ ms.locfileid: "11231393"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Aqui está uma lista dos recursos novos e atualizados fornecidos na [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30) na plataforma da Web, como parte da [atualização do Windows 10 de abril de 2018](https://blogs.windows.com/windowsexperience/2018/04/27) \ (04/2018, Build 17134 \).  Para alterações em compilações específicas do [Windows Insider](https://insider.windows.com) Preview, consulte o [changelog do Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/changelog) e [o que há de novo no EdgeHTML](../whats-new.md).  
+Aqui está uma lista dos recursos novos e atualizados fornecidos na [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30) na plataforma da Web, como parte da [atualização do Windows 10 de abril de 2018](https://blogs.windows.com/windowsexperience/2018/04/27) \(04/2018, Build 17134 \).  Para alterações em compilações específicas do [Windows Insider](https://insider.windows.com) Preview, consulte o [changelog do Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/changelog) e [o que há de novo no EdgeHTML](../whats-new.md).  
 
 Aqui está o link permanente para a seguinte lista de alterações: [https://aka.ms/devguide_edgehtml_17](./edgehtml-17.md) .  
 
@@ -39,7 +39,7 @@ EdgeHTML 17 agora oferece suporte a CSS Transforms em elementos SVG e atributos 
 
 ### Extensões  
 
-O Microsoft Edge agora oferece suporte à [API de notificação](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) que exibe notificações de extensões.  Os desenvolvedores de extensão agora podem criar diferentes tipos de notificações \ (básico, lista, imagem e assim por diante \) que dão suporte à interação do usuário completo.  As notificações também são registradas automaticamente na central de ações.  Acesse o [exemplo de notificações](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) sobre como usar essa API em sua extensão.  
+O Microsoft Edge agora oferece suporte à [API de notificação](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) que exibe notificações de extensões.  Os desenvolvedores de extensão agora podem criar diferentes tipos de notificações \(básico, lista, imagem e assim por diante \) que dão suporte à interação do usuário completo.  As notificações também são registradas automaticamente na central de ações.  Acesse o [exemplo de notificações](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) sobre como usar essa API em sua extensão.  
 
 O EdgeHTML 17 agora também oferece suporte ao `Tabs.reload()` método como parte da classe API de guias padrão.  Também novidade na atualização do Windows 10 de abril de 2018, os usuários agora podem optar por permitir que as extensões sejam executadas durante a navegação InPrivate.  
 
@@ -47,13 +47,13 @@ Para obter mais detalhes sobre as atualizações de extensões nesta versão, v�
 
 ### DevTools  
 
-Esta versão do DevTools vem de duas maneiras: como as ferramentas tradicionais no navegador \ ( `F12` \) do Microsoft Edge e a visualização como um aplicativo autônomo do [Windows 10](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview) da Microsoft Store!  
+Esta versão do DevTools vem de duas maneiras: como as ferramentas tradicionais no navegador \( `F12` \) do Microsoft Edge e a visualização como um aplicativo autônomo do [Windows 10](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview) da Microsoft Store!  
 
 :::image type="complex" source="../../devtools-protocol/media/microsoft-edge-devtools.png" alt-text="Aplicativo DevTools Microsoft Edge" lightbox="../../devtools-protocol/media/microsoft-edge-devtools.png":::
    Aplicativo DevTools Microsoft Edge  
 :::image-end:::  
 
-As ferramentas também foram atualizadas com vários recursos principais, incluindo suporte básico para [depuração remota](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \ (por meio do nosso novo [devtools protocolo](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), [recursos de depuração do PWA](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging), [Gerenciamento de cache do IndexedDB](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), [encaixe vertical](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) e muito mais! Também continuamos o [esforço de refatoração](./edgehtml-16.md) geral ter começado o último lançamento como parte de investimentos contínuos em desempenho e confiabilidade.  
+As ferramentas também foram atualizadas com vários recursos principais, incluindo suporte básico para [depuração remota](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \(por meio do nosso novo [devtools protocolo](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), [recursos de depuração do PWA](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging), [Gerenciamento de cache do IndexedDB](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), [encaixe vertical](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) e muito mais! Também continuamos o [esforço de refatoração](./edgehtml-16.md) geral ter começado o último lançamento como parte de investimentos contínuos em desempenho e confiabilidade.  
 
 Acesse [devtools na atualização mais recente do Windows 10 (EdgeHTML 17)](../../devtools-guide/whats-new/edgehtml-17.md) para obter mais detalhes.  
 
@@ -66,7 +66,7 @@ Com o EdgeHTML 17, o mecanismo de JavaScript do Chakra introduz melhorias de des
       **Espaço de memória mais enxuto**  
    :::column-end:::
    :::column span="2":::
-      *   \ (Re-\) adiar a análise de [funções de seta](https://github.com/Microsoft/ChakraCore/pull/4105) e [métodos em literais de objeto](https://github.com/Microsoft/ChakraCore/pull/4136)  
+      *   \(Re-\) adiar a análise de [funções de seta](https://github.com/Microsoft/ChakraCore/pull/4105) e [métodos em literais de objeto](https://github.com/Microsoft/ChakraCore/pull/4136)  
       *   [Refatoração de código de bytes RegExp](https://github.com/Microsoft/ChakraCore/pull/3915)  
    :::column-end:::
 :::row-end:::  
@@ -108,9 +108,9 @@ O Microsoft Edge agora oferece suporte à captura de tela no RTC por meio da [AP
 
 ### Aplicativos Web progressivos  
 
-A partir de EdgeHTML 17, os funcionários de serviço e as notificações por push são habilitados por padrão \ (Saiba mais sobre esses recursos no trabalho do serviço de postagem de blog [: indo além da página](https://blogs.windows.com/msedgedev/2017/12/19)).  Isso conclui o conjunto de tecnologias \ (incluindo a rede de buscas e as APIs de cache e push) que estabelece a base técnica para aplicativos Web progressivos \ (PWAs \) no Windows 10.  
+A partir de EdgeHTML 17, os funcionários de serviço e as notificações por push são habilitados por padrão \(Saiba mais sobre esses recursos no trabalho do serviço de postagem de blog [: indo além da página](https://blogs.windows.com/msedgedev/2017/12/19)).  Isso conclui o conjunto de tecnologias \(incluindo a rede de buscas e as APIs de cache e push) que estabelece a base técnica para aplicativos Web progressivos \(PWAs \) no Windows 10.  
 
-PWAs são simplesmente aplicativos Web que são [aprimorados progressivamente](https://en.wikipedia.org/wiki/Progressive_enhancement) com recursos de semelhantes a aplicativos nativos em plataformas de suporte e mecanismos de navegador, como instalação/inicialização da tela inicial, suporte offline e notificações por push.  No Windows 10 com o mecanismo \ (EdgeHTML \) do Microsoft Edge, PWAs Desfrute da vantagem adicional de ser executado independentemente da janela do navegador como aplicativos da [plataforma universal do Windows](/windows/uwp/get-started/whats-a-uwp) .  
+PWAs são simplesmente aplicativos Web que são [aprimorados progressivamente](https://en.wikipedia.org/wiki/Progressive_enhancement) com recursos de semelhantes a aplicativos nativos em plataformas de suporte e mecanismos de navegador, como instalação/inicialização da tela inicial, suporte offline e notificações por push.  No Windows 10 com o mecanismo \(EdgeHTML \) do Microsoft Edge, PWAs Desfrute da vantagem adicional de ser executado independentemente da janela do navegador como aplicativos da [plataforma universal do Windows](/windows/uwp/get-started/whats-a-uwp) .  
 
 Além do PWAs, os funcionários do serviço e a API do cache permitem que os desenvolvedores interceptem solicitações de rede e respondam do cache.  Um site não precisa sequer ter sido um aplicativo Web de baixa aparência para aproveitar o cache do serviço de trabalho para o desempenho e a confiabilidade da carga de páginas tined, além da capacidade de oferecer uma experiência offline durante períodos sem conexão à Internet ou de baixa qualidade.  
 
@@ -118,7 +118,7 @@ Vá até nossos [aplicativos Web progressivos em documentos do Windows](../../pr
 
 ### Segurança da Web  
 
-EdgeHTML 17 introduz suporte para a integridade do subrecurso \ (SRI \).  A [integridade do subrecurso](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) é um recurso de segurança que permite que os navegadores verifiquem se os recursos buscados \ (como imagens, scripts, fontes e assim por diante \) são entregues sem a manipulação inesperada.  
+EdgeHTML 17 introduz suporte para a integridade do subrecurso \(SRI \).  A [integridade do subrecurso](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) é um recurso de segurança que permite que os navegadores verifiquem se os recursos buscados \(como imagens, scripts, fontes e assim por diante \) são entregues sem a manipulação inesperada.  
 
 Adicione um `integrity` atributo contendo uma representação de hash criptográfico do recurso que você espera carregar na sua página da Web para um `<script>` `<link>` elemento ou, como o exemplo abaixo.  Em seguida, o Microsoft Edge irá comparar o recurso solicitado com o hash definido no `integrity` atributo.  Se eles não corresponderem, o Microsoft Edge não executará o recurso e retornará um erro à rede.  
 
@@ -131,7 +131,7 @@ Adicione um `integrity` atributo contendo uma representação de hash criptográ
 Também novidade no EdgeHTML 17, o cabeçalho de solicitação [atualização-inseguro-solicitações](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) permite que os navegadores solicitem uma experiência de navegação segura.  Esse cabeçalho informa ao servidor que o navegador dá suporte à atualização de solicitações inseguras e que o usuário deve ser redirecionado para uma versão segura do site, se disponível.  
 
 ### Fontes variáveis
-O suporte completo para fontes variáveis \ (incluindo [as configurações de variação de fonte](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) CSS e o [dimensionamento de fonte-óptico](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)\) está disponível no EdgeHTML 17.  As fontes variáveis permitem que os desenvolvedores obtenham a aparência de tipos de letra aparentemente diferentes com uma única fonte ajustando vários eixos – reduzindo a necessidade de vários arquivos de fonte e melhorando o desempenho.  
+O suporte completo para fontes variáveis \(incluindo [as configurações de variação de fonte](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) CSS e o [dimensionamento de fonte-óptico](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)\) está disponível no EdgeHTML 17.  As fontes variáveis permitem que os desenvolvedores obtenham a aparência de tipos de letra aparentemente diferentes com uma única fonte ajustando vários eixos – reduzindo a necessidade de vários arquivos de fonte e melhorando o desempenho.  
 
 Junte- [se a um expedição para saber mais sobre quais fontes variáveis fornecem desenvolvedores e designers da Web](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts)e como usá-los em seu site.  E leia mais sobre fontes variáveis na postagem de blog, [trazendo uma tipografia expressiva e com o Autoformato para o Microsoft Edge com fontes variáveis](https://blogs.windows.com/msedgedev/2018/03/13).  
 

@@ -16,7 +16,7 @@ ms.locfileid: "10562532"
 ---
 # Cadeia de caracteres do agente de usuário do Microsoft Edge (Desktop)  
 
-Uma cadeia de caracteres de agente do usuário \ (UA \) pode ser usada para detectar qual versão de um navegador específico está sendo usada em um determinado sistema operacional.  Como outros navegadores, o Microsoft Edge inclui essas informações no `User-Agent` cabeçalho http sempre que faz uma solicitação para um site.  Ele também pode ser acessado via JavaScript consultando o valor de `navigator.userAgent` .  
+Uma cadeia de caracteres de agente do usuário \(UA \) pode ser usada para detectar qual versão de um navegador específico está sendo usada em um determinado sistema operacional.  Como outros navegadores, o Microsoft Edge inclui essas informações no `User-Agent` cabeçalho http sempre que faz uma solicitação para um site.  Ele também pode ser acessado via JavaScript consultando o valor de `navigator.userAgent` .  
 
 A Microsoft recomenda que os desenvolvedores da Web façam uso da [detecção de recursos](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) sempre que possível para melhorar a manutenção do código, reduzir o código Fragility e eliminar o risco de quebra de código no caso de atualizações de cadeia de caracteres do UA futuras.  
 

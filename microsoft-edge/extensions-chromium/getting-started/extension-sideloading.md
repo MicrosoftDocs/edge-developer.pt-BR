@@ -16,7 +16,7 @@ ms.locfileid: "11104767"
 ---
 # Sideload uma extensão
 
-Durante o desenvolvimento, você pode usar o navegador Microsoft Edge \ (Chromium \) para executar e depurar a extensão com segurança. Ao fazer o Sideload da sua extensão localmente no seu navegador, você pode executar e testar a extensão. Este artigo explica como Sideload extensões para o Microsoft Edge.
+Durante o desenvolvimento, você pode usar o navegador Microsoft Edge \(Chromium \) para executar e depurar a extensão com segurança. Ao fazer o Sideload da sua extensão localmente no seu navegador, você pode executar e testar a extensão. Este artigo explica como Sideload extensões para o Microsoft Edge.
 
 Para Sideload a extensão, siga estas etapas.
 

@@ -20,12 +20,12 @@ ms.locfileid: "11231590"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-O suporte a JavaScript varia de acordo com o Microsoft Edge, os aplicativos da Microsoft Store e os diferentes modos de documento do Internet Explorer \ (IE \). Para obter mais informações sobre o controle de versão do código de documento do IE, consulte [definindo a compatibilidade do documento](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
+O suporte a JavaScript varia de acordo com o Microsoft Edge, os aplicativos da Microsoft Store e os diferentes modos de documento do Internet Explorer \(IE \). Para obter mais informações sobre o controle de versão do código de documento do IE, consulte [definindo a compatibilidade do documento](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 A tabela a seguir resume o suporte a JavaScript nos aplicativos Internet Explorer, Microsoft Edge e Microsoft Store.  
   
 > [!IMPORTANT]
-> Os recursos experimentais \ (habilitados de `about:flags` \) são indicados por `Exp` . Em alguns casos, o suporte a repositório de aplicativos varia entre os aplicativos do Windows 8 \ (V8 \) e do Windows 10 \ (V10 \) e a área de trabalho do Windows \ (Win \) e o Windows Phone \ (telefone \), conforme indicado.  
+> Os recursos experimentais \(habilitados de `about:flags` \) são indicados por `Exp` . Em alguns casos, o suporte a repositório de aplicativos varia entre os aplicativos do Windows 8 \(V8 \) e do Windows 10 \(V10 \) e a área de trabalho do Windows \(Win \) e o Windows Phone \(telefone \), conforme indicado.  
   
  | Elemento de linguagem | Peculiaridades, padrões do IE 6, padrões do IE 7 | Padrões do IE 8 | Padrões do IE 9 | Padrões do IE 10 | Padrões do IE 11 | Microsoft Edge | Aplicativos da loja |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  

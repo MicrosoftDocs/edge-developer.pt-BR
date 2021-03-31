@@ -52,7 +52,7 @@ As configurações por site substituem a configuração global.  Por exemplo, se
 
 Veja como garantir uma boa experiência do usuário com mídia hospedada em seu site:  
 
-*   Suponha que cada uso de um elemento de mídia ouvirá exija um gesto do usuário para iniciar a reprodução \ (à medida que os usuários podem bloquear a reprodução automática em qualquer point-in-time \) e planeje-se adequadamente.  Políticas de reprodução automática global e por site aplicam-se a todos os `<audio>` `<video>` elementos, independentemente de como eles são usados no seu site  
+*   Suponha que cada uso de um elemento de mídia ouvirá exija um gesto do usuário para iniciar a reprodução \(à medida que os usuários podem bloquear a reprodução automática em qualquer point-in-time \) e planeje-se adequadamente.  Políticas de reprodução automática global e por site aplicam-se a todos os `<audio>` `<video>` elementos, independentemente de como eles são usados no seu site  
 
 *   Verifique se os controles de mídia estão sempre presentes na mídia de site e no conteúdo do anúncio.  Isso dará aos usuários a capacidade de reiniciar a reprodução se a reprodução automática estiver bloqueada na página.  
 

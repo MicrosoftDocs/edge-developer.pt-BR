@@ -20,7 +20,7 @@ ms.locfileid: "11231903"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Aqui estão as alterações fornecidas com a versão atual da plataforma Microsoft Edge, a partir da [atualização do Windows 10 Creators](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \ (04/2017, Build 15063 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, confira [novidades do Microsoft Edge na atualização do Windows 10 para criadores](https://blogs.windows.com/msedgedev/2017/04/11).  
+Aqui estão as alterações fornecidas com a versão atual da plataforma Microsoft Edge, a partir da [atualização do Windows 10 Creators](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04/2017, Build 15063 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, confira [novidades do Microsoft Edge na atualização do Windows 10 para criadores](https://blogs.windows.com/msedgedev/2017/04/11).  
 
 Para alterações nas compilações subsequentes do Windows Insider Preview, confira novidades [no EdgeHTML](../whats-new.md).  
 
@@ -58,14 +58,14 @@ Além disso, EdgeHTML 15 introduz as seguintes visualizações de recursos:
 
 Habilitado com `about:flags`  
 
-*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \ ([demonstração](https://webassembly.org/demo)\)  
+*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \([demonstração](https://webassembly.org/demo)\)  
 *   [Memória compartilhada e Atomicidades](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
 Consulte [melhor desempenho do JavaScript, Webassembly e memória compartilhada no Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20) para obter mais detalhes.  
 
 ### API da Solicitação de Pagamento  
 
-Agora há suporte para a [API de solicitação de pagamento](https://w3.org/TR/payment-request) , permitindo check-out e pagamentos mais simples na Web em computadores e telefones Windows 10.  Essa API permite que o Microsoft Edge atue como intermediário entre comerciantes, consumidores e métodos de pagamento \ (como cartões de crédito \) que os consumidores armazenaram na nuvem.  Para obter mais informações sobre a API de solicitação de pagamento, confira [pagamentos da Web mais simples: apresentando a API de solicitação de pagamento](https://blogs.windows.com/msedgedev/2016/12/15) e o guia de desenvolvedor da [API de solicitação de pagamento](/microsoft-edge/dev-guide/device/payment-request-api) .  
+Agora há suporte para a [API de solicitação de pagamento](https://w3.org/TR/payment-request) , permitindo check-out e pagamentos mais simples na Web em computadores e telefones Windows 10.  Essa API permite que o Microsoft Edge atue como intermediário entre comerciantes, consumidores e métodos de pagamento \(como cartões de crédito \) que os consumidores armazenaram na nuvem.  Para obter mais informações sobre a API de solicitação de pagamento, confira [pagamentos da Web mais simples: apresentando a API de solicitação de pagamento](https://blogs.windows.com/msedgedev/2016/12/15) e o guia de desenvolvedor da [API de solicitação de pagamento](/microsoft-edge/dev-guide/device/payment-request-api) .  
 
 ### TCP Fast Open (TFO)  
 O TCP Fast Open é um recurso que reduz o número de viagens de ida e outros necessários para abrir uma conexão TCP, melhorando o desempenho da rede do navegador.  Para obter mais detalhes, consulte [criando uma Web mais rápida e segura com o TCP Fast aberto](https://blogs.windows.com/msedgedev/2016/06/15).  Devido a diferenças de interoperabilidade em várias topologias de rede, esses recursos não são habilitados por padrão no Microsoft Edge.  Para habilitá-lo, digite `about:flags` a barra de endereços e marque a caixa de seleção **habilitar TCP Fast abrir** na seção **rede** .  
@@ -97,7 +97,7 @@ Consulte a [referência de API WebVR](/previous-versions/mt806281(v=vs.85)) e a 
 
 ### Política de segurança de conteúdo (nível 2)  
 
-Os sites que já usam o CSP 1 devem continuar a funcionar com o suporte do Microsoft Edge para o CSP 2, mas é melhor alternar todas as `frame-src` diretivas que carregam scripts de trabalhador para a nova `child-src` política para manter a obsolescência do seu site.  \ (No CSP 3, `frame-src` não será mais aplicável a trabalhadores. \) o CSP 2 também adiciona o seguinte:  
+Os sites que já usam o CSP 1 devem continuar a funcionar com o suporte do Microsoft Edge para o CSP 2, mas é melhor alternar todas as `frame-src` diretivas que carregam scripts de trabalhador para a nova `child-src` política para manter a obsolescência do seu site.  \(No CSP 3, `frame-src` não será mais aplicável a trabalhadores. \) o CSP 2 também adiciona o seguinte:  
 
 :::row:::
    :::column span="1":::
@@ -120,7 +120,7 @@ Os sites que já usam o CSP 1 devem continuar a funcionar com o suporte do Micro
       Estilos e scripts embutidos  
    :::column-end:::
    :::column span="2":::
-      O CSP 2 permite a execução de scripts embutidos e blocos de estilo fornecendo hashes e nonces como um mecanismo de listagem de permissão.  Os nonces são valores base aleatórios-64 gerados em cada carga de página que aparece na política de CSP e nas marcas de script na página.  Quando a página é gerada dinamicamente na carga, o servidor gera um valor de nonce, a insere no NonceToken na página e também a declara no cabeçalho HTTP da política de segurança de conteúdo.  Hashes são valores estáticos gerados \ (usando os algoritmos SHA256, Sha384 ou SHA512 \) do conteúdo de um `<script>` `<style>` elemento ou que são especificados \ (usando `script-src` ou `style-src` Diretivas \) na política de CSP.  
+      O CSP 2 permite a execução de scripts embutidos e blocos de estilo fornecendo hashes e nonces como um mecanismo de listagem de permissão.  Os nonces são valores base aleatórios-64 gerados em cada carga de página que aparece na política de CSP e nas marcas de script na página.  Quando a página é gerada dinamicamente na carga, o servidor gera um valor de nonce, a insere no NonceToken na página e também a declara no cabeçalho HTTP da política de segurança de conteúdo.  Hashes são valores estáticos gerados \(usando os algoritmos SHA256, Sha384 ou SHA512 \) do conteúdo de um `<script>` `<style>` elemento ou que são especificados \(usando `script-src` ou `style-src` Diretivas \) na política de CSP.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -128,7 +128,7 @@ Os sites que já usam o CSP 1 devem continuar a funcionar com o suporte do Micro
       Relatório de violação de CSP  
    :::column-end:::
    :::column span="2":::
-      Um novo evento, `SecurityPolicyViolationEvent` agora é disparado nas violações do CSP.  O mecanismo anterior para relatórios do CSP, `report-uri` continua a ser compatível.  Vários novos campos foram adicionados aos relatórios de violação comuns a ambos, incluindo `effectiveDirective` \ (a política que foi violada \), `statusCode` \ (o código de resposta http \), `sourceFile` \ (a URL do recurso incorreto \), `lineNumber` e `columnNumber` .  
+      Um novo evento, `SecurityPolicyViolationEvent` agora é disparado nas violações do CSP.  O mecanismo anterior para relatórios do CSP, `report-uri` continua a ser compatível.  Vários novos campos foram adicionados aos relatórios de violação comuns a ambos, incluindo `effectiveDirective` \(a política que foi violada \), `statusCode` \(o código de resposta http \), `sourceFile` \(a URL do recurso incorreto \), `lineNumber` e `columnNumber` .  
    :::column-end:::
 :::row-end:::  
 
@@ -138,15 +138,15 @@ O suporte do Microsoft Edge para a **API de autenticação da Web** emergente qu
 
 <!--  Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  -->  
 
-*   A implementação inicial da API de autenticação da Web experimental introduzida no [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \ (atualização de aniversário do Windows 10, Build 10240, 7/2016 \) foi exposta por meio das APIs prefixadas da MS \ (a interface [MSCredentials](/previous-versions/mt697639(v=vs.85)) \).  Embora essas APIs ainda estejam disponíveis no EdgeHTML 15, elas agora são preteridas em favor das APIs e comportamentos não predefinidos e baseados em padrões definidos em um [instantâneo mais recente](https://w3.org/TR/2016/WD-webauthn-20160928) da especificação e provavelmente continuarão mudando à medida que a especificação for desenvolvida para a padronização.  
+*   A implementação inicial da API de autenticação da Web experimental introduzida no [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \(atualização de aniversário do Windows 10, Build 10240, 7/2016 \) foi exposta por meio das APIs prefixadas da MS \(a interface [MSCredentials](/previous-versions/mt697639(v=vs.85)) \).  Embora essas APIs ainda estejam disponíveis no EdgeHTML 15, elas agora são preteridas em favor das APIs e comportamentos não predefinidos e baseados em padrões definidos em um [instantâneo mais recente](https://w3.org/TR/2016/WD-webauthn-20160928) da especificação e provavelmente continuarão mudando à medida que a especificação for desenvolvida para a padronização.  
 
-*   A última implementação do Microsoft Edge é desativada por padrão e é enviada atrás de um sinalizador \ (digite a `about:flags` barra de endereços para ativar o recurso \).  
+*   A última implementação do Microsoft Edge é desativada por padrão e é enviada atrás de um sinalizador \(digite a `about:flags` barra de endereços para ativar o recurso \).  
 
 *   O Microsoft Edge ainda não dá suporte a credenciais externas, como chaves USB ou dispositivos Bluetooth.  A API atual limita-se a credenciais inseridas armazenadas no TPM.  Um fallback de software será usado se o TPM não estiver disponível no dispositivo.  
 
 *   A conta de usuário do Windows atualmente conectada deve ser configurada para dar suporte a pelo menos um PIN, e preferencialmente diante ou biometria de impressão digital.  Isso é para garantir que o Windows possa autenticar o acesso ao TPM.  
 
-*   Das [extensões predefinidas](https://w3.org/TR/webauthn/#extension-predef) descritas na espec, o Microsoft Edge só oferece suporte ao [Fido AppID](https://w3.org/TR/webauthn/#extension-appid) \ ( `webauthn_txAuthSimple` \) no momento.  
+*   Das [extensões predefinidas](https://w3.org/TR/webauthn/#extension-predef) descritas na espec, o Microsoft Edge só oferece suporte ao [Fido AppID](https://w3.org/TR/webauthn/#extension-appid) \( `webauthn_txAuthSimple` \) no momento.  
 
 *  A `timeoutSeconds` opção não é avaliada no momento  
 

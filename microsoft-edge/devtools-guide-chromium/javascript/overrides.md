@@ -65,7 +65,7 @@ Para adicionar arquivos à sua pasta substituis, abra a ferramenta **elementos**
    Escolher um arquivo no Inspetor de **estilos**  
 :::image-end:::  
 
-No editor de **códigos-fonte** , passe o mouse no nome do arquivo escolhido, abra o menu contextual \ (clique com o botão direito do mouse \) e escolha **salvar para substituições**.  
+No editor de **códigos-fonte** , passe o mouse no nome do arquivo escolhido, abra o menu contextual \(clique com o botão direito do mouse \) e escolha **salvar para substituições**.  
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="No editor de códigos-fonte, adicione o nome do arquivo para substituir" lightbox="../media/javascript-overrides-file-name.msft.png":::
    No editor de **códigos-fonte** , adicione o nome do arquivo para substituir  
@@ -100,14 +100,14 @@ O arquivo é armazenado na sua pasta substituis.  Verifique se DevTools criar um
 
 :::row:::
    :::column span="":::
-      Na ferramenta **fontes** , na seção **página** , passe o mouse em qualquer arquivo, abra o menu contextual \ (clique com o botão direito do mouse \) e adicione-o a substituições.  Novamente, os arquivos que já estão na sua pasta substitui têm um ponto roxo no ícone.  
+      Na ferramenta **fontes** , na seção **página** , passe o mouse em qualquer arquivo, abra o menu contextual \(clique com o botão direito do mouse \) e adicione-o a substituições.  Novamente, os arquivos que já estão na sua pasta substitui têm um ponto roxo no ícone.  
       
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Escolher um arquivo da ferramenta fontes para substituições" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Escolher um arquivo da ferramenta **fontes** para substituições  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Ou, se preferir, na ferramenta **rede** , passe o mouse em qualquer arquivo, abra o menu contextual \ (clique com o botão direito do mouse \) e adicione-o a substituições.  Quando as substituições estão em vigor, arquivos que estão em seu computador e não na página da Web ao vivo são armazenados.  Quando as substituições estiverem em vigor, na ferramenta **rede** , localize um ícone de aviso ao lado do nome do arquivo.  
+      Ou, se preferir, na ferramenta **rede** , passe o mouse em qualquer arquivo, abra o menu contextual \(clique com o botão direito do mouse \) e adicione-o a substituições.  Quando as substituições estão em vigor, arquivos que estão em seu computador e não na página da Web ao vivo são armazenados.  Quando as substituições estiverem em vigor, na ferramenta **rede** , localize um ícone de aviso ao lado do nome do arquivo.  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Escolha um arquivo da ferramenta de rede para substituições" lightbox="../media/javascript-overrides-network.msft.png":::
          Escolha um arquivo da ferramenta de **rede** para substituições  

@@ -27,7 +27,7 @@ Veja a seguir algumas práticas recomendadas, exemplos de código e outros recur
 
 ## Acessibilidade no Microsoft Edge  
 
-No Microsoft Edge, introduzimos a [API de automação da interface do usuário][WindowsWin32AutoEntryui] moderna \ (UIA API \).  A mudança para UIA foi um grande investimento em acessibilidade do navegador, e ele prepara a base para uma experiência da Web mais inclusiva para os usuários que dependem da tecnologia assistencial no Windows 10.  Os usuários também se beneficiam da natureza verde do mecanismo Chromium.  
+No Microsoft Edge, introduzimos a [API de automação da interface do usuário][WindowsWin32AutoEntryui] moderna \(UIA API \).  A mudança para UIA foi um grande investimento em acessibilidade do navegador, e ele prepara a base para uma experiência da Web mais inclusiva para os usuários que dependem da tecnologia assistencial no Windows 10.  Os usuários também se beneficiam da natureza verde do mecanismo Chromium.  
 
 O sistema de acessibilidade no Microsoft Edge oferece suporte inerentemente a padrões da Web modernos, incluindo ARIA, HTML5 e CSS3.  O diagrama a seguir do pipeline simplificado de navegador segue o conteúdo da página da Web em uma camada de apresentação acessível.  
 

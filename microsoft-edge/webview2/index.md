@@ -17,7 +17,7 @@ ms.locfileid: "11182364"
 ---
 # Introdução ao Microsoft Edge WebView2  
 
-O controle WebView2 do Microsoft Edge permite que você incorpore tecnologias da Web \ (HTML, CSS e JavaScript \) em seus aplicativos nativos.  O controle WebView2 usa o [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] como o mecanismo de renderização para exibir o conteúdo da Web em aplicativos nativos.  Com o WebView2, você pode inserir código da Web em diferentes partes do seu aplicativo nativo ou criar todo o aplicativo nativo em um único WebView.  Para obter informações sobre como começar a criar um aplicativo do WebView2, navegue até [introdução](#getting-started).  
+O controle WebView2 do Microsoft Edge permite que você incorpore tecnologias da Web \(HTML, CSS e JavaScript \) em seus aplicativos nativos.  O controle WebView2 usa o [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] como o mecanismo de renderização para exibir o conteúdo da Web em aplicativos nativos.  Com o WebView2, você pode inserir código da Web em diferentes partes do seu aplicativo nativo ou criar todo o aplicativo nativo em um único WebView.  Para obter informações sobre como começar a criar um aplicativo do WebView2, navegue até [introdução](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="O que é o WebView" lightbox="./media/WebView2/whatwebview.png":::
    O que é o WebView  
@@ -73,7 +73,7 @@ Os aplicativos híbridos permitem que os desenvolvedores aproveitem o melhor dos
       Conte com uma versão atualizada do Chromium com atualizações de plataforma regulares e correções de segurança.  
    :::column-end:::
    :::column span="1":::
-      **Corrigido** \ (em breve \)  
+      **Corrigido** \(em breve \)  
       Escolha para empacotar os bits Chromium em seu aplicativo.  
    :::column-end:::
    :::column span="1":::
@@ -95,13 +95,13 @@ O repositório de [exemplos WebView2][GithubMicrosoftedgeWebview2samples] conté
 
 ## Plataformas compatíveis  
 
-Uma disponibilidade geral \ (GA \) ou versão de visualização está disponível nos seguintes ambientes de programação:  
+Uma disponibilidade geral \(GA \) ou versão de visualização está disponível nos seguintes ambientes de programação:  
 
-*   Win32 C/C++ \ (GA \)
+*   Win32 C/C++ \(GA \)
 *   .NET Framework 4.6.2 ou posterior
 *   .NET Core 3,1 ou posterior
 *   .NET 5
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (visualização \)
+*   [WinUI 3,0][UwpToolkitsWinui3] \(visualização \)
 
 Você poderá executar aplicativos do WebView2 nas seguintes versões do Windows.  
 

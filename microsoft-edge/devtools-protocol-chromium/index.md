@@ -15,19 +15,19 @@ ms.locfileid: "11231728"
 ---
 # Visão geral do protocolo DevTools Microsoft Edge (Chromium)  
 
-Com o turno na plataforma da Web subjacente do Microsoft Edge com o Chromium, o [protocolo de devtools do Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não receberá mais atualizações.  O protocolo DevTools do Microsoft Edge \ (Chromium \) corresponderá às APIs do protocolo Chrome DevTools em andamento.  
+Com o turno na plataforma da Web subjacente do Microsoft Edge com o Chromium, o [protocolo de devtools do Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não receberá mais atualizações.  O protocolo DevTools do Microsoft Edge \(Chromium \) corresponderá às APIs do protocolo Chrome DevTools em andamento.  
 
 Você pode encontrar documentação sobre esses domínios e métodos fazendo referência ao Visualizador de [protocolo do Chrome devtools](https://chromedevtools.github.io/devtools-protocol/tot/).  
 
 > [!NOTE]
-> Qualquer método que tenha sido prefixado `ms` no [protocolo devtools Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não tem mais suporte no protocolo devtools do Microsoft Edge \ (Chromium \).  
+> Qualquer método que tenha sido prefixado `ms` no [protocolo devtools Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) não tem mais suporte no protocolo devtools do Microsoft Edge \(Chromium \).  
 
 ## Usar o protocolo DevTools  
 
-Veja como anexar um cliente de ferramentas personalizado ao servidor DevTools no Microsoft Edge \ (Chromium \).  
+Veja como anexar um cliente de ferramentas personalizado ao servidor DevTools no Microsoft Edge \(Chromium \).  
 
-1.  Verifique se todas as instâncias do Microsoft Edge \ (Chromium \) estão fechadas.  
-1.  Inicie o Microsoft Edge \ (Chromium \) com a porta de depuração remota:. 
+1.  Verifique se todas as instâncias do Microsoft Edge \(Chromium \) estão fechadas.  
+1.  Inicie o Microsoft Edge \(Chromium \) com a porta de depuração remota:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ Veja como anexar um cliente de ferramentas personalizado ao servidor DevTools no
 
 ## Pontos de extremidade HTTP do protocolo DevTools  
 
-O protocolo DevTools do Microsoft Edge \ (Chromium \) dá suporte aos seguintes pontos de extremidade HTTP.  
+O protocolo DevTools do Microsoft Edge \(Chromium \) dá suporte aos seguintes pontos de extremidade HTTP.  
 
 ## /json/version  
 
@@ -108,7 +108,7 @@ Fornece uma lista de candidatos de alvos de página para depuração.
 
 ## /json/close  
 
-Fecha o processo de destino \ (por exemplo, no Microsoft Edge \ (Chromium \), fecha a guia da página \).  
+Fecha o processo de destino \(por exemplo, no Microsoft Edge \(Chromium \), fecha a guia da página \).  
 
 **Parâmetros**  
 
@@ -130,7 +130,7 @@ As [ferramentas remotas para Microsoft Edge (beta)](https://www.microsoft.com/st
 
 ### /msedge/json/list  
 
-Fornece uma lista de candidatos de todos os `msedge.exe` processos \ (incluindo [PWAs](../progressive-web-apps-chromium/index.md) e todas as guias em todas as instâncias do Microsoft Edge \) no dispositivo Windows 10 para depuração.  
+Fornece uma lista de candidatos de todos os `msedge.exe` processos \(incluindo [PWAs](../progressive-web-apps-chromium/index.md) e todas as guias em todas as instâncias do Microsoft Edge \) no dispositivo Windows 10 para depuração.  
 
 **Parâmetros**  
 

@@ -19,9 +19,9 @@ ms.locfileid: "11231591"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-O Microsoft Edge introduz o EdgeHTML, um novo mecanismo "vivo" projetado com interoperabilidade em seu núcleo, para garantir que você esteja sempre obtendo a mais recente e mais alta plataforma da Web do Windows.  O Microsoft Edge apresenta uma quebra limpa do passado, grátis do código herdado necessário para dar suporte a controles ActiveX, objetos auxiliares do navegador \ (BHOs \) e outras práticas de desenvolvimento da Web Bygone.  Além disso, o Microsoft Edge oferece suporte a PDF nativo.  A partir de IE11, os modos de documento herdados foram preteridos e, com o Microsoft Edge, a infraestrutura de navegador para dar suporte a ele não existe.  Confira o [IEBlog](/archive/blogs/ie/living-on-the-edge-our-next-step-in-interoperability) para obter mais informações.  
+O Microsoft Edge introduz o EdgeHTML, um novo mecanismo "vivo" projetado com interoperabilidade em seu núcleo, para garantir que você esteja sempre obtendo a mais recente e mais alta plataforma da Web do Windows.  O Microsoft Edge apresenta uma quebra limpa do passado, grátis do código herdado necessário para dar suporte a controles ActiveX, objetos auxiliares do navegador \(BHOs \) e outras práticas de desenvolvimento da Web Bygone.  Além disso, o Microsoft Edge oferece suporte a PDF nativo.  A partir de IE11, os modos de documento herdados foram preteridos e, com o Microsoft Edge, a infraestrutura de navegador para dar suporte a ele não existe.  Confira o [IEBlog](/archive/blogs/ie/living-on-the-edge-our-next-step-in-interoperability) para obter mais informações.  
 
-Aqui estão as alterações fornecidas com o EdgeHTML 12 na versão inicial do [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) \ (07/2015, Build 10240 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, veja [uma pausa do passado: o nascimento do novo mecanismo de renderização da Web da Microsoft](https://blogs.windows.com/msedgedev/2015/02/26) e [uma pausa do passado, parte 2: dizer adeus a ActiveX, VBScript, AttachEvent...](https://blogs.windows.com/msedgedev/2015/05/06)  
+Aqui estão as alterações fornecidas com o EdgeHTML 12 na versão inicial do [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) \(07/2015, Build 10240 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, veja [uma pausa do passado: o nascimento do novo mecanismo de renderização da Web da Microsoft](https://blogs.windows.com/msedgedev/2015/02/26) e [uma pausa do passado, parte 2: dizer adeus a ActiveX, VBScript, AttachEvent...](https://blogs.windows.com/msedgedev/2015/05/06)  
 
 Aqui está o link permanente para a seguinte lista de alterações:  [https://aka.ms/devguide_edgehtml_12](./edgehtml-12.md) .  
 
@@ -29,7 +29,7 @@ Aqui está o link permanente para a seguinte lista de alterações:  [https://ak
 
 ### Política de segurança de conteúdo 1,0  
 
-O Microsoft Edge agora implementa a política de segurança de conteúdo \ (CSP \) 1,0.  O padrão de segurança do CSP permite que os desenvolvedores da Web controlem os recursos \ (script, CSS, plugins, imagens, etc. \), que uma determinada página pode buscar ou executar com o objetivo de evitar o scripting entre sites \ (XSS \), clickjacking e outros ataques de injeção de código que buscam executar conteúdo mal-intencionado no contexto de uma página da Web confiável.  Consulte [política de segurança de conteúdo](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) para obter mais informações sobre o CSP no Microsoft Edge.  
+O Microsoft Edge agora implementa a política de segurança de conteúdo \(CSP \) 1,0.  O padrão de segurança do CSP permite que os desenvolvedores da Web controlem os recursos \(script, CSS, plugins, imagens, etc. \), que uma determinada página pode buscar ou executar com o objetivo de evitar o scripting entre sites \(XSS \), clickjacking e outros ataques de injeção de código que buscam executar conteúdo mal-intencionado no contexto de uma página da Web confiável.  Consulte [política de segurança de conteúdo](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) para obter mais informações sobre o CSP no Microsoft Edge.  
 
 ### Filtrar efeitos  
 
@@ -37,14 +37,14 @@ O Microsoft Edge oferece uma maneira fácil de adicionar efeitos visuais aos ele
 
 ### JavaScript  
 
-O suporte a JavaScript varia ligeiramente entre a versão final do Internet Explorer \ (IE11 \) e o Microsoft Edge.  Os novos recursos do Edge incluem:  
+O suporte a JavaScript varia ligeiramente entre a versão final do Internet Explorer \(IE11 \) e o Microsoft Edge.  Os novos recursos do Edge incluem:  
 
 :::row:::
    :::column span="1":::
       **Demonstrativos**  
    :::column-end:::
    :::column span="2":::
-      [classe](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) \ (experimental \), [por... da](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of)  
+      [classe](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) \(experimental \), [por... da](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of)  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -68,7 +68,7 @@ O suporte a JavaScript varia ligeiramente entre a versão final do Internet Expl
       **Métodos**  
    :::column-end:::
    :::column span="2":::
-      [inclui](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) \ (matriz \), [repetir](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) \ (cadeia de caracteres \), [valores](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) \ (matriz \)  
+      [inclui](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) \(matriz \), [repetir](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) \(cadeia de caracteres \), [valores](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) \(matriz \)  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -76,7 +76,7 @@ O suporte a JavaScript varia ligeiramente entre a versão final do Internet Expl
       **Outros recursos**  
    :::column-end:::
    :::column span="2":::
-      [Funções](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) \ (experimental \), [geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators),  [iteradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [ `y` sinalizador de expressão regular](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) \ (experimental \), [cadeias](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals)de caracteres de modelo, [caracteres de escape do ponto de código Unicode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)  
+      [Funções](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) \(experimental \), [geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators),  [iteradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [ `y` sinalizador de expressão regular](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) \(experimental \), [cadeias](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals)de caracteres de modelo, [caracteres de escape do ponto de código Unicode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)  
    :::column-end:::
 :::row-end:::  
 
@@ -91,17 +91,17 @@ O Microsoft Edge introduz o suporte para as APIs de captura e fluxo de mídia co
 *   `meter` sub-elemento  
 *   `picture` sub-elemento  
 *   `template` sub-elemento  
-*   `image` elemento: `srcset` e `sizes` atributos \ ( [postagem do blog](https://blogs.windows.com/msedgedev/2015/06/08)do desenvolvedor do Microsoft Edge \)  
+*   `image` elemento: `srcset` e `sizes` atributos \( [postagem do blog](https://blogs.windows.com/msedgedev/2015/06/08)do desenvolvedor do Microsoft Edge \)  
 *   `selectionDirection` atributo  
 *   `input type=time` e `input type=datetime-local`  
 
 ### API RTC Object  
 
-O objeto Real-Time Comunicações \ (ORTC \) permite que a mídia \ (áudio e/ou vídeo \) seja transmitida \ (enviado e recebido \) em tempo real diretamente entre navegadores da Web, dispositivos móveis e servidores via APIs JavaScript nativas.  Confira o objeto de tópico do guia de desenvolvimento do objeto de tópico [RTC API](https://ortc.org) para obter mais informações sobre ORTC no Microsoft Edge.  
+O objeto Real-Time Comunicações \(ORTC \) permite que a mídia \(áudio e/ou vídeo \) seja transmitida \(enviado e recebido \) em tempo real diretamente entre navegadores da Web, dispositivos móveis e servidores via APIs JavaScript nativas.  Confira o objeto de tópico do guia de desenvolvimento do objeto de tópico [RTC API](https://ortc.org) para obter mais informações sobre ORTC no Microsoft Edge.  
 
 ### Modo de Leitura  
 
-O Microsoft Edge fornece um modo de exibição de leitura para uma experiência de leitura mais simplificada do que o livro de páginas da Web sem a distração de conteúdo não relacionado ou outro conteúdo secundário na página.  O modo de exibição de leitura pode ser ativado ou desativado no botão modo de exibição de leitura \ (ícone de livro \) na barra de endereços ou em `Ctrl` + `Shift` + `R` .  Acesse o [modo de exibição de leitura](../browser-features/reading-view.md) para obter mais informações.  
+O Microsoft Edge fornece um modo de exibição de leitura para uma experiência de leitura mais simplificada do que o livro de páginas da Web sem a distração de conteúdo não relacionado ou outro conteúdo secundário na página.  O modo de exibição de leitura pode ser ativado ou desativado no botão modo de exibição de leitura \(ícone de livro \) na barra de endereços ou em `Ctrl` + `Shift` + `R` .  Acesse o [modo de exibição de leitura](../browser-features/reading-view.md) para obter mais informações.  
 
 ### Descoberta de provedores de pesquisa  
 

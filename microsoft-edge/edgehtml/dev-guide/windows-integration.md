@@ -22,7 +22,7 @@ ms.locfileid: "11231528"
 
 ## API da Solicitação de Pagamento  
 
-A [API de solicitação de pagamento](./windows-integration/payment-request-api.md) é um padrão de navegador cruzado aberto que permite que os navegadores atuem como intermediários entre comerciantes, consumidores e métodos de pagamento \ (como cartões de crédito \) que os consumidores armazenaram na nuvem.  
+A [API de solicitação de pagamento](./windows-integration/payment-request-api.md) é um padrão de navegador cruzado aberto que permite que os navegadores atuem como intermediários entre comerciantes, consumidores e métodos de pagamento \(como cartões de crédito \) que os consumidores armazenaram na nuvem.  
 
 ## Autenticação da Web e Windows Hello  
 

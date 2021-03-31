@@ -19,7 +19,7 @@ ms.locfileid: "11231904"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Aqui estão as alterações fornecidas com o EdgeHTML 13, o mecanismo que liga o navegador Microsoft Edge na [primeira atualização importante](https://blogs.windows.com/windowsexperience/2015/11/12) para Windows 10 \ (11/2015, Build 10586 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, consulte [apresentando EdgeHTML 13, nossa primeira atualização de plataforma para o Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16).  
+Aqui estão as alterações fornecidas com o EdgeHTML 13, o mecanismo que liga o navegador Microsoft Edge na [primeira atualização importante](https://blogs.windows.com/windowsexperience/2015/11/12) para Windows 10 \(11/2015, Build 10586 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, consulte [apresentando EdgeHTML 13, nossa primeira atualização de plataforma para o Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16).  
 
 Aqui está o link permanente para a seguinte lista de alterações:  [https://aka.ms/devguide_edgehtml_13](./edgehtml-13.md) .  
 
@@ -35,7 +35,7 @@ O EdgeHTML 13 oferece suporte a novos recursos CSS, incluindo:
 
 ### Extensões de mídia criptografadas  
 
-O Microsoft Edge agora oferece suporte às novas APIs de [extensões de mídia criptografadas sem](https://w3.org/TR/encrypted-media) prefixo.  Extensões de mídia criptografadas \ (EME \) estende os elementos de vídeo e áudio para habilitar o conteúdo protegido do gerenciamento de direitos digitais \ (DRM \) sem usar plug-ins.  Leia mais sobre o EME:  [extensões de mídia criptografadas](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
+O Microsoft Edge agora oferece suporte às novas APIs de [extensões de mídia criptografadas sem](https://w3.org/TR/encrypted-media) prefixo.  Extensões de mídia criptografadas \(EME \) estende os elementos de vídeo e áudio para habilitar o conteúdo protegido do gerenciamento de direitos digitais \(DRM \) sem usar plug-ins.  Leia mais sobre o EME:  [extensões de mídia criptografadas](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
 
 ### Elementos gráficos  
 
@@ -54,16 +54,16 @@ O EdgeHTML 13 inclui [grandes melhorias e suporte a novos recursos no Chakra](ht
 
 Ativado por padrão  
 
-*   [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) habilitada por padrão \ ([postagem de blog](https://blogs.windows.com/msedgedev/2015/11/10), [demonstração](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
-*   [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \ (ES2015 \)  
+*   [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) habilitada por padrão \([postagem de blog](https://blogs.windows.com/msedgedev/2015/11/10), [demonstração](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
+*   [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \(ES2015 \)  
 
 #### Recursos de JavaScript experimental  
 
 Habilitado com `about:flags`  
 
-*   [Funções assíncronas](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \ (ES2016 \)  
-*   [Operador de exponenciação](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \ (ES2016 \)  
-*   [Deestruturando](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \ (ES2015 \)  
+*   [Funções assíncronas](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \(ES2016 \)  
+*   [Operador de exponenciação](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \(ES2016 \)  
+*   [Deestruturando](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \(ES2015 \)  
 
 ### Entrada do usuário  
 
@@ -74,7 +74,7 @@ Os seguintes recursos introduzidos no EdgeHTML 13 aprimoram a entrada do usuári
 
 ### Bloqueio de ponteiro  
 
-O Microsoft Edge agora dá suporte à API de bloqueio de ponteiro \ (anteriormente chamada de bloqueio do mouse \) para acessar o movimento bruto do mouse, bloqueando o destino de eventos do mouse para um único elemento, eliminando os limites de quão longe o movimento do mouse pode ir em uma única direção e removendo o cursor do modo de exibição.  
+O Microsoft Edge agora dá suporte à API de bloqueio de ponteiro \(anteriormente chamada de bloqueio do mouse \) para acessar o movimento bruto do mouse, bloqueando o destino de eventos do mouse para um único elemento, eliminando os limites de quão longe o movimento do mouse pode ir em uma única direção e removendo o cursor do modo de exibição.  
 
 ## Novas APIs no EdgeHTML 13  
 

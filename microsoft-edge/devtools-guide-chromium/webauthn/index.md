@@ -30,7 +30,7 @@ Um ótimo lugar para começar a autenticação na Web é a [especificação da A
     
 1.  Conecte-se ao website.  
 1.  [Abra o devtools][DevtoolsGuideChromiumOpen].  
-1.  Para abrir a ferramenta **webauthn** , escolha o ícone **Personalizar e controlar devtools** \ ( `...` \) > **mais ferramentas**  >  **webauthn**.  
+1.  Para abrir a ferramenta **webauthn** , escolha o ícone **Personalizar e controlar devtools** \( `...` \) > **mais ferramentas**  >  **webauthn**.  
     
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="Ferramenta webauthn" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        Ferramenta **Webauthn**  
@@ -49,8 +49,8 @@ Um ótimo lugar para começar a autenticação na Web é a [especificação da A
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] ou [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | O protocolo que o autenticador virtual usa para codificar e decodificar |  
     | `Transport` |   `usb`, `nfc` , `ble` , ou `internal` | O autenticador virtual simula o transporte selecionado para comunicação com clientes para obter uma asserção para uma credencial específica.  Para obter mais informações, navegue até [enumeração de transporte do autenticador][GithubW3cWebauthnEnumTransport] |  
-    |  `Supports resident keys` | Ative \ (ou desligado \) usando a caixa de seleção | Ative se o seu aplicativo Web depende de chaves residentes \ (também conhecidas como credenciais detectável do lado do cliente \).  Para obter mais informações, navegue até [enumeração de requisitos da chave residente][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
-    | `Supports user verification` | Ative \ (ou desligado \) usando a caixa de seleção | Ative se o seu aplicativo Web depende da autorização local usando as modalidades de gesto como toque e código PIN, entrada de senha ou reconhecimento biométrico.  Para obter mais informações, navegue até [verificação do usuário][GithubW3cWebauthnEnumUserverification] |  
+    |  `Supports resident keys` | Ative \(ou desligado \) usando a caixa de seleção | Ative se o seu aplicativo Web depende de chaves residentes \(também conhecidas como credenciais detectável do lado do cliente \).  Para obter mais informações, navegue até [enumeração de requisitos da chave residente][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
+    | `Supports user verification` | Ative \(ou desligado \) usando a caixa de seleção | Ative se o seu aplicativo Web depende da autorização local usando as modalidades de gesto como toque e código PIN, entrada de senha ou reconhecimento biométrico.  Para obter mais informações, navegue até [verificação do usuário][GithubW3cWebauthnEnumUserverification] |  
     
 1.  Escolha o botão **Adicionar** .  
 1.  Uma nova seção de seu autenticador recém-criado será exibida.  
@@ -139,7 +139,7 @@ Para remover um autenticador virtual, ao lado do autenticador, escolha o botão 
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

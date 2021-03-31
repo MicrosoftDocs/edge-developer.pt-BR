@@ -21,7 +21,7 @@ ms.locfileid: "11231483"
 > [!NOTE]
 > O novo Microsoft Edge é criado usando o Chromium e começa na versão 75.  Para obter mais informações, [Baixe o novo Microsoft Edge][MicrosoftNewEdge]e experimente as novas [ferramentas de desenvolvedor do Microsoft Edge (Chromium)][DevtoolsGuideChromium].  
 > 
-> Para emular diferentes dispositivos, navegadores, tamanhos de tela e resoluções no novo DevTools, navegue para [emular dispositivos móveis no Microsoft Edge \ (Chromium \) devtools][DevtoolsGuideChromiumDeviceMode].  
+> Para emular diferentes dispositivos, navegadores, tamanhos de tela e resoluções no novo DevTools, navegue para [emular dispositivos móveis no Microsoft Edge \(Chromium \) devtools][DevtoolsGuideChromiumDeviceMode].  
 
 O painel **emulação** ajuda nas seguintes atividades.    
 
@@ -54,7 +54,7 @@ Modificar sua cadeia de caracteres de agente do usuário para imitar outro naveg
 
 Os scripts usam a cadeia de caracteres do agente do usuário para detectar qual navegador é usado.  O script pode ser front-end, back-end ou front-end e back-end.  Embora o código não use a detecção do navegador, o código pode herdar de uma biblioteca JavaScript ou script do lado do servidor de terceiros.  
 
-O problema com a detecção do navegador é que você pode redimensionar \ (ou alterar \) recursos em sua página da Web usando pressuposições sobre recursos do navegador. Em vez disso, você deve considerar o uso da detecção de recursos para detectar os recursos do seu navegador.  Um comportamento inesperado pode ocorrer devido a uma das seguintes situações.  
+O problema com a detecção do navegador é que você pode redimensionar \(ou alterar \) recursos em sua página da Web usando pressuposições sobre recursos do navegador. Em vez disso, você deve considerar o uso da detecção de recursos para detectar os recursos do seu navegador.  Um comportamento inesperado pode ocorrer devido a uma das seguintes situações.  
 
 *   O código direcionado para Windows Internet Explorer 8 pode funcionar de forma diferente no Microsoft Edge.  
 *   Um recurso ao qual o seu navegador deve oferecer suporte está desabilitado, devido a uma pressuposição feita pelo desenvolvedor.  

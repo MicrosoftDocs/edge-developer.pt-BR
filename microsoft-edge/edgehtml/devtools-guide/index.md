@@ -117,7 +117,7 @@ Esses atalhos controlam a janela principal do DevTools e devem funcionar em toda
 
 ## Entrar em contato com a equipe Microsoft Edge DevTools  
 
-Envie seus comentários para ajudar a melhorar o Microsoft Edge \ (EdgeHTML\) DevTools para você!  Basta abrir as ferramentas \(`F12`\) e selecionar o botão [Enviar comentários](#microsoft-edge-edgehtml-developer-tools).  
+Envie seus comentários para ajudar a melhorar o Microsoft Edge \(EdgeHTML\) DevTools para você!  Basta abrir as ferramentas \(`F12`\) e selecionar o botão [Enviar comentários](#microsoft-edge-edgehtml-developer-tools).  
 
 Torne-se um Participante do Programa Windows Insider para visualizar os [recursos mais recentes que estão chegando à DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use o aplicativo Hub do Windows Feedback para publicar, votar, acompanhar e obter suporte para sugestões gerais e problemas do Windows.  
 

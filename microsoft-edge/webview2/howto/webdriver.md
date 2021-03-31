@@ -17,7 +17,7 @@ ms.locfileid: "11191614"
 ---
 # Automatizando e testando o WebView2 com o Microsoft Edge driver  
 
-Como o WebView2 usa a plataforma da Web Microsoft Edge \ (Chromium \), os desenvolvedores WebView2 \ (você \) podem aproveitar a ferramenta padrão da Web para depuração e automação.  O Selenium é uma dessas ferramentas.  Ele implementa a API do W3C para [WebDriver][W3cWebdriver2] .  Você pode usar Selenium para criar testes automatizados para simular interações do usuário.  
+Como o WebView2 usa a plataforma da Web Microsoft Edge \(Chromium \), os desenvolvedores WebView2 \(você \) podem aproveitar a ferramenta padrão da Web para depuração e automação.  O Selenium é uma dessas ferramentas.  Ele implementa a API do W3C para [WebDriver][W3cWebdriver2] .  Você pode usar Selenium para criar testes automatizados para simular interações do usuário.  
 
 Comece a usar as etapas a seguir.  
 
@@ -148,9 +148,9 @@ Parabéns.  Você automatizau com êxito um projeto do WebView2 e conduziu WebVi
 
 ## Consulte também  
 
-*   Para ter uma visão abrangente de como as APIs Selenium unidades WebView2 ou Microsoft Edge \ (Chromium \), navegue até [WebDriver na documentação do Selenium][SeleniumWebdriver]   
+*   Para ter uma visão abrangente de como as APIs Selenium unidades WebView2 ou Microsoft Edge \(Chromium \), navegue até [WebDriver na documentação do Selenium][SeleniumWebdriver]   
 *   Para saber mais sobre o controle WebView2 e como usá-lo ao inserir conteúdo da Web em seu aplicativo nativo, navegue até [introdução ao Microsoft Edge WebView2][WebViewIndex].  
-*   Para saber mais sobre como automatizar o Microsoft Edge \ (Chromium \), navegue para [usar o WebDriver (Chromium) para automação de teste][WebdriverChromium]   
+*   Para saber mais sobre como automatizar o Microsoft Edge \(Chromium \), navegue para [usar o WebDriver (Chromium) para automação de teste][WebdriverChromium]   
     
 ## Entrar em contato com a equipe do Microsoft Edge WebView  
 

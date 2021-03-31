@@ -250,7 +250,7 @@ Depois de receber a asserção no servidor, será preciso validar a assinatura p
 
 ### Plataformas compatíveis  
 
-*   A versão de recomendação de candidatos da API de autenticação da Web pode ser usada do Microsoft Edge começando com o EdgeHTML 18 \ (Windows Insider Preview versão 17713 ou mais recente \).  
+*   A versão de recomendação de candidatos da API de autenticação da Web pode ser usada do Microsoft Edge começando com o EdgeHTML 18 \(Windows Insider Preview versão 17713 ou mais recente \).  
 *   A [versão de visualização prefixada](https://blogs.windows.com/msedgedev/2016/04/12) da API de autenticação da Web foi removida e não está mais disponível.  
 *   A API de autenticação da Web ainda não está disponível para aplicativos UWP e PWAs.  
 *   O Internet Explorer não é compatível com a API de autenticação da Web.  
@@ -269,13 +269,13 @@ Algumas coisas a serem observadas ao usar o autenticador Windows Hello:
 
 *   Você pode detectar se o Windows Hello está disponível em um computador chamando a `isUserVerifyingPlatformAuthenticatorAvailable` API.  Saiba mais sobre esta API [aqui](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable).  
 *   Ao criar uma credencial para o Windows Hello, você deve definir `authenticatorAttachment` para `platform` a melhor experiência do usuário.
-*   O Windows Hello só dá suporte a RS256 \ (alg-257 \) como algoritmo de chave pública.  Certifique-se de especificar esse algoritmo ao criar uma credencial.  
+*   O Windows Hello só dá suporte a RS256 \(alg-257 \) como algoritmo de chave pública.  Certifique-se de especificar esse algoritmo ao criar uma credencial.  
 *   Para receber uma [instrução de atestado de TPM](https://w3c.github.io/webauthn#tpm-attestation), defina atestador como "direto" ao chamar a `create` API.  O atestado TPM é um melhor esforço.  Somente os computadores com TPM 2,0 retornarão uma instrução de atestado TPM, e o processo de atestado poderá falhar por várias razões.  
 *   O Windows Hello emprega diversas maneiras de proteger as credenciais do usuário.  Você pode verificar qual método foi usado para proteger uma credencial consumindo o campo [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) no objeto de atestado retornado na criação de credenciais.  Veja a seguir a lista de AAGUIDs que o Windows Hello pode retornar:   
     *   Autenticadores reproduzidos por software  
         *   Autenticador de software do Windows Hello:  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
         *   Autenticador de software VBS do Windows Hello:  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
-    *   Autenticadores com backup do Trusted Platform Module \ (TPM \)  
+    *   Autenticadores com backup do Trusted Platform Module \(TPM \)  
         *   Autenticador de hardware do Windows Hello:  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
         *   Autenticador de hardware do Windows Hello VBS:  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
 

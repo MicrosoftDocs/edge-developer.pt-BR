@@ -12,7 +12,7 @@ ms.lasthandoff: 04/09/2020
 ms.locfileid: "10561448"
 ---
 > [!NOTE]
-> O novo Microsoft Edge é criado usando o Chromium e começa na versão 75.  Para obter mais informações, [Baixe o novo Microsoft Edge][MicrosoftNewEdge]e experimente as novas [ferramentas de desenvolvedor do Microsoft Edge \ (Chromium \)][DevtoolsGuideChromium].  
+> O novo Microsoft Edge é criado usando o Chromium e começa na versão 75.  Para obter mais informações, [Baixe o novo Microsoft Edge][MicrosoftNewEdge]e experimente as novas [ferramentas de desenvolvedor do Microsoft Edge \(Chromium \)][DevtoolsGuideChromium].  
 
 <!-- image links -->  
 

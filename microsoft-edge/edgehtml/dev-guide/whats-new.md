@@ -21,7 +21,7 @@ ms.locfileid: "11231906"
 
 Obtenha os recursos e APIs mais recentes do EdgeHTML se tornando um [Windows Insider](https://insider.windows.com)!  O [programa Windows Insider](https://insider.windows.com) fornece as versões mais recentes do Windows 10 assim que elas estiverem disponíveis.  
 
-Vá até o [Guia de desenvolvimento](../dev-guide/index.md) para ver os novos recursos e APIs fornecidos na versão atual da plataforma Microsoft Edge, EdgeHTML 18 \ (Build 17763 \).  
+Vá até o [Guia de desenvolvimento](../dev-guide/index.md) para ver os novos recursos e APIs fornecidos na versão atual da plataforma Microsoft Edge, EdgeHTML 18 \(Build 17763 \).  
 
 Veja a seguir as APIs de EdgeHTML novas e atualizadas nas compilações do Windows 10 Preview. Elas são listadas no formato de `[interface name].[api name]` .  Para obter uma lista completa dos novos recursos da Microsoft Edge e da plataforma, consulte [changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) ou vá até o [Guia de desenvolvimento](../dev-guide/index.md) para ver os novos recursos e APIs fornecidos na versão estável atual da plataforma Microsoft Edge, EdgeHTML 18.   
 

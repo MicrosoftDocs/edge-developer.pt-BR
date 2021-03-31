@@ -17,7 +17,7 @@ ms.locfileid: "11231244"
 ---
 # Introdução aos aplicativos Web progressivos  
 
-Aplicativos Web progressivos \ (PWAs \) são simplesmente aplicativos Web que são [aprimorados progressivamente][WikiProgressiveEnhancement] com recursos de semelhantes a aplicativos nativos em plataformas de suporte e mecanismos de navegador, como instalação do lançamento-da-tela inicial, suporte offline e notificações por push.  No Windows 10 com o mecanismo \ (EdgeHTML \) do Microsoft Edge, PWAs Desfrute da vantagem adicional de ser executado independentemente da janela do navegador como aplicativos da [plataforma universal do Windows][WindowsUwpGetStartedWhat] .  
+Aplicativos Web progressivos \(PWAs \) são simplesmente aplicativos Web que são [aprimorados progressivamente][WikiProgressiveEnhancement] com recursos de semelhantes a aplicativos nativos em plataformas de suporte e mecanismos de navegador, como instalação do lançamento-da-tela inicial, suporte offline e notificações por push.  No Windows 10 com o mecanismo \(EdgeHTML \) do Microsoft Edge, PWAs Desfrute da vantagem adicional de ser executado independentemente da janela do navegador como aplicativos da [plataforma universal do Windows][WindowsUwpGetStartedWhat] .  
 
 Este guia fornece uma visão geral das noções básicas do PWA criando um `localhost` aplicativo Web simples como um PWA usando o Microsoft Visual Studio e alguns utilitários do PWA Builder.  O produto concluído funciona da mesma forma em qualquer navegador que ofereça suporte a PWAs.  
 
@@ -28,7 +28,7 @@ Este guia fornece uma visão geral das noções básicas do PWA criando um `loca
 
 Você pode criar PWAs com qualquer IDE de desenvolvimento na Web.  Os pré-requisitos a seguir são apenas pré-requisitos para este guia, que o orientam pelo suporte de ferramentas do PWA no ecossistema do desenvolvedor do Windows.  
 
-*   Baixe o \ (grátis \) [comunidade do Visual Studio 2017][VisualStudioDownloads].  Você também pode usar as edições Professional, Enterprise ou [Preview][VisualStudioPreview] .  No instalador do Visual Studio, escolha as seguintes cargas de trabalho.  
+*   Baixe o \(grátis \) [comunidade do Visual Studio 2017][VisualStudioDownloads].  Você também pode usar as edições Professional, Enterprise ou [Preview][VisualStudioPreview] .  No instalador do Visual Studio, escolha as seguintes cargas de trabalho.  
     
     *   **Desenvolvimento da plataforma universal do Windows**  
     *   **Node.js desenvolvimento**  
@@ -44,7 +44,7 @@ Para simplificar, use o modelo de [ aplicativoNode.js e expressa][VisualStudioNo
     
     ![Selecionando o modelo de projeto Node.js Express 4 no Visual Studio][ImageVsNodejsExpressTemplate]  
     
-1.  Depois que seu novo projeto for carregado, escolha **Compilar** \ ( `Ctrl` + `Shift` + `B` \) e **Iniciar Depuração** \ ( `F5` \).  Verifique se o `index.html` arquivo é carregado quando você navega `http://localhost:1337` .  
+1.  Depois que seu novo projeto for carregado, escolha **Compilar** \( `Ctrl` + `Shift` + `B` \) e **Iniciar Depuração** \( `F5` \).  Verifique se o `index.html` arquivo é carregado quando você navega `http://localhost:1337` .  
     
     ![Executando seu novo site em localhost][ImageVsNodejsExpressIndex]  
 
@@ -80,7 +80,7 @@ Se esse for um site existente, você poderá gerar um manifesto do aplicativo We
     }
     ```  
     
-    Em um PWA real, a próxima etapa é personalizar o *nome*, *start_url*, *short_name*, *Descrição*e *ícones* \ (os ícones são abordados na próxima etapa \).  
+    Em um PWA real, a próxima etapa é personalizar o *nome*, *start_url*, *short_name*, *Descrição*e *ícones* \(os ícones são abordados na próxima etapa \).  
     
     Para saber mais sobre os diferentes valores de membro e objetivos associados, consulte a referência de [manifesto do aplicativo Web][MDNWebAppManifest] .  
     
@@ -90,16 +90,16 @@ Se esse for um site existente, você poderá gerar um manifesto do aplicativo We
     1.  Vá para o gerador de [imagem do aplicativo][PwaBuilderAppImageGenerator]do PWA Builder e selecione a `pwa.png` imagem que você acabou de salvar como a **imagem de entrada** e, em seguida, escolha o botão **baixar** .  
     1.  **Abra** e **Extraia** o arquivo zip.  
     1.  No Gerenciador de soluções do Visual Studio, clique com o botão direito do mouse na `public` pasta e **abra pasta no explorador de arquivos**.  Crie uma **nova pasta** chamada `images` .  
-    1.  Copie todas as pastas da plataforma \ ( `android` , `chrome` , `windows10` , etc. \) do zip extraído para a `images` pasta e feche a janela do explorador de arquivos.  Adicione as pastas ao seu projeto do Visual Studio \ (no Gerenciador de soluções, clique com o botão direito do mouse em `images` pasta e selecione **Adicionar**  >  **pasta existente..** . para cada uma das pastas \).  
-    1.  Abra \ (com o Visual Studio ou qualquer editor \) do `icons.json` arquivo zip extraído e copie a `"icons": [...]` matriz para o `manifest.json` arquivo do seu projeto.  
+    1.  Copie todas as pastas da plataforma \( `android` , `chrome` , `windows10` , etc. \) do zip extraído para a `images` pasta e feche a janela do explorador de arquivos.  Adicione as pastas ao seu projeto do Visual Studio \(no Gerenciador de soluções, clique com o botão direito do mouse em `images` pasta e selecione **Adicionar**  >  **pasta existente..** . para cada uma das pastas \).  
+    1.  Abra \(com o Visual Studio ou qualquer editor \) do `icons.json` arquivo zip extraído e copie a `"icons": [...]` matriz para o `manifest.json` arquivo do seu projeto.  
 
-1.  Agora você deve associar seu manifesto do aplicativo Web ao seu aplicativo.  Abra o `layout.pug` arquivo \ (na `views` pasta \) para edição e adicione essa linha logo após o link de folha de estilos.  \ (É simplesmente a abreviação do modelo [Pug][PugAttributes] do nó para `<link rel='manifest' href='/manifest.json'>` \).  
+1.  Agora você deve associar seu manifesto do aplicativo Web ao seu aplicativo.  Abra o `layout.pug` arquivo \(na `views` pasta \) para edição e adicione essa linha logo após o link de folha de estilos.  \(É simplesmente a abreviação do modelo [Pug][PugAttributes] do nó para `<link rel='manifest' href='/manifest.json'>` \).  
     
     ```html
     link(rel='manifest', href='/manifest.json')
     ```  
     
-Com tudo isso em vigor, seu aplicativo Web agora está servindo um manifesto e ícones de aplicativos prontos para tela inicial!  Tente executar seu aplicativo \ ( `F5` \) e carregar o manifesto.  
+Com tudo isso em vigor, seu aplicativo Web agora está servindo um manifesto e ícones de aplicativos prontos para tela inicial!  Tente executar seu aplicativo \( `F5` \) e carregar o manifesto.  
 
 ![Manifesto do aplicativo Web carregando do localhost][ImageVsNodejsExpressManifest]  
 
@@ -107,19 +107,19 @@ E um de seus ícones.
 
 ![O logotipo do aplicativo Square71x71Logo está sendo carregado do localhost][ImageVsNodejsExpressIcon]  
 
-Se você publicar o aplicativo em tempo real \ (com um `start_url` \ real \), o mecanismo de pesquisa do Bing agora o identifica como um candidato para [empacotamento e envio automáticos para a Microsoft Store][PwaEdgehtmlMicrosoftStore] como um aplicativo instalável do Windows 10.  Certifique-se de que seu manifest.jsem arquivo inclui os [sinais de qualidade para aplicativos Web progressivos][WindowsBlogsPwaEdge] para os quais o Bing verifica incluindo os itens a seguir.   
+Se você publicar o aplicativo em tempo real \(com um `start_url` \ real \), o mecanismo de pesquisa do Bing agora o identifica como um candidato para [empacotamento e envio automáticos para a Microsoft Store][PwaEdgehtmlMicrosoftStore] como um aplicativo instalável do Windows 10.  Certifique-se de que seu manifest.jsem arquivo inclui os [sinais de qualidade para aplicativos Web progressivos][WindowsBlogsPwaEdge] para os quais o Bing verifica incluindo os itens a seguir.   
 
 *   `name`  
 *   `description`  
-*   Pelo menos um ícone 512px quadrado ou maior \ (para garantir uma fonte de resolução suficiente para a geração automática da tela inicial do seu aplicativo, a listagem da loja, a imagem do bloco e assim por diante \).  
+*   Pelo menos um ícone 512px quadrado ou maior \(para garantir uma fonte de resolução suficiente para a geração automática da tela inicial do seu aplicativo, a listagem da loja, a imagem do bloco e assim por diante \).  
 
 Além disso, use [https](#https), [trabalhos de serviço](#service-workers)e cumpra [as políticas da Microsoft Store][LegalWindowsAgrementsMicrosoftStorePolicies].  
 
 ### HTTPS  
 
-[Os funcionários do serviço][MDNServiceWorkerApi] e outras tecnologias importantes do PWA que trabalham com trabalhadores de serviço \ (como as APIs de [cache][MDNCache], [Push][MDNPushApi]e [sincronização em segundo plano][MDNSyncManager] ) funcionam apenas em conexões seguras, o que significa [https][WikiHttps] para sites ativos ou `localhost` para fins de depuração.  
+[Os funcionários do serviço][MDNServiceWorkerApi] e outras tecnologias importantes do PWA que trabalham com trabalhadores de serviço \(como as APIs de [cache][MDNCache], [Push][MDNPushApi]e [sincronização em segundo plano][MDNSyncManager] ) funcionam apenas em conexões seguras, o que significa [https][WikiHttps] para sites ativos ou `localhost` para fins de depuração.  
 
-Se você [publicar este aplicativo Web como um site do Live][VisualStudioNodejsTutorialPublishAzureAppService] \ (por exemplo, configurando uma [conta gratuita do Azure][AzureCreateFreeAccount]\), você deve garantir que seu servidor esteja configurado para https.  Se você usar o [serviço de aplicativo do Microsoft Azure][AzureWebApps] para hospedar seu site, ele será servido via HTTPS por padrão.  
+Se você [publicar este aplicativo Web como um site do Live][VisualStudioNodejsTutorialPublishAzureAppService] \(por exemplo, configurando uma [conta gratuita do Azure][AzureCreateFreeAccount]\), você deve garantir que seu servidor esteja configurado para https.  Se você usar o [serviço de aplicativo do Microsoft Azure][AzureWebApps] para hospedar seu site, ele será servido via HTTPS por padrão.  
 
 Para este guia, continue `http://localhost` a usar como um espaço reservado para um site ao vivo servido `https://` .  
 
@@ -129,17 +129,17 @@ Trabalhadores de serviço é a principal tecnologia por trás do PWAs. Os funcio
 
 Os funcionários de serviço são threads em segundo plano acionados por eventos que são executados a partir de arquivos JavaScript fornecidos juntamente com os scripts regulares que alimentam o aplicativo Web.  Como os funcionários do serviço não são executados no thread da interface do usuário principal, os funcionários do serviço não têm acesso ao DOM, embora o [thread de interface do usuário][MDNWorkerPrototypePostMessage] e um [thread de trabalho][MDNDedicatedWorkerGlobalScopePostMessage] sejam capazes de se comunicar usando `postMessage()` `onmessage` manipuladores de eventos.  
 
-Você associa um trabalhador de serviço ao seu aplicativo registrando-o na origem da URL do seu site \ (ou um caminho especificado dentro dele \).  Depois de registrado, o arquivo de trabalho do serviço é baixado, instalado e ativado no computador do usuário.  Para saber mais, o MDN Web docs tem um guia abrangente sobre o [uso de trabalhadores de serviço][MDNUsingServiceWorkers] e uma referência de API de trabalho de [serviço][MDNServiceWorkerApi] detalhada.  
+Você associa um trabalhador de serviço ao seu aplicativo registrando-o na origem da URL do seu site \(ou um caminho especificado dentro dele \).  Depois de registrado, o arquivo de trabalho do serviço é baixado, instalado e ativado no computador do usuário.  Para saber mais, o MDN Web docs tem um guia abrangente sobre o [uso de trabalhadores de serviço][MDNUsingServiceWorkers] e uma referência de API de trabalho de [serviço][MDNServiceWorkerApi] detalhada.  
 
 Para este tutorial, use o script de trabalho do serviço de página offline no [criador do PWA][PwaBuilderServiceWorker].  Comece Personalizando o script com mais funcionalidade de acordo com os requisitos de desempenho, a largura de banda da rede e assim por diante.  Examine o [Cookbook do serviço do serviço][ServiceWorkerCookbook]  fornecido pelo Mozilla para obter uma série de ideias úteis de armazenamento em cache de trabalho de serviço.  
 
-1.  Abra [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] e selecione o trabalhador do serviço de **página offline** \ (padrão \) e clique no botão **baixar trabalho do serviço** .  
+1.  Abra [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] e selecione o trabalhador do serviço de **página offline** \(padrão \) e clique no botão **baixar trabalho do serviço** .  
 1.  Abrir a pasta baixar e copiar os dois arquivos a seguir  
 
     *   ServiceWorker1\pwabuilder-sw-register.js  
     *   ServiceWorker1\pwabuilder-sw.js  
     
-    Salve os arquivos na `public` pasta do seu projeto do Visual Studio Web App.  \ (Do Visual Studio, use `Ctrl` + `O` para abrir o explorador de arquivos para o seu projeto e navegue até a `public` pasta \).  
+    Salve os arquivos na `public` pasta do seu projeto do Visual Studio Web App.  \(Do Visual Studio, use `Ctrl` + `O` para abrir o explorador de arquivos para o seu projeto e navegue até a `public` pasta \).  
     
     No Gerenciador de soluções, abra o `public/pwabuilder-sw.js` arquivo e altere o valor de `offlineFallbackPage` para `offline.html` .  
     
@@ -147,7 +147,7 @@ Para este tutorial, use o script de trabalho do serviço de página offline no [
     const offlineFallbackPage = "offline.html";
     ```
     
-    Vale a pena rever o código em ambos os arquivos para obter a essência de como registrar um trabalhador de serviço que armazena em cache uma página designada \ ( `offline.html` \) e a atende quando uma busca de rede falha.  Em seguida, crie uma `offline.html` página simples como um espaço reservado para a funcionalidade offline do seu aplicativo.  
+    Vale a pena rever o código em ambos os arquivos para obter a essência de como registrar um trabalhador de serviço que armazena em cache uma página designada \( `offline.html` \) e a atende quando uma busca de rede falha.  Em seguida, crie uma `offline.html` página simples como um espaço reservado para a funcionalidade offline do seu aplicativo.  
     
 1.  No Gerenciador de soluções, abra o `views/layout.pug` arquivo e adicione a seguinte linha abaixo de suas marcas de link.  
     
@@ -177,7 +177,7 @@ Para este tutorial, use o script de trabalho do serviço de página offline no [
     
     ![Arquivos adicionados à pasta pública da solução][ImageVsNodejsExpressPublic]  
     
-1.  No Gerenciador de soluções, abra o `routes\index.js` arquivo e adicione o seguinte código logo antes do comando final \ ( `module.exports = router;` \).  
+1.  No Gerenciador de soluções, abra o `routes\index.js` arquivo e adicione o seguinte código logo antes do comando final \( `module.exports = router;` \).  
     
     ```javascript
     router.get('/offline.html', function (req, res) {
@@ -185,11 +185,11 @@ Para este tutorial, use o script de trabalho do serviço de página offline no [
     });
     ```  
     
-    Isso instrui seu aplicativo a servir o `offline.html` arquivo \ (quando seu operador de serviço o busca no cache offline \).  
+    Isso instrui seu aplicativo a servir o `offline.html` arquivo \(quando seu operador de serviço o busca no cache offline \).  
     
-1.  Teste seu PWA!  Compilar \ ( `Ctrl` + `Shift` + `B` \) e executar \ ( `F5` \) seu aplicativo Web para iniciar o Microsoft Edge e abrir a `localhost` página.  Em seguida, conclua as etapas a seguir.  
+1.  Teste seu PWA!  Compilar \( `Ctrl` + `Shift` + `B` \) e executar \( `F5` \) seu aplicativo Web para iniciar o Microsoft Edge e abrir a `localhost` página.  Em seguida, conclua as etapas a seguir.  
     
-    1.  Abra o **console** do Edge devtools \ ( `Ctrl` + `Shift` + `J` \) e verifique se o trabalhador do serviço foi registrado.  
+    1.  Abra o **console** do Edge devtools \( `Ctrl` + `Shift` + `J` \) e verifique se o trabalhador do serviço foi registrado.  
     1.  No painel **depurador** , expanda o controle **serviços de funcionários** e clique em sua origem.  Na **visão geral do trabalho do serviço**, verifique se o trabalhador do seu serviço está ativado e em execução.  
         
         ![Visão geral do trabalhador do serviço Edge DevTools][ImageDevtoolsSwOverview]  
@@ -198,7 +198,7 @@ Para este tutorial, use o script de trabalho do serviço de página offline no [
         
         ![Cache de trabalho do serviço Edge DevTools][ImageDevtoolsSwCache]  
         
-1.  Tempo para experimentar o PWA como um aplicativo offline!  No Visual Studio, **pare a depuração** \ ( `Shift` + `F5` \) em seu aplicativo Web, abra o Microsoft Edge \ (ou atualize \) no endereço localhost do seu website.  Ele agora deve carregar a `offline.html` página \ (Obrigado ao seu trabalhador de serviço e cache offline \)!  
+1.  Tempo para experimentar o PWA como um aplicativo offline!  No Visual Studio, **pare a depuração** \( `Shift` + `F5` \) em seu aplicativo Web, abra o Microsoft Edge \(ou atualize \) no endereço localhost do seu website.  Ele agora deve carregar a `offline.html` página \(Obrigado ao seu trabalhador de serviço e cache offline \)!  
     
     ![offline.html de http://localhost:1337 carregado no Microsoft Edge][ImageOfflineHtml]  
 
@@ -224,7 +224,7 @@ var webpush = require('web-push');
 
 ### Etapa 2-gerar chaves VAPID para o seu servidor  
 
-Em seguida, você deve gerar as chaves VAPID \ (identificação do servidor de aplicativos voluntária \) para que seu servidor envie mensagens de envio para o cliente PWA.  Você só precisa fazer isso uma vez \ (ou seja, seu servidor requer apenas um único par de teclas VAPID \).  Na janela Node.js Interactive, digite o código a seguir.  
+Em seguida, você deve gerar as chaves VAPID \(identificação do servidor de aplicativos voluntária \) para que seu servidor envie mensagens de envio para o cliente PWA.  Você só precisa fazer isso uma vez \(ou seja, seu servidor requer apenas um único par de teclas VAPID \).  Na janela Node.js Interactive, digite o código a seguir.  
 
 ```javascript
 var webpush = require('web-push');
@@ -233,7 +233,7 @@ webpush.generateVAPIDKeys();
 
 A saída deve resultar em um objeto JSON que contém uma chave pública e privada, que você copia para a lógica do servidor.  
 
-No seu `index.js` arquivo, logo antes da linha final \ ( `module.exports = router` \), adicione o código a seguir.  
+No seu `index.js` arquivo, logo antes da linha final \( `module.exports = router` \), adicione o código a seguir.  
 
 ```javascript
 const vapidKeys = {
@@ -248,7 +248,7 @@ webpush.setVapidDetails(
 );
 ```  
 
-Copie os `publicKey` `privateKey` valores e que você acabou de gerar.  Sinta-se à vontade para personalizar o `mailto` endereço também \ (ainda não é necessário para executar este exemplo \).  
+Copie os `publicKey` `privateKey` valores e que você acabou de gerar.  Sinta-se à vontade para personalizar o `mailto` endereço também \(ainda não é necessário para executar este exemplo \).  
 
 O [blog de engenharia de serviços do Mozilla][MozillaServicesSendingVapidWebPushNotificationsPush] tem um ótimo explicador em VAPID e webpush se você estiver interessado nos detalhes de como ele funciona nos bastidores.  
 
@@ -256,7 +256,7 @@ O [blog de engenharia de serviços do Mozilla][MozillaServicesSendingVapidWebPus
 
 Agora, configure rotas para manipular solicitações relacionadas a Push do cliente PWA, incluindo a veiculação da chave pública VAPID e o registro do cliente para receber envios.  
 
-Em um cenário real, uma notificação por Push provavelmente provém de um evento na lógica do servidor.  Para simplificar as coisas aqui, você deve adicionar um botão de **notificação por push** à nossa página inicial do PWA para gerar envios do nosso servidor e um `/sendNotification` ponto de extremidade \ (rota do servidor \) para lidar com essas solicitações.  
+Em um cenário real, uma notificação por Push provavelmente provém de um evento na lógica do servidor.  Para simplificar as coisas aqui, você deve adicionar um botão de **notificação por push** à nossa página inicial do PWA para gerar envios do nosso servidor e um `/sendNotification` ponto de extremidade \(rota do servidor \) para lidar com essas solicitações.  
 
 Em seu `index.js` arquivo, acrescente as seguintes rotas logo após o código de inicialização do VAPID que você adicionou na [etapa 2] [#step-2---gerar-VAPID-Keys-para-seu-servidor].  
 
@@ -290,7 +290,7 @@ Com o código do lado do servidor estabelecido, coloque as notificações por pu
 
 ### Etapa 4-assinar notificações por push  
 
-Como parte da função dos proxies de rede do PWA, os funcionários de serviço lidam com eventos de push e interações de notificação do sistema.  No entanto, como se trata de primeiro configurar \ (ou registrar \) um trabalhador de serviço, a assinatura do PWA para notificações por push de servidor acontece no thread da interface do usuário principal do PWA e requer conectividade de rede.  Assinar as notificações por push requer um registro de trabalho do serviço ativo, portanto, você deve primeiro verificar se o trabalhador do serviço está instalado e ativo antes de tentar assiná-lo para notificações por push.  
+Como parte da função dos proxies de rede do PWA, os funcionários de serviço lidam com eventos de push e interações de notificação do sistema.  No entanto, como se trata de primeiro configurar \(ou registrar \) um trabalhador de serviço, a assinatura do PWA para notificações por push de servidor acontece no thread da interface do usuário principal do PWA e requer conectividade de rede.  Assinar as notificações por push requer um registro de trabalho do serviço ativo, portanto, você deve primeiro verificar se o trabalhador do serviço está instalado e ativo antes de tentar assiná-lo para notificações por push.  
 
 Antes de criar uma nova assinatura push, o Microsoft Edge verifica se o usuário concedeu permissão ao PWA para receber notificações.  Caso contrário, o usuário será solicitado a confirmar a permissão do navegador.  Se a permissão for negada, a solicitação para `registration.pushManager.subscribe` lançar a `DOMException` ; portanto, você deverá tratá-la.  Para saber mais sobre o gerenciamento de permissões, consulte [notificações por push no Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
@@ -369,7 +369,7 @@ Examine a documentação do MDN na interface do [pushmanager][MDNPushManager] e 
 
 ### Etapa 5-configurar manipuladores de eventos push e notificationclick  
 
-Com a configuração da assinatura push, o restante do trabalho acontece no trabalho do serviço.  Primeiro, você deve configurar um manipulador para eventos Push enviados pelo servidor e responder com uma notificação do sistema \ (se a permissão foi concedida \) exibindo a carga de dados de envio.  Em seguida, adicione um manipulador de clique para o sistema de notificação para ignorar a notificação e classificar por uma lista de janelas abertas no momento para abrir, enfocar ou abrir e focalizar a página do cliente PWA pretendida.  
+Com a configuração da assinatura push, o restante do trabalho acontece no trabalho do serviço.  Primeiro, você deve configurar um manipulador para eventos Push enviados pelo servidor e responder com uma notificação do sistema \(se a permissão foi concedida \) exibindo a carga de dados de envio.  Em seguida, adicione um manipulador de clique para o sistema de notificação para ignorar a notificação e classificar por uma lista de janelas abertas no momento para abrir, enfocar ou abrir e focalizar a página do cliente PWA pretendida.  
 
 Em seu `pwabuilder-sw.js` arquivo, acrescente os manipuladores a seguir.  
 
@@ -411,7 +411,7 @@ self.addEventListener('notificationclick', function (event) {
 
 Tempo para testar as notificações por push no seu PWA!  
 
-1.  Execute \ ( `F5` \) o PWA no navegador.  Como você modificou o código de trabalho do serviço \ ( `pwabuilder-sw.js` \), deve abrir o depurador devtools \ ( `F12` \) para o painel de **visão geral do trabalhador do serviço** e **cancelar o registro** do trabalhador do serviço e recarregar \ ( `F5` \) a página para registrá-la novamente \ (ou clicar em **Atualizar**\).  Em um cenário de produção, o navegador verifica regularmente se há atualizações do trabalho do serviço e instala as atualizações em segundo plano.  Você deve forçá-lo aqui para obter resultados imediatos.  
+1.  Execute \( `F5` \) o PWA no navegador.  Como você modificou o código de trabalho do serviço \( `pwabuilder-sw.js` \), deve abrir o depurador devtools \( `F12` \) para o painel de **visão geral do trabalhador do serviço** e **cancelar o registro** do trabalhador do serviço e recarregar \( `F5` \) a página para registrá-la novamente \(ou clicar em **Atualizar**\).  Em um cenário de produção, o navegador verifica regularmente se há atualizações do trabalho do serviço e instala as atualizações em segundo plano.  Você deve forçá-lo aqui para obter resultados imediatos.  
     
     À medida que o trabalhador do serviço é ativado e tenta assinar as notificações por push do PWA, você deve ver uma caixa de diálogo de permissão na parte inferior da página.  
     
@@ -419,7 +419,7 @@ Tempo para testar as notificações por push no seu PWA!
     
     Escolha **Sim** para habilitar as notificações do sistema para o seu PWA.  
     
-1.  No painel Visão geral do trabalhador do serviço, tente escolher o botão de  **ação** .  Será exibida uma notificação do sistema com a carga \ (codificada "\ (embutida" Test Push Message of DevTools "\).  
+1.  No painel Visão geral do trabalhador do serviço, tente escolher o botão de  **ação** .  Será exibida uma notificação do sistema com a carga \(codificada "\(embutida" Test Push Message of DevTools "\).  
     
     ![Enviar uma notificação por push de DevTools][ImageDevtoolsPush]  
     
@@ -427,7 +427,7 @@ Tempo para testar as notificações por push no seu PWA!
     
     ![Enviar uma notificação por push do servidor PWA][ImagePwaPush]  
     
-    Se você não clicar em \ (ou ativar \) uma notificação do sistema, ela será ignorada após vários segundos e será colocada na fila na central de ações do Windows.  
+    Se você não clicar em \(ou ativar \) uma notificação do sistema, ela será ignorada após vários segundos e será colocada na fila na central de ações do Windows.  
     
     ![Notificações na central de ações do Windows][ImageWindowsActionCenter]  
     
@@ -437,11 +437,11 @@ Tempo para testar as notificações por push no seu PWA!
 
 Este guia demonstrou a Anatomia básica de um aplicativo Web progressivo e das ferramentas de desenvolvimento do Microsoft PWA, incluindo o Visual Studio, o construtor do PWA e o Edge DevTools.  
 
-É claro que há muito mais que vai para [fazer um grande PWA][PwaEdgehtmlIndexRequirements] além do que você lê aqui, incluindo design responsivo, vinculação profunda, [teste entre navegadores][BrowserStackTestEdgeBrowser] e outras [práticas recomendadas][Webhint] \ (não para mencionar a funcionalidade do seu aplicativo! \), mas espero que este guia tenha uma introdução sólida de noções básicas do PWA e algumas ideias sobre como começar.  Se você tiver outras dúvidas sobre o desenvolvimento do PWA com o Windows ou com o Visual Studio, deixe um comentário!  
+É claro que há muito mais que vai para [fazer um grande PWA][PwaEdgehtmlIndexRequirements] além do que você lê aqui, incluindo design responsivo, vinculação profunda, [teste entre navegadores][BrowserStackTestEdgeBrowser] e outras [práticas recomendadas][Webhint] \(não para mencionar a funcionalidade do seu aplicativo! \), mas espero que este guia tenha uma introdução sólida de noções básicas do PWA e algumas ideias sobre como começar.  Se você tiver outras dúvidas sobre o desenvolvimento do PWA com o Windows ou com o Visual Studio, deixe um comentário!  
 
 Revise os outros guias do PWA para aprender a aumentar o envolvimento do cliente e oferecer uma experiência de aplicativo integrada mais uniforme e integrada ao sistema operacional.  
 
-*   [Ajuste do Windows][PwaEdgehtmlWindowsFeatures]. Usando a detecção simples de recursos, você pode aprimorar progressivamente seus clientes do PWA para Windows 10 por meio de APIs do Windows Runtime (WinRT \) nativas, como aquelas para personalizar as notificações do bloco do menu **Iniciar** do Windows e a barra de tarefas, e \ (mediante permissão \) trabalhando com recursos do usuário, como fotos, música e calendário.  
+*   [Ajuste do Windows][PwaEdgehtmlWindowsFeatures]. Usando a detecção simples de recursos, você pode aprimorar progressivamente seus clientes do PWA para Windows 10 por meio de APIs do Windows Runtime (WinRT \) nativas, como aquelas para personalizar as notificações do bloco do menu **Iniciar** do Windows e a barra de tarefas, e \(mediante permissão \) trabalhando com recursos do usuário, como fotos, música e calendário.  
 *   [PWAs na Microsoft Store][PwaEdgehtmlMicrosoftStore].  Saiba mais sobre as vantagens da distribuição da App Store e como enviar seu PWA.  
 
 ## Consulte também  
@@ -449,7 +449,7 @@ Revise os outros guias do PWA para aprender a aumentar o envolvimento do cliente
 *   [Aplicativos Web progressivos em MDN Web docs][MDNProgressiveWebApps] – excelente guia sobre aplicativos Web progressivos.  
 *   [Aplicativos Web progressivos no Web. dev][WebDevProgressiveWebApps] – excelente guia sobre aplicativos Web progressivos.  
 *   [Aplicativos Web progressivos tem][ProgressiveWebApps] -tem exemplos reais de PWAs.  
-*   [Leitores de notícias de hackers como Web Apps progressivos][HackerNewsProgressiveWebApps] – compara estruturas e padrões de desempenho diferentes para implementar uma amostra \ (leitor de notícias de hackers \) PWA.  
+*   [Leitores de notícias de hackers como Web Apps progressivos][HackerNewsProgressiveWebApps] – compara estruturas e padrões de desempenho diferentes para implementar uma amostra \(leitor de notícias de hackers \) PWA.  
 
 <!-- image links -->  
 
@@ -469,16 +469,16 @@ Revise os outros guias do PWA para aprender a aumentar o envolvimento do cliente
 
 <!-- links -->  
 
-[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requisitos-aplicativos Web progressivos \ (EdgeHTML \) no Windows | Documentos da Microsoft"  
-[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Aplicativos Web progressivos \ (EdgeHTML \) na Microsoft Store | Documentos da Microsoft"  
-[PwaEdgehtmlWindowsFeatures]: ../progressive-web-apps/windows-features.md "Personalize seu PWA \ (EdgeHTML \) para Windows | Documentos da Microsoft"  
+[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requisitos-aplicativos Web progressivos \(EdgeHTML \) no Windows | Documentos da Microsoft"  
+[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Aplicativos Web progressivos \(EdgeHTML \) na Microsoft Store | Documentos da Microsoft"  
+[PwaEdgehtmlWindowsFeatures]: ../progressive-web-apps/windows-features.md "Personalize seu PWA \(EdgeHTML \) para Windows | Documentos da Microsoft"  
 
 [LegalWindowsAgrementsMicrosoftStorePolicies]: /legal/windows/agreements/store-policies "Políticas da Microsoft Store | Documentos da Microsoft"  
 
 [VisualStudioNodeJsTutorial]: /visualstudio/nodejs/tutorial-nodejs "Tutorial: criar um aplicativo do Node.js e do Express no Visual Studio | Documentos da Microsoft"  
 [VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "Publicar no serviço de aplicativo do Azure-criar um aplicativo do Node.js e do Express no Visual Studio | Documentos da Microsoft"  
 
-[WindowsUwpGetStartedWhat]: /windows/uwp/get-started/whats-a-uwp "O que é um aplicativo da plataforma universal do Windows \ (UWP \)?  | Documentos da Microsoft"  
+[WindowsUwpGetStartedWhat]: /windows/uwp/get-started/whats-a-uwp "O que é um aplicativo da plataforma universal do Windows \(UWP \)?  | Documentos da Microsoft"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Criar conta gratuita do Azure | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Aplicativos Web | Microsoft Azure"  
@@ -497,16 +497,16 @@ Revise os outros guias do PWA para aprender a aumentar o envolvimento do cliente
 [HackerNewsProgressiveWebApps]: https://hnpwa.com "Leitores de notícias de hackers como Web Apps progressivos"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
-[MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage "DedicatedWorkerGlobalScope. CreateMessage \ (\) | MDN"  
+[MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage "DedicatedWorkerGlobalScope. CreateMessage \(\) | MDN"  
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API de notificações | MDN"  
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Aplicativos Web progressivos \ (PWAs) | MDN"  
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Aplicativos Web progressivos \(PWAs) | MDN"  
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "API push | MDN"  
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "Pushmanager | MDN"  
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API de trabalho do serviço | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Usar trabalhadores de serviço | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Manifesto do aplicativo Web | MDN"  
-[MDNWorkerPrototypePostMessage]: https://developer.mozilla.org/docs/Web/API/Worker/postMessage "Worker. prototype. CreateMessage \ (\) | MDN"  
+[MDNWorkerPrototypePostMessage]: https://developer.mozilla.org/docs/Web/API/Worker/postMessage "Worker. prototype. CreateMessage \(\) | MDN"  
 
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Enviar notificações webpush identificadas pela VAPID por meio do serviço de envio do Mozilla | Serviços do Mozilla"  
 

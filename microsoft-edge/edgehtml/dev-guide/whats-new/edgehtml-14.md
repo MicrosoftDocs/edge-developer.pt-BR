@@ -19,7 +19,7 @@ ms.locfileid: "11231593"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Aqui estão as alterações fornecidas com o EdgeHTML 14, a partir da [atualização de aniversário do Windows 10](https://blogs.windows.com/windowsexperience/2016/06/29) \ (08/2016, Build 14393 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, consulte [apresentando o EdgeHTML 14 com a atualização de aniversário do Windows 10](https://blogs.windows.com/msedgedev/2016/08/04).  
+Aqui estão as alterações fornecidas com o EdgeHTML 14, a partir da [atualização de aniversário do Windows 10](https://blogs.windows.com/windowsexperience/2016/06/29) \(08/2016, Build 14393 \).  Para obter uma visão geral das alterações no navegador geral do Microsoft Edge, consulte [apresentando o EdgeHTML 14 com a atualização de aniversário do Windows 10](https://blogs.windows.com/msedgedev/2016/08/04).  
 
 Aqui está o link permanente para a seguinte lista de alterações: [https://aka.ms/devguide_edgehtml_14](./edgehtml-14.md) .  
 
@@ -40,18 +40,18 @@ O EdgeHTML 14 traz vários recursos novos e experimentais para Chakra, o mecanis
 
 Ativado por padrão  
 
-*   [Parâmetros padrão](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \ (ES2015 \)
-*   [Operador de exponenciação](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) \ (ES2016 \)
-*   [Array. prototype. inclui](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \ (ES2016 \)
-*   [Object. Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) e [Object. Entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \ (ES2017 \)  
+*   [Parâmetros padrão](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \(ES2015 \)
+*   [Operador de exponenciação](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) \(ES2016 \)
+*   [Array. prototype. inclui](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \(ES2016 \)
+*   [Object. Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) e [Object. Entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \(ES2017 \)  
 
 #### Recursos de JavaScript experimental  
 
 Habilitado com `about:flags`  
 
-*   [Módulos](https://blogs.windows.com/msedgedev/2016/05/17) \ (ES2015 \)  
-*   [Async/Await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \ (ES2017 \)  
-*   [Símbolos Regex](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \ (ES2015 \)  
+*   [Módulos](https://blogs.windows.com/msedgedev/2016/05/17) \(ES2015 \)  
+*   [Async/Await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \(ES2017 \)  
+*   [Símbolos Regex](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \(ES2015 \)  
 
 Para obter mais detalhes, confira a [visualização de módulos ES6 e muito mais do ES2015, do ES2016 e de versões mais recentes,](https://blogs.windows.com/msedgedev/2016/05/17) e [o código assíncrono fica mais fácil com o suporte à função assíncrona ES2016 no Chakra e no Microsoft Edge](https://blogs.windows.com/msedgedev/2015/09/30).  
 
@@ -59,13 +59,13 @@ Para obter mais detalhes, confira a [visualização de módulos ES6 e muito mais
 
 API Web do FIDO 2,0  
 
-A API da autenticação da Web \ (anteriormente FIDO 2,0 \) no Microsoft Edge permite que os aplicativos da Web usem a biometria do [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) para autenticação de usuário, para que você e seus usuários possam evitar todas as complicações e riscos de gerenciamento de senhas, incluindo adivinhação de senha, phishing e ataques de registro em log de registros.  A implementação atual do Microsoft Edge \ ( `ms-` prefixado \) baseia-se em um rascunho anterior da especificação de autenticação da Web e provavelmente mudará no futuro.  Leia mais sobre autenticação na Web:  [autenticação da Web e Windows Hello](../windows-integration/web-authentication.md).
+A API da autenticação da Web \(anteriormente FIDO 2,0 \) no Microsoft Edge permite que os aplicativos da Web usem a biometria do [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) para autenticação de usuário, para que você e seus usuários possam evitar todas as complicações e riscos de gerenciamento de senhas, incluindo adivinhação de senha, phishing e ataques de registro em log de registros.  A implementação atual do Microsoft Edge \( `ms-` prefixado \) baseia-se em um rascunho anterior da especificação de autenticação da Web e provavelmente mudará no futuro.  Leia mais sobre autenticação na Web:  [autenticação da Web e Windows Hello](../windows-integration/web-authentication.md).
 
 ### Notificações da Web
 As notificações da Web permitem que os sites exibam notificações para alertar os usuários fora do contexto da página da Web e do navegador, mantendo os usuários informados sobre novas mensagens ou alertas e permitindo que os sites aprimorem o envolvimento do usuário.  As notificações da Web no Microsoft Edge são totalmente integradas à plataforma de notificação e à central de ações no Windows 10, fornecendo uma experiência consistente com outros aplicativos em todo o sistema e controles fáceis de permissões e de horas de silêncio.  Verifique as [notificações da Web no Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16) para obter mais informações.  
 
 ### API Web Speech
-A [API de voz da Web](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) é uma API JavaScript composta por duas partes: reconhecimento de fala e sintetização de fala \ (ou texto em fala \).  No momento, o Microsoft Edge aceita apenas a sintetização de fala.  A sintetização de fala envolve a conversão de texto em fala que um usuário ouve através de seus alto-falantes.  Confira o artigo [da Web Speech:](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) guia do desenvolvedor de síntese de fala para obter mais informações.  
+A [API de voz da Web](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) é uma API JavaScript composta por duas partes: reconhecimento de fala e sintetização de fala \(ou texto em fala \).  No momento, o Microsoft Edge aceita apenas a sintetização de fala.  A sintetização de fala envolve a conversão de texto em fala que um usuário ouve através de seus alto-falantes.  Confira o artigo [da Web Speech:](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) guia do desenvolvedor de síntese de fala para obter mais informações.  
 
 ## Novas APIs no EdgeHTML 14
 

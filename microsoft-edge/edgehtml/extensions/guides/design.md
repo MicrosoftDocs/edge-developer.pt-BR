@@ -114,8 +114,8 @@ Depois que sua extensão estiver pronta para a embalagem, você deverá ter trê
 
 | Size | Detalhes |  
 |:--- |:--- |  
-| 44px | Usado na interface do usuário do Windows \ (**lista de aplicativos**, aplicativos do sistema **configurações**  \>  ****  \>  **& recursos**\). |  
-| 50px | Requisito de empacotamento \ (não visível em qualquer lugar \). |  
+| 44px | Usado na interface do usuário do Windows \(**lista de aplicativos**, aplicativos do sistema **configurações**  \>  ****  \>  **& recursos**\). |  
+| 50px | Requisito de empacotamento \(não visível em qualquer lugar \). |  
 | 150px | Usado como o ícone da Microsoft Store. |  
 
 

@@ -23,7 +23,7 @@ A criação de um design inclusivo torna a tecnologia utilizável por todas as p
 *   Acessibilidade de teclado – muitos usuários de acessibilidade dependem do teclado para navegar e operar a interface do usuário:
     *   Mover o foco entre elementos usando a tecla Tab.
     *   Navegar em elementos de contêiner, como listas, grades e modos de exibição de árvore usando as teclas de direção.
-    *   Ativando a funcionalidade \ (chamando ações \) usando a tecla Enter ou Space.
+    *   Ativando a funcionalidade \(chamando ações \) usando a tecla Enter ou Space.
     *   Usar teclas de atalho para acessar com eficiência outras funcionalidades do aplicativo.
 *   Experiência visual acessível: os usuários com deficiência visual precisam de uma taxa de contraste de texto suficiente para o conteúdo de texto e uma boa experiência visual com temas de alto contraste geral.  Os usuários que têm cores cegas precisam ter informações para serem transmitidas de maneiras diferentes da cor.
 

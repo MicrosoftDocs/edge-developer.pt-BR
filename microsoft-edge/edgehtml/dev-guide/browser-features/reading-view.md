@@ -20,14 +20,14 @@ ms.locfileid: "11231796"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-O Microsoft Edge fornece um modo de exibição de leitura para uma experiência de leitura mais simplificada do que o livro de páginas da Web sem a distração de conteúdo não relacionado ou outro conteúdo secundário na página.  O modo de exibição de leitura pode ser ativado ou desativado no botão **modo de exibição de leitura** \ (ícone de livro \) na barra de endereços ou em `Ctrl` + `Shift` + `R` .  O modo de exibição de leitura extrai os seguintes metadados de uma página:  
+O Microsoft Edge fornece um modo de exibição de leitura para uma experiência de leitura mais simplificada do que o livro de páginas da Web sem a distração de conteúdo não relacionado ou outro conteúdo secundário na página.  O modo de exibição de leitura pode ser ativado ou desativado no botão **modo de exibição de leitura** \(ícone de livro \) na barra de endereços ou em `Ctrl` + `Shift` + `R` .  O modo de exibição de leitura extrai os seguintes metadados de uma página:  
 
 *   Title
 *   Autor
 *   Data
 *   Editor
-*   Imagem dominante \ (s \)
-*   Legendas da imagem dominante \ (s \)
+*   Imagem dominante \(s \)
+*   Legendas da imagem dominante \(s \)
 *   Imagens secundárias
 *   Conteúdo do texto principal da página
 *   Direitos autorais
@@ -44,7 +44,7 @@ Para garantir que o modo de exibição de leitura renderize o título do artigo:
 
 *   Incluir um `title` elemento no cabeçalho  
 *   Incluir uma meta tag com `name="title"`  
-*   Correspondam ao texto do título no corpo do artigo com a cadeia de caracteres de conteúdo da sua marca meta.  Pipes \ ( `|` \) na cadeia de caracteres de conteúdo impedem que o modo de exibição do leitor se torne ativo, tente usar hifens \ ( `-` \) em vez disso.  
+*   Correspondam ao texto do título no corpo do artigo com a cadeia de caracteres de conteúdo da sua marca meta.  Pipes \( `|` \) na cadeia de caracteres de conteúdo impedem que o modo de exibição do leitor se torne ativo, tente usar hifens \( `-` \) em vez disso.  
 
 ### Autor  
 
@@ -92,7 +92,7 @@ Para garantir que todo o corpo de texto da sua página seja capturado pelo modo 
 
 ### Direitos autorais  
 
-O modo de exibição de leitura extrai e exibe as informações de direitos autorais denotadas pelas METAmarcas com `name = "copyright"` , ou se não houver informações de marca meta, um nó de texto que contenha o símbolo \ ( `©` \) Copyright.  O modo de exibição de leitura exibe as informações de direitos autorais no final do corpo principal do artigo, com um estilo de fonte menor do que o corpo do texto principal.  
+O modo de exibição de leitura extrai e exibe as informações de direitos autorais denotadas pelas METAmarcas com `name = "copyright"` , ou se não houver informações de marca meta, um nó de texto que contenha o símbolo \( `©` \) Copyright.  O modo de exibição de leitura exibe as informações de direitos autorais no final do corpo principal do artigo, com um estilo de fonte menor do que o corpo do texto principal.  
 
 ```html
 <meta name="copyright" content="Your copyright information">

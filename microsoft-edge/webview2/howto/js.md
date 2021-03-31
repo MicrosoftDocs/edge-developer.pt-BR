@@ -94,7 +94,7 @@ Nesta seção, remova o menu de contexto padrão do seu controle WebView2.
 Para começar, explore a funcionalidade do menu contextual atual.  
 
 1.  Execute o projeto.  
-1.  Passe o mouse em qualquer lugar do controle WebView2 e abra o menu de contexto \ (clique com o botão direito do mouse \).  O menu de contexto exibe as opções padrão.  
+1.  Passe o mouse em qualquer lugar do controle WebView2 e abra o menu de contexto \(clique com o botão direito do mouse \).  O menu de contexto exibe as opções padrão.  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="O menu de contexto mostrando as opções padrão" lightbox="./media/contextmenu.png":::
        O menu de contexto mostrando as opções padrão  
@@ -108,7 +108,7 @@ Agora, adicione código para remover a funcionalidade do menu contextual do cont
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  Execute o código novamente.  Confirme que você não pode abrir um menu de contexto \ (clique com o botão direito do mouse \).  
+1.  Execute o código novamente.  Confirme que você não pode abrir um menu de contexto \(clique com o botão direito do mouse \).  
    
 ## Consulte também  
 

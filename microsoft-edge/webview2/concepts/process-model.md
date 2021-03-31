@@ -39,7 +39,7 @@ Você pode reagir a falhas e travamentos nesses processos de navegador e renderi
 
 Você pode desligar com segurança os processos do navegador e do renderizador associados usando o `Close` método of `CoreWebView2Controller` .  
 
-Para abrir a janela do Gerenciador de tarefas do navegador da janela do **devtools** de uma instância do WebView2, você pode selecionar `Shift` + `Escape` ou passar o mouse na barra de título da janela do devtools, abrir o menu contextual \ (clique com o botão direito do mouse \) e escolher `Browser task manager` .  Todos os processos associados ao processo do navegador de seu WebView2 são exibidos incluindo finalidades associadas.  
+Para abrir a janela do Gerenciador de tarefas do navegador da janela do **devtools** de uma instância do WebView2, você pode selecionar `Shift` + `Escape` ou passar o mouse na barra de título da janela do devtools, abrir o menu contextual \(clique com o botão direito do mouse \) e escolher `Browser task manager` .  Todos os processos associados ao processo do navegador de seu WebView2 são exibidos incluindo finalidades associadas.  
 
 <!-- links -->  
 
