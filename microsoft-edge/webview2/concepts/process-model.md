@@ -1,46 +1,86 @@
 ---
 description: Modelo de processo
-title: Modelo de processo
+title: Modelo de processo | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicativos WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, HTML Edge
-ms.openlocfilehash: 8548308896815266fbd1e150da979b56cfb268e2
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda
+ms.openlocfilehash: 149234fe99485460f9d0c677b176a42d3b1e5050
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895531"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470848"
 ---
-# <span data-ttu-id="a6687-104">Modelo de processo</span><span class="sxs-lookup"><span data-stu-id="a6687-104">Process model</span></span>  
+# <a name="process-model"></a><span data-ttu-id="e8dbb-104">Modelo de processo</span><span class="sxs-lookup"><span data-stu-id="e8dbb-104">Process model</span></span>  
 
-<span data-ttu-id="a6687-105">O WebView2 usa o mesmo modelo de processo do navegador Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="a6687-105">WebView2 uses the same process model as the Microsoft Edge browser.</span></span>  <span data-ttu-id="a6687-106">Para obter mais informações sobre o modelo de processo do navegador, consulte [arquitetura do navegador – examine o navegador da Web moderno][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].</span><span class="sxs-lookup"><span data-stu-id="a6687-106">For more information about the browser process model, see [Browser Architecture - Inside look at modern web browser][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].</span></span> 
+:::row:::
+   :::column span="1":::
+      <span data-ttu-id="e8dbb-105">Plataformas com suporte:</span><span class="sxs-lookup"><span data-stu-id="e8dbb-105">Supported platforms:</span></span>
+   :::column-end:::
+   :::column span="2":::
+      <span data-ttu-id="e8dbb-106">Win32, Windows Forms, WinUi, WPF</span><span class="sxs-lookup"><span data-stu-id="e8dbb-106">Win32, Windows Forms, WinUi, WPF</span></span>
+   :::column-end:::
+:::row-end:::  
 
-<span data-ttu-id="a6687-107">Um processo do navegador está associado aos processos do renderizador e outros processos do utilitário conforme descrito nesse artigo.</span><span class="sxs-lookup"><span data-stu-id="a6687-107">One browser process is associated with the renderer processes and other utility processes as described in that article.</span></span>  <span data-ttu-id="a6687-108">Além disso, no caso do WebView2, há um aplicativo host solicitando processos usando WebView2.</span><span class="sxs-lookup"><span data-stu-id="a6687-108">Additionally, in the case of WebView2, there are host app requesting processes using WebView2.</span></span>  
+<span data-ttu-id="e8dbb-107">O WebView2 usa o mesmo modelo de processo que o navegador do Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-107">WebView2 uses the same process model as the Microsoft Edge browser.</span></span>  <span data-ttu-id="e8dbb-108">Para obter mais informações sobre o modelo de processo do navegador, navegue até Arquitetura do Navegador - Confira o [navegador da Web moderno.][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]</span><span class="sxs-lookup"><span data-stu-id="e8dbb-108">For more information about the browser process model, navigate to [Browser Architecture - Inside look at modern web browser][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].</span></span>  
+
+<span data-ttu-id="e8dbb-109">Um processo de navegador está associado aos processos de renderização e outros processos utilitários, conforme descrito neste artigo.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-109">One browser process is associated with the renderer processes and other utility processes as described in that article.</span></span>  <span data-ttu-id="e8dbb-110">Além disso, se WebView2 for especificado, os processos de solicitação do aplicativo host usarão WebView2.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-110">Additionally, if WebView2 is specified, the host app requesting processes use WebView2.</span></span>  
 
 :::image type="complex" source="../media/process-model-1.png" alt-text="Processo 1" lightbox="../media/process-model-1.png":::
-   <span data-ttu-id="a6687-110">Processo 1</span><span class="sxs-lookup"><span data-stu-id="a6687-110">Process 1</span></span>  
+   <span data-ttu-id="e8dbb-112">Processo 1</span><span class="sxs-lookup"><span data-stu-id="e8dbb-112">Process 1</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a6687-111">Um processo do navegador é especificado na pasta dados do usuário em uma sessão do usuário que atende a qualquer WebView2 que solicita o processo que especifica a pasta dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="a6687-111">One browser process is specified per user data folder in a user session that serve any WebView2 requesting process that specifies that user data folder.</span></span>  <span data-ttu-id="a6687-112">Isso significa que um processo de navegador pode estar servindo vários processos de solicitação e um processo de solicitação pode estar usando vários processos do navegador.</span><span class="sxs-lookup"><span data-stu-id="a6687-112">This means one browser process may be serving multiple requesting processes and one requesting process may be using multiple browser processes.</span></span>  
+<span data-ttu-id="e8dbb-113">Um processo de navegador é associado a apenas uma pasta de dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-113">A browser process is associated with only one user data folder.</span></span>  <span data-ttu-id="e8dbb-114">Um processo de solicitação pode especificar mais de uma pasta de dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-114">A request process may specify more than one user data folder.</span></span>  <span data-ttu-id="e8dbb-115">Um processo de solicitação que especifica mais de uma pasta de dados do usuário está associado ao mesmo número de processos do navegador.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-115">A request process that specifies more than one user data folder is associated with the same number of browser processes.</span></span>  
+<span data-ttu-id="e8dbb-116">Por exemplo, um processo de solicitação que solicita acesso a duas pastas de dados do usuário usa dois processos de navegador.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-116">For example, a request process that requests access to two user data folders uses two browser processes.</span></span>  
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="Processo 2" lightbox="../media/process-model-2.png":::
-   <span data-ttu-id="a6687-114">Processo 2</span><span class="sxs-lookup"><span data-stu-id="a6687-114">Process 2</span></span>  
+   <span data-ttu-id="e8dbb-118">Processo 2</span><span class="sxs-lookup"><span data-stu-id="e8dbb-118">Process 2</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a6687-115">Um processo de navegador tem alguns processos de renderização associados.</span><span class="sxs-lookup"><span data-stu-id="a6687-115">A browser process has some number of associated renderer processes.</span></span>  <span data-ttu-id="a6687-116">Os processos do navegador são criados conforme necessário para atender a potencialmente vários quadros em diferentes instâncias do WebView2.</span><span class="sxs-lookup"><span data-stu-id="a6687-116">The browser processes are created as required to service potentially multiple frames in different instances of WebView2.</span></span>  <span data-ttu-id="a6687-117">O número de processos de renderização varia de acordo com o recurso de navegador de isolamento de site e o número de origens discadas discadas renderizadas em instâncias associadas do WebView2.</span><span class="sxs-lookup"><span data-stu-id="a6687-117">The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated instances of WebView2.</span></span>  <span data-ttu-id="a6687-118">O recurso de navegador de isolamento de site é descrito no conteúdo anterior.</span><span class="sxs-lookup"><span data-stu-id="a6687-118">The site isolation browser feature is described in the previous content.</span></span>  
+<span data-ttu-id="e8dbb-119">Um processo de navegador está associado a vários processos de renderização.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-119">A browser process is associated with several renderer processes.</span></span>  <span data-ttu-id="e8dbb-120">Uma instância do WebView 2 cria um processo de navegador para quadros de serviço.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-120">A WebView 2 instance creates a browser process to service frames.</span></span>  <span data-ttu-id="e8dbb-121">Um processo de navegador pode estar associado a vários quadros.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-121">A browser process may be associated with multiple frames.</span></span>  <span data-ttu-id="e8dbb-122">Um processo de navegador pode ser associado a instâncias diferentes do WebView2.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-122">A browser process may be associated with different instances of WebView2.</span></span>  <span data-ttu-id="e8dbb-123">O número de processos de renderização varia com base nas seguintes condições.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-123">The number of render processes varies based on the following conditions.</span></span>  
 
-<span data-ttu-id="a6687-119">O `CoreWebView2Environment` representa um processo de navegador e pasta de dados do usuário.</span><span class="sxs-lookup"><span data-stu-id="a6687-119">The `CoreWebView2Environment` represents a user data folder and browser process.</span></span>  <span data-ttu-id="a6687-120">O `CoreWebView2` não corresponde diretamente a qualquer conjunto de processos, pois vários processos de renderização são usados por um WebView2 dependendo do isolamento do site conforme descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="a6687-120">The `CoreWebView2` does not directly correspond to any one set of processes since various renderer processes are used by a WebView2 depending on site isolation as previously described.</span></span>  
+*   <span data-ttu-id="e8dbb-124">Uso do recurso de isolamento de site no navegador.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-124">Use of the website isolation feature in your browser.</span></span>  
+*   <span data-ttu-id="e8dbb-125">O número de origens desconectadas distintas renderizadas em instâncias associadas de WebView2.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-125">The number of distinct disconnected origins rendered in associated instances of WebView2.</span></span>  
 
-<span data-ttu-id="a6687-121">Você pode reagir a falhas e travamentos nesses processos de navegador e renderização usando o `ProcessFailed` evento de `CoreWebView2` .</span><span class="sxs-lookup"><span data-stu-id="a6687-121">You are able to react to crashes and hangs in these browser and renderer processes using the `ProcessFailed` event of `CoreWebView2`.</span></span>  
+<span data-ttu-id="e8dbb-126">O recurso de navegador de isolamento de site é descrito no conteúdo anterior.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-126">The website isolation browser feature is described in the previous content.</span></span> 
+<!--todo:  which previous content?  -->  
+ 
 
-<span data-ttu-id="a6687-122">Você pode desligar com segurança os processos do navegador e do renderizador associados usando o `Close` método of `CoreWebView2Controller` .</span><span class="sxs-lookup"><span data-stu-id="a6687-122">You are able to safely shutdown associated browser and renderer processes using the `Close` method of `CoreWebView2Controller`.</span></span>  
+<span data-ttu-id="e8dbb-127">Representa `CoreWebView2Environment` uma pasta de dados do usuário e um processo de navegador.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-127">The `CoreWebView2Environment` represents a user data folder and browser process.</span></span>  <span data-ttu-id="e8dbb-128">O não corresponde diretamente a nenhum conjunto de processos, pois vários processos renderer são usados por um WebView2, dependendo do isolamento do `CoreWebView2` site, conforme descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-128">The `CoreWebView2` does not directly correspond to any one set of processes since various renderer processes are used by a WebView2 depending on website isolation as previously described.</span></span>  
 
-<span data-ttu-id="a6687-123">Para abrir a janela do Gerenciador de tarefas do navegador da janela do **devtools** de uma instância do WebView2, você pode selecionar `Shift` + `Escape` ou passar o mouse na barra de título da janela do devtools, abrir o menu contextual \(clique com o botão direito do mouse \) e escolher `Browser task manager` .</span><span class="sxs-lookup"><span data-stu-id="a6687-123">To open the Browser Task Manager window from the **DevTools** window of a WebView2 instance, you are able to select `Shift`+`Escape` or hover on the DevTools window title bar, open the contextual menu \(right-click\), and choose `Browser task manager`.</span></span>  <span data-ttu-id="a6687-124">Todos os processos associados ao processo do navegador de seu WebView2 são exibidos incluindo finalidades associadas.</span><span class="sxs-lookup"><span data-stu-id="a6687-124">All processes associated with the browser process of your WebView2 are displayed including associated purposes.</span></span>  
+<span data-ttu-id="e8dbb-129">Para reagir a falhas e travamentos nos processos do navegador e do renderador, use o `ProcessFailed` evento `CoreWebView2` de .</span><span class="sxs-lookup"><span data-stu-id="e8dbb-129">To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.</span></span>  
+
+<span data-ttu-id="e8dbb-130">Para desligar com segurança os processos de renderização e navegador associados, use o `Close` método `CoreWebView2Controller` de .</span><span class="sxs-lookup"><span data-stu-id="e8dbb-130">To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.</span></span>  
+
+<span data-ttu-id="e8dbb-131">Para abrir a janela Gerenciador de Tarefas do Navegador na janela **DevTools** de uma instância do WebView2, conclua as seguintes ações.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-131">To open the Browser Task Manager window from the **DevTools** window of a WebView2 instance, complete on of the following actions.</span></span>  
+
+*   <span data-ttu-id="e8dbb-132">Selecione `Shift` + `Escape` .</span><span class="sxs-lookup"><span data-stu-id="e8dbb-132">Select `Shift`+`Escape`.</span></span>  
+*   <span data-ttu-id="e8dbb-133">Passe o mouse na barra de título da janela DevTools, abra o menu contextual \(clique com o botão direito do mouse\) e escolha `Browser task manager` .</span><span class="sxs-lookup"><span data-stu-id="e8dbb-133">Hover on the DevTools window title bar, open the contextual menu \(right-click\), and choose `Browser task manager`.</span></span>  
+
+<span data-ttu-id="e8dbb-134">Todos os processos associados ao processo de navegador do WebView2 são exibidos, incluindo finalidades associadas.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-134">All processes associated with the browser process of your WebView2 are displayed including associated purposes.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="e8dbb-135">Consulte também</span><span class="sxs-lookup"><span data-stu-id="e8dbb-135">See also</span></span>  
+
+*   <span data-ttu-id="e8dbb-136">Para começar a usar WebView2, navegue até Guias de Guia de Iniciação da [WebView2.][Webview2IndexGettingStarted]</span><span class="sxs-lookup"><span data-stu-id="e8dbb-136">To Get Started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.</span></span>  
+*   <span data-ttu-id="e8dbb-137">Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples no][GithubMicrosoftedgeWebview2samples] GitHub.</span><span class="sxs-lookup"><span data-stu-id="e8dbb-137">For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.</span></span>  
+*   <span data-ttu-id="e8dbb-138">Para obter informações mais detalhadas sobre APIs WebView2, navegue até [referência de API][DotnetApiMicrosoftWebWebview2WpfWebview2].</span><span class="sxs-lookup"><span data-stu-id="e8dbb-138">For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].</span></span>  
+*   <span data-ttu-id="e8dbb-139">Para obter mais informações sobre WebView2, navegue até [Recursos WebView2][Webview2IndexNextSteps].</span><span class="sxs-lookup"><span data-stu-id="e8dbb-139">For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].</span></span>  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="e8dbb-140">Entrar em contato com a equipe do Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="e8dbb-140">Getting in touch with the Microsoft Edge WebView team</span></span>  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Arquitetura do navegador – veja dentro do navegador da Web moderno (parte 1)"  
+[Webview2IndexGettingStarted]: ../index.md#getting-started "Introdução - Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas - Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Exemplos de WebView2 - MicrosoftEdge/WebView2Samples | GitHub"  
+
+[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Arquitetura do Navegador - Veja o navegador da Web moderno (parte 1)"  
