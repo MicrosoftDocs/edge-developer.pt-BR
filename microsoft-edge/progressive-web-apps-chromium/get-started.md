@@ -3,16 +3,16 @@ description: Este guia fornece uma visão geral das noções básicas e ferramen
 title: Começar com o Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicativos Web progressivos, PWA, Borda, Windows, PWABuilder, manifesto da Web, serviço de trabalho, push
-ms.openlocfilehash: 6ff24b2e9219b2f3755bb2e8f6db137dc7a721ec
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
+ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398130"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474905"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Começar com o Progressive Web Apps (Chromium)  
 
@@ -52,9 +52,9 @@ npm start
 
 Agora, navegue `http://localhost:3000` para exibir seu novo aplicativo Web.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Executando seu novo PWA no localhost" lightbox="./media/vs-nodejs-express-index.png":::
-   Executando seu novo PWA no localhost
-:::image-end:::
+:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Executando seu novo PWA no localhost" lightbox="./media/visual-studio-nodejs-express-index.png":::
+   Executando seu novo PWA no localhost  
+:::image-end:::  
 
 ## <a name="get-started-building-a-pwa"></a>Começar a criar um PWA  
 
@@ -100,7 +100,7 @@ Para adicionar um manifesto de aplicativo ao aplicativo Web:
     ```  
     
 1.  Salve o arquivo como `/MySamplePwa/public/manifest.json` .  
-1.  Adicione uma imagem de ícone do aplicativo 512x512 chamada `icon512.png` `/MySamplePwa/public/images` para .  Você pode usar a [imagem de exemplo para][ImagePwa] fins de teste.  
+1.  Adicione uma imagem de ícone do aplicativo 512x512 chamada `icon512.png` `/MySamplePwa/public/images` para .  Você pode usar a [imagem de exemplo para](./media/progressive-web-app.png) fins de teste.  
 1.  Em Visual Studio Código, abra e adicione o seguinte trecho de `/public/index.html` código dentro da `<head>` marca.  
     
     ```html
@@ -148,26 +148,26 @@ Use as etapas a seguir para confirmar se o seu funcionário de serviço é execu
 1.  No Microsoft Edge, selecione `F12` para abrir o Microsoft Edge DevTools.  Selecione **Aplicativo**, em **seguida, Service Workers** para exibir os funcionários do serviço.  Se o trabalhador do serviço não for exibido, atualize a página.  
     
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Visão geral do Microsoft Edge DevTools Service Worker" lightbox="./media/devtools-sw-overview.png":::
-       Visão geral do Microsoft Edge DevTools Service Worker
-    :::image-end:::
+       Visão geral do Microsoft Edge DevTools Service Worker  
+    :::image-end:::  
     
 1.  Exibir o cache do trabalhador de serviço expandindo **o Armazenamento de Cache** e selecione **pwabuilder-precache**.  Todos os recursos armazenados em cache pelo trabalhador do serviço devem ser exibidos.  Os recursos armazenados em cache pelo trabalhador do serviço incluem o ícone do aplicativo, o manifesto do aplicativo, o CSS e os arquivos JavaScript.  
     
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Cache de Trabalhador de Serviço no Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
-       Cache de Trabalhador de Serviço no Microsoft Edge DevTools (F12)
-    :::image-end:::
+       Cache de Trabalhador de Serviço no Microsoft Edge DevTools \(F12\)  
+    :::image-end:::  
     
 1.  Experimente o PWA como um aplicativo offline.  No Microsoft Edge DevTools \( `F12` \), escolha **Rede** e altere o status **online** para **Offline**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Configurando o aplicativo para o modo offline no Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
-       Configurando o aplicativo para o modo offline no Microsoft Edge DevTools
-    :::image-end:::
+       Configurando o aplicativo para o modo offline no Microsoft Edge DevTools  
+    :::image-end:::  
     
 1.  Atualize seu aplicativo e ele deve exibir o mecanismo offline para servir os recursos do seu aplicativo a partir do cache.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA em execução offline" lightbox="./media/vs-nodejs-express-index.png":::
-       PWA em execução offline
-    :::image-end:::
+    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA em execução offline" lightbox="./media/visual-studio-nodejs-express-index.png":::
+       PWA em execução offline  
+    :::image-end:::  
     
 ## <a name="add-push-notifications-to-your-pwa"></a>Adicionar notificações por push ao seu PWA  
 
@@ -285,8 +285,8 @@ Para testar notificações por push para seu PWA, conclua as etapas a seguir.
 1.  Navegue até seu PWA em `http://localhost:3000` .  Quando o seu funcionário de serviço é ativado e tenta inscrever seu PWA para notificações por push, o Microsoft Edge solicita que você permita que seu PWA mostre notificações.  Selecione **Permitir**.  
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="Caixa de diálogo De permissão para habilenciar notificações" lightbox="./media/notification-permission.png":::
-       Caixa de diálogo De permissão para habilenciar notificações
-    :::image-end:::
+       Caixa de diálogo De permissão para habilenciar notificações  
+    :::image-end:::  
     
 1.  Simular uma notificação por push do lado do servidor.  Com o PWA aberto `http://localhost:3000` no navegador, selecione `F12` abrir o DevTools.  Escolha **Application**  >  **Service Worker**  >  **Push** para enviar uma notificação por push de teste ao seu PWA.  
     
@@ -302,7 +302,8 @@ Para testar notificações por push para seu PWA, conclua as etapas a seguir.
           Se você não selecionar \(ou ativar\) uma notificação de notificação do sistema, o sistema a descartará automaticamente após vários segundos e enfilá-la em sua Central de Ações do Windows.  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Notificações no Centro de Ações do Windows" lightbox="./media/windows-action-center.png":::
-             Notificações no Centro de Ações do Windows :::image-end:::
+             Notificações no Centro de Ações do Windows  
+          :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
@@ -317,10 +318,10 @@ As etapas a seguir incluem tarefas adicionais para ajudá-lo a entender a criaç
 *   [Teste entre navegadores][BrowserStackTestEdgeBrowser]  
 *   Implementar práticas de validação e teste, como [Webhint][Webhint]  
     
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
 *   [Aplicativos Web progressivos em documentos web do MDN][MDNProgressiveWebApps]  
-*   [Aplicativos Web progressivos em web.dev][WebDevProgressiveWebApps]  
+*   [Aplicativos Web progressivos no web.dev][WebDevProgressiveWebApps]  
 *   [Leitores de Notícias do Hacker como Aplicativos Web Progressivos][HackerNewsProgressiveWebApps] - Compara diferentes estruturas e padrões de desempenho para implementar um exemplo \(Leitor de Notícias do Hacker\) PWA.  
 *   [PWAs de estouros de míticos][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [Um roteiro progressivo para seu Aplicativo Web Progressivo][CloudfourThinksProgressiveRoadmapYourWebApp]  
@@ -331,10 +332,6 @@ As etapas a seguir incluem tarefas adicionais para ajudá-lo a entender a criaç
 *   [Projetando e criando um aplicativo Web progressivo sem uma estrutura (Parte 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Projetando e criando um aplicativo Web progressivo sem uma estrutura (Parte 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Projetando e criando um aplicativo Web progressivo sem uma estrutura (Parte 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-    
-<!-- image links -->  
-
-[ImagePwa]: ./media/pwa.png  
 
 <!-- links -->  
 

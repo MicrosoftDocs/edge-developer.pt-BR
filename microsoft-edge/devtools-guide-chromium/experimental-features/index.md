@@ -23,10 +23,10 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11439581"
 ---
 # <a name="experimental-features"></a>Recursos experimentais  
@@ -265,7 +265,7 @@ Para fornecer comentários sobre experimentos do Microsoft Edge DevTools ou qual
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Editar atalhos de teclado para qualquer ação no DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools | Microsoft Edge"  
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos de fonte CSS e configurações no painel Estilos no DevTools | Microsoft Docs"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar configurações e estilos de fonte CSS no painel Estilos no DevTools | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  

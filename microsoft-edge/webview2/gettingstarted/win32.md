@@ -1,6 +1,6 @@
 ---
-description: Guia de iniciação com WebView2 para aplicativos Win32
-title: Getting started with WebView2 for Win32 apps
+description: Guia de início com WebView2 para aplicativos Win32
+title: Iniciando o WebView2 para aplicativos Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
@@ -9,76 +9,76 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
 ms.openlocfilehash: 19bc0c5600ebd072ad9a6aa61d2a965e999865ce
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11306156"
 ---
-# Getting started with WebView2  
+# <a name="getting-started-with-webview2"></a>Como começar com o WebView2  
 
-Neste artigo, aprenda a criar seu primeiro aplicativo WebView2 e saiba mais sobre os principais recursos do [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obter mais informações sobre APIs WebView2 individuais, navegue até a [referência de API.][Webview2ReferenceWin32]  
+Neste artigo, você pode começar a criar seu primeiro aplicativo WebView2 e saber mais sobre os principais recursos do [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obter mais informações sobre APIs webView2 individuais, navegue até [referência de API][Webview2ReferenceWin32].  
 
-## Pré-requisitos  
+## <a name="prerequisites"></a>Pré-requisitos  
 
-Certifique-se de instalar a seguinte lista de pré-requisitos antes de prosseguir.  
+Certifique-se de instalar a lista de pré-requisitos a seguir antes de prosseguir.  
 
-*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no sistema operacional suportado \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no sistema operacional com suporte \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
     
     > [!NOTE]
-    > A equipe WebView recomenda usar o canal Canary e a versão mínima necessária é 82.0.488.0.  
+    > A equipe webView recomenda o uso do canal Canary e a versão mínima necessária é 82.0.488.0.  
     
-*   [Visual Studio][MicrosoftVisualstudioMain] 2015 ou posterior com suporte a C++ instalado.  
+*   [Visual Studio][MicrosoftVisualstudioMain] 2015 ou posterior com suporte C++ instalado.  
     
-## Etapa 1: criar um aplicativo de janela única  
+## <a name="step-1---create-a-single-window-app"></a>Etapa 1 - Criar um aplicativo de janela única  
 
-Comece com um projeto de área de trabalho básico que contenha uma única janela principal.  
+Comece com um projeto de área de trabalho básico que contém uma única janela principal.  
 
 > [!IMPORTANT]
-> Para focalizar melhor o passo a passo, use o código de exemplo modificado do Passo a passo: crie um aplicativo tradicional da Área de Trabalho do [Windows (C++)][CppWindowsWalkthroughCreatingDesktopApplication] para seu aplicativo de exemplo.  Para baixar o exemplo modificado e começar, navegue até [WebView2 Amostras][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
+> Para focalizar melhor o passo a passo, use o código de exemplo modificado do Passo a passo: Crie um aplicativo de Área de Trabalho do [Windows (C++)][CppWindowsWalkthroughCreatingDesktopApplication] tradicional para seu aplicativo de exemplo.  Para baixar o exemplo modificado e começar, navegue até [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
-1.  No Visual Studio, `WebView2GettingStarted.sln` abra.  
-    Se você usar uma versão mais antiga do Visual Studio, passe o mouse sobre o projeto **WebView2GettingStarted,** abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Propriedades**.  Em **Propriedades de**Configuração Geral, modifique a Versão do SDK do Windows e o platform Toolset para usar o SDK do Win10 e o toolset do Visual Studio disponíveis  >  **** para você. **** ****  
+1.  Em Visual Studio, abra `WebView2GettingStarted.sln` .  
+    Se você usar uma versão mais antiga do Visual Studio, passe o mouse no projeto **WebView2GettingStarted,** abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Propriedades**.  Em **Propriedades**de Configuração Geral , modifique o Windows SDK Version e o Platform Toolset para usar o  >  **** SDK do Win10 e **** o Visual Studio ferramentas disponíveis para você. ****  
 
 :::image type="complex" source="../media/tool-version.png" alt-text="Versão da ferramenta" lightbox="../media/tool-version.png":::
    Versão da ferramenta  
 :::image-end:::  
 
-O Visual Studio pode exibir erros, pois o seu projeto não tem o arquivo de header WebView2.  Os erros devem ser corrigidos após a [Etapa 2.](#step-2---install-webview2-sdk)  
+Visual Studio pode exibir erros, pois seu projeto não tem o arquivo de header WebView2.  Os erros devem ser corrigidos após a [Etapa 2](#step-2---install-webview2-sdk).  
 
-## Etapa 2 - Instalar o SDK webView2  
+## <a name="step-2---install-webview2-sdk"></a>Etapa 2 - Instalar o SDK WebView2  
 
-Adicione o SDK webView2 ao projeto.  Use o NuGet para instalar o SDK do Win32.  
+Adicione o SDK WebView2 ao projeto.  Use NuGet para instalar o SDK win32.  
 
-1.  Passe o mouse sobre o projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Gerenciar Pacotes NuGet.**  
+1.  Passe o mouse no projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Gerenciar Pacotes NuGet.**  
     
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Gerenciar pacotes NuGet" lightbox="../media/manage-nuget-packages.png":::
        Gerenciar pacotes NuGet  
     :::image-end:::  
     
 1.  Instale a Biblioteca de Implementação do Windows.  
-    1.  Na barra de pesquisa, digite > `Microsoft.Windows.ImplementationLibrary` escolha **Microsoft.Windows.ImplementationLibrary**.  
-    1.  Na janela do lado direito, escolha **Instalar**.  O NuGet baixa a biblioteca para o computador.  
+    1.  Na barra de pesquisa, digite `Microsoft.Windows.ImplementationLibrary` > escolha **Microsoft.Windows.ImplementationLibrary**.  
+    1.  Na janela do lado direito, escolha **Instalar**.  NuGet baixa a biblioteca para seu computador.  
         
         > [!NOTE]
-        > A [Biblioteca de Implementação do Windows][GithubMicrosoftWilMain] e a Biblioteca de Modelos [C++][CppCxWrlTemplateLibraryVS2019] do Windows Runtime são opcionais e facilitam o trabalho com COM para o exemplo.  
+        > A [Biblioteca de Implementação do Windows][GithubMicrosoftWilMain] e a Biblioteca de Modelos do Windows [Runtime C++][CppCxWrlTemplateLibraryVS2019] são opcionais e facilitam o trabalho com COM para o exemplo.  
         
         :::image type="complex" source="../media/wil.png" alt-text="Biblioteca de Implementação do Windows" lightbox="../media/wil.png":::
            Biblioteca de Implementação do Windows  
         :::image-end:::  
         
-1.  Instale o SDK webView2.  
-    1.  Na barra de pesquisa, digite > `Microsoft.Web.WebView2` escolha **Microsoft.Web.WebView2**.  
-    1.  Na janela do lado direito, escolha **Instalar**.  O NuGet baixa o SDK em seu computador.  
+1.  Instale o SDK WebView2.  
+    1.  Na barra de pesquisa, digite `Microsoft.Web.WebView2` > escolha **Microsoft.Web.WebView2**.  
+    1.  Na janela do lado direito, escolha **Instalar**.  NuGet baixa o SDK para seu computador.  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Gerenciador de Pacotes NuGet" lightbox="../media/nuget.png":::
-           Gerenciador de Pacotes NuGet
+        :::image type="complex" source="../media/nuget.png" alt-text="NuGet Gerenciador de Pacotes" lightbox="../media/nuget.png":::
+           NuGet Gerenciador de Pacotes
         :::image-end:::  
         
 1.  Adicione o header WebView2 ao seu projeto.  
     :::row:::
        :::column span="1":::
-          No `HelloWebView.cpp` arquivo, copie o trecho de código a seguir e o copie após a última `#include` linha.  
+          No arquivo, copie o trecho de código a seguir e `HelloWebView.cpp` o colará após a última `#include` linha.  
           
           ```cpp
           // include WebView2 header
@@ -98,9 +98,9 @@ Adicione o SDK webView2 ao projeto.  Use o NuGet para instalar o SDK do Win32.
        :::column-end:::
     :::row-end:::
     
-Pronto para usar e criar com base na API WebView2.  
+Pronto para usar e criar na API WebView2.  
 
-### Criar seu aplicativo de exemplo vazio  
+### <a name="build-your-empty-sample-app"></a>Criar seu aplicativo de exemplo vazio  
 
 Para criar e executar o aplicativo de exemplo, selecione `F5` .  Seu aplicativo exibe uma janela vazia.  
 
@@ -108,15 +108,15 @@ Para criar e executar o aplicativo de exemplo, selecione `F5` .  Seu aplicativo 
    Aplicativo vazio  
 :::image-end:::  
 
-## Etapa 3 : Criar um único WebView dentro da janela pai  
+## <a name="step-3---create-a-single-webview-within-the-parent-window"></a>Etapa 3 - Criar um único WebView dentro da janela pai  
 
 Adicione um WebView à janela principal.  
 
- Use o método para configurar o ambiente e localizar o navegador `CreateCoreWebView2Environment` Microsoft Edge \(Chromium\) a partir do controle.  Você também pode usar o método se quiser especificar o local do navegador, a pasta do usuário, os sinalizadores do navegador e assim por diante, em vez de usar `CreateCoreWebView2EnvironmentWithOptions` a configuração padrão.  Após a conclusão do método, execute o método dentro do retorno de chamada e execute o método `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` para obter o `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associado.  
+ Use o `CreateCoreWebView2Environment` método para configurar o ambiente e localizar o navegador do Microsoft Edge \(Chromium\) que está visando o controle.  Você também pode usar o método se quiser especificar o local do navegador, a pasta do usuário, os sinalizadores do navegador e assim por diante, em vez de `CreateCoreWebView2EnvironmentWithOptions` usar a configuração padrão.  Após a conclusão do método, execute o método dentro do retorno de chamada e execute o método `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` para obter o `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associado.  
 
-No retorno de chamada, de definir mais algumas configurações, reize o WebView para que ele pegue 100% da janela pai e navegue até o Bing.  
+No retorno de chamada, de definir mais algumas configurações, resize o WebView para obter 100% da janela pai e navegue até Bing.  
 
-Copie o trecho de código a seguir e copie-o `HelloWebView.cpp` depois do comentário e antes do `// <-- WebView2 sample code starts here -->` `// <-- WebView2 sample code ends here -->` comentário.  
+Copie o seguinte trecho de código e colar depois `HelloWebView.cpp` do comentário e antes do `// <-- WebView2 sample code starts here -->` `// <-- WebView2 sample code ends here -->` comentário.  
 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
@@ -161,17 +161,17 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### Criar seu aplicativo de exemplo do Bing  
+### <a name="build-your-bing-sample-app"></a>Criar seu aplicativo de exemplo do Bing  
 
-Para criar e executar o aplicativo, selecione `F5` .  Agora você tem uma janela WebView exibindo a página do Bing.  
+Para criar e executar o aplicativo, selecione `F5` .  Agora você tem uma janela WebView exibindo a página bing.  
 
 :::image type="complex" source="../media/bing-window.png" alt-text="Janela do Bing" lightbox="../media/bing-window.png":::
    Janela do Bing  
 :::image-end:::  
 
-## Etapa 4 - Eventos de navegação  
+## <a name="step-4---navigation-events"></a>Etapa 4 - Eventos de navegação  
 
-A equipe WebView já abrangeu a navegação para a URL usando `ICoreWebView2::Navigate` o método na última etapa.  Durante a navegação, o WebView dispara uma sequência de eventos aos quais o host pode escutar.  
+A equipe do WebView já cobriu a navegação para a URL usando o `ICoreWebView2::Navigate` método na última etapa.  Durante a navegação, o WebView dispara uma sequência de eventos aos quais o host pode ouvir.  
 
 1.  `NavigationStarting`  
 1.  `SourceChanged`  
@@ -179,13 +179,13 @@ A equipe WebView já abrangeu a navegação para a URL usando `ICoreWebView2::Na
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-Para obter mais informações, navegue até [eventos de navegação.][Webview2ConceptsNavigationEvents]  
+Para obter mais informações, navegue até [Eventos de navegação][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegação" lightbox="../media/navigation-events.png":::
    Eventos de navegação  
 :::image-end:::  
 
-Em casos de erro, um ou mais dos eventos a seguir podem ocorrer dependendo se a navegação continua para uma página da Web de erro.  
+Em casos de erro, um ou mais dos seguintes eventos podem ocorrer, dependendo se a navegação é continuada para uma página da Web de erro.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
@@ -194,7 +194,7 @@ Em casos de erro, um ou mais dos eventos a seguir podem ocorrer dependendo se a 
 > [!NOTE]
 > Se ocorrer um redirecionamento HTTP, haverá vários `NavigationStarting` eventos em uma linha.  
 
-Como exemplo de uso dos eventos, registre um manipulador para o `NavigationStarting` evento para cancelar qualquer solicitação não https.  Copie o trecho de código a seguir e `HelloWebView.cpp` copie-o.  
+Como exemplo de uso dos eventos, registre um manipulador para o `NavigationStarting` evento para cancelar qualquer solicitação que não seja https.  Copie o seguinte trecho de código e colar em `HelloWebView.cpp` .  
 
 ```cpp
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -212,16 +212,16 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
     }).Get(), &token);
 ```  
 
-Agora, o aplicativo não navega para nenhum site não https.  Você pode usar um mecanismo semelhante para realizar outras tarefas, como restringir a navegação dentro de seu próprio domínio.  
+Agora, o aplicativo não navega para sites que não são https.  Você pode usar mecanismo semelhante para realizar outras tarefas, como restringir a navegação em seu próprio domínio.  
 
-## Etapa 5 - Scripts  
+## <a name="step-5---scripting"></a>Etapa 5 - Scripting  
 
-Você pode usar aplicativos host para inserir código JavaScript em controles WebView2 no tempo de execução.  Você pode tarefa WebView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  O JavaScript injetado se aplica a todos os novos documentos de nível superior e a todos os quadros filho até que o JavaScript seja removido.  O JavaScript injetado é executado com tempo específico.  
+Você pode usar aplicativos host para injetar código JavaScript em controles WebView2 no tempo de execução.  Você pode tarefa webView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  O JavaScript injetado se aplica a todos os novos documentos de nível superior e a todos os quadros filho até que o JavaScript seja removido.  O JavaScript injetado é executado com tempo específico.  
 
 *   Execute-o após a criação do objeto global.  
 *   Execute-o antes que qualquer outro script incluído no documento HTML seja executado.  
 
-Copie o trecho de código a seguir e `HelloWebView.cpp` copie-o.  
+Copie o seguinte trecho de código e colar em `HelloWebView.cpp` .  
 
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
@@ -235,24 +235,24 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
     }).Get());
 ```  
 
-Agora, o WebView sempre deve congelar o `Object` objeto e retornar o documento da página uma vez.  
+Agora, o WebView sempre congelará o `Object` objeto e retornará o documento de página uma vez.  
 
 > [!NOTE] 
-> As APIs de injeção de script \(e algumas outras APIs WebView2\) são assíncronas, você deve usar retornos de chamada se o código deve ser executado em uma ordem específica.  
+> As APIs de injeção de script \(e algumas outras APIs webView2\) são assíncronas, você deve usar retornos de chamada se o código for necessário ser executado em uma ordem específica.  
 
-## Etapa 6- Comunicação entre o conteúdo do host e da Web  
+## <a name="step-6---communication-between-host-and-web-content"></a>Etapa 6 - Comunicação entre conteúdo do host e da Web  
 
-O host e o conteúdo da Web também podem se comunicar uns com os outros por meio do `postMessage` método.  O conteúdo da Web em execução em um WebView pode postar no host por meio do método, e a mensagem é manipulada por qualquer manipulador de eventos `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` registrado no host.  Da mesma forma, o host pode enviar mensagens ao conteúdo da Web por meio ou método, que é capturado por `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` manipuladores adicionados do `window.chrome.webview.addEventListener` ouvinte.  O mecanismo de comunicação permite que o conteúdo da Web use recursos nativos passando mensagens para solicitar que o host execute APIs nativas.  
+O host e o conteúdo da Web também podem se comunicar uns com os outros por meio do `postMessage` método.  O conteúdo da Web em execução em um WebView pode postar no host por meio do método e a mensagem é manipulada por qualquer manipulador de eventos `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` registrado no host.  Da mesma forma, o host pode enviar mensagens ao conteúdo da Web por meio ou método, que é `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` capturado por manipuladores adicionados do `window.chrome.webview.addEventListener` ouvinte.  O mecanismo de comunicação permite que o conteúdo da Web use recursos nativos passando mensagens para solicitar que o host execute APIs nativas.  
 
-Como exemplo para entender o mecanismo, as etapas a seguir ocorrem quando você tenta a saída da URL do documento no WebView.  
+Como exemplo para entender o mecanismo, as etapas a seguir ocorrem quando você tenta saída da URL do documento no WebView.  
 
-1.  O host registra um manipulador para retornar a mensagem recebida de volta para o conteúdo da Web  
-1.  O host injeta um script no conteúdo da Web que registra um manipulador para imprimir a mensagem do host  
+1.  O host registra um manipulador para retornar a mensagem recebida de volta ao conteúdo da Web  
+1.  O host injeta um script no conteúdo da Web que registra um manipulador para imprimir mensagem do host  
 1.  O host injeta um script no conteúdo da Web que posta a URL para o host  
-1.  O manipulador do host é disparado e retorna a mensagem \(a URL\) para o conteúdo da Web  
-1.  O manipulador do conteúdo da Web é disparado e imprime a mensagem do host \(a URL\)  
+1.  O manipulador do host é acionado e retorna a mensagem \(a URL\) para o conteúdo da Web  
+1.  O manipulador do conteúdo da Web é acionado e imprime a mensagem do host \(a URL\)  
 
-Copie o trecho de código a seguir e `HelloWebView.cpp` copie-o.  
+Copie o seguinte trecho de código e colar em `HelloWebView.cpp` .  
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content
@@ -275,7 +275,7 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```  
 
-### Criar seu aplicativo de exemplo de URL de exibição  
+### <a name="build-your-display-url-sample-app"></a>Criar seu aplicativo de exemplo de URL de exibição  
 
 Para criar e executar o aplicativo, selecione `F5` .  A URL aparece em uma janela pop-up antes de navegar para uma página da Web.  
 
@@ -285,17 +285,17 @@ Para criar e executar o aplicativo, selecione `F5` .  A URL aparece em uma janel
 
 Parabéns, você criou seu primeiro aplicativo WebView2.  
 
-## Próximas etapas  
+## <a name="next-steps"></a>Próximas etapas  
 
-Muitas das funcionalidades WebView2 não são abordadas neste artigo, a seção a seguir fornece mais recursos.  
+Muitas das funcionalidades do WebView2 não são abordadas neste artigo, a seção a seguir fornece mais recursos.  
 
-### Ver também  
+### <a name="see-also"></a>Consulte também  
 
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Para um aplicativo de exemplo criado usando WebView2, navegue até [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
-*   Para obter informações detalhadas sobre a API WebView2, navegue até a [referência de API.][Webview2ReferenceWin32]  
+*   Para obter informações detalhadas sobre a API WebView2, navegue até [referência de API][Webview2ReferenceWin32].  
 
-## Entrar em contato com a equipe do Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrar em contato com a equipe do Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -306,12 +306,12 @@ Muitas das funcionalidades WebView2 não são abordadas neste artigo, a seção 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Biblioteca de Modelos C++ do Windows Runtime (WRL) | Microsoft Docs"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Passo a passo: criar um aplicativo tradicional da Área de Trabalho do Windows (C++) | Microsoft Docs"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Biblioteca de Modelos do Windows Runtime C++ (WRL) | Microsoft Docs"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Passo a passo: criar um aplicativo de área de trabalho do Windows (C++) tradicional | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentários do WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "Exemplos de WebView2 - MicrosoftEdge/WebView2Samples | GitHub"  
 

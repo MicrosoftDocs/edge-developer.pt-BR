@@ -1,36 +1,36 @@
 ---
-description: Guia de iniciação com WebView2 para aplicativos WPF
-title: Getting started with WebView2 for WPF apps
+description: Guia de início com WebView2 para aplicativos WPF
+title: Iniciando com WebView2 para aplicativos WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, controle de navegador, html de borda, getting started, Getting Started, .NET
-ms.openlocfilehash: de67b8a2da8cda0339b5e8d0b96cf4c3df260ec6
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+keywords: WebView2, webview2, WebView, webview, aplicativos wpf, wpf, borda, CoreWebView2, controle do navegador, html de borda, iniciando, Iniciando, .NET
+ms.openlocfilehash: 14e6b64e36f6354554957d2c7953f789024d23c9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "11306142"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470834"
 ---
-# Getting started with WebView2 in WPF
+# <a name="getting-started-with-webview2-in-wpf"></a>Como começar com WebView2 no WPF
 
-Neste artigo, aprenda a criar seu primeiro aplicativo WebView2 e saiba mais sobre os principais recursos do [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obter mais informações sobre APIs individuais, navegue até a [referência de API.][DotnetApiMicrosoftWebWebview2Wpf]  
+Neste artigo, você pode começar a criar seu primeiro aplicativo WebView2 e saber mais sobre os principais recursos do [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obter mais informações sobre APIs individuais, navegue até [referência de API][DotnetApiMicrosoftWebWebview2Wpf].  
 
-## Pré-requisitos  
+## <a name="prerequisites"></a>Pré-requisitos  
 
-Certifique-se de instalar a seguinte lista de pré-requisitos antes de prosseguir.  
+Certifique-se de instalar a lista de pré-requisitos a seguir antes de prosseguir.  
 
-*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no sistema operacional suportado \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no sistema operacional com suporte \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 ou posterior.  
     
-## Etapa 1: criar um aplicativo de janela única  
+## <a name="step-1---create-a-single-window-app"></a>Etapa 1 - Criar um aplicativo de janela única  
 
-Comece com um projeto de área de trabalho básico que contenha uma única janela principal.  
+Comece com um projeto de área de trabalho básico que contém uma única janela principal.  
 
-1.  No Visual Studio, escolha **WPF .NET Core App** \(ou **WPF .NET Framework App**\) > **Próximo.**  
+1.  Em Visual Studio, escolha **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.  
     
     :::row:::
        :::column span="1":::
@@ -43,7 +43,7 @@ Comece com um projeto de área de trabalho básico que contenha uma única janel
        :::column-end:::
     :::row-end:::
     
-1.  Insira valores para **o nome do projeto** e o **local.**  Escolha **o .NET Framework 4.6.2** ou posterior \(ou **.NET Core 3.0** ou posterior\).  
+1.  Insira valores para **Nome do Projeto e** **Local.**  Escolha **.NET Framework 4.6.2** ou posterior \(ou **.NET Core 3.0** ou posterior\).  
     
     :::row:::
            :::column span="1":::
@@ -58,17 +58,17 @@ Comece com um projeto de área de trabalho básico que contenha uma única janel
     
 1.  Para criar seu projeto, escolha **Criar**.  
     
-## Etapa 2 - Instalar o SDK webView2  
+## <a name="step-2---install-webview2-sdk"></a>Etapa 2 - Instalar o SDK WebView2  
 
 Use NuGet para adicionar o SDK WebView2 ao projeto.  
 
-1.  Passe o mouse sobre o projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha Gerenciar Pacotes **NuGet...**.  
+1.  Passe o mouse no projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Gerenciar Pacotes NuGet...**.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Gerenciar pacotes NuGet":::
        Gerenciar pacotes NuGet
     :::image-end:::
     
-1.  Na barra de pesquisa, digite > `Microsoft.Web.WebView2` escolha **Microsoft.Web.WebView2**.  
+1.  Na barra de pesquisa, digite `Microsoft.Web.WebView2` > escolha **Microsoft.Web.WebView2**.  
    
     :::image type="complex" source="./media/installnuget.png" alt-text="NuGet" lightbox="./media/installnuget.png":::
        NuGet  
@@ -76,11 +76,11 @@ Use NuGet para adicionar o SDK WebView2 ao projeto.
     
     Pronto para começar a desenvolver aplicativos usando a API WebView2.  Para criar e executar o projeto, selecione `F5` .  O projeto em execução exibe uma janela vazia.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Aplicativo vazio":::
-       Aplicativo vazio
+    :::image type="complex" source="./media/winforms-emptyapp.png" alt-text="Aplicativo vazio" lightbox="./media/winforms-emptyapp.png":::
+       Aplicativo vazio  
     :::image-end:::  
     
-## Etapa 3 : Criar um único WebView em MainWindow.xaml  
+## <a name="step-3---create-a-single-webview"></a>Etapa 3 - Criar um único WebView 
 
 Em seguida, adicione um WebView ao seu aplicativo.  
 
@@ -90,7 +90,7 @@ Em seguida, adicione um WebView ao seu aplicativo.
     xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     ```  
     
-    Certifique-se de que `MainWindow.xaml` o código se parece com o trecho de código a seguir.  
+    Verifique se o código em `MainWindow.xaml` se parece com o trecho de código a seguir.  
     
     ```xml
     <Window x:Class="WPF_Getting_Started.MainWindow"
@@ -127,11 +127,11 @@ Em seguida, adicione um WebView ao seu aplicativo.
        Microsoft.com
     :::image-end:::  
     
-## Etapa 4 - Navegação  
+## <a name="step-4---navigation"></a>Etapa 4 - Navegação  
 
-Adicione a capacidade de permitir que os usuários alterem a URL que o controle WebView2 exibe adicionando uma barra de endereços ao aplicativo.
+Adicione a capacidade de permitir que os usuários alterem a URL exibida pelo controle WebView2 adicionando uma barra de endereços ao aplicativo.
 
-1.  No arquivo, adicione uma barra de endereços copiando e copiando o trecho de código a seguir dentro do que `MainWindow.xaml` `<DockPanel>` contém o WebView.  
+1.  No arquivo, adicione uma barra de endereços copiando e colar o seguinte trecho de código dentro do que `MainWindow.xaml` `<DockPanel>` contém o WebView.  
     
     ```xml
     <DockPanel DockPanel.Dock="Top">
@@ -158,13 +158,13 @@ Adicione a capacidade de permitir que os usuários alterem a URL que o controle 
     </DockPanel>
     ```  
     
-1.  No Visual Studio, no `MainWindow.xaml.cs` arquivo, para adicionar o namespace, insira o trecho de código a `CoreWebView2` seguir na parte superior.  
+1.  Em Visual Studio, no arquivo, para adicionar o namespace, insira o seguinte trecho de `MainWindow.xaml.cs` `CoreWebView2` código na parte superior.  
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  No arquivo, copie o trecho de código a seguir para criar o método, que navega no WebView até a URL inserida na `MainWindow.xaml.cs` `ButtonGo_Click` barra de endereços.  
+1.  No arquivo, copie o seguinte trecho de código para criar o método, que navega pelo WebView para a URL inserida `MainWindow.xaml.cs` `ButtonGo_Click` na barra de endereços.  
     
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -176,18 +176,18 @@ Adicione a capacidade de permitir que os usuários alterem a URL que o controle 
     }
     ```  
     
-    Para criar e executar o projeto, selecione `F5` .  Digite uma nova URL na barra de endereços e escolha **Ir.**  Por exemplo, digite `https://www.bing.com`.  Certifique-se de que o controle WebView2 navegue até a URL.  
+    Para criar e executar o projeto, selecione `F5` .  Digite uma nova URL na barra de endereços e escolha **Ir**.  Por exemplo, digite `https://www.bing.com`.  Verifique se o controle WebView2 navega até a URL.  
     
     > [!NOTE]
-    > Certifique-se de que uma URL completa seja inserida na barra de endereços.  Um `ArgumentException` é lançado se a URL não começa com ou `http://` `https://` .  
+    > Certifique-se de que uma URL completa seja inserida na barra de endereços.  Um `ArgumentException` é lançado se a URL não começar com ou `http://` `https://` .  
     
     :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
        bing.com
     :::image-end:::
     
-## Etapa 5 - Eventos de navegação  
+## <a name="step-5---navigation-events"></a>Etapa 5 - Eventos de navegação  
 
-Durante a navegação na página da Web, o controle WebView2 gera eventos.  O aplicativo que hospeda controles WebView2 escuta os eventos a seguir.  
+Durante a navegação na página da Web, o controle WebView2 gera eventos.  O aplicativo que hospeda controles WebView2 escuta os seguintes eventos.  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -195,13 +195,13 @@ Durante a navegação na página da Web, o controle WebView2 gera eventos.  O ap
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-Para obter mais informações, navegue até [Eventos de Navegação.][Webview2ConceptsNavigationEvents]  
+Para obter mais informações, navegue até [Eventos de Navegação][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegação":::
    Eventos de navegação
 :::image-end:::  
 
-Quando ocorre um erro, os eventos a seguir são gerados e podem depender da navegação para uma página da Web de erro.  
+Quando ocorre um erro, os seguintes eventos são gerados e podem depender da navegação para uma página da Web de erro.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
@@ -210,9 +210,9 @@ Quando ocorre um erro, os eventos a seguir são gerados e podem depender da nave
 > [!NOTE]
 > Se ocorrer um redirecionamento HTTP, haverá vários `NavigationStarting` eventos em uma linha.  
 
-Para demonstrar como usar os eventos, registre um manipulador para `NavigationStarting` que cancele qualquer solicitação não HTTPS.  
+Para demonstrar como usar os eventos, registre um manipulador para que cancele qualquer solicitação `NavigationStarting` que não seja HTTPS.  
 
-No arquivo, modifique o construtor para corresponder ao trecho de código a seguir `MainWindow.xaml.cs` e adicione a `EnsureHttps` função.  
+No `MainWindow.xaml.cs` arquivo, modifique o construtor para corresponder ao trecho de código a seguir e adicione a `EnsureHttps` função.  
 
 ```csharp
 public MainWindow()
@@ -231,18 +231,18 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-No construtor, EnsureHttps é registrado como o manipulador de eventos `NavigationStarting` no evento no controle WebView2.  
+No construtor, é `EnsureHttps` registrado como o manipulador de eventos no evento no controle `NavigationStarting` WebView2.  
 
-Para criar e executar o projeto, selecione `F5` .  Certifique-se de que, ao navegar para um site HTTP, o WebView permaneça inalterado.  No entanto, o WebView navega para sites HTTPS.  
+Para criar e executar o projeto, selecione `F5` .  Verifique se ao navegar para um site HTTP, o WebView permanece inalterado.  No entanto, o WebView navega para sites HTTPS.  
 
-## Etapa 6 - Scripts  
+## <a name="step-6---scripting"></a>Etapa 6 - Scripting  
 
-Você pode usar aplicativos host para inserir código JavaScript em controles WebView2 no tempo de execução.  Você pode tarefa WebView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  O JavaScript injetado se aplica a todos os novos documentos de nível superior e a todos os quadros filho até que o JavaScript seja removido.  O JavaScript injetado é executado com tempo específico.  
+Você pode usar aplicativos host para injetar código JavaScript em controles WebView2 no tempo de execução.  Você pode tarefa webView para executar JavaScript arbitrário ou adicionar scripts de inicialização.  O JavaScript injetado se aplica a todos os novos documentos de nível superior e a todos os quadros filho até que o JavaScript seja removido.  O JavaScript injetado é executado com tempo específico.  
 
 *   Execute-o após a criação do objeto global.  
 *   Execute-o antes que qualquer outro script incluído no documento HTML seja executado.  
 
-Por exemplo, adicione scripts que enviam um alerta quando um usuário navega para sites não HTTPS.  Modifique `EnsureHttps` a função para inserir um script no conteúdo da Web que usa o método [ExecuteScriptAsync.](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)  
+Como exemplo, adicione scripts que enviam um alerta quando um usuário navega para sites que não são HTTPS.  Modifique `EnsureHttps` a função para injetar um script no conteúdo da Web que usa o método [ExecuteScriptAsync.](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -256,24 +256,24 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Para criar e executar o projeto, selecione `F5` .  Certifique-se de que o aplicativo exibe um alerta quando você navega para um site que não usa HTTPS.  
+Para criar e executar o projeto, selecione `F5` .  Verifique se o aplicativo exibe um alerta quando você navega até um site que não usa HTTPS.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
 :::image-end:::  
 
-## Etapa 7- Comunicação entre o conteúdo do host e da Web  
+## <a name="step-7---communication-between-host-and-web-content"></a>Etapa 7 - Comunicação entre conteúdo do host e da Web  
 
-O conteúdo do host e da Web pode se comunicar uns com os outros `postMessage` usando o seguinte:  
+O conteúdo do host e da Web pode se comunicar das seguintes maneiras usando `postMessage` .  
 
 *   O conteúdo da Web em um controle WebView2 pode postar uma mensagem no host usando `window.chrome.webview.postMessage` .  O host lida com a mensagem usando qualquer `WebMessageReceived` registro no host.  
-*   Hosts postam mensagens no conteúdo da Web em um controle WebView2 usando `CoreWebView2.PostWebMessageAsString` ou `CoreWebView2.PostWebMessageAsJSON` .  Essas mensagens são capturadas por manipuladores adicionados `window.chrome.webview.addEventListener` a .  
+*   Hosts postam mensagens no conteúdo da Web em um controle WebView2 usando `CoreWebView2.PostWebMessageAsString` ou `CoreWebView2.PostWebMessageAsJSON` .  As mensagens são capturadas por manipuladores adicionados a `window.chrome.webview.addEventListener` .  
 
 O mecanismo de comunicação passa mensagens do conteúdo da Web para o host usando recursos nativos.  
 
-Em seu projeto, quando o controle WebView2 navega para uma URL, ele exibe a URL na barra de endereços e alerta o usuário da URL exibida no controle WebView2.  
+Em seu projeto, quando o controle WebView2 navega até uma URL, ele exibe a URL na barra de endereços e alerta o usuário da URL exibida no controle WebView2.  
 
-1.  No `MainWindow.xaml.cs` arquivo, atualize o construtor e crie uma `InitializeAsync` função para corresponder ao trecho de código a seguir.  A `InitializeAsync` função aguarda [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) porque a inicialização `CoreWebView2` é assíncrona.  
+1.  No `MainWindow.xaml.cs` arquivo, atualize o construtor e crie uma `InitializeAsync` função para corresponder ao trecho de código a seguir.  A `InitializeAsync` função aguarda [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) porque a inicialização `CoreWebView2` de é assíncrona.  
     
     ```csharp
     public MainWindow()
@@ -289,7 +289,7 @@ Em seu projeto, quando o controle WebView2 navega para uma URL, ele exibe a URL 
     }
     ```  
     
-1.  Depois **que CoreWebView2** for inicializado, registre um manipulador de eventos para `WebMessageReceived` responder.  Em `MainWindow.xaml.cs` , `InitializeAsync` atualize e adicione usando o trecho de `UpdateAddressBar` código a seguir.  
+1.  Depois **que CoreWebView2** for inicializado, registre um manipulador de eventos para responder `WebMessageReceived` a .  In `MainWindow.xaml.cs` , update and add using the following code `InitializeAsync` `UpdateAddressBar` snippet.  
     
     ```csharp
     async void InitializeAsync()
@@ -307,7 +307,7 @@ Em seu projeto, quando o controle WebView2 navega para uma URL, ele exibe a URL 
     ```  
     
 1.  Para que o WebView envie e responda à mensagem da Web, depois de `CoreWebView2` inicializado, o host:  
-    1.  Injeta um script no conteúdo da Web que registra um manipulador para imprimir a mensagem do host.  
+    1.  Injeta um script no conteúdo da Web que registra um manipulador para imprimir mensagem do host.  
     1.  Injeta um script no conteúdo da Web que posta a URL no host.  
         
     No `MainWindow.xaml.cs` arquivo, atualize `InitializeAsync` para corresponder ao trecho de código a seguir.  
@@ -331,17 +331,17 @@ Em seu projeto, quando o controle WebView2 navega para uma URL, ele exibe a URL 
 
 Parabéns, você criou seu primeiro aplicativo WebView2.  
 
-## Próximas etapas  
+## <a name="next-steps"></a>Próximas etapas  
 
-Para continuar a saber mais sobre WebView2, navegue até os seguintes recursos.  
+Para continuar a aprender mais sobre WebView2, navegue até os seguintes recursos.  
 
-### Ver também  
+### <a name="see-also"></a>Consulte também  
 
-*   Para um exemplo abrangente de recursos WebView2, navegue até [o repositório WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] no GitHub.  
-*   Para obter informações mais detalhadas sobre a API WebView2, navegue até a [referência de API.](/dotnet/api/microsoft.web.webview2.wpf.webview2)  
-*   Para obter mais informações sobre WebView2, navegue até [Recursos de WebView2](../index.md#next-steps).  
+*   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples no][GithubMicrosoftedgeWebview2samplesMain] GitHub.  
+*   Para obter informações mais detalhadas sobre a API WebView2, navegue até [referência de API](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
+*   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2](../index.md#next-steps).  
 
-## Entrar em contato com a equipe do Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrar em contato com a equipe do Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -350,7 +350,7 @@ Para continuar a saber mais sobre WebView2, navegue até os seguintes recursos.
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft.Web.WebView2.Wpf | Microsoft Docs"  
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Classe WebView2 | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "Método WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WpfWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.Exemétodo cuteScriptAsync(String) | Microsoft Docs"  
 
