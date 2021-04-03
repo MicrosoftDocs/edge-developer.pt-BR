@@ -329,6 +329,8 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Manifestos do aplicativo Web
           href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Recursos experimentais
+          href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publicar seu PWA na Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
     - name: Visão geral do roteiro
