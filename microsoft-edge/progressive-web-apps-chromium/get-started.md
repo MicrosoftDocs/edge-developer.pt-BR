@@ -7,12 +7,12 @@ ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicativos Web progressivos, PWA, Borda, Windows, PWABuilder, manifesto da Web, serviço de trabalho, push
-ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474905"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480192"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Começar com o Progressive Web Apps (Chromium)  
 
@@ -58,7 +58,7 @@ Agora, navegue `http://localhost:3000` para exibir seu novo aplicativo Web.
 
 ## <a name="get-started-building-a-pwa"></a>Começar a criar um PWA  
 
-Agora que você tem um aplicativo Web simples, estenda-o como um PWA adicionando os três requisitos para PWAs<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), um [Manifesto do Aplicativo Web](#step-2---create-a-web-app-manifest)e um Trabalhador de [Serviço.](#step-3---add-a-service-worker)  
+Agora que você tem um aplicativo Web simples, estenda-o como um PWA adicionando os três requisitos para PWAs<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), um [Manifesto do Aplicativo Web](#step-2---create-a-web-app-manifest)e um Trabalhador de [Serviço.](#step-3---add-a-service-worker)  
 
 ### <a name="step-1---use-https"></a>Etapa 1 - Usar HTTPS  
 
@@ -318,7 +318,7 @@ As etapas a seguir incluem tarefas adicionais para ajudá-lo a entender a criaç
 *   [Teste entre navegadores][BrowserStackTestEdgeBrowser]  
 *   Implementar práticas de validação e teste, como [Webhint][Webhint]  
     
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Ver também  
 
 *   [Aplicativos Web progressivos em documentos web do MDN][MDNProgressiveWebApps]  
 *   [Aplicativos Web progressivos no web.dev][WebDevProgressiveWebApps]  
@@ -335,7 +335,7 @@ As etapas a seguir incluem tarefas adicionais para ajudá-lo a entender a criaç
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Implantar um Node.js no Azure com Visual Studio código | Microsoft Docs"  
 

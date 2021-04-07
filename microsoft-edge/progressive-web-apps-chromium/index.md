@@ -3,17 +3,17 @@ description: Os Aplicativos Web Progressivos (Chromium) são executados de forma
 title: Aplicativos Web Progressivos no Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicativos Web progressivos, PWA, Borda, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 2850c983c1dae34362a43be9cd33abbfd0df77cf
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: be832ee5c0ad395dae7b4946c41da157ab5cd9ba
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474884"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480185"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>Visão geral progressiva dos Aplicativos Web no Windows  
 
@@ -183,9 +183,9 @@ Para ser um ótimo PWA, seu aplicativo também deve atender aos seguintes requis
 :::row-end:::  
 
 > [!NOTE]
-> Para transformar o PWA em um aplicativo da [Microsoft Store,][MicrosoftDeveloperStore] navegue até [Progressive Web Apps (EdgeHTML) na Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> Para transformar o PWA em um [aplicativo da Microsoft Store,][MicrosoftDeveloperStore] navegue até [Progressive Web Apps na Microsoft Store][PwaChromiumMicrosoftStore].  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Ver também  
 
 *   [PWAs de estouros de míticos][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [Um roteiro progressivo para seu Aplicativo Web Progressivo][CloudfourThinksProgressiveRoadmapYourWebApp]  
@@ -204,6 +204,8 @@ Para ser um ótimo PWA, seu aplicativo também deve atender aos seguintes requis
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emular e testar outros navegadores | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Depurar aplicativos Web progressivos | Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publique seu Aplicativo Web Progressivo na Microsoft Store | Microsoft Docs"
+
+
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Visão geral do Windows Push Notification Services (WNS) | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Projetando para Xbox e TV | Microsoft Docs"  
