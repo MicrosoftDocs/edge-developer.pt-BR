@@ -3,16 +3,16 @@ description: Seu trabalho não termina com a garantia de que seu site seja execu
 title: Emular e testar outros navegadores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398683"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481363"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398683"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-and-test-other-browsers"></a>Emular e testar outros navegadores  
 
 Seu trabalho não termina com a garantia de que seu site seja executado muito bem no Microsoft Edge e no Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.  
@@ -48,7 +47,7 @@ O Firefox tem uma exibição de [design][MDNResponsiveDesignMode] responsivo que
 
 ### <a name="edgehtml-emulation"></a>Emulação edgeHTML  
 
-Para emular o Windows Phones, use a emulação do Microsoft Edge \(EdgeHTML\) [embutida][DevToolsEdgeHtmlEmulation].  
+Para emular o Windows Phones, use a emulação do Microsoft Edge \(EdgeHTML\) [embutida][ArchiveMicrosoftEdgeDevtoolsEmulation].  
 
 Use [a Emulação do IE 11][Ie11DevToolsEmulation] para simular a aparência da sua página em versões mais antigas do Internet Explorer.  
 
@@ -136,7 +135,7 @@ Se você não for capaz de usar os emuladores e não tiver acesso a dispositivos
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulação | Microsoft Docs"  
+[ArchiveMicrosoftEdgeDevtoolsEmulation]: /archive/microsoft-edge/legacy/developer/devtools-guide/emulation "Emulação | Microsoft Docs"  
 
 [Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular navegadores, tamanhos de tela e localizações GPS | Microsoft Docs"  
 

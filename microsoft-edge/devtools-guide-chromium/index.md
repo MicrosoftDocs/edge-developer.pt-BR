@@ -1,147 +1,238 @@
 ---
 description: Conheça as Ferramentas de Desenvolvedor do Microsoft Edge (Chromium)
-title: Ferramentas de desenvolvedor do Microsoft Edge (Chromium)
+title: Visão geral das Ferramentas de Desenvolvedor do Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
-ms.topic: article
+ms.date: 04/07/2021
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 29ded7376ab1788998acf059c6677916a52d5d15
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408273"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481377"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Visão geral das Ferramentas de Desenvolvedor do Microsoft Edge (Chromium)  
 
-O Microsoft Edge adotou o projeto de código aberto do Chromium.  O novo navegador do Microsoft Edge cria melhor compatibilidade com a Web e reduz a fragmentação de diferentes plataformas Web.  A alteração deve tornar mais fácil para você criar e testar suas páginas da Web no Microsoft Edge.  O novo Microsoft Edge deve ajudar suas páginas da Web a funcionar conforme esperado quando aberto em outros navegadores baseados em Chromium.  Os navegadores baseados em Chromium incluem Google Chrome, Vivaldi, Opera, Brave e o novo Microsoft Edge.  
+Ao instalar o Microsoft Edge, você obterá um navegador. Além disso, você tem uma maneira poderosa de inspecionar, depurar e até mesmo criar projetos web.  As Ferramentas de Desenvolvedor enviadas com o navegador são baseadas nas ferramentas no projeto de código aberto do Chromium, portanto, você já pode estar familiarizado com as ferramentas.  Para manter as descrições mais curtas neste artigo, as `Microsoft Edge Developer Tools` agora são conhecidas como `DevTools` .  
 
-A Web cresceu em uso em uma matriz cada vez maior de tipos de dispositivos.  A complexidade e a sobrecarga envolvidas no teste de páginas da Web cresceram rapidamente.  Desenvolvedores da Web como você precisam testar em vários sistemas diferentes.  Para garantir que suas páginas da Web funcionem bem em todos os tipos de dispositivos e navegadores, você pode achar quase impossível, especialmente se você trabalhar em uma pequena empresa.  O novo Microsoft Edge agora se baseia no Chromium.  A equipe do Microsoft Edge simplificou a matriz alinhando a plataforma Web do Microsoft Edge com outros navegadores baseados em Chromium.  O novo Microsoft Edge oferece uma melhor experiência de desenvolvimento na classe.  A experiência é realizada dentro do navegador e junto com as outras ferramentas de desenvolvedor que você usa todos os dias, como Visual Studio Code.  
+Use o DevTools para revisar e saber mais sobre as seguintes tarefas de desenvolvimento.  
 
-Como desenvolvedor de navegador baseado em Chromium, você deve se sentir confortável com o novo navegador do Microsoft Edge.  O Microsoft Edge \(Chromium\) DevTools funciona exatamente como as ferramentas de desenvolvedor que você já conhece e usa.  As Ferramentas de Desenvolvedor do Microsoft Edge \(Chromium\) geralmente são chamadas de Microsoft Edge \(Chromium\) DevTools ou DevTools.  Para obter mais informações, navegue até [Novidades no Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
+*   [Inspecione e altere a página da Web atual][DevtoolsGuideDomIndex] ao vivo no navegador.  
+*   [Emular como seu produto se comporta em diferentes dispositivos e][DevtoolsGuideDeviceModeIndex] simular um ambiente móvel completo com diferentes condições de rede.  
+*   [Inspecionar, ajustar e alterar os estilos de elementos][DevtoolsGuideInspectStylesEditFonts] na página da Web usando ferramentas ao vivo com uma interface visual.  
+*   [Depurar seu JavaScript][DevtoolsGuideJavascriptIndex] usando a depuração de ponto de interrupção e com o [console ao vivo][DevtoolsGuideConsoleIndex].  
+*   Encontre [problemas de acessibilidade, desempenho, compatibilidade][DevtoolsGuideIssuesIndex] e segurança em seus produtos e saiba como usar o DevTools para corrigir cada um deles.  
+*   [Inspecione o tráfego de][DevtoolsGuideNetworkIndex] rede e examine o local dos problemas.  
+*   [Inspecione onde o navegador armazenou o conteúdo][DevtoolsGuideStorageSessionstorage] em vários formatos.  
+*   [Avalie o desempenho][DevtoolsGuideEvaluatePerformanceIndex] do produto para encontrar problemas [de memória][DevtoolsGuideMemoryProblemsIndex] e problemas [de renderização.][DevtoolsGuideRenderingToolsIndex]  
+*   [Use um ambiente de desenvolvimento][DevtoolsGuideSourcesIndex] para [sincronizar alterações no DevTools com o][DevtoolsGuideWorkspacesIndex] sistema de arquivos e substituir [arquivos][DevtoolsGuideJavascriptOverrides] da Web.  
+    
+<!-- Is the link meant to be local or session storage for "inspect where the browser stored content"? -->  
 
-:::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools.png":::
-   Microsoft Edge (Chromium) DevTools  
-:::image-end:::  
-
-Se você tiver desenvolvido anteriormente para o Microsoft Edge \(EdgeHTML\) e estiver avaliando o novo Microsoft Edge, ele agora fornece ótimas novas ferramentas para você criar e testar suas páginas da Web de forma mais fácil e rápida.  
+E muito mais.  Tudo começa quando você abre o DevTools e personaliza cada ferramenta de acordo com suas necessidades.  
 
 ## <a name="open-the-devtools"></a>Abra o DevTools  
 
-O Microsoft Edge DevTools é um conjunto de ferramentas criadas diretamente no navegador do Microsoft Edge.  O DevTools permite que você faça as seguintes tarefas diretamente no navegador.  
+Para abrir e explorar o DevTools, use uma das seguintes ações.  
 
-*   Inspecionar e fazer alterações em sua página da Web HTML  
-*   Editar CSS e visualizar instantaneamente como sua página da Web é render  
-*   Revise todas as `console.log()` instruções do seu código JavaScript front-end  
-*   Depurar seu script, definir pontos de interrupção e passar sua linha de código por linha  
+*   Passe o mouse em qualquer elemento na página da Web, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Inspecionar**.  Essa ação abre a **ferramenta Elements.**  
+*   Selecione `F12` .  
+*   Selecione `Ctrl` + `Shift` + `I` no Windows/Linux ou `Command` + `Option` + `I` no macOS.  
     
-Mais exemplos dos recursos que o DevTools fornece para tornar mais fácil e mais rápido para você criar e testar sua página da Web no Microsoft Edge.  
+:::row:::  
+   :::column span="":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Escolha Inspecionar no menu contextual em qualquer elemento" lightbox="./media/devtools-intro-inspect.msft.png":::  
+         Escolha **Inspecionar** no menu contextual em qualquer elemento  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::  
+      :::image type="complex" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="O DevTools é aberto com o elemento escolhido realçado" lightbox="./media/devtools-intro-inspect-devtools-open.png":::  
+         O DevTools é aberto com o elemento escolhido realçado  
+      :::image-end:::  
+   :::column-end:::  
+:::row-end:::  
 
-Para abrir o DevTools  
+Há duas maneiras principais de interagir com o DevTools.
+*   Usar o mouse  
+*   [Atalhos de teclado][DevtoolsGuideShortcutsIndex].  Atalhos de teclado fornecem uma maneira rápida de acessar a funcionalidade e são necessários para acessibilidade.  A equipe do Microsoft Edge DevTools trabalha duro para disponibilizar todas as ferramentas usando o teclado e tecnologias auxiliares, como leitores de tela.  Para obter mais informações sobre como abrir os diferentes recursos no DevTools, navegue até Atalhos de teclado do [Microsoft Edge DevTools.][DevtoolsGuideOpenIndex]  
 
-*   Selecionar `F12` 
-*   Selecione `Ctrl` + `Shift` + `I` \(Windows/Linux\) ou `Command` + `Option` + `I` \(macOS\)  
+## <a name="dock-the-devtools-in-your-browser"></a>Acoplar o DevTools no navegador  
+
+Quando você abre o DevTools, ele encaixa à esquerda do navegador.  Para alterar o local encaixado do DevTools, conclua as seguintes ações.  
+
+1.  Escolha o **botão Personalizar e Controlar DevTools** \( `...` \)  
+1.  À direita de **Posicionamento do DevTools** em relação à página \(**Lado**do encaixe \), escolha uma opção do **lado do** encaixe.  
     
-Se você quiser ver o HTML ou CSS para um elemento em seu site, clique com o botão direito do mouse no elemento e escolha **Inspecionar** para entrar na **ferramenta Elements.**  Para abrir o DevTools no **modo Inspecionar Elemento,** selecione `Ctrl` + `Shift` + `C` \(Windows/Linux\) ou `Command` + `Option` + `C` \(macOS\). o **Modo de Elemento Inspect** permite que você escolha um elemento na página da Web e exibe o HTML e CSS na ferramenta **Elementos.**  
+Para obter mais informações, navegue até Alterar o posicionamento [do Microsoft Edge DevTools (Undock, Dock to Bottom, Dock To Left)][DevtoolsGuideCustomizePlacement].  
 
-Se você quiser revisar logs do seu código JavaScript front-end ou executar rapidamente algum script, abra o **Console**.   Para iniciar a **ferramenta Console** no DevTools, selecione `Ctrl` + `Shift` + `J` \(Windows/Linux\) ou `Command` + `Option` + `J` \(macOS\).  
+:::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Captura de tela do menu do lado do dock no DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
+   Captura de tela do menu do lado do dock no DevTools  
+:::image-end:::  
 
-## <a name="core-tools"></a>Ferramentas principais  
+No **lado do encaixe,** escolha qualquer uma das opções de layout a seguir.  
 
-:::image type="complex" source="./media/devtools-core-tools.png" alt-text="Ferramentas principais do Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools-core-tools.png":::
-   Ferramentas principais do Microsoft Edge (Chromium) DevTools  
-:::image-end::: 
+*   **Desfazer em janela separada**.   Ajuda você a trabalhar com vários monitores ou se precisar trabalhar em um aplicativo de tela inteira.  
+*   **Encaixe para a esquerda** ou **Encaixe para a direita**.  Ajuda você a manter o DevTools lado a lado com seu produto Web e é excelente quando você emular dispositivos móveis.  As **opções Doca para a esquerda** e **Doca** para a direita funcionam melhor com exibições de alta resolução.  Para obter mais informações sobre dispositivos de emulação, navegue até [Emular dispositivos móveis no Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
+*   **Encaixe na parte inferior**.  Ajuda quando você não tem espaço de exibição horizontal suficiente ou deseja depurar texto longo no DOM ou **console.**  
+    
+:::row:::  
+   :::column span="":::  
+      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Escolha Encaixar para a Esquerda" lightbox="./media/devtools-intro-docking-left.msft.png":::  
+         Escolha **Encaixar para a Esquerda**  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::  
+      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Escolha Dock to Bottom" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
+         Escolha **Dock to Bottom**  
+      :::image-end:::  
+   :::column-end:::  
+:::row-end:::  
+:::row:::  
+   :::column span="":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Escolha Encaixe para a Direita" lightbox="media/devtools-intro-docking-right.msft.png":::  
+         Escolha **Encaixe para a Direita**  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Escolha Desfazer em janela separada" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+         Escolha **Desfazer em janela separada**  
+      :::image-end:::  
+   :::column-end:::  
+:::row-end:::  
 
-O Microsoft Edge \(Chromium\) DevTools inclui as seguintes ferramentas.  
+## <a name="learn-about-the-core-tools"></a>Saiba mais sobre as principais ferramentas  
 
-*   Uma **ferramenta Elements** para editar HTML e CSS, inspecionar propriedades de acessibilidade, exibir ouvintes de eventos e definir pontos de interrupção de mutação DOM  
-*   Um **Console para** revisar e filtrar mensagens de log, inspecionar objetos JavaScript e nós DOM e executar JavaScript no contexto da janela ou quadro selecionado  
-*   Uma **ferramenta Sources** para abrir e editar seu código, definir pontos de interrupção, passar pelo código e exibir o estado de sua página da Web
-*   Uma **ferramenta de** rede para monitorar e inspecionar solicitações e respostas da rede e do cache do navegador   
-*   Uma **ferramenta performance** para perfilar o tempo e os recursos do sistema exigidos pelo seu site  
-*   Uma **ferramenta Memory** para medir o uso de recursos de memória e comparar instantâneos de pilha em diferentes estados de tempo de execução de código  
-*   Uma **ferramenta application** para inspecionar, modificar e depurar manifestos de aplicativo Web, funcionários de serviço e caches de funcionários do serviço.  Você também pode inspecionar e gerenciar armazenamento, bancos de dados e caches da **ferramenta Application.**  
-*   Uma **ferramenta de** segurança para depurar problemas de segurança e garantir que você implementou corretamente HTTPS em sua página da Web.  HTTPS fornece segurança crítica e integridade de dados para seu site e seus usuários que fornecem informações pessoais em seu site.  
-*   Uma **ferramenta auditoria** \(agora renomeada de **Farol**\) para executar uma auditoria de sua página da Web.  Os resultados da auditoria ajudam você a melhorar a qualidade do seu site das seguintes maneiras.  
-    *   Catch common errors related to making your webpage accessible, secure, performant, and so on.  
-    *   Correção de cada erro.  
-    *   Crie um PWA.  
+O DevTools lhe dá uma quantidade incrível de energia para inspecionar, depurar e alterar o produto Web exibido no momento no navegador.  A maioria das ferramentas exibe as alterações ao vivo.  As atualizações ao vivo fazem as ferramentas extremamente úteis para refinar a aparência e a navegação ou a funcionalidade de um projeto da Web sem a necessidade de atualizá-lo ou criar.  O DevTools também permite que você altere produtos de terceiros baseados na Web em seu computador.  
+
+O DevTools cresceu durante um período de vários anos.  Você pode supor que o DevTools é difícil de aprender quando você abre pela primeira vez qualquer uma das ferramentas.  O texto a seguir apresenta rapidamente as diferentes partes.  A barra de ferramentas principal oferece algumas seções e as seções são ordenadas da esquerda para a direita.  
+
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar Ferramenta, Ferramenta de Emulação de Dispositivo, Grupo de guias Ferramentas, Erros do JavaScript, Problemas, Configurações, Feedback, Personalizar e Fechar." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar Ferramenta, Ferramenta de Emulação de Dispositivo, Grupo de guias Ferramentas, Erros do JavaScript, Problemas, Configurações, Feedback, Personalizar e Fechar.  
+:::image-end:::  
+
+*   A Ferramenta inspecionar permite que você escolha um elemento na página da Web atual.  Depois de ativá-lo, você pode mover o mouse sobre diferentes partes da página da Web para obter informações detalhadas sobre o elemento e uma sobreposição de cores para exibir dimensões, preenchimento e margem.  
+    
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Captura de tela da ferramenta de inspeção com o primeiro título deste artigo escolhido" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       Captura de tela da ferramenta de inspeção com o primeiro título deste artigo escolhido  
+    :::image-end:::  
+    
+*   A [ferramenta Emulação de Dispositivo][DevtoolsGuideDeviceModeIndex] exibe o produto Web atual em um modo de dispositivo emulado.  A **ferramenta Emulação de** Dispositivo permite que você execute e teste como seu produto reage quando você resize o navegador.  Ele também fornece uma estimativa do layout e do comportamento em um dispositivo móvel.  
+    
+    :::image type="complex" source="./media/devtools-intro-device-emulation.msft.png" alt-text="Captura de tela da exibição DevTools deste artigo em um telefone celular emulado" lightbox="./media/devtools-intro-device-emulation.msft.png":::  
+       Captura de tela da exibição DevTools deste artigo em um telefone celular emulado  
+    :::image-end:::  
+    
+*   O grupo de guias Ferramentas é um grupo de guias que representam diferentes ferramentas usadas em cenários diferentes.  Você pode personalizar cada uma das ferramentas e cada ferramenta pode mudar com base no contexto.  Para abrir um menu suspenso de mais ferramentas, escolha o botão **Mais guias** \( `>>` \)  Cada uma das ferramentas é introduzida posteriormente na seção a seguir.  
+*   Ao lado do grupo de guias Ferramentas, há erros opcionais e atalhos de problemas.  Os atalhos são exibidos quando ocorrem erros ou problemas do JavaScript na página da Web atual.  O botão Abrir Console para exibir **# erros, # avisos** \(**JavaScript Errors**\) exibe um círculo vermelho com um seguido pelo número de `X` erros JavaScript.  Para abrir o [Console][DevtoolsGuideConsoleIndex] e saber mais sobre o erro, escolha o **botão Erros do JavaScript.**  O **botão Abrir Problemas para exibir # problemas** \(**Problemas**\) é um ícone de mensagem azul seguido pelo número de problemas.  Para abrir a ferramenta [Problemas,][DevtoolsGuideIssuesIndex] escolha **Botão Problemas.**  
+*   O **botão Configurações** exibe um ícone de engrenagem.  Para abrir a página da Web Configurações **do DevTools,** escolha o **botão Configurações.**  A **página da** Web Configurações exibe um menu para alterar **Preferências,** ativar **Experimentos**e muito mais.  
+*   O **botão Enviar Feedback** exibe o tronco com uma bolha de chat ao lado dele.  Para abrir a caixa de diálogo Enviar **Comentários,** escolha o **botão Enviar Comentários.**  A **caixa de diálogo** Enviar Comentários permite que você insira informações para descrever o que aconteceu e inclui automaticamente uma captura de tela.  Use-o para se conectar à equipe do DevTools para relatar problemas, problemas ou sugerir ideias.  
+*   O **botão Personalizar e controlar Devtools** \( `...` \) abre um menu suspenso.  Ele permite definir onde encaixar o DevTools, pesquisar, abrir ferramentas diferentes e muito mais.  
+    
+No grupo de guias Ferramentas, você pode abrir as diferentes ferramentas disponíveis no DevTools.  A lista a seguir descreve as ferramentas mais usadas no DevTools.  
+
+*   **Bem-vindo**.  Inclui informações sobre os novos recursos do DevTools, como entrar em contato com a equipe e fornece informações sobre determinados recursos.  
+*   **Elementos**.  Permite editar ou inspecionar HTML e CSS.  Você pode editar ambos na ferramenta e exibir as alterações ao vivo no navegador.  
+*   [Console][DevtoolsGuideConsoleIndex].  Permite exibir e filtrar mensagens de log.  As mensagens de log são logs automatizados do navegador, como solicitações de rede e logs gerados pelo desenvolvedor.  Você também pode executar JavaScript diretamente no **Console** no contexto da janela ou quadro atual.  
+*   [Fontes][DevtoolsGuideSourcesIndex].  Um editor de código e um depurador JavaScript.  Você pode editar projetos, manter trechos e depurar seu projeto atual.  
+*   [Rede][DevtoolsGuideNetworkIndex].  Permite monitorar e inspecionar solicitações ou respostas da rede e do cache do navegador.  Você pode filtrar solicitações e respostas para se ajustar às suas necessidades e simular diferentes condições de rede.  Outras ferramentas especializadas também estão disponíveis, como **Desempenho,** **Memória,** **Aplicativo,** **Segurança**e **Auditorias.**  
+
+## <a name="power-tip-use-the-command-menu"></a>Dica de energia: Use o menu de comando  
+
+O DevTools fornece muitos recursos e funcionalidades para usar com seu produto Web.  Acesse as diferentes partes do DevTools de várias maneiras, mas a maneira mais rápida de acessar os recursos necessários é usar o menu de comando.  Para obter mais informações, navegue até Executar comandos com o menu Comando [Microsoft Edge DevTools][DevtoolsGuideCommandMenuIndex].  Para abrir o menu de comando, conclua uma das seguintes ações.  
+
+*   Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\).  
+*   Escolha **Personalizar e controlar DevTools** \( `...` \) e escolha Executar **Comando**.  
+
+:::image type="complex" source="./media/devtools-intro-command-menu.msft.png" alt-text="Captura de tela do menu de comando no DevTools" lightbox="./media/devtools-intro-command-menu.msft.png":::  
+Captura de tela do menu de comando no DevTools  
+:::image-end:::  
+
+O menu de comando permite que você digite comandos para exibir, ocultar ou executar recursos no DevTools.  Com o menu de comando aberto, insira a palavra **alterações**e escolha **Drawer Show Changes**.  A **ferramenta Changes** é aberta, o que é útil ao editar CSS, mas é difícil de encontrar na interface do usuário do DevTools.  
+
+:::row:::  
+   :::column span="":::  
+      :::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="O menu De comando exibe as opções depois de digitar alterações" lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::  
+         O menu De comando exibe as opções depois de digitar `changes`  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::  
+      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="DevTools com a ferramenta Changes aberta" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
+         DevTools com a **ferramenta Changes** aberta  
+      :::image-end:::  
+   :::column-end:::  
+:::row-end:::  
+
+## <a name="customize-the-devtools"></a>Personalizar o DevTools  
+
+DevTools são personalizáveis para atender às suas necessidades ou à maneira como você trabalha.  Para alterar as configurações, conclua uma das seguintes ações.  
+
+*   Escolha **Configurações** \(o ícone de engrenagem na parte superior direita\)  
+*   Selecione `F1` ou `?` .  
+    
+Na seção **Preferências,** você pode alterar várias partes do DevTools.  Por exemplo, você pode usar a configuração **Corresponder** ao idioma do navegador para usar o mesmo idioma no DevTools que é usado no navegador.  Para outro exemplo, use a **configuração Tema** para alterar o tema do DevTools.  
+
+:::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="Captura de tela de todas as configurações no DevTools" lightbox="./media/devtools-intro-all-settings.msft.png":::  
+   Captura de tela de todas as configurações no DevTools  
+:::image-end:::  
+
+Você também pode alterar as configurações de recursos avançados, incluindo os seguintes recursos.    
+
+*   [Espaços de trabalho][DevtoolsGuideWorkspacesIndex].  
+*   Filtrar o código da biblioteca com a **lista Ignorar**.  
+*   Defina **os dispositivos** que você deseja incluir no modo de teste e simulação de dispositivo.  Para obter mais informações, navegue até [Emular dispositivos móveis no Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
+*   Escolha um perfil **de throttling de** rede.  
+*   Definir locais **simulados**.  
+*   Personalizar atalhos de teclado.  Para usar os mesmos atalhos no DevTools como Visual Studio Code, conclua as seguintes ações.  
+    1.  Escolha **Corresponder atalhos da predefinição**.  
+    1.  Escolha **Visual Studio Código**.  
         
-[!INCLUDE [audits-panel-note](./includes/audits-panel-note.md)]  
-
-Envie seus [comentários e solicitações de recursos.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
-
-## <a name="extensions"></a>Extensões  
-
-Você pode ter acessado o DevTools usando extensões quando diagnosticou e depurou problemas enquanto criou suas páginas da Web \(ou aplicativos\). As extensões do Microsoft Edge são adquiridas dos [Complementos do Microsoft Edge.][MicrosoftEdgeAddonsExtensions]  Em [Complementos do Microsoft Edge,][MicrosoftEdgeAddonsExtensions]procure extensões do DevTools na categoria **Ferramentas** do Desenvolvedor ou procure uma extensão específica.  
-
-Você também pode adicionar extensões da [Chrome Web Store][GoogleChromeWebstoreExtensions].  
-
-:::image type="complex" source="./media/allow-extensions-from-stores.png" alt-text="Chrome Web Store no Microsoft Edge" lightbox="./media/allow-extensions-from-stores.png":::
-   Chrome Web Store no Microsoft Edge  
-:::image-end:::  
-
-Na parte superior, escolha **Permitir extensões de outros armazenamentos** e escolha **Permitir** na caixa de diálogo exibida.  
-
-> [!NOTE]
-> As extensões instaladas de fontes diferentes da Microsoft Store não são verificadas e podem afetar o desempenho do navegador.  
-
-Escolha **Adicionar ao Chrome** para adicionar sua extensão DevTools ao Microsoft Edge.  
-
-:::image type="complex" source="./media/install-extension-from-chrome-store.png" alt-text="Adicionar extensão da Chrome Web Store ao Microsoft Edge" lightbox="./media/install-extension-from-chrome-store.png":::
-   Adicionar extensão da Chrome Web Store ao Microsoft Edge  
-:::image-end:::  
-
-## <a name="shortcuts"></a>Atalhos  
-
-Os atalhos a seguir controlam a janela principal do DevTools, funcionam em todas as ferramentas ou ambas.  
-
-| Ação | Windows/Linux | macOS |  
-|:--- |:--- | :--- |  
-| Mostrar/Ocultar DevTools \(abre para a última ferramenta exibida\) | `F12` ou `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Mostrar o Console | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Mostrar o DevTools no **modo Inspecionar Elemento** que permite escolher um elemento e exibir o HTML e CSS na ferramenta **Elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
-| Mostrar configurações | `?` ou `Fn`+`F1` | `?` ou `Fn`+`F1` |  
-| Mostrar o próximo painel | `Ctrl`+`]` | `Command`+`]` |  
-| Mostrar o painel anterior | `Ctrl`+`[` | `Command`+`[` |  
-| Encaixe o DevTools na última posição usada.  Se o DevTools permanecer na posição padrão para toda a sessão, o atalho desfaz o DevTools em uma janela separada | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Modo de **dispositivo de alternância** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Alternar **Inspecionar Modo de** Elemento que permite escolher um elemento e exibir o HTML e CSS na ferramenta **Elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
-| Mostrar o Menu de Comando | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
-| Mostrar/ocultar a gaveta | `Esc` | `Esc` |  
-| Atualizar.  Atualiza a página da Web usando o cache.  | `F5` ou `Ctrl`+`R` | `Command`+`R` |  
-| Atualização difícil.  Força o Microsoft Edge a baixar recursos novamente e recarregar.  Os recursos usados podem vir de uma versão em cache | `Ctrl`+`F5` ou `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Pesquise texto no painel atual.  Não há suporte nas ferramentas Auditorias, Aplicativos e Segurança | `Ctrl`+`F` | `Command`+`F` |  
-| Mostrar a ferramenta De pesquisa na Gaveta, que permite que você pesquise texto em todos os recursos carregados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir um arquivo no painel Fontes | `Ctrl`+`O` ou `Ctrl`+`P` | `Command`+`O` ou `Command`+`P` |  
-| Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
-| Reduzir | `Ctrl`+`-` | `Command`+`-` |  
-| Restaurar o nível de zoom padrão | `Ctrl`+`0` | `Command`+`0` |  
-| Executar trecho de código | `Ctrl`+`O`ou `Ctrl` + `P` , digite `!` seguido pelo nome do script e selecione `Enter` | Selecione `Command` + `O` ou `Command` + `P` , digite seguido pelo nome `!` do script e selecione `Enter` |  
-| Mostrar código-fonte HTML não editável em uma nova guia | `Ctrl`+`U` | N/D |  
-
-> [!NOTE]
-> Se você estiver depurando e pausado em um ponto de interrupção, o atalho **Atualizar** retomará o tempo de execução primeiro.  
-
-## <a name="see-also"></a>Ver também  
-
-*   [DevTools para Iniciantes: Começar com HTML e o DOM][DevtoolsGuideChromiumBeginnersHtml]  
-*   [Protocolo DevTools do Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
+    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Captura de tela de todos os atalhos de teclado e o menu para corresponder cada um aos atalhos no Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::  
+       Captura de tela de todos os atalhos de teclado e o menu para corresponder cada um aos atalhos no Visual Studio Code  
+    :::image-end:::  
     
+## <a name="try-experimental-features"></a>Experimente recursos experimentais  
+
+A equipe de DevTools fornece novos recursos como experimentos no DevTools.  Para obter a lista completa de experimentos, **** navegue até As Configurações do DevTools e escolha **Experimentos**.  Você pode ativar ou desativar cada um dos experimentos.  Ajude a decidir qual dos experimentos é valioso para você.  Para obter mais informações sobre os experimentos, navegue até [Recursos Experimentais][DevtoolsGuideExperimentalFeaturesIndex].  
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-Se você quiser visualizar os recursos mais recentes que vêm para [o DevTools,][DevtoolsGuideChromiumWhatsNewIndex]baixe [o Microsoft Edge Canary][MicrosoftedgeinsiderDownload], que é construído à noite.  
+Se você quiser visualizar os recursos mais recentes que vêm para [o DevTools,][DevtoolsGuideWhatsNew202102Devtools]baixe [o Microsoft Edge Canary][MicrosoftedgeinsiderDownload], que é construído à noite.  
 
+## <a name="see-also"></a>Ver também  
+
+*   [DevtoolsGuide para Iniciantes: Começar com HTML e DOM][DevtoolsGuideBeginnersHtml]  
+*   [Protocolo DevTools do Microsoft Edge (Chromium)][DevtoolsProtocolIndex]  
+    
 <!-- links -->  
 
-[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para Iniciantes: Começar com HTML e o dom | Microsoft Docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "Novidades no Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
-[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo DevTools do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools para iniciantes: começar com HTML e o dom | Microsoft Docs"  
+[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Execute comandos com o menu DevTools Command do Microsoft Edge | Microsoft Docs"  
+[DevtoolsGuideConsoleIndex]: ./console/index.md "Visão geral do console | Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Alterar o posicionamento do Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left) | Microsoft Docs"  
+[DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideDomIndex]: ./dom/index.md "Começar a exibir e alterar o dom | Microsoft Docs"  
+[DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Começar a analisar o desempenho do tempo de execução | Microsoft Docs"  
+[DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Recursos experimentais | Microsoft Docs"  
+[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Corrigir problemas de memória | Microsoft Docs"  
+[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Editar estilos de fonte CSS e configurações no painel Estilos | Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Começar a depurar JavaScript no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Substituir recursos de página da Web por cópias locais usando o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideNetworkIndex]: ./network/index.md "Inspecionar a atividade de rede no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideOpenIndex]: ./open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analisar o desempenho do tempo de execução | Microsoft Docs"  
+[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideSourcesIndex]: ./sources/index.md "Visão geral da ferramenta Sources | Microsoft Docs"  
+[DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "Exibir e editar o armazenamento de sessão com o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "Novidades no DevTools (Microsoft Edge 90) | Microsoft Docs"  
+[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Editar arquivos com espaços de trabalho | Microsoft Docs"  
+[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Visão geral do Protocolo DevTools do Microsoft Edge (Chromium) | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos do Microsoft Edge"  
 
