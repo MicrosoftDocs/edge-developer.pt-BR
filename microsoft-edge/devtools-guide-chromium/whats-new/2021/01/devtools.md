@@ -3,17 +3,17 @@ description: A ferramenta Novidades agora se chama Bem-Vindo, Editor de Fonte Vi
 title: Novidades no DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: f04884c4022394ad96f1bd47236047d16ae5ccb9
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439644"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481356"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -98,14 +98,14 @@ Na ferramenta **Elementos,** o novo ícone flexbox (flex) ajuda a identificar co
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>Exibir ícones de alinhamento e linhas de grade quando layouts do Flexbox mudam usando propriedades CSS  
+### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>Exibir ícones de alinhamento e guias visuais quando os layouts do Flexbox mudam usando propriedades CSS  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Quando você edita CSS para o layout do Flexbox, os preenchimentos automáticos CSS no painel **Estilos** agora exibem ícones úteis ao lado de propriedades relevantes do Flexbox.  Para experimentar esse novo recurso, abra a ferramenta **Elementos** e selecione um contêiner flexível.  Em seguida, adicione ou altere uma propriedade nesse contêiner no painel **Estilos**.  
+Quando você edita o CSS para o layout do Flexbox, o preenchimento automático do CSS no painel **Estilos** agora exibe ícones úteis ao lado de propriedades relevantes do Flexbox.  Para experimentar esse novo recurso, abra a ferramenta **Elementos** e selecione um contêiner flexível.  Em seguida, adicione ou altere uma propriedade nesse contêiner no painel **Estilos**.  
 
 :::row:::
    :::column span="":::
@@ -492,7 +492,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2021/01/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developers.google.com/web/updates/2021/01/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
