@@ -3,16 +3,16 @@ description: Os recursos experimentais mais recentes no Microsoft Edge para Apli
 title: Recursos experimentais | Aplicativos Web Progressivos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 587797bc8577f1c1aaca42394eecb997d21e9955
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
+ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474947"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11482142"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Recursos experimentais em PWAs (Progressive Web Apps)  
 
@@ -62,7 +62,8 @@ A lista a seguir descreve os novos recursos experimentais do aplicativo Web que 
 | Recurso | Versão do Microsoft Edge | Plataforma |  
 |:--- |:--- |:--- |  
 | [Tratamento de protocolo URI](#uri-protocol-handling) | 91 ou posterior | Windows |    
-| [Manipulação de link de URL](#url-link-handling) | 91 ou posterior | Windows|  
+| [Manipulação de link de URL](#url-link-handling) | 91 ou posterior | Windows|
+| [Sobreposição de Controles de Janela para Aplicativos de Área de Trabalho](#window-controls-overlay-for-installed-desktop-web-apps) | 91 ou posterior | Windows 10|   
 | [Executar no logon do sistema operacional](#run-on-os-login) | 88 ou posterior | Todas |  
 | [Atalhos](#shortcuts) | 87 ou posterior | Todas |  
 | [Tratamento de arquivos](#file-handling) | 83 ou posterior | Toda a área de trabalho |  
@@ -171,7 +172,7 @@ O trecho de código a seguir é um exemplo de manifesto do aplicativo Web com o 
 
 Um PWA corresponde a um URI para manipulação de URL se o URI corresponde a uma das cadeias de caracteres de origem e o navegador valida que a origem concorda em permitir que esse aplicativo manipular esse `url_handlers` URI.  
 
-O membro contém uma origem que abrange o escopo e também outras origens não `url_handlers` relacionadas do PWA solicitando.  Não restringir URIs ao mesmo escopo ou domínio que o PWA solicitante permite usar nomes de domínio diferentes para o mesmo conteúdo, mas lidar com eles com o mesmo PWA.  
+O membro contém uma origem que abrange o escopo e outras origens não `url_handlers` relacionadas do PWA solicitando.  Não restringir URIs ao mesmo escopo ou domínio que o PWA solicitante permite usar nomes de domínio diferentes para o mesmo conteúdo, mas lidar com eles com o mesmo PWA.  
 
 #### <a name="wildcard-matching"></a>Correspondência de caracteres curinga  
 
@@ -181,107 +182,105 @@ Um prefixo curinga é usado nas cadeias de caracteres de origem do `url_handlers
 
 Por exemplo, o `url_handlers` valor do membro é definido como corresponde e , mas não corresponde `*.contoso.com` `tenant.contoso.com` `www.tenant.contoso.com` `contoso.com` .  
 
-<!-- Hold for future release -->  
-<!--  ## Window Controls Overlay for installed desktop web apps  
+## <a name="window-controls-overlay-for-installed-desktop-web-apps"></a>Sobreposição de Controles de Janela para aplicativos Web da área de trabalho instalados  
 
-To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
+Para criar uma barra de título imersiva como um aplicativo nativo **** para seu aplicativo Web instalado na área de trabalho, o recurso Sobreposição de Controles de Janela conclui as seguintes ações.  
     
-1.  Removes the system reserved title bar.  It usually spans the width of the client frame.  
-1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
+1.  Remove a barra de título reservada do sistema.  Geralmente, ela abrange a largura do quadro do cliente.  
+1.  Substitui-o por uma sobreposição.  Ele contém apenas os controles críticos de janela necessários para que um usuário controle a própria janela.  
     
-After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
-    
-### Examples of title bar area customization  
+Depois que ele fornece uma sobreposição, toda a área do cliente Web estará disponível para você usar.  Esse recurso inclui uma atualização de manifesto.  Ele fornece maneiras de determinar o tamanho e a posição da sobreposição para ajudá-lo a organizar o conteúdo.  
 
-This feature is based on the ability in native apps to customize the title bar.  You may customize a title bar for important app actions or notifications.  Review the following examples for Microsoft Visual Studio Code and Microsoft Teams.  
+Para visualizar as Sobreposições de Controles de Janela no [](#turn-on-experimental-features) Microsoft Edge para Windows 10, navegue até Ativar recursos experimentais e navegue até **Desktop PWA Window Controls Overlay**.   
 
-#### Visual Studio Code  
+### <a name="examples-of-title-bar-area-customization"></a>Exemplos de personalização da área da barra de títulos  
 
-Microsoft Visual Studio Code is a popular editor built on Electron that ships on multiple desktop platforms.  
+Esse recurso se baseia na capacidade em aplicativos nativos de personalizar a barra de título.  Você pode personalizar uma barra de título para ações ou notificações importantes do aplicativo.  Revise os exemplos a seguir para o Microsoft Visual Studio Code e o Microsoft Teams.  
 
-The following example displays how Visual Studio Code uses the title bar to maximize available screen real estate to include the current file name and top-level menu structure in the title bar.  
+#### <a name="visual-studio-code"></a>Visual Studio Code  
 
-:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="An example of the title bar in Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
-   An example of the title bar in Visual Studio Code  
+O Microsoft Visual Studio Code é um editor popular criado em Eletrônica que acompanha várias plataformas de área de trabalho.  
+
+O exemplo a seguir exibe como Visual Studio Code usa a barra de título para maximizar a propriedade de tela disponível para incluir o nome do arquivo atual e a estrutura de menu de nível superior na barra de título.  
+
+:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Um exemplo da barra de título no Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
+   Um exemplo da barra de título no Visual Studio Code  
 :::image-end:::  
 
-#### Microsoft Teams  
+#### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Workplace collaboration and communication tool Microsoft Teams is also built with Electron and available on multiple desktop platforms.  In the following example, Microsoft Teams displays `back` and `forward` navigation buttons, a search box, and user profile controls.  
+Ferramenta de colaboração e comunicação do local de trabalho O Microsoft Teams também é criado com o Eletrônica e está disponível em várias plataformas de área de trabalho.  No exemplo a seguir, o Microsoft Teams exibe e botões de navegação, uma caixa de pesquisa `back` `forward` e controles de perfil de usuário.  
 
-:::image type="complex" source="../media/teams-title-customization.png" alt-text="An example of the title bar in Microsoft Teams" lightbox="../media/teams-title-customization.png":::
-   An example of the title bar in Microsoft Teams  
+:::image type="complex" source="../media/teams-title-customization.png" alt-text="Um exemplo da barra de título no Microsoft Teams" lightbox="../media/teams-title-customization.png":::
+   Um exemplo da barra de título no Microsoft Teams  
 :::image-end:::  
 
-### Overlay Window Controls on a Frameless Window  
+### <a name="overlay-window-controls-on-a-frameless-window"></a>Controles de janela de sobreposição em uma janela sem quadros  
 
-To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI except for the window controls provided as an overlay.  
-The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay.
+Para maximizar a área acessível para conteúdo da Web, o navegador cria uma janela sem quadros.  Uma janela sem quadros remove toda a interface do usuário do navegador, exceto os controles de janela fornecidos como uma sobreposição.  A sobreposição de controles de janela permite que os usuários ainda minimizem, maximizem, restaurem e fechem o aplicativo.  Ele também fornece acesso a controles relevantes do navegador usando o menu do aplicativo Web.  Para navegadores baseados em Chromium, a sobreposição inclui os seguintes controles.  
 
-*   A draggable region the same width and height of each of the window control buttons  
-*   The **Settings and more** \(...\) button  
-*   The window control buttons minimize, maximize, restore, and close  
+*   Uma região arrastável com a mesma largura e altura de cada um dos botões de controle de janela  
+*   O **botão Configurações e** mais \(...\)  
+*   Os botões de controle de janela minimizam, maximizam, restauram e fecham  
     
-The following scenarios include when browser displays other content in the controls overlay.  
+Além dos controles listados anteriormente, a interface do usuário exibida na sobreposição é resized dinamicamente nos seguintes cenários.  
 
-*   When an installed web app is launched, the origin of the webpage displays to the left of the **Settings and more** \(...\) menu for a few seconds and then disappears.  
-*   If a user interacts with an extension using the **Settings and more** \(...\) menu, the icon of the extension displays in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
+*   Quando um aplicativo Web instalado é lançado, a origem da página **** da Web é exibida à esquerda do menu Configurações e mais \(...\) por alguns segundos e desaparece.  
+*   Se um usuário interagir com **** uma extensão usando o menu Configurações e mais \(...\), o ícone da extensão será exibido na sobreposição à esquerda do menu de três pontos.  Depois de sair de qualquer caixa de diálogo de extensão, o ícone será removido da sobreposição.  
     
-| Language direction | Overlay location | Details |  
+| Direção do idioma | Local de sobreposição | Detalhes |  
 |:--- |:--- |:--- |  
-| Left-to-right \(LTR\) | Upper left of the client area | The controls are flipped |  
-| Right-to-left \(RTL\) | Upper right corner of the client area |  |  
+| Da esquerda para a direita \(LTR\) | Superior esquerdo da área do cliente | Os controles são invertida |  
+| Da direita para a esquerda \(RTL\) | Canto superior direito da área do cliente |  |  
 
->[!IMPORTANT]
-> The overlay is always on top of the Z-index of the web content and accepts all user input without flowing it through to the web content.  
+> [!IMPORTANT]
+> A sobreposição está sempre sobre o índice Z do conteúdo da Web e aceita todas as entradas do usuário sem fluí-la para o conteúdo da Web.  
 
-### Working around the Window Controls Overlay  
+### <a name="working-around-the-window-controls-overlay"></a>Trabalhando ao redor da Sobreposição de Controles de Janela  
 
-Your web content must be aware of the reserved area for the controls overlay.  Ensure the reserved area doesn't expect user interaction.  Query the browser for the bounding rectangle and visibility of the controls overlay.  The information is provided to you through JavaScript APIs and CSS environment variables.  
+O conteúdo da Web deve estar ciente da área reservada para a sobreposição de controles.  Verifique se a área reservada não espera interação do usuário.  Consulte o navegador para o retângulo delimitador e a visibilidade da sobreposição de controles.  As informações são fornecidas por meio de APIs JavaScript e variáveis de ambiente CSS.  
 
-#### JavaScript APIs  
+#### <a name="javascript-apis"></a>JavaScript APIs  
 
-A new `windowControlsOverlay` object on the `window.navigator` property allows you to query the bounding rectangle of the controls overlay.  
+Um novo objeto na propriedade permite consultar o `windowControlsOverlay` `window.navigator` retângulo delimitante da sobreposição de controles.  
 
-The `windowControlsOverlay` object has the following two objects.  
+O `windowControlsOverlay` objeto tem os dois objetos a seguir.  
 
-*   `getBoundingClientRect()` returns a `DOMRect` object.  The `DOMRect` object represents the area under the window controls overlay.  
-*   `visible` is a boolean that indicates that the controls overlay is rendered and displayed.  
+*   `getBoundingClientRect()` retorna um `DOMRect` objeto.  O `DOMRect` objeto representa a área sob a sobreposição de controles da janela.  
+*   `visible` é um booleano que indica que a sobreposição de controles é renderizada e exibida.  
     
 > [!IMPORTANT]
-> For privacy reasons, the `windowControlsOverlay` isn't accessible to `iframe` elements in the web content.  
+> Por motivos de privacidade, `windowControlsOverlay` o não está acessível a elementos no `iframe` conteúdo da Web.  
 
-Whenever the overlay is resized, a `geometrychange` event runs on the `navigator.windowControlsOverlay` object to notify the client to recalculate the content layout.  The recalculated content layout is based on the new bounding rectangle of the overlay.  
+Sempre que a sobreposição é ressada, um evento é executado no objeto para notificar o cliente para `geometrychange` `navigator.windowControlsOverlay` recalcular o layout de conteúdo.  O layout de conteúdo recalculado baseia-se no novo retângulo delimitante da sobreposição.  
 
-#### CSS Environment Variables  
+#### <a name="css-environment-variables"></a>Variáveis de ambiente CSS  
 
-Besides the JavaScript API, you may use CSS to query the bounding rectangle of the controls overlay.  Use the following four new CSS environment variables to accomplish to query.  
+Além da API JavaScript, você pode usar CSS para consultar o retângulo delimitante da sobreposição de controles.  Use as quatro novas variáveis de ambiente CSS a seguir para realizar a consulta.  
 
 *   `titlebar-area-x`  
 *   `titlebar-area-y`  
 *   `titlebar-area-width`  
 *   `titlebar-area-height`  
     
-### Define Draggable Regions in Web Content  
+### <a name="define-draggable-regions-in-web-content"></a>Definir regiões arrastáveis no conteúdo da Web  
 
-Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
-To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
+Os usuários esperam pegar e arrastar a região superior de uma janela.  Para acomodar a expectativa, declare partes específicas do conteúdo da Web como arrastáveis.  
+Para especificar que um elemento é arrastável, use a propriedade CSS proprietária do `-webkit-app-region` WebKit.  O grupo de trabalho CSS continua os esforços para padronizar a `app-region` propriedade.  
 
-To preview this feature in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+### <a name="custom-title-bar-example"></a>Exemplo da barra de título personalizada  
 
-### Custom title bar example  
+O exemplo a seguir exibe como os novos recursos criam um aplicativo Web com uma barra de título personalizada.  
 
-The following example displays how the new features create a web app with a custom title bar.  
-
-:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Example of a custom title bar in Microsoft Teams" lightbox="../media/teams-title-customization-example.png":::
-   Example of a custom title bar in Microsoft Teams  
+:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Exemplo de uma barra de título personalizada no Microsoft Teams" lightbox="../media/teams-title-customization-example.png":::
+   Exemplo de uma barra de título personalizada no Microsoft Teams  
 :::image-end:::  
 
-#### manifest.webmanifest  
+#### <a name="manifestwebmanifest"></a>manifest.webmanifest  
 
-In the manifest, set `display_override` array to  `window-controls-overlay`.  Set the `theme_color` to your choice of color for the title bar.  Set the display mode to an appropriate fallback for when either `display_override` or `window-controls-overlay` isn't supported.  
+No manifesto, de definir `display_override` matriz como  `window-controls-overlay` .  De definir `theme_color` a para sua escolha de cor para a barra de título.  De definir o modo de exibição como um fallback apropriado para quando ou `display_override` `window-controls-overlay` não for suportado.  
 
-The following code snippet includes the recommended manifest updates.  
+O trecho de código a seguir inclui as atualizações de manifesto recomendadas.  
 
 ```json
 {
@@ -294,14 +293,14 @@ The following code snippet includes the recommended manifest updates.
 }
 ```  
 
-### index.html  
+### <a name="indexhtml"></a>index.html  
 
-The following IDs represent the two main regions of the webpage.  
+As IDs a seguir representam as duas principais regiões da página da Web.  
 
 *   `titleBarContainer`  
 *   `mainContent`  
     
-The `div` element with the `titleBar` ID is set to `draggable` and the search box `input` child element is set to `nonDraggable`.  
+O `div` elemento com a `titleBar` ID é definido como e o elemento filho da caixa de pesquisa `draggable` é definido como `input` `nonDraggable` .  
 
 ```html
 <div id="titleBar" class=" draggable">
@@ -310,7 +309,7 @@ The `div` element with the `titleBar` ID is set to `draggable` and the search bo
 </div>
 ```
 
-In the `div` element with the `titleBarContainer` ID, the `div` with the `titleBar` ID represents the visible portion of the title bar area.  
+No elemento `div` com a ID, o com a ID representa a parte visível da área da barra de `titleBarContainer` `div` `titleBar` título.  
 
 ```html
 <!DOCTYPE html>
@@ -329,14 +328,14 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent">The rest of the webpage</div>
+    <div id="mainContent"><!-- The rest of the webpage --></div>
   </body>
 </html>
 ```  
 
-### style.css  
+### <a name="stylecss"></a>style.css  
 
-The draggable and non-draggable regions are set using `-webkit-app-region: drag` and `-webkit-app-region: no-drag`.  
+As regiões arrastáveis e não arrastáveis são definidas usando `-webkit-app-region: drag` e `-webkit-app-region: no-drag` .  
 
 ```css
 .draggable {
@@ -352,7 +351,7 @@ The draggable and non-draggable regions are set using `-webkit-app-region: drag`
 }
 ```  
 
-For the `body` element, margins are set to `0` to ensure the title bar reaches to the edges of the window.  
+Para o `body` elemento, as margens são definidas para garantir que a barra de título atinja `0` as bordas da janela.  
 
 ```css
 body {
@@ -361,7 +360,7 @@ body {
 }
 ```  
 
-The `titleBarContainer` ID uses `position: absolute` and sets the `top` to `titlebar-area-inset-top`, which attaches the container to the top of the webpage.  The `bottom` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-title-bar-height)` if the window controls overlay isn't visible.  The background color of the `titleBarContainer` ID is the same as the `theme_color`.  The width is set to `100%`, so that the `div` element fills the width of the webpage and flows under the overlay when it's visible for a contiguous appearance.  
+A ID usa e define como , que anexa o contêiner à `titleBarContainer` parte superior da página da `position: absolute` `top` `titlebar-area-inset-top` Web.  O será definido como e retornará para se a sobreposição de controles de janela `bottom` não estiver `titlebar-area-inset-bottom` `100% - var(--fallback-title-bar-height)` visível.  A cor de plano de fundo `titleBarContainer` da ID é a mesma que `theme_color` a .  A largura é definida como , para que o elemento preencha a largura da página da Web e flua sob a sobreposição quando estiver visível para uma `100%` `div` aparência contígua.  
 
 ```css
 #titleBarContainer {
@@ -373,7 +372,7 @@ The `titleBarContainer` ID uses `position: absolute` and sets the `top` to `titl
 }
 ```  
 
-The `titleBar` ID also uses `position: absolute` and `top: titlebar-area-inset-top` to attaches it to the top of the window.  By default, it consumes the full width of the window.  The `left` and `right` edges are set to `titlebar-area-inset-left` and `titlebar-area-inset-right` respectively, both fall back to `0` when the values aren't set.  It also sets `user-select: none` to prevent any attempts to drag the window consumed instead it highlights text in the `div` element.  
+A `titleBar` ID também usa `position: absolute` e a anexa à parte superior da `top: titlebar-area-inset-top` janela.  Por padrão, ele consome a largura total da janela.  As `left` bordas e são `right` definidas como e, respectivamente, ambas voltam para quando os valores não são `titlebar-area-inset-left` `titlebar-area-inset-right` `0` definidos.  Ele também define para impedir qualquer tentativa de arrastar a janela consumida, em vez disso, `user-select: none` realça o texto no `div` elemento.  
 
 ```css
 #titleBar {
@@ -403,7 +402,7 @@ The `titleBar` ID also uses `position: absolute` and `top: titlebar-area-inset-t
 }
 ```
 
-The container for the `mainContent` ID is also fixed in place with `position: absolute` and is attached to the bottom of the webpage.  The `height` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-titlebar-height)` to fill the remaining space below the title bar.  It sets `overflow-y: scroll` to allow the contents to scroll vertically in the container.  
+O contêiner para a ID também é fixo e anexado `mainContent` à parte inferior da página da `position: absolute` Web.  O `height` é definido como e recua para preencher o espaço restante abaixo da barra de `titlebar-area-inset-bottom` `100% - var(--fallback-titlebar-height)` título.  Ele define `overflow-y: scroll` para permitir que o conteúdo role verticalmente no contêiner.  
 
 ```css
 #mainContent {
@@ -416,9 +415,9 @@ The container for the `mainContent` ID is also fixed in place with `position: ab
 }
 ```
 
-For cases where the browser doesn't support the window controls overlay, a CSS variable is added to set a default height for the title bar.  The bounds of the `titleBarContainer` and `mainContent` IDs are initially set to fill the entire client area, and you don't need to change it if the overlay isn't supported.  
+Para os casos em que o navegador não dá suporte à sobreposição de controles de janela, uma variável CSS é adicionada para definir uma altura padrão para a barra de título.  Os limites das IDs e são definidos inicialmente para preencher toda a área do cliente, e você não precisa alterá-la se a sobreposição não for `titleBarContainer` `mainContent` suportada.  
 
-The following code snippet includes all of the recommended css updates.
+O trecho de código a seguir inclui todas as atualizações CSS recomendadas.
 
 ```css
 :root {
@@ -485,7 +484,6 @@ body {
   overflow-y: scroll;
 }
 ```  
--->  
 
 ## <a name="run-on-os-login"></a>Executar logon no sistema operacional  
 
@@ -496,7 +494,7 @@ Esse recurso permite configurar seu aplicativo para iniciar automaticamente quan
 
 ### <a name="turn-on-run-on-os-login"></a>Ativar o logon do sistema operacional  
 
-Para ativar os **recursos de Logon** do [](#turn-on-experimental-features) sistema operacional Run On para o seu PWA, navegue até Ativar recursos experimentais e a ativar PWAs da Área de Trabalho **executados no logon do sistema operacional.**  
+Para visualizar os **recursos de Logon** do [](#turn-on-experimental-features) sistema operacional Run On para o PWA, navegue até Ativar recursos experimentais e a ativar PWAs da Área de Trabalho **executados no logon do sistema operacional**.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Ativar os PWAs da Área de Trabalho executados no experimento de logon do sistema operacional" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Ativar os **PWAs da Área de Trabalho executados no experimento de logon do sistema** operacional  
@@ -566,7 +564,7 @@ A capacidade de se registrar como um manipulador de tipo de arquivo está na fas
 
 Os navegadores baseados em Chromium estão testando e moldando esse recurso.  Para obter mais informações, incluindo exemplos de código, navegue até [Permitir que os aplicativos Web sejam manipuladores de arquivos][WebDevFileHandling].  
 
-Para visualizar o tratamento de arquivos no Microsoft Edge para OSs da área de trabalho, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a api **de manipulação de arquivos.**  
+Para visualizar o tratamento de arquivos no Microsoft Edge para Windows 10, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a api **de manipulação de arquivos.**  
     
 ## <a name="providing-feedback-on-experimental-features"></a>Fornecendo comentários sobre recursos experimentais  
 
