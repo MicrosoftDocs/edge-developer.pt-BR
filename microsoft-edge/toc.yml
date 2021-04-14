@@ -174,13 +174,19 @@
                 - name: Visão geral do console
                   href: devtools-guide-chromium/console/index.md
                 - name: Mensagens de log
-                  href: devtools-guide-chromium/console/log.md
+                  href: devtools-guide-chromium/console/console-log.md
                 - name: Executar JavaScript
-                  href: devtools-guide-chromium/console/javascript.md
+                  href: devtools-guide-chromium/console/console-javascript.md
                 - name: Referência
                   href: devtools-guide-chromium/console/reference.md
-                - name: Ver as expressões de JavaScript em tempo real
+                - name: Observar as expressões JavaScript em tempo real
                   href: devtools-guide-chromium/console/live-expressions.md
+                - name: Erros do Console de Depuração
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                - name: Interagir com o DOM
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                - name: Filtrar mensagens de Console
+                  href: devtools-guide-chromium/console/console-filters.md
             - name: Cobertura
               href: devtools-guide-chromium/coverage/index.md
             - name: Elementos

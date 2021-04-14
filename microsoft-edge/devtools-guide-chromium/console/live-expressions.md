@@ -3,45 +3,87 @@ description: Se você estiver digitando as mesmas expressões JavaScript no Cons
 title: Assista aos valores de expressão javascript em tempo real com expressões ao vivo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439223"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483111"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="monitor-changes-in-javascript-using-live-expressions"></a>Monitorar alterações em JavaScript usando expressões ao vivo  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+**Expressões ao vivo** são uma excelente maneira de monitorar expressões JavaScript que mudam muito.    Em vez de ter muitas mensagens de Console para ler e navegar, você pode fixar suas expressões JavaScript específicas na parte superior do **Console**.  
 
-       https://www.apache.org/licenses/LICENSE-2.0
+## <a name="add-a-new-live-expression"></a>Adicionar uma nova expressão ao vivo  
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
+Para começar, escolha o **botão Criar expressão ao vivo** \(eye\) ao lado da caixa de texto **Filtrar.**  Depois de escolher, uma caixa de texto é exibida para que você insira sua nova expressão nele.  
 
-# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Assista aos valores de expressão javascript em tempo real com expressões ao vivo  
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Escolha o botão Nova expressão ao vivo para abrir uma caixa de texto para digitar uma expressão" lightbox="../media/console-live-expressions-new.msft.png":::
+    Escolha o `New live expression` botão para abrir uma caixa de texto para digitar uma expressão  
+:::image-end:::  
 
-Se você estiver digitando a mesma expressão JavaScript no Console repetidamente, talvez seja mais fácil criar uma **expressão ao vivo.**  Com **expressões ao vivo,** você digita uma expressão uma vez e, em seguida, fixá-la na parte superior do console.  O valor da expressão é atualizado quase em tempo real.  
+**Expressões ao vivo** podem ser qualquer expressão JavaScript válida.  Para experimentar, conclua as seguintes ações.  
 
-## <a name="create-a-live-expression"></a>Criar uma expressão ao vivo  
+1.  Abra a **caixa de texto Expressão Ao** Vivo.  
+1.  Digite `document.activeElement`.  
+1.  Para salvar a expressão, conclua uma das seguintes ações.  
+    *   Selecione `Control` + `Enter` \(Windows, Linux\) `Command` + `Enter` ou \(macOS\).  
+    *   Escolha fora da **caixa de texto Expressão Ao** Vivo.  
+        
+A expressão agora está ao vivo e `body` é exibida como resultado.  
 
-1.  [Abra o Console][DevToolsConsoleReferenceOpenConsole].  
-1.  Escolha **Criar Expressão Ao Vivo** \( Criar Expressão Ao Vivo ![ ](../media/create-live-expression-icon.msft.png) \).  A **caixa de texto Expressão** Ao Vivo é exibida.  
+:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="Expressão ao vivo para document.activeElement exibe o corpo como o resultado" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+    Expressão ao vivo `document.activeElement` para exibe o corpo como resultado  
+:::image-end:::  
+
+Se você navegar pela página da Web, o valor será alterando.  Por exemplo, na figura a seguir, você abre o menu de pesquisa na página da Web e a expressão agora é exibida `button.nav-bar-button.focus-visible` como o valor.  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="Para alterar o valor da Expressão Ao Vivo, interaja com diferentes elementos na página da Web" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    Para alterar o valor da **Expressão Ao Vivo**, interaja com diferentes elementos na página da Web  
+:::image-end:::  
+
+Para alterar o valor novamente, abra e escolha a caixa de texto Pesquisar na página da Web.  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navegue até um elemento diferente na página da Web para atualizar a Expressão Ao Vivo" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    Navegue até um elemento diferente na página da Web para atualizar a **Expressão Ao Vivo**  
+:::image-end:::  
+
+## <a name="remove-live-expressions"></a>Remover expressões ao vivo  
+
+Uma **expressão ao vivo** está disponível desde que você a mantenha ativa.  Para se livrar de uma **expressão ao vivo,** escolha `x` o próximo a ela.  
+
+:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="Para remover expressões ao vivo, escolha o x ao lado dele" lightbox="../media/console-live-expressions-remove.msft.png":::
+    Para remover **Expressões Ao Vivo,** escolha `x` o próximo a ele  
+:::image-end:::  
+
+## <a name="replace-console-logging-with-live-expressions"></a>Substituir o registro em log de console por expressões ao vivo  
+
+Você pode criar quantas expressões quiser e persistir em todas as sessões do navegador e janelas.  **Expressões ao vivo** são uma maneira de reduzir o ruído no fluxo de trabalho de depuração.  
+
+Por exemplo, você deseja monitorar o movimento do mouse na página da Web atual.  Navegue [até Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], abra o **Console**e mova o mouse para exibir os logs com muitas informações.  
+
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="Console exibe muitas informações sobre a posição do mouse" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+    **Console** exibe muitas informações sobre a posição do mouse  
+:::image-end:::  
+
+A grande quantidade de informações não só retarda o processo de depuração, como também facilita a falta das alterações que você deseja revisar.  À medida **que o Console** exibe mais mensagens e você move o mouse, os valores que você deseja revisar rolam para fora da tela.  
+
+Para experimentar **Expressões Ao Vivo** como uma alternativa, conclua as seguintes ações.  
+
+1.  Navegue até o [movimento do mouse sem registrar a demonstração][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].  
+1.  Criar **Expressões Ao Vivo** para e `x` `y` .  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Digitando document.activeElement na caixa de texto Expressão Ativa" lightbox="../media/console-create-live-expression.msft.png":::
-       Digitando `document.activeElement` na caixa de texto **Expressão** Ao Vivo  
-    :::image-end:::  
-    
-1.  Selecione `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\) **** para salvar a expressão ou escolha fora da caixa de texto Expressão Ao Vivo.  
+Ao usar **expressões**ao vivo, você sempre obterá as informações na mesma parte da tela e manterá logs de **Console** para valores que não mudam tanto.
+
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Exibir a posição x e y do mouse como Expressões Ao Vivo" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+    Exibir a `x` posição e do mouse como `y` **Expressões Ao Vivo**  
+:::image-end:::  
+
+**Expressões ao vivo** são executados exclusivamente no computador e você não precisa alterar nada em seu código para exibição.  **Expressões ao vivo** são uma ótima maneira de garantir que você apenas exibe as informações que deseja depurar.  Além disso, **expressões ao** vivo ajudam a limitar o ruído nos computadores dos usuários.
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -49,16 +91,5 @@ Se você estiver digitando a mesma expressão JavaScript no Console repetidament
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abra o Console - Console Reference | Microsoft Docs"  
-
-> [!NOTE]
-> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
-
-[![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "Exemplos de mensagens de console: usando a tabela | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "Movimento do mouse sem registro em log | GitHub"  

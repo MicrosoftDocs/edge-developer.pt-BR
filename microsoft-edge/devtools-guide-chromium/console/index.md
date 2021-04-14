@@ -1,120 +1,172 @@
 ---
-description: Os principais usos do Console do Microsoft Edge DevTools são registrar mensagens e executar JavaScript.
-title: Visão geral do console
+description: Uma introdução à ferramenta Console dentro das Ferramentas de Desenvolvedor do Microsoft Edge.
+title: Usar o Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399117"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483171"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="use-the-console"></a>Usar o Console  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+A **ferramenta Console** do DevTools ajuda você com várias tarefas.  A lista a seguir inclui algumas das tarefas.  
 
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
-# <a name="console-overview"></a>Visão geral do console  
-
-  
-
-Esta página explica como o Console do Microsoft Edge DevTools facilita o desenvolvimento de páginas da Web.  O **Console** tem 2 usos principais: [exibição de mensagens registradas e](#viewing-logged-messages) execução de [JavaScript](#running-javascript).  
-
-## <a name="viewing-logged-messages"></a>Exibindo mensagens registradas  
-
-Os desenvolvedores da Web geralmente registram mensagens no Console para garantir que o JavaScript deles está funcionando conforme o esperado.  Para registrar uma mensagem, insira uma expressão como `console.log('Hello, Console!')` em seu JavaScript.  Quando o navegador executa o JavaScript e processa uma expressão como essa, o navegador registra a mensagem no **Console**.  
+*   Descubra por que algo não está funcionando no projeto atual e [rastreia problemas.][DevtoolsConsoleConsoleDebugJavascript]  
+*   [Obter informações sobre o projeto Web][DevtoolsConsoleConsoleFilters] no navegador como mensagens de log.  
+*   [Informações de][DevtoolsConsoleConsoleLog] log em scripts para fins de depuração.  
+*   [Experimente expressões JavaScript ao][DevtoolsConsoleConsoleJavascript] vivo em um [ambiente REPL.][WikiReadEvalPrintLoop]  
+*   [Interaja com o projeto web no navegador usando][DevtoolsConsoleConsoleDomInteraction] JavaScript.  
+    
+O **Console** é uma ótima ferramenta de companhia a ser usada com outras ferramentas.  O **Console** fornece uma maneira poderosa de executar scripts, inspecionar e manipular a página da Web atual usando JavaScript.  
 
 :::row:::
    :::column span="":::
-      O HTML e JavaScript para a página.  
-      
-      ```html
-      <!doctype html>
-      <html>
-          <head>
-              <title>Console Demo</title>
-          </head>
-          <body>
-              <h1>Hello, World!</h1>
-              <script>
-                  console.log('Loading!');
-                  const h1 = document.querySelector('h1');
-                  console.log(h1.textContent);
-                  console.assert(document.querySelector('h2'), 'h2 not found!');
-                  const artists = [
-                      { first: 'René', last: 'Magritte' },
-                      { first: 'Chaim', last: 'Soutine' },
-                        
-                  ];
-                  console.table(artists);
-                  setTimeout(() => {
-                      h1.textContent = 'Hello, Console!';
-                      console.log(h1.textContent);
-                  }, 3000);
-              </script>
-          </body>
-      </html>
-      ```  
+      :::image type="complex" source="../media/console-intro-console-main.msft.png" alt-text="A ferramenta Console aberta no painel superior" lightbox="../media/console-intro-console-main.msft.png":::
+         A **ferramenta Console** aberta no painel superior  
+      :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Na figura a seguir, o **Console** exibe os resultados de carregar a página e aguardar 3 segundos.  
-      
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="O painel Console" lightbox="../media/console-console-demo.msft.png":::
-         A **ferramenta Console**  
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="Console no painel inferior com a ferramenta Elements aberta acima dele" lightbox="../media/console-intro-console-panel.msft.png":::
+         **Console** no painel inferior com a **ferramenta Elements** aberta acima dele  
       :::image-end:::  
-      
-      Tente determinar quais linhas de código fizeram com que o navegador registrava as mensagens.  
    :::column-end:::
 :::row-end:::  
 
-Os desenvolvedores da Web registram mensagens pelos dois motivos gerais a seguir.  
+A maneira mais rápida de abrir diretamente o **Console** é selecionar `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` ou \(macOS\).  
 
-*   Certifique-se de que o código está sendo executado na ordem certa.  
-*   Inspecionando os valores das variáveis em um determinado momento no tempo.  
+## <a name="error-reports-and-console"></a>Relatórios de erro e Console  
 
-Para obter a experiência prática com o registro em log, navegue até [Começar a registrar mensagens][DevtoolsConsoleLoggingMessages].  Para procurar a lista completa `console` de métodos, navegue até a [Referência da API do Console.][DevToolsConsoleAPI]  A principal diferença entre os métodos é como os dados que estão sendo registrados são exibidos.  
+**Console** é o local padrão em que os erros de conectividade e JavaScript são relatados.  Se ocorrer algum erro, um botão **** será exibido ao lado do ícone Configurações no DevTools que fornece o número de erros e avisos.  Escolha-o para abrir **o Console** e exibir o problema.  Para obter mais informações, navegue até [Depurar erros relatados no Console][DevtoolsConsoleConsoleDebugJavascript].  
 
-## <a name="running-javascript"></a>Executando JavaScript  
+:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="O DevTools fornece informações detalhadas sobre o erro no Console" lightbox="../media/console-debug-displays-error.msft.png":::
+   O DevTools fornece informações detalhadas sobre o erro no **Console**  
+:::image-end:::  
 
-O **Console** também é [um REPL][WikiREPLoop].  Você pode executar JavaScript no **Console para** interagir com a página que está sendo inspecionada.   
+## <a name="inspect-and-filter-information-on-the-current-webpage"></a>Inspecionar e filtrar informações na página da Web atual  
 
-:::row:::
-   :::column span="":::
-      Na figura a seguir, **o Console** é mostrado ao lado da homepage DevTools.  
-      
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="A ferramenta Console ao lado da página inicial do DevTools" lightbox="../media/devtools-console-empty.msft.png":::
-         A **ferramenta Console** ao lado da página inicial do DevTools  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      Na figura a seguir, a mesma página é mostrada depois de usar o **Console** para alterar o título superior da página.
-      
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Use o Console para alterar o título superior da página" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Use o **Console** para alterar o título superior da página  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::
+Ao abrir o DevTools em uma página da Web, você provavelmente exibirá um dilúvio de informações registradas no **Console**.  A quantidade de informações se torna um problema quando você precisa identificar informações importantes.  Para exibir as informações importantes que precisam de ação, use a [ferramenta Problemas][DevtoolsIssuesIndex] no DevTools.  Grande parte do ruído permanece, e é por isso que é uma boa ideia saber sobre as opções automatizadas de [log][DevtoolsConsoleConsoleFilters] e filtro no **Console**.  
 
-Modificar a página do **Console** é possível porque o **Console** tem acesso total à [janela][MDNWindow] da página.  O DevTools tem algumas funções de conveniência que facilitam a inspeção de uma página.  Por exemplo, suponha que seu JavaScript contenha uma função chamada `hideModal` .  A `debug(hideModal)` execução pausa seu código na primeira linha da próxima vez que você o `hideModal` executa.  Para obter mais informações sobre a lista completa de funções de utilitário, navegue até Referência da [API de Utilitários de Console.][DevtoolsConsoleUtilitiesDebug]  
+:::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools com um Console cheio de mensagens" lightbox="../media/console-intro-noise.msft.png":::
+   DevTools com um **Console** cheio de mensagens  
+:::image-end:::  
 
-Ao executar o JavaScript, você não precisa interagir com a página.  Você pode usar o **Console** para experimentar um novo código não relacionado à página.  Por exemplo, suponha que você acabou de aprender sobre o método JavaScript Array [map()][MDNMap] integrado e deseja experimentar com ele.  
-O **Console** é um bom lugar para experimentar a função.  
+## <a name="log-information-to-display-in-the-console"></a>Informações de log a ser exibidas no Console  
 
-Para obter mais experiência prática com a execução de JavaScript no **Console,** navegue até [Começar a executar JavaScript][DevtoolsConsoleRunningJavascript].  
+O caso de uso mais popular para **o Console** é registrar informações de seus scripts usando o método ou outros `console.log()` métodos semelhantes.  Para experimentar, conclua as seguintes ações.  
+
+1.  Para abrir **Console,** selecione `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` ou \(macOS\).  
+1.  Navegue [até Console de exemplos de mensagens: log, informações,][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]erro e aviso , ou copie e execute o seguinte trecho de código no **Console**.  
+    
+    ```javascript
+    console.log('This is a log message');
+    console.info('This is some information'); 
+    console.error('This is an error');
+    console.warn('This is a warning');
+    console.log(document.body.getBoundingClientRect());
+    console.table(document.body.getBoundingClientRect());
+    let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+    console.groupCollapsed('Technolgies');
+    technologies.forEach(tech => {console.info(tech);})
+    console.groupEnd('Technolgies');
+    ```  
+    
+1.  O **Console** exibe os resultados.  
+    
+    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="Console cheio de mensagens causadas pelo código de demonstração" lightbox="../media/console-intro-logging.msft.png":::
+       **Console** cheio de mensagens causadas pelo código de demonstração  
+    :::image-end:::  
+    
+Muitos métodos úteis estão disponíveis quando você trabalha com o **Console**.  Para obter mais informações, navegue até [Registrar mensagens na ferramenta Console.][DevtoolsConsoleConsoleLog]  
+
+## <a name="try-your-javascript-live-in-the-console"></a>Experimente seu JavaScript ao vivo no Console  
+
+O **Console** não é apenas um local para registrar informações.  O **Console** é um [ambiente REPL.][WikiReadEvalPrintLoop]  Quando você escreve qualquer JavaScript no **Console**, o código é executado imediatamente.  Você pode achar útil testar alguns novos recursos JavaScript ou fazer alguns cálculos rápidos.  Além disso, você pode obter todos os recursos esperados de um ambiente de edição moderno, como autocompleção, realce de sintaxe e histórico.  Para experimentar, conclua as seguintes ações.  
+
+1.  Navegue até **o Console**.  
+1.  Digite `2 + 2`.  
+    
+O **Console** exibe o resultado `4` na linha a seguir.  Esse **recurso de avaliação** do Eager é útil para depurar e verificar se você não está cometendo erros em seu código.  
+
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="O Console exibe o resultado de 2 + 2 ao vivo à medida que você digita" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   O **Console** exibe o resultado de `2 + 2` vida ao digitá-lo  
+:::image-end:::  
+
+Para executar a expressão JavaScript no **Console** e, opcionalmente, exibir um resultado, selecione `Enter` .  Em seguida, você pode escrever o próximo código JavaScript a ser executado no **Console**.  
+
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Executar várias linhas de código JavaScript em sucessão" lightbox="../media/console-javascript-several-expressions.msft.png":::
+   Executar várias linhas de código JavaScript em sucessão  
+:::image-end:::  
+
+Por padrão, você executar código JavaScript em uma única linha.  Para executar uma linha, digite o JavaScript e selecione `Enter` .  Para trabalhar com a limitação de linha única, selecione em `Shift` + `Enter` vez de `Enter` .  Semelhante a outras experiências de linha de comando, para acessar seus comandos JavaScript anteriores, selecione `Arrow-Up` .  O recurso de comcompleção automática do **Console** é uma ótima maneira de aprender sobre métodos desconhecidos.  Para experimentar, conclua as seguintes ações.  
+
+1.  Abra o **Console**.  
+1.  Digite `doc`.  
+1.  Escolha `document` no menu suspenso.  
+1.  Selecione a `tab` chave para escolher.  
+1.  Digite `.bo`.  
+1.  Selecione `tab` para obter `document.body` .  
+1.  Digite outro para exibir a lista completa de propriedades e métodos disponíveis no corpo `.` da página da Web atual.  
+    
+Para obter mais informações sobre todas as maneiras de trabalhar com **Console,** navegue até [Console como um ambiente JavaScript.][DevtoolsConsoleConsoleJavascript]  
+
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
+   **Console** autocompletion of JavaScript expressions  
+:::image-end:::  
+
+## <a name="interact-with-the-current-webpage-in-the-browser"></a>Interagir com a página da Web atual no navegador  
+
+O **Console** tem acesso ao [objeto Window][MdnDocsWebApiWindow] do navegador.  Você pode escrever scripts que interagem com a página da Web atual.  Para experimentar, conclua as seguintes ações.  
+
+1.  Abra o **Console**.  
+1.  Copie e colar o seguinte trecho de código.  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML
+    ```  
+    
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copiar o conteúdo de título superior (h1) do DOM e exibir no Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   Copie o conteúdo de título superior \( `h1` \) do DOM e exibido no **Console**  
+:::image-end:::  
+
+Em vez de apenas ler da página da Web, você também pode alterá-la.  Para experimentar, conclua as seguintes ações.  
+
+1.  Abra o **Console**.  
+1.  Copie e colar o seguinte trecho de código.  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML = 'Rocking the Console';
+    ```  
+    
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Gravar texto no DOM no Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   Gravar texto no DOM no **Console**  
+:::image-end:::  
+
+Você alterou o título principal da página da Web para **"Balançando o Console".**  Os **métodos Utilitário** de Console facilitam o acesso e manipulação da página da Web atual.  Para obter mais informações, navegue até [Console Utilities API reference][DevtoolsConsoleUtilities].  Por exemplo, para adicionar uma borda verde em torno de todos os links na página da Web atual, conclua as seguintes ações.  
+
+1.  Abra o **Console**.  
+1.  Copie e colar o seguinte trecho de código.  
+    
+    ```javascript
+    $$('a').forEach(a => a.style.border='1px solid lime');
+    ```  
+    
+
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipular uma seleção de elementos usando o Console" lightbox="../media/console-intro-changing-styles.msft.png":::
+    Manipular uma seleção de elementos usando o **Console**  
+:::image-end:::  
+
+Para obter mais informações sobre como trabalhar com o DOM, navegue até [Usar o Console para interagir com o DOM][DevtoolsConsoleConsoleDomInteraction].  
+
+## <a name="learn-more-about-console"></a>Saiba mais sobre Console  
+
+Para obter mais informações sobre **o Console,** navegue até [Referência de Console,][DevtoolsConsoleReference]Referência da [API de Utilitários][DevtoolsConsoleUtilities]de Console e [Referência da API do Console.][DevtoolsConsoleApi]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -122,24 +174,19 @@ Para obter mais experiência prática com a execução de JavaScript no **Consol
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Referência da API de console | Microsoft Docs"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Começar a registrar mensagens no console | Microsoft Docs"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Começar a executar JavaScript no console | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "depuração - Referência da API de Utilitários de Console | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Referência da API de console | Microsoft Docs"  
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Erros de depuração relatados no Console | Microsoft Docs"  
+[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use o Console para interagir com o dom | Microsoft Docs" 
+[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filtrar mensagens de console | Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console como um ambiente JavaScript | Microsoft Docs"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Registrar mensagens na ferramenta Console | Microsoft Docs"  
+[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
+[DevtoolsConsoleUtilities]: ./utilities.md "Referência da API de Utilitários de Console | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Janela | MDN"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Loop de leitura-eval-print - Wikipédia"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Exemplos de mensagens de console: log, informações, erro e aviso | GitHub"  
 
-> [!NOTE]
-> Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/console/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Janela | MDN"  
 
-[![Licença Creative Commons][CCby4Image]][CCA4IL]  
-Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Loop de leitura-eval-print | Wikipédia"  

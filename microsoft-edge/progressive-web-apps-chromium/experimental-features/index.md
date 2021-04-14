@@ -7,12 +7,12 @@ ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
-ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
+ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
+ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482142"
+ms.locfileid: "11482440"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Recursos experimentais em PWAs (Progressive Web Apps)  
 
@@ -94,7 +94,7 @@ Atualize seu manifesto para dar suporte ao protocolo que você deseja registrar.
     
 Se mais de um aplicativo registrar um protocolo, o usuário será apresentado com um prompt.  O usuário escolhe o aplicativo apropriado na lista apresentada pelo sistema operacional ou navegador.  
 
-Para visualizar a manipulação de protocolo no Microsoft Edge no Windows, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e ause o Suporte a Manipuladores de Protocolo de **Desktop Web Apps.**  
+Para visualizar a manipulação de protocolo no Microsoft Edge no Windows, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a ativar o tratamento do **Protocolo PWA da Área de Trabalho.**  
 
 Para obter mais informações sobre a avaliação de origem em execução para manipuladores de protocolo, navegue até Registrar para Registro para Registro do Manipulador [de Protocolo web][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
