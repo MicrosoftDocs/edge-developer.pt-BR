@@ -3,17 +3,17 @@ description: Suporte de depuração para CSS Flexbox, tela de alerta de desempen
 title: O que há de novo no DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439742"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514400"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -180,7 +180,7 @@ Enquanto você filtra com a [Barra Lateral do Console][DevtoolsConsoleReferenceO
 
 ### <a name="the-console-now-escapes-double-quote-characters"></a>O console agora escapa de caracteres de aspas duplas  
 
-Anteriormente, o **Console** não produzia caracteres de aspas duplas \(`"`\) válidos em strings do JavaScript.  A partir do Microsoft Edge versão 90, o **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \(`"`\).  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1178530][CR1178530].  
+Anteriormente, o **Console** não produzia caracteres de aspas duplas \(`"`\) válidos em strings do JavaScript.  A partir do Microsoft Edge versão 90, o **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \ (`"`\).  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1178530][CR1178530].  
 
 :::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="O Console gera strings do JavaScript usando caracteres de aspas duplas escapadas (&#0022;)" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
    O **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \(`"`\)  
@@ -297,7 +297,7 @@ Para ativar o experimento, navegue até [Ativar recursos experimentais][Devtools
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Baixar os canais de visualização do Microsoft Edge  
 
-Se você estiver no Windows, Linux ou macOS, considere usar os [canais de visualização do Microsoft Edge][MicrosoftEdgePreviewChannels] como o seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Preview Channels][MicrosoftEdgePreviewChannels] como o seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe do Microsoft Edge DevTools  
 
@@ -360,7 +360,7 @@ Se você estiver no Windows, Linux ou macOS, considere usar os [canais de visual
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2021/02/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-90) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

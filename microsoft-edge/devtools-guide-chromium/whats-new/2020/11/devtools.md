@@ -3,17 +3,17 @@ description: Microsoft Edge no Linux, webhints aperfeiçoadas na ferramenta Issu
 title: O que há de novo no DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439272"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514372"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -268,7 +268,7 @@ Experimente este recurso ao navegar até a [demonstração de erro CORS][GlitchC
 
 #### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>Informações de isolamento de origem cruzada na visualização de detalhes do quadro  
 
-O status isolado de origem cruzada agora é exibido na seção **Isolamento e Segurança**.  A nova seção **disponibilidade da API** exibe a disponibilidade de `SharedArrayBuffer`s\(SAB\) e se os buffers podem ser compartilhados usando `postMessage()`.  Um aviso de substituição será exibido se o SAB e `postMessage()` estiverem disponíveis no momento, mas o contexto não estiver isolado na origem.  Para obter mais informações sobre o isolamento entre origens e por que é necessário para recursos como `SharedArrayBuffers`, navegue até [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Para revisar as atualizações em tempo real desse recurso no projeto de fonte aberta do Chromium, navegue até o Issue [1139899][CR1139899].  
+O status isolado de origem cruzada agora é exibido na seção **Isolamento e Segurança**.  A nova seção **disponibilidade da API** exibe a disponibilidade de `SharedArrayBuffer`s\ (SAB\) e se os buffers podem ser compartilhados usando `postMessage()`.  Um aviso de substituição será exibido se o SAB e `postMessage()` estiverem disponíveis no momento, mas o contexto não estiver isolado na origem.  Para obter mais informações sobre o isolamento entre origens e por que é necessário para recursos como `SharedArrayBuffers`, navegue até [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Para revisar as atualizações em tempo real desse recurso no projeto de fonte aberta do Chromium, navegue até o Issue [1139899][CR1139899].  
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Informações entre origens" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    Informações entre origens  
@@ -343,7 +343,7 @@ Por exemplo, a ferramenta **Rede** anteriormente usada `kB` em rótulos, mas ago
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Baixar os canais de visualização do Microsoft Edge  
 
-Se você estiver no Windows, Linux ou macOS, considere usar os [canais de prévia do Microsoft Edge][MicrosoftEdgePreviewChannels] como seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
+Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Preview Channels][MicrosoftEdgePreviewChannels] como o seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Como entrar em contato com a equipe do Microsoft Edge DevTools  
 
@@ -419,7 +419,7 @@ Se você estiver no Windows, Linux ou macOS, considere usar os [canais de prévi
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2020/11/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-88) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
