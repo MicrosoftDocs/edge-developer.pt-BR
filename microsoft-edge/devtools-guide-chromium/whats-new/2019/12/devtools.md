@@ -3,16 +3,16 @@ description: Melhorias de acessibilidade, uso do DevTools em outros idiomas e mu
 title: Novidades no DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 31e18091a9f86b7b8a4e123b24e3d312689301ef
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: 1388cbf62bd341837d92c51ad137f3909e60e476
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481482"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514393"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -374,7 +374,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/updates/2019/12/devtools/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> A página original é [encontrada](https://developer.chrome.com/blog/new-in-devtools-80) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

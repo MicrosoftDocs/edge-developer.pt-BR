@@ -3,16 +3,16 @@ description: Exibição 3D, Visual Studio integração com o Microsoft Edge e mu
 title: Novidades no DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 204a596e2497415eefeeb8aa819106635ff30caa
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408357"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514407"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -316,7 +316,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 [DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simular um modo de exibição móvel - Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools | Microsoft Docs"
 [DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Mostrar quadro do dispositivo - Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools | Microsoft Docs"
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Execute comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
+[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
 [ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Acelerar a rede e a CPU - Simular dispositivos móveis com o modo de dispositivo no Microsoft Edge DevTools | Microsoft Docs"
 [Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"
 [MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Microsoft Docs"  
@@ -325,7 +325,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Depurador para a extensão Visual Studio Código do Microsoft Edge"  
 [VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elementos para a extensão Visual Studio Código do Microsoft Edge"  
 
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Canais de visualização do Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Canais de Visualização do Microsoft Edge"  
 
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Código"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Depurador para o Microsoft Edge - Visual Studio Marketplace"  
@@ -356,7 +356,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Percepções de acessibilidade"  
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modelo de objeto de documento (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools conta do Twitter"  
+[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "conta @EdgeDevTools do Twitter"  
 
 [Webhint]: https://aka.ms/webhint "webhint"  
 
@@ -365,7 +365,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/updates/2020/01/devtools/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> A página original é [encontrada](https://developer.chrome.com/blog/new-in-devtools-81) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

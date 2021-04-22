@@ -3,16 +3,16 @@ description: Recursos de depuração de grade CSS, solicitações de Edição e 
 title: Novidades no DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 9031f817a6079f64352c261a70eb9581213bf8c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408315"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514358"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -376,7 +376,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Usando o DOM de sombra | MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canais de visualização do Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canais de Visualização do Microsoft Edge"  
 
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
@@ -384,7 +384,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de Objeto CSS (CSSOM) | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Postar um Tweet"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools conta do Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "conta @EdgeDevTools do Twitter"  
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de classe privada - Campos de classe pública e privada | V8. Dev"  
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Cache de código para desenvolvedores JavaScript | V8. Dev"  
@@ -408,11 +408,11 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 <!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->  
 <!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->  
 
-[TheWebWeWant]: https://webwewant.fyi/ "A Web que queremos"  
+[TheWebWeWant]: https://webwewant.fyi/ "A Web Que Queremos"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2020/06/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-85) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

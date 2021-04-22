@@ -3,16 +3,16 @@ description: Use o DevTools no modo de alto contraste do Windows, match keyboard
 title: Novidades no DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 01d41fe5400dde427a0ac73870ace0e1211f429a
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408322"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514386"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -323,7 +323,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus deve ser 'cumprido', não 'resolvido' | Bugs de V8"  
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Alterações de Cores 3 - Css Color Module Level 4 | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Cor de primeiro plano: a "cor" - Css Color Module Level 4 | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
+[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Cor de primeiro plano: a &quot;cor&quot; - Css Color Module Level 4 | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
 
 [DesktopEdge]: https://www.microsoft.com/edge/ "Apresentando o novo Microsoft Edge"  
 
@@ -344,7 +344,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools conta do Twitter"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Novo problema - MicrosoftDocs/desenvolvedor de borda"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Canais de visualização do Microsoft Edge"  
-[TheWebWeWant]: https://aka.ms/webwewant "A Web que queremos"  
+[TheWebWeWant]: https://aka.ms/webwewant "A Web Que Queremos"  
 
 <!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->  
 <!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->  
@@ -356,7 +356,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/updates/2020/05/devtools/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> A página original é [encontrada](https://developer.chrome.com/blog/new-in-devtools-84) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

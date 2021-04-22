@@ -3,16 +3,16 @@ description: Match keyboard shortcuts to Visual Studio Code, emular Surface Duo 
 title: Novidades no DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a981c8b1a2658ba8cf771096e63001f7d6f69616
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: f1227f0869aa753c2d05980c712ca3453adfd041
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408343"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514379"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -57,8 +57,8 @@ Agora você pode testar a aparência do seu site ou aplicativo em dois novos dis
 
 Para ajudar a aprimorar seu site ou aplicativo para dispositivos de tela dupla e dobráveis, use os seguintes recursos ao [emular o dispositivo][DevtoolsDeviceModeIndex].  
 
-*   [Abrangendo][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], que é quando seu site \(ou app\) aparece em ambas as telas.
-*   [Renderização da emenda][DualScreenIntroductionHowWorkSeam], que é o espaço entre as duas telas.
+*   [Abrangência][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], que é quando seu site \(ou app\) aparece em ambas as telas.
+*   [Renderização da junção][DualScreenIntroductionHowWorkSeam], que é o espaço entre as duas telas.
 *   [Habilitando APIs experimentais][DevtoolsExperimentalFeaturesEnableExperimentalApis] da Plataforma Web para acessar o novo recurso de abrangência de tela de mídia [CSS][DualScreenWebCssMediaSpanning] e [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Emulação de dispositivo para Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
@@ -483,18 +483,18 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analisar o desempenho da renderização com a guia Renderização - Referência de Análise de Desempenho | Microsoft Docs"  
 [DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Exibir e depurar informações de jogadores de mídia | Microsoft Docs"  
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Como trabalhar com a emenda - Introdução a dispositivos de tela dupla | Microsoft Docs"  
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Recurso de abrangeção de tela de mídia CSS para detecção de tela | Microsoft Docs"  
-[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "A API JavaScript getWindowSegments para dispositivos de tela dupla | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Como trabalhar com a junção – Introdução aos dispositivos de duas telas | Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Recurso de abrangência de tela de mídia CSS para detecção de dualidade de tela | Microsoft Docs"  
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "A API JavaScript getWindowSegments para dispositivos de duas telas | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de visualização do Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de Visualização do Microsoft Edge"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Código "  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio atalhos de teclado de código para Windows"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "O novo Surface Duo"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools conta do Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "conta @EdgeDevTools do Twitter"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Erros do Chromium"  
 
@@ -532,7 +532,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 [GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Buffers de protocolo | Desenvolvedores do Google"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Dobra de | Samsung US"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"  
 
 [V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Atribuição lógica | V8"  
 [V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Separadores numéricos | V8"  
@@ -543,7 +543,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2020/08/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-86) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

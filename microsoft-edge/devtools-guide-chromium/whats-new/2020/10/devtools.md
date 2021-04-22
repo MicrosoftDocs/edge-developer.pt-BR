@@ -3,16 +3,16 @@ description: Novas ferramentas de depuração de Grade CSS, ferramenta Webauthn,
 title: Novidades no DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 53aa8f20ba400c7ff95432b1e752f1f008dac919
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408329"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514351"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -112,7 +112,7 @@ Os recursos são aados por padrão.  Para obter mais informações sobre os recu
    **Ferramenta de layout** com grades  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalizar atalhos de teclado em Configurações  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalize os atalhos do teclado em Configurações  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Recurso experimental":::
    Recurso experimental  
@@ -178,7 +178,7 @@ Você pode emular autenticadores e depurar a API de Autenticação [da Web][Gith
    :::column-end:::
 :::row-end:::  
 
-### <a name="elements-tool-updates"></a>Atualizações da ferramenta Elements  
+### <a name="elements-tool-updates"></a>Atualizações da ferramenta Elementos  
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>Exibir o painel da barra lateral Computada no painel Estilos  
 
@@ -351,7 +351,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/updates/2020/10/devtools/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-87) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

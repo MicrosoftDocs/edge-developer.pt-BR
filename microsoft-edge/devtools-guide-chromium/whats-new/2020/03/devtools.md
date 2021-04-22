@@ -3,16 +3,16 @@ description: Emular deficiências de visão de cor, Doca para a esquerda no Menu
 title: Novidades no DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408350"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514414"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -301,11 +301,11 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Ferramentas remotas para o Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de visualização do Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canais de Visualização do Microsoft Edge"  
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Atualização em versões de canal estável para o Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Novo Problema - MicrosoftDocs/desenvolvedor de borda - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Novo Problema - MicrosoftDocs/edge-developer - GitHub"  
 
 [MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
 
@@ -313,7 +313,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Postar um Tweet"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools conta do Twitter"  
-[TheWebWeWant]: https://webwewant.fyi "A Web que queremos"  
+[TheWebWeWant]: https://webwewant.fyi "A Web Que Queremos"  
 
 [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Tipos de Color Blindness"  
 
@@ -341,7 +341,7 @@ Se você estiver no Windows ou macOS, considere usar os canais de visualização
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é [encontrada](https://developers.google.com/web/updates/2020/03/devtools/index) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> A página original é [encontrada](https://developer.chrome.com/blog/new-in-devtools-83) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
