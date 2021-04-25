@@ -1,18 +1,18 @@
 ---
 description: Como mover o Microsoft Edge DevTools para a parte inferior ou esquerda do seu viewport ou para uma janela separada.
-title: Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para Baixo, Doca para a Esquerda)
+title: Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439174"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519153"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,53 +28,80 @@ ms.locfileid: "11439174"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a><span data-ttu-id="12e3c-104">Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para Baixo, Doca para a Esquerda)</span><span class="sxs-lookup"><span data-stu-id="12e3c-104">Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)</span></span>  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a><span data-ttu-id="c95dc-104">Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)</span><span class="sxs-lookup"><span data-stu-id="c95dc-104">Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)</span></span>  
 
-<span data-ttu-id="12e3c-105">Por padrão, o DevTools está encaixado à direita do seu modo de exibição.</span><span class="sxs-lookup"><span data-stu-id="12e3c-105">By default DevTools is docked to the right of your viewport.</span></span>  <span data-ttu-id="12e3c-106">Você também pode encaixar na parte inferior, encaixar à esquerda ou desfazer o DevTools em uma janela separada.</span><span class="sxs-lookup"><span data-stu-id="12e3c-106">You may also dock to bottom, dock to left, or undock the DevTools to a separate window.</span></span>  
+<span data-ttu-id="c95dc-105">Por padrão, o DevTools está encaixado à direita do seu modo de exibição (janela).</span><span class="sxs-lookup"><span data-stu-id="c95dc-105">By default, DevTools is docked to the right of your viewport (window).</span></span>  <span data-ttu-id="c95dc-106">Você também pode encaixar o DevTools na parte inferior ou esquerda da janela ou desfazer o DevTools em uma janela separada.</span><span class="sxs-lookup"><span data-stu-id="c95dc-106">You may also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.</span></span>
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Escolha Encaixar para a Esquerda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         <span data-ttu-id="12e3c-108">Escolher</span><span class="sxs-lookup"><span data-stu-id="12e3c-108">Choose</span></span> `Dock To Left`  
+      <span data-ttu-id="c95dc-107">DevTools encaixado no lado esquerdo da janela:</span><span class="sxs-lookup"><span data-stu-id="c95dc-107">DevTools docked to the left side of the window:</span></span>
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="c95dc-108">DevTools encaixado na parte inferior da janela:</span><span class="sxs-lookup"><span data-stu-id="c95dc-108">DevTools docked to the bottom of the window:</span></span>
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Escolha Doca para a esquerda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         <span data-ttu-id="c95dc-110">Escolha **Doca para a esquerda**</span><span class="sxs-lookup"><span data-stu-id="c95dc-110">Choose **Dock to left**</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Escolha Dock to Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         <span data-ttu-id="12e3c-110">Escolher</span><span class="sxs-lookup"><span data-stu-id="12e3c-110">Choose</span></span> `Dock To Bottom`  
+         <span data-ttu-id="c95dc-112">Escolher</span><span class="sxs-lookup"><span data-stu-id="c95dc-112">Choose</span></span> `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+<span data-ttu-id="c95dc-113">O DevTools pode ser desfeito em uma janela separada, que você pode mover para um monitor separado:</span><span class="sxs-lookup"><span data-stu-id="c95dc-113">DevTools may be undocked to a separate window, which you may move to a separate monitor:</span></span>
+
+:::row:::
+   :::column span="":::
+      <span data-ttu-id="c95dc-114">Janela do navegador:</span><span class="sxs-lookup"><span data-stu-id="c95dc-114">Browser window:</span></span>
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="c95dc-115">DevTools desfazida em uma janela separada:</span><span class="sxs-lookup"><span data-stu-id="c95dc-115">DevTools undocked in a separate window:</span></span>
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navegador em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-         <span data-ttu-id="12e3c-112">Navegador em janela separada</span><span class="sxs-lookup"><span data-stu-id="12e3c-112">Browser in separate window</span></span>  
+         <span data-ttu-id="c95dc-117">Navegador em janela separada</span><span class="sxs-lookup"><span data-stu-id="c95dc-117">Browser in separate window</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools DevTools desfaçada em janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
-         <span data-ttu-id="12e3c-114">DevTools DevTools desfaçada em janela separada</span><span class="sxs-lookup"><span data-stu-id="12e3c-114">Undocked DevTools in separate window</span></span>  
+         <span data-ttu-id="c95dc-119">DevTools DevTools desfaçada em janela separada</span><span class="sxs-lookup"><span data-stu-id="c95dc-119">Undocked DevTools in separate window</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="change-placement-from-the-main-menu"></a><span data-ttu-id="12e3c-115">Alterar o posicionamento do menu principal</span><span class="sxs-lookup"><span data-stu-id="12e3c-115">Change placement from the main menu</span></span>  
+## <a name="change-placement-from-the-main-menu"></a><span data-ttu-id="c95dc-120">Alterar o posicionamento do menu principal</span><span class="sxs-lookup"><span data-stu-id="c95dc-120">Change placement from the main menu</span></span>  
 
-1.  <span data-ttu-id="12e3c-116">Escolha Personalizar e Controlar **DevTools** \( \) e escolha Desfazer-se em Janela Separada \( Desfazer \), Encaixe para Baixo \( Encaixe para Baixo \) ou Encaixe para a Esquerda \( Encaixe para a Esquerda `...`  ![ ](../media/undock-icon.msft.png)  ![ ](../media/bottom-icon.msft.png)  ![ ](../media/left-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="12e3c-116">Choose **Customize And Control DevTools** \(`...`\) and choose **Undock Into Separate Window** \(![Undock](../media/undock-icon.msft.png)\), **Dock To Bottom** \(![Dock To Bottom](../media/bottom-icon.msft.png)\), or **Dock To Left** \(![Dock To Left](../media/left-icon.msft.png)\).</span></span>  
+1.  <span data-ttu-id="c95dc-121">Escolha Personalizar **e controlar DevTools** \( \) e escolha Desfazer em janela separada \( Desfazer \), Encaixe na parte inferior \( Encaixe para baixo \) ou Encaixe à esquerda \( Encaixe para a esquerda `...` \*\*\*\* ![ ](../media/undock-icon.msft.png) \*\*\*\* ![ ](../media/bottom-icon.msft.png) \*\*\*\* ![ ](../media/left-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="c95dc-121">Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).</span></span>  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Escolha Desfazer na janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       <span data-ttu-id="12e3c-118">Escolha **Desfazer na janela separada**</span><span class="sxs-lookup"><span data-stu-id="12e3c-118">Choose **Undock Into Separate Window**</span></span>  
+       <span data-ttu-id="c95dc-123">Escolha **Desfazer em janela separada**</span><span class="sxs-lookup"><span data-stu-id="c95dc-123">Choose **Undock into separate window**</span></span>  
     :::image-end:::  
     
-## <a name="change-placement-from-the-command-menu"></a><span data-ttu-id="12e3c-119">Alterar o posicionamento do Menu de Comando</span><span class="sxs-lookup"><span data-stu-id="12e3c-119">Change placement from the Command Menu</span></span>  
+## <a name="change-placement-from-the-command-menu"></a><span data-ttu-id="c95dc-124">Alterar o posicionamento do Menu de Comando</span><span class="sxs-lookup"><span data-stu-id="c95dc-124">Change placement from the Command Menu</span></span>  
 
-1.  <span data-ttu-id="12e3c-120">[Abra o Menu de Comando][DevtoolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="12e3c-120">[Open the Command Menu][DevtoolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="12e3c-121">Execute um dos seguintes comandos: `Dock To Bottom` , `Undock Into Separate Window` .</span><span class="sxs-lookup"><span data-stu-id="12e3c-121">Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.</span></span>  <span data-ttu-id="12e3c-122">Atualmente, não há nenhum comando para encaixe à esquerda, mas você pode acessá-lo no [menu principal](#change-placement-from-the-main-menu).</span><span class="sxs-lookup"><span data-stu-id="12e3c-122">Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).</span></span>  
+1.  <span data-ttu-id="c95dc-125">[Abra o Menu de Comando][DevtoolsCommandMenu], `Shift` + `Ctrl` + `P` selecionando no Windows/Linux ou no `Command` + `Shift` + `P` macOS.</span><span class="sxs-lookup"><span data-stu-id="c95dc-125">[Open the Command Menu][DevtoolsCommandMenu], by selecting `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.</span></span>  
+1.  <span data-ttu-id="c95dc-126">Depois do `>` caractere, `dock` insira e escolha um dos seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="c95dc-126">After the `>` character, enter `dock`, and then choose one of the following commands:</span></span>  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       <span data-ttu-id="12e3c-124">O comando undock</span><span class="sxs-lookup"><span data-stu-id="12e3c-124">The undock command</span></span>  
+    *  **<span data-ttu-id="c95dc-127">Encaixe na parte inferior</span><span class="sxs-lookup"><span data-stu-id="c95dc-127">Dock to bottom</span></span>**
+    *  **<span data-ttu-id="c95dc-128">Doca para a esquerda</span><span class="sxs-lookup"><span data-stu-id="c95dc-128">Dock to left</span></span>**
+    *  **<span data-ttu-id="c95dc-129">Encaixe para a direita</span><span class="sxs-lookup"><span data-stu-id="c95dc-129">Dock to right</span></span>**
+    *  **<span data-ttu-id="c95dc-130">Restaurar a última posição de encaixe</span><span class="sxs-lookup"><span data-stu-id="c95dc-130">Restore last dock position</span></span>**
+    *  **<span data-ttu-id="c95dc-131">Desfazer em janela separada</span><span class="sxs-lookup"><span data-stu-id="c95dc-131">Undock into separate window</span></span>**
+    
+    <span data-ttu-id="c95dc-132">Você também pode acessar os comandos do [menu principal](#change-placement-from-the-main-menu).</span><span class="sxs-lookup"><span data-stu-id="c95dc-132">You may also access the commands from the [main menu](#change-placement-from-the-main-menu).</span></span> 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando Undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       <span data-ttu-id="c95dc-134">O comando Undock</span><span class="sxs-lookup"><span data-stu-id="c95dc-134">The Undock command</span></span>  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="12e3c-125">Entrar em contato com a equipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="12e3c-125">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="c95dc-135">Entrar em contato com a equipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="c95dc-135">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -83,11 +110,11 @@ ms.locfileid: "11439174"
 [DevtoolsCommandMenu]: ../command-menu/index.md "Execute comandos com o menu DevTools Command do Microsoft Edge | Microsoft Docs"  
 
 > [!NOTE]
-> <span data-ttu-id="12e3c-127">Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="12e3c-127">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="12e3c-128">A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/customize/placement) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="12e3c-128">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="c95dc-137">Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c95dc-137">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="c95dc-138">A página original é [encontrada](https://developers.google.com/web/tools/chrome-devtools/customize/placement) aqui e é de autoria de [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="c95dc-138">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="12e3c-130">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="12e3c-130">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="c95dc-140">Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c95dc-140">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
