@@ -1,18 +1,18 @@
 ---
 description: Saiba como salvar as alterações feitas no DevTools no disco.
-title: Editar arquivos com espaços de trabalho
+title: Editar arquivos com o Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399243"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519419"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,10 +28,9 @@ ms.locfileid: "11399243"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="edit-files-with-workspaces"></a>Editar arquivos com espaços de trabalho  
+# <a name="edit-files-with-workspaces"></a>Editar arquivos com o Workspaces  
 
-> [!NOTE]
-> O objetivo deste tutorial é fornecer prática na configuração e no uso de Espaços de Trabalho, para que você possa usar Espaços de Trabalho em seus próprios projetos.  Você é capaz de salvar as alterações no código-fonte, em seu computador local, que você fez no DevTools depois de habilitar Espaços de Trabalho.  
+Este tutorial fornece prática na configuração e no uso de um Espaço de Trabalho.  Depois de adicionar arquivos a um Espaço de Trabalho, as alterações feitas no código-fonte no DevTools são salvas no computador local e são preservadas após a atualização da página da Web.  
 
 > [!IMPORTANT]
 > **Pré-requisitos**: Antes de começar este tutorial, você deve saber como executar as seguintes ações.  
@@ -54,7 +53,7 @@ Com espaços de trabalho habilitados, as alterações CSS feitas no DevTools sã
 
 Se você estiver usando uma estrutura moderna, provavelmente transformará seu código-fonte de um formato fácil de manter em um formato otimizado para ser executado o mais rápido possível.  
 
-Os espaços de trabalho geralmente são capazes de mapear o código otimizado de volta para o código-fonte original com a ajuda de mapas [de origem.][TreehouseBlogSourceMaps]  Mas há uma grande variação entre as estruturas sobre como cada um usa mapas de origem.  Os Devtools simplesmente suportam todas as variações.  
+Os espaços de trabalho geralmente são capazes de mapear o código otimizado de volta para o código-fonte original com a ajuda de mapas [de origem.][TreehouseBlogSourceMaps]  Mas há uma grande variação entre estruturas sobre como cada estrutura usa mapas de origem.  Os Devtools não suportam todas as variações.  
 
 Os espaços de trabalho são conhecidos por não funcionarem com a estrutura a seguir.  
 
@@ -123,20 +122,20 @@ Conclua as seguintes ações, para obter experiência prática com Espaços de T
        O **painel Console**  
     :::image-end:::  
     
-1.  Escolha a **ferramenta Fontes.**  
-1.  Escolha o **painel Sistema de** Arquivos.  
+1.  Navegue até a **ferramenta Sources.**  
+1.  No painel **Navegador** (à esquerda), escolha a **guia Sistema de** Arquivos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="O painel Filesystem" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       O **painel Filesystem**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="A guia Sistema de Arquivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       A **guia Sistema de** Arquivos  
     :::image-end:::  
     
 1.  Escolha **Adicionar pasta ao espaço de trabalho**.  
 1.  Digite `~/Desktop/app`.  
 1.  Escolha **Permitir** para dar permissão ao DevTools para ler e gravar no diretório.  
-    No painel **Sistema de** Arquivos, agora há um ponto verde ao lado de , `index.html` e `script.js` `styles.css` .  Esses pontos verdes significam que o DevTools estabeleceu um mapeamento entre os recursos de rede da página e os arquivos em `~/Desktop/app` .  
+    Na guia **Sistema de** Arquivos, um ponto verde agora aparece ao lado de , `index.html` e `script.js` `styles.css` .  Um ponto verde indica que o DevTools estabeleceu um mapeamento entre um recurso de rede da página e o arquivo em `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="O painel Sistema de Arquivos agora mostra um mapeamento entre os arquivos locais e os de rede" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       O **painel Sistema de** Arquivos agora mostra um mapeamento entre os arquivos locais e os de rede  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="A guia Sistema de Arquivos agora indica um mapeamento entre os arquivos locais e os de rede" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       A **guia Sistema de** Arquivos agora indica um mapeamento entre os arquivos locais e os de rede  
     :::image-end:::  
     
 ## <a name="step-2-save-a-css-change-to-disk"></a>Etapa 2: Salvar uma alteração CSS no disco  
@@ -199,33 +198,35 @@ A árvore DOM não é html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### <a name="change-html-from-the-sources-panel"></a>Alterar HTML do painel Fontes  
+### <a name="change-html-from-the-sources-tool"></a>Alterar HTML da ferramenta Sources  
 
-Se você quiser salvar uma alteração no html da página, faça isso usando o **painel Fontes.**  
+Se você quiser salvar uma alteração no HTML da página da Web, use a **ferramenta Sources.**  
 
-1.  Escolha a **ferramenta Fontes.**  
-1.  Escolha o **painel** Página.  
+1.  Navegue até a **ferramenta Sources.**  
+1.  No painel **Navegador** (à esquerda), escolha a **guia** Página.  
 1.  Escolha **(índice)**.  O HTML da página é aberto.  
 1.  Substitua `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Revise a figura a seguir.  
 1.  Selecione `Control` + `S` \(Windows, Linux\) `Command` + `S` ou \(macOS\) para salvar a alteração.  
-1.  Atualize a página.  O `<h1>` elemento ainda está exibindo o novo texto.  
+1.  Atualize a página.  O `<h1>` elemento continua a exibir o novo texto após a atualização da página.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterar HTML do painel Fontes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Alterar HTML do painel **Fontes**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Alterar HTML da ferramenta Sources" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Alterar HTML da ferramenta **Sources**  
     :::image-end:::  
     
 1.  Abra `~/Desktop/app/index.html` .  O `<h1>` elemento contém o novo texto.  
     
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>Etapa 4: Salvar uma alteração do JavaScript no disco  
 
-O **painel Fontes** também é o local para fazer alterações no JavaScript.  Mas, às vezes, você precisa acessar outros painéis, como a ferramenta **Elements** ou o **painel console,** enquanto faz alterações em seu site.  Há uma maneira de abrir o painel **Fontes** junto com outros painéis.  
+O principal local para usar o editor de código do DevTools é a **ferramenta Sources.**  Mas, às vezes, você precisa acessar outras ferramentas, como a **ferramenta Elements** ou o **painel console,** durante a edição de arquivos.  A **ferramenta De origem** Rápida fornece apenas o editor da ferramenta **Fontes,** enquanto qualquer ferramenta está aberta.  
 
-1.  Escolha a **ferramenta Elementos.**  
+Para abrir o editor de código do DevTools juntamente com outras ferramentas, faça o seguinte:  
+
+1.  Navegue até **a ferramenta Elements.**  
 1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\).  O **Menu de Comando** é aberto.  
-1.  Digite `QS` , escolha Mostrar Fonte **Rápida**.  Na parte inferior da janela DevTools, agora há um **painel De origem** rápida.  O painel está exibindo o conteúdo de , que é o `index.html` último arquivo editado no painel **Fontes.**  O **painel Fonte Rápida** fornece o editor do painel **Fontes,** para que você possa editar arquivos enquanto outros painéis são abertos.  
+1.  Digite `Quick Source` e escolha Mostrar Fonte **Rápida**.  Na parte inferior da janela DevTools, a ferramenta **Fonte** Rápida é exibida, exibindo o conteúdo de , que é o último arquivo editado na `index.html` ferramenta **Fontes.**    
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abra o painel De origem rápida usando o Menu de Comando" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Abra o **painel De origem** rápida usando **o Menu de Comando**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abra a ferramenta Fonte Rápida usando o Menu de Comando" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Abra a **ferramenta Fonte** Rápida usando o Menu **de Comando**  
     :::image-end:::  
     
 1.  Selecione `Control` + `P` \(Windows, Linux\) `Command` + `P` ou \(macOS\) para abrir a **caixa de diálogo Abrir Arquivo.**  Revise a figura a seguir.  
@@ -238,7 +239,7 @@ O **painel Fontes** também é o local para fazer alterações no JavaScript.  M
     > [!NOTE]
     > O `Save Changes To Disk With Workspaces` link na demonstração é estilizado regularmente.  
     
-1.  Adicione o código a seguir à parte inferior ** da **script.jsusando o **painel Fonte** Rápida.  
+1.  Adicione o código a seguir à parte inferior ** do **script.jsusando a ferramenta **De origem** rápida.  
     
     ```javascript
     console.log('greetings from script.js');

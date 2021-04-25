@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439195"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519314"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,7 +78,7 @@ Esta folha de estilos não inclui apenas o código do componente do botão.  Ele
     
 ## <a name="analyze-code-coverage"></a>Analisar a cobertura de código  
 
-A tabela no painel **Cobertura** exibe os recursos que foram analisados e quanto código é usado em cada recurso.  Escolha uma linha para abrir esse recurso no painel **Fontes** e revise uma divisão linha por linha do código usado e do código não usado.  
+A tabela no painel **Cobertura** exibe os recursos que foram analisados e quanto código é usado em cada recurso.  Escolha uma linha para abrir esse recurso na ferramenta **Fontes** e revisar uma divisão linha a linha do código usado e do código não usado.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Um relatório de cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Um relatório de cobertura de código  

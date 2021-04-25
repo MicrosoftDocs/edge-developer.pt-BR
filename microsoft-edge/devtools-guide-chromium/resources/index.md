@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 75063b23f23c25ff4fe2e7f6e044a2de9a7b1ccd
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398221"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519440"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,13 +78,14 @@ Navegue até [Log network activity][DevtoolsNetworkLogActivity].
 
 ### <a name="browse-by-directory"></a>Procurar por diretório  
 
-Para exibir os recursos de uma página organizada pelo diretório:  
+Para exibir os recursos de uma página da Web organizada pelo diretório:  
 
-1.  Escolha a **ferramenta Fontes** para abrir o **painel Fontes.**  
-1.  Escolha o **painel Página** para mostrar os recursos da página.  O **painel Página** é aberto.  
+1.  Abra DevTools.
+1.  Escolha a **ferramenta Fontes** e, no painel **Navegador,** no canto superior esquerdo, escolha a **guia** Página.
+1.  Escolha o **botão Mais opções** (...) à direita da guia **Página** e escolha Grupo **por pasta**.
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="O painel Página" lightbox="../media/resources-sources-page-empty.msft.png":::
-       O **painel Página**  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="A guia Página no painel Navegador da ferramenta Sources" lightbox="../media/resources-sources-page-empty.msft.png":::
+       A **guia Página** no painel **Navegador** da ferramenta **Sources**  
     :::image-end:::  
     
     Aqui está uma divisão dos itens não óbvios na figura anterior.  
@@ -105,19 +106,20 @@ Para exibir os recursos de uma página organizada pelo diretório:
     
 ### <a name="browse-by-filename"></a>Procurar por nome de arquivo  
 
-Por padrão, o **painel Página** grupos recursos por diretório.  Para desabilitar esse grupo e exibir os recursos de cada domínio como uma lista simples:  
+Por padrão, a guia **Página** grupos recursos por diretório.  Para exibir os recursos de cada domínio como uma lista simples, em vez de a agrupar por diretório:
 
-1.  Abra o **painel Página.**  Navegue [até Procurar por diretório](#browse-by-directory).  
-1.  Escolha **Mais Opções e** `...` **desabilite Group By Folder**.  
+1.  Navegue até a **ferramenta Sources.**  
+1.  No painel **Navegador** (à esquerda), escolha a **guia** Página.  
+1.  Escolha **Mais opções** e `...` desmarca a marca de seleção ao lado de **Grupo por pasta**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="A opção Grupo por Pasta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       A **opção Grupo por** Pasta  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="A opção Grupo por pasta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       A **opção Grupo por** pasta  
     :::image-end:::  
     
     Os recursos são organizados por tipo de arquivo.  Em cada tipo de arquivo, os recursos são organizados em ordem alfabética.  
-    
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="O painel Página após desabilitar Grupo por Pasta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       O **painel Página** após desabilitar Grupo por **Pasta**  
+
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="A guia Página após limpar a marca de seleção Grupo por pasta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       A **guia Página** após limpar a marca de seleção Grupo **por** pasta  
     :::image-end:::  
     
 ### <a name="browse-by-file-type"></a>Procurar por tipo de arquivo  

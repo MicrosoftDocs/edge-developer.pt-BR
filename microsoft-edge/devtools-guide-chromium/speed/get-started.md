@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439441"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519608"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -359,13 +359,13 @@ A primeira tarefa, então, é encontrar o código que você não precisa executa
        O relatório de cobertura  
     :::image-end:::  
     
-1.  Escolha a **linhajquery.js.**  O DevTools abre o arquivo no painel Fontes.  Uma linha de código foi seguida se tiver uma barra azul ao lado dela.  Uma barra vermelha significa que não foi executado e, definitivamente, não é necessário no carregamento da página.  
+1.  Escolha a `jquery.js` linha.  O DevTools abre o arquivo na **ferramenta Sources.**  Se uma linha de código for exibida, uma barra azul aparecerá ao lado dela.  Uma barra vermelha significa que a linha de código não foi executado e definitivamente não é necessária no carregamento da página da Web.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Exibindo o arquivo jQuery no painel Fontes" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
-       Exibindo o arquivo jQuery no painel **Fontes**  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Exibindo o arquivo jQuery na ferramenta Sources" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       Exibindo o arquivo jQuery na **ferramenta Sources**  
     :::image-end:::  
     
-1.  Role um pouco pelo código jQuery.  Algumas das linhas que são "executar" são, na verdade, apenas comentários.  Executar esse código por meio de um minifier que tira comentários é outra maneira de reduzir o tamanho desse arquivo.  
+1.  Role o código jQuery.  Algumas das linhas que são executados são apenas comentários.  Para retirar comentários e reduzir o tamanho do arquivo, execute o código por meio de um aplicativo ou script minifier.  
 
 Em resumo, quando você está trabalhando com seu próprio código, a ferramenta **Coverage** ajuda você a analisar seu código, linha por linha e apenas enviar o código necessário para a carga da página.  
 

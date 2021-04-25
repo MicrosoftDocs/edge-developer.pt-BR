@@ -1,18 +1,18 @@
 ---
 description: Como mover o Microsoft Edge DevTools para a parte inferior ou esquerda do seu viewport ou para uma janela separada.
-title: Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para Baixo, Doca para a Esquerda)
+title: Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439174"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519153"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,39 @@ ms.locfileid: "11439174"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para Baixo, Doca para a Esquerda)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)  
 
-Por padrão, o DevTools está encaixado à direita do seu modo de exibição.  Você também pode encaixar na parte inferior, encaixar à esquerda ou desfazer o DevTools em uma janela separada.  
+Por padrão, o DevTools está encaixado à direita do seu modo de exibição (janela).  Você também pode encaixar o DevTools na parte inferior ou esquerda da janela ou desfazer o DevTools em uma janela separada.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Escolha Encaixar para a Esquerda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Escolher `Dock To Left`  
+      DevTools encaixado no lado esquerdo da janela:
+   :::column-end:::
+   :::column span="":::
+      DevTools encaixado na parte inferior da janela:
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Escolha Doca para a esquerda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Escolha **Doca para a esquerda**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Escolha Dock to Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Escolher `Dock To Bottom`  
+         Escolher `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+O DevTools pode ser desfeito em uma janela separada, que você pode mover para um monitor separado:
+
+:::row:::
+   :::column span="":::
+      Janela do navegador:
+   :::column-end:::
+   :::column span="":::
+      DevTools desfazida em uma janela separada:
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -59,19 +78,27 @@ Por padrão, o DevTools está encaixado à direita do seu modo de exibição.  V
 
 ## <a name="change-placement-from-the-main-menu"></a>Alterar o posicionamento do menu principal  
 
-1.  Escolha Personalizar e Controlar **DevTools** \( \) e escolha Desfazer-se em Janela Separada \( Desfazer \), Encaixe para Baixo \( Encaixe para Baixo \) ou Encaixe para a Esquerda \( Encaixe para a Esquerda `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \).  
+1.  Escolha Personalizar **e controlar DevTools** \( \) e escolha Desfazer em janela separada \( Desfazer \), Encaixe na parte inferior \( Encaixe para baixo \) ou Encaixe à esquerda \( Encaixe para a esquerda `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Escolha Desfazer na janela separada" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Escolha **Desfazer na janela separada**  
+       Escolha **Desfazer em janela separada**  
     :::image-end:::  
     
 ## <a name="change-placement-from-the-command-menu"></a>Alterar o posicionamento do Menu de Comando  
 
-1.  [Abra o Menu de Comando][DevtoolsCommandMenu].  
-1.  Execute um dos seguintes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  Atualmente, não há nenhum comando para encaixe à esquerda, mas você pode acessá-lo no [menu principal](#change-placement-from-the-main-menu).  
+1.  [Abra o Menu de Comando][DevtoolsCommandMenu], `Shift` + `Ctrl` + `P` selecionando no Windows/Linux ou no `Command` + `Shift` + `P` macOS.  
+1.  Depois do `>` caractere, `dock` insira e escolha um dos seguintes comandos:  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       O comando undock  
+    *  **Encaixe na parte inferior**
+    *  **Doca para a esquerda**
+    *  **Encaixe para a direita**
+    *  **Restaurar a última posição de encaixe**
+    *  **Desfazer em janela separada**
+    
+    Você também pode acessar os comandos do [menu principal](#change-placement-from-the-main-menu). 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="O comando Undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       O comando Undock  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  

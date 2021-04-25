@@ -1,18 +1,18 @@
 ---
 description: Um guia sobre como abrir o Menu de Comando, executar comandos, revisar outras ações e muito mais.
-title: Executar comandos com o menu DevTools Command do Microsoft Edge
+title: Executar comandos com o Menu de Comando do Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398025"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519188"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398025"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Executar comandos com o menu DevTools Command do Microsoft Edge  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Executar comandos com o Menu de Comando do Microsoft Edge DevTools  
 
 O Menu de Comando fornece uma maneira rápida de navegar na interface do usuário do Microsoft Edge DevTools e realizar tarefas comuns, como desabilitar [JavaScript][JavascriptDisable].  Você pode estar familiarizado com um recurso semelhante no Microsoft Visual Studio Code chamado de [Paleta][VisualStudioCodeUICommandPalette]de Comandos , que foi a inspiração original para o Menu de Comando.  
 

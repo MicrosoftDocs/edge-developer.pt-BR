@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 1579374be29f0f419ded3bf88f5dea284f0bbb1a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c9659255e2bf0082cd1be3e6615c9d54c293b967
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397787"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519307"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -67,16 +67,16 @@ Esse é o tamanho da memória que é liberada depois que o objeto é excluído j
 
 **As raízes** do Coletor de Lixo são feitas de **alças criadas** \(local ou global\) ao fazer uma referência do código nativo para um objeto JavaScript fora do V8.  Todas essas alças podem ser encontradas em um instantâneo de pilha sob raízes **de GC**Manipular escopo e  >  **** raízes **de GC**  >  **Alças globais**.  Descrever as alças nesta documentação sem mergulhar em detalhes da implementação do navegador pode ser confuso.  As raízes do Coletor de Lixo e as alças não são algo com o que você precisa se preocupar.  
 
-Há muitas raízes internas do Coletor de Lixo, a maioria das quais não são interessantes para os usuários.  Do ponto de vista de aplicativos, há tipos de raízes a seguir.  
+Há muitas raízes internas do Coletor de Lixo, a maioria das quais não são interessantes para os usuários.  Do ponto de vista de aplicativos, há os seguintes tipos de raízes.  
 
-*   Objeto global da janela \(em cada iframe\).  Há um campo de distância nos instantâneos de pilha que é o número de referências de propriedade no caminho de retenção mais curto da janela.  
-*   Árvore DOM do documento que consiste em todos os nós DOM nativos acessíveis atravessando o documento.  Nem todos os nós podem ter invólucros JS, mas se um nó tiver um wrapper, ele está vivo enquanto o documento está vivo.  
-*   Às vezes, os objetos podem ser mantidos pelo contexto do depurador no painel **Fontes** e **no Console** \(por exemplo, após a avaliação do Console\).  Crie instantâneos de pilha com um **painel de Console** limpo e nenhum ponto de interrupção ativo no depurador no painel **Fontes.**
+*   Objeto global da janela \(em cada iframe\).  Nos instantâneos de pilha, o campo indica o número de referências de propriedade no caminho de retenção mais `distance` curto da janela.  
+*   A árvore DOM do documento, que consiste em todos os nós DOM nativos que podem ser alcançadas ao percorrer o documento.  Nem todos os nós têm invólucros JavaScript, mas se um nó tiver um wrapper, o nó está vivo enquanto o documento está vivo.  
+*   Às vezes, os objetos são mantidos pelo contexto de depuração na ferramenta **Sources** e **no Console**, como após a avaliação do Console.  Crie instantâneos de pilha com uma ferramenta **console** des limpa e nenhum ponto de interrupção ativo no depurador na **ferramenta Sources.**
 
 >[!TIP]
-> Limpe o **painel console** executando e desativando pontos de interrupção no painel Fontes antes de tirar um instantâneo de pilha no `clear()` painel [Memória.][DevtoolsMemoryProblemsHeapSnapshots] ****
+> Antes de tirar um instantâneo de pilha na [ferramenta Memória,][DevtoolsMemoryProblemsHeapSnapshots] limpe a **ferramenta Console** e desative pontos de interrupção na **ferramenta Sources.**  Para limpar a **ferramenta Console,** execute o `clear()` método.  
 
-O gráfico de memória começa com uma raiz, que pode ser o objeto do navegador ou o objeto `window` `Global` de um Node.js módulo.  Você não controla como esse objeto raiz é coletado.  
+O gráfico de memória começa com uma raiz, que pode ser o objeto do navegador ou o objeto `window` `Global` de um Node.js módulo.  Você não controla como o objeto raiz é coletado.  
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Você não é capaz de controlar como o objeto raiz é coletado." lightbox="../media/memory-problems-dontcontrol.msft.png":::
    Você não é capaz de controlar como o objeto raiz é coletado.  

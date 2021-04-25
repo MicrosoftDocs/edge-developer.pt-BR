@@ -1,18 +1,18 @@
 ---
 description: Trechos de código são scripts pequenos que você pode escrever e executar na ferramenta Sources do Microsoft Edge DevTools.  Você pode acessar e executar recursos de qualquer página da Web.  Quando você executa um trecho, ele é executado a partir do contexto da página da Web aberta no momento.
-title: Executar trechos de javascript em qualquer página com o Microsoft Edge DevTools
+title: Executar trechos de código do JavaScript em qualquer página da Web com o Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 779c3dcec66b6b5df3e38abe9ee458bca7dc0c45
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439420"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519426"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,27 +63,27 @@ Na figura a seguir, a página da Web é exibida após a execução do trecho de 
    A página da Web após a execução do trecho de código  
 :::image-end:::  
 
-## <a name="open-the-snippets-pane"></a>Abra o painel Trechos de Código  
+## <a name="open-the-snippets-tab"></a>Abra a guia Trechos de Código  
 
-O **painel Trechos de** Código lista seus trechos.  Quando você deseja editar um trecho, você precisa abri-lo do painel **Trechos** de Código.  
+A **guia Trechos de** Código, no painel **Navegador** à esquerda, lista seus trechos.  Quando você deseja editar um trecho, você precisa abri-lo na guia **Trechos.**  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="O painel Trechos de Código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   O **painel Trechos** de Código  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="A guia Trechos de Código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   A **guia Trechos de** Código  
 :::image-end:::  
 
-### <a name="open-the-snippets-pane-with-a-mouse"></a>Abra o painel Trechos de Código com um mouse  
+### <a name="open-the-snippets-tab-with-a-mouse"></a>Abra a guia Trechos de Código com um mouse  
 
-1.  Escolha a **guia Fontes** para abrir a **ferramenta Fontes.**  O **painel Página** geralmente é aberto por padrão.  
+1.  Escolha a **guia Fontes.**  A **ferramenta Sources** é exibida.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="A ferramenta Sources com o painel Página aberta à esquerda" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       A **ferramenta Sources** com o painel **Página** aberta à esquerda  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="A ferramenta Fontes com a guia Página aberta à esquerda" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       A **ferramenta Fontes** com a guia **Página** aberta à esquerda  
     :::image-end:::  
     
-1.  Escolha a **guia Trechos de** Código para abrir o painel **Trechos** de Código.  Talvez seja necessário escolher **Mais Guias** \( Mais ![ Guias ](../media/more-tabs-icon.msft.png) \) para acessar a opção **Trechos** de Código.  
+1.  No painel **Navegador** (à esquerda), escolha a **guia Trechos.**  Para acessar a **opção Trechos** de Código, talvez seja necessário escolher **Mais guias** \( Mais ![ guias ](../media/more-tabs-icon.msft.png) \).  
     
-### <a name="open-the-snippets-pane-with-the-command-menu"></a>Abra o painel Trechos de Código com o Menu de Comando  
+### <a name="open-the-snippets-tab-with-the-command-menu"></a>Abra a guia Trechos de Código com o Menu de Comando  
 
-1.  Concentre seu cursor em algum lugar no DevTools.  
+1.  Selecione qualquer coisa no DevTools, para que o DevTools tenha foco.  
 1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o Menu de Comando.  
 1.  Digite `Snippets` , escolha Mostrar **Trechos de**Código e, em seguida, selecione para executar o `Enter` comando.  
     
@@ -93,11 +93,11 @@ O **painel Trechos de** Código lista seus trechos.  Quando você deseja editar 
     
 ## <a name="create-snippets"></a>Criar trechos de código  
 
-### <a name="create-a-snippet-through-the-sources-panel"></a>Criar um trecho por meio do painel Fontes  
+### <a name="create-a-snippet-through-the-sources-tool"></a>Criar um trecho de código por meio da ferramenta Sources  
 
-1.  [Abra o **painel Trechos de** Código.](#open-the-snippets-pane)  
+1.  [Abra a guia Trechos de Código](#open-the-snippets-tab).  
 1.  Escolha **Novo trecho**de código .  
-1.  Insira um nome para o trecho de código e selecione `Enter` salvar.  
+1.  Insira um nome para o trecho de código e selecione `Enter` .  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nomear um trecho" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nomear um trecho  
@@ -117,8 +117,8 @@ Para renomear seu novo trecho de código com um nome personalizado, navegue até
 
 ## <a name="edit-snippets"></a>Editar trechos  
 
-1.  [Abra o **painel Trechos de** Código.](#open-the-snippets-pane)  
-1.  No painel **Trechos** de Código, escolha o nome do trecho que você deseja editar.  Ele é aberto no **Editor de Código.**  
+1.  [Abra a guia Trechos de Código](#open-the-snippets-tab).  
+1.  Na guia **Trechos** de Código, escolha o nome do trecho que você deseja editar.  Ele é aberto no **Editor de Código.**  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="O Editor de Código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        O **Editor de Código**  
@@ -133,11 +133,11 @@ Para renomear seu novo trecho de código com um nome personalizado, navegue até
     
 ## <a name="run-snippets"></a>Executar trechos de código  
 
-### <a name="run-a-snippet-from-the-sources-panel"></a>Executar um trecho do painel Fontes  
+### <a name="run-a-snippet-from-the-sources-tool"></a>Executar um trecho da ferramenta Sources  
 
-1.  [Abra o **painel Trechos de** Código.](#open-the-snippets-pane)  
+1.  [Abra a guia Trechos de Código](#open-the-snippets-tab).  
 1.  Escolha o nome do trecho que você deseja executar.  O trecho é aberto no **Editor de Código.**  
-1.  Escolha **Executar Trecho de Código** \( Executar Trecho \) ou selecione ![ ](../media/run-snippet-icon.msft.png) `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\).  
+1.  Escolha **Executar trecho de código** \( Executar trecho ![ ](../media/run-snippet-icon.msft.png) \).
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>Executar um trecho com o Menu de Comando  
 
@@ -153,12 +153,12 @@ Para renomear seu novo trecho de código com um nome personalizado, navegue até
 
 ## <a name="rename-snippets"></a>Renomear trechos  
 
-1.  [Abra o **painel Trechos de** Código.](#open-the-snippets-pane)  
+1.  [Abra a guia Trechos de Código](#open-the-snippets-tab).  
 1.  Passe o mouse no nome do trecho, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Renomear**.  
     
 ## <a name="delete-snippets"></a>Excluir trechos de código  
 
-1.  [Abra o **painel Trechos de** Código.](#open-the-snippets-pane)  
+1.  [Abra a guia Trechos de Código](#open-the-snippets-tab).  
 1.  Passe o mouse no nome do trecho, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Remover**.  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  

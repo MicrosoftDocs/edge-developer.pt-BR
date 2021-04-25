@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439588"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519405"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 | Atualização difícil | `Control`+`F5` ou `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Pesquise texto no painel atual.  Não há suporte nas ferramentas **Auditorias,** **Aplicativos** **e Segurança** | `Control`+`F` | `Command`+`F` |  
 | Abre a **guia Pesquisa** na [Gaveta][DevtoolsCustomizeIndexDrawer], que permite que você pesquise texto em todos os recursos carregados | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir um arquivo no painel **Fontes** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
+| Abra um arquivo na ferramenta **Fontes** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Reduzir | `Control`+`-` | `Command`+`-` |  
 | Restaurar o nível de zoom padrão | `Control`+`0` | `Command`+`0` |  
@@ -160,7 +160,7 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Execute comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Gaveta - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Alterar o posicionamento do DevTools - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  

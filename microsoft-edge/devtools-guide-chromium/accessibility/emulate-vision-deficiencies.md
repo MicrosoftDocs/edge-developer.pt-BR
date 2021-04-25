@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: eec3c95bac93e600acf1887c8d31cea2173c6aee
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397871"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519167"
 ---
 # <a name="emulate-vision-deficiencies"></a>Emular deficiências visuais
 
@@ -70,7 +70,7 @@ O menu **Renderização** aparece na gaveta.
 
 Você também pode usar **o Menu de Comando** para acessar as diferentes simulações.  
 
-1.  Selecione `Control` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\) para abrir o **Menu de Comando**.  
+1.  Selecione `Ctrl` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\) para abrir o **Menu de Comando**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="O Menu De comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        O **Menu De comando**  

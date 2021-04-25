@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398949"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519342"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,11 +30,10 @@ ms.locfileid: "11398949"
 
 # <a name="mark-content-scripts-as-library-code"></a>Marcar scripts de conteúdo como código biblioteca  
 
-Ao usar o **painel Fontes** do Microsoft Edge DevTools para passar o [código,][DevToolsJavascriptStepThroughCode]às vezes você pausa no código que não reconhece.  Você provavelmente fez uma pausa no código para uma das Extensões do Microsoft Edge instaladas.  Conclua as etapas a seguir para não pausar no código de extensão.  
+Quando você usa a **ferramenta Sources** para passar [pelo código][DevToolsJavascriptStepThroughCode], às vezes você pausa no código que não reconhece.  Você provavelmente fez uma pausa no código para uma das Extensões do Microsoft Edge instaladas.  Para não pausar no código de extensão, conclua as seguintes ações.  
 
-1.  Abra DevTools, escolha **Personalizar e controlar o DevTools** \( `...` \) > **Configurações**.  Você também pode abrir **Configurações** selecionando `F1` .  
-
-1.  Escolha o **painel de código** biblioteca que abre a seção Código da **Biblioteca** da Estrutura **de Configurações**.  
+1.  No DevTools, no canto superior direito, escolha o ícone de engrenagem (**Configurações**).  A página **Configurações** é exibida.  
+1.  Abaixo **Configurações,** escolha **Ignorar Lista**.  A **seção Código da Biblioteca** da Estrutura de **Configurações** é exibida.  
 1.  A turn on the **Mark content scripts as Library code checkbox.**  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar a caixa de seleção Marcar scripts de conteúdo como código da biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::

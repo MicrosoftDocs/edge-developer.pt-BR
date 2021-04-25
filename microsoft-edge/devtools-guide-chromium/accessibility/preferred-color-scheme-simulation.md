@@ -7,19 +7,19 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 84f482605acd6edab6829e00d5fa31f927ebc032
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 1cdc9601e9e6fea1f6921c6cc40a1ed8232a0da8
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398298"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519146"
 ---
 # <a name="dark-or-light-color-scheme-simulation"></a>Simulação do Esquema de Cores Escuras ou Claras  
 
 Os sistemas operacionais têm uma maneira de exibir qualquer aplicativo em cores mais escuras ou mais claras.  Ter um produto Web com um tema claro em um sistema operacional de modo escuro é irritante e pode ser um problema de acessibilidade para alguns usuários.  Na Web, você pode usar a Consulta de Mídia CSS do esquema [prefers-color][MDNPrefersColorScheme] para detectar se os usuários preferem exibir seu produto em um esquema de cores mais escuro ou mais claro.  Use [o Microsoft Edge DevTools][DevtoolsIndex] para simular uma alteração do modo escuro para o modo claro sem precisar alterar todo o sistema operacional.  
 
 1.  Abra o **Menu de Comando**.  
-    1.  Selecione `Control` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\).  
+    1.  Selecione `Ctrl` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\).  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="O Menu De comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            O **Menu De comando**  
