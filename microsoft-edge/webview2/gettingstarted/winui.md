@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicativos winui, winui, edge, CoreWebView2, controle do navegador, html de borda, como começar, Como começar, .NET
-ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 8ecc40a1940bfb656e2dfdc7ab6f57effa90717d
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461203"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526056"
 ---
 # <a name="getting-started-with-webview2-in-winui-3-preview"></a>Como começar com WebView2 no WinUI 3 (Visualização)  
 
@@ -279,8 +279,7 @@ Parabéns, você criou seu primeiro aplicativo WebView2.
 
 Para continuar a aprender mais sobre WebView2, navegue até os seguintes recursos.  
 
-### <a name="see-also"></a>Consulte também  
-
+*   Para saber mais sobre como criar aplicativos WebView2, navegue até Práticas recomendadas de desenvolvimento [webView2.][WV2BestPractices]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2][Webview2IndexNextSteps].  
     
@@ -296,6 +295,7 @@ Para continuar a aprender mais sobre WebView2, navegue até os seguintes recurso
 Para enviar suas solicitações ou bugs de recursos específicos do WinUI, navegue até [Problemas - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] e escolha **Novo problema**.  
 
 <!-- links -->  
+[WV2BestPractices]: ../concepts/developer-guide.md "Práticas recomendadas de desenvolvimento do WebView2 | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introdução ao Microsoft Edge WebView2 (Visualização) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas - Introdução ao Microsoft Edge WebView2 (Visualização) | Microsoft Docs"  

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicativos winforms, winforms, edge, CoreWebView2, controle do navegador, html de borda, como começar, Como começar, .NET, formulários do Windows
-ms.openlocfilehash: 9d797e87ff8b5f11d957442c2cea08ae2f8c66a7
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 408d225c6c0abe54483226e7004a386d367d65ab
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11470862"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526084"
 ---
 # <a name="getting-started-with-webview2-in-windows-forms"></a>Como começar com o WebView2 no Windows Forms
 
@@ -340,8 +340,7 @@ Parabéns, você criou seu primeiro aplicativo WebView2.
 
 Para continuar a aprender mais sobre WebView2, navegue até os seguintes recursos.  
 
-### <a name="see-also"></a>Consulte também  
-
+*   Para saber mais sobre como criar aplicativos WebView2, navegue até Práticas recomendadas de desenvolvimento [webView2.][WV2BestPractices]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2][Webview2IndexNextSteps].  
 *   Para obter informações detalhadas sobre a API WebView2, navegue até [referência de API][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
@@ -352,6 +351,7 @@ Para continuar a aprender mais sobre WebView2, navegue até os seguintes recurso
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "Práticas recomendadas de desenvolvimento do WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas - Introdução ao Microsoft Edge WebView2 (Visualização) | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
 

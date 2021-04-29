@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
-ms.openlocfilehash: 19bc0c5600ebd072ad9a6aa61d2a965e999865ce
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 47f24b160797ce0ab7a7cb6a656c4f6b4e5696ac
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11306156"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526063"
 ---
 # <a name="getting-started-with-webview2"></a>Como começar com o WebView2  
 
@@ -287,10 +287,9 @@ Parabéns, você criou seu primeiro aplicativo WebView2.
 
 ## <a name="next-steps"></a>Próximas etapas  
 
-Muitas das funcionalidades do WebView2 não são abordadas neste artigo, a seção a seguir fornece mais recursos.  
+Para obter funcionalidades adicionais do WebView2 que não são abordadas neste artigo, revise os recursos a seguir.  
 
-### <a name="see-also"></a>Consulte também  
-
+*   Para saber mais sobre como criar aplicativos WebView2, navegue até Práticas recomendadas de desenvolvimento [webView2.][WV2BestPractices]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Para um aplicativo de exemplo criado usando WebView2, navegue até [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Para obter informações detalhadas sobre a API WebView2, navegue até [referência de API][Webview2ReferenceWin32].  
@@ -301,6 +300,7 @@ Muitas das funcionalidades do WebView2 não são abordadas neste artigo, a seç�
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "Práticas recomendadas de desenvolvimento do WebView2 | Microsoft Docs"  
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Desenvolvedor do Microsoft Edge"  
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  

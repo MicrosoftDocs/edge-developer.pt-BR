@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicativos wpf, wpf, borda, CoreWebView2, controle do navegador, html de borda, iniciando, Iniciando, .NET
-ms.openlocfilehash: 14e6b64e36f6354554957d2c7953f789024d23c9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 1ced88ebd80d663ac2bd25840174d8505729bf32
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470834"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526077"
 ---
 # <a name="getting-started-with-webview2-in-wpf"></a>Como começar com WebView2 no WPF
 
@@ -335,8 +335,7 @@ Parabéns, você criou seu primeiro aplicativo WebView2.
 
 Para continuar a aprender mais sobre WebView2, navegue até os seguintes recursos.  
 
-### <a name="see-also"></a>Consulte também  
-
+*   Para saber mais sobre como criar aplicativos WebView2, navegue até Práticas recomendadas de desenvolvimento [webView2.][WV2BestPractices]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples no][GithubMicrosoftedgeWebview2samplesMain] GitHub.  
 *   Para obter informações mais detalhadas sobre a API WebView2, navegue até [referência de API](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2](../index.md#next-steps).  
@@ -347,6 +346,7 @@ Para continuar a aprender mais sobre WebView2, navegue até os seguintes recurso
 
 <!-- links -->  
  
+[WV2BestPractices]: ../concepts/developer-guide.md "Práticas recomendadas de desenvolvimento do WebView2 | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Namespace Microsoft.Web.WebView2.Wpf | Microsoft Docs"  
