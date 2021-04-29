@@ -409,6 +409,8 @@
               href: webview2/concepts/versioning.md
             - name: Modelo de threading
               href: webview2/concepts/threading-model.md
+            - name: Práticas recomendadas de desenvolvimento do WebView2
+              href: webview2/concepts/developer-guide.md
             - name: Convenções da API do Win32
               href: webview2/concepts/win32-api-conventions.md
         - name: Notas de versão
