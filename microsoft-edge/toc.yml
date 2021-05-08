@@ -379,7 +379,7 @@
       items:
         - name: Visão geral do WebView2
           href: webview2/index.md
-        - name: Começando
+        - name: Introdução
           items:
             - name: Win32
               href: webview2/get-started/win32.md
