@@ -3,17 +3,17 @@ description: Convenções de API Do Win32 C++ WebView2
 title: Convenções de API Do Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda
-ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470855"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535640"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Convenções de API Do Win32 C++ WebView2  
 
@@ -139,9 +139,9 @@ Se você usar e analisar URIs, talvez você queira usar os seguintes sinalizador
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```  
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Ver também  
 
-*   Para começar a usar WebView2 Win32 C/C++, navegue até [Iniciando com guias webView2][Webview2IndexGettingStarted].  
+*   Para começar a usar WebView2 Win32 C/C++, navegue até [Começar com guias webView2][Webview2IndexGetStarted].  
 *   Para obter informações mais detalhadas sobre APIs WebView2, navegue até [referência de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrar em contato com a equipe do Microsoft Edge WebView  
@@ -150,7 +150,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Como começar com o WebView2 | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Começar com WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"  
 

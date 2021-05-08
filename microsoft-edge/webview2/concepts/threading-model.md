@@ -3,17 +3,17 @@ description: Modelo de threading
 title: Threading model | WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/29/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda
-ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
+ms.openlocfilehash: 9a7ce3d66e53b832d4430afb153e6539d97e5db7
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "11462040"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535605"
 ---
 # <a name="threading-model"></a>Modelo de threading 
 
@@ -67,9 +67,9 @@ private async void Button_Click(object sender, EventArgs e)
 }
 ```  
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Ver também  
 
-*   Para começar a usar o WebView2, navegue até Guias de Guia [de Iniciação da WebView2.][Webview2IndexGettingStarted]  
+*   Para começar a usar o WebView2, navegue até Guias de Início [da WebView2.][Webview2IndexGetStarted]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples no][GithubMicrosoftedgeWebview2samples] GitHub.  
 *   Para obter informações mais detalhadas sobre APIs WebView2, navegue até [referência de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2][Webview2IndexNextSteps].  
@@ -80,7 +80,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Introdução - Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Introdução - Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas - Introdução ao Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  

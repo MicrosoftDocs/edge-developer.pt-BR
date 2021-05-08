@@ -382,21 +382,21 @@
         - name: Começando
           items:
             - name: Win32
-              href: webview2/gettingstarted/win32.md
+              href: webview2/get-started/win32.md
             - name: WPF
-              href: webview2/gettingstarted/wpf.md
+              href: webview2/get-started/wpf.md
             - name: Windows Forms
-              href: webview2/gettingstarted/winforms.md
+              href: webview2/get-started/winforms.md
             - name: WinUI 3.0
-              href: webview2/gettingstarted/winui.md
+              href: webview2/get-started/winui.md
         - name: Conceitos
           items:
             - name: Diferenças entre Microsoft Edge e WebView2
-              href: webview2/concepts/browserfeatures.md
+              href: webview2/concepts/browser-features.md
             - name: Distribuindo meu aplicativo
               href: webview2/concepts/distribution.md
             - name: Gerenciamento de pastas de dados do usuário
-              href: webview2/concepts/userdatafolder.md
+              href: webview2/concepts/user-data-folder.md
             - name: Gerenciando aplicativos WebView2
               href: webview2/concepts/enterprise.md
             - name: Eventos de navegação
@@ -414,21 +414,21 @@
             - name: Convenções da API do Win32
               href: webview2/concepts/win32-api-conventions.md
         - name: Notas de versão
-          href: webview2/releasenotes.md
+          href: webview2/release-notes.md
         - name: Mapa
           href: webview2/roadmap.md
         - name: Como
           items:
             - name: Cenários estendidos de JavaScript no WebView2
-              href: webview2/howto/js.md
+              href: webview2/how-to/javascript.md
             - name: Vincular carregador estaticamente
-              href: webview2/howto/static.md
+              href: webview2/how-to/static.md
             - name: Depurar o WebView2
-              href: webview2/howto/debug.md
+              href: webview2/how-to/debug.md
             - name: Automatizar com o Driver do Microsoft Edge
-              href: webview2/howto/webdriver.md
+              href: webview2/how-to/webdriver.md
             - name: Usar o Protocolo Chromium DevTools no WebView2
-              href: webview2/howto/chromium-devtools-protocol.md
+              href: webview2/how-to/chromium-devtools-protocol.md
         - name: Referência
           href: webview2/webview2-api-reference.md
           items:
