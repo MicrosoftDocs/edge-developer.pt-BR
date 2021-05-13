@@ -1,18 +1,18 @@
 ---
 description: Abra a ferramenta "Renderização" e selecione Emular mídia CSS > impressão.
-title: Forçar o Microsoft Edge DevTools no modo Visualização de Impressão (Tipo de Mídia de Impressão CSS)
+title: Forçar Microsoft Edge DevTools no modo Visualização de Impressão (Tipo de Mídia de Impressão CSS)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6c49d956a9a7185b162ca8e2996e7b3e715b40ab
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399075"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564424"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11399075"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Forçar o Microsoft Edge DevTools no modo visualização de impressão  
+# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Forçar Microsoft Edge DevTools no modo visualização de impressão  
 
 A [consulta de mídia de][MDNUsingMediaQueries] impressão controla a aparência da sua página quando impressa.  Para forçar sua página no modo de visualização de impressão:  
 
@@ -45,7 +44,7 @@ A [consulta de mídia de][MDNUsingMediaQueries] impressão controla a aparência
        Modo de visualização de impressão  
     :::image-end:::  
     
-A partir daqui, você pode exibir e alterar seu CSS, como qualquer outra página da Web.  Navegue [até Começar a exibir e alterar CSS][DevToolsCSSGetStarted].  
+A partir daqui, você pode exibir e alterar seu CSS, como qualquer outra página da Web.  Navegue [até Introdução exibindo e alterando CSS][DevToolsCSSGetStarted].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -53,7 +52,7 @@ A partir daqui, você pode exibir e alterar seu CSS, como qualquer outra página
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
 [DevToolsCSSGetStarted]: ./index.md "Começar a exibir e alterar o CSS | Microsoft Docs"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Usando consultas de mídia | MDN"  
@@ -68,4 +67,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

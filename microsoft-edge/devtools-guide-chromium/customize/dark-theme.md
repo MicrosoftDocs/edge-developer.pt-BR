@@ -3,16 +3,16 @@ description: Como ativar o tema escuro no Microsoft Edge DevTools.
 title: Habilitar Tema Escuro no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: dc857a65deef9b62614da79d2648c8b92ac9db07
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2ba44f03cabe215a6eb524f34921671919bde421
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399019"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564375"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,21 +27,20 @@ ms.locfileid: "11399019"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>Habilitar Tema Escuro no Microsoft Edge DevTools  
 
-Você pode habilitar o tema escuro [em Configurações](#set-up-dark-theme-from-settings) ou no [Menu de Comando](#set-up-dark-theme-from-the-command-menu).  
+Você pode habilitar o tema escuro [no Configurações](#set-up-dark-theme-from-settings) ou no [Menu de Comando.](#set-up-dark-theme-from-the-command-menu)  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="O tema escuro" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
    O tema escuro  
 :::image-end:::  
 
-## <a name="set-up-dark-theme-from-settings"></a>Configurar o tema escuro de Configurações  
+## <a name="set-up-dark-theme-from-settings"></a>Configurar o tema escuro do Configurações  
 
-1.  Escolha **Personalizar e controlar DevTools** \( `...` \) > **Configurações**.  Você também pode abrir **Configurações** selecionando `F1` .  
+1.  Escolha **Personalizar e controlar DevTools** \( `...` \) > **Configurações**.  Você também pode abrir **o Configurações** selecionando `F1` .  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Abra Configurações" lightbox="../media/customize-options-settings.msft.png":::
-       Configurações **abertas**  
+       Abra **Configurações**  
     :::image-end:::  
 
 1.  No painel **Preferências,** em **Aparência,** escolha **Tema**  >  **Escuro**.  
@@ -77,4 +76,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

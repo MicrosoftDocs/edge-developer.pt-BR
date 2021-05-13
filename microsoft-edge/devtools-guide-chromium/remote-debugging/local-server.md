@@ -3,16 +3,16 @@ description: Hospede um site em um servidor Web de máquina de desenvolvimento e
 title: Acessar servidores locais
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461259"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565089"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "11461259"
 
 Hospede um site em um servidor Web de máquina de desenvolvimento e, em seguida, acesse o conteúdo de um dispositivo Android.  
 
-Com um cabo USB e o Microsoft Edge DevTools, execute um site de uma máquina de desenvolvimento e, em seguida, veja o site em um dispositivo Android.  
+Com um cabo USB e Microsoft Edge DevTools, execute um site de uma máquina de desenvolvimento e, em seguida, exibir o site em um dispositivo Android.  
 
 ### <a name="summary"></a>Resumo  
 
@@ -62,7 +62,7 @@ O encaminhamento de porta agora está definido.  Examine o indicador de status d
    Status de encaminhamento de porta  
 :::image-end:::  
 
-Para exibir o conteúdo, abra o Microsoft Edge em seu dispositivo Android e vá para a porta especificada `localhost` no campo Porta **do** dispositivo.  Por exemplo, se você entrou `5000` no campo, visite `localhost:5000` .  
+Para exibir o conteúdo, abra Microsoft Edge no dispositivo Android e vá para a porta especificada no `localhost` campo **Porta do** dispositivo.  Por exemplo, se você entrou `5000` no campo, visite `localhost:5000` .  
 
 ## <a name="map-to-custom-local-domains"></a>Mapear para domínios locais personalizados  
 
@@ -72,7 +72,7 @@ Por exemplo, suponha que seu site use uma biblioteca JavaScript de terceiros que
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurar o encaminhamento de porta para o servidor proxy  
 
-Para mapear um domínio personalizado, você deve executar um servidor proxy em sua máquina de desenvolvimento.  Exemplos de servidores proxy são [Carlos][CharlesWebDebuggingProxy], [Lula][SquidOptimisingWebDelivery]e [Fiddler][FiddlerWebDebuggingProxy].  
+Para mapear um domínio personalizado, você deve executar um servidor proxy em sua máquina de desenvolvimento.  Exemplos de servidores proxy são [Carlos][CharlesWebDebuggingProxy], [Lula][SquidCacheWiki]e [Fiddler][TelerikFiddler].  
 
 Para configurar o encaminhamento de porta para um proxy:  
 
@@ -87,7 +87,7 @@ Para configurar o encaminhamento de porta para um proxy:
 
 Em seguida, você precisa configurar seu dispositivo Android para se comunicar com o servidor proxy.  
 
-1.  Em seu dispositivo Android, navegue até **Configurações**  >  **Wi-Fi**.  
+1.  Em seu dispositivo Android, navegue **até Configurações**  >  **Wi-Fi**.  
 1.  Pressione o nome da rede à qual você está conectado no momento.  
     
     > [!NOTE]
@@ -119,9 +119,9 @@ Se o servidor Web estiver sendo executado em uma porta não padrão, lembre-se d
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Proxy de Depuração da Web de Carlos"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "lula : Otimizando a Entrega da Web"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Wiki proxy wiki de lula"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Proxy de Depuração da Web Gratuito"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Proxy de Depuração da Web Gratuito"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -133,5 +133,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

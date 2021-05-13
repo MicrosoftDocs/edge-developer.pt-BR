@@ -1,18 +1,18 @@
 ---
 description: Um guia sobre como abrir o Menu de Comando, executar comandos, revisar outras ações e muito mais.
-title: Executar comandos com o Menu de Comando do Microsoft Edge DevTools
+title: Executar comandos com o menu de comando Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 973b440a27b0c4c06ba118fc09e4162a8fa346e8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519188"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564487"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519188"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Executar comandos com o menu de comando Microsoft Edge DevTools  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Executar comandos com o Menu de Comando do Microsoft Edge DevTools  
-
-O Menu de Comando fornece uma maneira rápida de navegar na interface do usuário do Microsoft Edge DevTools e realizar tarefas comuns, como desabilitar [JavaScript][JavascriptDisable].  Você pode estar familiarizado com um recurso semelhante no Microsoft Visual Studio Code chamado de [Paleta][VisualStudioCodeUICommandPalette]de Comandos , que foi a inspiração original para o Menu de Comando.  
+O Menu de Comando fornece uma maneira rápida de navegar na interface do usuário Microsoft Edge DevTools e realizar tarefas comuns, como desabilitar [JavaScript][JavascriptDisable].  Você pode estar familiarizado com um recurso semelhante no código Microsoft Visual Studio chamado de [Paleta][VisualStudioCodeUICommandPalette]de Comandos , que foi a inspiração original para o Menu de Comando.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Usando o Menu de Comando para desabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Usando o Menu de Comando para desabilitar JavaScript  
@@ -64,9 +63,9 @@ Se você usar o fluxo de trabalho descrito em Abrir o Menu de Comando, o [Menu](
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Desabilitar JavaScript com o Microsoft Edge DevTools | Microsoft Docs"  
+[JavascriptDisable]: ../javascript/disable.md "Desabilitar JavaScript com Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos - Visual Studio interface do usuário de código"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos - Visual Studio Code interface do usuário"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -78,4 +77,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Saiba como detectar problemas de rede no painel Rede do Microsoft E
 title: Guia de problemas de rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c99f43872abe04800880c63ee4126bfcdd633edb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439616"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564977"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439616"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="network-issues-guide"></a>Guia de problemas de rede  
 
 Este guia mostra como detectar problemas de rede ou oportunidades de otimização no painel Rede do Microsoft Edge DevTools.  
 
-Para saber as noções básicas da **ferramenta Rede,** navegue até [Get Started][NetworkPerformance].  
+Para saber os conceitos básicos da **ferramenta Rede,** navegue até [Introdução][NetworkPerformance].  
 
 ## <a name="queued-or-stalled-requests"></a>Solicitações em fila ou paralisadas  
 
@@ -48,7 +47,7 @@ Na **Cascata,** na figura a seguir, as seis primeiras solicitações para `edge-
 
 **Causas**  
 
-Muitas solicitações estão sendo feitas em um único domínio.  Em conexões HTTP/1.0 ou HTTP/1.1, o Microsoft Edge permite no máximo seis conexões TCP simultâneas por host.  
+Muitas solicitações estão sendo feitas em um único domínio.  Em conexões HTTP/1.0 ou HTTP/1.1, Microsoft Edge permite no máximo seis conexões TCP simultâneas por host.  
 
 **Correções**  
 
@@ -75,7 +74,7 @@ Na figura a seguir, a barra longa e verde na **Cascata** indica que a solicitaç
     
 **Correções**  
 
-*   Se a conexão for lenta, considere hospedar seu conteúdo em uma CDN ou alterar provedores de hospedagem.  
+*   Se a conexão for lenta, considere hospedar seu conteúdo em um CDN ou alterar provedores de hospedagem.  
 *   Se o servidor for lento, considere otimizar consultas de banco de dados, implementar um cache ou modificar a configuração do servidor.  
     
 ## <a name="slow-content-download"></a>Download de conteúdo lento  
@@ -97,7 +96,7 @@ Na figura a seguir, a barra longa e azul na **Cascata** ao lado do png significa
     
 **Correções**  
 
-*   Considere hospedar seu conteúdo em uma CDN ou alterar provedores de hospedagem.  
+*   Considere hospedar seu conteúdo em um CDN ou alterar provedores de hospedagem.  
 *   Envie menos bytes otimizando suas solicitações.  
     
 <!--   ## Contribute knowledge  
@@ -130,5 +129,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors/jonathangarbee
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee

@@ -3,16 +3,16 @@ description: Saiba como usar o Microsoft Edge e o DevTools para encontrar proble
 title: Corrigir problemas de memória
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: afaea8ca561bd975490d9153cda40877786a0f08
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3b2405d23dd6ee349484c9ba66d195e3ed12144b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397829"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565026"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11397829"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="fix-memory-problems"></a>Corrigir problemas de memória  
 
 Saiba como usar o Microsoft Edge e o DevTools para encontrar problemas de memória que afetam o desempenho da página, incluindo vazamentos de memória, inchação de memória e coletas de lixo frequentes.  
 
 ### <a name="summary"></a>Resumo  
 
-*   Descubra quanta memória sua página está usando no momento com o Gerenciador de Tarefas do Navegador do Microsoft Edge.  
+*   Descubra quanta memória sua página está usando no momento com o Gerenciador de Tarefas Microsoft Edge Navegador.  
 *   Visualize o uso de memória ao longo do tempo com o **painel Memória.**  
 *   Identificar árvores DOM desvinculadas \(uma causa comum de vazamentos de memória\) com **o instantâneo heap**.  
 *   Descubra quando a nova memória está sendo alocada em sua pilha JavaScript \(pilha JS\) com **instrumentação de**Alocação na linha do tempo .  
@@ -59,14 +58,14 @@ Não há números rígidos aqui, porque diferentes dispositivos e navegadores t�
 
 A chave aqui é usar o modelo RAIL e se concentrar em seus usuários.  Descubra quais dispositivos são populares com seus usuários e teste sua página nesses dispositivos.  Se a experiência for consistentemente ruim, a página pode estar excedendo os recursos de memória desses dispositivos.  
 
-## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Monitorar o uso de memória em tempo real com o Gerenciador de Tarefas do Navegador do Microsoft Edge  
+## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Monitorar o uso de memória em tempo real com o Gerenciador de Tarefas Microsoft Edge Navegador  
 
-Use o Gerenciador de Tarefas do Navegador do Microsoft Edge como ponto de partida para a investigação de problemas de memória.  O Gerenciador de Tarefas do Navegador do Microsoft Edge é um monitor em tempo real que informa a memória que uma página está usando no momento.  
+Use o Microsoft Edge de Tarefas do Navegador como ponto de partida para a investigação de problemas de memória.  O Microsoft Edge de Tarefas do Navegador é um monitor em tempo real que informa quanta memória uma página está usando no momento.  
 
-1.  Selecione `Shift` + `Esc` ou navegue até o menu principal do Microsoft Edge **** e escolha Mais ferramentas  >  **Gerenciador** de Tarefas do Navegador para abrir o Gerenciador de Tarefas do Navegador do Microsoft Edge.  
+1.  Selecione `Shift` + `Esc` ou navegue até o menu Microsoft Edge principal **** e escolha Mais ferramentas  >  **Gerenciador** de Tarefas do Navegador para abrir o Gerenciador de Tarefas Microsoft Edge Navegador.  
     
-    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrindo o Gerenciador de Tarefas do Navegador do Microsoft Edge" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
-       Figura 1: Abrindo o Gerenciador de Tarefas do Navegador do Microsoft Edge  
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrindo o Gerenciador de Tarefas Microsoft Edge Navegador" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+       Figura 1: Abrindo o Gerenciador de Tarefas Microsoft Edge Navegador  
     :::image-end:::  
     
 1.  Passe o mouse no header da tabela do Gerenciador de Tarefas do Navegador do Microsoft Edge, abra o menu contextual \(clique com o botão direito do mouse\) e habilite a memória **JavaScript.**  
@@ -231,7 +230,7 @@ DevTools mostra uma divisão da alocação de memória por função.  O modo de 
 
 Se sua página parece pausar com frequência, talvez você tenha problemas de coleta de lixo.  
 
-Você pode usar o Gerenciador de Tarefas do Navegador do Microsoft Edge ou gravações de memória de desempenho para detectar coleta de lixo frequente.  No Gerenciador de Tarefas do Navegador do Microsoft Edge, os valores de **Memória** ou Memória **JavaScript** frequentemente crescentes e em queda representam coleta de lixo frequente.  Em Gravações de desempenho, as alterações frequentes \(crescente e em queda\) para a pilha JS ou gráficos de contagem de nós indicam coleta de lixo frequente.  
+Você pode usar o Gerenciador de Tarefas do Navegador Microsoft Edge ou gravações de memória de desempenho para detectar coleta de lixo frequente.  No Gerenciador de Tarefas Microsoft Edge Navegador, os **** valores de Memória ou Memória **JavaScript** em queda e crescente representam coleta de lixo frequente.  Em Gravações de desempenho, as alterações frequentes \(crescente e em queda\) para a pilha JS ou gráficos de contagem de nós indicam coleta de lixo frequente.  
 
 Depois de identificar o problema, você poderá usar uma **instrumentação de** Alocação no registro de linha do tempo para descobrir onde a memória está sendo alocada e quais funções estão causando as alocações.  
 
@@ -263,4 +262,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

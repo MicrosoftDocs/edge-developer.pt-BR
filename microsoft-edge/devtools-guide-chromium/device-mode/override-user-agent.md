@@ -1,18 +1,18 @@
 ---
 description: Abra a ferramenta Condições de Rede, desabilite Selecionar automaticamente e escolha na lista ou insira uma cadeia de caracteres personalizada.
-title: Substituir a cadeia de caracteres de agente do usuário do Microsoft Edge DevTools
+title: Substituir a cadeia de caracteres de agente do usuário Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 50d831847342c749cd36f203998351d53325a6f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398690"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564291"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398690"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Substituir a cadeia de caracteres de agente do usuário Microsoft Edge DevTools  
 
-# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Substituir a cadeia de caracteres de agente do usuário do Microsoft Edge DevTools  
-
-Para substituir a [cadeia de caracteres de][MDNUserAgent] agente do usuário do Microsoft Edge DevTools:  
+Para substituir a [cadeia de caracteres de][MDNUserAgent] agente do usuário Microsoft Edge DevTools:  
 
 1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o **Menu de Comando**.  
     
@@ -65,4 +64,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

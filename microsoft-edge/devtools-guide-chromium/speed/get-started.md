@@ -1,18 +1,18 @@
 ---
 description: Saiba como usar o Microsoft Edge DevTools para encontrar maneiras de fazer com que seus sites carreguem mais rápido.
-title: Otimizar a velocidade do site com o Microsoft Edge DevTools
+title: Otimizar a velocidade do site com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519608"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564879"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519608"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>Otimizar a velocidade do site com o Microsoft Edge DevTools  
+# <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>Otimizar a velocidade do site com Microsoft Edge DevTools  
 
 ## <a name="goal-of-tutorial"></a>Objetivo do tutorial  
 
@@ -71,20 +70,20 @@ Primeiro, você deve configurar o site para que possa fazer alterações nele ma
        O menu que aparece depois de escolher **Tony**  
     :::image-end:::  
     
-1.  Escolha **Projeto de Remix**.  O nome do projeto muda de **tony** para algum nome gerado aleatoriamente.  Agora você tem sua própria cópia editável do código.  Mais tarde, você pode fazer alterações nesse código.  
+1.  Escolha **Mesclar Project**.  O nome do projeto muda de **tony** para algum nome gerado aleatoriamente.  Agora você tem sua própria cópia editável do código.  Mais tarde, você pode fazer alterações nesse código.  
 1.  Escolha **Mostrar** e escolher **Em uma nova janela**.  A demonstração é aberta em uma nova guia.  Essa guia é chamada de guia **de demonstração**.  Pode levar algum tempo para o site ser carregado.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="A guia demonstração" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
        A guia demonstração  
     :::image-end:::  
     
-1.  Selecione `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` ou \(macOS\).  O Microsoft Edge DevTools abre junto com a demonstração.  
+1.  Selecione `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` ou \(macOS\).  Microsoft Edge O DevTools abre junto com a demonstração.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools e a demonstração" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools e a demonstração  
     :::image-end:::  
     
-Para o restante das capturas de tela neste tutorial, DevTools é mostrado em uma janela separada.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Undock` **** para abrir o Menu de Comando, digitando e selecionando Desfazer em janela separada.  
+Para o restante das capturas de tela neste tutorial, DevTools é mostrado em uma janela separada.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Undock` **** para abrir o Menu de Comando, digitar e selecionar Desfazer em janela separada .  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="DevTools DevTools desfaçada" lightbox="../media/speed-console.msft.png":::
    DevTools DevTools desfaçada  
@@ -120,7 +119,7 @@ A linha de base é um registro de como o site foi executado antes de você fazer
     
 #### <a name="handling-report-errors"></a>Manipulando erros de relatório  
 
-Se você receber um erro no relatório do painel Auditorias, tente executar a guia demonstração de uma janela **InPrivate** sem nenhuma outra guia aberta.  Isso garante que você está executando o Microsoft Edge de um estado limpo.  Extensões do Microsoft Edge, em particular, frequentemente interferem no processo de auditoria.  
+Se você receber um erro no relatório do painel Auditorias, tente executar a guia demonstração de uma janela **InPrivate** sem nenhuma outra guia aberta.  Isso garante que você está executando Microsoft Edge de um estado limpo.  Microsoft Edge Extensões em particular geralmente interferem no processo de auditoria.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
@@ -137,7 +136,7 @@ O número na parte superior do relatório é a pontuação geral de desempenho d
    A pontuação geral do desempenho  
 :::image-end:::  
 
-A **seção Metrics** fornece medidas quantitativos do desempenho do site.  Cada métrica fornece informações sobre um aspecto diferente do desempenho.  Por exemplo, First **Contentful Paint** informa quando o conteúdo é pintado pela primeira vez na tela, o que é um marco importante na percepção do usuário sobre a carga da página, enquanto Time **To Interactive** marca o ponto no qual a página aparece pronta o suficiente para lidar com interações do usuário.  
+A **seção Metrics** fornece medidas quantitativos do desempenho do site.  Cada métrica fornece informações sobre um aspecto diferente do desempenho.  Por exemplo, First **Contentful Paint** informa quando o conteúdo é pintado pela primeira vez na tela, o que é um marco importante na percepção do usuário sobre a carga da página, enquanto Time **To Interactive** marca o ponto em que a página aparece pronta o suficiente para lidar com interações do usuário.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="A seção Métricas" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    A **seção Métricas**  
@@ -324,7 +323,7 @@ Para um aplicativo pequeno, fazer um resize único como este pode ser bom o sufi
     
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
-*   Use uma CDN de imagem que permite reorganizar dinamicamente uma imagem ao solicitá-la.  
+*   Use uma imagem CDN que permite que você ressize dinamicamente uma imagem ao solicitá-la.  
 *   No mínimo, otimize cada imagem.  Isso pode criar grandes economias.  
   Otimização é quando você executar uma imagem por meio de um programa especial que reduz o tamanho do arquivo de imagem.  Para obter mais dicas, navegue até [Essential Image Optimization][EssentialImageOptimization].  
     
@@ -372,7 +371,7 @@ Em resumo, quando você está trabalhando com seu próprio código, a ferramenta
 Os `jquery.js` arquivos e `lodash.js` são necessários para carregar a página?  A **ferramenta de bloqueio** solicitação exibe o que acontece quando os recursos não estão disponíveis.  
 
 1.  Escolha a **ferramenta Rede.**  
-1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) para abrir o Menu de Comando novamente.  
+1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o Menu de Comando novamente.  
 1.  Comece a digitar `blocking` e escolha Mostrar Bloqueio de **Solicitação.**  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="A ferramenta de bloqueio solicitação" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
@@ -426,7 +425,7 @@ O thread principal é onde o navegador faz a maior parte do trabalho necessário
 O objetivo é usar o painel Desempenho para analisar o trabalho que o thread principal está fazendo enquanto a página é carregada e encontrar maneiras de adiar ou remover o trabalho desnecessário.  
 
 1.  Escolha a **ferramenta Desempenho.**  
-1.  Escolha **Configurações de Captura** \( ![ Configurações de Captura ](../media/capture-icon.msft.png) \).  
+1.  Escolha **Capturar Configurações** \( Capture Configurações ![ ](../media/capture-icon.msft.png) \).  
 1.  Definir **Rede como** Slow **3G** e **CPU** como **6x de lentidão**.  Dispositivos móveis geralmente têm mais restrições de hardware do que laptops ou desktops, portanto, essas configurações permitem que você experimente a carga da página como se você estivesse usando um dispositivo menos poderoso.  
 1.  Escolha **Atualizar** \( ![ Atualizar ](../media/reload-icon.msft.png) \).  O DevTools atualiza a página e produz uma visualização de todo o trabalho executado para carregar a página.  Essa visualização é chamada de **rastreamento**.  
     
@@ -442,7 +441,7 @@ O rastreamento mostra a atividade cronologicamente, da esquerda para a direita. 
 
 Investigue o rastreamento para encontrar maneiras de fazer menos trabalho do JavaScript:  
 
-1.  Escolha a **seção Timings** para expandi-la.  Com base no fato de que pode haver várias medidas de [Timings][MDNUserTimingApi] do React, parece que o aplicativo de Tony está usando o modo de desenvolvimento do React.  Alternar para o modo de produção do React pode gerar algumas vitórias de desempenho fáceis.  
+1.  Escolha a **seção Timings** para expandi-la.  Com base no fato de que [][MDNUserTimingApi] pode haver um monte de medidas de tempo de React, parece que o aplicativo de Tony está usando o modo de desenvolvimento de React.  Alternar para o modo de produção de React pode gerar algumas vitórias de desempenho fáceis.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="A seção Timings" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        A **seção Timings**  
@@ -546,4 +545,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

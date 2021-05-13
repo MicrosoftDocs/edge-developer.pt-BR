@@ -1,22 +1,22 @@
 ---
 description: Emular deficiências de visão no Microsoft Edge DevTools.
-title: Emular deficiências de visão no Microsoft Edge DevTools (color blindness)
+title: Emular deficiências de visão em Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 1ab224f1dc70618dbef77ec6e6dbc22a0d1f47fb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519167"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564599"
 ---
-# <a name="emulate-vision-deficiencies"></a>Emular deficiências visuais
+# <a name="emulate-vision-deficiencies"></a>Emular deficiências visuais  
 
-Para atender melhor às necessidades [][ColorblindawarenessMain] de seus usuários com deficiência de visão de cor \(color blindness\), o [Microsoft Edge DevTools][DevtoolsIndex] permite simular deficiências de visão de cores específicas.  A **ferramenta Emular deficiências de visão** simula as seguintes categorias.  
+Para atender melhor às necessidades [][ColorblindawarenessMain] de seus usuários com deficiência de visão de cor \(color blindness\), Microsoft Edge [DevTools][DevtoolsIndex] permite simular deficiências de visão de cores específicas.  A **ferramenta Emular deficiências de visão** simula as seguintes categorias.  
 
 | Deficiência de visão de cor | Detalhes |  
 |:--- |:--- |  
@@ -37,7 +37,7 @@ Para simular uma deficiência de visão que está sendo aplicada ao seu produto 
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Abrir as Ferramentas de Renderização" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Abrir as Ferramentas **de Renderização**  
     :::image-end:::  
-
+    
 O menu **Renderização** aparece na gaveta.  
 
 1.  Role para baixo até o `Emulate vision deficiencies` item de menu e escolha o menu suspenso para exibir as opções.  
@@ -87,9 +87,9 @@ Você também pode usar **o Menu de Comando** para acessar as diferentes simula�
 
 <!-- links -->  
 
-[DevToolsIndex]: ../index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) ferramentas de desenvolvedor | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analisar o desempenho do tempo de execução | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "A organização Color Blind Awareness"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "A organização Color Blind Awareness"  
 
 [AmfcbMain]: https://www.amfcb.org "A American Foundation for the Color Blind (AFCB)"  

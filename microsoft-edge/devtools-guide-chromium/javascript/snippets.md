@@ -1,18 +1,18 @@
 ---
 description: Trechos de código são scripts pequenos que você pode escrever e executar na ferramenta Sources do Microsoft Edge DevTools.  Você pode acessar e executar recursos de qualquer página da Web.  Quando você executa um trecho, ele é executado a partir do contexto da página da Web aberta no momento.
-title: Executar trechos de código do JavaScript em qualquer página da Web com o Microsoft Edge DevTools
+title: Executar trechos de código do JavaScript em qualquer página da Web com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 4a84e959f652320f40a501a26e9ba763c7348b33
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519426"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564109"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519426"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Executar trechos de código do JavaScript em qualquer página da Web com o Microsoft Edge DevTools  
+# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Executar trechos de código do JavaScript em qualquer página da Web com Microsoft Edge DevTools  
 
 Se você estiver executando o mesmo código no [Console][DevtoolsConsoleIndex] repetidamente, considere salvar o código como um trecho.  Trechos de código são scripts que você escreveu na [ferramenta Fontes.][DevToolsSourcesTool]  Trechos de código têm acesso ao contexto JavaScript da página da Web e você pode executar trechos em qualquer página da Web.  As configurações de segurança da maioria das páginas da Web bloqueiam o carregamento de outros scripts em Trechos de Código.  Por esse motivo, você deve incluir todo o código em um arquivo.  
 
@@ -184,4 +183,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

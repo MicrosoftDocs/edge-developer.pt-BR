@@ -1,18 +1,18 @@
 ---
-description: Saiba como exibir, editar e excluir os cookies HTTP de uma página usando o Microsoft Edge DevTools.
-title: Exibir, editar e excluir cookies com o Microsoft Edge DevTools
+description: Saiba como exibir, editar e excluir os cookies HTTP de uma página usando Microsoft Edge DevTools.
+title: Exibir, editar e excluir cookies com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439679"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565054"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439679"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Exibir, editar e excluir cookies com Microsoft Edge DevTools  
 
-# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Exibir, editar e excluir cookies com o Microsoft Edge DevTools  
-
-[Cookies HTTP][MDNHTTPCookies] são usados principalmente para gerenciar sessões de usuário, armazenar preferências de personalização do usuário e acompanhar o comportamento do usuário.  Cookies também são a causa de todos os irritantes que **essa página usa** os formulários de consentimento de cookies encontrados na Web.  O guia a seguir ensina como exibir, editar e excluir os cookies HTTP de uma página da Web com [o Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[Cookies HTTP][MDNHTTPCookies] são usados principalmente para gerenciar sessões de usuário, armazenar preferências de personalização do usuário e acompanhar o comportamento do usuário.  Cookies também são a causa de todos os irritantes que **essa página usa** os formulários de consentimento de cookies encontrados na Web.  O guia a seguir ensina como exibir, editar e excluir os cookies HTTP para uma página da Web com Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="open-the-cookies-pane"></a>Abra o painel Cookies  
 
@@ -99,10 +98,10 @@ Escolha **Limpar Tudo** \( Limpar Tudo ![ ](../media/clear-icon.msft.png) \) par
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Ferramentas de desenvolvedor do Microsoft Edge (Chromium)"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Abra o Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Ferramentas de Desenvolvedor"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Abra Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Problema Chromium 232693: Implementando o campo de prioridade para cookies | Bugs de cromo"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Problema 232693: Implementando o campo de prioridade para cookies | Chromium Bugs"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP - Cookies permanentes | MDN"  
@@ -121,4 +120,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

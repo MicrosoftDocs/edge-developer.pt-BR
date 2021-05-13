@@ -3,16 +3,16 @@ description: Saiba como salvar as alterações feitas no DevTools no disco.
 title: Editar arquivos com o Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519419"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564662"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519419"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="edit-files-with-workspaces"></a>Editar arquivos com o Workspaces  
 
 Este tutorial fornece prática na configuração e no uso de um Espaço de Trabalho.  Depois de adicionar arquivos a um Espaço de Trabalho, as alterações feitas no código-fonte no DevTools são salvas no computador local e são preservadas após a atualização da página da Web.  
@@ -57,7 +56,7 @@ Os espaços de trabalho geralmente são capazes de mapear o código otimizado de
 
 Os espaços de trabalho são conhecidos por não funcionarem com a estrutura a seguir.  
 
-*   Criar Aplicativo React  
+*   Criar React App  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
@@ -287,7 +286,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Introdução aos mapas de origem | Treehouse Blog"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Uma introdução ao código-fonte Mapas | Treehouse Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
@@ -303,4 +302,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

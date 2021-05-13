@@ -1,18 +1,18 @@
 ---
-description: Uma referência de comandos de conveniência disponíveis no Console do Microsoft Edge DevTools.
+description: Uma referência de comandos de conveniência disponíveis no console Microsoft Edge DevTools.
 title: Referência de API de Utilitários do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c6a0356bd590809f9164aa62fd42156f901cef0f
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 436f2807c5fab1723ca6cc93fddc68d9ecf12db7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483279"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564529"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ A API Utilitários de Console contém uma coleção de comandos de conveniência
 *   Monitorar eventos DOM  
     
 > [!WARNING]
-> Os comandos a seguir só funcionam no **Console**do Microsoft Edge DevTools.  Os comandos não funcionarão se executados de seus scripts.  
+> Os comandos a seguir só funcionam no console **** Microsoft Edge DevTools .  Os comandos não funcionarão se executados de seus scripts.  
 
 Para obter mais informações sobre os métodos e e o restante dos `console.log()` `console.error()` `console.*` métodos, navegue até [Console API Reference][DevToolsConsoleApi].  
 
@@ -297,7 +297,7 @@ debug(method)
 ```  
 
 >[!NOTE]
-> O [problema do Chromium #1050237][CR1050237] está rastreando um bug com a `debug()` função.  Se você encontrar o problema, tente usar [pontos de interrupção.][DevtoolsJavascriptBreakpoints]  
+> O [Chromium problema #1050237][CR1050237] está rastreando um bug com a `debug()` função.  Se você encontrar o problema, tente usar [pontos de interrupção.][DevtoolsJavascriptBreakpoints]  
 
 Quando você solicita o método especificado, o depurador invoca e quebra dentro do método na **ferramenta Sources.**  Ele permite que você passo a passo e depurar o código.  
 
@@ -313,7 +313,7 @@ debug("debug");
 
 Use para parar de quebrar o método ou use a interface do usuário `undebug(method)` para desativar todos os pontos de interrupção.  
 
-Para obter mais informações sobre pontos de interrupção, navegue até Como pausar seu código com pontos [de interrupção no Microsoft Edge DevTools][DevtoolsJavascriptBreakpoints].  
+Para obter mais informações sobre pontos de interrupção, navegue até [How to pause your code with breakpoints in Microsoft Edge DevTools][DevtoolsJavascriptBreakpoints].  
 
 ---  
 
@@ -645,7 +645,7 @@ Este comando retorna uma matriz de objetos criados com o construtor especificado
 
 ---  
 
-## <a name="table"></a>table  
+## <a name="table"></a>tabela  
 
 ### <a name="console-syntax"></a>Sintaxe do console  
 
@@ -769,11 +769,11 @@ values(object);
 [DevtoolsConsoleApi]: ./api.md "Referência da API de console | Microsoft Docs"  
 [DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Referência da API de Console | Microsoft Docs"  
 
-[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "Como pausar seu código com pontos de interrupção Microsoft Edge DevTools | Microsoft Docs"  
 
 [DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "Acelerar o tempo de execução do JavaScript | Microsoft Docs"  
 
-[CR1050237]: https://crbug.com/1050237 "Problema 1050237: depuração(função) não está funcionando | Bugs do Chromium"  
+[CR1050237]: https://crbug.com/1050237 "Problema 1050237: depuração(função) não está funcionando | Chromium bugs"  
 
 [MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
@@ -790,4 +790,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

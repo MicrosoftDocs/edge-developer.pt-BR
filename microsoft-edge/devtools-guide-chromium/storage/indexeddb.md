@@ -1,18 +1,18 @@
 ---
 description: Como exibir e alterar dados IndexedDB com o painel de aplicativos e trechos.
-title: Exibir e alterar dados IndexedDB com o Microsoft Edge DevTools
+title: Exibir e alterar dados IndexedDB com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b0927ab436d1278f50b0dee099ba3526e5506762
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439707"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564802"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439707"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>Exibir e alterar dados IndexedDB com Microsoft Edge DevTools  
 
-# <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>Exibir e alterar dados IndexedDB com o Microsoft Edge DevTools  
-
-Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para exibir e alterar [dados IndexedDB.][MDNIndexedDBAPI]  Ele supõe que você está familiarizado com o DevTools.  Ele também supõe que você está familiarizado com IndexedDB.  Caso não, navegue até [Using IndexedDB][MDNUsingIndexedDB].  
+Este guia mostra como usar Microsoft Edge [DevTools][MicrosoftEdgeDevTools] para exibir e alterar [dados IndexedDB.][MDNIndexedDBAPI]  Ele supõe que você está familiarizado com o DevTools.  Ele também supõe que você está familiarizado com IndexedDB.  Caso não, navegue até [Using IndexedDB][MDNUsingIndexedDB].  
 
 ## <a name="view-indexeddb-data"></a>Exibir dados IndexedDB  
 
@@ -155,8 +154,8 @@ As teclas indexadasDB e os valores não podem ser editáveis na **ferramenta App
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Execute trechos de código do JavaScript em qualquer página com o Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Execute trechos de código do JavaScript em qualquer página com Microsoft Edge DevTools | Microsoft Docs"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Mostrar bancos de dados indexadosdb iframe - chromium - Monotrilho"  
 
@@ -175,4 +174,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

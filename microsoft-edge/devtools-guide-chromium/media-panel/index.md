@@ -3,16 +3,16 @@ description: Use a ferramenta Mídia para exibir informações e depurar os medi
 title: Exibir e depurar informações de players de mídia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398403"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564060"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398403"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-debug-media-players-information"></a>Exibir e depurar informações de players de mídia  
 
 Use a **ferramenta Mídia** no Microsoft Edge DevTools para exibir informações e depurar os media players por guia do navegador.  
@@ -117,15 +116,15 @@ Você pode optar por ocultar \(ou mostrar\) cada media player para uma experiên
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra o Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Começar com a depuração remota de dispositivos Android | Microsoft Docs"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizando a produtividade com as ferramentas de desenvolvedor de borda | Bing Video"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizando a produtividade com as ferramentas de desenvolvedor de borda | Bing Vídeo"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
@@ -133,5 +132,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
 

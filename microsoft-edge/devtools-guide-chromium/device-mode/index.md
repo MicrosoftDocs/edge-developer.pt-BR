@@ -1,18 +1,18 @@
 ---
-description: Use dispositivos virtuais no Microsoft Edge para criar sites móveis primeiro.
+description: Use dispositivos virtuais em Microsoft Edge para criar sites móveis primeiro.
 title: Emular dispositivos móveis no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, emulação, dispositivo, simulação, celular
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439448"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564403"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439448"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Emular dispositivos móveis no Microsoft Edge DevTools  
 
 Use **a emulação de dispositivo** para aproximar a aparência e a resposta da sua página em um dispositivo móvel.  O Microsoft Edge DevTools fornece uma coleção de recursos para ajudá-lo a emular dispositivos móveis.  A coleção inclui os seguintes recursos.  
@@ -85,7 +84,7 @@ Use a **lista Tipo de** Dispositivo para simular um dispositivo móvel ou dispos
    A **lista Tipo de** Dispositivo  
 :::image-end:::  
 
-A tabela a seguir descreve as diferenças entre as opções de tipo de dispositivo disponível.  A coluna método Rendering refere-se a se o Microsoft Edge renderiza a página como um modo de exibição móvel ou de área de trabalho.  A coluna Ícone do Cursor refere-se a que tipo de cursor é exibido quando você passar o mouse na página.  A coluna Eventos disparados refere-se a se a página dispara ou ocorre `touch` `click` quando você interage com a página.  
+A tabela a seguir descreve as diferenças entre as opções de tipo de dispositivo disponível.  A coluna método Rendering refere-se Microsoft Edge renderiza a página como um modo de exibição móvel ou de área de trabalho.  A coluna Ícone do Cursor refere-se a que tipo de cursor é exibido quando você passar o mouse na página.  A coluna Eventos disparados refere-se a se a página dispara ou ocorre `touch` `click` quando você interage com a página.  
 
 | Opção | Método Rendering | Ícone do cursor | Eventos disparados |  
 |:--- |:--- |:--- |:--- |  
@@ -216,7 +215,7 @@ Toda a throttling se baseia na funcionalidade normal do laptop ou da área de tr
 
 Para acelerar apenas a CPU e não a rede, conclua as etapas a seguir.
 
-1.  Escolha o **painel Desempenho** e escolha **Configurações de** Captura \( ![ Configurações de Captura ](../media/capture-settings-icon.msft.png) \).
+1.  Escolha o **painel Desempenho** e escolha **Capture Configurações** \( Capture ![ Configurações ](../media/capture-settings-icon.msft.png) \).
 1.  Escolha **a lentidão**da CPU  >  **4x** ou **6x de lentidão**.
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="A lista de CPU no painel Desempenho" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -242,7 +241,7 @@ Para acelerar apenas a rede, conclua as etapas a seguir.
     
 Você também pode definir a throttling de rede a partir do **painel Desempenho.**  
 
-1.  Escolha **Configurações de** Captura \( Configurações de Captura \) e escolha a lista Rede e altere a ![ ](../media/capture-settings-icon.msft.png) predefinição para Fast **3G** ou **Slow 3G**. ****  
+1.  Escolha **Capturar Configurações** \( Capture Configurações \) e escolha a lista Rede e altere a predefinição para Fast ![ ](../media/capture-settings-icon.msft.png) **3G** ou **Slow 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Definir a throttling de rede do painel Desempenho" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Definir a throttling de rede do **painel Desempenho**  
@@ -362,4 +361,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Use o painel Aplicativo para inspecionar, modificar e depurar manif
 title: Depurar aplicativos Web progressivos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3a0732327aac210e399c438b8d9c34c75a7c2910
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398536"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564725"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398536"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-progressive-web-apps"></a>Depurar aplicativos Web progressivos  
 
 Use o **painel Aplicativo** para inspecionar, modificar e depurar manifestos de aplicativo Web, funcionários de serviço e caches de funcionários do serviço.  
@@ -46,7 +45,7 @@ Este guia discute apenas os recursos do Progressive Web App do **painel Aplicati
 
 *   Use o **painel Manifesto** para inspecionar o manifesto do aplicativo Web e disparar Adicionar a eventos homescreen.  
 *   Use **** o painel Funcionários do Serviço para uma ampla gama de tarefas relacionadas ao serviço de trabalho, como o registro ou atualização de um serviço, a emulação de eventos push, a offline ou a interrupção de um trabalhador de serviço.  
-*   Exibir seu cache de funcionário de serviço no **painel Armazenamento de** Cache.  
+*   Exibir seu cache de trabalho de serviço no **painel Cache Armazenamento.**  
 *   Desaconselhe um funcionário de serviço e limpe todos os armazenamentos e caches com um único botão escolha no painel **Limpar armazenamento.**  
     
 ## <a name="web-app-manifest"></a>Manifesto do aplicativo Web  
@@ -123,7 +122,7 @@ O **painel Trabalhadores do** Serviço no painel **Aplicativo** é o principal l
 *   O **botão Não registro** no registro do funcionário de serviço especificado.  Confira [Limpar o armazenamento para](#clear-storage) saber como desoperdá-lo e apagar o armazenamento e os caches com um único botão escolha.  
 *   A **linha Source** informa quando o funcionário do serviço em execução foi instalado.  O link é o nome do arquivo de origem do trabalhador do serviço.  A escolha no link o envia para a origem do trabalhador do serviço.  
 *   A **linha Status** informa o status do trabalhador do serviço.  O número de ID ao lado do indicador de status verde \( na figura anterior\) é para o Trabalhador `#36` de Serviço ativo no momento.  Ao lado do status, **um** botão iniciar \(se o **** trabalhador do serviço for interrompido\) ou um botão de parada \(se o trabalhador do serviço estiver em execução\) é exibido.  Os funcionários do serviço são projetados para serem interrompidos e iniciados pelo navegador a qualquer momento.  Interromper explicitamente o trabalho de serviço usando o **botão parar** pode simular isso.  Parar o seu funcionário de serviço é uma ótima maneira de testar como seu código se comporta quando o trabalhador do serviço começa a fazer o back-up novamente.  Ele frequentemente revela bugs devido a suposições incorretas sobre o estado global persistente.  
-*   A **linha Clientes** informa a origem para a que o trabalhador do serviço tem escopo.  O **botão** de foco é mais útil quando você habilita a caixa de **seleção mostrar tudo.**  Quando essa caixa de seleção está habilitada, todos os funcionários de serviço registrados são listados.  Se você escolher o botão **de foco** ao lado de um trabalhador de serviço que está em execução em uma guia diferente, o Microsoft Edge se concentrará nessa guia.  
+*   A **linha Clientes** informa a origem para a que o trabalhador do serviço tem escopo.  O **botão** de foco é mais útil quando você habilita a caixa de **seleção mostrar tudo.**  Quando essa caixa de seleção está habilitada, todos os funcionários de serviço registrados são listados.  Se você escolher o botão **de foco** ao lado de um trabalhador de serviço que está executando em uma guia diferente, Microsoft Edge se concentrará nessa guia.  
     
 Se o trabalhador do serviço causar erros, um novo rótulo chamado **Errors** será a aparecer.  
 
@@ -138,24 +137,24 @@ Se o trabalhador do serviço causar erros, um novo rótulo chamado **Errors** se
 
 ## <a name="service-worker-caches"></a>Caches de funcionários de serviço  
 
-O **painel Armazenamento de** Cache fornece uma lista somente leitura de recursos que foram armazenados em cache usando a API de Cache \(service worker\) [Cache][MDNWebCacheAPI].  
+O **painel Armazenamento** cache fornece uma lista somente leitura de recursos que foram armazenados em cache usando a API de Cache \(service worker\) [Cache][MDNWebCacheAPI].  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="O Painel de Armazenamento de Cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   O **Painel de Armazenamento de** Cache  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="O Painel de Armazenamento cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   O **Painel de Armazenamento** Cache  
 :::image-end:::  
 
 > [!NOTE]
 > Na primeira vez que você abrir um cache e adicionar um recurso a ele, o DevTools pode não detectar a alteração.  Atualize a página e para exibir o cache.  
 
-Se você tiver dois ou mais caches abertos, os caches serão exibidos no menu suspenso Armazenamento **de Cache** a seguir.  
+Se você tiver dois ou mais caches abertos, os caches serão exibidos na lista **Armazenamento** cache a seguir.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="O menu suspenso Armazenamento de Cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   O **menu suspenso Armazenamento de** Cache  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="O menu suspenso Armazenamento cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   O **menu suspenso Armazenamento** cache  
 :::image-end:::  
 
 ## <a name="quota-usage"></a>Uso de cota  
 
-Algumas respostas no painel Armazenamento **de Cache** podem ser sinalizadas como "opacas".  Isso se refere a uma resposta recuperada de uma origem diferente, como de **uma CDN** ou API remota, quando [o CORS][FetchHttpCorsProtocol] não está habilitado.  
+Algumas respostas no **painel Cache Armazenamento** podem ser sinalizadas como "opacas".  Isso se refere a uma resposta recuperada de **** uma origem diferente, como de uma api CDN ou remota, quando [o CORS][FetchHttpCorsProtocol] não está habilitado.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -164,7 +163,7 @@ Para evitar vazamento de informações entre domínios, preenchimento significat
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-Os detalhes desse preenchimento variam de navegador para navegador, mas **** para o Microsoft Edge, isso significa que o tamanho mínimo que qualquer resposta opaca em cache único contribui para o uso geral do armazenamento é de aproximadamente [7 megabytes][ChromiumIssues796060#c17].  Lembre-se do preenchimento ao determinar quantas respostas opacas você deseja armazenar em cache, já que você pode exceder facilmente as limitações de cota de armazenamento muito antes do esperado com base no tamanho real dos recursos opacos.  
+Os detalhes desse preenchimento variam de navegador para navegador, mas para **** Microsoft Edge, isso significa que o tamanho mínimo que qualquer resposta opaca em cache único contribui para o uso geral do armazenamento é de aproximadamente [7 megabytes][ChromiumIssues796060#c17].  Lembre-se do preenchimento ao determinar quantas respostas opacas você deseja armazenar em cache, já que você pode exceder facilmente as limitações de cota de armazenamento muito antes do esperado com base no tamanho real dos recursos opacos.  
 
 Guias relacionados:  
 
@@ -175,7 +174,7 @@ Guias relacionados:
 
 ## <a name="clear-storage"></a>Limpar o armazenamento  
 
-O **painel Armazenamento Limpo** é um recurso muito útil ao desenvolver aplicativos Web progressivos.  Esse painel permite que você desaconselhe os funcionários do serviço e desimpe todos os caches e armazenamento com um único botão escolha.  <!--Check out the section below to learn more.  -->
+O **painel Limpar Armazenamento** é um recurso muito útil ao desenvolver aplicativos Web progressivos.  Esse painel permite que você desaconselhe os funcionários do serviço e desimpe todos os caches e armazenamento com um único botão escolha.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -198,9 +197,9 @@ Related Guides:
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Execute comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Problema Chromium 796060: o valor de armazenamento em cache aumenta em cada atualização quando o código do Analytics está no html"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Problema 796060: o valor Armazenamento cache aumenta em cada atualização quando o código do Analytics está no html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
@@ -225,4 +224,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

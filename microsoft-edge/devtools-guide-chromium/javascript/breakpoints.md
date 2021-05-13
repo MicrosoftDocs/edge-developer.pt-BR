@@ -1,18 +1,18 @@
 ---
-description: Saiba mais sobre todas as maneiras de pausar seu código no Microsoft Edge DevTools.
-title: Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools
+description: Saiba mais sobre todas as maneiras de pausar seu código Microsoft Edge DevTools.
+title: Como pausar seu código com pontos de interrupção Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519356"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564172"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519356"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools  
+# <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>Como pausar seu código com pontos de interrupção Microsoft Edge DevTools  
 
 Use pontos de interrupção para pausar seu código JavaScript.  Este artigo explica cada tipo de ponto de interrupção disponível no DevTools, bem como quando usar e como definir cada tipo.
 
@@ -246,4 +245,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

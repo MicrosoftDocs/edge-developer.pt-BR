@@ -1,18 +1,18 @@
 ---
-description: Saiba como avaliar o desempenho do tempo de execução no Microsoft Edge DevTools.
+description: Saiba como avaliar o desempenho do tempo de execução Microsoft Edge DevTools.
 title: Começar a analisar o desempenho do Tempo de Execução
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: f40f23c4ac9fcc0bb0186ddb96956f691890c0c0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439609"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564270"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11439609"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="get-started-with-analyzing-runtime-performance"></a>Começar a analisar o desempenho do Tempo de Execução  
 
 > [!NOTE]
 > Para saber como fazer suas páginas carregarem mais rapidamente, navegue até [Otimizar a Velocidade do Site.][DevtoolsSpeedGetStarted]  
 
-O desempenho do tempo de execução é o desempenho da sua página durante a execução, em vez de carregar.  O artigo do tutorial a seguir ensina como usar o painel Desempenho do Microsoft Edge DevTools para analisar o desempenho do tempo de execução.  Em termos do modelo **RAIL,** as habilidades que você aprender neste tutorial são úteis para analisar as fases resposta, animação e ociosidade da sua página.  
+O desempenho do tempo de execução é o desempenho da sua página durante a execução, em vez de carregar.  O artigo do tutorial a seguir ensina como usar o painel Microsoft Edge Desempenho do DevTools para analisar o desempenho do tempo de execução.  Em termos do modelo **RAIL,** as habilidades que você aprender neste tutorial são úteis para analisar as fases resposta, animação e ociosidade da sua página.  
 
 <!--todo: add rail link when section is ready -->  
 
@@ -41,7 +40,7 @@ O desempenho do tempo de execução é o desempenho da sua página durante a exe
 
 No tutorial a seguir, você abre o DevTools em uma página ao vivo e usa o painel Desempenho para encontrar um a gargalo de desempenho na página. ****  
 
-1.  Abra o Microsoft Edge **no modo InPrivate.**  O Modo InPrivate garante que o Microsoft Edge seja executado em um estado limpo.  Por exemplo, se você tiver muitas extensões instaladas, as extensões poderão criar ruído em suas medidas de desempenho.  
+1.  Abra Microsoft Edge no **modo InPrivate**.  O Modo InPrivate garante que Microsoft Edge seja executado em um estado limpo.  Por exemplo, se você tiver muitas extensões instaladas, as extensões poderão criar ruído em suas medidas de desempenho.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
@@ -51,7 +50,7 @@ No tutorial a seguir, você abre o DevTools em uma página ao vivo e usa o paine
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  Selecione `Control` + `Shift` + `I` \(Windows, Linux\) ou `Command` + `Option` + `I` \(macOS\) para abrir o DevTools.  
+1.  Selecione `Control` + `Shift` + `I` \(Windows, Linux\) `Command` + `Option` + `I` ou \(macOS\) para abrir o DevTools.  
     
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="A demonstração à esquerda e o DevTools à direita" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        A demonstração à esquerda e o DevTools à direita  
@@ -66,7 +65,7 @@ Os dispositivos móveis têm muito menos energia da CPU do que desktops e laptop
 
 1.  No DevTools, escolha a **ferramenta Performance.**  
 1.  Certifique-se de escolher a caixa de seleção ao lado **de Capturas de Tela**.  
-1.  Escolha **Configurações de Captura** \( ![ Configurações de Captura ](../media/capture-settings-icon.msft.png) \).  O DevTools revela configurações relacionadas à forma como captura métricas de desempenho.  
+1.  Escolha **Capturar Configurações** \( Capture Configurações ![ ](../media/capture-settings-icon.msft.png) \).  O DevTools revela configurações relacionadas à forma como captura métricas de desempenho.  
 1.  Para **CPU,** escolha **4x de lentidão**.  O DevTools acelera sua CPU para que ela seja 4 vezes mais lenta do que o normal.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Aceleração da CPU" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -228,7 +227,7 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 Para ficar mais confortável com a **ferramenta Performance,** a prática torna perfeito.  Tente perfilar suas páginas e analisar os resultados.  Se você tiver alguma dúvida sobre seus resultados, use o ícone Enviar **Comentários,** selecione `Alt` + `Shift` + `I` \(Windows, Linux\), selecione `Option` + `Shift` + `I` \(macOS\) ou tweet a equipe [DevTools][TwitterEdgeDevtools].  Inclua capturas de tela ou links para páginas reprodutíveis, se possível.  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="O ícone **Feedback** no Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   O **ícone Enviar Feedback** no Microsoft Edge DevTools  
+   O **ícone Enviar Comentários** no Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
@@ -250,8 +249,8 @@ Por fim, há muitas maneiras de melhorar o desempenho do tempo de execução.  E
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Encaixar na Parte Inferior, Encaixe para a Esquerda)"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Otimizar a velocidade do site com o Microsoft Edge DevTools"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Alterar Microsoft Edge posicionamento do DevTools (Desfazer, Encaixar na Parte Inferior, Doca para a Esquerda)"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Otimizar a velocidade do site com Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Postar um tweet | Twitter"  
 
@@ -284,4 +283,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

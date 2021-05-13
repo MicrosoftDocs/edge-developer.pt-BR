@@ -1,18 +1,18 @@
 ---
-description: Como exibir e editar sessõesStorage com o painel Armazenamento de Sessão e o Console.
-title: Exibir e editar o armazenamento de sessão com o Microsoft Edge DevTools
+description: Como exibir e editar sessõesStorage com o painel Armazenamento sessão e o Console.
+title: Exibir e editar sessão Armazenamento com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6d686a6eb7bc6fca46d65c46fa9c5aee044ec052
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439658"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565061"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439658"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Exibir e editar sessão Armazenamento com Microsoft Edge DevTools  
 
-# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Exibir e editar o armazenamento de sessão com o Microsoft Edge DevTools  
-
-Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de valores de chave [sessionStorage.][MDNSessionStorage]  
+Este guia mostra como usar Microsoft Edge [DevTools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de valores de chave [sessionStorage.][MDNSessionStorage]  
 
 ## <a name="view-sessionstorage-keys-and-values"></a>Exibir teclas e valores sessionStorage  
 
@@ -40,10 +39,10 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
        O **painel** Manifesto  
     :::image-end:::  
     
-1.  Expanda o menu **Armazenamento de** Sessão.  
+1.  Expanda **o menu Armazenamento** sessão.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="O Menu de Armazenamento de Sessão" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       O **Menu de Armazenamento de** Sessão  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menu Armazenamento Sessão" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Menu **Armazenamento** Sessão  
     :::image-end:::  
     
 1.  Escolha um domínio para exibir os pares de valores-chave.  
@@ -109,7 +108,7 @@ Como você pode executar JavaScript no **Console**e, como o **Console** tem aces
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
@@ -123,4 +122,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

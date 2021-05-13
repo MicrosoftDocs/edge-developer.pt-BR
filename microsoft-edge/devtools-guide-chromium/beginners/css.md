@@ -1,18 +1,18 @@
 ---
-description: Começar com CSS
+description: Introdução css
 title: 'DevTools para iniciantes: Começar com CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools
-ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6f34cfa8610848505c8aa795c4fab16e5d2a98ed
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439434"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564641"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,7 +35,7 @@ Neste tutorial, você aprenderá a usar CSS para estilo de uma página da Web.  
 O artigo a seguir é o segundo tutorial de uma série de tutoriais que ensina as noções básicas de desenvolvimento da Web e Microsoft Edge DevTools.  Você ganha experiência prática criando seu próprio site.  Não é preciso concluir o primeiro tutorial antes de seguir o segundo.  [Configurar seu código](#set-up-your-code) mostra como configurar.  
 
 > [!NOTE]
-> Este tutorial foi projetado para iniciantes absolutos e se concentra nos fundamentos do desenvolvimento da Web e noções **básicas** de como usar o DevTools para experimentar CSS.  Se você quiser um tutorial que se concentre apenas em DevTools, navegue até Introdução à Exibição [e Alteração de CSS][DevtoolsCssIndex].  
+> Este tutorial foi projetado para iniciantes absolutos e se concentra nos fundamentos do desenvolvimento da Web e noções **básicas** de como usar o DevTools para experimentar CSS.  Se você quiser um tutorial que se concentre apenas no DevTools, navegue até Introdução [exibindo e alterando CSS][DevtoolsCssIndex].  
 
 No início do tutorial, seu site deve ter a aparência da figura a seguir.  
 
@@ -54,7 +54,7 @@ Depois de concluir o tutorial, o site deve ter a aparência da figura a seguir.
 Siga este tutorial para entender melhor os seguintes conceitos e tarefas.  
 
 *   Como usar CSS para estilar uma página da Web.  
-*   Como usar o Microsoft Edge DevTools para fazer experimentos com CSS.  
+*   Como usar Microsoft Edge DevTools para experimentar CSS.  
 *   A diferença entre estruturas CSS e CSS.  
 
 Você está criando um site real.  
@@ -63,15 +63,15 @@ Você está criando um site real.
 
 Antes de tentar este tutorial, conclua os seguintes pré-requisitos.  
 
-*   Conclua [Introdução ao HTML][DevtoolsBeginnersHtml] e ao DOM ou certifique-se de que você tenha uma compreensão do HTML e do DOM semelhantes ao que é ensinada nesse tutorial.  
-*   Baixe o [navegador da Web do Microsoft Edge.][MicrosoftEdgeInsider]  O tutorial a seguir usa um conjunto de ferramentas de desenvolvimento da Web, chamada de Microsoft Edge DevTools, que são internadas no Microsoft Edge.  
+*   Conclua [Introdução com HTML][DevtoolsBeginnersHtml] e o DOM ou certifique-se de que você tenha um entendimento sobre HTML e o DOM semelhantes ao que é ministrado nesse tutorial.  
+*   Baixe o [Microsoft Edge][MicrosoftEdgeInsider] da Web.  O tutorial a seguir usa um conjunto de ferramentas de desenvolvimento da Web, chamada Microsoft Edge DevTools, que são criadas em Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Configurar seu código  
 
 Para criar seu site, você deve primeiro concluir as seguintes ações para configurar seu código.  
 
 > [!NOTE]
-> Se você já concluiu o primeiro tutorial da série, pule para a próxima seção.  Continue usando seu código do último tutorial, [Introdução ao HTML e dom][DevtoolsBeginnersHtml].  
+> Se você já concluiu o primeiro tutorial da série, pule para a próxima seção.  Continue usando seu código do último tutorial, Introdução [html e dom][DevtoolsBeginnersHtml].  
 
 1.  Abra o [código-fonte][GlitchCookedAmphibianIndex].  A guia em foco do navegador é referenciada como a **guia de edição**.  
     
@@ -81,11 +81,11 @@ Para criar seu site, você deve primeiro concluir as seguintes ações para conf
     
 1.  Escolha **cooked-amphibian**.  Um menu é aberto.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="O menu Opções do Projeto" lightbox="../media/beginners-css-setup2.msft.png":::
-       O menu Opções do Projeto  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="O menu Project opções" lightbox="../media/beginners-css-setup2.msft.png":::
+       O menu Project opções  
     :::image-end:::  
 
-1.  Escolha **Projeto de Remix**.  A falha cria uma cópia do projeto que você pode editar.  
+1.  Escolha **Mesclar Project**.  A falha cria uma cópia do projeto que você pode editar.  
     
     > [!NOTE]
     > A falha gera um nome aleatório para o novo projeto.  
@@ -112,7 +112,7 @@ O trecho de código a seguir é o código HTML e CSS usado para criar o parágra
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` provavelmente parece novo para você.  O restante deve parecer familiar.  Caso não seja, [conclua Get Started with HTML e o DOM][DevtoolsBeginnersHtml] antes de tentar as seções a seguir.  
+`style="border: 1px dashed red; padding: 5px;"` provavelmente parece novo para você.  O restante deve parecer familiar.  Caso não, [conclua Introdução html e o DOM][DevtoolsBeginnersHtml] antes de tentar as seções a seguir.  
 
 ## <a name="add-inline-styles"></a>Adicionar estilos em linha  
 
@@ -268,7 +268,7 @@ Conclua as seguintes ações para usar vírgulas para adicionar vários seletore
     
 ## <a name="experiment-with-devtools"></a>Experimento com DevTools  
 
-À medida que você continua sua jornada para se tornar um especialista em desenvolvimento da Web, você pode descobrir que CSS é complicado.  Você pode escrever alguns CSS e esperar que ele seja exibido de uma maneira, mas o navegador faz algo completamente diferente.  O Microsoft Edge DevTools facilita o experimento com alterações e exibe imediatamente como as alterações afetam a página.  
+À medida que você continua sua jornada para se tornar um especialista em desenvolvimento da Web, você pode descobrir que CSS é complicado.  Você pode escrever alguns CSS e esperar que ele seja exibido de uma maneira, mas o navegador faz algo completamente diferente.  Microsoft Edge O DevTools facilita o experimento com alterações e exibe imediatamente como as alterações afetam a página.  
 
 ### <a name="add-a-declaration-to-an-existing-rulest-in-devtools"></a>Adicionar uma declaração a um rulest existente no DevTools  
 
@@ -280,7 +280,7 @@ Conclua as seguintes ações para iterar no estilo de um elemento existente, adi
        Inspecionar o link Home  
     :::image-end:::  
     
-    O DevTools abre junto com sua página.  O código que representa o link Home é `<a href="/">Home</a>` realçado em azul na Árvore DOM.  O trecho de código e a visualização devem estar familiarizados com [Get Started with HTML e o DOM][DevtoolsBeginnersHtml].  
+    O DevTools abre junto com sua página.  O código que representa o link Home é `<a href="/">Home</a>` realçado em azul na Árvore DOM.  O trecho de código e a visualização devem estar familiarizados Introdução [html e dom][DevtoolsBeginnersHtml].  
     
     :::row:::
        :::column span="":::
@@ -600,7 +600,7 @@ Parabéns, você terminou.
 
 *   A melhor maneira de melhorar o desenvolvimento da Web é criar mais sites.  Não se preocupe com quebra de material.  Divirta-se e aprenda o máximo possível ao longo do caminho.  
 *   Para saber mais sobre o estilo de páginas da Web, navegue até [Introdução ao CSS][MDNCssFirstSteps].  
-*   Para saber mais sobre como usar o DevTools para experimentar o CSS de uma página, navegue até Começar a exibir [e alterar CSS][DevtoolsCssIndex].  
+*   Para saber mais sobre como usar o DevTools para experimentar o CSS de uma página, navegue até Introdução [exibição e alteração css][DevtoolsCssIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -608,8 +608,8 @@ Parabéns, você terminou.
 
 <!--- links  --->  
 
-[DevtoolsBeginnersHtml]: ./html.md "DevTools para Iniciantes: Começar com HTML e o dom | Microsoft Docs"  
-[DevtoolsCssIndex]: ../css/index.md "Começar a exibir e alterar o css | Microsoft Docs"  
+[DevtoolsBeginnersHtml]: ./html.md "DevTools para Iniciantes: Introdução html e o dom | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Introdução Com exibição e alteração de css | Microsoft Docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -619,7 +619,7 @@ Parabéns, você terminou.
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/beginners/css) e é criada por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
+> A página original foi encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/beginners/css) e foi criada por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
@@ -627,5 +627,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

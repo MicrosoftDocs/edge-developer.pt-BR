@@ -1,18 +1,18 @@
 ---
-description: Descubra novos fluxos de trabalho de depuração nesta referência abrangente dos recursos de depuração do Microsoft Edge DevTools.
+description: Descubra novos fluxos de trabalho de depuração nesta referência abrangente dos recursos de depuração Microsoft Edge DevTools.
 title: Usar os recursos de depurador
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 6fb90a70e0aac9f556fa9f5f02afee1fd5b4962e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519601"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564123"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519601"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="use-the-debugger-features"></a>Usar os recursos de depurador
 
 Este artigo aborda como usar o depurador no Microsoft Edge DevTools, incluindo como definir um ponto de interrupção de linha de código.  Para definir outros tipos de pontos de interrupção, consulte [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
 
-Para saber as noções básicas de depuração, navegue até Introdução à depuração do JavaScript no [Microsoft Edge DevTools,][DevToolsJavascriptGetStarted]que é um tutorial que usa uma página da Web baseada em formulário existente.  O tutorial tem capturas de tela, para que você possa skim-lo.  Você pode experimentar facilmente os recursos de depurador usando a página da Web de demonstração.
+Para saber as noções básicas de depuração, navegue até Introdução à depuração do JavaScript no [Microsoft Edge DevTools][DevToolsJavascriptGetStarted], que é um tutorial que usa uma página da Web baseada em formulário existente.  O tutorial tem capturas de tela, para que você possa skim-lo.  Você pode experimentar facilmente os recursos de depurador usando a página da Web de demonstração.
 
 ## <a name="view-and-edit-javascript-code"></a>Exibir e editar código JavaScript
 
@@ -306,18 +305,18 @@ Para marcar um script como **código biblioteca do** painel Pilha **de** Chamada
        Marcar um script como **código biblioteca do** painel Pilha **de** Chamada  
     :::image-end:::  
     
-### <a name="mark-a-script-as-library-code-from-settings"></a>Marcar um script como código de biblioteca a partir de Configurações  
+### <a name="mark-a-script-as-library-code-from-settings"></a>Marcar um script como código de biblioteca de Configurações  
 
 Para marcar um único script ou padrão de scripts de **Configurações**:  
 
-1.  Configurações [abertas][DevToolsCustomize].  
+1.  Abra [Configurações][DevToolsCustomize].  
 1.  Navegue até **a configuração de código biblioteca.**  
 1.  Escolha **Adicionar padrão**.  
 1.  Insira o nome do script ou um padrão regex de nomes de script para marcar como **código biblioteca**.  
 1.  Escolha **Adicionar**.  
     
-    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marcar um script como código de biblioteca a partir de Configurações" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Marcar um script como **código de biblioteca** a partir de **Configurações**  
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marcar um script como código de biblioteca de Configurações" lightbox="../media/javascript-framework-library-code.msft.png":::
+       Marcar um script como **código de** biblioteca de **Configurações**  
     :::image-end:::  
     
 ## <a name="run-snippets-of-debug-code-from-any-page"></a>Executar trechos de código de depuração de qualquer página  
@@ -328,9 +327,9 @@ Consulte [Executar trechos de código javascript em qualquer página da Web][Dev
 
 ## <a name="see-also"></a>Ver também  
 
-*   [Introdução à depuração de JavaScript no Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - Um tutorial simples e curto usando código existente, com capturas de tela.
+*   [Introdução Com Depuração javaScript no Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - Um tutorial simples e curto usando código existente, com capturas de tela.
 *   [Visão geral da][DevToolsSourcesIndex] ferramenta Sources - A **ferramenta Sources** inclui o depurador e editor javaScript.
-*   [Desabilitar JavaScript com o Microsoft Edge DevTools][DevToolsJavascriptDisable].
+*   [Desabilitar JavaScript com Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -338,12 +337,12 @@ Consulte [Executar trechos de código javascript em qualquer página da Web][Dev
 
 <!-- links -->  
 
-[DevToolsJavascriptBreakpoints]: ./breakpoints.md "Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptDisable]: ./disable.md "Desabilitar JavaScript com o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptBreakpoints]: ./breakpoints.md "Como pausar seu código com pontos de interrupção Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptDisable]: ./disable.md "Desabilitar JavaScript com Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Começar a depurar JavaScript no Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Execute trechos de código do JavaScript em qualquer página com o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Execute trechos de código do JavaScript em qualquer página com Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Visão geral da ferramenta Sources | Microsoft Docs"  
-[DevToolsCustomize]: ../customize/index.md "Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomize]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -355,4 +354,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

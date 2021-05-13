@@ -3,16 +3,16 @@ description: Uma referência abrangente dos recursos de acessibilidade no Micros
 title: Referência de acessibilidade
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439251"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564571"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,19 +27,18 @@ ms.locfileid: "11439251"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a>Referência de acessibilidade  
 
-Esta página é uma referência abrangente dos recursos de acessibilidade no Microsoft Edge DevTools.  Destina-se a desenvolvedores web que:  
+Esta página é uma referência abrangente de recursos de acessibilidade no Microsoft Edge DevTools.  Destina-se a desenvolvedores web que:  
 
 *   Tenha uma compreensão básica do DevTools, como como abri-lo.  
 *   Estão familiarizados com [princípios de acessibilidade e práticas recomendadas.][MDNAccessibility]  
     
 O objetivo dessa referência é ajudá-lo a descobrir todas as ferramentas disponíveis no DevTools que o ajudam a examinar a acessibilidade de uma página.  
 
-Se você estiver procurando ajuda para navegar no DevTools com uma tecnologia auxiliar, como um leitor de tela, navegue até Navegar pelo [Microsoft Edge DevTools][DevtoolsAccessibilityNavigation]com tecnologia assistida.  
+Se você estiver procurando ajuda para navegar no DevTools com uma tecnologia auxiliar, como um leitor de tela, navegue até Navegando Microsoft Edge [DevTools][DevtoolsAccessibilityNavigation]Com Tecnologia Assistida .  
 
-## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Visão geral dos recursos de acessibilidade no Microsoft Edge DevTools  
+## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Visão geral dos recursos de acessibilidade Microsoft Edge DevTools  
 
 Esta seção explica como o DevTools se encaixa no kit de ferramentas de acessibilidade geral.  
 
@@ -72,12 +71,12 @@ Para auditar uma página:
     :::image-end:::  
     
     > [!NOTE]
-    > As capturas de tela nesta seção foram feitas com o Microsoft Edge versão 79.  Você pode verificar qual versão está executando em `edge://version` .  A **interface do usuário da** ferramenta Auditorias parece diferente em versões anteriores do Microsoft Edge, mas o fluxo de trabalho geral é o mesmo.  
+    > As capturas de tela nesta seção foram feitas com Microsoft Edge versão 79.  Você pode verificar qual versão está executando em `edge://version` .  A **interface do usuário da** ferramenta Auditorias parece diferente em versões anteriores Microsoft Edge, mas o fluxo de trabalho geral é o mesmo.  
     
 1.  Para **Dispositivo**, escolha **Móvel** se quiser simular um dispositivo móvel.  Essa opção altera a cadeia de caracteres do agente do usuário e resize o viewport.  Se a versão móvel da página for exibida de forma diferente da versão da área de trabalho, essa opção poderá ter um efeito significativo nos resultados da auditoria.  
 1.  Na seção **Auditorias,** certifique-se de **que a Acessibilidade** está habilitada.  Desabilite as outras categorias se quiser exclui-las do relatório.  Deixe-os habilitados se você quiser descobrir outras maneiras de melhorar a qualidade da sua página.  
 1.  A **seção Throttling** permite que você reduza a rede e a CPU, o que é útil ao analisar o desempenho da carga.  Essa opção deve ser irrelevante para sua pontuação de acessibilidade, portanto, você pode usar o que preferir.  
-1.  A **caixa de seleção** Limpar Armazenamento permite limpar todo o armazenamento antes de carregar a página ou preservar o armazenamento entre cargas de página.  Essa opção também provavelmente é irrelevante para sua pontuação de acessibilidade, portanto, você pode usar o que preferir.  
+1.  A **caixa de Armazenamento** Clear permite limpar todo o armazenamento antes de carregar a página ou preservar o armazenamento entre cargas de página.  Essa opção também provavelmente é irrelevante para sua pontuação de acessibilidade, portanto, você pode usar o que preferir.  
 1.  Escolha **Executar Auditorias**. Após 10 a 30 segundos, o DevTools fornece um relatório.  Seu relatório fornece várias dicas sobre como melhorar a acessibilidade da página.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Um relatório" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
@@ -192,7 +191,7 @@ O Selador de Cores ajuda você a verificar se seu texto atende aos níveis de ta
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegue pelo Microsoft Edge DevTools com tecnologia | Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegue Microsoft Edge DevTools com tecnologia | Microsoft Docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Exibir apenas o CSS que é realmente aplicado a um elemento - Referência CSS | Microsoft Docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Teste de Acessibilidade da Web - Chrome Web Store"  
@@ -214,4 +213,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: Como depurar a Busca de Plano de Fundo, Sincronização em Segundo Plano, Notificações e Enviar Mensagens com o Microsoft Edge DevTools.
-title: Depurar serviços em segundo plano com o Microsoft Edge DevTools
+description: Como depurar a Busca em Segundo Plano, Sincronização de Plano de Fundo, Notificações e Enviar Mensagens com Microsoft Edge DevTools.
+title: Depurar serviços em segundo plano com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439525"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564193"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,19 +27,18 @@ ms.locfileid: "11439525"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="debug-background-services-with-microsoft-edge-devtools"></a>Depurar serviços em segundo plano com o Microsoft Edge DevTools  
+# <a name="debug-background-services-with-microsoft-edge-devtools"></a>Depurar serviços em segundo plano com Microsoft Edge DevTools  
 
 A seção **Serviços em** Segundo Plano do Microsoft Edge DevTools é uma coleção de ferramentas para as APIs JavaScript que permite que seu site envie e receba atualizações, mesmo quando um usuário não tem seu site aberto.  
 Um serviço em segundo plano é funcionalmente semelhante a um [processo em segundo plano][WikiBackgroundProcess].  
-O Microsoft Edge DevTools considera cada uma das SEGUINTES APIs como um serviço em segundo plano:  
+Microsoft Edge O DevTools considera cada uma das SEGUINTES APIs como um serviço em segundo plano:  
 
 *   [Busca de plano de fundo](#background-fetch)  
 *   [Sincronização em Segundo Plano](#background-sync)  
 *   [Notificações](#notifications)  
 *   [Enviar mensagens](#push-messages)  
     
-O Microsoft Edge DevTools pode registrar eventos de serviço em segundo plano por 3 dias, mesmo quando o DevTools não estiver aberto.  
+Microsoft Edge O DevTools pode registrar eventos de serviço em segundo plano por três dias, mesmo quando o DevTools não estiver aberto.  
 O log de eventos do serviço em segundo plano pode ajudá-lo a garantir que os eventos estão sendo enviados e recebidos conforme o esperado.  Você também pode inspecionar os detalhes de cada evento.  
 
 :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="O painel Mensagens por Push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -159,7 +158,7 @@ Para exibir uma notificação por push para um usuário, um funcionário do serv
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open/index.md "Abra as Ferramentas de Desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[OpenDevTools]: ../open/index.md "Abra Microsoft Edge (Chromium) ferramentas de desenvolvedor | Microsoft Docs"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Api de notificações | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"  
@@ -175,4 +174,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

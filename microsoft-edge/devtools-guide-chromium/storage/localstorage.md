@@ -1,18 +1,18 @@
 ---
-description: Como exibir e editar localStorage com o painel Armazenamento Local e o Console.
-title: Exibir e editar o armazenamento local com o Microsoft Edge DevTools
+description: Como exibir e editar localStorage com o painel Local Armazenamento e o Console.
+title: Exibir e editar Armazenamento local com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5088a1b9d7ab2b92051d099e76b8b07bbd5db5f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439672"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565047"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439672"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>Exibir e editar o armazenamento local com Microsoft Edge DevTools  
 
-# <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>Exibir e editar o armazenamento local com o Microsoft Edge DevTools  
-
-Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de valores de [chave localStorage.][MDNWindowsLocalStorage]  
+Este guia mostra como usar Microsoft Edge [DevTools][MicrosoftEdgeDevTools] para exibir, editar e excluir pares de valores de chave [localStorage.][MDNWindowsLocalStorage]  
 
 ## <a name="view-localstorage-keys-and-values"></a>Exibir chaves e valores localStorage  
 
@@ -40,10 +39,10 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
        O **painel** Manifesto  
     :::image-end:::  
     
-1.  Expanda o menu **Armazenamento** Local.  
+1.  Expanda **o menu Local Armazenamento.**  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="O menu Armazenamento Local" lightbox="../media/storage-application-local-storage.msft.png":::
-       O **menu Armazenamento Local**  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="O menu Armazenamento local" lightbox="../media/storage-application-local-storage.msft.png":::
+       O **menu Armazenamento** local  
     :::image-end:::  
     
 1.  Escolha um domínio para exibir os pares de valores-chave.  
@@ -109,7 +108,7 @@ Como você é capaz de executar JavaScript no **Console**e, como o **Console** t
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 
@@ -123,4 +122,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

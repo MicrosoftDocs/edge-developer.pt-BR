@@ -1,18 +1,18 @@
 ---
-description: Saiba como gravar instantâneos de pilha com o perfil de pilha do Microsoft Edge DevTools e encontrar vazamentos de memória.
+description: Saiba como gravar instantâneos de pilha com o profiler de pilha Microsoft Edge DevTools e encontrar vazamentos de memória.
 title: Como registrar instantâneos de pilha
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: ce7a6f972bed386f96312808428bd74f1241668f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5f097cc45facc7f366a99a9564cf6f3d443f2058
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397801"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565012"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11397801"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="how-to-record-heap-snapshots"></a>Como registrar instantâneos de pilha  
 
-Saiba como gravar instantâneos de pilha com o perfil de pilha do Microsoft Edge DevTools e encontrar vazamentos de memória.  
+Saiba como gravar instantâneos de pilha com o profiler de pilha Microsoft Edge DevTools e encontrar vazamentos de memória.  
 
-O perfil de pilha do Microsoft Edge DevTools mostra a distribuição de memória pelos objetos JavaScript e nós DOM relacionados da sua página.  Use-o para fazer instantâneos de pilha de JavaScript \(JS heap\) , analisar gráficos de memória, comparar instantâneos e encontrar vazamentos de memória.  Navegue [até a árvore de retenção de objetos][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+O Microsoft Edge de pilha de DevTools mostra a distribuição de memória pelos objetos JavaScript e nós DOM relacionados da sua página.  Use-o para fazer instantâneos de pilha de JavaScript \(JS heap\) , analisar gráficos de memória, comparar instantâneos e encontrar vazamentos de memória.  Navegue [até a árvore de retenção de objetos][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
 ## <a name="take-a-snapshot"></a>Tirar um instantâneo  
 
@@ -242,7 +241,7 @@ O mantém uma referência ao pai `#leaf` relevante \(parentNode\) e recursivamen
 > [!NOTE]
 > Exemplos: experimente este exemplo de [um nó DOM][GlitchDevtoolsMemoryExample06] que vaza para entender onde ele pode vazar e como detectá-lo.  Você também pode ver este exemplo de [vazamentos de DOM maiores do que o esperado][GlitchDevtoolsMemoryExample09].  
 
-Para ler mais sobre vazamentos dom e análise de memória, check-out básicos Localizar e depurar vazamentos de memória com o [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] por Gonzalo Gonçalves de Vila.  
+Para ler mais sobre vazamentos de DOM e análises de memória fundamentais checkout Localizar e depurar vazamentos de memória com o [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] por Gonzalo Gonçalves de Vila.  
 
 <!--  
 > [!NOTE]
@@ -285,5 +284,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

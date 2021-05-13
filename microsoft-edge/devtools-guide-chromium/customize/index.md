@@ -1,18 +1,18 @@
 ---
-description: Uma lista de maneiras de personalizar o Microsoft Edge DevTools
-title: Personalizar o Microsoft Edge DevTools
+description: Uma lista de maneiras de personalizar Microsoft Edge DevTools
+title: Personalizar Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399026"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564382"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11399026"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="customize-microsoft-edge-devtools"></a>Personalizar Microsoft Edge DevTools  
 
-# <a name="customize-microsoft-edge-devtools"></a>Personalizar o Microsoft Edge DevTools  
-
-Esta página lista as maneiras de personalizar o Microsoft Edge DevTools.  
+Esta página lista as maneiras de personalizar Microsoft Edge DevTools.  
 
 ## <a name="settings"></a>Configurações  
 
@@ -107,11 +106,11 @@ Navegue até [Habilitar Tema Escuro][DarkTheme].
 
 Para ativar experimentos do DevTools, conclua as seguintes ações.  
 
-1.  Navegue até `edge://flags/#enable-devtools-experiments` .  
+1.  Navegue até `edge://flags/#enable-devtools-experiments`.  
 1.  Escolha **Habilitar**.  
 1.  Escolha **Relaunch Now**, na parte inferior da página.  
 
-Na próxima vez que você abrir o DevTools, uma nova página chamada **Experimentos** será exibida [em Configurações.](#settings)  
+Na próxima vez que você abrir o DevTools, uma nova página chamada **Experimentos** será exibida em [Configurações](#settings).  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -123,8 +122,8 @@ Na próxima vez que você abrir o DevTools, uma nova página chamada **Experimen
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Alterar o posicionamento do Microsoft Edge DevTools | Microsoft Docs"  
-[DarkTheme]: ./dark-theme.md "Habilitar o tema escuro no Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsPlacement]: ./placement.md "Alterar Microsoft Edge posicionamento do DevTools | Microsoft Docs"  
+[DarkTheme]: ./dark-theme.md "Habilitar Tema Escuro Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -136,4 +135,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

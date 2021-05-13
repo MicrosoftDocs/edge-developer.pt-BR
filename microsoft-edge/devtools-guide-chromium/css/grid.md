@@ -3,16 +3,16 @@ description: Saiba como usar o Microsoft Edge DevTools para exibir e alterar o C
 title: Inspecionar Grade CSS no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 68493fae5e96ef1b2c7ed1205d67fd2b4cf67df5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439258"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564452"
 ---
 # <a name="inspect-css-grid"></a>Inspecionar Grade CSS  
 
@@ -188,7 +188,7 @@ Para realçar o elemento HTML na ferramenta **Elementos** e rolar até ele na p�
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Grade CSS | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Grade CSS | jec.fyi"  
@@ -199,7 +199,7 @@ Para realçar o elemento HTML na ferramenta **Elementos** e rolar até ele na p�
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/grid) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developers.google.com/web/tools/chrome-devtools/css/grid) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
@@ -207,4 +207,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

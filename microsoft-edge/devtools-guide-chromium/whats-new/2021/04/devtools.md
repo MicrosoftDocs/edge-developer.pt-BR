@@ -3,16 +3,16 @@ description: Sublinhados ondulados realçam problemas de código na ferramenta E
 title: Novidades no DevTools (Microsoft Edge 91)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 3a2be4d309432de4421af73ca7b4d21734ad5221
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 473b2537b631a77a182c04b6986051a4ce7aae03
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514423"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564816"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -36,7 +36,7 @@ ms.locfileid: "11514423"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-Na maioria das IDEs modernas, sublinhados ondulados em texto indicam erros de sintaxe.   No Microsoft Edge versão 91 ou posterior, sublinhados ondulados são exibidos em HTML na exibição **DOM** da **ferramenta Elements.**  Os sublinhados ondulados indicam problemas de código e sugestões relacionadas à acessibilidade, compatibilidade, desempenho e assim por diante.  Para obter mais informações sobre como revisar e editar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Problemas do [Microsoft Edge DevTools][DevtoolsIssuesIndex].  
+Na maioria das IDEs modernas, sublinhados ondulados em texto indicam erros de sintaxe.   Na Microsoft Edge versão 91 ou posterior, sublinhados ondulados são exibidos em HTML no visor **DOM** da **ferramenta Elements.**  Os sublinhados ondulados indicam problemas de código e sugestões relacionadas à acessibilidade, compatibilidade, desempenho e assim por diante.  Para obter mais informações sobre como revisar e editar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Microsoft Edge [DevTools Issues][DevtoolsIssuesIndex].  
 
 Para abrir a **ferramenta Problemas** e saber mais sobre o problema e como corrigi-lo, conclua uma das seguintes ações.  
 
@@ -87,7 +87,7 @@ Para exibir mais informações sobre como usar o DevTools, a turn on Tooltips e,
 <!--  Title: The tasks associated with your Service Worker  -->  
 <!--  Subtitle: Debug with Service Worker Update Cycle  -->  
 
-No Microsoft Edge versão 91 ou posterior, se você for um desenvolvedor do Progressive Web App ou Service Worker, poderá exibir o ciclo de vida de atualização de seus Funcionários do Serviço como uma linha do tempo na ferramenta **Aplicativo.**  Esse recurso ajuda você a entender o tempo gasto pelo Trabalhador do Serviço em cada uma das etapas a seguir.  
+Na Microsoft Edge versão 91 ou posterior, se você for um desenvolvedor do Progressive Web App ou do Service Worker, poderá exibir o ciclo de vida de atualização de seus Funcionários do Serviço como uma linha do tempo na ferramenta **Aplicativo.**  Esse recurso ajuda você a entender o tempo gasto pelo Trabalhador do Serviço em cada uma das etapas a seguir.  
 
 *   **Install**  
 *   **Wait**  
@@ -97,14 +97,14 @@ No Microsoft Edge versão 91 ou posterior, se você for um desenvolvedor do Prog
    Revise a **Linha do** Tempo no Ciclo **de Atualizações** do seu Trabalhador do Serviço  
 :::image-end:::  
 
-Para obter mais informações sobre o ciclo de vida dos Funcionários do Serviço, navegue até [o ciclo de vida do Trabalhador do Serviço.][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  Para obter mais informações sobre ferramentas de depuração para Aplicativos Web Progressivos e Funcionários de Serviço no DevTools, navegue até [Service Worker improvements][DevtoolsServiceWorkerIndex].  Para revisar atualizações em tempo real sobre esse recurso no projeto de código aberto do Chromium, navegue até o Problema [1066604][CR1066604].  
+Para obter mais informações sobre o ciclo de vida dos Funcionários do Serviço, navegue até [o ciclo de vida do Trabalhador do Serviço.][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  Para obter mais informações sobre ferramentas de depuração para Aplicativos Web Progressivos e Funcionários de Serviço no DevTools, navegue até [Service Worker improvements][DevtoolsServiceWorkerIndex].  Para revisar as atualizações em tempo real sobre esse recurso no Chromium de código aberto, navegue até o Problema [1066604][CR1066604].  
 
 ## <a name="progressive-web-apps-no-longer-display-warnings-for-non-square-icons"></a>Os Aplicativos Web Progressivos não exibem mais avisos para ícones não quadrados  
 
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->  
 <!--  Subtitle: As long as square icons are included in the app manifest, non-square icons no longer produce warnings  -->  
 
-No Microsoft Edge versão [90][DevtoolsWhatsNew202102Devtools] ou anterior, se você incluiu um ícone não quadrado no Manifesto do Aplicativo Web do seu PWA, a seção **Manifesto** na ferramenta **Aplicativo** exibiu um aviso em Erros e **Avisos** para cada ícone não quadrado.  No Microsoft Edge versão 91 ou posterior, a seção **Manifesto** na ferramenta **Aplicativo** não exibirá avisos se você fornecer pelo menos um ícone quadrado.  Se você não fornecer ícones quadrados, um aviso exibirá a seguinte mensagem.  
+Na Microsoft Edge versão [90][DevtoolsWhatsNew202102Devtools] ou anterior, se você incluiu um ícone não quadrado no **** Manifesto do Aplicativo Web do seu PWA, a seção Manifesto na ferramenta **Aplicativo** exibiu um aviso em Erros e **Avisos** para cada ícone não quadrado.  Na Microsoft Edge versão 91 ou posterior, a seção **Manifesto** na ferramenta **Aplicativo** não exibirá avisos se você fornecer pelo menos um ícone quadrado.  Se você não fornecer ícones quadrados, um aviso exibirá a seguinte mensagem.  
 
 ```output
 Most operating systems require square icons.  Please include at least one square icon in the array.  
@@ -112,28 +112,28 @@ Most operating systems require square icons.  Please include at least one square
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="No Microsoft Edge versão 90 ou anterior, um erro é exibido para cada ícone que não é quadrado" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
-         No Microsoft Edge versão 90 ou anterior, um erro é exibido para cada ícone que não é quadrado  
+      :::image type="complex" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="Na Microsoft Edge versão 90 ou anterior, um erro é exibido para cada ícone que não é quadrado" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
+         Na Microsoft Edge versão 90 ou anterior, um erro é exibido para cada ícone que não é quadrado  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="No Microsoft Edge versão 91 ou posterior, nenhum erro é exibido quando você fornece pelo menos um ícone quadrado" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
-         No Microsoft Edge versão 91 ou posterior, nenhum erro é exibido quando você fornece pelo menos um ícone quadrado  
+      :::image type="complex" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="Na Microsoft Edge versão 91 ou posterior, nenhum erro é exibido quando você fornece pelo menos um ícone quadrado" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
+         Na Microsoft Edge versão 91 ou posterior, nenhum erro é exibido quando você fornece pelo menos um ícone quadrado  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Para revisar erros e avisos em seu Manifesto do Aplicativo Web, navegue até a ferramenta **Aplicativo** e escolha a **seção Manifesto.**  Os erros e avisos estão listados no **título Erros e Avisos.**  Para obter mais informações sobre o Manifesto do Aplicativo Web, navegue até Usar o Manifesto do Aplicativo Web para integrar seu Aplicativo Web Progressivo [ao Sistema Operacional][ProgressiveWebAppsWebappmanifests].  Para criar ícones para incluir no Manifesto do Aplicativo Web, navegue até o Gerador de [Imagens do PWABuilder.][PwabuilderImagegenerator]  Para revisar atualizações em tempo real sobre esse recurso no projeto de código aberto do Chromium, navegue até o Problema [1185945][CR1185945].  
+Para revisar erros e avisos em seu Manifesto do Aplicativo Web, navegue até a ferramenta **Aplicativo** e escolha a **seção Manifesto.**  Os erros e avisos estão listados no **título Erros e Avisos.**  Para obter mais informações sobre o Manifesto do Aplicativo Web, navegue até Usar o Manifesto do Aplicativo Web para integrar seu Aplicativo Web Progressivo [ao Sistema Operacional][ProgressiveWebAppsWebappmanifests].  Para criar ícones para incluir no Manifesto do Aplicativo Web, navegue até o Gerador de [Imagens do PWABuilder.][PwabuilderImagegenerator]  Para revisar as atualizações em tempo real sobre esse recurso no Chromium de código aberto, navegue até o Problema [1185945][CR1185945].  
 
-## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>DevTools localizado agora tem suporte em navegadores baseados em Chromium  
+## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>O DevTools localizado agora tem suporte Chromium navegadores baseados em Chromium  
 
 <!--  Title: Localization for all  -->  
 <!--  Subtitle: Match browser language enabled to all Chromium-based browsers  -->  
 
-A partir [do Microsoft Edge versão 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages], o Microsoft Edge DevTools é exibido em seu próprio idioma.  Muitos desenvolvedores usam outras ferramentas de desenvolvedor, como StackOverflow e Visual Studio Code em seu idioma nativo, não apenas em inglês.  A equipe do Microsoft Edge DevTools, a equipe do Chrome DevTools e a equipe do Google Lighthouse colaboraram para fornecer a mesma experiência em todos os navegadores baseados em Chromium.  Para obter mais informações sobre como usar o DevTools em seu idioma, navegue até Alterar configurações de idioma [do DevTools.][DevtoolsCustomizeLocalization]  Para obter mais informações sobre a colaboração neste recurso no projeto de código aberto do Chromium, navegue até [1136655][CR1136655].  
+A partir [Microsoft Edge versão 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages], Microsoft Edge DevTools é exibido em seu próprio idioma.  Muitos desenvolvedores usam outras ferramentas de desenvolvedor, como StackOverflow e Visual Studio Code em seu idioma nativo, não apenas em inglês.  A equipe Microsoft Edge DevTools, a equipe chrome DevTools e a equipe do Google Lighthouse colaboraram para fornecer a mesma experiência em todos os navegadores Chromium baseados em Chromium.  Para obter mais informações sobre como usar o DevTools em seu idioma, navegue até Alterar configurações de idioma [do DevTools.][DevtoolsCustomizeLocalization]  Para obter mais informações sobre a colaboração neste recurso no Chromium de código aberto, navegue até [1136655][CR1136655].  
 
-:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Navegador do Microsoft Edge e DevTools definido como japonês" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
-   Navegador do Microsoft Edge e DevTools definido como japonês  
+:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge navegador e DevTools definido como japonês" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
+   Microsoft Edge navegador e DevTools definido como japonês  
 :::image-end:::  
 
 ## <a name="use-the-keyboard-to-navigate-to-css-variables"></a>Usar o teclado para navegar até variáveis CSS  
@@ -141,7 +141,7 @@ A partir [do Microsoft Edge versão 81][DevtoolsWhatsNew202001DevtoolsUsingDevto
 <!--  Title: Navigate to CSS variables with the arrow keys  -->  
 <!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->  
 
-A partir [do Microsoft Edge versão 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane], o painel **Estilos** exibe variáveis CSS e fornece um link diretamente para a definição de cada variável.  No Microsoft Edge versão 91 ou posterior, você pode usar as teclas de seta para navegar facilmente para variáveis CSS.  Para abrir a definição no painel **Estilos,** passe o mouse em uma variável e selecione `Enter` .  Para obter mais informações sobre variáveis CSS, navegue até [Using CSS custom properties (variables)][MdnDocsWebCssUsingCssCustomProperties].  Para revisar atualizações em tempo real sobre esse recurso no projeto de código aberto do Chromium, navegue até o Problema [1187735][CR1187735].  
+A partir [Microsoft Edge versão 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane], o painel **Estilos** exibe variáveis CSS e fornece um link diretamente para a definição de cada variável.  Na Microsoft Edge versão 91 ou posterior, você pode usar as teclas de seta para navegar facilmente para variáveis CSS.  Para abrir a definição no painel **Estilos,** passe o mouse em uma variável e selecione `Enter` .  Para obter mais informações sobre variáveis CSS, navegue até [Using CSS custom properties (variables)][MdnDocsWebCssUsingCssCustomProperties].  Para revisar as atualizações em tempo real sobre esse recurso no Chromium de código aberto, navegue até o Problema [1187735][CR1187735].  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="A variável CSS --theme-body-background realçada no painel Estilos" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    A `--theme-body-background` variável CSS realçada no painel **Estilos**  
@@ -152,18 +152,18 @@ A partir [do Microsoft Edge versão 88][DevtoolsWhatsNew202011DevtoolsCssVariabl
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-A **ferramenta Issues** exibe recomendações para melhorar seu site, incluindo acessibilidade, desempenho, segurança e assim por diante. Com base em seus comentários, os problemas agora são automaticamente resolvidos por gravidade.  Em cada categoria de comentários, cada problema marcado como **Erro** aparece primeiro, seguido de cada problema marcado como Aviso **,** em seguida, cada problema marcado como uma **Dica**.  Para ajudá-lo a refinar seus problemas, as opções de filtro extra são planejadas para uma atualização futura.  Para obter mais informações sobre como revisar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Problemas do [Microsoft Edge DevTools.][DevtoolsIssuesIndex]  
+A **ferramenta Issues** exibe recomendações para melhorar seu site, incluindo acessibilidade, desempenho, segurança e assim por diante. Com base em seus comentários, os problemas agora são automaticamente resolvidos por gravidade.  Em cada categoria de comentários, cada problema marcado como **Erro** aparece primeiro, seguido de cada problema marcado como Aviso **,** em seguida, cada problema marcado como uma **Dica**.  Para ajudá-lo a refinar seus problemas, as opções de filtro extra são planejadas para uma atualização futura.  Para obter mais informações sobre como revisar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Microsoft Edge [Problemas do DevTools.][DevtoolsIssuesIndex]  
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="A ferramenta Issues exibe problemas organizados por gravidade" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    A **ferramenta Issues** exibe problemas organizados por gravidade  
 :::image-end:::  
 
-## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-117"></a>Microsoft Edge Developer Tools for Visual Studio Code versão 1.1.7  
+## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-117"></a>Microsoft Edge Ferramentas de desenvolvedor Visual Studio Code versão 1.1.7  
 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->  
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->  
 
-O [Microsoft Edge Tools for Visual Studio Code versão][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 1.1.7 fornece o DevTools do Microsoft Edge versão [88][DevtoolsWhatsNew202011Devtools].  Essa extensão agora suporta ARM dispositivos e não depende mais do [Depurador para a extensão do Microsoft Edge.][VisualstudioMarketplaceMsjsdiagDebuggerForEdge]  A versão 1.1.7 inclui as seguintes correções de bugs e melhorias.  
+O [Microsoft Edge Ferramentas para Visual Studio Code versão][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 1.1.7 fornece o DevTools do Microsoft Edge versão [88][DevtoolsWhatsNew202011Devtools].  Essa extensão agora suporta ARM dispositivos e não depende mais do [Depurador para Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] extensão.  A versão 1.1.7 inclui as seguintes correções de bugs e melhorias.  
 
 *   Atualizou a confiabilidade do fechamento de destino.  
 *   Atualizou o painel lateral para atualizar automaticamente quando você depura destinos criados ou destruídos.  
@@ -196,17 +196,17 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 [DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "Usando o DevTools em outros idiomas - Novidades no DevTools (Microsoft Edge 81) | Microsoft Docs"  
 [DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "Novidades no DevTools (Microsoft Edge 88) | Microsoft Docs"  
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#css-variable-definitions-in-styles-pane "Definições de variável CSS no painel Estilos - Novidades no DevTools (Microsoft Edge 88) | Microsoft Docs"  
+[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../../whats-new/2020/11/devtools.md#css-variable-definitions-in-styles-pane "Definições de variável CSS no painel Estilos - Novidades no DevTools (Microsoft Edge 88) | Microsoft Docs"  
 [DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "Novidades no DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "Ferramentas de grupo juntas no Modo de Foco - Novidades no DevTools (Microsoft Edge 90) | Microsoft Docs"  
 
-[DevtoolsCommandMenuIndexOpenCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "Abra o Menu de Comando - Execute comandos com o menu DevTools command do Microsoft Edge | Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Alterar configurações de idioma do DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
-[DevtoolsServiceWorkerIndex]: /microsoft-edge/devtools-guide-chromium/service-workers/index "Melhorias do Service Worker | Microsoft Docs"  
+[DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Abra o Menu de Comando - Execute comandos com o menu Microsoft Edge DevTools Command | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Alterar configurações de idioma do DevTools | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Melhorias do Service Worker | Microsoft Docs"  
 
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: /microsoft-edge/progressive-web-apps-chromium/serviceworker#the-service-worker-lifecycle "O ciclo de vida do Trabalhador do Serviço - Use Os Trabalhadores do Serviço para gerenciar solicitações de rede e notificações por push | Microsoft Docs"  
-[ProgressiveWebAppsWebappmanifests]: /microsoft-edge/progressive-web-apps-chromium/webappmanifests "Use o Manifesto do Aplicativo Web para integrar seu Aplicativo Web Progressivo ao sistema operacional | Microsoft Docs"  
+[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "O ciclo de vida do Trabalhador do Serviço - Use Os Trabalhadores do Serviço para gerenciar solicitações de rede e notificações por push | Microsoft Docs"  
+[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "Use o Manifesto do Aplicativo Web para integrar seu Aplicativo Web Progressivo ao sistema operacional | Microsoft Docs"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
@@ -219,10 +219,10 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 [VisualstudioMarketplaceMsjsdiagDebuggerForEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador do Microsoft Edge | Visual Studio Marketplace"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bugs do Chromium"  
-[CR1066604]: https://crbug.com/1066604 "Problema 1066604: DevTools: consulte detalhes sobre a instalação do ServiceWorker e ativação de eventos | Bugs do Chromium"  
-[CR1136655]: https://crbug.com/1136655 "Problema 1136655: Devtools: Localização V2 | Bugs do Chromium"  
-[CR1185945]: https://crbug.com/1185945 "Problema 1185945: Aviso de manifesto indica que todos os ícones devem ser quadrados | Bugs do Chromium"  
-[CR1187735]: https://crbug.com/1187735 "Problema 1187735: Acessibilidade: MAS2.1.1: Teclado: Não é possível invocar a função 'Var(..)' usando o teclado | Bugs do Chromium"  
+[CR1066604]: https://crbug.com/1066604 "Problema 1066604: DevTools: consulte detalhes sobre a instalação do ServiceWorker e ativação de eventos | Chromium bugs"  
+[CR1136655]: https://crbug.com/1136655 "Problema 1136655: Devtools: Localização V2 | Chromium bugs"  
+[CR1185945]: https://crbug.com/1185945 "Problema 1185945: Aviso de manifesto indica que todos os ícones devem ser quadrados | Chromium bugs"  
+[CR1187735]: https://crbug.com/1187735 "Problema 1187735: Acessibilidade: MAS2.1.1: Teclado: Não é possível invocar a função 'Var(..)' usando o teclado | Chromium bugs"  
 
 [MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Usar propriedades personalizadas CSS (variáveis) | MDN"  
 
@@ -238,5 +238,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 -->

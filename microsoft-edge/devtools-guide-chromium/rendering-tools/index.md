@@ -3,16 +3,16 @@ description: Os usuários esperam páginas interativas e suaves.  Cada estágio 
 title: Analisar o desempenho do tempo de execução
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d5c37c188ae9038a7baafc936d2a02299def6366
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397997"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564704"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397997"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="analyze-runtime-performance"></a>Analisar o desempenho do tempo de execução  
 
 Os usuários esperam páginas interativas e suaves.  Cada estágio no pipeline de pixels representa uma oportunidade de introduzir jank.  Saiba mais sobre ferramentas e estratégias para identificar e corrigir problemas comuns que retardam o desempenho do tempo de execução.  
@@ -148,7 +147,7 @@ A tabela a seguir descreve alguns problemas comuns de layout e possíveis soluç
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## <a name="paint-and-composite"></a>Tinta e composição  
+## <a name="paint-and-composite"></a>Paint e composto  
 
 Paint é o processo de preenchimento de pixels.  Geralmente, é a parte mais cara do processo de renderização.  Se você reparou que sua página não está funcionando como projetada de alguma forma, é provável que você tenha problemas de tinta.  
 
@@ -156,7 +155,7 @@ A composição é onde as partes pintadas da página são colocadas juntas para 
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### <a name="paint-and-composite-tools"></a>Tinta e composição: Ferramentas  
+### <a name="paint-and-composite-tools"></a>Paint e composição: Ferramentas  
 
 Quer saber quanto tempo a pintura leva ou com que frequência a pintura ocorre?  Verifique a [configuração Habilitar instrumentação de][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] tinta avançada no painel **Desempenho** e, em seguida, fazer uma gravação.  Se a maior parte do tempo de renderização for gasto pintando, você terá problemas de tinta.  
 
@@ -171,13 +170,13 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### <a name="paint-and-composite-problems"></a>Tinta e composição: Problemas  
+### <a name="paint-and-composite-problems"></a>Paint e composição: Problemas  
 
 A tabela a seguir descreve alguns problemas comuns de tinta e composição e possíveis soluções.  
 
 | Problema | Exemplo | Solução |  
 |:--- |:--- |:--- |  
-| Tempestades de tinta que afetam a resposta ou animação.  | Áreas de tinta grande ou tintas caras que afetam a resposta ou animação.  | Evite tinta, promova elementos que estão se movendo para sua própria camada, use transformes e opacidade.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Paint que afetam a resposta ou a animação.  | Áreas de tinta grande ou tintas caras que afetam a resposta ou animação.  | Evite tinta, promova elementos que estão se movendo para sua própria camada, use transformes e opacidade.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
 | Explosões de camada que afetam animações.  | A superpromoção de muitos elementos com afeta muito o desempenho `translateZ(0)` da animação.  | Promova para camadas com moderação e somente quando você sabe que ele oferece melhorias tangíveis.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
@@ -224,5 +223,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

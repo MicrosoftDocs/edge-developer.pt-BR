@@ -1,18 +1,18 @@
 ---
-description: Inspecionar e modificar animações com o Inspetor de Animação do Microsoft Edge DevTools.
+description: Inspecionar e modificar animações com o inspetor de animação Microsoft Edge DevTools.
 title: Inspecionar animações
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a695517cb56da057e62293b5ca92b22058602f44
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439539"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564214"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439539"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-animations"></a>Inspecionar animações  
 
-Inspecionar e modificar animações com o Inspetor de Animação do Microsoft Edge DevTools.  
+Inspecionar e modificar animações com o inspetor de animação Microsoft Edge DevTools.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="inspetor de animação" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
    inspetor de animação  
@@ -44,7 +43,7 @@ Inspecionar e modificar animações com o Inspetor de Animação do Microsoft Ed
 
 ## <a name="overview"></a>Visão geral  
 
-O Inspetor de Animação do Microsoft Edge DevTools tem duas finalidades principais.  
+O Microsoft Edge DevTools Animation Inspector tem duas finalidades principais.  
 
 *   Inspecionando animações.  Você deseja reduzir a velocidade, repetir ou inspecionar o código-fonte de um Grupo de Animação.  
 *   Modificando animações.  Você deseja modificar os deslocamentos de tempo, atraso, duração ou estrutura de chaves de um Grupo de Animação.  No momento, a edição do Bezier e a edição de estrutura de chave não são suportadas.  
@@ -66,11 +65,11 @@ Há duas maneiras de abrir o Inspetor de Animação:
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animações usando o Menu Principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animações usando** o Menu Principal  
-    :::image-end:::  
+        :::image-end:::  
         
 *   Abra o **Menu de Comando**  
     1.  Digite `Drawer: Show Animations`.  
-
+        
 O Inspetor de Animação abre ao lado da **ferramenta Console.**  Como o Inspetor de Animação é uma ferramenta Drawer, você pode usar o Inspetor de Animação de qualquer painel DevTools.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspetor de Animação Vazia" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
@@ -168,11 +167,6 @@ Para adicionar um atraso a uma animação, escolha e arraste-a em qualquer lugar
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
-(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
-
 <!-- links -->  
 
 > [!NOTE]
@@ -185,4 +179,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

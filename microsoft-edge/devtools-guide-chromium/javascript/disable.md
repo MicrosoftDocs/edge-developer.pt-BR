@@ -1,18 +1,18 @@
 ---
 description: Abra o Menu de Comando e execute o comando "Desabilitar JavaScript".
-title: Desabilitar JavaScript com o Microsoft Edge DevTools
+title: Desabilitar JavaScript com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: c9b5605aff5680ff0f44386c4a69e4c9f7c08cc8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519349"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564158"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11519349"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="disable-javascript-with-microsoft-edge-devtools"></a>Desabilitar JavaScript com o Microsoft Edge DevTools  
+# <a name="disable-javascript-with-microsoft-edge-devtools"></a>Desabilitar JavaScript com Microsoft Edge DevTools  
 
 Para analisar como sua página da Web é renderiza quando um navegador não tem suporte para JavaScript, desabilite temporariamente o JavaScript.
 
 Conclua as seguintes ações para examinar como uma página da Web é exibida e se comporta ao desativar o JavaScript.  
 
-1.  [Abra o Microsoft Edge DevTools][DevToolsOpen].  
+1.  [Abra Microsoft Edge DevTools][DevToolsOpen].  
 1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o **Menu de Comando**.  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="O Menu De comando" lightbox="../media/javascript-console-command.msft.png":::
@@ -68,7 +67,7 @@ Para habilitar o JavaScript, conclua as seguintes ações.
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -80,4 +79,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

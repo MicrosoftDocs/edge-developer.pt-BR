@@ -1,18 +1,18 @@
 ---
 description: Organize recursos por quadro, domínio, tipo ou outros critérios.
-title: Exibir recursos de página com o Microsoft Edge DevTools
+title: Exibir recursos de página com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 415ed45bf650aa6800ab674cce74179f783a82c7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519440"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565068"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519440"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="view-page-resources-with-microsoft-edge-devtools"></a>Exibir recursos de página com Microsoft Edge DevTools  
 
-# <a name="view-page-resources-with-microsoft-edge-devtools"></a>Exibir recursos de página com o Microsoft Edge DevTools  
-
-Este guia ensina como usar o Microsoft Edge DevTools para exibir os recursos de uma página da Web.  Recursos são os arquivos que uma página precisa para exibir corretamente.  Exemplos de recursos incluem arquivos CSS, JavaScript e HTML, bem como imagens.  
+Este guia ensina como usar Microsoft Edge DevTools para exibir os recursos de uma página da Web.  Recursos são os arquivos que uma página precisa para exibir corretamente.  Exemplos de recursos incluem arquivos CSS, JavaScript e HTML, bem como imagens.  
 
 Este guia supõe que você está familiarizado com os conceitos básicos de [desenvolvimento da Web][MDNLearnWebDevelopment] e Microsoft Edge [DevTools.][MicrosoftEdgeDevTools]  
 
@@ -159,10 +158,10 @@ Navegue [até Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso - Inspecionar a atividade de rede no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspecionar os detalhes do recurso - Inspecionar a atividade de rede no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Atividade de rede de log - Inspecionar a atividade de rede no Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso - Inspecionar a atividade de rede Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspecionar os detalhes do recurso - Inspecionar a atividade de rede Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Atividade de rede de log - Inspecionar a atividade de rede Microsoft Edge DevTools | Microsoft Docs"  
 
 [MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: o elemento Frame em linha | MDN"  
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Saiba mais sobre desenvolvimento da Web | MDN"  
@@ -177,4 +176,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

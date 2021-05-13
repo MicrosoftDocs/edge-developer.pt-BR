@@ -1,18 +1,18 @@
 ---
-description: Como mover o Microsoft Edge DevTools para a parte inferior ou esquerda do seu viewport ou para uma janela separada.
-title: Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)
+description: Como mover Microsoft Edge DevTools para a parte inferior ou esquerda do seu viewport ou para uma janela separada.
+title: Alterar Microsoft Edge posicionamento do DevTools (Desfazer, Doca para baixo, Doca para a esquerda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519153"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564361"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519153"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Doca para baixo, Doca para a esquerda)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Alterar Microsoft Edge posicionamento do DevTools (Desfazer, Doca para baixo, Doca para a esquerda)  
 
 Por padrão, o DevTools está encaixado à direita do seu modo de exibição (janela).  Você também pode encaixar o DevTools na parte inferior ou esquerda da janela ou desfazer o DevTools em uma janela separada.
 
@@ -86,7 +85,7 @@ O DevTools pode ser desfeito em uma janela separada, que você pode mover para u
     
 ## <a name="change-placement-from-the-command-menu"></a>Alterar o posicionamento do Menu de Comando  
 
-1.  [Abra o Menu de Comando][DevtoolsCommandMenu], `Shift` + `Ctrl` + `P` selecionando no Windows/Linux ou no `Command` + `Shift` + `P` macOS.  
+1.  [Abra o Menu de Comando][DevtoolsCommandMenu], `Shift` + `Ctrl` + `P` selecionando em Windows/Linux ou no `Command` + `Shift` + `P` macOS.  
 1.  Depois do `>` caractere, `dock` insira e escolha um dos seguintes comandos:  
     
     *  **Encaixe na parte inferior**
@@ -107,7 +106,7 @@ O DevTools pode ser desfeito em uma janela separada, que você pode mover para u
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Execute comandos com o menu DevTools Command do Microsoft Edge | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Execute comandos com o menu Microsoft Edge DevTools Command | Microsoft Docs"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -119,4 +118,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

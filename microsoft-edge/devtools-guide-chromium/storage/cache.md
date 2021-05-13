@@ -1,18 +1,18 @@
 ---
 description: Como exibir dados de cache do painel Aplicativo do Microsoft Edge DevTools.
-title: Exibir dados de cache com o Microsoft Edge DevTools
+title: Exibir dados de cache com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 1f66419014682a316fa565c5ef2ab704f652637f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439314"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564683"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11439314"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="view-cache-data-with-microsoft-edge-devtools"></a>Exibir dados de cache com o Microsoft Edge DevTools  
+# <a name="view-cache-data-with-microsoft-edge-devtools"></a>Exibir dados de cache com Microsoft Edge DevTools  
 
 Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspecionar [dados de cache.][MDNCache]  
 
@@ -42,7 +41,7 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
        O **painel** Manifesto  
     :::image-end:::  
     
-1.  Expanda a **seção Armazenamento de Cache** para exibir caches disponíveis.  
+1.  Expanda **a seção Cache Armazenamento** para exibir caches disponíveis.  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Caches disponíveis" lightbox="../media/storage-application-cache-storage.msft.png":::
        Caches disponíveis  
@@ -99,11 +98,11 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
     
 ## <a name="delete-all-cache-data"></a>Excluir todos os dados de cache  
 
-1.  Abra **o Armazenamento**Limpo do  >  **Aplicativo**.  
-1.  Verifique se a caixa de **seleção Armazenamento de Cache** está habilitada.  
+1.  Abra **o Aplicativo**Clear  >  **Armazenamento**.  
+1.  Verifique se a **caixa de Armazenamento** cache está habilitada.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="A caixa de seleção Armazenamento de Cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       A **caixa de seleção Armazenamento de** Cache  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="A caixa de Armazenamento cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       A **caixa de Armazenamento** cache  
     :::image-end:::  
     
 1.  Escolha **Limpar dados do site**.  
@@ -118,7 +117,7 @@ Se você estiver tentando inspecionar dados [de cache HTTP,][MDNHTTPCaching] ess
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Ferramentas de desenvolvedor | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
@@ -134,4 +133,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
 description: Um tutorial sobre os recursos relacionados à rede mais populares no Microsoft Edge DevTools.
-title: Inspecionar a atividade de rede no Microsoft Edge DevTools
+title: Inspecionar a atividade de rede Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439693"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565040"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11439693"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>Inspecionar a atividade de rede no Microsoft Edge DevTools  
+# <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>Inspecionar a atividade de rede Microsoft Edge DevTools  
 
 Este é um tutorial prática de alguns dos recursos de DevTools mais usados relacionados à inspeção da atividade de rede para uma página.  
 
@@ -55,7 +54,7 @@ Se você estiver procurando maneiras de melhorar o desempenho da carga da págin
 
 Para obter o máximo deste tutorial, abra a demonstração e experimente os recursos na página de demonstração.  
 
-1.  Abra a [demonstração Get Started][GlitchNetworkGetStarted].  
+1.  Abra o [Introdução Demo][GlitchNetworkGetStarted].  
     
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="A demonstração" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        A demonstração  
@@ -367,13 +366,13 @@ Navegue até [a Referência de Rede][DevtoolsNetworkReference] para descobrir ma
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Alterar o posicionamento do Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Alterar Microsoft Edge posicionamento do DevTools | Microsoft Docs"  
 [DevtoolsNetworkReference]: ./reference.md "Referência de análise de rede | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Solicitações de filtro - Referência de análise de rede | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ocultar o painel Visão geral - Referência de análise de rede | Microsoft Docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrar solicitações por propriedades - Referência de análise de rede | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Otimizar a velocidade do site com o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Otimizar a velocidade do site com Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspecionar a demonstração de atividade de rede | Glitch"  
 
@@ -389,4 +388,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

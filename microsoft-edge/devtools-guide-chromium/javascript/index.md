@@ -1,18 +1,18 @@
 ---
-description: Saiba como usar o Microsoft Edge DevTools para encontrar e corrigir bugs javaScript.
+description: Saiba como usar o Microsoft Edge DevTools para encontrar e corrigir bugs JavaScript.
 title: Começar a depurar JavaScript no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a60bd0c734df18ba7424cde6a828abbd9e7135a9
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519370"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564088"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -203,7 +203,7 @@ Identificamos uma possível correção para o bug.  Em seguida, edite o código 
 
 1.  Escolha **Retomar execução de script** \( Retomar execução de script ![ ](../media/resume-script-run-icon.msft.png) \).  
 1.  No painel **Editor,** substitua a linha `var sum = addend1 + addend2` por `var sum = parseInt(addend1) + parseInt(addend2)` .  
-1.  Selecione `Control` + `S` \(Windows, Linux\) `Command` + `S` ou \(macOS\) para salvar sua alteração.  
+1.  Selecione `Control` + `S` \(Windows, Linux\) `Command` + `S` ou \(macOS\) para salvar a alteração.  
 1.  Escolha **Desativar pontos de interrupção** \( Desativar pontos de ![ interrupção ](../media/deactivate-breakpoints-button-icon.msft.png) \).  Ele muda em azul para indicar que a opção está ativa.  Embora os pontos de interrupção de desativação **estão definidos,** o DevTools ignora todos os pontos de interrupção que você definir.  
 1.  Experimente a demonstração com valores diferentes.  A demonstração agora calcula corretamente.  
     
@@ -212,7 +212,7 @@ Identificamos uma possível correção para o bug.  Em seguida, edite o código 
 
 ## <a name="next-steps"></a>Próximas etapas  
 
-Parabéns!  Agora você sabe como usar o Microsoft Edge DevTools ao depurar JavaScript.  As ferramentas e os métodos que você aprendeu neste artigo podem salvar inúmeras horas.  
+Parabéns!  Agora você sabe como usar ao máximo Microsoft Edge DevTools ao depurar JavaScript.  As ferramentas e os métodos que você aprendeu neste artigo podem salvar inúmeras horas.  
 
 Este artigo mostrou duas maneiras de definir pontos de interrupção.  O DevTools também fornece maneiras de definir pontos de interrupção para pausar seu código quando determinadas condições são atendidas, como:
 
@@ -237,7 +237,7 @@ Alguns controles de revisão de código não são explicados neste artigo.  Para
 
 [DevToolsJavascriptReference]: ./reference.md "Use os recursos de depurador | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Visão geral da ferramenta Sources | Microsoft Docs"  
-[DevToolsJavscriptBreakpoints]: ./breakpoints.md "Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsJavscriptBreakpoints]: ./breakpoints.md "Como pausar seu código com pontos de interrupção Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Código passo a passo - Use os recursos de depurador | Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
@@ -254,4 +254,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

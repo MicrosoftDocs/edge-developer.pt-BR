@@ -3,7 +3,7 @@ description: White paper de Privacidade do Microsoft Edge
 title: White paper de Privacidade do Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacidade, white paper, confiança
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
-ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
+ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "11496943"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564858"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>White paper de Privacidade do Microsoft Edge  
 
@@ -104,7 +104,7 @@ As Ferramentas de desenvolvedor do Microsoft Edge fornecem ferramentas para depu
 
 A Microsoft usa dados de diagnóstico para melhorar nossos produtos e serviços, mantendo nossos produtos seguros, atualizados e executando conforme o esperado. Sempre que coletamos dados, queremos verificar se é a escolha certa para você. A Microsoft acredita e pratica a minimização da coleta de informações. Estamos nos esforçando para coletar somente as informações de que precisamos e armazená-las enquanto são necessárias para fornecer um serviço ou para análise. 
 
-O Microsoft Edge coleta um conjunto de dados de diagnóstico que são necessários para manter o produto seguro, atualizado e funcionando corretamente. Os dados de diagnóstico necessários incluem dados como conectividade do dispositivo, informações de configuração, configuração de software e inventário. A Microsoft usa os dados de diagnóstico necessários para solucionar problemas e manter os produtos e serviços da Microsoft confiáveis, seguros e funcionando normalmente. Para obter mais informações sobre os dados de diagnóstico em dispositivos gerenciados, navegue até [Configurar os dados de diagnóstico do Windows na sua organização][WindowsPrivacyConfigureDiagnosticDataOrganization] e [Política de grupo de dados de diagnóstico Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings). 
+O Microsoft Edge coleta um conjunto de dados de diagnóstico que são necessários para manter o produto seguro, atualizado e funcionando corretamente. Os dados de diagnóstico necessários incluem dados como conectividade do dispositivo, informações de configuração, configuração de software e inventário. A Microsoft usa os dados de diagnóstico necessários para solucionar problemas e manter os produtos e serviços da Microsoft confiáveis, seguros e funcionando normalmente. Para obter mais informações sobre os dados de diagnóstico em dispositivos gerenciados, navegue até [Configurar os dados de diagnóstico do Windows na sua organização][WindowsPrivacyConfigureDiagnosticDataOrganization] e [Política de grupo de dados de diagnóstico Microsoft Edge](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Dados de diagnóstico" lightbox="./media/diagnostic-data2.png":::
    Dados de diagnóstico  

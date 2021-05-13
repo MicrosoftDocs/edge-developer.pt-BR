@@ -3,16 +3,16 @@ description: Use a API do Console para gravar mensagens no Console.
 title: Referência de API do console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 54b89e25501449a1e5119afa812a0535fbc6ffbb
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 08a29db4dec05de0a21a0e6a9de9a0fb6e0d3f56
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483251"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564508"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -473,7 +473,7 @@ console.log(object [, object, ...])
 
 ---  
 
-## <a name="table"></a>table  
+## <a name="table"></a>tabela  
 
 Este método registra uma matriz de objetos como uma tabela.  
 
@@ -679,4 +679,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

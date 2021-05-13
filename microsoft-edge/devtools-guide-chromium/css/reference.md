@@ -1,18 +1,18 @@
 ---
-description: Descubra novos fluxos de trabalho para exibição e alteração de CSS no Microsoft Edge DevTools.
+description: Descubra novos fluxos de trabalho para exibição e alteração de CSS Microsoft Edge DevTools.
 title: Referência CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 0680b08c9809698c1db6c186a7be76a93c31df4b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519328"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564473"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519328"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="css-reference"></a>Referência CSS  
 
-Descubra novos fluxos de trabalho na referência abrangente a seguir dos recursos do Microsoft Edge DevTools relacionados à exibição e alteração de CSS.  
+Descubra novos fluxos de trabalho na referência abrangente a seguir Microsoft Edge recursos do DevTools relacionados à exibição e alteração de CSS.  
 
-Para saber as noções básicas, navegue até [Começar a exibir e alterar CSS][DevToolsCSSGetStarted].  
+Para saber as noções básicas, navegue até Introdução [exibir e alterar CSS][DevToolsCSSGetStarted].  
 
 ## <a name="choose-an-element"></a>Escolher um elemento  
 
@@ -159,7 +158,7 @@ Conclua as seguintes ações para exibir uma página no modo de impressão.
 
 A **ferramenta Coverage** mostra qual CSS uma página realmente usa.  
 
-1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) enquanto o [][DevToolsCommandMenu]DevTools está em foco para abrir o Menu de Comando .  
+1.  Selecione `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) enquanto o DevTools [][DevToolsCommandMenu]está em foco para abrir o Menu de Comando .  
 1.  Comece a digitar `coverage` e escolha Mostrar **Cobertura**.  A **ferramenta Coverage** é exibida.  
     
     :::row:::
@@ -250,7 +249,7 @@ Escolha e edite o nome ou o valor de uma declaração para alterá-la.  Para ata
 
 Ao editar o valor de uma declaração, você pode usar os atalhos de teclado a seguir para incrementar o valor por uma quantidade específica.  
 
-*   Selecione `Alt` + `Up` \(Windows, Linux\) `Option` + `Up` ou \(macOS\) para incrementar `0.1` por .  
+*   Selecione `Alt` + `Up` \(Windows, Linux\) `Option` + `Up` ou \(macOS\) para incrementar por `0.1` .  
 *   Selecione `Up` para alterar o valor por , ou se o valor atual estiver entre e `1` `0.1` `-1` `1` .  
 *   Selecione `Shift` + `Up` para incrementar `10` por .  
 *   Selecione `Shift` + `Page Up` \(Windows, Linux\) `Shift` + `Command` + `Up` ou \(macOS\) para incrementar o valor em `100` .  
@@ -553,10 +552,10 @@ Quando você abre o **Selador de**Cores, **o** Conta-gotas \( Conta-gotas ![ ](.
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Executar comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCSSGetStarted]: ../css/index.md "Começar a exibir e alterar o css | Microsoft Docs"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Adicionar um pseudostate a uma classe - Começar a exibir e alterar o css | Microsoft Docs"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Exibir o CSS para um elemento - Começar a exibir e alterar o css | Microsoft Docs"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "Forçar o Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS) | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "Introdução Com exibição e alteração de css | Microsoft Docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Adicionar um pseudostate a uma classe - Introdução com exibição e alteração de css | Microsoft Docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Exibir o CSS para um elemento - Introdução com exibição e alteração de css | Microsoft Docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Forçar Microsoft Edge DevTools no modo de visualização de impressão (tipo de mídia de impressão CSS) | Microsoft Docs"  
 [DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Reformata um arquivo JavaScript minificado com impressão bastante impressa - Use o depurador | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "O sistema de cores - Design de Material"  
@@ -573,4 +572,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

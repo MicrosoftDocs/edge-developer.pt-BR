@@ -1,18 +1,18 @@
 ---
-description: A documentação canônica para atalhos de teclado do Microsoft Edge DevTools.
-title: Atalhos de teclado do Microsoft Edge DevTools
+description: A documentação canônica para Microsoft Edge atalhos de teclado do DevTools.
+title: Microsoft Edge Atalhos de teclado do DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: f2b10bc763073632975248cd5a9caa523702e869
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519405"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565096"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519405"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Atalhos de teclado do Microsoft Edge DevTools  
+# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Microsoft Edge Atalhos de teclado do DevTools  
 
 Este artigo é uma referência de atalhos de teclado no Microsoft Edge DevTools.
 
@@ -50,7 +49,7 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 
 | Ação | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Mostrar **configurações** | `?` or `F1` | `?` ou `Function`+`F1` |  
+| Mostrar **Configurações** | `?` or `F1` | `?` ou `Function`+`F1` |  
 | Focalizar o próximo painel | `Control`+`]` | `Command`+`]` |  
 | Focalizar o painel anterior | `Control`+`[` | `Command`+`[` |  
 | Alternar de volta para qualquer posição [de encaixe][DevtoolsCustomizeIndexPlacement] usada pela última vez.  Se DevTools tiver estado na posição padrão para toda a sessão, esse atalho desfaz o DevTools em uma janela separada | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -63,7 +62,7 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 | Pesquise texto no painel atual.  Não há suporte nas ferramentas **Auditorias,** **Aplicativos** **e Segurança** | `Control`+`F` | `Command`+`F` |  
 | Abre a **guia Pesquisa** na [Gaveta][DevtoolsCustomizeIndexDrawer], que permite que você pesquise texto em todos os recursos carregados | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Abra um arquivo na ferramenta **Fontes** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
-| Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
+| Ampliar | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Reduzir | `Control`+`-` | `Command`+`-` |  
 | Restaurar o nível de zoom padrão | `Control`+`0` | `Command`+`0` |  
 | Executar trecho de código | Selecione `Control` + `O` para abrir o [Menu de Comando][DevtoolsCommandMenuIndex], digite seguido `!` pelo nome do script e selecione `Enter` | Selecione `Command` + `O` para abrir o [Menu de Comando][DevtoolsCommandMenuIndex], digite seguido `!` pelo nome do script e selecione `Enter` |  
@@ -161,8 +160,8 @@ Os atalhos de teclado a seguir estão disponíveis na maioria, se não todos, pa
 <!-- links -->  
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Gaveta - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Alterar o posicionamento do DevTools - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Gaveta - Personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Alterar o posicionamento do DevTools - Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Pontos de interrupção de linha de código - Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools | Microsoft Docs"  
 
@@ -178,4 +177,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

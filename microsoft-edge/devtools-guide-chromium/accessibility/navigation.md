@@ -1,18 +1,18 @@
 ---
-description: Um guia sobre como navegar no Microsoft Edge DevTools usando tecnologias assistivas, como leitores de tela.
-title: Navegue pelo Microsoft Edge DevTools com tecnologia assistida
+description: Um guia sobre como navegar Microsoft Edge DevTools usando tecnologias assistivas, como leitores de tela.
+title: Navegue Microsoft Edge DevTools com tecnologia assistida
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398431"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564578"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398431"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navegue Microsoft Edge DevTools com tecnologia assistida  
 
-# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navegue pelo Microsoft Edge DevTools com tecnologia assistida  
-
-O artigo a seguir tem como objetivo ajudar os usuários que dependem principalmente de tecnologias assistivas, como leitores de tela, acessar e usar [o Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [O Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] é um pacote de ferramentas de desenvolvedor da Web internas no navegador do Microsoft Edge.  Se você estiver procurando recursos do DevTools relacionados a melhorar a acessibilidade de uma página da Web, navegue até [Referência de Acessibilidade][DevtoolsAccessibilityReference].  
+O artigo a seguir tem como objetivo ajudar os usuários que dependem principalmente de tecnologias assistivas, como leitores de tela, acessar e usar Microsoft Edge [DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] é um pacote de ferramentas de desenvolvedor web internas no Microsoft Edge navegador.  Se você estiver procurando recursos do DevTools relacionados a melhorar a acessibilidade de uma página da Web, navegue até [Referência de Acessibilidade][DevtoolsAccessibilityReference].  
 
 A acessibilidade do DevTools é um trabalho em andamento.  Alguns painéis e guias funcionam melhor com tecnologia assistida do que outras.  Este guia orienta você pelos painéis que são os mais acessíveis e destaca problemas específicos que você pode encontrar ao longo do caminho.  
 
@@ -50,15 +49,15 @@ Por exemplo, a **ferramenta Elements** contém guias adicionais para inspecionar
 
 A referência [Atalhos de Teclado do DevTools][DevtoolsShortcuts] é uma planilha útil.  Certifique-se de marcar e fazer referência a ele à medida que você explora os diferentes painéis.  
 
-## <a name="open-devtools"></a>Abrir DevTools  
+## <a name="open-devtools"></a>Abrir o DevTools  
 
-Para começar, navegue até [Abra o Microsoft Edge DevTools][DevtoolsOpen].  Há várias maneiras de abrir o DevTools, por meio de atalhos de teclado ou itens de menu.  
+Para começar, navegue até [Open Microsoft Edge DevTools][DevtoolsOpen].  Há várias maneiras de abrir o DevTools, por meio de atalhos de teclado ou itens de menu.  
 
 ## <a name="navigate-between-panels"></a>Navegar entre painéis  
 
 ### <a name="navigate-by-keyboard"></a>Navegar pelo teclado  
 
-*   Com o DevTools aberto, selecione `Control` + `]` \(Windows, Linux\) `Command` + `]` ou \(macOS\) para focalizar o próximo painel.  
+*   Com o DevTools aberto, selecione `Control` + `]` \(Windows, `Command` + `]` Linux\) ou \(macOS\) para focalizar o próximo painel.  
 *   Selecione `Control` + `[` \(Windows, Linux\) `Command` + `[` ou \(macOS\) para focalizar o painel anterior.  
 *   Também é possível usar para mover o foco para a lista de guias do ARIA de um painel e usar as teclas de seta para alterar painéis, embora possa ser mais rápido usar os `Shift` + `Tab` atalhos mencionados anteriormente. [][W3CWaiAriaTablist]  
 
@@ -71,7 +70,7 @@ Para começar, navegue até [Abra o Microsoft Edge DevTools][DevtoolsOpen].  Há
 
 Para focalizar um painel específico, use o [Menu de Comando][DevtoolsCommandMenuIndex]:  
 
-1.  Com o DevTools aberto, selecione `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` ou \(macOS\) para abrir o **Menu de Comando**.  
+1.  Com o DevTools aberto, selecione `Control` + `Shift` + `P` \(Windows, `Command` + `Shift` + `P` Linux\) ou \(macOS\) para abrir o **Menu de Comando**.  
     O **Menu de Comando** é uma caixa de combinação de preenchimento automático de pesquisa difusa.  
 1.  Digite o nome do painel que você deseja abrir e use o no teclado para `Down Arrow` navegar até a opção correta.  
 1.  Selecione `Enter` para executar um comando.  
@@ -211,7 +210,7 @@ A **Árvore de Acessibilidade** é apresentada como uma árvore [ARIA][W3CWaiAri
 
 **Problemas conhecidos**  
 
-*   O tipo de [árvore ARIA][W3CWaiAriaTree] usada pelo painel **Acessibilidade** pode não ser exposto corretamente no Microsoft Edge para leitores de tela macOS, como VoiceOver.  [Inscreva-se no problema do Chromium #868480][ChromiumIssues868480] para ser informado sobre o andamento deste problema.  
+*   O tipo de [árvore ARIA][W3CWaiAriaTree] usada pelo painel **Acessibilidade** pode não ser exposto corretamente no Microsoft Edge para leitores de tela macOS, como VoiceOver.  [Inscreva-se Chromium problema #868480][ChromiumIssues868480] para ser informado sobre o andamento deste problema.  
 *   Cada uma das seções Atributos do **ARIA** e Propriedades Computadas está marcada como uma árvore [ARIA][W3CWaiAriaTree], mas cada uma delas não tem atualmente o gerenciamento de foco e não é operada por teclado. ****  
 
 ## <a name="audits-panel"></a>Painel auditorias  
@@ -244,17 +243,17 @@ Para executar uma nova auditoria, use `Shift` + `Tab` para sair do relatório e 
 
 [DevtoolsAccessibilityReference]: ./reference.md "Referência de acessibilidade | Microsoft Docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "O painel Acessibilidade - Referência de Acessibilidade | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) ferramentas de desenvolvedor | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Executar comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Visão geral do console | Microsoft Docs"  
-[DevtoolsCssIndex]: ../css/index.md "Começar a exibir e alterar o css | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Introdução Com exibição e alteração de css | Microsoft Docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes "Exibir nós DOM - Começar a exibir e alterar o dom | Microsoft Docs"  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navegue pela Árvore DOM com um teclado - Começar a exibir e alterar o dom | Microsoft Docs"  
-[DevtoolsOpen]: .. /open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsShortcuts]: .. /shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
-[DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts "Atalhos de teclado do painel estilos - Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: .. /open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: .. /shortcuts/index.md "Microsoft Edge atalhos de teclado do DevTools | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts "Estilos de atalhos de teclado do painel - Microsoft Edge Atalhos de Teclado do DevTools | Microsoft Docs"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problema 868480 - Expor árvores ARIA como tabelas na acessibilidade do Mac"  
 
@@ -278,5 +277,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[RobDodson]: https://developers.google.com/web/resources/contributors/robdodson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson  

@@ -1,18 +1,18 @@
 ---
-description: Como encontrar e analisar o JavaScript e o código CSS nãoutilados no Microsoft Edge DevTools.
-title: Encontre JavaScript e Código CSS nãoutilados com o painel Cobertura no Microsoft Edge DevTools
+description: Como encontrar e analisar o JavaScript e o código CSS não Microsoft Edge DevTools.
+title: Encontre JavaScript e Código CSS nãousado com o painel Cobertura no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519314"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564459"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519314"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Encontre o JavaScript e o código CSS nãoutilados com o painel Cobertura no Microsoft Edge DevTools  
 
-O **painel Cobertura** no Microsoft Edge DevTools ajuda você a encontrar código JavaScript e CSS não-utilado.  A remoção de código nãousado pode acelerar a carga da página e salvar os dados celulares dos usuários móveis.  
+O **painel Cobertura** no Microsoft Edge DevTools ajuda você a encontrar código JAVAScript e CSS não-utilado.  A remoção de código nãousado pode acelerar a carga da página e salvar os dados celulares dos usuários móveis.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analisando a cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analisando a cobertura de código  
@@ -96,7 +95,7 @@ A tabela no painel **Cobertura** exibe os recursos que foram analisados e quanto
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Execute comandos com o menu DevTools Command do Microsoft Edge | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Execute comandos com o menu Microsoft Edge DevTools Command | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botões - Bootstrap"  
 
@@ -110,4 +109,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

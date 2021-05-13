@@ -1,18 +1,18 @@
 ---
-description: Saiba como usar o Microsoft Edge DevTools para exibir e alterar o CSS de uma página.
-title: Introdução à visualização e mudança da CSS
+description: Saiba como usar Microsoft Edge DevTools para exibir e alterar o CSS de uma página.
+title: Introdução à exibição e alteração do CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bc629286530e709bef0e04a671f1a0e56eee48ea
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399089"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564445"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11399089"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="get-started-with-viewing-and-changing-css"></a>Introdução à exibição e alteração do CSS  
 
-# <a name="get-started-with-viewing-and-changing-css"></a>Introdução à visualização e mudança da CSS  
-
-Conclua estes tutoriais interativos para aprender os conceitos básicos de exibição e alteração do CSS para uma página usando o Microsoft Edge DevTools.  
+Conclua estes tutoriais interativos para aprender os conceitos básicos de exibição e alteração do CSS para uma página usando Microsoft Edge DevTools.  
 
 ## <a name="open-css-examples"></a>Exemplos de CSS abertos  
 
@@ -185,7 +184,7 @@ Se você quiser depurar ou testar as Consultas de Mídia definidas em seu CSS, u
 
 <!-- links -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Alterar o posicionamento do Microsoft Edge DevTools (Desfazer, Encaixar na Parte Inferior, Encaixe para a Esquerda)"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Alterar Microsoft Edge posicionamento do DevTools (Desfazer, Encaixar na Parte Inferior, Doca para a Esquerda)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Exemplos css - Microsoft Edge (Chromium) DevTools | Glitch"  
 
@@ -201,4 +200,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

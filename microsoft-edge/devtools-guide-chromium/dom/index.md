@@ -3,16 +3,16 @@ description: Como exibir nós, pesquisar nós, editar nós, fazer referência a 
 title: Começar a exibir e alterar o DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439237"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564284"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,16 +27,15 @@ ms.locfileid: "11439237"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Começar a exibir e alterar o DOM  
 
-Conclua estes tutoriais interativos para aprender os conceitos básicos de exibição e alteração do DOM de uma página usando o Microsoft Edge DevTools.  
+Conclua estes tutoriais interativos para aprender os conceitos básicos de exibição e alteração do DOM de uma página usando Microsoft Edge DevTools.  
 
 Este tutorial supõe que você sabe a diferença entre DOM e HTML.  Navegue [até Apêndice: HTML versus DOM](#appendix-html-versus-the-dom) para uma explicação.  
 
 ## <a name="open-dom-examples"></a>Abrir exemplos dom  
 
-1.  Segure `Control` \(Windows, Linux\) ou `Command` \(macOS\) e escolha **Exemplos dom** para abrir em uma nova guia.  
+1.  Segure `Control` \(Windows, Linux\) `Command` ou \(macOS\) e escolha **Exemplos dom** para abrir em uma nova guia.  
     
     [Exemplos dom][GlitchDomExamples]  
     
@@ -69,7 +68,7 @@ Quando você estiver interessado em um nó DOM específico, **Inspecionar** é u
             
 1.  Em **Inspecionar um Nó,** escolha o **texto de** Tokyo.  Agora, `<li>Tokyo</li>` é realçado na árvore DOM.  
 
-Inspecionar um nó também é a primeira etapa para exibir e alterar os estilos de um nó.  Navegue [até Começar a exibir e alterar CSS][DevToolsCssGetStarted].  
+Inspecionar um nó também é a primeira etapa para exibir e alterar os estilos de um nó.  Navegue [até Introdução exibindo e alterando CSS][DevToolsCssGetStarted].  
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Navegue pela Árvore DOM com um teclado  
 
@@ -318,7 +317,7 @@ Depois de colocar um ponto de interrupção de modificação de subárvore em um
 
 Isso abrange a maioria dos recursos relacionados ao DOM no DevTools.  Você pode descobrir o restante dos recursos, pairando em nós na Árvore DOM, abrindo o menu contextual \(clique com o botão direito do mouse\) e experimentando as outras opções que não foram abordadas neste tutorial.  Navegue até atalhos de teclado [do painel Elementos.][DevToolsShortcutsElements]  
 
-Confira a página [inicial do Microsoft Edge DevTools][MicrosoftEdgeDevTools] para descobrir tudo o que você pode fazer com o DevTools.  
+Confira a página [inicial Microsoft Edge DevTools][MicrosoftEdgeDevTools] para descobrir tudo o que você pode fazer com o DevTools.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
@@ -419,11 +418,11 @@ Muitas das instruções neste tutorial instruim você a passar o mouse em um nó
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge \(Chromium\) | Microsoft Docs"  
-[DevToolsCssGetStarted]: ../css/index.md "Começar a exibir e alterar o css | Microsoft Docs"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Atalhos de teclado de ferramentas de elementos - Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Ferramentas de Desenvolvedor | Microsoft Docs"  
+[DevToolsCssGetStarted]: ../css/index.md "Introdução Com exibição e alteração de css | Microsoft Docs"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Atalhos de teclado da ferramenta Elements - Microsoft Edge atalhos de teclado do DevTools | Microsoft Docs"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemplo do Microsoft Edge (Chromium) DevTools DOM | Glitch"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) Exemplo dom do DevTools | Glitch"
 
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introdução ao dom | MDN"  
 
@@ -437,4 +436,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: Seu trabalho não termina com a garantia de que seu site seja executado muito bem no Microsoft Edge e no Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.
+description: Seu trabalho não termina com a garantia de que seu site seja executado em Microsoft Edge e Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.
 title: Emular e testar outros navegadores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481363"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564277"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "11481363"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>Emular e testar outros navegadores  
 
-Seu trabalho não termina com a garantia de que seu site seja executado muito bem no Microsoft Edge e no Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.  
+Seu trabalho não termina com a garantia de que seu site seja executado em Microsoft Edge e Android.  Mesmo que o Modo de Dispositivo seja capaz de simular um intervalo de outros dispositivos, como iPhones, recomendamos que você confira soluções para emulação fornecidas por outros navegadores.  
 
 ### <a name="summary"></a>Resumo  
 
@@ -47,7 +47,7 @@ O Firefox tem uma exibição de [design][MDNResponsiveDesignMode] responsivo que
 
 ### <a name="edgehtml-emulation"></a>Emulação edgeHTML  
 
-Para emular o Windows Phones, use a emulação do Microsoft Edge \(EdgeHTML\) [embutida][ArchiveMicrosoftEdgeDevtoolsEmulation].  
+Para emular Windows Telefones, use a emulação Microsoft Edge \(EdgeHTML\) [embutida][ArchiveMicrosoftEdgeDevtoolsEmulation].  
 
 Use [a Emulação do IE 11][Ie11DevToolsEmulation] para simular a aparência da sua página em versões mais antigas do Internet Explorer.  
 
@@ -63,12 +63,12 @@ Simuladores de dispositivo e emuladores simulam não apenas o ambiente do navega
 :::image-end:::  
 -->  
 
-No momento, não há como instalar o Microsoft Edge em um emulador android.  No entanto, você pode usar o Navegador android, o Shell de Conteúdo do Chromium e o Firefox para Android que revisaremos mais adiante neste guia.  O Shell de Conteúdo do Chromium executa o mesmo mecanismo de renderização do Chromium que o Microsoft Edge, mas vem sem nenhum dos recursos específicos do navegador.  
+No momento, não há como instalar o Microsoft Edge em um emulador Android.  No entanto, você pode usar o Navegador do Android, o Shell de Conteúdo Chromium e o Firefox para Android que analisaremos mais adiante neste guia.  Chromium O Shell de Conteúdo executa o mesmo Chromium de renderização do Microsoft Edge, mas vem sem nenhum dos recursos específicos do navegador.  
 
 O emulador android vem com o SDK do Android que você precisa baixar como parte do [Android Studio.][AndroidStudioDownload]  Em seguida, siga as instruções [para configurar um dispositivo virtual][AndroidStudioCreateManageVirtualDevices] e iniciar o [emulador][AndroidStudioRunAppsAndroidEmulator].  
 Depois que o emulador for inicializado, escolha no ícone Navegador e teste seu site no navegador de ações antigo para Android.  
 
-#### <a name="chromium-content-shell-on-android"></a>Shell de conteúdo do Chromium no Android  
+#### <a name="chromium-content-shell-on-android"></a>Chromium de conteúdo no Android  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
@@ -76,7 +76,7 @@ Depois que o emulador for inicializado, escolha no ícone Navegador e teste seu 
 :::image-end:::  
 -->  
 
-Para instalar o Shell de Conteúdo do Chromium para Android, deixe o emulador em execução e execute o seguinte comando.  
+Para instalar o shell Chromium conteúdo para Android, deixe o emulador em execução e execute o seguinte comando.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -84,7 +84,7 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Agora você pode testar seu site com o Shell de Conteúdo Chromium.  
+Agora você pode testar seu site com o Shell Chromium Conteúdo.  
 
 #### <a name="firefox-on-android"></a>Firefox no Android  
 
@@ -94,7 +94,7 @@ Agora você pode testar seu site com o Shell de Conteúdo Chromium.
 :::image-end:::  
 -->  
 
-Semelhante ao Shell de Conteúdo do Chromium, você pode obter um APK para instalar o Firefox no emulador.  
+Semelhante ao Shell de Conteúdo Chromium, você pode obter um APK para instalar o Firefox no emulador.  
 
 [Baixe o arquivo .apk correto.][MozillaFirefoxDownload]  
 
@@ -119,7 +119,7 @@ Quando terminar, saiba como trabalhar com o simulador por meio da [documentaçã
    VM moderna do IE  
 :::image-end:::  
 
-O Microsoft Edge \(EdgeHTML\) Máquinas Virtuais \(VMs\) permitem que você acesse diferentes versões do EdgeHTML e do IE em seu computador por meio de VirtualBox \(ou VMWare\).  Escolha uma [máquina virtual na página de download.][MicrosoftDeveloperEdgeVms]  
+Microsoft Edge \(EdgeHTML\) As Máquinas Virtuais \(VMs\) permitem que você acesse diferentes versões de EdgeHTML e IE em seu computador por meio de VirtualBox \(ou VMWare\).  Escolha uma [máquina virtual na página de download.][MicrosoftDeveloperEdgeVms]  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>Emuladores e simuladores baseados em nuvem  
 
@@ -163,6 +163,6 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

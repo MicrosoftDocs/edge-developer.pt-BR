@@ -3,16 +3,16 @@ description: O modo de eventos de linha do tempo exibe todos os eventos disparad
 title: Referência do evento Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2a166c9eebc980682fa872e5ee8d213f2058b384
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b8a15dd3503a891698d1f96bdc99946163d738ff
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398662"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564207"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398662"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="timeline-event-reference"></a>Referência do evento Timeline  
 
 O modo de eventos de linha do tempo exibe todos os eventos disparados durante a gravação.  Use a referência de evento da linha do tempo para saber mais sobre cada tipo de evento de linha do tempo.  
@@ -54,7 +53,7 @@ Esta seção lista eventos que pertencem à categoria Loading e suas propriedade
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| HTML de análise |  O Microsoft Edge correu o algoritmo de análise HTML. |  
+| HTML de análise |  Microsoft Edge o algoritmo de análise HTML. |  
 | Concluir o carregamento |  Uma solicitação de rede concluída. |  
 | Receber Dados |  Os dados de uma solicitação foram recebidos.  Há um ou mais eventos De recebimento de dados. |  
 | Receber Resposta |  A resposta HTTP inicial de uma solicitação. |  
@@ -110,7 +109,7 @@ Esta seção lista eventos que pertencem à categoria Rendering e suas proprieda
 |:--- |:--- |  
 | Layout inválido | O layout da página foi invalidado por uma alteração dom. |  
 | Layout | Um layout de página foi concluído. |  
-| Estilo recalcular | Estilos de elemento recalculados do Microsoft Edge. |  
+| Estilo recalcular | Microsoft Edge estilos de elemento recalculados. |  
 | Rolagem | O conteúdo do exibição aninhado foi rolado. |  
 
 ### <a name="rendering-event-properties"></a>Propriedades de evento de renderização  
@@ -119,7 +118,7 @@ Esta seção lista eventos que pertencem à categoria Rendering e suas proprieda
 |:--- |:--- |  
 | Layout invalidado | Para registros de Layout, o rastreamento de pilha do código que fez com que o layout fosse invalidado. |  
 | Nós que precisam de layout | Para registros de Layout, o número de nós que foram marcados como layout necessário antes do retransmissão ser iniciado.  Esses são normalmente os nós que foram invalidados pelo código do desenvolvedor, além de um caminho para cima para raiz de retransmissão. |  
-| Tamanho da árvore de layout | Para registros de Layout, o número total de nós sob a raiz de retransmissão \(o nó que o Microsoft Edge inicia o retransmissão\). |  
+| Tamanho da árvore de layout | Para registros layout, o número total de nós sob a raiz de retransmissão \(o nó que Microsoft Edge inicia o retransmissão\). |  
 | Escopo de layout | Os valores `Partial` possíveis são \(o limite de layout de novo é uma parte do DOM\) ou `Whole document` . |  
 | Elementos afetados | Para registros de estilo recalculado, o número de elementos afetados por um recálculo de estilo. |  
 | Estilos invalidados | Para registros de estilo recalculado, fornece o rastreamento de pilha do código que causou a invalidação do estilo. |  
@@ -130,17 +129,17 @@ Esta seção lista eventos que pertencem à categoria Painting e suas propriedad
 
 | Evento | Descrição |  
 |:--- |:--- |  
-| Camadas compostas | As camadas de imagem compostas para o mecanismo de renderização do Microsoft Edge. |  
+| Camadas compostas | As camadas de imagem compostas para o Microsoft Edge de renderização. |  
 | Decodificar imagem | Um recurso de imagem foi decodificado. |  
 | Resize de imagem | Uma imagem foi resized de suas dimensões nativas. |  
-| Paint | Camadas compostas foram pintadas para uma região da exibição.  Passar o mouse sobre um registro Paint realça a região da exibição que foi atualizada. |  
+| Paint | Camadas compostas foram pintadas para uma região da exibição.  Passar o mouse sobre um Paint realça a região da exibição que foi atualizada. |  
 
 ### <a name="painting-event-properties"></a>Propriedades do evento Painting  
 
 | Propriedade | Descrição |  
 |:--- |:--- |  
-| Location | Para eventos Paint, as coordenadas x e y do retângulo de tinta. |  
-| Dimensões | Para eventos Paint, a altura e a largura da região pintada. |  
+| Location | Para Paint eventos, as coordenadas x e y do retângulo de tinta. |  
+| Dimensões | Para Paint eventos, a altura e a largura da região pintada. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
@@ -166,6 +165,6 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[FlavioCopes]: https://developers.google.com/web/resources/contributors/flaviocopes  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes  

@@ -1,18 +1,18 @@
 ---
-description: Uma referência abrangente dos recursos do painel do Microsoft Edge DevTools Network.
+description: Uma referência abrangente dos recursos do painel Microsoft Edge DevTools Network.
 title: Referência de Análise de Rede
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439700"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564830"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439700"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="network-analysis-reference"></a>Referência de Análise de Rede  
 
-Descubra novas maneiras de analisar como sua página é carregada nesta referência abrangente dos recursos de análise de rede do Microsoft Edge DevTools.  
+Descubra novas maneiras de analisar como sua página é carregada nesta referência abrangente dos recursos de análise de rede Microsoft Edge DevTools.  
 
 ## <a name="record-network-requests"></a>Registrar solicitações de rede  
 
@@ -45,7 +44,7 @@ Por padrão, o DevTools registra todas as solicitações de rede na ferramenta *
 Para interromper a gravação de solicitações, conclua as etapas a seguir.  
 
 1.  Na ferramenta **Rede,** escolha **Parar de gravar log de rede** \( Pare de gravar log de rede ![ ](../media/record-on-icon.msft.png) \).  Fica cinza para indicar que o DevTools não está mais gravando solicitações.  
-1.  Selecione `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) enquanto **a ferramenta Rede** está em foco.  
+1.  Selecione `Control` + `E` \(Windows, Linux\) `Command` + `E` ou \(macOS\) **** enquanto a ferramenta Rede estiver em foco.  
 
 ### <a name="clear-requests"></a>Limpar solicitações  
 
@@ -418,7 +417,7 @@ A tabela Solicitações exibe as seguintes colunas por padrão.
    :::column span="2":::
       Os seguintes objetos ou processos iniciam solicitações.  
       
-      *   **Analisador**  O analisador HTML do Microsoft Edge.  
+      *   **Analisador**  O analisador HTML para Microsoft Edge.  
       *   **Redirecionamento**  Um redirecionamento HTTP.  
       *   **Script**  Uma função JavaScript.  
       *   **Outros**  Algum outro processo ou ação, como navegar até uma página usando um link ou inserir uma URL na barra de endereços.  
@@ -904,7 +903,7 @@ Escolha uma solicitação de rede e navegue até o painel **Headers.**  Para cop
    :::column-end:::
    :::column span="":::
         :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Código com resposta formatada JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
-          Colar json de resposta formatada no Microsoft Visual Studio Code  
+          Colar json de resposta formatada em Microsoft Visual Studio Código  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -981,4 +980,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

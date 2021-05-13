@@ -1,18 +1,18 @@
 ---
 description: Use a ferramenta Problemas para encontrar e corrigir problemas com seu site.
-title: Encontrar e corrigir problemas com a ferramenta Problemas do Microsoft Edge DevTools
+title: Encontre e corrige problemas com a ferramenta Microsoft Edge Problemas do DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: e16bd926ea5bae35ad82f54ac5d1ae2028e3c59d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398970"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564179"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11398970"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Encontrar e corrigir problemas com a ferramenta Problemas do Microsoft Edge DevTools  
+# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Encontre e corrige problemas com a ferramenta Microsoft Edge Problemas do DevTools  
 
 A **ferramenta Problemas** no Microsoft Edge DevTools reduz a fatiga de notificação e a desordem do **Console**.  Use-o para encontrar soluções para problemas detectados pelo navegador, como problemas de cookie e conteúdo misto.  
 
@@ -38,7 +37,7 @@ A **ferramenta Problemas** no Microsoft Edge DevTools reduz a fatiga de notifica
 > *   [Conteúdo misto][MDNMixedContent]  
 > *   [Problemas de COEP][W3CCOEPSpec]
 > 
-> A equipe do Microsoft Edge DevTools planeja dar suporte a mais tipos de problemas em versões futuras do Microsoft Edge.  
+> A Microsoft Edge equipe do DevTools planeja dar suporte a mais tipos de problemas em versões futuras Microsoft Edge.  
 
 ## <a name="open-the-issues-tool-in-the-devtools-drawer"></a>Abra a ferramenta Problemas na gaveta DevTools  
 
@@ -116,14 +115,14 @@ A **ferramenta Problemas** na Gaveta de DevTools apresenta avisos de forma estru
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Testes de cookie sameSite | Glitch"  
 
 [MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "Cookies sameSite | MDN"  
 [MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Conteúdo misto | MDN"  
 
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Política de embedder entre origens | Grupo da Comunidade de Incubadores da Web"  
+[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Política de embedder entre origens | Grupo Community Web Incubator"  
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
@@ -134,5 +133,5 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[SamDutton]: https://developers.google.com/web/resources/contributors/samdutton  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  

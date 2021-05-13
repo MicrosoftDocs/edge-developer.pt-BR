@@ -1,18 +1,18 @@
 ---
 description: Como exibir dados SQL Web no painel Aplicativo do Microsoft Edge DevTools.
-title: Exibir dados SQL Web com o Microsoft Edge DevTools
+title: Exibir dados SQL Web com Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bc25f7422be19bec99bde1cd7764f08aad8e6668
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439595"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564697"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,14 @@ ms.locfileid: "11439595"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Exibir dados SQL Web com o Microsoft Edge DevTools  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Exibir dados SQL Web com Microsoft Edge DevTools  
 
 > [!WARNING]
 > A especificação SQL Web [não está sendo mantida.][W3CWebSQLStatus]  
 
 Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspecionar dados SQL Web.  
 
-## <a name="view-web-sql-data"></a>Exibir dados SQL Web  
+## <a name="view-web-sql-data"></a>Exibir Dados SQL Web  
 
 1.  Escolha a **ferramenta Fontes** para abrir a **ferramenta Sources.**  O **painel** Manifesto geralmente é aberto por padrão.  
     
@@ -57,7 +56,7 @@ Este guia mostra como usar o [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pa
     
 ## <a name="edit-web-sql-data"></a>Editar dados SQL Web  
 
-Você não é capaz de editar dados SQL Web ao exibir uma tabela SQL Web, como na anterior acima.  Mas você pode executar instruções do Console web SQL que editam ou excluem tabelas.  Navegue [até Executar consultas SQL Web.](#run-web-sql-queries)  
+Você não é capaz de editar dados SQL Web ao exibir uma tabela SQL Web, como no anterior acima.  Mas você pode executar instruções do Console web SQL que editam ou excluem tabelas.  Navegue [até Executar consultas SQL Web.](#run-web-sql-queries)  
 
 ## <a name="run-web-sql-queries"></a>Executar consultas SQL Web  
 
@@ -105,7 +104,7 @@ O DevTools não atualiza tabelas em tempo real.  Para atualizar os dados em uma 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) ferramentas de desenvolvedor | Microsoft Docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL banco de dados | W3C"  
 
@@ -119,4 +118,4 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
