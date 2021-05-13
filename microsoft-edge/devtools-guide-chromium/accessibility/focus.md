@@ -3,16 +3,16 @@ description: Abra o Console, crie uma Expressão Ativa e dejuste a expressão co
 title: Acompanhar qual elemento tem o foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: e7d7bc9ebf8dd891bf7531d8dd283801a01fc3c1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439167"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564592"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439167"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="track-which-element-has-focus"></a><span data-ttu-id="aaf5e-104">Acompanhar qual elemento tem o foco</span><span class="sxs-lookup"><span data-stu-id="aaf5e-104">Track which element has focus</span></span>  
 
 <span data-ttu-id="aaf5e-105">Suponha que você está testando a acessibilidade de navegação do teclado de uma página.</span><span class="sxs-lookup"><span data-stu-id="aaf5e-105">Suppose that you are testing the keyboard navigation accessibility of a page.</span></span>  <span data-ttu-id="aaf5e-106">Ao navegar pela página com a chave, o anel de foco às vezes desaparece porque o elemento que `Tab` tem foco está oculto.</span><span class="sxs-lookup"><span data-stu-id="aaf5e-106">When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.</span></span>  
@@ -68,4 +67,4 @@ ms.locfileid: "11439167"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
