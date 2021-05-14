@@ -3,17 +3,17 @@ description: A ferramenta Novidades agora se chama Bem-Vindo, Editor de Fonte Vi
 title: Novidades no DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514365"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564921"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -166,7 +166,7 @@ Teste a aparência do seu site ou aplicativo nos seguintes dispositivos no Micro
     
 Ative os **recursos da Plataforma Web Experimental** para acessar o novo [recurso de abrangência de tela de mídia CSS][DualScreenWebCssMediaSpanning] e [a API JavaScript getWindowSegments][DualScreenWebJavascriptGetwindowsegments].  Navegue até `edge://flags` e alterne o sinalizador ao lado dos recursos para **recursos da Plataforma Web Experimental**.  Para ajudar a aprimorar seu site ou aplicativo para dispositivos de tela dupla e dobráveis, use os seguintes recursos ao [emular o dispositivo][DevtoolsDeviceModeIndex].  
 
-*   [Abrangência][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices], que é quando seu site \(ou app\) aparece em ambas as telas.  
+*   [Abrangência][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], que é quando seu site \(ou app\) aparece em ambas as telas.  
 *   [Renderização da junção][DualScreenIntroductionHowToWorkWithSeam], que é o espaço entre as duas telas.  
     
 Para revisar o histórico desse recurso no projeto de código aberto do Chromium, navegue até o Problema [1054281][CR1054281].  
@@ -180,7 +180,7 @@ Para revisar o histórico desse recurso no projeto de código aberto do Chromium
 O [Microsoft Edge Developer Tools para o Visual Studio Code ][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extensão versão 1.1.2 para Microsoft Visual Studio Code tem as seguintes alterações desde a versão anterior.  O Microsoft Visual Studio Code atualiza as extensões automaticamente.  Para atualizar manualmente para a versão 1.1.2, navegue até [Atualizar uma extensão manualmente.][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  
 
 *   Adicionado um botão **Fechar instância** a cada item na lista de destino \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
-*   Modificada versão [Microsoft Edge DevTools][DevtoolsMain] de 84.0.522.63 para [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
+*   Modificada versão [Microsoft Edge DevTools][DevtoolsIndex] de 84.0.522.63 para [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
 *   Incluído [Depurador para o Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] como uma dependência \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)  
 *   Opção de configurações implementadas para alterar temas de extensão \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
     
@@ -426,16 +426,16 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Novidades no DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Exibir a taxa de contraste de um elemento de texto no Seletor de Cor - Referência de acessibilidade |Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "Alterar CSS - Referência de CSS | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar atalhos de teclado no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "Teste em dispositivos dobáveis e de tela dupla : emular dispositivos de duas telas e dobáveis no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simular visor móvel – Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-load-performance "Registrar desempenho de carga - Referência de análise de desempenho | Microsoft Docs"  
-[DevtoolsInspectStylesEditFonts]: /microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts "Editar configurações e estilos de fonte CSS no painel Estilos no DevTools | Microsoft Docs"  
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Visão geral das Ferramentas de Desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Exibir a taxa de contraste de um elemento de texto no Seletor de Cor - Referência de acessibilidade |Microsoft Docs"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Alterar CSS - Referência de CSS | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Teste em dispositivos dobáveis e de tela dupla : emular dispositivos de duas telas e dobáveis no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simular visor móvel – Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Registrar desempenho de carga - Referência de análise de desempenho | Microsoft Docs"  
+[DevtoolsIndex]: ../../../index.md "Visão geral das Ferramentas para Desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Editar configurações e estilos de fonte CSS no painel Estilos no DevTools | Microsoft Docs"  
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Como trabalhar com a junção – Introdução aos dispositivos de duas telas | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Recurso de abrangência de tela de mídia CSS para detecção de dualidade de tela | Microsoft Docs"  
@@ -500,6 +500,6 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 
 [SpanningPlaceholder]: link-t-b-d "Espaços reservados de abrangência"  
