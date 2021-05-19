@@ -3,17 +3,17 @@ description: Guia de início com WebView2 para aplicativos WPF
 title: Começar com WebView2 para aplicativos WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, aplicativos wpf, wpf, borda, CoreWebView2, controle do navegador, html de borda, get started, Get Started, .NET
-ms.openlocfilehash: e7ddb3977d34e8150a10354e638226bcf96d610d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+keywords: WebView2, webview2, WebView, webview, aplicativos wpf, wpf, borda, CoreWebView2, controle do navegador, html de borda, Introdução, .NET
+ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535782"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574593"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>Começar com WebView2 no WPF
 
@@ -23,7 +23,7 @@ Neste artigo, você pode começar a criar seu primeiro aplicativo WebView2 e sab
 
 Certifique-se de instalar a lista de pré-requisitos a seguir antes de prosseguir.  
 
-*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no sistema operacional com suporte \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] ou qualquer canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] não estável instalado no sistema operacional com suporte \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 ou posterior.  
     
 ## <a name="step-1---create-a-single-window-app"></a>Etapa 1 - Criar um aplicativo de janela única  
@@ -43,7 +43,7 @@ Comece com um projeto de área de trabalho básico que contém uma única janela
        :::column-end:::
     :::row-end:::
     
-1.  Insira valores para **Nome do Projeto e** **Local.**  Escolha **.NET Framework 4.6.2** ou posterior \(ou **.NET Core 3.0** ou posterior\).  
+1.  Insira valores para **Project nome e** **Local.**  Escolha **.NET Framework 4.6.2** ou posterior \(ou **.NET Core 3.0** ou posterior\).  
     
     :::row:::
        :::column span="1":::
@@ -62,7 +62,7 @@ Comece com um projeto de área de trabalho básico que contém uma única janela
 
 Use NuGet para adicionar o SDK WebView2 ao projeto.  
 
-1.  Passe o mouse no projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Gerenciar Pacotes NuGet...**.  
+1.  Passe o mouse no projeto, abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Gerenciar NuGet Pacotes...**.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Gerenciar pacotes NuGet" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Gerenciar pacotes NuGet

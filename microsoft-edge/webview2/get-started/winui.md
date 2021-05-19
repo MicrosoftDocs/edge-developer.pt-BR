@@ -3,17 +3,17 @@ description: Guia de início com WebView2 para aplicativos WinUI
 title: Começar com WebView2 para aplicativos WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, aplicativos winui, winui, edge, CoreWebView2, controle do navegador, html de borda, get started, Get Started, .NET
-ms.openlocfilehash: ad78c5e65af507031ddd510f4b21782fe00ae465
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+keywords: WebView2, webview2, WebView, webview, aplicativos winui, winui, edge, CoreWebView2, controle do navegador, html de borda, Introdução, .NET
+ms.openlocfilehash: e334e8e7aec5fff4c57700a99de5cde906242e4f
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535774"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574579"
 ---
 # <a name="get-started-with-webview2-in-winui-3-preview"></a>Começar com WebView2 no WinUI 3 (Visualização)  
 
@@ -23,7 +23,7 @@ Neste artigo, você pode começar a criar seu primeiro aplicativo WebView2 e sab
 
 Certifique-se de instalar a lista de pré-requisitos a seguir antes de prosseguir.  
 
-*   [WebView2 Runtime][Webview2Installer] ou qualquer canal não estável do [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado no Windows 10 versão 1803 \(build 17134\) ou posterior.  Para obter mais informações sobre o Windows 10, navegue até [Windows Update: Perguntas frequentes][MicrosoftSupport12373].  
+*   [WebView2 Runtime][Webview2Installer] ou qualquer canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] não estável instalado no Windows 10 versão 1803 \(build 17134\) ou posterior.  Para obter mais informações sobre Windows 10, navegue [até Windows Atualização: Perguntas frequentes][MicrosoftSupport12373].  
     
     > [!NOTE]
     > A equipe webView recomenda o uso do canal Canary e a versão mínima necessária é 82.0.488.0.  
@@ -31,21 +31,21 @@ Certifique-se de instalar a lista de pré-requisitos a seguir antes de prossegui
 *   [Visual Studio][MicrosoftVisualstudioMain] 2019, versão 16.9 Preview.  Para obter mais informações, navegue [até Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
     *   Inclua as seguintes cargas de trabalho ao instalar Visual Studio.  
         *   Desenvolvimento da área de trabalho do .NET \(o instalador também instala o .NET 5\)  
-        *   Desenvolvimento da Plataforma Universal do Windows  
+        *   Desenvolvimento Windows Plataforma Universal  
     *   Para criar aplicativos C++, você também deve incluir as cargas de trabalho a seguir.  
         *   Desenvolvimento de área de trabalho com C++  
-        *   O componente opcional C++ \(v142\) Ferramentas da Plataforma Universal do Windows para a carga de trabalho da Plataforma Universal do Windows.  Para obter mais informações, navegue até **Detalhes de** Instalação na seção desenvolvimento da Plataforma Universal do **Windows,** no painel direito.  
+        *   O componente opcional C++ \(v142\) Universal Windows Plataforma para a carga de trabalho da Plataforma Universal Windows.  Para obter mais informações, navegue até **Detalhes de** Instalação na seção Desenvolvimento da **Plataforma Universal** Windows, no painel direito.  
         
 ## <a name="step-0---visual-studio-settings"></a>Etapa 0 - Visual Studio configurações  
 
-1.  Verifique se o sistema tem uma fonte de pacote NuGet habilitada para [nuget.org][NugetHome].  Para obter mais informações, navegue [até Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] and [Windows Community Toolkit][WindowsCommunitytoolkit].  
-1.  Baixe e instale o [pacote VSIX do WinUI 3 Preview 3.][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]  O instalador adiciona os modelos de projeto do WinUI 3 e o pacote NuGet que contém as bibliotecas do WinUI 3 para Visual Studio 2019.  
+1.  Verifique se o sistema tem uma NuGet de pacote habilitada para [nuget.org][NugetHome].  Para obter mais informações, navegue [até Common NuGet configurações][NugetConsumePackagesConfiguringNugetBehavior] e [Windows Community Toolkit][WindowsCommunitytoolkit].  
+1.  Baixe e instale o [pacote PROJECT REUNIÃO VSIX][VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion].  O instalador adiciona os modelos de projeto winui 3 e o pacote NuGet que contém as bibliotecas winui 3 para Visual Studio 2019.  
     
-    Para obter instruções sobre como adicionar o pacote ao Visual Studio, navegue até Localizar e `VSIX` [Usar Visual Studio Extensões][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
+    Para obter instruções sobre como adicionar o pacote Visual Studio, navegue até Localizar e `VSIX` [Usar Visual Studio Extensões][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
     
-1.  Para acessar todos os recursos de Visual Studio específicos do desenvolvedor, a opção Modo [de Desenvolvedor.][WindowsUwpGetStartedEnableYourDeviceForDevelopment]  
+1.  Para acessar todos os recursos de Visual Studio específicos do desenvolvedor, a opção Ativar o [Modo de Desenvolvedor.][WindowsUwpGetStartedEnableYourDeviceForDevelopment]  
     
-## <a name="step-1---create-project"></a>Etapa 1 - Criar Projeto  
+## <a name="step-1---create-project"></a>Etapa 1 - Criar Project  
 
 Comece com um projeto de área de trabalho básico que contém uma única janela principal.  
 
@@ -60,17 +60,17 @@ Comece com um projeto de área de trabalho básico que contém uma única janela
 1.  Insira um nome de projeto.
 1.  Escolha opções conforme necessário.  
 1.  Escolha **Criar**.  
-1.  No **Novo Projeto da Plataforma Universal do Windows,** escolha os seguintes valores e escolha **OK**.  
-    *   **Versão de**destino :  **Windows 10, versão 1903 (build 18362)** ou posterior  
-    *   **Versão mínima**:  **Windows 10, versão 1803 (build 17134)**  
+1.  Em **New Universal Windows Platform Project**, escolha os seguintes valores e escolha **OK**.  
+    *   **Versão de**destino : **Windows 10, versão 1903 (build 18362)** ou posterior  
+    *   **Versão mínima**: **Windows 10, versão 1803 (build 17134)**  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="A caixa de diálogo Novo Projeto da Plataforma Universal do Windows com valores escolhidos para a versão De destino e a versão Mínima." lightbox="./media/winui-getting-started-project-type.png":::
-       A caixa de diálogo Novo Projeto da Plataforma Universal do Windows com valores escolhidos para a versão De destino e a versão Mínima.
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="A caixa de diálogo Nova Plataforma Windows Project Universal com valores escolhidos para a versão De destino e a versão Mínima." lightbox="./media/winui-getting-started-project-type.png":::
+       A caixa de diálogo Nova Plataforma Windows Project Universal com valores escolhidos para a versão De destino e a versão Mínima.
     :::image-end:::  
     
 1.  No Explorador de Soluções, dois projetos são gerados.  
     *   **Seu nome do projeto (Área de Trabalho)**.  O projeto desktop contém o código do seu aplicativo.  O `App.xaml.cs` arquivo define uma classe que representa a instância do `Application` aplicativo.  O `MainWindow.xaml.cs` arquivo define uma classe que representa a janela principal exibida pela instância do `MainWindow` aplicativo.  As classes derivam de tipos no `Microsoft.UI.Xaml` namespace do WinUI.  
-    *   **Seu nome do projeto (Pacote)**.  O projeto Pacote é um Projeto de Empacotamento de Aplicativos do Windows configurado para criar o aplicativo em um pacote MSIX para implantação.  O projeto contém o manifesto do pacote para seu aplicativo e é o projeto de inicialização da solução por padrão.  Para obter mais informações, navegue até Configurar seu aplicativo de área de trabalho para empacotamento [MSIX Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] referência de esquema de manifesto de pacote [para Windows 10][UwpSchemasAppxpackageUapmanifestRoot].  
+    *   **Seu nome do projeto (Pacote)**.  O projeto Package é um Windows de empacotamento de aplicativos Project configurado para criar o aplicativo em um pacote MSIX para implantação.  O projeto contém o manifesto do pacote para seu aplicativo e é o projeto de inicialização da solução por padrão.  Para obter mais informações, navegue até Configurar seu aplicativo de área de trabalho para empacotamento [MSIX no Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] e referência do esquema de manifesto do [pacote para Windows 10][UwpSchemasAppxpackageUapmanifestRoot].  
 1.  No Explorador de Soluções, para exibir o código, abra o `MainWindow.xaml` arquivo.  Para executar seu projeto e exibir uma janela com um botão, selecione `F5` .  
     
 ## <a name="step-2---add-a-webview2-control-to-your-project"></a>Etapa 2 - Adicionar um controle WebView2 ao seu projeto  
@@ -296,10 +296,10 @@ Para enviar suas solicitações ou bugs de recursos específicos do WinUI, naveg
 
 <!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "Práticas recomendadas de desenvolvimento do WebView2 | Microsoft Docs"  
-
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introdução ao Microsoft Edge WebView2 (Visualização) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Próximas etapas - Introdução ao Microsoft Edge WebView2 (Visualização) | Microsoft Docs"  
-[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegação | Microsoft Docs"  
+
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.Exemétodo cuteScriptAsync(String) (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
 [NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "Configurações NuGet comuns | Microsoft Docs"  
@@ -331,7 +331,7 @@ Para enviar suas solicitações ou bugs de recursos específicos do WinUI, naveg
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "Modelos do WinUI 3 Project | Visual Studio Marketplace"  
+[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "Project Reunião | Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 

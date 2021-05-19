@@ -3,33 +3,33 @@ description: Os recursos experimentais mais recentes no Microsoft Edge para Apli
 title: Recursos experimentais | Aplicativos Web Progressivos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
-ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
+ms.openlocfilehash: 4a50b925e002746357b2b770b199d84772b456f5
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "11496752"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574586"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Recursos experimentais em PWAs (Progressive Web Apps)  
 
-O Microsoft Edge fornece acesso a recursos experimentais que ainda estão em desenvolvimento.  Para determinar se cada recurso está pronto e quando lançar cada um, teste e [forneça comentários.](#providing-feedback-on-experimental-features)  
+Microsoft Edge fornece acesso a recursos experimentais que ainda estão em desenvolvimento.  Para determinar se cada recurso está pronto e quando lançar cada um, teste e [forneça comentários.](#providing-feedback-on-experimental-features)  
 
-Os recursos experimentais estão disponíveis em todos os canais do Microsoft Edge, mas os recursos experimentais mais recentes estão disponíveis apenas no canal Canary do Microsoft Edge.  
+Os recursos experimentais estão disponíveis em todos os canais de Microsoft Edge, mas os recursos experimentais mais recentes estão disponíveis apenas no canal Microsoft Edge Canary.  
 
 ## <a name="turn-on-experimental-features"></a>Ativar recursos experimentais  
 
-Para ativar \(ou desativar\) recursos experimentais no Microsoft Edge, conclua as etapas a seguir.  
+Para ativar \(ou desativar\) recursos experimentais Microsoft Edge, conclua as etapas a seguir.  
   
 1.  Abra o Microsoft Edge.   
     
     > [!NOTE]
-    > Certifique-se de usar uma versão do Microsoft Edge que tenha o Experimento listado neste artigo.  Navegue até [Recursos Experimentais](#features-that-are-available-to-test).  
+    > Certifique-se de usar uma Microsoft Edge que tenha o Experimento listado neste artigo.  Navegue até [Recursos Experimentais](#features-that-are-available-to-test).  
     
-1.  Navegue até `edge://flags` .  
+1.  Navegue até `edge://flags`.  
 1.  Navegue até o experimento relevante.  
 1.  Escolha o menu suspenso ao lado da descrição do experimento e escolha `Enabled` .  
     
@@ -38,7 +38,7 @@ Para ativar \(ou desativar\) recursos experimentais no Microsoft Edge, conclua a
     :::image-end:::  
     
     > [!NOTE]
-    > Cada experimento geralmente tem um menu suspenso para escolher os seguintes valores.  Se um recurso experimental não tiver uma entrada em **Experimentos,** serão fornecidas instruções para iniciar o Microsoft Edge com esse recurso usando a linha de comando.
+    > Cada experimento geralmente tem um menu suspenso para escolher os seguintes valores.  Se um recurso experimental não tiver uma entrada em **Experimentos,** serão fornecidas instruções para iniciar Microsoft Edge com esse recurso usando a linha de comando.
     > 
     > *   `Default`  
     > *   `Disabled`  
@@ -48,18 +48,18 @@ Para ativar \(ou desativar\) recursos experimentais no Microsoft Edge, conclua a
     
 ### <a name="origin-trials"></a>Avaliações de Origem  
 
-O Microsoft Edge às vezes usa testes de origem para testar recursos para domínios ou sites específicos.  Talvez você queira usar uma avaliação de origem para seu site para aplicar um recurso específico.  Se você for um proprietário de site, poderá se inscrever em uma avaliação de origem.  Uma avaliação de origem fornece recursos para uma porcentagem de usuários do Microsoft Edge que visitam seu site.
+Microsoft Edge às vezes usa testes de origem para testar recursos para domínios ou sites específicos.  Talvez você queira usar uma avaliação de origem para seu site para aplicar um recurso específico.  Se você for um proprietário de site, poderá se inscrever em uma avaliação de origem.  Uma avaliação de origem fornece recursos para uma porcentagem Microsoft Edge usuários que visitam seu site.
 
-Para obter mais informações sobre as avaliação de origem, navegue até [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
+Para obter mais informações sobre as avaliação de origem, navegue até Microsoft Edge Console de Desenvolvedor [de Avaliação de Origem.][MicrosoftDeveloperMicrosoftEdgeOriginTrials]  
     
 > [!NOTE]
 > Os recursos experimentais são constantemente atualizados e podem causar problemas de desempenho.  Para desativar um recurso experimental, navegue até [Ativar recursos experimentais,](#turn-on-experimental-features)navegue até o experimento e escolha `Disabled` .  
 
 ## <a name="features-that-are-available-to-test"></a>Recursos disponíveis para teste  
 
-A lista a seguir descreve os novos recursos experimentais do aplicativo Web que estão disponíveis para testar e validar no Microsoft Edge.  
+A lista a seguir descreve os novos recursos experimentais do aplicativo Web que estão disponíveis para testar e validar em Microsoft Edge.  
 
-| Recurso | Versão do Microsoft Edge | Plataforma |  
+| Recurso | Microsoft Edge versão | Plataforma |  
 |:--- |:--- |:--- |  
 | [Tratamento de protocolo URI](#uri-protocol-handling) | 91 ou posterior | Windows e Linux |    
 | [Manipulação de link de URL](#url-link-handling) | 91 ou posterior | Windows|
@@ -67,7 +67,6 @@ A lista a seguir descreve os novos recursos experimentais do aplicativo Web que 
 | [Executar no logon do sistema operacional](#run-on-os-login) | 88 ou posterior | Todas |  
 | [Atalhos](#shortcuts) | 87 ou posterior | Todas |  
 | [Tratamento de arquivos](#file-handling) | 83 ou posterior | Toda a área de trabalho |  
-
 
 ## <a name="uri-protocol-handling"></a>Tratamento de protocolo URI  
 
@@ -77,9 +76,9 @@ Para obter mais informações sobre o suporte baseado em navegador existente, na
 
 Esse recurso permite que você conclua as seguintes ações.  
 
-*   Registrar seu PWA com o sistema operacional host usando o manifesto do seu aplicativo Web
+*   Registre sua PWA com o sistema operacional host usando o manifesto do seu aplicativo Web
 *   Declare que um PWA lida com um protocolo URI específico  
-     
+    
 Depois de registrar um PWA como um manipulador de protocolo, quando um usuário escolhe um hiperlink com um esquema específico, como ou de um navegador ou um aplicativo nativo, o PWA registrado é ativado pelo sistema operacional e recebe o `mailto://` `web+music://` URI.  
 
 Esse recurso exige que você atualize o manifesto do aplicativo Web para incluir uma matriz, na matriz que você `protocol_handlers` precisa especificar dois campos:  
@@ -87,14 +86,14 @@ Esse recurso exige que você atualize o manifesto do aplicativo Web para incluir
 *   `protocol`: O protocolo para lidar com a solicitação, por exemplo `mailto` ou `web+jngl` .  
 *   `url`: O URI HTTPS no escopo do aplicativo que lida com o protocolo.  No futuro, o URI começando com o esquema de manipuladores de protocolo é planejado para substituir o `%s` token.  
     
-Atualize seu manifesto para dar suporte ao protocolo que você deseja registrar.  Depois de ativar esse recurso, o Microsoft Edge conclui as seguintes ações.  
+Atualize seu manifesto para dar suporte ao protocolo que você deseja registrar.  Depois de ativar esse recurso, Microsoft Edge concluir as seguintes ações.  
 
 1.  Detecta alterações no manifesto  
 1.  Registra o aplicativo para o protocolo  
     
 Se mais de um aplicativo registrar um protocolo, o usuário será apresentado com um prompt.  O usuário escolhe o aplicativo apropriado na lista apresentada pelo sistema operacional ou navegador.  
 
-Para visualizar a manipulação de protocolo no Microsoft Edge no Windows, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a ativar o tratamento do **Protocolo PWA da Área de Trabalho.**  
+Para visualizar o tratamento de protocolo Microsoft Edge no Windows, navegue até Ativar recursos **experimentais**e ause a Área de Trabalho PWA Tratamento de Protocolo . [](#turn-on-experimental-features)  
 
 Para obter mais informações sobre a avaliação de origem em execução para manipuladores de protocolo, navegue até Registrar para Registro para Registro do Manipulador [de Protocolo web][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
@@ -132,13 +131,13 @@ Neste exemplo, um manifesto do aplicativo Web declara que o aplicativo deve ser 
  
 ## <a name="url-link-handling"></a>Manipulação de link de URL  
 
-Um localizador de recursos uniforme \(URL\) é um tipo de URI.  Crie uma experiência mais envolvente quando os Aplicativos Web Progressivos \(PWAs\) se registrarem como manipuladores para URIs https.  PWAs podem solicitar o lançamento quando URIs associados são ativados.  Por exemplo, se um usuário escolher um link para uma notícia de uma mensagem de email.  Um PWA associado para exibir notícias é automaticamente lançado para manipular a ativação do link.  
+Um localizador de recursos uniforme \(URL\) é um tipo de URI.  Crie uma experiência mais envolvente quando os Aplicativos Web Progressivos \(PWAs\) se registrarem como manipuladores para URIs https.  PWAs podem solicitar o lançamento quando URIs associados são ativados.  Por exemplo, se um usuário escolher um link para uma notícia de uma mensagem de email.  Uma PWA para exibir notícias é automaticamente lançada para manipular a ativação do link.  
 
-Esse recurso permite que você registre um PWA com o navegador usando o manifesto do aplicativo Web e declare que o navegador lida com links específicos.  Para registrar um PWA com o navegador, adicione o `url_handlers` membro opcional ao arquivo de manifesto.  O `url_handlers` membro é um que grupos as `object[]` origens de URIs que o aplicativo deseja manipular.  
+Esse recurso permite que você registre uma PWA com o navegador usando o manifesto do aplicativo Web e declare que o navegador lida com links específicos.  Para registrar uma PWA com o navegador, adicione o `url_handlers` membro opcional ao arquivo de manifesto.  O `url_handlers` membro é um que grupos as `object[]` origens de URIs que o aplicativo deseja manipular.  
 
 A manipulação de links é validada pelo navegador usando um arquivo JSON localizado `web-app-origin-association` na origem.  O arquivo de origem ajusta ainda mais os caminhos incluídos ou excluídos na origem.  Para obter instruções detalhadas sobre como testar o manipulador de URL, navegue até [PWAs como Manipuladores de URL.][GithubWicgPwaUrlHandlerBlobMainExplainerMd]  
 
-Para visualizar a manipulação de link de URL no Microsoft Edge no Windows, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e ause a **Manipulação de URL do PWA da Área**de Trabalho.  
+Para visualizar o tratamento de link de URL [](#turn-on-experimental-features) no Microsoft Edge no Windows, navegue até Ativar recursos experimentais e ause o **Desktop PWA URL Handling**.  
 
 ### <a name="example-of-the-url_handlers-in-the-manifest"></a>Exemplo do url_handlers no manifesto  
 
@@ -172,7 +171,7 @@ O trecho de código a seguir é um exemplo de manifesto do aplicativo Web com o 
 
 Um PWA corresponde a um URI para manipulação de URL se o URI corresponde a uma das cadeias de caracteres de origem e o navegador valida que a origem concorda em permitir que esse aplicativo manipular esse `url_handlers` URI.  
 
-O membro contém uma origem que abrange o escopo e outras origens não `url_handlers` relacionadas do PWA solicitando.  Não restringir URIs ao mesmo escopo ou domínio que o PWA solicitante permite usar nomes de domínio diferentes para o mesmo conteúdo, mas lidar com eles com o mesmo PWA.  
+O membro contém uma origem que abrange o escopo e outras origens não `url_handlers` relacionadas da PWA.  Não restringir URIs ao mesmo escopo ou domínio que o PWA solicitante permite usar nomes de domínio diferentes para o mesmo conteúdo, mas lidar com eles com o mesmo PWA.  
 
 #### <a name="wildcard-matching"></a>Correspondência de caracteres curinga  
 
@@ -191,17 +190,17 @@ Para criar uma barra de título imersiva como um aplicativo nativo **** para seu
     
 Depois que ele fornece uma sobreposição, toda a área do cliente Web estará disponível para você usar.  Esse recurso inclui uma atualização de manifesto.  Ele fornece maneiras de determinar o tamanho e a posição da sobreposição para ajudá-lo a organizar o conteúdo.  
 
-Para visualizar as Sobreposições de Controles de Janela no [](#turn-on-experimental-features) Microsoft Edge para Windows 10, navegue até Ativar recursos experimentais e navegue até **Desktop PWA Window Controls Overlay**.   
+Para visualizar as Sobreposições de Controles de Janela no [](#turn-on-experimental-features) Microsoft Edge para Windows 10, navegue até Ativar recursos experimentais e navegue até **Desktop PWA Sobreposição**de Controles de Janela .   
 
 ### <a name="examples-of-title-bar-area-customization"></a>Exemplos de personalização da área da barra de títulos  
 
-Esse recurso se baseia na capacidade em aplicativos nativos de personalizar a barra de título.  Você pode personalizar uma barra de título para ações ou notificações importantes do aplicativo.  Revise os exemplos a seguir para o Microsoft Visual Studio Code e o Microsoft Teams.  
+Esse recurso se baseia na capacidade em aplicativos nativos de personalizar a barra de título.  Você pode personalizar uma barra de título para ações ou notificações importantes do aplicativo.  Revise os exemplos a seguir para Microsoft Visual Studio Código e Microsoft Teams.  
 
 #### <a name="visual-studio-code"></a>Visual Studio Code  
 
-O Microsoft Visual Studio Code é um editor popular criado em Eletrônica que acompanha várias plataformas de área de trabalho.  
+Microsoft Visual Studio Code é um editor popular criado em Eletrônica que acompanha várias plataformas de área de trabalho.  
 
-O exemplo a seguir exibe como Visual Studio Code usa a barra de título para maximizar a propriedade de tela disponível para incluir o nome do arquivo atual e a estrutura de menu de nível superior na barra de título.  
+O exemplo a seguir exibe como o Visual Studio Code usa a barra de título para maximizar a propriedade da tela disponível para incluir o nome do arquivo atual e a estrutura de menu de nível superior na barra de título.  
 
 :::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Um exemplo da barra de título no Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
    Um exemplo da barra de título no Visual Studio Code  
@@ -209,7 +208,7 @@ O exemplo a seguir exibe como Visual Studio Code usa a barra de título para max
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Ferramenta de colaboração e comunicação do local de trabalho O Microsoft Teams também é criado com o Eletrônica e está disponível em várias plataformas de área de trabalho.  No exemplo a seguir, o Microsoft Teams exibe e botões de navegação, uma caixa de pesquisa `back` `forward` e controles de perfil de usuário.  
+A ferramenta de colaboração e comunicação do local de trabalho Microsoft Teams também é criada com o Eletrônica e disponível em várias plataformas de área de trabalho.  No exemplo a seguir, Microsoft Teams e botões de navegação, uma caixa de pesquisa `back` `forward` e controles de perfil de usuário.  
 
 :::image type="complex" source="../media/teams-title-customization.png" alt-text="Um exemplo da barra de título no Microsoft Teams" lightbox="../media/teams-title-customization.png":::
    Um exemplo da barra de título no Microsoft Teams  
@@ -217,16 +216,16 @@ Ferramenta de colaboração e comunicação do local de trabalho O Microsoft Tea
 
 ### <a name="overlay-window-controls-on-a-frameless-window"></a>Controles de janela de sobreposição em uma janela sem quadros  
 
-Para maximizar a área acessível para conteúdo da Web, o navegador cria uma janela sem quadros.  Uma janela sem quadros remove toda a interface do usuário do navegador, exceto os controles de janela fornecidos como uma sobreposição.  A sobreposição de controles de janela permite que os usuários ainda minimizem, maximizem, restaurem e fechem o aplicativo.  Ele também fornece acesso a controles relevantes do navegador usando o menu do aplicativo Web.  Para navegadores baseados em Chromium, a sobreposição inclui os seguintes controles.  
+Para maximizar a área acessível para conteúdo da Web, o navegador cria uma janela sem quadros.  Uma janela sem quadros remove toda a interface do usuário do navegador, exceto os controles de janela fornecidos como uma sobreposição.  A sobreposição de controles de janela permite que os usuários ainda minimizem, maximizem, restaurem e fechem o aplicativo.  Ele também fornece acesso a controles relevantes do navegador usando o menu do aplicativo Web.  Para Chromium navegadores baseados em Chromium, a sobreposição inclui os seguintes controles.  
 
 *   Uma região arrastável com a mesma largura e altura de cada um dos botões de controle de janela  
-*   O **botão Configurações e** mais \(...\)  
+*   O **Configurações e mais** \(...\) botão  
 *   Os botões de controle de janela minimizam, maximizam, restauram e fecham  
     
 Além dos controles listados anteriormente, a interface do usuário exibida na sobreposição é resized dinamicamente nos seguintes cenários.  
 
-*   Quando um aplicativo Web instalado é lançado, a origem da página **** da Web é exibida à esquerda do menu Configurações e mais \(...\) por alguns segundos e desaparece.  
-*   Se um usuário interagir com **** uma extensão usando o menu Configurações e mais \(...\), o ícone da extensão será exibido na sobreposição à esquerda do menu de três pontos.  Depois de sair de qualquer caixa de diálogo de extensão, o ícone será removido da sobreposição.  
+*   Quando um aplicativo Web instalado é lançado, a origem da página da Web é exibida à esquerda do menu **Configurações** e mais \(...\) por alguns segundos e desaparece.  
+*   Se um usuário interagir com uma extensão usando o menu **Configurações** e mais \(...\), o ícone da extensão será exibido na sobreposição à esquerda do menu de três pontos.  Depois de sair de qualquer caixa de diálogo de extensão, o ícone será removido da sobreposição.  
     
 | Direção do idioma | Local de sobreposição | Detalhes |  
 |:--- |:--- |:--- |  
@@ -485,16 +484,18 @@ body {
 }
 ```  
 
+Chromium navegadores baseados em dados estão testando e moldando esse recurso.  Para obter mais informações, incluindo exemplos de código, navegue até Personalizar a sobreposição de controles de janela da barra de título do seu [PWA.][WebDevWindowControlsOverlay]  
+
 ## <a name="run-on-os-login"></a>Executar logon no sistema operacional  
 
-Esse recurso permite configurar seu aplicativo para iniciar automaticamente quando o usuário faz logor no Microsoft Windows.  Várias classes de aplicativos aproveitam a funcionalidade.  As classes de aplicativos incluem email, chat, painel de monitoramento e aplicativos de exibição de dados em tempo real.  A funcionalidade permite que um usuário se envolva com os aplicativos assim que o usuário faz logor no sistema operacional.  Esse recurso inicia automaticamente o PWA da mesma maneira que é iniciado manualmente.  
+Esse recurso permite configurar seu aplicativo para iniciar automaticamente quando o usuário entrar no Microsoft Windows.  Várias classes de aplicativos aproveitam a funcionalidade.  As classes de aplicativos incluem email, chat, painel de monitoramento e aplicativos de exibição de dados em tempo real.  A funcionalidade permite que um usuário se envolva com os aplicativos assim que o usuário faz logor no sistema operacional.  Esse recurso inicia automaticamente o PWA da mesma forma que é iniciado manualmente.  
 
 > [!IMPORTANT]
 > **Executar no logon do sistema** operacional é um [recurso poderoso.][GithubW3cPermissionsPowerfulFeature]  Os usuários devem decidir se ativarão o recurso para o aplicativo Web instalado.  
 
 ### <a name="turn-on-run-on-os-login"></a>Ativar o logon do sistema operacional  
 
-Para visualizar os **recursos de Logon** do [](#turn-on-experimental-features) sistema operacional Run On para o PWA, navegue até Ativar recursos experimentais e a ativar PWAs da Área de Trabalho **executados no logon do sistema operacional**.  
+Para visualizar os **recursos de Logon** do sistema [](#turn-on-experimental-features) operacional Run On para sua PWA, navegue até Ativar recursos experimentais e a ativar PWAs da Área de Trabalho **executados no logon do sistema operacional**.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Ativar os PWAs da Área de Trabalho executados no experimento de logon do sistema operacional" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Ativar os **PWAs da Área de Trabalho executados no experimento de logon do sistema** operacional  
@@ -502,28 +503,28 @@ Para visualizar os **recursos de Logon** do [](#turn-on-experimental-features) s
 
 ### <a name="turn-on-the-feature-for-the-installed-web-app"></a>Ativar o recurso para o aplicativo Web instalado  
 
-Para ativar o `Start app when you sign in` recurso de um PWA instalado, 
+Para ativar o `Start app when you sign in` recurso para um PWA, 
 
 1.  Abra o Microsoft Edge.   
-1.  Navegue até `edge://apps` .  
+1.  Navegue até `edge://apps`.  
 1.  Passe o mouse em seu aplicativo.  
 1.  Abra o menu contextual \(clique com o botão direito do mouse\) e escolha **Iniciar aplicativo ao entrar**.  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use o menu contextual para ativar o aplicativo Iniciar ao entrar no recurso no Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       Use o menu contextual para ativar o aplicativo **Iniciar ao entrar no** recurso no Microsoft Edge  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use o menu contextual para ativar o aplicativo Iniciar quando você entrar no recurso Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       Use o menu contextual para ativar o aplicativo Iniciar quando **você entrar** no recurso Microsoft Edge  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>Atalhos  
 
-`Shortcuts` é um novo membro do arquivo de manifesto.  Ele permite definir links para partes, páginas da Web principais ou ações em seu aplicativo Web.  O Microsoft Windows o integra como **Jumplists.**  **As listas de opções** definem menus pop-up que aparecem quando você em um dos seguintes elementos da interface do usuário e abre um menu contextual \(clique com o botão direito do mouse\).  
+`Shortcuts` é um novo membro do arquivo de manifesto.  Ele permite definir links para partes, páginas da Web principais ou ações em seu aplicativo Web.  O Microsoft Windows o integra como **Jumplists**.  **As listas de opções** definem menus pop-up que aparecem quando você em um dos seguintes elementos da interface do usuário e abre um menu contextual \(clique com o botão direito do mouse\).  
 
 *   Um tile no Menu Iniciar  
 *   Um ícone na barra de tarefas  
     
 Quando um usuário invoca um atalho, o usuário navega até o endereço especificado pelo `url` membro do atalho.  
   
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Um exemplo de Listas de Saltos no Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
-   Um exemplo de **Listas de Saltos** no Windows 10  
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Um exemplo de listas de Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
+   Um exemplo de **listas de Windows 10**  
 :::image-end:::  
 
 ### <a name="shortcuts-in-the-manifest-file"></a>Atalhos no arquivo De manifesto  
@@ -562,26 +563,26 @@ As propriedades a seguir definem cada atalho.
 
 A capacidade de se registrar como um manipulador de tipo de arquivo está na fase de experimentação.  Você pode especificar os tipos de arquivo que seu aplicativo lida em uma entrada de manifesto.  Durante a instalação, o sistema operacional host do usuário registra seu aplicativo como um manipulador de arquivos para os tipos de arquivo listados.  Verifique a existência do recurso no código de inicialização de seus aplicativos e `launchQueue` que ele lida com o arquivo.  
 
-Os navegadores baseados em Chromium estão testando e moldando esse recurso.  Para obter mais informações, incluindo exemplos de código, navegue até [Permitir que os aplicativos Web sejam manipuladores de arquivos][WebDevFileHandling].  
+Chromium navegadores baseados em dados estão testando e moldando esse recurso.  Para obter mais informações, incluindo exemplos de código, navegue até [Permitir que os aplicativos Web sejam manipuladores de arquivos][WebDevFileHandling].  
 
-Para visualizar o tratamento de arquivos no Microsoft Edge para Windows 10, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a api **de manipulação de arquivos.**  
+Para visualizar o tratamento de arquivos Microsoft Edge para Windows 10, navegue até Ativar recursos [experimentais](#turn-on-experimental-features) e a api **de manipulação de arquivos.**  
     
 ## <a name="providing-feedback-on-experimental-features"></a>Fornecendo comentários sobre recursos experimentais  
 
-Para fornecer comentários sobre experimentos de aplicativo Web do Microsoft Edge.  
+Para fornecer comentários sobre Microsoft Edge experimentos de aplicativo Web.  
 
-*   Envie seus comentários **usando Configurações e Mais** \( `...` \) > Enviar comentários para a **Microsoft**.  
+*   Envie seus comentários usando **Configurações e Mais** \( `...` \) > Enviar comentários para a **Microsoft**.  
 *   Selecione `Alt` + `Shift` + `I` .  
     
-:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Enviar comentários do seu PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
-   Enviar comentários do seu PWA  
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Enviar comentários de sua PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
+   Enviar comentários de sua PWA  
 :::image-end:::  
 
 <!-- links -->  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Testes de origem | Desenvolvedor do Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Testes de origem | Microsoft Edge Desenvolvedor"  
 [MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Registre-se no Registro do Manipulador de Protocolo do Aplicativo Web | Desenvolvedor da Microsoft"  
 
 [MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]: https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers "Manipuladores de protocolo baseados na Web | MDN"  
@@ -591,3 +592,4 @@ Para fornecer comentários sobre experimentos de aplicativo Web do Microsoft Edg
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PWAs como manipuladores de URL | GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "Permitir que os aplicativos Web sejam manipuladores de arquivos | web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "Personalizar a sobreposição de controles de janela da barra PWA de título do seu | web.dev"  
