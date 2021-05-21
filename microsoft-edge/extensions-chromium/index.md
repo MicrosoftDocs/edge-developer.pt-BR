@@ -108,7 +108,7 @@ ms.locfileid: "11327523"
 
 <span data-ttu-id="cdc4f-196">Depois que você enviar sua extensão com êxito, sua extensão passará por um processo de revisão e passará ou falhará no processo de certificação.</span><span class="sxs-lookup"><span data-stu-id="cdc4f-196">After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.</span></span>  <span data-ttu-id="cdc4f-197">Os proprietários são notificados sobre o resultado e dado as próximas etapas conforme necessário.</span><span class="sxs-lookup"><span data-stu-id="cdc4f-197">Owners are notified of the outcome and given next steps as required.</span></span>  <span data-ttu-id="cdc4f-198">Se você enviar uma atualização de extensão para a loja, um novo processo de revisão será iniciado.</span><span class="sxs-lookup"><span data-stu-id="cdc4f-198">If you submit an extension update to the store, a new review process is started.</span></span>  
 
-## <span data-ttu-id="cdc4f-199">Confira também</span><span class="sxs-lookup"><span data-stu-id="cdc4f-199">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="cdc4f-199">Confira também</span><span class="sxs-lookup"><span data-stu-id="cdc4f-199">See also</span></span>  
 
 *   [<span data-ttu-id="cdc4f-200">Fazer a portabilidade de uma extensão do Google Chrome</span><span class="sxs-lookup"><span data-stu-id="cdc4f-200">Port a Google Chrome extension</span></span>][ExtensionworkshopPorting]  
 *   [<span data-ttu-id="cdc4f-201">Criar uma extensão do aplicativo Safari</span><span class="sxs-lookup"><span data-stu-id="cdc4f-201">Build a Safari App extension</span></span>][AppleDeveloperSafariservicesAppExtensionsBuilding]  

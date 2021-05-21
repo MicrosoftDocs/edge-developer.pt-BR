@@ -1,29 +1,14 @@
 ---
-<span data-ttu-id="a057a-101">description: Diferenças de recursos entre o título Microsoft Edge e WebView2: Diferenças de recursos entre o autor Microsoft Edge e WebView2: MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda no-loc:</span><span class="sxs-lookup"><span data-stu-id="a057a-101">description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:</span></span>
-- <span data-ttu-id="a057a-102">"Autofill for Addresses"</span><span class="sxs-lookup"><span data-stu-id="a057a-102">"Autofill for Addresses"</span></span>
-- <span data-ttu-id="a057a-103">"Autofill for Passwords"</span><span class="sxs-lookup"><span data-stu-id="a057a-103">"Autofill for Passwords"</span></span>
-- <span data-ttu-id="a057a-104">"Autofill for Payments""</span><span class="sxs-lookup"><span data-stu-id="a057a-104">"Autofill for Payments""</span></span>
-- <span data-ttu-id="a057a-105">"Browser Extensions""</span><span class="sxs-lookup"><span data-stu-id="a057a-105">"Browser Extensions""</span></span>
-- <span data-ttu-id="a057a-106">"Browser Task Manager"</span><span class="sxs-lookup"><span data-stu-id="a057a-106">"Browser Task Manager"</span></span>
-- <span data-ttu-id="a057a-107">"Collections"</span><span class="sxs-lookup"><span data-stu-id="a057a-107">"Collections"</span></span>
-- <span data-ttu-id="a057a-108">"Continue-where-I-left-off prompt"</span><span class="sxs-lookup"><span data-stu-id="a057a-108">"Continue-where-I-left-off prompt"</span></span>
-- <span data-ttu-id="a057a-109">"Downloads"</span><span class="sxs-lookup"><span data-stu-id="a057a-109">"Downloads"</span></span>
-- <span data-ttu-id="a057a-110">"Edge Shopping"</span><span class="sxs-lookup"><span data-stu-id="a057a-110">"Edge Shopping"</span></span>
-- <span data-ttu-id="a057a-111">"Family Safety"</span><span class="sxs-lookup"><span data-stu-id="a057a-111">"Family Safety"</span></span>
-- <span data-ttu-id="a057a-112">"Favorites"</span><span class="sxs-lookup"><span data-stu-id="a057a-112">"Favorites"</span></span>
-- <span data-ttu-id="a057a-113">"Hotkeys"</span><span class="sxs-lookup"><span data-stu-id="a057a-113">"Hotkeys"</span></span>
-- <span data-ttu-id="a057a-114">"IE Mode"</span><span class="sxs-lookup"><span data-stu-id="a057a-114">"IE Mode"</span></span>
-- <span data-ttu-id="a057a-115">"Immersive Reader"</span><span class="sxs-lookup"><span data-stu-id="a057a-115">"Immersive Reader"</span></span>
-- <span data-ttu-id="a057a-116">"Intrusive Ads"</span><span class="sxs-lookup"><span data-stu-id="a057a-116">"Intrusive Ads"</span></span>
-- <span data-ttu-id="a057a-117">"Read Aloud"</span><span class="sxs-lookup"><span data-stu-id="a057a-117">"Read Aloud"</span></span>
-- <span data-ttu-id="a057a-118">"Smart Screen"</span><span class="sxs-lookup"><span data-stu-id="a057a-118">"Smart Screen"</span></span>
-- <span data-ttu-id="a057a-119">"Translate"</span><span class="sxs-lookup"><span data-stu-id="a057a-119">"Translate"</span></span>
-- <span data-ttu-id="a057a-120">"Tracking Prevention"</span><span class="sxs-lookup"><span data-stu-id="a057a-120">"Tracking Prevention"</span></span>
-- <span data-ttu-id="a057a-121">"Profile and Identity"</span><span class="sxs-lookup"><span data-stu-id="a057a-121">"Profile and Identity"</span></span>
-- <span data-ttu-id="a057a-122">"Web Payment API"</span><span class="sxs-lookup"><span data-stu-id="a057a-122">"Web Payment API"</span></span>
-- <span data-ttu-id="a057a-123">"Windows Defender Application Guard"</span><span class="sxs-lookup"><span data-stu-id="a057a-123">"Windows Defender Application Guard"</span></span>
-- <span data-ttu-id="a057a-124">"edge:// URLs"</span><span class="sxs-lookup"><span data-stu-id="a057a-124">"edge:// URLs"</span></span>
-
+description: Diferenças de recursos entre o título Microsoft Edge e WebView2
+title: Diferenças de recursos entre o título Microsoft Edge e WebView2
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/06/2021
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a><span data-ttu-id="a057a-125">Diferenças de recursos do navegador entre Microsoft Edge e WebView2</span><span class="sxs-lookup"><span data-stu-id="a057a-125">Browser feature differences between Microsoft Edge and WebView2</span></span>  
 
