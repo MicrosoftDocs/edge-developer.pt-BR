@@ -363,8 +363,8 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Controle de prevenção no Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Cadeia de Caracteres do agente de usuário do Microsoft Edge
-          href: web-platform/user-agent-string.md
+        - name: Como detectar o Microsoft Edge em seu site
+          href: web-platform/user-agent-guidance.md
         - name: Personalize o botão de mostrar senha
           href: web-platform/password-reveal.md
     - name: Visão geral da Web que Queremos
