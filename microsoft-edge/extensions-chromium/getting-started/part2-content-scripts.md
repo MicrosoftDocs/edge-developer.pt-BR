@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento da Web, html, css, javascript, desenvolvedor, extensões
-ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397913"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "11579726"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>Criar um tutorial para extensão Parte 2  
   
@@ -26,7 +26,7 @@ Este tutorial aborda as seguintes tecnologias de extensão.
 *   Incluindo páginas de conteúdo em guias de navegador existentes  
 *   Ter páginas de conteúdo escutando mensagens de pop-ups e respondendo  
 
-Você aprenderá a atualizar seu menu pop-up para substituir sua imagem estática de início por um título e um botão HTML padrão.  Esse botão, quando selecionado, passa a imagem de estrelas, inserida na extensão, para a página de conteúdo.  Essa imagem é inserida na guia do navegador ativo. Siga as etapas abaixo para obter mais detalhes.
+Você aprenderá a atualizar seu menu pop-up para substituir sua imagem de estrelas estáticas por um título e um botão HTML padrão.  Esse botão, quando selecionado, passa a imagem de estrelas, inserida na extensão, para a página de conteúdo.  Essa imagem é inserida na guia do navegador ativo. Siga as etapas abaixo para obter mais detalhes.
 
 1.  Remova a imagem do pop-up e substitua-a por um botão  
 
