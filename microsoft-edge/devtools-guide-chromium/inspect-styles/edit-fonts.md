@@ -1,5 +1,5 @@
 ---
-description: Saiba como alterar estilos de fonte CSS e configurações usando o painel Estilos no Microsoft Edge DevTools.
+description: Saiba como alterar estilos de fonte CSS e configurações usando o painel Estilos em Microsoft Edge DevTools.
 title: Editar estilos de fonte CSS e configurações no painel Estilos no DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -26,7 +26,7 @@ CSS oferece melhor suporte para tipografia nos últimos anos.  Dezenas de unidad
 
 Para facilitar o trabalho com tipografia, um Editor de **Fonte** visual agora está no painel **Estilos.**  Você pode alterar suas configurações de fonte e as alterações são renderizadas imediatamente no navegador.  Tudo isso sem conhecimento aprofundado de CSS.  
 
-Atualmente, o **Enable new font editor tool within the Styles pane** recurso é experimental e você precisa austá-lo para Ferramentas de Desenvolvedor do Microsoft [Edge.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
+Atualmente, o **Enable new font editor tool within the Styles pane** recurso é experimental e você precisa austá-lo para Microsoft Edge Ferramentas de [Desenvolvedor.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
 
 Qualquer CSS no painel **Estilos,** definições de fonte ou estilos em linha, exibe automaticamente um ícone que abre o Editor de **Fontes visual**.  Para abrir o Editor **de Fonte visual,** escolha o **ícone editor de** fontes.  
 
@@ -112,6 +112,6 @@ O editor de Propriedades CSS também inclui palavras-chave predefinidas.  Para u
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Ferramentas de desenvolvedor do Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) ferramentas de desenvolvedor | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Recursos experimentais | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turn-on-experimental-features "Ativar recursos experimentais - Recursos experimentais | Microsoft Docs"  

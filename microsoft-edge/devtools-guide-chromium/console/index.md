@@ -1,5 +1,5 @@
 ---
-description: Uma introdução à ferramenta Console dentro das Ferramentas de Desenvolvedor do Microsoft Edge.
+description: Uma introdução à ferramenta Console dentro das ferramentas Microsoft Edge Desenvolvedor.
 title: Usar o Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -39,11 +39,11 @@ O **Console** é uma ótima ferramenta de companhia a ser usada com outras ferra
    :::column-end:::
 :::row-end:::  
 
-A maneira mais rápida de abrir diretamente o **Console** é selecionar `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` ou \(macOS\).  
+A maneira mais rápida de abrir diretamente o **Console** é selecionar `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  
 
 ## <a name="error-reports-and-console"></a>Relatórios de erro e Console  
 
-**Console** é o local padrão em que os erros de conectividade e JavaScript são relatados.  Se ocorrer algum erro, um botão **** será exibido ao lado do ícone Configurações no DevTools que fornece o número de erros e avisos.  Escolha-o para abrir **o Console** e exibir o problema.  Para obter mais informações, navegue até [Depurar erros relatados no Console][DevtoolsConsoleConsoleDebugJavascript].  
+**Console** é o local padrão em que os erros de conectividade e JavaScript são relatados.  Se ocorrer algum erro, um botão será exibido ao lado do ícone Configurações **no** DevTools que fornece o número de erros e avisos.  Escolha-o para abrir **o Console** e exibir o problema.  Para obter mais informações, navegue até [Depurar erros relatados no Console][DevtoolsConsoleConsoleDebugJavascript].  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="O DevTools fornece informações detalhadas sobre o erro no Console" lightbox="../media/console-debug-displays-error.msft.png":::
    O DevTools fornece informações detalhadas sobre o erro no **Console**  

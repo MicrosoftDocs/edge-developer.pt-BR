@@ -45,7 +45,7 @@ Um ótimo lugar para começar a autenticação da Web é a [especificação da A
     
 1.  Na seção **Novo autenticador,** configure as seguintes opções.  
     
-    | Opção | Valor | Detalhes |  
+    | Opção | Value | Detalhes |  
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] ou [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | O protocolo que o autenticador virtual usa para codificação e decodificação |  
     | `Transport` |   `usb`, `nfc` `ble` , ou `internal` | O autenticador virtual simula o transporte selecionado para se comunicar com clientes para obter uma declaração para uma credencial específica.  Para obter mais informações, navegue [até Authenticator Enumeração de Transporte][GithubW3cWebauthnEnumTransport] |  

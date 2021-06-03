@@ -38,7 +38,7 @@ Entregamos com êxito alguns Wants para o Chromium DevTools, como o Visualizador
 
 [DevtoolsExperimentalFeaturesIndexSourceOrderViewer]: ../devtools-guide-chromium/experimental-features/index.md#source-order-viewer "Visualizador de Ordem de Origem - Recursos experimentais | Microsoft Docs"
 
-[WebWeWant]: https://webwewant.fyi "A Web que queremos"
+[WebWeWant]: https://webwewant.fyi "A Web Que Queremos"
 
 [WebWeWantWants]: https://webwewant.fyi/wants "O que queremos | A Web que queremos"
 

@@ -224,7 +224,7 @@ Para obter mais informações sobre quando e como usar cada tipo, navegue até [
 
 Alguns controles de revisão de código não são explicados neste artigo.  Para obter mais informações, navegue até [Passo sobre a][DevToolsJavascriptReferenceStepThroughCode] linha de código no artigo "Usar os recursos do depurador".
 
-### <a name="see-also"></a>Ver também
+### <a name="see-also"></a>Consulte também
 
 *   [Use os recursos de depurador][DevToolsJavascriptReference] - Usando a interface do usuário do depurador na ferramenta Sources.
 *   [Visão geral da ferramenta Sources][DevToolsSourcesIndex] - Apresenta o depurador JavaScript e o editor de código.

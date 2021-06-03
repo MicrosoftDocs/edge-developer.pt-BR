@@ -1,6 +1,6 @@
 ---
-description: Opções de distribuição ao liberar um aplicativo usando o Microsoft Edge WebView2
-title: Distribuição de aplicativos do Microsoft Edge WebView2
+description: Opções de distribuição ao liberar um aplicativo usando Microsoft Edge WebView2
+title: Distribuição de Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -31,22 +31,22 @@ O modo de distribuição Evergreen garante que seu aplicativo está aproveitando
     
 ### <a name="understanding-the-webview2-runtime"></a>Noções básicas sobre o tempo de execução do WebView2  
 
-O WebView2 Runtime é um tempo de execução redistribuível e serve como a plataforma Web de apoio para aplicativos WebView2.  O conceito é semelhante ao Visual C++ ou ao .NET Runtime para aplicativos C++/.NET.  O Tempo de Execução contém binários modificados do Microsoft Edge \(Chromium\) que são ajustados e testados para aplicativos.  O Tempo de Execução não aparece como um navegador visível pelo usuário durante a instalação.  Por exemplo, um usuário não tem um atalho da área de trabalho do navegador ou entrada do menu iniciar.  
+O WebView2 Runtime é um tempo de execução redistribuível e serve como a plataforma Web de apoio para aplicativos WebView2.  O conceito é semelhante ao Visual C++ ou ao .NET Runtime para aplicativos C++/.NET.  O Runtime contém binários Microsoft Edge \(Chromium\) que são ajustados e testados para aplicativos.  O Tempo de Execução não aparece como um navegador visível pelo usuário durante a instalação.  Por exemplo, um usuário não tem um atalho da área de trabalho do navegador ou entrada do menu iniciar.  
 
 Durante o desenvolvimento e o teste, você pode usar como plataforma Web de backing.  
 
 *   O Tempo de Execução do WebView2  
 *   Qualquer canal de navegador do Insider \(non-stable\) Microsoft Edge \(Chromium\)  
     
-Em ambientes de produção, você deve garantir que o Tempo de Execução está presente em dispositivos de usuário antes do aplicativo ser iniciado.  O canal Estável do Microsoft Edge não está disponível para uso do WebView2.  A decisão impede que os aplicativos se ade baseem no navegador em produção.
+Em ambientes de produção, você deve garantir que o Tempo de Execução está presente em dispositivos de usuário antes do aplicativo ser iniciado.  O Microsoft Edge canal Estável não está disponível para uso do WebView2.  A decisão impede que os aplicativos se ade baseem no navegador em produção.
 
 Não tome uma dependência no navegador porque:  
 
-*   O Microsoft Edge \(Chromium\) não tem garantia de estar presente em todos os dispositivos do usuário.  Por exemplo, dispositivos desconectados do Windows Update ou não gerenciados diretamente pela Microsoft \(uma grande parte do mercado Enterprise e EDU\) podem não ter o navegador.  Permitir que você distribua o Tempo de Execução do WebView2 evita a dependência do navegador como um pré-requisito para aplicativos.  
+*   Microsoft Edge \(Chromium\) não é garantido estar presente em todos os dispositivos de usuário.  Por exemplo, dispositivos desconectados do Windows Update ou não gerenciados diretamente pela Microsoft \(uma grande parte do mercado Enterprise e EDU\) podem não ter o navegador.  Permitir que você distribua o Tempo de Execução do WebView2 evita a dependência do navegador como um pré-requisito para aplicativos.  
 *   Navegadores e aplicativos têm casos de uso diferentes e, portanto, tomar uma dependência em um navegador pode ter efeitos colaterais não intencionais em seus aplicativos.  Por exemplo, os administradores de IT podem controlar a versão do navegador para compatibilidade de site interno.  O Tempo de Execução do WebView2 permite que os aplicativos permaneçam sempre agredidos enquanto as atualizações do navegador estão sendo gerenciadas ativamente.  
 *   Em vez do navegador, o Tempo de Execução é desenvolvido e testado para cenários de aplicativos e, em alguns casos, pode incluir correções de bugs ainda não disponíveis no navegador.  
     
-No futuro, o Evergreen WebView2 Runtime planeja enviar com versões futuras do Windows.  Implante o Tempo de Execução com seu aplicativo de produção até que o Tempo de Execução se torne mais universalmente disponível.  
+No futuro, o Evergreen WebView2 Runtime planeja enviar com versões futuras de Windows.  Implante o Tempo de Execução com seu aplicativo de produção até que o Tempo de Execução se torne mais universalmente disponível.  
 
 ### <a name="deploying-the-evergreen-webview2-runtime"></a>Implantando o Tempo de Execução do Evergreen WebView2  
 
@@ -67,13 +67,13 @@ Se você tiver um cenário de implantação somente online em que os usuários s
 1.  Durante a configuração do aplicativo, verifique se o Tempo de Execução já está instalado.  Para verificar, conclua uma das seguintes ações.  
     *   Inspecione se `pv (REG_SZ)` a regkey existe e não `null` está ou vazia.  Encontre  `pv (REG_SZ)` no local a seguir.  
         
-        No Windows de 64 bits  
+        Em 64 bits Windows  
         
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
-        No Windows de 32 bits  
+        Em 32 bits Windows  
         
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
@@ -100,13 +100,13 @@ Se você tiver um cenário de implantação offline em que a implantação do ap
 1.  Durante a configuração do aplicativo, verifique se o Tempo de Execução já está instalado.  Para verificar, conclua uma das seguintes ações.  
     *   Inspecione se `pv (REG_SZ)` a regkey existe e não `null` está ou vazia.  Encontre  `pv (REG_SZ)` no local a seguir.  
         
-        No Windows de 64 bits  
+        Em 64 bits Windows  
         
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
-        No Windows de 32 bits  
+        Em 32 bits Windows  
         
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
@@ -123,7 +123,7 @@ Se você tiver um cenário de implantação offline em que a implantação do ap
 
 A Web está em constante evolução.  O Tempo de Execução do Evergreen WebView2 é mantido atualizado para fornecer os recursos mais recentes e as correções de segurança.  Para garantir que seu aplicativo permaneça compatível com a Web, você deve configurar a infraestrutura de teste.  
 
-Os canais não estáveis do Microsoft Edge \(Beta/Dev/Canary\) fornecem uma visão geral do que está por vir no Tempo de Execução do WebView2.  Assim como desenvolve sites para o Microsoft Edge, você deve testar seu aplicativo WebView2 regularmente.  Teste seu aplicativo WebView2 em um dos canais não estáveis e atualize seus problemas de aplicativo ou [relatório][GithubMicrosoftedgeWebviewfeedback] se surgirem problemas. Normalmente, o Dev e o Beta são os canais recomendados.  Para ajudá-lo a decidir qual canal está correto, navegue até [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  Você pode baixar o canal do [Microsoft Edge][DownloadNonstableEdge] não estável em seu ambiente de teste e usar ou variáveis de ambiente para indicar a preferência de canal para seu aplicativo `regkey` de teste.  Para obter mais informações, navegue até [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Você também pode usar [o WebDriver para][HowToWebdriver] automatizar testes webView2.
+Canais não estáveis Microsoft Edge \(Beta/Dev/Canary\) fornecem uma visão geral do que está por vir no Tempo de Execução do WebView2.  Assim como desenvolve sites para Microsoft Edge, você deve testar seu aplicativo WebView2 regularmente.  Teste seu aplicativo WebView2 em um dos canais não estáveis e atualize seus problemas de aplicativo ou [relatório][GithubMicrosoftedgeWebviewfeedback] se surgirem problemas. Normalmente, o Dev e o Beta são os canais recomendados.  Para ajudá-lo a decidir qual canal está correto, navegue até [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  Você pode baixar o [canal][DownloadNonstableEdge] de Microsoft Edge não estável em seu ambiente de teste e usar ou variáveis de ambiente para indicar a preferência de canal para seu aplicativo `regkey` de teste.  Para obter mais informações, navegue até [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Você também pode usar [o WebDriver para][HowToWebdriver] automatizar testes webView2.
 
 ## <a name="fixed-version-distribution-mode"></a>Modo de distribuição de versão fixa   
 
@@ -174,12 +174,12 @@ Em comparação com o Evergreen Runtime, a Versão Fixa não tem um processo de 
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Noções básicas sobre versões do navegador e webView2 | Microsoft Docs"  
-[HowToWebdriver]: ../how-to/webdriver.md "Automatizar e testar o WebView2 com o Microsoft Edge Driver | Microsoft Docs"  
+[HowToWebdriver]: ../how-to/webdriver.md "Automatizar e testar o WebView2 com Microsoft Edge driver | Microsoft Docs"  
 
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
 
-[DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos canais do Microsoft Edge | Microsoft Docs"  
+[DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Visão geral dos Microsoft Edge canais | Microsoft Docs"  
 
 [ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "Classe CreateAsync - Microsoft.WebView2.Core.CoreWebView2Environment | Microsoft Docs"  
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "Classe EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 | Microsoft Docs"  

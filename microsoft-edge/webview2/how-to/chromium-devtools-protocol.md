@@ -175,7 +175,7 @@ Para arquivar um Chromium ou problema do Protocolo DevTools, conclua as seguinte
 1.  Arquivar um [relatório de bugs.][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]  
 1.  Navegue [até WebView Feedback][GithubMicrosoftedgeWebview2feedback] e abra um novo problema.  
     
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   [Exemplos de WebView2][GithubMicrosoftedgeWebview2samples]  
     

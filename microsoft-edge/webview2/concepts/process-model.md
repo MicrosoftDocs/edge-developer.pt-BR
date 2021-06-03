@@ -26,7 +26,7 @@ ms.locfileid: "11535612"
    :::column-end:::
 :::row-end:::  
 
-O WebView2 usa o mesmo modelo de processo que o navegador do Microsoft Edge.  Para obter mais informações sobre o modelo de processo do navegador, navegue até Arquitetura do Navegador - Confira o [navegador da Web moderno.][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]  
+O WebView2 usa o mesmo modelo de processo que o Microsoft Edge navegador.  Para obter mais informações sobre o modelo de processo do navegador, navegue até Arquitetura do Navegador - Confira o [navegador da Web moderno.][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]  
 
 Um processo de navegador está associado aos processos de renderização e outros processos utilitários, conforme descrito neste artigo.  Além disso, se WebView2 for especificado, os processos de solicitação do aplicativo host usarão WebView2.  
 
@@ -62,14 +62,14 @@ Para abrir a janela Gerenciador de Tarefas do Navegador na janela **DevTools** d
     
 Todos os processos associados ao processo de navegador do WebView2 são exibidos, incluindo finalidades associadas.  
 
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
-*   Para começar a usar o WebView2, navegue até Guias de Início da [WebView2.][Webview2IndexGetStarted]  
-*   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples no][GithubMicrosoftedgeWebview2samples] GitHub.  
+*   Para Introdução WebView2, navegue até [WebView2 Introdução Guias.][Webview2IndexGetStarted]  
+*   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] em GitHub.  
 *   Para obter informações mais detalhadas sobre APIs WebView2, navegue até [referência de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Para obter mais informações sobre WebView2, navegue até [Recursos WebView2][Webview2IndexNextSteps].  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrar em contato com a equipe do Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrar em contato com a equipe Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

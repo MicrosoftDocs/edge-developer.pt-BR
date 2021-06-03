@@ -31,7 +31,7 @@ ms.locfileid: "11461487"
 
 Para usar a maioria das `chrome.*` APIs, sua extensão deve declarar `permissions` o no manifesto.  Você pode declarar permissões usando uma cadeia de caracteres de permissão da tabela a seguir ou usar um padrão para corresponder a cadeias de caracteres semelhantes.  As permissões ajudam a restringir sua extensão se ela for comprometida por malware.  Algumas permissões podem ser exibidas para os usuários antes da instalação da extensão usando Avisos de Permissão.  
 
-Se uma API exigir que você declare permissões no manifesto, revise a documentação dessa API para entender as permissões necessárias.  Por exemplo, a página api de armazenamento descreve como declarar a `storage` permissão.  
+Se uma API exigir que você declare permissões no manifesto, revise a documentação dessa API para entender as permissões necessárias.  Por exemplo, Armazenamento página da API de Armazenamento descreve como declarar a `storage` permissão.  
 
 O trecho de código a seguir descreve como declarar permissões no arquivo de manifesto.  
 
@@ -51,7 +51,7 @@ A tabela a seguir lista as cadeias de caracteres de permissão disponíveis no m
 |:--- |:--- |  
 | `activeTab` | Solicita que a extensão seja concedida permissões de acordo com a `activeTab` especificação. |  
 | `alarms` | Fornece acesso de extensão à `chrome.alarms` API. |  
-| `background` | Faz com que o Microsoft Edge inicie cedo e desligue tarde, para que as extensões possam ter uma vida mais longa.  Quando qualquer extensão instalada tem permissão, o Microsoft Edge é executado invisivelmente assim que o usuário faz logons no computador do usuário e antes de o usuário iniciar o `background` Microsoft Edge.  A permissão também faz com que o Microsoft Edge continue em execução, mesmo após o fechamento da última janela, até que o usuário saia `background` explicitamente do Microsoft Edge.  Essa permissão não afeta extensões que estão desligadas no navegador.  A `background` permissão normalmente é usada em uma página em segundo plano. |  
+| `background` | Faz Microsoft Edge iniciar cedo e desligar tarde, para que as extensões possam ter uma vida mais longa.  Quando qualquer extensão instalada tem permissão, Microsoft Edge é executado de forma invisivelmente assim que o usuário faz logons no computador do usuário e antes que o usuário `background` Microsoft Edge.  A permissão também faz Microsoft Edge continuar em execução, mesmo após o fechamento da última janela, até que o usuário saia explicitamente `background` Microsoft Edge.  Essa permissão não afeta extensões que estão desligadas no navegador.  A `background` permissão normalmente é usada em uma página em segundo plano. |  
 | `bookmarks` | Fornece acesso de extensão à `chrome.bookmarks` API. |  
 | `browsingData` | Fornece acesso de extensão à `chrome.browsingData` API. |  
 | `certificateProvider` | Fornece acesso de extensão à `chrome.certificateProvider` API. |  

@@ -241,7 +241,7 @@ Em Visual Studio Code, conclua as seguintes ações para depurar seu código.
         
 * * *  
 
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   Para começar a usar WebView2, navegue até [WebView2 Introdução Guias][Webview2MainGetStarted].  
 *   Para um exemplo abrangente de recursos WebView2, navegue até o repo do [WebView2Samples][GithubMicrosoftedgeWebview2samples] GitHub.

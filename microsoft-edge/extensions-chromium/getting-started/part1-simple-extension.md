@@ -18,7 +18,7 @@ ms.locfileid: "11397507"
 
 ## <a name="overview"></a>Visão geral  
 
-O objetivo deste tutorial é criar uma extensão do Microsoft Edge (Chromium) começando com um diretório vazio.  Você está criando uma extensão que aparece na imagem da NASA do dia. Neste tutorial, saiba como criar uma extensão concluindo as seguintes ações.  
+O objetivo deste tutorial é criar uma extensão Microsoft Edge (Chromium) começando com um diretório vazio.  Você está criando uma extensão que aparece na imagem da NASA do dia. Neste tutorial, saiba como criar uma extensão concluindo as seguintes ações.  
 
 *   Criando um `manifest.json` arquivo.  
 *   Adicionando ícones.  

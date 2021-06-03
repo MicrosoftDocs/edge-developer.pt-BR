@@ -64,7 +64,7 @@ Rastrear eventos de navegação para cada novo documento usando a ID de navegaç
 
 Para monitorar ou cancelar eventos de navegação dentro de subframes em uma instância webView2, use os eventos e que agem da mesma forma que os eventos equivalentes de contraparte não `FrameNavigationStarting` `FrameNavigationCompleted` quadro.  
 
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   Para começar a usar WebView2, navegue até [WebView2 Introdução Guias.][Webview2IndexGetStarted]  
 *   Para um exemplo abrangente de recursos WebView2, navegue até [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] em GitHub.  

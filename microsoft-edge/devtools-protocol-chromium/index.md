@@ -1,6 +1,6 @@
 ---
-description: Atualizar para o Microsoft Edge DevTools Protocol
-title: Atualização de Protocolo do Microsoft Edge DevTools
+description: Atualizar para o protocolo Microsoft Edge DevTools
+title: Microsoft Edge Atualização do Protocolo DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
@@ -13,21 +13,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11480157"
 ---
-# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Visão geral do Protocolo DevTools do Microsoft Edge (Chromium)  
+# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Microsoft Edge (Chromium) Visão geral do Protocolo DevTools  
 
-Com a mudança na plataforma Web subjacente do Microsoft Edge para o Chromium, o [Protocolo DevTools do Microsoft Edge (EdgeHTML)](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) não receberá mais atualizações.  O Microsoft Edge \(Chromium\) DevTools Protocol corresponderá às APIs do Protocolo Chrome DevTools em frente.  
+Com a mudança na plataforma Web subjacente de Microsoft Edge para Chromium, o Protocolo [Microsoft Edge (EdgeHTML) DevTools não](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) receberá mais atualizações.  O Microsoft Edge \(Chromium\) Protocolo DevTools corresponderá às APIs do Protocolo Chrome DevTools em frente.  
 
 Você pode encontrar documentação sobre esses domínios e métodos referindo-se ao Visualizador de Protocolo [Chrome DevTools](https://chromedevtools.github.io/devtools-protocol/tot).  
 
 > [!NOTE]
-> Quaisquer métodos com prefixo no `ms` [Protocolo DevTools do Microsoft Edge (EdgeHTML)](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) não são mais suportados no Protocolo DevTools do Microsoft Edge \(Chromium\) DevTools Protocol.  
+> Todos os métodos que foram prefixados no protocolo `ms` [Microsoft Edge (EdgeHTML) DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) não são mais suportados no protocolo Microsoft Edge \(Chromium\) DevTools Protocol.  
 
 ## <a name="using-the-devtools-protocol"></a>Usando o Protocolo DevTools  
 
-Veja como anexar um cliente de ferramentas personalizado ao DevTools Server no Microsoft Edge \(Chromium\).  
+Veja como anexar um cliente de ferramentas personalizado ao Servidor DevTools em Microsoft Edge \(Chromium\).  
 
-1.  Verifique se todas as instâncias do Microsoft Edge \(Chromium\) estão fechadas.  
-1.  Iniciar o Microsoft Edge \(Chromium\) com a porta de depuração remota:. 
+1.  Verifique se todas as instâncias de Microsoft Edge \(Chromium\) estão fechadas.  
+1.  Iniciar Microsoft Edge \(Chromium\) com a porta de depuração remota:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ Veja como anexar um cliente de ferramentas personalizado ao DevTools Server no M
 
 ## <a name="devtools-protocol-http-endpoints"></a>Pontos de extremidade HTTP do Protocolo DevTools  
 
-O Microsoft Edge \(Chromium\) DevTools Protocol oferece suporte aos seguintes pontos de extremidade HTTP.  
+O Microsoft Edge \(Chromium\) Protocolo DevTools oferece suporte aos seguintes pontos de extremidade HTTP.  
 
 ## <a name="jsonversion"></a>/json/version  
 
@@ -108,7 +108,7 @@ Fornece uma lista de candidatos de destinos de página para depuração.
 
 ## <a name="jsonclose"></a>/json/close  
 
-Fecha o processo de destino \(por exemplo, no Microsoft Edge \(Chromium\), fecha a guia página\).  
+Fecha o processo de destino \(por exemplo, em Microsoft Edge \(Chromium\), fecha a guia página\).  
 
 **Parâmetros**  
 
@@ -120,17 +120,17 @@ ID de destino
 String(“Target is closing”)
 ```  
 
-## <a name="remote-tools-for-microsoft-edge-beta"></a>Ferramentas remotas para o Microsoft Edge (Beta)  
+## <a name="remote-tools-for-microsoft-edge-beta"></a>Ferramentas remotas para Microsoft Edge (Beta)  
 
-Agora você pode instalar as [Ferramentas Remotas do Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) na [Microsoft Store](https://www.microsoft.com/store/apps/windows).  Este aplicativo permite depurar remotamente o Microsoft Edge (Chromium) em execução em um dispositivo Windows 10 da máquina de desenvolvimento.  
+Agora você pode instalar as Ferramentas Remotas para [Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) do [Microsoft Store](https://www.microsoft.com/store/apps/windows).  Este aplicativo permite que você depure remotamente Microsoft Edge (Chromium) em execução em um dispositivo Windows 10 de seu computador de desenvolvimento.  
 
-Para saber como configurar seu dispositivo Windows 10 e se conectar a ele a partir de sua máquina de desenvolvimento, navegue até Começar com a Depuração Remota de [Dispositivos Windows 10](../devtools-guide-chromium/remote-debugging/windows.md).  
+Para saber como configurar seu dispositivo Windows 10 e se conectar a ele a partir de sua máquina de desenvolvimento, navegue até Introdução com a [Depuração Remota Windows 10 Dispositivos](../devtools-guide-chromium/remote-debugging/windows.md).  
 
-As Ferramentas Remotas do [Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) usam o mesmo Protocolo de DevTools do Microsoft Edge (Chromium) que o [DevTools](../devtools-guide-chromium/index.md) para se comunicar com o Microsoft Edge em execução no dispositivo Windows 10 que você deseja depurar.  Este aplicativo apenas se prepara e `/msedge/` uma ID do processo ( `pid` ) antes de cada chamada para o protocolo.  Ele dá suporte aos seguintes pontos de extremidade HTTP.  
+As Ferramentas Remotas para [Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) usam o mesmo protocolo Microsoft Edge (Chromium) DevTools que o [DevTools](../devtools-guide-chromium/index.md) para se comunicar com Microsoft Edge em execução no dispositivo Windows 10 que você deseja depurar.  Este aplicativo apenas se prepara e `/msedge/` uma ID do processo ( `pid` ) antes de cada chamada para o protocolo.  Ele dá suporte aos seguintes pontos de extremidade HTTP.  
 
 ### <a name="msedgejsonlist"></a>/msedge/json/list  
 
-Fornece uma lista de candidatos de todos os processos \(incluindo PWAs e todas as guias em todas as instâncias do Microsoft Edge\) no dispositivo `msedge.exe` Windows 10 para depuração. [](../progressive-web-apps-chromium/index.md)  
+Fornece uma lista de candidatos de todos os processos `msedge.exe` \(incluindo [PWAs](../progressive-web-apps-chromium/index.md) e todas as guias em todas as instâncias de Microsoft Edge\) no dispositivo Windows 10 para depuração.  
 
 **Parâmetros**  
 
@@ -158,7 +158,7 @@ Funcionalmente equivalente a [/msedge/json/list](#msedgejsonlist).
 
 ### <a name="msedgepidjsonlist"></a>/msedge/[pid]/json/list  
 
-Fornece uma lista de candidatos de destinos de página para a instância do Microsoft Edge que corresponde à fornecida `[pid]` para depuração.  
+Fornece uma lista de candidatos de destinos de página para a instância Microsoft Edge que corresponde à `[pid]` fornecida para depuração.  
 
 **Parâmetros**  
 
@@ -181,7 +181,7 @@ Fornece uma lista de candidatos de destinos de página para a instância do Micr
 
 ### <a name="msedgepidjsonversion"></a>/msedge/[pid]/json/version  
 
-Fornece informações sobre a instância do Microsoft Edge que corresponde à versão fornecida e a qual versão do `[pid]` Protocolo DevTools suporta.  
+Fornece informações sobre a instância Microsoft Edge que corresponde à fornecida e qual versão do `[pid]` Protocolo DevTools ele oferece suporte.  
 
 **Parâmetros**  
 
@@ -202,7 +202,7 @@ Fornece informações sobre a instância do Microsoft Edge que corresponde à ve
 
 ### <a name="msedgepidjsonprotocol"></a>/msedge/[pid]/json/protocol/  
 
-Fornece toda a superfície da API de protocolo serializada como JSON para a instância do Microsoft Edge que corresponde à `[pid]` fornecida .  
+Fornece toda a superfície da API de protocolo serializada como JSON para a instância Microsoft Edge que corresponde à `[pid]` fornecida .  
 
 **Parâmetros**  
 
@@ -210,4 +210,4 @@ Fornece toda a superfície da API de protocolo serializada como JSON para a inst
 
 **Objeto Return**  
 
-Objeto JSON que representa a superfície da API disponível para a versão do protocolo que a instância do Microsoft Edge que corresponde ao fornecido `[pid]` está usando.  
+Objeto JSON que representa a superfície da API disponível para a versão do protocolo que a instância Microsoft Edge que corresponde à `[pid]` fornecida está usando.  

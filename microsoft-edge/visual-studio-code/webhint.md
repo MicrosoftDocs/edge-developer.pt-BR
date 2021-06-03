@@ -1,6 +1,6 @@
 ---
 description: Como usar webhint no Visual Studio Code
-title: webhint Visual Studio de código
+title: webhint Visual Studio Code extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -16,15 +16,15 @@ ms.locfileid: "11399271"
 ---
 # <a name="webhint-vs-code-extension"></a>Extensão webhint vs code  
 
-Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade com o PWA e a segurança do seu site.  Ele verifica seu código em busca de práticas recomendadas e erros comuns. Este projeto de código aberto, inicialmente desenvolvido pela equipe do Microsoft Edge, agora faz parte do [OpenJS Foundation][OpenjsFoundation].  A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores web na comunidade.  
+Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, PWA compatibilidade e a segurança do seu site.  Ele verifica seu código em busca de práticas recomendadas e erros comuns. Este projeto de código aberto, inicialmente desenvolvido pela equipe Microsoft Edge, agora faz parte do [OpenJS Foundation][OpenjsFoundation].  A Microsoft Edge equipe continua a contribuir para Webhint junto com os desenvolvedores da Web na comunidade.  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão Visual Studio Código da Web":::
-   Captura de tela da extensão Visual Studio Código da Web  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão Visual Studio Code webhint":::
+   Captura de tela da extensão Visual Studio Code webhint  
 :::image-end:::
 
 <!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-Identifique e corrige problemas em seu HTML, CSS, JavaScript, TypeScript e muito mais adicionando a extensão [webhint para Visual Studio Código][VisualstudioMarketplaceWebhint].  As dicas aparecem como sublinhados em linha e são resumidas no painel **Problemas.**  
+Identifique e corrige problemas em seu HTML, CSS, JavaScript, TypeScript e muito mais adicionando a extensão [webhint para Visual Studio Code][VisualstudioMarketplaceWebhint].  As dicas aparecem como sublinhados em linha e são resumidas no painel **Problemas.**  
 
 ## <a name="configuration"></a>Configuração  
 
@@ -84,11 +84,11 @@ Se você quiser mais controle sobre as dicas e analisadores que são ativadas, c
 
 ## <a name="getting-in-touch-with-the-webhint-team"></a>Entrar em contato com a equipe webhint  
 
-Envie seus comentários [arquivando um problema][GithubWebhintioIssuesNew] no [repositório do GitHub da Webhint.][GithubWebhintio]  
+Envie seus comentários [arquivando um problema][GithubWebhintioIssuesNew] na [webhint GitHub repo][GithubWebhintio].  
 
-Para contribuir com a extensão, navegue até [Webhint Visual Studio Guia de contribuição][GithubWebhintioExtensionVscodeContributing]de extensão de código.  
+Para contribuir com a extensão, navegue até [Webhint Visual Studio Code guia de contribuição de extensão][GithubWebhintioExtensionVscodeContributing].  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
 *   [Acessibilidade][AccessibilityIndex]  
 *   [Visual Studio Code][VisualstudiocodeIndex]  
@@ -101,7 +101,7 @@ Para contribuir com a extensão, navegue até [Webhint Visual Studio Guia de con
 
 [AccessibilityIndex]: /microsoft-edge/accessibility "Acessibilidade | Microsoft Docs"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio código | Microsoft Docs"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"  
 
 [GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
 [GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contribuição - webhint | GitHub"  

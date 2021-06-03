@@ -1,6 +1,6 @@
 ---
 description: Saiba mais sobre o que está por vir para WebView2
-title: Roteiro para o Microsoft Edge WebView 2
+title: Roteiro para Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -15,7 +15,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11398410"
 ---
-# <a name="microsoft-edge-webview2-roadmap"></a>Roteiro do Microsoft Edge WebView2  
+# <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge Roteiro webView2  
 
 > [!NOTE]
 > Last Updated: November 2020  
@@ -62,7 +62,7 @@ A equipe webView2 está planejando os seguintes grandes esforços para atualiza�
 
 ## <a name="fixed-version"></a>Versão fixa  
 
-[O modelo de distribuição de versão][ConceptsDistributionFixedVersionModel] fixa permite que você empacote os binários do Microsoft Edge dentro do aplicativo nativo.  A Versão Fixa atingiu Disponibilidade Geral \(GA\).  
+[O modelo de distribuição de versão][ConceptsDistributionFixedVersionModel] fixa permite que você empacote os Microsoft Edge binários dentro do aplicativo nativo.  A Versão Fixa atingiu Disponibilidade Geral \(GA\).  
 
 ## <a name="general-availability"></a>Disponibilidade geral  
 
@@ -76,15 +76,15 @@ O SDK .NET atingiu GA.
 
 ### <a name="winui-30"></a>WinUI 3.0  
 
-Você pode acessar WebView2 em seus aplicativos UWP usando [Win UI 3.0][UwpToolkitsWinui3Index], atualmente em alfa.  Para obter mais informações sobre como manter-se atualizado, navegue até Roteiro da Biblioteca da Interface do Usuário [do Windows][GithubMicrosoftUiXamlRoadmap].  
+Você pode acessar WebView2 em seus aplicativos UWP usando [Win UI 3.0][UwpToolkitsWinui3Index], atualmente em alfa.  Para obter mais informações sobre como manter-se atualizado, navegue até Windows roteiro da biblioteca da interface [do usuário.][GithubMicrosoftUiXamlRoadmap]  
 
 <!-- links -->  
 
 [ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modelo de distribuição evergreen - Distribuição de aplicativos usando webView2 | Microsoft Docs"  
 [ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modelo de distribuição de versão fixa - Distribuição de aplicativos usando webView2 | Microsoft Docs"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (maio de 2020) | Microsoft Docs"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows Biblioteca de interface do usuário 3.0 Visualização 1 (maio de 2020) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentários do WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Roteiro da Biblioteca da Interface do Usuário do Windows - microsoft/microsoft-ui-xaml | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows Roteiro da Biblioteca da Interface do Usuário - microsoft/microsoft-ui-xaml | GitHub"  

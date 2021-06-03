@@ -325,7 +325,7 @@ Se você estiver executando o mesmo código de depuração no Console uma e outr
 
 Consulte [Executar trechos de código javascript em qualquer página da Web][DevToolsJavascriptSnippets].  
 
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   [Introdução Com Depuração javaScript no Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - Um tutorial simples e curto usando código existente, com capturas de tela.
 *   [Visão geral da][DevToolsSourcesIndex] ferramenta Sources - A **ferramenta Sources** inclui o depurador e editor javaScript.

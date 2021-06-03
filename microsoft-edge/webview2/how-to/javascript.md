@@ -110,7 +110,7 @@ Agora adicione código para remover a funcionalidade de menu contextual do contr
     
 1.  Execute o código novamente.  Confirme se não é possível abrir um menu de contexto \(clique com o botão direito do mouse\).  
     
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   Para começar a usar WebView2, navegue até [WebView2 Introdução Guias][Webview2MainGetStarted].  
 *   Para um exemplo abrangente de recursos WebView2, navegue até o repo do [WebView2Samples][GithubMicrosoftedgeWebview2samples] GitHub.  

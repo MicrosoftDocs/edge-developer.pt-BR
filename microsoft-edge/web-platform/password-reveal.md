@@ -1,6 +1,6 @@
 ---
 description: Fornece orientações sobre como personalizar a exibição do botão de revelação de senha
-title: Personalizar o botão revelar senha
+title: Personalize o botão de mostrar senha
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/29/2021
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/29/2021
 ms.locfileid: "11526155"
 ---
-# <a name="customize-the-password-reveal-button"></a>Personalizar o botão revelar senha  
+# <a name="customize-the-password-reveal-button"></a>Personalize o botão de mostrar senha  
 
 O `password` tipo de entrada no Microsoft Edge inclui um controle de **revelação de** senha.  Um usuário pode escolher o botão **de entrada de** senha para revelar o campo **senha.**  O campo **senha revelada** ajuda o usuário a verificar se a senha está corretamente.  Depois que um usuário **** tiver inserido texto no **** campo senha, um usuário poderá escolher o botão de revelação de senha ou selecionar para alternar a `Alt` + `F8` visibilidade da entrada.  
 
@@ -34,7 +34,7 @@ O `password` tipo de entrada no Microsoft Edge inclui um controle de **revelaç�
    :::column-end:::
 :::row-end:::  
 
-Por padrão, o **botão de** revelação de senha insere no DOM sombra de todos os elementos HTML com o conjunto `input` como `type` `"password"` .  A partir do Microsoft Edge Versão 87, os usuários ou [empresas][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] podem desabilitar esse recurso globalmente.  Você, web designers e desenvolvedores, deve esperar que a maioria dos usuários do Microsoft Edge tenha a experiência padrão.  
+Por padrão, o **botão de** revelação de senha insere no DOM sombra de todos os elementos HTML com o conjunto `input` como `type` `"password"` .  A partir Microsoft Edge versão 87, os usuários ou [empresas][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] podem desabilitar esse recurso globalmente.  Você, web designers e desenvolvedores, deve esperar que a maioria Microsoft Edge usuários tenham a experiência padrão.  
 
 ## <a name="remove-the-password-reveal-control"></a>Remover o controle de revelação de senha  
 

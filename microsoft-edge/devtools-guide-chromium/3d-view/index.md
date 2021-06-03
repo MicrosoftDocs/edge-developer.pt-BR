@@ -127,15 +127,15 @@ A **opção Usar textura de** tela adiciona contexto à sua experiência de depu
    Painel de **Camadas Compostas**
 :::image-end:::  
 
-O **painel Camadas Compostas** abre os elementos da ferramenta **Layers** sem alterar contextos.  Você ainda pode acessar os detalhes de cada uma das camadas e ter as **rects de rolagem** lenta e **Paint**.
+O **painel Camadas Compostas** abre os elementos da ferramenta **Layers** sem alterar contextos.  Você ainda pode acessar os detalhes de cada uma das camadas e ter as **rects** de rolagem **lenta**e Paint .
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
-A equipe do Microsoft Edge Devtools está trabalhando na interface do usuário e adicionando mais funcionalidade ao 3D View com base em seus comentários.  Envie seus comentários para ajudar a melhorar o Microsoft Edge DevTools.  Escolha o **ícone Enviar Comentários** no DevTools ou selecione no Windows/Linux ou no macOS e insira qualquer comentário ou solicitação de recurso que você tenha para `Alt` + `Shift` + `I` `Option` + `Shift` + `I` o DevTools.  
+A Microsoft Edge equipe do Devtools está trabalhando na interface do usuário e adicionando mais funcionalidade ao 3D View com base em seus comentários.  Envie seus comentários para ajudar a melhorar o Microsoft Edge DevTools.  Escolha o **ícone Enviar Comentários** no DevTools ou selecione no Windows/Linux ou no macOS e insira qualquer comentário ou solicitação de recurso que você tenha para `Alt` + `Shift` + `I` `Option` + `Shift` + `I` o DevTools.  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge DevTools 3D View - MicrosoftEdge/DevToolsSamples | GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge Exibição 3D do DevTools - MicrosoftEdge/DevToolsSamples | GitHub"  
 
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modelo de objeto de documento (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  

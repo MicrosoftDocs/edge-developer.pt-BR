@@ -16,11 +16,11 @@ ms.locfileid: "11397514"
 ---
 # <a name="content-security-policy-csp"></a>Política de Segurança de Conteúdo \(CSP\)  
 
-Para reduzir uma grande classe de possíveis problemas de script entre sites, o sistema de Extensão do Microsoft Edge incorporou o conceito geral de Política de Segurança de Conteúdo [\(CSP\)][W3CContentSecurityPolicy].  Isso introduz algumas políticas bastante estritas que fazem extensões mais seguras por padrão e fornece a você a capacidade de criar e impor regras que regem os tipos de conteúdo que podem ser carregados e executados por suas Extensões e aplicativos.  
+Para atenuar uma grande classe de possíveis problemas de script entre sites, o sistema Microsoft Edge Extension incorporou o conceito geral de Política de Segurança de Conteúdo [\(CSP\)][W3CContentSecurityPolicy].  Isso introduz algumas políticas bastante estritas que fazem extensões mais seguras por padrão e fornece a você a capacidade de criar e impor regras que regem os tipos de conteúdo que podem ser carregados e executados por suas Extensões e aplicativos.  
 
 Em geral, o CSP funciona como um mecanismo de bloqueio/lista de recursos carregados ou executados por suas Extensões.  A definição de uma política razoável para o Extension permite que você considere cuidadosamente os recursos necessários para o Extension e peça ao navegador para garantir que esses sejam os únicos recursos aos quais o Extension tem acesso.  As políticas fornecem segurança acima e acima das permissões de host que suas solicitações de Extensão; eles são uma camada adicional de proteção, não uma substituição.  
 
-Na Web, essa política é definida por meio de um cabeçalho HTTP ou `meta` elemento.  Dentro do sistema de Extensão do Microsoft Edge, nenhum deles é um mecanismo apropriado.  Em vez disso, uma política de Extensão é definida usando `manifest.json` o arquivo para o Extension da seguinte forma:  
+Na Web, essa política é definida por meio de um cabeçalho HTTP ou `meta` elemento.  Dentro do Microsoft Edge extension, nenhum deles é um mecanismo apropriado.  Em vez disso, uma política de Extensão é definida usando `manifest.json` o arquivo para o Extension da seguinte forma:  
 
 ```javascript
 {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 Os recursos de script e objeto só podem ser carregados do pacote extension, e não da Web em geral.  Isso garante que o Extension só executa o código aprovado especificamente, impedindo que um invasor ativo de rede redirecione mal-intencionadamente sua solicitação para um recurso.  
 
-Em vez de escrever um código que dependa do carregamento de jQuery \(ou qualquer outra biblioteca\) de uma CDN externa, considere incluir a versão específica do jQuery em seu pacote de Extensão.  Ou seja, em vez de:  
+Em vez de escrever um código que dependa do carregamento de jQuery \(ou qualquer outra biblioteca\) de um CDN externo, considere incluir a versão específica do jQuery no pacote de Extensão.  Ou seja, em vez de:  
 
 ```html
 <!doctype html>
@@ -214,7 +214,7 @@ Uma definição de política descontraída que permite que os recursos de script
 ```  
 
 > [!NOTE]
-> Ambos `script-src` e `object-src` são definidos pela política.  O Microsoft Edge não aceita uma política que não limita cada um desses valores a \(pelo menos\) ' `self` '.  
+> Ambos `script-src` e `object-src` são definidos pela política.  Microsoft Edge aceita uma política que não limita cada um desses valores a \(pelo menos\) ' `self` '.  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 

@@ -21,7 +21,7 @@ Um Manifesto do Aplicativo Web de um site rege a aparência e o comportamento do
 
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>Usar atalhos para fornecer acesso rápido aos recursos  
 
-A maioria dos sistemas operacionais fornece acesso rápido aos principais recursos do aplicativo usando atalhos no menu de contexto conectado ao ícone do aplicativo.  Para usar atalhos no PWA, inclua a `shortcuts` propriedade no Manifesto do Aplicativo Web.  O trecho de código a seguir exibe como definir um atalho no manifesto do aplicativo Web.  
+A maioria dos sistemas operacionais fornece acesso rápido aos principais recursos do aplicativo usando atalhos no menu de contexto conectado ao ícone do aplicativo.  Para usar atalhos em seu PWA, inclua a `shortcuts` propriedade em seu Manifesto do Aplicativo Web.  O trecho de código a seguir exibe como definir um atalho no manifesto do aplicativo Web.  
 
 ```json
 "shortcuts": [
@@ -64,7 +64,7 @@ Muitos sistemas operacionais permitem que os usuários compartilhem rapidamente 
 
 Quando adicionado ao Manifesto do Aplicativo Web, isso se estabelece `"/share.html"` como a página de ação de um compartilhamento. Além disso, define três parâmetros que seriam passados para essa página de ação: `"title"` , `"text"` e `"url"` .  Esses parâmetros serão armazenados nas `"name"` propriedades , e do objeto `"description"` `"link"` [ShareData.][GitHubWicgWebShareDomSharedata]  Por padrão, a página de ação recebe os parâmetros como parte de uma solicitação GET, mas você pode especificar a solicitação e codificação \(como \), assim como faria em um `method` `enctype` formulário da Web.
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
 Para saber mais sobre Manifestos de Aplicativo Web, navegue até a lista a seguir de tópicos relacionados.  
 

@@ -146,7 +146,7 @@ Neste ponto, você deve ter WebView2 Runtime instalado, criado um projeto WebVie
     
 Parabéns.  Você automatiza com êxito um projeto WebView2 e orienta WebView2 usando Selenium e Microsoft Edge Driver.  
 
-## <a name="see-also"></a>Ver também  
+## <a name="see-also"></a>Consulte também  
 
 *   Para uma visão abrangente de como as APIs Selenium conduzEm WebView2 ou Microsoft Edge \(Chromium\), navegue até WebDriver na documentação [selenium][SeleniumWebdriver]   
 *   Para saber mais sobre o controle WebView2 e como usá-lo ao incorporar conteúdo da Web em seu aplicativo nativo, navegue até Introdução ao Microsoft Edge [WebView2][WebViewIndex].  

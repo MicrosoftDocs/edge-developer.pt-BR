@@ -1,5 +1,5 @@
 ---
-description: Uma introdução ao uso da ferramenta Console dentro das Ferramentas de Desenvolvedor do Microsoft Edge como um ambiente JavaScript.
+description: Uma introdução ao uso da ferramenta Console dentro do Microsoft Edge de Desenvolvedor como um ambiente JavaScript.
 title: O Console como um ambiente JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -79,7 +79,7 @@ Se você iniciar uma instrução multiline no **Console**, ela será automaticam
 
 Além de seus próprios scripts, **o Console** oferece suporte a espera de nível superior para executar JavaScript assíncrono arbitrário nele. [][GithubTc39ProposalTopLevelAwait]  Por exemplo, use a `fetch` API sem envolver a `await` instrução com uma função assíncrona.  
 
-Para obter os últimos 50 problemas arquivados nas Ferramentas de Desenvolvedor do Microsoft Edge para Visual Studio repositório [do GitHub][GithubMicrosoftVscodeEdgeDevtools] de Código, conclua as seguintes ações.  
+Para obter os últimos 50 problemas arquivados no Microsoft Edge [ferramentas][GithubMicrosoftVscodeEdgeDevtools] de desenvolvedor para Visual Studio Code GitHub repo, conclua as seguintes ações.  
 
 1.  Abra o **Console**.  
 1.  Copie e colar o trecho de código a seguir para obter um objeto que contém 10 entradas.  

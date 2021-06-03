@@ -16,12 +16,12 @@ ms.locfileid: "11475208"
 ---
 # <a name="native-messaging"></a>Sistema de mensagens nativo  
 
-As extensões se comunicam com um aplicativo Win32 nativo instalado no dispositivo de um usuário usando APIs de passagem de mensagens.  O host de aplicativo nativo envia e recebe mensagens com extensões usando entrada padrão e saída padrão.  Extensões usando mensagens nativas são instaladas no Microsoft Edge semelhantes a qualquer outra extensão.  No entanto, os aplicativos nativos não são instalados ou gerenciados pelo Microsoft Edge.  
+As extensões se comunicam com um aplicativo Win32 nativo instalado no dispositivo de um usuário usando APIs de passagem de mensagens.  O host de aplicativo nativo envia e recebe mensagens com extensões usando entrada padrão e saída padrão.  Extensões usando mensagens nativas são instaladas em Microsoft Edge semelhante a qualquer outra extensão.  No entanto, os aplicativos nativos não são instalados ou gerenciados por Microsoft Edge.  
 
 Para adquirir a extensão e o host de aplicativo nativo, você tem dois modelos de distribuição.  
 
 *   Empacote sua extensão e o host juntos.  Quando um usuário instala o pacote, a extensão e o host são instalados.  
-*   Instale sua extensão usando o Armazenamento de [Complementos do Microsoft Edge][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]e sua extensão solicita que os usuários instalem o host.  
+*   Instale sua extensão usando o Microsoft Edge de [complementos e][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]sua extensão solicita que os usuários instalem o host.  
 
 Para criar sua extensão para enviar e receber mensagens com hosts de aplicativos nativos, conclua as etapas a seguir.  
 
@@ -116,10 +116,10 @@ O arquivo de manifesto do host deve ser um arquivo JSON válido que contém as s
       
       Especifica o caminho para o binário de host de mensagens nativo.  
       
-      *   Em dispositivos Windows, você pode usar caminhos relativos ao diretório que contém o arquivo de manifesto.  
+      *   Em Windows dispositivos, você pode usar caminhos relativos para o diretório que contém o arquivo de manifesto.  
       *   No macOS e no Linux, o caminho deve ser absoluto.  
           
-      O processo de host começa com o diretório atual definido para o diretório que contém o binário do host.  Por exemplo \(Windows\), se o parâmetro for definido como , o binário será iniciado usando o `C:\App\nm_host.exe` diretório atual \( `C:\App\` \).  
+      O processo de host começa com o diretório atual definido para o diretório que contém o binário do host.  Por exemplo \(Windows\), se o parâmetro estiver definido como , o binário será iniciado usando o `C:\App\nm_host.exe` diretório atual \( `C:\App\` \).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -131,7 +131,7 @@ O arquivo de manifesto do host deve ser um arquivo JSON válido que contém as s
    :::column span="3":::
       ---  
       
-      Especifica o tipo da interface usada para se comunicar com o host de mensagens nativo.  O valor instrui o Microsoft Edge a usar `stdin` e se comunicar com o `stdout` host.  
+      Especifica o tipo da interface usada para se comunicar com o host de mensagens nativo.  O valor instrui Microsoft Edge usar `stdin` e se comunicar com o `stdout` host.  
       O único valor aceitável é `stdio` .  
    :::column-end:::
 :::row-end:::  
@@ -161,7 +161,7 @@ Para fazer sideload da extensão durante o desenvolvimento e recuperar `microsof
 1.  Navegue `edge://extensions` até a página e verifique se sua extensão está listada.  
 1.  Copie a chave `microsoft_catalog_extension_id` de \(ID\) da listagem de extensão na página.  
     
-Quando estiver pronto para distribuir sua extensão aos usuários, publique sua extensão no armazenamento de Complementos do Microsoft Edge.  A ID de extensão da extensão publicada pode ser diferente da ID usada durante o sideload da extensão.  Se a ID for alterada, atualize no `allowed_origins` arquivo de manifesto do host com a ID da extensão publicada.  
+Quando estiver pronto para distribuir sua extensão aos usuários, publique sua extensão no Microsoft Edge de complementos.  A ID de extensão da extensão publicada pode ser diferente da ID usada durante o sideload da extensão.  Se a ID for alterada, atualize no `allowed_origins` arquivo de manifesto do host com a ID da extensão publicada.  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>Etapa 3 : Copiar o arquivo de manifesto do host de mensagens nativo para o sistema  
 
@@ -204,7 +204,7 @@ Para adicionar uma chave do Registro ao diretório com a chave de manifesto, con
         
     1.  Execute o `.reg` arquivo.  
         
-O Microsoft Edge consulta a `HKEY_CURRENT_USER` chave raiz seguida por `HKEY_LOCAL_MACHINE` .  Em ambas as chaves, o Registro de 32 bits é pesquisado primeiro e, em seguida, o Registro de 64 bits é pesquisado para identificar hosts de mensagens nativos.  A chave do Registro especifica o local do manifesto do host de mensagens nativo.  Se as entradas do Registro do Microsoft Edge não têm o local do manifesto do host, os locais do Registro do Chromium e do Chrome serão usados como opções de fallback.  Se o Microsoft Edge encontrar a chave do Registro em qualquer um dos locais listados anteriormente, ele não consultará os locais listados no trecho de código a seguir.  Se você executar o arquivo criado como parte de um script em lotes, verifique se o executará usando um prompt `.reg` de comando do administrador.
+Microsoft Edge consulta a `HKEY_CURRENT_USER` tecla raiz seguida por `HKEY_LOCAL_MACHINE` .  Em ambas as chaves, o Registro de 32 bits é pesquisado primeiro e, em seguida, o Registro de 64 bits é pesquisado para identificar hosts de mensagens nativos.  A chave do Registro especifica o local do manifesto do host de mensagens nativo.  Se as entradas do registro Microsoft Edge não têm o local do manifesto do host, os locais do registro Chromium e do Chrome serão usados como opções de fallback.  Se Microsoft Edge encontrar a chave do Registro em qualquer um dos locais listados anteriormente, ela não consultará os locais listados no trecho de código a seguir.  Se você executar o arquivo criado como parte de um script em lotes, verifique se o executará usando um prompt `.reg` de comando do administrador.
 
 A lista a seguir é a ordem de pesquisa para os locais do Registro.  
 
@@ -225,7 +225,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```  
  
 > [!NOTE] 
-> Se você tiver extensões nos Complementos do Microsoft Edge e na Webstore do Chrome, você deverá adicionar as IDs de extensão correspondentes a ambos os repositórios no arquivo de manifesto do host porque somente o manifesto de host correspondente ao primeiro local do Registro encontrado é `allowed_origins` lido.  
+> Se você tiver extensões nos complementos do Microsoft Edge e na Webstore do Chrome, você deverá adicionar as IDs de extensão correspondentes aos dois repositórios no arquivo de manifesto do host porque somente o manifesto de host correspondente ao primeiro local de registro encontrado é `allowed_origins` lido.  
 
 ### [<a name="macos"></a>macOS](#tab/macos/)  
 
@@ -275,7 +275,7 @@ Para armazenar o arquivo de manifesto, conclua uma das seguintes ações.
 
 <!-- links -->  
 
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Complementos do Microsoft Edge"
+[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Complementos"
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  

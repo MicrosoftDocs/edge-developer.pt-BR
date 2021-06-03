@@ -1,6 +1,6 @@
 ---
-description: Mover usuários para o Microsoft Edge do Internet Explorer
-title: Mover usuários para o Microsoft Edge do Internet Explorer
+description: Mover usuários para Microsoft Edge do Internet Explorer
+title: Mover usuários para Microsoft Edge do Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "11461133"
 ---
-# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Mover usuários para o Microsoft Edge do Internet Explorer  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Mover usuários para Microsoft Edge do Internet Explorer  
 
-Muitos sites modernos têm designs incompatíveis com o Internet Explorer \(IE\).  Quando um usuário do IE visita um site público incompatível, o usuário pode receber uma mensagem.  A mensagem afirma que o site é incompatível com o navegador.  Depois que a mensagem for exibida, o usuário deverá alternar manualmente para um navegador moderno.  Para minimizar as interrupções, a partir da versão 84, o Microsoft Edge oferece suporte a um novo recurso que redireciona automaticamente os usuários.  Quando um usuário do IE navega para um site incompatível com o IE, o Windows redireciona automaticamente o usuário para o Microsoft Edge.  Para revisar os sites na lista, navegue até [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+Muitos sites modernos têm designs incompatíveis com o Internet Explorer \(IE\).  Quando um usuário do IE visita um site público incompatível, o usuário pode receber uma mensagem.  A mensagem afirma que o site é incompatível com o navegador.  Depois que a mensagem for exibida, o usuário deverá alternar manualmente para um navegador moderno.  Para minimizar as interrupções, a partir da versão 84, Microsoft Edge oferece suporte a um novo recurso que redireciona automaticamente os usuários.  Quando um usuário do IE navega para um site incompatível com o IE, Windows redireciona automaticamente o usuário para Microsoft Edge.  Para revisar os sites na lista, navegue até [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 Este artigo descreve os seguintes conceitos.  
 
@@ -32,10 +32,10 @@ A Lista de compatibilidade do IE só adiciona um site quando as ações a seguir
 
 ## <a name="redirection-experience"></a>Experiência de redirecionamento
 
-Ao redirecionar para o Microsoft Edge, o usuário é mostrado a caixa de diálogo única na próxima captura de tela.  A caixa de diálogo fornece ao usuário as seguintes informações.  
+Ao redirecionar para Microsoft Edge, o usuário é mostrado a caixa de diálogo única na próxima captura de tela.  A caixa de diálogo fornece ao usuário as seguintes informações.  
 
 *   Ele explica por que o site está sendo redirecionado.  
-*   Ele solicita ao usuário consentimento para copiar dados de navegação e preferências do IE para o Microsoft Edge.  
+*   Ele solicita ao usuário o consentimento para copiar dados de navegação e preferências do IE para Microsoft Edge.  
 
 :::row:::
    :::column span="":::
@@ -61,15 +61,15 @@ Se o usuário não consentir escolhendo a caixa de seleção Sempre trazer meus 
 
 Por fim, um banner de incompatibilidade de site é exibido na barra de endereços para cada redirecionamento.  Um exemplo de uma faixa de incompatibilidade de site é exibido na figura a seguir.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notificação sobre sites modernos e prompt para definir o Microsoft Edge como navegador padrão ou explorar o Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Notificação sobre sites modernos e prompt para definir o Microsoft Edge como navegador padrão ou explorar o Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notificação sobre sites modernos e prompt para definir Microsoft Edge como navegador padrão ou explorar Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notificação sobre sites modernos e prompt para definir Microsoft Edge como navegador padrão ou explorar Microsoft Edge  
 :::image-end:::
 
 A faixa de incompatibilidade do site fornece os seguintes detalhes para o usuário.  
 
-*   Recomenda que o usuário alternar para o Microsoft Edge.  
-*   Oferece para definir o Microsoft Edge como o navegador padrão.  
-*   Oferece ao usuário a opção de explorar o Microsoft Edge.    
+*   Recomenda que o usuário alternar para Microsoft Edge.  
+*   Oferece para definir Microsoft Edge como o navegador padrão.  
+*   Oferece ao usuário a opção de explorar Microsoft Edge.    
     
 Quando um site é redirecionado do Internet Explorer para o Microsoft Edge, ocorre uma das seguintes ações.
 
@@ -103,6 +103,6 @@ A lista de compatibilidade do IE é atualizada dentro de uma semana.
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Precisa do Microsoft Edge list v1 xml | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Precisa Microsoft Edge lista v1 xml | Microsoft Edge"  
 
 [MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "O site que você estava tentando alcançar não funciona com o Internet Explorer | Microsoft Office Suporte"  

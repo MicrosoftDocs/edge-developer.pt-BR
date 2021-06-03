@@ -1,6 +1,6 @@
 ---
-description: Lista de APIs com suporte a ser usada ao criar extensões do Microsoft Edge.
-title: APIs com suporte para extensões do Microsoft Edge
+description: Lista de APIs com suporte a ser usada ao criar Microsoft Edge extensões.
+title: APIs com suporte para Microsoft Edge extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -14,18 +14,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11398102"
 ---
-# <a name="supported-apis-for-microsoft-edge-extensions"></a>APIs com suporte para extensões do Microsoft Edge
+# <a name="supported-apis-for-microsoft-edge-extensions"></a>APIs com suporte para Microsoft Edge extensões
 
-A tabela a seguir fornece uma lista de APIs que você pode usar ao criar extensões para o navegador do Microsoft Edge \(Chromium\).
+A tabela a seguir fornece uma lista de APIs que você pode usar ao criar extensões para o navegador Microsoft Edge \(Chromium\).
 
 | API                                   | Descrição                                            
 |---------------------------------------|----------------------------------------------------------|
 | [alarmes](https://developer.chrome.com/extensions/alarms) | Agende o código para ser executado periodicamente ou em um horário especificado no futuro. |
 | [indicadores](https://developer.chrome.com/extensions/bookmarks) | Criar, organizar e manipular indicadores. |
-| [browserAction](https://developer.chrome.com/extensions/browserAction) | Use ações do navegador para colocar ícones na barra de ferramentas no Microsoft Edge. Você também pode usar ações do navegador para adicionar uma dica de ferramenta, selo ou pop-up. |
+| [browserAction](https://developer.chrome.com/extensions/browserAction) | Use ações do navegador para colocar ícones na barra de ferramentas Microsoft Edge. Você também pode usar ações do navegador para adicionar uma dica de ferramenta, selo ou pop-up. |
 | [browsingData](https://developer.chrome.com/extensions/browsingData) | Remova os dados de navegação do perfil local de um usuário. |
 | [comandos](https://developer.chrome.com/extensions/commands) | Adicione atalhos de teclado que disparam ações em sua extensão. Por exemplo, uma ação para abrir o navegador ou enviar um comando para a extensão. |
-| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | Em geral, as configurações de conteúdo permitem personalizar o comportamento do Microsoft Edge em cada site, em vez de globalmente. Altere as configurações que controlam se os sites podem usar recursos como cookies, JavaScript e plug-ins. |
+| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | Em geral, as configurações de conteúdo permitem personalizar o comportamento da Microsoft Edge em cada site, em vez de globalmente. Altere as configurações que controlam se os sites podem usar recursos como cookies, JavaScript e plug-ins. |
 | [contextMenus](https://developer.chrome.com/extensions/contextMenus) | Adicione itens ao menu de contexto no Microsoft Edge. Os itens de menu podem ser aplicados a objetos diferentes, como imagens, hiperlinks e páginas. |
 | [cookies](https://developer.chrome.com/extensions/cookies) | Consultar e modificar cookies e receber notificações quando eles mudarem. |
 | [depurador](https://developer.chrome.com/extensions/debugger) | Anexe a uma ou mais guias à interação de rede de instrumentos, depure JavaScript, altere o DOM, altere CSS e assim por diante. Use a guia depurador TabId para direcionar guias com sendCommand e roteie eventos por tabId de retornos de chamada onEvent. |
@@ -39,21 +39,21 @@ A tabela a seguir fornece uma lista de APIs que você pode usar ao criar extens�
 | [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Obter o fabricante e o modelo da plataforma de hardware em que o navegador é executado. Essa API só está disponível para extensões instaladas pela política empresarial. |
 | [events](https://developer.chrome.com/extensions/events) | Tipos comuns usados por APIs que levantam eventos para notificar você quando ocorre um evento interessante. |
 | [extension](https://developer.chrome.com/extensions/extension) | Qualquer página de extensão pode usar os utilitários desta API. Ele inclui suporte para trocar mensagens entre extensões e scripts de conteúdo, que é descrito em Passagem de Mensagens. |
-| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contém declarações de tipo para extensões do Microsoft Edge. |
-| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Gerenciar configurações de fonte no Microsoft Edge. |
+| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contém declarações de tipo para Microsoft Edge extensões. |
+| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Gerenciar configurações de fonte em Microsoft Edge. |
 | [histórico](https://developer.chrome.com/extensions/history) | Interaja com o registro do navegador de páginas visitadas. Você pode adicionar, remover ou consultar URLs no histórico do navegador. Para substituir a página de histórico pela sua própria versão, navegue até Substituir Páginas. |
 | [i18n](https://developer.chrome.com/extensions/i18n) | Implemente a internacionalização em todo o aplicativo ou extensão. |
 | [idle](https://developer.chrome.com/extensions/idle) | Detectar quando o estado ocioso do computador muda. |
 | [management](https://developer.chrome.com/extensions/management) | Gerencie a lista de extensões instaladas ou em execução. É útil para extensões que substituem a página Nova Guia. |
 | [notificações](https://developer.chrome.com/extensions/notifications) | Crie notificações ricas usando modelos e as exibe na bandeja do sistema. |
-| [omnibox](https://developer.chrome.com/extensions/omnibox) | Registre palavras-chave na barra de endereços do Microsoft Edge, também conhecida como omnibox. |
-| [pageAction](https://developer.chrome.com/extensions/pageAction) | Adicione ícones à barra de ferramentas do Microsoft Edge, à direita da barra de endereços. As ações de página são ações que podem ser tomadas na página atual e não são aplicáveis a todas as páginas. As ações de página aparecem acinzenadas quando inativas. |
+| [omnibox](https://developer.chrome.com/extensions/omnibox) | Registre palavras-chave na barra Microsoft Edge endereço, também conhecida como omnibox. |
+| [pageAction](https://developer.chrome.com/extensions/pageAction) | Adicione ícones à Microsoft Edge de ferramentas, à direita da barra de endereços. As ações de página são ações que podem ser tomadas na página atual e não são aplicáveis a todas as páginas. As ações de página aparecem acinzenadas quando inativas. |
 | [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Salvar guias como arquivos MHTML.|
 | [permissions](https://developer.chrome.com/extensions/permissions) | Recupere permissões declaradas e opcionais no tempo de execução, em vez de no momento da instalação. Você pode usar essa API para exibir permissões necessárias e aprovadas para seus usuários. |
 | [Ligar/Desligar](https://developer.chrome.com/extensions/power) | Substitua os recursos de gerenciamento de energia do sistema. |
 | [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Use eventos para consultar impressoras, seus recursos e enviar trabalhos de impressão. |
-| [privacidade](https://developer.chrome.com/extensions/privacy) | Recursos de controle no Microsoft Edge que afetam a privacidade de um usuário. Essa API depende do `EdgeSetting` protótipo de obter e definir a `types` configuração do Microsoft Edge. |
-| [proxy](https://developer.chrome.com/extensions/proxy) | Gerenciar configurações de proxy para o Microsoft Edge. Essa API depende do `EdgeSetting` protótipo da API para obter e definir a `types` configuração de proxy do Microsoft Edge. |
+| [privacidade](https://developer.chrome.com/extensions/privacy) | Recursos de controle Microsoft Edge que afetam a privacidade de um usuário. Essa API depende do `EdgeSetting` protótipo de obter e definir a `types` configuração de Microsoft Edge. |
+| [proxy](https://developer.chrome.com/extensions/proxy) | Gerenciar configurações de proxy para Microsoft Edge. Essa API depende do protótipo da API para obter e definir a `EdgeSetting` `types` configuração de proxy de Microsoft Edge. |
 | [tempo de execução](https://developer.chrome.com/extensions/runtime) | Recupere a página em segundo plano, retorne detalhes sobre o manifesto e ouça e responda a eventos no ciclo de vida do aplicativo ou extensão. Você também pode converter o caminho relativo das URLs em URLs totalmente qualificadas. |
 | [sessões](https://developer.chrome.com/extensions/sessions) | Consultar e restaurar guias e janelas de uma sessão de navegação. |
 | [armazenamento](https://developer.chrome.com/extensions/storage) | Armazene, recupere e acompanhe as alterações nos dados do usuário. |
@@ -64,7 +64,7 @@ A tabela a seguir fornece uma lista de APIs que você pode usar ao criar extens�
 | [topSites](https://developer.chrome.com/extensions/topSites) | Acesse os sites principais, também chamados de sites mais visitados, exibidos na nova página de guia. Esses sites não incluem atalhos personalizados pelo usuário. |
 | [tts](https://developer.chrome.com/extensions/tts) | Reproduza texto sintetizado em fala (TTS). |
 | [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | Implemente um mecanismo de texto para fala (TTS) usando uma extensão. Extensões que se registram para usar essa API recebem eventos que contêm expressões a serem faladas e outros parâmetros. As extensões podem então usar qualquer tecnologia web disponível para sintetizar e enviar eventos de volta à função de chamada para relatar o status. |
-| [types](https://developer.chrome.com/extensions/types) | Digite declarações para o Microsoft Edge. |
+| [types](https://developer.chrome.com/extensions/types) | Digite declarações para Microsoft Edge. |
 | [webNavigation](https://developer.chrome.com/extensions/webNavigation) | Receber notificações sobre o status das solicitações de navegação. |
 | [webRequest](https://developer.chrome.com/extensions/webRequest) | Observe e analise o tráfego. Intercepte, bloqueie ou modifique solicitações. |
 | [windows](https://developer.chrome.com/extensions/windows) | Interaja com janelas do navegador para criar, modificar e reorganizar janelas no navegador. |
@@ -73,7 +73,7 @@ A tabela a seguir fornece uma lista de APIs que você pode usar ao criar extens�
 
 ## <a name="unsupported-extension-apis"></a>APIs de extensão sem suporte
 
-O Microsoft Edge não dá suporte às seguintes APIs de Extensão:
+Microsoft Edge oferece suporte às seguintes APIs de Extensão:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
@@ -83,9 +83,9 @@ O Microsoft Edge não dá suporte às seguintes APIs de Extensão:
 
 ## <a name="additional-considerations-for-supported-apis"></a>Considerações adicionais para APIs com suporte
 
-* O usuário deve estar entrando no Microsoft Edge usando uma conta do MSA ou do Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Se o usuário estiver entrando no Microsoft Edge usando uma conta do Active Directory local, a API retornará para os valores `null` de email e ID.
+* O usuário deve estar Microsoft Edge usando uma conta MSA ou Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Se o usuário estiver Microsoft Edge usando uma conta local do Active Directory, a API retornará para os valores `null` de email e ID.
 
-* O Microsoft Edge não dá suporte a extensões que usam pagamentos da Chrome Web Store porque ele usa para solicitar `identity.getAuthtoken` tokens para usuários assinados. Esses tokens são enviados para a API de licenciamento baseada em REST. 
+* Microsoft Edge não dá suporte a extensões que usam Chrome Web Store pagamentos porque ele usa para solicitar tokens para usuários `identity.getAuthtoken` assinados. Esses tokens são enviados para a API de licenciamento baseada em REST. 
 
 
 <!-- links -->  

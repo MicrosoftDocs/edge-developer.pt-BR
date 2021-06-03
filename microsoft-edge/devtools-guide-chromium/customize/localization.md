@@ -63,7 +63,7 @@ Suas Ferramentas de Desenvolvedor corresponde ao idioma do navegador por padrão
    DevTools em chinês  
 :::image-end:::  
 
-Se você quiser reverter DevTools para inglês, navegue até [DevTools Settings][DevtoolsCustomizeIndexSettings] ou selecione , escolha Preferências e desativar a caixa de seleção Corresponder idioma `F1` do navegador. **** ****  
+Se você quiser reverter DevTools para inglês, navegue até [DevTools][DevtoolsCustomizeIndexSettings] Configurações ou selecione , escolha Preferências e desativar a caixa de seleção Corresponder idioma `F1` do navegador. **** ****  
 
 <!-- links -->  
 

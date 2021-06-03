@@ -92,8 +92,8 @@ Qual era o problema?  Dois caracteres de barra \( `//` \) ocorrem no URI solicit
 
 Para revisar nenhum erro no **Console,** navegue até Erro de rede fixo [relatado no Console][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml].  
 
-:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="O exemplo sem erros carrega informações do GitHub e as exibe" lightbox="../media/console-debug-network-error-fixed.msft.png":::
-   O exemplo sem erros carrega informações do GitHub e as exibe  
+:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="O exemplo sem erros carrega informações de GitHub e as exibe" lightbox="../media/console-debug-network-error-fixed.msft.png":::
+   O exemplo sem erros carrega informações de GitHub e as exibe  
 :::image-end:::  
 
 Certifique-se de fornecer técnicas de codificação defensiva para evitar as experiências anteriores do usuário.  Além disso, verifique se seu código captura erros e exibe cada um deles no **Console**.  Navegue [até Relatório de erros de rede no Console e na interface do][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] usuário e revise os itens a seguir.  

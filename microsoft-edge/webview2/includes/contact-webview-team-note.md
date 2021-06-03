@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "11399661"
 ---
-Compartilhe seus comentários para ajudar a criar experiências webView2 mais ricas.  Para enviar solicitações de recursos ou bugs ou pesquisar problemas conhecidos, navegue até o repo de comentários do [Microsoft Edge WebView.][GithubMicrosoftedgeWebviewfeedback]  
+Compartilhe seus comentários para ajudar a criar experiências webView2 mais ricas.  Para enviar solicitações ou bugs de recursos ou pesquisar problemas conhecidos, navegue até o Microsoft Edge [comentários do WebView.][GithubMicrosoftedgeWebviewfeedback]  
 
 <!-- links -->  
 

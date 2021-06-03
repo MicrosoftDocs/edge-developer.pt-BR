@@ -102,7 +102,7 @@ O `$` tem potências especiais **no Console** e você pode se lembrar disso do j
 *   `$x()` permite que você escolha elementos DOM usando XPATH.
 *   `$()` e `$$()` são versões mais curtas de para `document.querySelector()` e `document.querySelectorAll()` .  
     
-Por exemplo, o trecho de código a seguir recupera todos os links na página da Web \(como é curto para \) e exibe os links como uma tabela sortível para copiar e colar, por exemplo, no `$$('a')` `document.querySelectorAll('a')` Excel.
+Por exemplo, o trecho de código a seguir recupera todos os links na página da Web \(como é curto para \) e exibe os links como uma tabela sortível para copiar e colar, por exemplo, em `$$('a')` `document.querySelectorAll('a')` Excel.
 
 ```javascript
 console.table($$('a'),['href','text']);
@@ -271,5 +271,5 @@ Você pode achar útil manipular o DOM a partir do **Console**.  Em breve, você
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs na ferramenta console | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Referência da API de Utilitários de Console | Microsoft Docs"  
 
-[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Execute trechos de código do JavaScript em qualquer página com o Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Execute trechos de código do JavaScript em qualquer página com Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSourcesIndex]: ../sources/index.md "Visão geral da ferramenta Sources | Microsoft Docs"  

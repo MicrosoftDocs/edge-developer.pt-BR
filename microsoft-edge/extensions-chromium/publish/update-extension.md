@@ -1,5 +1,5 @@
 ---
-description: O processo de atualização ou remoção de extensões do armazenamento de Complementos do Microsoft Edge
+description: O processo de atualização ou remoção de extensões do Microsoft Edge de complementos
 title: Atualizar uma listagem de extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,57 +16,57 @@ ms.locfileid: "11343154"
 ---
 # Atualizar ou remover sua extensão  
 
-Você pode atualizar uma extensão enviada ou remover uma listagem de extensão publicada do armazenamento de Complementos do Microsoft Edge a qualquer momento.  
+Você pode atualizar uma extensão enviada ou remover uma listagem de extensão publicada do Microsoft Edge de complementos a qualquer momento.  
 
-## Atualizar sua extensão no armazenamento de Complementos do Microsoft Edge  
+## Atualizar sua extensão no Microsoft Edge de complementos  
 
 > [!NOTE]
-> A duração do processo de certificação para uma atualização para uma extensão pode levar de algumas horas a alguns dias.  
+> A duração do processo de certificação de uma atualização para uma extensão pode levar de algumas horas a alguns dias.  
 
-### Atualizar uma extensão existente no armazenamento de Complementos do Microsoft Edge  
+### Atualizar uma extensão existente no Microsoft Edge de complementos  
 
 Para atualizar sua extensão na loja, conclua as etapas a seguir.  
 
-1.  Navegue até [o painel do desenvolvedor][MicrosoftPartnerCenter] e escolha a extensão que você deseja atualizar.  
+1.  Navegue até o [painel do desenvolvedor][MicrosoftPartnerCenter] e escolha a extensão que deseja atualizar.  
 1.  Atualize o pacote de extensão ou os metadados da extensão.  Se você atualizar o pacote de extensão, certifique-se de aumentar a versão no arquivo de manifesto.  
-1.  Depois de fazer as alterações, escolha **Salvar**Publicar para atualizar sua  >  **** listagem de extensão e inicie o processo de certificação.  
-1.  Depois que a coluna for exibida, a atualização da extensão estará disponível na loja de `Status` `In the store` Complementos do Microsoft Edge.  
+1.  Depois de fazer as alterações, escolha **Salvar**  >  **Publicar** para atualizar sua listagem de extensão e inicie o processo de certificação.  
+1.  Depois que a coluna for exibida, sua atualização de extensão estará disponível no `Status` `In the store` Microsoft Edge de complementos.  
     
 ### Atualizar sua extensão durante a etapa de certificação  
 
-Enquanto sua extensão ainda está no estágio de certificação e antes de ser publicada no armazenamento de Complementos do Microsoft Edge, você pode atualizá-la. Se a extensão falhar no processo de certificação, talvez também seja necessário atualizar sua extensão.    
+Embora sua extensão ainda esteja no estágio de certificação e antes de ser publicada no Microsoft Edge de complementos, você pode atualizá-la. Se sua extensão falhar no processo de certificação, talvez você também precise atualizar sua extensão.    
 
-Para verificar o status da extensão, navegue até o painel associado à sua listagem no [Partner Center.][MicrosoftPartnerCenter]  
+Para verificar o status da extensão, navegue até o painel associado à sua listagem no [Partner Center][MicrosoftPartnerCenter].  
 
 Para editar seu envio, conclua as etapas a seguir.  
 
-1.  Navegue até [o painel do desenvolvedor][MicrosoftPartnerCenter] e escolha a extensão que você deseja atualizar.  As informações que você preencheu durante o envio anterior são exibidas.  
-1.  Para abrir a seção **Visão geral da** extensão, use a barra de navegação esquerda.  Para cancelar o envio atual, escolha **Cancelar envio.**  
-1.  Mova para outras seções e atualize o pacote de extensão ou os metadados da extensão.  Se você atualizar o pacote de extensão, aumente a versão no arquivo de manifesto para corresponder às alterações desde a versão anterior do pacote.  
-1.  Depois de fazer alterações, escolha **Salvar**  >  **Publicar.**  
+1.  Navegue até o [painel do desenvolvedor][MicrosoftPartnerCenter] e escolha a extensão que deseja atualizar.  As informações que você preencheu durante o envio anterior são exibidas.  
+1.  Para abrir a seção **Visão geral da** extensão, use a barra de navegação esquerda.  Para cancelar o envio atual, escolha **Cancelar envio**.  
+1.  Mova para outras seções e atualize o pacote de extensão ou os metadados da extensão.  Se você atualizar o pacote de extensão, certifique-se de aumentar a versão no arquivo de manifesto para corresponder às alterações desde a versão anterior do pacote.  
+1.  Depois de fazer alterações, escolha **Salvar**  >  **Publicar**.  
     
 > [!IMPORTANT]
-> O processo interrompe e remove seu envio atual do pipeline de certificação de extensões do Microsoft Edge e uma nova análise começa com o envio mais recente.  
+> O processo interrompe e remove seu envio atual do pipeline de certificação Microsoft Edge extensões e uma nova revisão começa com o envio mais recente.  
 
-### Atualizar sua extensão após a falha na certificação  
+### Atualizar sua extensão depois que ela falhou na certificação  
 
-Depois que sua extensão for reprovada no processo de certificação, você precisará atualizar sua extensão e retransmitir sua extensão que incorpore os comentários.  
+Depois que sua extensão falhou no processo de certificação, você precisa atualizar sua extensão e reabrir sua extensão que incorpora os comentários.  
 
 Para editar sua extensão, conclua as etapas a seguir.  
 
 1.  Navegue até o [painel do desenvolvedor][MicrosoftPartnerCenter] e escolha a extensão que falhou no processo de certificação.  
 1.  Atualize o pacote de extensão ou os metadados que incorporam os comentários recebidos do processo de certificação.  Se você atualizar o pacote de extensão, certifique-se de aumentar a versão no arquivo de manifesto.  
-1.  Depois de fazer alterações, escolha **Salvar**  >  **Publicar.**  
+1.  Depois de fazer alterações, escolha **Salvar**  >  **Publicar**.  
     
-## Remover extensões do armazenamento de Complementos do Microsoft Edge  
+## Remover extensões do Microsoft Edge de complementos  
 
-Para remover sua extensão do armazenamento de Complementos do Microsoft Edge, conclua as etapas a seguir.  
+Para remover sua extensão do Microsoft Edge de complementos, conclua as etapas a seguir.  
 
-1.  Navegue até o painel [do desenvolvedor.][MicrosoftPartnerCenter]  Na página Painel, escolha a listagem a ser removido.  
-1.  Escolha **a Visão Geral** da Extensão em sua listagem.  
-1.  Choose **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.  
+1.  Navegue até o [painel do desenvolvedor.][MicrosoftPartnerCenter]  Na página Painel, escolha a listagem a ser removido.  
+1.  Escolha **Visão geral da** extensão em sua listagem.  
+1.  Escolha **Não publicar para** remover a listagem do Microsoft Edge de complementos.  
     
-Sua extensão agora foi removida do armazenamento de Complementos do Microsoft Edge.  Os usuários que já instalaram sua extensão podem continuar a usá-la, mas os novos usuários não a encontram.  
+Sua extensão agora foi removida do Microsoft Edge de complementos.  Os usuários que já instalaram sua extensão podem continuar a usá-la, mas os novos usuários não a encontram.  
 
 <!-- links -->  
 

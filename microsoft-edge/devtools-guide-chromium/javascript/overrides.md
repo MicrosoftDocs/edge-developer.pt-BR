@@ -1,6 +1,6 @@
 ---
 description: O recurso Substituições é um recurso dentro da ferramenta Sources do Microsoft Edge DevTools que permite copiar recursos de página da Web para seu disco rígido.  Quando você atualize a página da Web, o DevTools não carrega o recurso, mas o substitui pela cópia local.
-title: Substituir recursos de página da Web com cópias locais usando o Microsoft Edge DevTools
+title: Substituir recursos de página da Web com cópias locais usando Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2020
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/25/2021
 ms.locfileid: "11519433"
 ---
-# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Substituir recursos de página da Web com cópias locais usando o Microsoft Edge DevTools  
+# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Substituir recursos de página da Web com cópias locais usando Microsoft Edge DevTools  
 
 Às vezes, você precisa experimentar algumas correções possíveis para uma página da Web, mas você não tem acesso aos arquivos de origem ou alterar a página requer um processo de com build lento e complexo.  Você pode depurar e corrigir todos os tipos de problemas no DevTools.  Mas as alterações não persistem; depois de atualizar o arquivo local, todo o seu trabalho se foi.  O recurso Substituições na ferramenta [Fontes][DevToolsSourcesTool] ajuda você a resolver esse problema.  
 

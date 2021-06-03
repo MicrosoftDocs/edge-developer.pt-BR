@@ -80,9 +80,9 @@ self.addEventListener( "fetch", event => {
 
 O trecho de código é executado dentro do Service Worker sempre que o navegador faz uma `fetch` solicitação para este site. Dentro desse evento, há uma instrução condicional que é executado se a solicitação for para um arquivo HTML. O Trabalhador do Serviço verifica se o arquivo já existe em qualquer cache \(usando o `match()` método\). Se a solicitação existir no cache, esse resultado em cache será retornado. Caso não seja, uma nova para esse recurso é executado, uma cópia da resposta é armazenada em cache para posteriormente `fetch` e a resposta é retornada. Se o `fetch` falha porque a rede não está disponível, a página offline é retornada do cache.
 
-Esta introdução simples mostra como usar o cache no seu aplicativo Web progressivo (PWA). Cada PWA é diferente e pode usar estratégias de cache diferentes. Seu código pode ter uma aparência diferente e você pode usar estratégias de cache diferentes para diferentes rotas dentro do mesmo aplicativo.
+Esta introdução simples mostra como usar o cache em seu aplicativo Web progressivo (PWA). Cada PWA é diferente e pode usar estratégias de cache diferentes. Seu código pode ter uma aparência diferente e você pode usar estratégias de cache diferentes para diferentes rotas dentro do mesmo aplicativo.
 
-## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Usar IndexedDB no PWA para armazenar dados estruturados
+## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Use IndexedDB em sua PWA para armazenar dados estruturados
 
 `IndexedDB` é uma API para armazenar dados estruturados. Semelhante à API, ela também é assíncrona, o que significa que você pode usá-lo no thread principal ou com Os Trabalhadores da Web, como `Cache` Os Trabalhadores do Serviço. Use a API para armazenar uma quantidade significativa de dados estruturados no cliente ou dados binários, como objetos `IndexedDB` de mídia criptografados. Para obter mais informações, navegue até [MDN primer sobre como usar IndexedDB][MDNIndexeddbApiUsing].
 
@@ -91,10 +91,10 @@ Esta introdução simples mostra como usar o cache no seu aplicativo Web progres
 Às vezes, talvez seja necessário armazenar pequenas quantidades de dados para oferecer uma experiência offline melhor para seus usuários. Se esse for o caso, você poderá encontrar a simplicidade do sistema de par de valores-chave do armazenamento da Web atende às suas necessidades.  
 
 > [!IMPORTANT]
-> O Armazenamento Da Web é um processo síncrono e não está disponível para uso em threads de trabalho, como Trabalhadores do Serviço. O uso intenso pode criar problemas de desempenho para seu aplicativo. 
+> Web Armazenamento é um processo síncrono e não está disponível para uso em threads de trabalho, como Trabalhadores do Serviço. O uso intenso pode criar problemas de desempenho para seu aplicativo. 
 
 
-Há dois tipos de Armazenamento Web: `localStorage` e `sessionStorage` . Cada um é mantido como um armazenamento de dados separado isolado para o domínio que o criou. `sessionStorage` persiste apenas pela duração da sessão de navegação (por exemplo, enquanto o navegador está aberto, o que inclui atualização e restaurações). `localStorage` persiste até que os dados são removidos pelo código, pelo usuário ou pelo navegador (por exemplo, quando há armazenamento limitado disponível). O trecho de código a seguir mostra como usar `localStorage` , que é semelhante a como é `sessionStorage` usado.
+Há dois tipos de web Armazenamento: `localStorage` e `sessionStorage` . Cada um é mantido como um armazenamento de dados separado isolado para o domínio que o criou. `sessionStorage` persiste apenas pela duração da sessão de navegação (por exemplo, enquanto o navegador está aberto, o que inclui atualização e restaurações). `localStorage` persiste até que os dados são removidos pelo código, pelo usuário ou pelo navegador (por exemplo, quando há armazenamento limitado disponível). O trecho de código a seguir mostra como usar `localStorage` , que é semelhante a como é `sessionStorage` usado.
 
 ```javascript
 var data = {
@@ -153,17 +153,17 @@ window.addEventListener("offline", function(){
 });
 ```  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
 Para saber mais sobre como gerenciar cenários offline, navegue até as páginas a seguir.  
 
 *   [Cache][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
 *   [Trabalhador do Serviço][MDNServiceWorker]  
-*   [Armazenamento Web][MDNWebStorageApi]  
+*   [Web Armazenamento][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Eventos online e offline][MDNNavigatoronlineOfflineEvents]  
-*   [Solicitação com intenção: Estratégias de cache na era dos PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
+*   [Solicitação com Intenção: Caching estratégias na era dos PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
     
 <!-- links -->  
 
@@ -171,10 +171,10 @@ Para saber mais sobre como gerenciar cenários offline, navegue até as páginas
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "Api IndexedDB | MDN"  
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Usando IndexDb - API IndexDB | MDN"  
 [MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"  
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api de Armazenamento da Web | MDN"  
+[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api Armazenamento Web | MDN"  
 [MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavegadorOnLine | MDN"  
 [MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Eventos online e offline - NavigatorOnLine | MDN"  
 
 [AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Ficar offline por Jeremy | Um livro separado"  
 
-[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Solicitação com intenção: Estratégias de cache na era dos PWAs por | Uma lista separada"  
+[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Solicitação com intenção: Caching estratégias na era dos PWAs por | Uma lista separada"  

@@ -85,7 +85,7 @@ No manipulador, você pode controlar se uma solicitação vai para a rede, puxa 
 
 Os funcionários do serviço podem fazer notificações por push para os usuários. As Notificações por Push são úteis para solicitar que os usuários reajam com seu aplicativo após algum tempo decorrido. Para obter mais informações, navegue até [Push Notifications passo a passo e demonstração][AzurewebsitesWebpushdemo].  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
 Para saber mais sobre Os Trabalhadores do Serviço, navegue até a lista a seguir de tópicos relacionados.  
 
@@ -94,7 +94,7 @@ Para saber mais sobre Os Trabalhadores do Serviço, navegue até a lista a segui
     
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Demonstrações do Microsoft Edge"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Microsoft Edge Demos"  
 
 [MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Fazendo com que os PWAs funcionem offline com os funcionários do Serviço - PWAs | MDN"  
 [MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "Como tornar as PWAs reativadas usando Notificações e Push - PWAs | MDN"  

@@ -1,5 +1,5 @@
 ---
-description: Corresponder atalhos de teclado no DevTools para Visual Studio Código
+description: Corresponder atalhos de teclado no DevTools para Visual Studio Code
 title: Personalizar atalhos de teclado no Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,29 +16,29 @@ ms.locfileid: "11408280"
 ---
 # <a name="customize-keyboard-shortcuts-in-the-microsoft-edge-devtools"></a>Personalizar atalhos de teclado no Microsoft Edge DevTools  
 
-A **página Atalhos** em [Configurações][DevToolsCustomizeSettings] fornece uma lista de atalhos de teclado no [DevTools][DevToolsShortcuts] e recursos para personalizar [os atalhos.](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code)  Para navegar até a página **Atalhos,** conclua as etapas a seguir.  
+A **página Atalhos** [no Configurações][DevToolsCustomizeSettings] fornece uma lista de atalhos de teclado no [DevTools][DevToolsShortcuts] e recursos para personalizar [os atalhos](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  Para navegar até a página **Atalhos,** conclua as etapas a seguir.  
 
 1.  [Abra DevTools][DevtoolsOpenMain].  
-1.  Configurações [abertas][DevToolsCustomizeSettings].
+1.  Abra [Configurações][DevToolsCustomizeSettings].
     *   Selecione `Shift` + `?` .  
 1.  Navegue até **a página Atalhos.**  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="A página Atalhos em Configurações" lightbox="../media/settings-shortcuts.msft.png":::
-       A **página Atalhos** **em Configurações**  
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="A página Atalhos no Configurações" lightbox="../media/settings-shortcuts.msft.png":::
+       A **página Atalhos** no **Configurações**  
     :::image-end:::  
     
-## <a name="match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code"></a>Corresponder atalhos de teclado no DevTools ao Código Visual Studio Microsoft  
+## <a name="match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code"></a>Corresponder atalhos de teclado no DevTools para Microsoft Visual Studio Código  
 
-Para corresponder ao atalho do teclado no Microsoft Edge DevTools para uma ação equivalente Visual Studio [Código][VisualStudioCode], conclua as etapas a seguir.  
+Para corresponder ao atalho do teclado no Microsoft Edge DevTools para uma ação equivalente [Visual Studio Code][VisualStudioCode], conclua as etapas a seguir.  
 
 1.  Navegue até a página da Web [Atalhos.](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools)  
-1.  Escolha Os **atalhos de match no** menu suspenso predefinido e altere **DevTools (Padrão)** para **Visual Studio Código**.  
+1.  Escolha Os **atalhos de match no** menu suspenso predefinido e altere **DevTools (Padrão)** para **Visual Studio Code**.  
     
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Corresponder atalhos de teclado no DevTools para Visual Studio Código" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
-       Corresponder atalhos de teclado no DevTools para Visual Studio Código  
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Corresponder atalhos de teclado no DevTools para Visual Studio Code" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+       Corresponder atalhos de teclado no DevTools para Visual Studio Code  
     :::image-end:::  
     
-Por exemplo, para pausar ou continuar executando um script [Visual Studio Código,][VisualStudioCodeShortcutsKeyboardWindows]selecione `F5` .  Com a **predefinição DevTools (Padrão),** para pausar ou continuar executando um script, selecione `F8` .  Quando você altera a predefinição **para Visual Studio Código**, agora você também seleciona , assim como no código Visual Studio `F5` [Código][VisualStudioCodeShortcutsKeyboardWindows].  
+Por exemplo, para pausar ou continuar executando um script [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], selecione `F5` .  Com a **predefinição DevTools (Padrão),** para pausar ou continuar executando um script, selecione `F8` .  Quando você altera a predefinição **para Visual Studio Code**, agora você também seleciona , assim como `F5` em [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows].  
 
 ## <a name="edit-keyboard-shortcuts-for-any-action-in-the-devtools"></a>Editar atalhos de teclado para qualquer ação no DevTools  
 
@@ -48,8 +48,8 @@ Para personalizar o atalho do teclado para uma ação específica no DevTools, c
 1.  Escolha a ação que você deseja personalizar.  Por exemplo, na seção **Depurador,** encontre e selecione a ação **Pausar execução de script.**  
 1.  Escolha o **ícone Editar** \( ![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \)  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Escolha a ação a ser personalizar na página Atalhos em Configurações" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       Escolha a ação a ser personalizar na página [Atalhos](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) [em Configurações][DevToolsCustomizeSettings]  
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Escolha a ação a ser personalizar na página Atalhos no Configurações" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Escolha a ação a ser personalizar na página [Atalhos](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) [no Configurações][DevToolsCustomizeSettings]  
     :::image-end:::  
     
 1.  Para vincular as teclas de atalho à ação, verifique se a caixa de texto ao lado da ação tem foco e use o teclado para selecionar as teclas de atalho.  
@@ -77,8 +77,8 @@ Enquanto você edita os atalhos de teclado para uma ação, para descartar suas 
 <!-- links -->  
 
 [DevToolsCustomizeSettings]: ./index.md#settings "Configurações - Personalizar o Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsOpenMain]: ../open/index.md "Abra o Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsShortcuts]: ../shortcuts/index.md "Atalhos de teclado do Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpenMain]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge Atalhos de teclado do DevTools | Microsoft Docs"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Código Visual Studio Microsoft"  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio atalhos de Teclado de Código para Windows | Código Visual Studio Microsoft"  
+[VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Código"  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Atalhos de teclado para Windows | Microsoft Visual Studio Código"  

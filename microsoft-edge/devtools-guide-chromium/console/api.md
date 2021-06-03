@@ -106,7 +106,7 @@ console.clear()
    :::column-end:::
 :::row-end:::  
 
-### <a name="see-also"></a>Ver também  
+### <a name="see-also"></a>Consulte também  
 
 *   [Limpar o Console][DevtoolsConsoleReferenceClear]  
 

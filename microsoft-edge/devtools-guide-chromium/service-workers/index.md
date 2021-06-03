@@ -62,7 +62,7 @@ Para saber mais sobre os eventos de busca, escolha a seta `respondWith` listada 
 
 ### <a name="service-worker-update-timeline"></a>Linha do tempo de atualização do trabalhador do serviço  
 
-A equipe do Microsoft Edge DevTools adicionou uma linha do tempo na ferramenta **Application** para refletir o ciclo de vida da atualização do trabalhador do serviço.  Ele exibe os eventos de instalação e ativação.  Cada um dos eventos tem uma seta de menu suspenso correspondente para dar mais detalhes.  
+A Microsoft Edge DevTools adicionou uma linha do tempo na ferramenta **Application** para refletir o ciclo de vida da atualização do trabalhador do serviço.  Ele exibe os eventos de instalação e ativação.  Cada um dos eventos tem uma seta de menu suspenso correspondente para dar mais detalhes.  
 
 ### <a name="request-routing-and-fetch-events"></a>Solicitar eventos de roteamento e busca  
 
@@ -84,7 +84,7 @@ Para encontrar mais informações de pilha, de definir um ponto de quebra no man
 
 ### <a name="future-work"></a>Trabalho futuro  
 
-A equipe do Microsoft Edge DevTools planeja desenvolver ainda mais os detalhes do cache e está investigando mais maneiras de melhorar a experiência de depuração de funcionários de serviço para desenvolvedores [de Aplicativo Web Progressivo.][MdnProgressiveWebApps]  
+A Microsoft Edge equipe do DevTools planeja desenvolver ainda mais os detalhes do cache e está investigando mais maneiras de melhorar a experiência de depuração de funcionários do serviço para desenvolvedores de [Aplicativo Web][MdnProgressiveWebApps] Progressivo.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 

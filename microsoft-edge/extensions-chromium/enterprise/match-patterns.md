@@ -1,5 +1,5 @@
 ---
-description: Documentação de política corporativa para Extensões de Borda (Chromium).
+description: Enterprise de política para Extensões de Borda (Chromium).
 title: Padrões de Correspondência
 author: MSEdgeTeam
 ms.author: msedgedevrel

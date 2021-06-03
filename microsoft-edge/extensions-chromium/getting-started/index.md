@@ -1,6 +1,6 @@
 ---
-description: Saiba mais sobre Extensões de Chromium e conceitos principais para criar extensões.
-title: Conceitos e arquitetura de extensões do Microsoft Edge (Chromium)
+description: Saiba mais Chromium extensões e conceitos principais para criar extensões.
+title: Microsoft Edge (Chromium) Conceitos e arquitetura de extensões
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -16,7 +16,7 @@ ms.locfileid: "11397921"
 ---
 # <a name="extension-concepts-and-architecture"></a>Conceitos de extensão e arquitetura  
 
-Este artigo fornece uma breve introdução aos conceitos que ajudam você a criar uma extensão.  Para entender as extensões do Microsoft Edge \(Chromium\) siga em frente para entender como os navegadores de várias guias funcionam.  
+Este artigo fornece uma breve introdução aos conceitos que ajudam você a criar uma extensão.  Para entender Microsoft Edge extensões \(Chromium\) , siga em frente para entender como os navegadores de várias guias funcionam.  
 
 ## <a name="understand-how-browsers-work"></a>Entender como os navegadores funcionam  
 

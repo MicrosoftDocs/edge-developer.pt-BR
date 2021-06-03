@@ -15,13 +15,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11397542"
 ---
-# <a name="use-origin-trials-in-microsoft-edge"></a>Usar testes de origem no Microsoft Edge  
+# <a name="use-origin-trials-in-microsoft-edge"></a>Usar testes de origem em Microsoft Edge  
 
-Os desenvolvedores podem usar testes de origem para experimentar APIs experimentais em sites ao vivo por um período limitado de tempo.  Ao usar as avaliação de origem, os usuários do Microsoft Edge que visitam seu site podem executar um código que usa APIs experimentais.  Para acessar as APIs experimentais em cada máquina de usuário, você não precisa ir e `edge://flags` ativar sinalizadores de recursos.  Para obter mais informações, navegue até [APIs experimentais.][DeveloperMicrsoftEdgeOriginTrials]  Além disso, você pode fornecer comentários sobre o design da API, seus casos de uso ou sua experiência usando as APIs para engenheiros de navegador e a comunidade padrão da Web.  
+Os desenvolvedores podem usar testes de origem para experimentar APIs experimentais em sites ao vivo por um período limitado de tempo.  Ao usar as avaliação de origem, os usuários de Microsoft Edge que visitam seu site podem executar código que usa APIs experimentais.  Para acessar as APIs experimentais em cada máquina de usuário, você não precisa ir e `edge://flags` ativar sinalizadores de recursos.  Para obter mais informações, navegue até [APIs experimentais.][DeveloperMicrsoftEdgeOriginTrials]  Além disso, você pode fornecer comentários sobre o design da API, seus casos de uso ou sua experiência usando as APIs para engenheiros de navegador e a comunidade padrão da Web.  
 
 ## <a name="get-started-using-origin-trials"></a>Começar a usar as avaliação de origem  
 
-Para obter mais informações sobre as APIs experimentais disponíveis no Microsoft Edge, navegue até [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Verifique os requisitos mínimos de versão para o Microsoft Edge e a data de término da avaliação para avaliar a adequação do uso das APIs experimentais em seu site.  
+Para obter mais informações sobre as APIs experimentais disponíveis Microsoft Edge, navegue até Microsoft Edge Console de Desenvolvedor de Avaliação de [Origem.][DeveloperMicrsoftEdgeOriginTrials]  Verifique se você analisa os requisitos mínimos de versão para Microsoft Edge e a data de término da avaliação para avaliar a adequação do uso das APIs experimentais em seu site.  
 
 > [!NOTE]
 > Um experimento pode terminar antes do planejado se qualquer uma das seguintes situações ocorrer.  
@@ -33,9 +33,9 @@ Para obter mais informações sobre as APIs experimentais disponíveis no Micros
 
 Use as etapas a seguir para registrar uma avaliação de uma API experimental.  
 
-1.  Visite a [página Console do Desenvolvedor de Avaliação de Origem do Microsoft Edge.][DeveloperMicrsoftEdgeOriginTrials]  
+1.  Visite a página Microsoft Edge Console do [Desenvolvedor de Avaliação de Origem.][DeveloperMicrsoftEdgeOriginTrials]  
 1.  Escolha o botão Registrar em qualquer um dos experimentos disponíveis.  
-1.  Entre no Console do Desenvolvedor usando seu nome de usuário e senha do GitHub.  
+1.  Entre no Console do Desenvolvedor usando seu nome GitHub nome de usuário e senha.  
 1.  Escolha **Autorizar o MicrosoftEdge**.  
 1.  Preencha o formulário.  
     
@@ -52,7 +52,7 @@ Use as etapas a seguir para registrar uma avaliação de uma API experimental.
     
 ### <a name="apply-your-token"></a>Aplicar seu token  
 
-Um token é gerado instantaneamente e exibido na página Console do Desenvolvedor de Avaliação de Origem do [Microsoft Edge.][DeveloperMicrsoftEdgeOriginTrials]  Para começar a usar a avaliação em seu site, use um dos métodos a seguir para aplicar o token à sua página.  
+Um token é gerado instantaneamente e exibido na página Microsoft Edge Console do Desenvolvedor de Avaliação de [Origem.][DeveloperMicrsoftEdgeOriginTrials]  Para começar a usar a avaliação em seu site, use um dos métodos a seguir para aplicar o token à sua página.  
 
 *   Adicione o `origin-trial` valor do atributo e seu token à marca em cada página que usa a API `meta` experimental.  
     
@@ -91,13 +91,13 @@ Ao usar APIs experimentais, certifique-se de fornecer uma experiência de trabal
 
 ### <a name="roadmap-for-allowed-origins"></a>Roteiro para Origens Permitidas  
 
-O portal de Avaliação de Origem do Microsoft Edge atualmente só dá suporte a Origens Habilitadas para SSL, o que significa que os sites devem ter HTTPS implementado corretamente para registrar um experimento.  No futuro, as seguintes origens seguras são planejadas.  
+O Microsoft Edge de avaliação de origem atualmente só dá suporte a Origens Habilitadas SSL, o que significa que os sites devem ter HTTPS implementado corretamente para se registrar em um experimento.  No futuro, as seguintes origens seguras são planejadas.  
 
 *   `http://localhost`Registre-se como a origem de seus experimentos.  Para usar `http://localhost` hoje, navegue até `edge://flags` e de definir o experimento como **Habilitado**.  
 *   Use extensões com `extensions://` origens prefixadas para se registrar em experimentos.  
     
 <!-- links -->  
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"  
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Console do Desenvolvedor de Avaliação de Origem | Microsoft Docs"  
 
 [MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementando a detecção de recursos | MDN"  

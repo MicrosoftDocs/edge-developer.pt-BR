@@ -1,5 +1,5 @@
 ---
-description: Como registrar mensagens e executar JavaScript no Console do Microsoft Edge DevTools.
+description: Como registrar mensagens e executar JavaScript no console Microsoft Edge DevTools.
 title: Registrar mensagens na ferramenta Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -186,7 +186,7 @@ console.table(bodyDimensions);
    Exibir dados com `console.table` para facilitar a leitura
 :::image-end:::  
 
-A saída de `console.table` tem um formato de tabela não somente quando é exibido no **Console**.    Por exemplo, se você copiar e colar uma tabela no Excel, no Word ou em qualquer outro produto que suporte dados tabular, a estrutura permanecerá intacta.  
+A saída de `console.table` tem um formato de tabela não somente quando é exibido no **Console**.    Por exemplo, se você copiar e colar uma tabela em Excel, Word ou qualquer outro produto que suporte dados tabular, a estrutura permanecerá intacta.  
 
 <!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->  
 
@@ -217,7 +217,7 @@ Você pode estar tentado a usar os métodos de log como seus principais meios pa
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filtrar mensagens de console | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitorar alterações no JavaScript usando expressões ao vivo | Microsoft Docs"  
 
-[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "Como pausar seu código com pontos de interrupção no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "Como pausar seu código com pontos de interrupção Microsoft Edge DevTools | Microsoft Docs"  
 
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "Exemplos de mensagens de console: log, informações, erro e aviso | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html "Exemplos de mensagens de console: registrar tipos diferentes | GitHub"  

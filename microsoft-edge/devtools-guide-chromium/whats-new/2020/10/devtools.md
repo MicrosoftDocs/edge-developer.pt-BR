@@ -121,7 +121,7 @@ Os recursos são aados por padrão.  Para obter mais informações sobre os recu
 
 Agora você pode personalizar o atalho do teclado para qualquer ação no DevTools.  Desde Microsoft Edge versão 84, você pode **** escolher entre as predefinições Visual Studio Code **e DevTools (padrão)** para [atalhos de teclado.][DevtoolsCustomizeShortcuts]  A partir Microsoft Edge versão 87, você pode ativar o experimento Habilitar o **editor** de atalhos de teclado para personalizar ainda mais os [atalhos de teclado.][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]  
 
-Para habilitar o experimento, navegue até [Ativar recursos experimentais][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] e escolha a caixa de seleção ao lado de Habilitar o editor de atalho do **teclado.**  Para obter mais informações sobre como personalizar e editar atalhos, navegue até Editar atalhos de teclado para qualquer ação no [DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  Para revisar as atualizações em tempo real sobre esse recurso no Chromium de código aberto, navegue até Problema [#174309][CR174309].  
+Para habilitar o experimento, navegue até [Ativar recursos experimentais][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] e escolha a caixa de seleção ao lado de Habilitar o editor de atalho do **teclado.**  Para obter mais informações sobre como personalizar e editar atalhos, navegue até [Editar os atalhos do teclado para qualquer ação no DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  Para revisar as atualizações em tempo real sobre esse recurso no Chromium de código aberto, navegue até Problema [#174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Atalho personalizado para pausar um script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Atalho personalizado para pausar um script  
@@ -288,8 +288,8 @@ Se você estiver no Windows ou macOS, considere usar os canais [Microsoft Edge d
 
 [DevtoolsConsoleIndex]: ../../../console/index.md "Use o console | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Elemento ou objeto JavaScript escolhido recentemente - Referência da API de Utilitários de Console | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalize os atalhos do teclado no Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Editar atalhos de teclado para qualquer ação no devTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar atalhos de teclado no Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Editar atalhos do teclado para qualquer ação no devTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Referência de análise de desempenho | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulação: suporte ao modo de tela dupla - Recursos experimentais | Microsoft Docs"  
