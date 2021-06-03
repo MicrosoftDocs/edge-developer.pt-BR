@@ -118,8 +118,7 @@ ms.locfileid: "11564235"
 1.  <span data-ttu-id="5d6c3-166">Na **Source Order Viewer** seção, escolha a caixa de seleção **Mostrar Ordem de** Origem.</span><span class="sxs-lookup"><span data-stu-id="5d6c3-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="5d6c3-167">Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.</span><span class="sxs-lookup"><span data-stu-id="5d6c3-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="5d6c3-168">no-loc(Source Order Viewer)::: no painel Acessibilidade" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: no **Source Order Viewer** painel **Acessibilidade**</span><span class="sxs-lookup"><span data-stu-id="5d6c3-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -223,7 +222,7 @@ ms.locfileid: "11564235"
     
 <span data-ttu-id="5d6c3-232">A **ferramenta Welcome** é aberta automaticamente após cada atualização para Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5d6c3-232">The **Welcome** tool opens automatically after each update to Microsoft Edge.</span></span>  <span data-ttu-id="5d6c3-233">Para impedir a exibição da ferramenta **De** boas-vindas após cada atualização, deslocar a caixa de seleção ao lado da guia **Abrir** após cada atualização sob o **título** da ferramenta de boas-vindas.</span><span class="sxs-lookup"><span data-stu-id="5d6c3-233">To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.</span></span>  
 
-<span data-ttu-id="5d6c3-234">Se você preferir a ferramenta **original What's New,** navegue até Configurações Experimentos e remova [a][DevtoolsCustomizeIndexSettings]caixa de seleção  > ao lado de **Enable Welcome tab** .</span><span class="sxs-lookup"><span data-stu-id="5d6c3-234">If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.</span></span>  
+<span data-ttu-id="5d6c3-234">Se você preferir a ferramenta **original What's New,** navegue até Configurações Experimentos e remova [a][DevtoolsCustomizeIndexSettings]caixa de seleção  >  \*\*\*\* ao lado de **Enable Welcome tab** .</span><span class="sxs-lookup"><span data-stu-id="5d6c3-234">If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.</span></span>  
 
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Ferramenta de boas-vindas" lightbox="../media/experiments-welcome.msft.png":::
    <span data-ttu-id="5d6c3-236">**Ferramenta de boas-vindas**</span><span class="sxs-lookup"><span data-stu-id="5d6c3-236">**Welcome** tool</span></span>  

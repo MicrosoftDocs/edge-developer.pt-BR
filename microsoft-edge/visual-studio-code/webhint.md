@@ -1,6 +1,6 @@
 ---
 description: Como usar webhint no Visual Studio Code
-title: webhint Visual Studio de código
+title: webhint Visual Studio Code extensão
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -14,21 +14,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11399271"
 ---
-# <a name="webhint-vs-code-extension"></a><span data-ttu-id="ea6e5-104">Extensão webhint vs code</span><span class="sxs-lookup"><span data-stu-id="ea6e5-104">Webhint Vs Code Extension</span></span>  
+# <a name="webhint-vs-code-extension"></a><span data-ttu-id="fff82-104">Extensão webhint vs code</span><span class="sxs-lookup"><span data-stu-id="fff82-104">Webhint Vs Code Extension</span></span>  
 
-<span data-ttu-id="ea6e5-105">Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, a compatibilidade com o PWA e a segurança do seu site.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-105">Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span>  <span data-ttu-id="ea6e5-106">Ele verifica seu código em busca de práticas recomendadas e erros comuns.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-106">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="ea6e5-107">Este projeto de código aberto, inicialmente desenvolvido pela equipe do Microsoft Edge, agora faz parte do [OpenJS Foundation][OpenjsFoundation].</span><span class="sxs-lookup"><span data-stu-id="ea6e5-107">This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].</span></span>  <span data-ttu-id="ea6e5-108">A equipe do Microsoft Edge continua a contribuir para webhint junto com desenvolvedores web na comunidade.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-108">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>  
+<span data-ttu-id="fff82-105">Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a acessibilidade, o desempenho, a compatibilidade entre navegadores, PWA compatibilidade e a segurança do seu site.</span><span class="sxs-lookup"><span data-stu-id="fff82-105">Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span>  <span data-ttu-id="fff82-106">Ele verifica seu código em busca de práticas recomendadas e erros comuns.</span><span class="sxs-lookup"><span data-stu-id="fff82-106">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="fff82-107">Este projeto de código aberto, inicialmente desenvolvido pela equipe Microsoft Edge, agora faz parte do [OpenJS Foundation][OpenjsFoundation].</span><span class="sxs-lookup"><span data-stu-id="fff82-107">This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].</span></span>  <span data-ttu-id="fff82-108">A Microsoft Edge equipe continua a contribuir para Webhint junto com os desenvolvedores da Web na comunidade.</span><span class="sxs-lookup"><span data-stu-id="fff82-108">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão Visual Studio Código da Web":::
-   <span data-ttu-id="ea6e5-110">Captura de tela da extensão Visual Studio Código da Web</span><span class="sxs-lookup"><span data-stu-id="ea6e5-110">Screenshot of webhint Visual Studio Code extension</span></span>  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de tela da extensão Visual Studio Code webhint":::
+   <span data-ttu-id="fff82-110">Captura de tela da extensão Visual Studio Code webhint</span><span class="sxs-lookup"><span data-stu-id="fff82-110">Screenshot of webhint Visual Studio Code extension</span></span>  
 :::image-end:::
 
 <!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-<span data-ttu-id="ea6e5-111">Identifique e corrige problemas em seu HTML, CSS, JavaScript, TypeScript e muito mais adicionando a extensão [webhint para Visual Studio Código][VisualstudioMarketplaceWebhint].</span><span class="sxs-lookup"><span data-stu-id="ea6e5-111">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].</span></span>  <span data-ttu-id="ea6e5-112">As dicas aparecem como sublinhados em linha e são resumidas no painel **Problemas.**</span><span class="sxs-lookup"><span data-stu-id="ea6e5-112">Hints appear as inline underlines and are summarized in the **Problems** pane.</span></span>  
+<span data-ttu-id="fff82-111">Identifique e corrige problemas em seu HTML, CSS, JavaScript, TypeScript e muito mais adicionando a extensão [webhint para Visual Studio Code][VisualstudioMarketplaceWebhint].</span><span class="sxs-lookup"><span data-stu-id="fff82-111">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].</span></span>  <span data-ttu-id="fff82-112">As dicas aparecem como sublinhados em linha e são resumidas no painel **Problemas.**</span><span class="sxs-lookup"><span data-stu-id="fff82-112">Hints appear as inline underlines and are summarized in the **Problems** pane.</span></span>  
 
-## <a name="configuration"></a><span data-ttu-id="ea6e5-113">Configuração</span><span class="sxs-lookup"><span data-stu-id="ea6e5-113">Configuration</span></span>  
+## <a name="configuration"></a><span data-ttu-id="fff82-113">Configuração</span><span class="sxs-lookup"><span data-stu-id="fff82-113">Configuration</span></span>  
 
-<span data-ttu-id="ea6e5-114">Essa extensão usa um arquivo [json][GithubWebhintioIndexjson] de configuração padrão que ativa dicas e analisadores para HTML, CSS, sistemas de templating \(JSX/TSX, Angular e assim por diante\), JavaScript/TypeScript e muito mais.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
+<span data-ttu-id="fff82-114">Essa extensão usa um arquivo [json][GithubWebhintioIndexjson] de configuração padrão que ativa dicas e analisadores para HTML, CSS, sistemas de templating \(JSX/TSX, Angular e assim por diante\), JavaScript/TypeScript e muito mais.</span><span class="sxs-lookup"><span data-stu-id="fff82-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
 
 ```json
 {
@@ -80,18 +80,18 @@ ms.locfileid: "11399271"
 }
 ```  
 
-<span data-ttu-id="ea6e5-115">Se você quiser mais controle sobre as dicas e analisadores que são ativadas, crie um arquivo local `.hintrc` para configurar a webhint.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-115">If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.</span></span>  <span data-ttu-id="ea6e5-116">Para ajuda com a saída de dicas específicas, navegue até [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span><span class="sxs-lookup"><span data-stu-id="ea6e5-116">For help with output from specific hints, navigate to [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span></span>  
+<span data-ttu-id="fff82-115">Se você quiser mais controle sobre as dicas e analisadores que são ativadas, crie um arquivo local `.hintrc` para configurar a webhint.</span><span class="sxs-lookup"><span data-stu-id="fff82-115">If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.</span></span>  <span data-ttu-id="fff82-116">Para ajuda com a saída de dicas específicas, navegue até [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span><span class="sxs-lookup"><span data-stu-id="fff82-116">For help with output from specific hints, navigate to [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span></span>  
 
-## <a name="getting-in-touch-with-the-webhint-team"></a><span data-ttu-id="ea6e5-117">Entrar em contato com a equipe webhint</span><span class="sxs-lookup"><span data-stu-id="ea6e5-117">Getting in touch with the webhint team</span></span>  
+## <a name="getting-in-touch-with-the-webhint-team"></a><span data-ttu-id="fff82-117">Entrar em contato com a equipe webhint</span><span class="sxs-lookup"><span data-stu-id="fff82-117">Getting in touch with the webhint team</span></span>  
 
-<span data-ttu-id="ea6e5-118">Envie seus comentários [arquivando um problema][GithubWebhintioIssuesNew] no [repositório do GitHub da Webhint.][GithubWebhintio]</span><span class="sxs-lookup"><span data-stu-id="ea6e5-118">Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in [webhint GitHub repo][GithubWebhintio].</span></span>  
+<span data-ttu-id="fff82-118">Envie seus comentários [arquivando um problema][GithubWebhintioIssuesNew] na [webhint GitHub repo][GithubWebhintio].</span><span class="sxs-lookup"><span data-stu-id="fff82-118">Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in [webhint GitHub repo][GithubWebhintio].</span></span>  
 
-<span data-ttu-id="ea6e5-119">Para contribuir com a extensão, navegue até [Webhint Visual Studio Guia de contribuição][GithubWebhintioExtensionVscodeContributing]de extensão de código.</span><span class="sxs-lookup"><span data-stu-id="ea6e5-119">To contribute to the extension, navigate to [webhint Visual Studio Code extension contribution guide][GithubWebhintioExtensionVscodeContributing].</span></span>  
+<span data-ttu-id="fff82-119">Para contribuir com a extensão, navegue até [Webhint Visual Studio Code guia de contribuição de extensão][GithubWebhintioExtensionVscodeContributing].</span><span class="sxs-lookup"><span data-stu-id="fff82-119">To contribute to the extension, navigate to [webhint Visual Studio Code extension contribution guide][GithubWebhintioExtensionVscodeContributing].</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="ea6e5-120">Veja também</span><span class="sxs-lookup"><span data-stu-id="ea6e5-120">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="fff82-120">Consulte também</span><span class="sxs-lookup"><span data-stu-id="fff82-120">See also</span></span>  
 
-*   [<span data-ttu-id="ea6e5-121">Acessibilidade</span><span class="sxs-lookup"><span data-stu-id="ea6e5-121">Accessibility</span></span>][AccessibilityIndex]  
-*   [<span data-ttu-id="ea6e5-122">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="ea6e5-122">Visual Studio Code</span></span>][VisualstudiocodeIndex]  
+*   [<span data-ttu-id="fff82-121">Acessibilidade</span><span class="sxs-lookup"><span data-stu-id="fff82-121">Accessibility</span></span>][AccessibilityIndex]  
+*   [<span data-ttu-id="fff82-122">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="fff82-122">Visual Studio Code</span></span>][VisualstudiocodeIndex]  
 
 <!-- image links -->  
 
@@ -101,7 +101,7 @@ ms.locfileid: "11399271"
 
 [AccessibilityIndex]: /microsoft-edge/accessibility "Acessibilidade | Microsoft Docs"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio código | Microsoft Docs"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"  
 
 [GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
 [GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contribuição - webhint | GitHub"  
