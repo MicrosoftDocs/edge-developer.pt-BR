@@ -118,7 +118,8 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar **Source Order V
 1.  Na **Source Order Viewer** seção, escolha a caixa de seleção **Mostrar Ordem de** Origem.  
 1.  Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: no **Source Order Viewer** painel **Acessibilidade**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** no painel **Acessibilidade**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  

@@ -76,7 +76,7 @@ Para obter mais informações, navegue [até Microsoft Edge Ferramentas para Vis
    **Microsoft Edge Ferramentas para Visual Studio Code** Visual Studio Code em ação  
 :::image-end:::  
 
-##  <a name="webhint--"></a>Dica da web  
+##  <a name="webhint"></a>Dica da web  
       
 Use [webhint][WebhintMain], uma ferramenta de linting personalizável, para melhorar a funcionalidade a seguir do seu site.  
 
