@@ -21,7 +21,7 @@ Para enviar sua extensão para o Microsoft Edge de complementos, você deve ser 
 > [!IMPORTANT]
 > Não há nenhuma taxa de registro envolvida no envio de extensões ao programa Microsoft Edge.  
 
-## Antes de começar  
+##  <a name="before-you-begin"></a>Antes de começar  
 
 Se você não tiver uma conta ou se tiver uma conta comercial existente com o Partner Center, crie uma nova conta da [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para se registrar no programa Microsoft Edge.  Para criar uma conta da Microsoft \(Outlook/live/Hotmail\), conclua as seguintes ações.  
 
@@ -33,7 +33,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
 > [!NOTE]
 > Hoje, Microsoft Edge extensões não suportam a inscrição com uma conta de trabalho ou de estudante.  No futuro, a equipe de Microsoft Edge extensões tem suporte para vincular locatários do Azure AD a contas MSA para gerenciamento de extensão.  
 
-## Inscrever-se no programa Microsoft Edge no Partner Center  
+##  <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>Inscrever-se no programa Microsoft Edge no Partner Center  
 
 1.  Navegue até a [página do desenvolvedor][MicrosoftPartnerCenter] e escolha IR PARA **PAINEL**.  
 1.  Se você tiver uma conta da Microsoft, entre nele agora.  Caso não seja, crie uma nova conta da Microsoft.  Use a mesma conta da Microsoft que você usa para entrar em sua conta de desenvolvedor.  Depois de entrar, um formulário de registro é exibido. A tabela a seguir descreve os campos no formulário de registro.  
@@ -102,7 +102,7 @@ Se você tiver uma conta de desenvolvedor registrada no Partner Center, use a co
 1.  Antes de enviar seu formulário de registro, leia e aceite os termos e condições do Contrato Microsoft Edge [Desenvolvedor.][MicrosoftAppDeveloperAgreement]  
 1.  Para concluir seu registro, escolha **Concluir**.  
     
-## Próximas etapas  
+##  <a name="next-steps"></a>Próximas etapas  
 
 Para exibir seu status de verificação, navegue até Partner Center > **Configurações da conta**.  Enquanto você aguarda a conclusão do processo de verificação, continue a criar, testar e preparar seus envios.  
 

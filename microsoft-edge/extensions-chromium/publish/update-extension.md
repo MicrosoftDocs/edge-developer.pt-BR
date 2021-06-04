@@ -18,12 +18,12 @@ ms.locfileid: "11343154"
 
 Você pode atualizar uma extensão enviada ou remover uma listagem de extensão publicada do Microsoft Edge de complementos a qualquer momento.  
 
-## Atualizar sua extensão no Microsoft Edge de complementos  
+##  <a name="update-your-extension-on-the-microsoft-edge-add-ons-store"></a>Atualizar sua extensão no Microsoft Edge de complementos  
 
 > [!NOTE]
 > A duração do processo de certificação de uma atualização para uma extensão pode levar de algumas horas a alguns dias.  
 
-### Atualizar uma extensão existente no Microsoft Edge de complementos  
+###  <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-store"></a>Atualizar uma extensão existente no Microsoft Edge de complementos  
 
 Para atualizar sua extensão na loja, conclua as etapas a seguir.  
 
@@ -32,7 +32,7 @@ Para atualizar sua extensão na loja, conclua as etapas a seguir.
 1.  Depois de fazer as alterações, escolha **Salvar**  >  **Publicar** para atualizar sua listagem de extensão e inicie o processo de certificação.  
 1.  Depois que a coluna for exibida, sua atualização de extensão estará disponível no `Status` `In the store` Microsoft Edge de complementos.  
     
-### Atualizar sua extensão durante a etapa de certificação  
+###  <a name="update-your-extension-during-the-certification-step"></a>Atualizar sua extensão durante a etapa de certificação  
 
 Embora sua extensão ainda esteja no estágio de certificação e antes de ser publicada no Microsoft Edge de complementos, você pode atualizá-la. Se sua extensão falhar no processo de certificação, talvez você também precise atualizar sua extensão.    
 
@@ -48,7 +48,7 @@ Para editar seu envio, conclua as etapas a seguir.
 > [!IMPORTANT]
 > O processo interrompe e remove seu envio atual do pipeline de certificação Microsoft Edge extensões e uma nova revisão começa com o envio mais recente.  
 
-### Atualizar sua extensão depois que ela falhou na certificação  
+###  <a name="update-your-extension-after-it-failed-the-certification"></a>Atualizar sua extensão depois que ela falhou na certificação  
 
 Depois que sua extensão falhou no processo de certificação, você precisa atualizar sua extensão e reabrir sua extensão que incorpora os comentários.  
 
@@ -58,7 +58,7 @@ Para editar sua extensão, conclua as etapas a seguir.
 1.  Atualize o pacote de extensão ou os metadados que incorporam os comentários recebidos do processo de certificação.  Se você atualizar o pacote de extensão, certifique-se de aumentar a versão no arquivo de manifesto.  
 1.  Depois de fazer alterações, escolha **Salvar**  >  **Publicar**.  
     
-## Remover extensões do Microsoft Edge de complementos  
+##  <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>Remover extensões do Microsoft Edge de complementos  
 
 Para remover sua extensão do Microsoft Edge de complementos, conclua as etapas a seguir.  
 

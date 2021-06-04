@@ -21,7 +21,7 @@ Recursos são opções que você pode usar para personalizar e configurar uma `E
 
 Os recursos são passados para uma sessão do WebDriver como um mapa JSON.  Normalmente, as vinculações de idioma webDriver fornecem métodos de conveniência seguros de tipo para que você não precise configurar o mapa JSON por conta própria.  As diferentes vinculações de idioma do WebDriver usam mecanismos diferentes para configurar recursos.  Navegue até a documentação para sua [associação de idioma preferencial][WebdriverIndexChooseWebdriverLanguageBinding] para saber mais sobre como configurar recursos.  [Selenium][SeleniumMain] configura os recursos por meio da `EdgeOptions` classe.  
 
-## Usando a classe EdgeOptions  
+##  <a name="using-the-edgeoptions-class"></a>Usando a classe EdgeOptions  
 
 Crie uma instância de , que fornece métodos de conveniência `EdgeOptions` para definir Microsoft Edge recursos específicos.  Depois de configurar o `EdgeOptions` objeto, passe `EdgeOptions` para o `EdgeDriver` construtor.  
 
@@ -38,11 +38,11 @@ Para usar recursos que não tenham um método de conveniência associado, use o 
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```  
 
-## Recursos reconhecidos  
+##  <a name="recognized-capabilities"></a>Recursos reconhecidos  
 
 Para recursos padrão aceitos, navegue até a documentação `EdgeDriver` [Selenium][SharedCapabilitiesSeleniumDocumentation] e o [padrão W3C WebDriver][CapabilitiesW3cWebdriver].  Este artigo lista apenas recursos específicos Microsoft Edge.  
 
-## Objeto EdgeOptions  
+##  <a name="edgeoptions-object--"></a>Objeto EdgeOptions  
 
 A maioria Microsoft Edge recursos específicos são expostos por meio do `EdgeOptions` objeto.  Em alguns idiomas, os recursos são implementados pela `EdgeOptions` classe.  Em outros idiomas, os recursos são armazenados no `ms:edgeOptions` dicionário em `DesiredCapabilities` .  
 
@@ -65,7 +65,7 @@ A maioria Microsoft Edge recursos específicos são expostos por meio do `EdgeOp
 | windowsApp | string |  | ID do modelo de usuário do aplicativo de um pacote Microsoft Edge aplicativo para iniciar, por exemplo `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` .  Use `windowsApp` em vez de se conectar a um dispositivo Windows 10X ou `binary` emulador usando Windows Device Portal. |  
 | windowTypes | lista de cadeias de caracteres |  | Uma lista de tipos de janela que são exibidos na lista de alças de janela.  Para acessar os elementos webview do Android, `webview` inclua na lista. |  
 
-## Objeto perfLoggingPrefs  
+##  <a name="perfloggingprefs-object--"></a>Objeto perfLoggingPrefs  
 
 O `perfLoggingPrefs` dicionário tem o seguinte formato \(todas as teclas são opcionais\).  
 
@@ -76,7 +76,7 @@ O `perfLoggingPrefs` dicionário tem o seguinte formato \(todas as teclas são o
 | enablePage | boolean | true | Para coletar \(ou não coletar\) eventos do domínio Page. |  
 | traceCategories | string | \(empty\) | Uma cadeia de caracteres separada por vírgulas de Microsoft Edge de rastreamento para as quais os eventos de rastreamento devem ser coletados.  Uma cadeia de caracteres vazia ou não especificada desabilita o rastreamento. |  
 
-## Recursos retornados  
+##  <a name="returned-capabilities"></a>Recursos retornados  
 
 A lista a seguir contém todos os recursos Microsoft Edge específicos do Microsoft Edge que `EdgeDriver` retornam quando você cria uma nova sessão.  
 

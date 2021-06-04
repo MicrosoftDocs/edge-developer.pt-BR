@@ -23,7 +23,7 @@ As Java do [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsR
 
 Use as teclas a seguir para verificar a assinatura de pacotes fornecidos pela equipe Microsoft Edge Ferramentas de [Desenvolvedor.][TwitterEdgeDevTools]  
 
-## Chave pública para verificar ferramentas selenium para Microsoft Edge  
+##  <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>Chave pública para verificar ferramentas selenium para Microsoft Edge  
 
 *   **ID da chave pública**: Microsoft Edge equipe de ferramentas de [desenvolvedor EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **Impressão digital de chave pública**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  

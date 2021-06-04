@@ -18,7 +18,7 @@ ms.locfileid: "11343112"
 
 Gerencie suas configurações de conta e detalhes de perfil para sua conta Microsoft Edge desenvolvedor no [Partner Center][MicrosoftPartnerCenter].  
 
-## Configurações da conta  
+##  <a name="account-settings"></a>Configurações da conta  
 
 Para exibir as configurações da sua conta, escolha o ícone de engrenagem no canto superior direito das [configurações][MicrosoftPartnerCenter]do Desenvolvedor do Partner  >  **** Center.  Nas **configurações do Desenvolvedor,** revise e atualize as informações a seguir.  
 
@@ -28,7 +28,7 @@ Para exibir as configurações da sua conta, escolha o ícone de engrenagem no c
     
 Na seção **Detalhes da** conta, revise o status e o tipo da sua conta.  Sua ID do Vendedor e outras informações de ID do editor também são exibidas na **seção Detalhes da** conta.  Os valores são atribuídos pela Microsoft para identificar exclusivamente sua conta de desenvolvedor e são somente leitura.  
 
-## Detalhes de Contato  
+##  <a name="contact-details--"></a>Detalhes de Contato  
 
 A **seção Informações de** contato exibe os detalhes fornecidos ao criar sua conta.  A Microsoft Edge de extensão usa as informações de detalhes de contato para entrar em contato com você sobre sua conta.  O nome de exibição do editor exibido no Microsoft Edge de complementos também é exibido é a **seção Informações de** contato.  
   
@@ -36,7 +36,7 @@ Se suas informações de contato mudarem, edite a **seção Informações de** c
 
 Se você precisar alterar qualquer um dos seus detalhes de contato, a equipe Microsoft Edge extensão poderá verificar sua conta novamente, especialmente se você tiver uma conta da empresa.  Seu status de verificação retorna `Pending` enquanto a revisão está em processo.  O processo de verificação varia de alguns dias a algumas semanas, e sua empresa pode receber uma chamada telefônica do nosso parceiro de verificação.  
 
-## Outras configurações  
+##  <a name="other-settings"></a>Outras configurações  
 
 Revise as configurações a seguir na seção Configurações da conta.  
 

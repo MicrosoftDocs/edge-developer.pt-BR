@@ -16,7 +16,7 @@ ms.locfileid: "11343084"
 ---
 # Complemento do Contrato de Desenvolvedor de Aplicativos para Microsoft Edge usuários do programa  
 
-## Exibição G: Termos e Condições para Microsoft Edge Extensões  
+##  <a name="exhibit-g:-terms-and-conditions-for-microsoft-edge-extensions"></a>Exibição G: Termos e Condições para Microsoft Edge Extensões  
 
 Estes Termos e Condições para extensões Microsoft Edge \(o "Suplemento de Extensões"\) é um suplemento aos termos e condições do Contrato de Desenvolvedor de Aplicativos, a versão atual da qual pode ser encontrada em [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] .  Este Addendum Microsoft Edge se aplica se você enviou ou está disponibilizando extensões \(each, an "Extension"\) through Microsoft Edge Add-ons.  Exceto conforme expressamente modificado por este Addendum extensões, todos os termos e condições no Contrato de Desenvolvedor de Aplicativos, que é incorporado por referência aqui, se aplicam à oferta e distribuição de suas extensões Microsoft Edge.  Exceto quando expressamente modificado por este Addendum, os termos e condições que se aplicam a um "Aplicativo" ou "Aplicativo" no Contrato de Desenvolvedor de Aplicativos serão aplicados a uma Extensão conforme definido neste Adendo e todas as referências a "Store" ou "Microsoft Store" no Contrato de Desenvolvedor de Aplicativos serão aplicadas a complementos do Microsoft Edge conforme definido neste Addendum.  
 

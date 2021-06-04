@@ -34,7 +34,7 @@ Para portabilidade da extensão do Chrome, conclua as etapas a seguir.
     > [!NOTE]
     > Se sua extensão trocar mensagens com um aplicativo nativo usando , certifique-se de definir como no arquivo de manifesto do host de `chrome.runtime.connectNative` `allowed_origins` mensagens `extension://[Microsoft-Catalog-extensionID]` nativo.  A configuração permite que o aplicativo identifique sua extensão.  
     
-## Próximas etapas  
+##  <a name="next-steps"></a>Próximas etapas  
 
 Depois que o pacote de extensão estiver pronto para ser [][ExtensionsPublishCreateDevAccount] publicado no Microsoft Edge de complementos, crie uma conta de desenvolvedor e [publique sua extensão.][ExtensionsPublishPublishExtension]  
 

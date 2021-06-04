@@ -23,7 +23,7 @@ O [dramaturgo inicia navegadores sem cabeça][WikiHeadlessBrowser] por padrão. 
 
 Por padrão, quando você instala o Dramaturgo, o instalador baixa [Chromium,][ChromiumHome] [Firefox][FirefoxMain]e [WebKit.][|::ref3::|Main]  Se você tiver Microsoft Edge \(Chromium\) instalado também, o Atordogo precisa apenas de uma alteração de código de uma linha para testar seu site ou aplicativo no Microsoft Edge.  Para baixar Microsoft Edge \(Chromium\), navegue até [Baixar Microsoft Edge][MicrosoftEdgeDownload].  
 
-## Instalando o Dramaturgo  
+##  <a name="installing-playwright--"></a>Instalando o Dramaturgo  
 
 Instale [o Atordoar][|::ref4::|Main] para testar seu site ou aplicativo com o seguinte comando.  
 
@@ -31,7 +31,7 @@ Instale [o Atordoar][|::ref4::|Main] para testar seu site ou aplicativo com o se
 npm i playwright
 ```  
 
-## Iniciar Microsoft Edge com o Atordogo  
+##  <a name="launch-microsoft-edge-with-playwright--"></a>Iniciar Microsoft Edge com o Atordogo  
 
 > [!NOTE]
 > [O][|::ref5::|Main] dramaturgo Node.js versão 10.17 ou superior. Execute `node -v` a partir da linha de comando para garantir que você tenha uma versão compatível do Node.js.  Os binários do navegador para Chromium, Firefox e WebKit funcionam em Windows, macOS e Linux. Para obter mais informações, navegue até [Requisitos do Sistema de Dramaturgo.][PlaywrightSystemRequirements]  
@@ -94,7 +94,7 @@ O ator inicia Microsoft Edge, navega para e salva `https://www.microsoft.com/edg
 
 Para obter mais informações sobre o Dramaturgo, navegue até o [site do Atordogo.][|::ref6::|Main]  Confira o [repo do Dramaturgo][PlaywrightRepo] GitHub.  Para compartilhar seus comentários sobre como automatizar e testar seu site ou aplicativo com o Atordoamento, [arquivo um problema.][PlaywrightRepoNewIssue]  
 
-## Entrar em contato com a equipe Microsoft Edge DevTools  
+##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

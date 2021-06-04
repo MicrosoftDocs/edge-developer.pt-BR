@@ -16,14 +16,14 @@ ms.locfileid: "11343156"
 ---
 # Entrar em contato Microsoft Edge suporte à extensão  
 
-## Solicitar ajuda para quaisquer problemas ou enviar comentários  
+##  <a name="request-help-for-any-issues-or-submit-feedback"></a>Solicitar ajuda para quaisquer problemas ou enviar comentários  
 
 1.  Depois de enviar sua extensão usando o Partner Center e você tiver uma pergunta sobre o status de revisão ou certificação dele, navegue até [Nova][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] Solicitação de Suporte e conclua o formulário.  
 1.  Se sua extensão não estiver funcionando com o Microsoft Edge como você espera ou tiver uma pergunta sobre como desenvolver uma extensão, navegue até [APIs][ExtensionsDeveloperGuideApiSupport] com suporte para extensões Microsoft Edge e extensões de porta [Chromium][ExtensionsDeveloperGuidePortChromeExtension]para Microsoft Edge .  Para outras perguntas, envie um email [para][MailtoExtDevSupportMicrosoft]ext_dev_support@microsoft.com .  
 1.  Se você enfrentar algum problema ao enviar sua extensão para o Partner Center, navegue até [Publicar sua extensão][ExtensionsPublishPublishExtension].  Se você tiver outras perguntas ou quiser enviar comentários sobre sua experiência de publicação, envie um email [para][MailtoExtDevSupportMicrosoft]ext_dev_support@microsoft.com .  
 1.  Para apresentar sua extensão em uma coleção no armazenamento de complementos do Microsoft Edge, navegue até Enviar uma solicitação para adicionar uma extensão às coleções na home page de [complementos][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] do Microsoft Edge e conclua o formulário.   
     
-## Relatar violação de direitos autorais ou marcas comerciais  
+##  <a name="report-copyright-or-trademark-infringement"></a>Relatar violação de direitos autorais ou marcas comerciais  
 
 Se você acha que um item no Microsoft Edge de complementos viola um copyright ou marca registrada, navegue até [Avisos][MicrosoftInfoMarketplaceHtml] de Violação e conclua o formulário.  A Microsoft Edge de extensões revisa seu relatório e, em seguida, toma a ação necessária.  
 

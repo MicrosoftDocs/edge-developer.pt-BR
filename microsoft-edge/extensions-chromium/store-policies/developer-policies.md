@@ -16,11 +16,11 @@ ms.locfileid: "11343077"
 ---
 # Políticas de desenvolvedor da Loja de complementos do Microsoft Edge  
 
-## Introdução e objetivo deste documento  
+##  <a name="introduction-and-objective-of-this-document"></a>Introdução e objetivo deste documento  
 
 Obrigado por seu interesse em desenvolver extensões para o Microsoft Edge de complementos.  As políticas de desenvolvedor do armazenamento de complementos do Microsoft Edge \(Políticas de desenvolvedor do armazenamento de complementos\) se aplicam às suas extensões, incluindo o envio de extensões por meio do [Partner Center][MicrosoftPartnerCenter] e a provisão dessas extensões por meio dos complementos do Microsoft Edge.  
 
-## Princípios  
+##  <a name="principles--"></a>Princípios  
 
 Alguns princípios para começar:  
 
@@ -32,9 +32,9 @@ A adesão às Microsoft Edge de desenvolvedor do armazenamento de complementos d
 
 Suas extensões são cruciais para a experiência de centenas de milhões de usuários.  Estamos ansiosos para experimentar o que você cria e está animado para ajudar a entregar suas extensões para o mundo.  
 
-## 1. Políticas de produto  
+##  <a name="1.-product-policies"></a>1. Políticas de produto  
 
-### 1.1 Função Distinta & Valor; Representação precisa  
+###  <a name="1.1-distinct-function-&-value;-accurate-representation"></a>1.1 Função Distinta & Valor; Representação precisa  
 
 Sua extensão e metadados associados devem refletir com precisão e clareza a origem, a funcionalidade e os recursos descritos.  
 
@@ -74,7 +74,7 @@ Qualquer alteração nas configurações do navegador deve ser documentada expli
 
 Sua extensão só pode revisar as configurações de chave para substituir uma página da Web da Microsoft ou um serviço por um \(como exigir o uso de um mecanismo de pesquisa de terceiros ou definir a home page como uma propriedade da Web de terceiros\) se você estiver empregado ou associado a esse terceiro.  
 
-### 1.2 Segurança  
+###  <a name="1.2-security"></a>1.2 Segurança  
 
 Sua extensão não deve comprometer ou comprometer a segurança do usuário ou a segurança ou a funcionalidade do dispositivo, sistema ou sistemas relacionados.  
 
@@ -95,7 +95,7 @@ Sua extensão pode depender de software não integrado \(como outro produto, mó
 
 A menos que seja permitido de outra forma pela Microsoft, suas extensões devem ser atualizadas somente Microsoft Edge complementos.  
 
-### 1.3 O produto é testável  
+###  <a name="1.3-product-is-testable"></a>1.3 O produto é testável  
 
 Sua extensão deve ser testável.  Se não for possível testar sua extensão por qualquer motivo, incluindo, mas não se limitando a, os itens abaixo, sua extensão pode falhar nesse requisito.  
 
@@ -107,7 +107,7 @@ Se a extensão exigir credenciais de logon, forneça uma conta de demonstração
 
 Se a extensão exigir acesso a um servidor, o servidor deverá estar funcional para verificar se ele funciona corretamente.  
 
-### 1.4 Usabilidade  
+###  <a name="1.4-usability"></a>1.4 Usabilidade  
 
 Sua extensão deve atender Microsoft Edge padrões de armazenamento de complementos para usabilidade, incluindo, mas não se limitando aos listados nas subseções abaixo.  
 
@@ -119,7 +119,7 @@ Sua extensão deve ser compatível com Microsoft Edge em todos os dispositivos e
 
 Sua extensão deve ser inativa e ser responsiva à entrada do usuário.  Sua extensão deve continuar a ser executado e permanecer respondendo à entrada do usuário.  Sua extensão deve ser fechada normalmente e não fechar inesperadamente.  Sua extensão deve manipular exceções e permanecer responsiva à entrada do usuário depois que a exceção for manipulada.  
 
-### 1.5 Informações Pessoais  
+###  <a name="1.5-personal-information"></a>1.5 Informações Pessoais  
 
 Os requisitos a seguir se aplicam a extensões que acessam Informações Pessoais.  As Informações Pessoais incluem todas as informações ou dados que identificam ou podem ser usados para identificar uma pessoa ou que estão associadas a essas informações ou dados.  
 
@@ -158,16 +158,16 @@ Se sua extensão coletar, armazenar ou transmitir Informações Pessoais; ele de
 
 Sua extensão não deve coletar, armazenar ou transmitir informações pessoais altamente confidenciais, como dados de saúde ou financeiros, a menos que as informações estão relacionadas à funcionalidade de sua extensão.  Sua extensão também deve obter o consentimento expresso do usuário antes de coletar, armazenar ou transmitir essas informações.  
 
-### 1.6 Permissões  
+###  <a name="1.6-permissions"></a>1.6 Permissões  
 
 Sua extensão só deve solicitar as permissões necessárias para o funcionamento.  Você deve fornecer uma descrição de como sua extensão funciona.  Sua extensão só deve ter o desempenho conforme descrito.  Sua extensão pode não solicitar permissão para recursos que vão além dos recursos necessários para executar e funcionar conforme declarado.  
 
-### 1.7 Localização  
+###  <a name="1.7-localization"></a>1.7 Localização  
 
 Você deve localizar sua extensão para todos os idiomas que sua extensão diz ter suporte.  O texto da descrição de sua extensão deve ser localizado em cada idioma que você declarar.  
 Se sua extensão for localizada de forma que alguns recursos não estão disponíveis em uma versão localizada, você deve dizer claramente ou exibir os limites de localização em sua descrição de extensão. A experiência fornecida por um Extension deve ser razoavelmente semelhante em todos os idiomas compatíveis.  
 
-### 1.8 Transações Financeiras  
+###  <a name="1.8-financial-transactions"></a>1.8 Transações Financeiras  
 
 Se o produto incluir compra no produto, assinaturas, moeda virtual, funcionalidade de cobrança ou captura informações financeiras; os requisitos nas seções a seguir se aplicam.  
 
@@ -191,7 +191,7 @@ Os seguintes requisitos se aplicam ao uso de uma API de compra de terceiros segu
 
 Sua extensão e metadados associados devem fornecer informações sobre os tipos de compras no produto oferecidas e o intervalo de preços.  Você não deve enganar os usuários e deve ser claro sobre a natureza de suas promoções e ofertas no produto, incluindo o escopo e os termos de qualquer experiência de avaliação.  Se a extensão restringir o acesso ao conteúdo criado pelo usuário durante ou após uma avaliação, você deve notificar os usuários com antecedência.  Além disso, sua extensão deve deixar claro para os usuários que eles estão iniciando uma opção de compra em sua extensão.  
 
-### 1.9 Notificações  
+###  <a name="1.9-notifications"></a>1.9 Notificações  
 
 Sua extensão deve respeitar as configurações do sistema para notificações.  Isso significa que qualquer apresentação de anúncios e notificações aos usuários deve ser consistente com as preferências do usuário, independentemente de as notificações serem fornecidas pelo Serviço de Notificação por Push da Microsoft \(MPNS\), Windows Serviço de Notificação por Push \(WNS\) ou qualquer outro serviço.  Se o usuário desabilitar as notificações, seja em um produto específico ou em todo o sistema, sua extensão deve permanecer funcional.  
 
@@ -213,7 +213,7 @@ Você não deve incluir em uma notificação qualquer informação que os usuár
 
 As notificações enviadas de sua extensão devem estar relacionadas a essa extensão ou a outras extensões que você publica no armazenamento de complementos do Microsoft Edge e não devem incluir mensagens promocionais de qualquer tipo que não sejam relacionadas às suas extensões.  
 
-### 1.10 Comportamento e conteúdo de publicidade  
+###  <a name="1.10-advertising-conduct-and-content"></a>1.10 Comportamento e conteúdo de publicidade  
 
 Para todas as atividades relacionadas à publicidade, os seguintes requisitos se aplicam:  
 
@@ -243,20 +243,20 @@ Sua instrução de privacidade ou termos de uso deve permitir que os usuários s
 
 Se sua extensão for direcionada a crianças menores de 13 anos, conforme definido na Lei de Proteção de Privacidade Online para [Crianças;][FTCChildrensPrivacy] você deve notificar a Microsoft sobre esse fato no [Partner Center][MicrosoftPartnerCenter] e garantir que todo o conteúdo do comercial exibido em sua extensão seja apropriado para crianças menores de 13 anos.  
 
-## 2 Políticas de Conteúdo  
+##  <a name="2-content-policies"></a>2 Políticas de Conteúdo  
 
 As políticas a seguir se aplicam a conteúdo e metadados \(incluindo nome do editor, nome da extensão, ícone de extensão, descrição de extensão, capturas de tela de extensão, trailers de extensão e miniaturas de trailer e quaisquer outros metadados de extensão\) oferecidos para distribuição em complementos Microsoft Edge.  O conteúdo significa as imagens, sons, vídeos e texto contidos em sua extensão, os blocos, notificações, mensagens de erro ou anúncios expostos por meio de sua extensão e qualquer coisa entregue de um servidor ou ao qual sua extensão se conecta.  Como extensões e Microsoft Edge complementos são usados em todo o mundo, esses requisitos são interpretados e aplicados no contexto de normas regionais e culturais.  
 
-### 2.1 Requisitos de conteúdo para Microsoft Edge lista de catálogos de complementos  
+###  <a name="2.1-content-requirements-for-microsoft-edge-addon-catalog-listing"></a>2.1 Requisitos de conteúdo para Microsoft Edge lista de catálogos de complementos  
 
 Os metadados e outros conteúdos que você envia para acompanhar sua extensão podem não conter conteúdo maduro.  
 Os envios que não atendem Microsoft Edge requisitos de listagem do armazenamento de complementos são rejeitados ou removidos prontamente.  
 
-### 2.2 Conteúdo incluindo nomes, logotipos, originais e terceiros  
+###  <a name="2.2-content-including-names,-logos,-original,-and-third-party"></a>2.2 Conteúdo incluindo nomes, logotipos, originais e terceiros  
 
 Todo o conteúdo em sua extensão e metadados associados deve ser originalmente criado pelo usuário ou licenciado adequadamente de um titular de direitos de terceiros e deve ser usado apenas conforme permitido pelo titular dos direitos ou conforme permitido por lei.  
 
-### 2.3 Risco de danos  
+###  <a name="2.3-risk-of-harm"></a>2.3 Risco de danos  
 
 #### 2.3.1 Requisitos  
 
@@ -266,23 +266,23 @@ Sua extensão não deve conter qualquer conteúdo que facilite ou envidraça as 
 
 Sua extensão não deve: \(a\) representar um risco de segurança, nem resultar em desconforto, danos ou qualquer outro dano aos usuários finais ou a qualquer outra pessoa ou animal; ou \(b\) representam um risco ou resultam em danos a propriedades reais ou pessoais.  Você é o único responsável por todos os testes de segurança de extensão, aquisição de certificados e implementação de quaisquer proteções de recursos apropriadas.  Você não deve desabilitar nenhum recurso de segurança ou conforto da plataforma e deve incluir todos os avisos, avisos e avisos, avisos e avisos de isenção de responsabilidade legais aplicáveis em sua extensão.  
 
-### 2.4 Defamatory, Libelous, Slanderous e Threatening  
+###  <a name="2.4-defamatory,-libelous,-slanderous,-and-threatening"></a>2.4 Defamatory, Libelous, Slanderous e Threatening  
 
 Sua extensão não deve conter qualquer conteúdo que seja difamatório, caluniador, caluniador ou ameaçador.  
 
-### 2.5 Conteúdo ofensivo  
+###  <a name="2.5-offensive-content"></a>2.5 Conteúdo ofensivo  
 
 Sua extensão e metadados associados não devem conter conteúdo potencialmente sensível ou ofensivo.  O conteúdo pode ser considerado sensível ou ofensivo em determinados países/regiões devido a leis locais ou normas culturais.  Além disso, sua extensão e metadados associados não devem conter conteúdo que defenda a discriminação, o desdém ou a violência com base em considerações de raça, etnidade, origem nacional, idioma, sexo, idade, deficiência, religião, orientação sexual, status como um veterano ou associação em qualquer outro grupo social.  
 
-### 2.6 Álcool, Tabaco e Drogas  
+###  <a name="2.6-alcohol,-tobacco,-and-drugs"></a>2.6 Álcool, Tabaco e Drogas  
 
 Sua extensão não deve conter qualquer conteúdo que facilite ou envidraça o uso excessivo ou irresponsável de álcool ou produtos de tabaco ou drogas.  
 
-### 2.7 Conteúdo Adulto  
+###  <a name="2.7-adult-content"></a>2.7 Conteúdo Adulto  
 
 Sua extensão não deve conter ou exibir conteúdo que uma pessoa razoável consideraria sexualmente ou sexualmente explícita.  
 
-### 2.8 Conteúdo, Serviços e Atividades Proibidos  
+###  <a name="2.8-prohibited-content,-services,-and-activity"></a>2.8 Conteúdo, Serviços e Atividades Proibidos  
 
 Sua extensão deve seguir as seguintes condições.  
 
@@ -291,16 +291,16 @@ Sua extensão deve seguir as seguintes condições.
 *   Sua extensão não deve fornecer, incentivar ou habilitar o acesso não autorizado, download ou streaming de conteúdo ou mídia protegido por direitos autorais.  
 *   Sua extensão não deve minar a criptografia.  
     
-### Atividade ilegal 2.9  
+###  <a name="2.9-illegal-activity"></a>Atividade ilegal 2.9  
 
 Sua extensão não deve conter conteúdo ou funcionalidade que incentive, facilite ou envidraça atividades ilegais no mundo real.  
 
-### 2.10 Excesso de profanidade e conteúdo inadequado  
+###  <a name="2.10-excessive-profanity-and-inappropriate-content"></a>2.10 Excesso de profanidade e conteúdo inadequado  
 
 *   Sua extensão não deve conter profanidade excessiva ou gratuita.  
 *   Sua extensão não deve conter ou exibir conteúdo que uma pessoa razoável considere obscena.  
     
-### 2.11 Requisitos específicos de país/região  
+###  <a name="2.11-country/region-specific-requirements"></a>2.11 Requisitos específicos de país/região  
 
 O conteúdo ofensivo em qualquer país/região ao qual sua extensão é direcionada não é permitido.  O conteúdo pode ser considerado ofensivo em determinados países/regiões devido a leis locais ou normas culturais.  Exemplos de conteúdo potencialmente ofensivo em determinados países/regiões incluem o seguinte:  
 
@@ -310,7 +310,7 @@ O conteúdo ofensivo em qualquer país/região ao qual sua extensão é direcion
 *   Referências de território ou região disputadas  
 *   Fornecendo ou habilitando o acesso a conteúdo ou serviços ilegais sob a lei local aplicável  
     
-### Classificações etárias de 2,12  
+###  <a name="2.12-age-ratings"></a>Classificações etárias de 2,12  
 
 #### 2.12.1 Conteúdo maduro  
 
@@ -320,7 +320,7 @@ Ao enviar sua extensão para [o Partner Center,][MicrosoftPartnerCenter]você de
 
 Se sua extensão fornece conteúdo \(como gerado pelo usuário, varejo ou outro conteúdo baseado na Web\) que pode ser apropriado para uma classificação etária maior do que a classificação atribuída, você deve exigir que os usuários optem por receber esse conteúdo usando um filtro de conteúdo ou entrando com uma conta pré-existente.  
 
-### 2.13 Vídeos  
+###  <a name="2.13-videos"></a>2.13 Vídeos  
 
 Se você enviar um vídeo promocional na listagem, ele deverá seguir todas as diretrizes de conteúdo mencionadas nesta política.  Se você optar por fornecer um link do YouTube, verifique se os anúncios estão desabilitados para os vídeos específicos que você deseja inserir.  Para obter mais informações sobre como os anúncios são habilitados e desabilitados no YouTube, consulte [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] e [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
 
