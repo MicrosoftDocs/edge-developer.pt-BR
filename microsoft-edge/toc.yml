@@ -87,8 +87,50 @@
           items:
             - name: Acessibilidade
               items:
-                - name: Referência de acessibilidade
+                - name: Recursos de teste de acessibilidade no DevTools
                   href: devtools-guide-chromium/accessibility/reference.md
+                - name: Visão geral dos testes de acessibilidade usando o DevTools
+                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+                - name: Ferramenta Issues
+                  items:
+                    - name: Teste automaticamente uma página da Web em busca de problemas de acessibilidade
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                - name: Ferramenta Inspecionar
+                  items:
+                    - name: Use a ferramenta Inspecionar para detectar problemas de acessibilidade passando o mouse sobre a página da Web
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+                    - name: Verifique o suporte ao teclado usando as teclas Tab e Enter
+                      href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                    - name: Analise a falta de indicação do foco do teclado em um menu de barra lateral
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                    - name: Analise a falta de suporte ao teclado em um formulário
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                - name: Guia de Acessibilidade
+                  items:
+                    - name: Verifique o suporte ao leitor de tela e ao teclado na Árvore de Acessibilidade
+                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                    - name: Teste o suporte ao teclado usando o Visualizador de Ordem de Origem
+                      href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                    - name: Teste a acessibilidade usando a guia de Acessibilidade
+                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                - name: Guia de Estilos
+                  items:
+                    - name: Verifique a acessibilidade de todos os estados dos elementos
+                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                    - name: Teste o contraste da cor do texto usando o Seletor de Cor
+                      href: devtools-guide-chromium/accessibility/color-picker.md
+                - name: Ferramenta de Renderização
+                  items:
+                    - name: Verifique se há problemas de contraste com o tema escuro e o tema claro
+                      href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                    - name: Verifique se a página pode ser usada por pessoas com daltonismo
+                      href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                    - name: Verifique se a página pode ser usada com visão turva
+                      href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                    - name: Verifique se a página pode ser usada com a animação da interface do usuário desligada
+                      href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                - name: Testar a acessibilidade usando o Lighthouse
+                  href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Navegação no DevTools com tecnologia adaptativa
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Acompanhar qual elemento tem o foco
