@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: a13c344bb31cdfb7d0402132e3be82e4c330c612
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564844"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597162"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -180,7 +180,7 @@ Enquanto você filtra com a [Barra Lateral do Console][DevtoolsConsoleReferenceO
 
 ### <a name="the-console-now-escapes-double-quote-characters"></a>O console agora escapa de caracteres de aspas duplas  
 
-Anteriormente, o **Console** não produzia caracteres de aspas duplas \(`"`\) válidos em strings do JavaScript.  A partir do Microsoft Edge versão 90, o **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \(`"`\).  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1178530][CR1178530].  
+Anteriormente, o **Console** não produzia caracteres de aspas duplas \(`"`\) válidos em strings do JavaScript.  A partir do Microsoft Edge versão 90, o **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \ (`"`\).  Para examinar o histórico desse recurso no projeto de fonte aberta do Chromium, navegue até o Problema [1178530][CR1178530].  
 
 :::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="O Console gera strings do JavaScript usando caracteres de aspas duplas escapadas (&#0022;)" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
    O **Console** gera strings do JavaScript usando caracteres de aspas duplas escapadas \(`"`\)  
@@ -274,7 +274,7 @@ Anteriormente, a `fn.displayName` propriedade permitia controlar os nomes de dep
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Este experimento fornece uma **exibição em árvore de acessibilidade completa** na ferramenta **Elementos**.  O painel [Acessibilidade][DevtoolsAccessibilityReferenceAccessibilityPanel] fornece uma visualização em árvore de acessibilidade parcial que exibe a cadeia ancestral direta do nó raiz ao nó inspecionado.  
+Este experimento fornece uma **exibição em árvore de acessibilidade completa** na ferramenta **Elementos**.  O painel [Acessibilidade][DevtoolsAccessibilityTab] fornece uma visualização em árvore de acessibilidade parcial que exibe a cadeia ancestral direta do nó raiz ao nó inspecionado.  
 Depois de ativar esse experimento e recarregar o DevTools, escolha um dos seguintes botões para alternar a exibição na ferramenta Elementos para todos os elementos na página da Web.  
 
 *   Para exibir em árvore de acessibilidade completa, escolha **Alternar para o modo de exibição em Árvore de Acessibilidade**.  
@@ -285,7 +285,7 @@ Para ativar o experimento, navegue até [Ativar recursos experimentais][Devtools
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Exibir o modo de exibição árvore DOM" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Exibir o **modo de exibição DOM**  
+         Exibir o **modo de exibição árvore DOM**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -299,13 +299,13 @@ Para ativar o experimento, navegue até [Ativar recursos experimentais][Devtools
 
 Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Preview Channels][MicrosoftEdgePreviewChannels] como o seu navegador de desenvolvimento padrão.  Os canais de visualização fornecem acesso aos recursos mais recentes do DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Como entrar em contato com a equipe do Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe do Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "O painel de Acessibilidade - referência de acessibilidade | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Testar a acessibilidade usando a guia de Acessibilidade | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Executar comandos com o Menu de Comandos do Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtrar por nível de registro - referência do console | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtrar mensagens - Referência do Console | Microsoft Docs"  
@@ -360,7 +360,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-90) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-90) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
