@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564235"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596997"
 ---
 # <a name="experimental-features"></a>Recursos experimentais  
 
@@ -114,12 +114,11 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar o **Console de R
 Depois de ativar o experimento, reinicie o DevTools.  Para usar **Source Order Viewer** , conclua as etapas a seguir.  
 
 1.  Abra a **ferramenta Elements.**  
-1.  Abra o **painel Acessibilidade** no painel de gaveta \(bottom\)  
+1.  À direita da guia **Estilos,** selecione **a** guia Acessibilidade.  
 1.  Na **Source Order Viewer** seção, escolha a caixa de seleção **Mostrar Ordem de** Origem.  
 1.  Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** no painel **Acessibilidade**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: no **Source Order Viewer** painel **Acessibilidade**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  

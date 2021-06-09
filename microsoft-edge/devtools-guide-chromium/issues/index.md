@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564179"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596986"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -108,6 +108,12 @@ A **ferramenta Problemas** na Gaveta de DevTools apresenta avisos de forma estru
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Nenhum valor na coluna SameSite para o cookie ck02 na ferramenta Rede DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` na coluna **SameSite** para o `ck02` cookie na **** ferramenta Rede DevTools  
     :::image-end:::  
+
+
+## <a name="see-also"></a>Consulte também
+
+* [Teste automaticamente uma página da Web em busca de problemas de acessibilidade](../accessibility/test-issues-tool.md)
+
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Entrar em contato com a equipe Microsoft Edge DevTools  
 

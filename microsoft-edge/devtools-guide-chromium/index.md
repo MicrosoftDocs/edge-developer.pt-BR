@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481377"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597008"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) visão geral das Ferramentas de Desenvolvedor  
 
@@ -110,14 +110,14 @@ O DevTools lhe dá uma quantidade incrível de energia para inspecionar, depurar
 
 O DevTools cresceu durante um período de vários anos.  Você pode supor que o DevTools é difícil de aprender quando você abre pela primeira vez qualquer uma das ferramentas.  O texto a seguir apresenta rapidamente as diferentes partes.  A barra de ferramentas principal oferece algumas seções e as seções são ordenadas da esquerda para a direita.  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar Ferramenta, Ferramenta de Emulação de Dispositivo, Grupo de guias Ferramentas, Erros do JavaScript, Problemas, Configurações, Feedback, Personalizar e Fechar." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
-   Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar Ferramenta, Ferramenta de Emulação de Dispositivo, Grupo de guias Ferramentas, Erros do JavaScript, Problemas, Configurações, Feedback, Personalizar e Fechar.  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar ferramenta, ferramenta de emulação de dispositivo, grupo de guias Ferramentas, erros javascript, problemas, Configurações, feedback, personalizar e fechar." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   Captura de tela da barra de menus do DevTools com rótulos que explicam as diferentes seções.  Em ordem: Inspecionar ferramenta, ferramenta de emulação de dispositivo, grupo de guias Ferramentas, Erros do JavaScript, Problemas, Configurações, Feedback, Personalizar e Fechar.  
 :::image-end:::  
 
-*   A Ferramenta inspecionar permite que você escolha um elemento na página da Web atual.  Depois de ativá-lo, você pode mover o mouse sobre diferentes partes da página da Web para obter informações detalhadas sobre o elemento e uma sobreposição de cores para exibir dimensões, preenchimento e margem.  
+*   A ferramenta Inspecionar permite que você escolha um elemento na página da Web atual.  Depois de ativá-lo, você pode mover o mouse sobre diferentes partes da página da Web para obter informações detalhadas sobre o elemento e uma sobreposição de cores para exibir dimensões, preenchimento e margem.  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Captura de tela da ferramenta de inspeção com o primeiro título deste artigo escolhido" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Captura de tela da ferramenta de inspeção com o primeiro título deste artigo escolhido  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="A ferramenta Inspecionar com o primeiro título deste artigo escolhido" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       A ferramenta Inspecionar com o primeiro título deste artigo escolhido  
     :::image-end:::  
     
 *   A [ferramenta Emulação de Dispositivo][DevtoolsGuideDeviceModeIndex] exibe o produto Web atual em um modo de dispositivo emulado.  A **ferramenta Emulação de** Dispositivo permite que você execute e teste como seu produto reage quando você resize o navegador.  Ele também fornece uma estimativa do layout e do comportamento em um dispositivo móvel.  

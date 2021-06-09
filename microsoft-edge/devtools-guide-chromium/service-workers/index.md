@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento da Web, ferramentas f12, devtools, service worker, PWA
-ms.openlocfilehash: 2f32155d1d28d1e65ad29abfe58a414f3e3c6ed7
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387280"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597141"
 ---
 # <a name="service-worker-improvements"></a>Melhorias do Service Worker  
 
@@ -76,8 +76,8 @@ A **ferramenta Rede** exibe as solicitações de rede que passaram pelo trabalha
 
 ## <a name="sources"></a>Fontes  
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="Exibição DOM" lightbox="../media/sw-sources.msft.png":::
-   Exibição DOM  
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="Árvore DOM" lightbox="../media/sw-sources.msft.png":::
+   Árvore DOM  
 :::image-end:::  
 
 Para encontrar mais informações de pilha, de definir um ponto de quebra no manipulador de busca.  Os detalhes levam a onde o recurso é solicitado no script da página.  Quando o depurador pausa dentro de um manipulador de busca, uma informação de pilha combinada é exibida no painel à direita.  Depois disso, você pode se mover nos quadros de pilha.  
