@@ -317,6 +317,8 @@
               href: extensions-chromium/getting-started/part1-simple-extension.md
             - name: Criar um tutorial para extensão (parte 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Formato de arquivo de manifesto
+              href: extensions-chromium/getting-started/manifest-format.md
             - name: Fazer sideload para uma extensão
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guia do Desenvolvedor
