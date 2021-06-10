@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento da Web, html, css, javascript, desenvolvedor, webdriver, selenium, teste, ferramentas, automação, teste
-ms.openlocfilehash: 5d30fe14051ac8857c6ea4d64b8c8f1f8e8049ac
-ms.sourcegitcommit: a7609b75a94755ed983111af7083a0d3bf64eeac
+ms.openlocfilehash: 3865162b8227db2f0cfa051801a5de28ecf4b9d1
+ms.sourcegitcommit: 3094c972532bc89dcb429d26880c873809fd1ab8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583584"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "11599454"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar o WebDriver (Chromium) para automação de teste  
 
@@ -23,8 +23,25 @@ O WebDriver permite que os desenvolvedores criem testes automatizados que simula
 *   Simula eventos do usuário ou eventos no nível do sistema operacional com mais precisão.  
 *   Gerencia várias janelas, guias e páginas da Web em uma única sessão de teste.  
 *   Executa várias sessões de Microsoft Edge em um computador específico.  
-    
-A seção a seguir descreve como começar a usar o WebDriver para Microsoft Edge \(Chromium\).  
+
+## <a name="relationship-between-webdriver-and-other-software"></a>Relação entre WebDriver e outros softwares
+
+Para automatizar Microsoft Edge com o WebDriver para simular a interação do usuário, você precisa de três componentes:
+
+*  Microsoft Edge
+*  Driver do Microsoft Edge
+*  Uma estrutura de teste do WebDriver, como Selenium
+
+A relação funcional entre WebDriver, Microsoft Edge Driver, Selenium e Internet Explorer Driver é a seguinte.
+
+| Tecnologia | Função |
+|---|---|
+| WebDriver | Um padrão W3C para um protocolo de fio de plataforma e idioma neutro.  Esse protocolo permite que programas fora do processo instruam remotamente o comportamento dos navegadores da Web. |
+| Driver do Microsoft Edge | Implementação da Microsoft do protocolo WebDriver especificamente para Microsoft Edge. Os autores de teste escrevem testes que usam comandos WebDriver que Microsoft Edge Driver recebe. Microsoft Edge O driver é responsável por comunicar esse comando ao navegador. |
+| Selenium | Uma estrutura de teste popular do WebDriver que os autores de teste usam para gravar testes de ponta a ponta e automatizar navegadores. Selenium pode ser usado em qualquer plataforma e está disponível em Java, Python, C#, Ruby e JavaScript. |
+| Internet Explorer Driver | Uma implementação do protocolo WebDriver especificamente para o Internet Explorer. Esse produto é mantido pelo projeto Selenium. Para executar testes de ponta a ponta herdou para o Internet Explorer, recomendamos usar o Internet Explorer Driver. |
+
+As seções a seguir descrevem como começar a usar o WebDriver para Microsoft Edge \(Chromium\).  
 
 ## <a name="install-microsoft-edge-chromium"></a>Instalar Microsoft Edge (Chromium)  
 
@@ -67,7 +84,7 @@ O último componente que você deve baixar é um driver de cliente específico d
 
 Selenium 4 tem suporte integrado para Microsoft Edge (Chromium).  Para instalar o Selenium 4, navegue até [Installing Selenium libraries][SeleniumInstallingLibraries].
 
-Quando você usa Selenium 4, não precisa usar As Ferramentas de Selenium para Microsoft Edge.  Selenium Tools for Microsoft Edge for Selenium 3 only.  Se você tentar usar Selenium 4 com Selenium Tools para Microsoft Edge e tentar criar uma nova instância, você obterá `EdgeDriver` o seguinte erro: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'` .  
+Quando você usa Selenium 4, não precisa usar As Ferramentas de Selenium para Microsoft Edge.  Selenium Tools for Microsoft Edge são somente para Selenium 3.  Se você tentar usar Selenium 4 com Ferramentas selenium para Microsoft Edge e tentar criar uma nova instância, você obterá `EdgeDriver` o seguinte erro: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'` .  
 
 Se você estiver usando o Selenium 4 e receber esse erro, remova do seu projeto e certifique-se de estar usando o oficial e as classes do `Microsoft.Edge.SeleniumTools` `EdgeOptions` `EdgeDriver` `OpenQA.Selenium.Edge` namespace.
 
@@ -357,6 +374,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Para obter mais informações, navegue até o [contêiner msedgedriver no Hub do Docker.][DockerHubMsedgedriver]  
 
+## <a name="testing-internet-explorer"></a>Testando o Internet Explorer
+
+Mesmo que Microsoft Edge suporte ao modo IE, você não pode usar o driver Microsoft Edge com Microsoft Edge para testar sites no modo IE.  Para testar sites que exigem o Internet Explorer, use [o Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] com o Internet Explorer.
+
 ## <a name="next-steps"></a>Próximas etapas  
 
 Para obter mais informações sobre o WebDriver e como gravar testes automatizados do WebDriver usando Selenium, navegue até a documentação [de Selenium][SeleniumDocumentation].  
@@ -384,6 +405,7 @@ A Microsoft Edge equipe está ávida para ouvir seus comentários sobre como usa
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
 [GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"  
+[GithubSeleniumHqWikiIEDriver]: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver "Driver do Internet Explorer - Selenium | GitHub"
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  

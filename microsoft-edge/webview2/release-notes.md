@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
-ms.openlocfilehash: 04d1fc958bc2c8fb6dbc765317bb92782f586b75
-ms.sourcegitcommit: 30817cd9ae187a716d14d06962eb23b32dd54548
+ms.openlocfilehash: 0ba9e2b26e5ff5046b9d00d365b0052d42e5a9b1
+ms.sourcegitcommit: afeeeea9fccc3c4c096d7d44c401f4fe87ea2cd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "11590826"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "11599411"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de versão do SDK WebView2  
 
@@ -24,57 +24,57 @@ A equipe webView2 atualiza o [SDK WebView2][NuGetGallery] em uma cadência de se
 
 > [!NOTE]
 > As correções de bugs do WebView2 são específicas do Tempo de Execução ou do SDK.  
-<!-- 
-## 1.0.901-prerelease
 
-Release Date: June 1, 2021  
+## <a name="10902-prerelease"></a>1.0.902-prerelease
 
-[NuGet package][NuGetGallery1.0.901-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 92.0.901.0 or newer  
+Data de lançamento: 1º de junho de 2021  
 
-### General  
+[NuGet pacote][NuGetGallery1.0.902-prerelease] \| Versão Microsoft Edge mínima para carregar: 86.0.616.0 ou mais recente \| Compatibilidade completa da API: 92.0.902.0 ou mais nova  
 
-#### Experimental Features  
+### <a name="general"></a>Geral  
 
-*   Added [IsSwipeNavigationEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210901PrereleaseGetIsswipenavigationenabled] property to enable or disable the ability of the end user to use swiping gesture on touch input enabled devices to navigate in WebView2.
-*   Added [BrowserProcessExited][Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210901PrereleaseAddBrowserprocessexited] event.
-*   Added [add_ClientCertificateRequested API][Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210901PrereleaseAddClientcertificaterequested]. It allows showing a client certificate dialog prompt if desired and enables access to required metadata to replace default client certificate dialog prompt.
-*   Added iframe element support for AddHostObjectToScriptWithOrigins.
-*   Improved WebView2 startup performance and disk footprint.
+#### <a name="experimental-features"></a>Recursos experimentais  
 
-#### Bug fixes  
+*   Adicionada [a propriedade IsSwipeNavigationEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled] para habilitar ou desabilitar a capacidade do usuário final de usar o gesto de girar em dispositivos habilitados para entrada por toque para navegar no WebView2.
+*   Adicionado [evento BrowserProcessExited.][Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited]
+*   Adicionado [add_ClientCertificateRequested API][Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210902PrereleaseAddClientcertificaterequested]. Ele permite mostrar um prompt de caixa de diálogo de certificado do cliente, se desejado, e permite o acesso aos metadados necessários para substituir o prompt de caixa de diálogo de certificado do cliente padrão.
+*   Adicionado suporte ao elemento iframe para AddHostObjectToScriptWithOrigins.
+*   Desempenho de inicialização do WebView2 aprimorado e espaço em disco.
 
-*   Fix a bug where mouse left click doesn't dismiss context menu. This change is Runtime-specific.
-*   Fixed a bug where WebView2 creation fails when exe files for apps sharing the same user data folder have inconsistent version info.
-*   Fixed a bug where special browser keys like Refresh, Home, Back, etc can't be disabled by AreBrowserAcceleratorKeysEnabled. This change is Runtime-specific.
-*   Fixed a bug in WebView2 .NET controls that WebView2 windows are blank when created in the background. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\). 
-*   Dismissing a file picker dialog by pressing 'enter' or 'esc' no longer crashes WPF applications using WebView control. \([\#1099][GithubMicrosoftedgeWebviewfeedbackIssue1099]\). 
-*   Fixed a bug that [AllowSingleSignOnUsingOSPrimaryAccount][Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] doesn't work properly with WebView2 when a WebResourceRequested event handler is attached. This change is Runtime-specific. \([\#1183][GithubMicrosoftedgeWebviewfeedbackIssue1183]\).  
-*   Downloading a file no longer breaks WebView2 DefaultBackgroundColor transparency. This change is Runtime-specific. \([\#1108][GithubMicrosoftedgeWebviewfeedbackIssue1108]\). 
-*   Removed screen sharing media picker message that contains Microsoft branding. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\). 
-*   Fixed a bug in WebView2 WinForm control where hiding the parent form does not hide WebView2 control \([\#828][GithubMicrosoftedgeWebviewfeedbackIssue828] and [\#1079][GithubMicrosoftedgeWebviewfeedbackIssue1079]\).
-*   Added static WS_CLIPCHILDREN style to WebView2's WPF windows. \([\#1013][GithubMicrosoftedgeWebviewfeedbackIssue1013]\). 
-*   Fixed a bug that right-clicking a link crashes WebView2 host app. This change is Runtime-specific.
-*   Fixed reliability bug that could crash host app process when moving to newer Edge WebView2 Runtime version.
-*   **DEPRECATION**: Officially deprecated DefaultBackgroundColor API for Windows 7.
+#### <a name="bug-fixes"></a>Correções de bugs  
+
+*   Correção de um bug em que o clique esquerdo do mouse não descarta o menu de contexto. Essa alteração é específica do Tempo de Execução.
+*   Correção de um bug em que a criação do WebView2 falha quando arquivos exe para aplicativos que compartilham a mesma pasta de dados do usuário têm informações de versão inconsistentes.
+*   Correção de um bug em que chaves especiais do navegador, como Refresh, Home, Back, etc. não podem ser desabilitadas por AreBrowserAcceleratorKeysEnabled. Essa alteração é específica do Tempo de Execução.
+*   Corrigido um bug no WebView2 .NET controla que as janelas webView2 ficam em branco quando criadas em segundo plano. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\). 
+*   Descartar uma caixa de diálogo do se picker de arquivos pressionando "enter" ou "esc" não trava mais os aplicativos WPF usando o controle WebView. \([\#1099][GithubMicrosoftedgeWebviewfeedbackIssue1099]\). 
+*   Correção de um bug que [AllowSingleSignOnUsingOSPrimaryAccount][Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] não funciona corretamente com WebView2 quando um manipulador de eventos WebResourceRequested está anexado. Essa alteração é específica do Tempo de Execução. \([\#1183][GithubMicrosoftedgeWebviewfeedbackIssue1183]\).  
+*   Baixar um arquivo não quebra mais a transparência WebView2 DefaultBackgroundColor. Essa alteração é específica do Tempo de Execução. \([\#1108][GithubMicrosoftedgeWebviewfeedbackIssue1108]\). 
+*   Mensagem do se picker de mídia de compartilhamento de tela removida que contém a identidade visual da Microsoft. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\). 
+*   Correção de um bug no controle WinForm webView2 onde ocultar o formulário pai não oculta o controle WebView2 \([\#828][GithubMicrosoftedgeWebviewfeedbackIssue828] [e \#1079][GithubMicrosoftedgeWebviewfeedbackIssue1079]\).
+*   Adicionado estilo WS_CLIPCHILDREN estática às janelas WPF do WebView2. \([\#1013][GithubMicrosoftedgeWebviewfeedbackIssue1013]\). 
+*   Correção de um bug que clica com o botão direito do mouse em um link trava o aplicativo host WebView2. Essa alteração é específica do Tempo de Execução.
+*   Bug de confiabilidade fixo que poderia falhar no processo do aplicativo host ao mudar para a versão mais recente do Tempo de Execução do Edge WebView2.
+*   **DEPRECATION**: API DefaultBackgroundColor oficialmente preterida para Windows 7.
 
 
-#### Promotions
+#### <a name="promotions"></a>Promoções
 
-*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210901PrereleaseAddDownloadstarting] is  now promoted to stable.
-*   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210901PrereleaseGetIspinchzoomenabled] is now promoted to stable.
-*   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210901PrereleaseAddFramecreated] is now promoted to stable.
-*   [Autofill API][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210901PrereleaseGetIsgeneralautofillenabled] is now promoted to stable.
+*   [A API de download][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] agora é promovida para estável.
+*   [A API PinchZoom][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] agora é promovida para estável.
+*   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] agora é promovido para estável.
+*   [A API de preenchimento automático][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled] agora é promovida para estável.
     > [!NOTE]
-    > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire User Data Folder. 
+    > Não há NENHUMA API atual para excluir as informações de autofillamento geral e de senha armazenadas localmente.  Forneça um controle para excluir os dados, que envolverá a exclusão de toda a Pasta de Dados do Usuário. 
 
 
 
-### .NET  
+### <a name="net"></a>.NET  
     
-#### Bug fixes  
+#### <a name="bug-fixes"></a>Correções de bugs  
 
-*   Fixed a bug in WebView2 WinForm control where WebView2 window visibility is not updated properly after parent window is disposed. \([\#1282][GithubMicrosoftedgeWebviewfeedbackIssue1282] and [\#828][GithubMicrosoftedgeWebviewfeedbackIssue828]\).
-*   Fixed a bug in WebView2 WPF control that Source property binding in WPF OneWay binding mode is not working properly. \([\#619][GithubMicrosoftedgeWebviewfeedbackIssue619] and [\#608][GithubMicrosoftedgeWebviewfeedbackIssue608]\). -->
+*   Correção de um bug no controle WinForm webView2 onde a visibilidade da janela WebView2 não é atualizada corretamente depois que a janela pai é descartada. \([\#1282][GithubMicrosoftedgeWebviewfeedbackIssue1282] e [\#828][GithubMicrosoftedgeWebviewfeedbackIssue828]\).
+*   Correção de um bug no controle WPF webView2 que a associação da propriedade Source no modo de associação WPF OneWay não está funcionando corretamente. \([\#619][GithubMicrosoftedgeWebviewfeedbackIssue619] e [\#608][GithubMicrosoftedgeWebviewfeedbackIssue608]\).
 
 ## <a name="1086435"></a>1.0.864.35
 
@@ -86,20 +86,20 @@ Data de lançamento: 31 de maio de 2021
 
 #### <a name="bug-fixes"></a>Correções de bugs  
 
-*   Correção de um bug de confiabilidade que ocasionalmente causava falha no processo do aplicativo host ao atualizar para versões mais recentes do Tempo de Execução do WebView2.
-*   Correção de um bug no Tempo de Execução do WebView2 que impedia a limpeza de memória em algumas situações.  
-*   Correção de um erro no pacote de versão do SDK versão 818, em que os projetos não conseguiam encontrar o arquivo WebView2.h. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
-*   Correção de um bug que faz com que o evento WebResourceRequested seja lançado para algumas solicitações com corpos binários.
-*   Atualizou a documentação NewWindowRequested. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
+*   Bug de confiabilidade fixo que poderia falhar no processo do aplicativo host ao mudar para a versão mais recente do Tempo de Execução do Edge WebView2.
+*   Correção de um bug que impedia a limpeza de memória em algumas situações. Essa alteração é específica do Tempo de Execução.
+*   Erro corrigido no pacote de versão do SDK 818 em que o project não conseguiu encontrar o arquivo WebView2.h. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
+*   Correção de um bug que fez com que o evento WebResourceRequested fosse descartado para algumas solicitações com corpos binários.
+*   Melhorar a documentação NewWindowRequested. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
 
 #### <a name="promotions"></a>Promoções
-*   [A API UserAgent][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] agora é promovida para estável.
-*   [AreBrowserkeysenabled][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled] agora é promovido para estável.
+*   [A API UserAgent][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] agora está estável.
+*   [AreBrowserkeysenabled][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled] agora está estável.
 
 ### <a name="net"></a>.NET  
 
 #### <a name="bug-fixes"></a>Correções de bugs  
-*   Correção de um bug nos controles WebView2 .NET que relataram que o primeiro header estava ausente ao iterar pela coleção de headers CoreWebView2WebResourceRequest. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+*   Corrigido um bug nos controles WebView2 .NET que o primeiro header está ausente ao iterar a coleção de headers CoreWebView2WebResourceRequest. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
 
 ## <a name="10865-prerelease"></a>1.0.865-prerelease  
 
@@ -911,19 +911,23 @@ Versão inicial de visualização do desenvolvedor.
 [NuGetGallery1.0.864.35]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.864.35 "NuGet Galeria | Microsoft.Web.WebView2 v1.0.864.35"  
 [NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "NuGet Galeria | Pré-lançamento do Microsoft.Web.WebView2 v1.0.824"  
 [NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "NuGet Galeria | Pré-lançamento do Microsoft.Web.WebView2 v1.0.865"  
-[NuGetGallery1.0.901-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.901-prerelease "NuGet Galeria | Pré-lançamento do Microsoft.Web.WebView2 v1.0.901"  
+[NuGetGallery1.0.902-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902-prerelease "NuGet Galeria | Pré-lançamento do Microsoft.Web.WebView2 v1.0.902"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anunciando Microsoft Edge disponibilidade geral do WebView2 | Microsoft Edge Blog"  
-[Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210901PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.901-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210901PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.901-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2ExperimentalEnvironment4 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210901PrereleaseAddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental3?view=webview2-1.0.901-prerelease&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2Experimental3 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.902-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2ExperimentalEnvironment4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210902PrereleaseAddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental3?view=webview2-1.0.902-prerelease&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2Experimental3 | Microsoft Docs"
 
 
-[Webview2ReferenceWin32Icorewebview24ViewWebview210901PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.901-prerelease&preserve-view=true#add_downloadstarting "add_DownloadStarting - interface ICoreWebView2_4 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview24ViewWebview210901PrereleaseAddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.901-prerelease&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting4ViewWebview210901PrereleaseGetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2setting4?view=webview2-1.0.901-prerelease&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Setting4 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting5ViewWebview210901PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2setting5?view=webview2-1.0.901-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Setting5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting "add_DownloadStarting - interface ICoreWebView2_4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent "get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Setting2 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent 
+
+/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent 
+
+"get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Settings3 | Microsoft Docs"

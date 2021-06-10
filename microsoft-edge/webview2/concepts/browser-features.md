@@ -1,14 +1,29 @@
 ---
-description: Diferenças de recursos entre o título Microsoft Edge e WebView2
-title: Diferenças de recursos entre o autor Microsoft Edge e WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Diferenças de recursos entre o título Microsoft Edge e WebView2: Diferenças de recursos entre o autor Microsoft Edge e WebView2: MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Diferenças de recursos do navegador entre Microsoft Edge e WebView2  
 
@@ -48,7 +63,7 @@ A tabela a seguir exibe os recursos WebView2 que diferem do Microsoft Edge naveg
 | Edge Shopping | Desativado | Não | Esse recurso está desligado.  |  
 | Family Safety | Desativado | Não | Esse recurso está desligado.  |  
 | Favorites | Desativado | Não | Esse recurso está desligado.  |  
-| IE Mode | Desativado | Não | Esse recurso está desligado.  |  
+| IE Mode | Desativado | Não | Esse recurso está desligado. O WebView2 não dá suporte ao modo IE e tem diferenças de comportamento em comparação com o IE (como o suporte a MHT). |  
 | Immersive Reader | Desativado | Não | Esse recurso depende da interface do usuário do navegador para interação.  Esse recurso está desligado.  |  
 | Intrusive Ads | Desativado | Não | Esse recurso está desligado.  |  
 | Atalhos de teclado | Revisar detalhes | Revisar detalhes | Os atalhos de teclado que estão desligados por padrão não fazem sentido ou causam problemas no WebView2.  Você pode não ativar ou desativar esses atalhos.  Em vez disso, você pode escutar uma combinação de teclas usando o `AcceleratorKeyPressed` evento e criar uma resposta personalizada, se necessário.  Para obter mais informações, navegue [até Informações adicionais de atalhos de teclado.](#additional-keyboard-shortcuts-information) |  
