@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
-ms.openlocfilehash: 0ba9e2b26e5ff5046b9d00d365b0052d42e5a9b1
-ms.sourcegitcommit: afeeeea9fccc3c4c096d7d44c401f4fe87ea2cd7
+ms.openlocfilehash: 2c07430668b269dcada16c96045022fd68398508
+ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "11599411"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "11608678"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de versão do SDK WebView2  
 
@@ -32,14 +32,13 @@ Data de lançamento: 1º de junho de 2021
 [NuGet pacote][NuGetGallery1.0.902-prerelease] \| Versão Microsoft Edge mínima para carregar: 86.0.616.0 ou mais recente \| Compatibilidade completa da API: 92.0.902.0 ou mais nova  
 
 ### <a name="general"></a>Geral  
+*   Desempenho de inicialização do WebView2 aprimorado e espaço em disco.
 
 #### <a name="experimental-features"></a>Recursos experimentais  
 
 *   Adicionada [a propriedade IsSwipeNavigationEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled] para habilitar ou desabilitar a capacidade do usuário final de usar o gesto de girar em dispositivos habilitados para entrada por toque para navegar no WebView2.
 *   Adicionado [evento BrowserProcessExited.][Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited]
 *   Adicionado [add_ClientCertificateRequested API][Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210902PrereleaseAddClientcertificaterequested]. Ele permite mostrar um prompt de caixa de diálogo de certificado do cliente, se desejado, e permite o acesso aos metadados necessários para substituir o prompt de caixa de diálogo de certificado do cliente padrão.
-*   Adicionado suporte ao elemento iframe para AddHostObjectToScriptWithOrigins.
-*   Desempenho de inicialização do WebView2 aprimorado e espaço em disco.
 
 #### <a name="bug-fixes"></a>Correções de bugs  
 
@@ -63,6 +62,7 @@ Data de lançamento: 1º de junho de 2021
 *   [A API de download][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] agora é promovida para estável.
 *   [A API PinchZoom][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] agora é promovida para estável.
 *   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] agora é promovido para estável.
+*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API promovida para estável com suporte ao elemento iFrame.
 *   [A API de preenchimento automático][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled] agora é promovida para estável.
     > [!NOTE]
     > Não há NENHUMA API atual para excluir as informações de autofillamento geral e de senha armazenadas localmente.  Forneça um controle para excluir os dados, que envolverá a exclusão de toda a Pasta de Dados do Usuário. 
@@ -922,6 +922,9 @@ Versão inicial de visualização do desenvolvedor.
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting "add_DownloadStarting - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
+
+[AddHostObjectToScriptWithOriginsAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins "AddHostObjectToScriptWithOrigins | Microsoft Docs"
+
 [Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"
