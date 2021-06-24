@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidade, plataforma Web, prevenção de rastreamento, rastreadores, cookies, armazenamento, bloqueio de publicidade, bloqueio de rastreador, proteção de rastreamento
-ms.openlocfilehash: 66356ab7ddaa56e46e74560d72b510ba63f7d70a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 24c410beba34b992cf01b973e79c1247fdc26fee
+ms.sourcegitcommit: b5acfd4dd7f57991d659715e4621edd786d44052
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399285"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "11614632"
 ---
 # <a name="tracking-prevention-in-microsoft-edge-chromium"></a>Prevenção de Rastreamento Microsoft Edge (Chromium)  
 
@@ -23,7 +23,7 @@ Microsoft Edge atualmente oferece aos usuários três níveis de prevenção de 
 ![Três configurações de prevenção de rastreamento][ImageThreeSettingsTrackingPrevention]  
 
 1.  **Básico** - O nível menos restritivo de prevenção de rastreamento projetado para usuários que gostam de anúncios personalizados e que não se importam de serem rastreados na Web.  O Básico protege apenas os usuários contra rastreadores mal-intencionados, como impressões digitais e criptominers.  
-1.  **Balanceado (Padrão)** - O nível padrão de prevenção de rastreamento projetado para usuários que querem ver anúncios menos assustadores que os seguem pela Web enquanto navegam.  O objetivo balanceado é bloquear rastreadores de sites com os que os usuários nunca se envolvem enquanto minimizam o risco de problemas de compatibilidade na Web.  
+1.  **Balanceado (Padrão)** - O nível padrão de prevenção de rastreamento projetado para usuários que querem ver anúncios menos personalizados enquanto minimizam o risco de problemas de compatibilidade à medida que navegam pela Web.  O objetivo balanceado é bloquear rastreadores de sites com os que os usuários nunca se envolvem.  
 1.  **Estrito** - O nível mais restritivo de prevenção de rastreamento projetado para usuários que estão bem negociando a compatibilidade de site para privacidade máxima.  
 
 O recurso de prevenção de rastreamento no Microsoft Edge é feito de três componentes principais que trabalham juntos para determinar se um recurso específico de um site deve ser classificado como um rastreador e bloqueado.  Os componentes são os seguinte:  
@@ -119,7 +119,7 @@ A tabela a seguir mostra as ações de imposição e mitigações que são aplic
 
 | | Anúncios | Análises | Conteúdo | Cryptomining | Impressão digital | Redes sociais | Other | Mitigação da Mesma Organização | Mitigação de Envolvimento da Organização |  
 | - | - | - | - | - | - | - | - | - | - | - |  
-| **Básico** | - | - | - | B | B | - | - | Habilitada | N/A |  
+| **Básico** | - | - | - | B | B | - | - | Habilitada | N/D |  
 | **Balanced** | S | - | S | B | B | S | S | Habilitada | Habilitada |  
 | **Estrito** | B | B | S | B | B | B | B | Habilitada | Desabilitado |  
 

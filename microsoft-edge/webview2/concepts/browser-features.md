@@ -1,16 +1,31 @@
 ---
-description: Diferenças de recursos do navegador entre Microsoft Edge e WebView2
-title: Diferenças de recursos do navegador entre Microsoft Edge e WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Diferenças de recursos entre o título Microsoft Edge e WebView2: Diferenças de recursos entre o autor Microsoft Edge e WebView2: MSEdgeTeam ms.author: msedgedevrel ms.date: 23/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, aplicativos wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
-# <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Diferenças de recursos do navegador entre Microsoft Edge e WebView2  
+# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Diferenças de recursos entre Microsoft Edge e WebView2  
 
 WebView2 se baseia no novo navegador Microsoft Edge.  Você tem a oportunidade de estender recursos do navegador para aplicativos baseados em WebView2, o que é útil.  No entanto, como o WebView2 não está limitado a aplicativos parecidos com navegador, há alguns recursos do navegador que precisam ser modificados ou removidos.  Este artigo fornece as informações a seguir.  
 
@@ -25,7 +40,7 @@ No contexto do WebView2, os recursos do navegador seguem as seguintes diretrizes
 *   A maioria dos recursos funciona da mesma forma no WebView2 e Microsoft Edge.  Se um recurso não fizer sentido no contexto do WebView2 ou por outros motivos, o recurso será modificado ou desligado. 
 *   Os recursos do WebView2 não incluem Microsoft Edge identidade visual.  
     
-## <a name="features"></a>Recursos  
+## <a name="browser-features"></a>Recursos do navegador  
 
 A tabela a seguir exibe os recursos WebView2 que diferem do Microsoft Edge navegador.   
 
@@ -51,16 +66,23 @@ A tabela a seguir exibe os recursos WebView2 que diferem do Microsoft Edge naveg
 | IE Mode | Desativado | Não | Esse recurso está desligado. O WebView2 não dá suporte ao modo IE e tem diferenças de comportamento em comparação com o IE (como suporte a MHT ou BIN). |  
 | Immersive Reader | Desativado | Não | Esse recurso depende da interface do usuário do navegador para interação.  Esse recurso está desligado.  |  
 | Intrusive Ads | Desativado | Não | Esse recurso está desligado.  |  
-| Atalhos de teclado | Revisar detalhes | Revisar detalhes | Os atalhos de teclado que estão desligados por padrão não fazem sentido ou causam problemas no WebView2.  Você pode não ativar ou desativar esses atalhos.  Em vez disso, você pode escutar uma combinação de teclas usando o `AcceleratorKeyPressed` evento e criar uma resposta personalizada, se necessário.  Para obter mais informações, navegue [até Informações adicionais de atalhos de teclado.](#additional-keyboard-shortcuts-information) |  
-| Notificações por push | Desativado | Não | Esse recurso não é implementado no WebView2.  Para obter mais informações, navegue até Adicionar suporte à API de Notificação [html5 (#308)][GithubMicrosoftedgeWebview2feedbackIssues308]. |  
+| Atalhos do teclado | Revisar detalhes | Revisar detalhes | Os atalhos de teclado que estão desligados por padrão não fazem sentido ou causam problemas no WebView2.  Você pode não ativar ou desativar esses atalhos.  Em vez disso, você pode escutar uma combinação de teclas usando o `AcceleratorKeyPressed` evento e criar uma resposta personalizada, se necessário.  Para obter mais informações, navegue [até Informações adicionais de atalhos de teclado.](#additional-keyboard-shortcuts-information) | 
 | Read Aloud | Desativado | Não | Esse recurso está desligado.  |  
 | Smart Screen | Ativado`*` | Não | `*` A interface do usuário para esse recurso foi removida, no entanto, a funcionalidade subjacente ainda está disponível.  Além disso, você pode desativar Smart Screen usando uma opção de linha de comando.  |  
 | Translate | Desativado | Não | Esse recurso está desligado.  |  
 | Tracking Prevention | Ativado`*` | Não | `*` A interface do usuário para esse recurso foi removida, no entanto, a funcionalidade subjacente ainda está disponível.  A prevenção de rastreamento sempre é definida como equilibrada.|  
-| Profile and Identity | Desativado | Não | O recurso que sincroniza seus favoritos, cookies e assim por diante está desligado.  |  
-| Web Payment API | Desativado | Não | Esse recurso está desligado.  | 
+| Profile and Identity | Desativado | Não | O recurso que sincroniza seus favoritos, cookies e assim por diante está desligado.  | 
 | Windows Defender Application Guard | Desativado | Não | Esse recurso está desligado.  |  
 | edge:// URLs | Revisar detalhes | Não | Configurações para o Microsoft Edge navegador estão em `edge://` URLs.  Como a maioria dessas páginas da Web Microsoft Edge a identidade visual ou não faz sentido no contexto do WebView2, algumas dessas URLs são desligadas.  Para obter mais informações, navegue até [URLs internas bloqueadas.](#blocked-internal-urls)  |  
+
+## <a name="web-platform-features"></a>Recursos da plataforma Web
+
+A tabela a seguir exibe os recursos da plataforma WebView2 que estão indisponíveis no momento.
+
+| Recurso | Detalhes |  
+|:--- | :--- |  
+| Notificações por push | Esse recurso não é implementado no WebView2. |  
+| Web Payment API | Esse recurso está desligado. | 
 
 ## <a name="blocked-internal-urls"></a>URLs internas bloqueadas  
 
@@ -84,7 +106,7 @@ As páginas Microsoft Edge e as configurações do Google Chrome não estão dis
     
 ## <a name="additional-keyboard-shortcuts-information"></a>Informações adicionais de atalhos de teclado  
 
-Atalhos de teclado ou vinculações de teclas são suportados Microsoft Edge WebView2.  Quando Microsoft Edge atualizações, as vinculações de teclas padrão podem mudar.  Além disso, um atalho de teclado que está desligado por padrão pode ativar se o recurso agora tiver suporte no WebView2.  Para evitar alterações nos atalhos de teclado, você pode definir como , que desliga todas as teclas que acessam os recursos do navegador, mas mantém todos os atalhos básicos de edição de texto e movimento `AreBrowserAcceleratorKeysEnabled` `FALSE` ativas.  
+Atalhos de teclado ou vinculações de teclas são suportados Microsoft Edge WebView2. Quando Microsoft Edge atualizações, as vinculações de teclas padrão podem mudar.  Além disso, um atalho de teclado que está desligado por padrão pode ativar se o recurso agora tiver suporte no WebView2. Para evitar alterações nos atalhos de teclado, você pode definir como , que desliga todas as teclas que acessam os recursos do navegador, mas mantém todos os atalhos básicos de edição de texto e movimento `AreBrowserAcceleratorKeysEnabled` `FALSE` ativas.  
 
 A tabela a seguir lista os atalhos que estão sempre desligados no WebView2.  Um caractere asterisco \( \) indica que o atalho não está desligado, mas o recurso que ele acessa está desligado ou não se aplica `*` ao WebView2.  
 
