@@ -3,17 +3,17 @@ description: Saiba como testar seu site ou aplicativo Microsoft Edge automatizar
 title: Usar o WebDriver (Chromium) para automação de teste
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento da Web, html, css, javascript, desenvolvedor, webdriver, selenium, teste, ferramentas, automação, teste
-ms.openlocfilehash: 3865162b8227db2f0cfa051801a5de28ecf4b9d1
-ms.sourcegitcommit: 3094c972532bc89dcb429d26880c873809fd1ab8
+ms.openlocfilehash: c68a16aebcfdc6ade8838145368d32ad84a82209
+ms.sourcegitcommit: d0a6959c5338cf1927093b4a9ed29a0bc0390b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "11599454"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "11615425"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar o WebDriver (Chromium) para automação de teste  
 
@@ -26,11 +26,11 @@ O WebDriver permite que os desenvolvedores criem testes automatizados que simula
 
 ## <a name="relationship-between-webdriver-and-other-software"></a>Relação entre WebDriver e outros softwares
 
-Para automatizar Microsoft Edge com o WebDriver para simular a interação do usuário, você precisa de três componentes:
+Para automatizar o Microsoft Edge com o WebDriver para simular a interação do usuário, você precisa de três componentes:
 
 *  Microsoft Edge
 *  Driver do Microsoft Edge
-*  Uma estrutura de teste do WebDriver, como Selenium
+*  Uma estrutura de teste do WebDriver
 
 A relação funcional entre WebDriver, Microsoft Edge Driver, Selenium e Internet Explorer Driver é a seguinte.
 
@@ -378,7 +378,20 @@ Para obter mais informações, navegue até o [contêiner msedgedriver no Hub do
 
 Mesmo que Microsoft Edge suporte ao modo IE, você não pode usar o driver Microsoft Edge com Microsoft Edge para testar sites no modo IE.  Para testar sites que exigem o Internet Explorer, use [o Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] com o Internet Explorer.
 
-## <a name="next-steps"></a>Próximas etapas  
+## <a name="application-guard"></a>Application Guard
+
+Sites confiáveis que usam Microsoft Defender Application Guard (Application Guard) podem ser automatizados usando Microsoft Edge Driver.
+
+Sites não falsos que usam o Application Guard não podem ser automatizados ou manipulados usando Microsoft Edge Driver.  O Application Guard inicia sites não falsos em um contêiner e esse contêiner não expõe a porta de depuração remota que Microsoft Edge Driver precisa se comunicar com o site.
+
+O administrador da empresa define o que são sites confiáveis, incluindo recursos de nuvem e redes internas.  Sites que não estão na lista de sites confiáveis são considerados não confiáveis.  Microsoft Edge O driver pode automatizar janelas InPrivate e sites na lista de sites confiáveis.
+
+Para obter mais informações sobre o Application Guard, navegue até: 
+
+*  [Suporte do Microsoft Edge para o Windows Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard)
+*  [Microsoft Defender Application Guard visão geral][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
+
+## <a name="next-steps"></a>Próximos passos  
 
 Para obter mais informações sobre o WebDriver e como gravar testes automatizados do WebDriver usando Selenium, navegue até a documentação [de Selenium][SeleniumDocumentation].  
 
@@ -398,6 +411,8 @@ A Microsoft Edge equipe está ávida para ouvir seus comentários sobre como usa
 <!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Políticas | Microsoft Docs"  
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Microsoft Defender Application Guard (Windows 10) - Windows segurança | Microsoft Docs"  
+[DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]: /deployedge/microsoft-edge-security-windows-defender-application-guard "Microsoft Edge suporte para Microsoft Defender Application Guard | Microsoft Docs"
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Hub do Docker"  
