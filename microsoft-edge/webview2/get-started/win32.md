@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
-ms.openlocfilehash: 073a92bf10a7ead85ac91bff54b5fc405c7d577c
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
+ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535780"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "11618383"
 ---
 # <a name="get-started-with-webview2"></a>Começar com WebView2  
 
@@ -24,9 +24,6 @@ Neste artigo, você pode começar a criar seu primeiro aplicativo WebView2 e sab
 Certifique-se de instalar a lista de pré-requisitos a seguir antes de prosseguir.  
 
 *   [WebView2 Runtime][Webview2Installer] ou qualquer canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] não estável instalado no sistema operacional com suporte \(atualmente Windows 10, Windows 8.1 e Windows 7\).  
-    
-    > [!NOTE]
-    > A equipe webView recomenda o uso do canal Canary e a versão mínima necessária é 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 ou posterior com suporte C++ instalado.  
     
