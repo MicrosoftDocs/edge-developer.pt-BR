@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 5f499a6c9f1109f80a9d459edf94ed2226734f19
-ms.sourcegitcommit: 87ba918b0910373bb645615377709bf140dc9b19
+ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583456"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624777"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -36,7 +36,7 @@ ms.locfileid: "11583456"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-Na maioria das IDEs modernas, sublinhados ondulados em texto indicam erros de sintaxe.   Na Microsoft Edge versão 91 ou posterior, sublinhados ondulados são exibidos em HTML no visor **DOM** da **ferramenta Elements.**  Os sublinhados ondulados indicam problemas de código e sugestões relacionadas à acessibilidade, compatibilidade, desempenho e assim por diante.  Para obter mais informações sobre como revisar e editar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Microsoft Edge [DevTools Issues][DevtoolsIssuesIndex].  
+Na maioria das IDEs modernas, sublinhados ondulados em texto indicam erros de sintaxe.   Na Microsoft Edge versão 91 ou posterior, sublinhados ondulados são exibidos em HTML no visor **DOM** da **ferramenta Elements.**  Os sublinhados ondulados indicam problemas de código e sugestões relacionadas à acessibilidade, compatibilidade, desempenho e assim por diante.  Para obter mais informações sobre como revisar e editar problemas, navegue até [Encontrar e corrigir problemas usando a ferramenta Problemas.][DevtoolsIssuesIndex]  
 
 Para abrir a **ferramenta Problemas** e saber mais sobre o problema e como corrigi-lo, conclua uma das seguintes ações.  
 
@@ -152,7 +152,7 @@ A partir [Microsoft Edge versão 88][DevtoolsWhatsNew202011DevtoolsCssVariableDe
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-A **ferramenta Issues** exibe recomendações para melhorar seu site, incluindo acessibilidade, desempenho, segurança e assim por diante. Com base em seus comentários, os problemas agora são automaticamente resolvidos por gravidade.  Em cada categoria de comentários, cada problema marcado como **Erro** aparece primeiro, seguido de cada problema marcado como Aviso **,** em seguida, cada problema marcado como uma **Dica**.  Para ajudá-lo a refinar seus problemas, as opções de filtro extra são planejadas para uma atualização futura.  Para obter mais informações sobre como revisar problemas, navegue até Encontrar e corrigir problemas com a ferramenta Microsoft Edge [Problemas do DevTools.][DevtoolsIssuesIndex]  
+A **ferramenta Issues** exibe recomendações para melhorar seu site, incluindo acessibilidade, desempenho, segurança e assim por diante. Com base em seus comentários, os problemas agora são automaticamente resolvidos por gravidade.  Em cada categoria de comentários, cada problema marcado como **Erro** aparece primeiro, seguido de cada problema marcado como Aviso **,** em seguida, cada problema marcado como uma **Dica**.  Para ajudá-lo a refinar seus problemas, as opções de filtro extra são planejadas para uma atualização futura.  Para obter mais informações sobre como revisar problemas, navegue até [Encontrar e corrigir problemas usando a ferramenta Problemas.][DevtoolsIssuesIndex]  
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="A ferramenta Issues exibe problemas organizados por gravidade" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    A **ferramenta Issues** exibe problemas organizados por gravidade  
@@ -178,7 +178,7 @@ Para atualizar manualmente para a versão 1.1.7, navegue até [Atualizar uma ext
 
 ### <a name="visualize-css-scroll-snap"></a>Visualizar o snap de rolagem CSS  
 
-Agora você pode alternar o `scroll-snap` selo na ferramenta **Elements** para inspecionar o alinhamento de rolagem CSS.  Quando um elemento HTML em sua página da Web é aplicado a ela, um selo é exibido ao lado dele `scroll-snap-type` `scroll-snap` na ferramenta **Elements.**  Escolha o selo para ativar \(ou desativar\) a exibição de uma sobreposição de rolagem na página da Web.  Para revisar uma página da Web de exemplo, navegue até [Scroll Ajustar Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  No exemplo, os pontos são exibidos em bordas de encaixe.  A porta de rolagem tem um contorno sólido enquanto os itens de encaixe têm estruturas de contorno.  O preenchimento de rolagem é preenchido em verde enquanto a margem de rolagem é preenchida em laranja.  Para revisar o histórico desse recurso no Chromium de código aberto, navegue até o Problema [862450][CR862450].  
+Agora você pode alternar o `scroll-snap` selo na ferramenta **Elements** para inspecionar o alinhamento de rolagem CSS.  Quando um elemento HTML em sua página da Web é aplicado a ela, um selo é exibido ao lado dele `scroll-snap-type` `scroll-snap` na ferramenta **Elements.**  Escolha o selo para ativar \(ou desativar\) a exibição de uma sobreposição de rolagem na página da Web.  Para analisar uma página da Web de exemplo, navegue até [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  No exemplo, os pontos são exibidos em bordas de encaixe.  A porta de rolagem tem um contorno sólido enquanto os itens de encaixe têm estruturas de contorno.  O preenchimento de rolagem é preenchido em verde enquanto a margem de rolagem é preenchida em laranja.  Para revisar o histórico desse recurso no Chromium de código aberto, navegue até o Problema [862450][CR862450].  
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap  
@@ -405,7 +405,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 [DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Abra o Menu de Comando - Execute comandos com o menu Microsoft Edge DevTools Command | Microsoft Docs"  
 [DevtoolsConsoleApiError]: ../../../console/api.md#error "error - Console API reference | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Alterar configurações de idioma do DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"  
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Melhorias do Service Worker | Microsoft Docs"  
 [DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "Usando o painel Depurador para depurar código JavaScript - Visão geral da ferramenta sources | Microsoft Docs"  
 
@@ -457,7 +457,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 [GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "Memória no JS | Glitch"  
 [GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Memória em Wasm | Glitch"  
 
-[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Ajustar Demo | Glitch"  
+[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | Glitch"  
 
 [GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "Política de Permissões OOPIF | Glitch"  
 
@@ -482,7 +482,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-91) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-91) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

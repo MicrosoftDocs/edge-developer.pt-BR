@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 2537495ad14462aac70bfb1b5873aaa0b6e21cdf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: fabfa21abedb02bc83ec2bedbe3662f0d81c1bf9
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564669"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624805"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -132,7 +132,7 @@ As seções a seguir anunciam recursos adicionais disponíveis no Microsoft Edge
 
 A nova **ferramenta Issues** na DevTools Drawer foi criada para ajudar a reduzir a fatiga de notificação e a desordem do **Console.**  Atualmente, o **Console** é o local central para desenvolvedores de site, bibliotecas, estruturas e Microsoft Edge registrar mensagens, avisos e erros.  A **ferramenta Issues** agrega avisos do navegador de forma estruturada, agregada e a ação, links para recursos afetados no Microsoft Edge DevTools e fornece orientações sobre como corrigir os problemas.  Com o passar do tempo, mais e mais avisos são Microsoft Edge na ferramenta **Problemas,** em vez do **Console,** o que deve ajudar a reduzir a desordem no **Console**.  
 
-Para começar, navegue até [Encontrar e corrigir problemas com a ferramenta Microsoft Edge Problemas do DevTools.][DevtoolsIssuesIndex]  
+Para começar, navegue até [Encontrar e corrigir problemas usando a ferramenta Problemas][DevtoolsIssuesIndex].  
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="A ferramenta Problemas na Gaveta de DevTools" lightbox="../../media/2020/05/issues.msft.png":::
    A **ferramenta Problemas** na Gaveta de DevTools  

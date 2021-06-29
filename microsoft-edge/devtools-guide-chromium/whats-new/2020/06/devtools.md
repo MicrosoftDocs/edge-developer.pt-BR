@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 65a3fb4da235d2330bf9205b7a4a79a999559ca4
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564924"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624798"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -338,7 +338,7 @@ Se você estiver no Windows ou macOS, considere usar os canais [Microsoft Edge d
 [DevtoolsCommandMenu]: ../../../command-menu.md "Executar comandos com o menu de comando Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Gaveta - Personalizar Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Ativar recursos experimentais - Recursos experimentais | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"
+[DevtoolsIssues]: ../../../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Usando o painel Editor para exibir ou editar arquivos - Visão geral do painel de fontes | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Atividade de rede de log - Inspecionar atividade de rede no Microsoft Edge DevTools | Microsoft Docs"
 
@@ -384,7 +384,7 @@ Se você estiver no Windows ou macOS, considere usar os canais [Microsoft Edge d
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de Objeto CSS (CSSOM) | Rascunhos do Editor do Grupo de Trabalho CSS do W3C"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Postar um Tweet"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "conta @EdgeDevTools do Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "conta do Twitter @EdgeDevTools"  
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de classe privada - Campos de classe pública e privada | V8. Dev"  
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Cache de código para desenvolvedores JavaScript | V8. Dev"  
@@ -412,7 +412,7 @@ Se você estiver no Windows ou macOS, considere usar os canais [Microsoft Edge d
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-85) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-85) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  

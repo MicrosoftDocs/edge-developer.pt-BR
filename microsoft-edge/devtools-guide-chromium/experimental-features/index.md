@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: dec4b4d111c0eb8dc9cc3963bac7339df1d9b6f6
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11596997"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624749"
 ---
 # <a name="experimental-features"></a>Recursos experimentais  
 
@@ -118,8 +118,7 @@ Depois de ativar o experimento, reinicie o DevTools.  Para usar **Source Order V
 1.  Na **Source Order Viewer** seção, escolha a caixa de seleção **Mostrar Ordem de** Origem.  
 1.  Realça qualquer elemento HTML para exibir uma sobreposição que a ordem na origem da página da Web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer no painel Acessibilidade" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: no **Source Order Viewer** painel **Acessibilidade**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -258,7 +257,6 @@ Para fornecer comentários sobre Microsoft Edge experimentos do DevTools ou qual
 -->  
 
 <!-- links -->  
-
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspecionar Grade CSS no Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
@@ -268,12 +266,10 @@ Para fornecer comentários sobre Microsoft Edge experimentos do DevTools ou qual
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emular dispositivos de tela dupla e dobráveis Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móveis com o modo de dispositivo Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar configurações e estilos de fonte CSS no painel Estilos no DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge Atalhos de teclado do DevTools | Microsoft Docs"  
-
+<!-- external links: -->
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
-
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
-
 [WebhintMain]: https://webhint.io "webhint"  

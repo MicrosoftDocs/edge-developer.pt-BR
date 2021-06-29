@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: bb158085eb516c8d4ce37a22f6b612784db51461
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597234"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624630"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -85,7 +85,7 @@ Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da C
 
 
 <!-- links -->  
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Teste de Acessibilidade da Web - Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd "axe - Teste de Acessibilidade da Web - Chrome Web Store"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

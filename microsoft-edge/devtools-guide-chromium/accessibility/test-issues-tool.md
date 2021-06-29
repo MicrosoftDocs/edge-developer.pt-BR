@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 986a021d2fd390cd45bd53dcfc37a83d58ed2338
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 1cba9db1744235dfbfd2a007e33d1101452aab31
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597172"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624735"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Teste automaticamente uma página da Web em busca de problemas de acessibilidade
 
@@ -135,7 +135,7 @@ A árvore DOM na ferramenta **Elements** sinaliza problemas diretamente no HTML 
 
 ## <a name="see-also"></a>Consulte também
 
-*  [Encontre e corrige problemas com a ferramenta Microsoft Edge Problemas do DevTools][DevToolsIssuesTool]
+*  [Encontrar e corrigir problemas usando a ferramenta Problemas][DevToolsIssuesTool]
 *  [Visão geral dos testes de acessibilidade usando o DevTools](accessibility-testing-in-devtools.md)
 
 
@@ -145,5 +145,5 @@ A árvore DOM na ferramenta **Elements** sinaliza problemas diretamente no HTML 
 
 
 <!-- links -->
-[DevToolsIssuesTool]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Webpage de demonstração de teste de acessibilidade | GitHub"

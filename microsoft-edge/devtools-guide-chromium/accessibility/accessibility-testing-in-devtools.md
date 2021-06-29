@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 50661f68c7b3269d003bdc25f6a8098ae0e3ec89
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: f6ec0652bbbb7d7e60a69877a9d44a7a2fd636a5
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597238"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624791"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>Visão geral dos testes de acessibilidade usando o DevTools
 
@@ -128,7 +128,7 @@ Esses problemas encontrados pela ferramenta **Issues** são alguns problemas de 
 
 ## <a name="limits-of-automated-testing"></a>Limites de testes automatizados
 
-A [ferramenta Problemas,][DevToolsIssuesTool] [Percepções de Acessibilidade][AccessibilityInsights]e o [Farol][Lighthouse] são ferramentas que geram automaticamente um relatório de acessibilidade para uma página da Web.  Obter um relatório automatizado dessas ferramentas é apenas o início de sua jornada de teste de acessibilidade.
+As [ferramentas Problemas,][DevToolsIssuesTool] [Acessibilidade Insights][AccessibilityInsights]e o [Farol][Lighthouse] são ferramentas que geram automaticamente um relatório de acessibilidade para uma página da Web.  Obter um relatório automatizado dessas ferramentas é apenas o início de sua jornada de teste de acessibilidade.
 
 A acessibilidade se trata da interação humana, pessoas com necessidades diferentes usando seus produtos em vários ambientes técnicos.  Esse teste não pode ser totalmente automatizado, mas precisa de verificação por um humano navegando o produto.  No melhor cenário, você teria acesso a testadores com necessidades de acessibilidade diferentes e testadores usando vários ambientes.  Mas você já pode fazer muito sozinho usando o teclado para navegar e inspecionando diferentes partes da página.
 
@@ -494,7 +494,7 @@ Para etapas passo a passo detalhadas, navegue até Verificar se a página pode s
 
 Abordamos algumas ferramentas que você pode usar para garantir que você pegue problemas de acessibilidade em seus produtos.  Essas ferramentas variam de verificações automatizadas e verificações de detalhes manuais até a simulação de diferentes estados e ambientes.  Essas ferramentas são resumidas nos recursos [de teste de acessibilidade no DevTools](reference.md).  As ferramentas automatizadas não conseguem encontrar todos os problemas em um produto, pois muitas das barreiras de acessibilidade aparecem somente durante o uso interativo.
 
-Nenhuma dessas ferramentas pode substituir uma rodada adequada de teste de seus produtos por pessoas que usam tecnologias assistivas e seguir um plano para verificar todos os testes necessários. Você também pode usar o [recurso Avaliações][AccessibilityInsightsAssessment] de [Percepções de Acessibilidade.][AccessibilityInsights]  Talvez seja necessário executar verificações adicionais, como:
+Nenhuma dessas ferramentas pode substituir uma rodada adequada de teste de seus produtos por pessoas que usam tecnologias assistivas e seguir um plano para verificar todos os testes necessários. Você também pode usar o [recurso Avaliações][AccessibilityInsightsAssessment] de [Acessibilidade Insights][AccessibilityInsights].  Talvez seja necessário executar verificações adicionais, como:
 
 * Teste quando ampliado.
 * Teste com leitores de tela.
@@ -520,7 +520,7 @@ Estamos constantemente trabalhando em novos recursos de acessibilidade para o De
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Recursos de teste de acessibilidade no DevTools | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Simulação de esquema de cores escuro ou claro | Microsoft Docs"
-[DevToolsIssuesTool]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Simulação de movimento reduzida | Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emular deficiências de visão | Microsoft Docs"
 <!-- links into test-issues-tool.md -->
@@ -536,7 +536,7 @@ Estamos constantemente trabalhando em novos recursos de acessibilidade para o De
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Webpage de demonstração de teste de acessibilidade | GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "taxa de contraste | W3C"
 [WCAG]: https://www.w3.org/TR/WCAG21/ "Diretrizes de acessibilidade de conteúdo da Web | W3C"
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Avaliação em Percepções de Acessibilidade para Web | Percepções de acessibilidade"
-[AccessibilityInsights]: https://accessibilityinsights.io "Percepções de acessibilidade"
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Avaliação em Acessibilidade Insights para web | Acessibilidade Insights"
+[AccessibilityInsights]: https://accessibilityinsights.io "Acessibilidade Insights"
 [Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "| Google"
 [WebhintForCode]:https://aka.ms/webhint4code "webhint | Visual Studio Marketplace"

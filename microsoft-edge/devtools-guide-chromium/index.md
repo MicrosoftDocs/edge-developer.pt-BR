@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 78603c51dab5a61f8d6b43e60a3f252eac665d99
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597008"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624756"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) visão geral das Ferramentas de Desenvolvedor  
 
@@ -221,7 +221,7 @@ Se você quiser visualizar os recursos mais recentes que vêm para [o DevTools,]
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Recursos experimentais | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Corrigir problemas de memória | Microsoft Docs"  
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Editar estilos de fonte CSS e configurações no painel Estilos | Microsoft Docs"  
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Começar a depurar JavaScript no Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Substituir recursos de página da Web por cópias locais usando Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspecionar a atividade de rede no Microsoft Edge DevTools | Microsoft Docs"  

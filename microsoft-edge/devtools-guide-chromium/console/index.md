@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483171"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624742"
 ---
 # <a name="use-the-console"></a>Usar o Console  
 
@@ -43,7 +43,7 @@ A maneira mais rápida de abrir diretamente o **Console** é selecionar `Control
 
 ## <a name="error-reports-and-console"></a>Relatórios de erro e Console  
 
-**Console** é o local padrão em que os erros de conectividade e JavaScript são relatados.  Se ocorrer algum erro, um botão será exibido ao lado do ícone Configurações **no** DevTools que fornece o número de erros e avisos.  Escolha-o para abrir **o Console** e exibir o problema.  Para obter mais informações, navegue até [Depurar erros relatados no Console][DevtoolsConsoleConsoleDebugJavascript].  
+**Console** é o local padrão em que os erros de conectividade e JavaScript são relatados.  Se ocorrer algum erro, o contador **Problemas** será exibido ao lado do ícone Configurações **no** DevTools que fornece o número de erros e avisos.  Selecione o **contador Problemas** para abrir a **ferramenta Problemas** e exibir o problema.  Para obter mais informações, navegue até [Depurar erros relatados no Console][DevtoolsConsoleConsoleDebugJavascript].
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="O DevTools fornece informações detalhadas sobre o erro no Console" lightbox="../media/console-debug-displays-error.msft.png":::
    O DevTools fornece informações detalhadas sobre o erro no **Console**  
@@ -51,7 +51,9 @@ A maneira mais rápida de abrir diretamente o **Console** é selecionar `Control
 
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>Inspecionar e filtrar informações na página da Web atual  
 
-Ao abrir o DevTools em uma página da Web, você provavelmente exibirá um dilúvio de informações registradas no **Console**.  A quantidade de informações se torna um problema quando você precisa identificar informações importantes.  Para exibir as informações importantes que precisam de ação, use a [ferramenta Problemas][DevtoolsIssuesIndex] no DevTools.  Grande parte do ruído permanece, e é por isso que é uma boa ideia saber sobre as opções automatizadas de [log][DevtoolsConsoleConsoleFilters] e filtro no **Console**.  
+Quando você abre o DevTools em uma página da Web, pode haver uma quantidade avassaladora de informações no **Console.**  A quantidade de informações se torna um problema quando você precisa identificar informações importantes.  Para exibir as informações importantes que precisam de ação, use a [ferramenta Problemas][DevtoolsIssuesIndex] no DevTools.
+
+Os problemas estão sendo movidos gradualmente do **Console** para a **ferramenta Issues.**  No entanto, ainda há muitas informações no **Console**, e é por isso que é uma boa ideia saber sobre as opções automatizadas de log e filtro no **Console**.  Para obter mais informações, navegue até [Filtrar mensagens de Console.][DevtoolsConsoleConsoleFilters]
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools com um Console cheio de mensagens" lightbox="../media/console-intro-noise.msft.png":::
    DevTools com um **Console** cheio de mensagens  
@@ -135,7 +137,7 @@ O **Console** tem acesso ao [objeto Window][MdnDocsWebApiWindow] do navegador.  
    Copie o conteúdo de título superior \( `h1` \) do DOM e exibido no **Console**  
 :::image-end:::  
 
-Em vez de apenas ler da página da Web, você também pode alterá-la.  Para experimentar, conclua as seguintes ações.  
+Em vez de apenas ler da página da Web, você também pode alterá-la.  Para tentar alterar a página da Web, conclua as seguintes ações.  
 
 1.  Abra o **Console**.  
 1.  Copie e colar o seguinte trecho de código.  
@@ -157,7 +159,6 @@ Você alterou o título principal da página da Web para **"Balançando o Consol
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipular uma seleção de elementos usando o Console" lightbox="../media/console-intro-changing-styles.msft.png":::
     Manipular uma seleção de elementos usando o **Console**  
 :::image-end:::  
@@ -173,7 +174,6 @@ Para obter mais informações sobre **o Console,** navegue até [Referência de 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "Referência da API de console | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Erros de depuração relatados no Console | Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use o Console para interagir com o dom | Microsoft Docs" 
@@ -182,11 +182,8 @@ Para obter mais informações sobre **o Console,** navegue até [Referência de 
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Registrar mensagens na ferramenta Console | Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Referência da API de Utilitários de Console | Microsoft Docs"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
-
+[DevtoolsIssuesIndex]: ../issues/index.md "Encontre e corrige problemas usando a ferramenta Problemas | Microsoft Docs"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Exemplos de mensagens de console: log, informações, erro e aviso | GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Janela | MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Loop de leitura-eval-print | Wikipédia"  
