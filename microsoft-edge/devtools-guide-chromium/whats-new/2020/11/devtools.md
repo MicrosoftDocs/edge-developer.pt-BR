@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd9f9ca2c19c8db74036fb54efadb7be8566fd7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: e5706de4c7938a3cb2246aa34de07c73dafe5776
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564116"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624770"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -268,7 +268,7 @@ Experimente este recurso ao navegar até a [demonstração de erro CORS][GlitchC
 
 #### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>Informações de isolamento de origem cruzada na visualização de detalhes do quadro  
 
-O status isolado de origem cruzada agora é exibido na seção **Isolamento e Segurança**.  A nova seção **disponibilidade da API** exibe a disponibilidade de `SharedArrayBuffer`s\(SAB\) e se os buffers podem ser compartilhados usando `postMessage()`.  Um aviso de substituição será exibido se o SAB e `postMessage()` estiverem disponíveis no momento, mas o contexto não estiver isolado na origem.  Para obter mais informações sobre o isolamento entre origens e por que é necessário para recursos como `SharedArrayBuffers`, navegue até [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Para revisar as atualizações em tempo real desse recurso no projeto de fonte aberta do Chromium, navegue até o Issue [1139899][CR1139899].  
+O status isolado de origem cruzada agora é exibido na seção **Isolamento e Segurança**.  A nova seção **disponibilidade da API** exibe a disponibilidade de `SharedArrayBuffer`s\ (SAB\) e se os buffers podem ser compartilhados usando `postMessage()`.  Um aviso de substituição será exibido se o SAB e `postMessage()` estiverem disponíveis no momento, mas o contexto não estiver isolado na origem.  Para obter mais informações sobre o isolamento entre origens e por que é necessário para recursos como `SharedArrayBuffers`, navegue até [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Para revisar as atualizações em tempo real desse recurso no projeto de fonte aberta do Chromium, navegue até o Issue [1139899][CR1139899].  
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Informações entre origens" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    Informações entre origens  
@@ -362,7 +362,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móveis no Microsoft Edge DevTools | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Localizar e corrigir problemas com a ferramenta Issues do DevTools do Microsoft Edge | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copiar JSON de resposta formatada para a área de transferência - referência de Análise de Rede | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Exibir o detalhamento de tempo de uma solicitação - referência de Análise de Rede | Microsoft Docs "  
 
@@ -421,7 +421,7 @@ Se você está no Windows, Linux ou macOS, considere usar os [Microsoft Edge Pre
 
 > [!NOTE]
 > Partes desta página são modificações baseadas no trabalho criado e [compartilhado pelo Google][GoogleSitePolicies] e usadas de acordo com os termos descritos na [Licença Pública Creative Commons Atribuição 4.0 Internacional][CCA4IL].  
-> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-88) e é de autoria de [Jecelyn Yeen][JecelynYeen] \(defensora do desenvolvedor, Chrome DevTools \).  
+> A página original é encontrada [aqui](https://developer.chrome.com/blog/new-in-devtools-88) e é de autoria de [Jecelyn Yeen][JecelynYeen] \ (defensora do desenvolvedor, Chrome DevTools \).  
 
 [![Licença Creative Commons][CCby4Image]][CCA4IL]  
 Esse trabalho é licenciado sob uma [Licença Attribution 4.0 International da Creative Commons][CCA4IL].  
