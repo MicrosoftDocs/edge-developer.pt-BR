@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Host, controle do navegador, html de borda, pasta de dados do usuário
-ms.openlocfilehash: a6399e59f153d4446946937461e61667f325f4ae
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: d3b3e8d81ddffec043f0988385a433eb7c817de7
+ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535745"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "11627954"
 ---
-# <a name="manage-the-user-data-folder"></a>Gerenciar a Pasta de Dados do Usuário  
+# <a name="manage-the-user-data-folder"></a>Gerenciar a pasta de dados do usuário  
 
 Os aplicativos WebView2 interagem com pastas de dados do usuário para armazenar dados do navegador, como cookies, permissões e recursos armazenados em cache.  Cada instância de um controle WebView2 está associada a uma pasta de dados do usuário.  Cada pasta de dados do usuário é exclusiva de um usuário.  
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, práticas recomendadas
-ms.openlocfilehash: 5a11f01ec07aea12599c8bdb8428d451ad7bd013
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 7e8c6746e864b474c2987817c521224499a95e1f
+ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564746"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "11627975"
 ---
 # <a name="webview2-development-best-practices"></a>Práticas recomendadas de desenvolvimento do WebView2  
 
@@ -27,11 +27,13 @@ Verifique se o Tempo de Execução do WebView2 evergreen está instalado antes d
 
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-webview2-runtime"></a>Executar testes de compatibilidade regularmente ao usar o Evergreen WebView2 Runtime
 
-Ao usar o Evergreen WebView2 Runtime, certifique-se de executar testes de compatibilidade regulares. Como o tempo de execução é atualizado automaticamente, teste o conteúdo da Web no controle WebView2 em relação às versões não estáveis do Microsoft Edge para garantir que seu aplicativo WebView2 seja executado conforme o esperado. Essa orientação é semelhante às orientações que damos aos desenvolvedores da Web. Para obter mais informações, navegue até [Permanecer compatível no modo Evergreen][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
+Ao usar o Evergreen WebView2 Runtime, o tempo de execução é atualizado automaticamente, portanto, você deve executar regularmente testes de compatibilidade. Teste o conteúdo da Web no controle WebView2 em relação às versões não estáveis do Microsoft Edge, para garantir que seu aplicativo WebView2 funcione conforme esperado.
+
+Essa orientação é semelhante às orientações que damos aos desenvolvedores da Web. Para obter mais informações, navegue até [Permanecer compatível no modo Evergreen][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
 
 ## <a name="ensure-apis-are-supported-by-the-installed-webview2-runtime"></a>Verifique se as APIs são suportadas pelo Tempo de Execução do WebView2 instalado
 
-Os aplicativos WebView2 precisam de um SDK Webview2 e um WebView2 Runtime instalado no computador para execução. O SDK e o tempo de execução são versionados. Como as APIs estão continuamente sendo adicionadas ao WebView2, novas versões do tempo de execução também são lançadas para dar suporte às novas APIs. Você precisará garantir que as APIs usadas pelo aplicativo WebView2 sejam suportadas pelo Tempo de Execução webView2 instalado no computador. 
+Os aplicativos WebView2 precisam de um SDK Webview2 e um WebView2 Runtime instalado no computador para execução. O SDK e o tempo de execução são versionados. Como as APIs estão continuamente sendo adicionadas ao WebView2, novas versões do tempo de execução também são lançadas para dar suporte às novas APIs. Certifique-se de que as APIs usadas pelo aplicativo WebView2 sejam suportadas pelo WebView2 Runtime instalado no computador. 
 
 Se você usar o Evergreen WebView2 Runtime, há alguns cenários em que o tempo de execução pode não ser atualizado para usar a versão mais recente. Por exemplo, quando os usuários não têm acesso à Internet, o tempo de execução não é atualizado automaticamente nesse ambiente. Além disso, o uso de algumas políticas de grupo pausa as atualizações do WebView2. Quando você pressiona uma atualização para seu aplicativo WebView2, o aplicativo pode quebrar porque ele usa APIs mais novas que não estão disponíveis no tempo de execução instalado.   
  
@@ -48,12 +50,17 @@ Se você usar o Tempo de Execução de Versão Fixa, certifique-se de atualizar 
 
 ## <a name="manage-new-versions-of-the-runtime"></a>Gerenciar novas versões do tempo de execução  
 
-Sempre que uma nova versão do Evergreen WebView2 Runtime é baixada para o dispositivo, os aplicativos WebView2 em execução continuam usando o tempo de execução anterior até que o processo do navegador seja lançado. Esse comportamento permite que os aplicativos executem continuamente e impede que o tempo de execução anterior seja excluído. Para usar a nova versão do tempo de execução, você precisará liberar todas as referências aos objetos de ambiente WebView2 anteriores ou reiniciar seu aplicativo. Na próxima vez que você criar um novo ambiente WebView2, ele usará a nova versão.
+Quando uma nova versão do Evergreen WebView2 Runtime é baixada para o dispositivo, todos os aplicativos WebView2 que estão sendo executados continuam a usar o tempo de execução anterior, até que o processo do navegador seja lançado.  Esse comportamento permite que os aplicativos executem continuamente e impede que o tempo de execução anterior seja excluído.  Para usar a nova versão do tempo de execução, você precisará liberar todas as referências aos objetos de ambiente WebView2 anteriores ou reiniciar seu aplicativo.  Na próxima vez que você criar um novo ambiente WebView2, ele usará a nova versão.
 
-Para tomar medidas quando uma nova versão estiver disponível, como notificar o usuário para reiniciar o aplicativo, você pode usar o [evento add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] ou [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] em seu código. Se o código manipular a reinicialização do aplicativo, considere salvar o estado do usuário antes que o aplicativo WebView2 saia.  
+Quando uma nova versão está disponível, você pode tomar medidas automaticamente, como notificar o usuário para reiniciar o aplicativo.  Para detectar que uma nova versão está disponível, você pode usar o [evento add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] ou [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] em seu código. Se o código manipular a reinicialização do aplicativo, considere salvar o estado do usuário antes que o aplicativo WebView2 saia.  
 
 ## <a name="manage-the-lifetime-of-the-user-data-folder"></a>Gerenciar o tempo de vida da pasta de dados do usuário 
-Os aplicativos WebView2 criam uma pasta de dados do usuário para armazenar dados como cookies, credenciais, permissões e assim por diante. Depois de criar a pasta, seu aplicativo é responsável pelo gerenciamento do tempo de vida da pasta de dados do usuário, incluindo a limpeza quando o aplicativo é desinstalado.  Para obter mais informações, navegue até [Gerenciando a Pasta de Dados do Usuário.][Webview2ConceptsUserDataFolder]  
+Os aplicativos WebView2 criam uma pasta de dados do usuário para armazenar dados como cookies, credenciais e permissões.  Depois de criar a pasta, seu aplicativo é responsável pelo gerenciamento do tempo de vida da pasta de dados do usuário.  Por exemplo, seu aplicativo deve fazer a limpeza quando o aplicativo for desinstalado.  Para obter mais informações, navegue até [Gerenciando a pasta de dados do usuário.][Webview2ConceptsUserDataFolder]  
+
+## <a name="handle-runtime-process-failures"></a>Manipular falhas de processo de tempo de execução
+Seu aplicativo WebView2 deve escutar e manipular o evento, para que o aplicativo possa se recuperar de falhas de processos de tempo de execução que suportam o processo do `ProcessFailed` aplicativo WebView2.
+
+Os aplicativos WebView2 são suportados por uma coleção de processos de tempo de execução que são executados juntamente com o processo do aplicativo. Esses processos de tempo de execução de suporte podem falhar por vários motivos, como ficar sem memória ou ser encerrado pelo usuário. Quando um processo de tempo de execução de suporte falha, o WebView2 notifica o aplicativo aumentando o [evento ProcessFailed][WebView2ProcessFailedEvent].
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Siga as práticas recomendadas de segurança do WebView2 
 Para qualquer aplicativo WebView2, certifique-se de seguir nossas práticas recomendadas de segurança webView2.  Para obter mais informações, navegue até [Práticas recomendadas para desenvolver aplicativos WebView2 seguros.][Webview2ConceptsSecurity]  
@@ -74,3 +81,5 @@ Para qualquer aplicativo WebView2, certifique-se de seguir nossas práticas reco
 [Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
 
 [Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "Evento CoreWebView2Environment.NewBrowserVersionAvailable | Microsoft Docs"  
+[WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"  
+
