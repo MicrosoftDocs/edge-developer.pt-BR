@@ -7,12 +7,12 @@ ms.date: 05/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidade, plataforma Web
-ms.openlocfilehash: 194e612c008016299b234de816114d24e5569aef
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 815a350dc82d02e77354f3079880df9ce81750b7
+ms.sourcegitcommit: 412ec98cd9f57f74af69acad0a317d1dffa3b323
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624784"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "11640601"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Compatibilidade do site – alterações que afetam o Microsoft Edge  
 
@@ -24,6 +24,7 @@ Revise este artigo com frequência.  A Microsoft Edge atualiza este artigo à me
 
 | Alterar | Canal Estável | Experimentação | Informações adicionais |  
 |:--- |:--- |:--- |:--- |
+| Deprecate a semântica SDP do Plano B da WebRTC | [Chrome+1](#release-comments) \(Edge v94\)  |  | Essa alteração está ocorrendo no projeto Chromium, no qual Microsoft Edge se baseia. Essa alteração pretere um dialeto SDP (Protocolo de Descrição de Sessão) herdou chamado Plano B. Ele está sendo substituído pelo Plano Unificado que é um formato SDP compatível com especificações e compatível com navegador cruzado. Para obter mais informações, navegue até a entrada do Status da Plataforma [Chrome][ChromestatusFeature5823036655665152] e [PSA: Linha][PSADeprecateWebRTCPlanB]do tempo do plano B de depreciação e remoção de SDP - Migrar para o Plano Unificado . O cronograma de lançamento da Microsoft para o deprecamento está planejado para uma versão após o Chrome. Solicitar um Token de Avaliação de Origem Reversa do Plano B da [WebRTC][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] permite que os sites continuem a usar a API preterida até o Edge v96. |
 | Cookies padrão `SameSite=Lax` para e `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v82, Dev v82 | Essa alteração está ocorrendo no projeto Chromium, no qual Microsoft Edge se baseia.  Para obter mais informações, incluindo a linha do tempo planejada pelo Google para essa alteração, navegue até a entrada Status da Plataforma [Chrome.][ChromestatusFeature5088147346030592]  |  
 | Política do Referrer: Padrão para `strict-origin-when-cross-origin` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v79, Dev v79 | Essa alteração está ocorrendo no projeto Chromium, no qual Microsoft Edge se baseia.  Para obter mais informações, incluindo a linha do tempo planejada pelo Google para essa alteração, navegue até a entrada Status da Plataforma [Chrome.][ChromestatusFeature6251880185331712]  |  
 | Não permitir síncrono na `XmlHttpRequest` demissão de página | [Chrome+1](#release-comments) \(Edge v83\) |  | Essa alteração está ocorrendo no projeto Chromium, no qual Microsoft Edge se baseia.  Correspondente ao Chrome, Microsoft Edge oferece uma Política de Grupo para desativar essa alteração até o Edge v88.  Para obter mais informações, incluindo a linha do tempo planejada pelo Google para essa alteração, navegue até a entrada Status da Plataforma [Chrome.][ChromestatusFeature4664843055398912]  |  
@@ -76,12 +77,16 @@ Revise este artigo com frequência.  A Microsoft Edge atualiza este artigo à me
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Política de referência: Padrão para estrito-origin-when-cross-origin | Status da plataforma Chrome"  
 [ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "Remover 3DES em TLS | Status da plataforma Chrome"
 [ChromestatusFeature5436853517811712]: https://chromestatus.com/feature/5436853517811712 "Restringir solicitações de rede privada para sub-recursos para proteger contextos | Status da plataforma Chrome"
+[ChromestatusFeature5823036655665152]: https://www.chromestatus.com/feature/5823036655665152 "[WebRTC] Deprecate e Remover Plano B (preterido) | Status da plataforma Chrome"
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Suporte a Flash Removido do Chromium (Destino: Chrome 88+ - Jan 2021) - Mapa do Flash | Chromium Projects"  
 
 [ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "Token AppCache OriginTrial | Desenvolvedores do Chrome"  
+[ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial]: https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169 "WebRTC Plan B Reverse Origin Trial Token | Desenvolvedores do Chrome"
 
 [GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protegendo os usuários contra downloads inseguros no Google Chrome - Blog de Segurança do Google Online" 
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Preparando-se para a remoção do AppCache | web.dev"  
+
+[PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA: Linha do tempo para o plano B Deprecation e Remoção de SDP - Migrar para o Plano Unificado"
 
 <!--todo:  cleanup links  -->  
