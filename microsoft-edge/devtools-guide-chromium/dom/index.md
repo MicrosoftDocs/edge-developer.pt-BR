@@ -3,16 +3,16 @@ description: Como exibir nós, pesquisar nós, editar nós, fazer referência a 
 title: Começar a exibir e alterar o DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desenvolvimento na Web, ferramentas F12, devtools
-ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 8340c4d4d7eacdb6ad4155c1c9699db150522f16
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564284"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643431"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,9 +29,9 @@ ms.locfileid: "11564284"
    limitations under the License.  -->  
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Começar a exibir e alterar o DOM  
 
-Conclua estes tutoriais interativos para aprender os conceitos básicos de exibição e alteração do DOM de uma página usando Microsoft Edge DevTools.  
+Conclua estes tutoriais interativos para aprender [](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) os conceitos básicos de exibição e alteração do Modelo de Objeto de Documento \(DOM\) de uma página usando Microsoft Edge DevTools.  
 
-Este tutorial supõe que você sabe a diferença entre DOM e HTML.  Navegue [até Apêndice: HTML versus DOM](#appendix-html-versus-the-dom) para uma explicação.  
+Este tutorial supõe que você sabe a diferença entre DOM e HTML. Navegue [até Apêndice: HTML versus DOM](#appendix-html-versus-the-dom) para uma explicação.  
 
 ## <a name="open-dom-examples"></a>Abrir exemplos dom  
 

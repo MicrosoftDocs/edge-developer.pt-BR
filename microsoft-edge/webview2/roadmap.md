@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Host, controle de navegador, html de borda
-ms.openlocfilehash: 0f51b5cab32bdb9b9aa9b6baceef5fe5a17eea54
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7b67e4a6844ead0f845667a70df8657745ece938
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398410"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643417"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge Roteiro webView2  
 
 > [!NOTE]
-> Last Updated: November 2020  
+> Last Updated: July 2021  
 
 O controle WebView2 permite que os desenvolvedores invistam tecnologias web em seus aplicativos nativos.  A página a seguir descreve o roteiro prospectivo para WebView2.  
 
@@ -29,32 +29,10 @@ Se você tiver preocupações ou dúvidas sobre o Roteiro, forneça seus coment�
 
 A equipe webView2 está planejando os seguintes grandes esforços para atualizações futuras.  
 
-:::row:::
-   :::column span="1":::
-      Instalador do Tempo de Execução do WebView2  
-   :::column-end:::
-   :::column span="2":::
-      *   4º trimestre de 2020
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Versão Não Editável  
-   :::column-end:::
-   :::column span="2":::
-      *   4º trimestre de 2020  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Disponibilidade Geral  
-   :::column-end:::
-   :::column span="2":::
-      *   Win32 C/C++ \(Q4 2020\)  
-      *   .NET \(Q4 2020\)  
-      *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
-   :::column-end:::
-:::row-end:::  
+* Visualização UWP
+* Visualização do MacOS
+* Visualização do Xbox
+* HoloLens Visualizar
 
 ## <a name="webview2-runtime-and-installer"></a>WebView2 Runtime e Installer  
 
@@ -74,12 +52,14 @@ O SDK do Win32 C/C++ atingiu GA.
 
 O SDK .NET atingiu GA. 
 
-### <a name="winui-30"></a>WinUI 3.0  
+### <a name="windows-ui-library-3"></a>Windows Biblioteca de interface do usuário 3
 
-Você pode acessar WebView2 em seus aplicativos UWP usando [Win UI 3.0][UwpToolkitsWinui3Index], atualmente em alfa.  Para obter mais informações sobre como manter-se atualizado, navegue até Windows roteiro da biblioteca da interface [do usuário.][GithubMicrosoftUiXamlRoadmap]  
+Você pode acessar controles WebView2 em seus aplicativos usando Windows biblioteca de interface do usuário [3 (WinUI3)][UwpToolkitsWinui3Index] com o SDK do Windows App. Isso está atualmente em visualização. Para obter mais informações, navegue até o [mapa Windows SDK do aplicativo.][WindowsAppSDK|::ref1::|]
 
+ 
 <!-- links -->  
 
+[WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roteiro"
 [ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modelo de distribuição evergreen - Distribuição de aplicativos usando webView2 | Microsoft Docs"  
 [ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modelo de distribuição de versão fixa - Distribuição de aplicativos usando webView2 | Microsoft Docs"  
 

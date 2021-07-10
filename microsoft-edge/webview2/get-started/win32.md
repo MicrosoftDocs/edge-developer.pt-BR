@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicativos win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, controle de navegador, html de borda
-ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
-ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
+ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "11618383"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643445"
 ---
 # <a name="get-started-with-webview2"></a>Começar com WebView2  
 
@@ -183,7 +183,7 @@ Para obter mais informações, navegue até [Eventos de navegação][Webview2Con
    Eventos de navegação  
 :::image-end:::    
 
-Em casos de erro, um ou mais dos seguintes eventos podem ocorrer, dependendo se a navegação é continuada para uma página da Web de erro.  
+Em casos de erro, um ou mais dos seguintes eventos podem ocorrer dependendo se a navegação foi continuada para uma página da Web de erro.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  

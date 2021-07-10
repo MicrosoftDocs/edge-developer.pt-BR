@@ -7,12 +7,12 @@ ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicativos Web progressivos, PWA, Borda, Windows, Microsoft Store
-ms.openlocfilehash: 5e78e909187408566219ffe80779bb9221b585fa
-ms.sourcegitcommit: e3cd336c9448277e0dde3b9da1521b5cbc7c44d2
+ms.openlocfilehash: 40a6b94412a0788c87f7231025809098c98f18e9
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "11527049"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643246"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publique seu Aplicativo Web Progressivo no Microsoft Store  
 
@@ -137,6 +137,18 @@ Para enviar seu aplicativo para a Loja, conclua as seguintes ações.
 1.  No prompt **Pacotes,** escolha os arquivos e os `.msixbundle` que você gerou na seção Pacote de `.classic.appxbundle` [PWA.](#package-your-pwa-for-the-store)  
     
 Depois que você concluir seu envio, seu aplicativo será revisado, normalmente entre 24 e 48 horas.  Depois de receber aprovação, PWA seu Microsoft Store.  
+
+### <a name="measure-usage-of-your-store-installed-pwa"></a>Medir o uso do seu PWA
+
+Quando o PWA é inicializado inicialmente, se o PWA foi instalado a partir do Microsoft Store, o Microsoft Edge inclui o seguinte header com a solicitação para a primeira navegação do seu `Referer` aplicativo Web.
+
+```
+Referer: app-info://platform/microsoft-store
+```
+
+Use esse recurso para medir o tráfego distinto do seu PWA.  Com base no tráfego, você pode ajustar o conteúdo do aplicativo para melhorar a experiência do usuário.  Esse recurso é acessível ao código do cliente e do servidor.
+
+Esse recurso foi introduzido na Microsoft Edge versão 91.
 
 ## <a name="see-also"></a>Consulte também  
 

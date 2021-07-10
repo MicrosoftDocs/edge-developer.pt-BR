@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desenvolvimento de extensões, extensões de navegador, complementos, partner center, desenvolvedor
-ms.openlocfilehash: c7d44a8c02a030cc11c763c35efb7111fff76665
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: aadb3470eb295934cde4ad26b089ac0c83898e5c
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536799"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643239"
 ---
 # <a name="publish-your-extension"></a>Publicar sua extensão  
 
@@ -97,7 +97,7 @@ Escolha **Salvar** para continuar na **seção Listagens da** Loja.
 
 As informações fornecidas na seção a seguir são exibidas para os usuários que revisam sua listagem no Microsoft Edge de complementos.  Mesmo que alguns campos sejam opcionais, você deve fornecer o máximo de informações possível.  Para listar sua extensão na loja, os detalhes a seguir são necessários.  
 
-*   **Descrição** de cada idioma no pacote de extensão.  
+*   **Descrição** de cada idioma no pacote de extensão. Para dar suporte a vários idiomas, você pode usar a API de internacionalização ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).  
 *   **Logotipo da Loja de Extensão** para cada idioma no pacote de extensão.  
     
 > [!NOTE]
@@ -179,3 +179,4 @@ Depois que seu envio passar na certificação, sua extensão será publicada no 
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Incorporar vídeos & listas de reprodução | Ajuda do YouTube"  
 
 [MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "Enviar email para ext_dev_support@microsoft.com" 
+
